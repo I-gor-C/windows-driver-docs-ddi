@@ -61,29 +61,29 @@ typedef struct _SM_SendECHO_IN {
 ## Members
 
 
-`DestFCID`
+`HbaPortWWN`
 
-The address identifier of the remote port.
+The local HBA port worldwide name (WWN).
 
 `DestWWN`
 
 The remote HBA port worldwide name (WWN) to which the command will be sent.
 
-`HbaPortWWN`
+`DestFCID`
 
-The local HBA port worldwide name (WWN).
+The address identifier of the remote port.
 
 `InRespBufferMaxSize`
 
 The maximum response buffer size.
 
-`ReqBuffer`
-
-The request buffer data.
-
 `ReqBufferSize`
 
 The request buffer size.
+
+`ReqBuffer`
+
+The request buffer data.
 
 ## Remarks
 The WMI tool suite generates a declaration of the SM_SendECHO_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.

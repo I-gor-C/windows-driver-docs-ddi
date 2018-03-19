@@ -94,7 +94,37 @@ typedef struct _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO {
 
 N/A
 
-`MaxNumberOfOpenSequentialWriteRequiredZones`
+`ZonedDeviceCapabilities`
+
+#### URSWRZ
+
+N/A
+
+
+
+#### Reserved
+
+N/A
+
+
+
+#### Valid
+
+N/A
+
+`ZonedDeviceSettings`
+
+#### Reserved
+
+N/A
+
+
+
+#### Valid
+
+N/A
+
+`OptimalNumberOfOpenSequentialWritePreferredZones`
 
 #### Number
 
@@ -130,7 +160,7 @@ N/A
 
 N/A
 
-`OptimalNumberOfOpenSequentialWritePreferredZones`
+`MaxNumberOfOpenSequentialWriteRequiredZones`
 
 #### Number
 
@@ -145,10 +175,6 @@ N/A
 
 
 #### Valid
-
-N/A
-
-`Reserved`
 
 N/A
 
@@ -170,33 +196,7 @@ N/A
 
 N/A
 
-`ZonedDeviceCapabilities`
-
-#### URSWRZ
-
-N/A
-
-
-
-#### Reserved
-
-N/A
-
-
-
-#### Valid
-
-N/A
-
-`ZonedDeviceSettings`
-
-#### Reserved
-
-N/A
-
-
-
-#### Valid
+`Reserved`
 
 N/A
 

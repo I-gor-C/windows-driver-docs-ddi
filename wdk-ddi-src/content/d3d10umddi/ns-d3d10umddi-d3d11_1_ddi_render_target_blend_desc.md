@@ -72,26 +72,6 @@ typedef struct D3D11_1_DDI_RENDER_TARGET_BLEND_DESC {
 <div class="alert"><b>Note</b>  The <b>LogicOpEnable</b> and <b>BlendEnable</b> members must not both be <b>TRUE</b>.</div>
 <div> </div>
 
-`BlendOp`
-
-[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend_op.md">D3D10_DDI_BLEND_OP</a> that indicates the blending operation for the enabled render target.
-
-`BlendOpAlpha`
-
-[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend_op.md">D3D10_DDI_BLEND_OP</a> that indicates the transparency blending operation for the enabled render target.
-
-`DestBlend`
-
-[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend.md">D3D10_DDI_BLEND</a> that indicates the blend mode of the destination for the enabled render target.
-
-`DestBlendAlpha`
-
-[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend.md">D3D10_DDI_BLEND</a> that indicates the transparency blend mode of the destination for the enabled render target.
-
-`LogicOp`
-
-[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1_ddi_logic_op.md">D3D11_1_DDI_LOGIC_OP</a> that specifies  shader logic operations that are available in the blend state.
-
 `LogicOpEnable`
 
 Specifies whether shader logic operations given by the <b>LogicOp</b> member are available in the blend state. The user-mode display driver sets <b>LogicOpEnable</b> to <b>TRUE</b> if logic operations are available in the blend state and <b>FALSE</b> otherwise. 
@@ -102,6 +82,34 @@ This member is <b>TRUE</b> if the driver supports feature level 11.1 and later.
 
 <div class="alert"><b>Note</b>  The <b>LogicOpEnable</b> and <b>BlendEnable</b> members must not both be <b>TRUE</b>.</div>
 <div> </div>
+
+`SrcBlend`
+
+[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend.md">D3D10_DDI_BLEND</a> that indicates the blend mode of the source for the enabled render target.
+
+`DestBlend`
+
+[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend.md">D3D10_DDI_BLEND</a> that indicates the blend mode of the destination for the enabled render target.
+
+`BlendOp`
+
+[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend_op.md">D3D10_DDI_BLEND_OP</a> that indicates the blending operation for the enabled render target.
+
+`SrcBlendAlpha`
+
+[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend.md">D3D10_DDI_BLEND</a> that indicates the transparency blend mode of the source for the enabled render target.
+
+`DestBlendAlpha`
+
+[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend.md">D3D10_DDI_BLEND</a> that indicates the transparency blend mode of the destination for the enabled render target.
+
+`BlendOpAlpha`
+
+[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend_op.md">D3D10_DDI_BLEND_OP</a> that indicates the transparency blending operation for the enabled render target.
+
+`LogicOp`
+
+[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1_ddi_logic_op.md">D3D11_1_DDI_LOGIC_OP</a> that specifies  shader logic operations that are available in the blend state.
 
 `RenderTargetWriteMask`
 
@@ -164,14 +172,6 @@ Writes red, green, blue, and a transparency level
 </tr>
 </table>
 
-`SrcBlend`
-
-[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend.md">D3D10_DDI_BLEND</a> that indicates the blend mode of the source for the enabled render target.
-
-`SrcBlendAlpha`
-
-[in] A value of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_blend.md">D3D10_DDI_BLEND</a> that indicates the transparency blend mode of the source for the enabled render target.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -202,11 +202,3 @@ Writes red, green, blue, and a transparency level
 
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createblendstate.md">CreateBlendState(D3D11_1)</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11_1_DDI_RENDER_TARGET_BLEND_DESC structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

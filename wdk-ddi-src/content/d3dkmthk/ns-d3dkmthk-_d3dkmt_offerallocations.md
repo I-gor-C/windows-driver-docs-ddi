@@ -60,23 +60,9 @@ typedef struct _D3DKMT_OFFERALLOCATIONS {
 ## Members
 
 
-`Flags`
-
-
-
-`HandleList`
-
-[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to allocations to offer.
-
-If resources were created with the <b>D3D10_DDI_BIND_PRESENT</b> flag value set in <i>pCreateResource</i>-&gt;<b>BindFlags</b>, offer the resources by their allocation handles, not by their resource handles.
-
 `hDevice`
 
 [in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that created the allocations.
-
-`NumAllocations`
-
-[in] The number of items in the <b>pResources</b> or <b>HandleList</b> members, whichever is not <b>NULL</b>.
 
 `pResources`
 
@@ -84,9 +70,23 @@ If resources were created with the <b>D3D10_DDI_BIND_PRESENT</b> flag value set 
 
 If the user-mode driver uses the array specified by <b>HandleList</b> to offer a list of allocations, it must set <b>pResources</b> to <b>NULL</b>. Conversely, if the driver uses the array specified by <b>pResources</b> to offer a list of resources, it must set <b>HandleList</b> to <b>NULL</b>.
 
+`HandleList`
+
+[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to allocations to offer.
+
+If resources were created with the <b>D3D10_DDI_BIND_PRESENT</b> flag value set in <i>pCreateResource</i>-&gt;<b>BindFlags</b>, offer the resources by their allocation handles, not by their resource handles.
+
+`NumAllocations`
+
+[in] The number of items in the <b>pResources</b> or <b>HandleList</b> members, whichever is not <b>NULL</b>.
+
 `Priority`
 
 [in] The priority, of type  <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_offer_priority.md">D3DKMT_OFFER_PRIORITY</a>, with which to offer the allocations for reuse.
+
+`Flags`
+
+
 
 
 ## Requirements
@@ -102,11 +102,3 @@ If the user-mode driver uses the array specified by <b>HandleList</b> to offer a
 
 
 <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_offer_priority.md">D3DKMT_OFFER_PRIORITY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_OFFERALLOCATIONS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

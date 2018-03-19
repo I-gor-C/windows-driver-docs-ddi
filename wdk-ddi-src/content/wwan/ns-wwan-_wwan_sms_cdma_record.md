@@ -65,6 +65,19 @@ typedef struct _WWAN_SMS_CDMA_RECORD {
 ## Members
 
 
+`MessageIndex`
+
+An index into the virtual message store that is maintained by the miniport driver. This index is
+     1-based and the maximum index is 
+     <b>ulMaxMessageIndex</b> as returned in WWAN_SMS_CONFIGURATION_STATUS. Be aware that the specification
+     does not differentiate between physically available data stores. If the message is a Class 0
+     (flash/alert) message, this must be set to WWAN_MESSAGE_INDEX_NONE.
+
+`MsgStatus`
+
+The status of the record that represents whether the SMS message is new (unread), old (read), a
+     draft, or sent.
+
 `Address`
 
 A NULL-terminated string with a maximum length of 15 digits that represents a mobile number. The
@@ -89,32 +102,6 @@ If
      <b>MsgStatus</b> is 
      <b>WwanMsgStatusNew</b> or 
      <b>WwanMsgStatusOld</b>, miniport drivers should specify the sender's mobile number.
-
-`EncodedMsg`
-
-The encoded content of the record that represents the SMS text message.
-
-`EncodingId`
-
-The encoding that is used in the CDMA message. 
-     <b>EncodedMsg</b> message should be interpreted based on the value of this member.
-
-`LanguageId`
-
-The language that is used in the SMS text message.
-
-`MessageIndex`
-
-An index into the virtual message store that is maintained by the miniport driver. This index is
-     1-based and the maximum index is 
-     <b>ulMaxMessageIndex</b> as returned in WWAN_SMS_CONFIGURATION_STATUS. Be aware that the specification
-     does not differentiate between physically available data stores. If the message is a Class 0
-     (flash/alert) message, this must be set to WWAN_MESSAGE_INDEX_NONE.
-
-`MsgStatus`
-
-The status of the record that represents whether the SMS message is new (unread), old (read), a
-     draft, or sent.
 
 `ScTimeStamp`
 
@@ -163,6 +150,15 @@ A string that represent the Service Center (SC) timestamp, in the following form
 For example, to represent October 2nd, 1996, 20:01:54 GMT+2 hours use the following string timestamp
       "96/10/02,20:01:54+02"
 
+`EncodingId`
+
+The encoding that is used in the CDMA message. 
+     <b>EncodedMsg</b> message should be interpreted based on the value of this member.
+
+`LanguageId`
+
+The language that is used in the SMS text message.
+
 `SizeInBytes`
 
 The size, in bytes, of 
@@ -177,6 +173,10 @@ Size of
      <b>EncodingId</b> is set to 
      <b>WwanSmsCdmaEncodingShiftJis</b> or 
      <b>WwanSmsCdmaEncodingKorean</b>.
+
+`EncodedMsg`
+
+The encoded content of the record that represents the SMS text message.
 
 
 ## Requirements
@@ -196,11 +196,3 @@ Size of
 
 
 <a href="..\wwan\ne-wwan-_wwan_sms_cdma_encoding.md">WWAN_SMS_CDMA_ENCODING</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_CDMA_RECORD structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

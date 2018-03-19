@@ -66,15 +66,11 @@ typedef enum _NDIS_HYPERVISOR_PARTITION_TYPE {
 <table>
             
                 <tr>
-                    <td>NdisHypervisorPartitionMsHvChild</td>
-                    <td>The child partition is running on
-     the Microsoft hypervisor.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisHypervisorPartitionTypeMax</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
+                    <td>NdisHypervisorPartitionTypeUnknown</td>
+                    <td>The partition type that is running on the hypervisor is not known.
+
+<div class="alert"><b>Note</b>  This enumeration value is used to identify a partition type for a third-party hypervisor.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -84,11 +80,15 @@ typedef enum _NDIS_HYPERVISOR_PARTITION_TYPE {
                 </tr>
             
                 <tr>
-                    <td>NdisHypervisorPartitionTypeUnknown</td>
-                    <td>The partition type that is running on the hypervisor is not known.
-
-<div class="alert"><b>Note</b>  This enumeration value is used to identify a partition type for a third-party hypervisor.</div>
-<div> </div></td>
+                    <td>NdisHypervisorPartitionMsHvChild</td>
+                    <td>The child partition is running on
+     the Microsoft hypervisor.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisHypervisorPartitionTypeMax</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 
@@ -105,11 +105,3 @@ For more information about Hyper-V parent and child partitions, see <a href="htt
 ## See Also
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_hypervisor_info.md">NDIS_HYPERVISOR_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_HYPERVISOR_PARTITION_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

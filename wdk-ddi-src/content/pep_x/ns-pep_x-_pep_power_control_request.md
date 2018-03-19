@@ -63,13 +63,13 @@ typedef struct _PEP_POWER_CONTROL_REQUEST {
 ## Members
 
 
-`BytesReturned`
-
-[out] The number of bytes that the PEP wrote to the output buffer pointed to by <b>OutBuffer</b>.
-
 `DeviceHandle`
 
 [in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a> notification.
+
+`PowerControlCode`
+
+[in] A pointer to a <a href="http://msdn.microsoft.com/library/windows/desktop/aa373931(v=vs.85).aspx">GUID</a> value that specifies the power control operation to perform. This is the same value that the requesting driver supplied as the <i>PowerControlCode</i> parameter to the <a href="..\wdm\nf-wdm-pofxpowercontrol.md">PoFxPowerControl</a> routine.
 
 `InBuffer`
 
@@ -87,9 +87,9 @@ typedef struct _PEP_POWER_CONTROL_REQUEST {
 
 [in] The size in bytes of the buffer pointed to by <b>OutBuffer</b>.
 
-`PowerControlCode`
+`BytesReturned`
 
-[in] A pointer to a <a href="http://msdn.microsoft.com/library/windows/desktop/aa373931(v=vs.85).aspx">GUID</a> value that specifies the power control operation to perform. This is the same value that the requesting driver supplied as the <i>PowerControlCode</i> parameter to the <a href="..\wdm\nf-wdm-pofxpowercontrol.md">PoFxPowerControl</a> routine.
+[out] The number of bytes that the PEP wrote to the output buffer pointed to by <b>OutBuffer</b>.
 
 `Status`
 
@@ -119,11 +119,3 @@ The driver for a device can call the <a href="..\wdm\nf-wdm-pofxpowercontrol.md"
 
 
 <a href="..\wdm\nf-wdm-pofxpowercontrol.md">PoFxPowerControl</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_POWER_CONTROL_REQUEST structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

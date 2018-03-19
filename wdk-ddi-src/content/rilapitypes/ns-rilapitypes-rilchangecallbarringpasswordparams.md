@@ -69,7 +69,7 @@ typedef struct _RILCHANGECALLBARRINGPASSWORDPARAMS {
 
 
 
-`szConfirmPassword`
+`szOldPassword`
 
 
 
@@ -77,7 +77,7 @@ typedef struct _RILCHANGECALLBARRINGPASSWORDPARAMS {
 
 
 
-`szOldPassword`
+`szConfirmPassword`
 
 
 

@@ -61,16 +61,13 @@ typedef struct DOT11_ERP_PHY_ATTRIBUTES {
 ## Members
 
 
-`bDSSSOFDMOptionImplemented`
+`HRDSSSAttributes`
 
-A Boolean value that, if set to <b>TRUE</b>, specifies the PHY has enabled the use of the hybrid
-     DSSS-OFDM modulation. If the 802.11 station supports this option, the PHY is capable of combining the
-     direct-sequence spread spectrum (DSSS) preamble and header with the orthogonal frequency division
-     multiplexing (OFDM) payload.
-     
-
-For more information about DSSS-OFDM modulation, refer to Clause 19.7 of the IEEE 802.11g-2003
-     standard.
+Since the ERP PHY type is a superset of the high-rate direct-sequence spread spectrum (HRDSS) PHY
+     type, the start of the DOT11_ERP_PHY_ATTRIBUTES structure is formatted as a 
+     <a href="..\windot11\ns-windot11-dot11_hrdsss_phy_attributes.md">
+     DOT11_HRDSSS_PHY_ATTRIBUTES</a> structure in order to define the HRDSS-specific attributes of the
+     PHY.
 
 `bERPPBCCOptionImplemented`
 
@@ -82,19 +79,22 @@ For more information about PBCC modulation, refer to Clause 18.4.6.6 of the IEEE
      standard. For more information about the ERP-PBCC option, refer to Clause 19.6 of the IEEE 802.11g-2003
      standard.
 
+`bDSSSOFDMOptionImplemented`
+
+A Boolean value that, if set to <b>TRUE</b>, specifies the PHY has enabled the use of the hybrid
+     DSSS-OFDM modulation. If the 802.11 station supports this option, the PHY is capable of combining the
+     direct-sequence spread spectrum (DSSS) preamble and header with the orthogonal frequency division
+     multiplexing (OFDM) payload.
+     
+
+For more information about DSSS-OFDM modulation, refer to Clause 19.7 of the IEEE 802.11g-2003
+     standard.
+
 `bShortSlotTimeOptionImplemented`
 
 A Boolean value that, if set to <b>TRUE</b>, specifies the PHY supports the 802.11g short slot time
      option. For more information about the short slot time, refer to Clause 7.3.1.4 of the IEEE 802.11g-2003
      standard.
-
-`HRDSSSAttributes`
-
-Since the ERP PHY type is a superset of the high-rate direct-sequence spread spectrum (HRDSS) PHY
-     type, the start of the DOT11_ERP_PHY_ATTRIBUTES structure is formatted as a 
-     <a href="..\windot11\ns-windot11-dot11_hrdsss_phy_attributes.md">
-     DOT11_HRDSSS_PHY_ATTRIBUTES</a> structure in order to define the HRDSS-specific attributes of the
-     PHY.
 
 ## Remarks
 The miniport driver defines the attributes of a PHY on the 802.11 station through the 
@@ -116,11 +116,3 @@ The miniport driver defines the attributes of a PHY on the 802.11 station throug
 
 
 <a href="..\windot11\ns-windot11-dot11_hrdsss_phy_attributes.md">DOT11_HRDSSS_PHY_ATTRIBUTES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ERP_PHY_ATTRIBUTES structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,11 +63,6 @@ typedef enum _D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY {
 <table>
             
                 <tr>
-                    <td>D3DKMDT_GRAPHICS_PREEMPTION_DMA_BUFFER_BOUNDARY</td>
-                    <td>The driver cannot stop currently running DMA buffers of a specified type but can prevent all pending DMA buffers in the hardware queue from running.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DKMDT_GRAPHICS_PREEMPTION_NONE</td>
                     <td>The driver does not support the preemption of GPU graphics operations.
 
@@ -76,8 +71,8 @@ typedef enum _D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY {
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_GRAPHICS_PREEMPTION_PIXEL_BOUNDARY</td>
-                    <td>The driver cannot stop currently running pixel buffers of a specified type but can prevent all pending pixel buffers in the hardware queue from running.</td>
+                    <td>D3DKMDT_GRAPHICS_PREEMPTION_DMA_BUFFER_BOUNDARY</td>
+                    <td>The driver cannot stop currently running DMA buffers of a specified type but can prevent all pending DMA buffers in the hardware queue from running.</td>
                 </tr>
             
                 <tr>
@@ -86,13 +81,18 @@ typedef enum _D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY {
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_GRAPHICS_PREEMPTION_SHADER_BOUNDARY</td>
-                    <td>The driver cannot stop currently running shader instruction buffers of a specified type but can prevent all pending shader instruction buffers in the hardware queue from running.</td>
+                    <td>D3DKMDT_GRAPHICS_PREEMPTION_TRIANGLE_BOUNDARY</td>
+                    <td>The driver cannot stop currently running triangle buffers of a specified type but can prevent all pending triangle buffers in the hardware queue from running.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_GRAPHICS_PREEMPTION_TRIANGLE_BOUNDARY</td>
-                    <td>The driver cannot stop currently running triangle buffers of a specified type but can prevent all pending triangle buffers in the hardware queue from running.</td>
+                    <td>D3DKMDT_GRAPHICS_PREEMPTION_PIXEL_BOUNDARY</td>
+                    <td>The driver cannot stop currently running pixel buffers of a specified type but can prevent all pending pixel buffers in the hardware queue from running.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_GRAPHICS_PREEMPTION_SHADER_BOUNDARY</td>
+                    <td>The driver cannot stop currently running shader instruction buffers of a specified type but can prevent all pending shader instruction buffers in the hardware queue from running.</td>
                 </tr>
 </table>
 
@@ -115,11 +115,3 @@ For example, if one engine supports the preemption of primitive level graphics r
 
 
 <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_compute_preemption_granularity.md">D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

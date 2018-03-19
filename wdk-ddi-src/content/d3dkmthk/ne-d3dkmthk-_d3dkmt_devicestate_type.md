@@ -70,13 +70,13 @@ typedef enum _D3DKMT_DEVICESTATE_TYPE {
                 </tr>
             
                 <tr>
-                    <td>D3DKMT_DEVICESTATE_PAGE_FAULT</td>
-                    <td>The device page fault state is retrieved.</td>
+                    <td>D3DKMT_DEVICESTATE_PRESENT</td>
+                    <td>The device present state is retrieved.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DKMT_DEVICESTATE_PRESENT</td>
-                    <td>The device present state is retrieved.</td>
+                    <td>D3DKMT_DEVICESTATE_RESET</td>
+                    <td>The device reset state is retrieved.</td>
                 </tr>
             
                 <tr>
@@ -85,13 +85,13 @@ typedef enum _D3DKMT_DEVICESTATE_TYPE {
                 </tr>
             
                 <tr>
-                    <td>D3DKMT_DEVICESTATE_PRESENT_QUEUE</td>
-                    <td></td>
+                    <td>D3DKMT_DEVICESTATE_PAGE_FAULT</td>
+                    <td>The device page fault state is retrieved.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DKMT_DEVICESTATE_RESET</td>
-                    <td>The device reset state is retrieved.</td>
+                    <td>D3DKMT_DEVICESTATE_PRESENT_QUEUE</td>
+                    <td></td>
                 </tr>
 </table>
 
@@ -105,11 +105,3 @@ typedef enum _D3DKMT_DEVICESTATE_TYPE {
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getdevicestate.md">D3DKMT_GETDEVICESTATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_DEVICESTATE_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

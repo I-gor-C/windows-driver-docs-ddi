@@ -62,8 +62,8 @@ typedef enum _BarcodeStatus {
 <table>
             
                 <tr>
-                    <td>BarcodeStatusUpdateType_Extended</td>
-                    <td>Vendor specific status information.</td>
+                    <td>BarcodeStatusUpdateType_Online</td>
+                    <td>The device is online. This is valid if <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedpospowerreportingtype.md">UnifiedPosPowerReportingType</a> is <b>Standard</b> or <b>Advanced</b>.</td>
                 </tr>
             
                 <tr>
@@ -82,8 +82,8 @@ typedef enum _BarcodeStatus {
                 </tr>
             
                 <tr>
-                    <td>BarcodeStatusUpdateType_Online</td>
-                    <td>The device is online. This is valid if <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedpospowerreportingtype.md">UnifiedPosPowerReportingType</a> is <b>Standard</b> or <b>Advanced</b>.</td>
+                    <td>BarcodeStatusUpdateType_Extended</td>
+                    <td>Vendor specific status information.</td>
                 </tr>
 </table>
 

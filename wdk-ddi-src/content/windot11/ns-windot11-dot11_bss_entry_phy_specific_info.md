@@ -63,6 +63,17 @@ typedef union DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO {
 ## Members
 
 
+`uChCenterFrequency`
+
+The channel center frequency of the band on which the 802.11 Probe-Response or Beacon frame was
+     received. The value of 
+     <b>uChCenterFrequency</b> is in units of megahertz (MHz). 
+     
+
+<div class="alert"><b>Note</b>  This member is only valid for PHY types that are not frequency-hopping spread
+     spectrum (FHSS).</div>
+<div> </div>
+
 `FHSS`
 
 The FHSS parameters, as specified by the following members:
@@ -101,17 +112,6 @@ The maximum amount of time that the PHY can use when transmitting on a single ch
 <div class="alert"><b>Note</b>  This member is only valid for FHSS PHY types.</div>
 <div> </div>
 
-`uChCenterFrequency`
-
-The channel center frequency of the band on which the 802.11 Probe-Response or Beacon frame was
-     received. The value of 
-     <b>uChCenterFrequency</b> is in units of megahertz (MHz). 
-     
-
-<div class="alert"><b>Note</b>  This member is only valid for PHY types that are not frequency-hopping spread
-     spectrum (FHSS).</div>
-<div> </div>
-
 ## Remarks
 The DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union is a member of the 
     <a href="..\windot11\ns-windot11-dot11_bss_entry.md">DOT11_BSS_ENTRY</a> structure.
@@ -125,11 +125,3 @@ The DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union is a member of the
 ## See Also
 
 <a href="..\windot11\ns-windot11-dot11_bss_entry.md">DOT11_BSS_ENTRY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

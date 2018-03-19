@@ -57,22 +57,6 @@ typedef struct {
 ## Members
 
 
-`Capabilities`
-
-Indicates whether the device and driver support setting video stabilization control automatically or manually. This member a bitwise <b>OR</b> of these possible values:
-
-
-
-#### KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_AUTO
-
-The device and driver can automatically control video stabilization.
-
-
-
-#### KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_MANUAL
-
-The user can manually set video stabilization modes.
-
 `VideoStabilizationMode`
 
 Indicates the selected video stabilization modes. This member has one of these possible values:
@@ -107,6 +91,22 @@ Video stabilization is set at a medium level.
 
 Video stabilization is set at a high level.
 
+`Capabilities`
+
+Indicates whether the device and driver support setting video stabilization control automatically or manually. This member a bitwise <b>OR</b> of these possible values:
+
+
+
+#### KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_AUTO
+
+The device and driver can automatically control video stabilization.
+
+
+
+#### KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_MANUAL
+
+The user can manually set video stabilization modes.
+
 ## Remarks
 The video stabilization settings specified with this structure affect only the device and have no effect on applications' software video stabilization.
 
@@ -123,11 +123,3 @@ The video stabilization settings specified with this structure affect only the d
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj156043">KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

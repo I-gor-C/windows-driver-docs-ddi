@@ -58,17 +58,17 @@ typedef struct {
 ## Members
 
 
-`Flags`
+`Size`
 
-Not used.
+The size of the entire capability payload, including this header, all the item headers, and the item payloads that follow.
 
 `ItemCount`
 
 The number of capability items.
 
-`Size`
+`Flags`
 
-The size of the entire capability payload, including this header, all the item headers, and the item payloads that follow.
+Not used.
 
 
 ## Requirements

@@ -61,9 +61,17 @@ typedef struct _D3DDDIBOX {
 ## Members
 
 
-`Back`
+`Left`
 
-[in] The position of the back of the box on the z-axis.
+[in] The position of the left side of the box on the x-axis.
+
+`Top`
+
+[in] The position of the top of the box on the y-axis.
+
+`Right`
+
+[in] The position of the right side of the box on the x-axis.
 
 `Bottom`
 
@@ -73,17 +81,9 @@ typedef struct _D3DDDIBOX {
 
 [in] The position of the front of the box on the z-axis.
 
-`Left`
+`Back`
 
-[in] The position of the left side of the box on the x-axis.
-
-`Right`
-
-[in] The position of the right side of the box on the x-axis.
-
-`Top`
-
-[in] The position of the top of the box on the y-axis.
+[in] The position of the back of the box on the z-axis.
 
 ## Remarks
 The height of the volume equals the value in the <b>Bottom</b> member minus the value in the <b>Top</b> member (that is, height = bottom – top). 

@@ -63,6 +63,18 @@ typedef struct _DXVA_ProcAmpControlBlt {
 ## Members
 
 
+`Size`
+
+Specifies the size of this structure in bytes.
+
+`DstRect`
+
+Specifies the destination rectangle as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure. The destination rectangle is required for subrectangle stretching. Support for stretching is optional and is reported by the <a href="..\dxva\ns-dxva-_dxva_procampcontrolcaps.md">DXVA_ProcAmpControlCaps</a> structure. Support for subrectangles is optional.
+
+`SrcRect`
+
+Specifies the source rectangle as a RECT structure. The source rectangle is required for subrectangle stretching.sub Support for stretching is optional and is reported by the DXVA_ProcAmpControlCaps structure. Support for subrectangles is also optional.
+
 `Alpha`
 
 Specifies the transparency of the output image as it is written to the destination surface. A value of 0.0F indicates transparent. A value of 1.0F indicates opaque.
@@ -75,10 +87,6 @@ Specifies the brightness of the output image as it is written to the destination
 
 Specifies the contrast of the output image as it is written to the destination surface.
 
-`DstRect`
-
-Specifies the destination rectangle as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure. The destination rectangle is required for subrectangle stretching. Support for stretching is optional and is reported by the <a href="..\dxva\ns-dxva-_dxva_procampcontrolcaps.md">DXVA_ProcAmpControlCaps</a> structure. Support for subrectangles is optional.
-
 `Hue`
 
 Specifies the hue of the output image as it is written to the destination surface.
@@ -86,14 +94,6 @@ Specifies the hue of the output image as it is written to the destination surfac
 `Saturation`
 
 Specifies the saturation of the output image as it is written to the destination surface.
-
-`Size`
-
-Specifies the size of this structure in bytes.
-
-`SrcRect`
-
-Specifies the source rectangle as a RECT structure. The source rectangle is required for subrectangle stretching.sub Support for stretching is optional and is reported by the DXVA_ProcAmpControlCaps structure. Support for subrectangles is also optional.
 
 
 ## Requirements
@@ -109,11 +109,3 @@ Specifies the source rectangle as a RECT structure. The source rectangle is requ
 
 
 <a href="..\dxva\ns-dxva-_dxva_procampcontrolqueryrange.md">DXVA_ProcAmpControlQueryRange</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_ProcAmpControlBlt structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

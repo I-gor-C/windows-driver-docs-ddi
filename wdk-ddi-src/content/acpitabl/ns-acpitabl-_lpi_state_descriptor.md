@@ -65,29 +65,37 @@ typedef struct _LPI_STATE_DESCRIPTOR {
 ## Members
 
 
-`EntryTrigger`
+`Type`
 
-An entry trigger.
-
-`Flags`
-
-State flags.
-
-`Latency`
-
-A latency value.
+The type.
 
 `Length`
 
 The length.
 
+`UniqueId`
+
+A unique ID.
+
 `Reserved`
 
 Reserved.
 
+`Flags`
+
+State flags.
+
+`EntryTrigger`
+
+An entry trigger.
+
 `Residency`
 
 A residency value.
+
+`Latency`
+
+A latency value.
 
 `ResidencyCounter`
 
@@ -96,14 +104,6 @@ Residency counter.
 `ResidencyCounterFrequency`
 
 Residency counter frequency.
-
-`Type`
-
-The type.
-
-`UniqueId`
-
-A unique ID.
 
 
 ## Requirements

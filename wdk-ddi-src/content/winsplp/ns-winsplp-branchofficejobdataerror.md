@@ -72,49 +72,49 @@ typedef struct {
 
 Specifies the LastError at the time the event was logged.
 
-`pDataType`
-
-Specifies the data type of the job.
-
 `pDocumentName`
 
 Specifies the name of the printed document.
-
-`pErrorDescription`
-
-Specifies the text description of the error, if available.
-
-`pJobError`
-
-Specifies the failure code for a JOB_ERROR event.
-
-`pMachineName`
-
-Specifies the name of the client machine printing the job.
-
-`pPrinterName`
-
-Specifies the name of the print connection.
-
-`PrintedPages`
-
-Specifies the number of pages currently printed.
-
-`PrintedSize`
-
-Specifies the 64-bit size of the job.
 
 `pUserName`
 
 Specifies the user who submitted the job.
 
-`TotalPages`
+`pPrinterName`
 
-Specifies the total number of pages in the job.
+Specifies the name of the print connection.
+
+`pDataType`
+
+Specifies the data type of the job.
 
 `TotalSize`
 
 Specifies the 64-bit size of the job.
+
+`PrintedSize`
+
+Specifies the 64-bit size of the job.
+
+`TotalPages`
+
+Specifies the total number of pages in the job.
+
+`PrintedPages`
+
+Specifies the number of pages currently printed.
+
+`pMachineName`
+
+Specifies the name of the client machine printing the job.
+
+`pJobError`
+
+Specifies the failure code for a JOB_ERROR event.
+
+`pErrorDescription`
+
+Specifies the text description of the error, if available.
 
 
 ## Requirements

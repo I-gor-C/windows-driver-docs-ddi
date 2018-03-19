@@ -66,31 +66,7 @@ typedef struct _RILUICCAPPINFO {
 ## Members
 
 
-`bAppId`
-
-
-
-`bPinRef`
-
-
-
 `cbSize`
-
-
-
-`cszAppName`
-
-
-
-`dwAppIdLength`
-
-
-
-`dwAppNameLength`
-
-
-
-`dwNumPins`
 
 
 
@@ -98,11 +74,35 @@ typedef struct _RILUICCAPPINFO {
 
 
 
+`hUiccApp`
+
+
+
 `dwUiccAppType`
 
 
 
-`hUiccApp`
+`dwAppIdLength`
+
+
+
+`bAppId`
+
+
+
+`dwAppNameLength`
+
+
+
+`cszAppName`
+
+
+
+`dwNumPins`
+
+
+
+`bPinRef`
 
 
 

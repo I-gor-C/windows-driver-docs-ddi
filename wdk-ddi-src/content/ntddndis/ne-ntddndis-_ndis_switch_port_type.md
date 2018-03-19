@@ -62,11 +62,8 @@ typedef enum _NDIS_SWITCH_PORT_TYPE {
 <table>
             
                 <tr>
-                    <td>NdisSwitchPortTypeEmulated</td>
-                    <td>This value specifies a port that is connected to an emulated network adapter. This adapter is exposed in a guest operating system.
-
-<div class="alert"><b>Note</b>  An emulated network adapter is a type of VM network adapter. This adapter can be exposed in a guest operating system that is running Windows XP or a non-Windows operating system.</div>
-<div> </div></td>
+                    <td>NdisSwitchPortTypeGeneric</td>
+                    <td>This value specifies a generic port type that was created with an earlier version of the extensible switch WMI management platform.</td>
                 </tr>
             
                 <tr>
@@ -80,8 +77,19 @@ The external network adapter provides the connection to the  physical network in
                 </tr>
             
                 <tr>
-                    <td>NdisSwitchPortTypeGeneric</td>
-                    <td>This value specifies a generic port type that was created with an earlier version of the extensible switch WMI management platform.</td>
+                    <td>NdisSwitchPortTypeSynthetic</td>
+                    <td>This value specifies a port that is connected to a synthetic network adapter. This adapter is exposed in a guest operating system that runs in a Hyper-V child partition.
+
+<div class="alert"><b>Note</b>  A synthetic network adapter is a type of virtual machine (VM) network adapter. This adapter is exposed in a guest operating system that is running Windows Vista or a later version of Windows.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>NdisSwitchPortTypeEmulated</td>
+                    <td>This value specifies a port that is connected to an emulated network adapter. This adapter is exposed in a guest operating system.
+
+<div class="alert"><b>Note</b>  An emulated network adapter is a type of VM network adapter. This adapter can be exposed in a guest operating system that is running Windows XP or a non-Windows operating system.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -91,14 +99,6 @@ The external network adapter provides the connection to the  physical network in
 The internal network adapter provides access to an extensible switch for processes that run in the management operating system. This allows these processes to send or receive packets over the extensible switch.
 
 <div class="alert"><b>Note</b>  An extensible switch supports no more than one internal network adapter. For more information, see <a href="https://msdn.microsoft.com/4E4B0EC9-8E4C-47FC-B608-EC6D18367A79">Internal Network Adapters</a>.</div>
-<div> </div></td>
-                </tr>
-            
-                <tr>
-                    <td>NdisSwitchPortTypeSynthetic</td>
-                    <td>This value specifies a port that is connected to a synthetic network adapter. This adapter is exposed in a guest operating system that runs in a Hyper-V child partition.
-
-<div class="alert"><b>Note</b>  A synthetic network adapter is a type of virtual machine (VM) network adapter. This adapter is exposed in a guest operating system that is running Windows Vista or a later version of Windows.</div>
 <div> </div></td>
                 </tr>
 </table>
@@ -124,11 +124,3 @@ For more information on the extensible switch ports, see <a href="https://msdn.m
 
 
 <b></b>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

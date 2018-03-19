@@ -58,10 +58,6 @@ typedef union _NDIS_PD_COUNTER_VALUE {
 ## Members
 
 
-`Filter`
-
-See <a href="..\ndis\ns-ndis-_ndis_pd_filter_counter.md">NDIS_PD_FILTER_COUNTER</a>.
-
 `ReceiveQueue`
 
 See <a href="..\ndis\ns-ndis-_ndis_pd_receive_queue_counter.md">NDIS_PD_RECEIVE_QUEUE_COUNTER</a>.
@@ -69,6 +65,10 @@ See <a href="..\ndis\ns-ndis-_ndis_pd_receive_queue_counter.md">NDIS_PD_RECEIVE_
 `TransmitQueue`
 
 See <a href="..\ndis\ns-ndis-_ndis_pd_transmit_queue_counter.md">NDIS_PD_TRANSMIT_QUEUE_COUNTER</a>.
+
+`Filter`
+
+See <a href="..\ndis\ns-ndis-_ndis_pd_filter_counter.md">NDIS_PD_FILTER_COUNTER</a>.
 
 
 ## Requirements

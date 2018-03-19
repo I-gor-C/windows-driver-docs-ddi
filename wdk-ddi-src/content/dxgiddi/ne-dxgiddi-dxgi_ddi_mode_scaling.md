@@ -60,8 +60,8 @@ typedef enum DXGI_DDI_MODE_SCALING {
 <table>
             
                 <tr>
-                    <td>DXGI_DDI_MODE_SCALING_CENTERED</td>
-                    <td>Centered content can be displayed.</td>
+                    <td>DXGI_DDI_MODE_SCALING_UNSPECIFIED</td>
+                    <td>A DXGI_DDI_MODE_SCALING-typed variable has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum DXGI_DDI_MODE_SCALING {
                 </tr>
             
                 <tr>
-                    <td>DXGI_DDI_MODE_SCALING_UNSPECIFIED</td>
-                    <td>A DXGI_DDI_MODE_SCALING-typed variable has not yet been assigned a meaningful value.</td>
+                    <td>DXGI_DDI_MODE_SCALING_CENTERED</td>
+                    <td>Centered content can be displayed.</td>
                 </tr>
 </table>
 
@@ -85,11 +85,3 @@ typedef enum DXGI_DDI_MODE_SCALING {
 ## See Also
 
 <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_mode_desc.md">DXGI_DDI_MODE_DESC</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGI_DDI_MODE_SCALING enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

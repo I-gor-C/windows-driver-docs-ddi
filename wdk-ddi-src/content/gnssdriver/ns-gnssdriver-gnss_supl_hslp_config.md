@@ -61,13 +61,13 @@ typedef struct {
 ## Members
 
 
-`Reserved`
-
-Reserved for future use.
-
 `Size`
 
 Structure size.
+
+`Version`
+
+Version number.
 
 `SuplHslp`
 
@@ -77,13 +77,13 @@ Structure size.
 
 
 
+`Reserved`
+
+Reserved for future use.
+
 `Unused`
 
 
-
-`Version`
-
-Version number.
 
 
 ## Requirements

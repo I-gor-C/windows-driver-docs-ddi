@@ -59,17 +59,17 @@ typedef struct _WDI_TXRX_TARGET_CONFIGURATION {
 ## Members
 
 
-`MaxNumPeers`
+`TxRxParams`
 
-Specifies the maximum number of peers.
+Specifies the TXRX parameters.
 
 `MaxNumPorts`
 
 Specifies the maximum number of ports.
 
-`TxRxParams`
+`MaxNumPeers`
 
-Specifies the TXRX parameters.
+Specifies the maximum number of peers.
 
 
 ## Requirements

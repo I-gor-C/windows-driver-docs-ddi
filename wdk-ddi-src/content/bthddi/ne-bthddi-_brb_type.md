@@ -86,87 +86,11 @@ typedef enum _BRB_TYPE {
 <table>
             
                 <tr>
-                    <td>BRB_ACL_ENTER_ACTIVE_MODE</td>
-                    <td>This value declares a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     
-     <b>BRB_ACL_ENTER_ACTIVE_MODE</b>.</td>
-                </tr>
-            
-                <tr>
-                    <td>BRB_ACL_GET_MODE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>BRB_GET_DEVICE_INTERFACE_STRING</td>
-                    <td>This value declares a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     
-     <b>BRB_GET_DEVICE_INTERFACE_STRING</b>.</td>
-                </tr>
-            
-                <tr>
                     <td>BRB_HCI_GET_LOCAL_BD_ADDR</td>
                     <td>This value declares a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
      
      <b>BRB_HCI_GET_LOCAL_BD_ADDR</b>.</td>
-                </tr>
-            
-                <tr>
-                    <td>BRB_L2CA_ACL_TRANSFER</td>
-                    <td>This value declares a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     <b>BRB_L2CA_ACL_TRANSFER</b>.</td>
-                </tr>
-            
-                <tr>
-                    <td>BRB_L2CA_CLOSE_CHANNEL</td>
-                    <td>This value declares a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     <b>BRB_L2CA_CLOSE_CHANNEL</b>.</td>
-                </tr>
-            
-                <tr>
-                    <td>BRB_L2CA_INFO_REQUEST</td>
-                    <td>For internal use only. Do not use.</td>
-                </tr>
-            
-                <tr>
-                    <td>BRB_L2CA_OPEN_CHANNEL</td>
-                    <td>This value declares a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     <b>BRB_L2CA_OPEN_CHANNEL</b>.</td>
-                </tr>
-            
-                <tr>
-                    <td>BRB_L2CA_OPEN_CHANNEL_RESPONSE</td>
-                    <td>This value declares a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     
-     <b>BRB_L2CA_OPEN_CHANNEL_RESPONSE</b>.</td>
-                </tr>
-            
-                <tr>
-                    <td>BRB_L2CA_OPEN_ENHANCED_CHANNEL</td>
-                    <td>This value declares a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     <b>BRB_L2CA_OPEN_CHANNEL</b>. This value is present in Windows 8 and later versions of Windows.</td>
-                </tr>
-            
-                <tr>
-                    <td>BRB_L2CA_OPEN_ENHANCED_CHANNEL_RESPONSE</td>
-                    <td>This value declares a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     <b>BRB_L2CA_OPEN_CHANNEL_RESPONSE</b>. This value is present in Windows 8 and later versions of Windows.</td>
-                </tr>
-            
-                <tr>
-                    <td>BRB_L2CA_PING</td>
-                    <td>This value declares a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     <b>BRB_L2CA_PING</b>.</td>
                 </tr>
             
                 <tr>
@@ -185,10 +109,51 @@ typedef enum _BRB_TYPE {
                 </tr>
             
                 <tr>
+                    <td>BRB_L2CA_OPEN_CHANNEL</td>
+                    <td>This value declares a 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
+     <b>BRB_L2CA_OPEN_CHANNEL</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>BRB_L2CA_OPEN_CHANNEL_RESPONSE</td>
+                    <td>This value declares a 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
+     
+     <b>BRB_L2CA_OPEN_CHANNEL_RESPONSE</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>BRB_L2CA_CLOSE_CHANNEL</td>
+                    <td>This value declares a 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
+     <b>BRB_L2CA_CLOSE_CHANNEL</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>BRB_L2CA_ACL_TRANSFER</td>
+                    <td>This value declares a 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
+     <b>BRB_L2CA_ACL_TRANSFER</b>.</td>
+                </tr>
+            
+                <tr>
                     <td>BRB_L2CA_UPDATE_CHANNEL</td>
                     <td>This value declares a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
      <b>BRB_L2CA_UPDATE_CHANNEL</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>BRB_L2CA_PING</td>
+                    <td>This value declares a 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
+     <b>BRB_L2CA_PING</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>BRB_L2CA_INFO_REQUEST</td>
+                    <td>For internal use only. Do not use.</td>
                 </tr>
             
                 <tr>
@@ -199,31 +164,25 @@ typedef enum _BRB_TYPE {
                 </tr>
             
                 <tr>
-                    <td>BRB_SCO_CLOSE_CHANNEL</td>
+                    <td>BRB_UNREGISTER_PSM</td>
                     <td>This value declares a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     <b>BRB_SCO_CLOSE_CHANNEL</b>.</td>
+     <b>BRB_UNREGISTER_PSM</b>.</td>
                 </tr>
             
                 <tr>
-                    <td>BRB_SCO_FLUSH_CHANNEL</td>
+                    <td>BRB_SCO_REGISTER_SERVER</td>
                     <td>This value declares a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     <b>BRB_SCO_FLUSH_CHANNEL</b>.</td>
+     <b>BRB_SCO_REGISTER_SERVER</b>.</td>
                 </tr>
             
                 <tr>
-                    <td>BRB_SCO_GET_CHANNEL_INFO</td>
+                    <td>BRB_SCO_UNREGISTER_SERVER</td>
                     <td>This value declares a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     <b>BRB_SCO_GET_CHANNEL_INFO</b>.</td>
-                </tr>
-            
-                <tr>
-                    <td>BRB_SCO_GET_SYSTEM_INFO</td>
-                    <td>This value declares a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     <b>BRB_SCO_GET_SYSTEM_INFO</b>.</td>
+     
+     <b>BRB_SCO_UNREGISTER_SERVER</b>.</td>
                 </tr>
             
                 <tr>
@@ -242,6 +201,41 @@ typedef enum _BRB_TYPE {
                 </tr>
             
                 <tr>
+                    <td>BRB_SCO_CLOSE_CHANNEL</td>
+                    <td>This value declares a 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
+     <b>BRB_SCO_CLOSE_CHANNEL</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>BRB_SCO_TRANSFER</td>
+                    <td>This value declares a 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
+     <b>BRB_SCO_TRANSFER</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>BRB_SCO_GET_CHANNEL_INFO</td>
+                    <td>This value declares a 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
+     <b>BRB_SCO_GET_CHANNEL_INFO</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>BRB_SCO_GET_SYSTEM_INFO</td>
+                    <td>This value declares a 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
+     <b>BRB_SCO_GET_SYSTEM_INFO</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>BRB_SCO_FLUSH_CHANNEL</td>
+                    <td>This value declares a 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
+     <b>BRB_SCO_FLUSH_CHANNEL</b>.</td>
+                </tr>
+            
+                <tr>
                     <td>BRB_SCO_OPEN_UNMANAGED_CHANNEL</td>
                     <td>This value declares a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
@@ -257,25 +251,30 @@ typedef enum _BRB_TYPE {
                 </tr>
             
                 <tr>
-                    <td>BRB_SCO_REGISTER_SERVER</td>
+                    <td>BRB_L2CA_OPEN_ENHANCED_CHANNEL</td>
                     <td>This value declares a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     <b>BRB_SCO_REGISTER_SERVER</b>.</td>
+     <b>BRB_L2CA_OPEN_CHANNEL</b>. This value is present in Windows 8 and later versions of Windows.</td>
                 </tr>
             
                 <tr>
-                    <td>BRB_SCO_TRANSFER</td>
+                    <td>BRB_L2CA_OPEN_ENHANCED_CHANNEL_RESPONSE</td>
                     <td>This value declares a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     <b>BRB_SCO_TRANSFER</b>.</td>
+     <b>BRB_L2CA_OPEN_CHANNEL_RESPONSE</b>. This value is present in Windows 8 and later versions of Windows.</td>
                 </tr>
             
                 <tr>
-                    <td>BRB_SCO_UNREGISTER_SERVER</td>
+                    <td>BRB_ACL_GET_MODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>BRB_ACL_ENTER_ACTIVE_MODE</td>
                     <td>This value declares a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
      
-     <b>BRB_SCO_UNREGISTER_SERVER</b>.</td>
+     <b>BRB_ACL_ENTER_ACTIVE_MODE</b>.</td>
                 </tr>
             
                 <tr>
@@ -284,10 +283,11 @@ typedef enum _BRB_TYPE {
                 </tr>
             
                 <tr>
-                    <td>BRB_UNREGISTER_PSM</td>
+                    <td>BRB_GET_DEVICE_INTERFACE_STRING</td>
                     <td>This value declares a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536607">BRB</a> of type 
-     <b>BRB_UNREGISTER_PSM</b>.</td>
+     
+     <b>BRB_GET_DEVICE_INTERFACE_STRING</b>.</td>
                 </tr>
 </table>
 
@@ -326,11 +326,3 @@ The type of BRB is specified in the
 
 
 <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BRB_TYPE enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

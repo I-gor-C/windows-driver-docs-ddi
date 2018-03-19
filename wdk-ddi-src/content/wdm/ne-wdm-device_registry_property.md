@@ -81,12 +81,17 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>DevicePropertyAddress</td>
+                    <td>DevicePropertyDeviceDescription</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>DevicePropertyAllocatedResources</td>
+                    <td>DevicePropertyHardwareID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyCompatibleIDs</td>
                     <td></td>
                 </tr>
             
@@ -101,12 +106,7 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>DevicePropertyBusNumber</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DevicePropertyBusTypeGuid</td>
+                    <td>DevicePropertyClassName</td>
                     <td></td>
                 </tr>
             
@@ -116,57 +116,7 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>DevicePropertyClassName</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DevicePropertyCompatibleIDs</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DevicePropertyContainerID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DevicePropertyDeviceDescription</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>DevicePropertyDriverKeyName</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DevicePropertyEnumeratorName</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DevicePropertyFriendlyName</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DevicePropertyHardwareID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DevicePropertyInstallState</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DevicePropertyLegacyBusType</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DevicePropertyLocationInformation</td>
                     <td></td>
                 </tr>
             
@@ -176,7 +126,52 @@ typedef enum  {
                 </tr>
             
                 <tr>
+                    <td>DevicePropertyFriendlyName</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyLocationInformation</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>DevicePropertyPhysicalDeviceObjectName</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyBusTypeGuid</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyLegacyBusType</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyBusNumber</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyEnumeratorName</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyAddress</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyUINumber</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyInstallState</td>
                     <td></td>
                 </tr>
             
@@ -191,7 +186,12 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>DevicePropertyUINumber</td>
+                    <td>DevicePropertyAllocatedResources</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyContainerID</td>
                     <td></td>
                 </tr>
 </table>
@@ -205,11 +205,3 @@ typedef enum  {
 ## See Also
 
 <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DEVICE_REGISTRY_PROPERTY Enumeration enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

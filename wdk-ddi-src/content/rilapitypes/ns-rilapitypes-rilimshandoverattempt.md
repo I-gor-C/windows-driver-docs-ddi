@@ -64,11 +64,11 @@ typedef struct _RILIMSHANDOVERATTEMPT {
 
 
 
-`dwDestSystemType`
-
-
-
 `dwOldSystemType`
+
+
+
+`dwDestSystemType`
 
 
 

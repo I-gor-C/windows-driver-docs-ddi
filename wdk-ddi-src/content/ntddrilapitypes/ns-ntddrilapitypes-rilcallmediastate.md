@@ -63,11 +63,11 @@ typedef struct _RILCALLMEDIASTATE {
 ## Members
 
 
-`dwCallMediaType`
-
-
-
 `dwDirection`
+
+
+
+`dwCallMediaType`
 
 
 

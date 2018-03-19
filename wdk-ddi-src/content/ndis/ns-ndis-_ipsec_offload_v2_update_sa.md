@@ -85,14 +85,14 @@ The IPsec operation for which the SA is to be used. The
      <a href="..\ndis\ne-ndis-_ipsec_offload_v2_operation.md">
      IPSEC_OFFLOAD_V2_OPERATION</a> enumeration defines the supported operations.
 
+`Spi`
+
+A 32 bit security parameters index (SPI) for the SA.
+
 `SequenceNumberHighOrder`
 
 The high-order bit of an IPsec sequence number. This bit is not included in the IPsec
      header.
-
-`Spi`
-
-A 32 bit security parameters index (SPI) for the SA.
 
 ## Remarks
 The IPSEC_OFFLOAD_V2_UPDATE_SA structure specifies updates for a SA and a pointer to the next
@@ -124,11 +124,3 @@ The IPSEC_OFFLOAD_V2_UPDATE_SA structure specifies updates for a SA and a pointe
 
 
 <a href="..\ndis\ne-ndis-_ipsec_offload_v2_operation.md">IPSEC_OFFLOAD_V2_OPERATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_UPDATE_SA structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -61,11 +61,6 @@ typedef enum _RILEVDOKIND {
 <table>
             
                 <tr>
-                    <td>RIL_EVDOKIND_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_EVDOKIND_REV0</td>
                     <td></td>
                 </tr>
@@ -77,6 +72,11 @@ typedef enum _RILEVDOKIND {
             
                 <tr>
                     <td>RIL_EVDOKIND_REVB</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EVDOKIND_MAX</td>
                     <td></td>
                 </tr>
 </table>

@@ -62,13 +62,13 @@ typedef struct _D3DKMT_OPENNTHANDLEFROMNAME {
 
 [in] Specifies read and write access for the resource.
 
-`hNtHandle`
-
-[out] An NT handle to the process.
-
 `pObjAttrib`
 
 [in] A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies attributes of the adapter, including its name.
+
+`hNtHandle`
+
+[out] An NT handle to the process.
 
 
 ## Requirements

@@ -63,10 +63,8 @@ typedef enum _NDIS_PM_PROTOCOL_OFFLOAD_TYPE {
 <table>
             
                 <tr>
-                    <td>NdisPMProtocolOffload80211RSNRekey</td>
-                    <td>An IEEE 802.11i Robust Security Network (RSN) 4-way and 2-way handshake protocol offload. This
-     protocol offload type is specified in the 
-     <b>Dot11RSNRekeyParameters</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_pm_protocol_offload.md">NDIS_PM_PROTOCOL_OFFLOAD</a> structure.</td>
+                    <td>NdisPMProtocolOffloadIdUnspecified</td>
+                    <td>The offloaded protocol is not specified.</td>
                 </tr>
             
                 <tr>
@@ -85,14 +83,16 @@ typedef enum _NDIS_PM_PROTOCOL_OFFLOAD_TYPE {
                 </tr>
             
                 <tr>
-                    <td>NdisPMProtocolOffloadIdMaximum</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
+                    <td>NdisPMProtocolOffload80211RSNRekey</td>
+                    <td>An IEEE 802.11i Robust Security Network (RSN) 4-way and 2-way handshake protocol offload. This
+     protocol offload type is specified in the 
+     <b>Dot11RSNRekeyParameters</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_pm_protocol_offload.md">NDIS_PM_PROTOCOL_OFFLOAD</a> structure.</td>
                 </tr>
             
                 <tr>
-                    <td>NdisPMProtocolOffloadIdUnspecified</td>
-                    <td>The offloaded protocol is not specified.</td>
+                    <td>NdisPMProtocolOffloadIdMaximum</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 
@@ -112,11 +112,3 @@ The <b>NDIS_PM_PROTOCOL_OFFLOAD_TYPE</b> enumeration is used in the
 ## See Also
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_pm_protocol_offload.md">NDIS_PM_PROTOCOL_OFFLOAD</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PROTOCOL_OFFLOAD_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

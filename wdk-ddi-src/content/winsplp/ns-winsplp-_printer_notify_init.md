@@ -59,7 +59,7 @@ typedef struct _PRINTER_NOTIFY_INIT {
 ## Members
 
 
-`PollTime`
+`Size`
 
 
 
@@ -67,7 +67,7 @@ typedef struct _PRINTER_NOTIFY_INIT {
 
 
 
-`Size`
+`PollTime`
 
 
 

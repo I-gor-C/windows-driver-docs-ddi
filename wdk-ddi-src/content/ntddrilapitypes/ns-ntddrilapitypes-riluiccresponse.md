@@ -69,15 +69,15 @@ typedef struct _RILUICCRESPONSE {
 
 
 
-`dwResponseSize`
-
-
-
 `dwStatusWord1`
 
 
 
 `dwStatusWord2`
+
+
+
+`dwResponseSize`
 
 
 

@@ -76,30 +76,6 @@ typedef struct _NDIS_RESTART_GENERAL_ATTRIBUTES {
 ## Members
 
 
-`AccessType`
-
-A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a> NDIS network interface
-     access type.
-
-`ConnectionType`
-
-A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568741">NET_IF_CONNECTION_TYPE</a> NDIS network
-     interface connection type.
-
-`ContextBackFillSize`
-
-The required context backfill size, in bytes, of the driver.
-
-`DataBackFillSize`
-
-The required data backfill size, in bytes, of the driver.
-
-`Flags`
-
-Reserved.
-
 `Header`
 
 The 
@@ -137,6 +113,21 @@ Original version for NDIS 6.0 and NDIS 6.1.
 NDIS sets the 
        <b>Size</b> member to <b>NDIS_SIZEOF_RESTART_GENERAL_ATTRIBUTES_REVISION_1</b>.
 
+`MtuSize`
+
+The maximum transfer unit (MTU) size. For more information, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569598">OID_GEN_MAXIMUM_FRAME_SIZE</a>.
+
+`MaxXmitLinkSpeed`
+
+The maximum transmit link speed of the adapter in bits per second. For more information, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569602">OID_GEN_MAX_LINK_SPEED</a>.
+
+`MaxRcvLinkSpeed`
+
+The maximum receive link speed of the adapter in bits per second. For more information, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569602">OID_GEN_MAX_LINK_SPEED</a>.
+
 `LookaheadSize`
 
 The lookahead size for the miniport adapter. For more information, see 
@@ -147,33 +138,17 @@ The lookahead size for the miniport adapter. For more information, see
 The medium access control (MAC) options for the miniport adapter. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569597">OID_GEN_MAC_OPTIONS</a>.
 
-`MaxLookaheadSizeAccessed`
+`SupportedPacketFilters`
 
-A ULONG value for the maximum size, in bytes, of the lookahead size requirement for receive
-     queues. A miniport adapter that supports lookahead in VM queues splits a received packet at an offset
-     equal to or greater than the requested lookahead size and DMAs the lookahead data and the post-lookahead
-     data to separate shared memory segments.
+The packet filter flags for the miniport adapter. For more information, see 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-supported-packet-filters">
+     OID_GEN_SUPPORTED_PACKET_FILTERS</a>.
 
 `MaxMulticastListSize`
 
 The maximum multicast address list size for the miniport adapter. For more information, see 
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-802-3-maximum-list-size">
      OID_802_3_MAXIMUM_LIST_SIZE</a>.
-
-`MaxRcvLinkSpeed`
-
-The maximum receive link speed of the adapter in bits per second. For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569602">OID_GEN_MAX_LINK_SPEED</a>.
-
-`MaxXmitLinkSpeed`
-
-The maximum transmit link speed of the adapter in bits per second. For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569602">OID_GEN_MAX_LINK_SPEED</a>.
-
-`MtuSize`
-
-The maximum transfer unit (MTU) size. For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569598">OID_GEN_MAXIMUM_FRAME_SIZE</a>.
 
 `RecvScaleCapabilities`
 
@@ -186,6 +161,37 @@ The receive side scaling (RSS) capabilities of the NIC. If the miniport adapter 
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-receive-scale-capabilities">
      OID_GEN_RECEIVE_SCALE_CAPABILITIES</a>.
 
+`AccessType`
+
+A 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a> NDIS network interface
+     access type.
+
+`Flags`
+
+Reserved.
+
+`ConnectionType`
+
+A 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568741">NET_IF_CONNECTION_TYPE</a> NDIS network
+     interface connection type.
+
+`SupportedStatistics`
+
+The supported statistics. For more information, see the 
+     <b>SupportedStatistics</b> member of the 
+     <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_general_attributes.md">
+     NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> structure.
+
+`DataBackFillSize`
+
+The required data backfill size, in bytes, of the driver.
+
+`ContextBackFillSize`
+
+The required context backfill size, in bytes, of the driver.
+
 `SupportedOidList`
 
 A list of OIDs that the miniport driver supports. For more information, see 
@@ -196,18 +202,12 @@ A list of OIDs that the miniport driver supports. For more information, see
 The size, in bytes, of the OID list that is specified in the 
      <b>SupportedOidList</b> member.
 
-`SupportedPacketFilters`
+`MaxLookaheadSizeAccessed`
 
-The packet filter flags for the miniport adapter. For more information, see 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-supported-packet-filters">
-     OID_GEN_SUPPORTED_PACKET_FILTERS</a>.
-
-`SupportedStatistics`
-
-The supported statistics. For more information, see the 
-     <b>SupportedStatistics</b> member of the 
-     <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_general_attributes.md">
-     NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> structure.
+A ULONG value for the maximum size, in bytes, of the lookahead size requirement for receive
+     queues. A miniport adapter that supports lookahead in VM queues splits a received packet at an offset
+     equal to or greater than the requested lookahead size and DMAs the lookahead data and the post-lookahead
+     data to separate shared memory segments.
 
 ## Remarks
 NDIS passes an NDIS_RESTART_GENERAL_ATTRIBUTES structure to drivers during restart operations. For
@@ -312,11 +312,3 @@ If the
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RESTART_GENERAL_ATTRIBUTES structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

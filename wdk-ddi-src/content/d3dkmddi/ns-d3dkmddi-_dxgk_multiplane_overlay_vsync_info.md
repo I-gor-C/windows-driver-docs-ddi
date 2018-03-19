@@ -59,13 +59,13 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO {
 ## Members
 
 
-`Enabled`
-
-Indicates if the overlay plane specified by <b>LayerIndex</b> is enabled for display.
-
 `LayerIndex`
 
 The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
+
+`Enabled`
+
+Indicates if the overlay plane specified by <b>LayerIndex</b> is enabled for display.
 
 `PhysicalAddress`
 

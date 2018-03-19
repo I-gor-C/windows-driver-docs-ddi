@@ -57,13 +57,13 @@ typedef struct _D3DKMT_OUTPUTDUPLCONTEXTSCOUNT {
 ## Members
 
 
-`OutputDuplicationCount`
-
-The number of current DDA clients that are attached to the VidPN specified by the <b>VidPnSourceId</b> member.
-
 `VidPnSourceId`
 
 The ID of the video present network (VidPN).
+
+`OutputDuplicationCount`
+
+The number of current DDA clients that are attached to the VidPN specified by the <b>VidPnSourceId</b> member.
 
 
 ## Requirements

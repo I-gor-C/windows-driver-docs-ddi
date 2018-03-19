@@ -61,6 +61,10 @@ typedef struct _ACPI_METHOD_ARGUMENT_V2 {
 ## Members
 
 
+`Type`
+
+Defines the <b>USHORT</b> member <b>Type</b>.
+
 `DataLength`
 
 Defines the <b>USHORT</b> member <b>DataLength</b>.
@@ -68,10 +72,6 @@ Defines the <b>USHORT</b> member <b>DataLength</b>.
 `DUMMYUNIONNAME`
 
 Defines the members of <b>DUMMYUNIONNAME</b>.
-
-`Type`
-
-Defines the <b>USHORT</b> member <b>Type</b>.
 
 
 ## Requirements

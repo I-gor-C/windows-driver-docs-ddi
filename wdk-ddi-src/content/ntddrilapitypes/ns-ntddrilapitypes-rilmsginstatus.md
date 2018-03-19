@@ -67,19 +67,19 @@ typedef struct _RILMSGINSTATUS {
 ## Members
 
 
-`cbHdrLength`
-
-
-
-`cchMsgLength`
-
-
-
 `dwMsgID`
 
 
 
-`dwProtocolID`
+`raTgtRecipAddress`
+
+
+
+`stTgtSCReceiveTime`
+
+
+
+`stTgtDischargeTime`
 
 
 
@@ -91,7 +91,19 @@ typedef struct _RILMSGINSTATUS {
 
 
 
-`raTgtRecipAddress`
+`dwProtocolID`
+
+
+
+`rmdDataCoding`
+
+
+
+`cbHdrLength`
+
+
+
+`cchMsgLength`
 
 
 
@@ -100,18 +112,6 @@ typedef struct _RILMSGINSTATUS {
 
 
 `rgbMsg`
-
-
-
-`rmdDataCoding`
-
-
-
-`stTgtDischargeTime`
-
-
-
-`stTgtSCReceiveTime`
 
 
 

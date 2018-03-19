@@ -60,11 +60,6 @@ typedef enum D3DDDI_PAGINGQUEUE_PRIORITY {
 <table>
             
                 <tr>
-                    <td>D3DDDI_PAGINGQUEUE_PRIORITY_ABOVE_NORMAL</td>
-                    <td>Indicates above normal priority.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DDDI_PAGINGQUEUE_PRIORITY_BELOW_NORMAL</td>
                     <td>Indicates below normal priority.</td>
                 </tr>
@@ -72,6 +67,11 @@ typedef enum D3DDDI_PAGINGQUEUE_PRIORITY {
                 <tr>
                     <td>D3DDDI_PAGINGQUEUE_PRIORITY_NORMAL</td>
                     <td>Indicates normal priority.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_PAGINGQUEUE_PRIORITY_ABOVE_NORMAL</td>
+                    <td>Indicates above normal priority.</td>
                 </tr>
 </table>
 

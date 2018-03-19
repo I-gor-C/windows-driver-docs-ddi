@@ -67,22 +67,6 @@ typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
 ## Members
 
 
-`BlockNumber`
-
-See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.
-
-`CharacterPosition`
-
-See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.
-
-`CRC`
-
-Contains the cyclic redundancy check.
-
-`ExtensionFlag`
-
-Must be set to zero.
-
 `PackType`
 
 Indicates the type of pack data, as follows:
@@ -183,17 +167,33 @@ UPC/EAN code of the album and ISRC code of each track.
 
 Size information for the block.
 
+`TrackNumber`
+
+See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.
+
+`ExtensionFlag`
+
+Must be set to zero.
+
 `SequenceNumber`
 
 See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.
 
-`TrackNumber`
+`CharacterPosition`
+
+See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.
+
+`BlockNumber`
 
 See specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS) For information about the permissible values for this member.
 
 `Unicode`
 
 Indicates, when set to 1, that the text is stored in Unicode format.
+
+`CRC`
+
+Contains the cyclic redundancy check.
 
 
 ## Requirements
@@ -212,11 +212,3 @@ Indicates, when set to 1, that the text is stored in Unicode format.
 
 
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_cd_text_data.md">CDROM_TOC_CD_TEXT_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CDROM_TOC_CD_TEXT_DATA_BLOCK structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

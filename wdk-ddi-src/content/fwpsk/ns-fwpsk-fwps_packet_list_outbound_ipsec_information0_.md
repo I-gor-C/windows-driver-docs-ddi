@@ -71,14 +71,14 @@ A value that indicates whether the packet list matched an IPsec filter at the ou
 A value that indicates whether the packet list matched an IPsec transport mode filter at the outbound
      transport layer.
 
-`isTunnelIPinIP`
-
-A value that indicates whether the packet list matched an IP-in-IP filter for IPsec tunnel mode.
-
 `isTunnelPolicyMatch`
 
 A value that indicates whether the packet list matched an IPsec tunnel mode filter at the outbound
      transport layer.
+
+`isTunnelIPinIP`
+
+A value that indicates whether the packet list matched an IP-in-IP filter for IPsec tunnel mode.
 
 ## Remarks
 An FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0 structure is included as a member of the 
@@ -95,11 +95,3 @@ An FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0 structure is included as a membe
 
 <a href="..\fwpsk\ns-fwpsk-fwps_packet_list_ipsec_information0_.md">
    FWPS_PACKET_LIST_IPSEC_INFORMATION0</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0 structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

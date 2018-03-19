@@ -62,10 +62,6 @@ typedef struct _IRB_REQ_RECEIVE_PHY_PACKETS {
 
 Specifies whether a callback should be registered or deactivated. Use REGISTER_PHY_PACKET_NOTIFICATION to register PhyPacketRoutine as the callback. Use DEREGISTER_PHY_PACKET_NOTIFICATION to deactivate any previously registered callbacks.
 
-`PhyPacketContext`
-
-Specifies the Context argument to be passed to the PhyPacketRoutine.
-
 `PhyPacketRoutine`
 
 Points to the notification routine for received PHY packets. The following prototype illustrates the notification routine:
@@ -113,6 +109,10 @@ The 64-bit PHY packet that is received from the 1394 bus.
 </td>
 </tr>
 </table>
+
+`PhyPacketContext`
+
+Specifies the Context argument to be passed to the PhyPacketRoutine.
 
 
 ## Requirements

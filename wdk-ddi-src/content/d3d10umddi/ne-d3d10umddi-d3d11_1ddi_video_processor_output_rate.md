@@ -60,8 +60,8 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE {
 <table>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_CUSTOM</td>
-                    <td>The output is a custom frame rate.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_NORMAL</td>
+                    <td>The output is the normal frame rate.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE {
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_NORMAL</td>
-                    <td>The output is the normal frame rate.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_OUTPUT_RATE_CUSTOM</td>
+                    <td>The output is a custom frame rate.</td>
                 </tr>
 </table>
 

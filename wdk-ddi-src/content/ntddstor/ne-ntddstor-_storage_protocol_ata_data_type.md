@@ -61,6 +61,11 @@ typedef enum _STORAGE_PROTOCOL_ATA_DATA_TYPE {
 <table>
             
                 <tr>
+                    <td>AtaDataTypeUnknown</td>
+                    <td>Unknown data type.</td>
+                </tr>
+            
+                <tr>
                     <td>AtaDataTypeIdentify</td>
                     <td>Identify device data type.</td>
                 </tr>
@@ -68,11 +73,6 @@ typedef enum _STORAGE_PROTOCOL_ATA_DATA_TYPE {
                 <tr>
                     <td>AtaDataTypeLogPage</td>
                     <td>Log page data type.</td>
-                </tr>
-            
-                <tr>
-                    <td>AtaDataTypeUnknown</td>
-                    <td>Unknown data type.</td>
                 </tr>
 </table>
 

@@ -61,17 +61,9 @@ typedef struct _AVCPRECONNECTINFO {
 ## Members
 
 
-`DataFlow`
-
-The direction of data flow on this subunit plug. Destination plugs have KSPIN_DATAFLOW_IN; source plugs have KSPIN_DATAFLOW_OUT.
-
 `DeviceID`
 
 A GUID representing the unit as a whole. All subunits within the same unit share the same GUID. No two units share the same GUID.
-
-`Flags`
-
-A bitmap with one or more bits set from the KSPIN_FLAG_AVC enumeration.
 
 `SubunitAddress`
 
@@ -80,6 +72,14 @@ The encoded subunit type and subunit ID of the subunit.
 `SubunitPlugNumber`
 
 The plug number (within the subunit) described by the AVCPRECONNECTINFO structure.
+
+`DataFlow`
+
+The direction of data flow on this subunit plug. Destination plugs have KSPIN_DATAFLOW_IN; source plugs have KSPIN_DATAFLOW_OUT.
+
+`Flags`
+
+A bitmap with one or more bits set from the KSPIN_FLAG_AVC enumeration.
 
 `UnitPlugNumber`
 
@@ -102,11 +102,3 @@ This structure is used only as member of the AVC_PRECONNECT_INFO structure. It i
 
 
 <a href="..\avc\ne-avc-_kspin_flag_avc.md">KSPIN_FLAG_AVC</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVCPRECONNECTINFO structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

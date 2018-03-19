@@ -61,8 +61,8 @@ typedef enum _SECURE_ELEMENT_ROUTING_TYPE {
 <table>
             
                 <tr>
-                    <td>RoutingTypeAid</td>
-                    <td>NFC Forum AID-based routing type.</td>
+                    <td>RoutingTypeTech</td>
+                    <td>NFC Forum technology-based routing type.</td>
                 </tr>
             
                 <tr>
@@ -71,8 +71,8 @@ typedef enum _SECURE_ELEMENT_ROUTING_TYPE {
                 </tr>
             
                 <tr>
-                    <td>RoutingTypeTech</td>
-                    <td>NFC Forum technology-based routing type.</td>
+                    <td>RoutingTypeAid</td>
+                    <td>NFC Forum AID-based routing type.</td>
                 </tr>
 </table>
 

@@ -57,13 +57,13 @@ typedef struct IDDCX_OPM_ENCRYPTED_INITIALIZATION_PARAMETERS {
 ## Members
 
 
-`EncryptedParameters`
-
-Initialization parameters.
-
 `Size`
 
 Total size of the structure.
+
+`EncryptedParameters`
+
+Initialization parameters.
 
 
 ## Requirements

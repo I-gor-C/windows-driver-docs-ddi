@@ -59,21 +59,21 @@ typedef struct _NFC_CX_LLCP_CONFIG {
 ## Members
 
 
-`LinkTimeout`
+`Size`
 
-LTO timeout in multiples of 10 milliseconds. Default is 100 (1 second).
+Size of this structure in bytes.
 
 `Miu`
 
 Max information unit in bytes. Default is 1024.
 
+`LinkTimeout`
+
+LTO timeout in multiples of 10 milliseconds. Default is 100 (1 second).
+
 `RecvWindowSize`
 
 The receive window size per LLCP spec. Default value is 5.
-
-`Size`
-
-Size of this structure in bytes.
 
 
 ## Requirements
@@ -89,11 +89,3 @@ Size of this structure in bytes.
 
 
 <a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_LLCP_CONFIG structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

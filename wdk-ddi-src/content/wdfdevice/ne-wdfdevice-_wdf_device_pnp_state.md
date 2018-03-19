@@ -120,12 +120,17 @@ typedef enum _WDF_DEVICE_PNP_STATE {
 <table>
             
                 <tr>
-                    <td>WdfDevStatePnpCheckForDevicePresence</td>
+                    <td>WdfDevStatePnpInvalid</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePnpEjectedWaitingForRemove</td>
+                    <td>WdfDevStatePnpObjectCreated</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpCheckForDevicePresence</td>
                     <td></td>
                 </tr>
             
@@ -140,87 +145,12 @@ typedef enum _WDF_DEVICE_PNP_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePnpEnableInterfaces</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpFailedInit</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpFailedIoStarting</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpFailedOwnHardware</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpFailedPowerDown</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpFailedPowerPolicyRemoved</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpFailedStarted</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpFailedSurpriseRemoved</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpFailedWaitForRemove</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpFdoRemoved</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpFinal</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpHardwareAvailable</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpHardwareAvailablePowerPolicyFailed</td>
+                    <td>WdfDevStatePnpEjectedWaitingForRemove</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>WdfDevStatePnpInit</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpInitQueryRemove</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpInitQueryRemoveCanceled</td>
                     <td></td>
                 </tr>
             
@@ -235,57 +165,22 @@ typedef enum _WDF_DEVICE_PNP_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePnpInvalid</td>
+                    <td>WdfDevStatePnpHardwareAvailable</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePnpNull</td>
+                    <td>WdfDevStatePnpEnableInterfaces</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePnpObjectCreated</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpPdoInitFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpPdoRemoved</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpPdoRestart</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpQueriedRemoving</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpQueriedSurpriseRemove</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpQueryCanceled</td>
+                    <td>WdfDevStatePnpHardwareAvailablePowerPolicyFailed</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>WdfDevStatePnpQueryRemoveAskDriver</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpQueryRemoveEnsureDeviceAwake</td>
                     <td></td>
                 </tr>
             
@@ -300,12 +195,12 @@ typedef enum _WDF_DEVICE_PNP_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePnpQueryStopAskDriver</td>
+                    <td>WdfDevStatePnpQueriedRemoving</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePnpQueryStopEnsureDeviceAwake</td>
+                    <td>WdfDevStatePnpQueryStopAskDriver</td>
                     <td></td>
                 </tr>
             
@@ -320,17 +215,17 @@ typedef enum _WDF_DEVICE_PNP_STATE {
                 </tr>
             
                 <tr>
+                    <td>WdfDevStatePnpQueryCanceled</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>WdfDevStatePnpRemoved</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePnpRemovedChildrenRemoved</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpRemovedPdoSurpriseRemoved</td>
+                    <td>WdfDevStatePnpPdoRemoved</td>
                     <td></td>
                 </tr>
             
@@ -340,7 +235,7 @@ typedef enum _WDF_DEVICE_PNP_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePnpRemovedWaitForChildren</td>
+                    <td>WdfDevStatePnpRemovedPdoSurpriseRemoved</td>
                     <td></td>
                 </tr>
             
@@ -350,22 +245,7 @@ typedef enum _WDF_DEVICE_PNP_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePnpRestart</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpRestartHardwareAvailable</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WdfDevStatePnpRestarting</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePnpRestartReleaseHardware</td>
                     <td></td>
                 </tr>
             
@@ -375,22 +255,17 @@ typedef enum _WDF_DEVICE_PNP_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePnpStartedCancelRemove</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WdfDevStatePnpStartedCancelStop</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePnpStartedRemoving</td>
+                    <td>WdfDevStatePnpStartedCancelRemove</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePnpStartedStopping</td>
+                    <td>WdfDevStatePnpStartedRemoving</td>
                     <td></td>
                 </tr>
             
@@ -410,12 +285,137 @@ typedef enum _WDF_DEVICE_PNP_STATE {
                 </tr>
             
                 <tr>
+                    <td>WdfDevStatePnpStartedStopping</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>WdfDevStatePnpSurpriseRemove</td>
                     <td></td>
                 </tr>
             
                 <tr>
+                    <td>WdfDevStatePnpInitQueryRemove</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpInitQueryRemoveCanceled</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpFdoRemoved</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpRemovedWaitForChildren</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpQueriedSurpriseRemove</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>WdfDevStatePnpSurpriseRemoveIoStarted</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpFailedPowerDown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpFailedIoStarting</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpFailedOwnHardware</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpFailedSurpriseRemoved</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpFailedStarted</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpFailedWaitForRemove</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpFailedInit</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpPdoInitFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpRestart</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpRestartReleaseHardware</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpRestartHardwareAvailable</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpPdoRestart</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpFinal</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpRemovedChildrenRemoved</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpQueryRemoveEnsureDeviceAwake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpQueryStopEnsureDeviceAwake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpFailedPowerPolicyRemoved</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePnpNull</td>
                     <td></td>
                 </tr>
 </table>

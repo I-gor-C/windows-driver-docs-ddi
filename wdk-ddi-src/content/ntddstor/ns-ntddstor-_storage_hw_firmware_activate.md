@@ -60,6 +60,14 @@ typedef struct _STORAGE_HW_FIRMWARE_ACTIVATE {
 ## Members
 
 
+`Version`
+
+The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_ACTIVATE).
+
+`Size`
+
+The size of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_ACTIVATE).
+
 `Flags`
 
 The flags associated with the activation request. The following are valid flags that can be set in this member.
@@ -79,21 +87,13 @@ The flags associated with the activation request. The following are valid flags 
 </tr>
 </table>
 
-`Reserved0`
-
-Reserved for future use.
-
-`Size`
-
-The size of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_ACTIVATE).
-
 `Slot`
 
 The slot with the firmware image that is to be activated.
 
-`Version`
+`Reserved0`
 
-The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_ACTIVATE).
+Reserved for future use.
 
 
 ## Requirements

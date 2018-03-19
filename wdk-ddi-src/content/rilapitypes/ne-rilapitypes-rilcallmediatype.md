@@ -62,7 +62,17 @@ typedef enum _RILCALLMEDIATYPE {
 <table>
             
                 <tr>
+                    <td>RIL_CALLMEDIATYPE_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_CALLMEDIATYPE_AUDIO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLMEDIATYPE_VIDEO</td>
                     <td></td>
                 </tr>
             
@@ -73,16 +83,6 @@ typedef enum _RILCALLMEDIATYPE {
             
                 <tr>
                     <td>RIL_CALLMEDIATYPE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLMEDIATYPE_UNKNOWN</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLMEDIATYPE_VIDEO</td>
                     <td></td>
                 </tr>
 </table>

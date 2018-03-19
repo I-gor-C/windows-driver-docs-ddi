@@ -63,6 +63,10 @@ typedef struct _MEMORY_BASIC_INFORMATION {
 ## Members
 
 
+`BaseAddress`
+
+A pointer to the base address of the region of pages.
+
 `AllocationBase`
 
 A pointer to the base address of a range of allocated pages. The page pointed to by the <b>BaseAddress</b> member is contained within this allocation range.
@@ -172,14 +176,6 @@ Disable the placement of committed
 </tr>
 </table>
 
-`BaseAddress`
-
-A pointer to the base address of the region of pages.
-
-`Protect`
-
-The access protection of the pages in the region. This member is one of the values listed for the <b>AllocationProtect</b> member.
-
 `RegionSize`
 
 The size of the region in bytes beginning at
@@ -231,6 +227,10 @@ Indicates reserved pages where a range of the process's virtual address space is
 </td>
 </tr>
 </table>
+
+`Protect`
+
+The access protection of the pages in the region. This member is one of the values listed for the <b>AllocationProtect</b> member.
 
 `Type`
 
@@ -288,11 +288,3 @@ Indicates that the memory pages within the region are private (that is, not shar
 ## See Also
 
 <a href="..\ntifs\nf-ntifs-zwqueryvirtualmemory.md">ZwQueryVirtualMemory</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MEMORY_BASIC_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

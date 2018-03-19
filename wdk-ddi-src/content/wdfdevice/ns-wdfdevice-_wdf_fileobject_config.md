@@ -64,29 +64,29 @@ typedef struct _WDF_FILEOBJECT_CONFIG {
 ## Members
 
 
-`AutoForwardCleanupClose`
+`Size`
 
-A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value. For more information about this member, see the following Comments section.
+The size, in bytes, of this structure.
 
 `EvtDeviceFileCreate`
 
 A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_file_create.md">EvtDeviceFileCreate</a> callback function, or <b>NULL</b>.
 
-`EvtFileCleanup`
-
-A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_file_cleanup.md">EvtFileCleanup</a> callback function, or <b>NULL</b>.
-
 `EvtFileClose`
 
 A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_file_close.md">EvtFileClose</a> callback function, or <b>NULL</b>.
 
+`EvtFileCleanup`
+
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_file_cleanup.md">EvtFileCleanup</a> callback function, or <b>NULL</b>.
+
+`AutoForwardCleanupClose`
+
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value. For more information about this member, see the following Comments section.
+
 `FileObjectClass`
 
 A <a href="..\wdfdevice\ne-wdfdevice-_wdf_fileobject_class.md">WDF_FILEOBJECT_CLASS</a>-typed value that identifies whether the driver requires a framework file object to represent each file that an application or another driver creates or opens. Additionally, this value specifies where the framework can store the object's handle.
-
-`Size`
-
-The size, in bytes, of this structure.
 
 ## Remarks
 The <b>WDF_FILEOBJECT_CONFIG</b> structure is used as input to the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetfileobjectconfig.md">WdfDeviceInitSetFileObjectConfig</a> method.

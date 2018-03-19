@@ -61,14 +61,9 @@ typedef struct _SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE {
 ## Members
 
 
-`Descriptors`
+`PageCode`
 
-Contains a <a href="https://msdn.microsoft.com/af686e7a-9426-4151-8ac4-d95ae1689b4c">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a> for each
-download microcode operation where status is being reported.
-
-`GenerationCode`
-
-Indicates the value of the generation code
+Indicates the diagnostic page being sent or requested. . The value of this is 0x0E.
 
 `NumberOfSecondarySubEnclosures`
 
@@ -76,13 +71,18 @@ Indicates the number of download microcode status
 descriptors in <i>Descriptors</i>, not including the primary <a href="https://msdn.microsoft.com/af686e7a-9426-4151-8ac4-d95ae1689b4c">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>. This value shall
 be set to the same value as the <i>NumberOfSecondarySubEnclosures</i> field in the <a href="..\storport\ns-storport-_ses_configuration_diagnostic_page.md">SES_CONFIGURATION_DIAGNOSTIC_PAGE</a> structure.
 
-`PageCode`
-
-Indicates the diagnostic page being sent or requested. . The value of this is 0x0E.
-
 `PageLength`
 
 Indicates the number of bytes that follow in the diagnostic page.
+
+`GenerationCode`
+
+Indicates the value of the generation code
+
+`Descriptors`
+
+Contains a <a href="https://msdn.microsoft.com/af686e7a-9426-4151-8ac4-d95ae1689b4c">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a> for each
+download microcode operation where status is being reported.
 
 
 ## Requirements

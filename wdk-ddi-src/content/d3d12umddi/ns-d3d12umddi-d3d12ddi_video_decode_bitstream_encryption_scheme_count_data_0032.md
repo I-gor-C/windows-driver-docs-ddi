@@ -58,17 +58,17 @@ typedef struct _D3D12DDI_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEME_COUNT_DATA_003
 ## Members
 
 
-`BitstreamEncryptionSchemeCount`
+`NodeIndex`
 
-Bitstream encryption scheme count.
+Node index.
 
 `DecodeProfile`
 
 Decode profile.
 
-`NodeIndex`
+`BitstreamEncryptionSchemeCount`
 
-Node index.
+Bitstream encryption scheme count.
 
 
 ## Requirements

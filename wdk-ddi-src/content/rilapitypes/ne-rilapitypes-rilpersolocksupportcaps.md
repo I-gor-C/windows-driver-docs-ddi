@@ -69,11 +69,6 @@ typedef enum _RILPERSOLOCKSUPPORTCAPS {
 <table>
             
                 <tr>
-                    <td>RIL_CAPS_PERSOFEATURE_3GPP_CORP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_CAPS_PERSOFEATURE_3GPP_NET</td>
                     <td></td>
                 </tr>
@@ -89,17 +84,12 @@ typedef enum _RILPERSOLOCKSUPPORTCAPS {
                 </tr>
             
                 <tr>
+                    <td>RIL_CAPS_PERSOFEATURE_3GPP_CORP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_CAPS_PERSOFEATURE_3GPP_USIM</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CAPS_PERSOFEATURE_3GPP2_CORP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CAPS_PERSOFEATURE_3GPP2_HRPD</td>
                     <td></td>
                 </tr>
             
@@ -114,7 +104,17 @@ typedef enum _RILPERSOLOCKSUPPORTCAPS {
                 </tr>
             
                 <tr>
+                    <td>RIL_CAPS_PERSOFEATURE_3GPP2_HRPD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_CAPS_PERSOFEATURE_3GPP2_SP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CAPS_PERSOFEATURE_3GPP2_CORP</td>
                     <td></td>
                 </tr>
             

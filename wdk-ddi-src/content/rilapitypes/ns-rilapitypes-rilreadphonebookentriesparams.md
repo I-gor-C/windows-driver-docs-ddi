@@ -60,11 +60,7 @@ typedef struct _RILREADPHONEBOOKENTRIESPARAMS {
 ## Members
 
 
-`dwEndIndex`
-
-
-
-`dwStartIndex`
+`hUiccApp`
 
 
 
@@ -72,7 +68,11 @@ typedef struct _RILREADPHONEBOOKENTRIESPARAMS {
 
 
 
-`hUiccApp`
+`dwStartIndex`
+
+
+
+`dwEndIndex`
 
 
 

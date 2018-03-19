@@ -62,12 +62,12 @@ typedef enum _RILUICCLOCKSTATELOCKSTATE {
 <table>
             
                 <tr>
-                    <td>RIL_UICCLOCKSTATE_ALL</td>
+                    <td>RIL_UICCLOCKSTATE_NONE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_UICCLOCKSTATE_BLOCKED</td>
+                    <td>RIL_UICCLOCKSTATE_VERIFIED</td>
                     <td></td>
                 </tr>
             
@@ -77,12 +77,12 @@ typedef enum _RILUICCLOCKSTATELOCKSTATE {
                 </tr>
             
                 <tr>
-                    <td>RIL_UICCLOCKSTATE_NONE</td>
+                    <td>RIL_UICCLOCKSTATE_BLOCKED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_UICCLOCKSTATE_VERIFIED</td>
+                    <td>RIL_UICCLOCKSTATE_ALL</td>
                     <td></td>
                 </tr>
 </table>

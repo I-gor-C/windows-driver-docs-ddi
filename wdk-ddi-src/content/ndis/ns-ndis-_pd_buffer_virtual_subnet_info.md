@@ -57,13 +57,13 @@ typedef struct _PD_BUFFER_VIRTUAL_SUBNET_INFO {
 ## Members
 
 
-`Reserved`
-
-Reserved.
-
 `VirtualSubnetId`
 
 The virtual subnet ID.
+
+`Reserved`
+
+Reserved.
 
 
 ## Requirements

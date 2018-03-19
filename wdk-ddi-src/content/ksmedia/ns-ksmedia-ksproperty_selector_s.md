@@ -59,14 +59,6 @@ typedef struct {
 ## Members
 
 
-`Capabilities`
-
-Specifies the capabilities of a property. This member has meaning only for Get requests. The minidriver should return the capabilities of the Selector with respect to the property specified in <b>Property</b>.
-
-`Flags`
-
-Specifies the flags of a request. For Set requests, this value indicates the desired setting. For Get requests, this value contains the current setting.
-
 `Property`
 
 Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the node, property set, property ID, and request type.
@@ -74,6 +66,14 @@ Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structur
 `Value`
 
 Specifies the value of a request. For Set requests, the minidriver should set the property specified in <b>Property</b> to this value. For Get requests, the minidriver should return the value of the property specified in <b>Property</b>.
+
+`Flags`
+
+Specifies the flags of a request. For Set requests, this value indicates the desired setting. For Get requests, this value contains the current setting.
+
+`Capabilities`
+
+Specifies the capabilities of a property. This member has meaning only for Get requests. The minidriver should return the capabilities of the Selector with respect to the property specified in <b>Property</b>.
 
 
 ## Requirements
@@ -84,11 +84,3 @@ Specifies the value of a request. For Set requests, the minidriver should set th
 ## See Also
 
 <a href="..\ksmedia\ns-ksmedia-ksproperty_selector_node_s.md">KSPROPERTY_SELECTOR_NODE_S</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_SELECTOR_S structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -66,9 +66,36 @@ typedef struct D3D11_1_DDI_RASTERIZER_DESC {
 ## Members
 
 
-`AntialiasedLineEnable`
+`FillMode`
 
-[in] A Boolean value that specifies whether the driver should render lines that follow the antialiased line rasterization rules. <b>TRUE</b> indicates to follow the rules; <b>FALSE</b> indicates following the rules is not required. The driver ignores the value in <b>AntialiasedLineEnable</b> if multiple-sampling rasterization rules are used instead.
+[in] A value that specifies the fill mode for primitives. This member must be set to one of the following values from the D3D10_DDI_FILL_MODE enumeration.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+D3D10_DDI_FILL_WIREFRAME (2)
+
+</td>
+<td>
+Fills wireframes.
+
+</td>
+</tr>
+<tr>
+<td>
+D3D10_DDI_FILL_SOLID (3)
+
+</td>
+<td>
+Fills solids.
+
+</td>
+</tr>
+</table>
 
 `CullMode`
 
@@ -111,6 +138,10 @@ Cull back faces.
 </tr>
 </table>
 
+`FrontCounterClockwise`
+
+[in] A Boolean value that specifies whether vertices that are provided in a counter-clockwise order (with respect to the rasterizer) are front facing. <b>TRUE</b> indicates they are; <b>FALSE</b> indicates that counter-clockwise vertices indicate back facing.
+
 `DepthBias`
 
 [in] A depth-bias constant to use in biasing formulas. For more information about <b>DepthBias</b>, see the Remarks section.
@@ -119,62 +150,31 @@ Cull back faces.
 
 [in] A single-precision float vector that is used in biasing formulas. For more information about <b>DepthBiasClamp</b>, see the Remarks section.
 
+`SlopeScaledDepthBias`
+
+[in] A single-precision float vector that is used in biasing formulas. For more information about <b>SlopeScaledDepthBias</b>, see the Remarks section.
+
 `DepthClipEnable`
 
 [in] A Boolean value that specifies whether the driver should clip vertex z coordinates against the viewport depth range. <b>TRUE</b> indicates to clip; <b>FALSE</b> indicates not to clip.
 
-`FillMode`
+`ScissorEnable`
 
-[in] A value that specifies the fill mode for primitives. This member must be set to one of the following values from the D3D10_DDI_FILL_MODE enumeration.
+[in] A Boolean value that specifies whether the driver should discard pixels that fall outside the appropriate scissor rectangular area. <b>TRUE</b> indicates to discard; <b>FALSE</b> indicates not to discard.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-D3D10_DDI_FILL_WIREFRAME (2)
+`MultisampleEnable`
 
-</td>
-<td>
-Fills wireframes.
+[in] A Boolean value that specifies whether the driver must follow multiple-sampled rasterization rules. <b>TRUE</b> indicates to follow the rules; <b>FALSE</b> indicates following the rules is not required. Multiple-sampled rasterization rules hold true even if render targets contain only a single sample.
 
-</td>
-</tr>
-<tr>
-<td>
-D3D10_DDI_FILL_SOLID (3)
+`AntialiasedLineEnable`
 
-</td>
-<td>
-Fills solids.
-
-</td>
-</tr>
-</table>
+[in] A Boolean value that specifies whether the driver should render lines that follow the antialiased line rasterization rules. <b>TRUE</b> indicates to follow the rules; <b>FALSE</b> indicates following the rules is not required. The driver ignores the value in <b>AntialiasedLineEnable</b> if multiple-sampling rasterization rules are used instead.
 
 `ForcedSampleCount`
 
 [in] During rendering of unordered access vews (UAVs) or rendering target views (RTVs), specifies whether to force a sample count, and if so, the maximum sample count. Valid values are 0, 1, 4, 8, and 16.
 
 If zero, the driver should not force a sample count.
-
-`FrontCounterClockwise`
-
-[in] A Boolean value that specifies whether vertices that are provided in a counter-clockwise order (with respect to the rasterizer) are front facing. <b>TRUE</b> indicates they are; <b>FALSE</b> indicates that counter-clockwise vertices indicate back facing.
-
-`MultisampleEnable`
-
-[in] A Boolean value that specifies whether the driver must follow multiple-sampled rasterization rules. <b>TRUE</b> indicates to follow the rules; <b>FALSE</b> indicates following the rules is not required. Multiple-sampled rasterization rules hold true even if render targets contain only a single sample.
-
-`ScissorEnable`
-
-[in] A Boolean value that specifies whether the driver should discard pixels that fall outside the appropriate scissor rectangular area. <b>TRUE</b> indicates to discard; <b>FALSE</b> indicates not to discard.
-
-`SlopeScaledDepthBias`
-
-[in] A single-precision float vector that is used in biasing formulas. For more information about <b>SlopeScaledDepthBias</b>, see the Remarks section.
 
 ## Remarks
 One of the artifacts with shadow buffer-based shadows is "shadow acne" (that is, a surface that shadows itself in an intermittent way because of inexactness in computing the depth of the surface from the shader that is compared against the depth of the same surface in the shadow buffer). One way to alleviate shadow acne is to use the <b>DepthBias</b> and <b>SlopeScaledDepthBias</b> members when you render a shadow buffer. The intent is to push surfaces out enough when rendering a shadow buffer. When those surfaces are compared against themselves through shader-computed z during the shadow test, the comparison result is consistent across the surface, and local-self-shadowing is avoided.

@@ -60,25 +60,25 @@ typedef struct _SM_SendRPL_IN {
 ## Members
 
 
-`AgentDomain`
+`HbaPortWWN`
 
-The domain number for the domain controller that is to be queried for a list of ports of type FC_Port. For a definition of FC_Port, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
+A worldwide name (WWN) for the local port through which the read port list (RPL) command is sent.
 
 `AgentWWN`
 
 A worldwide name (WWN) for the port that is to be queried for a list of ports of type FC_Port. For a definition of FC_Port, see the T11 committee's <i>Fibre Channel HBA API</i> specification<i>.</i>
 
-`HbaPortWWN`
+`AgentDomain`
 
-A worldwide name (WWN) for the local port through which the read port list (RPL) command is sent.
-
-`InRespBufferMaxSize`
-
-The response buffer size.
+The domain number for the domain controller that is to be queried for a list of ports of type FC_Port. For a definition of FC_Port, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
 
 `PortIndex`
 
 The port index of the first port in the list of ports of type FC_Port to be returned.
+
+`InRespBufferMaxSize`
+
+The response buffer size.
 
 ## Remarks
 The WMI tool suite generates a declaration of the SM_SendRPL_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.

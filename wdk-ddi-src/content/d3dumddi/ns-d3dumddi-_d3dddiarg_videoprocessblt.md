@@ -71,13 +71,19 @@ typedef struct _D3DDDIARG_VIDEOPROCESSBLT {
 ## Members
 
 
-`Alpha`
+`TargetFrame`
 
-[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the planar-transparency value of the output image as it is written to the destination surface. When the alpha value is 1.0, the background color is drawn opaque (without transparency and alpha blending). When the alpha value is 0.0, the background should not be drawn (transparent).
+[in] A REFERENCE_TIME value that identifies the location of the output frame within the sequence of input frames. If only deinterlacing is performed, the target time should coincide with either the starting display time of a sample, as defined by the <b>Start</b> member in the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videosample.md">DXVADDI_VIDEOSAMPLE</a> structure, or the midpoint between the starting display time and the ending display time. 
 
-`BackgroundColor`
+If a frame rate conversion is requested, the time in <b>TargetFrame</b> can be different from any of the times in the <b>Start</b> members of the samples.
 
-[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_ayuvsample16.md">DXVADDI_AYUVSAMPLE16</a> structure that identifies background color.
+`hVideoProcess`
+
+[in] A handle to the DirectX VA video processing device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createvideoprocessdevice.md">CreateVideoProcessDevice</a> function.
+
+`TargetRect`
+
+[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the location within the destination surface to which the output image is written. Note that the output image is restricted to the pixels within the rectangle that is pointed to by <b>TargetRect</b>. That is, every pixel within this rectangle must be written to; pixels outside this rectangle must not be modified.
 
 `ConstrictionSize`
 
@@ -85,59 +91,53 @@ typedef struct _D3DDDIARG_VIDEOPROCESSBLT {
 
 For example, consider video that natively has 1920 x 1080 pixels and that is displayed full screen on a 1920 x 1080-resolution monitor for which output protection is unsupported. If the video content specifies a rule that only 854 x 480 pixels of original information can be displayed, the driver must reduce the original image from 1920 x 1080 to 854 x 480 and then stretch the image again to 1920 x 1080. In this example, the SIZE structure in the <b>ConstrictionSize</b> member would specify a size of 854 x 480 pixels.
 
-`DestFlags`
+`StreamingFlags`
 
-[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videoprocessbltflags.md">DXVADDI_VIDEOPROCESSBLTFLAGS</a> structure that identifies changes in the current destination surface from the previous destination surface.
+[in] A UINT value that identifies streaming flags. Currently, no streaming flags are defined.
+
+`BackgroundColor`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_ayuvsample16.md">DXVADDI_AYUVSAMPLE16</a> structure that identifies background color.
 
 `DestFormat`
 
 [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure that identifies extended format information for the destination surface.
 
-`DetailFilterChroma`
+`DestFlags`
 
-[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_filtervalues.md">DXVADDI_FILTERVALUES</a> structure that specifies the chroma detail filter.
-
-`DetailFilterLuma`
-
-[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_filtervalues.md">DXVADDI_FILTERVALUES</a> structure that specifies the luma detail filter.
-
-`hVideoProcess`
-
-[in] A handle to the DirectX VA video processing device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createvideoprocessdevice.md">CreateVideoProcessDevice</a> function.
-
-`NoiseFilterChroma`
-
-[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_filtervalues.md">DXVADDI_FILTERVALUES</a> structure that specifies the chroma noise filter.
-
-`NoiseFilterLuma`
-
-[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_filtervalues.md">DXVADDI_FILTERVALUES</a> structure that specifies the luma noise filter.
-
-`NumSrcSurfaces`
-
-[in] The number of input samples in the array at <b>pSrcSurfaces</b>.
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videoprocessbltflags.md">DXVADDI_VIDEOPROCESSBLTFLAGS</a> structure that identifies changes in the current destination surface from the previous destination surface.
 
 `ProcAmpValues`
 
 [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_procampvalues.md">DXVADDI_PROCAMPVALUES</a> structure that specifies ProcAmp adjustment data that is output to the destination surface.
 
+`Alpha`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a> structure that specifies the planar-transparency value of the output image as it is written to the destination surface. When the alpha value is 1.0, the background color is drawn opaque (without transparency and alpha blending). When the alpha value is 0.0, the background should not be drawn (transparent).
+
+`NoiseFilterLuma`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_filtervalues.md">DXVADDI_FILTERVALUES</a> structure that specifies the luma noise filter.
+
+`NoiseFilterChroma`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_filtervalues.md">DXVADDI_FILTERVALUES</a> structure that specifies the chroma noise filter.
+
+`DetailFilterLuma`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_filtervalues.md">DXVADDI_FILTERVALUES</a> structure that specifies the luma detail filter.
+
+`DetailFilterChroma`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_filtervalues.md">DXVADDI_FILTERVALUES</a> structure that specifies the chroma detail filter.
+
 `pSrcSurfaces`
 
 [in] An array of <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videosample.md">DXVADDI_VIDEOSAMPLE</a> structures that describe the input samples that are required for the deinterlacing, frame-rate conversion, and substream compositing operations. For more information about how input samples are arranged in this array, see <a href="https://msdn.microsoft.com/99110b1a-1511-44f5-a4bb-a5e38fd41fff">Input Buffer Order</a>.
 
-`StreamingFlags`
+`NumSrcSurfaces`
 
-[in] A UINT value that identifies streaming flags. Currently, no streaming flags are defined.
-
-`TargetFrame`
-
-[in] A REFERENCE_TIME value that identifies the location of the output frame within the sequence of input frames. If only deinterlacing is performed, the target time should coincide with either the starting display time of a sample, as defined by the <b>Start</b> member in the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videosample.md">DXVADDI_VIDEOSAMPLE</a> structure, or the midpoint between the starting display time and the ending display time. 
-
-If a frame rate conversion is requested, the time in <b>TargetFrame</b> can be different from any of the times in the <b>Start</b> members of the samples.
-
-`TargetRect`
-
-[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the location within the destination surface to which the output image is written. Note that the output image is restricted to the pixels within the rectangle that is pointed to by <b>TargetRect</b>. That is, every pixel within this rectangle must be written to; pixels outside this rectangle must not be modified.
+[in] The number of input samples in the array at <b>pSrcSurfaces</b>.
 
 
 ## Requirements
@@ -177,11 +177,3 @@ If a frame rate conversion is requested, the time in <b>TargetFrame</b> can be d
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_VIDEOPROCESSBLT structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

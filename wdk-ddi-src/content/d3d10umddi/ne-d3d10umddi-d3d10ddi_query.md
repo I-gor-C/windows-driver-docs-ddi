@@ -95,109 +95,6 @@ typedef enum D3D10DDI_QUERY {
 <table>
             
                 <tr>
-                    <td>D3D10DDI_COUNTER_DEVICE_DEPENDENT_0</td>
-                    <td>The first available device-dependent query counter. Hardware vendors can use this value and any 32-bit value above 0x40000000 for a query counter for their devices.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_FILLRATE_THROUGHPUT_UTILIZATION</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of a theoretical maximum of fill-rate throughput utilization.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_GEOMETRY_PROCESSING</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the geometry shader is busy processing data.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_GEOMETRYSHADER_COMPUTATION_LIMITED</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the geometry shader computes math (versus the percentage of time that the geometry shader waits for memory to perform reads or writes of data).</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_GEOMETRYSHADER_MEMORY_LIMITED</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the geometry shader waits for memory to perform reads or writes of data (versus the percentage of time that the geometry shader computes math).</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_GPU_IDLE</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of GPU idle time.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_HOST_ADAPTER_BANDWIDTH_UTILIZATION</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of a theoretical maximum of adapter bandwidth utilization.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_LOCAL_VIDMEM_BANDWIDTH_UTILIZATION</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of a theoretical maximum of video memory bandwidth utilization.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_OTHER_GPU_PROCESSING</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that GPU operations, other than vertex, geometry, and pixel shader operations, are busy processing data.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_PIXEL_PROCESSING</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the pixel shader is busy processing data.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_PIXELSHADER_COMPUTATION_LIMITED</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the pixel shader computes math (versus the percentage of time that the pixel shader waits for memory to perform reads or writes of data).</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_PIXELSHADER_MEMORY_LIMITED</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the pixel shader waits for memory to perform reads or writes of data (versus the percentage of time that the pixel shader computes math).</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_POST_TRANSFORM_CACHE_HIT_RATE</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of vertices that the geometry shader or pixel shader retrieved from a cache of vertices that were already transformed by the vertex shader. 
-
-A cache of transformed vertices (that is, vertices that the vertex shader ran against) exists immediately after the vertex shader. These vertices can be used by either the geometry shader or pixel shader. A 100% hit rate (result of a D3D10DDI_COUNTER_POST_TRANSFORM_CACHE_HIT_RATE query) indicates that every vertex necessary for the geometry shader or pixel shader was already transformed. Whereas a 0% hit rate indicates that every vertex required processing by the vertex shader before it could be used.
-
-The driver can restructure algorithms and data to increase cache hit rates.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_TEXTURE_CACHE_HIT_RATE</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of texels or texture memory that a shader retrieved from a cache of texels that were already retrieved from video memory. 
-
-A cache of texture memory can exist between shader resource view or possibly constant buffer and shaders. A 100% hit rate indicates that every texel necessary for a shader was already available in the cache. Whereas a 0% hit rate indicates that every texel required retrieving data from video memory.
-
-The driver can restructure algorithms and data to increase cache hit rates.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_TRISETUP_THROUGHPUT_UTILIZATION</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of a theoretical maximum of triangle-setup throughput utilization.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_VERTEX_PROCESSING</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the vertex shader is busy processing data.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_VERTEX_THROUGHPUT_UTILIZATION</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of a theoretical maximum of vertex throughput utilization.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_VERTEXSHADER_COMPUTATION_LIMITED</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the vertex shader computes math (versus the percentage of time that the vertex shader waits for memory to perform reads or writes of data).</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_COUNTER_VERTEXSHADER_MEMORY_LIMITED</td>
-                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the vertex shader waits for memory to perform reads or writes of data (versus the percentage of time that the vertex shader computes math).</td>
-                </tr>
-            
-                <tr>
                     <td>D3D10DDI_QUERY_EVENT</td>
                     <td>This query type provides a synchronization primitive that many of the following query types mimic to deal with the asynchronous nature of the graphics processing unit (GPU). An issued D3D10DDI_QUERY_EVENT becomes signaled after the GPU is finished with all of the previously issued commands, generally from the backend of the graphics pipeline. The data that the driver associates with this query type is a BOOL. However, the BOOL value is redundant because whenever a D3D10DDI_QUERY_EVENT query is signaled, the value of the BOOL is always <b>TRUE</b>. The driver should always send back the BOOL data value of <b>TRUE</b> when signaling the D3D10DDI_QUERY_EVENT.</td>
                 </tr>
@@ -214,8 +111,19 @@ For the purposes of calcuating visible multisamples, disabled depth tests or ste
                 </tr>
             
                 <tr>
-                    <td>D3D10DDI_QUERY_OCCLUSIONPREDICATE</td>
-                    <td>The data that the driver associates with this query type is a BOOL. This predicate mirrors the specification for the OCCLUSION query. If the OCCLUSION query for the same bracketed range returns 0, the OCCLUSION predicate returns <b>FALSE</b>. Otherwise, the OCCLUSION predicate returns <b>TRUE</b>, which indicates that at least one multisample is visible. If the predicate was indicated to be a hint versus guaranteed, no result is ever propagated back to the application. This query type is a predicate and can be used to predicate rendering commands.</td>
+                    <td>D3D10DDI_QUERY_TIMESTAMP</td>
+                    <td>The data that the driver associates with this query type is a UINT64. The TIMESTAMP query type is used similarly to the D3D10DDI_QUERY_EVENT query type because the TIMESTAMP query type also provides a type of synchronization primitive. Like D3D10DDI_QUERY_EVENT, TIMESTAMP should become signaled when the GPU is finished with all the previously issued commands. However, TIMESTAMP differs from D3D10DDI_QUERY_EVENT by returning a 64-bit timestamp value. This 64-bit timestamp value should be sampled from a GPU counter, which increments at a consistent frequency. The timestamp value should be sampled at the instant that the GPU is finished with all the previously issued commands. The GPU is not required to ensure that all caches are flushed to memory to determine that work is complete. This is so that satisfying multiple high-frequency TIMESTAMP query types does not heavily disturb the pipeline. However, the CPU should monitor well-defined memory write-ordering between itself and the GPU, especially when D3D10DDI_QUERY_EVENT is supported. If the CPU were to determine that the GPU wrote a certain value (especially a fence value), the CPU would determine that all previous memory writes that were issued prior to the fence write should be flushed to memory and able to be seen immediately by the CPU. The type of flush that might be required to get data out of GPU caches and into CPU accessible memory should not need to be done every TIMESTAMP but probably more at the end of every command buffer. 
+
+The frequency of the timestamp counter is provided within the context of a D3D10DDI_QUERY_TIMESTAMPDISJOINT query type. The frequency of this counter should be greater than 10 MHz and resistant to high-frequency dynamic throttling of the GPU. The timestamp counter should be global. Therefore, the timestamp counter is not required to take into account the GPU time slicing of contexts. 
+
+The initial value of the timestamp counter is unspecified. Therefore, the absolute value of the timestamp counter is generally meaningless by itself. However, the relative value that is generated from the difference of two absolute values quantifies an elapsed amount of time. The difference of two timestamp values is only accurate when the two TIMESTAMP queries are bracketed within a D3D10DDI_QUERY_TIMESTAMPDISJOINT range and when the query-disjoint value of the D3D10DDI_QUERY_TIMESTAMPDISJOINT query returns <b>FALSE</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_QUERY_TIMESTAMPDISJOINT</td>
+                    <td>The data that the driver associates with this query type is a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_ddi_query_data_timestamp_disjoint.md">D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT</a> structure. TIMESTAMPDISJOINT allows an application to define a bracketing to not only request the frequency of the TIMESTAMP clock but also to detect if that frequency was consistent throughout the entire bracketed range of graphics commands. The <b>Disjoint</b> member of D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT contains a BOOL value that indicates when something caused the timestamp counter to become discontinuous or disjoint. A few examples of events that should trigger TIMESTAMPDISJOINT are a power down, throttling up and down due to laptop power saving events, an unplugged AC cord, and overheating. Such event occurrences should be rare enough during a steady graphics application execution state to be avoided by controlling the system execution environment. Note that if such events occur, they effectively reduce the usefulness of the TIMESTAMP functionality. TIMESTAMP queries after an event that would trigger a TIMESTAMPDISJOINT query are not expected to be meaningful compared to TIMESTAMP queries preceding such an event. The BOOL value in the <b>Disjoint</b> member is <b>TRUE</b> if the values from TIMESTAMP queries cannot be guaranteed to be continuous throughout the duration of the TIMESTAMPDISJOINT query. Otheriwse, <b>Disjoint</b> should be <b>FALSE</b>. The value of the <b>Frequency</b> member of D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT should be equal to the frequency of the TIMESTAMP clock. 
+
+In addition, notifications of such throttling events is useful for performance monitoring, regression, and investigation tools, assuming the notifications result in performance differences in application execution.</td>
                 </tr>
             
                 <tr>
@@ -330,6 +238,11 @@ With respect to the values in <b>IAVertices</b> and <b>VSInvocations</b>, adjace
                 </tr>
             
                 <tr>
+                    <td>D3D10DDI_QUERY_OCCLUSIONPREDICATE</td>
+                    <td>The data that the driver associates with this query type is a BOOL. This predicate mirrors the specification for the OCCLUSION query. If the OCCLUSION query for the same bracketed range returns 0, the OCCLUSION predicate returns <b>FALSE</b>. Otherwise, the OCCLUSION predicate returns <b>TRUE</b>, which indicates that at least one multisample is visible. If the predicate was indicated to be a hint versus guaranteed, no result is ever propagated back to the application. This query type is a predicate and can be used to predicate rendering commands.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D10DDI_QUERY_STREAMOUTPUTSTATS</td>
                     <td>The data that the driver associates with this query type is a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_ddi_query_data_so_statistics.md">D3D10_DDI_QUERY_DATA_SO_STATISTICS</a> structure. This structure contains statistics for monitoring the amount of data that is streamed out at the stream-output stage of the pipeline. These statistics count only complete primitives (for example, points, lines, and triangles) that are streamed out. If the primitive type changes (for example, lines to triangles), the counting is not adjusted in any way. That is, the count is always total primitives, regardless of type. 
 
@@ -343,22 +256,6 @@ Only the difference between two independent statistic requests will provide mean
                     <td>The data that the driver associates with this query type is a BOOL. This BOOL is <b>TRUE</b> if any stream output overflowed. If two D3D10DDI_QUERY_STREAMOUTPUTSTATS queries were used to simultaneously monitor the same bracketed range as a STREAMOVERFLOWPREDICATE predicate type, the difference in the values in the <b>PrimitivesStorageNeeded</b> members of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_ddi_query_data_so_statistics.md">D3D10_DDI_QUERY_DATA_SO_STATISTICS</a> would have resulted in a larger difference than the difference in the values in the <b>NumPrimitivesWritten</b> members. The STREAMOVERFLOWPREDICATE does not support the ability to be used as a hint. Therefore, the predicate type must be guaranteed. This query is a predicate and can be used to predicate rendering commands, which prevents an unwanted frame from being shown to the application. 
 
 In case of streaming to multiple buffers simultaneously, as soon as any one of them overflows, the stream output writes stop for all buffers, and the data for STREAMOVERFLOWPREDICATE becomes <b>TRUE</b>.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_QUERY_TIMESTAMP</td>
-                    <td>The data that the driver associates with this query type is a UINT64. The TIMESTAMP query type is used similarly to the D3D10DDI_QUERY_EVENT query type because the TIMESTAMP query type also provides a type of synchronization primitive. Like D3D10DDI_QUERY_EVENT, TIMESTAMP should become signaled when the GPU is finished with all the previously issued commands. However, TIMESTAMP differs from D3D10DDI_QUERY_EVENT by returning a 64-bit timestamp value. This 64-bit timestamp value should be sampled from a GPU counter, which increments at a consistent frequency. The timestamp value should be sampled at the instant that the GPU is finished with all the previously issued commands. The GPU is not required to ensure that all caches are flushed to memory to determine that work is complete. This is so that satisfying multiple high-frequency TIMESTAMP query types does not heavily disturb the pipeline. However, the CPU should monitor well-defined memory write-ordering between itself and the GPU, especially when D3D10DDI_QUERY_EVENT is supported. If the CPU were to determine that the GPU wrote a certain value (especially a fence value), the CPU would determine that all previous memory writes that were issued prior to the fence write should be flushed to memory and able to be seen immediately by the CPU. The type of flush that might be required to get data out of GPU caches and into CPU accessible memory should not need to be done every TIMESTAMP but probably more at the end of every command buffer. 
-
-The frequency of the timestamp counter is provided within the context of a D3D10DDI_QUERY_TIMESTAMPDISJOINT query type. The frequency of this counter should be greater than 10 MHz and resistant to high-frequency dynamic throttling of the GPU. The timestamp counter should be global. Therefore, the timestamp counter is not required to take into account the GPU time slicing of contexts. 
-
-The initial value of the timestamp counter is unspecified. Therefore, the absolute value of the timestamp counter is generally meaningless by itself. However, the relative value that is generated from the difference of two absolute values quantifies an elapsed amount of time. The difference of two timestamp values is only accurate when the two TIMESTAMP queries are bracketed within a D3D10DDI_QUERY_TIMESTAMPDISJOINT range and when the query-disjoint value of the D3D10DDI_QUERY_TIMESTAMPDISJOINT query returns <b>FALSE</b>.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_QUERY_TIMESTAMPDISJOINT</td>
-                    <td>The data that the driver associates with this query type is a <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_ddi_query_data_timestamp_disjoint.md">D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT</a> structure. TIMESTAMPDISJOINT allows an application to define a bracketing to not only request the frequency of the TIMESTAMP clock but also to detect if that frequency was consistent throughout the entire bracketed range of graphics commands. The <b>Disjoint</b> member of D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT contains a BOOL value that indicates when something caused the timestamp counter to become discontinuous or disjoint. A few examples of events that should trigger TIMESTAMPDISJOINT are a power down, throttling up and down due to laptop power saving events, an unplugged AC cord, and overheating. Such event occurrences should be rare enough during a steady graphics application execution state to be avoided by controlling the system execution environment. Note that if such events occur, they effectively reduce the usefulness of the TIMESTAMP functionality. TIMESTAMP queries after an event that would trigger a TIMESTAMPDISJOINT query are not expected to be meaningful compared to TIMESTAMP queries preceding such an event. The BOOL value in the <b>Disjoint</b> member is <b>TRUE</b> if the values from TIMESTAMP queries cannot be guaranteed to be continuous throughout the duration of the TIMESTAMPDISJOINT query. Otheriwse, <b>Disjoint</b> should be <b>FALSE</b>. The value of the <b>Frequency</b> member of D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT should be equal to the frequency of the TIMESTAMP clock. 
-
-In addition, notifications of such throttling events is useful for performance monitoring, regression, and investigation tools, assuming the notifications result in performance differences in application execution.</td>
                 </tr>
             
                 <tr>
@@ -423,6 +320,109 @@ The data that the driver associates with this query type is a BOOL. This BOOL is
 
 The data that the driver associates with this query type is a BOOL. This BOOL is <b>TRUE</b> if the stream 3 output overflowed. If two D3D10DDI_QUERY_STREAMOUTPUTSTATS_STREAM1 queries were used to simultaneously monitor the same bracketed range as a STREAMOVERFLOWPREDICATE_STREAM3 predicate type, the difference in the values in the <b>PrimitivesStorageNeeded</b> members of <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_ddi_query_data_so_statistics.md">D3D10_DDI_QUERY_DATA_SO_STATISTICS</a> would have resulted in a larger difference than the difference in the values in the <b>NumPrimitivesWritten</b> members.</td>
                 </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_GPU_IDLE</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of GPU idle time.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_VERTEX_PROCESSING</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the vertex shader is busy processing data.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_GEOMETRY_PROCESSING</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the geometry shader is busy processing data.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_PIXEL_PROCESSING</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the pixel shader is busy processing data.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_OTHER_GPU_PROCESSING</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that GPU operations, other than vertex, geometry, and pixel shader operations, are busy processing data.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_HOST_ADAPTER_BANDWIDTH_UTILIZATION</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of a theoretical maximum of adapter bandwidth utilization.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_LOCAL_VIDMEM_BANDWIDTH_UTILIZATION</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of a theoretical maximum of video memory bandwidth utilization.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_VERTEX_THROUGHPUT_UTILIZATION</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of a theoretical maximum of vertex throughput utilization.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_TRISETUP_THROUGHPUT_UTILIZATION</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of a theoretical maximum of triangle-setup throughput utilization.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_FILLRATE_THROUGHPUT_UTILIZATION</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of a theoretical maximum of fill-rate throughput utilization.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_VERTEXSHADER_MEMORY_LIMITED</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the vertex shader waits for memory to perform reads or writes of data (versus the percentage of time that the vertex shader computes math).</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_VERTEXSHADER_COMPUTATION_LIMITED</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the vertex shader computes math (versus the percentage of time that the vertex shader waits for memory to perform reads or writes of data).</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_GEOMETRYSHADER_MEMORY_LIMITED</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the geometry shader waits for memory to perform reads or writes of data (versus the percentage of time that the geometry shader computes math).</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_GEOMETRYSHADER_COMPUTATION_LIMITED</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the geometry shader computes math (versus the percentage of time that the geometry shader waits for memory to perform reads or writes of data).</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_PIXELSHADER_MEMORY_LIMITED</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the pixel shader waits for memory to perform reads or writes of data (versus the percentage of time that the pixel shader computes math).</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_PIXELSHADER_COMPUTATION_LIMITED</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of time that the pixel shader computes math (versus the percentage of time that the pixel shader waits for memory to perform reads or writes of data).</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_POST_TRANSFORM_CACHE_HIT_RATE</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of vertices that the geometry shader or pixel shader retrieved from a cache of vertices that were already transformed by the vertex shader. 
+
+A cache of transformed vertices (that is, vertices that the vertex shader ran against) exists immediately after the vertex shader. These vertices can be used by either the geometry shader or pixel shader. A 100% hit rate (result of a D3D10DDI_COUNTER_POST_TRANSFORM_CACHE_HIT_RATE query) indicates that every vertex necessary for the geometry shader or pixel shader was already transformed. Whereas a 0% hit rate indicates that every vertex required processing by the vertex shader before it could be used.
+
+The driver can restructure algorithms and data to increase cache hit rates.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_TEXTURE_CACHE_HIT_RATE</td>
+                    <td>The data that the driver associates with this query-counter type is a FLOAT32. The driver returns the percentage of texels or texture memory that a shader retrieved from a cache of texels that were already retrieved from video memory. 
+
+A cache of texture memory can exist between shader resource view or possibly constant buffer and shaders. A 100% hit rate indicates that every texel necessary for a shader was already available in the cache. Whereas a 0% hit rate indicates that every texel required retrieving data from video memory.
+
+The driver can restructure algorithms and data to increase cache hit rates.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_COUNTER_DEVICE_DEPENDENT_0</td>
+                    <td>The first available device-dependent query counter. Hardware vendors can use this value and any 32-bit value above 0x40000000 for a query counter for their devices.</td>
+                </tr>
 </table>
 
 ## Remarks
@@ -466,11 +466,3 @@ D3D10DDI_COUNTER_HOST_ADAPTER_BANDWIDTH_UTILIZATION, D3D10DDI_COUNTER_LOCAL_VIDM
 
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkcounterinfo.md">CheckCounterInfo</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10DDI_QUERY enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

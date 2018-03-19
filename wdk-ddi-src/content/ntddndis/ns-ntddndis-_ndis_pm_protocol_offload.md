@@ -84,20 +84,6 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
 ## Members
 
 
-`_PROTOCOL_OFFLOAD_PARAMETERS`
-
-
-
-`Flags`
-
-A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.
-
-`FriendlyName`
-
-An 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_pm_counted_string.md">NDIS_PM_COUNTED_STRING</a> structure
-     that contains the user-readable description of the low power protocol offload.
-
 `Header`
 
 The 
@@ -108,13 +94,9 @@ The
      <b>Revision</b> member to NDIS_PM_PROTOCOL_OFFLOAD_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_PROTOCOL_OFFLOAD_REVISION_1.
 
-`NextProtocolOffloadOffset`
+`Flags`
 
-A ULONG value that contains an offset, in bytes. The 
-     <b>NextProtocolOffloadOffset</b> member of each <b>NDIS_PM_PROTOCOL_OFFLOAD</b> structure in a list is set to
-     the offset (from the beginning of the OID request 
-     InformationBuffer) of the next <b>NDIS_PM_PROTOCOL_OFFLOAD</b> structure in the list. If 
-     <b>NextProtocolOffloadOffset</b> is zero, the current structure is the last structure in the list.
+A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.
 
 `Priority`
 
@@ -145,6 +127,18 @@ Specifies a normal priority protocol offload.
 
 Specifies the highest priority protocol offload.
 
+`ProtocolOffloadType`
+
+An 
+     <a href="..\ntddndis\ne-ntddndis-_ndis_pm_protocol_offload_type.md">
+     NDIS_PM_PROTOCOL_OFFLOAD_TYPE</a> value that contains the type of protocol offload.
+
+`FriendlyName`
+
+An 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_pm_counted_string.md">NDIS_PM_COUNTED_STRING</a> structure
+     that contains the user-readable description of the low power protocol offload.
+
 `ProtocolOffloadId`
 
 A ULONG value that contains an NDIS-provided value that identifies the offloaded protocol. Before
@@ -153,15 +147,21 @@ A ULONG value that contains an NDIS-provided value that identifies the offloaded
      request down to the underlying NDIS drivers or completes the request to the overlying driver, NDIS sets 
      <b>ProtocolOffloadId</b> to a value that is unique among the protocol offloads on a network adapter.
 
+`NextProtocolOffloadOffset`
+
+A ULONG value that contains an offset, in bytes. The 
+     <b>NextProtocolOffloadOffset</b> member of each <b>NDIS_PM_PROTOCOL_OFFLOAD</b> structure in a list is set to
+     the offset (from the beginning of the OID request 
+     InformationBuffer) of the next <b>NDIS_PM_PROTOCOL_OFFLOAD</b> structure in the list. If 
+     <b>NextProtocolOffloadOffset</b> is zero, the current structure is the last structure in the list.
+
 `ProtocolOffloadParameters`
 
 A union that contains the following member structures:
 
-`ProtocolOffloadType`
+`_PROTOCOL_OFFLOAD_PARAMETERS`
 
-An 
-     <a href="..\ntddndis\ne-ntddndis-_ndis_pm_protocol_offload_type.md">
-     NDIS_PM_PROTOCOL_OFFLOAD_TYPE</a> value that contains the type of protocol offload.
+
 
 ## Remarks
 The <b>NDIS_PM_PROTOCOL_OFFLOAD</b> structure is used in the 
@@ -194,11 +194,3 @@ The <b>NDIS_PM_PROTOCOL_OFFLOAD</b> structure is used in the
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_pm_counted_string.md">NDIS_PM_COUNTED_STRING</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PROTOCOL_OFFLOAD structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

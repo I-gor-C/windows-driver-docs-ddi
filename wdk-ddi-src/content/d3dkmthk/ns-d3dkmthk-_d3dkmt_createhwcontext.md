@@ -62,6 +62,14 @@ typedef struct _D3DKMT_CREATEHWCONTEXT {
 ## Members
 
 
+`hDevice`
+
+Handle to the device owning this context.
+
+`NodeOrdinal`
+
+Identifier for the node targetted by this context.
+
 `EngineAffinity`
 
 Engine affinity within the specified node.
@@ -70,25 +78,17 @@ Engine affinity within the specified node.
 
 Context creation flags.
 
-`hDevice`
+`PrivateDriverDataSize`
 
-Handle to the device owning this context.
-
-`hHwContext`
-
-Handle of the created context.
-
-`NodeOrdinal`
-
-Identifier for the node targetted by this context.
+Size of private driver data.
 
 `pPrivateDriverData`
 
 Private driver data.
 
-`PrivateDriverDataSize`
+`hHwContext`
 
-Size of private driver data.
+Handle of the created context.
 
 
 ## Requirements

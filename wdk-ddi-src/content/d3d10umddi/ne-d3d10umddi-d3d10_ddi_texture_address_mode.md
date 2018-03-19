@@ -62,13 +62,8 @@ typedef enum D3D10_DDI_TEXTURE_ADDRESS_MODE {
 <table>
             
                 <tr>
-                    <td>D3D10_DDI_TEXTURE_ADDRESS_BORDER</td>
-                    <td>Texture coordinates outside the range [0.0, 1.0] are set to the border color.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_TEXTURE_ADDRESS_CLAMP</td>
-                    <td>Texture coordinates outside the range [0.0, 1.0] are set to the texture color at 0.0 or 1.0, respectively.</td>
+                    <td>D3D10_DDI_TEXTURE_ADDRESS_WRAP</td>
+                    <td>Tile the texture at every integer junction. For example, for u values between 0 and 3, the texture is repeated three times; no mirroring is performed.</td>
                 </tr>
             
                 <tr>
@@ -77,13 +72,18 @@ typedef enum D3D10_DDI_TEXTURE_ADDRESS_MODE {
                 </tr>
             
                 <tr>
-                    <td>D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE</td>
-                    <td>Similar to D3D10_DDI_TEXTURE_ADDRESS_MIRROR and D3D10_DDI_TEXTURE_ADDRESS_CLAMP. Takes the absolute value of the texture coordinate (thus, mirroring around 0), and then clamps to the maximum value. The most common usage of D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE is for volume textures, where support for the full D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE texture-addressing mode is not necessary, but the data is symmetric around the one axis.</td>
+                    <td>D3D10_DDI_TEXTURE_ADDRESS_CLAMP</td>
+                    <td>Texture coordinates outside the range [0.0, 1.0] are set to the texture color at 0.0 or 1.0, respectively.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D10_DDI_TEXTURE_ADDRESS_WRAP</td>
-                    <td>Tile the texture at every integer junction. For example, for u values between 0 and 3, the texture is repeated three times; no mirroring is performed.</td>
+                    <td>D3D10_DDI_TEXTURE_ADDRESS_BORDER</td>
+                    <td>Texture coordinates outside the range [0.0, 1.0] are set to the border color.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE</td>
+                    <td>Similar to D3D10_DDI_TEXTURE_ADDRESS_MIRROR and D3D10_DDI_TEXTURE_ADDRESS_CLAMP. Takes the absolute value of the texture coordinate (thus, mirroring around 0), and then clamps to the maximum value. The most common usage of D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE is for volume textures, where support for the full D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE texture-addressing mode is not necessary, but the data is symmetric around the one axis.</td>
                 </tr>
 </table>
 
@@ -97,11 +97,3 @@ typedef enum D3D10_DDI_TEXTURE_ADDRESS_MODE {
 ## See Also
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_ddi_sampler_desc.md">D3D10_DDI_SAMPLER_DESC</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10_DDI_TEXTURE_ADDRESS_MODE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

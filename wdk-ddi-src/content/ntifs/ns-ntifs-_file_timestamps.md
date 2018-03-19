@@ -61,10 +61,6 @@ typedef struct _File_TIMESTAMPS {
 ## Members
 
 
-`ChangeTime`
-
-Specifies the last time a file was changed or modified.
-
 `CreationTime`
 
 Specifies the creation time of a file.
@@ -77,6 +73,10 @@ Specifies the last time a file was accessed.
 
 Specifies the last time a file was written to.
 
+`ChangeTime`
+
+Specifies the last time a file was changed or modified.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,11 +86,3 @@ Specifies the last time a file was written to.
 ## See Also
 
 <a href="..\ntifs\ns-ntifs-_atomic_create_ecp_context.md">ATOMIC_CREATE_ECP_CONTEXT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_TIMESTAMPS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

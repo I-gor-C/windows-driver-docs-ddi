@@ -61,6 +61,18 @@ typedef struct {
 ## Members
 
 
+`dwSize`
+
+Specifies the size, in bytes of the IPPARAMS structure. Supplied by Unidrv.
+
+`ptOffset`
+
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a> structure containing the banded image's offset from the upper left corner of the drawing area. Supplied by Unidrv.
+
+`pHalftoneOption`
+
+Pointer to a string containing the name of the currently selected halftoning option. Supplied by Unidrv.
+
 `bBanding`
 
 Specifies whether image banding is active. If <b>TRUE</b>, image banding is active. If <b>FALSE</b>, image banding is not active. Supplied by Unidrv.
@@ -68,18 +80,6 @@ Specifies whether image banding is active. If <b>TRUE</b>, image banding is acti
 `bBlankBand`
 
 Specifies whether a blank band was drawn in the source bitmap supplied to <a href="https://msdn.microsoft.com/library/windows/hardware/ff554261">IPrintOemUni::ImageProcessing</a>. A value of <b>TRUE</b> indicates that nothing was drawn in the source bitmap supplied to <b>IPrintOemUni::ImageProcessing</b>. A <b>TRUE</b> value also indicates that data in the source bitmap is invalid and should not be processed. Supplied by Unidrv.
-
-`dwSize`
-
-Specifies the size, in bytes of the IPPARAMS structure. Supplied by Unidrv.
-
-`pHalftoneOption`
-
-Pointer to a string containing the name of the currently selected halftoning option. Supplied by Unidrv.
-
-`ptOffset`
-
-Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a> structure containing the banded image's offset from the upper left corner of the drawing area. Supplied by Unidrv.
 
 
 ## Requirements
@@ -94,11 +94,3 @@ Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff5691
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554261">IPrintOemUni::ImageProcessing</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPPARAMS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,13 +63,13 @@ typedef enum _D3DWDDM2_0DDI_CONTEXTTYPE_FLAG {
 <table>
             
                 <tr>
-                    <td>D3DWDDM2_0DDI_CONTEXTTYPE_3D</td>
-                    <td>Indicates that a JPEG 3D context should be created.</td>
+                    <td>D3DWDDM2_0DDI_CONTEXTTYPE_ALL</td>
+                    <td>Indicates that all JPEG contexts should be created.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM2_0DDI_CONTEXTTYPE_ALL</td>
-                    <td>Indicates that all JPEG contexts should be created.</td>
+                    <td>D3DWDDM2_0DDI_CONTEXTTYPE_3D</td>
+                    <td>Indicates that a JPEG 3D context should be created.</td>
                 </tr>
             
                 <tr>

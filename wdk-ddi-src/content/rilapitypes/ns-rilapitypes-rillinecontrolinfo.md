@@ -70,11 +70,11 @@ typedef struct _RILLINECONTROLINFO {
 
 
 
-`dwPowerDenialTime`
-
-
-
 `fPolarityIncluded`
+
+
+
+`fToggleMode`
 
 
 
@@ -82,7 +82,7 @@ typedef struct _RILLINECONTROLINFO {
 
 
 
-`fToggleMode`
+`dwPowerDenialTime`
 
 
 

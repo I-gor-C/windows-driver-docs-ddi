@@ -68,7 +68,7 @@ typedef struct _RILRADIOSTATEITEM {
 ## Members
 
 
-`dwItemAttributes`
+`dwItemId`
 
 
 
@@ -76,7 +76,7 @@ typedef struct _RILRADIOSTATEITEM {
 
 
 
-`dwItemId`
+`dwItemAttributes`
 
 
 

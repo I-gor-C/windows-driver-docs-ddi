@@ -61,6 +61,10 @@ typedef struct _PEP_PPM_QUERY_COORDINATED_DEPENDENCY {
 ## Members
 
 
+`StateIndex`
+
+[in] The index of the coordinated idle state which is having its dependencies queried.
+
 `DependencyIndex`
 
 [in] The index of the dependency being queried.
@@ -73,17 +77,13 @@ typedef struct _PEP_PPM_QUERY_COORDINATED_DEPENDENCY {
 
 [out] The number of elements of the <b>Dependencies</b> array filled in by the PEP.
 
-`Options`
-
-[out] A list of <a href="..\pepfx\ns-pepfx-_pep_coordinated_dependency_option.md">PEP_COORDINATED_DEPENDENCY_OPTION</a> structures describing dependency options, one of which must be satisfied for this coordinated state to be entered.
-
-`StateIndex`
-
-[in] The index of the coordinated idle state which is having its dependencies queried.
-
 `TargetProcessor`
 
 [out] The <b>POHANDLE</b> corresponding to the processor being targeted by this dependency, or <b>NULL</b> if this is a coordinated state dependency.
+
+`Options`
+
+[out] A list of <a href="..\pepfx\ns-pepfx-_pep_coordinated_dependency_option.md">PEP_COORDINATED_DEPENDENCY_OPTION</a> structures describing dependency options, one of which must be satisfied for this coordinated state to be entered.
 
 
 ## Requirements
@@ -99,11 +99,3 @@ typedef struct _PEP_PPM_QUERY_COORDINATED_DEPENDENCY {
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt186775">PEP_NOTIFY_PPM_QUERY_COORDINATED_DEPENDENCY notification</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_QUERY_COORDINATED_DEPENDENCY structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

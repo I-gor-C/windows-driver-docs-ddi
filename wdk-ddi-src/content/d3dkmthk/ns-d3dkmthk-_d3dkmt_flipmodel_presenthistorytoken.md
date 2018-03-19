@@ -74,11 +74,39 @@ typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN {
 ## Members
 
 
-`ColorSpace`
+`FenceValue`
+
+[in] A 64-bit value that specifies the fence value that is used for the flip.
+
+`hLogicalSurface`
+
+[in] A 64-bit value that specifies the handle to a logical surface.
+
+`dxgContext`
 
 
 
-`CompositionSyncKey`
+`VidPnSourceId`
+
+
+
+`SwapChainIndex`
+
+[in] The index of the surface in the swap chain that is used for the flip.
+
+`PresentLimitSemaphoreId`
+
+[in] A 64-bit value that identifies the present-limit semaphore.
+
+`FlipInterval`
+
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).
+
+`Flags`
+
+[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_flipmodel_presenthistorytokenflags.md">D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS</a> structure that identifies, in bit-field flags, attributes of a flip present-history operation.
+
+`hCompSurf`
 
 This member is reserved and should be set to zero.
 
@@ -92,65 +120,11 @@ Supported starting with Windows 8.
 
 
 
-`CustomDuration`
-
-
-
-`CustomDurationFlipInterval`
-
-
-
-`DestHeight`
-
-
-
-`DestWidth`
-
-
-
-`DirtyRegions`
-
-[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_dirtyregions.md">D3DKMT_DIRTYREGIONS</a> structure that identifies the active rectangles (dirty regions) of the flip surface.
-
-`dxgContext`
-
-
-
-`FenceValue`
-
-[in] A 64-bit value that specifies the fence value that is used for the flip.
-
-`Flags`
-
-[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_flipmodel_presenthistorytokenflags.md">D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS</a> structure that identifies, in bit-field flags, attributes of a flip present-history operation.
-
-`FlipInterval`
-
-[in] A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).
-
-`hCompSurf`
+`CompositionSyncKey`
 
 This member is reserved and should be set to zero.
 
 Supported starting with Windows 8.
-
-`hLogicalSurface`
-
-[in] A 64-bit value that specifies the handle to a logical surface.
-
-`PlaneIndex`
-
-
-
-`PresentCount`
-
-This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
-
-`PresentLimitSemaphoreId`
-
-[in] A 64-bit value that identifies the present-limit semaphore.
 
 `RemainingTokens`
 
@@ -158,9 +132,23 @@ This member is reserved and should be set to zero.
 
 Supported starting with Windows 8.
 
-`Reserved`
+`ScrollRect`
 
+This member is reserved and should be set to zero.
 
+Supported starting with Windows 8.
+
+`ScrollOffset`
+
+This member is reserved and should be set to zero.
+
+Supported starting with Windows 8.
+
+`PresentCount`
+
+This member is reserved and should be set to zero.
+
+Supported starting with Windows 8.
 
 `RevealColor`
 
@@ -174,25 +162,21 @@ This member is reserved and should be set to zero.
 
 Supported starting with Windows 8.
 
-`ScrollOffset`
+`Reserved`
 
-This member is reserved and should be set to zero.
 
-Supported starting with Windows 8.
-
-`ScrollRect`
-
-This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
 
 `SourceRect`
 
 
 
-`SwapChainIndex`
+`DestWidth`
 
-[in] The index of the surface in the swap chain that is used for the flip.
+
+
+`DestHeight`
+
+
 
 `TargetRect`
 
@@ -202,9 +186,25 @@ Supported starting with Windows 8.
 
 
 
-`VidPnSourceId`
+`CustomDuration`
 
 
+
+`CustomDurationFlipInterval`
+
+
+
+`PlaneIndex`
+
+
+
+`ColorSpace`
+
+
+
+`DirtyRegions`
+
+[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_dirtyregions.md">D3DKMT_DIRTYREGIONS</a> structure that identifies the active rectangles (dirty regions) of the flip surface.
 
 
 ## Requirements
@@ -228,11 +228,3 @@ Supported starting with Windows 8.
 
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_dirtyregions.md">D3DKMT_DIRTYREGIONS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -64,13 +64,13 @@ typedef struct _D3D12DDI_VIDEO_DECODE_DECRYPTION_ARGUMENTS_0030 {
 
 Crypto session policy.
 
-`IVSize`
-
-Initialization vector size.
-
 `pIV`
 
 Initialization vector.
+
+`IVSize`
+
+Initialization vector size.
 
 `pSubSampleMappingBlock`
 

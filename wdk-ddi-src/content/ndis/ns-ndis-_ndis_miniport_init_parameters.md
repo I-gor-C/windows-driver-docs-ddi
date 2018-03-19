@@ -65,27 +65,6 @@ typedef struct _NDIS_MINIPORT_INIT_PARAMETERS {
 ## Members
 
 
-`AllocatedResources`
-
-A pointer to an NDIS_RESOURCE_LIST-type structure that lists the hardware resources that the Plug
-     and Play Manager assigned to the miniport adapter. The NDIS_RESOURCE_LIST is type definition that is
-     equivalent to the 
-     <a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_list.md">CM_PARTIAL_RESOURCE_LIST</a> on Windows
-     2000 and later platforms.
-
-`DefaultPortAuthStates`
-
-A pointer to an 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_port_authentication_parameters.md">
-     NDIS_PORT_AUTHENTICATION_PARAMETERS</a> structure that defines the default port authentication
-     parameters for the miniport adapter. For more information about port authentication parameters, see 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-port-authentication-parameters">
-     OID_GEN_PORT_AUTHENTICATION_PARAMETERS</a>.
-
-`Flags`
-
-Reserved for NDIS.
-
 `Header`
 
 The 
@@ -96,9 +75,17 @@ The
      <b>Revision</b> member to NDIS_MINIPORT_INIT_PARAMETERS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_MINIPORT_INIT_PARAMETER_REVISION_1.
 
-`IfIndex`
+`Flags`
 
-The network interface index that is associated with the miniport adapter.
+Reserved for NDIS.
+
+`AllocatedResources`
+
+A pointer to an NDIS_RESOURCE_LIST-type structure that lists the hardware resources that the Plug
+     and Play Manager assigned to the miniport adapter. The NDIS_RESOURCE_LIST is type definition that is
+     equivalent to the 
+     <a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_list.md">CM_PARTIAL_RESOURCE_LIST</a> on Windows
+     2000 and later platforms.
 
 `IMDeviceInstanceContext`
 
@@ -115,11 +102,24 @@ A handle for a driver-allocated context area, or <b>NULL</b>. The miniport drive
      if any, in the 
      <a href="..\ndis\nc-ndis-miniport_add_device.md">MiniportAddDevice</a> function.
 
+`IfIndex`
+
+The network interface index that is associated with the miniport adapter.
+
 `NetLuid`
 
 The 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value that is associated with the
      miniport adapter.
+
+`DefaultPortAuthStates`
+
+A pointer to an 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_port_authentication_parameters.md">
+     NDIS_PORT_AUTHENTICATION_PARAMETERS</a> structure that defines the default port authentication
+     parameters for the miniport adapter. For more information about port authentication parameters, see 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-port-authentication-parameters">
+     OID_GEN_PORT_AUTHENTICATION_PARAMETERS</a>.
 
 `PciDeviceCustomProperties`
 
@@ -178,11 +178,3 @@ NDIS passes a pointer to an initialized <b>NDIS_MINIPORT_INIT_PARAMETERS</b> str
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_pci_device_custom_properties.md">
    NDIS_PCI_DEVICE_CUSTOM_PROPERTIES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_INIT_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -69,22 +69,6 @@ typedef struct _BDCB_IMAGE_INFORMATION {
 ## Members
 
 
-`CertificateIssuer`
-
-The issuer of the image's certificate. If the image is not signed, the string is empty ("").
-
-`CertificatePublisher`
-
-The publisher of the image's certificate. If the image is not signed, the string is empty ("").
-
-`CertificateThumbprint`
-
-The hash of the certificate of the signer to be signed. Run <b>certutil –dump x,cer</b> to view this value as  "Signature Hash".
-
-`CertificateThumbprintLength`
-
-The length of data pointed to by the <b>CertificateThumbprint</b> member.
-
 `Classification`
 
 The classification of the boot start image.
@@ -131,9 +115,29 @@ Do not use. Reserved.
 </tr>
 </table>
 
+`ImageName`
+
+The name of the boot-start driver's binary image.
+
+`RegistryPath`
+
+The path in the registry where the boot-start driver is registered.
+
+`CertificatePublisher`
+
+The publisher of the image's certificate. If the image is not signed, the string is empty ("").
+
+`CertificateIssuer`
+
+The issuer of the image's certificate. If the image is not signed, the string is empty ("").
+
 `ImageHash`
 
 The Authenticode hash of the image, which can be calculated by  using SignTool.exe (Sign Tool).
+
+`CertificateThumbprint`
+
+The hash of the certificate of the signer to be signed. Run <b>certutil –dump x,cer</b> to view this value as  "Signature Hash".
 
 `ImageHashAlgorithm`
 
@@ -218,21 +222,17 @@ CALG_SHA_512
 </tr>
 </table>
 
+`ThumbprintHashAlgorithm`
+
+The algorithm of the certificate thumbprint. This member should be ignored if <b>CertificateThumbprint</b> is NULL.
+
 `ImageHashLength`
 
 The length of data pointed to by the <b>ImageHash</b> member.
 
-`ImageName`
+`CertificateThumbprintLength`
 
-The name of the boot-start driver's binary image.
-
-`RegistryPath`
-
-The path in the registry where the boot-start driver is registered.
-
-`ThumbprintHashAlgorithm`
-
-The algorithm of the certificate thumbprint. This member should be ignored if <b>CertificateThumbprint</b> is NULL.
+The length of data pointed to by the <b>CertificateThumbprint</b> member.
 
 
 ## Requirements
@@ -248,11 +248,3 @@ The algorithm of the certificate thumbprint. This member should be ignored if <b
 
 
 <a href="..\ntddk\ne-ntddk-_bdcb_classification.md">BDCB_CLASSIFICATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BDCB_IMAGE_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -57,13 +57,13 @@ typedef struct {
 ## Members
 
 
-`Buffer`
-
-This member  is used internally by the operating system.
-
 `Event`
 
 This member is used internally by the operating system.
+
+`Buffer`
+
+This member  is used internally by the operating system.
 
 
 ## Requirements

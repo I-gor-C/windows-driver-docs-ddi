@@ -63,33 +63,33 @@ typedef struct {
 ## Members
 
 
-`Color`
+`Size`
 
-Describes the <b>short</b> type member <b>Color</b>.
-
-`Copies`
-
-Describes the <b>short</b> type member <b>Copies</b>.
+Specifies the 64-bit size of the job.
 
 `ICMMethod`
 
 Describes the <b>DWORD</b> type member <b>ICMMethod</b>.
 
+`Color`
+
+Describes the <b>short</b> type member <b>Color</b>.
+
 `PrintQuality`
 
 Describes the <b>short</b> type member <b>PrintQuality</b>.
 
-`Size`
+`YResolution`
 
-Specifies the 64-bit size of the job.
+Describes the <b>short</b> type member <b>YResolution</b>.
+
+`Copies`
+
+Describes the <b>short</b> type member <b>Copies</b>.
 
 `TTOption`
 
 Describes the <b>short</b> type member <b>TTOption</b>.
-
-`YResolution`
-
-Describes the <b>short</b> type member <b>YResolution</b>.
 
 
 ## Requirements

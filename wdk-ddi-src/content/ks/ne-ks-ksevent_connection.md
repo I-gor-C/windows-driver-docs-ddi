@@ -62,17 +62,17 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>KSEVENT_CONNECTION_POSITIONUPDATE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>KSEVENT_CONNECTION_DATADISCONTINUITY</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>KSEVENT_CONNECTION_ENDOFSTREAM</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSEVENT_CONNECTION_POSITIONUPDATE</td>
+                    <td>KSEVENT_CONNECTION_TIMEDISCONTINUITY</td>
                     <td></td>
                 </tr>
             
@@ -82,7 +82,7 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSEVENT_CONNECTION_TIMEDISCONTINUITY</td>
+                    <td>KSEVENT_CONNECTION_ENDOFSTREAM</td>
                     <td></td>
                 </tr>
 </table>

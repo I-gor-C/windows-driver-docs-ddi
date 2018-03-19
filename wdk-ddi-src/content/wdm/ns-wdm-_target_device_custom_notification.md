@@ -62,9 +62,13 @@ typedef struct _TARGET_DEVICE_CUSTOM_NOTIFICATION {
 ## Members
 
 
-`CustomDataBuffer`
+`Version`
 
-A variable-length buffer, optionally containing binary data at the start of the buffer, followed by an optional text buffer (word-aligned).
+Specifies the version of the data structure, currently 1.
+
+`Size`
+
+Specifies the size of the structure, in bytes, including the first three standard members plus the event-specific data.
 
 `Event`
 
@@ -78,13 +82,9 @@ Pointer to a file object for the device.
 
 Specifies the offset, in bytes, from beginning of <b>CustomDataBuffer</b> where text begins. A value of -1 indicates that there is no text.
 
-`Size`
+`CustomDataBuffer`
 
-Specifies the size of the structure, in bytes, including the first three standard members plus the event-specific data.
-
-`Version`
-
-Specifies the version of the data structure, currently 1.
+A variable-length buffer, optionally containing binary data at the start of the buffer, followed by an optional text buffer (word-aligned).
 
 ## Remarks
 Kernel-mode components use this structure for custom event notification:  to signal a custom event (<b>IoReportTargetDeviceChange</b>[<b>Asynchronous</b>]) and when handling a custom event (in a notification callback routine).
@@ -107,11 +107,3 @@ This structure accommodates both a variable-length binary data buffer and a vari
 
 
 <a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20TARGET_DEVICE_CUSTOM_NOTIFICATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

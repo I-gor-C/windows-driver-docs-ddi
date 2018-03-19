@@ -59,13 +59,13 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>GNSS_NI_Request_AreaTrigger</td>
-                    <td>Indicates the request type is tracking.</td>
+                    <td>GNSS_NI_Request_SingleShot</td>
+                    <td>Indicates the request type is single shot.</td>
                 </tr>
             
                 <tr>
-                    <td>GNSS_NI_Request_SingleShot</td>
-                    <td>Indicates the request type is single shot.</td>
+                    <td>GNSS_NI_Request_AreaTrigger</td>
+                    <td>Indicates the request type is tracking.</td>
                 </tr>
 </table>
 

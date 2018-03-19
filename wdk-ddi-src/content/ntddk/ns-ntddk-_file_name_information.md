@@ -57,13 +57,13 @@ typedef struct _FILE_NAME_INFORMATION {
 ## Members
 
 
-`FileName`
-
-Specifies the first character of the file name string. This is followed in memory by the remainder of the string.
-
 `FileNameLength`
 
 Specifies the length, in bytes, of the file name string.
+
+`FileName`
+
+Specifies the first character of the file name string. This is followed in memory by the remainder of the string.
 
 ## Remarks
 The <b>ZwQueryInformationFile</b> routine uses this structure to return the file name string to the caller. For more information about the form of the name returned, see <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>.
@@ -82,11 +82,3 @@ Callers of <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile<
 
 
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20FILE_NAME_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

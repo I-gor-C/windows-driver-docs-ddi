@@ -88,6 +88,36 @@ typedef enum D3D11DDI_HANDLETYPE {
 <table>
             
                 <tr>
+                    <td>D3D10DDI_HT_RESOURCE</td>
+                    <td>A resource handle.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_HT_SHADERRESOURCEVIEW</td>
+                    <td>A shader-resource-view handle.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_HT_RENDERTARGETVIEW</td>
+                    <td>A render-target-view handle.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_HT_DEPTHSTENCILVIEW</td>
+                    <td>A depth-stencil-view handle.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_HT_SHADER</td>
+                    <td>A shader handle.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10DDI_HT_ELEMENTLAYOUT</td>
+                    <td>A value that identifies an element-layout handle.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D10DDI_HT_BLENDSTATE</td>
                     <td>A blend-state handle.</td>
                 </tr>
@@ -98,33 +128,8 @@ typedef enum D3D11DDI_HANDLETYPE {
                 </tr>
             
                 <tr>
-                    <td>D3D10DDI_HT_DEPTHSTENCILVIEW</td>
-                    <td>A depth-stencil-view handle.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_HT_ELEMENTLAYOUT</td>
-                    <td>A value that identifies an element-layout handle.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_HT_QUERY</td>
-                    <td>A query handle.</td>
-                </tr>
-            
-                <tr>
                     <td>D3D10DDI_HT_RASTERIZERSTATE</td>
                     <td>A rasterizer-state handle.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_HT_RENDERTARGETVIEW</td>
-                    <td>A render-target-view handle.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10DDI_HT_RESOURCE</td>
-                    <td>A resource handle.</td>
                 </tr>
             
                 <tr>
@@ -133,13 +138,18 @@ typedef enum D3D11DDI_HANDLETYPE {
                 </tr>
             
                 <tr>
-                    <td>D3D10DDI_HT_SHADER</td>
-                    <td>A shader handle.</td>
+                    <td>D3D10DDI_HT_QUERY</td>
+                    <td>A query handle.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D10DDI_HT_SHADERRESOURCEVIEW</td>
-                    <td>A shader-resource-view handle.</td>
+                    <td>D3D11DDI_HT_COMMANDLIST</td>
+                    <td>A command-list handle.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11DDI_HT_UNORDEREDACCESSVIEW</td>
+                    <td>An unordered-access-view handle.</td>
                 </tr>
             
                 <tr>
@@ -150,8 +160,8 @@ Supported starting with Windows 8.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_HT_VIDEODECODEROUTPUTVIEW</td>
-                    <td>A video decoder output-view handle.
+                    <td>D3D11_1DDI_HT_VIDEOPROCESSORENUM</td>
+                    <td>A video processor enumeration handle.
 
 Supported starting with Windows 8.</td>
                 </tr>
@@ -164,8 +174,8 @@ Supported starting with Windows 8.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_HT_VIDEOPROCESSORENUM</td>
-                    <td>A video processor enumeration handle.
+                    <td>D3D11_1DDI_HT_VIDEODECODEROUTPUTVIEW</td>
+                    <td>A video decoder output-view handle.
 
 Supported starting with Windows 8.</td>
                 </tr>
@@ -182,16 +192,6 @@ Supported starting with Windows 8.</td>
                     <td>A video processor output-view handle.
 
 Supported starting with Windows 8.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D11DDI_HT_COMMANDLIST</td>
-                    <td>A command-list handle.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D11DDI_HT_UNORDEREDACCESSVIEW</td>
-                    <td>An unordered-access-view handle.</td>
                 </tr>
             
                 <tr>

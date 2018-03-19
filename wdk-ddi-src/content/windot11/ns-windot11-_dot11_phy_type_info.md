@@ -70,6 +70,14 @@ typedef struct _DOT11_PHY_TYPE_INFO {
 ## Members
 
 
+`dot11PhyType`
+
+The type of PHY that the 802.11 station will use for the scan. The PHY type is defined by the 
+       <a href="..\windot11\ne-windot11-_dot11_phy_type.md">DOT11_PHY_TYPE</a> enumeration. 
+       <div class="alert"><b>Note</b>  The miniport driver must ignore this member if it is operating in Extensible
+       Station (ExtSTA) mode.</div>
+<div> </div>
+
 `bUseParameters`
 
 If this member is <b>TRUE</b>, the 802.11 station uses the other members of this structure to configure
@@ -83,6 +91,29 @@ If this member is <b>FALSE</b>, the 802.11 station configures the PHY using its 
 <div class="alert"><b>Note</b>  If the miniport driver is operating in ExtSTA mode, the operating system will
       always set this member to <b>FALSE</b>.</div>
 <div> </div>
+
+`uProbeDelay`
+
+The amount of time, in microseconds, that the 802.11 station must wait before transmitting an
+     802.11 Probe Request frame during active scanning.
+
+`uMinChannelTime`
+
+The minimum amount of time, in 802.11 time units (TU), that the 802.11 station spends on each
+     channel when scanning. One TU is 1024 microseconds.
+     
+
+This member must be greater than or equal to 
+     <b>uProbeDelay</b> .
+
+`uMaxChannelTime`
+
+The maximum amount of time, in 802.11 time units (TU), that the 802.11 station spends on each
+     channel when scanning.
+     
+
+This member must be greater than or equal to 
+     <b>uProbeDelay</b> .
 
 `ChDescriptionType`
 
@@ -106,46 +137,15 @@ The channel entry is defined by a logical channel number to conform with the IEE
 
 The channel entry is defined, in units of megahertz (MHz), by a channel center frequency.
 
-`dot11PhyType`
-
-The type of PHY that the 802.11 station will use for the scan. The PHY type is defined by the 
-       <a href="..\windot11\ne-windot11-_dot11_phy_type.md">DOT11_PHY_TYPE</a> enumeration. 
-       <div class="alert"><b>Note</b>  The miniport driver must ignore this member if it is operating in Extensible
-       Station (ExtSTA) mode.</div>
-<div> </div>
-
-`ucChannelListBuffer`
-
-An array containing channel descriptions for the PHY type specified in the 
-     <b>dot11PhyType</b> member.
-
 `uChannelListSize`
 
 The length, in bytes, of the 
      <b>ucChannelListBuffer</b> array. Each entry in this array is formatted as a ULONG data type.
 
-`uMaxChannelTime`
+`ucChannelListBuffer`
 
-The maximum amount of time, in 802.11 time units (TU), that the 802.11 station spends on each
-     channel when scanning.
-     
-
-This member must be greater than or equal to 
-     <b>uProbeDelay</b> .
-
-`uMinChannelTime`
-
-The minimum amount of time, in 802.11 time units (TU), that the 802.11 station spends on each
-     channel when scanning. One TU is 1024 microseconds.
-     
-
-This member must be greater than or equal to 
-     <b>uProbeDelay</b> .
-
-`uProbeDelay`
-
-The amount of time, in microseconds, that the 802.11 station must wait before transmitting an
-     802.11 Probe Request frame during active scanning.
+An array containing channel descriptions for the PHY type specified in the 
+     <b>dot11PhyType</b> member.
 
 ## Remarks
 The 
@@ -175,11 +175,3 @@ For more information about the ExtSTA operation mode, see
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_TYPE_INFO structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

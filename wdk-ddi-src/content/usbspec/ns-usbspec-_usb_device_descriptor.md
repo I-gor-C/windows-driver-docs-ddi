@@ -70,49 +70,45 @@ typedef struct _USB_DEVICE_DESCRIPTOR {
 ## Members
 
 
-`bcdDevice`
+`bLength`
 
-Identifies the version of the device. This value is a binary-coded decimal number.
-
-`bcdUSB`
-
-Identifies the version of the USB specification that this descriptor structure complies with. This value is a binary-coded decimal number.
+Specifies the length, in bytes, of this descriptor.
 
 `bDescriptorType`
 
 Specifies the descriptor type. Must be set to <b>USB_DEVICE_DESCRIPTOR_TYPE</b>.
 
+`bcdUSB`
+
+Identifies the version of the USB specification that this descriptor structure complies with. This value is a binary-coded decimal number.
+
 `bDeviceClass`
 
 Specifies the class code of the device as assigned by the USB specification group.
-
-`bDeviceProtocol`
-
-Specifies the protocol code of the device as assigned by the USB specification group.
 
 `bDeviceSubClass`
 
 Specifies the subclass code of the device as assigned by the USB specification group.
 
-`bLength`
+`bDeviceProtocol`
 
-Specifies the length, in bytes, of this descriptor.
+Specifies the protocol code of the device as assigned by the USB specification group.
 
 `bMaxPacketSize0`
 
 Specifies the maximum packet size, in bytes, for endpoint zero of the device. The value must be set to 8, 16, 32, or 64.
 
-`bNumConfigurations`
+`idVendor`
 
-Specifies the total number of possible configurations for the device.
+Specifies the vendor identifier for the device as assigned by the USB specification committee.
 
 `idProduct`
 
 Specifies the product identifier. This value is assigned by the manufacturer and is device-specific.
 
-`idVendor`
+`bcdDevice`
 
-Specifies the vendor identifier for the device as assigned by the USB specification committee.
+Identifies the version of the device. This value is a binary-coded decimal number.
 
 `iManufacturer`
 
@@ -125,6 +121,10 @@ Specifies a device-defined index of the string descriptor that provides a string
 `iSerialNumber`
 
 Specifies a device-defined index of the string descriptor that provides a string that contains a manufacturer-determined serial number for the device.
+
+`bNumConfigurations`
+
+Specifies the total number of possible configurations for the device.
 
 ## Remarks
 This structure is used to hold a retrieved USB-defined device descriptor. This information can then be used to further configure or retrieve information about the device. Device descriptors are retrieved by submitting a get-descriptor URB.
@@ -147,11 +147,3 @@ The <b>iManufacturer</b>, <b>iProduct</b>, and <b>iSerialNumber</b> values, when
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_DEVICE_DESCRIPTOR structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

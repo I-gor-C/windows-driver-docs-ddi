@@ -62,11 +62,11 @@ typedef struct D3D12DDI_VIDEO_DECODE_REFERENCE_FRAMES_0020 {
 
 
 
-`NumTexture2Ds`
-
-
-
 `pSubresources`
+
+
+
+`NumTexture2Ds`
 
 
 

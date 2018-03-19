@@ -61,8 +61,8 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>GNSS_FixSession_ContinuousTracking</td>
-                    <td>The start fix request is for starting a tracking session such that the device position is reported continuously.</td>
+                    <td>GNSS_FixSession_SingleShot</td>
+                    <td>The session request is a single-shot request. The GNSS driver will return intermediate fixes on request. Once a final fix is delivered, no further fix will be returned for this fix session and the GNSS adapter issues a stop fix.</td>
                 </tr>
             
                 <tr>
@@ -71,13 +71,13 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>GNSS_FixSession_LKG</td>
-                    <td>This session request is for a single-shot request, without starting any satellite acquisition/tracking activity by the underlying GNSS engine. The GNSS driver returns the cached copy (either from the engine or from the drivers own memory) of the last known position of the device, along with the timestamp. If no cached fix is available either in the engine or in the driver, an error is returned. No intermediate fix is returned for this session. Once the LKG fix or an error fix is returned the GNSS adapter issues a stop fix.</td>
+                    <td>GNSS_FixSession_ContinuousTracking</td>
+                    <td>The start fix request is for starting a tracking session such that the device position is reported continuously.</td>
                 </tr>
             
                 <tr>
-                    <td>GNSS_FixSession_SingleShot</td>
-                    <td>The session request is a single-shot request. The GNSS driver will return intermediate fixes on request. Once a final fix is delivered, no further fix will be returned for this fix session and the GNSS adapter issues a stop fix.</td>
+                    <td>GNSS_FixSession_LKG</td>
+                    <td>This session request is for a single-shot request, without starting any satellite acquisition/tracking activity by the underlying GNSS engine. The GNSS driver returns the cached copy (either from the engine or from the drivers own memory) of the last known position of the device, along with the timestamp. If no cached fix is available either in the engine or in the driver, an error is returned. No intermediate fix is returned for this session. Once the LKG fix or an error fix is returned the GNSS adapter issues a stop fix.</td>
                 </tr>
 </table>
 

@@ -57,11 +57,11 @@ typedef struct _RILDELETEADDITIONALNUMBERSTRINGPARAMS {
 ## Members
 
 
-`dwNumId`
-
-
-
 `hUiccApp`
+
+
+
+`dwNumId`
 
 
 

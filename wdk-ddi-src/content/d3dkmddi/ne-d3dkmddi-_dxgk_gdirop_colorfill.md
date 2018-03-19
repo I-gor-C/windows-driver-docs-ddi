@@ -65,18 +65,8 @@ typedef enum _DXGK_GDIROP_COLORFILL {
 <table>
             
                 <tr>
-                    <td>DXGK_GDIROPCF_DSTINVERT</td>
-                    <td>Indicates that the destination rectangle is inverted.</td>
-                </tr>
-            
-                <tr>
                     <td>DXGK_GDIROPCF_INVALID</td>
                     <td>Indicates that the GDI raster operation is invalid.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_GDIROPCF_PATAND</td>
-                    <td>Indicates that the specified color is combined with the colors of the destination rectangle by using the Boolean <b>AND</b> operator.</td>
                 </tr>
             
                 <tr>
@@ -90,13 +80,23 @@ typedef enum _DXGK_GDIROP_COLORFILL {
                 </tr>
             
                 <tr>
-                    <td>DXGK_GDIROPCF_PATOR</td>
-                    <td>Indicates that the colors of the specified pattern are combined with the colors of the destination rectangle by using the Boolean <b>OR</b> operator.</td>
+                    <td>DXGK_GDIROPCF_PDXN</td>
+                    <td>Indicates that the specified color is combined with the colors of the destination rectangle by using the Boolean <b>NOT(XOR)</b> operator.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGK_GDIROPCF_PDXN</td>
-                    <td>Indicates that the specified color is combined with the colors of the destination rectangle by using the Boolean <b>NOT(XOR)</b> operator.</td>
+                    <td>DXGK_GDIROPCF_DSTINVERT</td>
+                    <td>Indicates that the destination rectangle is inverted.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_GDIROPCF_PATAND</td>
+                    <td>Indicates that the specified color is combined with the colors of the destination rectangle by using the Boolean <b>AND</b> operator.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_GDIROPCF_PATOR</td>
+                    <td>Indicates that the colors of the specified pattern are combined with the colors of the destination rectangle by using the Boolean <b>OR</b> operator.</td>
                 </tr>
             
                 <tr>

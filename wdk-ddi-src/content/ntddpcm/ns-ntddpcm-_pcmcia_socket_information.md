@@ -65,17 +65,25 @@ typedef struct _PCMCIA_SOCKET_INFORMATION {
 ## Members
 
 
-`CardEnabled`
+`Socket`
 
-Indicates that the card is enabled.
+Indicates the socket number.
 
-`CardInSocket`
+`TupleCrc`
 
-Indicates that there is a card present in the socket.
+Contains a 16-bit CRC that is concatenated with the PCMCIA prefix, the manufacturer-name string, the product-name string, and the instance value for the card to produce the device ID for a PC Card or CardBus card. For more information about PCMCIA device IDs, see <a href="https://msdn.microsoft.com/7eaf6372-a9cc-4714-8955-52653ec57141">Identifiers for PCMCIA Devices</a>.
 
-`ControllerType`
+`Manufacturer`
 
-Indicates the controller type. Some common controller types are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537600">PCMCIA_CONTROLLER_CLASS</a> enumeration.
+Indicates the manufacturer of the PC Card or CardBus card.
+
+`Identifier`
+
+Contains the device ID of the PC Card or CardBus card.
+
+`DriverName`
+
+Contains the name of the PC Card or CardBus card device driver.
 
 `DeviceFunctionId`
 
@@ -218,29 +226,21 @@ Modem card.
 </tr>
 </table>
 
-`DriverName`
-
-Contains the name of the PC Card or CardBus card device driver.
-
-`Identifier`
-
-Contains the device ID of the PC Card or CardBus card.
-
-`Manufacturer`
-
-Indicates the manufacturer of the PC Card or CardBus card.
-
 `Reserved`
 
 Reserved.
 
-`Socket`
+`CardInSocket`
 
-Indicates the socket number.
+Indicates that there is a card present in the socket.
 
-`TupleCrc`
+`CardEnabled`
 
-Contains a 16-bit CRC that is concatenated with the PCMCIA prefix, the manufacturer-name string, the product-name string, and the instance value for the card to produce the device ID for a PC Card or CardBus card. For more information about PCMCIA device IDs, see <a href="https://msdn.microsoft.com/7eaf6372-a9cc-4714-8955-52653ec57141">Identifiers for PCMCIA Devices</a>.
+Indicates that the card is enabled.
+
+`ControllerType`
+
+Indicates the controller type. Some common controller types are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537600">PCMCIA_CONTROLLER_CLASS</a> enumeration.
 
 
 ## Requirements
@@ -251,11 +251,3 @@ Contains a 16-bit CRC that is concatenated with the PCMCIA prefix, the manufactu
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537275">IOCTL_SOCKET_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCMCIA\buses]:%20PCMCIA_SOCKET_INFORMATION structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

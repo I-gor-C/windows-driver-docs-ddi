@@ -65,13 +65,13 @@ typedef enum _WWAN_PCO_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WwanPcoTypeMax</td>
-                    <td></td>
+                    <td>WwanPcoTypePartial</td>
+                    <td>Specifies that the modem will only be passing up a subset of PCO structures that it received from the network. The header matches the 3GPP TS24.008 specification for the PCO structure, as shown on <b>WWAN_PCO_VALUE</b>, but the “Configuration protocol” of octet 3 may not be valid.</td>
                 </tr>
             
                 <tr>
-                    <td>WwanPcoTypePartial</td>
-                    <td>Specifies that the modem will only be passing up a subset of PCO structures that it received from the network. The header matches the 3GPP TS24.008 specification for the PCO structure, as shown on <b>WWAN_PCO_VALUE</b>, but the “Configuration protocol” of octet 3 may not be valid.</td>
+                    <td>WwanPcoTypeMax</td>
+                    <td></td>
                 </tr>
 </table>
 
@@ -99,11 +99,3 @@ The OS will not check if the PCO data is valid and leaves the validation to the 
 
 
 <a href="..\wwan\ns-wwan-_wwan_pco_value.md">WWAN_PCO_VALUE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PCO_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

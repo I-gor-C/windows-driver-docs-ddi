@@ -65,17 +65,17 @@ typedef enum _RILMSGCDMAMSGDISPLAYMODE {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGDISPLAYMODE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_MSGDISPLAYMODE_MOBILEDEFAULT</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_MSGDISPLAYMODE_USERDEFAULT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDISPLAYMODE_MAX</td>
                     <td></td>
                 </tr>
 </table>

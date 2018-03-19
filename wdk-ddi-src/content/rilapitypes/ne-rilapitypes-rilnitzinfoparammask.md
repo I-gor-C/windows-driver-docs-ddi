@@ -63,17 +63,17 @@ typedef enum _RILNITZINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_NITZ_ALL</td>
+                    <td>RIL_PARAM_NITZ_EXECUTOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_NITZ_TIMEZONEOFFSET</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_PARAM_NITZ_DAYLIGHTSAVINGOFFSET</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_NITZ_EXECUTOR</td>
                     <td></td>
                 </tr>
             
@@ -88,7 +88,7 @@ typedef enum _RILNITZINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_NITZ_TIMEZONEOFFSET</td>
+                    <td>RIL_PARAM_NITZ_ALL</td>
                     <td></td>
                 </tr>
 </table>

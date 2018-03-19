@@ -63,18 +63,8 @@ typedef enum _SES_DOWNLOAD_MICROCODE_STATE {
 <table>
             
                 <tr>
-                    <td>SesDownloadMcStateCompletedPendingActivation</td>
-                    <td>Specifies a microcode download operations completed and is waiting for activation.</td>
-                </tr>
-            
-                <tr>
-                    <td>SesDownloadMcStateCompletedPendingPowerOn</td>
-                    <td>Specifies a microcode download operations completed and is waiting for a power on.</td>
-                </tr>
-            
-                <tr>
-                    <td>SesDownloadMcStateCompletedPendingReset</td>
-                    <td>Specifies a microcode download operations completed and is waiting for a hard reset.</td>
+                    <td>SesDownloadMcStateNoneInProgress</td>
+                    <td>Specifies no microcode download operation is in progress.</td>
                 </tr>
             
                 <tr>
@@ -83,8 +73,18 @@ typedef enum _SES_DOWNLOAD_MICROCODE_STATE {
                 </tr>
             
                 <tr>
-                    <td>SesDownloadMcStateNoneInProgress</td>
-                    <td>Specifies no microcode download operation is in progress.</td>
+                    <td>SesDownloadMcStateCompletedPendingReset</td>
+                    <td>Specifies a microcode download operations completed and is waiting for a hard reset.</td>
+                </tr>
+            
+                <tr>
+                    <td>SesDownloadMcStateCompletedPendingPowerOn</td>
+                    <td>Specifies a microcode download operations completed and is waiting for a power on.</td>
+                </tr>
+            
+                <tr>
+                    <td>SesDownloadMcStateCompletedPendingActivation</td>
+                    <td>Specifies a microcode download operations completed and is waiting for activation.</td>
                 </tr>
 </table>
 

@@ -60,14 +60,6 @@ typedef struct _FORMATOP {
 ## Members
 
 
-`BltMsTypes`
-
-[out] A 32-bitmask for windowed multiple sampling.
-
-`FlipMsTypes`
-
-[out] A 32-bitmask for full-screen multiple sampling.
-
 `Format`
 
 [in] The <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface.
@@ -258,6 +250,14 @@ Surfaces of this format support a multiplane overlay.
 
 Supported starting with Windows 8.
 
+`FlipMsTypes`
+
+[out] A 32-bitmask for full-screen multiple sampling.
+
+`BltMsTypes`
+
+[out] A 32-bitmask for windowed multiple sampling.
+
 `PrivateFormatBitCount`
 
 [out] The bits per pixel of a pixel format that is private to the driver (that is, not one of the standard pixel formats that are defined by the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration type).
@@ -288,11 +288,3 @@ Supported starting with Windows 8.
 
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20FORMATOP structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

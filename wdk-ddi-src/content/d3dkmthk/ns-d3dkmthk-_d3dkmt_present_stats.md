@@ -68,17 +68,17 @@ typedef struct _D3DKMT_PRESENT_STATS {
 
 [out] A UINT value that indicates the number of times the display controller outputs a new video frame, which occurs at the beginning of each vertical retrace period. The operating system maintains a present refresh counter for each video display controller output in the operating system. <b>PresentRefreshCount</b> is initialized to an unspecified value.
 
-`SyncGPUTime`
+`SyncRefreshCount`
 
-[out] The graphics processing unit (GPU) time that the current video frame was output at (that is, the GPU time that the vertical retrace started).
+[out] A UINT value that indicates the number of the most recent capture of the timing information in the <b>SyncQPCTime</b> and <b>SyncGPUTime</b> members.
 
 `SyncQPCTime`
 
 [out] The computer processing unit (CPU) time that the current video frame was output at (that is, the CPU time that the vertical retrace started).
 
-`SyncRefreshCount`
+`SyncGPUTime`
 
-[out] A UINT value that indicates the number of the most recent capture of the timing information in the <b>SyncQPCTime</b> and <b>SyncGPUTime</b> members.
+[out] The graphics processing unit (GPU) time that the current video frame was output at (that is, the GPU time that the vertical retrace started).
 
 ## Remarks
 When a present operation is retired, the operating system maintains a correspondence (mapping) between the value in <b>PresentCount</b> and the value in <b>PresentRefreshCount</b>; that is, when the operating system finishes a present operation as a scanned out video frame, the value in <b>PresentRefreshCount</b> that the present operation was finished with is associated with the value in <b>PresentCount</b> of the retired present operation. 
@@ -103,11 +103,3 @@ Present statistics cannot work for windowed-mode devices. For windowed mode, eac
 
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_devicepresent_state.md">D3DKMT_DEVICEPRESENT_STATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_PRESENT_STATS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

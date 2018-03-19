@@ -62,31 +62,11 @@ typedef enum _DXGK_POWER_COMPONENT_TYPE {
 <table>
             
                 <tr>
-                    <td>DXGK_POWER_COMPONENT_D3_TRANSITION</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>DXGK_POWER_COMPONENT_ENGINE</td>
                     <td>Indicates that the component is a  GPU engine.
 
 <div class="alert"><b>Note</b>  An engine can have only one power component assigned.</div>
 <div> </div></td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_POWER_COMPONENT_MAX</td>
-                    <td>A maximum value that is used for testing purposes.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_POWER_COMPONENT_MEMORY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_POWER_COMPONENT_MEMORY_REFRESH</td>
-                    <td></td>
                 </tr>
             
                 <tr>
@@ -102,13 +82,33 @@ A typical component of this type is a self-refreshing monitor, which can display
                 </tr>
             
                 <tr>
+                    <td>DXGK_POWER_COMPONENT_MEMORY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_POWER_COMPONENT_MEMORY_REFRESH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>DXGK_POWER_COMPONENT_OTHER</td>
                     <td>Indicates a component for which the idle state is managed entirely by the display miniport driver. The DirectX graphics kernel subsystem passes this information to the <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">Power Management Framework</a>.</td>
                 </tr>
             
                 <tr>
+                    <td>DXGK_POWER_COMPONENT_D3_TRANSITION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>DXGK_POWER_COMPONENT_SHARED</td>
                     <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_POWER_COMPONENT_MAX</td>
+                    <td>A maximum value that is used for testing purposes.</td>
                 </tr>
 </table>
 

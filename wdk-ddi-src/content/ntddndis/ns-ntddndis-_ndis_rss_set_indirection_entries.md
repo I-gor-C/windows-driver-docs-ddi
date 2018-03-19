@@ -61,10 +61,6 @@ typedef struct _NDIS_RSS_SET_INDIRECTION_ENTRIES {
 ## Members
 
 
-`Flags`
-
-A <b>ULONG</b> value that contains a bitwise OR of flags. This member qualifies the other members of this structure, as well as the array processing policy. In Windows 10, version 1709, no flags are defined for this member.
-
 `Header`
 
 The 
@@ -77,9 +73,9 @@ For NDIS  6.80 and later drivers, set the
      <b>Revision</b> member to <b>NDIS_RSS_SET_INDIRECTION_ENTRIES_REVISION_1</b> and the 
      <b>Size</b> member to <b>sizeof(NDIS_RSS_SET_INDIRECTION_ENTRIES)</b>.
 
-`NumberOfRssEntries`
+`Flags`
 
-The number of formatted <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_entry.md">NDIS_RSS_SET_INDIRECTION_ENTRY</a> structures in the array.
+A <b>ULONG</b> value that contains a bitwise OR of flags. This member qualifies the other members of this structure, as well as the array processing policy. In Windows 10, version 1709, no flags are defined for this member.
 
 `RssEntrySize`
 
@@ -88,6 +84,10 @@ An opaque number that needs to be added to the pointer during array traversal.
 `RssEntryTableOffset`
 
 The offset of the <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_entry.md">NDIS_RSS_SET_INDIRECTION_ENTRY</a> array from the beginning of this structure.
+
+`NumberOfRssEntries`
+
+The number of formatted <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_entry.md">NDIS_RSS_SET_INDIRECTION_ENTRY</a> structures in the array.
 
 
 ## Requirements
@@ -119,11 +119,3 @@ The offset of the <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_ent
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_entry.md">NDIS_RSS_SET_INDIRECTION_ENTRY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_SET_INDIRECTION_ENTRIES structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

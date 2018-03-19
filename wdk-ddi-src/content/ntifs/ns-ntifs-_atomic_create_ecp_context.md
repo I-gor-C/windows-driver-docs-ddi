@@ -71,17 +71,9 @@ typedef struct _ATOMIC_CREATE_ECP_CONTEXT {
 ## Members
 
 
-`FileAttributes`
+`Size`
 
-Specifies the attributes of a file.
-
-`FileSize`
-
-The optional value that is used with <b>ATOMIC_CREATE_ECP_IN_FLAG_EOF_SPECIFIED</b> to indicate the requested file size to be set on the file.
-
-`FileTimestamps`
-
-Pointer to an optional <a href="..\ntifs\ns-ntifs-_file_timestamps.md">FILE_TIMESTAMPS</a> structure which contains  the last recorded instance of specific actions on a file.
+The size of the context structure.
 
 `InFlags`
 
@@ -236,29 +228,37 @@ Use this flag value as a mask to determine the supplemental operations that were
 </tr>
 </table>
 
-`ReparseBuffer`
-
-The optional value that indicates the type of buffer used in the create operation. Possible values are <b>REPARSE_DATA_BUFFER</b> or <b>REPARSE_GUID_DATA_BUFFER</b>.
-
 `ReparseBufferLength`
 
 The length of the <b>ReparseBuffer</b> member. This value can't exceed the <b>MAXIMUM_REPARSE_DATA_BUFFER_SIZE</b> (16K).
 
-`Size`
+`ReparseBuffer`
 
-The size of the context structure.
+The optional value that indicates the type of buffer used in the create operation. Possible values are <b>REPARSE_DATA_BUFFER</b> or <b>REPARSE_GUID_DATA_BUFFER</b>.
 
-`Usn`
+`FileSize`
 
-Specifies the Update Sequence Number (USN). This value is filled at the end of <b>GUID_ECP_ATOMIC_CREATE</b> .
+The optional value that is used with <b>ATOMIC_CREATE_ECP_IN_FLAG_EOF_SPECIFIED</b> to indicate the requested file size to be set on the file.
+
+`ValidDataLength`
+
+The optional value that is used with <b>ATOMIC_CREATE_ECP_IN_FLAG_VDL_SPECIFIED</b> to indicate the requested valid data length to be set on the file.
+
+`FileTimestamps`
+
+Pointer to an optional <a href="..\ntifs\ns-ntifs-_file_timestamps.md">FILE_TIMESTAMPS</a> structure which contains  the last recorded instance of specific actions on a file.
+
+`FileAttributes`
+
+Specifies the attributes of a file.
 
 `UsnSourceInfo`
 
 Specifies optional Update Sequence Number (USN) source info flags.
 
-`ValidDataLength`
+`Usn`
 
-The optional value that is used with <b>ATOMIC_CREATE_ECP_IN_FLAG_VDL_SPECIFIED</b> to indicate the requested valid data length to be set on the file.
+Specifies the Update Sequence Number (USN). This value is filled at the end of <b>GUID_ECP_ATOMIC_CREATE</b> .
 
 ## Remarks
 The GUID used for this structure is the <b>GUID_ECP_ATOMIC_CREATE</b> (<code>4720bd83-52ac-4104-a130-d1ec6a8cc8e5</code>).

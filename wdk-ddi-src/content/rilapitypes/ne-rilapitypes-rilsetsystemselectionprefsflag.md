@@ -61,7 +61,7 @@ typedef enum _RILSETSYSTEMSELECTIONPREFSFLAG {
 <table>
             
                 <tr>
-                    <td>RIL_SSSPFLAG_ALL</td>
+                    <td>RIL_SSSPFLAG_NONE</td>
                     <td></td>
                 </tr>
             
@@ -76,7 +76,7 @@ typedef enum _RILSETSYSTEMSELECTIONPREFSFLAG {
                 </tr>
             
                 <tr>
-                    <td>RIL_SSSPFLAG_NONE</td>
+                    <td>RIL_SSSPFLAG_ALL</td>
                     <td></td>
                 </tr>
 </table>

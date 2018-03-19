@@ -62,18 +62,8 @@ typedef enum _STORAGE_DIAGNOSTIC_TARGET_TYPE {
 <table>
             
                 <tr>
-                    <td>StorageDiagnosticTargetTypeHbaFirmware</td>
-                    <td>Specifies the target type is a Hba Firmware driver.</td>
-                </tr>
-            
-                <tr>
-                    <td>StorageDiagnosticTargetTypeMax</td>
-                    <td>Specifies the target type is a Max driver.</td>
-                </tr>
-            
-                <tr>
-                    <td>StorageDiagnosticTargetTypeMiniport</td>
-                    <td>Specifies the target type is a Miniport driver.</td>
+                    <td>StorageDiagnosticTargetTypeUndefined</td>
+                    <td>Specifies the target type is undefined.</td>
                 </tr>
             
                 <tr>
@@ -82,8 +72,18 @@ typedef enum _STORAGE_DIAGNOSTIC_TARGET_TYPE {
                 </tr>
             
                 <tr>
-                    <td>StorageDiagnosticTargetTypeUndefined</td>
-                    <td>Specifies the target type is undefined.</td>
+                    <td>StorageDiagnosticTargetTypeMiniport</td>
+                    <td>Specifies the target type is a Miniport driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorageDiagnosticTargetTypeHbaFirmware</td>
+                    <td>Specifies the target type is a Hba Firmware driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorageDiagnosticTargetTypeMax</td>
+                    <td>Specifies the target type is a Max driver.</td>
                 </tr>
 </table>
 

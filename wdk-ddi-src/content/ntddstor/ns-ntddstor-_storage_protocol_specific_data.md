@@ -63,33 +63,33 @@ typedef struct _STORAGE_PROTOCOL_SPECIFIC_DATA {
 ## Members
 
 
+`ProtocolType`
+
+The protocol type. Values for this member are defined in the <a href="..\ntddstor\ne-ntddstor-_storage_protocol_type.md">STORAGE_PROTOCOL_TYPE</a> enumeration.
+
 `DataType`
 
 The protocol data type. Data types are defined in the <a href="..\ntddstor\ne-ntddstor-_storage_protocol_nvme_data_type.md">STORAGE_PROTOCOL_NVME_DATA_TYPE</a> and <a href="..\ntddstor\ne-ntddstor-_storage_protocol_ata_data_type.md">STORAGE_PROTOCOL_ATA_DATA_TYPE</a> enumerations.
-
-`FixedProtocolReturnData`
-
-The returned data.
-
-`ProtocolDataLength`
-
-The length of the protocol data.
-
-`ProtocolDataOffset`
-
-The offset of the data buffer that is from the beginning of this structure. The typical value can be sizeof(<b>STORAGE_PROTOCOL_SPECIFIC_DATA</b>).
-
-`ProtocolDataRequestSubValue`
-
-The sub value of the protocol data request.
 
 `ProtocolDataRequestValue`
 
 The protocol data request value.
 
-`ProtocolType`
+`ProtocolDataRequestSubValue`
 
-The protocol type. Values for this member are defined in the <a href="..\ntddstor\ne-ntddstor-_storage_protocol_type.md">STORAGE_PROTOCOL_TYPE</a> enumeration.
+The sub value of the protocol data request.
+
+`ProtocolDataOffset`
+
+The offset of the data buffer that is from the beginning of this structure. The typical value can be sizeof(<b>STORAGE_PROTOCOL_SPECIFIC_DATA</b>).
+
+`ProtocolDataLength`
+
+The length of the protocol data.
+
+`FixedProtocolReturnData`
+
+The returned data.
 
 `Reserved`
 
@@ -171,11 +171,3 @@ Set the <b>DataType</b>  field to an enumeration value defined by <a href="..\nt
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_PROTOCOL_SPECIFIC_DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -66,37 +66,12 @@ typedef enum _RILIMSSERVICE {
 <table>
             
                 <tr>
-                    <td>RIL_IMS_SERVICE_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_IMS_SERVICE_CUSTOM</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_IMS_SERVICE_E_VOICE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_IMS_SERVICE_RCS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_IMS_SERVICE_SMS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_IMS_SERVICE_SUPSVC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_IMS_SERVICE_USSD</td>
+                    <td>RIL_IMS_SERVICE_VOICE</td>
                     <td></td>
                 </tr>
             
@@ -106,7 +81,32 @@ typedef enum _RILIMSSERVICE {
                 </tr>
             
                 <tr>
-                    <td>RIL_IMS_SERVICE_VOICE</td>
+                    <td>RIL_IMS_SERVICE_CUSTOM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMS_SERVICE_SUPSVC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMS_SERVICE_RCS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMS_SERVICE_USSD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMS_SERVICE_E_VOICE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMS_SERVICE_ALL</td>
                     <td></td>
                 </tr>
 </table>

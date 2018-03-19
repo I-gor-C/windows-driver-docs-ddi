@@ -60,13 +60,17 @@ typedef struct _D3DKMDT_SHAREDPRIMARYSURFACEDATA {
 ## Members
 
 
-`Format`
+`Width`
 
-[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface. The driver returns the format value.
+[in] The width of the surface, in pixels. The driver returns the width value.
 
 `Height`
 
 [in] The height of the surface, in pixels. The driver returns the height value.
+
+`Format`
+
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface. The driver returns the format value.
 
 `RefreshRate`
 
@@ -75,10 +79,6 @@ typedef struct _D3DKMDT_SHAREDPRIMARYSURFACEDATA {
 `VidPnSourceId`
 
 [in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the surface is located on.
-
-`Width`
-
-[in] The width of the surface, in pixels. The driver returns the width value.
 
 ## Remarks
 Multiple processes can lock a shared primary surface. The video memory manager pins the standard allocation for the shared primary surface in video memory so the digital-to-analog converter (DAC) is guaranteed to always scan-out the appropriate data.
@@ -104,11 +104,3 @@ Multiple processes can lock a shared primary surface. The video memory manager p
 
 
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_SHAREDPRIMARYSURFACEDATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

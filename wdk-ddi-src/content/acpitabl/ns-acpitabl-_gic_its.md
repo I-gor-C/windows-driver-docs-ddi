@@ -61,29 +61,29 @@ typedef struct _GIC_ITS {
 ## Members
 
 
-`Identifier`
+`Type`
 
-Defines the <b>ULONG</b> member <b>Identifier</b>.
+Defines the <b>UCHAR</b> member <b>Type</b>.
 
 `Length`
 
 Defines the <b>UCHAR</b> member <b>Length</b>.
 
-`PhysicalAddress`
-
-Defines the <b>ULONGLONG</b> member <b>PhysicalAddress</b>.
-
 `Reserved1`
 
 Reserved for future use.
 
+`Identifier`
+
+Defines the <b>ULONG</b> member <b>Identifier</b>.
+
+`PhysicalAddress`
+
+Defines the <b>ULONGLONG</b> member <b>PhysicalAddress</b>.
+
 `Reserved2`
 
 Reserved for future use.
-
-`Type`
-
-Defines the <b>UCHAR</b> member <b>Type</b>.
 
 
 ## Requirements

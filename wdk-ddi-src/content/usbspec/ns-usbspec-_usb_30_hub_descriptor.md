@@ -65,9 +65,25 @@ typedef struct _USB_30_HUB_DESCRIPTOR {
 ## Members
 
 
+`bLength`
+
+The length, in bytes, of the descriptor.
+
 `bDescriptorType`
 
 The descriptor type. For SuperSpeed hub descriptors, the value must be USB_30_HUB_DESCRIPTOR_TYPE (0x2A).
+
+`bNumberOfPorts`
+
+The number of ports on the hub.
+
+`wHubCharacteristics`
+
+The hub characteristics.
+
+`bPowerOnToPowerGood`
+
+The time, in 2-millisecond intervals, that it takes the device to turn on completely.
 
 `bHubControlCurrent`
 
@@ -77,29 +93,13 @@ The maximum current requirements, in milliamperes, of the controller component o
 
 The    hub packet header decode latency.
 
-`bLength`
+`wHubDelay`
 
-The length, in bytes, of the descriptor.
-
-`bNumberOfPorts`
-
-The number of ports on the hub.
-
-`bPowerOnToPowerGood`
-
-The time, in 2-millisecond intervals, that it takes the device to turn on completely.
+The average delay, in nanoseconds, that is introduced by the hub.
 
 `DeviceRemovable`
 
 Indicates whether a removable device is attached to each port.
-
-`wHubCharacteristics`
-
-The hub characteristics.
-
-`wHubDelay`
-
-The average delay, in nanoseconds, that is introduced by the hub.
 
 
 ## Requirements
@@ -115,11 +115,3 @@ The average delay, in nanoseconds, that is introduced by the hub.
 
 
 <a href="..\usbioctl\ns-usbioctl-_usb_hub_information_ex.md">USB_HUB_INFORMATION_EX</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_30_HUB_DESCRIPTOR structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

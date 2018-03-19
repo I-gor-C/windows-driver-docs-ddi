@@ -58,13 +58,13 @@ typedef struct _IRB_REQ_ISOCH_LISTEN {
 ## Members
 
 
-`fulFlags`
-
-Reserved. Device drivers must set this to zero.
-
 `hResource`
 
 Specifies the resource handle to use in reading data.
+
+`fulFlags`
+
+Reserved. Device drivers must set this to zero.
 
 `StartTime`
 

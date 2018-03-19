@@ -64,9 +64,9 @@ typedef struct _WDF_TIMER_CONFIG {
 ## Members
 
 
-`AutomaticSerialization`
+`Size`
 
-A Boolean value that, if <b>TRUE</b>, indicates that the framework will synchronize execution of the timer object's <a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a> callback function with callback functions from other objects that are underneath the timer's parent device object. For more information, see the following Remarks section. If <b>FALSE</b>, the framework does not synchronize execution of the <i>EvtTimerFunc</i> callback function.
+The size, in bytes, of this structure.
 
 `EvtTimerFunc`
 
@@ -76,9 +76,9 @@ A pointer to a driver-supplied <a href="https://msdn.microsoft.com/abe15fd9-620e
 
 A time period, in milliseconds. The framework calls the driver's <a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a> callback function repeatedly, whenever the specified number of milliseconds elapses. If this value is zero, the framework does not call the driver's <i>EvtTimerFunc</i> callback function repeatedly. Instead, it calls the callback function once, after the <a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a> method's <i>DueTime</i> has elapsed. (The time period must be zero if <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a> sets the execution level to <a href="..\wdfobject\ne-wdfobject-_wdf_execution_level.md">WdfExecutionLevelPassive</a>.) The time period cannot be a negative value.
 
-`Size`
+`AutomaticSerialization`
 
-The size, in bytes, of this structure.
+A Boolean value that, if <b>TRUE</b>, indicates that the framework will synchronize execution of the timer object's <a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a> callback function with callback functions from other objects that are underneath the timer's parent device object. For more information, see the following Remarks section. If <b>FALSE</b>, the framework does not synchronize execution of the <i>EvtTimerFunc</i> callback function.
 
 `TolerableDelay`
 
@@ -150,11 +150,3 @@ For more information about framework timer objects, see <a href="https://docs.mi
 
 
 <a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_TIMER_CONFIG structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

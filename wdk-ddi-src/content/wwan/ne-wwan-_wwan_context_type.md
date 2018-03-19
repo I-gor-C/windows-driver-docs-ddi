@@ -67,6 +67,52 @@ typedef enum _WWAN_CONTEXT_TYPE {
 <table>
             
                 <tr>
+                    <td>WwanContextTypeNone</td>
+                    <td>The context is not yet provisioned.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeInternet</td>
+                    <td>The context represents a connection to the Internet.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeVpn</td>
+                    <td>The context represents a connection to virtual private network (VPN to a corporate
+     network).</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeVoice</td>
+                    <td>The context represents a connection to a Voice-over-IP (VOIP) service.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeVideoShare</td>
+                    <td>The context represents a connection to a video sharing service.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeCustom</td>
+                    <td>The context represents a connection to a custom service.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypePurchase</td>
+                    <td>Purchase a connection. For example, a walled garden, hot-lining or captive portal.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeMms</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeIms</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>WwanContextTypeAdmin</td>
                     <td></td>
                 </tr>
@@ -77,23 +123,18 @@ typedef enum _WWAN_CONTEXT_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WwanContextTypeCustom</td>
-                    <td>The context represents a connection to a custom service.</td>
+                    <td>WwanContextTypeXcap</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeTethering</td>
+                    <td></td>
                 </tr>
             
                 <tr>
                     <td>WwanContextTypeEmergencyCall</td>
                     <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WwanContextTypeIms</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WwanContextTypeInternet</td>
-                    <td>The context represents a connection to the Internet.</td>
                 </tr>
             
                 <tr>
@@ -104,47 +145,6 @@ typedef enum _WWAN_CONTEXT_TYPE {
                 <tr>
                     <td>WwanContextTypeMax</td>
                     <td>The total number of supported context types.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanContextTypeMms</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WwanContextTypeNone</td>
-                    <td>The context is not yet provisioned.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanContextTypePurchase</td>
-                    <td>Purchase a connection. For example, a walled garden, hot-lining or captive portal.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanContextTypeTethering</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WwanContextTypeVideoShare</td>
-                    <td>The context represents a connection to a video sharing service.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanContextTypeVoice</td>
-                    <td>The context represents a connection to a Voice-over-IP (VOIP) service.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanContextTypeVpn</td>
-                    <td>The context represents a connection to virtual private network (VPN to a corporate
-     network).</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanContextTypeXcap</td>
-                    <td></td>
                 </tr>
 </table>
 
@@ -163,11 +163,3 @@ This enumeration indicates the usage of the provisioned context. For example, wh
 ## See Also
 
 <a href="..\wwan\ns-wwan-_wwan_context.md">WWAN_CONTEXT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CONTEXT_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

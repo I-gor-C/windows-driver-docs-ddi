@@ -59,14 +59,6 @@ typedef struct {
 ## Members
 
 
-`SatelliteArray`
-
-
-
-`SatelliteCount`
-
-Number of satellites in this structure. Not all satellites are actually used for positioning.
-
 `Size`
 
 Structure size.
@@ -74,6 +66,14 @@ Structure size.
 `Version`
 
 Version number.
+
+`SatelliteCount`
+
+Number of satellites in this structure. Not all satellites are actually used for positioning.
+
+`SatelliteArray`
+
+
 
 
 ## Requirements

@@ -65,16 +65,6 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS {
 <table>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_ANAMORPHIC_SCALING</td>
-                    <td>Anamorphic scaling.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_COLOR_CORRECTION</td>
-                    <td>Color correction.</td>
-                </tr>
-            
-                <tr>
                     <td>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_DENOISE</td>
                     <td>Denoise.</td>
                 </tr>
@@ -90,6 +80,11 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS {
                 </tr>
             
                 <tr>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_COLOR_CORRECTION</td>
+                    <td>Color correction.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_FLESH_TONE_MAPPING</td>
                     <td>Flesh-tone mapping.</td>
                 </tr>
@@ -102,6 +97,11 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS {
                 <tr>
                     <td>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_SUPER_RESOLUTION</td>
                     <td>Enhanced image resolution.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS_ANAMORPHIC_SCALING</td>
+                    <td>Anamorphic scaling.</td>
                 </tr>
 </table>
 

@@ -66,14 +66,6 @@ struct RILIMSI {
 
 The size of the structure in bytes.
 
-`dwMcc`
-
-The mobile country code from the IMSI.
-
-`dwMnc`
-
-The mobile network code from the IMSI.
-
 `dwParams`
 
 A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rilimsiparammask.md">RILIMSIPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
@@ -81,6 +73,14 @@ A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rilimsiparammask
 `wszImsi`
 
 The IMSI as a null-terminated Unicode string.
+
+`dwMcc`
+
+The mobile country code from the IMSI.
+
+`dwMnc`
+
+The mobile network code from the IMSI.
 
 ## Remarks
 The RIL driver is responsible for determining whether the MNC comprises two or three digits and extracting it accordingly. (For 3GPP, the number of digits in the MNC is specified by the fourth byte of EFAD as specified in 3GPP TS 31.102 section 4.2.18.)
@@ -95,11 +95,3 @@ For 3GPP2, the IMSI_T is returned if it is programmed; otherwise, the IMSI_M is 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILIMSI structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

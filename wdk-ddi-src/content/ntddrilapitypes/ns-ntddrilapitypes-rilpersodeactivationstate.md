@@ -64,6 +64,10 @@ typedef struct _RILPERSODEACTIVATIONSTATE {
 
 
 
+`dwParams`
+
+
+
 `dwDePersoState`
 
 
@@ -73,10 +77,6 @@ typedef struct _RILPERSODEACTIVATIONSTATE {
 
 
 `dwNumPUKAttemptsLeft`
-
-
-
-`dwParams`
 
 
 

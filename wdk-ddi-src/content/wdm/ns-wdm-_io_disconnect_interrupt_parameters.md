@@ -62,6 +62,47 @@ typedef struct _IO_DISCONNECT_INTERRUPT_PARAMETERS {
 ## Members
 
 
+`Version`
+
+Specifies the particular operation to be performed by <b>IoDisconnectInterruptEx</b>. The value for <b>Version</b> depends on the value specified for <i>Parameters-</i>&gt;<b>Version</b> when <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> registered the interrupt handing routine, as shown in the following table.
+
+<table>
+<tr>
+<th>IO_CONNECT_INTERRUPT_PARAMETERS Version value</th>
+<th>IO_DISCONNECT_INTERRUPT_PARAMETERS Version value</th>
+</tr>
+<tr>
+<td>
+CONNECT_LINE_BASED
+
+</td>
+<td>
+CONNECT_LINE_BASED
+
+</td>
+</tr>
+<tr>
+<td>
+CONNECT_MESSAGE_BASED
+
+</td>
+<td>
+The value of <b>Version</b> output by <b>IoConnectInterruptEx</b>.
+
+</td>
+</tr>
+<tr>
+<td>
+CONNECT_FULLY_SPECIFIED
+
+</td>
+<td>
+CONNECT_FULLY_SPECIFIED
+
+</td>
+</tr>
+</table>
+
 `ConnectionContext`
 
 A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a> or <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a> structure that was provided by <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> when the interrupt was connected. The value for <b>ConnectionContext</b> depends on the value specified for <i>Parameters</i>-&gt;<b>Version</b> when <b>IoConnectInterruptEx</b> registered the interrupt handling routine, as shown in the following table.
@@ -124,47 +165,6 @@ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff55
 
 A pointer to an <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a> structure.
 
-`Version`
-
-Specifies the particular operation to be performed by <b>IoDisconnectInterruptEx</b>. The value for <b>Version</b> depends on the value specified for <i>Parameters-</i>&gt;<b>Version</b> when <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> registered the interrupt handing routine, as shown in the following table.
-
-<table>
-<tr>
-<th>IO_CONNECT_INTERRUPT_PARAMETERS Version value</th>
-<th>IO_DISCONNECT_INTERRUPT_PARAMETERS Version value</th>
-</tr>
-<tr>
-<td>
-CONNECT_LINE_BASED
-
-</td>
-<td>
-CONNECT_LINE_BASED
-
-</td>
-</tr>
-<tr>
-<td>
-CONNECT_MESSAGE_BASED
-
-</td>
-<td>
-The value of <b>Version</b> output by <b>IoConnectInterruptEx</b>.
-
-</td>
-</tr>
-<tr>
-<td>
-CONNECT_FULLY_SPECIFIED
-
-</td>
-<td>
-CONNECT_FULLY_SPECIFIED
-
-</td>
-</tr>
-</table>
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -182,11 +182,3 @@ CONNECT_FULLY_SPECIFIED
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_DISCONNECT_INTERRUPT_PARAMETERS structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -65,12 +65,12 @@ typedef enum _RILPROVISIONSTATUSPROVISIONSTATUS {
 <table>
             
                 <tr>
-                    <td>RIL_PROVISIONSTAT_BIP_STARTED</td>
+                    <td>RIL_PROVISIONSTAT_STARTED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PROVISIONSTAT_BIP_SUCCESS</td>
+                    <td>RIL_PROVISIONSTAT_SUCCESS</td>
                     <td></td>
                 </tr>
             
@@ -85,22 +85,22 @@ typedef enum _RILPROVISIONSTATUSPROVISIONSTATUS {
                 </tr>
             
                 <tr>
-                    <td>RIL_PROVISIONSTAT_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PROVISIONSTAT_NEEDED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PROVISIONSTAT_STARTED</td>
+                    <td>RIL_PROVISIONSTAT_BIP_STARTED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PROVISIONSTAT_SUCCESS</td>
+                    <td>RIL_PROVISIONSTAT_BIP_SUCCESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PROVISIONSTAT_MAX</td>
                     <td></td>
                 </tr>
 </table>

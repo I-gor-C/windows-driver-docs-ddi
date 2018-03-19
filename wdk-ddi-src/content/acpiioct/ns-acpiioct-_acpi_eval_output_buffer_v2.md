@@ -59,21 +59,21 @@ typedef struct _ACPI_EVAL_OUTPUT_BUFFER_V2 {
 ## Members
 
 
-`Argument`
+`Signature`
 
-
-
-`Count`
-
-Defines the <b>ULONG</b> member <b>Count</b>.
+Defines the <b>ULONG</b> member <b>Signature</b>.
 
 `Length`
 
 Defines the <b>ULONG</b> member <b>Length</b>.
 
-`Signature`
+`Count`
 
-Defines the <b>ULONG</b> member <b>Signature</b>.
+Defines the <b>ULONG</b> member <b>Count</b>.
+
+`Argument`
+
+
 
 
 ## Requirements

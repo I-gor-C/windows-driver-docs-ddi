@@ -87,135 +87,6 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 ## Members
 
 
-`AuthAlgo`
-
-The authentication algorithm that the 802.11 station resolved with the AP or peer station during
-     the association operation. For more information about the data type for the 
-     <b>AuthAlgo</b> member, see 
-     <a href="..\wlantypes\ne-wlantypes-_dot11_auth_algorithm.md">DOT11_AUTH_ALGORITHM</a>.
-     
-
-The miniport driver must set this member to zero if 
-     <b>uStatus</b> is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.
-
-`bFourAddressSupported`
-
-A Boolean value that, if set to <b>TRUE</b>, specifies that the 802.11 station has associated with an AP
-     that supports distribution system (DS) services for ISO Layer 2 bridging on any station in the BSS
-     network, including mobile stations and APs. The determination of this support is specific to the
-     implementation by the IHV.
-     
-
-A miniport driver must set the 
-     <b>bFourAddressSupported</b> member to <b>FALSE</b> if any of the following are true:
-
-<ul>
-<li>
-The IEEE 802.11 
-       <b>dot11DesiredBSSType</b> MIB object is set to 
-       <b>dot11_BSS_type_independent</b>.
-
-</li>
-<li>
-The 802.11 station did not associate with an AP that supports DS services or cannot determine
-       whether the AP supports DS services.
-
-</li>
-<li>
-The 
-       <b>uStatus</b> member is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.
-
-</li>
-</ul>
-
-`bPortAuthorized`
-
-A Boolean value that, if set to <b>TRUE</b>, specifies that the 802.11 station has successfully performed
-     port authorization during the association operation. Port authorization could be based on either the
-     IEEE 802.1X/802.11i standards or a proprietary algorithm that is developed by the IHV.
-     
-
-The miniport driver must set 
-     <b>bPortAuthorized</b> to <b>FALSE</b> if any of the following are true:
-
-<ul>
-<li>
-The 802.11 station does not perform port authorization.
-
-</li>
-<li>
-The 
-       <b>uStatus</b> member is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.
-
-</li>
-</ul>
-For more information about port authorization, see 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/port-based-network-access">Port-Based Network
-     Access</a>.
-
-`bReAssocReq`
-
-A Boolean value that indicates whether the 802.11 station sent an 802.11 Association or
-     Reassociation frame to the AP. If <b>TRUE</b>, the 802.11 station sent an 801.11 Reassociation Request frame to
-     the AP. If <b>FALSE</b>, the 802.11 station sent an 802.11 Association Request frame to the AP. 
-     
-
-A value of <b>TRUE</b> for the 
-     <b>bReAssocReq</b> member is valid only if the 
-     <b>dot11DesiredBSSType</b> MIB object is set to 
-     <b>dot11_BSS_type_infrastructure</b>.
-
-`bReAssocResp`
-
-A Boolean value that indicates whether the 802.11 station received an 802.11 Association or
-     Reassociation frame from the AP. If <b>TRUE</b>, the 802.11 station received an 802.11 Reassociation Response
-     frame from the AP. If <b>FALSE</b>, the 802.11 station received an 802.11 Association Response frame from the
-     AP.
-     
-
-A value of <b>TRUE</b> for the 
-     <b>bReAssocResp</b> member is valid only if the 
-     <b>dot11DesiredBSSType</b> MIB object is set to 
-     <b>dot11_BSS_type_infrastructure</b>.
-
-`DSInfo`
-
-A DOT11_DS_INFO value that specifies whether the 802.11 station is connected to the same DS from
-     the previous association operation.
-     
-
-The 
-     <b>DSInfo</b> member is formatted as a DOT11_DS_INFO enumeration, which specifies the following
-     values:
-
-
-
-
-
-#### DOT11_DS_CHANGED
-
-The 802.11 station has connected to a new DS after the association operation.
-
-
-
-#### DOT11_DS_UNCHANGED
-
-The 802.11 station is connected to the same DS from the association operation.
-
-
-
-#### DOT11_DS_UNKNOWN
-
-The miniport driver cannot determine whether the DS has changed after the association
-       operation.
-
-<div class="alert"><b>Note</b>  The miniport driver must set 
-     <b>DSInfo</b> to 
-     <b>DOT11_DS_UNKNOWN</b> if the 
-     <b>dot11DesiredBSSType</b> MIB object is set to 
-     <b>dot11_BSS_type_independent</b>.</div>
-<div> </div>
-
 `Header`
 
 The type, revision, and size of the DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure. This member
@@ -256,65 +127,35 @@ The media access control (MAC) address of the access point (AP) (for infrastruct
      or peer station (for independent BSS (IBSS) networks) that the 802.11 station attempted to connect
      to.
 
-`MulticastCipher`
+`uStatus`
 
-The multicast cipher algorithm that the 802.11 station resolved with the AP or peer station during
-     the association operation. For more information about the data type for the 
-     <b>MulticastCipher</b> member, see 
-     <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
+The completion status of the association operation, as specified by a value defined for 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547652">DOT11_ASSOC_STATUS</a>.
+
+`bReAssocReq`
+
+A Boolean value that indicates whether the 802.11 station sent an 802.11 Association or
+     Reassociation frame to the AP. If <b>TRUE</b>, the 802.11 station sent an 801.11 Reassociation Request frame to
+     the AP. If <b>FALSE</b>, the 802.11 station sent an 802.11 Association Request frame to the AP. 
      
 
-The miniport driver must set this member to zero if 
-     <b>uStatus</b> is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.
+A value of <b>TRUE</b> for the 
+     <b>bReAssocReq</b> member is valid only if the 
+     <b>dot11DesiredBSSType</b> MIB object is set to 
+     <b>dot11_BSS_type_infrastructure</b>.
 
-`MulticastMgmtCipher`
+`bReAssocResp`
 
-The multicast cipher algorithm the NIC chooses (negotiates) for the association for management frame protection (MFP). If MFP is negotiated, this member should be DOT11_CIPHER_ALGO_BIP. If MFP is not negotiated, this field should be DOT11_CIPHER_ALGO_NONE.
+A Boolean value that indicates whether the 802.11 station received an 802.11 Association or
+     Reassociation frame from the AP. If <b>TRUE</b>, the 802.11 station received an 802.11 Reassociation Response
+     frame from the AP. If <b>FALSE</b>, the 802.11 station received an 802.11 Association Response frame from the
+     AP.
+     
 
-`uActivePhyListOffset`
-
-The offset of the list of PHY identifiers (IDs) that the 802.11 station uses to send or receive
-      packets on the BSS network connection.
-
-The Extensible Station (ExtSTA) msDot11ActivePhyList MIB object also references the active PHY list.
-      For more information about this MIB object, see OID_DOT11_ACTIVE_PHY_LIST.
-
-Entries in the active PHY list can be one of the following values:
-
-<ul>
-<li>
-A PHY ID that is specified by the ExtSTA 
-        <b>msDot11DesiredPhyList</b> MIB object. For more information about this MIB object, see 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff569144">OID_DOT11_DESIRED_PHY_LIST</a>.
-
-</li>
-<li>
-DOT11_PHY_ID_ANY. The miniport driver can set an entry to this value if the 
-        <b>msDot11ActivePhyList</b> MIB object specifies all of the PHY IDs that are specified by the 
-        <b>msDot11DesiredPhyList</b> MIB object. An entry with the value of DOT11_PHY_ID_ANY must be the only
-        entry in the active PHY list.
-
-</li>
-</ul>
-The offset of the active PHY list is relative to the start of the buffer that contains the
-      DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure.
-
-The miniport driver must set the 
-      <b>uActivePhyListOffset</b> and 
-      <b>uActivePhyListSize</b> members to zero if 
-      <b>uStatus</b> is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.
-
-`uActivePhyListSize`
-
-The length of the active PHY list. The 
-     <b>uActivePhyListSize</b> member must be a multiple of 
-     <code>sizeof(ULONG)</code>.
-
-`uAssocComebackTime`
-
-When a (re)association fails with 802.11 reason code 30 ("Association request rejected temporarily, try again later.") this member indicates the value of the association comeback time requested by the access point (AP). The 802.11 disassociation reason code is present in the lowest 16 bits of <b>uStatus</b> when responding to an association request.
-
-Windows' auto-connection service will add the AP to a blocked list and not attempt to reconnect for at least the indicated comeback time. The NIC will behave like a regular failed authentication until the next connection sequence is begun. After the indicated timeout(comeback) elapses and the connection process is stopped Windows may either find a better alternate connection or comeback to this connection. This value set in this member should use the time units defined in the 802.11 specification. For example, TU.
+A value of <b>TRUE</b> for the 
+     <b>bReAssocResp</b> member is valid only if the 
+     <b>dot11DesiredBSSType</b> MIB object is set to 
+     <b>dot11_BSS_type_infrastructure</b>.
 
 `uAssocReqOffset`
 
@@ -434,46 +275,6 @@ This offset is relative to the start of the buffer, which contains the
 The length of the last received 802.11 Beacon frame. The length of the frame does not include the
      802.11 MAC header.
 
-`ucActiveQoSProtocol`
-
-A flag that specifies the quality of service (QoS) protocol that is currently active for this
-     association. This member is either zero (indicating that no QoS protocol is active) or one of the
-     following flags:
-     
-
-
-
-
-
-#### DOT11_QOS_PROTOCOL_FLAG_WMM
-
-The NIC is using the 802.11 WMM QoS protocol.
-
-
-
-#### DOT11_QOS_PROTOCOL_FLAG_11E
-
-The NIC is using the 802.11e QoS protocol.
-
-`uEncapTableOffset`
-
-The offset of the list of IEEE EtherType encapsulations for the BSS association.
-
-This offset is relative to the start of the buffer, which contains the
-      DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure. The value of 
-      <b>uEncapTableOffset</b> must be aligned on a 4-byte boundary.
-
-The miniport driver formats each entry in this list as a 
-      <a href="..\windot11\ns-windot11-dot11_encap_entry.md">DOT11_ENCAP_ENTRY</a> structure.
-
-For more information about the EtherType encapsulation list, see 
-      <a href="https://technet.microsoft.com/en-us/library/cc757419">802.11 Payload
-      Encapsulation</a>.
-
-`uEncapTableSize`
-
-The length of the EtherType encapsulation list.
-
 `uIHVDataOffset`
 
 The offset of a block of data in a proprietary format that is defined by the IHV. The IHV can use
@@ -497,6 +298,17 @@ The length of the block of data that is used by the IHV for the
      returning IHV data in this indication, it must set 
      <b>uIHVDataSize</b> to zero.
 
+`AuthAlgo`
+
+The authentication algorithm that the 802.11 station resolved with the AP or peer station during
+     the association operation. For more information about the data type for the 
+     <b>AuthAlgo</b> member, see 
+     <a href="..\wlantypes\ne-wlantypes-_dot11_auth_algorithm.md">DOT11_AUTH_ALGORITHM</a>.
+     
+
+The miniport driver must set this member to zero if 
+     <b>uStatus</b> is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.
+
 `UnicastCipher`
 
 The unicast cipher algorithm that the 802.11 station resolved with the AP or peer station during
@@ -508,10 +320,198 @@ The unicast cipher algorithm that the 802.11 station resolved with the AP or pee
 The miniport driver must set this member to zero if 
      <b>uStatus</b> is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.
 
-`uStatus`
+`MulticastCipher`
 
-The completion status of the association operation, as specified by a value defined for 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff547652">DOT11_ASSOC_STATUS</a>.
+The multicast cipher algorithm that the 802.11 station resolved with the AP or peer station during
+     the association operation. For more information about the data type for the 
+     <b>MulticastCipher</b> member, see 
+     <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
+     
+
+The miniport driver must set this member to zero if 
+     <b>uStatus</b> is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.
+
+`uActivePhyListOffset`
+
+The offset of the list of PHY identifiers (IDs) that the 802.11 station uses to send or receive
+      packets on the BSS network connection.
+
+The Extensible Station (ExtSTA) msDot11ActivePhyList MIB object also references the active PHY list.
+      For more information about this MIB object, see OID_DOT11_ACTIVE_PHY_LIST.
+
+Entries in the active PHY list can be one of the following values:
+
+<ul>
+<li>
+A PHY ID that is specified by the ExtSTA 
+        <b>msDot11DesiredPhyList</b> MIB object. For more information about this MIB object, see 
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff569144">OID_DOT11_DESIRED_PHY_LIST</a>.
+
+</li>
+<li>
+DOT11_PHY_ID_ANY. The miniport driver can set an entry to this value if the 
+        <b>msDot11ActivePhyList</b> MIB object specifies all of the PHY IDs that are specified by the 
+        <b>msDot11DesiredPhyList</b> MIB object. An entry with the value of DOT11_PHY_ID_ANY must be the only
+        entry in the active PHY list.
+
+</li>
+</ul>
+The offset of the active PHY list is relative to the start of the buffer that contains the
+      DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure.
+
+The miniport driver must set the 
+      <b>uActivePhyListOffset</b> and 
+      <b>uActivePhyListSize</b> members to zero if 
+      <b>uStatus</b> is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.
+
+`uActivePhyListSize`
+
+The length of the active PHY list. The 
+     <b>uActivePhyListSize</b> member must be a multiple of 
+     <code>sizeof(ULONG)</code>.
+
+`bFourAddressSupported`
+
+A Boolean value that, if set to <b>TRUE</b>, specifies that the 802.11 station has associated with an AP
+     that supports distribution system (DS) services for ISO Layer 2 bridging on any station in the BSS
+     network, including mobile stations and APs. The determination of this support is specific to the
+     implementation by the IHV.
+     
+
+A miniport driver must set the 
+     <b>bFourAddressSupported</b> member to <b>FALSE</b> if any of the following are true:
+
+<ul>
+<li>
+The IEEE 802.11 
+       <b>dot11DesiredBSSType</b> MIB object is set to 
+       <b>dot11_BSS_type_independent</b>.
+
+</li>
+<li>
+The 802.11 station did not associate with an AP that supports DS services or cannot determine
+       whether the AP supports DS services.
+
+</li>
+<li>
+The 
+       <b>uStatus</b> member is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.
+
+</li>
+</ul>
+
+`bPortAuthorized`
+
+A Boolean value that, if set to <b>TRUE</b>, specifies that the 802.11 station has successfully performed
+     port authorization during the association operation. Port authorization could be based on either the
+     IEEE 802.1X/802.11i standards or a proprietary algorithm that is developed by the IHV.
+     
+
+The miniport driver must set 
+     <b>bPortAuthorized</b> to <b>FALSE</b> if any of the following are true:
+
+<ul>
+<li>
+The 802.11 station does not perform port authorization.
+
+</li>
+<li>
+The 
+       <b>uStatus</b> member is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.
+
+</li>
+</ul>
+For more information about port authorization, see 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/port-based-network-access">Port-Based Network
+     Access</a>.
+
+`ucActiveQoSProtocol`
+
+A flag that specifies the quality of service (QoS) protocol that is currently active for this
+     association. This member is either zero (indicating that no QoS protocol is active) or one of the
+     following flags:
+     
+
+
+
+
+
+#### DOT11_QOS_PROTOCOL_FLAG_WMM
+
+The NIC is using the 802.11 WMM QoS protocol.
+
+
+
+#### DOT11_QOS_PROTOCOL_FLAG_11E
+
+The NIC is using the 802.11e QoS protocol.
+
+`DSInfo`
+
+A DOT11_DS_INFO value that specifies whether the 802.11 station is connected to the same DS from
+     the previous association operation.
+     
+
+The 
+     <b>DSInfo</b> member is formatted as a DOT11_DS_INFO enumeration, which specifies the following
+     values:
+
+
+
+
+
+#### DOT11_DS_CHANGED
+
+The 802.11 station has connected to a new DS after the association operation.
+
+
+
+#### DOT11_DS_UNCHANGED
+
+The 802.11 station is connected to the same DS from the association operation.
+
+
+
+#### DOT11_DS_UNKNOWN
+
+The miniport driver cannot determine whether the DS has changed after the association
+       operation.
+
+<div class="alert"><b>Note</b>  The miniport driver must set 
+     <b>DSInfo</b> to 
+     <b>DOT11_DS_UNKNOWN</b> if the 
+     <b>dot11DesiredBSSType</b> MIB object is set to 
+     <b>dot11_BSS_type_independent</b>.</div>
+<div> </div>
+
+`uEncapTableOffset`
+
+The offset of the list of IEEE EtherType encapsulations for the BSS association.
+
+This offset is relative to the start of the buffer, which contains the
+      DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure. The value of 
+      <b>uEncapTableOffset</b> must be aligned on a 4-byte boundary.
+
+The miniport driver formats each entry in this list as a 
+      <a href="..\windot11\ns-windot11-dot11_encap_entry.md">DOT11_ENCAP_ENTRY</a> structure.
+
+For more information about the EtherType encapsulation list, see 
+      <a href="https://technet.microsoft.com/en-us/library/cc757419">802.11 Payload
+      Encapsulation</a>.
+
+`uEncapTableSize`
+
+The length of the EtherType encapsulation list.
+
+`MulticastMgmtCipher`
+
+The multicast cipher algorithm the NIC chooses (negotiates) for the association for management frame protection (MFP). If MFP is negotiated, this member should be DOT11_CIPHER_ALGO_BIP. If MFP is not negotiated, this field should be DOT11_CIPHER_ALGO_NONE.
+
+`uAssocComebackTime`
+
+When a (re)association fails with 802.11 reason code 30 ("Association request rejected temporarily, try again later.") this member indicates the value of the association comeback time requested by the access point (AP). The 802.11 disassociation reason code is present in the lowest 16 bits of <b>uStatus</b> when responding to an association request.
+
+Windows' auto-connection service will add the AP to a blocked list and not attempt to reconnect for at least the indicated comeback time. The NIC will behave like a regular failed authentication until the next connection sequence is begun. After the indicated timeout(comeback) elapses and the connection process is stopped Windows may either find a better alternate connection or comeback to this connection. This value set in this member should use the time units defined in the 802.11 specification. For example, TU.
 
 ## Remarks
 The miniport driver must set the 
@@ -595,11 +595,3 @@ OID_DOT11_DESIRED_BSS_TYPE
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

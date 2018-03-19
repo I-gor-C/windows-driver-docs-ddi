@@ -61,6 +61,10 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2 {
 ## Members
 
 
+`Signature`
+
+Defines the <b>ULONG</b> member <b>Signature</b>.
+
 `DUMMYUNIONNAME`
 
 Defines the method name member of <b>DUMMYUNIONNAME</b>.
@@ -68,10 +72,6 @@ Defines the method name member of <b>DUMMYUNIONNAME</b>.
 `IntegerArgument`
 
 Defines the <b>ULONG</b> member <b>IntegerArgument</b>.
-
-`Signature`
-
-Defines the <b>ULONG</b> member <b>Signature</b>.
 
 
 ## Requirements

@@ -58,6 +58,10 @@ typedef struct _NDIS_PD_RECEIVE_QUEUE_COUNTER {
 ## Members
 
 
+`PacketsReceived`
+
+The amount of packets received.
+
 `BytesReceived`
 
 The amount of bytes received.
@@ -65,10 +69,6 @@ The amount of bytes received.
 `PacketsDropped`
 
 The amount of packets dropped.
-
-`PacketsReceived`
-
-The amount of packets received.
 
 
 ## Requirements

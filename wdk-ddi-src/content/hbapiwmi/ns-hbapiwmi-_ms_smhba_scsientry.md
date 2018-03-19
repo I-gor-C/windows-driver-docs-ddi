@@ -58,13 +58,13 @@ typedef struct _MS_SMHBA_SCSIENTRY {
 ## Members
 
 
-`LUID`
-
-The logical unit descriptor for the device that the operating system derives from SCSI inquiry data.
-
 `PortLun`
 
 An array of MS_SMHBA_PORTLUN entries.
+
+`LUID`
+
+The logical unit descriptor for the device that the operating system derives from SCSI inquiry data.
 
 `ScsiId`
 

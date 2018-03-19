@@ -59,11 +59,11 @@ typedef struct _RILSETPREFERREDOPERATORLISTPARAMS {
 ## Members
 
 
-`dwPreferredListSize`
-
-
-
 `hUiccApp`
+
+
+
+`dwPreferredListSize`
 
 
 

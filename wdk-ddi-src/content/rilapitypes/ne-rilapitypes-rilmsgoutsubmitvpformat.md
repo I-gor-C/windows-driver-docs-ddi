@@ -62,7 +62,12 @@ typedef enum _RILMSGOUTSUBMITVPFORMAT {
 <table>
             
                 <tr>
-                    <td>RIL_MSGVP_ABSOLUTE</td>
+                    <td>RIL_MSGVP_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGVP_RELATIVE</td>
                     <td></td>
                 </tr>
             
@@ -72,17 +77,12 @@ typedef enum _RILMSGOUTSUBMITVPFORMAT {
                 </tr>
             
                 <tr>
+                    <td>RIL_MSGVP_ABSOLUTE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_MSGVP_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGVP_NONE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGVP_RELATIVE</td>
                     <td></td>
                 </tr>
 </table>

@@ -57,13 +57,13 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_V1_EX {
 ## Members
 
 
-`MethodName`
-
-A NULL-terminated ASCII string that contains the path and name of a control method in an ACPI namespace. The maximum number of characters that the string can contain, including a NULL-terminator, is 256. For more information about how to supply the path and name of a control method, see the Remarks section later in this topic.
-
 `Signature`
 
 The signature of an input buffer that does not include an argument, which must be set to ACPI_EVAL_INPUT_BUFFER_SIGNATURE_EX.
+
+`MethodName`
+
+A NULL-terminated ASCII string that contains the path and name of a control method in an ACPI namespace. The maximum number of characters that the string can contain, including a NULL-terminator, is 256. For more information about how to supply the path and name of a control method, see the Remarks section later in this topic.
 
 ## Remarks
 A driver for a device can use an IOCTL_ACPI_EVAL_METHOD_EX request or an IOCTL_ACPI_ASYNC_EVAL_METHOD_EX request to evaluate a control method that is a descendant child object of the device. If the method does not take input arguments, these requests take an input ACPI_EVAL_INPUT_BUFFER_EX structure as follows:
@@ -97,11 +97,3 @@ For more information about how to use this structure, see <a href="https://msdn.
 
 
 <a href="..\acpiioct\ni-acpiioct-ioctl_acpi_eval_method_ex.md">IOCTL_ACPI_EVAL_METHOD_EX</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20ACPI_EVAL_INPUT_BUFFER_V1_EX structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

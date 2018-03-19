@@ -60,22 +60,6 @@ typedef struct _NDIS_RSC_STATISTICS_INFO {
 ## Members
 
 
-`Aborts`
-
-The total number of RSC abort events. That is, the number of exceptions other than the IP datagram length being exceeded. This count should include the cases where a packet is not coalesced because of insufficient hardware  resources.
-
-`CoalescedOctets`
-
-The total number of bytes that were coalesced.
-
-`CoalescedPkts`
-
-The total  number of packets that were coalesced.
-
-`CoalesceEvents`
-
-The total number of coalescing events. That is, the total number of packets that were formed from coalescing packets.
-
 `Header`
 
 The <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the NDIS_RSC_STATISTICS_INFO structure. Set the <b>Type</b> member of the structure that <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
@@ -92,6 +76,22 @@ Original version for NDIS 6.30 and later.
 
 Set the <b>Size</b> member to NDIS_SIZEOF_RSC_STATISTICS_REVISION_1.
 
+`CoalescedPkts`
+
+The total  number of packets that were coalesced.
+
+`CoalescedOctets`
+
+The total number of bytes that were coalesced.
+
+`CoalesceEvents`
+
+The total number of coalescing events. That is, the total number of packets that were formed from coalescing packets.
+
+`Aborts`
+
+The total number of RSC abort events. That is, the number of exceptions other than the IP datagram length being exceeded. This count should include the cases where a packet is not coalesced because of insufficient hardware  resources.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -106,11 +106,3 @@ Set the <b>Size</b> member to NDIS_SIZEOF_RSC_STATISTICS_REVISION_1.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451929">OID_TCP_RSC_STATISTICS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSC_STATISTICS_INFO structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

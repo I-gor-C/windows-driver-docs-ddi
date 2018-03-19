@@ -66,16 +66,6 @@ typedef enum D3D12DDI_RESOURCE_FLAGS_0003 {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_RESOURCE_FLAG_0003_CROSS_ADAPTER</td>
-                    <td>Cross adapter.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_FLAG_0003_DEPTH_STENCIL</td>
-                    <td>Depth stencil.</td>
-                </tr>
-            
-                <tr>
                     <td>D3D12DDI_RESOURCE_FLAG_0003_NONE</td>
                     <td>Constant for no flags.</td>
                 </tr>
@@ -86,8 +76,13 @@ typedef enum D3D12DDI_RESOURCE_FLAGS_0003 {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_RESOURCE_FLAG_0003_SHADER_RESOURCE</td>
-                    <td>Shader resource.</td>
+                    <td>D3D12DDI_RESOURCE_FLAG_0003_DEPTH_STENCIL</td>
+                    <td>Depth stencil.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_FLAG_0003_CROSS_ADAPTER</td>
+                    <td>Cross adapter.</td>
                 </tr>
             
                 <tr>
@@ -96,13 +91,18 @@ typedef enum D3D12DDI_RESOURCE_FLAGS_0003 {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_RESOURCE_FLAG_0020_CONTENT_PROTECTION</td>
-                    <td>Content protection.</td>
+                    <td>D3D12DDI_RESOURCE_FLAG_0003_SHADER_RESOURCE</td>
+                    <td>Shader resource.</td>
                 </tr>
             
                 <tr>
                     <td>D3D12DDI_RESOURCE_FLAG_0020_VIDEO_DECODE_REFERENCE_ONLY</td>
                     <td>Video decode reference only.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_FLAG_0020_CONTENT_PROTECTION</td>
+                    <td>Content protection.</td>
                 </tr>
             
                 <tr>

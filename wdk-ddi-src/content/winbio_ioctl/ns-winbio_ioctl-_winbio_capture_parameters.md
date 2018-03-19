@@ -61,35 +61,6 @@ typedef struct _WINBIO_CAPTURE_PARAMETERS {
 ## Members
 
 
-`Flags`
-
-Specifies the WINBIO_BIR_DATA_FLAGS level of processing and other attributes for the data to be returned.  If format owner and type are the Windows standard, this must be WINBIO_DATA_FLAG_RAW.
-
-The following code example shows the possible bitmask values for WINBIO_BIR_DATA_FLAGS:
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>#define WINBIO_DATA_FLAG_PRIVACY                ((UCHAR)0x02)
-#define WINBIO_DATA_FLAG_INTEGRITY              ((UCHAR)0x01)
-#define WINBIO_DATA_FLAG_SIGNED                 ((UCHAR)0x04)
-
-#define WINBIO_DATA_FLAG_RAW                    ((UCHAR)0x20)
-#define WINBIO_DATA_FLAG_INTERMEDIATE           ((UCHAR)0x40)
-#define WINBIO_DATA_FLAG_PROCESSED              ((UCHAR)0x80)
-
-#define WINBIO_DATA_FLAG_OPTION_MASK_PRESENT    ((UCHAR)0x08)   // Always '1'.</pre>
-</td>
-</tr>
-</table></span></div>
-
-`Format`
-
-Specifies the <a href="..\winbio_types\ns-winbio_types-_winbio_registered_format.md">WINBIO_REGISTERED_FORMAT</a> format of the data to be returned.
-
 `PayloadSize`
 
 The total size of the payload.
@@ -117,9 +88,38 @@ The following code example shows the possible bitmask values for WINBIO_BIR_PURP
 </tr>
 </table></span></div>
 
+`Format`
+
+Specifies the <a href="..\winbio_types\ns-winbio_types-_winbio_registered_format.md">WINBIO_REGISTERED_FORMAT</a> format of the data to be returned.
+
 `VendorFormat`
 
 An optional WINBIO_UUID vendor GUID.  This indicates the preferred format of the vendor-specific data in the BIR.
+
+`Flags`
+
+Specifies the WINBIO_BIR_DATA_FLAGS level of processing and other attributes for the data to be returned.  If format owner and type are the Windows standard, this must be WINBIO_DATA_FLAG_RAW.
+
+The following code example shows the possible bitmask values for WINBIO_BIR_DATA_FLAGS:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>#define WINBIO_DATA_FLAG_PRIVACY                ((UCHAR)0x02)
+#define WINBIO_DATA_FLAG_INTEGRITY              ((UCHAR)0x01)
+#define WINBIO_DATA_FLAG_SIGNED                 ((UCHAR)0x04)
+
+#define WINBIO_DATA_FLAG_RAW                    ((UCHAR)0x20)
+#define WINBIO_DATA_FLAG_INTERMEDIATE           ((UCHAR)0x40)
+#define WINBIO_DATA_FLAG_PROCESSED              ((UCHAR)0x80)
+
+#define WINBIO_DATA_FLAG_OPTION_MASK_PRESENT    ((UCHAR)0x08)   // Always '1'.</pre>
+</td>
+</tr>
+</table></span></div>
 
 
 ## Requirements
@@ -131,11 +131,3 @@ An optional WINBIO_UUID vendor GUID.  This indicates the preferred format of the
 ## See Also
 
 <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_capture_data.md">IOCTL_BIOMETRIC_CAPTURE_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [biometric\biometric]:%20WINBIO_CAPTURE_PARAMETERS structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

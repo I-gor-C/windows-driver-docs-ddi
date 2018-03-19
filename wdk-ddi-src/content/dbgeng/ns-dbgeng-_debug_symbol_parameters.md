@@ -61,29 +61,29 @@ typedef struct _DEBUG_SYMBOL_PARAMETERS {
 ## Members
 
 
-`Flags`
-
-The symbol flags.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff541692">DEBUG_SYMBOL_XXX</a> for details.
-
 `Module`
 
 The location in the target's virtual address space of the base of the module to which the symbol belongs.
+
+`TypeId`
+
+The type ID of the symbol.
 
 `ParentSymbol`
 
 The index within the symbol group of the symbol's parent symbol.  If the parent symbol is not known, <b>ParentSymbol</b> is DEBUG_ANY_ID.
 
-`Reserved`
-
-Set to zero.
-
 `SubElements`
 
 The number of children of the symbol.  If this symbol has never been expanded within this symbol group, this number will be an estimate that is based on the symbol's type.
 
-`TypeId`
+`Flags`
 
-The type ID of the symbol.
+The symbol flags.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff541692">DEBUG_SYMBOL_XXX</a> for details.
+
+`Reserved`
+
+Set to zero.
 
 
 ## Requirements

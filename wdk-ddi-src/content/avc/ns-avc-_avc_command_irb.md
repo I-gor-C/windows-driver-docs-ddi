@@ -73,25 +73,41 @@ typedef struct _AVC_COMMAND_IRB {
 ## Members
 
 
-`AlternateOpcodes`
+`Common`
 
-Set this to the address of nonpaged memory containing the desired alternate opcode list. The first byte of the opcode list is the count of opcodes to follow (equivalent to the number of bytes). The total length of the memory containing the alternate opcode list is AlternateOpcodes[0]+1. This parameter is ignored if <b>AlternateOpcodesFlag</b> is zero.
+This must be set to the <b>AVC_FUNCTION_COMMAND</b> enumerator from the AVC_FUNCTION enumeration.
+
+`SubunitAddrFlag`
+
+This is a flag indicating if the <b>SubunitAddr</b> member specifies an address. Set to one if it does, otherwise set to zero.
 
 `AlternateOpcodesFlag`
 
 This is a flag indicating if the <b>AlternateOpcodes</b> member is valid. Set to one if it is, otherwise set to zero.
 
-`Common`
+`TimeoutFlag`
 
-This must be set to the <b>AVC_FUNCTION_COMMAND</b> enumerator from the AVC_FUNCTION enumeration.
+Set this to one if the default time-out is not appropriate for the subunit. If this is set, the <b>Timeout</b> member must be set to the desired time-out (in 100-ns units).
 
-`Generation`
+`RetryFlag`
 
-Reserved. This member must be zero.
+Set this to one if the default retry count is not appropriate for the subunit. If this is set, the <b>Retries</b> member must be set to the desired retry count.
 
-`NodeAddress`
+`SubunitAddr`
 
-Reserved. This member must be zero.
+Set this to the address of nonpaged memory containing the desired subunit address encoded according to Section 5.3.3 of the AV/C Digital Interface Command Set General Specification, Rev 3.0. This specification can be found at the <a href="http://go.microsoft.com/fwlink/p/?linkid=8728">1394 Trade Association</a> website. No length is necessary because the subunit address encoding implies this. This parameter is ignored if <b>SubunitAddrFlag</b> is zero.
+
+`AlternateOpcodes`
+
+Set this to the address of nonpaged memory containing the desired alternate opcode list. The first byte of the opcode list is the count of opcodes to follow (equivalent to the number of bytes). The total length of the memory containing the alternate opcode list is AlternateOpcodes[0]+1. This parameter is ignored if <b>AlternateOpcodesFlag</b> is zero.
+
+`Timeout`
+
+Set this to the desired time-out in 100-ns units. For example, the default time-out value is: <b>Timeout.QuadPart</b> = 1000000 (100ms in 100ns units). This parameter is ignored if <b>TimeoutFlag</b> is zero.
+
+`Retries`
+
+Set this to the desired number of times <i>avc.sys</i> should attempt to retry requests after each time-out without a response. Note that a retry count of zero means that the request is tried once. The total amount of time spent trying to process a command without getting a response is Timeout * (Retries + 1). This parameter is ignored if <b>RetryFlag</b> is zero.
 
 `Opcode`
 
@@ -105,29 +121,13 @@ Set this to the number of bytes used to store the operands in the <b>Operands</b
 
 Set this to the operand list appropriate for the subunit type and opcode. This is a required parameter. On response, this parameter contains the operand list of the response.
 
-`Retries`
+`NodeAddress`
 
-Set this to the desired number of times <i>avc.sys</i> should attempt to retry requests after each time-out without a response. Note that a retry count of zero means that the request is tried once. The total amount of time spent trying to process a command without getting a response is Timeout * (Retries + 1). This parameter is ignored if <b>RetryFlag</b> is zero.
+Reserved. This member must be zero.
 
-`RetryFlag`
+`Generation`
 
-Set this to one if the default retry count is not appropriate for the subunit. If this is set, the <b>Retries</b> member must be set to the desired retry count.
-
-`SubunitAddr`
-
-Set this to the address of nonpaged memory containing the desired subunit address encoded according to Section 5.3.3 of the AV/C Digital Interface Command Set General Specification, Rev 3.0. This specification can be found at the <a href="http://go.microsoft.com/fwlink/p/?linkid=8728">1394 Trade Association</a> website. No length is necessary because the subunit address encoding implies this. This parameter is ignored if <b>SubunitAddrFlag</b> is zero.
-
-`SubunitAddrFlag`
-
-This is a flag indicating if the <b>SubunitAddr</b> member specifies an address. Set to one if it does, otherwise set to zero.
-
-`Timeout`
-
-Set this to the desired time-out in 100-ns units. For example, the default time-out value is: <b>Timeout.QuadPart</b> = 1000000 (100ms in 100ns units). This parameter is ignored if <b>TimeoutFlag</b> is zero.
-
-`TimeoutFlag`
-
-Set this to one if the default time-out is not appropriate for the subunit. If this is set, the <b>Timeout</b> member must be set to the desired time-out (in 100-ns units).
+Reserved. This member must be zero.
 
 ## Remarks
 This structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554150">AVC_FUNCTION_COMMAND</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff554163">AVC_FUNCTION_GET_REQUEST</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554170">AVC_FUNCTION_SEND_RESPONSE</a> function codes.
@@ -152,11 +152,3 @@ This structure is used with the <a href="https://msdn.microsoft.com/library/wind
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554163">AVC_FUNCTION_GET_REQUEST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVC_COMMAND_IRB structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

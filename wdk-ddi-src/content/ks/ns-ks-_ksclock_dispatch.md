@@ -59,6 +59,27 @@ typedef struct _KSCLOCK_DISPATCH {
 ## Members
 
 
+`SetTimer`
+
+Optionally contains a pointer to an alternate function to use in generating DPC timer callbacks based on a presentation time. If this is set, this function is used to set timers based on deltas to the current presentation time in order to generate event notifications. If an alternate function is specified to set timers, a corresponding <b>CancelTimer</b> function must also be provided. This is set to <b>NULL</b> if the default <a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a> function is used to approximate the next notification time. This would normally be set only if a <b>KeSetTimerEx</b> function was being used. The function must have the same characteristics as the default function.
+
+The function should be prototyped as follows:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>  BOOLEAN SetTimer (IN PKSPIN Pin,
+    IN PKTIMER Timer,
+    IN LARGE_INTEGER DueTime,
+    IN PKDPC Dpc);</pre>
+</td>
+</tr>
+</table></span></div>
+See the documentation for <b>KeSetTimerEx</b> for details on implementation of this function. Any client implementation must behave in a similar manner.
+
 `CancelTimer`
 
 Optionally contains an alternate function to use in canceling outstanding timer callbacks. If an alternate function is provided to cancel timers, a corresponding <i>SetTimer</i> function must also be provided. This is set to <b>NULL</b> if the default <b>KeCancelTimer</b> function is to be used. The function must have the same characteristics as the default function.
@@ -113,27 +134,6 @@ The function should be prototyped as follows:
 </tr>
 </table></span></div>
 
-`SetTimer`
-
-Optionally contains a pointer to an alternate function to use in generating DPC timer callbacks based on a presentation time. If this is set, this function is used to set timers based on deltas to the current presentation time in order to generate event notifications. If an alternate function is specified to set timers, a corresponding <b>CancelTimer</b> function must also be provided. This is set to <b>NULL</b> if the default <a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a> function is used to approximate the next notification time. This would normally be set only if a <b>KeSetTimerEx</b> function was being used. The function must have the same characteristics as the default function.
-
-The function should be prototyped as follows:
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>  BOOLEAN SetTimer (IN PKSPIN Pin,
-    IN PKTIMER Timer,
-    IN LARGE_INTEGER DueTime,
-    IN PKDPC Dpc);</pre>
-</td>
-</tr>
-</table></span></div>
-See the documentation for <b>KeSetTimerEx</b> for details on implementation of this function. Any client implementation must behave in a similar manner.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -164,11 +164,3 @@ See the documentation for <b>KeSetTimerEx</b> for details on implementation of t
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSCLOCK_DISPATCH structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

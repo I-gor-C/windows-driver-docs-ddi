@@ -61,11 +61,6 @@ typedef enum _RILCALLERIDSETTINGSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_CIDS_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_CIDS_EXECUTOR</td>
                     <td></td>
                 </tr>
@@ -77,6 +72,11 @@ typedef enum _RILCALLERIDSETTINGSPARAMMASK {
             
                 <tr>
                     <td>RIL_PARAM_CIDS_STATUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CIDS_ALL</td>
                     <td></td>
                 </tr>
 </table>

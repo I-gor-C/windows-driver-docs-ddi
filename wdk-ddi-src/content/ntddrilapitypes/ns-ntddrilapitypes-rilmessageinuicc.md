@@ -67,11 +67,11 @@ typedef struct _RILMESSAGEINUICC {
 
 
 
-`dwIndex`
-
-
-
 `hUiccApp`
+
+
+
+`dwIndex`
 
 
 

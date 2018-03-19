@@ -68,11 +68,11 @@ typedef struct _RILCAPSLOCKINGPWDLENGTH {
 
 
 
-`dwPasswordLength`
-
-
-
 `dwPersoFeature`
+
+
+
+`dwPasswordLength`
 
 
 

@@ -61,6 +61,11 @@ typedef enum _WDI_CIPHER_KEY_TYPE {
 <table>
             
                 <tr>
+                    <td>WDI_CIPHER_KEY_TYPE_PAIRWISE_KEY</td>
+                    <td>The key is a pairwise key to another station.</td>
+                </tr>
+            
+                <tr>
                     <td>WDI_CIPHER_KEY_TYPE_GROUP_KEY</td>
                     <td>The key is a group key.</td>
                 </tr>
@@ -68,11 +73,6 @@ typedef enum _WDI_CIPHER_KEY_TYPE {
                 <tr>
                     <td>WDI_CIPHER_KEY_TYPE_IGTK</td>
                     <td>The key is an IGTK.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_CIPHER_KEY_TYPE_PAIRWISE_KEY</td>
-                    <td>The key is a pairwise key to another station.</td>
                 </tr>
 </table>
 

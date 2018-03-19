@@ -63,18 +63,13 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>PmiAveragingIntervalChangedEvent</td>
-                    <td>The event was caused because the interval, during which the power meter averages power measurement data, was changed.</td>
-                </tr>
-            
-                <tr>
-                    <td>PmiBudgetEvent</td>
-                    <td>The event was caused because the power budget exceeded or fell below the configured budget of the power meter.</td>
-                </tr>
-            
-                <tr>
                     <td>PmiCapabilitiesChangedEvent</td>
                     <td>The event was caused by a change in the PMI capabilities of the power meter.</td>
+                </tr>
+            
+                <tr>
+                    <td>PmiThresholdEvent</td>
+                    <td>The event was caused because the power level exceeded a configured threshold of the power meter.</td>
                 </tr>
             
                 <tr>
@@ -83,13 +78,18 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>PmiEventMax</td>
-                    <td>The maximum number of PMI event types.</td>
+                    <td>PmiBudgetEvent</td>
+                    <td>The event was caused because the power budget exceeded or fell below the configured budget of the power meter.</td>
                 </tr>
             
                 <tr>
-                    <td>PmiThresholdEvent</td>
-                    <td>The event was caused because the power level exceeded a configured threshold of the power meter.</td>
+                    <td>PmiAveragingIntervalChangedEvent</td>
+                    <td>The event was caused because the interval, during which the power meter averages power measurement data, was changed.</td>
+                </tr>
+            
+                <tr>
+                    <td>PmiEventMax</td>
+                    <td>The maximum number of PMI event types.</td>
                 </tr>
 </table>
 
@@ -110,11 +110,3 @@ The <b>EventType</b> member of the <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVE
 
 
 <a href="..\pmi\ni-pmi-ioctl_pmi_register_event_notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [powermeter\powermeter]:%20PMI_EVENT_TYPE enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

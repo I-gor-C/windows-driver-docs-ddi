@@ -61,8 +61,8 @@ typedef enum _WDI_EXEMPTION_PACKET_TYPE {
 <table>
             
                 <tr>
-                    <td>WDI_EXEMPT_PACKET_TYPE_BOTH</td>
-                    <td>Exempt all packet types.</td>
+                    <td>WDI_EXEMPT_PACKET_TYPE_UNICAST</td>
+                    <td>Exempt unicast packets only.</td>
                 </tr>
             
                 <tr>
@@ -71,8 +71,8 @@ typedef enum _WDI_EXEMPTION_PACKET_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WDI_EXEMPT_PACKET_TYPE_UNICAST</td>
-                    <td>Exempt unicast packets only.</td>
+                    <td>WDI_EXEMPT_PACKET_TYPE_BOTH</td>
+                    <td>Exempt all packet types.</td>
                 </tr>
 </table>
 

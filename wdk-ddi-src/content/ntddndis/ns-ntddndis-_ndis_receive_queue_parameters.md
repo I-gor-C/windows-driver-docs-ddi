@@ -71,6 +71,30 @@ typedef struct _NDIS_RECEIVE_QUEUE_PARAMETERS {
 ## Members
 
 
+`Header`
+
+The type, revision, and size of the <b>NDIS_RECEIVE_QUEUE_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+
+The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values: 
+
+
+
+
+
+#### NDIS_RECEIVE_QUEUE_PARAMETERS_REVISION_2
+
+Added additional members for NDIS 6.30.
+
+Set the <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_QUEUE_PARAMETERS_REVISION_2</b>.
+
+
+
+#### NDIS_RECEIVE_QUEUE_PARAMETERS_REVISION_1
+
+Original version for NDIS 6.20.
+
+Set the <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_QUEUE_PARAMETERS_REVISION_1</b>.
+
 `Flags`
 
 A <b>ULONG</b> value that contains a bitwise <b>OR</b> of the following flags. The following flags are valid for the 
@@ -137,31 +161,34 @@ The setting in the
 <div class="alert"><b>Note</b>  A driver determines which receive queue parameters have been changed by executing a bitwise <b>AND</b> operation between the <b>NDIS_RECEIVE_QUEUE_PARAMETERS_CHANGE_MASK</b> definition and the value in the <b>Flags</b> member. If the result is zero, no receive queue parameters have been changed.</div>
 <div> </div>
 
-`Header`
+`QueueType`
 
-The type, revision, and size of the <b>NDIS_RECEIVE_QUEUE_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+An 
+     <a href="..\ntddndis\ne-ntddndis-_ndis_receive_queue_type.md">NDIS_RECEIVE_QUEUE_TYPE</a> enumeration
+     value that specifies the type of the receive queue.
 
-The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values: 
+`QueueId`
 
+An <b>NDIS_RECEIVE_QUEUE_ID</b> type value that contains a receive queue identifier. This identifier is an integer value between zero and the number of queues that the network adapter supports. A value of <b>NDIS_DEFAULT_RECEIVE_QUEUE_ID</b> specifies the default receive queue.
 
+`QueueGroupId`
 
+This member is reserved for NDIS.
 
+`ProcessorAffinity`
 
-#### NDIS_RECEIVE_QUEUE_PARAMETERS_REVISION_2
+A <b>GROUP_AFFINITY</b> value that specifies the group number and a bitmap of the CPUs that this queue
+     can be associated with. At least one processor must be specified. Therefore, the value must not be
+     zero.
 
-Added additional members for NDIS 6.30.
+`NumSuggestedReceiveBuffers`
 
-Set the <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_QUEUE_PARAMETERS_REVISION_2</b>.
+A <b>ULONG</b> value that contains a suggested value for the number of receive buffers that the network adapter should use to support the queue. This number can be adjusted relative to the resources that the
+     miniport driver has available or in proportion to the number that the network adapter uses for other
+     queues. For example, the actual number of receive buffers can be double or half of this suggested
+     value.
 
-
-
-#### NDIS_RECEIVE_QUEUE_PARAMETERS_REVISION_1
-
-Original version for NDIS 6.20.
-
-Set the <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_QUEUE_PARAMETERS_REVISION_1</b>.
-
-`InterruptCoalescingDomainId`
+`MSIXTableEntry`
 
 This member is reserved for NDIS.
 
@@ -182,52 +209,25 @@ A <b>ULONG</b> value for the size, in bytes, of the lookahead size requirement f
 <div class="alert"><b>Note</b>  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. The value of this member must be zero.</div>
 <div> </div>
 
-`MSIXTableEntry`
+`VmName`
 
-This member is reserved for NDIS.
-
-`NumSuggestedReceiveBuffers`
-
-A <b>ULONG</b> value that contains a suggested value for the number of receive buffers that the network adapter should use to support the queue. This number can be adjusted relative to the resources that the
-     miniport driver has available or in proportion to the number that the network adapter uses for other
-     queues. For example, the actual number of receive buffers can be double or half of this suggested
-     value.
-
-`PortId`
-
-A ULONG value that contains the unique identifier of a port on the Hyper-V extensible switch to which the VM queue is attached.
-
-`ProcessorAffinity`
-
-A <b>GROUP_AFFINITY</b> value that specifies the group number and a bitmap of the CPUs that this queue
-     can be associated with. At least one processor must be specified. Therefore, the value must not be
-     zero.
-
-`QosSqId`
-
-
-
-`QueueGroupId`
-
-This member is reserved for NDIS.
-
-`QueueId`
-
-An <b>NDIS_RECEIVE_QUEUE_ID</b> type value that contains a receive queue identifier. This identifier is an integer value between zero and the number of queues that the network adapter supports. A value of <b>NDIS_DEFAULT_RECEIVE_QUEUE_ID</b> specifies the default receive queue.
+An <b>NDIS_VM_NAME</b> value that contains the description of the virtual machine that users read.
 
 `QueueName`
 
 An <b>NDIS_QUEUE_NAME</b> value that contains the description of the queue that users read.
 
-`QueueType`
+`PortId`
 
-An 
-     <a href="..\ntddndis\ne-ntddndis-_ndis_receive_queue_type.md">NDIS_RECEIVE_QUEUE_TYPE</a> enumeration
-     value that specifies the type of the receive queue.
+A ULONG value that contains the unique identifier of a port on the Hyper-V extensible switch to which the VM queue is attached.
 
-`VmName`
+`InterruptCoalescingDomainId`
 
-An <b>NDIS_VM_NAME</b> value that contains the description of the virtual machine that users read.
+This member is reserved for NDIS.
+
+`QosSqId`
+
+
 
 ## Remarks
 The <b>NDIS_RECEIVE_QUEUE_PARAMETERS</b> structure is used in the 
@@ -270,11 +270,3 @@ In NDIS 6.30, the <b>NDIS_RECEIVE_QUEUE_PARAMETERS</b> structure is also used in
 
 <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
    NdisMIndicateReceiveNetBufferLists</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_QUEUE_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

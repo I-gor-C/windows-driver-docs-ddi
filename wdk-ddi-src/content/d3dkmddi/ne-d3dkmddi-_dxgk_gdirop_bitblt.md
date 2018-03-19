@@ -68,16 +68,6 @@ typedef enum _DXGK_GDIROP_BITBLT {
                 </tr>
             
                 <tr>
-                    <td>DXGK_GDIROP_ROP3</td>
-                    <td>Indicates that a ternary GDI raster operation (ROP3) will be applied.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_GDIROP_SRCAND</td>
-                    <td>Indicates that the color of each pixel of the source rectangle is combined with the color of the respective pixel of the destination rectangle by using the Boolean <b>AND</b> operator.</td>
-                </tr>
-            
-                <tr>
                     <td>DXGK_GDIROP_SRCCOPY</td>
                     <td>Indicates that the source rectangle is copied to the destination rectangle.</td>
                 </tr>
@@ -88,8 +78,18 @@ typedef enum _DXGK_GDIROP_BITBLT {
                 </tr>
             
                 <tr>
+                    <td>DXGK_GDIROP_SRCAND</td>
+                    <td>Indicates that the color of each pixel of the source rectangle is combined with the color of the respective pixel of the destination rectangle by using the Boolean <b>AND</b> operator.</td>
+                </tr>
+            
+                <tr>
                     <td>DXGK_GDIROP_SRCOR</td>
                     <td>Indicates that the color of each pixel of the source rectangle is combined with the color of the respective pixel of the destination rectangle by using the Boolean <b>OR</b> operator.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_GDIROP_ROP3</td>
+                    <td>Indicates that a ternary GDI raster operation (ROP3) will be applied.</td>
                 </tr>
 </table>
 

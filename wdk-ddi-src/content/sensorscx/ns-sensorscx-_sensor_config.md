@@ -58,13 +58,13 @@ typedef struct _SENSOR_CONFIG {
 ## Members
 
 
-`pEnumerationList`
-
-The list of enumerations. For more information, see <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>.
-
 `Size`
 
 The allocated size of this structure (in bytes).
+
+`pEnumerationList`
+
+The list of enumerations. For more information, see <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>.
 
 ## Remarks
 The SENSOR_CONFIG structure works with the following helper function:

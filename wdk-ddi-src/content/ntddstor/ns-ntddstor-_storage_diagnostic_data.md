@@ -61,6 +61,18 @@ typedef struct _STORAGE_DIAGNOSTIC_DATA {
 ## Members
 
 
+`Version`
+
+Version of this structure.
+
+`Size`
+
+Specifies the whole size of the structure and the associated data buffer.
+
+`ProviderId`
+
+Specifies the GUID of a diagnostic data provider.
+
 `BufferSize`
 
 If the request failed because of buffer too small, this field should be filled with the required buffer
@@ -68,25 +80,13 @@ If the request failed because of buffer too small, this field should be filled w
      if the request is successful, it should be filled with returned buffer size of <i>DiagnosticDataBuffer</i>;
      it should be cleared to zero for other cases.
 
-`DiagnosticDataBuffer`
-
-Specifies the Diagnostic data buffer.
-
-`ProviderId`
-
-Specifies the GUID of a diagnostic data provider.
-
 `Reserved`
 
 Reserved for future use.
 
-`Size`
+`DiagnosticDataBuffer`
 
-Specifies the whole size of the structure and the associated data buffer.
-
-`Version`
-
-Version of this structure.
+Specifies the Diagnostic data buffer.
 
 
 ## Requirements
@@ -102,11 +102,3 @@ Version of this structure.
 
 
 <a href="https://msdn.microsoft.com/5F71CCBE-F93F-4DCD-A673-1D6DE49C7400">IOCTL_STORAGE_DIAGNOSTIC</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_DIAGNOSTIC_DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

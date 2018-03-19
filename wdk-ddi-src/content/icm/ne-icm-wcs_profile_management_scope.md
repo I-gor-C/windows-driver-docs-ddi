@@ -59,13 +59,13 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>WCS_PROFILE_MANAGEMENT_SCOPE_CURRENT_USER</td>
-                    <td>Indicates that profile management operation affects only the current user.</td>
+                    <td>WCS_PROFILE_MANAGEMENT_SCOPE_SYSTEM_WIDE</td>
+                    <td>Indicates that the profile management operation affects all users.</td>
                 </tr>
             
                 <tr>
-                    <td>WCS_PROFILE_MANAGEMENT_SCOPE_SYSTEM_WIDE</td>
-                    <td>Indicates that the profile management operation affects all users.</td>
+                    <td>WCS_PROFILE_MANAGEMENT_SCOPE_CURRENT_USER</td>
+                    <td>Indicates that profile management operation affects only the current user.</td>
                 </tr>
 </table>
 

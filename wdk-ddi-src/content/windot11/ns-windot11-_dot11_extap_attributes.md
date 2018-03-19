@@ -71,15 +71,6 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
 ## Members
 
 
-`bStrictlyOrderedServiceClassImplemented`
-
-A Boolean value that, if set to <b>TRUE</b>, specifies that the 802.11 station supports the IEEE 802.11
-     StrictlyOrdered service class for media access control (MAC) service data unit (MSDU) packet delivery.
-     
-
-For more information about the StrictlyOrdered service class, refer to Clause 5.1.3 of the IEEE
-     802.11-2012 standard.
-
 `Header`
 
 The type, revision, and size of the DOT11_EXTAP_ATTRIBUTES structure. This member is formatted as
@@ -114,28 +105,35 @@ This member must be set to
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
-`pInfraSupportedMcastAlgoPairs`
+`uScanSSIDListSize`
 
-A pointer to an array of authentication and cipher algorithms supported by the 802.11 station for
-     sending and receiving multicast and broadcast packets in an infrastructure BSS network. Each entry in
-     the array is formatted as a 
-     <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">
-     DOT11_AUTH_CIPHER_PAIR</a> structure.
+The maximum number of service set identifiers (SSIDs) supported by the 802.11 station for scan
+     operations. The 802.11 station must support an SSID list of at least four entries.
+     
 
-`pInfraSupportedUcastAlgoPairs`
+The SSID list that the 802.11 station uses for scanning is specified when 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a> is
+     set.
 
-A pointer to an array of authentication and cipher algorithms supported by the 802.11 station for
-     sending and receiving unicast packets in an infrastructure BSS network. Each entry in the array is
-     formatted as a 
-     <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">
-     DOT11_AUTH_CIPHER_PAIR</a> structure.
+`uDesiredSSIDListSize`
 
-`pSupportedCountryOrRegionStrings`
+The maximum number of entries in the desired list of basic service set identifiers (BSSIDs)
+     supported by the 802.11 station. The 802.11 station must support a BSSID list with at least one entry.
+     
 
-A pointer to an array of 802.11d country or region strings that are supported by the 802.11
-     station. Each entry in the array is formatted as a 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-desired-country-or-region-string">
-     DOT11_COUNTRY_OR_REGION_STRING</a> structure.
+For more information about the desired BSSID list, see 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-desired-bssid-list">
+     OID_DOT11_DESIRED_BSSID_LIST</a>.
+
+`uPrivacyExemptionListSize`
+
+The maximum number of entries in the privacy exemption list supported by the 802.11 station. The
+     802.11 station must support a privacy exemption list with at least one entry.
+     
+
+For more information about the privacy exemption list, see 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-privacy-exemption-list">
+     OID_DOT11_PRIVACY_EXEMPTION_LIST</a>.
 
 `uAssociationTableSize`
 
@@ -157,66 +155,6 @@ The maximum number of cipher keys the 802.11 station supports for the default ke
 For standard 802.11 cipher algorithms, the 802.11 station must support a table size of at least four
      cipher keys. For cipher algorithms developed by the independent hardware vendor (IHV), the table size
      can be four or greater.
-
-`uDesiredSSIDListSize`
-
-The maximum number of entries in the desired list of basic service set identifiers (BSSIDs)
-     supported by the 802.11 station. The 802.11 station must support a BSSID list with at least one entry.
-     
-
-For more information about the desired BSSID list, see 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-desired-bssid-list">
-     OID_DOT11_DESIRED_BSSID_LIST</a>.
-
-`uInfraNumSupportedMcastAlgoPairs`
-
-The number of authentication and cipher algorithms supported by the 802.11 station for sending and
-     receiving multicast and broadcast packets when configured for operation in an infrastructure basic
-     service set (BSS) network. The 
-     <b>uInfraNumSupportedMcastAlgoPairs</b> member must be the number of 
-     <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">DOT11_AUTH_CIPHER_PAIR</a> structures in
-     the array referenced by the 
-     <b>pInfraSupportedMcastAlgoPairs</b> member.
-
-`uInfraNumSupportedUcastAlgoPairs`
-
-The number of authentication and cipher algorithms supported by the 802.11 station for sending and
-     receiving unicast packets when configured for operation in an infrastructure basic service set (BSS)
-     network. The 
-     <b>uInfraNumSupportedUcastAlgoPairs</b> member must be the number of 
-     <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">DOT11_AUTH_CIPHER_PAIR</a> structures in
-     the array referenced by the 
-     <b>pInfraSupportedUcastAlgoPairs</b> member.
-
-`uNumSupportedCountryOrRegionStrings`
-
-The number of country or region strings supported by the 802.11 station. If the 802.11 station
-     supports multiple regulatory domains as specified by the IEEE 802.11d-2001 standard, each country or
-     region string identifies a regulatory domain supported by the 802.11 station.
-     
-
-If the 802.11 station does not support the IEEE 802.11d-2001 standard, the miniport driver must set 
-     <b>uNumSupportedCountryOrRegionStrings</b> to zero.
-
-`uPrivacyExemptionListSize`
-
-The maximum number of entries in the privacy exemption list supported by the 802.11 station. The
-     802.11 station must support a privacy exemption list with at least one entry.
-     
-
-For more information about the privacy exemption list, see 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-privacy-exemption-list">
-     OID_DOT11_PRIVACY_EXEMPTION_LIST</a>.
-
-`uScanSSIDListSize`
-
-The maximum number of service set identifiers (SSIDs) supported by the 802.11 station for scan
-     operations. The 802.11 station must support an SSID list of at least four entries.
-     
-
-The SSID list that the 802.11 station uses for scanning is specified when 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a> is
-     set.
 
 `uWEPKeyValueMaxLength`
 
@@ -286,6 +224,68 @@ Any length supported by the 802.11 station
 </tr>
 </table>
 
+`bStrictlyOrderedServiceClassImplemented`
+
+A Boolean value that, if set to <b>TRUE</b>, specifies that the 802.11 station supports the IEEE 802.11
+     StrictlyOrdered service class for media access control (MAC) service data unit (MSDU) packet delivery.
+     
+
+For more information about the StrictlyOrdered service class, refer to Clause 5.1.3 of the IEEE
+     802.11-2012 standard.
+
+`uNumSupportedCountryOrRegionStrings`
+
+The number of country or region strings supported by the 802.11 station. If the 802.11 station
+     supports multiple regulatory domains as specified by the IEEE 802.11d-2001 standard, each country or
+     region string identifies a regulatory domain supported by the 802.11 station.
+     
+
+If the 802.11 station does not support the IEEE 802.11d-2001 standard, the miniport driver must set 
+     <b>uNumSupportedCountryOrRegionStrings</b> to zero.
+
+`pSupportedCountryOrRegionStrings`
+
+A pointer to an array of 802.11d country or region strings that are supported by the 802.11
+     station. Each entry in the array is formatted as a 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-desired-country-or-region-string">
+     DOT11_COUNTRY_OR_REGION_STRING</a> structure.
+
+`uInfraNumSupportedUcastAlgoPairs`
+
+The number of authentication and cipher algorithms supported by the 802.11 station for sending and
+     receiving unicast packets when configured for operation in an infrastructure basic service set (BSS)
+     network. The 
+     <b>uInfraNumSupportedUcastAlgoPairs</b> member must be the number of 
+     <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">DOT11_AUTH_CIPHER_PAIR</a> structures in
+     the array referenced by the 
+     <b>pInfraSupportedUcastAlgoPairs</b> member.
+
+`pInfraSupportedUcastAlgoPairs`
+
+A pointer to an array of authentication and cipher algorithms supported by the 802.11 station for
+     sending and receiving unicast packets in an infrastructure BSS network. Each entry in the array is
+     formatted as a 
+     <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">
+     DOT11_AUTH_CIPHER_PAIR</a> structure.
+
+`uInfraNumSupportedMcastAlgoPairs`
+
+The number of authentication and cipher algorithms supported by the 802.11 station for sending and
+     receiving multicast and broadcast packets when configured for operation in an infrastructure basic
+     service set (BSS) network. The 
+     <b>uInfraNumSupportedMcastAlgoPairs</b> member must be the number of 
+     <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">DOT11_AUTH_CIPHER_PAIR</a> structures in
+     the array referenced by the 
+     <b>pInfraSupportedMcastAlgoPairs</b> member.
+
+`pInfraSupportedMcastAlgoPairs`
+
+A pointer to an array of authentication and cipher algorithms supported by the 802.11 station for
+     sending and receiving multicast and broadcast packets in an infrastructure BSS network. Each entry in
+     the array is formatted as a 
+     <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">
+     DOT11_AUTH_CIPHER_PAIR</a> structure.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -326,11 +326,3 @@ Any length supported by the 802.11 station
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTAP_ATTRIBUTES structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,10 +63,6 @@ typedef struct _DOT11_WFD_DISCOVER_DEVICE_FILTER {
 
 The device address of a P2P Device or Group Owner to be discovered by the local P2P device.
 
-`GroupSSID`
-
-If GroupSSID is not a zero-length SSID, this member specifies the SSID of a P2P group that the local P2P device discovers. If this is the P2P wildcard SSID ("DIRECT-"), the local P2P device discovers all groups with P2P Group ID matching the desired device ID.
-
 `ucBitmask`
 
 Filters which instances of the P2P device to discover. Possible values include:
@@ -109,6 +105,10 @@ The local P2P device discovers a group with P2P group ID matching the specified 
 </td>
 </tr>
 </table>
+
+`GroupSSID`
+
+If GroupSSID is not a zero-length SSID, this member specifies the SSID of a P2P group that the local P2P device discovers. If this is the P2P wildcard SSID ("DIRECT-"), the local P2P device discovers all groups with P2P Group ID matching the desired device ID.
 
 ## Remarks
 The local P2P device should not extend the discovery operation to find additional instances.

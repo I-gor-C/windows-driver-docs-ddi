@@ -84,33 +84,8 @@ typedef enum _USB_CONTROLLER_FLAVOR {
 <table>
             
                 <tr>
-                    <td>EHCI_Generic</td>
-                    <td>Indicates a generic EHCI host controller.</td>
-                </tr>
-            
-                <tr>
-                    <td>EHCI_Intel_Medfield</td>
-                    <td>Indicates an Intel Medfield host controller.</td>
-                </tr>
-            
-                <tr>
-                    <td>EHCI_Lucent</td>
-                    <td>Indicates an EHCI Lucent host controller.</td>
-                </tr>
-            
-                <tr>
-                    <td>EHCI_NEC</td>
-                    <td>Indicates an NEC EHCI host controller.</td>
-                </tr>
-            
-                <tr>
-                    <td>EHCI_NVIDIA_Tegra2</td>
-                    <td>Indicates a Revision 2 NVIDIA Tegra EHCI host controller.</td>
-                </tr>
-            
-                <tr>
-                    <td>EHCI_NVIDIA_Tegra3</td>
-                    <td>Indicates a Revision 3 NVIDIA Tegra EHCI host controller.</td>
+                    <td>USB_HcGeneric</td>
+                    <td>Indicates a generic host controller.</td>
                 </tr>
             
                 <tr>
@@ -134,13 +109,28 @@ typedef enum _USB_CONTROLLER_FLAVOR {
                 </tr>
             
                 <tr>
-                    <td>UHCI_Ich1</td>
-                    <td>Indicates an Intel 815 ICH1 UHCI host controller.</td>
+                    <td>UHCI_Piix4</td>
+                    <td>Indicates an Intel PIIX4 UHCI host controller.</td>
+                </tr>
+            
+                <tr>
+                    <td>UHCI_Piix3</td>
+                    <td>Indicates an Intel PIIX3 UHCI host controller.</td>
                 </tr>
             
                 <tr>
                     <td>UHCI_Ich2</td>
                     <td>Indicates an Intel ICH2 UHCI host controller.</td>
+                </tr>
+            
+                <tr>
+                    <td>UHCI_Reserved204</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>UHCI_Ich1</td>
+                    <td>Indicates an Intel 815 ICH1 UHCI host controller.</td>
                 </tr>
             
                 <tr>
@@ -166,21 +156,6 @@ typedef enum _USB_CONTROLLER_FLAVOR {
                 <tr>
                     <td>UHCI_Intel</td>
                     <td>Indicates a generic Intel UHCI host controller.</td>
-                </tr>
-            
-                <tr>
-                    <td>UHCI_Piix3</td>
-                    <td>Indicates an Intel PIIX3 UHCI host controller.</td>
-                </tr>
-            
-                <tr>
-                    <td>UHCI_Piix4</td>
-                    <td>Indicates an Intel PIIX4 UHCI host controller.</td>
-                </tr>
-            
-                <tr>
-                    <td>UHCI_Reserved204</td>
-                    <td></td>
                 </tr>
             
                 <tr>
@@ -214,8 +189,33 @@ typedef enum _USB_CONTROLLER_FLAVOR {
                 </tr>
             
                 <tr>
-                    <td>USB_HcGeneric</td>
-                    <td>Indicates a generic host controller.</td>
+                    <td>EHCI_Generic</td>
+                    <td>Indicates a generic EHCI host controller.</td>
+                </tr>
+            
+                <tr>
+                    <td>EHCI_NEC</td>
+                    <td>Indicates an NEC EHCI host controller.</td>
+                </tr>
+            
+                <tr>
+                    <td>EHCI_Lucent</td>
+                    <td>Indicates an EHCI Lucent host controller.</td>
+                </tr>
+            
+                <tr>
+                    <td>EHCI_NVIDIA_Tegra2</td>
+                    <td>Indicates a Revision 2 NVIDIA Tegra EHCI host controller.</td>
+                </tr>
+            
+                <tr>
+                    <td>EHCI_NVIDIA_Tegra3</td>
+                    <td>Indicates a Revision 3 NVIDIA Tegra EHCI host controller.</td>
+                </tr>
+            
+                <tr>
+                    <td>EHCI_Intel_Medfield</td>
+                    <td>Indicates an Intel Medfield host controller.</td>
                 </tr>
 </table>
 
@@ -232,11 +232,3 @@ typedef enum _USB_CONTROLLER_FLAVOR {
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539256">USB_CONTROLLER_INFO_0</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_CONTROLLER_FLAVOR enumeration%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

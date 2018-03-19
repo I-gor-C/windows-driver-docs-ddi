@@ -153,6 +153,38 @@ typedef struct _MONITOR2 {
 
 Specifies the size, in bytes, of the MONITOR2 structure.
 
+`pfnEnumPorts`
+
+A port monitor server DLL's <b>EnumPorts</b> function enumerates the ports that the port monitor supports.
+
+`pfnOpenPort`
+
+Pointer to the print monitor's <b>OpenPort</b> function.
+
+`pfnOpenPortEx`
+
+A language monitor's <code>OpenPortEx</code> function opens a printer port.
+
+`pfnStartDocPort`
+
+A print monitor's <code>StartDocPort</code> function performs the tasks required to start a print job on the specified port.
+
+`pfnWritePort`
+
+Pointer to the print monitor's <b>WritePort</b> function.
+
+`pfnReadPort`
+
+Pointer to the print monitor's <b>ReadPort</b> function.
+
+`pfnEndDocPort`
+
+A print monitor's <b>EndDocPort</b> function performs the tasks required to end a print job on the specified port.
+
+`pfnClosePort`
+
+Pointer to the print monitor's <b>ClosePort</b> function.
+
 `pfnAddPort`
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545022">AddPort</a> function is obsolete and is for use only with Windows NT 4.0 and previous versions.
@@ -163,10 +195,6 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545022">AddPo
 `pfnAddPortEx`
 
 (Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <b>AddPortEx</b> function. (Port monitors only.)
-
-`pfnClosePort`
-
-Pointer to the print monitor's <b>ClosePort</b> function.
 
 `pfnConfigurePort`
 
@@ -180,73 +208,45 @@ The <b>DeletePort</b> function is obsolete and is for use only with Windows NT 4
 
 <b>DeletePort</b> deletes a port from the monitor's environment.
 
-`pfnEndDocPort`
-
-A print monitor's <b>EndDocPort</b> function performs the tasks required to end a print job on the specified port.
-
-`pfnEnumPorts`
-
-A port monitor server DLL's <b>EnumPorts</b> function enumerates the ports that the port monitor supports.
-
 `pfnGetPrinterDataFromPort`
 
 Pointer to the print monitor's <b>GetPrinterDataFromPort</b> function.
-
-`pfnNotifyUnusedPorts`
-
-
-
-`pfnNotifyUsedPorts`
-
-
-
-`pfnOpenPort`
-
-Pointer to the print monitor's <b>OpenPort</b> function.
-
-`pfnOpenPortEx`
-
-A language monitor's <code>OpenPortEx</code> function opens a printer port.
-
-`pfnPowerEvent`
-
-
-
-`pfnReadPort`
-
-Pointer to the print monitor's <b>ReadPort</b> function.
-
-`pfnSendRecvBidiDataFromPort`
-
-Pointer to the print monitor's <b>SendRecvBidiDataFromPort</b> function.
 
 `pfnSetPortTimeOuts`
 
 A port monitor server DLL's <code>SetPortTimeOuts</code> function sets port time-out values for an open port.
 
-`pfnShutdown`
+`pfnXcvOpenPort`
 
-Pointer to the print monitor's <b>Shutdown</b> function.
-
-`pfnStartDocPort`
-
-A print monitor's <code>StartDocPort</code> function performs the tasks required to start a print job on the specified port.
-
-`pfnWritePort`
-
-Pointer to the print monitor's <b>WritePort</b> function.
-
-`pfnXcvClosePort`
-
-Pointer to the print monitor's <b>XcvClosePort</b> function. (Port monitors only.)
+Pointer to the print monitor's <b>XcvOpenPort</b> function. (Port monitors only.)
 
 `pfnXcvDataPort`
 
 Pointer to the print monitor's <b>XcvDataPort</b> function. (Port monitors only.)
 
-`pfnXcvOpenPort`
+`pfnXcvClosePort`
 
-Pointer to the print monitor's <b>XcvOpenPort</b> function. (Port monitors only.)
+Pointer to the print monitor's <b>XcvClosePort</b> function. (Port monitors only.)
+
+`pfnShutdown`
+
+Pointer to the print monitor's <b>Shutdown</b> function.
+
+`pfnSendRecvBidiDataFromPort`
+
+Pointer to the print monitor's <b>SendRecvBidiDataFromPort</b> function.
+
+`pfnNotifyUsedPorts`
+
+
+
+`pfnNotifyUnusedPorts`
+
+
+
+`pfnPowerEvent`
+
+
 
 ## Remarks
 Each language monitor and each port monitor server DLL must provide a MONITOR2 structure. The monitor must supply values for all structure members, and specify the structure's address as the return value for its <a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a> function.
@@ -265,11 +265,3 @@ If a function is not defined, its pointer must be <b>NULL</b>.
 
 
 <a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20MONITOR2 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

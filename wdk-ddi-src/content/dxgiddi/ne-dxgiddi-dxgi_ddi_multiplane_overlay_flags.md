@@ -60,8 +60,8 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS {
 <table>
             
                 <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_FULLSCREEN_POST_COMPOSITION</td>
-                    <td></td>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP</td>
+                    <td>The overlay plane should flip the data vertically, making it appear upside-down.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS {
                 </tr>
             
                 <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP</td>
-                    <td>The overlay plane should flip the data vertically, making it appear upside-down.</td>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_FULLSCREEN_POST_COMPOSITION</td>
+                    <td></td>
                 </tr>
 </table>
 

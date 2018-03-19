@@ -71,6 +71,14 @@ typedef struct {
 ## Members
 
 
+`IFSC`
+
+
+
+`IFSD`
+
+
+
 `BytesReceived`
 
 Contains the number of bytes already received from the smart card.
@@ -82,18 +90,6 @@ Contains the number of bytes already sent to the smart card.
 `BytesToSend`
 
 Contains the total number of remaining bytes to send.
-
-`IFSC`
-
-
-
-`IFSD`
-
-
-
-`InfBytesSent`
-
-
 
 `LastError`
 
@@ -111,17 +107,9 @@ Contains the node address byte to send to the smart card.
 
 
 
-`ReplyData`
-
-A pointer to the buffer that contains the result of the operation.
-
 `Resend`
 
 Contains the resend counter.
-
-`Reserved`
-
-
 
 `Resynch`
 
@@ -139,13 +127,25 @@ Contains the send sequence number (SSN). This member has a value of 0 or 1 as de
 
 Contains the current state of the protocol.
 
+`Wtx`
+
+Contains the waiting time extension for a T=1 transmission. If nonzero, this is a multiplier for the block waiting time. Usually, the driver will time out if the block waiting time expires. Several smart card operations require more time. The smart card answers with a waiting time extension. Therefore, the block waiting time must be multiplied with the <b>Wtx</b> value. If this value is nonzero, it applies as a waiting extension.
+
+`ReplyData`
+
+A pointer to the buffer that contains the result of the operation.
+
 `WaitForReply`
 
 If <b>TRUE</b>, execute the operation synchronously.
 
-`Wtx`
+`InfBytesSent`
 
-Contains the waiting time extension for a T=1 transmission. If nonzero, this is a multiplier for the block waiting time. Usually, the driver will time out if the block waiting time expires. Several smart card operations require more time. The smart card answers with a waiting time extension. Therefore, the block waiting time must be multiplied with the <b>Wtx</b> value. If this value is nonzero, it applies as a waiting extension.
+
+
+`Reserved`
+
+
 
 ## Remarks
 This structure must not be directly modified by a reader driver.

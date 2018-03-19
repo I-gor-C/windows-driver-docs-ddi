@@ -68,10 +68,6 @@ typedef struct _PROPSHEETUI_INFO_HEADER {
 
 CPSUI-supplied size, in bytes, of the PROPSHEETUI_INFO_HEADER structure.
 
-`DUMMYUNIONNAME`
-
-
-
 `Flags`
 
 Optional, application-specified bit flags that modify the property sheet page's appearance. The flags listed in the following table can be used in any combination.
@@ -133,17 +129,21 @@ If set, the <b>hIcon</b>/<b>IconID</b> union contains an icon handle. If not set
 </tr>
 </table>
 
-`hInst`
+`pTitle`
 
-Application-supplied instance handle, which CPSUI uses when loading application resources.
+String identifier, representing text to be displayed in the property sheet's title bar. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero. For printer interface DLLs, the string typically contains the printer's name.
 
 `hWndParent`
 
 Handle to the window to be used as the parent of the property sheet. By default, CPSUI supplies the window handle that it received for the <i>hWndOwner</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546148">CommonPropertySheetUI</a>, but the application can overwrite that handle with another.
 
-`pTitle`
+`hInst`
 
-String identifier, representing text to be displayed in the property sheet's title bar. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero. For printer interface DLLs, the string typically contains the printer's name.
+Application-supplied instance handle, which CPSUI uses when loading application resources.
+
+`DUMMYUNIONNAME`
+
+
 
 
 ## Requirements

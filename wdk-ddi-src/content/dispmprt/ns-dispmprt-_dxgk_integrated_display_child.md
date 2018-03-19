@@ -57,10 +57,6 @@ typedef struct _DXGK_INTEGRATED_DISPLAY_CHILD {
 ## Members
 
 
-`DescriptorLength`
-
-The size in bytes of the descriptor which will be in the Descriptor field of the DXGK_QUERYINTEGRATEDDISPLAYOUT structure.
-
 `InterfaceTechnology`
 
 Provides the type of connection used for the integrated display.  Typically, this would be one of the inherently internal display types:
@@ -81,6 +77,10 @@ However, since it has become common to use external connector types to connect i
 <li>D3DKMDT_VOT_DISPLAYPORT_EXTERNAL</li>
 <li>D3DKMDT_VOT_UDI_EXTERNAL</li>
 </ul>
+
+`DescriptorLength`
+
+The size in bytes of the descriptor which will be in the Descriptor field of the DXGK_QUERYINTEGRATEDDISPLAYOUT structure.
 
 
 ## Requirements

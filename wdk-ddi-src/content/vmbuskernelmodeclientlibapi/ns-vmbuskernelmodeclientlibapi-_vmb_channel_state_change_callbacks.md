@@ -65,33 +65,33 @@ typedef struct _VMB_CHANNEL_STATE_CHANGE_CALLBACKS {
 ## Members
 
 
-`EvtChannelClosed`
+`Version`
 
-The channel closed callback function.
-
-`EvtChannelOpened`
-
-The channel opened callback function.
-
-`EvtChannelPostStarted`
-
-The channel post started callback function.
-
-`EvtChannelStarted`
-
-The channel started callback function.
-
-`EvtChannelSuspend`
-
-The channel suspended callback funciton.
+The version.
 
 `Size`
 
 Size of callbacks.
 
-`Version`
+`EvtChannelOpened`
 
-The version.
+The channel opened callback function.
+
+`EvtChannelClosed`
+
+The channel closed callback function.
+
+`EvtChannelSuspend`
+
+The channel suspended callback funciton.
+
+`EvtChannelStarted`
+
+The channel started callback function.
+
+`EvtChannelPostStarted`
+
+The channel post started callback function.
 
 
 ## Requirements

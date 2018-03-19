@@ -58,6 +58,10 @@ typedef struct _LUID_AND_ATTRIBUTES {
 ## Members
 
 
+`Luid`
+
+An LUID value.
+
 `Attributes`
 
 Specifies attributes of the LUID. This value contains up to 32 one-bit flags. Its meaning depends on the definition and use of the LUID. 
@@ -100,10 +104,6 @@ The privilege was used to gain access to an object or service. This flag is used
 </td>
 </tr>
 </table>
-
-`Luid`
-
-An LUID value.
 
 ## Remarks
 An LUID_AND_ATTRIBUTES structure can represent an LUID whose 
@@ -148,11 +148,3 @@ typedef LUID_AND_ATTRIBUTES_ARRAY *PLUID_AND_ATTRIBUTES_ARRAY;
 
 
 <a href="..\ntifs\nf-ntifs-sefiltertoken.md">SeFilterToken</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20LUID_AND_ATTRIBUTES structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

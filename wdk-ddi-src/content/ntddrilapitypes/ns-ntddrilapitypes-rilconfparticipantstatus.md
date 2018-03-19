@@ -63,11 +63,11 @@ typedef struct _RILCONFPARTICIPANTSTATUS {
 ## Members
 
 
-`bCallTransfer`
-
-
-
 `cbSize`
+
+
+
+`dwParams`
 
 
 
@@ -79,7 +79,11 @@ typedef struct _RILCONFPARTICIPANTSTATUS {
 
 
 
-`dwParams`
+`bCallTransfer`
+
+
+
+`raAddress`
 
 
 
@@ -88,10 +92,6 @@ typedef struct _RILCONFPARTICIPANTSTATUS {
 
 
 `dwSIPStatus`
-
-
-
-`raAddress`
 
 
 

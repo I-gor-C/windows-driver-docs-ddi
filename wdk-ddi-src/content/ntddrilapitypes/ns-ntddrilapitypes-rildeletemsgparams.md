@@ -57,11 +57,11 @@ typedef struct _RILDELETEMSGPARAMS {
 ## Members
 
 
-`dwIndex`
-
-
-
 `hUiccApp`
+
+
+
+`dwIndex`
 
 
 

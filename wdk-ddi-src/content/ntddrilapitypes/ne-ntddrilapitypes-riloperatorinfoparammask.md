@@ -60,12 +60,12 @@ typedef enum _RILOPERATORINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_OI_ALL</td>
+                    <td>RIL_PARAM_OI_INDEX</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_OI_INDEX</td>
+                    <td>RIL_PARAM_OI_STATUS</td>
                     <td></td>
                 </tr>
             
@@ -75,7 +75,7 @@ typedef enum _RILOPERATORINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_OI_STATUS</td>
+                    <td>RIL_PARAM_OI_ALL</td>
                     <td></td>
                 </tr>
 </table>

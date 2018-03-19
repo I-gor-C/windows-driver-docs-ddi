@@ -62,21 +62,6 @@ typedef enum _RILPSMEDIAPREFERENCE {
 <table>
             
                 <tr>
-                    <td>RIL_PSMPREF_CELLONLY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PSMPREF_CELLPREFERRED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PSMPREF_NUMBER_OF_VALUES</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PSMPREF_UNKNOWN</td>
                     <td></td>
                 </tr>
@@ -88,6 +73,21 @@ typedef enum _RILPSMEDIAPREFERENCE {
             
                 <tr>
                     <td>RIL_PSMPREF_WIFIPREFERRED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PSMPREF_CELLONLY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PSMPREF_CELLPREFERRED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PSMPREF_NUMBER_OF_VALUES</td>
                     <td></td>
                 </tr>
 </table>

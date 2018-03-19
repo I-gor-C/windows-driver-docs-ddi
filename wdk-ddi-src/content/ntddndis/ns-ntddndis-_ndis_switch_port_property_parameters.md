@@ -66,10 +66,6 @@ typedef struct _NDIS_SWITCH_PORT_PROPERTY_PARAMETERS {
 ## Members
 
 
-`Flags`
-
-A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.
-
 `Header`
 
 The type, revision, and size of the <b>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
@@ -86,17 +82,17 @@ Original version for NDIS 6.30 and later.
 
 Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_SWITCH_PORT_PROPERTY_PARAMETERS_REVISION_1.
 
+`Flags`
+
+A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.
+
 `PortId`
 
 An NDIS_SWITCH_PORT_ID value that contains the unique identifier of the extensible switch port to which the property is assigned.
 
-`PropertyBufferLength`
+`PropertyType`
 
-A ULONG value that specifies the size, in bytes, of the property buffer.
-
-`PropertyBufferOffset`
-
-A ULONG value that specifies the offset, in bytes, to the property buffer that follows the <b>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</b> structure. The offset is measured from the start of the <b>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</b> structure up to the beginning of the property buffer.
+An <a href="..\ntddndis\ne-ntddndis-_ndis_switch_port_property_type.md">NDIS_SWITCH_PORT_PROPERTY_TYPE</a> enumeration value that specifies the type of port property that is contained within the property buffer.
 
 `PropertyId`
 
@@ -107,21 +103,9 @@ For more information, see the Remarks section.
 <div class="alert"><b>Note</b>  The extensible switch extension must ignore this member unless the <b>PropertyType</b> member is set to <b>NdisSwitchPortPropertyTypeCustom</b>.</div>
 <div> </div>
 
-`PropertyInstanceId`
-
-An NDIS_SWITCH_OBJECT_INSTANCE_ID value that identifies the instance of the  property for the extensible switch port.
-
-`PropertyType`
-
-An <a href="..\ntddndis\ne-ntddndis-_ndis_switch_port_property_type.md">NDIS_SWITCH_PORT_PROPERTY_TYPE</a> enumeration value that specifies the type of port property that is contained within the property buffer.
-
 `PropertyVersion`
 
 An NDIS_SWITCH_OBJECT_VERSION value that identifies the version of the property for the extensible switch port.
-
-`Reserved`
-
-Reserved for future use.
 
 `SerializationVersion`
 
@@ -129,6 +113,22 @@ An NDIS_SWITCH_OBJECT_SERIALIZATION_VERSION value that identifies the format ver
 
 <div class="alert"><b>Note</b>  For Windows Server 2012, the <b>SerializationVersion</b> member must be set to NDIS_SWITCH_OBJECT_SERIALIZATION_VERSION_1.</div>
 <div> </div>
+
+`PropertyInstanceId`
+
+An NDIS_SWITCH_OBJECT_INSTANCE_ID value that identifies the instance of the  property for the extensible switch port.
+
+`PropertyBufferLength`
+
+A ULONG value that specifies the size, in bytes, of the property buffer.
+
+`PropertyBufferOffset`
+
+A ULONG value that specifies the offset, in bytes, to the property buffer that follows the <b>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</b> structure. The offset is measured from the start of the <b>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</b> structure up to the beginning of the property buffer.
+
+`Reserved`
+
+Reserved for future use.
 
 ## Remarks
 The <b>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</b> structure is used in the following OID set requests:
@@ -222,11 +222,3 @@ For more information about extensible switch policies, see <a href="https://msdn
 
 
 <b></b>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_PROPERTY_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

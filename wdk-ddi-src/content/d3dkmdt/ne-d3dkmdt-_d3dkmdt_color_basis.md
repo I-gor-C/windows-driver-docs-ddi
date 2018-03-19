@@ -63,13 +63,13 @@ typedef enum _D3DKMDT_COLOR_BASIS {
 <table>
             
                 <tr>
-                    <td>D3DKMDT_CB_INTENSITY</td>
-                    <td>Indicates an encoding scheme that relies only on intensity. This basis is used for monochrome images.</td>
+                    <td>D3DKMDT_CB_UNINITIALIZED</td>
+                    <td>Indicates that a variable of type D3DKMDT_COLOR_BASIS has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_CB_SCRGB</td>
-                    <td>Indicates the SCRGB color basis.</td>
+                    <td>D3DKMDT_CB_INTENSITY</td>
+                    <td>Indicates an encoding scheme that relies only on intensity. This basis is used for monochrome images.</td>
                 </tr>
             
                 <tr>
@@ -78,8 +78,8 @@ typedef enum _D3DKMDT_COLOR_BASIS {
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_CB_UNINITIALIZED</td>
-                    <td>Indicates that a variable of type D3DKMDT_COLOR_BASIS has not yet been assigned a meaningful value.</td>
+                    <td>D3DKMDT_CB_SCRGB</td>
+                    <td>Indicates the SCRGB color basis.</td>
                 </tr>
             
                 <tr>

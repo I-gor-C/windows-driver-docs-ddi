@@ -61,29 +61,29 @@ typedef struct D3D12DDI_VIDEO_PROCESS_REFERENCES_INFO_0020 {
 ## Members
 
 
-`hDrvFutureFrames`
+`NumPastFrames`
 
-A pointer to an array of surfaces. The number of elements in the array is the value of  <i>NumFutureFrames</i> parameter.
+The number of past reference frames.
 
 `hDrvPastFrames`
 
 A pointer to an array of surfaces. The number of elements in the array is the value of the <i>NumPastFrames</i> parameter.
 
+`pPastSubresources`
+
+An array of subresource indexes for the list of past frames textures.  A value of null indicates subresource of zero (0) for each resource.
+
 `NumFutureFrames`
 
 The number of future reference frames.
 
-`NumPastFrames`
+`hDrvFutureFrames`
 
-The number of past reference frames.
+A pointer to an array of surfaces. The number of elements in the array is the value of  <i>NumFutureFrames</i> parameter.
 
 `pFutureSubresources`
 
 An array of subresource indexes for the list of future frames textures.  A value of null indicates subresource 0 for each resource.
-
-`pPastSubresources`
-
-An array of subresource indexes for the list of past frames textures.  A value of null indicates subresource of zero (0) for each resource.
 
 
 ## Requirements

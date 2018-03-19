@@ -58,6 +58,29 @@ typedef struct _SERIAL_LINE_CONTROL {
 ## Members
 
 
+`StopBits`
+
+The number of stop bits used at the end of each character that is transmitted or received. This member is set to one of the following values.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>STOP_BIT_1</td>
+<td>One stop bit.</td>
+</tr>
+<tr>
+<td>STOP_BITS_1_5</td>
+<td>One and a half stop bits.</td>
+</tr>
+<tr>
+<td>STOP_BITS_2</td>
+<td>Two stop bits. Not valid if <b>WordLength</b> = 5.</td>
+</tr>
+</table>
+
 `Parity`
 
 The type of parity checking used for each character that is transmitted or received. This member is set to one of the following values.
@@ -89,29 +112,6 @@ The type of parity checking used for each character that is transmitted or recei
 </tr>
 </table>
 
-`StopBits`
-
-The number of stop bits used at the end of each character that is transmitted or received. This member is set to one of the following values.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>STOP_BIT_1</td>
-<td>One stop bit.</td>
-</tr>
-<tr>
-<td>STOP_BITS_1_5</td>
-<td>One and a half stop bits.</td>
-</tr>
-<tr>
-<td>STOP_BITS_2</td>
-<td>Two stop bits. Not valid if <b>WordLength</b> = 5.</td>
-</tr>
-</table>
-
 `WordLength`
 
 Data bits per character. This member indicates the number of data bits in each character value that is transmitted or received, and does not include parity bits or stop bits. <b>WordLength</b> values in the range 5 to 8 are typically supported.
@@ -131,11 +131,3 @@ This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_li
 
 
 <a href="..\ntddser\ni-ntddser-ioctl_serial_get_line_control.md">IOCTL_SERIAL_GET_LINE_CONTROL</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SERIAL_LINE_CONTROL structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

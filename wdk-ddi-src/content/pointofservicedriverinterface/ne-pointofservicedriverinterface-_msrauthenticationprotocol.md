@@ -59,13 +59,13 @@ typedef enum _MsrAuthenticationProtocol {
 <table>
             
                 <tr>
-                    <td>MsrAuthenticationProtocolType_ChallengeResponse</td>
-                    <td>Challenge-response authentication is supported.</td>
+                    <td>MsrAuthenticationProtocolType_None</td>
+                    <td>Authentication is not supported.</td>
                 </tr>
             
                 <tr>
-                    <td>MsrAuthenticationProtocolType_None</td>
-                    <td>Authentication is not supported.</td>
+                    <td>MsrAuthenticationProtocolType_ChallengeResponse</td>
+                    <td>Challenge-response authentication is supported.</td>
                 </tr>
 </table>
 

@@ -61,16 +61,6 @@ typedef enum _REFS_SMR_VOLUME_GC_STATE {
 <table>
             
                 <tr>
-                    <td>SmrGcStateActive</td>
-                    <td>Specifies the garbage collection is running.</td>
-                </tr>
-            
-                <tr>
-                    <td>SmrGcStateActiveFullSpeed</td>
-                    <td>Specifies the garbage collection is running at full speed.</td>
-                </tr>
-            
-                <tr>
                     <td>SmrGcStateInactive</td>
                     <td>Specifies the garbage collection is inactive.</td>
                 </tr>
@@ -78,6 +68,16 @@ typedef enum _REFS_SMR_VOLUME_GC_STATE {
                 <tr>
                     <td>SmrGcStatePaused</td>
                     <td>Specifies the garbage collection has been paused.</td>
+                </tr>
+            
+                <tr>
+                    <td>SmrGcStateActive</td>
+                    <td>Specifies the garbage collection is running.</td>
+                </tr>
+            
+                <tr>
+                    <td>SmrGcStateActiveFullSpeed</td>
+                    <td>Specifies the garbage collection is running at full speed.</td>
                 </tr>
 </table>
 

@@ -57,13 +57,13 @@ typedef struct _SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO {
 ## Members
 
 
-`eMode`
-
-Card emulation mode: off, power dependent, or power-independent.
-
 `guidSecureElementId`
 
 This is a unique identifier for the secure element.
+
+`eMode`
+
+Card emulation mode: off, power dependent, or power-independent.
 
 
 ## Requirements

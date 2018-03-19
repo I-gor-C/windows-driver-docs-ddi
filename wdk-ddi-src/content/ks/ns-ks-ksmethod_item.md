@@ -64,6 +64,22 @@ typedef struct {
 ## Members
 
 
+`MethodId`
+
+Specifies the identifier of this method within its method set.
+
+`MinMethod`
+
+Specifies the minimum size of buffer required to specify the method completely. This size is at least <b>sizeof</b>(KSMETHOD) bytes.
+
+`MinData`
+
+Specifies the minimum size buffer required to specify the method data buffer. This buffer is used to read and/or write information related to the method.
+
+`SupportHandler`
+
+Pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567206">KStrSupportHandler</a> callback routine.
+
 `Flags`
 
 Specifies the request type of this method request.
@@ -125,22 +141,6 @@ Indicates that the method is to be processed in source mode. An MDL is allocated
 </tr>
 </table>
 
-`MethodId`
-
-Specifies the identifier of this method within its method set.
-
-`MinData`
-
-Specifies the minimum size buffer required to specify the method data buffer. This buffer is used to read and/or write information related to the method.
-
-`MinMethod`
-
-Specifies the minimum size of buffer required to specify the method completely. This size is at least <b>sizeof</b>(KSMETHOD) bytes.
-
-`SupportHandler`
-
-Pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567206">KStrSupportHandler</a> callback routine.
-
 ## Remarks
 A minidriver uses the KSMETHOD_ITEM structure to define methods in a method set. The minidriver implements methods and uses the <b>MethodHandler</b> member to point to these methods. A client can then use the IOCTL_KS_METHOD request along with the KSMETHOD structure to execute methods on a kernel streaming object that the minidriver handles. For more information, see <a href="https://msdn.microsoft.com/1d7bd6f4-0aaf-4d77-8132-f551fd2ecbd2">KS Methods</a>.
 
@@ -160,11 +160,3 @@ A minidriver uses the KSMETHOD_ITEM structure to define methods in a method set.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563398">KSMETHOD</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSMETHOD_ITEM structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

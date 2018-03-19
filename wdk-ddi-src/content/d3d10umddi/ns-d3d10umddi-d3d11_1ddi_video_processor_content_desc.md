@@ -71,25 +71,25 @@ A member of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_frame_form
 
 The frame rate of the input video stream, specified as a <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a> structure.
 
-`InputHeight`
-
-The height of the input frames, in pixels.
-
 `InputWidth`
 
 The width of the input frames, in pixels.
+
+`InputHeight`
+
+The height of the input frames, in pixels.
 
 `OutputFrameRate`
 
 The frame rate of the output video stream, specified as a <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a> structure.
 
-`OutputHeight`
-
-The height of the output frames, in pixels.
-
 `OutputWidth`
 
 The width of the output frames, in pixels.
+
+`OutputHeight`
+
+The height of the output frames, in pixels.
 
 `Usage`
 
@@ -113,11 +113,3 @@ A member of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_usage.md">
 
 
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_frame_format.md">D3D11_1DDI_VIDEO_FRAME_FORMAT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -58,13 +58,13 @@ typedef struct _WWAN_IPV4_ADDRESS {
 ## Members
 
 
-`IPV4Address`
-
-
-
 `OnLinkPrefixLength`
 
 The length of the prefix or network part of the IP address of the PDP context.
+
+`IPV4Address`
+
+
 
 
 ## Requirements

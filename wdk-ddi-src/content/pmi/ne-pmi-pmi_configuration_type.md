@@ -61,23 +61,23 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>PmiBudgetingConfiguration</td>
-                    <td>The PMI configuration data, formatted as a <a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a> structure, contains information about the budgeting configuration of the power meter.</td>
-                </tr>
-            
-                <tr>
-                    <td>PmiConfigurationMax</td>
-                    <td>The maximum number of PMI configuration structures.</td>
-                </tr>
-            
-                <tr>
                     <td>PmiMeasurementConfiguration</td>
                     <td>The PMI configuration data, formatted as a <a href="..\pmi\ns-pmi-_pmi_measurement_configuration.md">PMI_MEASUREMENT_CONFIGURATION</a> structure, contains information about the measurement configuration of the power meter.</td>
                 </tr>
             
                 <tr>
+                    <td>PmiBudgetingConfiguration</td>
+                    <td>The PMI configuration data, formatted as a <a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a> structure, contains information about the budgeting configuration of the power meter.</td>
+                </tr>
+            
+                <tr>
                     <td>PmiThresholdConfiguration</td>
                     <td>The PMI configuration data, formatted as a <a href="..\pmi\ns-pmi-_pmi_threshold_configuration.md">PMI_THRESHOLD_CONFIGURATION</a> structure, contains information about the budgeting configuration of the power meter.</td>
+                </tr>
+            
+                <tr>
+                    <td>PmiConfigurationMax</td>
+                    <td>The maximum number of PMI configuration structures.</td>
                 </tr>
 </table>
 
@@ -114,11 +114,3 @@ The <b>ConfigurationType</b> member of the <a href="..\pmi\ns-pmi-_pmi_configura
 
 
 <a href="..\pmi\ns-pmi-_pmi_measurement_configuration.md">PMI_MEASUREMENT_CONFIGURATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [powermeter\powermeter]:%20PMI_CONFIGURATION_TYPE enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

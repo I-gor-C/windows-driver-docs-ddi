@@ -63,21 +63,6 @@ typedef enum _RILCONFPARTICIPANTSTATUSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_CPS_ADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CPS_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CPS_CALLTRANSFER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_CPS_EXECUTOR</td>
                     <td></td>
                 </tr>
@@ -88,12 +73,27 @@ typedef enum _RILCONFPARTICIPANTSTATUSPARAMMASK {
                 </tr>
             
                 <tr>
+                    <td>RIL_PARAM_CPS_CALLTRANSFER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CPS_ADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PARAM_CPS_PARTICIPANTOP</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_PARAM_CPS_SIPSTATUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CPS_ALL</td>
                     <td></td>
                 </tr>
 </table>

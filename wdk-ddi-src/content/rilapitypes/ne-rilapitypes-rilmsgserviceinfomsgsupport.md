@@ -60,17 +60,17 @@ typedef enum _RILMSGSERVICEINFOMSGSUPPORT {
 <table>
             
                 <tr>
-                    <td>RIL_MSI_SMS_BROADCAST</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_MSI_SMS_INCOMING</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_MSI_SMS_OUTGOING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSI_SMS_BROADCAST</td>
                     <td></td>
                 </tr>
 </table>

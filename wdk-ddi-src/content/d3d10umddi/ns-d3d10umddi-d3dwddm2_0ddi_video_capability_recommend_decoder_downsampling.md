@@ -61,25 +61,21 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_RECOMMEND_DECODER_DOWNSAMPLING {
 ## Members
 
 
+`pInputDesc`
+
+Contains the decode profile used and the resolution and format of the reference frames.  This is the resolution/format to be downsampled (e.g. 4K, DXGI_FORMAT_P010).
+
 `InputColorSpace`
 
 Contains the color space information of the reference frame data.
-
-`OutputColorSpace`
-
-The driver returns the recommended color space information of the display frame data.
-
-`pFrameRate`
-
-Contains the frame rate of the video content.
 
 `pInputConfig`
 
 Contains the configuration data associated with the decode profile.
 
-`pInputDesc`
+`pFrameRate`
 
-Contains the decode profile used and the resolution and format of the reference frames.  This is the resolution/format to be downsampled (e.g. 4K, DXGI_FORMAT_P010).
+Contains the frame rate of the video content.
 
 `pOutputDesc`
 
@@ -90,6 +86,10 @@ The driver returns the recommended resolution and the format of the output/displ
 <div class="alert"><b>Note</b>  The decode profile (<b>Guid</b>) member of <b>pOutputDesc</b> can be ignored.
 </div>
 <div> </div>
+
+`OutputColorSpace`
+
+The driver returns the recommended color space information of the display frame data.
 
 ## Remarks
 The driver recommends the down sample parameters such that the video stream can be decoded in real-time. If no down sample solution exists that can result in real-time decode, the driver should recommend the configuration that is closest to the real-time solution.

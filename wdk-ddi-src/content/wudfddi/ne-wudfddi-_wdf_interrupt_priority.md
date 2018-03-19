@@ -64,8 +64,8 @@ typedef enum _WDF_INTERRUPT_PRIORITY {
 <table>
             
                 <tr>
-                    <td>WdfIrqPriorityHigh</td>
-                    <td>The device's interrupt has a relatively high priority, typically because the interrupt must be serviced immediately.</td>
+                    <td>WdfIrqPriorityUndefined</td>
+                    <td>The relative priority of a device's interrupt is undefined.</td>
                 </tr>
             
                 <tr>
@@ -79,8 +79,8 @@ typedef enum _WDF_INTERRUPT_PRIORITY {
                 </tr>
             
                 <tr>
-                    <td>WdfIrqPriorityUndefined</td>
-                    <td>The relative priority of a device's interrupt is undefined.</td>
+                    <td>WdfIrqPriorityHigh</td>
+                    <td>The device's interrupt has a relatively high priority, typically because the interrupt must be serviced immediately.</td>
                 </tr>
 </table>
 
@@ -98,11 +98,3 @@ The <b>WDF_INTERRUPT_PRIORITY</b> enumeration type is used as input to the <a hr
 ## See Also
 
 <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetpolicy.md">WdfInterruptSetPolicy</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_INTERRUPT_PRIORITY enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

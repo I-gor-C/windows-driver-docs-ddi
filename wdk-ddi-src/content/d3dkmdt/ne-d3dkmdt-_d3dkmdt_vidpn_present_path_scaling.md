@@ -66,15 +66,30 @@ typedef enum _D3DKMDT_VIDPN_PRESENT_PATH_SCALING {
 <table>
             
                 <tr>
-                    <td>D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX</td>
-                    <td>Indicates that the source content is scaled to fit the path's target while preserving the aspect ratio of the source.
-
-This constant value is available beginning with Windows 7. See further information in the Remarks section.</td>
+                    <td>D3DKMDT_VPPS_UNINITIALIZED</td>
+                    <td>Indicates that a variable of type D3DKMDT_VIDPN_PRESENT_PATH_SCALING has not yet been assigned a meaningful value.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VPPS_IDENTITY</td>
+                    <td>Indicates the identity transformation; the source content is presented with no change. Note that this transformation is available only if the path's source mode has the same spatial resolution as the path's target mode.</td>
                 </tr>
             
                 <tr>
                     <td>D3DKMDT_VPPS_CENTERED</td>
                     <td>Indicates the centering transformation; the source content is presented unscaled, centered with respect to the spatial resolution of the target mode.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VPPS_STRETCHED</td>
+                    <td>Indicates that the source content is scaled to fit the path's target, and the aspect ratio of the source is not preserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX</td>
+                    <td>Indicates that the source content is scaled to fit the path's target while preserving the aspect ratio of the source.
+
+This constant value is available beginning with Windows 7. See further information in the Remarks section.</td>
                 </tr>
             
                 <tr>
@@ -85,16 +100,6 @@ This constant value is available beginning with Windows 7. See further informati
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_VPPS_IDENTITY</td>
-                    <td>Indicates the identity transformation; the source content is presented with no change. Note that this transformation is available only if the path's source mode has the same spatial resolution as the path's target mode.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VPPS_NOTSPECIFIED</td>
-                    <td>Indicates that no transformation has been specified. See further information in the Remarks section.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DKMDT_VPPS_RESERVED1</td>
                     <td>Reserved for system use. Do not use this value. This value will never be passed to a driver.
 
@@ -102,18 +107,13 @@ This constant value is available beginning with Windows 7.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_VPPS_STRETCHED</td>
-                    <td>Indicates that the source content is scaled to fit the path's target, and the aspect ratio of the source is not preserved.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VPPS_UNINITIALIZED</td>
-                    <td>Indicates that a variable of type D3DKMDT_VIDPN_PRESENT_PATH_SCALING has not yet been assigned a meaningful value.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DKMDT_VPPS_UNPINNED</td>
                     <td>Indicates that no scaling transformation has been pinned for the VidPN present source.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VPPS_NOTSPECIFIED</td>
+                    <td>Indicates that no transformation has been specified. See further information in the Remarks section.</td>
                 </tr>
 </table>
 
@@ -139,11 +139,3 @@ If D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX or D3DKMDT_VPPS_CUSTOM values are specifi
 
 
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling_support.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_VIDPN_PRESENT_PATH_SCALING enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

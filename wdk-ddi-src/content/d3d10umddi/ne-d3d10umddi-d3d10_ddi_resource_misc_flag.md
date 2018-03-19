@@ -87,6 +87,11 @@ typedef enum D3D10_DDI_RESOURCE_MISC_FLAG {
                 </tr>
             
                 <tr>
+                    <td>D3D10_DDI_RESOURCE_MISC_SHARED</td>
+                    <td>The resource can be shared by multiple devices and processes.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D10_DDI_RESOURCE_MISC_DISCARD_ON_PRESENT</td>
                     <td>The resource is not required to persist across presentations. 
       
@@ -97,27 +102,10 @@ Supported starting with Windows Server 2008, and Windows Vista with Service Pack
                 </tr>
             
                 <tr>
-                    <td>D3D10_DDI_RESOURCE_MISC_REMOTE</td>
-                    <td>This value is for internal use only. Do not use.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_RESOURCE_MISC_SHARED</td>
-                    <td>The resource can be shared by multiple devices and processes.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D11_1DDI_RESOURCE_MISC_RESTRICT_SHARED_RESOURCE_DRIVER</td>
-                    <td>The driver should restrict access to the shared surface. This value should be used only when a shared surface is created. The process that is creating the surface is always allowed to open the shared resource.
+                    <td>D3D11_DDI_RESOURCE_MISC_DRAWINDIRECT_ARGS</td>
+                    <td>The resource is a buffer that the runtime can use as the argument buffer in a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_drawindexedinstancedindirect.md">DrawIndexedInstancedIndirect</a>, <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_drawinstancedindirect.md">DrawInstancedIndirect</a>, or <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_dispatchindirect.md">DispatchIndirect</a> function.
 
-Supported starting with Windows 8.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D11_1DDI_RESOURCE_MISC_RESTRICTED_CONTENT</td>
-                    <td>The resource can contain protected content. This value should be used only if the driver and hardware support content protection.
-
-Supported starting with Windows 8.</td>
+Supported starting with Windows 7.</td>
                 </tr>
             
                 <tr>
@@ -137,17 +125,29 @@ Supported starting with Windows 7.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_DDI_RESOURCE_MISC_DRAWINDIRECT_ARGS</td>
-                    <td>The resource is a buffer that the runtime can use as the argument buffer in a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_drawindexedinstancedindirect.md">DrawIndexedInstancedIndirect</a>, <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_drawinstancedindirect.md">DrawInstancedIndirect</a>, or <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_dispatchindirect.md">DispatchIndirect</a> function.
+                    <td>D3D11_DDI_RESOURCE_MISC_RESOURCE_CLAMP</td>
+                    <td>The resource must consider any resource clamp, which a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setresourceminlod.md">SetResourceMinLOD</a> function applies.
 
 Supported starting with Windows 7.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_DDI_RESOURCE_MISC_RESOURCE_CLAMP</td>
-                    <td>The resource must consider any resource clamp, which a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setresourceminlod.md">SetResourceMinLOD</a> function applies.
+                    <td>D3D10_DDI_RESOURCE_MISC_REMOTE</td>
+                    <td>This value is for internal use only. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_RESOURCE_MISC_RESTRICTED_CONTENT</td>
+                    <td>The resource can contain protected content. This value should be used only if the driver and hardware support content protection.
 
-Supported starting with Windows 7.</td>
+Supported starting with Windows 8.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_RESOURCE_MISC_RESTRICT_SHARED_RESOURCE_DRIVER</td>
+                    <td>The driver should restrict access to the shared surface. This value should be used only when a shared surface is created. The process that is creating the surface is always allowed to open the shared resource.
+
+Supported starting with Windows 8.</td>
                 </tr>
             
                 <tr>
@@ -162,13 +162,6 @@ Supported starting with Windows 8.1.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM1_3DDI_RESOURCE_MISC_TILE_POOL</td>
-                    <td>The resource is a tile pool.  Must be a buffer with <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_resource_usage.md">D3D10_DDI_RESOURCE_USAGE</a> usage type <b>D3D10_DDI_USAGE_DEFAULT</b>.
-
-Supported starting with Windows 8.1.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DWDDM1_3DDI_RESOURCE_MISC_TILED</td>
                     <td>The resource is tiled. 
 
@@ -176,8 +169,15 @@ Supported starting with Windows 8.1.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM2_0DDI_RESOURCE_MISC_CONTAINS_HW_PROTECTED</td>
-                    <td>The decoder input buffer contains encrypted protected content. The hardware does not need to protect these buffers (as they are encrypted), but the driver may need to allocate these buffers differently so they can efficiently interact with their decryption hardware.
+                    <td>D3DWDDM1_3DDI_RESOURCE_MISC_TILE_POOL</td>
+                    <td>The resource is a tile pool.  Must be a buffer with <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_resource_usage.md">D3D10_DDI_RESOURCE_USAGE</a> usage type <b>D3D10_DDI_USAGE_DEFAULT</b>.
+
+Supported starting with Windows 8.1.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DWDDM2_0DDI_RESOURCE_MISC_HW_PROTECTED</td>
+                    <td>The resource should be created such that it will be protected by the hardware. 
 
 Supported starting with Windows 10.</td>
                 </tr>
@@ -190,8 +190,8 @@ Supported starting with Windows 10.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM2_0DDI_RESOURCE_MISC_HW_PROTECTED</td>
-                    <td>The resource should be created such that it will be protected by the hardware. 
+                    <td>D3DWDDM2_0DDI_RESOURCE_MISC_CONTAINS_HW_PROTECTED</td>
+                    <td>The decoder input buffer contains encrypted protected content. The hardware does not need to protect these buffers (as they are encrypted), but the driver may need to allocate these buffers differently so they can efficiently interact with their decryption hardware.
 
 Supported starting with Windows 10.</td>
                 </tr>
@@ -247,11 +247,3 @@ Supported starting with Windows 10.</td>
 
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_genmips.md">GenMips</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10_DDI_RESOURCE_MISC_FLAG enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

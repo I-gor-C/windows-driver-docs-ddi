@@ -59,21 +59,21 @@ typedef struct {
 ## Members
 
 
-`FixSessionID`
-
-ID of an active fix session.
-
 `Size`
 
 Structure size.
 
-`Unused`
-
-
-
 `Version`
 
 Version number.
+
+`FixSessionID`
+
+ID of an active fix session.
+
+`Unused`
+
+
 
 
 ## Requirements

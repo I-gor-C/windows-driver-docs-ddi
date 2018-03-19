@@ -64,14 +64,6 @@ typedef struct _FILE_STREAM_INFORMATION {
 
 The offset of the next FILE_STREAM_INFORMATION entry. This member is zero if no other entries follow this one.
 
-`StreamAllocationSize`
-
-File stream allocation size, in bytes. Usually this value is a multiple of the sector or cluster size of the underlying physical device.
-
-`StreamName`
-
-Unicode string that contains the name of the stream.
-
 `StreamNameLength`
 
 Length, in bytes, of the <b>StreamName</b> string.
@@ -79,6 +71,14 @@ Length, in bytes, of the <b>StreamName</b> string.
 `StreamSize`
 
 Size, in bytes, of the stream.
+
+`StreamAllocationSize`
+
+File stream allocation size, in bytes. Usually this value is a multiple of the sector or cluster size of the underlying physical device.
+
+`StreamName`
+
+Unicode string that contains the name of the stream.
 
 ## Remarks
 The FILE_STREAM_INFORMATION structure is used to enumerate the streams for a file. This operation can be performed in either of the following ways: 
@@ -153,11 +153,3 @@ The FILE_STREAM_INFORMATION structure must be aligned on a LONGLONG (8-byte) bou
 
 
 <a href="..\fltkernel\nf-fltkernel-fltqueryinformationfile.md">FltQueryInformationFile</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_STREAM_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

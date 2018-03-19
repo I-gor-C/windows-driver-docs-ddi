@@ -76,21 +76,49 @@ typedef struct _DXGK_TIMED_OPERATION_INTERFACE {
 ## Members
 
 
+`Size`
+
+The size, in bytes, of this structure.
+
+`Version`
+
+The version number of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>. Version number constants are defined in <i>Dispmprt.h</i> (for example, DXGK_TIMED_OPERATION_INTERFACE_VERSION_1).
+
 `Context`
 
 A pointer to a context that is provided by the display port driver.
-
-`InterfaceDereference`
-
-A pointer to an interface dereference function that is implemented by the display port driver.
 
 `InterfaceReference`
 
 A pointer to an interface reference function that is implemented by the display port driver.
 
-`Size`
+`InterfaceDereference`
 
-The size, in bytes, of this structure.
+A pointer to an interface dereference function that is implemented by the display port driver.
+
+`TimedOperationStart`
+
+The <b>TimedOperationStart</b> function starts or restarts a timed operation.
+
+The driver should preset the <b>Size</b> member of the <a href="..\dispmprt\ns-dispmprt-_dxgk_timed_operation.md">DXGK_TIMED_OPERATION</a> structure that is pointed to by the <i>Op</i> parameter to <b>sizeof</b>(DXGK_TIMED_OPERATION).
+
+
+
+#### Op
+
+[out] A pointer to a <a href="..\dispmprt\ns-dispmprt-_dxgk_timed_operation.md">DXGK_TIMED_OPERATION</a> structure that describes the timed operation to start or restart.
+
+
+
+#### Timeout
+
+[in] A pointer to a time-out value, in 100-nanoseconds units, that specifies the relative time that was allotted for the timed operation to complete. 
+
+
+
+#### OsHandled
+
+A Boolean value that specifies whether the operating system handles the time-out condition. A value of <b>TRUE</b> indicates that the driver does not have any reasonable way to handle the time-out condition and lets the operating system handle the time-out condition; <b>FALSE</b> indicates that the driver handles the time-out condition.
 
 `TimedOperationDelay`
 
@@ -119,30 +147,6 @@ The <b>TimedOperationDelay</b> function puts the current thread into an alertabl
 #### Interval
 
 [in] A pointer to variable that contains the relative time, in 100-nanoseconds units, for the delay. The sign of the value is ignored.
-
-`TimedOperationStart`
-
-The <b>TimedOperationStart</b> function starts or restarts a timed operation.
-
-The driver should preset the <b>Size</b> member of the <a href="..\dispmprt\ns-dispmprt-_dxgk_timed_operation.md">DXGK_TIMED_OPERATION</a> structure that is pointed to by the <i>Op</i> parameter to <b>sizeof</b>(DXGK_TIMED_OPERATION).
-
-
-
-#### Op
-
-[out] A pointer to a <a href="..\dispmprt\ns-dispmprt-_dxgk_timed_operation.md">DXGK_TIMED_OPERATION</a> structure that describes the timed operation to start or restart.
-
-
-
-#### Timeout
-
-[in] A pointer to a time-out value, in 100-nanoseconds units, that specifies the relative time that was allotted for the timed operation to complete. 
-
-
-
-#### OsHandled
-
-A Boolean value that specifies whether the operating system handles the time-out condition. A value of <b>TRUE</b> indicates that the driver does not have any reasonable way to handle the time-out condition and lets the operating system handle the time-out condition; <b>FALSE</b> indicates that the driver handles the time-out condition.
 
 `TimedOperationWaitForSingleObject`
 
@@ -184,10 +188,6 @@ A Boolean value that specifies whether the wait is alertable. A value of <b>TRUE
 
 A pointer to variable that contains the relative time, in 100-nanoseconds units, for the wait to be completed. The sign of the value is ignored.
 
-`Version`
-
-The version number of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>. Version number constants are defined in <i>Dispmprt.h</i> (for example, DXGK_TIMED_OPERATION_INTERFACE_VERSION_1).
-
 ## Remarks
 The display miniport driver supplies the <b>Size</b> and <b>Version</b> members of this structure, and then calls <a href="..\dispmprt\nc-dispmprt-dxgkcb_query_services.md">DxgkCbQueryServices</a>, which fills in the remaining members of this structure.
 
@@ -216,11 +216,3 @@ The display miniport driver supplies the <b>Size</b> and <b>Version</b> members 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_TIMED_OPERATION_INTERFACE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

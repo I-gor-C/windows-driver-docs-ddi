@@ -65,23 +65,9 @@ typedef struct _OEMDMPARAM {
 ## Members
 
 
-`cbBufSize`
-
-On input, contains the caller-supplied size of memory space pointed to by <b>pOEMDMOut</b>. (Not valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_SIZE.)
-
-On output, contains the method-supplied size of the current version of the private DEVMODEW section. (Only used if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_SIZE.)
-
 `cbSize`
 
 Contains the size of the OEMDMPARAM structure. Supplied by the Unidrv or Pscript5 driver.
-
-`hModule`
-
-Handle to the user interface plug-in module. Supplied by the Unidrv or Pscript5 driver.
-
-`hPrinter`
-
-Handle to the printer device. Supplied by the Unidrv or Pscript5 driver.
 
 `pdriverobj`
 
@@ -95,13 +81,13 @@ Not used.
 
 Pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
-`pOEMDMIn`
+`hPrinter`
 
-Pointer to a set of private DEVMODEW members. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_CONVERT or OEMDM_MERGE.)
+Handle to the printer device. Supplied by the Unidrv or Pscript5 driver.
 
-`pOEMDMOut`
+`hModule`
 
-Pointer to memory allocated to receive modified private DEVMODEW contents. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_DEFAULT, OEMDM_CONVERT or OEMDM_MERGE.)
+Handle to the user interface plug-in module. Supplied by the Unidrv or Pscript5 driver.
 
 `pPublicDMIn`
 
@@ -110,6 +96,20 @@ Pointer to the printer device's public DEVMODEW structure. Supplied by the Unidr
 `pPublicDMOut`
 
 Pointer to a location to receive public DEVMODEW structure contents. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_CONVERT or OEMDM_MERGE.)
+
+`pOEMDMIn`
+
+Pointer to a set of private DEVMODEW members. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_CONVERT or OEMDM_MERGE.)
+
+`pOEMDMOut`
+
+Pointer to memory allocated to receive modified private DEVMODEW contents. Supplied by the Unidrv or Pscript5 driver. (Valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_DEFAULT, OEMDM_CONVERT or OEMDM_MERGE.)
+
+`cbBufSize`
+
+On input, contains the caller-supplied size of memory space pointed to by <b>pOEMDMOut</b>. (Not valid if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_SIZE.)
+
+On output, contains the method-supplied size of the current version of the private DEVMODEW section. (Only used if the <b>DevMode</b> method's <i>dwMode</i> value is OEMDM_SIZE.)
 
 ## Remarks
 For more information about the use of OEMDMPARAM structure members, see the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554167">IPrintOemUI::DevMode</a> method.

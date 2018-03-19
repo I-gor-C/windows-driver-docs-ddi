@@ -57,13 +57,13 @@ typedef struct _D3D12DDIARG_CREATE_VIDEO_DECODER_0032 {
 ## Members
 
 
-`Configuration`
-
-The video decode configuration.
-
 `NodeMask`
 
 Represents the set of nodes.
+
+`Configuration`
+
+The video decode configuration.
 
 
 ## Requirements

@@ -73,22 +73,6 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS {
 ## Members
 
 
-`CongestionAlgorithm`
-
-Reserved for future use.
-     
-
-If you are an independent hardware vendor (IHV) and you want to implement nondefault congestion
-     control algorithms, for example Compound TCP, contact Microsoft at 
-     <a href="mailto:offloadt@microsoft.com">External TCP Offload Triage</a>.
-
-`Encapsulation`
-
-An 
-     <a href="..\ndis\ns-ndis-_ndis_offload_encapsulation.md">
-     NDIS_OFFLOAD_ENCAPSULATION</a> structure that contains encapsulation settings for TCP chimney
-     offload.
-
 `Header`
 
 The 
@@ -102,10 +86,18 @@ The
      <b>Size</b> member to 
      <code>sizeof(NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS)</code>.
 
-`NceStaleTicks`
+`Encapsulation`
 
-A ULONG value that the TCP/IP driver stack sets to indicate the number of ticks of inactivity that
-     make a neighbor state object stale. An offload target must support this member.
+An 
+     <a href="..\ndis\ns-ndis-_ndis_offload_encapsulation.md">
+     NDIS_OFFLOAD_ENCAPSULATION</a> structure that contains encapsulation settings for TCP chimney
+     offload.
+
+`TicksPerSecond`
+
+A ULONG value that the TCP/IP driver stack sets to specify how many ticks of the host's clock
+     equal one second. The default value is 1000 (that is, 1 tick = 1 millisecond). An offload target must
+     support this member.
 
 `TcpAckFrequency`
 
@@ -120,20 +112,6 @@ A UCHAR value that the TCP/IP driver stack sets to specify how many ticks, start
      target sends an ACK. An offload target uses this value to initialize its delayed-ACK timer. An offload
      target must support this member.
 
-`TcpDoubtReachabilityRetransmissions`
-
-A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of times that the
-     offload target should retransmit a segment before the target indicates to the TCP/IP driver stack that
-     the reachability of a neighbor is in doubt. For more information about this indication, see 
-     <a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>. An
-     offload target should support this member.
-
-`TcpDuplicateAckThreshold`
-
-A ULONG value that the TCP/IP driver stack sets to specify the number of duplicate acknowledgments
-     that the offload target must receive before the target performs a fast retransmission. An offload target
-     must support this member.
-
 `TcpMaximumRetransmissions`
 
 A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of times that the
@@ -145,12 +123,13 @@ A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of
      <b>TcpIndicateRetrieve</b> to request that the TCP/IP driver stack terminate the
      offload of the connection. An offload target must support this member.
 
-`TcpPushTicks`
+`TcpDoubtReachabilityRetransmissions`
 
-A ULONG value that the TCP/IP driver stack sets to specify the number of ticks that an offload
-     target must wait before the target completes a pre-posted receive buffer. This interval starts
-     immediately after the offload target places the first byte in the pre-posted receive buffer. An offload
-     target uses this value to initialize its push timer. An offload target must support this member.
+A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of times that the
+     offload target should retransmit a segment before the target indicates to the TCP/IP driver stack that
+     the reachability of a neighbor is in doubt. For more information about this indication, see 
+     <a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>. An
+     offload target should support this member.
 
 `TcpSwsPreventionTicks`
 
@@ -159,11 +138,32 @@ A ULONG value that the TCP/IP driver stack sets to specify the number of ticks f
      offload target sends a partial segment. When the SWS receive timer times out, the offload target sends a
      window update. An offload target should support this member.
 
-`TicksPerSecond`
+`TcpDuplicateAckThreshold`
 
-A ULONG value that the TCP/IP driver stack sets to specify how many ticks of the host's clock
-     equal one second. The default value is 1000 (that is, 1 tick = 1 millisecond). An offload target must
-     support this member.
+A ULONG value that the TCP/IP driver stack sets to specify the number of duplicate acknowledgments
+     that the offload target must receive before the target performs a fast retransmission. An offload target
+     must support this member.
+
+`TcpPushTicks`
+
+A ULONG value that the TCP/IP driver stack sets to specify the number of ticks that an offload
+     target must wait before the target completes a pre-posted receive buffer. This interval starts
+     immediately after the offload target places the first byte in the pre-posted receive buffer. An offload
+     target uses this value to initialize its push timer. An offload target must support this member.
+
+`NceStaleTicks`
+
+A ULONG value that the TCP/IP driver stack sets to indicate the number of ticks of inactivity that
+     make a neighbor state object stale. An offload target must support this member.
+
+`CongestionAlgorithm`
+
+Reserved for future use.
+     
+
+If you are an independent hardware vendor (IHV) and you want to implement nondefault congestion
+     control algorithms, for example Compound TCP, contact Microsoft at 
+     <a href="mailto:offloadt@microsoft.com">External TCP Offload Triage</a>.
 
 ## Remarks
 In NDIS 6.0 and later versions, the NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure specifies the
@@ -213,11 +213,3 @@ The
 
 <a href="https://msdn.microsoft.com/en-us/library/gg158102.aspx">
    OID_TCP_CONNECTION_OFFLOAD_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

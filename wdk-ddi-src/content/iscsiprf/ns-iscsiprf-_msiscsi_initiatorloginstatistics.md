@@ -65,25 +65,13 @@ typedef struct _MSiSCSI_InitiatorLoginStatistics {
 ## Members
 
 
+`UniqueAdapterId`
+
+A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a> structure.
+
 `LoginAcceptRsps`
 
 The number of login accept responses.
-
-`LoginAuthenticateFails`
-
-The number of logons that failed because of a target authentication failure (the initiator and target did not have matching credentials).
-
-`LoginAuthFailRsps`
-
-The number of logon responses that failed because the initiator and target did not have compatible authentication algorithms.
-
-`LoginFailures`
-
-The number of times that a logon attempt by the initiator has failed.
-
-`LoginNegotiateFails`
-
-The number of logons that failed because of negotiation failures.
 
 `LoginOtherFailRsps`
 
@@ -93,6 +81,18 @@ The number of failed responses.
 
 The number of redirect responses.
 
+`LoginAuthFailRsps`
+
+The number of logon responses that failed because the initiator and target did not have compatible authentication algorithms.
+
+`LoginAuthenticateFails`
+
+The number of logons that failed because of a target authentication failure (the initiator and target did not have matching credentials).
+
+`LoginNegotiateFails`
+
+The number of logons that failed because of negotiation failures.
+
 `LogoutNormals`
 
 The number of logoff PDUs with a reason code of 0.
@@ -101,9 +101,9 @@ The number of logoff PDUs with a reason code of 0.
 
 The number of logoff PDUs with a status code other than 0.
 
-`UniqueAdapterId`
+`LoginFailures`
 
-A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a> structure.
+The number of times that a logon attempt by the initiator has failed.
 
 ## Remarks
 It is optional that you implement this class.
@@ -120,11 +120,3 @@ It is optional that you implement this class.
 
 
 <a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_InitiatorLoginStatistics structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

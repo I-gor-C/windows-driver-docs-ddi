@@ -61,13 +61,13 @@ typedef enum _DXGK_INTERRUPT_STATE {
 <table>
             
                 <tr>
-                    <td>DXGK_INTERRUPT_DISABLE</td>
-                    <td>Indicates that the interrupt is disabled.</td>
+                    <td>DXGK_INTERRUPT_ENABLE</td>
+                    <td>Indicates that the interrupt is enabled.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGK_INTERRUPT_ENABLE</td>
-                    <td>Indicates that the interrupt is enabled.</td>
+                    <td>DXGK_INTERRUPT_DISABLE</td>
+                    <td>Indicates that the interrupt is disabled.</td>
                 </tr>
 </table>
 

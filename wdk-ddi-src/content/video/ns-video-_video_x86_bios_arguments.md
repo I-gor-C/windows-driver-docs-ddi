@@ -67,19 +67,11 @@ typedef struct _VIDEO_X86_BIOS_ARGUMENTS {
 
 
 
-`Ebp`
-
-Are the seven x86 microprocessor registers.
-
 `Ebx`
 
 
 
 `Ecx`
-
-
-
-`Edi`
 
 
 
@@ -90,6 +82,14 @@ Are the seven x86 microprocessor registers.
 `Esi`
 
 
+
+`Edi`
+
+
+
+`Ebp`
+
+Are the seven x86 microprocessor registers.
 
 ## Remarks
 MS-DOS INT10s are usually "set mode" requests for the video adapter. Each value is put in the appropriate register and an INT10 call is performed by <a href="..\video\nf-video-videoportint10.md">VideoPortInt10</a>.
@@ -104,11 +104,3 @@ A miniport driver should <i>not</i> set a segment:offset-type pointer in any mem
 ## See Also
 
 <a href="..\video\nf-video-videoportint10.md">VideoPortInt10</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_x86_BIOS_ARGUMENTS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

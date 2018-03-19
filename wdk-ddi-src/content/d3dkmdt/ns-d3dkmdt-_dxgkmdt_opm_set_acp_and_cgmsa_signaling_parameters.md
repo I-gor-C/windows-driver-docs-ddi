@@ -65,33 +65,33 @@ typedef struct _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS {
 ## Members
 
 
+`ulNewTVProtectionStandard`
+
+A <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_protection_standard.md">DXGKMDT_OPM_PROTECTION_STANDARD</a>-typed value that indicates the type of television signal to set ACP and CGMS-A signaling for on the protected output.
+
 `ulAspectRatioChangeMask1`
 
 A mask value that indicates the valid bits to change in the following <b>ulAspectRatioData1</b> member.
-
-`ulAspectRatioChangeMask2`
-
-A mask value that indicates the valid bits to change in the following <b>ulAspectRatioData2</b> member.
-
-`ulAspectRatioChangeMask3`
-
-A mask value that indicates the valid bits to change in the following <b>ulAspectRatioData3</b> member.
 
 `ulAspectRatioData1`
 
 32-bit data that indicates the aspect ratio value to set for the active protection standard.
 
+`ulAspectRatioChangeMask2`
+
+A mask value that indicates the valid bits to change in the following <b>ulAspectRatioData2</b> member.
+
 `ulAspectRatioData2`
 
 32-bit data for additional aspect ratio-related data for specific protection standards. This data can be used to express End and Q0 values for EIA-608-B, or active format description for CEA-805-A Type B packets.
 
+`ulAspectRatioChangeMask3`
+
+A mask value that indicates the valid bits to change in the following <b>ulAspectRatioData3</b> member.
+
 `ulAspectRatioData3`
 
 32-bit data for additional aspect ratio-related data for specific protection standards. This data can be used to express End and Q0 values for EIA-608-B, or active format description for CEA-805-A Type B packets.
-
-`ulNewTVProtectionStandard`
-
-A <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_protection_standard.md">DXGKMDT_OPM_PROTECTION_STANDARD</a>-typed value that indicates the type of television signal to set ACP and CGMS-A signaling for on the protected output.
 
 `ulReserved`
 
@@ -115,11 +115,3 @@ Reserved. Must be set to zero.
 ## See Also
 
 <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_protection_standard.md">DXGKMDT_OPM_PROTECTION_STANDARD</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

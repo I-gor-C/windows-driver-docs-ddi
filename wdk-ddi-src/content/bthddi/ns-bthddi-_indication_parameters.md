@@ -93,14 +93,14 @@ typedef struct _INDICATION_PARAMETERS {
 ## Members
 
 
-`BtAddress`
-
-The Bluetooth address of the remote device.
-
 `ConnectionHandle`
 
 The L2CAP connection handle to the remote device. This handle is only valid for notifications that
      arrive over an established L2CAP connection.
+
+`BtAddress`
+
+The Bluetooth address of the remote device.
 
 `Parameters`
 
@@ -168,11 +168,3 @@ When the Bluetooth driver stack passes
 
 
 <a href="..\bthddi\ns-bthddi-_channel_config_parameters.md">CHANNEL_CONFIG_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20INDICATION_PARAMETERS structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

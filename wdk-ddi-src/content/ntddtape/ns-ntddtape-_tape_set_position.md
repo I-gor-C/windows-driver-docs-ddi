@@ -59,10 +59,6 @@ typedef struct _TAPE_SET_POSITION {
 ## Members
 
 
-`Immediate`
-
-When set to <b>TRUE</b>, indicates that the target device should return status immediately. When set to <b>FALSE</b>, indicates that the device should return status after the operation is complete.
-
 `Method`
 
 Indicates the type of positioning to perform. This member must have one of the following values:
@@ -129,10 +125,6 @@ Starting from the current position, positions the tape immediately after the num
 
 Starting from the current position, positions the tape immediately after the next occurrence, if any, of the number of consecutive setmarks specified by <b>Offset</b>. The <b>Partition</b> member is ignored.
 
-`Offset`
-
-Specifies an offset whose type depends on the value in <b>Method</b>. If the specified method positions the tape to a block address, <b>Offset</b> specifies the byte offset into the specified partition. If the specified method is to skip blocks, filemarks, or setmarks, <b>Offset</b> specifies the number to skip. If <b>Offset</b> is zero, the tape is positioned at the beginning of the partition.
-
 `Partition`
 
 Indicates the partition in which to set the tape's position. This member must have one of the following values:
@@ -146,6 +138,14 @@ Indicates the partition in which to set the tape's position. This member must ha
 
 
 If the media is not partitioned, this member is zero.
+
+`Offset`
+
+Specifies an offset whose type depends on the value in <b>Method</b>. If the specified method positions the tape to a block address, <b>Offset</b> specifies the byte offset into the specified partition. If the specified method is to skip blocks, filemarks, or setmarks, <b>Offset</b> specifies the number to skip. If <b>Offset</b> is zero, the tape is positioned at the beginning of the partition.
+
+`Immediate`
+
+When set to <b>TRUE</b>, indicates that the target device should return status immediately. When set to <b>FALSE</b>, indicates that the device should return status after the operation is complete.
 
 ## Remarks
 Note that a drive or a tape may not support all <b>Method</b> values.
@@ -166,11 +166,3 @@ When the offset specifies a number of blocks, filemarks, or setmarks to position
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567954">TapeMiniSetPosition</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TAPE_SET_POSITION structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

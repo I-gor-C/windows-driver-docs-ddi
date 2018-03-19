@@ -95,6 +95,71 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 ## Members
 
 
+`Type`
+
+The type of notification mechanism that is used by the error source. This can be one of the following possible values.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT"></a><a id="whea_notification_type_externalinterrupt"></a><dl>
+<dt><b>WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT</b></dt>
+</dl>
+</td>
+<td width="60%">
+The error source notifies the LLHEH for the error source by means of an external interrupt.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT"></a><a id="whea_notification_type_localinterrupt"></a><dl>
+<dt><b>WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT</b></dt>
+</dl>
+</td>
+<td width="60%">
+The error source notifies the LLHEH for the error source by means of a local interrupt.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="WHEA_NOTIFICATION_TYPE_NMI"></a><a id="whea_notification_type_nmi"></a><dl>
+<dt><b>WHEA_NOTIFICATION_TYPE_NMI</b></dt>
+</dl>
+</td>
+<td width="60%">
+The error source notifies the LLHEH for the error source by means of a nonmaskable interrupt (NMI).
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="WHEA_NOTIFICATION_TYPE_POLLED"></a><a id="whea_notification_type_polled"></a><dl>
+<dt><b>WHEA_NOTIFICATION_TYPE_POLLED</b></dt>
+</dl>
+</td>
+<td width="60%">
+The low-level hardware error handler (LLHEH)for the error source must periodically poll the error status registers to check for an error condition.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="WHEA_NOTIFICATION_TYPE_SCI"></a><a id="whea_notification_type_sci"></a><dl>
+<dt><b>WHEA_NOTIFICATION_TYPE_SCI</b></dt>
+</dl>
+</td>
+<td width="60%">
+The error source notifies the LLHEH for the error source by means of a service control interrupt (SCI).
+
+</td>
+</tr>
+</table>
+
+`Length`
+
+The size, in bytes, of the <b>WHEA_NOTIFICATION_DESCRIPTOR</b> structure.
+
 `Flags`
 
 A WHEA_NOTIFICATION_FLAGS union that indicates which of the members of the <b>WHEA_NOTIFICATION_DESCRIPTOR</b> structure can be written to by the operating system. The WHEA_NOTIFICATION_FLAGS union is defined as follows:
@@ -196,71 +261,6 @@ A single bit that indicates that the operating system can write to the <b>u.</b>
 </tr>
 </table>
 
-`Length`
-
-The size, in bytes, of the <b>WHEA_NOTIFICATION_DESCRIPTOR</b> structure.
-
-`Type`
-
-The type of notification mechanism that is used by the error source. This can be one of the following possible values.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT"></a><a id="whea_notification_type_externalinterrupt"></a><dl>
-<dt><b>WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT</b></dt>
-</dl>
-</td>
-<td width="60%">
-The error source notifies the LLHEH for the error source by means of an external interrupt.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT"></a><a id="whea_notification_type_localinterrupt"></a><dl>
-<dt><b>WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT</b></dt>
-</dl>
-</td>
-<td width="60%">
-The error source notifies the LLHEH for the error source by means of a local interrupt.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="WHEA_NOTIFICATION_TYPE_NMI"></a><a id="whea_notification_type_nmi"></a><dl>
-<dt><b>WHEA_NOTIFICATION_TYPE_NMI</b></dt>
-</dl>
-</td>
-<td width="60%">
-The error source notifies the LLHEH for the error source by means of a nonmaskable interrupt (NMI).
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="WHEA_NOTIFICATION_TYPE_POLLED"></a><a id="whea_notification_type_polled"></a><dl>
-<dt><b>WHEA_NOTIFICATION_TYPE_POLLED</b></dt>
-</dl>
-</td>
-<td width="60%">
-The low-level hardware error handler (LLHEH)for the error source must periodically poll the error status registers to check for an error condition.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="WHEA_NOTIFICATION_TYPE_SCI"></a><a id="whea_notification_type_sci"></a><dl>
-<dt><b>WHEA_NOTIFICATION_TYPE_SCI</b></dt>
-</dl>
-</td>
-<td width="60%">
-The error source notifies the LLHEH for the error source by means of a service control interrupt (SCI).
-
-</td>
-</tr>
-</table>
-
 `u`
 
 A union of structures that are specific to each different type of notification mechanism.
@@ -281,11 +281,3 @@ A WHEA_NOTIFICATION_DESCRIPTOR structure is contained within the <a href="..\ntd
 
 
 <a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_NOTIFICATION_DESCRIPTOR structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -79,19 +79,7 @@ typedef struct _RILCALLINFO_V4 {
 
 
 
-`dwCallModificationCauseCode`
-
-
-
-`dwDirection`
-
-
-
-`dwDisconnectInitiator`
-
-
-
-`dwDisconnectReason`
+`dwParams`
 
 
 
@@ -99,27 +87,11 @@ typedef struct _RILCALLINFO_V4 {
 
 
 
-`dwFlags`
-
-
-
 `dwID`
 
 
 
-`dwMultiparty`
-
-
-
-`dwNamePresentationIndicator`
-
-
-
-`dwNumberPresentationIndicator`
-
-
-
-`dwParams`
+`dwDirection`
 
 
 
@@ -131,15 +103,11 @@ typedef struct _RILCALLINFO_V4 {
 
 
 
+`dwMultiparty`
+
+
+
 `raAddress`
-
-
-
-`rchsHandoverState`
-
-
-
-`rcmOfferAnswer`
 
 
 
@@ -147,11 +115,43 @@ typedef struct _RILCALLINFO_V4 {
 
 
 
+`wszDescription`
+
+
+
+`dwNumberPresentationIndicator`
+
+
+
+`dwNamePresentationIndicator`
+
+
+
+`dwFlags`
+
+
+
+`dwDisconnectInitiator`
+
+
+
+`dwDisconnectReason`
+
+
+
 `stDisconnectDetails`
 
 
 
-`wszDescription`
+`rcmOfferAnswer`
+
+
+
+`rchsHandoverState`
+
+
+
+`dwCallModificationCauseCode`
 
 
 

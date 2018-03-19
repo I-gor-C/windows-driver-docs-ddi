@@ -63,7 +63,11 @@ typedef struct _REPORT_ZONES_EXT_DATA {
 ## Members
 
 
-`MaxLBA`
+`ZoneListLength`
+
+N/A
+
+`SAME`
 
 N/A
 
@@ -75,6 +79,10 @@ Reserved for future use.
 
 Reserved for future use.
 
+`MaxLBA`
+
+N/A
+
 `Reserved2`
 
 Reserved for future use.
@@ -82,14 +90,6 @@ Reserved for future use.
 `Reserved3`
 
 Reserved for future use.
-
-`SAME`
-
-N/A
-
-`ZoneListLength`
-
-N/A
 
 
 ## Requirements

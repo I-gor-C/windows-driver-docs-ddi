@@ -61,7 +61,7 @@ typedef struct _RILDELETEPHONEBOOKENTRYPARAMS {
 ## Members
 
 
-`dwIndex`
+`hUiccApp`
 
 
 
@@ -69,11 +69,11 @@ typedef struct _RILDELETEPHONEBOOKENTRYPARAMS {
 
 
 
+`dwIndex`
+
+
+
 `fHasLockVerification`
-
-
-
-`hUiccApp`
 
 
 

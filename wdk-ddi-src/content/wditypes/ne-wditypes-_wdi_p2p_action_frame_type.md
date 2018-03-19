@@ -65,11 +65,6 @@ typedef enum _WDI_P2P_ACTION_FRAME_TYPE {
 <table>
             
                 <tr>
-                    <td>WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_CONFIRM</td>
-                    <td>Wi-Fi Direct Group Owner Negotiation Confirmation.</td>
-                </tr>
-            
-                <tr>
                     <td>WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_REQUEST</td>
                     <td>Wi-Fi Direct Group Owner Negotiation Request.</td>
                 </tr>
@@ -77,6 +72,11 @@ typedef enum _WDI_P2P_ACTION_FRAME_TYPE {
                 <tr>
                     <td>WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_RESPONSE</td>
                     <td>Wi-Fi Direct Group Owner Negotiation Response.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_P2P_ACTION_FRAME_GO_NEGOTIATION_CONFIRM</td>
+                    <td>Wi-Fi Direct Group Owner Negotiation Confirmation.</td>
                 </tr>
             
                 <tr>
@@ -90,11 +90,6 @@ typedef enum _WDI_P2P_ACTION_FRAME_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WDI_P2P_ACTION_FRAME_MAX_VALUE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WDI_P2P_ACTION_FRAME_PROVISION_DISCOVERY_REQUEST</td>
                     <td>Wi-Fi Direct Provision Discovery Request.</td>
                 </tr>
@@ -102,6 +97,11 @@ typedef enum _WDI_P2P_ACTION_FRAME_TYPE {
                 <tr>
                     <td>WDI_P2P_ACTION_FRAME_PROVISION_DISCOVERY_RESPONSE</td>
                     <td>Wi-Fi Direct Provision Discovery Response.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_P2P_ACTION_FRAME_MAX_VALUE</td>
+                    <td></td>
                 </tr>
 </table>
 

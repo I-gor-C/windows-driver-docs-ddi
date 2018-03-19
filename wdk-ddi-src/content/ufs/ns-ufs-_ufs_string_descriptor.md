@@ -59,13 +59,13 @@ typedef struct _UFS_STRING_DESCRIPTOR {
 ## Members
 
 
-`bDescriptorIDN`
-
-Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_STRING_IDN</b>.
-
 `bLength`
 
 Specifies the length, in bytes, of this descriptor.
+
+`bDescriptorIDN`
+
+Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_STRING_IDN</b>.
 
 `String`
 

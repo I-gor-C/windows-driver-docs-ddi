@@ -63,13 +63,9 @@ typedef struct _STOR_RICH_DEVICE_DESCRIPTION {
 ## Members
 
 
-`FirmwareRevision`
+`Version`
 
-A string representing the device’s currently active firmware revision.
-
-`ModelNumber`
-
-A string representing the device’s model.
+The version of the structure. Must be STOR_RICH_DEVICE_DESCRIPTION_STRUCTURE_VERSION.
 
 `Size`
 
@@ -79,9 +75,13 @@ The size of the structure.
 
 A string representing the device’s vendor ID. May be an empty string if ModelNumber is provided.
 
-`Version`
+`ModelNumber`
 
-The version of the structure. Must be STOR_RICH_DEVICE_DESCRIPTION_STRUCTURE_VERSION.
+A string representing the device’s model.
+
+`FirmwareRevision`
+
+A string representing the device’s currently active firmware revision.
 
 ## Remarks
 Miniport can choose to support this UnitControl if the device reports longer Model or Firmware information than defined in SCSI.
@@ -97,11 +97,3 @@ This is invoked during the Unit enumeration process or the device description up
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh920398">HwStorUnitControl</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_RICH_DEVICE_DESCRIPTION structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

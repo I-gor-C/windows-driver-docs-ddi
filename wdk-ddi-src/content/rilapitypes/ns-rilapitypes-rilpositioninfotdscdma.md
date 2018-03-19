@@ -66,15 +66,7 @@ typedef struct _RILPOSITIONINFOTDSCDMA {
 ## Members
 
 
-`dwCellID`
-
-
-
-`dwCellParameterID`
-
-
-
-`dwLocationAreaCode`
+`dwParams`
 
 
 
@@ -86,15 +78,19 @@ typedef struct _RILPOSITIONINFOTDSCDMA {
 
 
 
-`dwParams`
+`dwLocationAreaCode`
 
 
 
-`dwPathLoss`
+`dwCellID`
 
 
 
-`dwRSCP`
+`dwUARFCN`
+
+
+
+`dwCellParameterID`
 
 
 
@@ -102,7 +98,11 @@ typedef struct _RILPOSITIONINFOTDSCDMA {
 
 
 
-`dwUARFCN`
+`dwRSCP`
+
+
+
+`dwPathLoss`
 
 
 

@@ -61,6 +61,11 @@ typedef enum _D3DKMDT_PIXEL_VALUE_ACCESS_MODE {
 <table>
             
                 <tr>
+                    <td>D3DKMDT_PVAM_UNINITIALIZED</td>
+                    <td>Indicates that a variable of type D3DKMDT_PIXEL_VALUE_ACCESS_MODE has not yet been assigned a meaningful value.</td>
+                </tr>
+            
+                <tr>
                     <td>D3DKMDT_PVAM_DIRECT</td>
                     <td>Indicates that colors are stored directly in the primary surface.</td>
                 </tr>
@@ -73,11 +78,6 @@ typedef enum _D3DKMDT_PIXEL_VALUE_ACCESS_MODE {
                 <tr>
                     <td>D3DKMDT_PVAM_SETTABLEPALETTE</td>
                     <td>Indicates that palette indices are stored in the primary surface. Colors are stored in a palette that the operating system can set dynamically by calling the display miniport driver.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_PVAM_UNINITIALIZED</td>
-                    <td>Indicates that a variable of type D3DKMDT_PIXEL_VALUE_ACCESS_MODE has not yet been assigned a meaningful value.</td>
                 </tr>
 </table>
 
@@ -94,11 +94,3 @@ The <b>Format.Graphics</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPn Source Mode Set Interface</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_PIXEL_VALUE_ACCESS_MODE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

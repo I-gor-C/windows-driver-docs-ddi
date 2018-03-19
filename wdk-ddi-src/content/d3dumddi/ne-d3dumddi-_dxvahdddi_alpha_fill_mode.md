@@ -61,6 +61,11 @@ typedef enum _DXVAHDDDI_ALPHA_FILL_MODE {
 <table>
             
                 <tr>
+                    <td>DXVAHDDDI_ALPHA_FILL_MODE_OPAQUE</td>
+                    <td>A value that specifies to fill the output with opaque alpha channel data.</td>
+                </tr>
+            
+                <tr>
                     <td>DXVAHDDDI_ALPHA_FILL_MODE_BACKGROUND</td>
                     <td>A value that specifies to fill the output with the alpha channel data of the background. For more information about background color, see <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_background_color_data.md">DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA</a>.</td>
                 </tr>
@@ -68,11 +73,6 @@ typedef enum _DXVAHDDDI_ALPHA_FILL_MODE {
                 <tr>
                     <td>DXVAHDDDI_ALPHA_FILL_MODE_DESTINATION</td>
                     <td>A value that specifies to keep the alpha channel data unchanged on the target output.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVAHDDDI_ALPHA_FILL_MODE_OPAQUE</td>
-                    <td>A value that specifies to fill the output with opaque alpha channel data.</td>
                 </tr>
             
                 <tr>
@@ -95,11 +95,3 @@ typedef enum _DXVAHDDDI_ALPHA_FILL_MODE {
 
 
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_background_color_data.md">DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_ALPHA_FILL_MODE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

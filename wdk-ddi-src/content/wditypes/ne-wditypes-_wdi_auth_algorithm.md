@@ -77,13 +77,22 @@ typedef enum _WDI_AUTH_ALGORITHM {
                 </tr>
             
                 <tr>
-                    <td>WDI_AUTH_ALGO_IHV_END</td>
-                    <td>Specifies the end of the range that specifies proprietary authentication algorithms that are developed by an IHV.</td>
+                    <td>WDI_AUTH_ALGO_WPA</td>
+                    <td>Specifies a Wi-Fi Protected Access (WPA) algorithm. IEEE 802.1X port authorization is performed by the supplicant, authenticator, and authentication server. Cipher keys are dynamically derived through the authentication process. 
+
+When the WPA algorithm is enabled, the 802.11 station only associates with an access point whose beacon or probe responses contain the authentication suite of type 1 (802.1X) within the WPA information element (IE).</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_AUTH_ALGO_IHV_START</td>
-                    <td>Specifies the start of the range that specifies proprietary authentication algorithms that are developed by an IHV.</td>
+                    <td>WDI_AUTH_ALGO_WPA_PSK</td>
+                    <td>Specifies a Wi-Fi Protected Access (WPA) algorithm that uses preshared keys (PSK). IEEE 802.1X port authorization is performed by the supplicant and authenticator. Cipher keys are dynamically derived through a preshared key that is used on both the supplicant and authenticator. 
+
+When the WPA PSK algorithm is enabled, the 802.11 station only associates with an access point whose beacon or probe responses contain the authentication suite of type 2 (preshared key) within the WPA IE.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_AUTH_ALGO_WPA_NONE</td>
+                    <td>This value is not supported.</td>
                 </tr>
             
                 <tr>
@@ -101,22 +110,13 @@ When the RSNA PSK algorithm is enabled, the 802.11 station only associates with 
                 </tr>
             
                 <tr>
-                    <td>WDI_AUTH_ALGO_WPA</td>
-                    <td>Specifies a Wi-Fi Protected Access (WPA) algorithm. IEEE 802.1X port authorization is performed by the supplicant, authenticator, and authentication server. Cipher keys are dynamically derived through the authentication process. 
-
-When the WPA algorithm is enabled, the 802.11 station only associates with an access point whose beacon or probe responses contain the authentication suite of type 1 (802.1X) within the WPA information element (IE).</td>
+                    <td>WDI_AUTH_ALGO_IHV_START</td>
+                    <td>Specifies the start of the range that specifies proprietary authentication algorithms that are developed by an IHV.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_AUTH_ALGO_WPA_NONE</td>
-                    <td>This value is not supported.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_AUTH_ALGO_WPA_PSK</td>
-                    <td>Specifies a Wi-Fi Protected Access (WPA) algorithm that uses preshared keys (PSK). IEEE 802.1X port authorization is performed by the supplicant and authenticator. Cipher keys are dynamically derived through a preshared key that is used on both the supplicant and authenticator. 
-
-When the WPA PSK algorithm is enabled, the 802.11 station only associates with an access point whose beacon or probe responses contain the authentication suite of type 2 (preshared key) within the WPA IE.</td>
+                    <td>WDI_AUTH_ALGO_IHV_END</td>
+                    <td>Specifies the end of the range that specifies proprietary authentication algorithms that are developed by an IHV.</td>
                 </tr>
 </table>
 

@@ -58,15 +58,15 @@ typedef struct _BDA_STRING {
 ## Members
 
 
-`argbString`
-
-
-
 `lResult`
 
 
 
 `ulStringSize`
+
+
+
+`argbString`
 
 
 

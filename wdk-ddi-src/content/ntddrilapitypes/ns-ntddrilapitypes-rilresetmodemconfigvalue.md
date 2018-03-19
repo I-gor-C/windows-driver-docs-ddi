@@ -66,11 +66,11 @@ typedef struct _RILRESETMODEMCONFIGVALUE {
 
 
 
-`configValueUnion`
-
-
-
 `dwType`
+
+
+
+`configValueUnion`
 
 
 

@@ -57,6 +57,10 @@ typedef struct _D3DDDIARG_GENERATEMIPSUBLEVELS {
 ## Members
 
 
+`hResource`
+
+[in] A handle to the MIP-map texture surface.
+
 `Filter`
 
 [in] A D3DDDITEXTUREFILTERTYPE-typed value that indicates the texture magnification or minification filter type that is used in generating the sublevels of the MIP-map texture. This member can be one of the following values.
@@ -128,10 +132,6 @@ Four-sample Gaussian filtering.
 </tr>
 </table>
 
-`hResource`
-
-[in] A handle to the MIP-map texture surface.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -142,11 +142,3 @@ Four-sample Gaussian filtering.
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_generatemipsublevels.md">GenerateMipSubLevels</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_GENERATEMIPSUBLEVELS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

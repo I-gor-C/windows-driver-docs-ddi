@@ -65,11 +65,6 @@ typedef enum _D3D12DDI_VIDEO_PROCESS_FILTER_0020 {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_0020_ANAMORPHIC_SCALING</td>
-                    <td>The video processor can perform anamorphic scaling. Anamorphic scaling can be used to stretch 4:3 content to a widescreen 16:9 aspect ratio.</td>
-                </tr>
-            
-                <tr>
                     <td>D3D12DDI_VIDEO_PROCESS_FILTER_0020_BRIGHTNESS</td>
                     <td>The video processor can adjust the brightness level.</td>
                 </tr>
@@ -80,13 +75,13 @@ typedef enum _D3D12DDI_VIDEO_PROCESS_FILTER_0020 {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_0020_EDGE_ENHANCEMENT</td>
-                    <td>The video processor can perform edge enhancement.</td>
+                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_0020_HUE</td>
+                    <td>The video processor can adjust hue.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_0020_HUE</td>
-                    <td>The video processor can adjust hue.</td>
+                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_0020_SATURATION</td>
+                    <td>The video processor can adjust the saturation level.</td>
                 </tr>
             
                 <tr>
@@ -95,8 +90,13 @@ typedef enum _D3D12DDI_VIDEO_PROCESS_FILTER_0020 {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_0020_SATURATION</td>
-                    <td>The video processor can adjust the saturation level.</td>
+                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_0020_EDGE_ENHANCEMENT</td>
+                    <td>The video processor can perform edge enhancement.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_0020_ANAMORPHIC_SCALING</td>
+                    <td>The video processor can perform anamorphic scaling. Anamorphic scaling can be used to stretch 4:3 content to a widescreen 16:9 aspect ratio.</td>
                 </tr>
             
                 <tr>

@@ -60,6 +60,10 @@ typedef struct _D3DKMT_SEGMENTGROUPSIZEINFO {
 ## Members
 
 
+`PhysicalAdapterIndex`
+
+An index to the physical adapter.
+
 `LegacyInfo`
 
 Legacy segment size info.
@@ -68,17 +72,13 @@ Legacy segment size info.
 
 The size of local memory.
 
-`NonBudgetMemory`
-
-The size of non-budget memory.
-
 `NonLocalMemory`
 
 The size of non-local memory.
 
-`PhysicalAdapterIndex`
+`NonBudgetMemory`
 
-An index to the physical adapter.
+The size of non-budget memory.
 
 
 ## Requirements

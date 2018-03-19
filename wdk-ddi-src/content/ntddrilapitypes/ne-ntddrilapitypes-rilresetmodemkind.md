@@ -59,17 +59,17 @@ typedef enum _RILRESETMODEMKIND {
 <table>
             
                 <tr>
+                    <td>RIL_RESETMODEMKIND_NORMAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_RESETMODEMKIND_ABRUPT</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_RESETMODEMKIND_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_RESETMODEMKIND_NORMAL</td>
                     <td></td>
                 </tr>
 </table>

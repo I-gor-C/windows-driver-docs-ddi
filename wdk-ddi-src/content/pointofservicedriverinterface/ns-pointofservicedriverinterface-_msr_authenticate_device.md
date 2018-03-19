@@ -58,6 +58,10 @@ typedef struct _MSR_AUTHENTICATE_DEVICE {
 ## Members
 
 
+`Size`
+
+If the optional <b>SessionId</b> is present, this will include the size of <b>SessionId[MSR_SESSION_ID_SIZE]</b>
+
 `Challenge1`
 
 The challenge token.
@@ -65,10 +69,6 @@ The challenge token.
 `SessionId`
 
 The session ID. This is primarily used to identify each transaction so that you can prevent errors such as processing the same transaction twice.
-
-`Size`
-
-If the optional <b>SessionId</b> is present, this will include the size of <b>SessionId[MSR_SESSION_ID_SIZE]</b>
 
 
 ## Requirements
@@ -79,11 +79,3 @@ If the optional <b>SessionId</b> is present, this will include the size of <b>Se
 ## See Also
 
 <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_msr_authenticate_device.md">IOCTL_POINT_OF_SERVICE_MSR_AUTHENTICATE_DEVICE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [pos\pos]:%20MSR_AUTHENTICATE_DEVICE structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

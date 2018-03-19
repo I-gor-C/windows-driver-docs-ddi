@@ -60,6 +60,11 @@ typedef enum _RILUICCSERVICESTATE {
 <table>
             
                 <tr>
+                    <td>RIL_UICCSERVICESTATE_NOTAVAILABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_UICCSERVICESTATE_DISABLED</td>
                     <td></td>
                 </tr>
@@ -71,11 +76,6 @@ typedef enum _RILUICCSERVICESTATE {
             
                 <tr>
                     <td>RIL_UICCSERVICESTATE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCSERVICESTATE_NOTAVAILABLE</td>
                     <td></td>
                 </tr>
 </table>

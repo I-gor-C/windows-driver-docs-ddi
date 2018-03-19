@@ -63,6 +63,30 @@ typedef struct _D3DKMT_LOCK {
 ## Members
 
 
+`hDevice`
+
+[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that the allocation is associated with.
+
+`hAllocation`
+
+[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the allocation to lock.
+
+`PrivateDriverData`
+
+[in] A UINT value that specifies 32 bits of private data (for example, MIP level) that is sent from the OpenGL ICD to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a> function.
+
+`NumPages`
+
+[in] The number of pages in the page list that <b>pPages</b> specifies.
+
+`pPages`
+
+[in] An array of pages to lock. Each page in the array is described by an integer offset. Zero means the first page in the surface, one means the second, and so on.
+
+`pData`
+
+[out] A pointer to the memory that is returned from the display miniport driver and memory manager. When locking a memory page list, the pointer that is returned is a pointer to the first memory page.
+
 `Flags`
 
 [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lockflags.md">D3DDDICB_LOCKFLAGS</a> structure that identifies, in bit-field flags, how to lock the allocation.
@@ -74,30 +98,6 @@ Note that specifying some flags together is invalid and that some flags depend o
 This member is reserved and should be set to zero.
 
 This member is available beginning with Windows 7.
-
-`hAllocation`
-
-[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the allocation to lock.
-
-`hDevice`
-
-[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that the allocation is associated with.
-
-`NumPages`
-
-[in] The number of pages in the page list that <b>pPages</b> specifies.
-
-`pData`
-
-[out] A pointer to the memory that is returned from the display miniport driver and memory manager. When locking a memory page list, the pointer that is returned is a pointer to the first memory page.
-
-`pPages`
-
-[in] An array of pages to lock. Each page in the array is described by an integer offset. Zero means the first page in the surface, one means the second, and so on.
-
-`PrivateDriverData`
-
-[in] A UINT value that specifies 32 bits of private data (for example, MIP level) that is sent from the OpenGL ICD to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a> function.
 
 
 ## Requirements
@@ -117,11 +117,3 @@ This member is available beginning with Windows 7.
 
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock.md">D3DKMTLock</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_LOCK structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

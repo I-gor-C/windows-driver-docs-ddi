@@ -63,21 +63,25 @@ typedef struct _PCMCIA_INTERFACE_STANDARD {
 ## Members
 
 
-`Context`
+`Size`
 
-Pointer to an opaque handle that contains interface context information. Drivers that call routines that belong to the <b>PCMCIA_INTERFACE_STANDARD</b> interface must pass this value to the interface routines when they call them.
+Indicates the size of the returned interface.
 
-`InterfaceDereference`
+`Version`
 
-Pointer to the <a href="..\wudfwdm\nc-wudfwdm-pinterface_dereference.md">InterfaceDereference</a> implementation.
+Indicates the version of the returned interface.
 
 `InterfaceReference`
 
 Pointer to the <a href="..\wudfwdm\nc-wudfwdm-pinterface_reference.md">InterfaceReference</a> implementation.
 
-`IsWriteProtected`
+`InterfaceDereference`
 
-Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537609">PCMCIA_IS_WRITE_PROTECTED</a> interface routine.
+Pointer to the <a href="..\wudfwdm\nc-wudfwdm-pinterface_dereference.md">InterfaceDereference</a> implementation.
+
+`Context`
+
+Pointer to an opaque handle that contains interface context information. Drivers that call routines that belong to the <b>PCMCIA_INTERFACE_STANDARD</b> interface must pass this value to the interface routines when they call them.
 
 `ModifyMemoryWindow`
 
@@ -87,13 +91,9 @@ Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff53
 
 Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537611">PCMCIA_SET_VPP</a> interface routine.
 
-`Size`
+`IsWriteProtected`
 
-Indicates the size of the returned interface.
-
-`Version`
-
-Indicates the version of the returned interface.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537609">PCMCIA_IS_WRITE_PROTECTED</a> interface routine.
 
 
 ## Requirements
@@ -112,11 +112,3 @@ Indicates the version of the returned interface.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537610">PCMCIA_MODIFY_MEMORY_WINDOW</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCMCIA\buses]:%20PCMCIA_INTERFACE_STANDARD structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

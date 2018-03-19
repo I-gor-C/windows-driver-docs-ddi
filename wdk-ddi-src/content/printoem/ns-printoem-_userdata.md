@@ -60,21 +60,21 @@ typedef struct _USERDATA {
 ## Members
 
 
-`dwItemID`
-
-Printer feature identifier.
-
-`dwReserved`
-
-Reserved.
-
 `dwSize`
 
 Size, in bytes, of the USERDATA structure.
 
+`dwItemID`
+
+Printer feature identifier.
+
 `pKeyWordName`
 
 Pointer to a nonlocalized text string identifying a printer feature.
+
+`dwReserved`
+
+Reserved.
 
 
 ## Requirements

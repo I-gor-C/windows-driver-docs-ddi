@@ -59,9 +59,9 @@ typedef struct _MS_SMHBA_FC_PHY {
 ## Members
 
 
-`MaxFrameSize`
+`PhySupportSpeed`
 
-The maximum frame size, in bytes, that is supported by PortWWN.
+The signaling bit rates at which the port can operate. For a list of the values that this member supports, see PhySpeed.
 
 `PhySpeed`
 
@@ -139,10 +139,6 @@ The speed at which the port will operate has not yet been established.
 </td>
 </tr>
 </table>
-
-`PhySupportSpeed`
-
-The signaling bit rates at which the port can operate. For a list of the values that this member supports, see PhySpeed.
 
 `PhyType`
 
@@ -270,6 +266,10 @@ Point to point.
 </td>
 </tr>
 </table>
+
+`MaxFrameSize`
+
+The maximum frame size, in bytes, that is supported by PortWWN.
 
 
 ## Requirements

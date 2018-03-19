@@ -58,10 +58,6 @@ typedef struct _BTHX_HCI_READ_WRITE_CONTEXT {
 ## Members
 
 
-`Data`
-
-
-
 `DataLen`
 
 The length, in bytes, of data in <b>Data</b>.
@@ -69,6 +65,10 @@ The length, in bytes, of data in <b>Data</b>.
 `Type`
 
 The type of packetized data.
+
+`Data`
+
+
 
 ## Remarks
 The BTHX_HCI_READ_WRITE_CONTEXT structure is an input parameter to the <a href="..\bthxddi\ni-bthxddi-ioctl_bthx_write_hci.md">IOCTL_BTHX_HCI_WRITE IOCTL</a> and specifies the type of packet associated with the write. It also specifies the data to be written in the <b>Data</b> member.

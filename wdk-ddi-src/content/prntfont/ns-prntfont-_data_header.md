@@ -61,14 +61,6 @@ typedef struct _DATA_HEADER {
 ## Members
 
 
-`dwDataSize`
-
-Specifies the size, in bytes, of all the information represented by this DATA_HEADER structure. For example, if <b>dwSignature</b> is DATA_UFM_SIG, this value represents the size, in bytes, of the font's <a href="..\prntfont\ns-prntfont-_unifm_hdr.md">UNIFM_HDR</a> structure and all associated structures. The size value does not include any byte padding required to align the next DATA_HEADER structure to a DWORD.
-
-`dwReserved`
-
-Not used. Must be set to zero.
-
 `dwSignature`
 
 Specifies the signature value identifying the type of data in the data section. Valid signature values are listed in the following table.
@@ -130,6 +122,10 @@ This data section contains data to be downloaded to the printer. See the followi
 </tr>
 </table>
 
+`wSize`
+
+Specifies the size, in bytes, of the DATA_HEADER structure.
+
 `wDataID`
 
 If the data section contains font metrics data, this value must be a unique font identifier. For fonts that are permanently downloaded by the font installer, this value should be the downloaded font's identifier.
@@ -138,9 +134,13 @@ If the data section contains glyph data, this value must be a glyph set identifi
 
 If the data section contains variable data, this value must be zero.
 
-`wSize`
+`dwDataSize`
 
-Specifies the size, in bytes, of the DATA_HEADER structure.
+Specifies the size, in bytes, of all the information represented by this DATA_HEADER structure. For example, if <b>dwSignature</b> is DATA_UFM_SIG, this value represents the size, in bytes, of the font's <a href="..\prntfont\ns-prntfont-_unifm_hdr.md">UNIFM_HDR</a> structure and all associated structures. The size value does not include any byte padding required to align the next DATA_HEADER structure to a DWORD.
+
+`dwReserved`
+
+Not used. Must be set to zero.
 
 ## Remarks
 If <b>dwSignature</b> is DATA_VAR_SIG, the data section contains variable data that Unidrv sends to the printer the first time the font is selected. Typically, this data consists of a font header and corresponding font identifier, along with downloadable glyph information for all the glyphs supported by the font. <a href="https://msdn.microsoft.com/139a10e9-203b-499b-9291-8537eae9189c">PCL</a> soft font information includes printer control language commands for loading the font header and glyph definitions for all supported glyphs. Unidrv does not validate variable data. Data validation should be performed by the font installer.
@@ -155,11 +155,3 @@ Each DATA_HEADER structure must be DWORD-aligned.
 ## See Also
 
 <a href="..\prntfont\ns-prntfont-_unifm_hdr.md">UNIFM_HDR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20DATA_HEADER structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -78,9 +78,34 @@ typedef struct _SMARTCARD_EXTENSION {
 ## Members
 
 
+`Version`
+
+Indicates the version of this structure.
+
+`VendorAttr`
+
+Contains information that identifies the reader driver, such as the vendor name, unit number, and serial number.
+
+`ReaderFunction`
+
+A pointer to an array of callback functions for readers. The callback functions that a vendor-supplied reader driver can implement. A reader driver makes these callback functions available for the smart card library routine, <a href="https://msdn.microsoft.com/f9ad4cb8-f3cf-4e74-9c8c-bfd73d247d37">SmartcardDeviceControl</a>, to call by storing pointers to them in the smart card device extension. <dl>
+<dd><i>RDF_ATR_PARSE</i></dd>
+<dd><i>RDF_CARD_EJECT</i></dd>
+<dd><i>RDF_CARD_POWER</i></dd>
+<dd><i>RDF_CARD_TRACKING</i></dd>
+<dd><i>RDF_IOCTL_VENDOR</i></dd>
+<dd><i>RDF_READER_SWALLOW</i></dd>
+<dd><i>RDF_SET_PROTOCOL</i></dd>
+<dd><i>RDF_TRANSMIT</i></dd>
+</dl>For more information, see Remarks.
+
 `CardCapabilities`
 
 Contains capabilities of the inserted smart card.
+
+`LastError`
+
+Not used.
 
 `IoRequest`
 
@@ -118,10 +143,6 @@ A pointer to the buffer that holds the data that is returned by the I/O request.
 
 Indicates the number of bytes of the data that are returned by the I/O request.
 
-`LastError`
-
-Not used.
-
 `MajorIoControlCode`
 
 Contains the major I/O control code.
@@ -134,10 +155,6 @@ Contains the minor I/O control code.
 
 Contains information that is specific to the operating system and the driver type.
 
-`PerfInfo`
-
-
-
 `ReaderCapabilities`
 
 Contains the capabilities of the keyboard reader.
@@ -145,23 +162,6 @@ Contains the capabilities of the keyboard reader.
 `ReaderExtension`
 
 Contains data that is specifc to the smart card reader.
-
-`ReaderFunction`
-
-A pointer to an array of callback functions for readers. The callback functions that a vendor-supplied reader driver can implement. A reader driver makes these callback functions available for the smart card library routine, <a href="https://msdn.microsoft.com/f9ad4cb8-f3cf-4e74-9c8c-bfd73d247d37">SmartcardDeviceControl</a>, to call by storing pointers to them in the smart card device extension. <dl>
-<dd><i>RDF_ATR_PARSE</i></dd>
-<dd><i>RDF_CARD_EJECT</i></dd>
-<dd><i>RDF_CARD_POWER</i></dd>
-<dd><i>RDF_CARD_TRACKING</i></dd>
-<dd><i>RDF_IOCTL_VENDOR</i></dd>
-<dd><i>RDF_READER_SWALLOW</i></dd>
-<dd><i>RDF_SET_PROTOCOL</i></dd>
-<dd><i>RDF_TRANSMIT</i></dd>
-</dl>For more information, see Remarks.
-
-`Reserved`
-
-Reserved for system use.
 
 `SmartcardReply`
 
@@ -179,13 +179,13 @@ Contains the data for use with the T=0 protocol.
 
 Contains the data that is used with the T=1 protocol.
 
-`VendorAttr`
+`PerfInfo`
 
-Contains information that identifies the reader driver, such as the vendor name, unit number, and serial number.
 
-`Version`
 
-Indicates the version of this structure.
+`Reserved`
+
+Reserved for system use.
 
 ## Remarks
 This structure is passed to all callback functions.

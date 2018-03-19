@@ -70,34 +70,6 @@ typedef struct _NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST {
 ## Members
 
 
-`_NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST`
-
-
-
-`DependentBlockList`
-
-A pointer to an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure that is at a dependent layer of the
-     offload state (a higher layer in the offload state tree). 
-     
-
-
-
-
-
-#### For TCP chimney offload:
-
-The 
-       <b>DependentBlockList</b> member of an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure at the neighbor layer
-       can point only to an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure at the path layer. The 
-       <b>DependentBlockList</b> member of an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure at the path layer can
-       point only to an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure at the TCP layer. The 
-       <b>DependentBlockList</b> member of an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure at the TCP layer is
-       always <b>NULL</b>.
-
-A 
-     <b>DependentBlockList</b> value of <b>NULL</b> indicates that there is no dependent
-     NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure.
-
 `Header`
 
 The header of the NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure. The header is formatted as an 
@@ -258,49 +230,6 @@ Specifies all of the TCP state, including the constant, cached, and delegated TC
 
 Reserved for filter drivers.
 
-`ImReserved`
-
-Reserved for use by intermediate drivers, which can use this area for their own purposes.
-
-`MiniportReserved`
-
-Reserved for use by offload targets or the miniport portion of an intermediate driver.
-
-`NdisReserved`
-
-Reserved for use by NDIS.
-
-`NetBufferListChain`
-
-When the protocol or intermediate driver specifies a <b>NULL</b> value, 
-      <b>NetBufferListChain</b> is not significant and can be ignored by the underlying driver or offload
-      target.
-
-When a protocol or intermediate driver specifies a non-<b>NULL</b> value, 
-      <b>NetBufferListChain</b> points to a 
-      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that can be a
-      stand-alone structure or the first structure in a linked list of such structures. Each NET_BUFFER_LIST
-      structure in the linked list describes one 
-      <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure. The NET_BUFFER structure
-      maps to a chain of memory descriptor lists (MDLs). The NET_BUFFER_LIST and associated structures are
-      locked so that they remain resident in physical memory. However, they are not mapped into system
-      memory.
-
-The MDLs associated with the NET_BUFFER structures contain data that is being conveyed as part of a
-      state-manipulation operation or the completion of such an operation. At present, the linked list can
-      contain just one type of data: outstanding send data. For more information about send data, see 
-      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/handling-outstanding-send-data-during-and-after-an-offload-operation">Handling
-      Outstanding Send Data During and After an Offload Operation</a>.
-
-An offload target or intermediate driver can pass outstanding send data to the overlying driver or
-      host stack when terminating the offload of a TCP connection. In this case, the offload target specifies
-      a non-<b>NULL</b> value for the 
-      <b>NetBufferListChain</b> member when calling the 
-      <a href="..\ndischimney\nf-ndischimney-ndismterminateoffloadcomplete.md">
-      NdisMTerminateOffloadComplete</a> function. If the offload target is not passing send data for a TCP
-      connection that is being terminated, it specifies a <b>NULL</b> value for the 
-      <b>NetBufferListChain</b> member.
-
 `NextBlock`
 
 A pointer to the next NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure at the offload state layer
@@ -311,43 +240,33 @@ A pointer to the next NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure at the offload 
      <b>NextBlock</b> value of <b>NULL</b> indicates that there is no additional next
      NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure at this level.
 
-`OffloadHandle`
+`_NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST`
 
-A pointer to an 
-     <a href="..\ndischimney\ns-ndischimney-_ndis_offload_handle.md">NDIS_OFFLOAD_HANDLE</a> structure. The
-     NDIS_OFFLOAD_HANDLE structure represents a protocol or intermediate driver's context for an offloaded
-     state object.
 
-`PortNumber`
 
-A port number that identifies a miniport adapter port. To assign a miniport adapter port number,
-     call the 
-     <a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a> function. A zero
-     value identifies the default port of a miniport adapter. Use the default port if the miniport driver has
-     not allocated ports for the specified adapter.
+`DependentBlockList`
 
-`ProtocolReserved`
+A pointer to an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure that is at a dependent layer of the
+     offload state (a higher layer in the offload state tree). 
+     
 
-Reserved for use by protocol drivers, which can use this area for their own purposes.
 
-`Scratch`
 
-The protocol driver or intermediate driver can use this area for internal tracking. The
-     information in this area is valid only while the driver has ownership of the 
-     <b>
-     NDIS_PROTOCOL_OFFLOAD_BLOCK_LIS</b> T.
 
-`SourceHandle`
 
-This member is not significant for a protocol or intermediate driver. A protocol or intermediate
-      driver must not modify this member.
+#### For TCP chimney offload:
 
-When propagating the completion of a state-manipulation operation, an intermediate driver copies the
-      
-      <b>SourceHandle</b> that it stored in its IM call entry to the 
-      <b>SourceHandle</b> member of the 
-      <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
-      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that it passes to the NdisMXxxComplete function.
+The 
+       <b>DependentBlockList</b> member of an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure at the neighbor layer
+       can point only to an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure at the path layer. The 
+       <b>DependentBlockList</b> member of an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure at the path layer can
+       point only to an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure at the TCP layer. The 
+       <b>DependentBlockList</b> member of an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure at the TCP layer is
+       always <b>NULL</b>.
+
+A 
+     <b>DependentBlockList</b> value of <b>NULL</b> indicates that there is no dependent
+     NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure.
 
 `Status`
 
@@ -531,6 +450,87 @@ Initiate offload: The path MTU for the TCP connection is larger than the offload
 
 Query, update, invalidate, or terminate offload: Not an allowed status value.
 
+`NdisReserved`
+
+Reserved for use by NDIS.
+
+`OffloadHandle`
+
+A pointer to an 
+     <a href="..\ndischimney\ns-ndischimney-_ndis_offload_handle.md">NDIS_OFFLOAD_HANDLE</a> structure. The
+     NDIS_OFFLOAD_HANDLE structure represents a protocol or intermediate driver's context for an offloaded
+     state object.
+
+`ProtocolReserved`
+
+Reserved for use by protocol drivers, which can use this area for their own purposes.
+
+`MiniportReserved`
+
+Reserved for use by offload targets or the miniport portion of an intermediate driver.
+
+`ImReserved`
+
+Reserved for use by intermediate drivers, which can use this area for their own purposes.
+
+`Scratch`
+
+The protocol driver or intermediate driver can use this area for internal tracking. The
+     information in this area is valid only while the driver has ownership of the 
+     <b>
+     NDIS_PROTOCOL_OFFLOAD_BLOCK_LIS</b> T.
+
+`SourceHandle`
+
+This member is not significant for a protocol or intermediate driver. A protocol or intermediate
+      driver must not modify this member.
+
+When propagating the completion of a state-manipulation operation, an intermediate driver copies the
+      
+      <b>SourceHandle</b> that it stored in its IM call entry to the 
+      <b>SourceHandle</b> member of the 
+      <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that it passes to the NdisMXxxComplete function.
+
+`PortNumber`
+
+A port number that identifies a miniport adapter port. To assign a miniport adapter port number,
+     call the 
+     <a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a> function. A zero
+     value identifies the default port of a miniport adapter. Use the default port if the miniport driver has
+     not allocated ports for the specified adapter.
+
+`NetBufferListChain`
+
+When the protocol or intermediate driver specifies a <b>NULL</b> value, 
+      <b>NetBufferListChain</b> is not significant and can be ignored by the underlying driver or offload
+      target.
+
+When a protocol or intermediate driver specifies a non-<b>NULL</b> value, 
+      <b>NetBufferListChain</b> points to a 
+      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that can be a
+      stand-alone structure or the first structure in a linked list of such structures. Each NET_BUFFER_LIST
+      structure in the linked list describes one 
+      <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure. The NET_BUFFER structure
+      maps to a chain of memory descriptor lists (MDLs). The NET_BUFFER_LIST and associated structures are
+      locked so that they remain resident in physical memory. However, they are not mapped into system
+      memory.
+
+The MDLs associated with the NET_BUFFER structures contain data that is being conveyed as part of a
+      state-manipulation operation or the completion of such an operation. At present, the linked list can
+      contain just one type of data: outstanding send data. For more information about send data, see 
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/handling-outstanding-send-data-during-and-after-an-offload-operation">Handling
+      Outstanding Send Data During and After an Offload Operation</a>.
+
+An offload target or intermediate driver can pass outstanding send data to the overlying driver or
+      host stack when terminating the offload of a TCP connection. In this case, the offload target specifies
+      a non-<b>NULL</b> value for the 
+      <b>NetBufferListChain</b> member when calling the 
+      <a href="..\ndischimney\nf-ndischimney-ndismterminateoffloadcomplete.md">
+      NdisMTerminateOffloadComplete</a> function. If the offload target is not passing send data for a TCP
+      connection that is being terminated, it specifies a <b>NULL</b> value for the 
+      <b>NetBufferListChain</b> member.
+
 ## Remarks
 An intermediate driver creates an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure from an 
     <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
@@ -643,11 +643,3 @@ An NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure can be immediately followed in mem
 
 
 <a href="..\ndischimney\nf-ndischimney-ndisupdateoffload.md">NdisUpdateOffload</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

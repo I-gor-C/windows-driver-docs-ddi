@@ -64,13 +64,9 @@ typedef struct _NVCACHE_REQUEST_BLOCK {
 ## Members
 
 
-`Count`
+`NRBSize`
 
-Number of 512-byte blocks to be transferred with the specified function.
-
-`DataBufSize`
-
-Size of the data buffer, in bytes.
+The <b>sizeof</b>(NVCACHE_REQUEST_BLOCK).
 
 `Function`
 
@@ -144,17 +140,9 @@ Reserved for future use.
 
 Pass IO hints to a SATA device.
 
-`LBA`
-
-Starting LBA of the device for the specified function.
-
 `NRBFlags`
 
 Reserved for future use.
-
-`NRBSize`
-
-The <b>sizeof</b>(NVCACHE_REQUEST_BLOCK).
 
 `NRBStatus`
 
@@ -204,6 +192,18 @@ Too much data returned from the port driver.
 
 Not enough data returned from the port driver.
 
+`Count`
+
+Number of 512-byte blocks to be transferred with the specified function.
+
+`LBA`
+
+Starting LBA of the device for the specified function.
+
+`DataBufSize`
+
+Size of the data buffer, in bytes.
+
 `NVCacheStatus`
 
 Status returned from the device. For an ATA device, this value is the contents of the Status Register in its Task File. For a SCSI device, this value is the Sense Code returned from the device.
@@ -227,11 +227,3 @@ For more information on function behavior, see section 7.20 of the <a href="http
 
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_miniport_nvcache.md">IOCTL_SCSI_MINIPORT_NVCACHE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20NVCACHE_REQUEST_BLOCK structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

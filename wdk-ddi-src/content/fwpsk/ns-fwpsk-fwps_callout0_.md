@@ -66,12 +66,6 @@ typedef struct FWPS_CALLOUT0_ {
 
 A callout driver-defined <b>GUID</b> that uniquely identifies the callout.
 
-`classifyFn`
-
-A pointer to the callout driver's 
-     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn0</a> callout function. The filter
-     engine calls this function whenever there is network data to be processed by the callout.
-
 `flags`
 
 Flags that specify callout-specific parameters. Possible flags are:
@@ -100,6 +94,18 @@ A callout driver specifies this flag to indicate that the callout driver's
        is not specified, then offloading of network data processing is disabled for all traffic that is
        processed by any filters that specify the callout for the filter's action.
 
+`classifyFn`
+
+A pointer to the callout driver's 
+     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn0</a> callout function. The filter
+     engine calls this function whenever there is network data to be processed by the callout.
+
+`notifyFn`
+
+A pointer to the callout driver's 
+     <a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn0.md">notifyFn0</a> function. The filter engine calls
+     this function to notify the callout driver about events that are associated with the callout.
+
 `flowDeleteFn`
 
 A pointer to the callout driver's 
@@ -109,12 +115,6 @@ A pointer to the callout driver's
 
 If a callout driver does not associate a context with the data flows that the callout processes, then
      this member should be set to <b>NULL</b>.
-
-`notifyFn`
-
-A pointer to the callout driver's 
-     <a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn0.md">notifyFn0</a> function. The filter engine calls
-     this function to notify the callout driver about events that are associated with the callout.
 
 ## Remarks
 A callout driver passes a pointer to an initialized <b>FWPS_CALLOUT0</b> structure to the 
@@ -155,11 +155,3 @@ A callout can set the <b>FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW</b> flag only for 
 
 
 <a href="..\fwpsk\ns-fwpsk-fwps_callout2_.md">FWPS_CALLOUT2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT0 structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -94,20 +94,6 @@ typedef struct _NDIS_OID_REQUEST {
 ## Members
 
 
-`_REQUEST_DATA`
-
-
-
-`DATA`
-
-A union that defines the request data. The information in the data varies according to the type of
-     request as specified by the 
-     <b>RequestType</b> member. The following member structures are specified:
-
-`Flags`
-
-
-
 `Header`
 
 The 
@@ -118,30 +104,21 @@ The
      <b>Revision</b> member to NDIS_OID_REQUEST_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_OID_REQUEST_REVISION_1.
 
-`MiniportReserved`
+`RequestType`
 
-An area that is reserved for the miniport driver.
-
-`NdisReserved`
-
-An area that is reserved for NDIS.
+The request type as one of the 
+     <a href="..\ntddndis\ne-ntddndis-_ndis_request_type.md">NDIS_REQUEST_TYPE</a> enumeration
+     values.
 
 `PortNumber`
 
 The port to which the request is sent. If the port is unknown or default, this member is
      zero.
 
-`RequestHandle`
+`Timeout`
 
-A handle that identifies the source that issued the OID request. If a miniport driver must complete
-      the request immediately and completes the request with a status of NDIS_STATUS_INDICATION_REQUIRED, the
-      miniport driver uses this 
-      <b>RequestHandle</b> value to set the 
-      <b>DestinationHandle</b> member of the associated NDIS_STATUS_INDICATION
-      structure. In this case, NDIS will send only the subsequent status indication to the source that issued
-      the OID request.
-
-For more information about status indications, see the following Remarks section.
+A time-out, in seconds, for the request. NDIS can reset the driver or cancel the request if the
+     time-out expires before the driver completes the request.
 
 `RequestId`
 
@@ -159,19 +136,35 @@ NDIS or overlying drivers can also use the
      <b>RequestId</b> is zero, the miniport driver can ignore this member. For more
      information about status indications, see the following Remarks section.
 
-`RequestType`
+`RequestHandle`
 
-The request type as one of the 
-     <a href="..\ntddndis\ne-ntddndis-_ndis_request_type.md">NDIS_REQUEST_TYPE</a> enumeration
-     values.
+A handle that identifies the source that issued the OID request. If a miniport driver must complete
+      the request immediately and completes the request with a status of NDIS_STATUS_INDICATION_REQUIRED, the
+      miniport driver uses this 
+      <b>RequestHandle</b> value to set the 
+      <b>DestinationHandle</b> member of the associated NDIS_STATUS_INDICATION
+      structure. In this case, NDIS will send only the subsequent status indication to the source that issued
+      the OID request.
 
-`Reserved1`
+For more information about status indications, see the following Remarks section.
 
-Reserved for future use.
+`DATA`
 
-`Reserved2`
+A union that defines the request data. The information in the data varies according to the type of
+     request as specified by the 
+     <b>RequestType</b> member. The following member structures are specified:
 
-Reserved for future use.
+`_REQUEST_DATA`
+
+
+
+`NdisReserved`
+
+An area that is reserved for NDIS.
+
+`MiniportReserved`
+
+An area that is reserved for the miniport driver.
 
 `SourceReserved`
 
@@ -189,16 +182,23 @@ The revision of an NDIS structure that was supported by an NDIS 6.0 or later dri
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/specifying-ndis-version-information">Specifying NDIS Version
      Information</a>.
 
+`Reserved1`
+
+Reserved for future use.
+
+`Reserved2`
+
+Reserved for future use.
+
 `SwitchId`
 
 
 
-`Timeout`
-
-A time-out, in seconds, for the request. NDIS can reset the driver or cancel the request if the
-     time-out expires before the driver completes the request.
-
 `VPortId`
+
+
+
+`Flags`
 
 
 
@@ -267,11 +267,3 @@ The
 
 
 <a href="..\ntddndis\ne-ntddndis-_ndis_request_type.md">NDIS_REQUEST_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OID_REQUEST structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

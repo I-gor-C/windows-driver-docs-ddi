@@ -83,336 +83,13 @@ typedef struct _STORAGE_REQUEST_BLOCK {
 ## Members
 
 
-`_STORAGE_REQUEST_BLOCK`
-
-
-
-`AddressOffset`
-
-The offset of the storage request address from the beginning of this structure. This offset locates a <a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a> structure that contains the address for the request.
-
-`ClassContext`
-
-Points to a class driver context data for this request. This member is irrelevant to miniport drivers.
-
-`DataBuffer`
-
-Points to the data buffer. Miniport drivers should not use this value as a data pointer unless the miniport driver set <b>MapBuffers</b> to <b>TRUE</b> in the <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> for the HBA. In the case of SRB_FUNCTION_IO_CONTROL requests, however, miniport drivers can use this value as a data pointer regardless of the value of <b>MapBuffers</b>.
-
-`DataTransferLength`
-
-Indicates the size, in bytes, of the data buffer. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred.
-
-`Function`
-
-Set to <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b> to indicate that this is an extended SRB. Unlike in <a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>, the SRB function identifier is in the <b>SrbFunction</b> member instead.
-
 `Length`
 
 Specifies the size of the SRB header for compatibility with the <a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> structure. This is equal to the offset of the <b>Signature</b> member of this structure.
 
-`MiniportContext`
+`Function`
 
-Points to the Srb extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in  <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>. The memory at <b>MiniportContext</b> is not initialized by the operating system-specific port driver, and the miniport driver-determined data can be accessed directly by the HBA. The corresponding physical address can be obtained by calling <a href="..\storport\nf-storport-storportgetphysicaladdress.md">StorportGetPhysicalAddress</a> with the <b>MiniportContext</b> pointer.
-
-`NextSrb`
-
-Indicates the <b>STORAGE_REQUEST_BLOCK</b> to which this request applies. Only a small subset of requests use a second SRB, for example SRB_FUNCTION_ABORT_COMMAND.
-
-`NumSrbExData`
-
-The count of extended SRB data blocks for this request.
-
-`OriginalRequest`
-
-Points to the IRP for this request. This member is irrelevant to miniport drivers.
-
-`PortContext`
-
-Points to a port driver context data for this request. This member is irrelevant to miniport drivers.
-
-`RequestAttribute`
-
-Indicates the tagged-queuing message to be used when the <b>SRB_FLAGS_QUEUE_ACTION_ENABLE</b> flag is set. The value can be one of the following: <b>SRB_SIMPLE_TAG_REQUEST</b>, <b>SRB_HEAD_OF_QUEUE_TAG_REQUEST</b>, or <b>SRB_ORDERED_QUEUE_TAG_REQUEST</b>.
-
-`RequestPriority`
-
-The priority assignment for the SRB.
-
-`RequestTag`
-
-Contains the queue-tag value assigned by the operating system-specific port driver. If this member is used for tagged queuing, the HBA supports internal queuing of requests to logical units (LUs) and the miniport driver set <b>TaggedQueueing</b> to <b>TRUE</b> in the PORT_CONFIGURATION_INFORMATION for this HBA.
-
-`ReservedUchar`
-
-Reserved. Set to 0.
-
-`ReservedUlong`
-
-Reserved. Set to 0.
-
-`Signature`
-
-The signature of the extended SRB format. This is set to SRB_SIGNATURE.
-
-`SrbExDataOffset`
-
-An array of offsets specifying the location of extended data blocks for the SRB. This array is empty if <b>NumSrbExData</b> = 0.
-
-`SrbFlags`
-
-Indicates various parameters and options for the request. <b>SrbFlags</b> is read-only, except when <b>SRB_FLAGS_UNSPECIFIED_DIRECTION</b> is set and miniport drivers of subordinate DMA adapters are required to update <b>SRB_FLAGS_DATA_IN</b> or <b>SRB_FLAGS_DATA_OUT</b>. This member can have one or more of these flags set:
-
-
-
-#### SRB_FLAGS_QUEUE_ACTION_ENABLE
-
-Indicates tagged-queue actions are to be enabled.
-
-
-
-#### SRB_FLAGS_DISABLE_AUTOSENSE
-
-Indicates request-sense information should not be returned.
-
-
-
-#### SRB_FLAGS_DATA_IN
-
-Indicates data will be transferred from the device to the system.
-
-
-
-#### SRB_FLAGS_DATA_OUT
-
-Indicates data will be transferred from the system to the device.
-
-
-
-#### SRB_FLAGS_UNSPECIFIED_DIRECTION
-
-Defined for backward compatibility with the ASPI/CAM SCSI interfaces, this flag indicates that the transfer direction could be either of the preceding, because both of the preceding flags are set. If this flag is set, a miniport driver should determine the transfer direction by examining the data phase for the target on the SCSI bus.
-
-
-
-#### SRB_FLAGS_NO_DATA_TRANSFER
-
-Indicates no data transfer with this request. If this is set, the flags <b>SRB_FLAGS_DATA_OUT</b>, <b>SRB_FLAGS_DATA_IN</b>, and <b>SRB_FLAGS_UNSPECIFIED_DIRECTION</b> are clear.
-
-
-
-#### SRB_FLAGS_DISABLE_SYNCH_TRANSFER
-
-Indicates the HBA, if possible, should perform asynchronous I/O for this transfer request. If synchronous I/O was negotiated previously, the HBA must renegotiate for asynchronous I/O before performing the transfer.
-
-
-
-#### SRB_FLAGS_DISABLE_DISCONNECT
-
-Indicates the HBA should not allow the target to disconnect from the SCSI bus during processing of this request.
-
-
-
-#### SRB_FLAGS_BYPASS_FROZEN_QUEUE
-
-This flag is irrelevant to miniport drivers.
-
-
-
-#### SRB_FLAGS_NO_QUEUE_FREEZE
-
-This flag is irrelevant to miniport drivers.
-
-
-
-#### SRB_FLAGS_IS_ACTIVE
-
-This flag is irrelevant to miniport drivers.
-
-
-
-#### SRB_FLAGS_ALLOCATED_FROM_ZONE
-
-This flag is irrelevant to miniport drivers and is obsolete to new Windows class drivers. To a Windows legacy class driver, this indicates whether the SRB was allocated from a zone buffer. If this flag is set, the class driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff545387">ExInterlockedFreeToZone</a> to release the SRB; otherwise, it must call <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>. New class drivers should use lookaside lists rather than zone buffers.
-
-
-
-#### SRB_FLAGS_SGLIST_FROM_POOL
-
-This flag is irrelevant to miniport drivers. To the class driver, this indicates that memory for a scatter/gather list was allocated from a nonpaged pool. If this flag is set, the class driver must call <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> to release the memory after the SRB is completed. 
-
-
-
-#### SRB_FLAGS_BYPASS_LOCKED_QUEUE
-
-This flag is irrelevant to miniport drivers. To the port driver, this flag indicates that the request should be processed whether the logical-unit queue is locked or not. A higher-level driver must set this flag to send an <b>SRB_FUNCTION_UNLOCK_QUEUE</b> request.
-
-
-
-#### SRB_FLAGS_NO_KEEP_AWAKE
-
-This flag is irrelevant to miniport drivers. A Windows class driver uses this flag to indicate to the port driver to fail the request rather than powering up the device to handle this request.
-
-
-
-#### SRB_FLAGS_FREE_SENSE_BUFFER
-
-Indicates that either the port or the miniport driver has allocated a buffer for sense data. This informs the class driver that it must free the sense data buffer after extracting the data.
-
-
-
-#### SRB_FLAGS_D3_PROCESSING
-
-Indicates that the request is part of D3 processing. Miniports that support runtime power control should not call <b>StorPortPoFxActivateComponent</b> or <b>StorPortPoFxIdleComponent</b> with these requests
-
-
-
-#### SRB_FLAGS_ADAPTER_CACHE_ENABLE
-
-Indicates that the adapter can cache data.
-
-`SrbFunction`
-
-Specifies the operation to be performed, which can be one of these values:
-
-
-
-#### SRB_FUNCTION_EXECUTE_SCSI (0x00)
-
-A SCSI device I/O request should be executed on the target logical unit. When <b>NumSrbExData</b> &gt; 0, one or more following extended request block structures are located at the offsets specified in <b>SrbExDataOffset</b>.
-
-<a href="..\storport\ns-storport-_srbex_data_scsi_cdb16.md">SRBEX_DATA_SCSI_CDB16</a>
-<a href="..\storport\ns-storport-_srbex_data_scsi_cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
-<a href="..\storport\ns-storport-_srbex_data_scsi_cdb_var.md">SRBEX_DATA_SCSI_CDB_VAR</a>
-<a href="..\storport\ns-storport-_srbex_data_bidirectional.md">SRBEX_DATA_BIDIRECTIONAL</a>
-<b>Cdb</b>
-<a href="..\storport\ns-storport-_srbex_data_io_info.md">SRBEX_DATA_IO_INFO</a>
-<b>Cdb</b>
-
-
-#### SRB_FUNCTION_ABORT_COMMAND (0x10)
-
-A SCSIMESS_ABORT message should be sent to cancel the request pointed to by the <b>NextSrb</b> member. If this is a tagged-queue request, a SCSIMESS_ABORT_WITH_TAG message should be used instead. If the indicated request has been completed, this request should be completed normally. Extended SRB data is not required for this function.
-
-<div class="alert"><b>Note</b>  This function is not sent to the miniport by Storport.</div>
-<div> </div>
-
-
-#### SRB_FUNCTION_RESET_DEVICE (0x16)
-
- The SCSI target controller should be reset using the SCSIMESS_BUS_DEVICE_RESET message. The miniport driver should complete any active requests for the target controller. Extended SRB data is not required for this function.
-
-
-
-#### SRB_FUNCTION_RESET_LOGICAL_UNIT (0x20)
-
-The logical unit should be reset, if possible. The HBA miniport driver should complete any active requests for the logical unit. Extended SRB data is not required for this function. Storport supports this type of reset, but SCSI port does not. 
-
-
-
-#### SRB_FUNCTION_RESET_BUS (0x12)
-
-The SCSI bus should be reset using the SCSIMESS_BUS_DEVICE_RESET message. A miniport driver receives this request only if a given request has timed out and a subsequent request to abort the timed-out request also has timed out. Extended SRB data is not required for this function.
-
-
-
-#### SRB_FUNCTION_TERMINATE_IO (0x14)
-
-A SCSIMESS_TERMINATE_IO_PROCESS message should be sent to cancel the request pointed to by the <b>NextSrb</b> member. If the indicated request has already completed, this request should be completed normally. Extended SRB data is not required for this function.
-
-<div class="alert"><b>Note</b>  This function is not sent to the miniport by Storport.</div>
-<div> </div>
-
-
-#### SRB_FUNCTION_RELEASE_RECOVERY (0x11)
-
-A SCSIMESS_RELEASE_RECOVERY message should be sent to the target controller. Extended SRB data is not required for this function.
-
-<div class="alert"><b>Note</b>  This function is not sent to the miniport by Storport.</div>
-<div> </div>
-
-
-#### SRB_FUNCTION_RECEIVE_EVENT (0x03)
-
-The HBA should be prepared to receive an asynchronous event notification from the addressed target. The SRB <b>DataBuffer</b> member indicates where the data should be placed.
-
-<div class="alert"><b>Note</b>  This function is not sent to the miniport by Storport.</div>
-<div> </div>
-
-
-#### SRB_FUNCTION_SHUTDOWN (0x07)
-
-The system is being shut down. A miniport driver can receive several of these notifications before all system activity actually stops. However, the last shutdown notification will occur after the last start I/O. Extended SRB data is not required for this function.
-
-
-
-#### SRB_FUNCTION_FLUSH (0x08)
-
-The miniport driver should flush any cached data for the target device. This request is sent to the miniport driver only if it set <b>CachesData</b> to <b>TRUE</b> in the <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> for the HBA. Extended SRB data is not required for this function.
-
-
-
-#### SRB_FUNCTION_IO_CONTROL (0x02)
-
-The request is an I/O control request, originating in a user-mode application with a dedicated HBA. The SRB <b>DataBuffer</b> points to an <b>SRB_IO_CONTROL</b> header followed by the data area. The value in <b>DataBuffer</b> can be used by the driver, regardless of the value of <b>MapBuffers</b>. Only the SRB <b>Function</b>, <b>SrbFlags</b>, <b>TimeOutValue</b>, <b>DataBuffer</b>, and <b>DataTransferLength</b> members are valid, along with the <b>SrbExtension</b> member if the miniport driver requested SRB extensions when it initialized. If a miniport driver controls an application-dedicated HBA so that it supports this request, the miniport driver should execute the request and notify the operating system-specific port driver when the SRB has completed, using the normal mechanism of calls to <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a> with <b>RequestComplete</b> and <b>NextRequest</b>.
-
-
-
-#### SRB_FUNCTION_LOCK_QUEUE (0x18)
-
-Holds requests that are queued by the port driver for a particular logical unit, typically while a power request is being processed. Only the SRB <b>Length</b>, <b>Function</b>, <b>SrbFlags</b>, and <b>OriginalRequest</b> members are valid. When the queue is locked, only requests with <b>SrbFlags</b> ORed with <b>SRB_FLAGS_BYPASS_LOCKED_QUEUE</b> will be processed. SCSI miniport drivers do not process <b>SRB_FUNCTION_LOCK_QUEUE</b> requests. 
-
-
-
-#### SRB_FUNCTION_UNLOCK_QUEUE (0x19)
-
-Releases the port driver's queue for a logical unit that was previously locked with <b>SRB_FUNCTION_LOCK_QUEUE</b>. The <b>SrbFlags</b> of the unlock request must be ORed with <b>SRB_FLAGS_BYPASS_LOCKED_QUEUE</b>. Only the SRB <b>Length</b>, <b>Function</b>, <b>SrbFlags</b>, and <b>OriginalRequest</b> members are valid. SCSI miniport drivers do not process <b>SRB_FUNCTION_UNLOCK_QUEUE</b> requests.
-
-
-
-#### SRB_FUNCTION_DUMP_POINTERS (0x26)
-
-A request with this function is sent to a Storport miniport driver that is used to control the disk that holds the crash dump data. The request collects information needed from the miniport driver to support crash dump and hibernation. See the <b>MINIPORT_DUMP_POINTERS</b> structure. A physical miniport driver must set the STOR_FEATURE_DUMP_POINTERS flag in the <b>FeatureSupport</b> member of its <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> to receive a request with this function.
-
-
-
-#### SRB_FUNCTION_FREE_DUMP_POINTERS (0x27)
-
-A request with this function is sent to a Storport miniport driver to release any resources allocated during a previous request for SRB_FUNCTION_DUMP_POINTERS.
-
-
-
-#### SRB_FUNCTION_QUIESCE_DEVICE (0x1A)
-
-The request is only between a storage class and storage port driver and is not be sent to miniport. The this function serves as a wait by the class driver for port driver to complete all outstanding I/Os.
-
-
-
-#### SRB_FUNCTION_PNP (0x25)
-
-The request is a PnP extended request formatted as a <b>SRBEX_DATA_PNP</b> structure. The offset to extended request data is located at <b>SrbExDataOffset</b>[0].
-
-
-
-#### SRB_FUNCTION_POWER (0x24)
-
-The request is a power extended request formatted as a <b>SRBEX_DATA_POWER</b> structure. The offset to extended request data is located at <b>SrbExDataOffset</b>[0].
-
-
-
-#### SRB_FUNCTION_WMI (0x17)
-
-The request is a power extended request formatted as a <b>SRBEX_DATA_WMI</b> structure. The offset to extended request data is located at <b>SrbExDataOffset</b>[0].
-
-
-
-#### SRB_FUNCTION_CRYPTO_OPERATION ()
-
-Reserved for system use.
-
-`SrbLength`
-
-The length of this extended SRB, in bytes, including this structure, address and any SRB extended data.
+Set to <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b> to indicate that this is an extended SRB. Unlike in <a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>, the SRB function identifier is in the <b>SrbFunction</b> member instead.
 
 `SrbStatus`
 
@@ -604,25 +281,348 @@ Indicates the request failed because link is down.
 
 Indicates the request failed because SRB length was invalid.
 
-`SystemStatus`
+`ReservedUchar`
 
-Used by the Storport driver, instead of <b>SrbStatus</b>, to report the status of the completed request whenever the request cannot be delivered to the miniport driver. In such cases, <b>SrbStatus</b> is set to <b>SRB_STATUS_INTERNAL_ERROR</b>. This member is used exclusively for communication between the Storport and the class driver and should not be used by miniport drivers.
+Reserved. Set to 0.
 
-`TimeOutValue`
+`Signature`
 
-Indicates the interval, in seconds, that the request can execute before the operating system-specific port driver might consider it timed out. Miniport drivers are not required to time requests because the port driver already does.
+The signature of the extended SRB format. This is set to SRB_SIGNATURE.
 
 `Version`
 
 The version of the structure used. The current version is <b>STORAGE_REQUEST_BLOCK_VERSION_1</b>.
 
+`SrbLength`
+
+The length of this extended SRB, in bytes, including this structure, address and any SRB extended data.
+
+`SrbFunction`
+
+Specifies the operation to be performed, which can be one of these values:
+
+
+
+#### SRB_FUNCTION_EXECUTE_SCSI (0x00)
+
+A SCSI device I/O request should be executed on the target logical unit. When <b>NumSrbExData</b> &gt; 0, one or more following extended request block structures are located at the offsets specified in <b>SrbExDataOffset</b>.
+
+<a href="..\storport\ns-storport-_srbex_data_scsi_cdb16.md">SRBEX_DATA_SCSI_CDB16</a>
+<a href="..\storport\ns-storport-_srbex_data_scsi_cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
+<a href="..\storport\ns-storport-_srbex_data_scsi_cdb_var.md">SRBEX_DATA_SCSI_CDB_VAR</a>
+<a href="..\storport\ns-storport-_srbex_data_bidirectional.md">SRBEX_DATA_BIDIRECTIONAL</a>
+<b>Cdb</b>
+<a href="..\storport\ns-storport-_srbex_data_io_info.md">SRBEX_DATA_IO_INFO</a>
+<b>Cdb</b>
+
+
+#### SRB_FUNCTION_ABORT_COMMAND (0x10)
+
+A SCSIMESS_ABORT message should be sent to cancel the request pointed to by the <b>NextSrb</b> member. If this is a tagged-queue request, a SCSIMESS_ABORT_WITH_TAG message should be used instead. If the indicated request has been completed, this request should be completed normally. Extended SRB data is not required for this function.
+
+<div class="alert"><b>Note</b>  This function is not sent to the miniport by Storport.</div>
+<div> </div>
+
+
+#### SRB_FUNCTION_RESET_DEVICE (0x16)
+
+ The SCSI target controller should be reset using the SCSIMESS_BUS_DEVICE_RESET message. The miniport driver should complete any active requests for the target controller. Extended SRB data is not required for this function.
+
+
+
+#### SRB_FUNCTION_RESET_LOGICAL_UNIT (0x20)
+
+The logical unit should be reset, if possible. The HBA miniport driver should complete any active requests for the logical unit. Extended SRB data is not required for this function. Storport supports this type of reset, but SCSI port does not. 
+
+
+
+#### SRB_FUNCTION_RESET_BUS (0x12)
+
+The SCSI bus should be reset using the SCSIMESS_BUS_DEVICE_RESET message. A miniport driver receives this request only if a given request has timed out and a subsequent request to abort the timed-out request also has timed out. Extended SRB data is not required for this function.
+
+
+
+#### SRB_FUNCTION_TERMINATE_IO (0x14)
+
+A SCSIMESS_TERMINATE_IO_PROCESS message should be sent to cancel the request pointed to by the <b>NextSrb</b> member. If the indicated request has already completed, this request should be completed normally. Extended SRB data is not required for this function.
+
+<div class="alert"><b>Note</b>  This function is not sent to the miniport by Storport.</div>
+<div> </div>
+
+
+#### SRB_FUNCTION_RELEASE_RECOVERY (0x11)
+
+A SCSIMESS_RELEASE_RECOVERY message should be sent to the target controller. Extended SRB data is not required for this function.
+
+<div class="alert"><b>Note</b>  This function is not sent to the miniport by Storport.</div>
+<div> </div>
+
+
+#### SRB_FUNCTION_RECEIVE_EVENT (0x03)
+
+The HBA should be prepared to receive an asynchronous event notification from the addressed target. The SRB <b>DataBuffer</b> member indicates where the data should be placed.
+
+<div class="alert"><b>Note</b>  This function is not sent to the miniport by Storport.</div>
+<div> </div>
+
+
+#### SRB_FUNCTION_SHUTDOWN (0x07)
+
+The system is being shut down. A miniport driver can receive several of these notifications before all system activity actually stops. However, the last shutdown notification will occur after the last start I/O. Extended SRB data is not required for this function.
+
+
+
+#### SRB_FUNCTION_FLUSH (0x08)
+
+The miniport driver should flush any cached data for the target device. This request is sent to the miniport driver only if it set <b>CachesData</b> to <b>TRUE</b> in the <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> for the HBA. Extended SRB data is not required for this function.
+
+
+
+#### SRB_FUNCTION_IO_CONTROL (0x02)
+
+The request is an I/O control request, originating in a user-mode application with a dedicated HBA. The SRB <b>DataBuffer</b> points to an <b>SRB_IO_CONTROL</b> header followed by the data area. The value in <b>DataBuffer</b> can be used by the driver, regardless of the value of <b>MapBuffers</b>. Only the SRB <b>Function</b>, <b>SrbFlags</b>, <b>TimeOutValue</b>, <b>DataBuffer</b>, and <b>DataTransferLength</b> members are valid, along with the <b>SrbExtension</b> member if the miniport driver requested SRB extensions when it initialized. If a miniport driver controls an application-dedicated HBA so that it supports this request, the miniport driver should execute the request and notify the operating system-specific port driver when the SRB has completed, using the normal mechanism of calls to <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a> with <b>RequestComplete</b> and <b>NextRequest</b>.
+
+
+
+#### SRB_FUNCTION_LOCK_QUEUE (0x18)
+
+Holds requests that are queued by the port driver for a particular logical unit, typically while a power request is being processed. Only the SRB <b>Length</b>, <b>Function</b>, <b>SrbFlags</b>, and <b>OriginalRequest</b> members are valid. When the queue is locked, only requests with <b>SrbFlags</b> ORed with <b>SRB_FLAGS_BYPASS_LOCKED_QUEUE</b> will be processed. SCSI miniport drivers do not process <b>SRB_FUNCTION_LOCK_QUEUE</b> requests. 
+
+
+
+#### SRB_FUNCTION_UNLOCK_QUEUE (0x19)
+
+Releases the port driver's queue for a logical unit that was previously locked with <b>SRB_FUNCTION_LOCK_QUEUE</b>. The <b>SrbFlags</b> of the unlock request must be ORed with <b>SRB_FLAGS_BYPASS_LOCKED_QUEUE</b>. Only the SRB <b>Length</b>, <b>Function</b>, <b>SrbFlags</b>, and <b>OriginalRequest</b> members are valid. SCSI miniport drivers do not process <b>SRB_FUNCTION_UNLOCK_QUEUE</b> requests.
+
+
+
+#### SRB_FUNCTION_DUMP_POINTERS (0x26)
+
+A request with this function is sent to a Storport miniport driver that is used to control the disk that holds the crash dump data. The request collects information needed from the miniport driver to support crash dump and hibernation. See the <b>MINIPORT_DUMP_POINTERS</b> structure. A physical miniport driver must set the STOR_FEATURE_DUMP_POINTERS flag in the <b>FeatureSupport</b> member of its <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> to receive a request with this function.
+
+
+
+#### SRB_FUNCTION_FREE_DUMP_POINTERS (0x27)
+
+A request with this function is sent to a Storport miniport driver to release any resources allocated during a previous request for SRB_FUNCTION_DUMP_POINTERS.
+
+
+
+#### SRB_FUNCTION_QUIESCE_DEVICE (0x1A)
+
+The request is only between a storage class and storage port driver and is not be sent to miniport. The this function serves as a wait by the class driver for port driver to complete all outstanding I/Os.
+
+
+
+#### SRB_FUNCTION_PNP (0x25)
+
+The request is a PnP extended request formatted as a <b>SRBEX_DATA_PNP</b> structure. The offset to extended request data is located at <b>SrbExDataOffset</b>[0].
+
+
+
+#### SRB_FUNCTION_POWER (0x24)
+
+The request is a power extended request formatted as a <b>SRBEX_DATA_POWER</b> structure. The offset to extended request data is located at <b>SrbExDataOffset</b>[0].
+
+
+
+#### SRB_FUNCTION_WMI (0x17)
+
+The request is a power extended request formatted as a <b>SRBEX_DATA_WMI</b> structure. The offset to extended request data is located at <b>SrbExDataOffset</b>[0].
+
+
+
+#### SRB_FUNCTION_CRYPTO_OPERATION ()
+
+Reserved for system use.
+
+`SrbFlags`
+
+Indicates various parameters and options for the request. <b>SrbFlags</b> is read-only, except when <b>SRB_FLAGS_UNSPECIFIED_DIRECTION</b> is set and miniport drivers of subordinate DMA adapters are required to update <b>SRB_FLAGS_DATA_IN</b> or <b>SRB_FLAGS_DATA_OUT</b>. This member can have one or more of these flags set:
+
+
+
+#### SRB_FLAGS_QUEUE_ACTION_ENABLE
+
+Indicates tagged-queue actions are to be enabled.
+
+
+
+#### SRB_FLAGS_DISABLE_AUTOSENSE
+
+Indicates request-sense information should not be returned.
+
+
+
+#### SRB_FLAGS_DATA_IN
+
+Indicates data will be transferred from the device to the system.
+
+
+
+#### SRB_FLAGS_DATA_OUT
+
+Indicates data will be transferred from the system to the device.
+
+
+
+#### SRB_FLAGS_UNSPECIFIED_DIRECTION
+
+Defined for backward compatibility with the ASPI/CAM SCSI interfaces, this flag indicates that the transfer direction could be either of the preceding, because both of the preceding flags are set. If this flag is set, a miniport driver should determine the transfer direction by examining the data phase for the target on the SCSI bus.
+
+
+
+#### SRB_FLAGS_NO_DATA_TRANSFER
+
+Indicates no data transfer with this request. If this is set, the flags <b>SRB_FLAGS_DATA_OUT</b>, <b>SRB_FLAGS_DATA_IN</b>, and <b>SRB_FLAGS_UNSPECIFIED_DIRECTION</b> are clear.
+
+
+
+#### SRB_FLAGS_DISABLE_SYNCH_TRANSFER
+
+Indicates the HBA, if possible, should perform asynchronous I/O for this transfer request. If synchronous I/O was negotiated previously, the HBA must renegotiate for asynchronous I/O before performing the transfer.
+
+
+
+#### SRB_FLAGS_DISABLE_DISCONNECT
+
+Indicates the HBA should not allow the target to disconnect from the SCSI bus during processing of this request.
+
+
+
+#### SRB_FLAGS_BYPASS_FROZEN_QUEUE
+
+This flag is irrelevant to miniport drivers.
+
+
+
+#### SRB_FLAGS_NO_QUEUE_FREEZE
+
+This flag is irrelevant to miniport drivers.
+
+
+
+#### SRB_FLAGS_IS_ACTIVE
+
+This flag is irrelevant to miniport drivers.
+
+
+
+#### SRB_FLAGS_ALLOCATED_FROM_ZONE
+
+This flag is irrelevant to miniport drivers and is obsolete to new Windows class drivers. To a Windows legacy class driver, this indicates whether the SRB was allocated from a zone buffer. If this flag is set, the class driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff545387">ExInterlockedFreeToZone</a> to release the SRB; otherwise, it must call <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>. New class drivers should use lookaside lists rather than zone buffers.
+
+
+
+#### SRB_FLAGS_SGLIST_FROM_POOL
+
+This flag is irrelevant to miniport drivers. To the class driver, this indicates that memory for a scatter/gather list was allocated from a nonpaged pool. If this flag is set, the class driver must call <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> to release the memory after the SRB is completed. 
+
+
+
+#### SRB_FLAGS_BYPASS_LOCKED_QUEUE
+
+This flag is irrelevant to miniport drivers. To the port driver, this flag indicates that the request should be processed whether the logical-unit queue is locked or not. A higher-level driver must set this flag to send an <b>SRB_FUNCTION_UNLOCK_QUEUE</b> request.
+
+
+
+#### SRB_FLAGS_NO_KEEP_AWAKE
+
+This flag is irrelevant to miniport drivers. A Windows class driver uses this flag to indicate to the port driver to fail the request rather than powering up the device to handle this request.
+
+
+
+#### SRB_FLAGS_FREE_SENSE_BUFFER
+
+Indicates that either the port or the miniport driver has allocated a buffer for sense data. This informs the class driver that it must free the sense data buffer after extracting the data.
+
+
+
+#### SRB_FLAGS_D3_PROCESSING
+
+Indicates that the request is part of D3 processing. Miniports that support runtime power control should not call <b>StorPortPoFxActivateComponent</b> or <b>StorPortPoFxIdleComponent</b> with these requests
+
+
+
+#### SRB_FLAGS_ADAPTER_CACHE_ENABLE
+
+Indicates that the adapter can cache data.
+
+`ReservedUlong`
+
+Reserved. Set to 0.
+
+`RequestTag`
+
+Contains the queue-tag value assigned by the operating system-specific port driver. If this member is used for tagged queuing, the HBA supports internal queuing of requests to logical units (LUs) and the miniport driver set <b>TaggedQueueing</b> to <b>TRUE</b> in the PORT_CONFIGURATION_INFORMATION for this HBA.
+
+`RequestPriority`
+
+The priority assignment for the SRB.
+
+`RequestAttribute`
+
+Indicates the tagged-queuing message to be used when the <b>SRB_FLAGS_QUEUE_ACTION_ENABLE</b> flag is set. The value can be one of the following: <b>SRB_SIMPLE_TAG_REQUEST</b>, <b>SRB_HEAD_OF_QUEUE_TAG_REQUEST</b>, or <b>SRB_ORDERED_QUEUE_TAG_REQUEST</b>.
+
+`TimeOutValue`
+
+Indicates the interval, in seconds, that the request can execute before the operating system-specific port driver might consider it timed out. Miniport drivers are not required to time requests because the port driver already does.
+
+`SystemStatus`
+
+Used by the Storport driver, instead of <b>SrbStatus</b>, to report the status of the completed request whenever the request cannot be delivered to the miniport driver. In such cases, <b>SrbStatus</b> is set to <b>SRB_STATUS_INTERNAL_ERROR</b>. This member is used exclusively for communication between the Storport and the class driver and should not be used by miniport drivers.
+
 `ZeroGuard1`
 
 A guard area to protect against drivers that interpret this structure as <a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>. Set to 0.
 
+`AddressOffset`
+
+The offset of the storage request address from the beginning of this structure. This offset locates a <a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a> structure that contains the address for the request.
+
+`NumSrbExData`
+
+The count of extended SRB data blocks for this request.
+
+`DataTransferLength`
+
+Indicates the size, in bytes, of the data buffer. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred.
+
+`DataBuffer`
+
+Points to the data buffer. Miniport drivers should not use this value as a data pointer unless the miniport driver set <b>MapBuffers</b> to <b>TRUE</b> in the <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> for the HBA. In the case of SRB_FUNCTION_IO_CONTROL requests, however, miniport drivers can use this value as a data pointer regardless of the value of <b>MapBuffers</b>.
+
 `ZeroGuard2`
 
 A guard area to protect against drivers that interpret this structure as <a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>. Set to 0.
+
+`OriginalRequest`
+
+Points to the IRP for this request. This member is irrelevant to miniport drivers.
+
+`ClassContext`
+
+Points to a class driver context data for this request. This member is irrelevant to miniport drivers.
+
+`PortContext`
+
+Points to a port driver context data for this request. This member is irrelevant to miniport drivers.
+
+`MiniportContext`
+
+Points to the Srb extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in  <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>. The memory at <b>MiniportContext</b> is not initialized by the operating system-specific port driver, and the miniport driver-determined data can be accessed directly by the HBA. The corresponding physical address can be obtained by calling <a href="..\storport\nf-storport-storportgetphysicaladdress.md">StorportGetPhysicalAddress</a> with the <b>MiniportContext</b> pointer.
+
+`NextSrb`
+
+Indicates the <b>STORAGE_REQUEST_BLOCK</b> to which this request applies. Only a small subset of requests use a second SRB, for example SRB_FUNCTION_ABORT_COMMAND.
+
+`_STORAGE_REQUEST_BLOCK`
+
+
+
+`SrbExDataOffset`
+
+An array of offsets specifying the location of extended data blocks for the SRB. This array is empty if <b>NumSrbExData</b> = 0.
 
 ## Remarks
 Starting in Windows 8, an extended  SRB type is supported with the use of the <b>STORAGE_REQUEST_BLOCK</b> structure. <b>STORAGE_REQUEST_BLOCK</b> extends SRB functions, allowing extended data blocks for the SRB function to be added to the request. Support for SRB requests using the <a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> structure will continue.
@@ -644,11 +644,3 @@ The target device address for the SRB is in a <a href="..\storport\ns-storport-_
 
 
 <a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_REQUEST_BLOCK structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

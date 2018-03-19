@@ -64,15 +64,15 @@ typedef struct _RILPHONEBOOKADDITIONALNUMBER {
 
 
 
-`dwNumId`
-
-
-
 `dwParams`
 
 
 
 `raAddress`
+
+
+
+`dwNumId`
 
 
 

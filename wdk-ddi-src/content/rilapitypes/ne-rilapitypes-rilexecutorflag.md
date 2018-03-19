@@ -60,17 +60,17 @@ typedef enum _RILEXECUTORFLAG {
 <table>
             
                 <tr>
-                    <td>RIL_EXECUTORFLAG_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_EXECUTORFLAG_ENABLED</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_EXECUTORFLAG_HIGHPRIORITY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EXECUTORFLAG_ALL</td>
                     <td></td>
                 </tr>
 </table>

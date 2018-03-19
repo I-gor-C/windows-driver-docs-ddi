@@ -72,11 +72,17 @@ typedef struct _DXVADDI_CONFIGPICTUREDECODE {
 ## Members
 
 
-`Config4GroupedCoefs`
+`guidConfigBitstreamEncryption`
 
-[in] A UINT value that specifies how transform coefficients for off-host IDCT are sent. A value of 1 in this member indicates that transform coefficients for off-host IDCT are sent by using the <a href="..\dxva\ns-dxva-_dxva_tcoef4group.md">DXVA_TCoef4Group</a> structure rather than the <a href="..\dxva\ns-dxva-_dxva_tcoefsingle.md">DXVA_TCoefSingle</a> structure. <b>Config4GroupedCoefs</b> is zero if <b>ConfigResidDiffAccelerator</b> is zero or if <b>ConfigHostInverseScan</b> is 1.
+[in] The encryption GUID for configuring a bitstream.
 
-The preferred value for <b>Config4GroupedCoefs</b> is zero if <b>ConfigResidDiffAccelerator</b> is 1.
+`guidConfigMBcontrolEncryption`
+
+[in] The encryption GUID for configuring macroblock control.
+
+`guidConfigResidDiffEncryption`
+
+[in] The encryption GUID for configuring residual difference decoding.
 
 `ConfigBitstreamRaw`
 
@@ -84,75 +90,13 @@ The preferred value for <b>Config4GroupedCoefs</b> is zero if <b>ConfigResidDiff
 
 Set this member to zero if the <b>ConfigResidDiffHost</b> or <b>ConfigResidDiffAccelerator</b> member is 1. A value of zero in <b>ConfigBitstreamRaw </b>is the basic level of support. The value of 1 is preferred.
 
-`ConfigDecoderSpecific`
-
-[in] A USHORT value that specifies decoder-specific features to configure. For information about a decoder's features, see the specification for that decoder. For a list of decoders, see <a href="https://msdn.microsoft.com/bffcc0da-7b1a-4f70-98f5-4841c8df9f12">Providing Capabilities for Video Decoding</a>.
-
-`ConfigHostInverseScan`
-
-[in] A UINT value that specifies whether the inverse scan for transform-domain block processing is performed on the host or the accelerator. A value of 1 in this member indicates that the inverse scan for transform-domain block processing is performed on the host, and absolute indexes are sent instead for any transform coefficients. A value of zero indicates that inverse scan is performed on the accelerator. <b>ConfigHostInverseScan</b> must be zero if <b>ConfigResidDiffAccelerator</b> is zero or if the <b>Config4GroupedCoefs</b> member is 1.
-
-The preferred value for <b>ConfigHostInverseScan</b> is 1 if <b>ConfigResidDiffAccelerator</b> is 1.
-
-`ConfigIntraResidUnsigned`
-
-[in] The method of representation of spatial-domain blocks of residual difference data for intra blocks when using host-based difference decoding (that is, when the <b>ConfigResidDiffHost</b> member is equal to 1).
-
-If <b>ConfigIntraResidUnsigned</b> is set to zero and <b>ConfigResidDiffHost</b> is set to 1, spatial-domain residual difference data blocks for intra macroblocks are sent as follows:
-
-<ul>
-<li>
-In a nonintra picture if the <b>ConfigSpatialResid8</b> member is zero, the spatial-domain residual difference data blocks for intra macroblocks are sent as 16-bit signed integer values that are relative to a constant reference value of 2<sup>(BPP-1)</sup>, where <i>BPP</i> is the number of bits per sample for the uncompressed video (generally a value of 8).
-
-</li>
-<li>
-In a nonintra picture if <b>ConfigSpatialResid8</b> is 1 and in an intra picture if <i>BPP</i> is equal to 8 (regardless of the value of <b>ConfigSpatialResid8</b>), the spatial-domain residual difference data blocks for intra macroblocks are sent as 8-bit signed integer values that are relative to a constant reference value of 128.
-
-</li>
-</ul>
-If <b>ConfigIntraResidUnsigned</b> is set to 1 and <b>ConfigResidDiffHost</b> is set to 1, spatial-domain residual difference data blocks for intra macroblocks are sent as follows:
-
-<ul>
-<li>
-In a nonintra picture if <b>ConfigSpatialResid8</b> is zero, the spatial-domain residual difference data blocks for intra macroblocks are sent as 16-bit unsigned integer values that are relative to a constant reference value of zero.
-
-</li>
-<li>
-In a nonintra picture if <b>ConfigSpatialResid8</b> is 1 and in an intra picture if <i>BPP</i> is equal to 8 (regardless of the value of <b>ConfigSpatialResid8</b>), the spatial-domain residual difference data blocks for intra macroblocks are sent as 8-bit unsigned integer values that are relative to a constant reference value of zero.
-
-</li>
-</ul>
-<b>ConfigIntraResidUnsigned</b> must be zero unless <b>ConfigResidDiffHost</b> is 1. The preferred value for <b>ConfigIntraResidUnsigned</b> is zero.
-
 `ConfigMBcontrolRasterOrder`
 
 [in] A UINT value that specifies whether macroblock control commands are in raster scan order or in arbitrary order. A value of 1 in this member specifies that the macroblock control commands within each macroblock control command buffer are in raster scan order. A value of zero indicates arbitrary order. A driver can restrict support to raster scan order; however, a driver should support both arbitrary and raster scan order.
 
-`ConfigMinRenderTargetBuffCount`
-
-[in] A USHORT value that specifies the minimum number of render target buffers.
-
-`ConfigResid8Subtraction`
-
-[in] A UINT value that specifies whether 8-bit difference overflow blocks are subtracted or added. If this member is set to 1, 8-bit difference overflow blocks are subtracted rather than added. This member must be zero unless <b>ConfigSpatialResid8</b> is 1. If <b>ConfigSpatialResid8</b> is 1, the preferred value for <b>ConfigResid8Subtraction</b> is 1. The ability to subtract differences rather than to add them enables 8-bit difference decoding to be fully compliant with the range from -255 through +255 of values that are required in video decoder specifications. This ability enables full compliance because +255 cannot be represented as the addition of two signed 8-bit numbers but any number in the range from -255 through +255 can be represented as the difference between two signed 8-bit numbers (+255 is equal to +127 minus âˆ’128).
-
-`ConfigResidDiffAccelerator`
-
-[in] The accelerator residual difference configuration. A value of 1 in this member indicates that transform-domain blocks of coefficient data can be sent from the host for accelerator-based IDCT. A value of zero indicates that accelerator-based IDCT is not used. 
-
-If both the <b>ConfigResidDiffHost</b> member and <b>ConfigResidDiffAccelerator</b> are 1, some residual difference decoding is performed on the host and some on the accelerator, as indicated by macroblock-level control commands. <b>ConfigResidDiffAccelerator</b> must be zero if the <b>bConfigBitstreamRaw</b> member is 1. 
-
-The preferred value for <b>ConfigResidDiffAccelerator</b> is 1.
-
-If <b>ConfigResidDiffAccelerator</b> and <b>ConfigResidDiffHost</b> are set to 1, residual difference decoding can be shared between the host and accelerator on a macroblock basis. This sharing is an even higher level of accelerator capability than when <b>ConfigResidDiffAccelerator</b> is set to 1 and <b>ConfigResidDiffHost</b> is set to zero.
-
 `ConfigResidDiffHost`
 
 [in] The host residual difference configuration. A value of 1 in this member specifies that some residual difference decoding data is possibly sent as blocks in the spatial domain from the host. A value of zero specifies that spatial domain data is not sent. Set this member to zero if the <b>ConfigBitstreamRaw</b> member is 1. An accelerator should support both zero and 1.
-
-`ConfigSpatialHost8or9Clipping`
-
-[in] A UINT value that specifies whether clipping is performed by the host. If this member set to 1, spatial-domain blocks for intra macroblocks are clipped to an 8-bit range on the host and spatial-domain blocks for nonintra macroblocks are clipped to a 9-bit range on the host. A value of zero indicates that no such clipping is performed by the host. This member must be zero unless <b>ConfigSpatialResid8</b> is set to zero and <b>ConfigResidDiffHost</b> is set to 1. The preferred value for <b>ConfigSpatialHost8or9Clipping</b> is zero.
 
 `ConfigSpatialResid8`
 
@@ -189,9 +133,63 @@ If <b>ConfigIntraResidUnsigned</b> is 1, spatial domain blocks for intra macrobl
 </div>
 <div> </div>
 
+`ConfigResid8Subtraction`
+
+[in] A UINT value that specifies whether 8-bit difference overflow blocks are subtracted or added. If this member is set to 1, 8-bit difference overflow blocks are subtracted rather than added. This member must be zero unless <b>ConfigSpatialResid8</b> is 1. If <b>ConfigSpatialResid8</b> is 1, the preferred value for <b>ConfigResid8Subtraction</b> is 1. The ability to subtract differences rather than to add them enables 8-bit difference decoding to be fully compliant with the range from -255 through +255 of values that are required in video decoder specifications. This ability enables full compliance because +255 cannot be represented as the addition of two signed 8-bit numbers but any number in the range from -255 through +255 can be represented as the difference between two signed 8-bit numbers (+255 is equal to +127 minus âˆ’128).
+
+`ConfigSpatialHost8or9Clipping`
+
+[in] A UINT value that specifies whether clipping is performed by the host. If this member set to 1, spatial-domain blocks for intra macroblocks are clipped to an 8-bit range on the host and spatial-domain blocks for nonintra macroblocks are clipped to a 9-bit range on the host. A value of zero indicates that no such clipping is performed by the host. This member must be zero unless <b>ConfigSpatialResid8</b> is set to zero and <b>ConfigResidDiffHost</b> is set to 1. The preferred value for <b>ConfigSpatialHost8or9Clipping</b> is zero.
+
 `ConfigSpatialResidInterleaved`
 
 [in] A UINT value that specifies whether spatial-domain residual difference data is sent in a chrominance-interleaved form. If this member is set to 1, any spatial-domain residual difference data is sent in a chrominance-interleaved form that matches the YUV format chrominance interleaving pattern. This member must be zero unless <b>ConfigResidDiffHost</b> is 1 and the YUV format is NV12 or NV21. The preferred value for <b>ConfigSpatialResidInterleaved</b> is zero.
+
+`ConfigIntraResidUnsigned`
+
+[in] The method of representation of spatial-domain blocks of residual difference data for intra blocks when using host-based difference decoding (that is, when the <b>ConfigResidDiffHost</b> member is equal to 1).
+
+If <b>ConfigIntraResidUnsigned</b> is set to zero and <b>ConfigResidDiffHost</b> is set to 1, spatial-domain residual difference data blocks for intra macroblocks are sent as follows:
+
+<ul>
+<li>
+In a nonintra picture if the <b>ConfigSpatialResid8</b> member is zero, the spatial-domain residual difference data blocks for intra macroblocks are sent as 16-bit signed integer values that are relative to a constant reference value of 2<sup>(BPP-1)</sup>, where <i>BPP</i> is the number of bits per sample for the uncompressed video (generally a value of 8).
+
+</li>
+<li>
+In a nonintra picture if <b>ConfigSpatialResid8</b> is 1 and in an intra picture if <i>BPP</i> is equal to 8 (regardless of the value of <b>ConfigSpatialResid8</b>), the spatial-domain residual difference data blocks for intra macroblocks are sent as 8-bit signed integer values that are relative to a constant reference value of 128.
+
+</li>
+</ul>
+If <b>ConfigIntraResidUnsigned</b> is set to 1 and <b>ConfigResidDiffHost</b> is set to 1, spatial-domain residual difference data blocks for intra macroblocks are sent as follows:
+
+<ul>
+<li>
+In a nonintra picture if <b>ConfigSpatialResid8</b> is zero, the spatial-domain residual difference data blocks for intra macroblocks are sent as 16-bit unsigned integer values that are relative to a constant reference value of zero.
+
+</li>
+<li>
+In a nonintra picture if <b>ConfigSpatialResid8</b> is 1 and in an intra picture if <i>BPP</i> is equal to 8 (regardless of the value of <b>ConfigSpatialResid8</b>), the spatial-domain residual difference data blocks for intra macroblocks are sent as 8-bit unsigned integer values that are relative to a constant reference value of zero.
+
+</li>
+</ul>
+<b>ConfigIntraResidUnsigned</b> must be zero unless <b>ConfigResidDiffHost</b> is 1. The preferred value for <b>ConfigIntraResidUnsigned</b> is zero.
+
+`ConfigResidDiffAccelerator`
+
+[in] The accelerator residual difference configuration. A value of 1 in this member indicates that transform-domain blocks of coefficient data can be sent from the host for accelerator-based IDCT. A value of zero indicates that accelerator-based IDCT is not used. 
+
+If both the <b>ConfigResidDiffHost</b> member and <b>ConfigResidDiffAccelerator</b> are 1, some residual difference decoding is performed on the host and some on the accelerator, as indicated by macroblock-level control commands. <b>ConfigResidDiffAccelerator</b> must be zero if the <b>bConfigBitstreamRaw</b> member is 1. 
+
+The preferred value for <b>ConfigResidDiffAccelerator</b> is 1.
+
+If <b>ConfigResidDiffAccelerator</b> and <b>ConfigResidDiffHost</b> are set to 1, residual difference decoding can be shared between the host and accelerator on a macroblock basis. This sharing is an even higher level of accelerator capability than when <b>ConfigResidDiffAccelerator</b> is set to 1 and <b>ConfigResidDiffHost</b> is set to zero.
+
+`ConfigHostInverseScan`
+
+[in] A UINT value that specifies whether the inverse scan for transform-domain block processing is performed on the host or the accelerator. A value of 1 in this member indicates that the inverse scan for transform-domain block processing is performed on the host, and absolute indexes are sent instead for any transform coefficients. A value of zero indicates that inverse scan is performed on the accelerator. <b>ConfigHostInverseScan</b> must be zero if <b>ConfigResidDiffAccelerator</b> is zero or if the <b>Config4GroupedCoefs</b> member is 1.
+
+The preferred value for <b>ConfigHostInverseScan</b> is 1 if <b>ConfigResidDiffAccelerator</b> is 1.
 
 `ConfigSpecificIDCT`
 
@@ -202,17 +200,19 @@ If <b>ConfigIntraResidUnsigned</b> is 1, spatial domain blocks for intra macrobl
 <div class="alert"><b>Note</b>  <b>ConfigSpecificIDCT</b> must not be set to 1 for use with MPEG-2 video. </div>
 <div> </div>
 
-`guidConfigBitstreamEncryption`
+`Config4GroupedCoefs`
 
-[in] The encryption GUID for configuring a bitstream.
+[in] A UINT value that specifies how transform coefficients for off-host IDCT are sent. A value of 1 in this member indicates that transform coefficients for off-host IDCT are sent by using the <a href="..\dxva\ns-dxva-_dxva_tcoef4group.md">DXVA_TCoef4Group</a> structure rather than the <a href="..\dxva\ns-dxva-_dxva_tcoefsingle.md">DXVA_TCoefSingle</a> structure. <b>Config4GroupedCoefs</b> is zero if <b>ConfigResidDiffAccelerator</b> is zero or if <b>ConfigHostInverseScan</b> is 1.
 
-`guidConfigMBcontrolEncryption`
+The preferred value for <b>Config4GroupedCoefs</b> is zero if <b>ConfigResidDiffAccelerator</b> is 1.
 
-[in] The encryption GUID for configuring macroblock control.
+`ConfigMinRenderTargetBuffCount`
 
-`guidConfigResidDiffEncryption`
+[in] A USHORT value that specifies the minimum number of render target buffers.
 
-[in] The encryption GUID for configuring residual difference decoding.
+`ConfigDecoderSpecific`
+
+[in] A USHORT value that specifies decoder-specific features to configure. For information about a decoder's features, see the specification for that decoder. For a list of decoders, see <a href="https://msdn.microsoft.com/bffcc0da-7b1a-4f70-98f5-4841c8df9f12">Providing Capabilities for Video Decoding</a>.
 
 
 ## Requirements
@@ -232,11 +232,3 @@ If <b>ConfigIntraResidUnsigned</b> is 1, spatial domain blocks for intra macrobl
 
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_CONFIGPICTUREDECODE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

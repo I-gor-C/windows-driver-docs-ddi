@@ -79,58 +79,8 @@ typedef enum _MstStatisticsEntryType {
 <table>
             
                 <tr>
-                    <td>MsrStatisticsEntryType_ChallengeRequestCount</td>
-                    <td>Number of successful calls to <a href="https://msdn.microsoft.com/f94ce49d-ab87-4d8f-8fc7-af8899b37ca1">RetrieveDeviceAuthenticationDataAsync</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrStatisticsEntryType_CommunicationErrorCount</td>
-                    <td>Number of communication errors.</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrStatisticsEntryType_Count</td>
-                    <td>Count of entry types</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrStatisticsEntryType_FailedCardAuthenticationDataCount</td>
-                    <td>Number of failed card authentication data reads</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrStatisticsEntryType_FailedDeviceAuthenticationCount</td>
-                    <td>Number of failed card authentication attempts</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrStatisticsEntryType_FailedReadCount</td>
-                    <td>Number of failed reads</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrStatisticsEntryType_FailedWriteCount</td>
-                    <td>Number of failed writes. Do not use.</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrStatisticsEntryType_GoodCardAuthenticationDataCount</td>
-                    <td>Number of successful card authentication data reads</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrStatisticsEntryType_GoodDeviceAuthenticationCount</td>
-                    <td>Number of successful card authentication attempts</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrStatisticsEntryType_GoodReadCount</td>
-                    <td>Number of successful reads</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrStatisticsEntryType_GoodWriteCount</td>
-                    <td>Number of successful writes. Do not use.</td>
+                    <td>MsrStatisticsEntryType_Invalid</td>
+                    <td>Reserved for internal use.</td>
                 </tr>
             
                 <tr>
@@ -139,8 +89,33 @@ typedef enum _MstStatisticsEntryType {
                 </tr>
             
                 <tr>
-                    <td>MsrStatisticsEntryType_Invalid</td>
-                    <td>Reserved for internal use.</td>
+                    <td>MsrStatisticsEntryType_CommunicationErrorCount</td>
+                    <td>Number of communication errors.</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrStatisticsEntryType_GoodReadCount</td>
+                    <td>Number of successful reads</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrStatisticsEntryType_FailedReadCount</td>
+                    <td>Number of failed reads</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrStatisticsEntryType_UnreadableCardCount</td>
+                    <td>Number of unreadable cards</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrStatisticsEntryType_GoodWriteCount</td>
+                    <td>Number of successful writes. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrStatisticsEntryType_FailedWriteCount</td>
+                    <td>Number of failed writes. Do not use.</td>
                 </tr>
             
                 <tr>
@@ -149,23 +124,13 @@ typedef enum _MstStatisticsEntryType {
                 </tr>
             
                 <tr>
-                    <td>MsrStatisticsEntryType_MissingStartSentinelTrack2Count</td>
-                    <td>Number of missing start sentinel errors on track 2. May indicate an empty track.</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrStatisticsEntryType_MissingStartSentinelTrack3Count</td>
-                    <td>Number of missing start sentinel errors on track 3. May indicate an empty track.</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrStatisticsEntryType_MissingStartSentinelTrack4Count</td>
-                    <td>Number of missing start sentinel errors on track 4. May indicate an empty track.</td>
-                </tr>
-            
-                <tr>
                     <td>MsrStatisticsEntryType_ParityLRCErrorTrack1Count</td>
                     <td>Number of Parity or LRC errors on track 1</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrStatisticsEntryType_MissingStartSentinelTrack2Count</td>
+                    <td>Number of missing start sentinel errors on track 2. May indicate an empty track.</td>
                 </tr>
             
                 <tr>
@@ -174,8 +139,18 @@ typedef enum _MstStatisticsEntryType {
                 </tr>
             
                 <tr>
+                    <td>MsrStatisticsEntryType_MissingStartSentinelTrack3Count</td>
+                    <td>Number of missing start sentinel errors on track 3. May indicate an empty track.</td>
+                </tr>
+            
+                <tr>
                     <td>MsrStatisticsEntryType_ParityLRCErrorTrack3Count</td>
                     <td>Number of Parity or LRC errors on track 3</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrStatisticsEntryType_MissingStartSentinelTrack4Count</td>
+                    <td>Number of missing start sentinel errors on track 4. May indicate an empty track.</td>
                 </tr>
             
                 <tr>
@@ -184,8 +159,33 @@ typedef enum _MstStatisticsEntryType {
                 </tr>
             
                 <tr>
-                    <td>MsrStatisticsEntryType_UnreadableCardCount</td>
-                    <td>Number of unreadable cards</td>
+                    <td>MsrStatisticsEntryType_GoodCardAuthenticationDataCount</td>
+                    <td>Number of successful card authentication data reads</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrStatisticsEntryType_FailedCardAuthenticationDataCount</td>
+                    <td>Number of failed card authentication data reads</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrStatisticsEntryType_ChallengeRequestCount</td>
+                    <td>Number of successful calls to <a href="https://msdn.microsoft.com/f94ce49d-ab87-4d8f-8fc7-af8899b37ca1">RetrieveDeviceAuthenticationDataAsync</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrStatisticsEntryType_GoodDeviceAuthenticationCount</td>
+                    <td>Number of successful card authentication attempts</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrStatisticsEntryType_FailedDeviceAuthenticationCount</td>
+                    <td>Number of failed card authentication attempts</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrStatisticsEntryType_Count</td>
+                    <td>Count of entry types</td>
                 </tr>
 </table>
 

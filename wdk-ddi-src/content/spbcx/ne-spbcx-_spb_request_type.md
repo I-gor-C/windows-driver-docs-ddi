@@ -68,23 +68,8 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>SpbRequestTypeLockConnection</td>
-                    <td>A request to lock the specified target device for exclusive use by a client.  This request is handled entirely by SpbCx. Your SPB controller driver performs no processing for requests of this type. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/jj819324">IOCTL_SPB_LOCK_CONNECTION</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>SpbRequestTypeLockController</td>
-                    <td>A request to lock the controller exclusively for bus transfers to or from the specified target device.  Your SPB controller driver receives requests of this type only if it registers an <a href="https://msdn.microsoft.com/E08674F1-CE63-464B-9C70-96F93C574753">EvtSpbControllerLock</a> callback function.</td>
-                </tr>
-            
-                <tr>
-                    <td>SpbRequestTypeMax</td>
+                    <td>SpbRequestTypeUndefined</td>
                     <td>For internal use only.</td>
-                </tr>
-            
-                <tr>
-                    <td>SpbRequestTypeOther</td>
-                    <td>An unknown I/O control (IOCTL) request sent by a client (peripheral driver) to a target device on the bus.  Call the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a> method to retrieve the parameters for this request; for this call, use the SPBREQUEST handle for the <i>Request</i> parameter. Your SPB controller driver receives requests of this type only if it registers an <a href="https://msdn.microsoft.com/5A4BC061-4703-4C46-BD5D-A891F3DA8842">EvtSpbControllerIoOther</a> callback function.  Otherwise, SpbCx rejects unknown IOCTL requests.</td>
                 </tr>
             
                 <tr>
@@ -93,18 +78,18 @@ typedef enum  {
                 </tr>
             
                 <tr>
+                    <td>SpbRequestTypeWrite</td>
+                    <td>A write operation. The transfer direction for write data is from the client to the target device.  Your SPB controller driver receives requests of this type only if it registers an <a href="https://msdn.microsoft.com/D97C3A17-309E-4364-8DFB-9073901D332E">EvtSpbControllerIoWrite</a> callback function.</td>
+                </tr>
+            
+                <tr>
                     <td>SpbRequestTypeSequence</td>
                     <td>A sequence of transfer (read and write) operations combined into a single request. Your SPB controller driver receives requests of this type only if it registers an <a href="https://msdn.microsoft.com/C56F1528-5FDA-4BC9-AB32-7882FB0F7713">EvtSpbControllerIoSequence</a> callback function.  Otherwise, the SPB framework extension (SpbCx) will convert an I/O transfer sequence into a series of I/O requests of type <b>SpbRequestTypeRead</b> and <b>SpbRequestTypeWrite</b>, and send these requests to the SPB controller driver's <i>EvtSpbControllerIoRead</i> and <i>EvtSpbControllerIoWrite</i> callback functions.</td>
                 </tr>
             
                 <tr>
-                    <td>SpbRequestTypeUndefined</td>
-                    <td>For internal use only.</td>
-                </tr>
-            
-                <tr>
-                    <td>SpbRequestTypeUnlockConnection</td>
-                    <td>A request to unlock the specified target device.  This request is handled entirely by SpbCx. Your SPB controller driver performs no processing for requests of this type. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/jj819325">IOCTL_SPB_UNLOCK_CONNECTION</a>.</td>
+                    <td>SpbRequestTypeLockController</td>
+                    <td>A request to lock the controller exclusively for bus transfers to or from the specified target device.  Your SPB controller driver receives requests of this type only if it registers an <a href="https://msdn.microsoft.com/E08674F1-CE63-464B-9C70-96F93C574753">EvtSpbControllerLock</a> callback function.</td>
                 </tr>
             
                 <tr>
@@ -113,8 +98,23 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>SpbRequestTypeWrite</td>
-                    <td>A write operation. The transfer direction for write data is from the client to the target device.  Your SPB controller driver receives requests of this type only if it registers an <a href="https://msdn.microsoft.com/D97C3A17-309E-4364-8DFB-9073901D332E">EvtSpbControllerIoWrite</a> callback function.</td>
+                    <td>SpbRequestTypeLockConnection</td>
+                    <td>A request to lock the specified target device for exclusive use by a client.  This request is handled entirely by SpbCx. Your SPB controller driver performs no processing for requests of this type. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/jj819324">IOCTL_SPB_LOCK_CONNECTION</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>SpbRequestTypeUnlockConnection</td>
+                    <td>A request to unlock the specified target device.  This request is handled entirely by SpbCx. Your SPB controller driver performs no processing for requests of this type. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/jj819325">IOCTL_SPB_UNLOCK_CONNECTION</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>SpbRequestTypeOther</td>
+                    <td>An unknown I/O control (IOCTL) request sent by a client (peripheral driver) to a target device on the bus.  Call the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a> method to retrieve the parameters for this request; for this call, use the SPBREQUEST handle for the <i>Request</i> parameter. Your SPB controller driver receives requests of this type only if it registers an <a href="https://msdn.microsoft.com/5A4BC061-4703-4C46-BD5D-A891F3DA8842">EvtSpbControllerIoOther</a> callback function.  Otherwise, SpbCx rejects unknown IOCTL requests.</td>
+                </tr>
+            
+                <tr>
+                    <td>SpbRequestTypeMax</td>
+                    <td>For internal use only.</td>
                 </tr>
 </table>
 
@@ -167,11 +167,3 @@ The <a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SP
 
 
 <a href="https://msdn.microsoft.com/2BC0E6E7-7EE1-487A-9276-AE8EBB3FFD43">EvtSpbControllerIoRead</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_REQUEST_TYPE enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -64,12 +64,6 @@ typedef struct _D3DKMT_RECLAIMALLOCATIONS2 {
 ## Members
 
 
-`HandleList`
-
-[in] An array of <b>D3DKMT_HANDLE</b> data types that represent kernel-mode handles to the allocations that are to be reclaimed.
-
-If <b>HandleList</b> is not <b>NULL</b>, the <b>pResources</b> member must be <b>NULL</b>.
-
 `hPagingQueue`
 
 [in] A handle to the device that created the allocations.
@@ -78,17 +72,23 @@ If <b>HandleList</b> is not <b>NULL</b>, the <b>pResources</b> member must be <b
 
 [in] The number of items in the <b>pResources</b>, <b>HandleList</b>, or  <b>pDiscarded</b> members, whichever is not <b>NULL</b>.
 
-`PagingFenceValue`
+`pResources`
 
-The paging fence to synchronize against before submitting work to the GPU which references any of the resources or allocations in the provided arrays.
+[in] An array of <b>D3DKMT_HANDLE</b> data types that represent Direct3D runtime resource handles.
+
+`HandleList`
+
+[in] An array of <b>D3DKMT_HANDLE</b> data types that represent kernel-mode handles to the allocations that are to be reclaimed.
+
+If <b>HandleList</b> is not <b>NULL</b>, the <b>pResources</b> member must be <b>NULL</b>.
 
 `pDiscarded`
 
 [out] Optional array of boolean variables  specifying whether each resource or allocation was discarded.
 
-`pResources`
+`PagingFenceValue`
 
-[in] An array of <b>D3DKMT_HANDLE</b> data types that represent Direct3D runtime resource handles.
+The paging fence to synchronize against before submitting work to the GPU which references any of the resources or allocations in the provided arrays.
 
 
 ## Requirements

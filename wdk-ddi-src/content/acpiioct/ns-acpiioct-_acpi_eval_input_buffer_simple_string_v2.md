@@ -63,21 +63,21 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2 {
 ## Members
 
 
-`DUMMYUNIONNAME`
-
-Defines the method name member of <b>DUMMYUNIONNAME</b>.
-
 `Signature`
 
 Defines the <b>ULONG</b> member <b>Signature</b>.
 
-`String`
+`DUMMYUNIONNAME`
 
-
+Defines the method name member of <b>DUMMYUNIONNAME</b>.
 
 `StringLength`
 
 Defines the <b>ULONG</b> member <b>StringLength</b>.
+
+`String`
+
+
 
 
 ## Requirements

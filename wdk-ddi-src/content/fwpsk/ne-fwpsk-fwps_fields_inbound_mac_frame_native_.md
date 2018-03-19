@@ -67,37 +67,6 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_COMPARTMENT_ID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE</td>
-                    <td>The inbound MAC frame native interface field.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE_INDEX</td>
-                    <td>The inbound MAC frame native interface index field.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE_TYPE</td>
-                    <td>The inbound MAC frame native interface type field.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_L2_FLAGS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
-                </tr>
-            
-                <tr>
                     <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_NDIS_MEDIA_TYPE</td>
                     <td>The inbound MAC frame native NDIS media type field.</td>
                 </tr>
@@ -108,8 +77,39 @@ typedef enum  {
                 </tr>
             
                 <tr>
+                    <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE</td>
+                    <td>The inbound MAC frame native interface field.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE_TYPE</td>
+                    <td>The inbound MAC frame native interface type field.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_INTERFACE_INDEX</td>
+                    <td>The inbound MAC frame native interface index field.</td>
+                </tr>
+            
+                <tr>
                     <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_NDIS_PORT</td>
                     <td>The inbound MAC frame native NDIS port field.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_L2_FLAGS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_COMPARTMENT_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 

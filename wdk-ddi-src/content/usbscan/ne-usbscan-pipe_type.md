@@ -62,11 +62,6 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>ALL_PIPE</td>
-                    <td>The operation should be performed on <i>all</i> transfer pipes (not just the pipes associated with the device handle supplied to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>).</td>
-                </tr>
-            
-                <tr>
                     <td>EVENT_PIPE</td>
                     <td>The operation should be performed on the interrupt pipe.</td>
                 </tr>
@@ -79,6 +74,11 @@ typedef enum  {
                 <tr>
                     <td>WRITE_DATA_PIPE</td>
                     <td>The operation should be performed on the bulk OUT pipe.</td>
+                </tr>
+            
+                <tr>
+                    <td>ALL_PIPE</td>
+                    <td>The operation should be performed on <i>all</i> transfer pipes (not just the pipes associated with the device handle supplied to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>).</td>
                 </tr>
 </table>
 

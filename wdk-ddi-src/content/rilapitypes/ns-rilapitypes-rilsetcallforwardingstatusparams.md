@@ -65,19 +65,19 @@ typedef struct _RILSETCALLFORWARDINGSTATUSPARAMS {
 
 
 
-`dwInfoClasses`
-
-
-
 `dwReason`
 
 
 
-`dwStatus`
-
-
-
 `fAllClasses`
+
+
+
+`dwInfoClasses`
+
+
+
+`dwStatus`
 
 
 

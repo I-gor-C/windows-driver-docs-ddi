@@ -64,18 +64,8 @@ typedef enum D3D12DDI_COMMAND_QUEUE_FLAGS {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_COMMAND_QUEUE_FLAG_0020_VIDEO_LEGACY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_DECODE</td>
-                    <td>Decode video.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_PROCESS</td>
-                    <td>Process video.</td>
+                    <td>D3D12DDI_COMMAND_QUEUE_FLAG_NONE</td>
+                    <td>No flags.</td>
                 </tr>
             
                 <tr>
@@ -94,13 +84,23 @@ typedef enum D3D12DDI_COMMAND_QUEUE_FLAGS {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_COMMAND_QUEUE_FLAG_NONE</td>
-                    <td>No flags.</td>
+                    <td>D3D12DDI_COMMAND_QUEUE_FLAG_PAGING</td>
+                    <td>Paging.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_COMMAND_QUEUE_FLAG_PAGING</td>
-                    <td>Paging.</td>
+                    <td>D3D12DDI_COMMAND_QUEUE_FLAG_0020_VIDEO_LEGACY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_DECODE</td>
+                    <td>Decode video.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_COMMAND_QUEUE_FLAG_0022_VIDEO_PROCESS</td>
+                    <td>Process video.</td>
                 </tr>
 </table>
 

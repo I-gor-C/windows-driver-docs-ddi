@@ -70,6 +70,51 @@ typedef struct DOT11_BSS_ENTRY {
 ## Members
 
 
+`uPhyId`
+
+The identifier (ID) of the PHY that the 802.11 station used to detect the BSS network. The PHY ID
+     is the index within the list of supported PHYs returned by the driver through a query of 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-phy-types">OID_DOT11_SUPPORTED_PHY_TYPES</a>.
+     
+
+This ID must not be DOT11_PHY_ID_ANY.
+
+`PhySpecificInfo`
+
+The attributes of the PHY referenced by the 
+     <b>uPhyId</b> member. 
+     <b>PhySpecificInfo</b> is formatted as a 
+     <a href="..\windot11\ns-windot11-dot11_bss_entry_phy_specific_info.md">
+     DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO</a> union.
+
+`dot11BSSID`
+
+The media access control (MAC) address of the access point (AP) (for infrastructure BSS networks)
+     or peer station (for independent BSS networks) that sent the 802.11 Beacon or Probe Response frame
+     received by the 802.11 station while scanning. The data type for this member is the 
+     <a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a> structure.
+
+`dot11BSSType`
+
+The BSS network type. 
+     
+
+The data type for this member is the 
+     <a href="..\wlantypes\ne-wlantypes-_dot11_bss_type.md">DOT11_BSS_TYPE</a> enumeration. The miniport
+     driver must not set this member to the 
+     <b>dot11_BSS_type_any</b> value.
+
+`lRSSI`
+
+The received signal strength indicator (RSSI) value, in units of decibels referenced to 1.0
+     milliwatts (dBm), as detected by the 802.11 station for the AP or peer station.
+
+`uLinkQuality`
+
+The link quality value ranging from 0 through 100. A value of 100 specifies the highest link
+     quality. For more information about determining the link quality, see 
+     <a href="https://msdn.microsoft.com/a649114f-39d9-4cb1-9190-985dc7967268">Link Quality Operations</a>.
+
 `bInRegDomain`
 
 This member specifies whether the AP or peer station is operating within the regulatory domain as
@@ -114,35 +159,24 @@ Set the member to <b>TRUE</b> in all other cases.
 </li>
 </ul>
 
-`dot11BSSID`
+`usBeaconPeriod`
 
-The media access control (MAC) address of the access point (AP) (for infrastructure BSS networks)
-     or peer station (for independent BSS networks) that sent the 802.11 Beacon or Probe Response frame
-     received by the 802.11 station while scanning. The data type for this member is the 
-     <a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a> structure.
+The value of the Beacon Interval field from the 802.11 Beacon or Probe Response frame.
 
-`dot11BSSType`
+`ullTimestamp`
 
-The BSS network type. 
-     
+The value of the Timestamp field from the 802.11 Beacon or Probe Response frame.
 
-The data type for this member is the 
-     <a href="..\wlantypes\ne-wlantypes-_dot11_bss_type.md">DOT11_BSS_TYPE</a> enumeration. The miniport
-     driver must not set this member to the 
-     <b>dot11_BSS_type_any</b> value.
+`ullHostTimestamp`
 
-`lRSSI`
+The timestamp, resolved through a call to 
+     <a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>, which
+     records when the 802.11 station received the 802.11 Beacon or Probe Response frame.
 
-The received signal strength indicator (RSSI) value, in units of decibels referenced to 1.0
-     milliwatts (dBm), as detected by the 802.11 station for the AP or peer station.
+`usCapabilityInformation`
 
-`PhySpecificInfo`
-
-The attributes of the PHY referenced by the 
-     <b>uPhyId</b> member. 
-     <b>PhySpecificInfo</b> is formatted as a 
-     <a href="..\windot11\ns-windot11-dot11_bss_entry_phy_specific_info.md">
-     DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO</a> union.
+The value of the Capability Information field from the 802.11 Beacon or Probe Response
+     frame.
 
 `uBufferLength`
 
@@ -164,40 +198,6 @@ When the NIC is in the Extensible Access Point (ExtAP) OP mode, the BSS list sho
 
 For more information about the fields within IEEE 802.11 Beacon or Probe Response frames, refer to
      Clause 8.4 of the IEEE 802.11-2012 standard.
-
-`uLinkQuality`
-
-The link quality value ranging from 0 through 100. A value of 100 specifies the highest link
-     quality. For more information about determining the link quality, see 
-     <a href="https://msdn.microsoft.com/a649114f-39d9-4cb1-9190-985dc7967268">Link Quality Operations</a>.
-
-`ullHostTimestamp`
-
-The timestamp, resolved through a call to 
-     <a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>, which
-     records when the 802.11 station received the 802.11 Beacon or Probe Response frame.
-
-`ullTimestamp`
-
-The value of the Timestamp field from the 802.11 Beacon or Probe Response frame.
-
-`uPhyId`
-
-The identifier (ID) of the PHY that the 802.11 station used to detect the BSS network. The PHY ID
-     is the index within the list of supported PHYs returned by the driver through a query of 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-phy-types">OID_DOT11_SUPPORTED_PHY_TYPES</a>.
-     
-
-This ID must not be DOT11_PHY_ID_ANY.
-
-`usBeaconPeriod`
-
-The value of the Beacon Interval field from the 802.11 Beacon or Probe Response frame.
-
-`usCapabilityInformation`
-
-The value of the Capability Information field from the 802.11 Beacon or Probe Response
-     frame.
 
 ## Remarks
 When the 802.11 station performs a scan operation, the Native 802.11 miniport driver caches the
@@ -249,11 +249,3 @@ After the 802.11 station completes the scan operation, the miniport driver retur
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569360">OID_DOT11_ENUM_BSS_LIST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_ENTRY structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

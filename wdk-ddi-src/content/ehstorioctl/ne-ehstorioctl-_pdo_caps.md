@@ -60,8 +60,8 @@ typedef enum _PDO_CAPS {
 <table>
             
                 <tr>
-                    <td>PDO_CAPABILITY_INC512_CLEAR</td>
-                    <td>Command data block size granularity of 1 byte is supported.</td>
+                    <td>PDO_CAPABILITY_UNDEFINED</td>
+                    <td>Command data block size granularity is undefined.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum _PDO_CAPS {
                 </tr>
             
                 <tr>
-                    <td>PDO_CAPABILITY_UNDEFINED</td>
-                    <td>Command data block size granularity is undefined.</td>
+                    <td>PDO_CAPABILITY_INC512_CLEAR</td>
+                    <td>Command data block size granularity of 1 byte is supported.</td>
                 </tr>
 </table>
 

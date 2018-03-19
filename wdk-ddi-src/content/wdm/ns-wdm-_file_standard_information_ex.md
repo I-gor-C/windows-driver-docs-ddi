@@ -67,9 +67,13 @@ typedef struct _FILE_STANDARD_INFORMATION_EX {
 
 The file allocation size in bytes. Usually, this value is a multiple of the sector or cluster size of the underlying physical device.
 
-`AlternateStream`
+`EndOfFile`
 
-The alternate data stream status. <b>TRUE</b> indicates the file object represents an alternate data stream.
+The end of file location as a byte offset.
+
+`NumberOfLinks`
+
+The number of hard links to the file.
 
 `DeletePending`
 
@@ -79,17 +83,13 @@ The delete pending status. <b>TRUE</b> indicates that a file deletion has been r
 
 The file directory status. <b>TRUE</b> indicates the file object represents a directory.
 
-`EndOfFile`
+`AlternateStream`
 
-The end of file location as a byte offset.
+The alternate data stream status. <b>TRUE</b> indicates the file object represents an alternate data stream.
 
 `MetadataAttribute`
 
 The metadata attribute status. <b>TRUE</b> indicates the file object represents a metadata attribute.
-
-`NumberOfLinks`
-
-The number of hard links to the file.
 
 ## Remarks
 <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file; that is, it is the offset to the byte immediately following the last valid byte in the file.
@@ -111,11 +111,3 @@ The number of hard links to the file.
 
 
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20FILE_STANDARD_INFORMATION_EX structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

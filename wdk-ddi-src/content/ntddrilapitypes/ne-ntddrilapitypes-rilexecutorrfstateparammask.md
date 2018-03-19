@@ -59,17 +59,17 @@ typedef enum _RILEXECUTORRFSTATEPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_GERFS_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_GERFS_EXECUTOR</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_PARAM_GERFS_STATE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_GERFS_ALL</td>
                     <td></td>
                 </tr>
 </table>

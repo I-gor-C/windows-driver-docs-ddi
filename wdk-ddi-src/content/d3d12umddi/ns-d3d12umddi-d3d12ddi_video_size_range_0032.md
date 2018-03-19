@@ -61,21 +61,21 @@ typedef struct _D3D12DDI_VIDEO_SIZE_RANGE_0032 {
 ## Members
 
 
-`MaxHeight`
-
-Maximum height.
-
 `MaxWidth`
 
 Maximum width.
 
-`MinHeight`
+`MaxHeight`
 
-Minimum height.
+Maximum height.
 
 `MinWidth`
 
 Minimum width.
+
+`MinHeight`
+
+Minimum height.
 
 
 ## Requirements

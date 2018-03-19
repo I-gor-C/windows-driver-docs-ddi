@@ -111,33 +111,38 @@ typedef enum _FEATURE_NUMBER {
 <table>
             
                 <tr>
-                    <td>FeatureAACS</td>
-                    <td>Reserved 0x010e - 0x010f</td>
+                    <td>FeatureProfileList</td>
+                    <td>Indicates the feature named "Profile List" by the <i>MMC-3 </i>specification. This feature provides a list of all profiles supported by the device.</td>
                 </tr>
             
                 <tr>
-                    <td>FeatureBDRead</td>
-                    <td></td>
+                    <td>FeatureCore</td>
+                    <td>Indicates the feature named "Core" by the <i>MMC-3 </i>specification. This feature encompasses the basic functionality which is mandatory for all devices that support the <i>MMC-3</i> standard. See the <i>MMC-3</i> specification for a description of the capabilities included in the Core feature.</td>
                 </tr>
             
                 <tr>
-                    <td>FeatureBDRPseudoOverwrite</td>
-                    <td>Reserved 0x0039</td>
+                    <td>FeatureMorphing</td>
+                    <td>Indicates the feature named "Morphing" by the <i>MMC-3 </i>specification. Devices that support this feature can notify the initiator of operational changes and allow the initiator to prevent operational changes.</td>
                 </tr>
             
                 <tr>
-                    <td>FeatureBDWrite</td>
-                    <td></td>
+                    <td>FeatureRemovableMedium</td>
+                    <td>Indicates the feature named "Removable Medium" by the <i>MMC-3 </i>specification. Devices that support this feature allow the medium to be removed from the device. They also can communicate to the initiator that the user wants to eject the medium or has inserted a new medium.</td>
                 </tr>
             
                 <tr>
-                    <td>FeatureCDAudioAnalogPlay</td>
-                    <td>Indicates the feature named "CD Audio External Play" by the <i>MMC-3 </i>specification. Devices that support this feature can play CD audio data and channel it directly to an external output.</td>
+                    <td>FeatureWriteProtect</td>
+                    <td>Indicates the feature named "Write Protect" by the <i>MMC-3 </i>specification. Devices that support this feature allow the initiator to change the write-protection state of the media programmatically.</td>
                 </tr>
             
                 <tr>
-                    <td>FeatureCdMastering</td>
-                    <td>Indicates the feature named "CD Mastering" by the <i>MMC-3 </i>specification. Devices that support this feature can write to a CD in either "Session-at-Once" mode or raw mode.</td>
+                    <td>FeatureRandomReadable</td>
+                    <td>Indicates the feature named "Random Readable" by the <i>MMC-3 </i>specification. Devices that support this feature allow the initiator to read blocks of data on the disk at random locations. These devices do not require that the initiator address disk locations in any particular order.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureMultiRead</td>
+                    <td>Indicates the feature named "MultiRead," originally defined by the Optical Storage Technology Association (OSTA) and incorporated into the <i>MMC-3 </i>specification. Devices that support this feature can read all CD media types.</td>
                 </tr>
             
                 <tr>
@@ -146,13 +151,73 @@ typedef enum _FEATURE_NUMBER {
                 </tr>
             
                 <tr>
+                    <td>FeatureDvdRead</td>
+                    <td>Indicates the feature named "DVD Read" by the <i>MMC-3 </i>specification. Devices that support this feature can read DVD-specific information from the media.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureRandomWritable</td>
+                    <td>Indicates the feature named "Random Writable" by the <i>MMC-3 </i>specification. Devices that support this feature can write blocks of data to random locations on the disk. These devices do not require that the initiator address disk locations in any particular order.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureIncrementalStreamingWritable</td>
+                    <td>Indicates the feature named "Incremental Streaming Writable" by the <i>MMC-3 </i>specification. Devices that support this feature can append data to a limited number of locations on the media.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureSectorErasable</td>
+                    <td>Indicates the feature named "Sector Erasable" by the <i>MMC-3 </i>specification. Devices that support this feature require an erase pass before overwriting existing data.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureFormattable</td>
+                    <td>Indicates the feature named "Formattable" by the <i>MMC-3 </i>specification. Devices that support this feature can format media into logical blocks.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureDefectManagement</td>
+                    <td>Indicates the feature named "Defect Management" by the <i>MMC-3 </i>specification. Devices that support this feature are able to provide contiguous address space that is guaranteed to be defect free.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureWriteOnce</td>
+                    <td>Indicates the feature named "Write Once" by the <i>MMC-3 </i>specification. Devices that support this feature can write to any previously unused logical block.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureRestrictedOverwrite</td>
+                    <td>Indicates the feature named "Restricted Overwrite" by the <i>MMC-3 </i>specification. Devices that support this feature are limited in regard to which logical blocks they can overwrite at any given time.</td>
+                </tr>
+            
+                <tr>
                     <td>FeatureCdrwCAVWrite</td>
                     <td>Indicates the feature named "CD-RW CAV Write" by the <i>MMC-3 </i>specification. Devices that support this feature can perform writes on CD-RW media in CAV mode.</td>
                 </tr>
             
                 <tr>
-                    <td>FeatureCDRWMediaWriteSupport</td>
+                    <td>FeatureMrw</td>
+                    <td>Indicates the feature named "MRW" by the <i>MMC-3 </i>specification. Devices that support this feature can recognize, read and optionally write MRW formatted media.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureEnhancedDefectReporting</td>
                     <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureDvdPlusRW</td>
+                    <td>Indicates the feature named "DVD+RW" by the <i>MMC-3 </i>specification. Devices that support this feature can recognize, read and optionally write DVD+RW media.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureDvdPlusR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureRigidRestrictedOverwrite</td>
+                    <td>Indicates the feature named "DVD-RW Restricted Overwrite" by the <i>MMC-3 </i>specification. Devices that support this feature can only write on block boundaries. These devices cannot perform read or write operations that transfer less than a block of data.</td>
                 </tr>
             
                 <tr>
@@ -161,8 +226,13 @@ typedef enum _FEATURE_NUMBER {
                 </tr>
             
                 <tr>
-                    <td>FeatureCore</td>
-                    <td>Indicates the feature named "Core" by the <i>MMC-3 </i>specification. This feature encompasses the basic functionality which is mandatory for all devices that support the <i>MMC-3</i> standard. See the <i>MMC-3</i> specification for a description of the capabilities included in the Core feature.</td>
+                    <td>FeatureCdMastering</td>
+                    <td>Indicates the feature named "CD Mastering" by the <i>MMC-3 </i>specification. Devices that support this feature can write to a CD in either "Session-at-Once" mode or raw mode.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureDvdRecordableWrite</td>
+                    <td>Indicates the feature named "DVD-R Write" by the <i>MMC-3 </i>specification. Devices that support this feature can write data to a write-once DVD media in "Disc-at-Once" mode.</td>
                 </tr>
             
                 <tr>
@@ -181,27 +251,22 @@ typedef enum _FEATURE_NUMBER {
                 </tr>
             
                 <tr>
-                    <td>FeatureDefectManagement</td>
-                    <td>Indicates the feature named "Defect Management" by the <i>MMC-3 </i>specification. Devices that support this feature are able to provide contiguous address space that is guaranteed to be defect free.</td>
+                    <td>FeatureLayerJumpRecording</td>
+                    <td>Reserved 0x0034 - 0x0036</td>
                 </tr>
             
                 <tr>
-                    <td>FeatureDiscControlBlocks</td>
-                    <td>Indicates the feature named "Disc Control Blocks" by the <i>MMC-3 </i>specification. Devices that support this feature can read or write Disc Control Blocks.</td>
+                    <td>FeatureCDRWMediaWriteSupport</td>
+                    <td></td>
                 </tr>
             
                 <tr>
-                    <td>FeatureDvdCPRM</td>
-                    <td>Indicates the feature named "DVD CPRM" by the <i>MMC-3 </i>specification. Devices that support this feature can perform DVD Content Protection for Recordable Media (CPRM) authentication and key management.</td>
+                    <td>FeatureBDRPseudoOverwrite</td>
+                    <td>Reserved 0x0039</td>
                 </tr>
             
                 <tr>
-                    <td>FeatureDvdCSS</td>
-                    <td>Indicates the feature named "DVD-CSS" by the <i>MMC-3 </i>specification. Devices that support this feature can perform DVD Content Scrambling System (DVD-CSS) authentication and key management.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureDvdPlusR</td>
+                    <td>FeatureDvdPlusRWDualLayer</td>
                     <td></td>
                 </tr>
             
@@ -211,43 +276,18 @@ typedef enum _FEATURE_NUMBER {
                 </tr>
             
                 <tr>
-                    <td>FeatureDvdPlusRW</td>
-                    <td>Indicates the feature named "DVD+RW" by the <i>MMC-3 </i>specification. Devices that support this feature can recognize, read and optionally write DVD+RW media.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureDvdPlusRWDualLayer</td>
+                    <td>FeatureBDRead</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>FeatureDvdRead</td>
-                    <td>Indicates the feature named "DVD Read" by the <i>MMC-3 </i>specification. Devices that support this feature can read DVD-specific information from the media.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureDvdRecordableWrite</td>
-                    <td>Indicates the feature named "DVD-R Write" by the <i>MMC-3 </i>specification. Devices that support this feature can write data to a write-once DVD media in "Disc-at-Once" mode.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureEmbeddedChanger</td>
-                    <td>Indicates the feature named "Embedded Changer" by the <i>MMC-3 </i>specification. Devices that support this feature can move media back and forth between a media storage area and the mechanism that actually accesses the media.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureEnhancedDefectReporting</td>
+                    <td>FeatureBDWrite</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>FeatureFirmwareDate</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureFormattable</td>
-                    <td>Indicates the feature named "Formattable" by the <i>MMC-3 </i>specification. Devices that support this feature can format media into logical blocks.</td>
+                    <td>FeatureTSR</td>
+                    <td>Reserved 0x0043 - 0x004f</td>
                 </tr>
             
                 <tr>
@@ -266,13 +306,43 @@ typedef enum _FEATURE_NUMBER {
                 </tr>
             
                 <tr>
-                    <td>FeatureIncrementalStreamingWritable</td>
-                    <td>Indicates the feature named "Incremental Streaming Writable" by the <i>MMC-3 </i>specification. Devices that support this feature can append data to a limited number of locations on the media.</td>
+                    <td>FeaturePowerManagement</td>
+                    <td>Indicates the feature named "Power Management" by the <i>MMC-3 </i>specification. Devices that support this feature can perform both initiator and logical-unit directed power management.</td>
                 </tr>
             
                 <tr>
-                    <td>FeatureLayerJumpRecording</td>
-                    <td>Reserved 0x0034 - 0x0036</td>
+                    <td>FeatureSMART</td>
+                    <td>Indicates the feature named "S.M.A.R.T." by the <i>MMC-3 </i>specification. Devices that support this feature support Self-Monitoring Analysis and Reporting Technology (SMART).</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureEmbeddedChanger</td>
+                    <td>Indicates the feature named "Embedded Changer" by the <i>MMC-3 </i>specification. Devices that support this feature can move media back and forth between a media storage area and the mechanism that actually accesses the media.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureCDAudioAnalogPlay</td>
+                    <td>Indicates the feature named "CD Audio External Play" by the <i>MMC-3 </i>specification. Devices that support this feature can play CD audio data and channel it directly to an external output.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureMicrocodeUpgrade</td>
+                    <td>Indicates the feature named "Microcode Upgrade" by the <i>MMC-3 </i>specification. Devices that support this feature can upgrade their internal microcode by means of a published interface.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureTimeout</td>
+                    <td>Indicates the feature named "Time-Out" by the <i>MMC-3 </i>specification. Devices that have this feature must respond to commands within a set time period. When these devices cannot complete commands in the allotted time, they complete the commands with an error.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureDvdCSS</td>
+                    <td>Indicates the feature named "DVD-CSS" by the <i>MMC-3 </i>specification. Devices that support this feature can perform DVD Content Scrambling System (DVD-CSS) authentication and key management.</td>
+                </tr>
+            
+                <tr>
+                    <td>FeatureRealTimeStreaming</td>
+                    <td>Indicates the feature named "Real Time Streaming" by the <i>MMC-3 </i>specification. Devices that support this feature allow the initiator to specify the performance level of the device within certain limits allowed by the device. These devices must also indicate to the initiator whether they support stream playback operations.</td>
                 </tr>
             
                 <tr>
@@ -286,98 +356,28 @@ typedef enum _FEATURE_NUMBER {
                 </tr>
             
                 <tr>
-                    <td>FeatureMicrocodeUpgrade</td>
-                    <td>Indicates the feature named "Microcode Upgrade" by the <i>MMC-3 </i>specification. Devices that support this feature can upgrade their internal microcode by means of a published interface.</td>
+                    <td>FeatureDiscControlBlocks</td>
+                    <td>Indicates the feature named "Disc Control Blocks" by the <i>MMC-3 </i>specification. Devices that support this feature can read or write Disc Control Blocks.</td>
                 </tr>
             
                 <tr>
-                    <td>FeatureMorphing</td>
-                    <td>Indicates the feature named "Morphing" by the <i>MMC-3 </i>specification. Devices that support this feature can notify the initiator of operational changes and allow the initiator to prevent operational changes.</td>
+                    <td>FeatureDvdCPRM</td>
+                    <td>Indicates the feature named "DVD CPRM" by the <i>MMC-3 </i>specification. Devices that support this feature can perform DVD Content Protection for Recordable Media (CPRM) authentication and key management.</td>
                 </tr>
             
                 <tr>
-                    <td>FeatureMrw</td>
-                    <td>Indicates the feature named "MRW" by the <i>MMC-3 </i>specification. Devices that support this feature can recognize, read and optionally write MRW formatted media.</td>
+                    <td>FeatureFirmwareDate</td>
+                    <td></td>
                 </tr>
             
                 <tr>
-                    <td>FeatureMultiRead</td>
-                    <td>Indicates the feature named "MultiRead," originally defined by the Optical Storage Technology Association (OSTA) and incorporated into the <i>MMC-3 </i>specification. Devices that support this feature can read all CD media types.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeaturePowerManagement</td>
-                    <td>Indicates the feature named "Power Management" by the <i>MMC-3 </i>specification. Devices that support this feature can perform both initiator and logical-unit directed power management.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureProfileList</td>
-                    <td>Indicates the feature named "Profile List" by the <i>MMC-3 </i>specification. This feature provides a list of all profiles supported by the device.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureRandomReadable</td>
-                    <td>Indicates the feature named "Random Readable" by the <i>MMC-3 </i>specification. Devices that support this feature allow the initiator to read blocks of data on the disk at random locations. These devices do not require that the initiator address disk locations in any particular order.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureRandomWritable</td>
-                    <td>Indicates the feature named "Random Writable" by the <i>MMC-3 </i>specification. Devices that support this feature can write blocks of data to random locations on the disk. These devices do not require that the initiator address disk locations in any particular order.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureRealTimeStreaming</td>
-                    <td>Indicates the feature named "Real Time Streaming" by the <i>MMC-3 </i>specification. Devices that support this feature allow the initiator to specify the performance level of the device within certain limits allowed by the device. These devices must also indicate to the initiator whether they support stream playback operations.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureRemovableMedium</td>
-                    <td>Indicates the feature named "Removable Medium" by the <i>MMC-3 </i>specification. Devices that support this feature allow the medium to be removed from the device. They also can communicate to the initiator that the user wants to eject the medium or has inserted a new medium.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureRestrictedOverwrite</td>
-                    <td>Indicates the feature named "Restricted Overwrite" by the <i>MMC-3 </i>specification. Devices that support this feature are limited in regard to which logical blocks they can overwrite at any given time.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureRigidRestrictedOverwrite</td>
-                    <td>Indicates the feature named "DVD-RW Restricted Overwrite" by the <i>MMC-3 </i>specification. Devices that support this feature can only write on block boundaries. These devices cannot perform read or write operations that transfer less than a block of data.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureSectorErasable</td>
-                    <td>Indicates the feature named "Sector Erasable" by the <i>MMC-3 </i>specification. Devices that support this feature require an erase pass before overwriting existing data.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureSMART</td>
-                    <td>Indicates the feature named "S.M.A.R.T." by the <i>MMC-3 </i>specification. Devices that support this feature support Self-Monitoring Analysis and Reporting Technology (SMART).</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureTimeout</td>
-                    <td>Indicates the feature named "Time-Out" by the <i>MMC-3 </i>specification. Devices that have this feature must respond to commands within a set time period. When these devices cannot complete commands in the allotted time, they complete the commands with an error.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureTSR</td>
-                    <td>Reserved 0x0043 - 0x004f</td>
+                    <td>FeatureAACS</td>
+                    <td>Reserved 0x010e - 0x010f</td>
                 </tr>
             
                 <tr>
                     <td>FeatureVCPS</td>
                     <td>Reserved 0x0111 - 0xfeff</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureWriteOnce</td>
-                    <td>Indicates the feature named "Write Once" by the <i>MMC-3 </i>specification. Devices that support this feature can write to any previously unused logical block.</td>
-                </tr>
-            
-                <tr>
-                    <td>FeatureWriteProtect</td>
-                    <td>Indicates the feature named "Write Protect" by the <i>MMC-3 </i>specification. Devices that support this feature allow the initiator to change the write-protection state of the media programmatically.</td>
                 </tr>
 </table>
 
@@ -390,11 +390,3 @@ typedef enum _FEATURE_NUMBER {
 ## See Also
 
 <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_NUMBER enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

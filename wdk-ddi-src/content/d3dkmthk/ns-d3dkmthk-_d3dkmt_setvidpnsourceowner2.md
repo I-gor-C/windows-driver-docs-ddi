@@ -57,13 +57,13 @@ typedef struct _D3DKMT_SETVIDPNSOURCEOWNER2 {
 ## Members
 
 
-`pVidPnSourceNtHandles`
-
-A handle to the VidPN source owner handles.
-
 `Version1`
 
 The previous method used to set the VidPN source owner.
+
+`pVidPnSourceNtHandles`
+
+A handle to the VidPN source owner handles.
 
 
 ## Requirements

@@ -63,6 +63,10 @@ typedef struct _SETRESULT_INFO {
 
 CPSUI-supplied size, in bytes, of the SETRESULT_INFO structure.
 
+`wReserved`
+
+Reserved.
+
 `hSetResult`
 
 CPSUI-supplied handle to an added property sheet page, obtained from the application. For more information, see the following Remarks section.
@@ -70,10 +74,6 @@ CPSUI-supplied handle to an added property sheet page, obtained from the applica
 `Result`
 
 CPSUI-supplied handle to an added property sheet page, obtained from the application. For more information, see the following Remarks section.
-
-`wReserved`
-
-Reserved.
 
 ## Remarks
 When an application calls CPSUI's <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function, specifying a function code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff547087">CPSFUNC_SET_RESULT</a>, CPSUI calls all registered <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed functions, specifying a reason of PROPSHEETUI_REASON_SET_RESULT. When specifying this reason, CPSUI also supplies a SETRESULT_INFO structure.

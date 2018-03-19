@@ -63,22 +63,6 @@ typedef struct _IDEREGS {
 ## Members
 
 
-`bCommandReg`
-
-Holds the contents of the IDE command register.
-
-`bCylHighReg`
-
-Holds the contents of the IDE high-order cylinder register.
-
-`bCylLowReg`
-
-Holds the contents of the IDE low-order cylinder register.
-
-`bDriveHeadReg`
-
-Holds the contents of the IDE drive/head register.
-
 `bFeaturesReg`
 
 Holds the contents of the Features register. This register is used to specify Self-Monitoring Analysis and Reporting Technology (SMART) commands. This member can hold any of the following values:
@@ -200,10 +184,6 @@ Enables offline mode when set to 1. Disables offline mode when 0.
 </tr>
 </table>
 
-`bReserved`
-
-Reserved for future use. Should always be zero.
-
 `bSectorCountReg`
 
 Holds the contents of the sector count register. IDE sector count register.
@@ -211,6 +191,26 @@ Holds the contents of the sector count register. IDE sector count register.
 `bSectorNumberReg`
 
 Holds the contents of the sector number register.
+
+`bCylLowReg`
+
+Holds the contents of the IDE low-order cylinder register.
+
+`bCylHighReg`
+
+Holds the contents of the IDE high-order cylinder register.
+
+`bDriveHeadReg`
+
+Holds the contents of the IDE drive/head register.
+
+`bCommandReg`
+
+Holds the contents of the IDE command register.
+
+`bReserved`
+
+Reserved for future use. Should always be zero.
 
 
 ## Requirements
@@ -225,11 +225,3 @@ Holds the contents of the sector number register.
 
 
 <a href="..\ntddscsi\ns-ntddscsi-_ata_pass_through_direct.md">ATA_PASS_THROUGH_DIRECT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IDEREGS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

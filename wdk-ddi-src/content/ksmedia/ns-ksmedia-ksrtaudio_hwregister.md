@@ -60,18 +60,6 @@ typedef struct {
 ## Members
 
 
-`Accuracy`
-
-Specifies the accuracy of the clock or position register. See the following Remarks section.
-
-`Denominator`
-
-Specifies the denominator of the frequency at which the clock register increments. See the following Remarks. section.
-
-`Numerator`
-
-Specifies the numerator of the frequency at which the clock register increments. See the following Remarks. section.
-
 `Register`
 
 Pointer to the register. This member specifies the virtual address into which the register is mapped.
@@ -79,6 +67,18 @@ Pointer to the register. This member specifies the virtual address into which th
 `Width`
 
 Specifies the width, in bits, of the register. The value of this member can be 32 or 64.
+
+`Numerator`
+
+Specifies the numerator of the frequency at which the clock register increments. See the following Remarks. section.
+
+`Denominator`
+
+Specifies the denominator of the frequency at which the clock register increments. See the following Remarks. section.
+
+`Accuracy`
+
+Specifies the accuracy of the clock or position register. See the following Remarks section.
 
 ## Remarks
 For hardware position register requests via KSPROPERTY_RTAUDIO_POSITIONREGISTER the driver fills in the <b>Register</b>, <b>Width</b> and <b>Accuracy</b> members, because the other members are specific to clock registers.  For hardware clock register requests via KSPROPERTY_RTAUDIO_CLOCKREGISTER the driver fills in the entire structure.
@@ -112,11 +112,3 @@ For position registers, the <i>Accuracy</i> parameter represents the accuracy of
 
 
 <a href="..\ksmedia\ns-ksmedia-ksrtaudio_hwregister_property.md">KSRTAUDIO_HWREGISTER_PROPERTY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSRTAUDIO_HWREGISTER structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -58,13 +58,13 @@ typedef struct {
 ## Members
 
 
-`AllocatedFrames`
-
-Contains the current number of allocated frames. This value changes on an extremely frequent basis.
-
 `Framing`
 
 A <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a> structure that contains the framing specified when the allocator was created.
+
+`AllocatedFrames`
+
+Contains the current number of allocated frames. This value changes on an extremely frequent basis.
 
 `Reserved`
 
@@ -85,11 +85,3 @@ Clients can query allocator status by providing a KSSTREAMALLOCATOR_STATUS struc
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565670">KSPROPERTY_STREAMALLOCATOR_STATUS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSSTREAMALLOCATOR_STATUS structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

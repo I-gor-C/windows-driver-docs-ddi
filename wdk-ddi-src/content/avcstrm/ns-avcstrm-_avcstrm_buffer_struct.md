@@ -60,25 +60,25 @@ typedef struct _AVCSTRM_BUFFER_STRUCT {
 ## Members
 
 
-`ClockHandle`
-
-Specifies a handle to a clock provider other than the subunit driver itself.
-
 `ClockProvider`
 
 Indicates whether the subunit driver itself serves as a clock provider. This is <b>TRUE</b> if this stream also serves as a clock provider, Otherwise, this is <b>FALSE</b>.
 
-`Context`
+`ClockHandle`
 
-Pointer to a client context value.
+Specifies a handle to a clock provider other than the subunit driver itself.
+
+`StreamHeader`
+
+Pointer to a kernel streaming header that describes a packet of data to be read from or written to a streaming driver pin.
 
 `FrameBuffer`
 
 Pointer to a nonpaged system-space virtual address for the buffer described by the MDL.
 
-`StreamHeader`
+`Context`
 
-Pointer to a kernel streaming header that describes a packet of data to be read from or written to a streaming driver pin.
+Pointer to a client context value.
 
 
 ## Requirements
@@ -89,11 +89,3 @@ Pointer to a kernel streaming header that describes a packet of data to be read 
 ## See Also
 
 <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVCSTRM_BUFFER_STRUCT structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

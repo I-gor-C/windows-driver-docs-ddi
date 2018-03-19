@@ -60,17 +60,17 @@ typedef enum _RILSENDMSGOPTIONS {
 <table>
             
                 <tr>
-                    <td>RIL_SENDOPT_IMS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_SENDOPT_NONE</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_SENDOPT_PERSISTLINK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SENDOPT_IMS</td>
                     <td></td>
                 </tr>
 </table>

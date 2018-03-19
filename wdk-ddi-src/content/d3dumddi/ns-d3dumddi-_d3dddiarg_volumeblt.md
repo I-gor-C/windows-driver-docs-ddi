@@ -61,6 +61,14 @@ typedef struct _D3DDDIARG_VOLUMEBLT {
 ## Members
 
 
+`hDstResource`
+
+[in] A handle to the destination surface.
+
+`hSrcResource`
+
+[in] A handle to the source surface.
+
 `DstX`
 
 [in] The width, in screen coordinates, of the destination volume in which the source volume is copied.
@@ -72,14 +80,6 @@ typedef struct _D3DDDIARG_VOLUMEBLT {
 `DstZ`
 
 [in] The depth, in screen coordinates, of the destination volume in which the source volume is copied.
-
-`hDstResource`
-
-[in] A handle to the destination surface.
-
-`hSrcResource`
-
-[in] A handle to the source surface.
 
 `SrcBox`
 
@@ -95,11 +95,3 @@ typedef struct _D3DDDIARG_VOLUMEBLT {
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_volblt.md">VolBlt</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_VOLUMEBLT structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

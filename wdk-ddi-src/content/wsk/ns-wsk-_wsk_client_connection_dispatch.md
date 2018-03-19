@@ -60,19 +60,19 @@ typedef struct _WSK_CLIENT_CONNECTION_DISPATCH {
 ## Members
 
 
-`WskDisconnectEvent`
-
-A pointer to the WSK application's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_disconnect_event.md">WskDisconnectEvent</a> event callback
-     function for the socket. If the WSK application does not enable the 
-     <i>WskDisconnectEvent</i> event callback function for the socket, this pointer can be <b>NULL</b>.
-
 `WskReceiveEvent`
 
 A pointer to the WSK application's 
      <a href="..\wsk\nc-wsk-pfn_wsk_receive_event.md">WskReceiveEvent</a> event callback function
      for the socket. If the WSK application does not enable the 
      <i>WskReceiveEvent</i> event callback function for the socket, this pointer can be <b>NULL</b>.
+
+`WskDisconnectEvent`
+
+A pointer to the WSK application's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_disconnect_event.md">WskDisconnectEvent</a> event callback
+     function for the socket. If the WSK application does not enable the 
+     <i>WskDisconnectEvent</i> event callback function for the socket, this pointer can be <b>NULL</b>.
 
 `WskSendBacklogEvent`
 
@@ -152,11 +152,3 @@ As a returned parameter when the WSK subsystem calls the WSK application's
 
 <a href="..\wsk\ns-wsk-_wsk_provider_connection_dispatch.md">
    WSK_PROVIDER_CONNECTION_DISPATCH</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_CLIENT_CONNECTION_DISPATCH structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

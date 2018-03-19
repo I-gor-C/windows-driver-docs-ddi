@@ -59,10 +59,6 @@ typedef struct _BIDI_REQUEST_DATA {
 ## Members
 
 
-`data`
-
-Specifies a <a href="..\winspool\ns-winspool-_bidi_data.md">BIDI_DATA</a> structure containing the data associated with the schema.
-
 `dwReqNumber`
 
 Specifies the index of the request, which is used to match a response with a request in a multirequest operation.
@@ -70,6 +66,10 @@ Specifies the index of the request, which is used to match a response with a req
 `pSchema`
 
 Pointer to a memory location containing the first byte of the schema string.
+
+`data`
+
+Specifies a <a href="..\winspool\ns-winspool-_bidi_data.md">BIDI_DATA</a> structure containing the data associated with the schema.
 
 
 ## Requirements
@@ -85,11 +85,3 @@ Pointer to a memory location containing the first byte of the schema string.
 
 
 <a href="..\winspool\ns-winspool-_bidi_request_container.md">BIDI_REQUEST_CONTAINER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20BIDI_REQUEST_DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

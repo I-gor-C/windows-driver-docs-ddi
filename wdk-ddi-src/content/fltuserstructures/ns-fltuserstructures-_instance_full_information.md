@@ -64,41 +64,41 @@ typedef struct _INSTANCE_FULL_INFORMATION {
 ## Members
 
 
-`AltitudeBufferOffset`
+`NextEntryOffset`
 
-A byte offset of the first character of the altitude string. This character is followed in memory by the remainder of the string.
-
-`AltitudeLength`
-
-The length, in bytes, of the altitude string.
-
-`FilterNameBufferOffset`
-
-A byte offset of the first character of the minifilter name string. This character is followed in memory by the remainder of the string.
-
-`FilterNameLength`
-
-The length, in bytes, of the minifilter name.
-
-`InstanceNameBufferOffset`
-
-A byte offset of the first character of the instance name string. This character is followed in memory by the remainder of the string.
+A byte offset of the next INSTANCE_FULL_INFORMATION entry. If multiple entries are present in a buffer, the last entry contains a zero.
 
 `InstanceNameLength`
 
 The length, in bytes, of the instance name.
 
-`NextEntryOffset`
+`InstanceNameBufferOffset`
 
-A byte offset of the next INSTANCE_FULL_INFORMATION entry. If multiple entries are present in a buffer, the last entry contains a zero.
+A byte offset of the first character of the instance name string. This character is followed in memory by the remainder of the string.
+
+`AltitudeLength`
+
+The length, in bytes, of the altitude string.
+
+`AltitudeBufferOffset`
+
+A byte offset of the first character of the altitude string. This character is followed in memory by the remainder of the string.
+
+`VolumeNameLength`
+
+The length, in bytes, of the volume name.
 
 `VolumeNameBufferOffset`
 
 A byte offset of the first character of the volume name string. This character is followed in memory by the remainder of the string (for example, "\Device\HarddiskVolume1").
 
-`VolumeNameLength`
+`FilterNameLength`
 
-The length, in bytes, of the volume name.
+The length, in bytes, of the minifilter name.
+
+`FilterNameBufferOffset`
+
+A byte offset of the first character of the minifilter name string. This character is followed in memory by the remainder of the string.
 
 ## Remarks
 This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer contains two or more of these structures, the <b>NextEntryOffset</b> value in each entry, except the last, falls on an 8-byte boundary.
@@ -154,11 +154,3 @@ The content of all character string buffers referenced by this structure are Uni
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541551">FilterVolumeInstanceFindNext</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20INSTANCE_FULL_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

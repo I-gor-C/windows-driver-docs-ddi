@@ -66,13 +66,8 @@ typedef enum _STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE {
 <table>
             
                 <tr>
-                    <td>DeleteStreamEvent</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>HardwareStarved</td>
-                    <td>Indicates that the hardware is starved for data.</td>
+                    <td>ReadyForNextStreamDataRequest</td>
+                    <td>Indicates that the minidriver is ready for the next stream data request.</td>
                 </tr>
             
                 <tr>
@@ -81,8 +76,13 @@ typedef enum _STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE {
                 </tr>
             
                 <tr>
-                    <td>ReadyForNextStreamDataRequest</td>
-                    <td>Indicates that the minidriver is ready for the next stream data request.</td>
+                    <td>HardwareStarved</td>
+                    <td>Indicates that the hardware is starved for data.</td>
+                </tr>
+            
+                <tr>
+                    <td>StreamRequestComplete</td>
+                    <td>Indicates that the specified stream SRB has completed.</td>
                 </tr>
             
                 <tr>
@@ -96,13 +96,13 @@ typedef enum _STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE {
                 </tr>
             
                 <tr>
-                    <td>StreamNotificationMaximum</td>
+                    <td>DeleteStreamEvent</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>StreamRequestComplete</td>
-                    <td>Indicates that the specified stream SRB has completed.</td>
+                    <td>StreamNotificationMaximum</td>
+                    <td></td>
                 </tr>
 </table>
 

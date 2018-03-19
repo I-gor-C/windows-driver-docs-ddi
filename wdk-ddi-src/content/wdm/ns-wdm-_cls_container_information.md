@@ -67,29 +67,13 @@ typedef struct _CLS_CONTAINER_INFORMATION {
 ## Members
 
 
-`ContainerSize`
-
-The size, in bytes, of the container.
-
-`CreationTime`
-
-The time that the container was created.
-
 `FileAttributes`
 
 A set of flags that specifies attributes of the container. See the <i>fFlagsAndAttributes</i> parameter of the <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a> function.
 
-`FileName`
+`CreationTime`
 
-An array of wide characters that holds the file name of the container.
-
-`FileNameActualLength`
-
-The size, in characters, of the actual file name of the container.
-
-`FileNameLength`
-
-The size of the file name in the <b>FileName</b> buffer.
+The time that the container was created.
 
 `LastAccessTime`
 
@@ -99,13 +83,21 @@ The time that the container was last accessed.
 
 The time of the last write to the container.
 
-`LogicalContainerId`
+`ContainerSize`
 
-A 32-bit identifier that changes every time the container is recycled.
+The size, in bytes, of the container.
 
-`PhysicalContainerId`
+`FileNameActualLength`
 
-A 32-bit identifier that remains the same over the life of the log.
+The size, in characters, of the actual file name of the container.
+
+`FileNameLength`
+
+The size of the file name in the <b>FileName</b> buffer.
+
+`FileName`
+
+An array of wide characters that holds the file name of the container.
 
 `State`
 
@@ -178,6 +170,14 @@ The container is marked for deletion, but still contains records that are pendin
 </tr>
 </table>
 
+`PhysicalContainerId`
+
+A 32-bit identifier that remains the same over the life of the log.
+
+`LogicalContainerId`
+
+A 32-bit identifier that changes every time the container is recycled.
+
 ## Remarks
 The <a href="..\wdm\nf-wdm-clfsscanlogcontainers.md">ClfsScanLogContainers</a> function writes descriptive information into an array of <b>CLFS_CONTAINER_INFORMATION</b> structures.
 
@@ -203,11 +203,3 @@ Time values <b>CreationTime</b>, <b>LastAccessTime</b>, and <b>LastWriteTime</b>
 
 
 <a href="..\wdm\nf-wdm-clfsscanlogcontainers.md">ClfsScanLogContainers</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLS_CONTAINER_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

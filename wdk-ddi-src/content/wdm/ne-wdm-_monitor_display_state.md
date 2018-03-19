@@ -61,11 +61,6 @@ typedef enum _MONITOR_DISPLAY_STATE {
 <table>
             
                 <tr>
-                    <td>PowerMonitorDim</td>
-                    <td>This indicates that the monitor is dim.</td>
-                </tr>
-            
-                <tr>
                     <td>PowerMonitorOff</td>
                     <td>This indicates that the monitor is off.</td>
                 </tr>
@@ -73,6 +68,11 @@ typedef enum _MONITOR_DISPLAY_STATE {
                 <tr>
                     <td>PowerMonitorOn</td>
                     <td>This indicates that the monitor is on.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerMonitorDim</td>
+                    <td>This indicates that the monitor is dim.</td>
                 </tr>
 </table>
 

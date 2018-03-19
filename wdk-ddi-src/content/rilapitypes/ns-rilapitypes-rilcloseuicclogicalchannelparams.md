@@ -58,11 +58,11 @@ typedef struct _RILCLOSEUICCLOGICALCHANNELPARAMS {
 ## Members
 
 
-`dwChannelId`
-
-
-
 `dwSlotIndex`
+
+
+
+`dwChannelId`
 
 
 

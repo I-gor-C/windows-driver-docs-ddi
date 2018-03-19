@@ -73,8 +73,8 @@ typedef enum FWPS_FIELDS_INGRESS_VSWITCH_TRANSPORT_V4_ {
 <table>
             
                 <tr>
-                    <td>FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V6_COMPARTMENT_ID</td>
-                    <td></td>
+                    <td>FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V6_IP_SOURCE_ADDRESS</td>
+                    <td>The virtual switch ingress IP source address field.</td>
                 </tr>
             
                 <tr>
@@ -83,18 +83,8 @@ typedef enum FWPS_FIELDS_INGRESS_VSWITCH_TRANSPORT_V4_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V6_IP_DESTINATION_PORT</td>
-                    <td>The virtual switch ingress IP destination port  field.</td>
-                </tr>
-            
-                <tr>
                     <td>FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V6_IP_PROTOCOL</td>
                     <td>The virtual switch ingress IP protocol  field.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V6_IP_SOURCE_ADDRESS</td>
-                    <td>The virtual switch ingress IP source address field.</td>
                 </tr>
             
                 <tr>
@@ -103,18 +93,18 @@ typedef enum FWPS_FIELDS_INGRESS_VSWITCH_TRANSPORT_V4_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V6_L2_FLAGS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V6_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.</td>
+                    <td>FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V6_IP_DESTINATION_PORT</td>
+                    <td>The virtual switch ingress IP destination port  field.</td>
                 </tr>
             
                 <tr>
                     <td>FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V6_VLAN_ID</td>
                     <td>The virtual switch ingress virtual LAN (VLAN) identifier field.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V6_VSWITCH_TENANT_NETWORK_ID</td>
+                    <td>The virtual switch ingress virtual switch tenant network identifier field.</td>
                 </tr>
             
                 <tr>
@@ -143,8 +133,18 @@ typedef enum FWPS_FIELDS_INGRESS_VSWITCH_TRANSPORT_V4_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V6_VSWITCH_TENANT_NETWORK_ID</td>
-                    <td>The virtual switch ingress virtual switch tenant network identifier field.</td>
+                    <td>FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V6_L2_FLAGS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V6_COMPARTMENT_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V6_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.</td>
                 </tr>
 </table>
 

@@ -63,6 +63,18 @@ typedef struct _CLS_SCAN_CONTEXT {
 ## Members
 
 
+`cidNode`
+
+A <a href="https://msdn.microsoft.com/99132138-b7ba-47a1-ac40-353d5d70db42">CLFS_NODE_ID</a> structure that contains the scan context's node identity and type.
+
+`plfoLog`
+
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554316">LOG_FILE_OBJECT</a> structure that represents a CLFS log.
+
+`cIndex`
+
+The index of the current container.
+
 `cContainers`
 
 The number of containers to scan in each call to <b>ClfsScanLogContainers</b>. This is the number of elements in the array pointed to by <i>pinfoContainer</i>.
@@ -70,14 +82,6 @@ The number of containers to scan in each call to <b>ClfsScanLogContainers</b>. T
 `cContainersReturned`
 
 The number of containers actually scanned in a call to <b>ClfsScanLogContainers</b>.
-
-`cidNode`
-
-A <a href="https://msdn.microsoft.com/99132138-b7ba-47a1-ac40-353d5d70db42">CLFS_NODE_ID</a> structure that contains the scan context's node identity and type.
-
-`cIndex`
-
-The index of the current container.
 
 `eScanMode`
 
@@ -133,10 +137,6 @@ The scan is closed. No containers are scanned.
 `pinfoContainer`
 
 A pointer to an array of <a href="..\wdm\ns-wdm-_cls_container_information.md">CLFS_CONTAINER_INFORMATION</a> structures. The <i>cContainers</i> parameter specifies the number of elements in this array.
-
-`plfoLog`
-
-A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554316">LOG_FILE_OBJECT</a> structure that represents a CLFS log.
 
 
 ## Requirements

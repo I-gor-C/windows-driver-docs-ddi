@@ -58,6 +58,10 @@ typedef struct IDARG_IN_SET_GAMMARAMP {
 ## Members
 
 
+`Type`
+
+[in] The type of gamma ramp being set.
+
 `GammaRampSizeInBytes`
 
 [in] Size in bytes of the provided gamma ramp data.  Set to zero for <a href="..\iddcx\ne-iddcx-iddcx_gammaramp_type.md">IDDCX_GAMMARAMP_TYPE</a>.
@@ -65,10 +69,6 @@ typedef struct IDARG_IN_SET_GAMMARAMP {
 `pGammaRampData`
 
 [in] Pointer to gamma ramp data to set.  Set to NULL for <a href="..\iddcx\ne-iddcx-iddcx_gammaramp_type.md">IDDCX_GAMMARAMP_TYPE</a>.
-
-`Type`
-
-[in] The type of gamma ramp being set.
 
 
 ## Requirements

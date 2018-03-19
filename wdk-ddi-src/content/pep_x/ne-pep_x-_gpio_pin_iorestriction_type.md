@@ -61,23 +61,23 @@ typedef enum _GPIO_PIN_IORESTRICTION_TYPE {
 <table>
             
                 <tr>
-                    <td>IoRestrictionInputOnly</td>
-                    <td>Indicates that the GPIO pin is restricted to input.</td>
-                </tr>
-            
-                <tr>
                     <td>IoRestrictionNone</td>
                     <td>Indicates that the GPIO pin is not restricted to either input or output. When no IO restriction is described, it is assumed to be <b>IoRestrictionNone</b>.</td>
                 </tr>
             
                 <tr>
-                    <td>IoRestrictionNoneAndPreserve</td>
-                    <td>Indicates that the GPIO pin is not restricted to either input or output and that the mode should be preserved when the driver is unloaded.</td>
+                    <td>IoRestrictionInputOnly</td>
+                    <td>Indicates that the GPIO pin is restricted to input.</td>
                 </tr>
             
                 <tr>
                     <td>IoRestrictionOutputOnly</td>
                     <td>Indicates that the GPIO pin is restricted to output.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoRestrictionNoneAndPreserve</td>
+                    <td>Indicates that the GPIO pin is not restricted to either input or output and that the mode should be preserved when the driver is unloaded.</td>
                 </tr>
 </table>
 

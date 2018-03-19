@@ -67,6 +67,10 @@ typedef struct _ATA_PASS_THROUGH_EX {
 ## Members
 
 
+`Length`
+
+Specifies the length in bytes of the ATA_PASS_THROUGH_EX structure.
+
 `AtaFlags`
 
 Indicates the direction of data transfer and specifies the kind of operation to be performed. The value of this member must be some combination of the following flags:
@@ -137,6 +141,42 @@ Read single sector only.
 </td>
 </tr>
 </table>
+
+`PathId`
+
+Contains an integer that indicates the IDE port or bus for the request. This value is set by the port driver.
+
+`TargetId`
+
+Contains an integer that indicates the target device on the bus. This value is set by the port driver.
+
+`Lun`
+
+Indicates the logical unit number of the device. This value is set by the port driver.
+
+`ReservedAsUchar`
+
+Reserved for future use.
+
+`DataTransferLength`
+
+Indicates the size, in bytes, of the data buffer. If an underrun occurs, the miniport driver must update this member to the number of bytes that were actually transferred.
+
+`TimeOutValue`
+
+Indicates the number of seconds that are allowed for the request to execute before the OS-specific port driver determines that the request has timed out.
+
+`ReservedAsUlong`
+
+Reserved for future use.
+
+`DataBufferOffset`
+
+Specifies the offset, in bytes, from the beginning of this structure to the data buffer.
+
+`PreviousTaskFile`
+
+Specifies the contents of the task file input registers prior to the current pass-through command. This member is not used when the ATA_FLAGS_48BIT_COMMAND flag is not set.
 
 `CurrentTaskFile`
 
@@ -319,46 +359,6 @@ Reserved
 </tr>
 </table>
 
-`DataBufferOffset`
-
-Specifies the offset, in bytes, from the beginning of this structure to the data buffer.
-
-`DataTransferLength`
-
-Indicates the size, in bytes, of the data buffer. If an underrun occurs, the miniport driver must update this member to the number of bytes that were actually transferred.
-
-`Length`
-
-Specifies the length in bytes of the ATA_PASS_THROUGH_EX structure.
-
-`Lun`
-
-Indicates the logical unit number of the device. This value is set by the port driver.
-
-`PathId`
-
-Contains an integer that indicates the IDE port or bus for the request. This value is set by the port driver.
-
-`PreviousTaskFile`
-
-Specifies the contents of the task file input registers prior to the current pass-through command. This member is not used when the ATA_FLAGS_48BIT_COMMAND flag is not set.
-
-`ReservedAsUchar`
-
-Reserved for future use.
-
-`ReservedAsUlong`
-
-Reserved for future use.
-
-`TargetId`
-
-Contains an integer that indicates the target device on the bus. This value is set by the port driver.
-
-`TimeOutValue`
-
-Indicates the number of seconds that are allowed for the request to execute before the OS-specific port driver determines that the request has timed out.
-
 ## Remarks
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_ata_pass_through.md">IOCTL_ATA_PASS_THROUGH</a> is a buffered device control request. To bypass buffering in system memory, callers should use <a href="..\ntddscsi\ni-ntddscsi-ioctl_ata_pass_through_direct.md">IOCTL_ATA_PASS_THROUGH_DIRECT</a> and <a href="..\ntddscsi\ns-ntddscsi-_ata_pass_through_direct.md">ATA_PASS_THROUGH_DIRECT</a>. When handling an IOCTL_ATA_PASS_THROUGH_DIRECT request, the system locks down the buffer in user memory and the device accesses this memory directly.
 
@@ -378,11 +378,3 @@ Indicates the number of seconds that are allowed for the request to execute befo
 
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_ata_pass_through.md">IOCTL_ATA_PASS_THROUGH</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ATA_PASS_THROUGH_EX structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

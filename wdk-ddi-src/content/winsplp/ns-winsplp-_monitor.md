@@ -134,6 +134,38 @@ typedef struct _MONITOR {
 ## Members
 
 
+`pfnEnumPorts`
+
+A port monitor server DLL's <b>EnumPorts</b> function enumerates the ports that the port monitor supports.
+
+`pfnOpenPort`
+
+Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559593">OpenPort</a> function.
+
+`pfnOpenPortEx`
+
+A language monitor's <code>OpenPortEx</code> function opens a printer port.
+
+`pfnStartDocPort`
+
+A print monitor's <code>StartDocPort</code> function performs the tasks required to start a print job on the specified port.
+
+`pfnWritePort`
+
+Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563792">WritePort</a> function.
+
+`pfnReadPort`
+
+Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff561909">ReadPort</a> function.
+
+`pfnEndDocPort`
+
+A print monitor's <b>EndDocPort</b> function performs the tasks required to end a print job on the specified port.
+
+`pfnClosePort`
+
+Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff545975">ClosePort</a> function.
+
 `pfnAddPort`
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545022">AddPort</a> function is obsolete and is for use only with Windows NT 4.0 and previous versions.
@@ -144,10 +176,6 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545022">AddPo
 `pfnAddPortEx`
 
 (Obsolete. Must be <b>NULL</b>.) Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff545025">AddPortEx</a> function. (Port monitors only.)
-
-`pfnClosePort`
-
-Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff545975">ClosePort</a> function.
 
 `pfnConfigurePort`
 
@@ -162,53 +190,25 @@ The <b>DeletePort</b> function is obsolete and is for use only with Windows NT 4
 
 <b>DeletePort</b> deletes a port from the monitor's environment.
 
-`pfnEndDocPort`
-
-A print monitor's <b>EndDocPort</b> function performs the tasks required to end a print job on the specified port.
-
-`pfnEnumPorts`
-
-A port monitor server DLL's <b>EnumPorts</b> function enumerates the ports that the port monitor supports.
-
 `pfnGetPrinterDataFromPort`
 
 A port monitor's <b>GetPrinterDataFromPort</b> function obtains status information from a bidirectional printer and returns it to the caller.
-
-`pfnOpenPort`
-
-Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559593">OpenPort</a> function.
-
-`pfnOpenPortEx`
-
-A language monitor's <code>OpenPortEx</code> function opens a printer port.
-
-`pfnReadPort`
-
-Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff561909">ReadPort</a> function.
 
 `pfnSetPortTimeOuts`
 
 A port monitor server DLL's <code>SetPortTimeOuts</code> function sets port time-out values for an open port.
 
-`pfnStartDocPort`
+`pfnXcvOpenPort`
 
-A print monitor's <code>StartDocPort</code> function performs the tasks required to start a print job on the specified port.
-
-`pfnWritePort`
-
-Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563792">WritePort</a> function.
-
-`pfnXcvClosePort`
-
-Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564254">XcvClosePort</a> function. (Port monitors only.)
+Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564259">XcvOpenPort</a> function. (Port monitors only.)
 
 `pfnXcvDataPort`
 
 Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564258">XcvDataPort</a> function. (Port monitors only.)
 
-`pfnXcvOpenPort`
+`pfnXcvClosePort`
 
-Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564259">XcvOpenPort</a> function. (Port monitors only.)
+Pointer to the print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564254">XcvClosePort</a> function. (Port monitors only.)
 
 ## Remarks
 The following table describes each member  in more detail.
@@ -787,11 +787,3 @@ If necessary, the port monitor should prevent other processes from using the spe
 
 
 <a href="..\winsplp\ns-winsplp-_monitor2.md">MONITOR2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20MONITOR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

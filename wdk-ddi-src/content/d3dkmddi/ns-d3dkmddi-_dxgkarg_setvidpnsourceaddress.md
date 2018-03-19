@@ -65,17 +65,33 @@ typedef struct _DXGKARG_SETVIDPNSOURCEADDRESS {
 ## Members
 
 
-`Context`
+`VidPnSourceId`
 
-[in] An array of handles to the contexts that contributed to a display operation.
+An integer that identifies a video present source on the display adapter.
+
+`PrimarySegment`
+
+The identifier of the segment that contains the source's primary surface.
+
+`PrimaryAddress`
+
+The address, within the segment identified by <i>PrimarySegment</i>, of the source's primary surface.
+
+`hAllocation`
+
+[in] If non-NULL, a handle that the display miniport driver assigned to the allocation and returned from its call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> function. The driver must reprogram graphics hardware according to the specific private properties of the allocation, which include but are not limited to pitch size, swizzle format, and so on.
 
 `ContextCount`
 
 [in] The number of contexts in the array that the <b>Context</b> member specifies.
 
-`DriverPrivateDataSize`
+`Context`
 
+[in] An array of handles to the contexts that contributed to a display operation.
 
+`Flags`
+
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags.md">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a> structure that identifies the type of display operation to perform.
 
 `Duration`
 
@@ -85,33 +101,17 @@ If zero, the refresh rate should be the default rate based on the current mode.
 
 Must be supported by WDDM 1.3 and later drivers. Available starting with Windows 8.1.
 
-`Flags`
-
-[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags.md">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a> structure that identifies the type of display operation to perform.
-
-`hAllocation`
-
-[in] If non-NULL, a handle that the display miniport driver assigned to the allocation and returned from its call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> function. The driver must reprogram graphics hardware according to the specific private properties of the allocation, which include but are not limited to pitch size, swizzle format, and so on.
-
-`pDriverPrivateData`
-
-
-
-`PrimaryAddress`
-
-The address, within the segment identified by <i>PrimarySegment</i>, of the source's primary surface.
-
 `PrimaryData`
 
 
 
-`PrimarySegment`
+`DriverPrivateDataSize`
 
-The identifier of the segment that contains the source's primary surface.
 
-`VidPnSourceId`
 
-An integer that identifies a video present source on the display adapter.
+`pDriverPrivateData`
+
+
 
 ## Remarks
 For display mode-switch operations, the <b>ContextCount</b> member is always set to 0 and the content of the <b>Context</b> array is undefined. When a flip operation is performed, <b>ContextCount</b> is set to the number of contexts that contributed to the flip. If a flip operation is broadcast to three contexts, <b>ContextCount</b> is set to 4 (that is, the original context plus three broadcast contexts). The <b>Context</b> array contains the driver context handles for the contexts that contributed to the flip operation.
@@ -133,11 +133,3 @@ For display mode-switch operations, the <b>ContextCount</b> member is always set
 
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_SETVIDPNSOURCEADDRESS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

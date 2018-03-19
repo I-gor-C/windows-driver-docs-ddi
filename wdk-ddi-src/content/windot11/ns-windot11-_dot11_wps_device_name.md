@@ -59,13 +59,13 @@ uDeviceNameLength;
 ## Members
 
 
-`ucDeviceName`
-
-
-
 `uDeviceNameLength`
 
 The length, in bytes, of the device name.
+
+`ucDeviceName`
+
+
 
 
 ## Requirements

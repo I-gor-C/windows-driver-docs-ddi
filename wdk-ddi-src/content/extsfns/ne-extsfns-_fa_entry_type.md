@@ -69,43 +69,8 @@ typedef enum _FA_ENTRY_TYPE {
 <table>
             
                 <tr>
-                    <td>DEBUG_FA_ENTRY_ANSI_STRING</td>
-                    <td>The data block holds a null-terminated string. The <b>DataSize</b> member of the <a href="..\extsfns\ns-extsfns-_fa_entry.md">FA_ENTRY</a> structure holds the size of the string including the null terminator.</td>
-                </tr>
-            
-                <tr>
-                    <td>DEBUG_FA_ENTRY_ANSI_STRINGs</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DEBUG_FA_ENTRY_ARRAY</td>
-                    <td>A bitwise OR of this value and one of the basic types indicates an array. For example, if the data type is <b>DEBUG_FA_ENTRY_ARRAY | DEBUG_FA_ENTRY_POINTER</b>, the data block holds an array of pointers.</td>
-                </tr>
-            
-                <tr>
-                    <td>DEBUG_FA_ENTRY_EXTENSION_CMD</td>
-                    <td>The data block holds a null-terminated string that is a debugger command. An example of a debugger command string is "!analyze -v".</td>
-                </tr>
-            
-                <tr>
-                    <td>DEBUG_FA_ENTRY_INSTRUCTION_OFFSET</td>
-                    <td>The data block holds a 64-bit instruction offset.</td>
-                </tr>
-            
-                <tr>
                     <td>DEBUG_FA_ENTRY_NO_TYPE</td>
                     <td>There is no data type associated with the tag, and there is no data block.</td>
-                </tr>
-            
-                <tr>
-                    <td>DEBUG_FA_ENTRY_POINTER</td>
-                    <td>The data block holds a 64-bit pointer.</td>
-                </tr>
-            
-                <tr>
-                    <td>DEBUG_FA_ENTRY_STRUCTURED_DATA</td>
-                    <td>The data block holds a  pointer to an  <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a> interface.</td>
                 </tr>
             
                 <tr>
@@ -119,8 +84,43 @@ typedef enum _FA_ENTRY_TYPE {
                 </tr>
             
                 <tr>
+                    <td>DEBUG_FA_ENTRY_INSTRUCTION_OFFSET</td>
+                    <td>The data block holds a 64-bit instruction offset.</td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_POINTER</td>
+                    <td>The data block holds a 64-bit pointer.</td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_ANSI_STRING</td>
+                    <td>The data block holds a null-terminated string. The <b>DataSize</b> member of the <a href="..\extsfns\ns-extsfns-_fa_entry.md">FA_ENTRY</a> structure holds the size of the string including the null terminator.</td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_ANSI_STRINGs</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_EXTENSION_CMD</td>
+                    <td>The data block holds a null-terminated string that is a debugger command. An example of a debugger command string is "!analyze -v".</td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_STRUCTURED_DATA</td>
+                    <td>The data block holds a  pointer to an  <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a> interface.</td>
+                </tr>
+            
+                <tr>
                     <td>DEBUG_FA_ENTRY_UNICODE_STRING</td>
                     <td>The data block holds a null-terminated Unicode string. The <b>DataSize</b> member of the <a href="..\extsfns\ns-extsfns-_fa_entry.md">FA_ENTRY</a> structure holds the size of the Unicode string including the null terminator.</td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_ARRAY</td>
+                    <td>A bitwise OR of this value and one of the basic types indicates an array. For example, if the data type is <b>DEBUG_FA_ENTRY_ARRAY | DEBUG_FA_ENTRY_POINTER</b>, the data block holds an array of pointers.</td>
                 </tr>
 </table>
 
@@ -149,11 +149,3 @@ typedef enum _FA_ENTRY_TYPE {
 
 
 <a href="..\extsfns\nn-extsfns-idebugfaentrytags.md">IDebugFAEntryTag</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20FA_ENTRY_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

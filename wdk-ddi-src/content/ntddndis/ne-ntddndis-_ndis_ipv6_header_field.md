@@ -60,9 +60,8 @@ typedef enum _NDIS_IPV6_HEADER_FIELD {
 <table>
             
                 <tr>
-                    <td>NdisIPv6HeaderFieldMaximum</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
+                    <td>NdisIPv6HeaderFieldUndefined</td>
+                    <td>An undefined IPv6 header field.</td>
                 </tr>
             
                 <tr>
@@ -71,8 +70,9 @@ typedef enum _NDIS_IPV6_HEADER_FIELD {
                 </tr>
             
                 <tr>
-                    <td>NdisIPv6HeaderFieldUndefined</td>
-                    <td>An undefined IPv6 header field.</td>
+                    <td>NdisIPv6HeaderFieldMaximum</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 
@@ -92,11 +92,3 @@ The <b>NDIS_IPV6_HEADER_FIELD</b> enumeration is used in the
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPV6_HEADER_FIELD enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

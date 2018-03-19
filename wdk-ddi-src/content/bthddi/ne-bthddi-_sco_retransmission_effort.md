@@ -62,8 +62,8 @@ typedef enum _SCO_RETRANSMISSION_EFFORT {
 <table>
             
                 <tr>
-                    <td>SCO_RETRANSMISSION_DONT_CARE</td>
-                    <td>The profile driver specifies that retransmissions can occur, but are not required.</td>
+                    <td>SCO_RETRANSMISSION_NONE</td>
+                    <td>The profile driver specifies that there should be no retransmissions on the channel.</td>
                 </tr>
             
                 <tr>
@@ -79,8 +79,8 @@ typedef enum _SCO_RETRANSMISSION_EFFORT {
                 </tr>
             
                 <tr>
-                    <td>SCO_RETRANSMISSION_NONE</td>
-                    <td>The profile driver specifies that there should be no retransmissions on the channel.</td>
+                    <td>SCO_RETRANSMISSION_DONT_CARE</td>
+                    <td>The profile driver specifies that retransmissions can occur, but are not required.</td>
                 </tr>
 </table>
 

@@ -60,8 +60,8 @@ typedef enum _IDDCX_CURSOR_SHAPE_TYPE {
 <table>
             
                 <tr>
-                    <td>IDDCX_CURSOR_SHAPE_TYPE_ALPHA</td>
-                    <td>Indicates this is a 32bpp alpha cursor</td>
+                    <td>IDDCX_CURSOR_SHAPE_TYPE_UNINITIALIZED</td>
+                    <td>Indicates that the cursor shape is uninitialized</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum _IDDCX_CURSOR_SHAPE_TYPE {
                 </tr>
             
                 <tr>
-                    <td>IDDCX_CURSOR_SHAPE_TYPE_UNINITIALIZED</td>
-                    <td>Indicates that the cursor shape is uninitialized</td>
+                    <td>IDDCX_CURSOR_SHAPE_TYPE_ALPHA</td>
+                    <td>Indicates this is a 32bpp alpha cursor</td>
                 </tr>
             
                 <tr>

@@ -58,17 +58,17 @@ typedef struct IDARG_IN_ADAPTER_INIT {
 ## Members
 
 
-`ObjectAttributes`
+`WdfDevice`
 
-[in][optional] Object attributes that are used to initialize the WDF adapter object.
+The WDF device that will be hosting this WDDM adapter object.
 
 `pCaps`
 
 [in] A reference  to the capabilities of the adapter.
 
-`WdfDevice`
+`ObjectAttributes`
 
-The WDF device that will be hosting this WDDM adapter object.
+[in][optional] Object attributes that are used to initialize the WDF adapter object.
 
 
 ## Requirements

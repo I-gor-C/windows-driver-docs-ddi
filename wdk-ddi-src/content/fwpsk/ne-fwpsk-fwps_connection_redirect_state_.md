@@ -67,13 +67,8 @@ typedef enum FWPS_CONNECTION_REDIRECT_STATE_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_CONNECTION_PREVIOUSLY_REDIRECTED_BY_SELF</td>
-                    <td>The connection was redirected by the calling redirect handle but later redirected again by a different redirect handle.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_CONNECTION_REDIRECT_STATE_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.</td>
+                    <td>FWPS_CONNECTION_REDIRECTED_BY_SELF</td>
+                    <td>The connection was redirected by the calling redirect handle.</td>
                 </tr>
             
                 <tr>
@@ -82,8 +77,13 @@ typedef enum FWPS_CONNECTION_REDIRECT_STATE_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_CONNECTION_REDIRECTED_BY_SELF</td>
-                    <td>The connection was redirected by the calling redirect handle.</td>
+                    <td>FWPS_CONNECTION_PREVIOUSLY_REDIRECTED_BY_SELF</td>
+                    <td>The connection was redirected by the calling redirect handle but later redirected again by a different redirect handle.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_CONNECTION_REDIRECT_STATE_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.</td>
                 </tr>
 </table>
 
@@ -100,11 +100,3 @@ The FWPS_CONNECTION_REDIRECT_STATE enumeration is the return type for a call to 
 ## See Also
 
 <a href="..\fwpsk\nf-fwpsk-fwpsqueryconnectionredirectstate0.md">FwpsQueryConnectionRedirectState0</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CONNECTION_REDIRECT_STATE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

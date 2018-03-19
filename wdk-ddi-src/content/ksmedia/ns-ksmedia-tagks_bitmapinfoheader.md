@@ -66,21 +66,13 @@ typedef struct tagKS_BITMAPINFOHEADER {
 ## Members
 
 
-`biBitCount`
+`biSize`
 
-Specifies the color bits per pixel. For example, 1, 4, 8, or 24.
+Specifies the size of the structure in bytes.
 
-`biClrImportant`
+`biWidth`
 
-Specifies the number of important colors in the image.
-
-`biClrUsed`
-
-Specifies the number of colors used in the image.
-
-`biCompression`
-
-Specifies the compression scheme.
+Specifies the width of the bitmap in pixels.
 
 `biHeight`
 
@@ -90,17 +82,17 @@ Specifies the height of the bitmap in pixels.
 
 Specifies the number of planes. This is always set to 1.
 
-`biSize`
+`biBitCount`
 
-Specifies the size of the structure in bytes.
+Specifies the color bits per pixel. For example, 1, 4, 8, or 24.
+
+`biCompression`
+
+Specifies the compression scheme.
 
 `biSizeImage`
 
 Specifies the size of bitmap bits in bytes. (Only required if using compression.)
-
-`biWidth`
-
-Specifies the width of the bitmap in pixels.
 
 `biXPelsPerMeter`
 
@@ -109,6 +101,14 @@ Specifies the horizontal resolution in pixels per meter.
 `biYPelsPerMeter`
 
 Specifies the vertical resolution in pixels per meter.
+
+`biClrUsed`
+
+Specifies the number of colors used in the image.
+
+`biClrImportant`
+
+Specifies the number of important colors in the image.
 
 ## Remarks
 This is the same structure as the user-mode GDI bitmap header (BITMAPINFOHEADER) structure.

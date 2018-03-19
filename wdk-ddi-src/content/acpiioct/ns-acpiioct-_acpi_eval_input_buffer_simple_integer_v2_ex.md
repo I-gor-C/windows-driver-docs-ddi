@@ -58,17 +58,17 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX {
 ## Members
 
 
-`IntegerArgument`
+`Signature`
 
-Defines the <b>ULONG64</b> member <b>IntegerArgument</b>.
+Defines the <b>ULONG</b> member <b>Signature</b>.
 
 `MethodName`
 
 
 
-`Signature`
+`IntegerArgument`
 
-Defines the <b>ULONG</b> member <b>Signature</b>.
+Defines the <b>ULONG64</b> member <b>IntegerArgument</b>.
 
 
 ## Requirements

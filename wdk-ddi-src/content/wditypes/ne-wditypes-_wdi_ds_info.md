@@ -66,11 +66,6 @@ typedef enum _WDI_DS_INFO {
                 </tr>
             
                 <tr>
-                    <td>WDI_DS_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WDI_DS_UNCHANGED</td>
                     <td>Same DS as previously associated.</td>
                 </tr>
@@ -78,6 +73,11 @@ typedef enum _WDI_DS_INFO {
                 <tr>
                     <td>WDI_DS_UNKNOWN</td>
                     <td>Unable to determine if the DS has changed.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_DS_MAX</td>
+                    <td></td>
                 </tr>
 </table>
 

@@ -73,42 +73,7 @@ typedef enum _D3DKMT_VIDMMESCAPETYPE {
 <table>
             
                 <tr>
-                    <td>D3DKMT_VIDMMESCAPETYPE_APERTURE_CORRUPTION_CHECK</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_VIDMMESCAPETYPE_DEFRAG</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_VIDMMESCAPETYPE_EVICT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_VIDMMESCAPETYPE_EVICT_BY_CRITERIA</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_VIDMMESCAPETYPE_EVICT_BY_NT_HANDLE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_VIDMMESCAPETYPE_GET_BUDGET</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_VIDMMESCAPETYPE_GET_VAD_INFO</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_VIDMMESCAPETYPE_RESUME_PROCESS</td>
+                    <td>D3DKMT_VIDMMESCAPETYPE_SETFAULT</td>
                     <td></td>
                 </tr>
             
@@ -123,17 +88,7 @@ typedef enum _D3DKMT_VIDMMESCAPETYPE {
                 </tr>
             
                 <tr>
-                    <td>D3DKMT_VIDMMESCAPETYPE_SET_BUDGET</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_VIDMMESCAPETYPE_SET_TRIM_INTERVALS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_VIDMMESCAPETYPE_SETFAULT</td>
+                    <td>D3DKMT_VIDMMESCAPETYPE_APERTURE_CORRUPTION_CHECK</td>
                     <td></td>
                 </tr>
             
@@ -143,12 +98,57 @@ typedef enum _D3DKMT_VIDMMESCAPETYPE {
                 </tr>
             
                 <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_EVICT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_EVICT_BY_NT_HANDLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_GET_VAD_INFO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_SET_BUDGET</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>D3DKMT_VIDMMESCAPETYPE_SUSPEND_PROCESS</td>
                     <td></td>
                 </tr>
             
                 <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_RESUME_PROCESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_GET_BUDGET</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_SET_TRIM_INTERVALS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_EVICT_BY_CRITERIA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>D3DKMT_VIDMMESCAPETYPE_WAKE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_DEFRAG</td>
                     <td></td>
                 </tr>
 </table>

@@ -68,13 +68,8 @@ typedef enum _D3DDDI_DEVICEEXECUTION_STATE {
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_DEVICEEXECUTION_ERROR_DMAFAULT</td>
-                    <td>The device has a DMA fault error.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_DEVICEEXECUTION_ERROR_OUTOFMEMORY</td>
-                    <td>The device has run out of memory.</td>
+                    <td>D3DDDI_DEVICEEXECUTION_RESET</td>
+                    <td>The device has been reset.</td>
                 </tr>
             
                 <tr>
@@ -83,13 +78,18 @@ typedef enum _D3DDDI_DEVICEEXECUTION_STATE {
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_DEVICEEXECUTION_RESET</td>
-                    <td>The device has been reset.</td>
+                    <td>D3DDDI_DEVICEEXECUTION_STOPPED</td>
+                    <td>The device has stopped.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_DEVICEEXECUTION_STOPPED</td>
-                    <td>The device has stopped.</td>
+                    <td>D3DDDI_DEVICEEXECUTION_ERROR_OUTOFMEMORY</td>
+                    <td>The device has run out of memory.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_DEVICEEXECUTION_ERROR_DMAFAULT</td>
+                    <td>The device has a DMA fault error.</td>
                 </tr>
 </table>
 

@@ -60,18 +60,6 @@ typedef struct _MSiSCSI_LUNMappingInformation {
 ## Members
 
 
-`OSBus`
-
-The number that the operating system assigns to the bus that the adapter is attached to.
-
-`OSLUN`
-
-The logical unit number (LUN) that the operating system assigns to the logical unit.
-
-`OSTarget`
-
-The device number that the operating system assigns to the target.
-
 `UniqueAdapterId`
 
 A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID). The initiator reports this value in the <b>UniqueAdapterId</b> member of the <a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a> structure.
@@ -79,6 +67,18 @@ A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance
 `UniqueSessionId`
 
 A session ID that uniquely identifies the session for which the LUN mapping is valid. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the <i>UniqueSessionId</i> parameter. Do not confuse this value with the values in the ISID and TSID members.
+
+`OSBus`
+
+The number that the operating system assigns to the bus that the adapter is attached to.
+
+`OSTarget`
+
+The device number that the operating system assigns to the target.
+
+`OSLUN`
+
+The logical unit number (LUN) that the operating system assigns to the logical unit.
 
 ## Remarks
 You must implement this class.
@@ -107,11 +107,3 @@ You must implement this class.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563067">MSiSCSI_LUNMappingInformation WMI Class</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_LUNMappingInformation structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

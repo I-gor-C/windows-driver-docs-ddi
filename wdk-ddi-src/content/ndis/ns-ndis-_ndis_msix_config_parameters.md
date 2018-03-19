@@ -60,13 +60,6 @@ typedef struct _NDIS_MSIX_CONFIG_PARAMETERS {
 ## Members
 
 
-`ConfigOperation`
-
-The requested configuration operation for a MSI-X table entry. This operation is specified as one
-     of the values from the 
-     <a href="..\ndis\ne-ndis-_ndis_msix_table_config.md">
-     NDIS_MSIX_TABLE_OPERATION</a> enumeration.
-
 `Header`
 
 The 
@@ -77,16 +70,23 @@ The
      <b>Revision</b> member to NDIS_MSIX_CONFIG_PARAMETERS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_MSIX_CONFIG_PARAMETERS_REVISION_1.
 
+`ConfigOperation`
+
+The requested configuration operation for a MSI-X table entry. This operation is specified as one
+     of the values from the 
+     <a href="..\ndis\ne-ndis-_ndis_msix_table_config.md">
+     NDIS_MSIX_TABLE_OPERATION</a> enumeration.
+
+`TableEntry`
+
+The MSI-X table entry index.
+
 `MessageNumber`
 
 The MSI-X message number that is assigned to the device. This value is required for the 
      <b>NdisMSIXTableConfigSetTableEntry</b> operation. This parameter is not used for the 
      <b>NdisMSIXTableConfigMaskTableEntry</b> or 
      <b>NdisMSIXTableConfigUnmaskTableEntry</b> operations.
-
-`TableEntry`
-
-The MSI-X table entry index.
 
 ## Remarks
 To mask, unmask, or map MSI-X table entries, an NDIS driver passes the NDIS_MSIX_CONFIG_PARAMETERS
@@ -112,11 +112,3 @@ To mask, unmask, or map MSI-X table entries, an NDIS driver passes the NDIS_MSIX
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MSIX_CONFIG_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

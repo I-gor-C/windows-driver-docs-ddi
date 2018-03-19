@@ -58,6 +58,10 @@ typedef struct _D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032 {
 ## Members
 
 
+`SourceRectangle`
+
+Source rectangle.
+
 `DestinationRectangle`
 
 Destination rectangle.
@@ -65,10 +69,6 @@ Destination rectangle.
 `Orientation`
 
 Orientation.
-
-`SourceRectangle`
-
-Source rectangle.
 
 
 ## Requirements

@@ -66,11 +66,11 @@ typedef struct _RILCALLHANDOVERSTATE {
 
 
 
-`dw3gppCause`
+`dwParams`
 
 
 
-`dwNewType`
+`dwPhase`
 
 
 
@@ -78,11 +78,11 @@ typedef struct _RILCALLHANDOVERSTATE {
 
 
 
-`dwParams`
+`dwNewType`
 
 
 
-`dwPhase`
+`dw3gppCause`
 
 
 

@@ -66,6 +66,11 @@ typedef enum _GPIO_PIN_CONFIG_TYPE {
                 </tr>
             
                 <tr>
+                    <td>PullUp</td>
+                    <td>Indicates that this pin is configured to use a pull-up resistor.</td>
+                </tr>
+            
+                <tr>
                     <td>PullDown</td>
                     <td>Indicates that this pin is configured to use a pull-down resistor.</td>
                 </tr>
@@ -73,11 +78,6 @@ typedef enum _GPIO_PIN_CONFIG_TYPE {
                 <tr>
                     <td>PullNone</td>
                     <td>Indicates that this pin is not configured to use a pull-up or pull-down resistor.</td>
-                </tr>
-            
-                <tr>
-                    <td>PullUp</td>
-                    <td>Indicates that this pin is configured to use a pull-up resistor.</td>
                 </tr>
 </table>
 

@@ -62,11 +62,11 @@ typedef struct _IDARG_IN_QUERY_HWCURSOR {
 
 
 
-`pShapeBuffer`
-
-
-
 `ShapeBufferSizeInBytes`
+
+
+
+`pShapeBuffer`
 
 
 

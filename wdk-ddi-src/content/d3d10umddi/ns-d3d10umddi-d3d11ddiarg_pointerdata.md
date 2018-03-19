@@ -60,6 +60,18 @@ typedef struct D3D11DDIARG_POINTERDATA {
 ## Members
 
 
+`uCBOffset`
+
+A UINT value that specifies the offset, in bytes, into the constant buffer that the <b>uCBID</b> member specifies to reach the data for the interface. 
+
+Setting this member is equivalent to setting the first 12 bits of a 32-bit value (0x00000FFF).
+
+`uCBID`
+
+A UINT value that identifies the constant buffer that data for the interface is in. 
+
+Setting this member is equivalent to setting bits 13 through 16 of a 32-bit value (0x0000F000).
+
 `uBaseSamp`
 
 A UINT value that specifies the index of the first sampler that is used by the class instance of the interface implementation.
@@ -71,18 +83,6 @@ Setting this member is equivalent to setting bits 17 through 20 of a 32-bit valu
 A UINT value that specifies the index of the first texture that is used by the class instance of the interface implementation.
 
 Setting this member is equivalent to setting bits 21 through 27 of a 32-bit value (0x07F00000).
-
-`uCBID`
-
-A UINT value that identifies the constant buffer that data for the interface is in. 
-
-Setting this member is equivalent to setting bits 13 through 16 of a 32-bit value (0x0000F000).
-
-`uCBOffset`
-
-A UINT value that specifies the offset, in bytes, into the constant buffer that the <b>uCBID</b> member specifies to reach the data for the interface. 
-
-Setting this member is equivalent to setting the first 12 bits of a 32-bit value (0x00000FFF).
 
 `uReserved`
 
@@ -120,11 +120,3 @@ D3D11DDIARG_POINTERDATA contains the location of the data for one of the interfa
 
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">PsSetShaderWithIfaces</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11DDIARG_POINTERDATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

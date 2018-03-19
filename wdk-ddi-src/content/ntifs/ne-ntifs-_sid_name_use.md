@@ -67,23 +67,8 @@ typedef enum _SID_NAME_USE {
 <table>
             
                 <tr>
-                    <td>SidTypeAlias</td>
-                    <td>This value indicates an alias SID.</td>
-                </tr>
-            
-                <tr>
-                    <td>SidTypeComputer</td>
-                    <td>This value indicates a SID for a computer.</td>
-                </tr>
-            
-                <tr>
-                    <td>SidTypeDeletedAccount</td>
-                    <td>This value indicates a SID for a deleted account.</td>
-                </tr>
-            
-                <tr>
-                    <td>SidTypeDomain</td>
-                    <td>This value indicates a domain SID.</td>
+                    <td>SidTypeUser</td>
+                    <td>This value indicates a user SID.</td>
                 </tr>
             
                 <tr>
@@ -92,8 +77,38 @@ typedef enum _SID_NAME_USE {
                 </tr>
             
                 <tr>
+                    <td>SidTypeDomain</td>
+                    <td>This value indicates a domain SID.</td>
+                </tr>
+            
+                <tr>
+                    <td>SidTypeAlias</td>
+                    <td>This value indicates an alias SID.</td>
+                </tr>
+            
+                <tr>
+                    <td>SidTypeWellKnownGroup</td>
+                    <td>This value indicates an SID for a well-known group.</td>
+                </tr>
+            
+                <tr>
+                    <td>SidTypeDeletedAccount</td>
+                    <td>This value indicates a SID for a deleted account.</td>
+                </tr>
+            
+                <tr>
                     <td>SidTypeInvalid</td>
                     <td>This value indicates an invalid SID.</td>
+                </tr>
+            
+                <tr>
+                    <td>SidTypeUnknown</td>
+                    <td>This value indicates an unknown SID type.</td>
+                </tr>
+            
+                <tr>
+                    <td>SidTypeComputer</td>
+                    <td>This value indicates a SID for a computer.</td>
                 </tr>
             
                 <tr>
@@ -104,21 +119,6 @@ typedef enum _SID_NAME_USE {
                 <tr>
                     <td>SidTypeLogonSession</td>
                     <td></td>
-                </tr>
-            
-                <tr>
-                    <td>SidTypeUnknown</td>
-                    <td>This value indicates an unknown SID type.</td>
-                </tr>
-            
-                <tr>
-                    <td>SidTypeUser</td>
-                    <td>This value indicates a user SID.</td>
-                </tr>
-            
-                <tr>
-                    <td>SidTypeWellKnownGroup</td>
-                    <td>This value indicates an SID for a well-known group.</td>
                 </tr>
 </table>
 
@@ -138,11 +138,3 @@ This enumeration type is the same as the Win32 SID_NAME_USE enumeration type def
 
 
 <a href="..\ntifs\nf-ntifs-seclookupaccountname.md">SecLookupAccountName</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SID_NAME_USE enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

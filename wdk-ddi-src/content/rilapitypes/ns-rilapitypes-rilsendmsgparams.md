@@ -64,15 +64,15 @@ typedef struct _RILSENDMSGPARAMS {
 
 
 
-`dwOptions`
-
-
-
 `hUiccApp`
 
 
 
 `rmMessage`
+
+
+
+`dwOptions`
 
 
 

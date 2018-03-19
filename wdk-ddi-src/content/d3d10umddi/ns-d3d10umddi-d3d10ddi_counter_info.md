@@ -62,13 +62,13 @@ typedef struct D3D10DDI_COUNTER_INFO {
 
 [out] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi_query.md">D3D10DDI_QUERY</a>-typed value that identifies the largest device-dependent counter identifier that the device supports. If none are supported, the user-mode display driver must set the value to 0; otherwise, the driver sets the value to greater than or equal to D3D10DDI_COUNTER_DEVICE_DEPENDENT_0 (0x40000000).
 
-`NumDetectableParallelUnits`
-
-[out] The number of detectable parallel units that the counters can identify. Valid values are from 1 through 4.
-
 `NumSimultaneousCounters`
 
 [out] The number of simultaneously active counters that the driver supports.
+
+`NumDetectableParallelUnits`
+
+[out] The number of detectable parallel units that the counters can identify. Valid values are from 1 through 4.
 
 
 ## Requirements
@@ -84,11 +84,3 @@ typedef struct D3D10DDI_COUNTER_INFO {
 
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkcounterinfo.md">CheckCounterInfo</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10DDI_COUNTER_INFO structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

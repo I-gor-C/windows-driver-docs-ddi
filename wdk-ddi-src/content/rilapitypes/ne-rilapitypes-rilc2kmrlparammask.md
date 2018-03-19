@@ -67,6 +67,26 @@ typedef enum _RILC2KMRLPARAMMASK {
 <table>
             
                 <tr>
+                    <td>RIL_PARAM_C2KMRL_SERVING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_C2KMRL_NID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_C2KMRL_SID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_C2KMRL_BSID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PARAM_C2KMRL_BASELAT</td>
                     <td></td>
                 </tr>
@@ -77,7 +97,7 @@ typedef enum _RILC2KMRLPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_C2KMRL_BSID</td>
+                    <td>RIL_PARAM_C2KMRL_REFPN</td>
                     <td></td>
                 </tr>
             
@@ -87,27 +107,7 @@ typedef enum _RILC2KMRLPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_C2KMRL_NID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_C2KMRL_PILOTSTRENGTH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_C2KMRL_REFPN</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_C2KMRL_SERVING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_C2KMRL_SID</td>
                     <td></td>
                 </tr>
             

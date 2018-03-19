@@ -74,17 +74,10 @@ typedef struct _EXT_TYPED_DATA {
 ## Members
 
 
-`DataBufferBytes`
+`Operation`
 
-Set to zero.
-
-`DataBufferIndex`
-
-Set to zero.
-
-`DataBytesNeeded`
-
-Set to zero,
+Specifies which suboperation the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541547">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a> operation should perform. The interpretation of some of the other members depends on <b>Operation</b>. For a list of possible suboperations, see <a href="..\wdbgexts\ne-wdbgexts-_ext_tdop.md">EXT_TDOP</a>.
 
 `Flags`
 
@@ -137,23 +130,17 @@ The typed data is in physical memory, and this physical memory is write-combined
 </tr>
 </table>
 
-`In32`
-
-Specifies a 32-bit parameter to be used as input to the operation.
-
-The interpretation of <b>In32</b> depends on the value of <b>Operation</b>.
-
-`In64`
-
-Specifies a 64-bit parameter to be used as input to the operation.
-
-The interpretation of <b>In64</b> depends on the value of <b>Operation</b>.
-
 `InData`
 
 Specifies typed data to be used as input to the operation. For details about this structure, see <a href="..\wdbgexts\ns-wdbgexts-_debug_typed_data.md">DEBUG_TYPED_DATA</a>.
 
 The interpretation of <b>InData</b> depends on the value of <b>Operation</b>.
+
+`OutData`
+
+Receives typed data as output from the operation. Any suboperation that returns typed data to <b>OutData</b> initially copies the contents of <b>InData</b> to <b>OutData</b>, then modifies <b>OutData</b> in place, so that the input parameters in <b>InData</b> are also present in <b>OutData</b>. For details about this structure, see <a href="..\wdbgexts\ns-wdbgexts-_debug_typed_data.md">DEBUG_TYPED_DATA</a>.
+
+The interpretation of <b>OutData</b> depends on the value of <b>Operation</b>.
 
 `InStrIndex`
 
@@ -163,10 +150,11 @@ The position of the string is relative to the base address of this EXT_TYPED_DAT
 
 The interpretation of the string depends on the value of <b>Operation</b>.
 
-`Operation`
+`In32`
 
-Specifies which suboperation the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541547">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI</a>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a> operation should perform. The interpretation of some of the other members depends on <b>Operation</b>. For a list of possible suboperations, see <a href="..\wdbgexts\ne-wdbgexts-_ext_tdop.md">EXT_TDOP</a>.
+Specifies a 32-bit parameter to be used as input to the operation.
+
+The interpretation of <b>In32</b> depends on the value of <b>Operation</b>.
 
 `Out32`
 
@@ -174,29 +162,17 @@ Receives a 32-bit value as output from the operation.
 
 The interpretation of <b>Out32</b> depends on the value of <b>Operation</b>.
 
+`In64`
+
+Specifies a 64-bit parameter to be used as input to the operation.
+
+The interpretation of <b>In64</b> depends on the value of <b>Operation</b>.
+
 `Out64`
 
 Receives a 64-bit value as output from the operation.
 
 The interpretation of <b>Out64</b> depends on the value of <b>Operation</b>.
-
-`OutData`
-
-Receives typed data as output from the operation. Any suboperation that returns typed data to <b>OutData</b> initially copies the contents of <b>InData</b> to <b>OutData</b>, then modifies <b>OutData</b> in place, so that the input parameters in <b>InData</b> are also present in <b>OutData</b>. For details about this structure, see <a href="..\wdbgexts\ns-wdbgexts-_debug_typed_data.md">DEBUG_TYPED_DATA</a>.
-
-The interpretation of <b>OutData</b> depends on the value of <b>Operation</b>.
-
-`Reserved`
-
-Set to zero.
-
-`Status`
-
-Receives the status code returned by the operation. This is the same value returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a>.
-
-`StrBufferChars`
-
-Specifies the size in characters of the ANSI string buffer specified by <b>StrBufferIndex</b>.
 
 `StrBufferIndex`
 
@@ -206,9 +182,33 @@ The position of the string is relative to the base address of the returned EXT_T
 
 The interpretation of the string depends on the value of <b>Operation</b>.
 
+`StrBufferChars`
+
+Specifies the size in characters of the ANSI string buffer specified by <b>StrBufferIndex</b>.
+
 `StrCharsNeeded`
 
 Receives the number of characters needed by the string buffer specified by <b>StrBufferIndex</b>.
+
+`DataBufferIndex`
+
+Set to zero.
+
+`DataBufferBytes`
+
+Set to zero.
+
+`DataBytesNeeded`
+
+Set to zero,
+
+`Status`
+
+Receives the status code returned by the operation. This is the same value returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a>.
+
+`Reserved`
+
+Set to zero.
 
 ## Remarks
 The members of this structure are used as the input and output parameters to the <a href="https://msdn.microsoft.com/ac883bc8-3956-4bc3-a11e-b6e036305329">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI </a>
@@ -236,11 +236,3 @@ This structure can optionally specify additional data--using the members <b>InSt
 
 
 <a href="..\wdbgexts\ne-wdbgexts-_ext_tdop.md">EXT_TDOP</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20EXT_TYPED_DATA structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

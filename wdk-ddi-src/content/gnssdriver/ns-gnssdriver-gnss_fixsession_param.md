@@ -70,13 +70,13 @@ typedef struct {
 ## Members
 
 
-`FixLevelOfDetails`
+`Size`
 
-Indicates the level of detail needed when the GNSS driver returns the fix information.
+Structure size.
 
-The GNSS driver may choose to override this input.
+`Version`
 
-This flag is OR-ed with the bit-values defined in GNSS_FIXDETAIL_* mask.
+Version number.
 
 `FixSessionID`
 
@@ -85,6 +85,10 @@ This is a unique identifier for a particular fix session.
  The GNSS adapter generates this number in a monotonically increasing order whenever a new fix session is requested. The number wraps around to zero. Given the lifetime of an active session and the number of possible parallel sessions even with multi-session support, the wrap-around is acceptable in this use case.
 
 The GNSS driver must associate all fix related data to the original fix session by using the FixSessionID field. If the GNSS driver does not support multiple fix sessions, it may use the session ID of the last fix session request.
+
+`SessionType`
+
+Identifies the type or recurrence type of this fix session.
 
 `HorizontalAccuracy`
 
@@ -102,21 +106,17 @@ The platform expects fixes with a 95% confidence. The GNSS driver should honor t
 
 
 
-`SessionType`
+`FixLevelOfDetails`
 
-Identifies the type or recurrence type of this fix session.
+Indicates the level of detail needed when the GNSS driver returns the fix information.
 
-`Size`
+The GNSS driver may choose to override this input.
 
-Structure size.
+This flag is OR-ed with the bit-values defined in GNSS_FIXDETAIL_* mask.
 
 `Unused`
 
 
-
-`Version`
-
-Version number.
 
 ## Remarks
 The fix session parameters are different for different types of sessions. This structure contains a common set of parameters applicable for all fix sessions, followed by an overloaded structure (union) for each fix session type. The GNSS driver must use the appropriate structure from the union depending on the session type.

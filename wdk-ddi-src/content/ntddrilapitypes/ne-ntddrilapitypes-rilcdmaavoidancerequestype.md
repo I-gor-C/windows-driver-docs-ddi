@@ -58,12 +58,12 @@ typedef enum _RILCDMAAVOIDANCEREQUESTYPE {
 <table>
             
                 <tr>
-                    <td>RIL_AVOID_SYS_CLR_LIST</td>
+                    <td>RIL_AVOID_SYS_IDLE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_AVOID_SYS_IDLE</td>
+                    <td>RIL_AVOID_SYS_CLR_LIST</td>
                     <td></td>
                 </tr>
 </table>

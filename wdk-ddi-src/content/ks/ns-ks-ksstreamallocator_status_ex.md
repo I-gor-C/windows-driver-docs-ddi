@@ -58,13 +58,13 @@ typedef struct {
 ## Members
 
 
-`AllocatedFrames`
-
-Contains the current number of allocated frames.
-
 `Framing`
 
 Contains the framing specified when the allocator was created.
+
+`AllocatedFrames`
+
+Contains the current number of allocated frames.
 
 `Reserved`
 

@@ -72,70 +72,16 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
 ## Members
 
 
-`bRestrictedScan`
-
-If this member is <b>TRUE</b>, the 802.11 station performs a scan restricted to the channel and PHY
-     configuration used to connect to a BSS network.
-     
-
-The miniport driver must ignore this member if any of the following are true:
-
-<ul>
-<li>
-The miniport driver is operating in ExtSTA mode.
-
-</li>
-<li>
-The 802.11 station is not connected to a BSS network.
-
-</li>
-</ul>
-
-`bUseRequestIE`
-
-If this member is <b>TRUE</b>, the 802.11 station must include the list of request IDs (defined through
-     the 
-     <b>uRequestIDsOffset</b> and 
-     <b>uNumOfRequestIDs</b> members) within the 802.11d request information element (IE) of each Probe
-     Request frame that it transmits during the active scan.
-     
-
-The miniport driver must ignore this member (along with the 
-     <b>uRequestIDsOffset</b> and 
-     <b>uNumOfRequestIDs</b> members) if any of the following are true:
-
-<ul>
-<li>
-The miniport driver is operating in ExtSTA mode.
-
-</li>
-<li>
-The 802.11 
-       <b>dot11MultiDomainCapabilityEnabled</b> management information base (MIB) object is <b>FALSE</b>. For more
-       information about the 
-       <b>dot11MultiDomainCapabilityEnabled</b> MIB object, see 
-       <a href="https://msdn.microsoft.com/en-us/library/ee486712.aspx">
-       OID_DOT11_MULTI_DOMAIN_CAPABILITY_ENABLED</a>.
-
-</li>
-<li>
-The 
-       <b>dot11ScanType</b> member is set to 
-       <b>dot11_scan_type_passive</b>.
-
-</li>
-</ul>
-
-`dot11BSSID`
-
-The BSS identifier (BSSID) of a BSS network for which the 802.11 station scans. If this member is
-     set to the wildcard BSSID (0xFFFFFFFFFFFF), the station scans for all BSSIDs.
-
 `dot11BSSType`
 
 The type of basic service set (BSS) networks for which the 802.11 station scans. The data type for
      this member is the 
      <a href="..\wlantypes\ne-wlantypes-_dot11_bss_type.md">DOT11_BSS_TYPE</a> enumeration.
+
+`dot11BSSID`
+
+The BSS identifier (BSSID) of a BSS network for which the 802.11 station scans. If this member is
+     set to the wildcard BSSID (0xFFFFFFFFFFFF), the station scans for all BSSIDs.
 
 `dot11ScanType`
 
@@ -190,9 +136,24 @@ If the
      value.</div>
 <div> </div>
 
-`ucBuffer`
+`bRestrictedScan`
 
-The buffer containing optional data as specified through other members of this structure.
+If this member is <b>TRUE</b>, the 802.11 station performs a scan restricted to the channel and PHY
+     configuration used to connect to a BSS network.
+     
+
+The miniport driver must ignore this member if any of the following are true:
+
+<ul>
+<li>
+The miniport driver is operating in ExtSTA mode.
+
+</li>
+<li>
+The 802.11 station is not connected to a BSS network.
+
+</li>
+</ul>
 
 `udot11SSIDsOffset`
 
@@ -207,23 +168,6 @@ The 802.11 station scans for each SSID in the list. For example, if
      <b>dot11_scan_type_active</b>, the 802.11 station transmits an 802.11 Probe Request for each SSID in the
      list while scanning on a channel.
 
-`uIEsLength`
-
-The length, in bytes, of the list of IEs.
-
-`uIEsOffset`
-
-The offset in the 
-     <b>ucBuffer</b> array where the list of variable-length information elements (IEs) begins. The 802.11
-     station must append the list of IEs to the end of each Probe Request frame that it transmits during an
-     active scan.
-     
-
-The miniport driver must ignore this member (along with the 
-     <b>uIEsLength</b> member) if 
-     <b>dot11ScanType</b> is set to 
-     <b>dot11_scan_type_passive</b>.
-
 `uNumOfdot11SSIDs`
 
 The number of entries in the SSID list.
@@ -233,14 +177,46 @@ If
      <b>uNumOfdot11SSIDs</b> is zero, the miniport driver must use an SSID list containing the wildcard
      zero-length SSID.
 
-`uNumOfPhyTypeInfos`
+`bUseRequestIE`
 
-The number of entries in the list of PHY types.
+If this member is <b>TRUE</b>, the 802.11 station must include the list of request IDs (defined through
+     the 
+     <b>uRequestIDsOffset</b> and 
+     <b>uNumOfRequestIDs</b> members) within the 802.11d request information element (IE) of each Probe
+     Request frame that it transmits during the active scan.
      
 
-If 
-     <b>uNumOfPhyTypeInfos</b> is zero, the 802.11 station performs the scan using all of its supported
-     PHYs.
+The miniport driver must ignore this member (along with the 
+     <b>uRequestIDsOffset</b> and 
+     <b>uNumOfRequestIDs</b> members) if any of the following are true:
+
+<ul>
+<li>
+The miniport driver is operating in ExtSTA mode.
+
+</li>
+<li>
+The 802.11 
+       <b>dot11MultiDomainCapabilityEnabled</b> management information base (MIB) object is <b>FALSE</b>. For more
+       information about the 
+       <b>dot11MultiDomainCapabilityEnabled</b> MIB object, see 
+       <a href="https://msdn.microsoft.com/en-us/library/ee486712.aspx">
+       OID_DOT11_MULTI_DOMAIN_CAPABILITY_ENABLED</a>.
+
+</li>
+<li>
+The 
+       <b>dot11ScanType</b> member is set to 
+       <b>dot11_scan_type_passive</b>.
+
+</li>
+</ul>
+
+`uRequestIDsOffset`
+
+The offset in the 
+     <b>ucBuffer</b> array where the Request IDs list begins. Each entry in the request IDs list is formatted
+     as a UCHAR data type.
 
 `uNumOfRequestIDs`
 
@@ -261,11 +237,35 @@ The miniport driver must ignore this member (along with the
      <b>uNumOfPhyTypeInfos</b> member) if 
      <b>bRestrictedScan</b> is set to <b>TRUE</b>.
 
-`uRequestIDsOffset`
+`uNumOfPhyTypeInfos`
+
+The number of entries in the list of PHY types.
+     
+
+If 
+     <b>uNumOfPhyTypeInfos</b> is zero, the 802.11 station performs the scan using all of its supported
+     PHYs.
+
+`uIEsOffset`
 
 The offset in the 
-     <b>ucBuffer</b> array where the Request IDs list begins. Each entry in the request IDs list is formatted
-     as a UCHAR data type.
+     <b>ucBuffer</b> array where the list of variable-length information elements (IEs) begins. The 802.11
+     station must append the list of IEs to the end of each Probe Request frame that it transmits during an
+     active scan.
+     
+
+The miniport driver must ignore this member (along with the 
+     <b>uIEsLength</b> member) if 
+     <b>dot11ScanType</b> is set to 
+     <b>dot11_scan_type_passive</b>.
+
+`uIEsLength`
+
+The length, in bytes, of the list of IEs.
+
+`ucBuffer`
+
+The buffer containing optional data as specified through other members of this structure.
 
 ## Remarks
 The 802.11 station performs explicit scan operations following the OID set request of 
@@ -294,11 +294,3 @@ For more information about the ExtSTA operation mode, see
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SCAN_REQUEST_V2 structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

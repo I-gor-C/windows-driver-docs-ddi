@@ -69,29 +69,33 @@ typedef struct _D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0032 {
 ## Members
 
 
-`pfnBeginQuery`
-
-Begin query.
-
 `pfnCloseCommandList`
 
 Close command list.
+
+`pfnResetCommandList`
+
+Reset command list.
 
 `pfnDiscardResource`
 
 Discard resource.
 
+`pfnSetMarker`
+
+Set marker.
+
+`pfnSetPredication`
+
+Set predication.
+
+`pfnBeginQuery`
+
+Begin query.
+
 `pfnEndQuery`
 
 End query.
-
-`pfnProcessFrame`
-
-Decode frame.
-
-`pfnResetCommandList`
-
-Reset command list.
 
 `pfnResolveQueryData`
 
@@ -101,13 +105,9 @@ Resolve query data.
 
 Resource barrier.
 
-`pfnSetMarker`
+`pfnProcessFrame`
 
-Set marker.
-
-`pfnSetPredication`
-
-Set predication.
+Decode frame.
 
 `pfnSetProtectedResourceSession`
 

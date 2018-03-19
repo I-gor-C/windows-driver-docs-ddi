@@ -66,17 +66,27 @@ typedef struct _IRB_REQ_ASYNC_READ {
 ## Members
 
 
-`chPriority`
-
-Reserved. Drivers must set this to zero.
-
 `DestinationAddress`
 
 Specifies the 1394 64-bit destination address for this read operation. The driver only needs to fill in the <b>IA_Destination_Offset</b> member of <b>DestinationAddress</b>; the bus driver fills in the <b>IA_Destination_ID</b> member. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537346">IO_ADDRESS</a> for the structure description.
 
-`ElapsedTime`
+`nNumberOfBytesToRead`
 
-Elapsed time in nanoseconds. Only valid for flag ASYNC_FLAGS_PING.
+Specifies the number of bytes to be read from the 1394 node.
+
+`nBlockSize`
+
+Specifies the size of each individual block within the data stream that is read as a whole from the 1394 node. If this parameter is zero, the maximum packet size for the device and speed selected is used to issue these read requests, unless raw-mode addressing is used.
+
+
+
+If raw-mode addressing is used, the client driver should set the <b>nBlockSize</b> member to the maximum asynchronous payload size that is supported by the device at the connected speed.
+
+
+
+For more information on raw-mode addressing, see <a href="https://msdn.microsoft.com/93ad0cdf-5ac2-4916-b90e-1e64ca4494b6">Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus.</a>
+<div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">New Flags for Speed and Payload Size</a> and <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div>
+<div> </div>
 
 `fulFlags`
 
@@ -113,29 +123,15 @@ The bus driver returns the elapsed time of the operation in <b>u.AsyncRead.Elaps
 
 Points to an MDL that describes the device driver's buffer, which receives data from the 1394 node.
 
-`nBlockSize`
+`ulGeneration`
 
-Specifies the size of each individual block within the data stream that is read as a whole from the 1394 node. If this parameter is zero, the maximum packet size for the device and speed selected is used to issue these read requests, unless raw-mode addressing is used.
+Specifies the bus reset generation as known by the device driver that submits this asynchronous request. If the generation count specified does not match the actual generation of the bus, this request is returned with an error of STATUS_INVALID_GENERATION.
 
-
-
-If raw-mode addressing is used, the client driver should set the <b>nBlockSize</b> member to the maximum asynchronous payload size that is supported by the device at the connected speed.
-
-
-
-For more information on raw-mode addressing, see <a href="https://msdn.microsoft.com/93ad0cdf-5ac2-4916-b90e-1e64ca4494b6">Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus.</a>
-<div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">New Flags for Speed and Payload Size</a> and <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div>
-<div> </div>
-
-`nNumberOfBytesToRead`
-
-Specifies the number of bytes to be read from the 1394 node.
-
-`nSpeed`
+`chPriority`
 
 Reserved. Drivers must set this to zero.
 
-`Reserved`
+`nSpeed`
 
 Reserved. Drivers must set this to zero.
 
@@ -143,9 +139,13 @@ Reserved. Drivers must set this to zero.
 
 Reserved. Drivers must set this to zero.
 
-`ulGeneration`
+`Reserved`
 
-Specifies the bus reset generation as known by the device driver that submits this asynchronous request. If the generation count specified does not match the actual generation of the bus, this request is returned with an error of STATUS_INVALID_GENERATION.
+Reserved. Drivers must set this to zero.
+
+`ElapsedTime`
+
+Elapsed time in nanoseconds. Only valid for flag ASYNC_FLAGS_PING.
 
 
 ## Requirements

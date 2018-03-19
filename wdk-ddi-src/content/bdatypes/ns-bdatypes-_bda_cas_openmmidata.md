@@ -60,10 +60,6 @@ typedef struct _BDA_CAS_OPENMMIDATA {
 ## Members
 
 
-`argbDialogData`
-
-
-
 `ulDialogNumber`
 
 
@@ -72,11 +68,15 @@ typedef struct _BDA_CAS_OPENMMIDATA {
 
 
 
+`uuidDialogType`
+
+
+
 `usDialogDataLength`
 
 
 
-`uuidDialogType`
+`argbDialogData`
 
 
 

@@ -65,6 +65,34 @@ typedef struct _UFF_FILEHEADER {
 ## Members
 
 
+`dwSignature`
+
+Specifies the signature for .uff files. This value must be UFF_FILE_MAGIC.
+
+`dwVersion`
+
+Specifies the format version for .uff files. This value must be UFF_VERSION_NUMBER. The HIWORD contains the major version number and the LOWORD contains the minor version number.
+
+`dwSize`
+
+Specifies the size, in bytes, of the UFF_FILEHEADER structure.
+
+`nFonts`
+
+Specifies the number of fonts specified within the .uff file and identified by <a href="..\prntfont\ns-prntfont-_data_header.md">DATA_HEADER</a> structures. This is also the number of <a href="..\prntfont\ns-prntfont-_uff_fontdirectory.md">UFF_FONTDIRECTORY</a> structures within the .uff file.
+
+`nGlyphSets`
+
+Specifies the  number of glyph sets specified within the .uff file and identified by DATA_HEADER structures. Some fonts might share a glyph set.
+
+`nVarData`
+
+Specifies the  number of variable data sections specified within the .uff file and identified by DATA_HEADER structures.
+
+`offFontDir`
+
+Specifies the offset, in bytes, from the beginning of the .uff file to the beginning of the first <a href="..\prntfont\ns-prntfont-_uff_fontdirectory.md">UFF_FONTDIRECTORY</a> structure.
+
 `dwFlags`
 
 Is a set of bit flags, as specified in the following table.
@@ -90,34 +118,6 @@ The array of UFF_FONTDIRECTORY structures (specified by <b>offFontDir</b>) is so
 
 Reserved. Must be set to zero.
 
-`dwSignature`
-
-Specifies the signature for .uff files. This value must be UFF_FILE_MAGIC.
-
-`dwSize`
-
-Specifies the size, in bytes, of the UFF_FILEHEADER structure.
-
-`dwVersion`
-
-Specifies the format version for .uff files. This value must be UFF_VERSION_NUMBER. The HIWORD contains the major version number and the LOWORD contains the minor version number.
-
-`nFonts`
-
-Specifies the number of fonts specified within the .uff file and identified by <a href="..\prntfont\ns-prntfont-_data_header.md">DATA_HEADER</a> structures. This is also the number of <a href="..\prntfont\ns-prntfont-_uff_fontdirectory.md">UFF_FONTDIRECTORY</a> structures within the .uff file.
-
-`nGlyphSets`
-
-Specifies the  number of glyph sets specified within the .uff file and identified by DATA_HEADER structures. Some fonts might share a glyph set.
-
-`nVarData`
-
-Specifies the  number of variable data sections specified within the .uff file and identified by DATA_HEADER structures.
-
-`offFontDir`
-
-Specifies the offset, in bytes, from the beginning of the .uff file to the beginning of the first <a href="..\prntfont\ns-prntfont-_uff_fontdirectory.md">UFF_FONTDIRECTORY</a> structure.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -131,11 +131,3 @@ Specifies the offset, in bytes, from the beginning of the .uff file to the begin
 
 
 <a href="..\prntfont\ns-prntfont-_data_header.md">DATA_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20UFF_FILEHEADER structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -61,8 +61,8 @@ typedef enum _USBFN_ACTION {
 <table>
             
                 <tr>
-                    <td>UsbfnActionDetectProprietaryCharger</td>
-                    <td>UFX should initiate proprietary charger detection by calling the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_detect.md">EVT_UFX_DEVICE_DETECT_PROPRIETARY_CHARGER</a> callback function.</td>
+                    <td>UsbfnActionNone</td>
+                    <td>No special action should be taken.</td>
                 </tr>
             
                 <tr>
@@ -71,8 +71,8 @@ typedef enum _USBFN_ACTION {
                 </tr>
             
                 <tr>
-                    <td>UsbfnActionNone</td>
-                    <td>No special action should be taken.</td>
+                    <td>UsbfnActionDetectProprietaryCharger</td>
+                    <td>UFX should initiate proprietary charger detection by calling the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_detect.md">EVT_UFX_DEVICE_DETECT_PROPRIETARY_CHARGER</a> callback function.</td>
                 </tr>
 </table>
 

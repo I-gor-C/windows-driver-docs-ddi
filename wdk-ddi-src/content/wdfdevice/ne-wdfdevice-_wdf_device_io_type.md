@@ -65,25 +65,8 @@ typedef enum _WDF_DEVICE_IO_TYPE {
 <table>
             
                 <tr>
-                    <td>WdfDeviceIoBuffered</td>
-                    <td>Buffered I/O will be used to access data buffers.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDeviceIoBufferedOrDirect</td>
-                    <td>This value is not used by KMDF drivers.
-
-<b>UMDF </b>Buffered I/O or direct I/O will be used to access data buffers.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDeviceIoDirect</td>
-                    <td>Direct I/O will be used to access data buffers.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDeviceIoMaximum</td>
-                    <td></td>
+                    <td>WdfDeviceIoUndefined</td>
+                    <td>Reserved for system use.</td>
                 </tr>
             
                 <tr>
@@ -94,8 +77,25 @@ typedef enum _WDF_DEVICE_IO_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WdfDeviceIoUndefined</td>
-                    <td>Reserved for system use.</td>
+                    <td>WdfDeviceIoBuffered</td>
+                    <td>Buffered I/O will be used to access data buffers.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceIoDirect</td>
+                    <td>Direct I/O will be used to access data buffers.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceIoBufferedOrDirect</td>
+                    <td>This value is not used by KMDF drivers.
+
+<b>UMDF </b>Buffered I/O or direct I/O will be used to access data buffers.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceIoMaximum</td>
+                    <td></td>
                 </tr>
 </table>
 
@@ -123,11 +123,3 @@ The <a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFI
 
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotype.md">WdfDeviceInitSetIoType</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_IO_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

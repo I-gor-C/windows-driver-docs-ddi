@@ -75,8 +75,68 @@ typedef enum D3D12DDICAPS_TYPE {
 <table>
             
                 <tr>
+                    <td>D3D12DDICAPS_TYPE_TEXTURE_LAYOUT</td>
+                    <td>Texture layout.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_SWIZZLE_PATTERN</td>
+                    <td>Swizzle pattern.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_MEMORY_ARCHITECTURE</td>
+                    <td>Memory architecture.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_TEXTURE_LAYOUT_SETS</td>
+                    <td>Texture layout sets.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_SHADER</td>
+                    <td>Shader.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_ARCHITECTURE_INFO</td>
+                    <td>Architecture information.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_D3D12_OPTIONS</td>
+                    <td>Options for D3D12.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_3DPIPELINESUPPORT</td>
+                    <td>Support for 3D pipeline.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_GPUVA_CAPS</td>
+                    <td>GPU video acceleration capabilities.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_TEXTURE_LAYOUT1</td>
+                    <td>Texture layout.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D12DDICAPS_TYPE_0011_SHADER_MODELS</td>
                     <td>Shader models.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_0030_PROTECTED_RESOURCE_SESSION_SUPPORT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_0030_CRYPTO_SESSION_SUPPORT</td>
+                    <td></td>
                 </tr>
             
                 <tr>
@@ -85,13 +145,13 @@ typedef enum D3D12DDICAPS_TYPE {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDICAPS_TYPE_0022_SWIZZLE_PATTERN</td>
-                    <td>Swizzle pattern.</td>
+                    <td>D3D12DDICAPS_TYPE_0022_TEXTURE_LAYOUT</td>
+                    <td>Texture layout.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDICAPS_TYPE_0022_TEXTURE_LAYOUT</td>
-                    <td>Texture layout.</td>
+                    <td>D3D12DDICAPS_TYPE_0022_SWIZZLE_PATTERN</td>
+                    <td>Swizzle pattern.</td>
                 </tr>
             
                 <tr>
@@ -110,68 +170,8 @@ typedef enum D3D12DDICAPS_TYPE {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDICAPS_TYPE_0030_CRYPTO_SESSION_SUPPORT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>D3D12DDICAPS_TYPE_0030_CRYPTO_SESSION_TRANSFORM_SUPPORT</td>
                     <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_0030_PROTECTED_RESOURCE_SESSION_SUPPORT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_3DPIPELINESUPPORT</td>
-                    <td>Support for 3D pipeline.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_ARCHITECTURE_INFO</td>
-                    <td>Architecture information.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_D3D12_OPTIONS</td>
-                    <td>Options for D3D12.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_GPUVA_CAPS</td>
-                    <td>GPU video acceleration capabilities.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_MEMORY_ARCHITECTURE</td>
-                    <td>Memory architecture.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_SHADER</td>
-                    <td>Shader.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_SWIZZLE_PATTERN</td>
-                    <td>Swizzle pattern.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_TEXTURE_LAYOUT</td>
-                    <td>Texture layout.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_TEXTURE_LAYOUT_SETS</td>
-                    <td>Texture layout sets.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_TEXTURE_LAYOUT1</td>
-                    <td>Texture layout.</td>
                 </tr>
 </table>
 

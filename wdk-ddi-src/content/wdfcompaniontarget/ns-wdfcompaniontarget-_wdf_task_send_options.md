@@ -59,11 +59,11 @@ typedef struct _WDF_TASK_SEND_OPTIONS {
 ## Members
 
 
-`Flags`
-
-
-
 `Size`
+
+
+
+`Flags`
 
 
 

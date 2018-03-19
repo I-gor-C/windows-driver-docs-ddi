@@ -61,35 +61,35 @@ typedef struct _FILTER_EXTENSION {
 ## Members
 
 
-`DeviceObject`
-
-A pointer to the device object of the dump volume. This pointer points to the top of the dump volume stack.
-
-`DiskSize`
-
-Size of the disk.
-
-`DumpData`
-
-A pointer to the context data that is provided by the filter driver in <a href="..\ntdddump\ns-ntdddump-_filter_initialization_data.md">FILTER_INITIALIZATION_DATA</a>.
-
 `DumpType`
 
 This parameter indicates the type of dump that this instance of the filter driver is loaded on.
 
-`Flags`
+`DeviceObject`
 
-
+A pointer to the device object of the dump volume. This pointer points to the top of the dump volume stack.
 
 `Geometry`
 
 The disk geometry of the dump device in <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a> format.
 
+`DiskSize`
+
+Size of the disk.
+
 `PartitionInfo`
 
 The partition information in <a href="..\ntdddisk\ns-ntdddisk-_disk_partition_info.md">DISK_PARTITION_INFO</a> format.
 
+`DumpData`
+
+A pointer to the context data that is provided by the filter driver in <a href="..\ntdddump\ns-ntdddump-_filter_initialization_data.md">FILTER_INITIALIZATION_DATA</a>.
+
 `Size`
+
+
+
+`Flags`
 
 
 
@@ -111,11 +111,3 @@ The partition information in <a href="..\ntdddisk\ns-ntdddisk-_disk_partition_in
 
 
 <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FILTER_EXTENSION structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

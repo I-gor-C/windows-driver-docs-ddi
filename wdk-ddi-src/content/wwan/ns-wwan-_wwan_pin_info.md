@@ -60,10 +60,9 @@ typedef struct _WWAN_PIN_INFO {
 ## Members
 
 
-`AttemptsRemaining`
+`PinType`
 
-The number of attempts that remain for any pin-related operations such as enter, enable, disable,
-     and change.
+The type of PIN required to unlock the information stored on the device.
 
 `PinState`
 
@@ -72,9 +71,10 @@ The state of PIN-entry required to unlock the device.
 
 This value indicates whether the device requires a PIN to be entered or not.
 
-`PinType`
+`AttemptsRemaining`
 
-The type of PIN required to unlock the information stored on the device.
+The number of attempts that remain for any pin-related operations such as enter, enable, disable,
+     and change.
 
 
 ## Requirements
@@ -94,11 +94,3 @@ The type of PIN required to unlock the information stored on the device.
 
 
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_pin_info.md">NDIS_WWAN_PIN_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_INFO structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

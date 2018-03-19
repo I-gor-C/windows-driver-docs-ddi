@@ -62,8 +62,8 @@ typedef enum _UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY {
 <table>
             
                 <tr>
-                    <td>UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_BULK_INTERACTIVE</td>
-                    <td>Bulk endpoint with interactive has the priority.</td>
+                    <td>UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_NONE</td>
+                    <td>No characteristics of the endpoint.</td>
                 </tr>
             
                 <tr>
@@ -77,8 +77,8 @@ typedef enum _UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY {
                 </tr>
             
                 <tr>
-                    <td>UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_NONE</td>
-                    <td>No characteristics of the endpoint.</td>
+                    <td>UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_BULK_INTERACTIVE</td>
+                    <td>Bulk endpoint with interactive has the priority.</td>
                 </tr>
 </table>
 
@@ -92,11 +92,3 @@ typedef enum _UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY {
 ## See Also
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-client-drivers-for-ma-usb">USB client drivers for Media-Agnostic (MA-USB)</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY enumeration%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

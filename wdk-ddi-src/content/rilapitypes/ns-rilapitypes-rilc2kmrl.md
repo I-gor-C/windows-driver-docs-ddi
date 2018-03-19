@@ -66,6 +66,26 @@ typedef struct _RILC2KMRL {
 ## Members
 
 
+`dwParams`
+
+
+
+`fServing`
+
+
+
+`dwNID`
+
+
+
+`dwSID`
+
+
+
+`dwBaseStationID`
+
+
+
 `dwBaseLat`
 
 
@@ -74,7 +94,7 @@ typedef struct _RILC2KMRL {
 
 
 
-`dwBaseStationID`
+`dwRefPN`
 
 
 
@@ -82,27 +102,7 @@ typedef struct _RILC2KMRL {
 
 
 
-`dwNID`
-
-
-
-`dwParams`
-
-
-
 `dwPilotStrength`
-
-
-
-`dwRefPN`
-
-
-
-`dwSID`
-
-
-
-`fServing`
 
 
 

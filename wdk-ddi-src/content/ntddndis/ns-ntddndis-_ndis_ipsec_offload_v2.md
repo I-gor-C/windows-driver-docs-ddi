@@ -75,10 +75,36 @@ typedef struct _NDIS_IPSEC_OFFLOAD_V2 {
 ## Members
 
 
+`Encapsulation`
+
+The MAC encapsulation types that are supported for IPsec offload. For more information about this
+     member, see the following Remarks section.
+
+`IPv6Supported`
+
+A BOOLEAN value that is set to <b>TRUE</b> if IPsec offload processing on IPv6 traffic is supported.
+     Otherwise, this member is <b>FALSE</b>.
+
+`IPv4Options`
+
+A BOOLEAN value that is set to <b>TRUE</b> if the NIC supports IPsec offload of packets with IPv4
+     options. Otherwise, this member is <b>FALSE</b>.
+
+`IPv6NonIPsecExtensionHeaders`
+
+A BOOLEAN value that is set to <b>TRUE</b> if the NIC supports IPsec offload processing for packets with
+     non-IPsec IPv6 extension headers in addition to IPsec headers. Otherwise, this member is <b>FALSE</b>.
+
 `Ah`
 
 A BOOLEAN value that is set to <b>TRUE</b> if the NIC can perform IPsec offload operations on send and
      receive packets that contain an authentication header (AH) security payload. Otherwise, this member is
+     <b>FALSE</b>.
+
+`Esp`
+
+A BOOLEAN value that is set to <b>TRUE</b> if the NIC can perform IPsec offload operations on send and
+     receive packets that contain an encapsulating security payload (ESP). Otherwise, this member is
      <b>FALSE</b>.
 
 `AhEspCombined`
@@ -86,6 +112,91 @@ A BOOLEAN value that is set to <b>TRUE</b> if the NIC can perform IPsec offload 
 A BOOLEAN value that is set to <b>TRUE</b> if the NIC can perform IPsec offload operations on send and
      receive packets that contain both an AH payload and an ESP payload. Otherwise, this member is
      <b>FALSE</b>.
+
+`Transport`
+
+A BOOLEAN value that is set to <b>TRUE</b> if the NIC can process security payloads for the
+     transport-mode portion of send and receive packets. (The transport-mode portion of a packet pertains to
+     an end-to-end connection.) Otherwise, this member is <b>FALSE</b>.
+
+`Tunnel`
+
+A BOOLEAN value that is set to <b>TRUE</b> if the NIC can process security payloads for the tunnel-mode
+     portion of send and receive packets. (The tunnel-mode portion of a packet pertains to a tunnel
+     connection.) Otherwise, this member is <b>FALSE</b>.
+     
+
+<div class="alert"><b>Note</b>  When the IPsec layer sends tunnel packets over an IPsec task offload interface,
+     the IPsec layer ensures that large send offload (LSO) is not used for those packets.</div>
+<div> </div>
+
+`TransportTunnelCombined`
+
+A BOOLEAN value that is set to <b>TRUE</b> if the NIC can process security payloads for both the
+     transport-mode portion and the tunnel-mode portion of send and receive packets. Otherwise, this member
+     is <b>FALSE</b>. The transport-mode portion of a packet pertains to an end-to-end connection. The tunnel-mode
+     portion of a packet pertains to a tunnel connection.
+
+`LsoSupported`
+
+A BOOLEAN value that is set to <b>TRUE</b> if the NIC supports large send offload (LSO). Otherwise, this
+     member is <b>FALSE</b>. Note that the LSO capabilities of the NIC are specified in the 
+     <b>LsoV1</b> or 
+     <b>LsoV2</b> members of the 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a> structure. The 
+     <b>LsoSupported</b> flag indicates that the capabilities that are specified in those members are also
+     valid if the connection is secured with IPsec.
+
+`ExtendedSequenceNumbers`
+
+A BOOLEAN value that is set to <b>TRUE</b> if the NIC supports IPsec extended sequence numbers.
+     Otherwise, this member is <b>FALSE</b>.
+
+`UdpEsp`
+
+The types of UDP-encapsulated ESP data packets that the NIC can parse. For a description of the
+     UDP-encapsulation types, see 
+     <a href="https://msdn.microsoft.com/126d2fd5-778e-43ff-87f6-5b0b54a83bac">UDP-ESP Encapsulation Types</a>. This
+     member can be one or more of the following flags:
+     
+
+
+
+
+
+#### IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_NONE
+
+IPsec offload processing is not available for any UDP encapsulation type.
+
+
+
+#### IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT
+
+IPsec offload is supported for an ESP-encapsulated transport-mode packet that is encapsulated by
+       UDP.
+
+
+
+#### IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TUNNEL
+
+IPsec offload is supported for the tunnel-mode portion of a packet that is UDP-encapsulated. The
+       transport-mode portion of the packet is not UDP-encapsulated and is not ESP-protected.
+
+
+
+#### IPSEC_OFFLOAD_V2_TRANSPORT_OVER_UDP_ESP_ENCAPSULATION_TUNNEL
+
+IPsec offload is supported for the tunnel-mode portion of a packet that is UDP-encapsulated. The
+       transport-mode portion of a packet is not UDP-encapsulated but is ESP-protected.
+
+
+
+
+
+#### IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT_OVER_TUNNEL
+
+IPsec offload is supported for the tunnel-mode portion of a packet that is not UDP-encapsulated.
+       The transport-mode portion of a packet is UDP-encapsulated and ESP-protected.
 
 `AuthenticationAlgorithms`
 
@@ -136,11 +247,6 @@ The NIC can use the AES-GMAC 192 algorithm for computing or validating a cryptog
 
 The NIC can use the AES-GMAC 256 algorithm for computing or validating a cryptographic
        checksum.
-
-`Encapsulation`
-
-The MAC encapsulation types that are supported for IPsec offload. For more information about this
-     member, see the following Remarks section.
 
 `EncryptionAlgorithms`
 
@@ -212,117 +318,11 @@ The NIC can use the AES-CBC 192 algorithm for encrypting and decrypting ESP payl
 
 The NIC can use the AES-CBC 256 algorithm for encrypting and decrypting ESP payloads.
 
-`Esp`
-
-A BOOLEAN value that is set to <b>TRUE</b> if the NIC can perform IPsec offload operations on send and
-     receive packets that contain an encapsulating security payload (ESP). Otherwise, this member is
-     <b>FALSE</b>.
-
-`ExtendedSequenceNumbers`
-
-A BOOLEAN value that is set to <b>TRUE</b> if the NIC supports IPsec extended sequence numbers.
-     Otherwise, this member is <b>FALSE</b>.
-
-`IPv4Options`
-
-A BOOLEAN value that is set to <b>TRUE</b> if the NIC supports IPsec offload of packets with IPv4
-     options. Otherwise, this member is <b>FALSE</b>.
-
-`IPv6NonIPsecExtensionHeaders`
-
-A BOOLEAN value that is set to <b>TRUE</b> if the NIC supports IPsec offload processing for packets with
-     non-IPsec IPv6 extension headers in addition to IPsec headers. Otherwise, this member is <b>FALSE</b>.
-
-`IPv6Supported`
-
-A BOOLEAN value that is set to <b>TRUE</b> if IPsec offload processing on IPv6 traffic is supported.
-     Otherwise, this member is <b>FALSE</b>.
-
-`LsoSupported`
-
-A BOOLEAN value that is set to <b>TRUE</b> if the NIC supports large send offload (LSO). Otherwise, this
-     member is <b>FALSE</b>. Note that the LSO capabilities of the NIC are specified in the 
-     <b>LsoV1</b> or 
-     <b>LsoV2</b> members of the 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a> structure. The 
-     <b>LsoSupported</b> flag indicates that the capabilities that are specified in those members are also
-     valid if the connection is secured with IPsec.
-
 `SaOffloadCapacity`
 
 The number of SA bundles, which might include ESP or AH or both, that can be offloaded to the NIC.
      The TCP/IP maintains a count of the number of offloaded SA bundles and should not add more than the
      maximum number of SA bundles that the miniport driver reported.
-
-`Transport`
-
-A BOOLEAN value that is set to <b>TRUE</b> if the NIC can process security payloads for the
-     transport-mode portion of send and receive packets. (The transport-mode portion of a packet pertains to
-     an end-to-end connection.) Otherwise, this member is <b>FALSE</b>.
-
-`TransportTunnelCombined`
-
-A BOOLEAN value that is set to <b>TRUE</b> if the NIC can process security payloads for both the
-     transport-mode portion and the tunnel-mode portion of send and receive packets. Otherwise, this member
-     is <b>FALSE</b>. The transport-mode portion of a packet pertains to an end-to-end connection. The tunnel-mode
-     portion of a packet pertains to a tunnel connection.
-
-`Tunnel`
-
-A BOOLEAN value that is set to <b>TRUE</b> if the NIC can process security payloads for the tunnel-mode
-     portion of send and receive packets. (The tunnel-mode portion of a packet pertains to a tunnel
-     connection.) Otherwise, this member is <b>FALSE</b>.
-     
-
-<div class="alert"><b>Note</b>  When the IPsec layer sends tunnel packets over an IPsec task offload interface,
-     the IPsec layer ensures that large send offload (LSO) is not used for those packets.</div>
-<div> </div>
-
-`UdpEsp`
-
-The types of UDP-encapsulated ESP data packets that the NIC can parse. For a description of the
-     UDP-encapsulation types, see 
-     <a href="https://msdn.microsoft.com/126d2fd5-778e-43ff-87f6-5b0b54a83bac">UDP-ESP Encapsulation Types</a>. This
-     member can be one or more of the following flags:
-     
-
-
-
-
-
-#### IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_NONE
-
-IPsec offload processing is not available for any UDP encapsulation type.
-
-
-
-#### IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT
-
-IPsec offload is supported for an ESP-encapsulated transport-mode packet that is encapsulated by
-       UDP.
-
-
-
-#### IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TUNNEL
-
-IPsec offload is supported for the tunnel-mode portion of a packet that is UDP-encapsulated. The
-       transport-mode portion of the packet is not UDP-encapsulated and is not ESP-protected.
-
-
-
-#### IPSEC_OFFLOAD_V2_TRANSPORT_OVER_UDP_ESP_ENCAPSULATION_TUNNEL
-
-IPsec offload is supported for the tunnel-mode portion of a packet that is UDP-encapsulated. The
-       transport-mode portion of a packet is not UDP-encapsulated but is ESP-protected.
-
-
-
-
-
-#### IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT_OVER_TUNNEL
-
-IPsec offload is supported for the tunnel-mode portion of a packet that is not UDP-encapsulated.
-       The transport-mode portion of a packet is UDP-encapsulated and ESP-protected.
 
 ## Remarks
 In NDIS 6.1 and later versions, the NDIS_IPSEC_OFFLOAD_V2 structure is used in the 
@@ -415,11 +415,3 @@ The following flags are defined for the
 
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_IPSEC_OFFLOAD_V2 structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

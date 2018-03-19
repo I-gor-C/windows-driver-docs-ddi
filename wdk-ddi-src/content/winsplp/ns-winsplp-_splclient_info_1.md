@@ -63,18 +63,6 @@ typedef struct _SPLCLIENT_INFO_1 {
 ## Members
 
 
-`dwBuildNum`
-
-The build number of the version of the NT-based operating system running on the client, as returned by the Microsoft Window SDK <b>GetVersionEx</b> function.
-
-`dwMajorVersion`
-
-The major version number of the NT-based operating system print spooler running on the client.
-
-`dwMinorVersion`
-
-The minor version number of the NT-based operating system print spooler running on the client.
-
 `dwSize`
 
 Size of the SPLCLIENT_INFO_1 structure.
@@ -86,6 +74,18 @@ Not used.
 `pUserName`
 
 Not used.
+
+`dwBuildNum`
+
+The build number of the version of the NT-based operating system running on the client, as returned by the Microsoft Window SDK <b>GetVersionEx</b> function.
+
+`dwMajorVersion`
+
+The major version number of the NT-based operating system print spooler running on the client.
+
+`dwMinorVersion`
+
+The minor version number of the NT-based operating system print spooler running on the client.
 
 `wProcessorArchitecture`
 

@@ -64,6 +64,10 @@ typedef struct _PSPINFO {
 
 CPSUI-supplied size, in bytes, of the PSPINFO structure.
 
+`wReserved`
+
+Reserved.
+
 `hComPropSheet`
 
 CPSUI-supplied handle to the parent of the page whose handle is contained in <b>hCPSUIPage</b>.
@@ -75,10 +79,6 @@ CPSUI-supplied handle to the property sheet page.
 `pfnComPropSheet`
 
 CPSUI-supplied pointer to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function.
-
-`wReserved`
-
-Reserved.
 
 ## Remarks
 Before CPSUI calls <b>CreatePropertySheetPage</b> to create a property sheet page, it expands the size of the standard PROPSHEETPAGE structure in order to append a PSPINFO structure. When the operating system calls a dialog box procedure (pointed to by a <a href="..\compstui\ns-compstui-_dlgpage.md">DLGPAGE</a> structure) and specifies a WM_INITDIALOG message, the function's <b>lParam</b> member points to the expanded PROPSHEETPAGE structure containing the PSPINFO structure.

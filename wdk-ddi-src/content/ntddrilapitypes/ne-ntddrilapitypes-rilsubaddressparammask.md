@@ -59,7 +59,7 @@ typedef enum _RILSUBADDRESSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_SA_ALL</td>
+                    <td>RIL_PARAM_SA_TYPE</td>
                     <td></td>
                 </tr>
             
@@ -69,7 +69,7 @@ typedef enum _RILSUBADDRESSPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_SA_TYPE</td>
+                    <td>RIL_PARAM_SA_ALL</td>
                     <td></td>
                 </tr>
 </table>

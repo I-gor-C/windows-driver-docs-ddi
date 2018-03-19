@@ -69,12 +69,6 @@ Specifies whether a callback should be registered or deactivated. Use REGISTER_N
 <div class="alert"><b>Note</b>  In Windows 7 and later, set the EXTENDED_NOTIFICATION_ROUTINE flag  to register for extended bus reset notifications supported by the new IEEE 1394 bus driver. This notification returns information about the current generation of the bus, such as the generation count and node ids, to 1394 client drivers in the context of the bus reset notification.</div>
 <div> </div>
 
-`ResetContext`
-
-Specifies the argument to be passed to the notification routine.
-
-When the EXTENDED_NOTIFICATION_ROUTINE flag is specified, <b>ResetContext</b> points to a <a href="https://msdn.microsoft.com/library/windows/hardware/gg266399">BUS_RESET_DATA</a> structure.
-
 `ResetRoutine`
 
 Points to the notification routine for bus resets. The notification routine parameters follow this prototype:
@@ -90,6 +84,12 @@ Points to the notification routine for bus resets. The notification routine para
 </td>
 </tr>
 </table></span></div>
+
+`ResetContext`
+
+Specifies the argument to be passed to the notification routine.
+
+When the EXTENDED_NOTIFICATION_ROUTINE flag is specified, <b>ResetContext</b> points to a <a href="https://msdn.microsoft.com/library/windows/hardware/gg266399">BUS_RESET_DATA</a> structure.
 
 
 ## Requirements

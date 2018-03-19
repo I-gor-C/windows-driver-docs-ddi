@@ -69,6 +69,11 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_PIN_ASSIGNMENT {
 <table>
             
                 <tr>
+                    <td>UcmTcpciPortControllerPinAssignmentInvalid</td>
+                    <td>Invalid pin assignment.</td>
+                </tr>
+            
+                <tr>
                     <td>UcmTcpciPortControllerDFPDPinAssignmentA</td>
                     <td>TBD</td>
                 </tr>
@@ -96,11 +101,6 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_PIN_ASSIGNMENT {
                 <tr>
                     <td>UcmTcpciPortControllerDFPDPinAssignmentF</td>
                     <td>TBD</td>
-                </tr>
-            
-                <tr>
-                    <td>UcmTcpciPortControllerPinAssignmentInvalid</td>
-                    <td>Invalid pin assignment.</td>
                 </tr>
             
                 <tr>

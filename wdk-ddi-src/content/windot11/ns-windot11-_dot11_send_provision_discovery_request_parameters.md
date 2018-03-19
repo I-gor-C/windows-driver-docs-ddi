@@ -65,22 +65,6 @@ typedef struct _DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS {
 ## Members
 
 
-`bUseGroupID`
-
-If TRUE, the value in <b>GroupID</b> should be included in the provision discovery request.
-
-`DialogToken`
-
-The dialog token to send  in the provision discovery request packet.
-
-`GroupCapability`
-
-The capability values that are included in the Group Capability bitmask of the Peer-to-Peer (P2P) Capability Information Element (IE) in  a provision discovery request.
-
-`GroupID`
-
-The group identifier to include in the provision discovery request.
-
 `Header`
 
 The type, revision, and size of the <b>DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following.
@@ -104,21 +88,37 @@ The type, revision, and size of the <b>DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PA
 </tr>
 </table>
 
+`DialogToken`
+
+The dialog token to send  in the provision discovery request packet.
+
 `PeerDeviceAddress`
 
 The destination address of the WFD device receiving the provision discovery packet.
 
-`uIEsLength`
+`uSendTimeout`
 
-The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
+The maximum time, in milliseconds, allowed to send the provision discovery request. If the time-out expires before the miniport has successfully transmitted the provision discovery response, it should indicate the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439783">NDIS_STATUS_DOT11_WFD_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE</a> with a failure status.
+
+`GroupCapability`
+
+The capability values that are included in the Group Capability bitmask of the Peer-to-Peer (P2P) Capability Information Element (IE) in  a provision discovery request.
+
+`GroupID`
+
+The group identifier to include in the provision discovery request.
+
+`bUseGroupID`
+
+If TRUE, the value in <b>GroupID</b> should be included in the provision discovery request.
 
 `uIEsOffset`
 
 The offset, in bytes,  of the array of additional information elements (IEs) the Wi-Fi Direct (WFD) port must add to the provision discovery request packet. This offset is from the start of the buffer that contains this structure.
 
-`uSendTimeout`
+`uIEsLength`
 
-The maximum time, in milliseconds, allowed to send the provision discovery request. If the time-out expires before the miniport has successfully transmitted the provision discovery response, it should indicate the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439783">NDIS_STATUS_DOT11_WFD_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE</a> with a failure status.
+The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
 
 
 ## Requirements
@@ -138,11 +138,3 @@ The maximum time, in milliseconds, allowed to send the provision discovery reque
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439783">NDIS_STATUS_DOT11_WFD_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

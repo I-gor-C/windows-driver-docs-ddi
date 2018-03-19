@@ -73,17 +73,22 @@ typedef enum _RILPHONEBOOKINFOPARAMMASK {
 <table>
             
                 <tr>
+                    <td>RIL_PARAM_PBI_USED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_TOTAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PARAM_PBI_ADDRESSLENGTH</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_PBI_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBI_MAXAASTEXTLENGTH</td>
+                    <td>RIL_PARAM_PBI_TEXTLENGTH</td>
                     <td></td>
                 </tr>
             
@@ -98,52 +103,7 @@ typedef enum _RILPHONEBOOKINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_PBI_MAXEMAILLENGTH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBI_MAXEMAILS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBI_MAXGASLENGTH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBI_MAXGROUPS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBI_MAXSNELENGTH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBI_TEXTLENGTH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBI_TOTAL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBI_TOTALAAS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBI_TOTALGAS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBI_USED</td>
+                    <td>RIL_PARAM_PBI_MAXAASTEXTLENGTH</td>
                     <td></td>
                 </tr>
             
@@ -153,7 +113,47 @@ typedef enum _RILPHONEBOOKINFOPARAMMASK {
                 </tr>
             
                 <tr>
+                    <td>RIL_PARAM_PBI_TOTALAAS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_MAXEMAILS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_MAXEMAILLENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_MAXGROUPS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_MAXGASLENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PARAM_PBI_USEDGAS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_TOTALGAS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_MAXSNELENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_ALL</td>
                     <td></td>
                 </tr>
 </table>

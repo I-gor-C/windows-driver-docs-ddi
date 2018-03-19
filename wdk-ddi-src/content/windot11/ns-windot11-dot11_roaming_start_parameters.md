@@ -64,6 +64,40 @@ typedef struct DOT11_ROAMING_START_PARAMETERS {
 ## Members
 
 
+`Header`
+
+The type, revision, and size of the DOT11_ROAMING_START_PARAMETERS structure. This member is
+     formatted as an 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+     
+
+The miniport driver must set the members of 
+     <b>Header</b> to the following values:
+
+
+
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
+
+
+
+#### Revision
+
+This member must be set to DOT11_ROAMING_START_PARAMETERS_REVISION_1.
+
+
+
+#### Size
+
+This member must be set to 
+       sizeof(DOT11_ROAMING_START_PARAMETERS).
+
+For more information about these members, see 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+
 `AdhocBSSID`
 
 If the IEEE 802.11 
@@ -105,40 +139,6 @@ For more information about the IEEE 802.11
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-desired-bss-type">
      OID_DOT11_DESIRED_BSS_TYPE</a>.
 
-`Header`
-
-The type, revision, and size of the DOT11_ROAMING_START_PARAMETERS structure. This member is
-     formatted as an 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
-     
-
-The miniport driver must set the members of 
-     <b>Header</b> to the following values:
-
-
-
-
-
-#### Type
-
-This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
-
-
-
-#### Revision
-
-This member must be set to DOT11_ROAMING_START_PARAMETERS_REVISION_1.
-
-
-
-#### Size
-
-This member must be set to 
-       sizeof(DOT11_ROAMING_START_PARAMETERS).
-
-For more information about these members, see 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
-
 `uRoamingReason`
 
 The reason that the 802.11 station is roaming, which is formatted as a 
@@ -177,11 +177,3 @@ For more information about the roaming operation, see
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ROAMING_START_PARAMETERS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

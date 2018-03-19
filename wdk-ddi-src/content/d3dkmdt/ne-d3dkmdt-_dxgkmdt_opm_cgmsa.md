@@ -63,13 +63,13 @@ typedef enum _DXGKMDT_OPM_CGMSA {
 <table>
             
                 <tr>
-                    <td>DXGKMDT_OPM_CGMSA_COPY_FREELY</td>
-                    <td>Indicates that the signal from a physical video output can be copied an infinite number of times.</td>
+                    <td>DXGKMDT_OPM_CGMSA_OFF</td>
+                    <td>Indicates that a video output's signal is not protected with the CGMS-A output protection scheme.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGKMDT_OPM_CGMSA_COPY_NEVER</td>
-                    <td>Indicates that the signal from a physical video output can never be copied.</td>
+                    <td>DXGKMDT_OPM_CGMSA_COPY_FREELY</td>
+                    <td>Indicates that the signal from a physical video output can be copied an infinite number of times.</td>
                 </tr>
             
                 <tr>
@@ -83,8 +83,8 @@ typedef enum _DXGKMDT_OPM_CGMSA {
                 </tr>
             
                 <tr>
-                    <td>DXGKMDT_OPM_CGMSA_OFF</td>
-                    <td>Indicates that a video output's signal is not protected with the CGMS-A output protection scheme.</td>
+                    <td>DXGKMDT_OPM_CGMSA_COPY_NEVER</td>
+                    <td>Indicates that the signal from a physical video output can never be copied.</td>
                 </tr>
             
                 <tr>
@@ -128,11 +128,3 @@ CGMS-A protects analog TV signals. Currently, OPM can use CGMS-A to protect sign
 
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_OPM_CGMSA enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

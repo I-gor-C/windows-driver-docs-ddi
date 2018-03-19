@@ -58,17 +58,17 @@ typedef struct _D3DDDIENCRYPTED_BLOCK_INFO {
 ## Members
 
 
-`NumBytesInEncryptPattern`
+`NumEncryptedBytesAtBeginning`
 
-[in] The number of bytes in the buffer that are encrypted after the skip pattern, which the <b>NumBytesInSkipPattern</b> member specifies. The skip and encrypt pattern is then repeated until the buffer ends. For more information about the skip-encrypt pattern, see the Remarks section.
+[in] The number of bytes at the beginning of the buffer that are encrypted.
 
 `NumBytesInSkipPattern`
 
 [in] The number of bytes in the buffer that are skipped from encryption before encryption starts again.
 
-`NumEncryptedBytesAtBeginning`
+`NumBytesInEncryptPattern`
 
-[in] The number of bytes at the beginning of the buffer that are encrypted.
+[in] The number of bytes in the buffer that are encrypted after the skip pattern, which the <b>NumBytesInSkipPattern</b> member specifies. The skip and encrypt pattern is then repeated until the buffer ends. For more information about the skip-encrypt pattern, see the Remarks section.
 
 ## Remarks
 Because the buffer's encrypted portion is specified in bytes, an application must ensure that the encrypted blocks match the GPU's crypto-block alignment. 
@@ -105,11 +105,3 @@ The following examples show how the runtime can partition a buffer's encryption.
 
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decryptionblt.md">DecryptionBlt</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIENCRYPTED_BLOCK_INFO structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -60,9 +60,13 @@ typedef struct _STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR {
 ## Members
 
 
-`Node`
+`Version`
 
+The version of the physical topology.
 
+`Size`
+
+The total size of data in the system.
 
 `NodeCount`
 
@@ -72,13 +76,9 @@ The total number of storage nodes in the system.
 
 Indicates if storage in the system is reserved.
 
-`Size`
+`Node`
 
-The total size of data in the system.
 
-`Version`
-
-The version of the physical topology.
 
 
 ## Requirements

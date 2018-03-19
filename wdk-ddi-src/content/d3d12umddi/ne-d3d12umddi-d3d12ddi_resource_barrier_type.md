@@ -60,8 +60,8 @@ typedef enum D3D12DDI_RESOURCE_BARRIER_TYPE {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_RESOURCE_BARRIER_TYPE_0022_RANGED</td>
-                    <td>A ranged resource barrier.</td>
+                    <td>D3D12DDI_RESOURCE_BARRIER_TYPE_TRANSITION</td>
+                    <td>A transition barrier that indicates a transition of a set of subresources between different usages.</td>
                 </tr>
             
                 <tr>
@@ -70,13 +70,13 @@ typedef enum D3D12DDI_RESOURCE_BARRIER_TYPE {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_RESOURCE_BARRIER_TYPE_TRANSITION</td>
-                    <td>A transition barrier that indicates a transition of a set of subresources between different usages.</td>
+                    <td>D3D12DDI_RESOURCE_BARRIER_TYPE_UAV</td>
+                    <td>An unordered access view (UAV) barrier that indicates all UAV accesses to a resource must complete before any future UAV accesses can begin.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_RESOURCE_BARRIER_TYPE_UAV</td>
-                    <td>An unordered access view (UAV) barrier that indicates all UAV accesses to a resource must complete before any future UAV accesses can begin.</td>
+                    <td>D3D12DDI_RESOURCE_BARRIER_TYPE_0022_RANGED</td>
+                    <td>A ranged resource barrier.</td>
                 </tr>
 </table>
 

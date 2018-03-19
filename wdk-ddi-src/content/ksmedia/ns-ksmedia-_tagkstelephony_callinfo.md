@@ -57,13 +57,13 @@ typedef struct _tagKSTELEPHONY_CALLINFO {
 ## Members
 
 
-`CallState`
-
-Specifies the state of the phone call.
-
 `CallType`
 
 Specifies the type of phone call (circuit-switched, LTE packet-switched, or WLAN packet-switched).
+
+`CallState`
+
+Specifies the state of the phone call.
 
 
 ## Requirements

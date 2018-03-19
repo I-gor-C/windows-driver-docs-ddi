@@ -61,13 +61,13 @@ typedef struct _UFS_POWER_DESCRIPTOR {
 ## Members
 
 
-`bDescriptorIDN`
-
-Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_POWER_IDN</b>.
-
 `bLength`
 
 Specifies the length, in bytes, of this descriptor.
+
+`bDescriptorIDN`
+
+Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_POWER_IDN</b>.
 
 `wActiveICCLevelsVCC`
 

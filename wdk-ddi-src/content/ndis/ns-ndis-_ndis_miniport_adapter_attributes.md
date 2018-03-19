@@ -124,11 +124,21 @@ typedef union _NDIS_MINIPORT_ADAPTER_ATTRIBUTES {
 ## Members
 
 
+`Header`
+
+An <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+
 `AddDeviceRegistrationAttributes`
 
 An 
      <a href="..\ndis\ns-ndis-_ndis_miniport_add_device_registration_attributes.md">
      NDIS_MINIPORT_ADD_DEVICE_REGISTRATION_ATTRIBUTES</a> structure.
+
+`RegistrationAttributes`
+
+An 
+     <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_registration_attributes.md">
+     NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a> structure.
 
 `GeneralAttributes`
 
@@ -136,15 +146,11 @@ An
      <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_general_attributes.md">
      NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> structure.
 
-`HardwareAssistAttributes`
+`OffloadAttributes`
 
 An 
-      <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes.md">
-      NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a> structure.
-
-`Header`
-
-An <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_offload_attributes.md">
+     NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a> structure.
 
 `Native_802_11_Attributes`
 
@@ -152,25 +158,19 @@ An
      <a href="https://msdn.microsoft.com/f841c7f9-9ad3-4b53-b2d9-0d66d6e64b8b">
      NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a> structure.
 
+`HardwareAssistAttributes`
+
+An 
+      <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes.md">
+      NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a> structure.
+
 `NDKAttributes`
 
 An <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_ndk_attributes.md">NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES</a> structure.
 
-`OffloadAttributes`
-
-An 
-     <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_offload_attributes.md">
-     NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a> structure.
-
 `PacketDirectAttributes`
 
 
-
-`RegistrationAttributes`
-
-An 
-     <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_registration_attributes.md">
-     NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a> structure.
 
 ## Remarks
 Miniport drivers pass these structures to the 
@@ -225,11 +225,3 @@ Miniport drivers pass these structures to the
 
 <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_offload_attributes.md">
    NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_ATTRIBUTES union%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

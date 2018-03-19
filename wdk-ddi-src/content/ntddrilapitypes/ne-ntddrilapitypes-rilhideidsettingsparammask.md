@@ -60,12 +60,12 @@ typedef enum _RILHIDEIDSETTINGSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_HIDS_ALL</td>
+                    <td>RIL_PARAM_HIDS_EXECUTOR</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_HIDS_EXECUTOR</td>
+                    <td>RIL_PARAM_HIDS_STATUS</td>
                     <td></td>
                 </tr>
             
@@ -75,7 +75,7 @@ typedef enum _RILHIDEIDSETTINGSPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_HIDS_STATUS</td>
+                    <td>RIL_PARAM_HIDS_ALL</td>
                     <td></td>
                 </tr>
 </table>

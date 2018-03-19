@@ -62,13 +62,13 @@ typedef enum _CLFS_CONTEXT_MODE {
 <table>
             
                 <tr>
-                    <td>ClfsContextForward</td>
-                    <td>Indicates that the next record in the sequence is the record in the stream that immediately follows the current record.</td>
+                    <td>ClfsContextNone</td>
+                    <td>Indicates that a variable of type <b>CLFS_CONTEXT_MODE</b> has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>
-                    <td>ClfsContextNone</td>
-                    <td>Indicates that a variable of type <b>CLFS_CONTEXT_MODE</b> has not yet been assigned a meaningful value.</td>
+                    <td>ClfsContextUndoNext</td>
+                    <td>Indicates that the next record in the sequence is pointed to by the <a href="https://msdn.microsoft.com/4637fa0c-2f19-4f0c-bf13-f4ccac2e7284">undo-next LSN</a> of the current record.</td>
                 </tr>
             
                 <tr>
@@ -77,8 +77,8 @@ typedef enum _CLFS_CONTEXT_MODE {
                 </tr>
             
                 <tr>
-                    <td>ClfsContextUndoNext</td>
-                    <td>Indicates that the next record in the sequence is pointed to by the <a href="https://msdn.microsoft.com/4637fa0c-2f19-4f0c-bf13-f4ccac2e7284">undo-next LSN</a> of the current record.</td>
+                    <td>ClfsContextForward</td>
+                    <td>Indicates that the next record in the sequence is the record in the stream that immediately follows the current record.</td>
                 </tr>
 </table>
 
@@ -103,11 +103,3 @@ typedef enum _CLFS_CONTEXT_MODE {
 
 
 <a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLFS_CONTEXT_MODE enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -68,13 +68,13 @@ The protected NT session handle.
 
 The private driver data.
 
-`pPrivateRuntimeData`
-
-The private runtime data.
-
 `PrivateDriverDataSize`
 
 The size of the private driver data.
+
+`pPrivateRuntimeData`
+
+The private runtime data.
 
 `PrivateRuntimeDataSize`
 

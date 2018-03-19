@@ -71,8 +71,39 @@ typedef enum FWPS_FIELDS_STREAM_PACKET_V6_ {
 <table>
             
                 <tr>
-                    <td>FWPS_FIELD_STREAM_PACKET_V6_COMPARTMENT_ID</td>
-                    <td></td>
+                    <td>FWPS_FIELD_STREAM_PACKET_V6_IP_LOCAL_ADDRESS</td>
+                    <td>The local IP address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_STREAM_PACKET_V6_IP_REMOTE_ADDRESS</td>
+                    <td>The remote IP address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_STREAM_PACKET_V6_IP_LOCAL_PORT</td>
+                    <td>The local transport protocol port number.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_STREAM_PACKET_V6_IP_REMOTE_PORT</td>
+                    <td>The remote transport protocol port number.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_STREAM_PACKET_V6_IP_LOCAL_INTERFACE</td>
+                    <td>The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) for the network interface associated with the
+     local IP address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_STREAM_PACKET_V6_INTERFACE_INDEX</td>
+                    <td>The index of the network interface, as enumerated by the network stack.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_STREAM_PACKET_V6_SUB_INTERFACE_INDEX</td>
+                    <td>The index of the logical network interface, as enumerated by the network stack.</td>
                 </tr>
             
                 <tr>
@@ -96,52 +127,10 @@ typedef enum FWPS_FIELDS_STREAM_PACKET_V6_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_STREAM_PACKET_V6_INTERFACE_INDEX</td>
-                    <td>The index of the network interface, as enumerated by the network stack.</td>
-                </tr>
-            
-                <tr>
                     <td>FWPS_FIELD_STREAM_PACKET_V6_INTERFACE_TYPE</td>
                     <td>The type of the network interface, as defined by the Internet Assigned Numbers Authority (IANA).
      For more information, see 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_STREAM_PACKET_V6_IP_LOCAL_ADDRESS</td>
-                    <td>The local IP address.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_STREAM_PACKET_V6_IP_LOCAL_INTERFACE</td>
-                    <td>The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) for the network interface associated with the
-     local IP address.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_STREAM_PACKET_V6_IP_LOCAL_PORT</td>
-                    <td>The local transport protocol port number.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_STREAM_PACKET_V6_IP_REMOTE_ADDRESS</td>
-                    <td>The remote IP address.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_STREAM_PACKET_V6_IP_REMOTE_PORT</td>
-                    <td>The remote transport protocol port number.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_STREAM_PACKET_V6_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_STREAM_PACKET_V6_SUB_INTERFACE_INDEX</td>
-                    <td>The index of the logical network interface, as enumerated by the network stack.</td>
                 </tr>
             
                 <tr>
@@ -151,6 +140,17 @@ typedef enum FWPS_FIELDS_STREAM_PACKET_V6_ {
      by IANA. For more information, see 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a> and the
      Windows SDK.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_STREAM_PACKET_V6_COMPARTMENT_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_STREAM_PACKET_V6_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 
@@ -164,11 +164,3 @@ typedef enum FWPS_FIELDS_STREAM_PACKET_V6_ {
 ## See Also
 
 <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_FIELDS_STREAM_PACKET_V6 enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

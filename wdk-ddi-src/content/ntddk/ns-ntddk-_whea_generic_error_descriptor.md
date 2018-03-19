@@ -66,57 +66,25 @@ typedef struct _WHEA_GENERIC_ERROR_DESCRIPTOR {
 ## Members
 
 
+`Type`
+
+The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_GENERIC.
+
+`Reserved`
+
+Reserved for system use.
+
 `Enabled`
 
 A Boolean value that indicates if the error source is enabled.
 
-`ErrStatusAddress`
+`ErrStatusBlockLength`
 
-The 64-bit address of a register that contains the physical address of a block of memory that contains the error status data for the error source. This block of memory must reside in firmware reserved memory so that it is not reclaimed by the operating system's memory manager. The error status data contained in this block of memory is described by a <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a> structure.
+The size, in bytes, of the block of error status registers that contain the error data for the error source.
 
-`ErrStatusAddressAccessSize`
+`RelatedErrorSourceId`
 
-The access size for reading the register at the address that is specified in the <b>ErrStatusAddress</b> member. Possible values are:
-
-
-
-
-
-#### 0
-
-Undefined
-
-
-
-#### 1
-
-Byte access
-
-
-
-#### 2
-
-Word access
-
-
-
-#### 3
-
-Double word access
-
-
-
-#### 4
-
-Quad word access
-
-`ErrStatusAddressBitOffset`
-
-The offset, in bits, of the register at the address that is specified in the <b>ErrStatusAddress</b> member.
-
-`ErrStatusAddressBitWidth`
-
-The size, in bits, of the register at the address that is specified in the <b>ErrStatusAddress</b> member.
+The identifier of the related error source. If the generic error source does not relate back to another error source, this member is not used.
 
 `ErrStatusAddressSpaceID`
 
@@ -178,25 +146,57 @@ Reserved
 
 OEM defined address space
 
-`ErrStatusBlockLength`
+`ErrStatusAddressBitWidth`
 
-The size, in bytes, of the block of error status registers that contain the error data for the error source.
+The size, in bits, of the register at the address that is specified in the <b>ErrStatusAddress</b> member.
+
+`ErrStatusAddressBitOffset`
+
+The offset, in bits, of the register at the address that is specified in the <b>ErrStatusAddress</b> member.
+
+`ErrStatusAddressAccessSize`
+
+The access size for reading the register at the address that is specified in the <b>ErrStatusAddress</b> member. Possible values are:
+
+
+
+
+
+#### 0
+
+Undefined
+
+
+
+#### 1
+
+Byte access
+
+
+
+#### 2
+
+Word access
+
+
+
+#### 3
+
+Double word access
+
+
+
+#### 4
+
+Quad word access
+
+`ErrStatusAddress`
+
+The 64-bit address of a register that contains the physical address of a block of memory that contains the error status data for the error source. This block of memory must reside in firmware reserved memory so that it is not reclaimed by the operating system's memory manager. The error status data contained in this block of memory is described by a <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a> structure.
 
 `Notify`
 
 A <a href="..\ntddk\ns-ntddk-_whea_notification_descriptor.md">WHEA_NOTIFICATION_DESCRIPTOR</a> structure that describes the notification mechanism that is used by the error source.
-
-`RelatedErrorSourceId`
-
-The identifier of the related error source. If the generic error source does not relate back to another error source, this member is not used.
-
-`Reserved`
-
-Reserved for system use.
-
-`Type`
-
-The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_GENERIC.
 
 ## Remarks
 A WHEA_GENERIC_ERROR_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
@@ -218,11 +218,3 @@ A WHEA_GENERIC_ERROR_DESCRIPTOR structure is contained within the <a href="..\nt
 
 
 <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_GENERIC_ERROR_DESCRIPTOR structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

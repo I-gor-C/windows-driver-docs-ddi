@@ -63,7 +63,7 @@ typedef struct _BDA_SCAN_STATE {
 
 
 
-`ulCurrentFrequency`
+`ulSignalLock`
 
 
 
@@ -71,7 +71,7 @@ typedef struct _BDA_SCAN_STATE {
 
 
 
-`ulSignalLock`
+`ulCurrentFrequency`
 
 
 

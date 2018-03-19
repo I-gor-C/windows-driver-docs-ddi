@@ -61,9 +61,17 @@ typedef struct _IO_SESSION_STATE_NOTIFICATION {
 ## Members
 
 
-`Context`
+`Size`
 
-A pointer to a context buffer in which the driver can store its private data for a particular session notification registration. The I/O manager passes this pointer to the driver's notification callback routine (specified by the <b>IoRegisterContainerNotification</b> routine's <i>CallbackFunction</i> parameter). The I/O manager does not try to validate the <i>Context</i> pointer or to access the buffer that it points to. This member can be <b>NULL</b> if the driver does not require a context buffer.
+The size, in bytes, of the <b>IO_SESSION_STATE_NOTIFICATION</b> structure.
+
+`Flags`
+
+No flags are currently defined for this member. Set to zero.
+
+`IoObject`
+
+A pointer to an I/O object owned by the driver. This member can point to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>, <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>, or <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure. The I/O object must remain valid for the lifetime of the registration. Before you delete a registered device object, unload a registered driver, or close a registered file object, call the <a href="..\wdm\nf-wdm-iounregistercontainernotification.md">IoUnregisterContainerNotification</a> routine to cancel the registration. A driver can maintain simultaneous registrations for more than one I/O object, but it cannot create more than one active registration for the same I/O object.
 
 `EventMask`
 
@@ -168,17 +176,9 @@ Send a notification when any type of session event occurs.
 </tr>
 </table>
 
-`Flags`
+`Context`
 
-No flags are currently defined for this member. Set to zero.
-
-`IoObject`
-
-A pointer to an I/O object owned by the driver. This member can point to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>, <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>, or <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure. The I/O object must remain valid for the lifetime of the registration. Before you delete a registered device object, unload a registered driver, or close a registered file object, call the <a href="..\wdm\nf-wdm-iounregistercontainernotification.md">IoUnregisterContainerNotification</a> routine to cancel the registration. A driver can maintain simultaneous registrations for more than one I/O object, but it cannot create more than one active registration for the same I/O object.
-
-`Size`
-
-The size, in bytes, of the <b>IO_SESSION_STATE_NOTIFICATION</b> structure.
+A pointer to a context buffer in which the driver can store its private data for a particular session notification registration. The I/O manager passes this pointer to the driver's notification callback routine (specified by the <b>IoRegisterContainerNotification</b> routine's <i>CallbackFunction</i> parameter). The I/O manager does not try to validate the <i>Context</i> pointer or to access the buffer that it points to. This member can be <b>NULL</b> if the driver does not require a context buffer.
 
 ## Remarks
 This structure is used by the <b>IoRegisterContainerNotification</b> routine. A driver that calls <b>IoRegisterContainerNotification</b> uses this structure to specify the session event notifications that it is registering for.
@@ -216,11 +216,3 @@ To determine whether a device object is a per-session device object, a driver ca
 
 
 <a href="..\wdm\nf-wdm-ioregistercontainernotification.md">IoRegisterContainerNotification</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_SESSION_STATE_NOTIFICATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

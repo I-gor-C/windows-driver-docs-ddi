@@ -59,17 +59,17 @@ typedef struct _D3DKMT_LOCK2 {
 ## Members
 
 
-`Flags`
+`hDevice`
 
-A set of flags to pass to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">Lock2</a> kernel function which will determine how the allocation is locked. See <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lock2flags.md">D3DDDICB_LOCK2FLAGS</a> for details.
+The handle to the device.
 
 `hAllocation`
 
 The handle to the allocation to lock.
 
-`hDevice`
+`Flags`
 
-The handle to the device.
+A set of flags to pass to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">Lock2</a> kernel function which will determine how the allocation is locked. See <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lock2flags.md">D3DDDICB_LOCK2FLAGS</a> for details.
 
 `pData`
 

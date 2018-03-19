@@ -61,7 +61,15 @@ typedef struct {
 ## Members
 
 
-`FirmwareVersion`
+`Size`
+
+Structure size.
+
+`Version`
+
+Version number.
+
+`ManufacturerID`
 
 
 
@@ -69,21 +77,13 @@ typedef struct {
 
 
 
-`ManufacturerID`
+`FirmwareVersion`
 
 
-
-`Size`
-
-Structure size.
 
 `Unused`
 
 
-
-`Version`
-
-Version number.
 
 
 ## Requirements

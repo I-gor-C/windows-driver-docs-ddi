@@ -61,17 +61,7 @@ typedef enum _RILCBMSGCONFIGPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_CBMC_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CBMC_CDMAINFO</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CBMC_CDMASIZE</td>
+                    <td>RIL_PARAM_CBMC_GWLSIZE</td>
                     <td></td>
                 </tr>
             
@@ -81,7 +71,17 @@ typedef enum _RILCBMSGCONFIGPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CBMC_GWLSIZE</td>
+                    <td>RIL_PARAM_CBMC_CDMASIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CBMC_CDMAINFO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CBMC_ALL</td>
                     <td></td>
                 </tr>
 </table>

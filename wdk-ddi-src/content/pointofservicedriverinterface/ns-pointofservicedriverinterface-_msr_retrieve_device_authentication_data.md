@@ -58,6 +58,10 @@ typedef struct _MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA {
 ## Members
 
 
+`KeySerialNumber`
+
+Unused.
+
 `Challenge1`
 
 Authentication challenge, such as a password.
@@ -65,10 +69,6 @@ Authentication challenge, such as a password.
 `Challenge2`
 
 Deauthentication challenge, such as a password.
-
-`KeySerialNumber`
-
-Unused.
 
 
 ## Requirements

@@ -60,14 +60,6 @@ typedef struct _DEBUG_PROCESSOR_IDENTIFICATION_IA64 {
 ## Members
 
 
-`ArchRev`
-
-The architecture revision of the processor.
-
-`Family`
-
-The family of the processor.
-
 `Model`
 
 The model of the processor.
@@ -75,6 +67,14 @@ The model of the processor.
 `Revision`
 
 The revision of the processor.
+
+`Family`
+
+The family of the processor.
+
+`ArchRev`
+
+The architecture revision of the processor.
 
 `VendorString`
 
@@ -89,11 +89,3 @@ A vendor specified string.
 ## See Also
 
 <a href="..\dbgeng\ns-dbgeng-_debug_processor_identification_all.md">DEBUG_PROCESSOR_IDENTIFICATION_ALL</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20DEBUG_PROCESSOR_IDENTIFICATION_IA64 structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

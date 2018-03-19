@@ -62,17 +62,17 @@ typedef enum _RILPHONEENTRYSTORELOCATION {
 <table>
             
                 <tr>
-                    <td>RIL_PBLOC_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PBLOC_OWNNUMBERS</td>
+                    <td>RIL_PBLOC_UNKNOWN</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_PBLOC_UICCFIXDIALING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PBLOC_OWNNUMBERS</td>
                     <td></td>
                 </tr>
             
@@ -87,7 +87,7 @@ typedef enum _RILPHONEENTRYSTORELOCATION {
                 </tr>
             
                 <tr>
-                    <td>RIL_PBLOC_UNKNOWN</td>
+                    <td>RIL_PBLOC_ALL</td>
                     <td></td>
                 </tr>
 </table>

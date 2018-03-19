@@ -69,31 +69,6 @@ typedef enum _CLFS_MGMT_POLICY_TYPE {
 <table>
             
                 <tr>
-                    <td>ClfsMgmtPolicyAutoGrow</td>
-                    <td>Indicates a policy that specifies whether the log should grow when fewer than two containers are free.</td>
-                </tr>
-            
-                <tr>
-                    <td>ClfsMgmtPolicyAutoShrink</td>
-                    <td>Indicates a policy that specifies when the log will shrink based on the percentage of the log that is free.</td>
-                </tr>
-            
-                <tr>
-                    <td>ClfsMgmtPolicyGrowthRate</td>
-                    <td>Indicates a policy that specifies how many new containers will be added to the log each time the log grows.</td>
-                </tr>
-            
-                <tr>
-                    <td>ClfsMgmtPolicyInvalid</td>
-                    <td>Reserved for internal use.</td>
-                </tr>
-            
-                <tr>
-                    <td>ClfsMgmtPolicyLogTail</td>
-                    <td>Indicates a policy that specifies how much free space will be requested when a client is notified to move its log tail.</td>
-                </tr>
-            
-                <tr>
                     <td>ClfsMgmtPolicyMaximumSize</td>
                     <td>Indicates a policy that specifies the maximum size of a log.</td>
                 </tr>
@@ -104,8 +79,28 @@ typedef enum _CLFS_MGMT_POLICY_TYPE {
                 </tr>
             
                 <tr>
-                    <td>ClfsMgmtPolicyNewContainerExtension</td>
-                    <td>Indicates a policy that specifies an extension for the file name of each container.</td>
+                    <td>ClfsMgmtPolicyNewContainerSize</td>
+                    <td>Indicates a policy that specifies the size of new containers that are created.</td>
+                </tr>
+            
+                <tr>
+                    <td>ClfsMgmtPolicyGrowthRate</td>
+                    <td>Indicates a policy that specifies how many new containers will be added to the log each time the log grows.</td>
+                </tr>
+            
+                <tr>
+                    <td>ClfsMgmtPolicyLogTail</td>
+                    <td>Indicates a policy that specifies how much free space will be requested when a client is notified to move its log tail.</td>
+                </tr>
+            
+                <tr>
+                    <td>ClfsMgmtPolicyAutoShrink</td>
+                    <td>Indicates a policy that specifies when the log will shrink based on the percentage of the log that is free.</td>
+                </tr>
+            
+                <tr>
+                    <td>ClfsMgmtPolicyAutoGrow</td>
+                    <td>Indicates a policy that specifies whether the log should grow when fewer than two containers are free.</td>
                 </tr>
             
                 <tr>
@@ -114,13 +109,18 @@ typedef enum _CLFS_MGMT_POLICY_TYPE {
                 </tr>
             
                 <tr>
-                    <td>ClfsMgmtPolicyNewContainerSize</td>
-                    <td>Indicates a policy that specifies the size of new containers that are created.</td>
+                    <td>ClfsMgmtPolicyNewContainerSuffix</td>
+                    <td>Indicates a policy that specifies a number to use as the starting suffix for container file names.</td>
                 </tr>
             
                 <tr>
-                    <td>ClfsMgmtPolicyNewContainerSuffix</td>
-                    <td>Indicates a policy that specifies a number to use as the starting suffix for container file names.</td>
+                    <td>ClfsMgmtPolicyNewContainerExtension</td>
+                    <td>Indicates a policy that specifies an extension for the file name of each container.</td>
+                </tr>
+            
+                <tr>
+                    <td>ClfsMgmtPolicyInvalid</td>
+                    <td>Reserved for internal use.</td>
                 </tr>
 </table>
 
@@ -136,11 +136,3 @@ Each type of CLFS management policy corresponds to a specific interpretation of 
 ## See Also
 
 <a href="..\wdm\ns-wdm-_clfs_mgmt_policy.md">CLFS_MGMT_POLICY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLFS_MGMT_POLICY_TYPE enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

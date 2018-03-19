@@ -62,8 +62,8 @@ typedef enum _WDI_P2P_DISCOVER_TYPE {
 <table>
             
                 <tr>
-                    <td>WDI_P2P_DISCOVER_TYPE_AUTO</td>
-                    <td>Device discovery is determined by the port.</td>
+                    <td>WDI_P2P_DISCOVER_TYPE_SCAN_ONLY</td>
+                    <td>Device discovery occurs only during the scan phase. Adapter should scan each channel at least once every 250 milliseconds.</td>
                 </tr>
             
                 <tr>
@@ -72,18 +72,18 @@ typedef enum _WDI_P2P_DISCOVER_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WDI_P2P_DISCOVER_TYPE_MAX_VALUE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_P2P_DISCOVER_TYPE_SCAN_ONLY</td>
-                    <td>Device discovery occurs only during the scan phase. Adapter should scan each channel at least once every 250 milliseconds.</td>
+                    <td>WDI_P2P_DISCOVER_TYPE_AUTO</td>
+                    <td>Device discovery is determined by the port.</td>
                 </tr>
             
                 <tr>
                     <td>WDI_P2P_DISCOVER_TYPE_SCAN_SOCIAL_CHANNELS</td>
                     <td>Port must perform device discovery by scanning only Wi-Fi Direct social channels. In this setting, the adapter should scan each social channel at least once every 250 milliseconds.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_P2P_DISCOVER_TYPE_MAX_VALUE</td>
+                    <td></td>
                 </tr>
 </table>
 

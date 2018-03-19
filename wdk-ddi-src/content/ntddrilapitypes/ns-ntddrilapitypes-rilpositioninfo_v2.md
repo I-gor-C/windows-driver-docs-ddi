@@ -75,65 +75,65 @@ struct RILPOSITIONINFO_V2 {
 
 The size of the structure in bytes.
 
-`dwCntC2KMRL`
-
-The number of entries in the cdma2000 measured results list <b>rc2kMRL</b>.
-
-`dwCntEUTRAMRL`
-
-The number of entries in the EUTRAN (LTE) measured results list <b>reMRL</b>.
-
-`dwCntGSMNMR`
-
-The number of GSM network measurement reports in <b>rgNMR</b>.
-
-`dwCntTDSCDMAMRL`
-
-The number of entries in the TD-SCDMA measured results list <b>rtMRL</b>. This field is not present in RILPOSITIONINFO_V1.
-
-`dwCntUMTSMRL`
-
-The number of entries in the UMTS measured results list <b>ruMRL</b>.
-
 `dwSystemType`
 
 Indicates the system type or types for which serving cell information is valid, a bitmask of one or more <a href="..\rilapitypes\ne-rilapitypes-rilsystemtype.md">RILSYSTEMTYPE</a> values. For example, on an SVLTE system, this could be <code>RIL_SYSTEMTYPE_LTE|RIL_SYSTEMTYPE_1XRTT</code>, indicating that both the CDMA cell information (including serving cell(s)) in <b>rc2kMRL</b> and <b>stLTEServingCellInfo</b> are valid.
-
-`rc2kMRL`
-
-The cdma2000 measured results list, an array of <a href="..\rilapitypes\ns-rilapitypes-rilc2kmrl.md">RILC2KMRL</a> structs.
-
-`reMRL`
-
-E-UTRAN (LTE) measured results list, an array of <a href="..\rilapitypes\ns-rilapitypes-rileutramrl.md">RILEUTRAMRL</a> structs.
-
-`rgNMR`
-
-GSM network measurement reports, an array of <a href="..\rilapitypes\ns-rilapitypes-rilgsmnmr.md">RILGSMNMR</a> structs.
-
-`rtMRL`
-
-
-
-`ruMRL`
-
-
 
 `stGSMServingCellInfo`
 
 GSM serving cell information, a <a href="..\rilapitypes\ns-rilapitypes-rilpositioninfogsm.md">RILPOSITIONINFOGSM</a> struct.
 
-`stLTEServingCellInfo`
+`stUMTSServingCellInfo`
 
-LTE serving cell information, a <a href="..\rilapitypes\ns-rilapitypes-rilpositioninfolte.md">RILPOSITIONINFOLTE</a> struct.
+UMTS serving cell information, a <a href="..\rilapitypes\ns-rilapitypes-rilpositioninfoumts.md">RILPOSITIONINFOUMTS</a> struct.
 
 `stTDSCDMAServingCellInfo`
 
 TD-SCDMA serving cell information, a <a href="..\rilapitypes\ns-rilapitypes-rilpositioninfotdscdma.md">RILPOSITIONINFOTDSCDMA</a> struct. This field is not present in <a href="https://msdn.microsoft.com/library/windows/hardware/dn931134">RILPOSITIONINFO_V1</a>.
 
-`stUMTSServingCellInfo`
+`stLTEServingCellInfo`
 
-UMTS serving cell information, a <a href="..\rilapitypes\ns-rilapitypes-rilpositioninfoumts.md">RILPOSITIONINFOUMTS</a> struct.
+LTE serving cell information, a <a href="..\rilapitypes\ns-rilapitypes-rilpositioninfolte.md">RILPOSITIONINFOLTE</a> struct.
+
+`dwCntGSMNMR`
+
+The number of GSM network measurement reports in <b>rgNMR</b>.
+
+`rgNMR`
+
+GSM network measurement reports, an array of <a href="..\rilapitypes\ns-rilapitypes-rilgsmnmr.md">RILGSMNMR</a> structs.
+
+`dwCntUMTSMRL`
+
+The number of entries in the UMTS measured results list <b>ruMRL</b>.
+
+`ruMRL`
+
+
+
+`dwCntTDSCDMAMRL`
+
+The number of entries in the TD-SCDMA measured results list <b>rtMRL</b>. This field is not present in RILPOSITIONINFO_V1.
+
+`rtMRL`
+
+
+
+`dwCntEUTRAMRL`
+
+The number of entries in the EUTRAN (LTE) measured results list <b>reMRL</b>.
+
+`reMRL`
+
+E-UTRAN (LTE) measured results list, an array of <a href="..\rilapitypes\ns-rilapitypes-rileutramrl.md">RILEUTRAMRL</a> structs.
+
+`dwCntC2KMRL`
+
+The number of entries in the cdma2000 measured results list <b>rc2kMRL</b>.
+
+`rc2kMRL`
+
+The cdma2000 measured results list, an array of <a href="..\rilapitypes\ns-rilapitypes-rilc2kmrl.md">RILC2KMRL</a> structs.
 
 
 ## Requirements
@@ -144,11 +144,3 @@ UMTS serving cell information, a <a href="..\rilapitypes\ns-rilapitypes-rilposit
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILPOSITIONINFO_V2 structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

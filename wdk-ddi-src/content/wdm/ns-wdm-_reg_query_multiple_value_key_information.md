@@ -65,41 +65,41 @@ typedef struct _REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION {
 ## Members
 
 
-`BufferLength`
+`Object`
 
-A pointer to a variable that contains the length, in bytes, of the <b>ValueBuffer</b> buffer.
+A pointer to the registry key object for the key whose value entries are being retrieved.
 
-`CallContext`
+`ValueEntries`
 
-Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.
+A pointer to an array of <a href="..\wdm\ns-wdm-_key_value_entry.md">KEY_VALUE_ENTRY</a> structures, one for each value entry that is retrieved.
 
 `EntryCount`
 
 The number of entries in the <b>ValueEntries</b> array.
 
-`Object`
+`ValueBuffer`
 
-A pointer to the registry key object for the key whose value entries are being retrieved.
+A pointer to a buffer that receives (from the system) the data for all the value entries specified by the <b>ValueEntries</b> array.
 
-`ObjectContext`
+`BufferLength`
 
-A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.
+A pointer to a variable that contains the length, in bytes, of the <b>ValueBuffer</b> buffer.
 
 `RequiredBufferLength`
 
 A pointer to a variable that receives (from the system) the number of bytes required to hold the data for all the value entries that the <b>ValueEntries</b> array specifies. This member can be <b>NULL</b>.
 
+`CallContext`
+
+Optional driver-defined context information that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can supply. This member is defined for Windows Vista and later versions of the Windows operating system.
+
+`ObjectContext`
+
+A pointer to driver-defined context information that the driver has associated with a registry object by calling <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>. This member is defined for Windows Vista and later versions of the Windows operating system.
+
 `Reserved`
 
 This member is reserved for future use. This member is defined for Windows Vista and later versions of the Windows operating system.
-
-`ValueBuffer`
-
-A pointer to a buffer that receives (from the system) the data for all the value entries specified by the <b>ValueEntries</b> array.
-
-`ValueEntries`
-
-A pointer to an array of <a href="..\wdm\ns-wdm-_key_value_entry.md">KEY_VALUE_ENTRY</a> structures, one for each value entry that is retrieved.
 
 ## Remarks
 The system passes this structure to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine every time a thread attempts to retrieve multiple value entries for a key at once—for example, when a user-mode thread calls <b>RegQueryMultipleValues</b>.
@@ -125,11 +125,3 @@ For more information about registry filtering operations, see <a href="https://m
 
 
 <a href="..\wdm\ns-wdm-_key_value_entry.md">KEY_VALUE_ENTRY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -62,6 +62,84 @@ typedef struct DXGI_DDI_BASE_FUNCTIONS {
 ## Members
 
 
+`pfnPresent`
+
+Pointer to the PresentDXGI function that notifies the user-mode display driver that an application finished rendering and requests that the driver display to the destination surface. 
+
+The <b>hDevice</b> member of the <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_present.md">DXGI_DDI_ARG_PRESENT</a> structure that the <i>pPresentData</i> parameter points to is the same handle that the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> function passed back to the runtime in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure. Therefore, driver writers must define the type of this handle carefully. In addition, drivers can supply different implementations of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a> function based on which DDI implementation handled the call to <b>CreateDevice(D3D10)</b>. The runtime will never mix driver handles across DDI implementations. Similarly, the <b>hSurfaceToPresent</b> and <b>hDstResource</b> members of <b>DXGI_DDI_ARG_PRESENT</b> are also driver-defined resource handles that the driver returned to the runtime in previous calls to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a> function.
+
+The <b>pDXGIContext</b> member of <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_present.md">DXGI_DDI_ARG_PRESENT</a> is an opaque communication mechanism. The runtime passes this DXGI context to the driver. The driver should copy this DXGI context unchanged to the <b>pDXGIContext</b> member of the <a href="..\dxgiddi\ns-dxgiddi-dxgiddicb_present.md">DXGIDDICB_PRESENT</a> structure when the driver calls the <a href="..\dxgiddi\nc-dxgiddi-pfnddxgiddi_presentcb.md">pfnPresentCbDXGI</a> function. 
+
+The driver must submit all partially built render data (command buffers) using the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function. Thereafter, the driver must translate the resource handle parameters into kernel handles and use those kernel handles in a call to <a href="..\dxgiddi\nc-dxgiddi-pfnddxgiddi_presentcb.md">pfnPresentCbDXGI</a>.
+
+<div class="alert"><b>Note</b>    When the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a> function copies sRGB-formatted content from a source surface to a non-sRGB destination surface, the driver should copy the sRGB content unchanged (that is, the driver should not perform the sRGB to linear conversion).</div>
+<div> </div>
+
+
+#### pPresentData
+
+[in] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_present.md">DXGI_DDI_ARG_PRESENT</a> structure that describes how to display to the destination surface.
+
+`pfnGetGammaCaps`
+
+The <i>GetGammaCapsDXGI</i> function retrieves gamma capabilities.
+
+
+
+#### pGammaData
+
+[in] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_get_gamma_control_caps.md">DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS</a> structure that contains gamma capabilities.
+
+`pfnSetDisplayMode`
+
+A pointer to the driver's  <a href="https://msdn.microsoft.com/library/windows/hardware/ff569536">SetDisplayModeDXGI</a> function.
+
+`pfnSetResourcePriority`
+
+The <i>SetResourcePriorityDXGI</i> function sets the eviction-from-memory priority for a resource.
+
+The Microsoft Direct3D runtime calls <i>SetResourcePriorityDXGI</i> to set the priority level for a resource. The user-mode display driver should translate the resource handle that is supplied in the <b>hResource</b> member of the DXGI_DDI_ARG_SETRESOURCEPRIORITY structure that is pointed to by <i>pPriorityData</i> to an allocation handle. After the driver makes this translation, the driver should pass the resulting handle in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setprioritycb.md">pfnSetPriorityCb</a> function.
+
+
+
+#### pPriorityData
+
+[in] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_setresourcepriority.md">DXGI_DDI_ARG_SETRESOURCEPRIORITY</a> structure that describes the priority level to set a resource to.
+
+`pfnQueryResourceResidency`
+
+This function determines the residency of the given list of resources.
+
+The Microsoft Direct3D runtime calls the user-mode display driver's <i>QueryResourceResidencyDXGI</i> function for applications to determine if the operating system will incur a significant stall at draw time if the system must make resources GPU-accessible. The information that is returned from <i>QueryResourceResidencyDXGI</i> is an approximation of the residency of resources because the resources might become demoted before applications use the resources.
+
+<i>QueryResourceResidencyDXGI</i> must call the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_queryresidencycb.md">pfnQueryResidencyCb</a> function. <b>pfnQueryResidencyCb</b> returns the residency status of a resource in the elements of the array that is specified by the <b>pResidencyStatus</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_queryresidency.md">D3DDDICB_QUERYRESIDENCY</a> structure. If <b>pfnQueryResidencyCb</b> returns D3DDDI_RESIDENCYSTATUS_NOTRESIDENT for any query, <i>QueryResourceResidencyDXGI</i> must return S_NOT_RESIDENT. If <b>pfnQueryResidencyCb</b> returns D3DDDI_RESIDENCYSTATUS_RESIDENTINSHAREDMEMORY for any query and does not return D3DDDI_RESIDENCYSTATUS_NOTRESIDENT for any query, <i>QueryResourceResidencyDXGI</i> must return S_RESIDENT_IN_SHARED_MEMORY. <i>QueryResourceResidencyDXGI</i> must return S_OK only if all calls to <b>pfnQueryResidencyCb</b> for all queries return D3DDDI_RESIDENCYSTATUS_RESIDENTINGPUMEMORY.
+
+For each resource that the runtime queries through a call to <i>QueryResourceResidencyDXGI</i>, the user-mode display driver must determine which allocations that belong to the resource to query through a call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_queryresidencycb.md">pfnQueryResidencyCb</a>. For a resource that owns a single allocation, the determination is simple--the driver will query that allocation. However, if a resource owns multiple allocations, the determination is more difficult. The driver must determine which allocations that an application will likely use for rendering, and the driver must query only those allocations. For example, if a resource owns an allocation that is used for rendering and a scratch allocation that handles a lock operation, the driver should query only for the residency of the first allocation, because an application will most likely not use the second allocation for rendering.
+
+<div class="alert"><b>Note</b>    Because the runtime does not support residency-querying of system memory resources, the runtime will always fail requests from applications for the residency status of system memory resources and will never call the user-mode display driver's <i>QueryResourceResidencyDXGI</i> function for these system memory resources.</div>
+<div> </div>
+
+
+#### pResidencyData
+
+[in] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_queryresourceresidency.md">DXGI_DDI_ARG_QUERYRESOURCERESIDENCY</a> structure that describes a list of resources that residency is verified on.
+
+`pfnRotateResourceIdentities`
+
+Rotates a list of resources.
+
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff569514">RotateResourceIdentitiesDXGI</a> function must exchange identities of the array of resources that are passed in the <b>pResources</b> member of the <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_rotate_resource_identities.md">DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES</a> structure that the <i>pRotateData</i> parameter points to. For example, if the array of resources refers to resources X, Y, and Z, in increasing array index order, <i>RotateResourceIdentitiesDXGI</i> must rotate those handles to refer to Y, Z, and X, in increasing array index order. In particular, the user-mode display driver should swap the kernel handles of the corresponding resources. However, the driver should not swap the corresponding runtime (RT) handles. The runtime calls <i>RotateResourceIdentitiesDXGI</i> to rotate back buffers during presentation. Therefore, a call to <i>RotateResourceIdentitiesDXGI</i> is infrequent. The runtime can specify the D3D10_DDI_BIND_PRESENT flag in the <b>BindFlags</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a> function to indicate that the resource can participate in a rotate operation. 
+
+The user-mode display driver must also handle other aspects of exchanging identities. For example, in Direct3D version 10, views can refer to resources; and such views can have resource addresses embedded in them. Therefore, the driver must re-create such views. Also, the driver might be required to reapply currently bound views.
+
+Beginning in Windows 8, the driver must support rotation of stereo back buffers.
+
+
+
+#### pRotateData
+
+[in] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_rotate_resource_identities.md">DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES</a> structure that describes a list of resources to rotate.
+
 `pfnBlt`
 
 Copies the contents of a source surface to a destination surface and may rotate the contents.
@@ -144,84 +222,6 @@ Additionally, to support stereo presentation, the <a href="https://msdn.microsof
 
 [in] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_blt.md">DXGI_DDI_ARG_BLT</a> structure that describes the parameters of a bit-block transfer (bitblt).
 
-`pfnGetGammaCaps`
-
-The <i>GetGammaCapsDXGI</i> function retrieves gamma capabilities.
-
-
-
-#### pGammaData
-
-[in] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_get_gamma_control_caps.md">DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS</a> structure that contains gamma capabilities.
-
-`pfnPresent`
-
-Pointer to the PresentDXGI function that notifies the user-mode display driver that an application finished rendering and requests that the driver display to the destination surface. 
-
-The <b>hDevice</b> member of the <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_present.md">DXGI_DDI_ARG_PRESENT</a> structure that the <i>pPresentData</i> parameter points to is the same handle that the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a> function passed back to the runtime in the <b>hDrvDevice</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a> structure. Therefore, driver writers must define the type of this handle carefully. In addition, drivers can supply different implementations of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a> function based on which DDI implementation handled the call to <b>CreateDevice(D3D10)</b>. The runtime will never mix driver handles across DDI implementations. Similarly, the <b>hSurfaceToPresent</b> and <b>hDstResource</b> members of <b>DXGI_DDI_ARG_PRESENT</b> are also driver-defined resource handles that the driver returned to the runtime in previous calls to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a> function.
-
-The <b>pDXGIContext</b> member of <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_present.md">DXGI_DDI_ARG_PRESENT</a> is an opaque communication mechanism. The runtime passes this DXGI context to the driver. The driver should copy this DXGI context unchanged to the <b>pDXGIContext</b> member of the <a href="..\dxgiddi\ns-dxgiddi-dxgiddicb_present.md">DXGIDDICB_PRESENT</a> structure when the driver calls the <a href="..\dxgiddi\nc-dxgiddi-pfnddxgiddi_presentcb.md">pfnPresentCbDXGI</a> function. 
-
-The driver must submit all partially built render data (command buffers) using the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function. Thereafter, the driver must translate the resource handle parameters into kernel handles and use those kernel handles in a call to <a href="..\dxgiddi\nc-dxgiddi-pfnddxgiddi_presentcb.md">pfnPresentCbDXGI</a>.
-
-<div class="alert"><b>Note</b>    When the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a> function copies sRGB-formatted content from a source surface to a non-sRGB destination surface, the driver should copy the sRGB content unchanged (that is, the driver should not perform the sRGB to linear conversion).</div>
-<div> </div>
-
-
-#### pPresentData
-
-[in] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_present.md">DXGI_DDI_ARG_PRESENT</a> structure that describes how to display to the destination surface.
-
-`pfnQueryResourceResidency`
-
-This function determines the residency of the given list of resources.
-
-The Microsoft Direct3D runtime calls the user-mode display driver's <i>QueryResourceResidencyDXGI</i> function for applications to determine if the operating system will incur a significant stall at draw time if the system must make resources GPU-accessible. The information that is returned from <i>QueryResourceResidencyDXGI</i> is an approximation of the residency of resources because the resources might become demoted before applications use the resources.
-
-<i>QueryResourceResidencyDXGI</i> must call the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_queryresidencycb.md">pfnQueryResidencyCb</a> function. <b>pfnQueryResidencyCb</b> returns the residency status of a resource in the elements of the array that is specified by the <b>pResidencyStatus</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_queryresidency.md">D3DDDICB_QUERYRESIDENCY</a> structure. If <b>pfnQueryResidencyCb</b> returns D3DDDI_RESIDENCYSTATUS_NOTRESIDENT for any query, <i>QueryResourceResidencyDXGI</i> must return S_NOT_RESIDENT. If <b>pfnQueryResidencyCb</b> returns D3DDDI_RESIDENCYSTATUS_RESIDENTINSHAREDMEMORY for any query and does not return D3DDDI_RESIDENCYSTATUS_NOTRESIDENT for any query, <i>QueryResourceResidencyDXGI</i> must return S_RESIDENT_IN_SHARED_MEMORY. <i>QueryResourceResidencyDXGI</i> must return S_OK only if all calls to <b>pfnQueryResidencyCb</b> for all queries return D3DDDI_RESIDENCYSTATUS_RESIDENTINGPUMEMORY.
-
-For each resource that the runtime queries through a call to <i>QueryResourceResidencyDXGI</i>, the user-mode display driver must determine which allocations that belong to the resource to query through a call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_queryresidencycb.md">pfnQueryResidencyCb</a>. For a resource that owns a single allocation, the determination is simple--the driver will query that allocation. However, if a resource owns multiple allocations, the determination is more difficult. The driver must determine which allocations that an application will likely use for rendering, and the driver must query only those allocations. For example, if a resource owns an allocation that is used for rendering and a scratch allocation that handles a lock operation, the driver should query only for the residency of the first allocation, because an application will most likely not use the second allocation for rendering.
-
-<div class="alert"><b>Note</b>    Because the runtime does not support residency-querying of system memory resources, the runtime will always fail requests from applications for the residency status of system memory resources and will never call the user-mode display driver's <i>QueryResourceResidencyDXGI</i> function for these system memory resources.</div>
-<div> </div>
-
-
-#### pResidencyData
-
-[in] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_queryresourceresidency.md">DXGI_DDI_ARG_QUERYRESOURCERESIDENCY</a> structure that describes a list of resources that residency is verified on.
-
-`pfnRotateResourceIdentities`
-
-Rotates a list of resources.
-
-The <a href="https://msdn.microsoft.com/library/windows/hardware/ff569514">RotateResourceIdentitiesDXGI</a> function must exchange identities of the array of resources that are passed in the <b>pResources</b> member of the <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_rotate_resource_identities.md">DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES</a> structure that the <i>pRotateData</i> parameter points to. For example, if the array of resources refers to resources X, Y, and Z, in increasing array index order, <i>RotateResourceIdentitiesDXGI</i> must rotate those handles to refer to Y, Z, and X, in increasing array index order. In particular, the user-mode display driver should swap the kernel handles of the corresponding resources. However, the driver should not swap the corresponding runtime (RT) handles. The runtime calls <i>RotateResourceIdentitiesDXGI</i> to rotate back buffers during presentation. Therefore, a call to <i>RotateResourceIdentitiesDXGI</i> is infrequent. The runtime can specify the D3D10_DDI_BIND_PRESENT flag in the <b>BindFlags</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a> structure when the runtime calls the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a> function to indicate that the resource can participate in a rotate operation. 
-
-The user-mode display driver must also handle other aspects of exchanging identities. For example, in Direct3D version 10, views can refer to resources; and such views can have resource addresses embedded in them. Therefore, the driver must re-create such views. Also, the driver might be required to reapply currently bound views.
-
-Beginning in Windows 8, the driver must support rotation of stereo back buffers.
-
-
-
-#### pRotateData
-
-[in] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_rotate_resource_identities.md">DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES</a> structure that describes a list of resources to rotate.
-
-`pfnSetDisplayMode`
-
-A pointer to the driver's  <a href="https://msdn.microsoft.com/library/windows/hardware/ff569536">SetDisplayModeDXGI</a> function.
-
-`pfnSetResourcePriority`
-
-The <i>SetResourcePriorityDXGI</i> function sets the eviction-from-memory priority for a resource.
-
-The Microsoft Direct3D runtime calls <i>SetResourcePriorityDXGI</i> to set the priority level for a resource. The user-mode display driver should translate the resource handle that is supplied in the <b>hResource</b> member of the DXGI_DDI_ARG_SETRESOURCEPRIORITY structure that is pointed to by <i>pPriorityData</i> to an allocation handle. After the driver makes this translation, the driver should pass the resulting handle in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setprioritycb.md">pfnSetPriorityCb</a> function.
-
-
-
-#### pPriorityData
-
-[in] A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_setresourcepriority.md">DXGI_DDI_ARG_SETRESOURCEPRIORITY</a> structure that describes the priority level to set a resource to.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -268,11 +268,3 @@ The Microsoft Direct3D runtime calls <i>SetResourcePriorityDXGI</i> to set the p
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538252">BltDXGI</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGI_DDI_BASE_FUNCTIONS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

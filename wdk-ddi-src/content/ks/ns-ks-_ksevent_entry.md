@@ -69,31 +69,7 @@ typedef struct _KSEVENT_ENTRY {
 ## Members
 
 
-`EventData`
-
-
-
-`EventItem`
-
-
-
-`EventSet`
-
-
-
-`FileObject`
-
-
-
-`Flags`
-
-
-
 `ListEntry`
-
-
-
-`NotificationType`
 
 
 
@@ -101,11 +77,35 @@ typedef struct _KSEVENT_ENTRY {
 
 
 
-`Reserved`
+`EventData`
+
+
+
+`NotificationType`
+
+
+
+`EventSet`
+
+
+
+`EventItem`
+
+
+
+`FileObject`
 
 
 
 `SemaphoreAdjustment`
+
+
+
+`Reserved`
+
+
+
+`Flags`
 
 
 

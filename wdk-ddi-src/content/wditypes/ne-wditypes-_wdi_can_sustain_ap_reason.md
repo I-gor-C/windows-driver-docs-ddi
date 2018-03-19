@@ -60,13 +60,13 @@ typedef enum _WDI_CAN_SUSTAIN_AP_REASON {
 <table>
             
                 <tr>
-                    <td>WDI_CAN_SUSTAIN_AP_REASON_IHV_END</td>
-                    <td>The end value of possible IHV-specified reasons.</td>
+                    <td>WDI_CAN_SUSTAIN_AP_REASON_IHV_START</td>
+                    <td>The start value of possible IHV-specified reasons.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_CAN_SUSTAIN_AP_REASON_IHV_START</td>
-                    <td>The start value of possible IHV-specified reasons.</td>
+                    <td>WDI_CAN_SUSTAIN_AP_REASON_IHV_END</td>
+                    <td>The end value of possible IHV-specified reasons.</td>
                 </tr>
 </table>
 

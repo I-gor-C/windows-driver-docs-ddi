@@ -61,13 +61,13 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS {
 <table>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_PALETTE_INTERLACED</td>
-                    <td>The video processor can deinterlace input streams with palettized color formats.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_INTERLACED</td>
+                    <td>The video processor can deinterlace an input stream that contains interlaced RGB video.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_INTERLACED</td>
-                    <td>The video processor can deinterlace an input stream that contains interlaced RGB video.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_PROCAMP</td>
+                    <td>The video processor can perform color adjustment on RGB video.</td>
                 </tr>
             
                 <tr>
@@ -76,8 +76,8 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS {
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_RGB_PROCAMP</td>
-                    <td>The video processor can perform color adjustment on RGB video.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS_PALETTE_INTERLACED</td>
+                    <td>The video processor can deinterlace input streams with palettized color formats.</td>
                 </tr>
 </table>
 

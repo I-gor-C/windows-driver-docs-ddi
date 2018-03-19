@@ -58,17 +58,17 @@ typedef struct _DXGKARG_GETPOSTCOMPOSITIONCAPS {
 ## Members
 
 
-`MaxShrinkFactor`
+`VidPnSourceId`
 
-[out] Indicates the maximum shrink factor that can be applied.
+[in] Indicates the VidPn source for which post composition capabilities are queried.
 
 `MaxStretchFactor`
 
 [out] Indicates the maximum stretch factor that can be applied.
 
-`VidPnSourceId`
+`MaxShrinkFactor`
 
-[in] Indicates the VidPn source for which post composition capabilities are queried.
+[out] Indicates the maximum shrink factor that can be applied.
 
 
 ## Requirements

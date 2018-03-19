@@ -62,6 +62,22 @@ typedef struct _D3DKMDT_VIDPN_HW_CAPABILITY {
 ## Members
 
 
+`DriverRotation`
+
+A UINT value that describes the capability of the display miniport driver to display a rotated image.
+
+If set to a nonzero value, the driver uses software or the system-supplied graphics engine to generate the rotated image and then uses display pipeline hardware to display the rotated image.
+
+If set to 0, the driver uses display pipeline hardware to directly generate the rotated image.
+
+`DriverScaling`
+
+A UINT value that describes the capability of the display miniport driver to display a scaled image.
+
+If set to a nonzero value, the driver uses software or the system-supplied graphics engine to scale the on-screen image and then uses display pipeline hardware to display the scaled image.
+
+If set to 0, the driver uses display pipeline hardware to directly generate the scaled image.
+
 `DriverCloning`
 
 A UINT value that describes the capability of the display miniport driver to display a cloned image.
@@ -94,22 +110,6 @@ If set to a nonzero value, the display pipeline hardware is not located on the s
 
 If set to 0, the display pipeline hardware is located on the same device as the GPU graphics rendering pipeline.
 
-`DriverRotation`
-
-A UINT value that describes the capability of the display miniport driver to display a rotated image.
-
-If set to a nonzero value, the driver uses software or the system-supplied graphics engine to generate the rotated image and then uses display pipeline hardware to display the rotated image.
-
-If set to 0, the driver uses display pipeline hardware to directly generate the rotated image.
-
-`DriverScaling`
-
-A UINT value that describes the capability of the display miniport driver to display a scaled image.
-
-If set to a nonzero value, the driver uses software or the system-supplied graphics engine to scale the on-screen image and then uses display pipeline hardware to display the scaled image.
-
-If set to 0, the driver uses display pipeline hardware to directly generate the scaled image.
-
 `Reserved`
 
 Reserved for system use. The display miniport driver must set this value to 0.
@@ -126,11 +126,3 @@ The following definitions of terms are used in this topic.
 ## See Also
 
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_VIDPN_HW_CAPABILITY structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

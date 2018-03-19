@@ -61,9 +61,9 @@ typedef struct IDDCX_ADAPTER_CAPS {
 ## Members
 
 
-`EndPointDiagnostics`
+`Size`
 
-Endpoint diagnostics information. None of this is used for runtime OS decision, but it is used for telemetry.
+Total size of the structure
 
 `Flags`
 
@@ -77,9 +77,9 @@ This value represents the total display bandwidth for the adapter. Each mode the
 
 Indicates the maximum number of monitors that can be connected at the same time.
 
-`Size`
+`EndPointDiagnostics`
 
-Total size of the structure
+Endpoint diagnostics information. None of this is used for runtime OS decision, but it is used for telemetry.
 
 `StaticDesktopReencodeFrameCount`
 

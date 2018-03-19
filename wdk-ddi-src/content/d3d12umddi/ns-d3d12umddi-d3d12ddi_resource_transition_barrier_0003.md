@@ -63,17 +63,17 @@ typedef struct D3D12DDI_RESOURCE_TRANSITION_BARRIER_0003 {
 
 The handle of a resource.
 
-`StateAfter`
+`Subresource`
 
-The state after a transition.
+A subresource.
 
 `StateBefore`
 
 The state before a transition.
 
-`Subresource`
+`StateAfter`
 
-A subresource.
+The state after a transition.
 
 
 ## Requirements

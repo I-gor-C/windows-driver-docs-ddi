@@ -70,54 +70,6 @@ typedef struct _MSFC_HBAPortStatistics {
 ## Members
 
 
-`DumpedFrames`
-
-Contains the number of frames that were lost due to a lack of host buffers available.
-
-`ErrorFrames`
-
-Contains the number of frames that have been received in error.
-
-`InvalidCRCCount`
-
-Contains a count of the number frames with invalid cyclic redundancy checksums.
-
-`InvalidTxWordCount`
-
-Contains a count of the number of invalid transmissions.
-
-`LinkFailureCount`
-
-Contains the link failure count.
-
-`LIPCount`
-
-Contains the number of loop initialization primitive sequence (LIP) events that have occurred on a arbitrated loop.
-
-`LossOfSignalCount`
-
-Contains the loss of signal count.
-
-`LossOfSyncCount`
-
-Contains the loss of synchronization count.
-
-`NOSCount`
-
-Contains the number of nonoperational state primitive sequence (NOS) events that have occurred on the switched fabric.
-
-`PrimitiveSeqProtocolErrCount`
-
-Contains the primitive sequence protocol error count.
-
-`RxFrames`
-
-Contains the number of received fibre channel frames across all protocols and classes.
-
-`RxWords`
-
-Contains the number of received fibre channel words across all protocols and classes.
-
 `SecondsSinceLastReset`
 
 Contains the number of seconds since the statistics were last reset.
@@ -130,6 +82,54 @@ Contains the number of total transmitted fibre channel frames across all protoco
 
 Contains the number of total transmitted fibre channel words across all protocols and classes.
 
+`RxFrames`
+
+Contains the number of received fibre channel frames across all protocols and classes.
+
+`RxWords`
+
+Contains the number of received fibre channel words across all protocols and classes.
+
+`LIPCount`
+
+Contains the number of loop initialization primitive sequence (LIP) events that have occurred on a arbitrated loop.
+
+`NOSCount`
+
+Contains the number of nonoperational state primitive sequence (NOS) events that have occurred on the switched fabric.
+
+`ErrorFrames`
+
+Contains the number of frames that have been received in error.
+
+`DumpedFrames`
+
+Contains the number of frames that were lost due to a lack of host buffers available.
+
+`LinkFailureCount`
+
+Contains the link failure count.
+
+`LossOfSyncCount`
+
+Contains the loss of synchronization count.
+
+`LossOfSignalCount`
+
+Contains the loss of signal count.
+
+`PrimitiveSeqProtocolErrCount`
+
+Contains the primitive sequence protocol error count.
+
+`InvalidTxWordCount`
+
+Contains a count of the number of invalid transmissions.
+
+`InvalidCRCCount`
+
+Contains a count of the number frames with invalid cyclic redundancy checksums.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -139,11 +139,3 @@ Contains the number of total transmitted fibre channel words across all protocol
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562513">MSFC_HBAPortStatistics WMI Class</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSFC_HBAPortStatistics structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

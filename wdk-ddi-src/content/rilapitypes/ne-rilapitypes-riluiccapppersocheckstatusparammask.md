@@ -61,12 +61,12 @@ typedef enum _RILUICCAPPPERSOCHECKSTATUSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_UAPCS_ALL</td>
+                    <td>RIL_PARAM_UAPCS_HUICCAPP</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_UAPCS_HUICCAPP</td>
+                    <td>RIL_PARAM_UAPCS_PERSOFEATURE</td>
                     <td></td>
                 </tr>
             
@@ -76,7 +76,7 @@ typedef enum _RILUICCAPPPERSOCHECKSTATUSPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_UAPCS_PERSOFEATURE</td>
+                    <td>RIL_PARAM_UAPCS_ALL</td>
                     <td></td>
                 </tr>
 </table>

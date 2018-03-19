@@ -72,6 +72,10 @@ This number does not include processors in the <b>Processors</b> array for which
 
 [in] The number of elements in the array pointed to by the <b>Processors</b> member.
 
+`Processors`
+
+[in/out] A pointer to an array of <a href="..\pepfx\ns-pepfx-_pep_processor_park_preference.md">PEP_PROCESSOR_PARK_PREFERENCE</a> structures. Each array element indicates the parking preferences for a particular processor. The <b>Count</b> member specifies the number of elements in the array.
+
 `EvaluationTime`
 
 The interrupt time of the performance check evaluation that initiated this notification.
@@ -108,10 +112,6 @@ Interrupts should be steered away from the processor.
 </td>
 </tr>
 </table>
-
-`Processors`
-
-[in/out] A pointer to an array of <a href="..\pepfx\ns-pepfx-_pep_processor_park_preference.md">PEP_PROCESSOR_PARK_PREFERENCE</a> structures. Each array element indicates the parking preferences for a particular processor. The <b>Count</b> member specifies the number of elements in the array.
 
 ## Remarks
 This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186770">PEP_NOTIFY_PPM_PARK_SELECTION_V2 notification</a> notification. All three members of the structure contain input values that are set by the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx) before this notification is sent to the PEP.

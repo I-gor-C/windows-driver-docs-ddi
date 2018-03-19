@@ -71,6 +71,34 @@ typedef struct _MPIO_PATH_HEALTH_CLASS {
 ## Members
 
 
+`PathId`
+
+An unsigned 64-bitfield that represents an identifier that is assigned to a particular path.
+
+`NumberReads`
+
+An unsigned 64-bitfield that specifies the number of read requests that are serviced by the specified path identifier.
+
+`NumberWrites`
+
+An unsigned 64-bitfield that specifies the number of write requests that are serviced by the specified path identifier.
+
+`NumberBytesRead`
+
+An unsigned 64-bitfield that specifies the total number of bytes that are read through the specified path identifier.
+
+`NumberBytesWritten`
+
+An unsigned 64-bitfield that specifies the total number of bytes that are written through the specified path identifier.
+
+`NumberRetries`
+
+An unsigned 64-bitfield that specifies the total number of retries by using the specified path identifier.
+
+`NumberIoErrors`
+
+An unsigned 64-bitfield that specifies the total number of I/O errors that are encountered through the specified path identifier.
+
 `CreateTime`
 
 A 64-bit integer that specifies the system time when this instance was created and exposed.
@@ -79,45 +107,25 @@ A 64-bit integer that specifies the system time when this instance was created a
 
 A 64-bit integer that specifies the system time when the path that is associated with this path ID was removed.
 
-`NumberBytesRead`
+`PathOffline`
 
-An unsigned 64-bitfield that specifies the total number of bytes that are read through the specified path identifier.
-
-`NumberBytesReadWrap`
-
-An unsigned character field that specifies the total number of times the <i>NumberBytesRead</i> parameter has rolled around to zero.
-
-`NumberBytesWritten`
-
-An unsigned 64-bitfield that specifies the total number of bytes that are written through the specified path identifier.
-
-`NumberBytesWrittenWrap`
-
-An unsigned character field that specifies the total number of times that the <i>NumberBytesWritten</i> parameter has rolled around to zero.
-
-`NumberIoErrors`
-
-An unsigned 64-bitfield that specifies the total number of I/O errors that are encountered through the specified path identifier.
-
-`NumberReads`
-
-An unsigned 64-bitfield that specifies the number of read requests that are serviced by the specified path identifier.
+A Boolean field that indicates whether the path that is associated with this path ID is removed.
 
 `NumberReadsWrap`
 
 An unsigned character field that specifies the total number of times that the <i>NumberReads</i> parameter has rolled around to zero.
 
-`NumberRetries`
-
-An unsigned 64-bitfield that specifies the total number of retries by using the specified path identifier.
-
-`NumberWrites`
-
-An unsigned 64-bitfield that specifies the number of write requests that are serviced by the specified path identifier.
-
 `NumberWritesWrap`
 
 An unsigned character field that specifies the total number of times that the <i>NumberWrites</i> parameter has rolled around to zero.
+
+`NumberBytesReadWrap`
+
+An unsigned character field that specifies the total number of times the <i>NumberBytesRead</i> parameter has rolled around to zero.
+
+`NumberBytesWrittenWrap`
+
+An unsigned character field that specifies the total number of times that the <i>NumberBytesWritten</i> parameter has rolled around to zero.
 
 `OutstandingRequests`
 
@@ -126,14 +134,6 @@ An unsigned character field that specifies the total number of outstanding reque
 `Pad`
 
 Should be zero.
-
-`PathId`
-
-An unsigned 64-bitfield that represents an identifier that is assigned to a particular path.
-
-`PathOffline`
-
-A Boolean field that indicates whether the path that is associated with this path ID is removed.
 
 
 ## Requirements

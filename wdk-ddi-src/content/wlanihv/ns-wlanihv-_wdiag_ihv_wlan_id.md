@@ -62,6 +62,16 @@ typedef struct _WDIAG_IHV_WLAN_ID {
 ## Members
 
 
+`strProfileName`
+
+A string that defines the IHV profile name.
+
+`Ssid`
+
+The service set identifier (SSID) of the basic service set (BSS) network. The 
+     <b>Ssid</b> member is of the 
+     <a href="..\wlantypes\ns-wlantypes-_dot11_ssid.md">DOT11_SSID</a> type.
+
 `BssType`
 
 The type of the BSS network. The 
@@ -77,16 +87,6 @@ A flag which, if set to WDIAG_IHV_WLAN_ID_FLAG_SECURITY_ENABLED, indicates that 
 
 An error reason code, when available.
 
-`Ssid`
-
-The service set identifier (SSID) of the basic service set (BSS) network. The 
-     <b>Ssid</b> member is of the 
-     <a href="..\wlantypes\ns-wlantypes-_dot11_ssid.md">DOT11_SSID</a> type.
-
-`strProfileName`
-
-A string that defines the IHV profile name.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -101,11 +101,3 @@ A string that defines the IHV profile name.
 
 
 <a href="..\wlantypes\ns-wlantypes-_dot11_ssid.md">DOT11_SSID</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDIAG_IHV_WLAN_ID structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

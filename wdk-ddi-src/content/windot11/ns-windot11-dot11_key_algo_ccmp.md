@@ -60,10 +60,6 @@ typedef struct DOT11_KEY_ALGO_CCMP {
 ## Members
 
 
-`ucCCMPKey`
-
-The AES-CCMP key material.
-
 `ucIV48Counter`
 
 The initial 48-bit value of the AES-CCMP Packet Number (PN), which is used for replay protection.
@@ -75,6 +71,10 @@ The initial 48-bit value of the AES-CCMP Packet Number (PN), which is used for r
 The length, in bytes, of the AES-CCMP key material in the 
      <b>ucCCMPKey</b> array. If the authentication and cipher key derivation is performed by the operating
      system, this member will always have a value of 16.
+
+`ucCCMPKey`
+
+The AES-CCMP key material.
 
 ## Remarks
 When the AES-CCMP key is created, the 802.11 station must maintain separate PN counters for the key
@@ -111,11 +111,3 @@ Initialize the PN counter used for the send path to any value.
 
 <a href="..\windot11\ns-windot11-dot11_cipher_default_key_value.md">
    DOT11_CIPHER_DEFAULT_KEY_VALUE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_KEY_ALGO_CCMP structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

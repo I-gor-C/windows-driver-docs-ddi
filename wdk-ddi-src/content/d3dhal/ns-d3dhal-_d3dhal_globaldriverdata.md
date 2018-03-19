@@ -61,18 +61,6 @@ typedef struct _D3DHAL_GLOBALDRIVERDATA {
 ## Members
 
 
-`dwNumClipVertices`
-
-Reserved for system use and should be set to zero by the driver.
-
-`dwNumTextureFormats`
-
-Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff550339">DDSURFACEDESC</a> structures that <b>lpTextureFormats</b> points to.
-
-`dwNumVertices`
-
-Reserved for system use and should be set to zero by the driver.
-
 `dwSize`
 
 Specifies the size in bytes of this D3DHAL_GLOBALDRIVERDATA structure.
@@ -80,6 +68,18 @@ Specifies the size in bytes of this D3DHAL_GLOBALDRIVERDATA structure.
 `hwCaps`
 
 Specifies a <a href="..\d3dhal\ns-d3dhal-_d3ddevicedesc_v1.md">D3DDEVICEDESC_V1</a> structure where the driver should return its hardware capabilities.
+
+`dwNumVertices`
+
+Reserved for system use and should be set to zero by the driver.
+
+`dwNumClipVertices`
+
+Reserved for system use and should be set to zero by the driver.
+
+`dwNumTextureFormats`
+
+Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff550339">DDSURFACEDESC</a> structures that <b>lpTextureFormats</b> points to.
 
 `lpTextureFormats`
 
@@ -108,11 +108,3 @@ The driver is responsible for allocating space for and setting all members of th
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_GLOBALDRIVERDATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

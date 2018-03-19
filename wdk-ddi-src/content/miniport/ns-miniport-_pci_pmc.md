@@ -70,13 +70,9 @@ typedef struct _PCI_PMC {
 ## Members
 
 
-`_PM_SUPPORT`
+`Version`
 
-
-
-`DeviceSpecificInitialization`
-
-Indicates when 1 that the device requires a special initialization. For more information about this value, see the <i>PCI Local Bus Specification</i>.
+Contains a 3-bit integer that indicates the version of the <i>PCI Power Management Interface Specification </i>that the device complies with. For a list of values that can be assigned to this member, see the <i>PCI Local Bus Specification</i>.
 
 `PMEClock`
 
@@ -85,6 +81,10 @@ Indicates, when 1, that the device relies on the presence of the PCI clock for o
 `Rsvd1`
 
 Reserved.
+
+`DeviceSpecificInitialization`
+
+Indicates when 1 that the device requires a special initialization. For more information about this value, see the <i>PCI Local Bus Specification</i>.
 
 `Rsvd2`
 
@@ -138,9 +138,9 @@ Indicates that the device can assert the PME signal from D3.
 
 Indicates that the device can assert the PME signal from D3.
 
-`Version`
+`_PM_SUPPORT`
 
-Contains a 3-bit integer that indicates the version of the <i>PCI Power Management Interface Specification </i>that the device complies with. For a list of values that can be assigned to this member, see the <i>PCI Local Bus Specification</i>.
+
 
 ## Remarks
 The power management capabilities register, whose contents are reported in the PCI_PMC structure, provides information about the power management capabilities of the device.
@@ -153,11 +153,3 @@ The power management capabilities register, whose contents are reported in the P
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537588">PCI_PM_CAPABILITY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCI\buses]:%20PCI_PMC structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

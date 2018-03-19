@@ -69,16 +69,6 @@ typedef struct _D3DKMDT_DISPLAYMODE_FLAGS {
 ## Members
 
 
-`AdvancedScanCapable`
-
-[in] A UINT value that specifies whether the driver supports the advanced scan capability.
-
-The driver reports support for this option in the current display mode by setting the <b>Type</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_source_mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a> structure to <b>D3DKMDT_RMT_GRAPHICS_STEREO_ADVANCED_SCAN</b>.
-
-Setting this member is equivalent to setting the ninth bit of a 32-bit value (0x00000100).
-
-Supported starting with Windows 8.
-
 `ModePruningReason`
 
 [in] A value of type <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmdt_mode_pruning_reason.md">D3DKMDT_MODE_PRUNING_REASON</a> that identifies the reason why the monitor either supports the display mode or does not support the display mode. The four bits are defined by one of the values in the <b>D3DKMDT_MODE_PRUNING_REASON</b> enumeration type and depend on the setting of the <b>ValidatedAgainstMonitorCaps</b> member. For more information about how the <b>ModePruningReason</b> value is set, see <b>D3DKMDT_MODE_PRUNING_REASON</b>.
@@ -91,11 +81,31 @@ This member is equivalent to bits 4 through 7 of a 32-bit value (0x0000003C).
 
 Supported starting with Windows 8.
 
-`PhysicalModeSupported`
+`Stereo`
 
+[in] 
 
+A UINT value that specifies whether stereo is supported by the monitor that the display mode will be displayed on.
+
+Setting this member is equivalent to setting the eighth bit of a 32-bit value (0x00000080).
+
+Supported starting with Windows 8.
+
+`AdvancedScanCapable`
+
+[in] A UINT value that specifies whether the driver supports the advanced scan capability.
+
+The driver reports support for this option in the current display mode by setting the <b>Type</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_source_mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a> structure to <b>D3DKMDT_RMT_GRAPHICS_STEREO_ADVANCED_SCAN</b>.
+
+Setting this member is equivalent to setting the ninth bit of a 32-bit value (0x00000100).
+
+Supported starting with Windows 8.
 
 `PreferredTiming`
+
+
+
+`PhysicalModeSupported`
 
 
 
@@ -106,16 +116,6 @@ This member is reserved and should be set to zero. Setting this member is equiva
 This member is reserved and should be set to zero.
 
 Setting this member is equivalent to setting the remaining 26 bits (0xFFFFFFC0) of a 32-bit value to zeros.
-
-Supported starting with Windows 8.
-
-`Stereo`
-
-[in] 
-
-A UINT value that specifies whether stereo is supported by the monitor that the display mode will be displayed on.
-
-Setting this member is equivalent to setting the eighth bit of a 32-bit value (0x00000080).
 
 Supported starting with Windows 8.
 
@@ -133,11 +133,3 @@ Supported starting with Windows 8.
 
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_displaymode.md">D3DKMT_DISPLAYMODE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_DISPLAYMODE_FLAGS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

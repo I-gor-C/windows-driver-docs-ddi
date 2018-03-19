@@ -64,11 +64,11 @@ typedef struct _USBSIDEBANDAUDIO_SUPPORTED_FORMATS {
 
 
 
-`Formats`
-
-
-
 `NumFormats`
+
+
+
+`Formats`
 
 
 

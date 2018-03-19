@@ -63,6 +63,12 @@ typedef struct _USBD_PIPE_INFORMATION {
 ## Members
 
 
+`MaximumPacketSize`
+
+Specifies the maximum packet size, in bytes, that this pipe handles. This value must be less than or equal to the value of <b>wMaxPacketSize</b> in the endpoint descriptor. The USB stack ignores this value if the USBD_PF_CHANGE_MAX_PACKET flag is not set in the <b>PipeFlags</b> member. 
+
+For high-speed isochronous endpoints, the received <b>MaximumPacketSize</b> value includes the number of bytes that can be transferred in additional transactions, if the endpoint supports them. For more information, see Remarks.
+
 `EndpointAddress`
 
 Specifies the bus address for this pipe.
@@ -203,11 +209,13 @@ The supported polling periods for high-speed isochronous transfers are 1, 2, 4, 
 
 The mappings in the preceding tables between periods and polling intervals are valid in Microsoft Windows 2000 and later versions of the Windows operating system.
 
-`MaximumPacketSize`
+`PipeType`
 
-Specifies the maximum packet size, in bytes, that this pipe handles. This value must be less than or equal to the value of <b>wMaxPacketSize</b> in the endpoint descriptor. The USB stack ignores this value if the USBD_PF_CHANGE_MAX_PACKET flag is not set in the <b>PipeFlags</b> member. 
+Specifies what type of transfers this pipe uses. These values are defined in the <a href="..\usb\ne-usb-_usbd_pipe_type.md">USBD_PIPE_TYPE</a> enumeration.
 
-For high-speed isochronous endpoints, the received <b>MaximumPacketSize</b> value includes the number of bytes that can be transferred in additional transactions, if the endpoint supports them. For more information, see Remarks.
+`PipeHandle`
+
+Specifies an opaque handle to the bulk or interrupt pipe. The host controller driver returns this handle when the client driver selects the device configuration with a URB of type URB_FUNCTION_SELECT_CONFIGURATION or when the client driver changes the settings for an interface with a URB of type URB_FUNCTION_SELECT_INTERFACE.
 
 `MaximumTransferSize`
 
@@ -241,14 +249,6 @@ Indicates that the driver is overriding the endpoint maximum packet size with th
 </tr>
 </table>
 
-`PipeHandle`
-
-Specifies an opaque handle to the bulk or interrupt pipe. The host controller driver returns this handle when the client driver selects the device configuration with a URB of type URB_FUNCTION_SELECT_CONFIGURATION or when the client driver changes the settings for an interface with a URB of type URB_FUNCTION_SELECT_INTERFACE.
-
-`PipeType`
-
-Specifies what type of transfers this pipe uses. These values are defined in the <a href="..\usb\ne-usb-_usbd_pipe_type.md">USBD_PIPE_TYPE</a> enumeration.
-
 ## Remarks
 This structure contains information for an endpoint, retrieved from the device's interface descriptor. For an explanation of how to obtain the information in <b>USBD_PIPE_INFORMATION</b> from the interface descriptor, see <a href="https://msdn.microsoft.com/library/windows/hardware/gg615081">How to Select a Configuration for a USB Device</a>. 
 
@@ -276,11 +276,3 @@ The value received in <b>MaximumPacketSize</b> for an isochronous endpoint (high
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBD_PIPE_INFORMATION structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

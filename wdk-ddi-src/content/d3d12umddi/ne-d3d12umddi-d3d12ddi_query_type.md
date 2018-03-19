@@ -66,8 +66,8 @@ typedef enum D3D12DDI_QUERY_TYPE {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_QUERY_TYPE_0020_VIDEO_DECODE_STATISTICS</td>
-                    <td>Video decode statistics.</td>
+                    <td>D3D12DDI_QUERY_TYPE_OCCLUSION</td>
+                    <td>Occlusion.</td>
                 </tr>
             
                 <tr>
@@ -76,8 +76,8 @@ typedef enum D3D12DDI_QUERY_TYPE {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_QUERY_TYPE_OCCLUSION</td>
-                    <td>Occlusion.</td>
+                    <td>D3D12DDI_QUERY_TYPE_TIMESTAMP</td>
+                    <td>Timestamp.</td>
                 </tr>
             
                 <tr>
@@ -106,8 +106,8 @@ typedef enum D3D12DDI_QUERY_TYPE {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_QUERY_TYPE_TIMESTAMP</td>
-                    <td>Timestamp.</td>
+                    <td>D3D12DDI_QUERY_TYPE_0020_VIDEO_DECODE_STATISTICS</td>
+                    <td>Video decode statistics.</td>
                 </tr>
 </table>
 

@@ -61,6 +61,11 @@ typedef enum D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020 {
 <table>
             
                 <tr>
+                    <td>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_MONO</td>
+                    <td>The sample does not contain stereo data. If the stereo format is not specified, this value is the default.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_HORIZONTAL</td>
                     <td>Frame 0 and frame 1 are packed side-by-side, as shown in the following diagram:
 
@@ -101,16 +106,6 @@ typedef enum D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020 {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_MONO</td>
-                    <td>The sample does not contain stereo data. If the stereo format is not specified, this value is the default.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_SEPARATE</td>
-                    <td>Frame 0 and frame 1 are placed in separate resources.</td>
-                </tr>
-            
-                <tr>
                     <td>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_VERTICAL</td>
                     <td>Frame 0 and frame 1 are packed top-to-bottom, as shown in the following diagram:
 
@@ -148,6 +143,11 @@ typedef enum D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020 {
 <td>1</td>
 </tr>
 </table></td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020_SEPARATE</td>
+                    <td>Frame 0 and frame 1 are placed in separate resources.</td>
                 </tr>
 </table>
 

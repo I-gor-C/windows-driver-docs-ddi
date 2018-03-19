@@ -59,13 +59,13 @@ typedef struct _WDI_CHANNEL_MAPPING_ENTRY {
 ## Members
 
 
-`ChannelCenterFrequency`
-
-Specifies the center frequency for the channel in MHz.
-
 `ChannelNumber`
 
 Specifies the logical channel number.
+
+`ChannelCenterFrequency`
+
+Specifies the center frequency for the channel in MHz.
 
 
 ## Requirements

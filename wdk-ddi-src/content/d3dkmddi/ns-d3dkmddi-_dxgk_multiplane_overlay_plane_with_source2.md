@@ -63,6 +63,10 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE2 {
 
 A handle to the allocation.
 
+`VidPnSourceId`
+
+The zero-based video present network (VidPN) source identification number of the input for which the support levels are queried.
+
 `LayerIndex`
 
 The zero based index indicating the Z order of the overlay plane.
@@ -70,10 +74,6 @@ The zero based index indicating the Z order of the overlay plane.
 `PlaneAttributes`
 
 A DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3 structure that specifies overlay plane attributes.
-
-`VidPnSourceId`
-
-The zero-based video present network (VidPN) source identification number of the input for which the support levels are queried.
 
 
 ## Requirements

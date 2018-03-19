@@ -65,33 +65,13 @@ typedef enum D3D10_DDI_STENCIL_OP {
 <table>
             
                 <tr>
-                    <td>D3D10_DDI_STENCIL_OP_DECR</td>
-                    <td>Decrement the stencil-buffer entry, wrapping to the maximum value if the new value is less than zero.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_STENCIL_OP_DECR_SAT</td>
-                    <td>Decrement the stencil-buffer entry, clamping to zero.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_STENCIL_OP_INCR</td>
-                    <td>Increment the stencil-buffer entry, wrapping to zero if the new value exceeds the maximum value.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_STENCIL_OP_INCR_SAT</td>
-                    <td>Increment the stencil-buffer entry, clamping to the maximum value.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_STENCIL_OP_INVERT</td>
-                    <td>Invert the bits in the stencil-buffer entry.</td>
-                </tr>
-            
-                <tr>
                     <td>D3D10_DDI_STENCIL_OP_KEEP</td>
                     <td>Do not update the entry in the stencil buffer. D3D10_DDI_STENCIL_OP_KEEP is the default value.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_STENCIL_OP_ZERO</td>
+                    <td>Set the stencil-buffer entry to 0.</td>
                 </tr>
             
                 <tr>
@@ -100,8 +80,28 @@ typedef enum D3D10_DDI_STENCIL_OP {
                 </tr>
             
                 <tr>
-                    <td>D3D10_DDI_STENCIL_OP_ZERO</td>
-                    <td>Set the stencil-buffer entry to 0.</td>
+                    <td>D3D10_DDI_STENCIL_OP_INCR_SAT</td>
+                    <td>Increment the stencil-buffer entry, clamping to the maximum value.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_STENCIL_OP_DECR_SAT</td>
+                    <td>Decrement the stencil-buffer entry, clamping to zero.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_STENCIL_OP_INVERT</td>
+                    <td>Invert the bits in the stencil-buffer entry.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_STENCIL_OP_INCR</td>
+                    <td>Increment the stencil-buffer entry, wrapping to zero if the new value exceeds the maximum value.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_STENCIL_OP_DECR</td>
+                    <td>Decrement the stencil-buffer entry, wrapping to the maximum value if the new value is less than zero.</td>
                 </tr>
 </table>
 
@@ -115,11 +115,3 @@ typedef enum D3D10_DDI_STENCIL_OP {
 ## See Also
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdepthstencilstate.md">CreateDepthStencilState</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10_DDI_STENCIL_OP enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -62,15 +62,11 @@ typedef struct _RILMSGMWIDETAIL {
 ## Members
 
 
-`dwMwiPriority`
-
-
-
 `dwMwiType`
 
 
 
-`raFromAddress`
+`dwMwiPriority`
 
 
 
@@ -78,15 +74,19 @@ typedef struct _RILMSGMWIDETAIL {
 
 
 
+`raFromAddress`
+
+
+
 `stDateSent`
 
 
 
-`wszMessageId`
-
-
-
 `wszSubject`
+
+
+
+`wszMessageId`
 
 
 

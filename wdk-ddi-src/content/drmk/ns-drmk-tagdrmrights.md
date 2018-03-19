@@ -92,6 +92,10 @@ Disables copy protection. Content can be copied without restrictions.
 
 For more information about <b>CopyProtect</b>, see the Remarks section.
 
+`Reserved`
+
+Reserved for future use. Initialize to zero.
+
 `DigitalOutputDisable`
 
 Specifies one of the following digital output protection values:
@@ -111,10 +115,6 @@ Disable digital outputs. A software component must not transfer the content out 
 Enables digital outputs. Content can be transferred from the host system to an external component without restrictions.
 
 For more information about <b>DigitalOutputDisable</b>, see the Remarks section.
-
-`Reserved`
-
-Reserved for future use. Initialize to zero.
 
 ## Remarks
 The Windows Certification Program places specific requirements on the way an audio driver handles the <b>CopyProtect</b> and <b>DigitalOutputDisable</b> values. These requirements are applicable when the <b>CopyProtect</b> and <b>DigitalOutputDisable</b> values are applied to an audio stream and to the output from which the audio stream is accessed. New requirements for Windows 7 include the correct way to program the serial copy management system (SCMS) for S/PDIF endpoints, and high-bandwidth digital content protection (HDCP) for HDMI endpoints.
@@ -272,11 +272,3 @@ This macro does not return a value.
 
 
 <a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20DRMRIGHTS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

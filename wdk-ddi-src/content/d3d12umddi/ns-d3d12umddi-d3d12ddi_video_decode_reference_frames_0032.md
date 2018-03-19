@@ -63,6 +63,10 @@ typedef struct _D3D12DDI_VIDEO_DECODE_REFERENCE_FRAMES_0032 {
 
 Texture.
 
+`pSubresources`
+
+Subresources.
+
 `hDrvVideoDecoderHeaps`
 
 Video decoder heaps.
@@ -70,10 +74,6 @@ Video decoder heaps.
 `NumTexture2Ds`
 
 The number of textures.
-
-`pSubresources`
-
-Subresources.
 
 
 ## Requirements

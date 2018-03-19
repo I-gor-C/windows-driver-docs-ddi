@@ -65,7 +65,7 @@ typedef enum _RILCALLAUDIOSOURCE {
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLAUDIOSOURCE_MAX</td>
+                    <td>RIL_CALLAUDIOSOURCE_PKT_MODEM</td>
                     <td></td>
                 </tr>
             
@@ -75,7 +75,7 @@ typedef enum _RILCALLAUDIOSOURCE {
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLAUDIOSOURCE_PKT_MODEM</td>
+                    <td>RIL_CALLAUDIOSOURCE_MAX</td>
                     <td></td>
                 </tr>
 </table>

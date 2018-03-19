@@ -68,6 +68,21 @@ typedef enum _STORAGE_DEVICE_FORM_FACTOR {
 <table>
             
                 <tr>
+                    <td>FormFactorUnknown</td>
+                    <td>Unknown form factor.</td>
+                </tr>
+            
+                <tr>
+                    <td>FormFactor3_5</td>
+                    <td>3.5 inch nominal form factor.</td>
+                </tr>
+            
+                <tr>
+                    <td>FormFactor2_5</td>
+                    <td>2.5 inch nominal form factor.</td>
+                </tr>
+            
+                <tr>
                     <td>FormFactor1_8</td>
                     <td>1.8 inch nominal form factor.</td>
                 </tr>
@@ -78,28 +93,8 @@ typedef enum _STORAGE_DEVICE_FORM_FACTOR {
                 </tr>
             
                 <tr>
-                    <td>FormFactor2_5</td>
-                    <td>2.5 inch nominal form factor.</td>
-                </tr>
-            
-                <tr>
-                    <td>FormFactor3_5</td>
-                    <td>3.5 inch nominal form factor.</td>
-                </tr>
-            
-                <tr>
-                    <td>FormFactorDimm</td>
-                    <td>Dual in-line memory module (DIMM) slot form factor.</td>
-                </tr>
-            
-                <tr>
                     <td>FormFactorEmbedded</td>
                     <td>The storage device is embedded on a board.</td>
-                </tr>
-            
-                <tr>
-                    <td>FormFactorM_2</td>
-                    <td>M.2 form factor.</td>
                 </tr>
             
                 <tr>
@@ -113,13 +108,18 @@ typedef enum _STORAGE_DEVICE_FORM_FACTOR {
                 </tr>
             
                 <tr>
+                    <td>FormFactorM_2</td>
+                    <td>M.2 form factor.</td>
+                </tr>
+            
+                <tr>
                     <td>FormFactorPCIeBoard</td>
                     <td>PCI Express (PCIe) card form factor.</td>
                 </tr>
             
                 <tr>
-                    <td>FormFactorUnknown</td>
-                    <td>Unknown form factor.</td>
+                    <td>FormFactorDimm</td>
+                    <td>Dual in-line memory module (DIMM) slot form factor.</td>
                 </tr>
 </table>
 

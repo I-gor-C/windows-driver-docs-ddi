@@ -61,17 +61,13 @@ typedef struct _PEP_PPM_QUERY_PERF_CAPABILITIES {
 ## Members
 
 
-`DomainId`
-
-[out] The domain ID of the processor performance domain.
-
-`DomainMembers`
-
-[out] The number of processors in this performance domain.
-
 `HighestPerformance`
 
 [out] The highest performance level in platform-specific units. For more information, see Remarks.
+
+`NominalPerformance`
+
+[out] The nominal performance level in platform-specific units. For more information, see Remarks.
 
 `LowestNonlinearPerformance`
 
@@ -81,9 +77,13 @@ typedef struct _PEP_PPM_QUERY_PERF_CAPABILITIES {
 
 [out] The lowest performance level in platform-specific units. For more information, see Remarks.
 
-`NominalPerformance`
+`DomainId`
 
-[out] The nominal performance level in platform-specific units. For more information, see Remarks.
+[out] The domain ID of the processor performance domain.
+
+`DomainMembers`
+
+[out] The number of processors in this performance domain.
 
 ## Remarks
 This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186825">PEP_NOTIFY_PPM_QUERY_PERF_CAPABILITIES</a> notification. All six members contain output values that the platform extension plug-in (PEP) writes to the structure in response to this notification.
@@ -103,11 +103,3 @@ Processor performance levels are specified in platform-specific units. For examp
 
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186825">PEP_NOTIFY_PPM_QUERY_PERF_CAPABILITIES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_QUERY_PERF_CAPABILITIES structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

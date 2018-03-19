@@ -57,12 +57,6 @@ typedef struct _NET_DMA_CHANNEL_CPU_AFFINITY {
 ## Members
 
 
-`CpuNumber`
-
-The target CPU that the DMA provider driver should associate with the MSI-X interrupts that are
-     generated for the DMA channel that is specified in the 
-     <b>DmaChannel</b> member.
-
 `DmaChannel`
 
 The DMA channel number. The values for this member range from zero through the maximum number of
@@ -71,6 +65,12 @@ The DMA channel number. The values for this member range from zero through the m
      <b>MaxDmaChannelCount</b> member of the 
      <a href="..\netdma\ns-netdma-_net_dma_provider_characteristics.md">
      NET_DMA_PROVIDER_CHARACTERISTICS</a> structure.
+
+`CpuNumber`
+
+The target CPU that the DMA provider driver should associate with the MSI-X interrupts that are
+     generated for the DMA channel that is specified in the 
+     <b>DmaChannel</b> member.
 
 ## Remarks
 The NetDMA interface passes an array of NET_DMA_CHANNEL_CPU_AFFINITY structures to a DMA provider
@@ -102,11 +102,3 @@ The NetDMA interface calls
 
 <a href="..\netdma\ns-netdma-_net_dma_provider_characteristics.md">
    NET_DMA_PROVIDER_CHARACTERISTICS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_CHANNEL_CPU_AFFINITY structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

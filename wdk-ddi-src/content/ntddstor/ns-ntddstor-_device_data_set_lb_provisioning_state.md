@@ -66,9 +66,17 @@ typedef struct _DEVICE_DATA_SET_LB_PROVISIONING_STATE {
 
 The size of this structure, including the slab allocation bitmap, in bytes.
 
-`SlabAllocationBitMap`
+`Version`
 
-A bitmap of slab allocations.
+The version of this structure.
+
+`SlabSizeInBytes`
+
+The size, in bytes, of a slab.
+
+`SlabOffsetDeltaInBytes`
+
+The difference, in bytes, from the offset specified in the data set range to the starting slab position.
 
 `SlabAllocationBitMapBitCount`
 
@@ -78,17 +86,9 @@ The number of bits  in the allocation bitmap mapping  slabs for the data set ran
 
 The number of <b>ULONG</b> array values containing the slab allocation bitmap.
 
-`SlabOffsetDeltaInBytes`
+`SlabAllocationBitMap`
 
-The difference, in bytes, from the offset specified in the data set range to the starting slab position.
-
-`SlabSizeInBytes`
-
-The size, in bytes, of a slab.
-
-`Version`
-
-The version of this structure.
+A bitmap of slab allocations.
 
 ## Remarks
 Provisioning state information is returned when the <b>Action</b> member of <a href="..\ntddstor\ns-ntddstor-_device_manage_data_set_attributes.md">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a> is set to <b>DeviceDsmAction_Allocation</b>. The caller should include only one data set range in the system buffer at <b>DataSetRangesOffset</b>.
@@ -126,11 +126,3 @@ If the slab allocation total returned in <b>SlabAllocationBitMapBitCount</b> is 
 
 
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_DATA_SET_LB_PROVISIONING_STATE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

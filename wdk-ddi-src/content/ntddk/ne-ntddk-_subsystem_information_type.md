@@ -60,11 +60,6 @@ typedef enum _SUBSYSTEM_INFORMATION_TYPE {
 <table>
             
                 <tr>
-                    <td>MaxSubsystemInformationType</td>
-                    <td>Reserved.</td>
-                </tr>
-            
-                <tr>
                     <td>SubsystemInformationTypeWin32</td>
                     <td>The subsystem type for the process or thread is Win32.</td>
                 </tr>
@@ -79,6 +74,11 @@ typedef enum _SUBSYSTEM_INFORMATION_TYPE {
 <li>The <b>CommandLine</b> member is the Linux NULL-separated command line. </li>
 </ul>
  The preceding member values may be NULL.</td>
+                </tr>
+            
+                <tr>
+                    <td>MaxSubsystemInformationType</td>
+                    <td>Reserved.</td>
                 </tr>
 </table>
 
@@ -95,11 +95,3 @@ typedef enum _SUBSYSTEM_INFORMATION_TYPE {
 
 
 <a href="https://msdn.microsoft.com/ca292efc-1ea9-4c0f-b0a7-1cfb35d69f81">NtQueryInformationThread</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SUBSYSTEM_INFORMATION_TYPE enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

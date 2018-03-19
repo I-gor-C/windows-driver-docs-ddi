@@ -66,19 +66,31 @@ typedef struct _IDE_CHANNEL_INTERFACE {
 ## Members
 
 
+`Version`
+
+The port driver sets this member to sizeof(IDE_CHANNEL_INTERFACE). The miniport driver should verify that the version is greater than or equal to the one it is using.
+
 `ChannelNumber`
 
 The port driver sets this field to the number assigned for this channel. For non-native mode controllers, the primary channel will always be assigned 0 and the secondary channel will always be assigned 1.
+
+`Reserved`
+
+Reserved for future use. The miniport driver must not use this field.
+
+`ReservedUlong`
+
+####
+
+`IdeHwInitialize`
+
+
 
 `IdeHwBuildIo`
 
 
 
-`IdeHwControl`
-
-
-
-`IdeHwInitialize`
+`IdeHwStartIo`
 
 
 
@@ -90,21 +102,9 @@ The port driver sets this field to the number assigned for this channel. For non
 
 
 
-`IdeHwStartIo`
+`IdeHwControl`
 
 
-
-`Reserved`
-
-Reserved for future use. The miniport driver must not use this field.
-
-`ReservedUlong`
-
-####
-
-`Version`
-
-The port driver sets this member to sizeof(IDE_CHANNEL_INTERFACE). The miniport driver should verify that the version is greater than or equal to the one it is using.
 
 
 ## Requirements
@@ -135,11 +135,3 @@ The port driver sets this member to sizeof(IDE_CHANNEL_INTERFACE). The miniport 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558998">IdeHwReset</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IDE_CHANNEL_INTERFACE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

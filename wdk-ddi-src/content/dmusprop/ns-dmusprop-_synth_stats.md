@@ -62,26 +62,6 @@ typedef struct _SYNTH_STATS {
 ## Members
 
 
-`CPUPerVoice`
-
-Specifies the CPU usage per voice, which is expressed as a percentage (a fraction multiplied by 100).
-
-`FreeMemory`
-
-Specifies the amount of free memory in bytes. This is the storage that remains available for downloading additional DLS data resources.
-
-`LostNotes`
-
-Specifies the number of notes lost. Notes can be dropped if the number of simultaneous voices exceeds the maximum specified by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPERTY_SYNTH_PORTPARAMETERS</a> property. For additional information, see <a href="https://msdn.microsoft.com/fb1e6c36-02b4-41a6-b9c4-09f393d389db">Voice Allocation</a>.
-
-`PeakVolume`
-
-Specifies the peak volume level expressed as decibels multiplied by 100.
-
-`TotalCPU`
-
-Specifies the total CPU usage (all voices), which is expressed as a percentage (a fraction multiplied by 100).
-
 `ValidStats`
 
 Specifies which members of the SYNTH_STATS structure contain valid data. This member is a bitfield whose value is either zero or a bitwise OR of one or more of the following flag bits:
@@ -128,6 +108,26 @@ The <b>FreeMemory</b> field contains valid data.
 
 Specifies the average number of voices playing.
 
+`TotalCPU`
+
+Specifies the total CPU usage (all voices), which is expressed as a percentage (a fraction multiplied by 100).
+
+`CPUPerVoice`
+
+Specifies the CPU usage per voice, which is expressed as a percentage (a fraction multiplied by 100).
+
+`LostNotes`
+
+Specifies the number of notes lost. Notes can be dropped if the number of simultaneous voices exceeds the maximum specified by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPERTY_SYNTH_PORTPARAMETERS</a> property. For additional information, see <a href="https://msdn.microsoft.com/fb1e6c36-02b4-41a6-b9c4-09f393d389db">Voice Allocation</a>.
+
+`FreeMemory`
+
+Specifies the amount of free memory in bytes. This is the storage that remains available for downloading additional DLS data resources.
+
+`PeakVolume`
+
+Specifies the peak volume level expressed as decibels multiplied by 100.
+
 ## Remarks
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537406">KSPROPERTY_SYNTH_RUNNINGSTATS</a> property uses the SYNTH_STATS structure to query a DirectMusic miniport driver for statistics about a synthesizer.
 
@@ -145,11 +145,3 @@ The SYNTH_STATS structure is similar to the DMUS_SYNTHSTATS structure, which is 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPERTY_SYNTH_PORTPARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20SYNTH_STATS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

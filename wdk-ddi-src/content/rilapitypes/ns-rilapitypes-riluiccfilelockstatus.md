@@ -60,11 +60,11 @@ typedef struct _RILUICCFILELOCKSTATUS {
 ## Members
 
 
-`bPinRef`
-
-
-
 `cbSize`
+
+
+
+`dwParams`
 
 
 
@@ -72,7 +72,7 @@ typedef struct _RILUICCFILELOCKSTATUS {
 
 
 
-`dwParams`
+`bPinRef`
 
 
 

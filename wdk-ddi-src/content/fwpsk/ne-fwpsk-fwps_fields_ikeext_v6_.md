@@ -71,14 +71,24 @@ typedef enum FWPS_FIELDS_IKEEXT_V6_ {
                 </tr>
             
                 <tr>
+                    <td>FWPS_FIELD_IKEEXT_V6_IP_REMOTE_ADDRESS</td>
+                    <td>The remote IP address.</td>
+                </tr>
+            
+                <tr>
                     <td>FWPS_FIELD_IKEEXT_V6_IP_LOCAL_INTERFACE</td>
                     <td>The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) for the network interface associated with the
      local IP address.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_IKEEXT_V6_IP_REMOTE_ADDRESS</td>
-                    <td>The remote IP address.</td>
+                    <td>FWPS_FIELD_IKEEXT_V6_PROFILE_ID</td>
+                    <td>The profile identifier (network category) of the network interface. The possible network category
+     values are: public (1), private (2), or domain (3).
+     
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -90,16 +100,6 @@ typedef enum FWPS_FIELDS_IKEEXT_V6_ {
                     <td>FWPS_FIELD_IKEEXT_V6_MAX</td>
                     <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_IKEEXT_V6_PROFILE_ID</td>
-                    <td>The profile identifier (network category) of the network interface. The possible network category
-     values are: public (1), private (2), or domain (3).
-     
-
-<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
-<div> </div></td>
                 </tr>
 </table>
 

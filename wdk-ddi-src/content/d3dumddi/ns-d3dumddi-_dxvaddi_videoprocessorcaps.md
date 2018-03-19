@@ -64,6 +64,24 @@ typedef struct _DXVADDI_VIDEOPROCESSORCAPS {
 ## Members
 
 
+`InputPool`
+
+[out] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>-typed value that indicates the memory pool from which the interlaced source surfaces should be allocated.
+
+`NumForwardRefSamples`
+
+[out] The required number of forward reference samples for the defined deinterlace mode. The samples are in subsequent fields. This value is zero for bob and line blending and can be other values (such as 1, 2, or 3) for adaptive deinterlacing and frame-rate conversion.
+
+`NumBackwardRefSamples`
+
+[out] The required backward reference samples for the defined deinterlace mode. The samples are in former fields. This value is zero for bob, 1 for line blending and can be other values (such as 1, 2, or 3) for adaptive deinterlacing and frame-rate conversion.
+
+`OutputFormat`
+
+[out] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the uncompressed output frames. Typically, a deinterlace algorithm outputs frames in a pixel format that matches the input sample format. This member ensures that the Video Mixing Renderer (VMR) or other video renderer is able to supply the correct output frame surfaces to the deinterlacing hardware.
+
+Note that if the DXVADDI_VIDEOPROCESS_YUV2RGB value is returned in the <b>VideoProcessorOperations</b> member, the VMR determines that valid output formats are specified by this member as well as an D3DFMT_X8R8G8B8 format.
+
 `DeinterlaceTechnology`
 
 [out] A bitwise OR of the following values to indicate the underlying deinterlacing technology that is used to implement the deinterlacing algorithm. The values can be combined as required to most closely match the algorithm's implementation.
@@ -174,146 +192,6 @@ A deinterlace algorithm that can undo the 3:2 pull-down process that is used for
 </td>
 </tr>
 </table>
-
-`DetailFilterTechnology`
-
-[out] A bitwise OR of the following values to indicate the underlying technology that is used to implement detail filtering. The values can be combined as required to most closely match the detail-filter implementation.  
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-DXVADDI_DETAILFILTERTECH_UNSUPPORTED
-
-</td>
-<td>
-No detail-filter technology is supported.
-
-</td>
-</tr>
-<tr>
-<td>
-DXVADDI_DETAILFILTERTECH_UNKNOWN
-
-</td>
-<td>
-The detail-filter technology is unknown.
-
-</td>
-</tr>
-<tr>
-<td>
-DXVADDI_DETAILFILTERTECH_EDGE
-
-</td>
-<td>
-The video processing device uses edge detail filtering.
-
-</td>
-</tr>
-<tr>
-<td>
-DXVADDI_DETAILFILTERTECH_SHARPENING
-
-</td>
-<td>
-The video processing device uses sharpening detail filtering.
-
-</td>
-</tr>
-</table>
-
-`InputPool`
-
-[out] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>-typed value that indicates the memory pool from which the interlaced source surfaces should be allocated.
-
-`NoiseFilterTechnology`
-
-[out] A bitwise OR of the following values to indicate the underlying technology that is used to implement noise filtering. The values can be combined as required to most closely match the noise-filter implementation. 
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-DXVADDI_NOISEFILTERTECH_UNSUPPORTED
-
-</td>
-<td>
-No noise-filter technology is supported.
-
-</td>
-</tr>
-<tr>
-<td>
-DXVADDI_NOISEFILTERTECH_UNKNOWN
-
-</td>
-<td>
-The noise-filter technology is unknown.
-
-</td>
-</tr>
-<tr>
-<td>
-DXVADDI_NOISEFILTERTECH_MEDIAN
-
-</td>
-<td>
-The video processing device uses median noise filtering.
-
-</td>
-</tr>
-<tr>
-<td>
-DXVADDI_NOISEFILTERTECH_TEMPORAL
-
-</td>
-<td>
-The video processing device uses temporal noise filtering.
-
-</td>
-</tr>
-<tr>
-<td>
-DXVADDI_NOISEFILTERTECH_BLOCKNOISE
-
-</td>
-<td>
-The video processing device uses block noise filtering.
-
-</td>
-</tr>
-<tr>
-<td>
-DXVADDI_NOISEFILTERTECH_MOSQUITONOISE
-
-</td>
-<td>
-The video processing device uses mosquito noise filtering.
-
-</td>
-</tr>
-</table>
-
-`NumBackwardRefSamples`
-
-[out] The required backward reference samples for the defined deinterlace mode. The samples are in former fields. This value is zero for bob, 1 for line blending and can be other values (such as 1, 2, or 3) for adaptive deinterlacing and frame-rate conversion.
-
-`NumForwardRefSamples`
-
-[out] The required number of forward reference samples for the defined deinterlace mode. The samples are in subsequent fields. This value is zero for bob and line blending and can be other values (such as 1, 2, or 3) for adaptive deinterlacing and frame-rate conversion.
-
-`OutputFormat`
-
-[out] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the uncompressed output frames. Typically, a deinterlace algorithm outputs frames in a pixel format that matches the input sample format. This member ensures that the Video Mixing Renderer (VMR) or other video renderer is able to supply the correct output frame surfaces to the deinterlacing hardware.
-
-Note that if the DXVADDI_VIDEOPROCESS_YUV2RGB value is returned in the <b>VideoProcessorOperations</b> member, the VMR determines that valid output formats are specified by this member as well as an D3DFMT_X8R8G8B8 format.
 
 `ProcAmpControlCaps`
 
@@ -557,6 +435,128 @@ The video processing device can maintain the original field data.
 </tr>
 </table>
 
+`NoiseFilterTechnology`
+
+[out] A bitwise OR of the following values to indicate the underlying technology that is used to implement noise filtering. The values can be combined as required to most closely match the noise-filter implementation. 
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+DXVADDI_NOISEFILTERTECH_UNSUPPORTED
+
+</td>
+<td>
+No noise-filter technology is supported.
+
+</td>
+</tr>
+<tr>
+<td>
+DXVADDI_NOISEFILTERTECH_UNKNOWN
+
+</td>
+<td>
+The noise-filter technology is unknown.
+
+</td>
+</tr>
+<tr>
+<td>
+DXVADDI_NOISEFILTERTECH_MEDIAN
+
+</td>
+<td>
+The video processing device uses median noise filtering.
+
+</td>
+</tr>
+<tr>
+<td>
+DXVADDI_NOISEFILTERTECH_TEMPORAL
+
+</td>
+<td>
+The video processing device uses temporal noise filtering.
+
+</td>
+</tr>
+<tr>
+<td>
+DXVADDI_NOISEFILTERTECH_BLOCKNOISE
+
+</td>
+<td>
+The video processing device uses block noise filtering.
+
+</td>
+</tr>
+<tr>
+<td>
+DXVADDI_NOISEFILTERTECH_MOSQUITONOISE
+
+</td>
+<td>
+The video processing device uses mosquito noise filtering.
+
+</td>
+</tr>
+</table>
+
+`DetailFilterTechnology`
+
+[out] A bitwise OR of the following values to indicate the underlying technology that is used to implement detail filtering. The values can be combined as required to most closely match the detail-filter implementation.  
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+DXVADDI_DETAILFILTERTECH_UNSUPPORTED
+
+</td>
+<td>
+No detail-filter technology is supported.
+
+</td>
+</tr>
+<tr>
+<td>
+DXVADDI_DETAILFILTERTECH_UNKNOWN
+
+</td>
+<td>
+The detail-filter technology is unknown.
+
+</td>
+</tr>
+<tr>
+<td>
+DXVADDI_DETAILFILTERTECH_EDGE
+
+</td>
+<td>
+The video processing device uses edge detail filtering.
+
+</td>
+</tr>
+<tr>
+<td>
+DXVADDI_DETAILFILTERTECH_SHARPENING
+
+</td>
+<td>
+The video processing device uses sharpening detail filtering.
+
+</td>
+</tr>
+</table>
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -591,11 +591,3 @@ The video processing device can maintain the original field data.
 
 
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_VIDEOPROCESSORCAPS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

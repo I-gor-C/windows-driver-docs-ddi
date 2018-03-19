@@ -60,13 +60,13 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KS_AMVP_BEST_BANDWIDTH</td>
-                    <td>Use the largest available bandwidth.</td>
+                    <td>KS_AMVP_DO_NOT_CARE</td>
+                    <td>The format does not matter.</td>
                 </tr>
             
                 <tr>
-                    <td>KS_AMVP_DO_NOT_CARE</td>
-                    <td>The format does not matter.</td>
+                    <td>KS_AMVP_BEST_BANDWIDTH</td>
+                    <td>Use the largest available bandwidth.</td>
                 </tr>
             
                 <tr>

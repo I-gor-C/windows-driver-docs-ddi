@@ -70,13 +70,8 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WdfIoQueueDispatchManual</td>
-                    <td>The framework places requests into the queue but does not deliver them to the driver. The driver must retrieve requests from the queue by calling <a href="..\wdfio\nf-wdfio-wdfioqueueretrievenextrequest.md">WdfIoQueueRetrieveNextRequest</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfIoQueueDispatchMax</td>
-                    <td>Reserved for internal use only.</td>
+                    <td>WdfIoQueueDispatchSequential</td>
+                    <td>The I/O queue's requests are presented to the driver's <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/request-handlers">request handlers</a> one at a time. The framework does not deliver the next request until a driver has called <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> to complete the current request.</td>
                 </tr>
             
                 <tr>
@@ -85,8 +80,13 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WdfIoQueueDispatchSequential</td>
-                    <td>The I/O queue's requests are presented to the driver's <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/request-handlers">request handlers</a> one at a time. The framework does not deliver the next request until a driver has called <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> to complete the current request.</td>
+                    <td>WdfIoQueueDispatchManual</td>
+                    <td>The framework places requests into the queue but does not deliver them to the driver. The driver must retrieve requests from the queue by calling <a href="..\wdfio\nf-wdfio-wdfioqueueretrievenextrequest.md">WdfIoQueueRetrieveNextRequest</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfIoQueueDispatchMax</td>
+                    <td>Reserved for internal use only.</td>
                 </tr>
 </table>
 

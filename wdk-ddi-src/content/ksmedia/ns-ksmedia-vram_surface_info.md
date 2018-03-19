@@ -63,9 +63,21 @@ typedef struct {
 ## Members
 
 
+`hSurface`
+
+A pointer to a kernel-mode handle that identifies the VRAM surface.
+
+`VramPhysicalAddress`
+
+This member contains the physical address of the surface in display memory. The minidriver fills in this member in the handler for <a href="https://msdn.microsoft.com/library/windows/hardware/ff565177">KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS</a>.
+
 `cbCaptured`
 
 This member specifies the number of bytes copied into the VRAM surface. The minidriver sets this value.
+
+`dwWidth`
+
+This member specifies the width of the video data in pixels. The minidriver sets this value.
 
 `dwHeight`
 
@@ -75,14 +87,6 @@ This member specifies the height of the video data, in pixels. The minidriver se
 
 This member specifies the linear size, in bytes, of a nonrectangular surface. The minidriver sets this value.
 
-`dwWidth`
-
-This member specifies the width of the video data in pixels. The minidriver sets this value.
-
-`hSurface`
-
-A pointer to a kernel-mode handle that identifies the VRAM surface.
-
 `lPitch`
 
 This member specifies the pitch of the surface; that is, the distance, in bytes, to the start of the next line. This is also known as the <i>stride</i> of the surface. The minidriver sets this value.
@@ -90,10 +94,6 @@ This member specifies the pitch of the surface; that is, the distance, in bytes,
 `ullReserved`
 
 The minidriver can use this member to store information about the surface as it handles a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565177">KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS</a> request. Use caution, however; this structure does not persist across <a href="..\ks\nc-ks-pfnkspin.md">AVStrMiniPinProcess</a> calls.
-
-`VramPhysicalAddress`
-
-This member contains the physical address of the surface in display memory. The minidriver fills in this member in the handler for <a href="https://msdn.microsoft.com/library/windows/hardware/ff565177">KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS</a>.
 
 ## Remarks
 When the minidriver receives VRAM_SURFACE_INFO through a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565177">KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS</a> property call, the members following <b>VramPhysicalAddress</b> in the member list (except for <b>ullReserved</b>) are zeroed out. The capture driver can store capture-related private data in these members.
@@ -114,11 +114,3 @@ The data in these members persists for the lifetime of the stream header. When a
 
 
 <a href="..\ks\nc-ks-pfnkspin.md">AVStrMiniPinProcess</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20VRAM_SURFACE_INFO structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

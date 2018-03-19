@@ -73,13 +73,13 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_STREAM_DEGRADATION</td>
-                    <td>Specify if the pin allows degradation strategies.</td>
+                    <td>KSPROPERTY_STREAM_QUALITY</td>
+                    <td>Specify if the pin generates Quality Management complaints.</td>
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_STREAM_FRAMETIME</td>
-                    <td>Specify to determine the duration of the next frame based on the particular media stream, and use that information to step-frame a sequence.</td>
+                    <td>KSPROPERTY_STREAM_DEGRADATION</td>
+                    <td>Specify if the pin allows degradation strategies.</td>
                 </tr>
             
                 <tr>
@@ -88,13 +88,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_STREAM_PIPE_ID</td>
-                    <td>Used internally for communication between the KSProxy system driver and AVStream.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_STREAM_PRESENTATIONEXTENT</td>
-                    <td>Specify to query the stream extent.</td>
+                    <td>KSPROPERTY_STREAM_TIMEFORMAT</td>
+                    <td>Specify to retrieve the time format used on a particular pin connection.</td>
                 </tr>
             
                 <tr>
@@ -103,13 +98,13 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_STREAM_QUALITY</td>
-                    <td>Specify if the pin generates Quality Management complaints.</td>
+                    <td>KSPROPERTY_STREAM_PRESENTATIONEXTENT</td>
+                    <td>Specify to query the stream extent.</td>
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_STREAM_RATE</td>
-                    <td>Specify in conjunction with KSPROPERTY_STREAM_RATECAPABILITY and use this to set the rate of a segment after querying the capability of the pin.</td>
+                    <td>KSPROPERTY_STREAM_FRAMETIME</td>
+                    <td>Specify to determine the duration of the next frame based on the particular media stream, and use that information to step-frame a sequence.</td>
                 </tr>
             
                 <tr>
@@ -118,8 +113,13 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_STREAM_TIMEFORMAT</td>
-                    <td>Specify to retrieve the time format used on a particular pin connection.</td>
+                    <td>KSPROPERTY_STREAM_RATE</td>
+                    <td>Specify in conjunction with KSPROPERTY_STREAM_RATECAPABILITY and use this to set the rate of a segment after querying the capability of the pin.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_STREAM_PIPE_ID</td>
+                    <td>Used internally for communication between the KSProxy system driver and AVStream.</td>
                 </tr>
 </table>
 

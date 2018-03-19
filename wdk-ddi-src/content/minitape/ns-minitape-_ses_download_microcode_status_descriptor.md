@@ -63,34 +63,14 @@ typedef struct _SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR {
 ## Members
 
 
-`AdditionalStatus`
-
-Provides an additional status value for certain
-values of <i>Status</i> .
-
-`ExpectedBufferId`
-
-Indicates the next value that the
-enclosure services process expects in the <i>BufferId</i> field in <a href="https://msdn.microsoft.com/09c2746f-cfe4-41dc-82ce-0b7e0c348897">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>.
-
-`ExpectedBufferOffset`
-
-Indicates the next value that the
-enclosure services process expects in the <i>BufferOffset</i> field in <a href="https://msdn.microsoft.com/09c2746f-cfe4-41dc-82ce-0b7e0c348897">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>. If the enclosure services process accepts arbitrary <i>BufferOffset</i> values, then it shall set <i>ExpectedBufferOffset</i> to 0xFFFFFFFF.
-
-`MaximumImageSize`
-
-Indicates the maximum size in bytes of the
-microcode image that the enclosure services process accepts. The image may be delivered using one or
-more <a href="https://msdn.microsoft.com/09c2746f-cfe4-41dc-82ce-0b7e0c348897">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>.
-
 `Reserved1`
 
 Reserved for future use.
 
-`Reserved2`
+`SubEnclosureId`
 
-Reserved for future use.
+Specifies the subenclosure to which the download microcode
+status descriptor applies to.
 
 `Status`
 
@@ -328,10 +308,30 @@ Vendor Specific
 </tr>
 </table>
 
-`SubEnclosureId`
+`AdditionalStatus`
 
-Specifies the subenclosure to which the download microcode
-status descriptor applies to.
+Provides an additional status value for certain
+values of <i>Status</i> .
+
+`MaximumImageSize`
+
+Indicates the maximum size in bytes of the
+microcode image that the enclosure services process accepts. The image may be delivered using one or
+more <a href="https://msdn.microsoft.com/09c2746f-cfe4-41dc-82ce-0b7e0c348897">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>.
+
+`Reserved2`
+
+Reserved for future use.
+
+`ExpectedBufferId`
+
+Indicates the next value that the
+enclosure services process expects in the <i>BufferId</i> field in <a href="https://msdn.microsoft.com/09c2746f-cfe4-41dc-82ce-0b7e0c348897">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>.
+
+`ExpectedBufferOffset`
+
+Indicates the next value that the
+enclosure services process expects in the <i>BufferOffset</i> field in <a href="https://msdn.microsoft.com/09c2746f-cfe4-41dc-82ce-0b7e0c348897">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>. If the enclosure services process accepts arbitrary <i>BufferOffset</i> values, then it shall set <i>ExpectedBufferOffset</i> to 0xFFFFFFFF.
 
 
 ## Requirements
@@ -343,11 +343,3 @@ status descriptor applies to.
 ## See Also
 
 <a href="https://msdn.microsoft.com/09c2746f-cfe4-41dc-82ce-0b7e0c348897">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

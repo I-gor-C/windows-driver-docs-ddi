@@ -64,17 +64,22 @@ typedef enum _RILMSGDCSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_MDCS_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_MDCS_ALPHABET</td>
+                    <td>RIL_PARAM_MDCS_TYPE</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_PARAM_MDCS_FLAGS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_MDCS_MSGCLASS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_MDCS_ALPHABET</td>
                     <td></td>
                 </tr>
             
@@ -89,12 +94,7 @@ typedef enum _RILMSGDCSPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_MDCS_MSGCLASS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_MDCS_TYPE</td>
+                    <td>RIL_PARAM_MDCS_ALL</td>
                     <td></td>
                 </tr>
 </table>

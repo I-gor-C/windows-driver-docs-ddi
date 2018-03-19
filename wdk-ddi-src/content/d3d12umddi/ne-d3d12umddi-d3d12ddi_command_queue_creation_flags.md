@@ -59,13 +59,13 @@ typedef enum D3D12DDI_COMMAND_QUEUE_CREATION_FLAGS {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_COMMAND_QUEUE_CREATION_FLAG_GLOBAL_REALTIME_PRIORITY</td>
-                    <td>Requires global real-time priority.</td>
+                    <td>D3D12DDI_COMMAND_QUEUE_CREATION_FLAG_NONE</td>
+                    <td>Create queue with default value.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_COMMAND_QUEUE_CREATION_FLAG_NONE</td>
-                    <td>Create queue with default value.</td>
+                    <td>D3D12DDI_COMMAND_QUEUE_CREATION_FLAG_GLOBAL_REALTIME_PRIORITY</td>
+                    <td>Requires global real-time priority.</td>
                 </tr>
 </table>
 

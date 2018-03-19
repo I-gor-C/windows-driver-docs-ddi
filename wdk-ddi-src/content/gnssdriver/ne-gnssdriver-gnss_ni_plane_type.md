@@ -60,13 +60,13 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>GNSS_NI_CP</td>
-                    <td>Indicates the plane type of the request is CP.</td>
+                    <td>GNSS_NI_SUPL</td>
+                    <td>Indicates the plane type of the request is SUPL.</td>
                 </tr>
             
                 <tr>
-                    <td>GNSS_NI_SUPL</td>
-                    <td>Indicates the plane type of the request is SUPL.</td>
+                    <td>GNSS_NI_CP</td>
+                    <td>Indicates the plane type of the request is CP.</td>
                 </tr>
             
                 <tr>

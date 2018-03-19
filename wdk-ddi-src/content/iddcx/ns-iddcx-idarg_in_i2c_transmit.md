@@ -58,6 +58,10 @@ typedef struct IDARG_IN_I2C_TRANSMIT {
 ## Members
 
 
+`SevenBitI2CAddress`
+
+[in] The address of the I2C device to which data will be transmitted
+
 `DataSizeInBytes`
 
 [in] The size, in bytes, of the buffer pointed to by <b>pData</b>. This parameter must be between 1 and 64, inclusively.
@@ -65,10 +69,6 @@ typedef struct IDARG_IN_I2C_TRANSMIT {
 `pData`
 
 [in] A pointer to a buffer that holds the data to be transmitted.
-
-`SevenBitI2CAddress`
-
-[in] The address of the I2C device to which data will be transmitted
 
 
 ## Requirements

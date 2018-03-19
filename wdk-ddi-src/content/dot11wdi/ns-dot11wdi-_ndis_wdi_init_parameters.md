@@ -61,10 +61,6 @@ typedef struct _NDIS_WDI_INIT_PARAMETERS {
 ## Members
 
 
-`CloseAdapterCompleteHandler`
-
-The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_close_adapter_complete.md">NdisWdiCloseAdapterComplete</a> callback function.
-
 `Header`
 
 The 
@@ -86,18 +82,6 @@ To indicate the version of the NDIS_WDI_INIT_PARAMETERS structure, set the
 Set the 
         <b>Size</b> member to NDIS_SIZEOF_WDI_INIT_PARAMETERS_REVISION_1.
 
-`OpenAdapterCompleteHandler`
-
-The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_open_adapter_complete.md">NdisWdiOpenAdapterComplete</a> callback function.
-
-`UeIdleNotificationComplete`
-
-The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_idle_notification_complete.md">NdisWdiIdleNotificationComplete</a> callback function.
-
-`UeIdleNotificationConfirm`
-
-The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_idle_notification_confirm.md">NdisWdiIdleNotificationConfirm</a> callback function.
-
 `WdiVersion`
 
 The version of WDI used by the driver. Set this member to one of the following values:
@@ -109,6 +93,22 @@ The version of WDI used by the driver. Set this member to one of the following v
 #### WDI_VERSION_1_0
 
 WDI version 1.0
+
+`OpenAdapterCompleteHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_open_adapter_complete.md">NdisWdiOpenAdapterComplete</a> callback function.
+
+`CloseAdapterCompleteHandler`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_close_adapter_complete.md">NdisWdiCloseAdapterComplete</a> callback function.
+
+`UeIdleNotificationConfirm`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_idle_notification_confirm.md">NdisWdiIdleNotificationConfirm</a> callback function.
+
+`UeIdleNotificationComplete`
+
+The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_idle_notification_complete.md">NdisWdiIdleNotificationComplete</a> callback function.
 
 
 ## Requirements

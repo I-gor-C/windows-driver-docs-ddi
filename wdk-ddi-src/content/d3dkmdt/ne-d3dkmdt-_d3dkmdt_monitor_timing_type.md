@@ -64,17 +64,7 @@ typedef enum _D3DKMDT_MONITOR_TIMING_TYPE {
 <table>
             
                 <tr>
-                    <td>D3DKMDT_MTT_DEFAULTMONITORPROFILE</td>
-                    <td>Reserved for system use.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_MTT_DETAILED</td>
-                    <td>Reserved for system use.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_MTT_DRIVER</td>
+                    <td>D3DKMDT_MTT_UNINITIALIZED</td>
                     <td>Reserved for system use.</td>
                 </tr>
             
@@ -84,17 +74,27 @@ typedef enum _D3DKMDT_MONITOR_TIMING_TYPE {
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_MTT_EXTRASTANDARD</td>
-                    <td>Reserved for system use.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DKMDT_MTT_STANDARD</td>
                     <td>Reserved for system use.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_MTT_UNINITIALIZED</td>
+                    <td>D3DKMDT_MTT_EXTRASTANDARD</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MTT_DETAILED</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MTT_DEFAULTMONITORPROFILE</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MTT_DRIVER</td>
                     <td>Reserved for system use.</td>
                 </tr>
 </table>

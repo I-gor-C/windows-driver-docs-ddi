@@ -63,10 +63,6 @@ typedef struct _WORK_QUEUE_ITEM {
 
 Doubly linked list structure. This structure is used to add the work item to the system work queue.
 
-`Parameter`
-
-Pointer to context information to be passed to the callback routine specified in the <b>WorkerRoutine</b> member.
-
 `WorkerRoutine`
 
 Pointer to a callback routine that processes this work item when the work item is dequeued. This callback routine is declared as follows: 
@@ -91,6 +87,10 @@ Pointer to a callback routine that processes this work item when the work item i
 #### Parameter
 
 Context information pointer specified in the <b>Parameter</b> member.
+
+`Parameter`
+
+Pointer to context information to be passed to the callback routine specified in the <b>WorkerRoutine</b> member.
 
 ## Remarks
 To initialize a WORK_QUEUE_ITEM structure, call <a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a>. 
@@ -123,11 +123,3 @@ To post the initialized work item to a system work queue, call <a href="..\wdm\n
 
 
 <a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20WORK_QUEUE_ITEM structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

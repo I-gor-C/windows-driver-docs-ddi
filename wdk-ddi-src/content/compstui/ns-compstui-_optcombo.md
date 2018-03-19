@@ -65,15 +65,11 @@ typedef struct _OPTCOMBO {
 
 
 
-`cListItem`
-
-
-
-`dwReserved`
-
-
-
 `Flags`
+
+
+
+`cListItem`
 
 
 
@@ -82,6 +78,10 @@ typedef struct _OPTCOMBO {
 
 
 `Sel`
+
+
+
+`dwReserved`
 
 
 

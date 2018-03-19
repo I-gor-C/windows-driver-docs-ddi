@@ -62,26 +62,6 @@ typedef struct _DXGK_I2C_INTERFACE {
 ## Members
 
 
-`Context`
-
-A pointer to a private context block.
-
-`DxgkDdiI2CReceiveDataFromDisplay`
-
-A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_i2c_receive_data_from_display.md">DxgkDdiI2CReceiveDataFromDisplay</a> function.
-
-`DxgkDdiI2CTransmitDataToDisplay`
-
-A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_i2c_transmit_data_to_display.md">DxgkDdiI2CTransmitDataToDisplay</a> function.
-
-`InterfaceDereference`
-
-A pointer to an interface dereference function that is implemented by the display miniport driver.
-
-`InterfaceReference`
-
-A pointer to an interface reference function that is implemented by the display miniport driver.
-
 `Size`
 
 The size, in bytes, of this structure.
@@ -89,6 +69,26 @@ The size, in bytes, of this structure.
 `Version`
 
 The version number of the I2C interface. Version number constants are defined in <i>Dispmprt.h</i> (for example, DXGK_I2C_INTERFACE_VERSION_1).
+
+`Context`
+
+A pointer to a private context block.
+
+`InterfaceReference`
+
+A pointer to an interface reference function that is implemented by the display miniport driver.
+
+`InterfaceDereference`
+
+A pointer to an interface dereference function that is implemented by the display miniport driver.
+
+`DxgkDdiI2CTransmitDataToDisplay`
+
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_i2c_transmit_data_to_display.md">DxgkDdiI2CTransmitDataToDisplay</a> function.
+
+`DxgkDdiI2CReceiveDataFromDisplay`
+
+A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_i2c_receive_data_from_display.md">DxgkDdiI2CReceiveDataFromDisplay</a> function.
 
 ## Remarks
 A kernel-mode component that needs to use the I2C interface calls the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_interface.md">DxgkDdiQueryInterface</a> function.

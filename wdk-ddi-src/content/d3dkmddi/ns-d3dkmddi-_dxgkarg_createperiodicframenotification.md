@@ -64,21 +64,21 @@ typedef struct _DXGKARG_CREATEPERIODICFRAMENOTIFICATION {
 
 A handle to the adapter associated with VidPnSourceID.
 
-`hNotification`
+`VidPnTargetId`
 
-A Handle to the notification object, later used to destroy the object.
 
-`NotificationID`
-
-Represents an ID for the notification that will be used to track which interrupt has fired from the GPU.
 
 `Time`
 
 Represents an offset before the VSync. The Time value may not be longer than a VSync interval while in VSync mode. In units of 100ns.
 
-`VidPnTargetId`
+`NotificationID`
 
+Represents an ID for the notification that will be used to track which interrupt has fired from the GPU.
 
+`hNotification`
+
+A Handle to the notification object, later used to destroy the object.
 
 
 ## Requirements

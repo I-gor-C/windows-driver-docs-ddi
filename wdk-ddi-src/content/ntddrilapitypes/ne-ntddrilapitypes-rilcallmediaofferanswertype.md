@@ -63,7 +63,7 @@ typedef enum _RILCALLMEDIAOFFERANSWERTYPE {
 <table>
             
                 <tr>
-                    <td>RIL_CALLMEDIAOFFERANSWERTYPE_ANSWER</td>
+                    <td>RIL_CALLMEDIAOFFERANSWERTYPE_UNKNOWN</td>
                     <td></td>
                 </tr>
             
@@ -73,17 +73,12 @@ typedef enum _RILCALLMEDIAOFFERANSWERTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLMEDIAOFFERANSWERTYPE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_CALLMEDIAOFFERANSWERTYPE_OFFER</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLMEDIAOFFERANSWERTYPE_PEER_ANSWER</td>
+                    <td>RIL_CALLMEDIAOFFERANSWERTYPE_ANSWER</td>
                     <td></td>
                 </tr>
             
@@ -93,7 +88,12 @@ typedef enum _RILCALLMEDIAOFFERANSWERTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLMEDIAOFFERANSWERTYPE_UNKNOWN</td>
+                    <td>RIL_CALLMEDIAOFFERANSWERTYPE_PEER_ANSWER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLMEDIAOFFERANSWERTYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

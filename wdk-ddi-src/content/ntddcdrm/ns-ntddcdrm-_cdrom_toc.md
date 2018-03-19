@@ -59,6 +59,10 @@ typedef struct _CDROM_TOC {
 ## Members
 
 
+`Length`
+
+Indicates the length, in bytes, of the table of contents data. This length value does not include the length of the <b>Length </b>member itself.
+
 `FirstTrack`
 
 Indicates the first track number of the table of contents of the first complete session.
@@ -66,10 +70,6 @@ Indicates the first track number of the table of contents of the first complete 
 `LastTrack`
 
 Indicates the last track number of the table of contents of the last complete session.
-
-`Length`
-
-Indicates the length, in bytes, of the table of contents data. This length value does not include the length of the <b>Length </b>member itself.
 
 `TrackData`
 
@@ -94,11 +94,3 @@ The output data contains table of contents information for one or more of the sp
 
 
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_read_toc_ex.md">CDROM_READ_TOC_EX</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CDROM_TOC structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

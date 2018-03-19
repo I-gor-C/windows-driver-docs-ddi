@@ -59,7 +59,7 @@ typedef struct _RILCALLAUDIOMEDIASTATE {
 ## Members
 
 
-`dwAudioQuality`
+`dwParams`
 
 
 
@@ -67,11 +67,11 @@ typedef struct _RILCALLAUDIOMEDIASTATE {
 
 
 
+`dwAudioQuality`
+
+
+
 `dwFlags`
-
-
-
-`dwParams`
 
 
 

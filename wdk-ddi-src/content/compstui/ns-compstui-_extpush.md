@@ -72,10 +72,6 @@ typedef struct _EXTPUSH {
 
 Size, in bytes, of the EXTPUSH structure.
 
-`dwReserved`
-
-Reserved, must be initialized to zero.
-
 `Flags`
 
 Bit flags, which can be one of the following:
@@ -150,6 +146,10 @@ If set, <b>hDlgTemplate</b> contains a template handle.
 
 If not set, <b>DlgTemplateID</b> contains a template resource identifier.
 
+`pTitle`
+
+String identifier, representing the push button title. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero.
+
 `IconID`
 
 One of the following icon identifiers:
@@ -166,9 +166,9 @@ An icon handle. If a handle is specified, EPF_ICONID_AS_HICON must be set in the
 </ul>
 CPSUI displays the icon next to the push button. If this value is zero, an icon is not displayed.
 
-`pTitle`
+`dwReserved`
 
-String identifier, representing the push button title. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero.
+Reserved, must be initialized to zero.
 
 ## Remarks
 An extended push button is a CPSUI-defined type of push button that can be associated with an <a href="..\compstui\ns-compstui-_optitem.md">OPTITEM</a> structure. An OPTITEM structure can have one extended push button or one extended check box associated with it.
@@ -191,11 +191,3 @@ If you do not need CPSUI to display a dialog box when the user clicks on the but
 ## See Also
 
 <a href="..\compstui\ns-compstui-_extchkbox.md">EXTCHKBOX</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20EXTPUSH structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

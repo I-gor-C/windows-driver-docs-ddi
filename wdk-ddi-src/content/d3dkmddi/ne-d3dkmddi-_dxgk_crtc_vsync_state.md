@@ -60,6 +60,11 @@ typedef enum _DXGK_CRTC_VSYNC_STATE {
 <table>
             
                 <tr>
+                    <td>DXGK_VSYNC_ENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>DXGK_VSYNC_DISABLE_KEEP_PHASE</td>
                     <td>Indicates that the VSYNC interrupt is disabled and the display driver will ensure that any request to re-enter the VSYNC enabled state will do so in the phase of interrupts prior to disable.</td>
                 </tr>
@@ -67,11 +72,6 @@ typedef enum _DXGK_CRTC_VSYNC_STATE {
                 <tr>
                     <td>DXGK_VSYNC_DISABLE_NO_PHASE</td>
                     <td>Indicates that the VSYNC interrupt is disabled, but that the display driver will not require re-entering the VSYNC enabled state in phase of prior interrupts.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_VSYNC_ENABLE</td>
-                    <td></td>
                 </tr>
 </table>
 

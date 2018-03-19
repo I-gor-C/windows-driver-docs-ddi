@@ -63,6 +63,14 @@ typedef struct {
 ## Members
 
 
+`Size`
+
+Structure size.
+
+`Version`
+
+Version number.
+
 `CertAction`
 
 A <a href="..\gnssdriver\ne-gnssdriver-gnss_supl_cert_action.md">GNSS_SUPL_CERT_ACTION</a> enumeration value that specifies the action to take on the certificate.
@@ -103,7 +111,7 @@ Delete all the certificates injected to the GNSS driver previously. The values o
 </tr>
 </table>
 
-`CertData`
+`SuplCertName`
 
 
 
@@ -111,21 +119,13 @@ Delete all the certificates injected to the GNSS driver previously. The values o
 
 The size of the certificate in bytes.
 
-`Size`
-
-Structure size.
-
-`SuplCertName`
-
-
-
 `Unused`
 
 
 
-`Version`
+`CertData`
 
-Version number.
+
 
 
 ## Requirements

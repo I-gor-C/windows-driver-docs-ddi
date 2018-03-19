@@ -66,7 +66,27 @@ typedef enum _RILPOSITIONINFOGSMPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_POSITION_GSM_ALL</td>
+                    <td>RIL_PARAM_POSITION_GSM_MCC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_GSM_MNC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_GSM_LAC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_GSM_CELLID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_GSM_TA</td>
                     <td></td>
                 </tr>
             
@@ -81,32 +101,12 @@ typedef enum _RILPOSITIONINFOGSMPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_POSITION_GSM_CELLID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_POSITION_GSM_LAC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_POSITION_GSM_MCC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_POSITION_GSM_MNC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_POSITION_GSM_RXLEVEL</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_POSITION_GSM_TA</td>
+                    <td>RIL_PARAM_POSITION_GSM_ALL</td>
                     <td></td>
                 </tr>
 </table>

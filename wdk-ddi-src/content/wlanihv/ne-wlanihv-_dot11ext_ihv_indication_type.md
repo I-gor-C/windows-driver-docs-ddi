@@ -64,18 +64,8 @@ typedef enum _DOT11EXT_IHV_INDICATION_TYPE {
 <table>
             
                 <tr>
-                    <td>IndicationTypeLinkQuality</td>
-                    <td>Indicates link quality.</td>
-                </tr>
-            
-                <tr>
                     <td>IndicationTypeNicSpecificNotification</td>
                     <td>Indicates a NIC-specific notification.</td>
-                </tr>
-            
-                <tr>
-                    <td>IndicationTypePhyStateChange</td>
-                    <td>Indicates a PHY state change.</td>
                 </tr>
             
                 <tr>
@@ -86,6 +76,16 @@ typedef enum _DOT11EXT_IHV_INDICATION_TYPE {
                 <tr>
                     <td>IndicationTypeTkipMicFailure</td>
                     <td>Indicates a TKIP MIC failure.</td>
+                </tr>
+            
+                <tr>
+                    <td>IndicationTypePhyStateChange</td>
+                    <td>Indicates a PHY state change.</td>
+                </tr>
+            
+                <tr>
+                    <td>IndicationTypeLinkQuality</td>
+                    <td>Indicates link quality.</td>
                 </tr>
 </table>
 

@@ -62,11 +62,6 @@ typedef struct _DOT11EXT_IHV_UI_REQUEST {
 ## Members
 
 
-`dwByteCount`
-
-The length, in bytes, within the buffer referenced through the 
-     <b>pvUIRequest</b> member.
-
 `dwSessionId`
 
 The session identifier (ID) of the current user.
@@ -75,11 +70,6 @@ The session identifier (ID) of the current user.
 
 A globally unique ID (GUID) which identifies the UI request.
 
-`pvUIRequest`
-
-A pointer to a buffer that contains the request data in a format defined by the independent
-     hardware vendor (IHV).
-
 `UIPageClsid`
 
 The 
@@ -87,6 +77,16 @@ The
      more information about the 
      <b>IWizardExtension</b> COM interface, see 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=56607">IWizardExtension COM Interface</a>.
+
+`dwByteCount`
+
+The length, in bytes, within the buffer referenced through the 
+     <b>pvUIRequest</b> member.
+
+`pvUIRequest`
+
+A pointer to a buffer that contains the request data in a format defined by the independent
+     hardware vendor (IHV).
 
 ## Remarks
 The IHV Extensions DLL can issue requests to the IHV UI extensions DLL to interact with the user for
@@ -118,11 +118,3 @@ For each UI request, the DLL must format a DOT11EXT_IHV_UI_REQUEST structure to 
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_query_ui_request.md">Dot11ExtIhvQueryUIRequest</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_IHV_UI_REQUEST structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

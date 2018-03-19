@@ -64,12 +64,12 @@ typedef enum _RILCALLINFODIRECTION {
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLDIR_MAX</td>
+                    <td>RIL_CALLDIR_OUTGOING</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLDIR_OUTGOING</td>
+                    <td>RIL_CALLDIR_MAX</td>
                     <td></td>
                 </tr>
 </table>

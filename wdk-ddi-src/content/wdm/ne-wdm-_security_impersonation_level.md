@@ -67,13 +67,6 @@ typedef enum _SECURITY_IMPERSONATION_LEVEL {
                 </tr>
             
                 <tr>
-                    <td>SecurityDelegation</td>
-                    <td>The server process can impersonate the client's security context on remote systems. 
-
- This impersonation level is supported starting with Windows 2000.</td>
-                </tr>
-            
-                <tr>
                     <td>SecurityIdentification</td>
                     <td>The server process can obtain information about the client, such as security identifiers and privileges, but it cannot impersonate the client. This is useful for servers that export their own objects -- for example, database products that export tables and views. Using the retrieved client-security information, the server can make access-validation decisions without being able to utilize other services using the client's security context.</td>
                 </tr>
@@ -81,6 +74,13 @@ typedef enum _SECURITY_IMPERSONATION_LEVEL {
                 <tr>
                     <td>SecurityImpersonation</td>
                     <td>The server process can impersonate the client's security context on its local system. The server cannot impersonate the client on remote systems.</td>
+                </tr>
+            
+                <tr>
+                    <td>SecurityDelegation</td>
+                    <td>The server process can impersonate the client's security context on remote systems. 
+
+ This impersonation level is supported starting with Windows 2000.</td>
                 </tr>
 </table>
 
@@ -138,11 +138,3 @@ Impersonation is the ability of a process to take on the security attributes of 
 
 
 <a href="..\ntifs\nf-ntifs-psreferenceimpersonationtoken.md">PsReferenceImpersonationToken</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SECURITY_IMPERSONATION_LEVEL enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

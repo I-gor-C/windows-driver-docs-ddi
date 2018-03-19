@@ -57,13 +57,13 @@ typedef struct _D3DDDIARG_QUERYRESOURCERESIDENCY {
 ## Members
 
 
-`NumResources`
-
-[in] The number of resources in the array in the <b>pHandleList</b> member. The range is from 1 through 0xFFFFF.
-
 `pHandleList`
 
 [in] An array of handles to resources whose residency is queried. <b>pHandleList</b> cannot be <b>NULL</b>. A resource can be an object, which is derived from the <b>IDirect3DResource9</b> interface for a texture, volume texture, cube texture, vertex buffer, index buffer, or surface. For more information about <b>IDirect3DResource9</b>, see the DirectX SDK documentation.
+
+`NumResources`
+
+[in] The number of resources in the array in the <b>pHandleList</b> member. The range is from 1 through 0xFFFFF.
 
 
 ## Requirements
@@ -75,11 +75,3 @@ typedef struct _D3DDDIARG_QUERYRESOURCERESIDENCY {
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_queryresourceresidency.md">QueryResourceResidency</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_QUERYRESOURCERESIDENCY structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

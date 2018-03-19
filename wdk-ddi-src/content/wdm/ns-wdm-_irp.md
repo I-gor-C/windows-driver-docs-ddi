@@ -81,13 +81,81 @@ typedef struct _IRP {
 ## Members
 
 
-`AllocationFlags`
+`Type`
 
 
 
-`ApcEnvironment`
+`Size`
 
 
+
+`MdlAddress`
+
+Pointer to an MDL describing a user buffer, if the driver is using direct I/O, and the IRP major function code is one of the following:
+
+
+
+
+
+#### IRP_MJ_READ
+
+The MDL describes an empty buffer that the device or driver fills in.
+
+
+
+#### IRP_MJ_WRITE
+
+The MDL describes a buffer that contains data for the device or driver.
+
+
+
+#### IRP_MJ_DEVICE_CONTROL or IRP_MJ_INTERNAL_DEVICE_CONTROL
+
+If the IOCTL code specifies the METHOD_IN_DIRECT transfer type, the MDL describes a buffer that contains data for the device or driver.
+
+If the IOCTL code specifies the METHOD_OUT_DIRECT transfer type, the MDL describes an empty buffer that the device or driver fills in.
+
+For more information about the buffers that are associated with METHOD_IN_DIRECT and METHOD_OUT_DIRECT transfer types in IOCTL codes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540663">Buffer Descriptions for I/O Control Codes</a>.
+
+If the driver is not using direct I/O, this pointer is <b>NULL</b>.
+
+`Flags`
+
+File system drivers use this field, which is read-only for all drivers. Network and, possibly, highest-level device drivers also might read this field. This field is set either to zero or to the bitwise-OR of one or more of the following system-defined flag bits:
+
+IRP_NOCACHE
+
+IRP_PAGING_IO
+
+IRP_MOUNT_COMPLETION
+
+IRP_SYNCHRONOUS_API
+
+IRP_ASSOCIATED_IRP
+
+IRP_BUFFERED_IO
+
+IRP_DEALLOCATE_BUFFER
+
+IRP_INPUT_OPERATION
+
+IRP_SYNCHRONOUS_PAGING_IO
+
+IRP_CREATE_OPERATION
+
+IRP_READ_OPERATION
+
+IRP_WRITE_OPERATION
+
+IRP_CLOSE_OPERATION
+
+IRP_DEFER_IO_COMPLETION
+
+IRP_OB_QUERY_NAME
+
+IRP_HOLD_DEVICE_QUEUE
+
+IRP_UM_DRIVER_INITIATED_IO
 
 `AssociatedIrp`
 
@@ -141,6 +209,30 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 If the driver is using direct I/O, the buffer's purpose is determined by the IRP major function code, as follows:
 
+`ThreadListEntry`
+
+
+
+`IoStatus`
+
+Contains the <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure in which a driver stores status and information before calling <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>.
+
+`RequestorMode`
+
+Indicates the execution mode of the original requester of the operation, one of <b>UserMode</b> or <b>KernelMode</b>.
+
+`PendingReturned`
+
+If set to <b>TRUE</b>, a driver has marked the IRP pending. Each <a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a> routine should check the value of this flag. If the flag is <b>TRUE</b>, and if the IoCompletion routine will not return STATUS_MORE_PROCESSING_REQUIRED, the routine should call <a href="..\wdm\nf-wdm-iomarkirppending.md">IoMarkIrpPending</a> to propagate the pending status to drivers above it in the device stack.
+
+`StackCount`
+
+
+
+`CurrentLocation`
+
+
+
 `Cancel`
 
 If set to <b>TRUE</b>, the IRP either is or should be canceled.
@@ -149,117 +241,29 @@ If set to <b>TRUE</b>, the IRP either is or should be canceled.
 
 Contains the IRQL at which a driver is running when <a href="https://msdn.microsoft.com/library/windows/hardware/ff548196">IoAcquireCancelSpinLock</a> is called.
 
-`CancelRoutine`
-
-Contains the entry point for a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/hh406716">Cancel</a> routine to be called if the IRP is canceled. <b>NULL</b> indicates that the IRP is not currently cancelable.
-
-`CurrentLocation`
+`ApcEnvironment`
 
 
 
-`Flags`
-
-File system drivers use this field, which is read-only for all drivers. Network and, possibly, highest-level device drivers also might read this field. This field is set either to zero or to the bitwise-OR of one or more of the following system-defined flag bits:
-
-IRP_NOCACHE
-
-IRP_PAGING_IO
-
-IRP_MOUNT_COMPLETION
-
-IRP_SYNCHRONOUS_API
-
-IRP_ASSOCIATED_IRP
-
-IRP_BUFFERED_IO
-
-IRP_DEALLOCATE_BUFFER
-
-IRP_INPUT_OPERATION
-
-IRP_SYNCHRONOUS_PAGING_IO
-
-IRP_CREATE_OPERATION
-
-IRP_READ_OPERATION
-
-IRP_WRITE_OPERATION
-
-IRP_CLOSE_OPERATION
-
-IRP_DEFER_IO_COMPLETION
-
-IRP_OB_QUERY_NAME
-
-IRP_HOLD_DEVICE_QUEUE
-
-IRP_UM_DRIVER_INITIATED_IO
-
-`IoStatus`
-
-Contains the <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure in which a driver stores status and information before calling <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>.
-
-`MdlAddress`
-
-Pointer to an MDL describing a user buffer, if the driver is using direct I/O, and the IRP major function code is one of the following:
+`AllocationFlags`
 
 
 
-
-
-#### IRP_MJ_READ
-
-The MDL describes an empty buffer that the device or driver fills in.
+`UserIosb`
 
 
 
-#### IRP_MJ_WRITE
-
-The MDL describes a buffer that contains data for the device or driver.
+`UserEvent`
 
 
-
-#### IRP_MJ_DEVICE_CONTROL or IRP_MJ_INTERNAL_DEVICE_CONTROL
-
-If the IOCTL code specifies the METHOD_IN_DIRECT transfer type, the MDL describes a buffer that contains data for the device or driver.
-
-If the IOCTL code specifies the METHOD_OUT_DIRECT transfer type, the MDL describes an empty buffer that the device or driver fills in.
-
-For more information about the buffers that are associated with METHOD_IN_DIRECT and METHOD_OUT_DIRECT transfer types in IOCTL codes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540663">Buffer Descriptions for I/O Control Codes</a>.
-
-If the driver is not using direct I/O, this pointer is <b>NULL</b>.
 
 `Overlay`
 
 
 
-`PendingReturned`
+`CancelRoutine`
 
-If set to <b>TRUE</b>, a driver has marked the IRP pending. Each <a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a> routine should check the value of this flag. If the flag is <b>TRUE</b>, and if the IoCompletion routine will not return STATUS_MORE_PROCESSING_REQUIRED, the routine should call <a href="..\wdm\nf-wdm-iomarkirppending.md">IoMarkIrpPending</a> to propagate the pending status to drivers above it in the device stack.
-
-`RequestorMode`
-
-Indicates the execution mode of the original requester of the operation, one of <b>UserMode</b> or <b>KernelMode</b>.
-
-`Size`
-
-
-
-`StackCount`
-
-
-
-`Tail`
-
-
-
-`ThreadListEntry`
-
-
-
-`Type`
-
-
+Contains the entry point for a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/hh406716">Cancel</a> routine to be called if the IRP is canceled. <b>NULL</b> indicates that the IRP is not currently cancelable.
 
 `UserBuffer`
 
@@ -271,11 +275,7 @@ Contains the address of an output buffer if both of the following conditions app
 </ul>
 For METHOD_BUFFERED, the driver should use the buffer pointed to by <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> as the output buffer. When the driver completes the request, the I/O manager copies the contents of this buffer to the output buffer that is pointed to by <b>Irp-&gt;UserBuffer</b>. The driver should not write directly to the buffer pointed to by <b>Irp-&gt;UserBuffer</b>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540663">Buffer Descriptions for I/O Control Codes</a>.
 
-`UserEvent`
-
-
-
-`UserIosb`
+`Tail`
 
 
 
@@ -328,11 +328,3 @@ While a higher-level driver might check the value of the <b>Cancel</b> Boolean i
 
 
 <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IRP structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

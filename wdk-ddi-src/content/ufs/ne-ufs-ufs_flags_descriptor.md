@@ -72,15 +72,8 @@ typedef enum _UFS_FLAGS_DESCRIPTOR {
 <table>
             
                 <tr>
-                    <td>UFS_fBackgroundOpsEn</td>
-                    <td>Indicates the device is permitted to run
-background operations.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_fBusyRTC</td>
-                    <td>Indicates the device is executing internal
-operation related to Real Time Clock.</td>
+                    <td>UFS_Reserved1</td>
+                    <td>Reserved for future use.</td>
                 </tr>
             
                 <tr>
@@ -89,20 +82,34 @@ operation related to Real Time Clock.</td>
                 </tr>
             
                 <tr>
+                    <td>UFS_fPermanentWPEn</td>
+                    <td>Indicates permanent write protection is enabled.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_fPowerOnWPEn</td>
+                    <td>Indicates power on write protection is enabled.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_fBackgroundOpsEn</td>
+                    <td>Indicates the device is permitted to run
+background operations.</td>
+                </tr>
+            
+                <tr>
                     <td>UFS_fDeviceLifeSpanModeEn</td>
                     <td>Indicates Device Life Span Mode is enabled.</td>
                 </tr>
             
                 <tr>
-                    <td>UFS_fPermanentlyDisableFwUpdate</td>
-                    <td>Indicates the UFS device will permanently
-disallow future firmware updates to
-the Universal Flash Storage (UFS) device.</td>
+                    <td>UFS_fPurgeEnable</td>
+                    <td>Indicates Purge Operation is enabled.</td>
                 </tr>
             
                 <tr>
-                    <td>UFS_fPermanentWPEn</td>
-                    <td>Indicates permanent write protection is enabled.</td>
+                    <td>UFS_Reserved2</td>
+                    <td>Reserved for future use.</td>
                 </tr>
             
                 <tr>
@@ -113,28 +120,21 @@ a hardware reset. The host cannot reset this flag.</td>
                 </tr>
             
                 <tr>
-                    <td>UFS_fPowerOnWPEn</td>
-                    <td>Indicates power on write protection is enabled.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_fPurgeEnable</td>
-                    <td>Indicates Purge Operation is enabled.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_Reserved1</td>
-                    <td>Reserved for future use.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_Reserved2</td>
-                    <td>Reserved for future use.</td>
+                    <td>UFS_fBusyRTC</td>
+                    <td>Indicates the device is executing internal
+operation related to Real Time Clock.</td>
                 </tr>
             
                 <tr>
                     <td>UFS_Reserved3</td>
                     <td>Reserved for the Unified Memory Extension standard..</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_fPermanentlyDisableFwUpdate</td>
+                    <td>Indicates the UFS device will permanently
+disallow future firmware updates to
+the Universal Flash Storage (UFS) device.</td>
                 </tr>
             
                 <tr>

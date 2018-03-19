@@ -62,29 +62,29 @@ typedef struct _UFX_DEVICE_CAPABILITIES {
 ## Members
 
 
-`InEndpointBitmap`
+`Size`
 
-A bitmap that defines which endpoint numbers can support an IN endpoint.  Bit 0 indicates endpoint address 0, bit 1 indicates endpoint address 1, etc.   Bit 0 (the default control endpoint) is required to be set to 1.
+Size of the <b>UFX_DEVICE_CAPABILITIES</b> structure.
 
 `MaxSpeed`
 
 Indicates the maximum USB speed supported by the device.
 
-`OutEndpointBitmap`
+`RemoteWakeSignalDelay`
 
-A bitmap that defines which endpoint numbers can support an OUT endpoint.  Bit 0 indicates endpoint address 0, bit 1 indicates endpoint address 1, etc.   Bit 0 (the default control endpoint) is required to be set to 1.
+The minimum time interval in milliseconds to wait after being suspended before requesting remote wakeup.
 
 `PdcpSupported`
 
 If  <b>true</b>, indicates the client driver supports proprietary charger detection.
 
-`RemoteWakeSignalDelay`
+`InEndpointBitmap`
 
-The minimum time interval in milliseconds to wait after being suspended before requesting remote wakeup.
+A bitmap that defines which endpoint numbers can support an IN endpoint.  Bit 0 indicates endpoint address 0, bit 1 indicates endpoint address 1, etc.   Bit 0 (the default control endpoint) is required to be set to 1.
 
-`Size`
+`OutEndpointBitmap`
 
-Size of the <b>UFX_DEVICE_CAPABILITIES</b> structure.
+A bitmap that defines which endpoint numbers can support an OUT endpoint.  Bit 0 indicates endpoint address 0, bit 1 indicates endpoint address 1, etc.   Bit 0 (the default control endpoint) is required to be set to 1.
 
 
 ## Requirements

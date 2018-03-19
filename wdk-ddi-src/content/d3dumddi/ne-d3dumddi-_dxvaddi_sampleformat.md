@@ -65,6 +65,21 @@ typedef enum _DXVADDI_SAMPLEFORMAT {
 <table>
             
                 <tr>
+                    <td>DXVADDI_SampleFormatMask</td>
+                    <td>The sample format mask. The first 8 (0xFF) bits of a DWORD can be used to specify input sample format.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_SampleUnknown</td>
+                    <td>The sample format is unknown.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_SampleProgressiveFrame</td>
+                    <td>The sample contains a progressive frame.</td>
+                </tr>
+            
+                <tr>
                     <td>DXVADDI_SampleFieldInterleavedEvenFirst</td>
                     <td>The sample contains two interleaved fields; the even field is temporally first.</td>
                 </tr>
@@ -85,23 +100,8 @@ typedef enum _DXVADDI_SAMPLEFORMAT {
                 </tr>
             
                 <tr>
-                    <td>DXVADDI_SampleFormatMask</td>
-                    <td>The sample format mask. The first 8 (0xFF) bits of a DWORD can be used to specify input sample format.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_SampleProgressiveFrame</td>
-                    <td>The sample contains a progressive frame.</td>
-                </tr>
-            
-                <tr>
                     <td>DXVADDI_SampleSubStream</td>
                     <td>The sample contains a video substream.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_SampleUnknown</td>
-                    <td>The sample format is unknown.</td>
                 </tr>
 </table>
 
@@ -118,11 +118,3 @@ One of the values of DXVADDI_SAMPLEFORMAT can be specified in the <b>SampleForma
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_SAMPLEFORMAT enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -62,13 +62,13 @@ typedef struct _GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS {
 
 The identifier for this bank of GPIO pins. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension (GpioClx) previously obtained the number of banks in the controller from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.
 
-`Flags`
-
-A set of flags to control bank hardware save and restore operations. If the <b>CriticalTransition</b> flag bit is set, this idle state transition is being done as part of a critical transition in which the power engine plug-in (PEP) puts the system into a low-power state.
-
 `State`
 
 The target component power state. A save operation occurs before the specified bank of GPIO pins makes the transition from the F0 (fully on) state to the target component power state, Fx. A restore operation occurs after the bank makes the transition from Fx to F0.
+
+`Flags`
+
+A set of flags to control bank hardware save and restore operations. If the <b>CriticalTransition</b> flag bit is set, this idle state transition is being done as part of a critical transition in which the power engine plug-in (PEP) puts the system into a low-power state.
 
 ## Remarks
 The <i>Parameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439419">CLIENT_SaveBankHardwareContext</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh439414">CLIENT_RestoreBankHardwareContext</a> event callback functions is a pointer to a caller-allocated <b>GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS</b> structure.
@@ -94,11 +94,3 @@ The <i>Parameters</i> parameter of the <a href="https://msdn.microsoft.com/libra
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [GPIO\parports]:%20GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

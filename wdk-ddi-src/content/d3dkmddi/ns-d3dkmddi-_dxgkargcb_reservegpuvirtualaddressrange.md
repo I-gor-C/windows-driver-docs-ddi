@@ -66,14 +66,6 @@ typedef struct _DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE {
 ## Members
 
 
-`Alignment`
-
-The number of bytes to align the start address to. Must be a multiple of the address space covered by a single page table entry and a power of 2.
-
-`BaseAddress`
-
-The base virtual address of the virtual address range in bytes. It must be aligned to the size of the address space, covered by a single page table entry.
-
 `hDxgkProcess`
 
 The handle that was passed to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a>.
@@ -82,9 +74,17 @@ The handle that was passed to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createpro
 
 The size of the address range in bytes, this must be set to an integral multiple of the address space covered by a single page table entry.
 
+`Alignment`
+
+The number of bytes to align the start address to. Must be a multiple of the address space covered by a single page table entry and a power of 2.
+
 `StartVirtualAddress`
 
 The starting location of the reserved address range.
+
+`BaseAddress`
+
+The base virtual address of the virtual address range in bytes. It must be aligned to the size of the address space, covered by a single page table entry.
 
 
 ## Requirements
@@ -100,11 +100,3 @@ The starting location of the reserved address range.
 
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_reservegpuvirtualaddressrange.md">DxgkCbReserveGpuVirtualAddressRange</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

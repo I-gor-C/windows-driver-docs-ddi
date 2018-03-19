@@ -60,13 +60,13 @@ typedef enum _WWAN_USSD_SESSION_STATE {
 <table>
             
                 <tr>
-                    <td>WwanUssdSessionStateExisting</td>
-                    <td>The USSD string is not the first message of a USSD session.</td>
+                    <td>WwanUssdSessionStateNew</td>
+                    <td>The USSD string is the first message of a USSD session.</td>
                 </tr>
             
                 <tr>
-                    <td>WwanUssdSessionStateNew</td>
-                    <td>The USSD string is the first message of a USSD session.</td>
+                    <td>WwanUssdSessionStateExisting</td>
+                    <td>The USSD string is not the first message of a USSD session.</td>
                 </tr>
 </table>
 

@@ -59,21 +59,21 @@ typedef struct _D3DKMT_ADAPTERINFO {
 ## Members
 
 
-`AdapterLuid`
-
-A LUID that serves as an identifier for the adapter.
-
-`bPresentMoveRegionsPreferred`
-
-If <b>TRUE</b>, the adapter prefers move regions.
-
 `hAdapter`
 
 A handle to the adapter.
 
+`AdapterLuid`
+
+A LUID that serves as an identifier for the adapter.
+
 `NumOfSources`
 
 The number of video present sources supported by the adapter.
+
+`bPresentMoveRegionsPreferred`
+
+If <b>TRUE</b>, the adapter prefers move regions.
 
 
 ## Requirements

@@ -64,13 +64,13 @@ typedef struct {
 ## Members
 
 
-`CommandData`
+`Size`
 
+Structure size.
 
+`Version`
 
-`CommandDataSize`
-
-Size of the configuration data being sent to the driver.
+Version number.
 
 `CommandType`
 
@@ -82,17 +82,17 @@ This is a well-defined list of GNSS driver commands, as defined by the <a href="
 
 
 
-`Size`
+`CommandDataSize`
 
-Structure size.
+Size of the configuration data being sent to the driver.
 
 `Unused`
 
 
 
-`Version`
+`CommandData`
 
-Version number.
+
 
 
 ## Requirements

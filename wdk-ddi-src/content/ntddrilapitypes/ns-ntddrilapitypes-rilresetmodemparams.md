@@ -58,11 +58,11 @@ typedef struct _RILRESETMODEMPARAMS {
 ## Members
 
 
-`dwNumberOfConfigItems`
-
-
-
 `dwResetKind`
+
+
+
+`dwNumberOfConfigItems`
 
 
 

@@ -61,13 +61,25 @@ typedef struct _FILE_FS_CONTROL_INFORMATION {
 ## Members
 
 
-`DefaultQuotaLimit`
+`FreeSpaceStartFiltering`
 
-Default per-user disk quota limit for the volume.
+Minimum amount of free disk space, in bytes, that is required for the Content-Indexing daemon to begin document filtering.
+
+`FreeSpaceThreshold`
+
+Minimum amount of free disk space, in bytes, required for the Indexing Service to continue to filter documents and merge word lists. If the amount of free disk space falls below this threshold, a warning message is written to the Microsoft Windows application event log. Filtering and merging are halted until space is freed.
+
+`FreeSpaceStopFiltering`
+
+Minimum amount of free disk space, in bytes, that is required for the Content-Indexing daemon to continue document filtering. If the amount of free disk space falls below this threshold, document filtering is halted.
 
 `DefaultQuotaThreshold`
 
 Default per-user disk quota warning threshold for the volume.
+
+`DefaultQuotaLimit`
+
+Default per-user disk quota limit for the volume.
 
 `FileSystemControlFlags`
 
@@ -210,18 +222,6 @@ ORed combination of all flags in the above table.
 </tr>
 </table>
 
-`FreeSpaceStartFiltering`
-
-Minimum amount of free disk space, in bytes, that is required for the Content-Indexing daemon to begin document filtering.
-
-`FreeSpaceStopFiltering`
-
-Minimum amount of free disk space, in bytes, that is required for the Content-Indexing daemon to continue document filtering. If the amount of free disk space falls below this threshold, document filtering is halted.
-
-`FreeSpaceThreshold`
-
-Minimum amount of free disk space, in bytes, required for the Indexing Service to continue to filter documents and merge word lists. If the amount of free disk space falls below this threshold, a warning message is written to the Microsoft Windows application event log. Filtering and merging are halted until space is freed.
-
 ## Remarks
 This information can be queried in either of the following ways: 
 
@@ -283,11 +283,3 @@ This structure must be aligned on a LONGLONG (8-byte) boundary.
 
 
 <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_FS_CONTROL_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

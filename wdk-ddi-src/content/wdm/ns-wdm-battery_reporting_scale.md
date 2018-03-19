@@ -58,13 +58,13 @@ typedef struct {
 ## Members
 
 
-`Capacity`
-
-Specify the battery capacity described by the corresponding granularity, in milliwatt-hours.
-
 `Granularity`
 
 Specify the granularity of the <b>Capacity</b> value, in milliwatt-hours. For most batteries, this value describes a monotonically increasing scale of capacity. For lithium-ion batteries, this value describes one of two possible scales: a gross measure of battery capacity, with a large granularity, or a finer measure as the capacity approaches zero.
+
+`Capacity`
+
+Specify the battery capacity described by the corresponding granularity, in milliwatt-hours.
 
 
 ## Requirements
@@ -75,11 +75,3 @@ Specify the granularity of the <b>Capacity</b> value, in milliwatt-hours. For mo
 ## See Also
 
 <a href="https://msdn.microsoft.com/bd96b79a-5670-4aaf-b72c-619818c2a2e7">BatteryMiniQueryInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [battery\battery]:%20BATTERY_REPORTING_SCALE structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

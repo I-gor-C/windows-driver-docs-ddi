@@ -64,6 +64,11 @@ typedef enum _WDF_DEVICE_IO_BUFFER_RETRIEVAL {
 <table>
             
                 <tr>
+                    <td>WdfDeviceIoBufferRetrievalInvalid</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
                     <td>WdfDeviceIoBufferRetrievalCopyImmediately</td>
                     <td>UMDF makes an I/O request's buffers available to the driver (by copying them into the <a href="https://msdn.microsoft.com/8b469c91-d33d-4fb0-8c7d-e90f86a1e339">UMDF driver host process</a>) as soon as UMDF receives the I/O request. For more information, see the following Remarks section.</td>
                 </tr>
@@ -71,11 +76,6 @@ typedef enum _WDF_DEVICE_IO_BUFFER_RETRIEVAL {
                 <tr>
                     <td>WdfDeviceIoBufferRetrievalDeferred</td>
                     <td>UMDF makes an I/O request's buffers available to the driver (by copying them into the UMDF driver host process) only when the driver attempts to access the buffers. For more information, see the following Remarks section.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDeviceIoBufferRetrievalInvalid</td>
-                    <td>Reserved for system use.</td>
                 </tr>
             
                 <tr>
@@ -123,11 +123,3 @@ For more information about accessing an I/O request's data buffers, see <a href=
 ## See Also
 
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE (UMDF)</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_IO_BUFFER_RETRIEVAL enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

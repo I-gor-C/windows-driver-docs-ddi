@@ -60,6 +60,10 @@ typedef struct _KBUGCHECK_DUMP_IO {
 ## Members
 
 
+`Offset`
+
+Specifies the current offset in the crash dump file, or -1 if the crash dump file is being written sequentially.
+
 `Buffer`
 
 Pointer to a buffer that contains the current data to be written to the dump file.
@@ -67,10 +71,6 @@ Pointer to a buffer that contains the current data to be written to the dump fil
 `BufferLength`
 
 Specifies the length of the buffer, in bytes, that is specified by the <b>Buffer</b> member.
-
-`Offset`
-
-Specifies the current offset in the crash dump file, or -1 if the crash dump file is being written sequentially.
 
 `Type`
 
@@ -92,11 +92,3 @@ For information about how this structure is used, see <a href="https://msdn.micr
 
 
 <a href="..\wdm\ne-wdm-_kbugcheck_dump_io_type.md">KBUGCHECK_DUMP_IO_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KBUGCHECK_DUMP_IO structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -65,17 +65,9 @@ typedef struct _WRITE_USING_TOKEN_HEADER {
 ## Members
 
 
-`BlockDeviceRangeDescriptor`
+`WriteUsingTokenDataLength`
 
-An array of <a href="..\storport\ns-storport-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the destination data blocks for the offload write data transfer.
-
-`BlockDeviceRangeDescriptorListLength`
-
-The length, in bytes, for all  of the <a href="..\storport\ns-storport-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures in the <b>BlockDeviceRangeDescriptor</b> array.
-
-`BlockOffsetIntoToken`
-
-The offset, in logical blocks,  in the ROD for <b>Token</b> indicating the start of the source data for the offload write data operation.
+The length of this structure beginning with the <i>Immediate</i> parameter and include all of the elements of the <b>BlockDeviceRangeDescriptor</b> array.
 
 `Immediate`
 
@@ -89,17 +81,25 @@ Reserved bits.
 
 Reserved.
 
-`Reserved3`
+`BlockOffsetIntoToken`
 
-Reserved.
+The offset, in logical blocks,  in the ROD for <b>Token</b> indicating the start of the source data for the offload write data operation.
 
 `Token`
 
 A token created by a previous the POPULATE TOKEN command operation.
 
-`WriteUsingTokenDataLength`
+`Reserved3`
 
-The length of this structure beginning with the <i>Immediate</i> parameter and include all of the elements of the <b>BlockDeviceRangeDescriptor</b> array.
+Reserved.
+
+`BlockDeviceRangeDescriptorListLength`
+
+The length, in bytes, for all  of the <a href="..\storport\ns-storport-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures in the <b>BlockDeviceRangeDescriptor</b> array.
+
+`BlockDeviceRangeDescriptor`
+
+An array of <a href="..\storport\ns-storport-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the destination data blocks for the offload write data transfer.
 
 ## Remarks
 All multibyte values are in big endian format. Prior to setting, these values must be converted from the endian format of the current platform.
@@ -117,11 +117,3 @@ All multibyte values are in big endian format. Prior to setting, these values mu
 
 
 <a href="..\storport\ns-storport-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20WRITE_USING_TOKEN_HEADER structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

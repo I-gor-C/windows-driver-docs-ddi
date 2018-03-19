@@ -58,10 +58,6 @@ typedef struct IDDCX_TARGET_MODE {
 ## Members
 
 
-`RequiredBandwidth`
-
-The display pipeline bandwidth required for this mode.
-
 `Size`
 
 Total size of the structure.
@@ -69,6 +65,10 @@ Total size of the structure.
 `TargetVideoSignalInfo`
 
 The details of the target mode signal.
+
+`RequiredBandwidth`
+
+The display pipeline bandwidth required for this mode.
 
 ## Remarks
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff554007">DISPLAYCONFIG_VIDEO_SIGNAL_INFO</a> value <b>vSyncFreq</b> is the Vsync rate between the Indirect Display device and the connected monitor.  <b>vSyncFreqDivider</b> is used to calculate the rate at which the OS will update the desktop image.

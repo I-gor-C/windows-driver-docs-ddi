@@ -59,17 +59,17 @@ typedef struct _DXVAHDDDI_FILTER_RANGE_DATA {
 ## Members
 
 
-`Default`
+`Minimum`
 
-[in] An <b>INT</b> that specifies the default value for the filter range.
+[in] An <b>INT</b> that specifies the minimum value in the filter range.
 
 `Maximum`
 
 [in] An <b>INT</b> that specifies the maximum value in the filter range.
 
-`Minimum`
+`Default`
 
-[in] An <b>INT</b> that specifies the minimum value in the filter range.
+[in] An <b>INT</b> that specifies the default value for the filter range.
 
 `Multiplier`
 

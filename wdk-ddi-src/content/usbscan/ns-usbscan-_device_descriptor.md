@@ -60,6 +60,14 @@ typedef struct _DEVICE_DESCRIPTOR {
 ## Members
 
 
+`usVendorId`
+
+Vendor identifier.
+
+`usProductId`
+
+Device product identifier.
+
 `usBcdDevice`
 
 BCD-encoded device version number.
@@ -67,14 +75,6 @@ BCD-encoded device version number.
 `usLanguageId`
 
 <i>Not used</i>.
-
-`usProductId`
-
-Device product identifier.
-
-`usVendorId`
-
-Vendor identifier.
 
 
 ## Requirements

@@ -64,11 +64,7 @@ typedef struct _RILTONESIGNALINFO_V1 {
 
 
 
-`dwGPP2IsdnAlerting`
-
-
-
-`dwGPP2Tone`
+`dwParams`
 
 
 
@@ -76,7 +72,11 @@ typedef struct _RILTONESIGNALINFO_V1 {
 
 
 
-`dwParams`
+`dwGPP2Tone`
+
+
+
+`dwGPP2IsdnAlerting`
 
 
 

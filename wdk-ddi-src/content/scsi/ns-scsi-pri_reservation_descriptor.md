@@ -62,29 +62,29 @@ typedef struct {
 ## Members
 
 
-`Obsolete`
-
-Reserved. Must be zero.
-
 `ReservationKey`
 
 The reservation key under which the persistent reservation is held.
-
-`Reserved`
-
-Reserved. Must be zero.
-
-`Scope`
-
-The scope of the persistent reservation as present in the Persistent Reserve Out command that created the persistent reservation.
 
 `ScopeSpecificAddress`
 
 The ScopeSpecificAddress field contains the element address, that has zeros placed in the most significant bits to fit the field.
 
+`Reserved`
+
+Reserved. Must be zero.
+
 `Type`
 
 The type of the persistent reservation as present in the Persistent Reserve Out command that created the persistent reservation.
+
+`Scope`
+
+The scope of the persistent reservation as present in the Persistent Reserve Out command that created the persistent reservation.
+
+`Obsolete`
+
+Reserved. Must be zero.
 
 ## Remarks
 The <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a> request is used to obtain information about persistent reservations and reservation keys that are active within a device server.
@@ -101,11 +101,3 @@ The <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_in.md">IOC
 
 
 <a href="..\storport\ns-storport-pri_reservation_list.md">PRI_RESERVATION_LIST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20PRI_RESERVATION_DESCRIPTOR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

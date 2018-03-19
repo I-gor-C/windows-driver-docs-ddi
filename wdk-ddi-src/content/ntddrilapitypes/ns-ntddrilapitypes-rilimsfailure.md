@@ -66,7 +66,7 @@ typedef struct _RILIMSFAILURE {
 
 
 
-`dwErrorCode`
+`dwParams`
 
 
 
@@ -74,15 +74,15 @@ typedef struct _RILIMSFAILURE {
 
 
 
-`dwMessageSubType`
-
-
-
 `dwMessageType`
 
 
 
-`dwParams`
+`dwMessageSubType`
+
+
+
+`dwErrorCode`
 
 
 

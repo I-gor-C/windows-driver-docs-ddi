@@ -64,17 +64,29 @@ typedef struct _USB_CONFIGURATION_DESCRIPTOR {
 ## Members
 
 
-`bConfigurationValue`
+`bLength`
 
-Contains the value that is used to select a configuration. This value is passed to the USB SetConfiguration request , as described in version 1.1 of the Universal Serial Bus Specification. The port driver does not currently expose a service that allows higher-level drivers to set the configuration.
+Specifies the length, in bytes, of this structure.
 
 `bDescriptorType`
 
 Specifies the descriptor type. Must be set to USB_CONFIGURATION_DESCRIPTOR_TYPE.
 
-`bLength`
+`wTotalLength`
 
-Specifies the length, in bytes, of this structure.
+Specifies the total length, in bytes, of all data for the configuration. The length includes all interface, endpoint, class, or vendor-specific descriptors that are returned with the configuration descriptor.
+
+`bNumInterfaces`
+
+Specifies the total number of interfaces supported by this configuration.
+
+`bConfigurationValue`
+
+Contains the value that is used to select a configuration. This value is passed to the USB SetConfiguration request , as described in version 1.1 of the Universal Serial Bus Specification. The port driver does not currently expose a service that allows higher-level drivers to set the configuration.
+
+`iConfiguration`
+
+Specifies the device-defined index of the string descriptor for this configuration.
 
 `bmAttributes`
 
@@ -127,21 +139,9 @@ The configuration is powered by the bus.
 </tr>
 </table>
 
-`bNumInterfaces`
-
-Specifies the total number of interfaces supported by this configuration.
-
-`iConfiguration`
-
-Specifies the device-defined index of the string descriptor for this configuration.
-
 `MaxPower`
 
 Specifies the power requirements of this device in two-milliampere units. This member is valid only if bit seven is set in <b>bmAttributes</b>.
-
-`wTotalLength`
-
-Specifies the total length, in bytes, of all data for the configuration. The length includes all interface, endpoint, class, or vendor-specific descriptors that are returned with the configuration descriptor.
 
 ## Remarks
 If <b>wTotalLength</b> is greater than the buffer size provided in the URB to hold all descriptors retrieved (interface, endpoint, class, and vendor-defined), incomplete data will be returned. In order to retrieve complete descriptors, the request will need to be re-sent with a larger buffer.
@@ -166,11 +166,3 @@ Other members that are part of this structure but not described here should be t
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_CONFIGURATION_DESCRIPTOR structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -60,12 +60,12 @@ typedef enum _WDF_TASK_SEND_OPTIONS_FLAGS {
 <table>
             
                 <tr>
-                    <td>WDF_TASK_SEND_OPTION_SYNCHRONOUS</td>
+                    <td>WDF_TASK_SEND_OPTION_TIMEOUT</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WDF_TASK_SEND_OPTION_TIMEOUT</td>
+                    <td>WDF_TASK_SEND_OPTION_SYNCHRONOUS</td>
                     <td></td>
                 </tr>
 </table>

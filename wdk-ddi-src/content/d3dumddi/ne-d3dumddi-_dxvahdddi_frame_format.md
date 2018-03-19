@@ -60,8 +60,8 @@ typedef enum _DXVAHDDDI_FRAME_FORMAT {
 <table>
             
                 <tr>
-                    <td>DXVAHDDDI_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST</td>
-                    <td>A value that specifies that the frame format is interlaced with two fields. The bottom (odd) field is displayed first.</td>
+                    <td>DXVAHDDDI_FRAME_FORMAT_PROGRESSIVE</td>
+                    <td>A value that specifies that the frame format is progressive.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum _DXVAHDDDI_FRAME_FORMAT {
                 </tr>
             
                 <tr>
-                    <td>DXVAHDDDI_FRAME_FORMAT_PROGRESSIVE</td>
-                    <td>A value that specifies that the frame format is progressive.</td>
+                    <td>DXVAHDDDI_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST</td>
+                    <td>A value that specifies that the frame format is interlaced with two fields. The bottom (odd) field is displayed first.</td>
                 </tr>
 </table>
 
@@ -88,11 +88,3 @@ The <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">FO
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_frame_format_data.md">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_FRAME_FORMAT enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -58,10 +58,6 @@ typedef struct _PEP_QUERY_SOC_SUBSYSTEM_COUNT {
 ## Members
 
 
-`Flags`
-
-This member is reserved and should be set to zero.
-
 `PlatformIdleStateIndex`
 
 [in] The platform idle state index for which the kernel is querying about.
@@ -69,6 +65,10 @@ This member is reserved and should be set to zero.
 `SubsystemCount`
 
 [out] The number of SoC subsystems tallied by the PEP for the specified platform idle state.  The PEP cannot return 0 in this parameter; instead the PEP should return <b>FALSE</b> to the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186733">PEP_DPM_QUERY_SOC_SUBSYSTEM_COUNT notification</a> that provided this structure.
+
+`Flags`
+
+This member is reserved and should be set to zero.
 
 
 ## Requirements
@@ -80,11 +80,3 @@ This member is reserved and should be set to zero.
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt186733">PEP_DPM_QUERY_SOC_SUBSYSTEM_COUNT notification</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_QUERY_SOC_SUBSYSTEM_COUNT structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

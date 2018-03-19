@@ -59,8 +59,8 @@ typedef enum _DXGK_DISPLAY_DESCRIPTOR_TYPE {
 <table>
             
                 <tr>
-                    <td>BYTE</td>
-                    <td></td>
+                    <td>DXGK_DDT_INVALID</td>
+                    <td>Invalid type.</td>
                 </tr>
             
                 <tr>
@@ -69,8 +69,8 @@ typedef enum _DXGK_DISPLAY_DESCRIPTOR_TYPE {
                 </tr>
             
                 <tr>
-                    <td>DXGK_DDT_INVALID</td>
-                    <td>Invalid type.</td>
+                    <td>BYTE</td>
+                    <td></td>
                 </tr>
 </table>
 

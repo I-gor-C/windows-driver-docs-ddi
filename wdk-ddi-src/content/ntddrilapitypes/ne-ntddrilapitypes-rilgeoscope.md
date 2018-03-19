@@ -62,7 +62,7 @@ typedef enum _RILGEOSCOPE {
 <table>
             
                 <tr>
-                    <td>RIL_GEOSCOPE_CELL</td>
+                    <td>RIL_GEOSCOPE_NONE</td>
                     <td></td>
                 </tr>
             
@@ -77,17 +77,17 @@ typedef enum _RILGEOSCOPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_GEOSCOPE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_GEOSCOPE_NONE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_GEOSCOPE_PLMN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_GEOSCOPE_CELL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_GEOSCOPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

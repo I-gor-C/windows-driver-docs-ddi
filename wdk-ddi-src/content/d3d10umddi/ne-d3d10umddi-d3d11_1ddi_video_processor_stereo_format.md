@@ -65,21 +65,8 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT {
 <table>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_CHECKERBOARD</td>
-                    <td>Frame 0 and frame 1 are packed in a checkerboard format, as shown in the following diagram.
-
-<img alt="Checkerboard packing" src="images/dxgistereo3d05.png"/>
-
-Support for this stereo format is optional.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_COLUMN_INTERLEAVED</td>
-                    <td>Frame 0 and frame 1 are packed into interleaved columns, as shown in the following diagram.
-
-<img alt="Interleaved columns" src="images/dxgistereo3d04.png"/>
-
-Support for this stereo format is optional.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO</td>
+                    <td>The sample does not contain stereo data. If the stereo format is not specified, this value is the default.</td>
                 </tr>
             
                 <tr>
@@ -92,8 +79,19 @@ All drivers that support stereo video must support this format.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_MONO</td>
-                    <td>The sample does not contain stereo data. If the stereo format is not specified, this value is the default.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_VERTICAL</td>
+                    <td>Frame 0 and frame 1 are packed top-to-bottom, as shown in the following diagram.
+
+<img alt="Top-to-bottom packing" src="images/dxgistereo3d01.png"/>
+
+All drivers that support stereo video must support this format.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_SEPARATE</td>
+                    <td>Frame 0 and frame 1 are placed in separate resources or in separate texture array elements within the same resource.
+
+All drivers that support stereo video must support this format.</td>
                 </tr>
             
                 <tr>
@@ -115,19 +113,21 @@ Support for this stereo format is optional.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_SEPARATE</td>
-                    <td>Frame 0 and frame 1 are placed in separate resources or in separate texture array elements within the same resource.
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_COLUMN_INTERLEAVED</td>
+                    <td>Frame 0 and frame 1 are packed into interleaved columns, as shown in the following diagram.
 
-All drivers that support stereo video must support this format.</td>
+<img alt="Interleaved columns" src="images/dxgistereo3d04.png"/>
+
+Support for this stereo format is optional.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_VERTICAL</td>
-                    <td>Frame 0 and frame 1 are packed top-to-bottom, as shown in the following diagram.
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_CHECKERBOARD</td>
+                    <td>Frame 0 and frame 1 are packed in a checkerboard format, as shown in the following diagram.
 
-<img alt="Top-to-bottom packing" src="images/dxgistereo3d01.png"/>
+<img alt="Checkerboard packing" src="images/dxgistereo3d05.png"/>
 
-All drivers that support stereo video must support this format.</td>
+Support for this stereo format is optional.</td>
                 </tr>
 </table>
 
@@ -156,11 +156,3 @@ To query whether the device supports stereo 3-D video, call <a href="..\d3d10umd
 
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_processor_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_CAPS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

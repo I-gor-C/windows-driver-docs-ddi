@@ -59,11 +59,11 @@ typedef struct _BDA_WMDRMTUNER_PURCHASEENTITLEMENT {
 ## Members
 
 
-`argbCaptureTokenBuffer`
-
-
-
 `lResult`
+
+
+
+`ulDescrambleStatus`
 
 
 
@@ -71,7 +71,7 @@ typedef struct _BDA_WMDRMTUNER_PURCHASEENTITLEMENT {
 
 
 
-`ulDescrambleStatus`
+`argbCaptureTokenBuffer`
 
 
 

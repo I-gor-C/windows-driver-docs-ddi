@@ -66,7 +66,7 @@ typedef struct _RILEMERGENCYNUMBER {
 
 
 
-`dwCategory`
+`dwParams`
 
 
 
@@ -74,11 +74,11 @@ typedef struct _RILEMERGENCYNUMBER {
 
 
 
-`dwParams`
-
-
-
 `hUiccApp`
+
+
+
+`dwCategory`
 
 
 

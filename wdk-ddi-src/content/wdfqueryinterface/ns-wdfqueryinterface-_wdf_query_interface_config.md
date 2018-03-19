@@ -64,15 +64,9 @@ typedef struct _WDF_QUERY_INTERFACE_CONFIG {
 ## Members
 
 
-`EvtDeviceProcessQueryInterfaceRequest`
+`Size`
 
-A pointer to your driver's <a href="https://msdn.microsoft.com/b56fef85-4058-4942-90c0-36646164cd3e">EvtDeviceProcessQueryInterfaceRequest</a> event callback function, which is called when another driver requests the interface.
-
-`ImportInterface`
-
-If <b>TRUE</b>, the interface supports two-way communication between your driver and drivers that request the interface. 
-
-If this member is <b>FALSE</b>, the interface supports one-way communication from your driver to drivers that request the interface.
+The size, in bytes, of this structure.
 
 `Interface`
 
@@ -86,9 +80,15 @@ A pointer to the GUID that identifies the interface.
 
 If <b>TRUE</b>, and if your driver specifies a device object that represents a physical device object (PDO) when it calls <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>, the framework sends requests for the interface to the top of the parent device's driver stack. If this member is <b>FALSE</b>, or if the device object does not represent a PDO, the framework does not send requests to the parent device's stack. For more information, see the following Remarks section.
 
-`Size`
+`EvtDeviceProcessQueryInterfaceRequest`
 
-The size, in bytes, of this structure.
+A pointer to your driver's <a href="https://msdn.microsoft.com/b56fef85-4058-4942-90c0-36646164cd3e">EvtDeviceProcessQueryInterfaceRequest</a> event callback function, which is called when another driver requests the interface.
+
+`ImportInterface`
+
+If <b>TRUE</b>, the interface supports two-way communication between your driver and drivers that request the interface. 
+
+If this member is <b>FALSE</b>, the interface supports one-way communication from your driver to drivers that request the interface.
 
 ## Remarks
 The <b>WDF_QUERY_INTERFACE_CONFIG</b> structure is used as input to the <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a> method. 
@@ -164,11 +164,3 @@ For more information about driver-defined interfaces, see <a href="https://docs.
 
 
 <a href="https://msdn.microsoft.com/b56fef85-4058-4942-90c0-36646164cd3e">EvtDeviceProcessQueryInterfaceRequest</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_QUERY_INTERFACE_CONFIG structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

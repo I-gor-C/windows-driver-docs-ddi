@@ -60,13 +60,13 @@ typedef struct D3DDDICB_LOGUMDMARKER {
 ## Members
 
 
-`APISequenceNumber`
-
-The API sequence number that the marker event is associated with.
-
 `hContext`
 
 [in] A handle to a Direct3D context that signals ETW marker events. This is also the context that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function will be called on.
+
+`APISequenceNumber`
+
+The API sequence number that the marker event is associated with.
 
 `Index`
 
@@ -74,13 +74,13 @@ Indicates which API sequence call caused this marker event. If zero, the marker 
 
 Should be -1 if no time stamps are associated with this marker event.
 
-`Info`
-
-A custom text string embedded in the ETW packet. Can be <b>NULL</b>.
-
 `StringIndex`
 
 The offset, in bytes, of the string table entry pointed to by <b>Info</b>. Can be negative if the string is passed along with the marker event.
+
+`Info`
+
+A custom text string embedded in the ETW packet. Can be <b>NULL</b>.
 
 
 ## Requirements
@@ -96,11 +96,3 @@ The offset, in bytes, of the string table entry pointed to by <b>Info</b>. Can b
 
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDICB_LOGUMDMARKER structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

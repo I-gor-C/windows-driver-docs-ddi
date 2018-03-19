@@ -78,21 +78,29 @@ typedef struct _IDE_DEVICE_PARAMETERS {
 ## Members
 
 
-`AddressTranslation`
+`Version`
 
-Contains an enumeration value of type <a href="..\irb\ne-irb-ata_address_translation.md">ATA_ADDRESS_TRANSLATION</a> that specifies the sort of address translation used during data transfers.
+Indicates the size of the <i>Device</i> parameters structure. The miniport driver should verify that sizeof(IDE_DEVICE_PARAMETERS) is less than or equal to the <b>Version</b> field.
 
-`BytesOffsetForSectorAlignment`
+`IdeDeviceType`
 
-This member specifies the location of sector 0 within the first physical sector as defined in the ATA specification represented in bytes.
+Indicates the type of the device. The allowed device types are <i>DeviceIsAta</i> for ATA devices, <i>DeviceIsAtapi</i> for ATAPI devices, and <i>DeviceNotExist</i> if no device was found at that address. The other fields in this structure are not valid if the <b>IdeDeviceType</b> is set to <i>DeviceNotExist</i>.
 
-`BytesPerLogicalSector`
+`TargetId`
 
-This member specifies the number of bytes per logical sector (LBA) for the given device.
+Specifies the target ID of the device.
 
-`BytesPerPhysicalSector`
+`MaximumLun`
 
-This member specifies the number of bytes per physical sector (that is, the smallest amount of data that the device can physically write internally) for the given device.
+The miniport driver must update this field to indicate the maximum logical unit number supported by this device. By default, the member is set to 0 indicating the existence of just one LUN.
+
+`NumberOfOverlappedRequests`
+
+The miniport driver must update this field to specify the number of overlapped requests it can handle for this device. By default, the member is set to 1.
+
+`MaxBlockXfer`
+
+Specifies the number of sectors in a block of data to be transferred. This value applies to the data blocks used in ATA block transfer commands such as Read Multiple (0xC4), Write Multiple (0xC5). For more information about the ReadMultiple and WriteMultiple commands, see the <i>ATA Specification</i>.
 
 `DeviceCharacteristics`
 
@@ -155,37 +163,29 @@ Indicates that the device supports Media Status Notification.
 </tr>
 </table>
 
-`IdeDeviceType`
+`AddressTranslation`
 
-Indicates the type of the device. The allowed device types are <i>DeviceIsAta</i> for ATA devices, <i>DeviceIsAtapi</i> for ATAPI devices, and <i>DeviceNotExist</i> if no device was found at that address. The other fields in this structure are not valid if the <b>IdeDeviceType</b> is set to <i>DeviceNotExist</i>.
+Contains an enumeration value of type <a href="..\irb\ne-irb-ata_address_translation.md">ATA_ADDRESS_TRANSLATION</a> that specifies the sort of address translation used during data transfers.
 
-`MaxBlockXfer`
+`BytesPerLogicalSector`
 
-Specifies the number of sectors in a block of data to be transferred. This value applies to the data blocks used in ATA block transfer commands such as Read Multiple (0xC4), Write Multiple (0xC5). For more information about the ReadMultiple and WriteMultiple commands, see the <i>ATA Specification</i>.
+This member specifies the number of bytes per logical sector (LBA) for the given device.
 
-`MaximumLun`
+`BytesPerPhysicalSector`
 
-The miniport driver must update this field to indicate the maximum logical unit number supported by this device. By default, the member is set to 0 indicating the existence of just one LUN.
+This member specifies the number of bytes per physical sector (that is, the smallest amount of data that the device can physically write internally) for the given device.
 
-`NumberOfOverlappedRequests`
+`BytesOffsetForSectorAlignment`
 
-The miniport driver must update this field to specify the number of overlapped requests it can handle for this device. By default, the member is set to 1.
-
-`TargetId`
-
-Specifies the target ID of the device.
-
-`TransferModeSelected`
-
-Indicates the selected transfer modes on the device. The miniport driver must set this member.
+This member specifies the location of sector 0 within the first physical sector as defined in the ATA specification represented in bytes.
 
 `TransferModeSupported`
 
 Contains a bitmap that indicates the supported transfer modes.
 
-`Version`
+`TransferModeSelected`
 
-Indicates the size of the <i>Device</i> parameters structure. The miniport driver should verify that sizeof(IDE_DEVICE_PARAMETERS) is less than or equal to the <b>Version</b> field.
+Indicates the selected transfer modes on the device. The miniport driver must set this member.
 
 ## Remarks
 The port driver passes a IDE_DEVICE_PARAMETERS structure to the miniport driver when it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>.
@@ -206,11 +206,3 @@ The port driver passes a IDE_DEVICE_PARAMETERS structure to the miniport driver 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IDE_DEVICE_PARAMETERS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

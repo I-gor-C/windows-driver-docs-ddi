@@ -60,6 +60,14 @@ typedef struct _DXGK_PHYSICALADAPTERCAPS {
 ## Members
 
 
+`NumExecutionNodes`
+
+The number of execution nodes in the physical adapter.
+
+`PagingNodeIndex`
+
+Index of the paging node for the physical adapter.
+
 `DxgkPhysicalAdapterHandle`
 
 Handle, which is passed to the kernel mode driver as <b>DXGKRNL_INTERFACE::DeviceHandle</b> in <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>.
@@ -116,14 +124,6 @@ The adapter requires the index of the VPR paging node.
 </td>
 </tr>
 </table>
-
-`NumExecutionNodes`
-
-The number of execution nodes in the physical adapter.
-
-`PagingNodeIndex`
-
-Index of the paging node for the physical adapter.
 
 `VPRPagingNode`
 

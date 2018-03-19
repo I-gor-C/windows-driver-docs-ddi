@@ -62,6 +62,11 @@ typedef enum D3D12DDI_VIDEO_DECODE_STATUS_0020 {
 <table>
             
                 <tr>
+                    <td>D3D12DDI_VIDEO_DECODE_STATUS_0020_OK</td>
+                    <td>Operation succeeded.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D12DDI_VIDEO_DECODE_STATUS_0020_CONTINUE</td>
                     <td>There was a minor problem in the data format, but the host decoder should continue processing.</td>
                 </tr>
@@ -72,18 +77,13 @@ typedef enum D3D12DDI_VIDEO_DECODE_STATUS_0020 {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_DECODE_STATUS_0020_OK</td>
-                    <td>Operation succeeded.</td>
+                    <td>D3D12DDI_VIDEO_DECODE_STATUS_0020_RESTART</td>
+                    <td>There was a severe problem in the data format. The host decoder should restart the entire decoding process, starting at a sequence or random-access entry point.</td>
                 </tr>
             
                 <tr>
                     <td>D3D12DDI_VIDEO_DECODE_STATUS_0020_RATE_EXCEEDED</td>
                     <td>The bit rate or frame rate supplied to decode stream creation was insufficient for this frame.  When this status is reported, the <b>BitRate</b> member of the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_query_data_video_decode_statistics_0022.md">D3D12DDI_QUERY_DATA_VIDEO_DECODE_STATISTICS</a> structure reports a value that can be used to recreate the decode stream at the same frame rate and succeed decoding the failed frames.  Subsequent frames may still fail if those frames exceed the new value.  The reported bit rate is calculated with the frame rate with which the stream was created.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_VIDEO_DECODE_STATUS_0020_RESTART</td>
-                    <td>There was a severe problem in the data format. The host decoder should restart the entire decoding process, starting at a sequence or random-access entry point.</td>
                 </tr>
 </table>
 
@@ -96,11 +96,3 @@ typedef enum D3D12DDI_VIDEO_DECODE_STATUS_0020 {
 ## See Also
 
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_query_data_video_decode_statistics_0022.md">D3D12DDI_QUERY_DATA_VIDEO_DECODE_STATISTICS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D12DDI_VIDEO_DECODE_STATUS_0020 enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

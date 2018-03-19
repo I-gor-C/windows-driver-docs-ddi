@@ -58,10 +58,6 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2 {
 ## Members
 
 
-`Flags`
-
-Flag to indicate whether the scheduler should call DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT for this plane
-
 `LayerIndex`
 
 The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
@@ -69,6 +65,10 @@ The zero-based index of the overlay plane to display. The top plane (in the z-di
 `PresentId`
 
 The 64 bit PresentId specified in the SetVidPnSourceAddressWithMultiPlaneOverlay3() DDI call.
+
+`Flags`
+
+Flag to indicate whether the scheduler should call DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT for this plane
 
 
 ## Requirements

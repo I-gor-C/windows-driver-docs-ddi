@@ -59,21 +59,6 @@ typedef struct {
 ## Members
 
 
-`CoeffFormat`
-
-Specifies the coefficient format to use. Set this parameter to one of the following KSDS3D_HRTF_COEFF_FORMAT enumeration values:
-
-<ul>
-<li>
-FLOAT_COEFF specifies floating-point coefficients.
-
-</li>
-<li>
-SHORT_COEFF specifies 16-bit integer coefficients.
-
-</li>
-</ul>
-
 `FilterMethod`
 
 Specifies the filter method to use. Set this parameter to one of the following KSDS3D_HRTF_FILTER_METHOD enumeration values:
@@ -90,13 +75,28 @@ CASCADE_FORM
 </ul>
 For more information, see the description of the <b>MaxFilterSize</b> member of <a href="..\ksmedia\ns-ksmedia-ksds3d_hrtf_init_msg.md">KSDS3D_HRTF_INIT_MSG</a>.
 
-`Reserved`
+`CoeffFormat`
 
-Reserved. Set to zero.
+Specifies the coefficient format to use. Set this parameter to one of the following KSDS3D_HRTF_COEFF_FORMAT enumeration values:
+
+<ul>
+<li>
+FLOAT_COEFF specifies floating-point coefficients.
+
+</li>
+<li>
+SHORT_COEFF specifies 16-bit integer coefficients.
+
+</li>
+</ul>
 
 `Version`
 
 Specifies the filter version. Set this parameter to the KSDS3D_HRTF_FILTER_VERSION enumeration value DS3D_HRTF_VERSION_1.
+
+`Reserved`
+
+Reserved. Set to zero.
 
 ## Remarks
 This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537353">KSPROPERTY_HRTF3D_FILTER_FORMAT</a> property.
@@ -115,11 +115,3 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537353">KSPROPERTY_HRTF3D_FILTER_FORMAT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSDS3D_HRTF_FILTER_FORMAT_MSG structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

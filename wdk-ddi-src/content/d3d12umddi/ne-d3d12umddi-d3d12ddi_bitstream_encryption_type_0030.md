@@ -59,13 +59,13 @@ typedef enum _D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030 {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030_CENC_AES_CTR_128</td>
-                    <td>Indicates that the bitstream encryption type is the CENC (Common Encryption Standard) with an AES-CTR 128 bit key.</td>
+                    <td>D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030_NONE</td>
+                    <td>Indicates that the bitstream encryption type is undefined.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030_NONE</td>
-                    <td>Indicates that the bitstream encryption type is undefined.</td>
+                    <td>D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030_CENC_AES_CTR_128</td>
+                    <td>Indicates that the bitstream encryption type is the CENC (Common Encryption Standard) with an AES-CTR 128 bit key.</td>
                 </tr>
 </table>
 

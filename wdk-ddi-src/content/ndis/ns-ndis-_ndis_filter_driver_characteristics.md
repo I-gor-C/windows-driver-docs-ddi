@@ -91,60 +91,6 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
 ## Members
 
 
-`AttachHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a> function.
-
-`CancelDirectOidRequestHandler`
-
-The entry point of the caller's 
-      <a href="..\ndis\nc-ndis-filter_cancel_direct_oid_request.md">
-      FilterCancelDirectOidRequest</a> function. To bypass this function, set this member to <b>NULL</b>.
-
-`CancelOidRequestHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_cancel_oid_request.md">
-     FilterCancelOidRequest</a> function. To bypass this function, set this member to <b>NULL</b>.
-
-`CancelSendNetBufferListsHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_cancel_send_net_buffer_lists.md">
-     FilterCancelSendNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
-
-`DetachHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_detach.md">FilterDetach</a> function.
-
-`DevicePnPEventNotifyHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_device_pnp_event_notify.md">
-     FilterDevicePnPEventNotify</a> function. To bypass this function, set this member to <b>NULL</b>.
-
-`DirectOidRequestCompleteHandler`
-
-The entry point of the caller's 
-      <a href="..\ndis\nc-ndis-filter_direct_oid_request_complete.md">
-      FilterDirectOidRequestComplete</a> function. To bypass this function, set this member to <b>NULL</b>.
-
-`DirectOidRequestHandler`
-
-The entry point of the caller's 
-      <a href="..\ndis\nc-ndis-filter_direct_oid_request.md">
-      FilterDirectOidRequest</a> function. To bypass this function, set this member to <b>NULL</b>.
-
-`Flags`
-
-Reserved for NDIS.
-
-`FriendlyName`
-
-A Unicode string that represents the user-readable description of the filter driver.
-
 `Header`
 
 The 
@@ -190,20 +136,10 @@ Original version.
 Set the 
         <b>Size</b> member to NDIS_SIZEOF_FILTER_DRIVER_CHARACTERISTICS_REVISION_1.
 
-`MajorDriverVersion`
-
-Reserved for the major version number of the filter driver. Filter drivers can specify any value
-     that they require.
-
 `MajorNdisVersion`
 
 The major version of NDIS that the driver is using. The current value is
      0x06.
-
-`MinorDriverVersion`
-
-Reserved for the minor version number of the filter driver. Filter drivers can specify any value
-     that they require.
 
 `MinorNdisVersion`
 
@@ -315,45 +251,69 @@ NDIS 6.80
 </tr>
 </table>
 
-`NetPnPEventHandler`
+`MajorDriverVersion`
+
+Reserved for the major version number of the filter driver. Filter drivers can specify any value
+     that they require.
+
+`MinorDriverVersion`
+
+Reserved for the minor version number of the filter driver. Filter drivers can specify any value
+     that they require.
+
+`Flags`
+
+Reserved for NDIS.
+
+`FriendlyName`
+
+A Unicode string that represents the user-readable description of the filter driver.
+
+`UniqueName`
+
+A Unicode string that represents the unique name for the filter driver. This string must be a GUID, enclosed in curly braces, for example "{5cbf81bd-5055-47cd-9055-a76b2b4e3697}". This GUID must match the one in the <b>NetCfgInstanceId</b> INF file entry in the filter driver's INF file. For more information, see <a href="https://msdn.microsoft.com/e2714e67-62ac-4d9a-bec3-971d1c8b5bd8">INF File Settings for Filter Drivers</a>.
+
+`ServiceName`
+
+A Unicode string that represents the service name of the filter driver. This string must be the service name
+     from the AddService directive in the filter driver's INF file. For more information, see <a href="https://msdn.microsoft.com/e2714e67-62ac-4d9a-bec3-971d1c8b5bd8">INF File Settings for Filter Drivers</a>.
+
+`SetOptionsHandler`
+
+Specifies the entry point of the caller's 
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">FilterSetOptions</a> function.
+
+`SetFilterModuleOptionsHandler`
 
 The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_net_pnp_event.md">FilterNetPnPEvent</a> function. To
-     bypass this function, set this member to <b>NULL</b>.
+     <a href="..\ndis\nc-ndis-filter_set_module_options.md">
+     FilterSetModuleOptions</a> function.
 
-`OidRequestCompleteHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_oid_request_complete.md">
-     FilterOidRequestComplete</a> function. To bypass this function, set this member to <b>NULL</b>.
-
-`OidRequestHandler`
+`AttachHandler`
 
 The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_oid_request.md">FilterOidRequest</a> function. To bypass
-     this function, set this member to <b>NULL</b>.
+     <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a> function.
 
-`PauseHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_pause.md">FilterPause</a> function.
-
-`ReceiveNetBufferListsHandler`
+`DetachHandler`
 
 The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_receive_net_buffer_lists.md">
-     FilterReceiveNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
+     <a href="..\ndis\nc-ndis-filter_detach.md">FilterDetach</a> function.
 
 `RestartHandler`
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-filter_restart.md">FilterRestart</a> function.
 
-`ReturnNetBufferListsHandler`
+`PauseHandler`
 
 The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_return_net_buffer_lists.md">
-     FilterReturnNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
+     <a href="..\ndis\nc-ndis-filter_pause.md">FilterPause</a> function.
+
+`SendNetBufferListsHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists.md">
+     FilterSendNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
 
 `SendNetBufferListsCompleteHandler`
 
@@ -362,27 +322,53 @@ The entry point of the caller's
      FilterSendNetBufferListsComplete</a> function. To bypass this function, set this member to
      <b>NULL</b>.
 
-`SendNetBufferListsHandler`
+`CancelSendNetBufferListsHandler`
 
 The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists.md">
-     FilterSendNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
+     <a href="..\ndis\nc-ndis-filter_cancel_send_net_buffer_lists.md">
+     FilterCancelSendNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
 
-`ServiceName`
-
-A Unicode string that represents the service name of the filter driver. This string must be the service name
-     from the AddService directive in the filter driver's INF file. For more information, see <a href="https://msdn.microsoft.com/e2714e67-62ac-4d9a-bec3-971d1c8b5bd8">INF File Settings for Filter Drivers</a>.
-
-`SetFilterModuleOptionsHandler`
+`ReceiveNetBufferListsHandler`
 
 The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_set_module_options.md">
-     FilterSetModuleOptions</a> function.
+     <a href="..\ndis\nc-ndis-filter_receive_net_buffer_lists.md">
+     FilterReceiveNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
 
-`SetOptionsHandler`
+`ReturnNetBufferListsHandler`
 
-Specifies the entry point of the caller's 
-     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">FilterSetOptions</a> function.
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-filter_return_net_buffer_lists.md">
+     FilterReturnNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
+
+`OidRequestHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-filter_oid_request.md">FilterOidRequest</a> function. To bypass
+     this function, set this member to <b>NULL</b>.
+
+`OidRequestCompleteHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-filter_oid_request_complete.md">
+     FilterOidRequestComplete</a> function. To bypass this function, set this member to <b>NULL</b>.
+
+`CancelOidRequestHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-filter_cancel_oid_request.md">
+     FilterCancelOidRequest</a> function. To bypass this function, set this member to <b>NULL</b>.
+
+`DevicePnPEventNotifyHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-filter_device_pnp_event_notify.md">
+     FilterDevicePnPEventNotify</a> function. To bypass this function, set this member to <b>NULL</b>.
+
+`NetPnPEventHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-filter_net_pnp_event.md">FilterNetPnPEvent</a> function. To
+     bypass this function, set this member to <b>NULL</b>.
 
 `StatusHandler`
 
@@ -390,9 +376,23 @@ The entry point of the caller's
      <a href="..\ndis\nc-ndis-filter_status.md">FilterStatus</a> function. To bypass this
      function, set this member to <b>NULL</b>.
 
-`SynchronousOidRequestCompleteHandler`
+`DirectOidRequestHandler`
 
+The entry point of the caller's 
+      <a href="..\ndis\nc-ndis-filter_direct_oid_request.md">
+      FilterDirectOidRequest</a> function. To bypass this function, set this member to <b>NULL</b>.
 
+`DirectOidRequestCompleteHandler`
+
+The entry point of the caller's 
+      <a href="..\ndis\nc-ndis-filter_direct_oid_request_complete.md">
+      FilterDirectOidRequestComplete</a> function. To bypass this function, set this member to <b>NULL</b>.
+
+`CancelDirectOidRequestHandler`
+
+The entry point of the caller's 
+      <a href="..\ndis\nc-ndis-filter_cancel_direct_oid_request.md">
+      FilterCancelDirectOidRequest</a> function. To bypass this function, set this member to <b>NULL</b>.
 
 `SynchronousOidRequestHandler`
 
@@ -400,9 +400,9 @@ The entry point of the caller's
 <div> </div>
 This member is reserved.
 
-`UniqueName`
+`SynchronousOidRequestCompleteHandler`
 
-A Unicode string that represents the unique name for the filter driver. This string must be a GUID, enclosed in curly braces, for example "{5cbf81bd-5055-47cd-9055-a76b2b4e3697}". This GUID must match the one in the <b>NetCfgInstanceId</b> INF file entry in the filter driver's INF file. For more information, see <a href="https://msdn.microsoft.com/e2714e67-62ac-4d9a-bec3-971d1c8b5bd8">INF File Settings for Filter Drivers</a>.
+
 
 ## Remarks
 A filter driver calls the 
@@ -523,11 +523,3 @@ A filter driver calls the
 
 
 <a href="..\ndis\nc-ndis-filter_receive_net_buffer_lists.md">FilterReceiveNetBufferLists</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

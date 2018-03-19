@@ -60,8 +60,8 @@ typedef enum D3D12DDI_VIDEO_FIELD_TYPE_0020 {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_FIELD_TYPE_0020_INTERLACED_BOTTOM_FIELD_FIRST</td>
-                    <td>Frame is interlaced. The bottom field of each frame is displayed first.</td>
+                    <td>D3D12DDI_VIDEO_FIELD_TYPE_0020_NONE</td>
+                    <td>Frame is progressive.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum D3D12DDI_VIDEO_FIELD_TYPE_0020 {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_FIELD_TYPE_0020_NONE</td>
-                    <td>Frame is progressive.</td>
+                    <td>D3D12DDI_VIDEO_FIELD_TYPE_0020_INTERLACED_BOTTOM_FIELD_FIRST</td>
+                    <td>Frame is interlaced. The bottom field of each frame is displayed first.</td>
                 </tr>
 </table>
 

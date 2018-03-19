@@ -75,37 +75,12 @@ typedef enum _D3DDDIMULTISAMPLE_TYPE {
 <table>
             
                 <tr>
-                    <td>D3DDDIMULTISAMPLE_10_SAMPLES</td>
+                    <td>D3DDDIMULTISAMPLE_NONE</td>
                     <td>The level of full-scene multisampling available.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DDDIMULTISAMPLE_11_SAMPLES</td>
-                    <td>The level of full-scene multisampling available.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDIMULTISAMPLE_12_SAMPLES</td>
-                    <td>The level of full-scene multisampling available.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDIMULTISAMPLE_13_SAMPLES</td>
-                    <td>The level of full-scene multisampling available.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDIMULTISAMPLE_14_SAMPLES</td>
-                    <td>The level of full-scene multisampling available.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDIMULTISAMPLE_15_SAMPLES</td>
-                    <td>The level of full-scene multisampling available.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDIMULTISAMPLE_16_SAMPLES</td>
+                    <td>D3DDDIMULTISAMPLE_NONMASKABLE</td>
                     <td>The level of full-scene multisampling available.</td>
                 </tr>
             
@@ -150,18 +125,43 @@ typedef enum _D3DDDIMULTISAMPLE_TYPE {
                 </tr>
             
                 <tr>
+                    <td>D3DDDIMULTISAMPLE_10_SAMPLES</td>
+                    <td>The level of full-scene multisampling available.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDIMULTISAMPLE_11_SAMPLES</td>
+                    <td>The level of full-scene multisampling available.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDIMULTISAMPLE_12_SAMPLES</td>
+                    <td>The level of full-scene multisampling available.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDIMULTISAMPLE_13_SAMPLES</td>
+                    <td>The level of full-scene multisampling available.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDIMULTISAMPLE_14_SAMPLES</td>
+                    <td>The level of full-scene multisampling available.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDIMULTISAMPLE_15_SAMPLES</td>
+                    <td>The level of full-scene multisampling available.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDIMULTISAMPLE_16_SAMPLES</td>
+                    <td>The level of full-scene multisampling available.</td>
+                </tr>
+            
+                <tr>
                     <td>D3DDDIMULTISAMPLE_FORCE_UINT</td>
                     <td>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. This value is not used.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDIMULTISAMPLE_NONE</td>
-                    <td>The level of full-scene multisampling available.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDIMULTISAMPLE_NONMASKABLE</td>
-                    <td>The level of full-scene multisampling available.</td>
                 </tr>
 </table>
 

@@ -73,37 +73,12 @@ typedef enum _RILMANAGECALLPARAMSCOMMAND {
 <table>
             
                 <tr>
-                    <td>RIL_CALLCMD_ACCEPTINCOMINGCALL</td>
+                    <td>RIL_CALLCMD_RELEASEACTIVE_ACCEPTHELD</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLCMD_ADDHELDTOCONF</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLCMD_ADDHELDTOCONF_DISCONNECT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLCMD_ANSWERMEDIAOFFER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLCMD_ASSUREDCALLTRANSFER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLCMD_BLINDCALLTRANSFER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLCMD_CONSULTATIVECALLTRANSFER</td>
+                    <td>RIL_CALLCMD_RELEASECALL</td>
                     <td></td>
                 </tr>
             
@@ -118,32 +93,12 @@ typedef enum _RILMANAGECALLPARAMSCOMMAND {
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLCMD_MAX</td>
+                    <td>RIL_CALLCMD_ADDHELDTOCONF</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLCMD_OFFERMEDIA</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLCMD_RELEASEACTIVE_ACCEPTHELD</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLCMD_RELEASEALLCALLS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLCMD_RELEASECALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLCMD_RELEASEHELDCONFCALL</td>
+                    <td>RIL_CALLCMD_ADDHELDTOCONF_DISCONNECT</td>
                     <td></td>
                 </tr>
             
@@ -153,7 +108,52 @@ typedef enum _RILMANAGECALLPARAMSCOMMAND {
                 </tr>
             
                 <tr>
+                    <td>RIL_CALLCMD_RELEASEALLCALLS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLCMD_RELEASEHELDCONFCALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLCMD_ACCEPTINCOMINGCALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLCMD_OFFERMEDIA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLCMD_ANSWERMEDIAOFFER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLCMD_BLINDCALLTRANSFER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLCMD_ASSUREDCALLTRANSFER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLCMD_CONSULTATIVECALLTRANSFER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_CALLCMD_RTT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLCMD_MAX</td>
                     <td></td>
                 </tr>
 </table>

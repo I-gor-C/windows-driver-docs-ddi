@@ -101,25 +101,17 @@ Set this flag if the miniclass driver supports the <b>BatteryCharge </b>setting 
 
 Set this flag if the miniclass driver supports the <b>BatteryDischarge </b>setting in calls to <i>BatteryMiniSetInformation</i>.
 
+`Technology`
+
+Specify zero for a primary, nonrechargeable battery, or one for a secondary, rechargeable battery.
+
+`Reserved`
+
+Reserved for system use.
+
 `Chemistry`
 
 Specify a four-character string indicating the type of chemistry used in the battery. Possible values include "PbAc" (Lead Acid), "LION" (Lithium Ion), "NiCd" (Nickel Cadmium), "NiMH" (Nickel Metal Hydride), "NiZn" (Nickel Zinc), and "RAM" (Rechargeable Alkaline-Manganese). Additional values might be returned as additional battery types become available.
-
-`CriticalBias`
-
-Specify the amount (in milliwatt-hours) of any small reserved charge that remains when the critical battery level shows zero. Miniclass drivers should subtract this value from the battery's <b>FullChargedCapacity</b> and remaining capacity (reported in <a href="..\poclass\ns-poclass-_battery_status.md">BATTERY_STATUS</a>) before reporting those values.
-
-`CycleCount`
-
-Specify the number of charge/discharge cycles the battery has experienced, or zero if the battery does not support a cycle counter.
-
-`DefaultAlert1`
-
-Specify the capacity (in milliwatt-hours) at which a low battery alert should occur.
-
-`DefaultAlert2`
-
-Specify the capacity (in milliwatt-hours) at which a warning battery alert should occur.
 
 `DesignedCapacity`
 
@@ -129,13 +121,21 @@ Specify the theoretical capacity of the battery when new, in milliwatt-hours. If
 
 Specify the battery's current fully charged capacity, in milliwatt-hours. If BATTERY_CAPACITY_RELATIVE is set, the units are undefined.
 
-`Reserved`
+`DefaultAlert1`
 
-Reserved for system use.
+Specify the capacity (in milliwatt-hours) at which a low battery alert should occur.
 
-`Technology`
+`DefaultAlert2`
 
-Specify zero for a primary, nonrechargeable battery, or one for a secondary, rechargeable battery.
+Specify the capacity (in milliwatt-hours) at which a warning battery alert should occur.
+
+`CriticalBias`
+
+Specify the amount (in milliwatt-hours) of any small reserved charge that remains when the critical battery level shows zero. Miniclass drivers should subtract this value from the battery's <b>FullChargedCapacity</b> and remaining capacity (reported in <a href="..\poclass\ns-poclass-_battery_status.md">BATTERY_STATUS</a>) before reporting those values.
+
+`CycleCount`
+
+Specify the number of charge/discharge cycles the battery has experienced, or zero if the battery does not support a cycle counter.
 
 
 ## Requirements
@@ -150,11 +150,3 @@ Specify zero for a primary, nonrechargeable battery, or one for a secondary, rec
 
 
 <a href="https://msdn.microsoft.com/bd96b79a-5670-4aaf-b72c-619818c2a2e7">BatteryMiniQueryInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [battery\battery]:%20BATTERY_INFORMATION structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

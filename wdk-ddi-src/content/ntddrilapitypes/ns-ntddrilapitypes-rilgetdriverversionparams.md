@@ -57,11 +57,11 @@ typedef struct _RILGETDRIVERVERSIONPARAMS {
 ## Members
 
 
-`dwMaxVersion`
-
-
-
 `dwMinVersion`
+
+
+
+`dwMaxVersion`
 
 
 

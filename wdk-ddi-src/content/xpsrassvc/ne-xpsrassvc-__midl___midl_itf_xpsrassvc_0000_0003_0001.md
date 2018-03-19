@@ -61,11 +61,6 @@ typedef enum _XPSRAS_PIXEL_FORMAT {
 <table>
             
                 <tr>
-                    <td>XPSRAS_PIXEL_FORMAT_128BPP_PRGBA_FLOAT_SCRGB</td>
-                    <td>128-bit color pixel format.</td>
-                </tr>
-            
-                <tr>
                     <td>XPSRAS_PIXEL_FORMAT_32BPP_PBGRA_UINT_SRGB</td>
                     <td>32-bit color pixel format. It is the default pixel format.</td>
                 </tr>
@@ -73,6 +68,11 @@ typedef enum _XPSRAS_PIXEL_FORMAT {
                 <tr>
                     <td>XPSRAS_PIXEL_FORMAT_64BPP_PRGBA_HALF_SCRGB</td>
                     <td>64-bit color pixel format.</td>
+                </tr>
+            
+                <tr>
+                    <td>XPSRAS_PIXEL_FORMAT_128BPP_PRGBA_FLOAT_SCRGB</td>
+                    <td>128-bit color pixel format.</td>
                 </tr>
 </table>
 
@@ -97,11 +97,3 @@ For more information about rasterizing XPS documents, see <a href="https://msdn.
 
 
 <a href="https://msdn.microsoft.com/00F1C6B7-9AD8-4E42-B433-4BD73E85CFA3">IXpsRasterizationFactory1::CreateRasterizer1</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20XPSRAS_PIXEL_FORMAT enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

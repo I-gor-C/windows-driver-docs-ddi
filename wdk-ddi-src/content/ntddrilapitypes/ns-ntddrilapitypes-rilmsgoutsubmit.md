@@ -65,6 +65,30 @@ typedef struct _RILMSGOUTSUBMIT {
 ## Members
 
 
+`raDestAddress`
+
+
+
+`dwProtocolID`
+
+
+
+`rmdDataCoding`
+
+
+
+`dwVPFormat`
+
+
+
+`stVP`
+
+
+
+`dwMsgID`
+
+
+
 `cbHdrLength`
 
 
@@ -73,35 +97,11 @@ typedef struct _RILMSGOUTSUBMIT {
 
 
 
-`dwMsgID`
-
-
-
-`dwProtocolID`
-
-
-
-`dwVPFormat`
-
-
-
-`raDestAddress`
-
-
-
 `rgbHdr`
 
 
 
 `rgbMsg`
-
-
-
-`rmdDataCoding`
-
-
-
-`stVP`
 
 
 

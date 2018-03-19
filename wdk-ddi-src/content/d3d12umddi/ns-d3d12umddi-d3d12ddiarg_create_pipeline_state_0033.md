@@ -78,85 +78,85 @@ typedef struct _D3D12DDIARG_CREATE_PIPELINE_STATE_0033 {
 ## Members
 
 
-`DSVFormat`
-
-The DSV format.
-
-`hBlendState`
-
-The blend state.
-
 `hComputeShader`
 
 The compute shader.
-
-`hDepthStencilState`
-
-The depth stencil state.
-
-`hDomainShader`
-
-The domain shader.
-
-`hElementLayout`
-
-The element layout.
-
-`hGeometryShader`
-
-The geometry shader.
-
-`hHullShader`
-
-The hull shader.
-
-`hPixelShader`
-
-The pixel shader.
-
-`hRasterizerState`
-
-The rasterizer state.
-
-`hRootSignature`
-
-The root signature.
 
 `hVertexShader`
 
 The vertex shader.
 
+`hPixelShader`
+
+The pixel shader.
+
+`hDomainShader`
+
+The domain shader.
+
+`hHullShader`
+
+The hull shader.
+
+`hGeometryShader`
+
+The geometry shader.
+
+`hRootSignature`
+
+The root signature.
+
+`hBlendState`
+
+The blend state.
+
+`SampleMask`
+
+The sample mask.
+
+`hRasterizerState`
+
+The rasterizer state.
+
+`hDepthStencilState`
+
+The depth stencil state.
+
+`hElementLayout`
+
+The element layout.
+
 `IBStripCutValue`
 
 The index buffer strip cut value.
-
-`LibraryReference`
-
-The library reference.
-
-`NodeMask`
-
-Represents the set of nodes.
-
-`NumRenderTargets`
-
-The number of render targets.
 
 `PrimitiveTopologyType`
 
 The primitive topology type.
 
+`NumRenderTargets`
+
+The number of render targets.
+
 `RTVFormats`
 
 The RTV formats.
+
+`DSVFormat`
+
+The DSV format.
 
 `SampleDesc`
 
 The sample description.
 
-`SampleMask`
+`NodeMask`
 
-The sample mask.
+Represents the set of nodes.
+
+`LibraryReference`
+
+The library reference.
 
 `ViewInstancingDesc`
 

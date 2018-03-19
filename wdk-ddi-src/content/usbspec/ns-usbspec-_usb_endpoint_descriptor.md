@@ -62,6 +62,10 @@ typedef struct _USB_ENDPOINT_DESCRIPTOR {
 ## Members
 
 
+`bLength`
+
+Specifies the length, in bytes, of this descriptor.
+
 `bDescriptorType`
 
 Specifies the descriptor type. Must be set to USB_ENDPOINT_DESCRIPTOR_TYPE.
@@ -69,6 +73,14 @@ Specifies the descriptor type. Must be set to USB_ENDPOINT_DESCRIPTOR_TYPE.
 `bEndpointAddress`
 
 Specifies the USB-defined endpoint address. The four low-order bits specify the endpoint number. The high-order bit specifies the direction of data flow on this endpoint: 1 for in, 0 for out.
+
+`bmAttributes`
+
+The two low-order bits specify the endpoint type, one of USB_ENDPOINT_TYPE_CONTROL, USB_ENDPOINT_TYPE_ISOCHRONOUS, USB_ENDPOINT_TYPE_BULK, or USB_ENDPOINT_TYPE_INTERRUPT.
+
+`wMaxPacketSize`
+
+Specifies the maximum packet size that can be sent from or to this endpoint.
 
 `bInterval`
 
@@ -223,18 +235,6 @@ For devices and host controllers that can operate at high speed, the period is m
 
 The mappings in the preceding tables between periods and polling intervals are valid in Windows 2000 and later operating systems.
 
-`bLength`
-
-Specifies the length, in bytes, of this descriptor.
-
-`bmAttributes`
-
-The two low-order bits specify the endpoint type, one of USB_ENDPOINT_TYPE_CONTROL, USB_ENDPOINT_TYPE_ISOCHRONOUS, USB_ENDPOINT_TYPE_BULK, or USB_ENDPOINT_TYPE_INTERRUPT.
-
-`wMaxPacketSize`
-
-Specifies the maximum packet size that can be sent from or to this endpoint.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -252,11 +252,3 @@ Specifies the maximum packet size that can be sent from or to this endpoint.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_ENDPOINT_DESCRIPTOR structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

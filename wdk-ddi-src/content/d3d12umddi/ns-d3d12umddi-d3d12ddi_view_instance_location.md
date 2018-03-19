@@ -57,13 +57,13 @@ typedef struct _D3D12DDI_VIEW_INSTANCE_LOCATION {
 ## Members
 
 
-`RenderTargetArrayIndex`
-
-Render target array index.
-
 `ViewportArrayIndex`
 
 Viewport array index.
+
+`RenderTargetArrayIndex`
+
+Render target array index.
 
 
 ## Requirements

@@ -63,13 +63,13 @@ typedef enum _WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS {
 <table>
             
                 <tr>
-                    <td>WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK</td>
-                    <td>Specifies that the framework should call the <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> callback function before inserting the request into the queue.</td>
+                    <td>WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS</td>
+                    <td>No flags are set.</td>
                 </tr>
             
                 <tr>
-                    <td>WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS</td>
-                    <td>No flags are set.</td>
+                    <td>WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK</td>
+                    <td>Specifies that the framework should call the <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> callback function before inserting the request into the queue.</td>
                 </tr>
             
                 <tr>
@@ -95,11 +95,3 @@ For more information about specifying queues for IRPs as they arrive, see <a hre
 
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue.md">WdfDeviceWdmDispatchIrpToIoQueue</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

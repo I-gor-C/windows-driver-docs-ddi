@@ -57,13 +57,13 @@ typedef struct _D3D12DDIARG_CREATE_CRYPTO_SESSION_POLICY_0030 {
 ## Members
 
 
-`KeyInfoSize`
-
-The key info size.
-
 `pKeyInfo`
 
 The key info.
+
+`KeyInfoSize`
+
+The key info size.
 
 
 ## Requirements

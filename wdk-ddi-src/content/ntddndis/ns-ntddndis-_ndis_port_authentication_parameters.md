@@ -71,41 +71,33 @@ The
      <b>Revision</b> member to NDIS_PORT_AUTHENTICATION_PARAMETERS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_PORT_AUTHENTICATION_PARAMETERS_REVISION_1.
 
-`RcvAuthorizationState`
+`SendControlState`
 
-The authorization state of the port that the miniport adapter should use for receive operations.
-     Ignore this member if the 
-     <b>RcvControlState</b> member is set to 
-     <b>NdisPortControlStateUncontrolled</b>.
+The control state of the port that the miniport adapter should use for send operations. This
+     member must contain one of the following values:
      
 
-This member must contain one of the following values:
 
 
 
 
+#### NdisPortControlStateUnknown
 
-#### NdisPortAuthorizationUnknown
-
-The port's authorization state for receive operations is unknown.
-
-
-
-#### NdisPortAuthorized
-
-The port is authorized for receive operations.
+The port's control state for send operations is unknown.
 
 
 
-#### NdisPortUnauthorized
+#### NdisPortControlStateControlled
 
-The port is not authorized for receive operations.
+The port is in a controlled state for send operations. That is, the port requires
+       authorization.
 
 
 
-#### NdisPortReauthorizing
+#### NdisPortControlStateUncontrolled
 
-The port is re-authorizing for receive operations.
+The port is in an uncontrolled state for send operations. That is, the port does not require
+       authorization.
 
 `RcvControlState`
 
@@ -171,33 +163,41 @@ The port is not authorized for send operations.
 
 The port is re-authorizing for send operations.
 
-`SendControlState`
+`RcvAuthorizationState`
 
-The control state of the port that the miniport adapter should use for send operations. This
-     member must contain one of the following values:
+The authorization state of the port that the miniport adapter should use for receive operations.
+     Ignore this member if the 
+     <b>RcvControlState</b> member is set to 
+     <b>NdisPortControlStateUncontrolled</b>.
      
 
+This member must contain one of the following values:
 
 
 
 
-#### NdisPortControlStateUnknown
 
-The port's control state for send operations is unknown.
+#### NdisPortAuthorizationUnknown
 
-
-
-#### NdisPortControlStateControlled
-
-The port is in a controlled state for send operations. That is, the port requires
-       authorization.
+The port's authorization state for receive operations is unknown.
 
 
 
-#### NdisPortControlStateUncontrolled
+#### NdisPortAuthorized
 
-The port is in an uncontrolled state for send operations. That is, the port does not require
-       authorization.
+The port is authorized for receive operations.
+
+
+
+#### NdisPortUnauthorized
+
+The port is not authorized for receive operations.
+
+
+
+#### NdisPortReauthorizing
+
+The port is re-authorizing for receive operations.
 
 ## Remarks
 The NDIS_PORT_AUTHENTICATION_PARAMETERS structure is used in 
@@ -219,11 +219,3 @@ The NDIS_PORT_AUTHENTICATION_PARAMETERS structure is used in
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-port-authentication-parameters">
    OID_GEN_PORT_AUTHENTICATION_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT_AUTHENTICATION_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

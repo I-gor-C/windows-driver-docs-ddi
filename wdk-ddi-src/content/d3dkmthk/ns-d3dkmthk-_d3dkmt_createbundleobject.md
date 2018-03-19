@@ -65,18 +65,6 @@ typedef struct _D3DKMT_CREATEBUNDLEOBJECT {
 
 The number of the DXGK object to be bundled.
 
-`dwBundleDesiredAccess`
-
-The desired access for bundle handle.
-
-`hNtBundleHandle`
-
-The NT bundle handle.
-
-`pBundleObjectAttributes`
-
-Object attributes for the bundled object.
-
 `phObjects`
 
 A pointer to the array of the DXGK object to be bundled.
@@ -84,6 +72,18 @@ A pointer to the array of the DXGK object to be bundled.
 `ppObjectAttributes`
 
 An array of pointers to object attributes for DXGK objects.
+
+`pBundleObjectAttributes`
+
+Object attributes for the bundled object.
+
+`dwBundleDesiredAccess`
+
+The desired access for bundle handle.
+
+`hNtBundleHandle`
+
+The NT bundle handle.
 
 
 ## Requirements

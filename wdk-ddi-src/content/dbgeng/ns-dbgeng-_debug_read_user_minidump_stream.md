@@ -61,6 +61,18 @@ typedef struct _DEBUG_READ_USER_MINIDUMP_STREAM {
 ## Members
 
 
+`StreamType`
+
+The type of stream.
+
+`Flags`
+
+Flags.
+
+`Offset`
+
+The offset of stream.
+
 `Buffer`
 
 Specifies the beginning of the buffer to read.
@@ -72,18 +84,6 @@ Specifies the length of the buffer to read.
 `BufferUsed`
 
 The buffer used value.
-
-`Flags`
-
-Flags.
-
-`Offset`
-
-The offset of stream.
-
-`StreamType`
-
-The type of stream.
 
 ## Remarks
 The DEBUG_REQUEST_READ_USER_MINIDUMP_STREAM <a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a> operation reads a stream from a user-mode minidump target.

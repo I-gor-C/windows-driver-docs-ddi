@@ -65,32 +65,7 @@ typedef enum _RIL3GPPTONE {
 <table>
             
                 <tr>
-                    <td>RIL_3GPPTONE_AUTHENTICATIONFAILURE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPTONE_BUSY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPTONE_CALLDROPPED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPTONE_CONGESTION</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPTONE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPTONE_NUMBERUNOBTAINABLE</td>
+                    <td>RIL_3GPPTONE_TONEOFF</td>
                     <td></td>
                 </tr>
             
@@ -100,7 +75,32 @@ typedef enum _RIL3GPPTONE {
                 </tr>
             
                 <tr>
-                    <td>RIL_3GPPTONE_TONEOFF</td>
+                    <td>RIL_3GPPTONE_BUSY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPTONE_CONGESTION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPTONE_AUTHENTICATIONFAILURE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPTONE_NUMBERUNOBTAINABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPTONE_CALLDROPPED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPTONE_MAX</td>
                     <td></td>
                 </tr>
 </table>

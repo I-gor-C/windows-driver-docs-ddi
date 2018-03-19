@@ -67,6 +67,18 @@ typedef struct _BAND_LOCATION_INFO {
 ## Members
 
 
+`StructSize`
+
+The size of the structure in bytes. Set to <b>sizeof</b>(BAND_SECURITY_INFO).
+
+`ReadLock`
+
+Whether the band is accessible for reading and how a read lock is affected by a power reset.
+
+`WriteLock`
+
+Whether the band is accessible for writing and how a write lock is affected by a power reset.
+
 `CryptoAlgoIdType`
 
 The type of encryption algorithm identifier used. This must be set to <b>AlgoIdTypeOidString</b>.
@@ -74,18 +86,6 @@ The type of encryption algorithm identifier used. This must be set to <b>AlgoIdT
 `Metadata`
 
 A metadata field available for use by a key manager.
-
-`ReadLock`
-
-Whether the band is accessible for reading and how a read lock is affected by a power reset.
-
-`StructSize`
-
-The size of the structure in bytes. Set to <b>sizeof</b>(BAND_SECURITY_INFO).
-
-`WriteLock`
-
-Whether the band is accessible for writing and how a write lock is affected by a power reset.
 
 ## Remarks
 Both <b>Readlock</b> and <b>Writelock</b> are <b>LOCKSTATE</b> values and indicate locking state and lock persistence. Their values are one of the following.
@@ -187,11 +187,3 @@ When <b>BAND_SECURITY_INFO</b> is used in an input parameter set, <b>CryptoAlgoI
 
 
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">ENUMERATE_BANDS_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20BAND_SECURITY_INFO structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

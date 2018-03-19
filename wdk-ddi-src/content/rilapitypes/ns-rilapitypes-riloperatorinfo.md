@@ -65,11 +65,11 @@ typedef struct _RILOPERATORINFO {
 
 
 
-`dwIndex`
-
-
-
 `dwParams`
+
+
+
+`dwIndex`
 
 
 

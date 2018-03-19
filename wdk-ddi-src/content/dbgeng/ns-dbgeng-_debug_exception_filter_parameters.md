@@ -61,29 +61,29 @@ typedef struct _DEBUG_EXCEPTION_FILTER_PARAMETERS {
 ## Members
 
 
-`CommandSize`
+`ExecutionOption`
 
-The size, in characters, of the command (including the terminator) to execute upon the first chance of the exception.
+The <a href="https://msdn.microsoft.com/1f8f738b-7b2b-419a-949e-b71f937de02d">break status</a> of the exception filter, including the terminator.  For possible values, see <b>DEBUG_FILTER_XXX</b>.
 
 `ContinueOption`
 
 The <a href="https://msdn.microsoft.com/1f8f738b-7b2b-419a-949e-b71f937de02d">handling status</a> of the exception filter.  For possible values, see <b>DEBUG_FILTER_XXX</b>.
 
-`ExceptionCode`
+`TextSize`
 
-The exception code for the exception filter.
+The size, in characters, of the name (including the terminator) of the exception filter.  If the filter is an arbitrary exception filter, it does not have a name and <b>TextSize</b> is zero.
 
-`ExecutionOption`
+`CommandSize`
 
-The <a href="https://msdn.microsoft.com/1f8f738b-7b2b-419a-949e-b71f937de02d">break status</a> of the exception filter, including the terminator.  For possible values, see <b>DEBUG_FILTER_XXX</b>.
+The size, in characters, of the command (including the terminator) to execute upon the first chance of the exception.
 
 `SecondCommandSize`
 
 The size, in characters, of the command (including the terminator) to execute upon the second chance of the exception.
 
-`TextSize`
+`ExceptionCode`
 
-The size, in characters, of the name (including the terminator) of the exception filter.  If the filter is an arbitrary exception filter, it does not have a name and <b>TextSize</b> is zero.
+The exception code for the exception filter.
 
 
 ## Requirements
@@ -98,11 +98,3 @@ The size, in characters, of the name (including the terminator) of the exception
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546650">GetExceptionFilterParameters</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20DEBUG_EXCEPTION_FILTER_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

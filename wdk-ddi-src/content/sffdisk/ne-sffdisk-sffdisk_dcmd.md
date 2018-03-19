@@ -62,11 +62,6 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>SFFDISK_DC_DEVICE_COMMAND</td>
-                    <td>The operation executes a device command.</td>
-                </tr>
-            
-                <tr>
                     <td>SFFDISK_DC_GET_VERSION</td>
                     <td>The operations retrieves the version of the card.</td>
                 </tr>
@@ -79,6 +74,11 @@ typedef enum  {
                 <tr>
                     <td>SFFDISK_DC_UNLOCK_CHANNEL</td>
                     <td>The operation unlocks the interface channel.</td>
+                </tr>
+            
+                <tr>
+                    <td>SFFDISK_DC_DEVICE_COMMAND</td>
+                    <td>The operation executes a device command.</td>
                 </tr>
 </table>
 
@@ -94,11 +94,3 @@ Applications that submit IOCTL_SFFDISK_DEVICE_COMMAND requests to the SD stack u
 ## See Also
 
 <a href="https://msdn.microsoft.com/68205c17-5ff6-45a3-83c7-e106b314f9a5">SFFDISK_DEVICE_COMMAND_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SFFDISK_DCMD enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

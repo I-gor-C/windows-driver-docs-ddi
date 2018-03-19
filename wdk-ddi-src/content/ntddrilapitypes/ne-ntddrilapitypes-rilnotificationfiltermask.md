@@ -61,17 +61,12 @@ typedef enum _RILNOTIFICATIONFILTERMASK {
 <table>
             
                 <tr>
-                    <td>RIL_NFS_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NFS_LOCATIONUPDATE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_NFS_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NFS_SIGNALQUALITY</td>
                     <td></td>
                 </tr>
             
@@ -81,7 +76,12 @@ typedef enum _RILNOTIFICATIONFILTERMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_NFS_SIGNALQUALITY</td>
+                    <td>RIL_NFS_LOCATIONUPDATE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NFS_ALL</td>
                     <td></td>
                 </tr>
 </table>

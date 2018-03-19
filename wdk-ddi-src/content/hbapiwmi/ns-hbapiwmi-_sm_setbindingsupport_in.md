@@ -58,6 +58,10 @@ typedef struct _SM_SetBindingSupport_IN {
 ## Members
 
 
+`HbaPortWWN`
+
+The worldwide name (WWN) of the local port whose events the WMI client will receive.
+
 `DomainPortWWN`
 
 A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.
@@ -65,10 +69,6 @@ A worldwide name (WWN) that specifies the SAS domain worldwide name of the local
 `Flags`
 
 The HBA_BIND_CAPABILITY binding capabilities.
-
-`HbaPortWWN`
-
-The worldwide name (WWN) of the local port whose events the WMI client will receive.
 
 ## Remarks
 The WMI tool suite generates a declaration of the SM_SetBindingSupport_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SMHBA_BindingEntry WMI class.

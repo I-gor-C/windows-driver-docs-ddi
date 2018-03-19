@@ -75,15 +75,25 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS {
 ## Members
 
 
-`BaseCpuNumber`
+`Header`
 
-The lowest number CPU to use for RSS. Because this value is incorporated into the indirection
-     table, set 
-     <b>BaseCpuNumber</b> to zero.
+The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <b>NDIS_RECEIVE_SCALE_PARAMETERS</b> structure. Set the 
+     <b>Type</b> member of the structure that 
+     <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_RSS_PARAMETERS</b>. 
 
-`DefaultProcessorNumber`
+For NDIS  6.60 and later drivers, set the 
+     <b>Revision</b> member to <b>NDIS_RECEIVE_SCALE_PARAMETERS_REVISION_3</b> and the 
+     <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_SCALE_PARAMETERS_REVISION_3</b>.
 
-Specifies the default RSS processor.
+For NDIS  6.20 and later drivers, set the 
+     <b>Revision</b> member to <b>NDIS_RECEIVE_SCALE_PARAMETERS_REVISION_2</b> and the 
+     <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_SCALE_PARAMETERS_REVISION_2</b>.
+
+For NDIS  6.0 drivers, set the 
+     <b>Revision</b> member to <b>NDIS_RECEIVE_SCALE_PARAMETERS_REVISION_1</b> and the 
+     <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_SCALE_PARAMETERS_REVISION_1</b>.
 
 `Flags`
 
@@ -159,6 +169,12 @@ If this flag is set, the miniport driver should ignore all of the other flags an
 </tr>
 </table>
 
+`BaseCpuNumber`
+
+The lowest number CPU to use for RSS. Because this value is incorporated into the indirection
+     table, set 
+     <b>BaseCpuNumber</b> to zero.
+
 `HashInformation`
 
 In a set request, this member is the hash type and hash function that the NIC should use to compute the hash
@@ -178,6 +194,19 @@ Miniport drivers can use the
      <b>HashInformation</b> and the 
      <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567266">NDIS_RSS_HASH_FUNC_FROM_HASH_INFO</a> macro to get the hash function.
 
+`IndirectionTableSize`
+
+The size of the indirection table, in bytes. The upper layer driver that sets the RSS parameters, must ensure that the number of entries in the indirection table is a power of 2.
+
+`IndirectionTableOffset`
+
+The offset of the indirection table from the beginning of the <b>NDIS_RECEIVE_SCALE_PARAMETERS</b>
+     structure. Use this offset to get the indirection table.
+
+`HashSecretKeySize`
+
+The size of the secret key array of the hash function, in bytes. The size of the array is 40 bytes for NdisHashFunctionToeplitz.
+
 `HashSecretKeyOffset`
 
 The offset of the secret key array of the hash function from the beginning of the
@@ -188,38 +217,10 @@ In a set request, the secret key can contain any data that the overlying driver 
 
 In a query request, the secret key contains the data that the NIC is using.
 
-`HashSecretKeySize`
+`ProcessorMasksOffset`
 
-The size of the secret key array of the hash function, in bytes. The size of the array is 40 bytes for NdisHashFunctionToeplitz.
-
-`Header`
-
-The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
-     <b>NDIS_RECEIVE_SCALE_PARAMETERS</b> structure. Set the 
-     <b>Type</b> member of the structure that 
-     <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_RSS_PARAMETERS</b>. 
-
-For NDIS  6.60 and later drivers, set the 
-     <b>Revision</b> member to <b>NDIS_RECEIVE_SCALE_PARAMETERS_REVISION_3</b> and the 
-     <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_SCALE_PARAMETERS_REVISION_3</b>.
-
-For NDIS  6.20 and later drivers, set the 
-     <b>Revision</b> member to <b>NDIS_RECEIVE_SCALE_PARAMETERS_REVISION_2</b> and the 
-     <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_SCALE_PARAMETERS_REVISION_2</b>.
-
-For NDIS  6.0 drivers, set the 
-     <b>Revision</b> member to <b>NDIS_RECEIVE_SCALE_PARAMETERS_REVISION_1</b> and the 
-     <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_SCALE_PARAMETERS_REVISION_1</b>.
-
-`IndirectionTableOffset`
-
-The offset of the indirection table from the beginning of the <b>NDIS_RECEIVE_SCALE_PARAMETERS</b>
-     structure. Use this offset to get the indirection table.
-
-`IndirectionTableSize`
-
-The size of the indirection table, in bytes. The upper layer driver that sets the RSS parameters, must ensure that the number of entries in the indirection table is a power of 2.
+The offset of an array of processor masks from the beginning of the <b>NDIS_RECEIVE_SCALE_PARAMETERS</b>
+     structure.
 
 `NumberOfProcessorMasks`
 
@@ -229,10 +230,9 @@ The number of elements in an array of type <a href="..\minitape\ns-minitape-_gro
 
 The size, in bytes, of a processor mask array entry.
 
-`ProcessorMasksOffset`
+`DefaultProcessorNumber`
 
-The offset of an array of processor masks from the beginning of the <b>NDIS_RECEIVE_SCALE_PARAMETERS</b>
-     structure.
+Specifies the default RSS processor.
 
 ## Remarks
 The <b>NDIS_RECEIVE_SCALE_PARAMETERS</b> structure defines the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-receive-side-scaling2">receive side scaling (RSS)</a> parameters for the 
@@ -324,11 +324,3 @@ If RSS is disabled, the miniport driver should handle receive operations without
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567266">
    NDIS_RSS_HASH_INFO_FROM_TYPE_AND_FUNC</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_SCALE_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -74,15 +74,8 @@ typedef enum FWPS_FIELDS_RPC_EPMAP_ {
 <table>
             
                 <tr>
-                    <td>FWPS_FIELD_RPC_EPMAP_AUTH_LEVEL</td>
-                    <td>The authentication service level. For more information about authentication service levels, see
-     Authentication-Service Constants in the RPC section of the Windows SDK documentation.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_EPMAP_AUTH_TYPE</td>
-                    <td>The authentication service type. For more information about authentication service types, see
-     Authentication-Service Constants in the RPC section of the Microsoft Windows SDK documentation.</td>
+                    <td>FWPS_FIELD_RPC_EPMAP_REMOTE_USER_TOKEN</td>
+                    <td>The identification of the remote user.</td>
                 </tr>
             
                 <tr>
@@ -93,32 +86,6 @@ typedef enum FWPS_FIELDS_RPC_EPMAP_ {
                 <tr>
                     <td>FWPS_FIELD_RPC_EPMAP_IF_VERSION</td>
                     <td>The version of the RPC interface.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_EPMAP_LOCAL_ADDR_V4</td>
-                    <td>The local IPv4 address.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_EPMAP_LOCAL_ADDR_V6</td>
-                    <td>The local IPv6 address.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_EPMAP_LOCAL_PORT</td>
-                    <td>The local transport protocol port number.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_EPMAP_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_EPMAP_PIPE</td>
-                    <td>The name of the remote named pipe.</td>
                 </tr>
             
                 <tr>
@@ -139,18 +106,15 @@ typedef enum FWPS_FIELDS_RPC_EPMAP_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_RPC_EPMAP_REMOTE_ADDR_V4</td>
-                    <td>The remote IPv4 address.</td>
+                    <td>FWPS_FIELD_RPC_EPMAP_AUTH_TYPE</td>
+                    <td>The authentication service type. For more information about authentication service types, see
+     Authentication-Service Constants in the RPC section of the Microsoft Windows SDK documentation.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_RPC_EPMAP_REMOTE_ADDR_V6</td>
-                    <td>The remote IPv6 address.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_EPMAP_REMOTE_USER_TOKEN</td>
-                    <td>The identification of the remote user.</td>
+                    <td>FWPS_FIELD_RPC_EPMAP_AUTH_LEVEL</td>
+                    <td>The authentication service level. For more information about authentication service levels, see
+     Authentication-Service Constants in the RPC section of the Windows SDK documentation.</td>
                 </tr>
             
                 <tr>
@@ -161,6 +125,42 @@ typedef enum FWPS_FIELDS_RPC_EPMAP_ {
                 <tr>
                     <td>FWPS_FIELD_RPC_EPMAP_SEC_KEY_SIZE</td>
                     <td>The certificate-based SSPI encryption key size.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_EPMAP_LOCAL_ADDR_V4</td>
+                    <td>The local IPv4 address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_EPMAP_LOCAL_ADDR_V6</td>
+                    <td>The local IPv6 address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_EPMAP_LOCAL_PORT</td>
+                    <td>The local transport protocol port number.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_EPMAP_PIPE</td>
+                    <td>The name of the remote named pipe.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_EPMAP_REMOTE_ADDR_V4</td>
+                    <td>The remote IPv4 address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_EPMAP_REMOTE_ADDR_V6</td>
+                    <td>The remote IPv6 address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_EPMAP_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 

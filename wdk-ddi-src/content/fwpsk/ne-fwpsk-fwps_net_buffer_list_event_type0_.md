@@ -78,11 +78,9 @@ typedef enum FWPS_NET_BUFFER_LIST_EVENT_TYPE0_ {
 <table>
             
                 <tr>
-                    <td>FWPS_NET_BUFFER_LIST_CLONED_BY_NDIS</td>
-                    <td>NDIS cloned the  NET_BUFFER_LIST structure.
-
-<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
-<div> </div></td>
+                    <td>FWPS_NET_BUFFER_LIST_ENTERED_NETIO</td>
+                    <td>The <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure entered the TCP/IP stack. Packets enter the stack either from
+     the NDIS layer or as a result of a call to a WFP packet injection function.</td>
                 </tr>
             
                 <tr>
@@ -94,6 +92,16 @@ typedef enum FWPS_NET_BUFFER_LIST_EVENT_TYPE0_ {
                     <td>FWPS_NET_BUFFER_LIST_CLONED_VIA_WFP_API</td>
                     <td>The NET_BUFFER_LIST structure was cloned by a call to the 
      <a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">FwpsAllocateCloneNetBufferList0</a> function.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_NET_BUFFER_LIST_DUPLICATED_BY_NETIO</td>
+                    <td>The NET_BUFFER_LIST structure was duplicated.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_NET_BUFFER_LIST_EXIT_NETIO</td>
+                    <td>The NET_BUFFER_LIST structure is about to leave the TCP/IP stack.</td>
                 </tr>
             
                 <tr>
@@ -133,27 +141,13 @@ Upon asynchronous context removal resulting from a call to the
                 </tr>
             
                 <tr>
-                    <td>FWPS_NET_BUFFER_LIST_DUPLICATED_BY_NETIO</td>
-                    <td>The NET_BUFFER_LIST structure was duplicated.</td>
+                    <td>FWPS_NET_BUFFER_LIST_NDIS_SEND_COMPLETE</td>
+                    <td>See FWPS_NET_BUFFER_LIST_NDIS_ETHERNET_SEND_COMPLETE.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_NET_BUFFER_LIST_ENTERED_NETIO</td>
-                    <td>The <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure entered the TCP/IP stack. Packets enter the stack either from
-     the NDIS layer or as a result of a call to a WFP packet injection function.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_NET_BUFFER_LIST_EXIT_NETIO</td>
-                    <td>The NET_BUFFER_LIST structure is about to leave the TCP/IP stack.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_NET_BUFFER_LIST_NDIS_ETHERNET_RECV_COMPLETE</td>
-                    <td>The NET_BUFFER_LIST structure receive over the upper (protocol driver) NDIS 802.3 layer is complete.
-
-<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
-<div> </div></td>
+                    <td>FWPS_NET_BUFFER_LIST_NDIS_RECV_COMPLETE</td>
+                    <td>See FWPS_NET_BUFFER_LIST_NDIS_ETHERNET_RECV_COMPLETE.</td>
                 </tr>
             
                 <tr>
@@ -165,8 +159,8 @@ Upon asynchronous context removal resulting from a call to the
                 </tr>
             
                 <tr>
-                    <td>FWPS_NET_BUFFER_LIST_NDIS_NATIVE_RECV_COMPLETE</td>
-                    <td>The NET_BUFFER_LIST structure receive over the lower (miniport driver) NDIS  native layer is complete.
+                    <td>FWPS_NET_BUFFER_LIST_NDIS_ETHERNET_RECV_COMPLETE</td>
+                    <td>The NET_BUFFER_LIST structure receive over the upper (protocol driver) NDIS 802.3 layer is complete.
 
 <div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
 <div> </div></td>
@@ -181,13 +175,19 @@ Upon asynchronous context removal resulting from a call to the
                 </tr>
             
                 <tr>
-                    <td>FWPS_NET_BUFFER_LIST_NDIS_RECV_COMPLETE</td>
-                    <td>See FWPS_NET_BUFFER_LIST_NDIS_ETHERNET_RECV_COMPLETE.</td>
+                    <td>FWPS_NET_BUFFER_LIST_NDIS_NATIVE_RECV_COMPLETE</td>
+                    <td>The NET_BUFFER_LIST structure receive over the lower (miniport driver) NDIS  native layer is complete.
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_NET_BUFFER_LIST_NDIS_SEND_COMPLETE</td>
-                    <td>See FWPS_NET_BUFFER_LIST_NDIS_ETHERNET_SEND_COMPLETE.</td>
+                    <td>FWPS_NET_BUFFER_LIST_NDIS_VSWITCH_INGRESS_COMPLETE</td>
+                    <td>The NET_BUFFER_LIST structure ingres on the virtual switch is complete.
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -196,8 +196,8 @@ Upon asynchronous context removal resulting from a call to the
                 </tr>
             
                 <tr>
-                    <td>FWPS_NET_BUFFER_LIST_NDIS_VSWITCH_INGRESS_COMPLETE</td>
-                    <td>The NET_BUFFER_LIST structure ingres on the virtual switch is complete.
+                    <td>FWPS_NET_BUFFER_LIST_CLONED_BY_NDIS</td>
+                    <td>NDIS cloned the  NET_BUFFER_LIST structure.
 
 <div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
 <div> </div></td>
@@ -239,11 +239,3 @@ Upon asynchronous context removal resulting from a call to the
 
 <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistremovecontext0.md">
         FwpsNetBufferListRemoveContext0</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_NET_BUFFER_LIST_EVENT_TYPE0 enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

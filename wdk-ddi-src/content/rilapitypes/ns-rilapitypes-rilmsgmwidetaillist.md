@@ -66,19 +66,19 @@ typedef struct _RILMSGMWIDETAILLIST {
 
 
 
-`dwExecutor`
-
-
-
-`dwNumberOfDetailItems`
-
-
-
 `dwParams`
 
 
 
+`dwExecutor`
+
+
+
 `dwReferenceNumber`
+
+
+
+`dwNumberOfDetailItems`
 
 
 

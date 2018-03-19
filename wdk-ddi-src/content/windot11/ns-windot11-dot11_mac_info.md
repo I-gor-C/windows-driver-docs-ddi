@@ -60,9 +60,9 @@ typedef struct DOT11_MAC_INFO {
 ## Members
 
 
-`MacAddr`
+`uReserved`
 
-The media access control (MAC) address of a newly created 802.11 MAC entity.
+Reserved for system use.
 
 `uNdisPortNumber`
 
@@ -72,9 +72,9 @@ A ULONG value that specifies the number of the NDIS port that the 802.11 minipor
      <a href="..\ntddndis\ns-ntddndis-_ndis_port_characteristics.md">
      NDIS_PORT_CHARACTERISTICS</a> structure.
 
-`uReserved`
+`MacAddr`
 
-Reserved for system use.
+The media access control (MAC) address of a newly created 802.11 MAC entity.
 
 ## Remarks
 This structure is used with 
@@ -93,11 +93,3 @@ This structure is used with
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569124">OID_DOT11_CREATE_MAC</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MAC_INFO structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

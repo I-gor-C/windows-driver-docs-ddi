@@ -67,26 +67,6 @@ typedef struct _UNI_GLYPHSETDATA {
 ## Members
 
 
-`dwCodePageCount`
-
-Specifies the number of <a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a> structures in the array pointed to by <b>loCodePageOffset</b>.
-
-`dwFlags`
-
-Not used.
-
-`dwGlyphCount`
-
-Specifies the number of glyphs provided by this font.
-
-`dwReserved`
-
-Reserved for system use.
-
-`dwRunCount`
-
-Specifies the number of <a href="..\prntfont\ns-prntfont-_glyphrun.md">GLYPHRUN</a> structures in the array pointed to by <b>loRunOffset</b>.
-
 `dwSize`
 
 Specifies the total size, in bytes, of the .gtt file. Note that this is the total size of all structures used to define the file. This value is not the size of the UNI_GLYPHSETDATA structure.
@@ -94,6 +74,30 @@ Specifies the total size, in bytes, of the .gtt file. Note that this is the tota
 `dwVersion`
 
 Specifies the file version number, as defined in prntfont.h by a constant with a name format of UNI_GLYPHSETDATA_VERSION_<i>x</i>_<i>x</i>.
+
+`dwFlags`
+
+Not used.
+
+`lPredefinedID`
+
+Specifies one of the CC_-prefixed code conversion identifiers defined in prntfont.h.
+
+`dwGlyphCount`
+
+Specifies the number of glyphs provided by this font.
+
+`dwRunCount`
+
+Specifies the number of <a href="..\prntfont\ns-prntfont-_glyphrun.md">GLYPHRUN</a> structures in the array pointed to by <b>loRunOffset</b>.
+
+`loRunOffset`
+
+Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="..\prntfont\ns-prntfont-_glyphrun.md">GLYPHRUN</a> structures.
+
+`dwCodePageCount`
+
+Specifies the number of <a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a> structures in the array pointed to by <b>loCodePageOffset</b>.
 
 `loCodePageOffset`
 
@@ -103,13 +107,9 @@ Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure t
 
 Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of a <a href="..\prntfont\ns-prntfont-_maptable.md">MAPTABLE</a> structure.
 
-`loRunOffset`
+`dwReserved`
 
-Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="..\prntfont\ns-prntfont-_glyphrun.md">GLYPHRUN</a> structures.
-
-`lPredefinedID`
-
-Specifies one of the CC_-prefixed code conversion identifiers defined in prntfont.h.
+Reserved for system use.
 
 ## Remarks
 A UNI_GLYPHSETDATA structure must be the first structure contained in a .gtt file.
@@ -130,11 +130,3 @@ A UNI_GLYPHSETDATA structure must be the first structure contained in a .gtt fil
 
 
 <a href="..\prntfont\ns-prntfont-_glyphrun.md">GLYPHRUN</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20UNI_GLYPHSETDATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

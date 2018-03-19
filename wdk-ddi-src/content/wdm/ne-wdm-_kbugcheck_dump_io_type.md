@@ -63,13 +63,8 @@ typedef enum _KBUGCHECK_DUMP_IO_TYPE {
 <table>
             
                 <tr>
-                    <td>KbDumpIoBody</td>
-                    <td>Specifies that the crash dump data is part of the main body of the crash dump, such as the memory state at the time of the bug check.</td>
-                </tr>
-            
-                <tr>
-                    <td>KbDumpIoComplete</td>
-                    <td>Specifies that the crash dump data has been completely written.</td>
+                    <td>KbDumpIoInvalid</td>
+                    <td>Reserved for system use. Do not use.</td>
                 </tr>
             
                 <tr>
@@ -78,13 +73,18 @@ typedef enum _KBUGCHECK_DUMP_IO_TYPE {
                 </tr>
             
                 <tr>
-                    <td>KbDumpIoInvalid</td>
-                    <td>Reserved for system use. Do not use.</td>
+                    <td>KbDumpIoBody</td>
+                    <td>Specifies that the crash dump data is part of the main body of the crash dump, such as the memory state at the time of the bug check.</td>
                 </tr>
             
                 <tr>
                     <td>KbDumpIoSecondaryData</td>
                     <td>Specifies that the crash dump data is data returned by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a> routine.</td>
+                </tr>
+            
+                <tr>
+                    <td>KbDumpIoComplete</td>
+                    <td>Specifies that the crash dump data has been completely written.</td>
                 </tr>
 </table>
 
@@ -111,11 +111,3 @@ For more information about how this enumeration type is used, see <a href="https
 
 
 <a href="..\wdm\ns-wdm-_kbugcheck_dump_io.md">KBUGCHECK_DUMP_IO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KBUGCHECK_DUMP_IO_TYPE enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

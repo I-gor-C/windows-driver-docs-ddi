@@ -61,11 +61,6 @@ typedef enum _WDI_CIPHER_KEY_DIRECTION {
 <table>
             
                 <tr>
-                    <td>WDI_CIPHER_KEY_DIRECTION_BOTH</td>
-                    <td>The cipher key  decrypts packets received from or transmitted to a peer.</td>
-                </tr>
-            
-                <tr>
                     <td>WDI_CIPHER_KEY_DIRECTION_INBOUND</td>
                     <td>The cipher key decrypts packets received from a peer.</td>
                 </tr>
@@ -73,6 +68,11 @@ typedef enum _WDI_CIPHER_KEY_DIRECTION {
                 <tr>
                     <td>WDI_CIPHER_KEY_DIRECTION_OUTBOUND</td>
                     <td>The cipher key decrypts packets transmitted to a peer.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_CIPHER_KEY_DIRECTION_BOTH</td>
+                    <td>The cipher key  decrypts packets received from or transmitted to a peer.</td>
                 </tr>
 </table>
 

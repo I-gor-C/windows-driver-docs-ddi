@@ -59,7 +59,7 @@ typedef struct _RILSENDUICCTOOLKITCMDRESPONSEPARAMS {
 ## Members
 
 
-`bDetails`
+`dwSlotIndex`
 
 
 
@@ -67,7 +67,7 @@ typedef struct _RILSENDUICCTOOLKITCMDRESPONSEPARAMS {
 
 
 
-`dwSlotIndex`
+`bDetails`
 
 
 

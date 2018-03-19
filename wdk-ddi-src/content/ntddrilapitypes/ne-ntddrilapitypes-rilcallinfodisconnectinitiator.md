@@ -60,12 +60,12 @@ typedef enum _RILCALLINFODISCONNECTINITIATOR {
 <table>
             
                 <tr>
-                    <td>RIL_DISCINIT_LOCAL</td>
+                    <td>RIL_DISCINIT_UNKNOWN</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_DISCINIT_MAX</td>
+                    <td>RIL_DISCINIT_LOCAL</td>
                     <td></td>
                 </tr>
             
@@ -75,7 +75,7 @@ typedef enum _RILCALLINFODISCONNECTINITIATOR {
                 </tr>
             
                 <tr>
-                    <td>RIL_DISCINIT_UNKNOWN</td>
+                    <td>RIL_DISCINIT_MAX</td>
                     <td></td>
                 </tr>
 </table>

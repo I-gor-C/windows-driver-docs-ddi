@@ -59,14 +59,6 @@ typedef struct _D3DKMT_QUERY_PHYSICAL_ADAPTER_PNP_KEY {
 ## Members
 
 
-`pCchDest`
-
-A UINT value representing the pCchDest.
-
-`pDest`
-
-A WCHAR value respresenting the pDest.
-
 `PhysicalAdapterIndex`
 
 The physical adapter index.
@@ -74,6 +66,14 @@ The physical adapter index.
 `PnPKeyType`
 
 The type of the PNP key being queried.
+
+`pDest`
+
+A WCHAR value respresenting the pDest.
+
+`pCchDest`
+
+A UINT value representing the pCchDest.
 
 
 ## Requirements

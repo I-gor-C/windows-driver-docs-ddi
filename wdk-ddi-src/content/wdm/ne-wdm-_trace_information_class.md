@@ -75,43 +75,13 @@ typedef enum _TRACE_INFORMATION_CLASS {
 <table>
             
                 <tr>
-                    <td>AllLoggerHandlesClass</td>
-                    <td>Retrieves an array of event trace handles (TRACEHANDLE array) for all valid loggers.</td>
+                    <td>TraceIdClass</td>
+                    <td>Retrieves the logger ID (ULONG) of an event tracing session given a caller-supplied Wnode.</td>
                 </tr>
             
                 <tr>
-                    <td>DiskIoNotifyRoutinesClass</td>
-                    <td>Reserved for use by the operating system.</td>
-                </tr>
-            
-                <tr>
-                    <td>EventLoggerHandleClass</td>
-                    <td>Reserved for use by the operating system.</td>
-                </tr>
-            
-                <tr>
-                    <td>FltIoNotifyRoutinesClass</td>
-                    <td>Reserved for use by the operating system.</td>
-                </tr>
-            
-                <tr>
-                    <td>GlobalLoggerHandleClass</td>
-                    <td>Retrieves an event trace handle (TRACEHANDLE) for the global logger.</td>
-                </tr>
-            
-                <tr>
-                    <td>LoggerEventsLoggedClass</td>
-                    <td>Retrieves the number (ULONG) of events logged in a logger session given a caller-supplied logger ID (ULONG).</td>
-                </tr>
-            
-                <tr>
-                    <td>LoggerEventsLostClass</td>
-                    <td>Retrieves the number (ULONG) of events lost for a logger session given a caller-supplied logger ID (ULONG).</td>
-                </tr>
-            
-                <tr>
-                    <td>MaxTraceInformationClass</td>
-                    <td>The maximum value in this enumeration type.</td>
+                    <td>TraceHandleClass</td>
+                    <td>Retrieves a trace handle (TRACEHANDLE) for an event tracing session given a caller-supplied logger ID (ULONG).</td>
                 </tr>
             
                 <tr>
@@ -125,22 +95,52 @@ typedef enum _TRACE_INFORMATION_CLASS {
                 </tr>
             
                 <tr>
+                    <td>GlobalLoggerHandleClass</td>
+                    <td>Retrieves an event trace handle (TRACEHANDLE) for the global logger.</td>
+                </tr>
+            
+                <tr>
+                    <td>EventLoggerHandleClass</td>
+                    <td>Reserved for use by the operating system.</td>
+                </tr>
+            
+                <tr>
+                    <td>AllLoggerHandlesClass</td>
+                    <td>Retrieves an array of event trace handles (TRACEHANDLE array) for all valid loggers.</td>
+                </tr>
+            
+                <tr>
                     <td>TraceHandleByNameClass</td>
                     <td>Retrieves an event trace handle (TRACEHANDLE) identified by a caller-supplied friendly name (<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure in buffer).</td>
                 </tr>
             
                 <tr>
-                    <td>TraceHandleClass</td>
-                    <td>Retrieves a trace handle (TRACEHANDLE) for an event tracing session given a caller-supplied logger ID (ULONG).</td>
+                    <td>LoggerEventsLostClass</td>
+                    <td>Retrieves the number (ULONG) of events lost for a logger session given a caller-supplied logger ID (ULONG).</td>
                 </tr>
             
                 <tr>
-                    <td>TraceIdClass</td>
-                    <td>Retrieves the logger ID (ULONG) of an event tracing session given a caller-supplied Wnode.</td>
+                    <td>TraceSessionSettingsClass</td>
+                    <td>Retrieves the settings (<b>ETW_TRACE_SESSION_SETTINGS</b> structure) for a logger session given a caller-supplied trace handle (TRACEHANDLE).</td>
+                </tr>
+            
+                <tr>
+                    <td>LoggerEventsLoggedClass</td>
+                    <td>Retrieves the number (ULONG) of events logged in a logger session given a caller-supplied logger ID (ULONG).</td>
+                </tr>
+            
+                <tr>
+                    <td>DiskIoNotifyRoutinesClass</td>
+                    <td>Reserved for use by the operating system.</td>
                 </tr>
             
                 <tr>
                     <td>TraceInformationClassReserved1</td>
+                    <td>Reserved for use by the operating system.</td>
+                </tr>
+            
+                <tr>
+                    <td>FltIoNotifyRoutinesClass</td>
                     <td>Reserved for use by the operating system.</td>
                 </tr>
             
@@ -150,13 +150,13 @@ typedef enum _TRACE_INFORMATION_CLASS {
                 </tr>
             
                 <tr>
-                    <td>TraceSessionSettingsClass</td>
-                    <td>Retrieves the settings (<b>ETW_TRACE_SESSION_SETTINGS</b> structure) for a logger session given a caller-supplied trace handle (TRACEHANDLE).</td>
+                    <td>WdfNotifyRoutinesClass</td>
+                    <td>Reserved for use by the operating system.</td>
                 </tr>
             
                 <tr>
-                    <td>WdfNotifyRoutinesClass</td>
-                    <td>Reserved for use by the operating system.</td>
+                    <td>MaxTraceInformationClass</td>
+                    <td>The maximum value in this enumeration type.</td>
                 </tr>
 </table>
 
@@ -184,11 +184,3 @@ typedef enum _TRACE_INFORMATION_CLASS {
 
 
 <a href="..\wdm\nf-wdm-wmitracemessageva.md">WmiTraceMessageVa</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20TRACE_INFORMATION_CLASS enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

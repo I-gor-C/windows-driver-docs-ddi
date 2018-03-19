@@ -58,6 +58,10 @@ typedef struct _D3D12DDI_VIDEO_DECODER_HEAP_SIZE_DATA_0033 {
 ## Members
 
 
+`VideoDecoderHeapDesc`
+
+The video decoder heap description.
+
 `MemoryPoolL0Size`
 
 The memory pool L0 size.
@@ -65,10 +69,6 @@ The memory pool L0 size.
 `MemoryPoolL1Size`
 
 The memory pool L1 size.
-
-`VideoDecoderHeapDesc`
-
-The video decoder heap description.
 
 
 ## Requirements

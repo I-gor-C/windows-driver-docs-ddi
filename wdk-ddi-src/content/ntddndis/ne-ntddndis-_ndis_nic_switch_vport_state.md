@@ -61,6 +61,11 @@ typedef enum _NDIS_NIC_SWITCH_VPORT_STATE {
 <table>
             
                 <tr>
+                    <td>NdisNicSwitchVPortStateUndefined</td>
+                    <td>The VPort state is not defined.</td>
+                </tr>
+            
+                <tr>
                     <td>NdisNicSwitchVPortStateActivated</td>
                     <td>The VPort is allocated and in an activated state.
 
@@ -79,11 +84,6 @@ typedef enum _NDIS_NIC_SWITCH_VPORT_STATE {
                 <tr>
                     <td>NdisNicSwitchVPortStateMaximum</td>
                     <td>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisNicSwitchVPortStateUndefined</td>
-                    <td>The VPort state is not defined.</td>
                 </tr>
 </table>
 
@@ -112,11 +112,3 @@ The <b>VPortState</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_nic_s
 
 
 <b></b>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VPORT_STATE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

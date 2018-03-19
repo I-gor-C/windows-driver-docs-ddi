@@ -61,17 +61,7 @@ typedef enum _WDI_P2P_CHANNEL_INDICATE_REASON {
 <table>
             
                 <tr>
-                    <td>WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_GO_INITIATED</td>
-                    <td>eCSA initiated by GO.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_REQUESTED</td>
-                    <td>eCSA request from the peer.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_P2P_CHANNEL_INDICATE_REASON_MAX</td>
+                    <td>WDI_P2P_CHANNEL_INDICATE_REASON_UNKNOWN</td>
                     <td></td>
                 </tr>
             
@@ -81,7 +71,17 @@ typedef enum _WDI_P2P_CHANNEL_INDICATE_REASON {
                 </tr>
             
                 <tr>
-                    <td>WDI_P2P_CHANNEL_INDICATE_REASON_UNKNOWN</td>
+                    <td>WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_REQUESTED</td>
+                    <td>eCSA request from the peer.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_GO_INITIATED</td>
+                    <td>eCSA initiated by GO.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_P2P_CHANNEL_INDICATE_REASON_MAX</td>
                     <td></td>
                 </tr>
 </table>

@@ -58,6 +58,10 @@ typedef struct _INTERNAL_I8042_START_INFORMATION {
 ## Members
 
 
+`Size`
+
+Specifies the size, in bytes, of an INTERNAL_I8042_START_INFORMATION structure.
+
 `InterruptObject`
 
 Pointer to an interrupt object. I8042prt supplies the interrupt object.
@@ -65,10 +69,6 @@ Pointer to an interrupt object. I8042prt supplies the interrupt object.
 `Reserved`
 
 Reserved for future use.
-
-`Size`
-
-Specifies the size, in bytes, of an INTERNAL_I8042_START_INFORMATION structure.
 
 ## Remarks
 This structure is used with <a href="..\ntdd8042\ni-ntdd8042-ioctl_internal_i8042_keyboard_start_information.md">IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION</a> and <a href="..\ntdd8042\ni-ntdd8042-ioctl_internal_i8042_mouse_start_information.md">IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION</a> requests.
@@ -85,11 +85,3 @@ This structure is used with <a href="..\ntdd8042\ni-ntdd8042-ioctl_internal_i804
 
 
 <a href="..\ntdd8042\ni-ntdd8042-ioctl_internal_i8042_keyboard_start_information.md">IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20INTERNAL_I8042_START_INFORMATION structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

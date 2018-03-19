@@ -64,6 +64,29 @@ typedef enum _NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE {
 <table>
             
                 <tr>
+                    <td>NdisReceiveQueueOperationalStateUndefined</td>
+                    <td>The receive queue is in the 
+     Undefined state. The queue is not allocated.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisReceiveQueueOperationalStateRunning</td>
+                    <td>The receive queue is in the 
+     Running state. The queue was allocated successfully, there is at least one filter set on the
+     queue, and the miniport driver has completed, or will complete, the 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-queue-allocation-complete">
+     OID_RECEIVE_FILTER_QUEUE_ALLOCATION_COMPLETE</a> OID request with a success status.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisReceiveQueueOperationalStatePaused</td>
+                    <td>The receive queue is in the 
+     Paused state. The queue was allocated successfully with the 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-allocate-queue">
+     OID_RECEIVE_FILTER_ALLOCATE_QUEUE</a> OID. There are no filters set on the queue.</td>
+                </tr>
+            
+                <tr>
                     <td>NdisReceiveQueueOperationalStateDmaStopped</td>
                     <td>The DMA operations on the queue are stopped because the queue is being freed, and the queue is in
      the 
@@ -79,29 +102,6 @@ typedef enum _NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE {
                     <td>NdisReceiveQueueOperationalStateMaximum</td>
                     <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisReceiveQueueOperationalStatePaused</td>
-                    <td>The receive queue is in the 
-     Paused state. The queue was allocated successfully with the 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-allocate-queue">
-     OID_RECEIVE_FILTER_ALLOCATE_QUEUE</a> OID. There are no filters set on the queue.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisReceiveQueueOperationalStateRunning</td>
-                    <td>The receive queue is in the 
-     Running state. The queue was allocated successfully, there is at least one filter set on the
-     queue, and the miniport driver has completed, or will complete, the 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-queue-allocation-complete">
-     OID_RECEIVE_FILTER_QUEUE_ALLOCATION_COMPLETE</a> OID request with a success status.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisReceiveQueueOperationalStateUndefined</td>
-                    <td>The receive queue is in the 
-     Undefined state. The queue is not allocated.</td>
                 </tr>
 </table>
 
@@ -145,11 +145,3 @@ The <b>
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info.md">NDIS_RECEIVE_QUEUE_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

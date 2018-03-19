@@ -59,10 +59,6 @@ typedef struct _BDA_GDDS_DATA {
 ## Members
 
 
-`argbData`
-
-
-
 `lResult`
 
 
@@ -72,6 +68,10 @@ typedef struct _BDA_GDDS_DATA {
 
 
 `ulPercentageProgress`
+
+
+
+`argbData`
 
 
 

@@ -59,15 +59,15 @@ typedef struct _BDA_CAS_REQUESTTUNERDATA {
 ## Members
 
 
-`ucRequestConsequences`
-
-
-
 `ucRequestPriority`
 
 
 
 `ucRequestReason`
+
+
+
+`ucRequestConsequences`
 
 
 

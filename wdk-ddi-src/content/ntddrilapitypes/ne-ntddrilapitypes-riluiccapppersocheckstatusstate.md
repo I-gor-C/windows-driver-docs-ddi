@@ -60,22 +60,22 @@ typedef enum _RILUICCAPPPERSOCHECKSTATUSSTATE {
 <table>
             
                 <tr>
-                    <td>RIL_PERSOCHECKSTATE_FAIL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PERSOCHECKSTATE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PERSOCHECKSTATE_NOTREADY</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_PERSOCHECKSTATE_PASS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PERSOCHECKSTATE_FAIL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PERSOCHECKSTATE_MAX</td>
                     <td></td>
                 </tr>
 </table>

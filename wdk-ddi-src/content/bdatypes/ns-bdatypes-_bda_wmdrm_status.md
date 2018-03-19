@@ -73,6 +73,10 @@ typedef struct _BDA_WMDRM_STATUS {
 
 
 
+`uMaxStreamingPid`
+
+
+
 `ulMaxLicense`
 
 
@@ -81,15 +85,11 @@ typedef struct _BDA_WMDRM_STATUS {
 
 
 
-`ulRevInfoIssuedTime`
-
-
-
 `ulRevInfoSequenceNumber`
 
 
 
-`ulRevInfoTTL`
+`ulRevInfoIssuedTime`
 
 
 
@@ -97,11 +97,11 @@ typedef struct _BDA_WMDRM_STATUS {
 
 
 
+`ulRevInfoTTL`
+
+
+
 `ulState`
-
-
-
-`uMaxStreamingPid`
 
 
 

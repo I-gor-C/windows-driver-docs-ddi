@@ -62,12 +62,6 @@ typedef enum DOT11_DIRECTION {
 <table>
             
                 <tr>
-                    <td>DOT11_DIR_BOTH</td>
-                    <td>The 802.11 station uses the cipher key for packets received from or transmitted to the AP or peer
-     station.</td>
-                </tr>
-            
-                <tr>
                     <td>DOT11_DIR_INBOUND</td>
                     <td>The 802.11 station uses the cipher key to decrypt packets received from the access point (AP) or
      peer station.</td>
@@ -76,6 +70,12 @@ typedef enum DOT11_DIRECTION {
                 <tr>
                     <td>DOT11_DIR_OUTBOUND</td>
                     <td>The 802.11 station uses the cipher key to encrypt packets transmitted to the AP or peer
+     station.</td>
+                </tr>
+            
+                <tr>
+                    <td>DOT11_DIR_BOTH</td>
+                    <td>The 802.11 station uses the cipher key for packets received from or transmitted to the AP or peer
      station.</td>
                 </tr>
 </table>
@@ -95,11 +95,3 @@ typedef enum DOT11_DIRECTION {
 
 <a href="..\windot11\ns-windot11-dot11_cipher_key_mapping_key_value.md">
    DOT11_CIPHER_KEY_MAPPING_KEY_VALUE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_DIRECTION enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

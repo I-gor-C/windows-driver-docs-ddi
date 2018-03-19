@@ -68,13 +68,8 @@ typedef enum _NDIS_PM_WAKE_REASON_TYPE {
 <table>
             
                 <tr>
-                    <td>NdisWakeReasonMediaConnect</td>
-                    <td>The network adapter generated the wake-up event because it connected to the network media.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisWakeReasonMediaDisconnect</td>
-                    <td>The network adapter generated the wake-up event because it disconnected from the network media.</td>
+                    <td>NdisWakeReasonUnspecified</td>
+                    <td>The type of wake-up event is not specified.</td>
                 </tr>
             
                 <tr>
@@ -83,13 +78,20 @@ typedef enum _NDIS_PM_WAKE_REASON_TYPE {
                 </tr>
             
                 <tr>
-                    <td>NdisWakeReasonUnspecified</td>
-                    <td>The type of wake-up event is not specified.</td>
+                    <td>NdisWakeReasonMediaDisconnect</td>
+                    <td>The network adapter generated the wake-up event because it disconnected from the network media.</td>
                 </tr>
             
                 <tr>
-                    <td>NdisWakeReasonWlan4WayHandshakeRequest</td>
-                    <td>The 802.11 network adapter generated the wake-up event because it received the first frame of the IEEE 802.11i RSN 4-way handshake with the AP. This handshake is performed when the adapter authenticates with the AP.</td>
+                    <td>NdisWakeReasonMediaConnect</td>
+                    <td>The network adapter generated the wake-up event because it connected to the network media.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisWakeReasonWlanNLODiscovery</td>
+                    <td>The 802.11 network adapter generated the wake-up event because it detected a service set identifier (SSID) that was specified through a network list offload (NLO). 
+
+For more information about NLO, see <a href="https://msdn.microsoft.com/528838AA-4002-4923-A71B-37ADEE9B8D07">Wi-Fi Network List Offload</a>.</td>
                 </tr>
             
                 <tr>
@@ -103,10 +105,8 @@ typedef enum _NDIS_PM_WAKE_REASON_TYPE {
                 </tr>
             
                 <tr>
-                    <td>NdisWakeReasonWlanNLODiscovery</td>
-                    <td>The 802.11 network adapter generated the wake-up event because it detected a service set identifier (SSID) that was specified through a network list offload (NLO). 
-
-For more information about NLO, see <a href="https://msdn.microsoft.com/528838AA-4002-4923-A71B-37ADEE9B8D07">Wi-Fi Network List Offload</a>.</td>
+                    <td>NdisWakeReasonWlan4WayHandshakeRequest</td>
+                    <td>The 802.11 network adapter generated the wake-up event because it received the first frame of the IEEE 802.11i RSN 4-way handshake with the AP. This handshake is performed when the adapter authenticates with the AP.</td>
                 </tr>
             
                 <tr>
@@ -140,11 +140,3 @@ The
 ## See Also
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wake_reason.md">NDIS_PM_WAKE_REASON</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_WAKE_REASON_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -64,6 +64,10 @@ typedef struct _PCW_COUNTER_DESCRIPTOR {
 
 A numeric value that specifies the <b>Id</b> (identifier) associated with the instance of the counter set.
 
+`StructIndex`
+
+A numeric value that specifies the index into the array of structures that describe the counter set.
+
 `Offset`
 
 A numeric value that indicates the end of the instance list for the counter set. The value is used to ensure that a new instance will always be added to the end of the list.
@@ -71,10 +75,6 @@ A numeric value that indicates the end of the instance list for the counter set.
 `Size`
 
 A numeric value that specifies the size, in bytes, associated with the instance of the counter set.
-
-`StructIndex`
-
-A numeric value that specifies the index into the array of structures that describe the counter set.
 
 
 ## Requirements

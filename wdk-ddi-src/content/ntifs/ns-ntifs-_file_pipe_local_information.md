@@ -65,17 +65,24 @@ typedef struct _FILE_PIPE_LOCAL_INFORMATION {
 ## Members
 
 
-`CurrentInstances`
+`NamedPipeType`
 
-The number of current named pipe instances.
+One of the following named pipe types. 
 
-`InboundQuota`
-
-The inbound quota, in bytes, for the named pipe.
-
-`MaximumInstances`
-
-The maximum number of instances that can be created for this pipe. The first instance of the pipe must specify this value.
+<table>
+<tr>
+<th>Value </th>
+<th>Meaning </th>
+</tr>
+<tr>
+<td>FILE_PIPE_BYTE_STREAM_TYPE (0x00000000)</td>
+<td>Data is read from the pipe as a stream of bytes.</td>
+</tr>
+<tr>
+<td>FILE_PIPE_MESSAGE_TYPE (0x00000001)</td>
+<td>Data is read from the pipe as a stream of messages.</td>
+</tr>
+</table>
 
 `NamedPipeConfiguration`
 
@@ -107,26 +114,29 @@ One of the following named pipe configurations.
 </tr>
 </table>
 
-`NamedPipeEnd`
+`MaximumInstances`
 
-The type of the named pipe end, which specifies whether this is the client or the server side of a named pipe.
+The maximum number of instances that can be created for this pipe. The first instance of the pipe must specify this value.
 
-<table>
-<tr>
-<th>Value </th>
-<th>Meaning </th>
-</tr>
-<tr>
-<td>FILE_PIPE_CLIENT_END
-(0x00000000)</td>
-<td>This is the client end of a named pipe.</td>
-</tr>
-<tr>
-<td>FILE_PIPE_SERVER_END
-(0x00000001)</td>
-<td>This is the server end of a named pipe.</td>
-</tr>
-</table>
+`CurrentInstances`
+
+The number of current named pipe instances.
+
+`InboundQuota`
+
+The inbound quota, in bytes, for the named pipe.
+
+`ReadDataAvailable`
+
+The amount of data available, in bytes, to be read from the named pipe.
+
+`OutboundQuota`
+
+The outbound quota, in bytes, for the named pipe.
+
+`WriteQuotaAvailable`
+
+The write quota, in bytes, for the named pipe.
 
 `NamedPipeState`
 
@@ -160,9 +170,9 @@ The connection status for the named pipe. This state has one of the following va
 </tr>
 </table>
 
-`NamedPipeType`
+`NamedPipeEnd`
 
-One of the following named pipe types. 
+The type of the named pipe end, which specifies whether this is the client or the server side of a named pipe.
 
 <table>
 <tr>
@@ -170,26 +180,16 @@ One of the following named pipe types.
 <th>Meaning </th>
 </tr>
 <tr>
-<td>FILE_PIPE_BYTE_STREAM_TYPE (0x00000000)</td>
-<td>Data is read from the pipe as a stream of bytes.</td>
+<td>FILE_PIPE_CLIENT_END
+(0x00000000)</td>
+<td>This is the client end of a named pipe.</td>
 </tr>
 <tr>
-<td>FILE_PIPE_MESSAGE_TYPE (0x00000001)</td>
-<td>Data is read from the pipe as a stream of messages.</td>
+<td>FILE_PIPE_SERVER_END
+(0x00000001)</td>
+<td>This is the server end of a named pipe.</td>
 </tr>
 </table>
-
-`OutboundQuota`
-
-The outbound quota, in bytes, for the named pipe.
-
-`ReadDataAvailable`
-
-The amount of data available, in bytes, to be read from the named pipe.
-
-`WriteQuotaAvailable`
-
-The write quota, in bytes, for the named pipe.
 
 ## Remarks
 For information about pipes, see <a href="https://msdn.microsoft.com/7cb8cbe4-eec8-4dda-9cb7-8d37abcee6f4">Pipes</a>.

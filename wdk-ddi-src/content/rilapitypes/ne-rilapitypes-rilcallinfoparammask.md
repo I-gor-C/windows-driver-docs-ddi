@@ -79,22 +79,12 @@ typedef enum _RILCALLINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_CI_ADDRESS</td>
+                    <td>RIL_PARAM_CI_EXECUTOR</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CI_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CI_CALLMODIFICATIONCAUSE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CI_DESCRIPTION</td>
+                    <td>RIL_PARAM_CI_ID</td>
                     <td></td>
                 </tr>
             
@@ -104,7 +94,47 @@ typedef enum _RILCALLINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CI_DISCONNECTDETAILS</td>
+                    <td>RIL_PARAM_CI_STATUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CI_TYPE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CI_MULTIPARTY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CI_ADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CI_SUBADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CI_DESCRIPTION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CI_NUM_PRES_IND</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CI_NAME_PRES_IND</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CI_FLAGS</td>
                     <td></td>
                 </tr>
             
@@ -119,37 +149,7 @@ typedef enum _RILCALLINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CI_EXECUTOR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CI_FLAGS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CI_HANDOVERSTATE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CI_ID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CI_MULTIPARTY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CI_NAME_PRES_IND</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CI_NUM_PRES_IND</td>
+                    <td>RIL_PARAM_CI_DISCONNECTDETAILS</td>
                     <td></td>
                 </tr>
             
@@ -159,12 +159,12 @@ typedef enum _RILCALLINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CI_RTTACTION</td>
+                    <td>RIL_PARAM_CI_HANDOVERSTATE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CI_RTTCAPINFO</td>
+                    <td>RIL_PARAM_CI_CALLMODIFICATIONCAUSE</td>
                     <td></td>
                 </tr>
             
@@ -174,17 +174,17 @@ typedef enum _RILCALLINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CI_STATUS</td>
+                    <td>RIL_PARAM_CI_RTTCAPINFO</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CI_SUBADDRESS</td>
+                    <td>RIL_PARAM_CI_RTTACTION</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CI_TYPE</td>
+                    <td>RIL_PARAM_CI_ALL</td>
                     <td></td>
                 </tr>
 </table>

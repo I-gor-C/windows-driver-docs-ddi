@@ -58,6 +58,10 @@ typedef struct _BBRT_TABLE {
 ## Members
 
 
+`Header`
+
+A header.
+
 `Background`
 
 A background value.
@@ -65,10 +69,6 @@ A background value.
 `Foreground`
 
 A foreground value.
-
-`Header`
-
-A header.
 
 
 ## Requirements

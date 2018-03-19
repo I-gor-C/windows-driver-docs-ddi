@@ -59,7 +59,7 @@ typedef enum _RILALPHAIDENTIFIERPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_AI_ALL</td>
+                    <td>RIL_PARAM_AI_TYPE</td>
                     <td></td>
                 </tr>
             
@@ -69,7 +69,7 @@ typedef enum _RILALPHAIDENTIFIERPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_AI_TYPE</td>
+                    <td>RIL_PARAM_AI_ALL</td>
                     <td></td>
                 </tr>
 </table>

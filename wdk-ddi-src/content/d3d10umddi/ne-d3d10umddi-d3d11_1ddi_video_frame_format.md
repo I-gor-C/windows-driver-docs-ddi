@@ -60,8 +60,8 @@ typedef enum D3D11_1DDI_VIDEO_FRAME_FORMAT {
 <table>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST</td>
-                    <td>Frame are interlaced. The bottom field of each frame is displayed first.</td>
+                    <td>D3D11_1DDI_VIDEO_FRAME_FORMAT_PROGRESSIVE</td>
+                    <td>Frames are progressive.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum D3D11_1DDI_VIDEO_FRAME_FORMAT {
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_FRAME_FORMAT_PROGRESSIVE</td>
-                    <td>Frames are progressive.</td>
+                    <td>D3D11_1DDI_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST</td>
+                    <td>Frame are interlaced. The bottom field of each frame is displayed first.</td>
                 </tr>
 </table>
 

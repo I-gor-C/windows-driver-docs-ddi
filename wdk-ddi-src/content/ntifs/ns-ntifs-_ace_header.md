@@ -58,6 +58,47 @@ typedef struct _ACE_HEADER {
 ## Members
 
 
+`AceType`
+
+ACE type. This member can be one of the following values: 
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+ACCESS_ALLOWED_ACE_TYPE
+
+</td>
+<td>
+Access-allowed ACE that uses the ACCESS_ALLOWED_ACE structure.
+
+</td>
+</tr>
+<tr>
+<td>
+ACCESS_DENIED_ACE_TYPE
+
+</td>
+<td>
+Access-denied ACE that uses the ACCESS_DENIED_ACE structure.
+
+</td>
+</tr>
+<tr>
+<td>
+SYSTEM_AUDIT_ACE_TYPE
+
+</td>
+<td>
+System-audit ACE that uses the SYSTEM_AUDIT_ACE structure.
+
+</td>
+</tr>
+</table>
+
 `AceFlags`
 
 Set of ACE type-specific control flags. This member can be a combination of the following values: 
@@ -147,47 +188,6 @@ Used with system-audit ACEs in a SACL to generate audit messages for successful 
 
 Size, in bytes, of the ACE.
 
-`AceType`
-
-ACE type. This member can be one of the following values: 
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-ACCESS_ALLOWED_ACE_TYPE
-
-</td>
-<td>
-Access-allowed ACE that uses the ACCESS_ALLOWED_ACE structure.
-
-</td>
-</tr>
-<tr>
-<td>
-ACCESS_DENIED_ACE_TYPE
-
-</td>
-<td>
-Access-denied ACE that uses the ACCESS_DENIED_ACE structure.
-
-</td>
-</tr>
-<tr>
-<td>
-SYSTEM_AUDIT_ACE_TYPE
-
-</td>
-<td>
-System-audit ACE that uses the SYSTEM_AUDIT_ACE structure.
-
-</td>
-</tr>
-</table>
-
 ## Remarks
 The ACE_HEADER structure is the first member of the various types of ACE structures, such as ACCESS_ALLOWED_ACE. 
 
@@ -221,11 +221,3 @@ System-alarm ACEs are not currently supported. The <b>AceType</b> member cannot 
 
 
 <a href="..\ntifs\ns-ntifs-_access_denied_ace.md">ACCESS_DENIED_ACE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ACE_HEADER structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

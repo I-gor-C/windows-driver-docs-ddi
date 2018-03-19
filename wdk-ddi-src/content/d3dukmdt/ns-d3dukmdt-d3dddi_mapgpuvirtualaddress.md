@@ -68,29 +68,15 @@ typedef struct D3DDDI_MAPGPUVIRTUALADDRESS {
 ## Members
 
 
+`hPagingQueue`
+
+A handle for the device paging queue, used for the operation.
+
 `BaseAddress`
 
 (Optional) If non-<b>NULL</b>, the video memory manager will attempt to use this address as the base address for the mapping. If the range from <b>BaseAddress</b> to <b>BaseAddress</b>+<b>Size</b> isn’t free, it must belong to a range, previously obtained by calling <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a> or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_mapgpuvirtualaddresscb.md">pfnMapGpuVirtualAddressCb</a>. 
 The <b>BaseAddress</b> value is in bytes and must be aligned to CPU page boundary.
 If <b>NULL</b> is specified, the video memory manager will pick the base address for the allocation within the specified <b>MinimumAddress</b> and <b>MaximumAddress</b>.
-
-`DriverProtection`
-
-Specifies a driver specific 64bits protection value associated with the VA range being allocated. The specified driver protection will be used in call to <a href="https://msdn.microsoft.com/08328e82-d1cc-4c50-bc96-7382232676ab">DxgkDdiUpdatePageTable</a> for page table entries corresponding to this virtual address range.
-
-`hAllocation`
-
-Handle to the allocation being mapped into the GPU virtual address space. Must be <b>NULL</b> when <b>Protection.NoAccess</b> or <b>Protection.Zero</b> is specified.
-
-`hPagingQueue`
-
-A handle for the device paging queue, used for the operation.
-
-`MaximumAddress`
-
-(Optional) Specifies the maximum GPU virtual address to consider for the mapped range. the video memory manager will guarantee that <b>BaseAddress</b>+<b>Size</b> &lt;= <b>MaximumAddress</b>. If this is set to <b>NULL</b> the video memory manager will not apply any limit.
-The <b>MaximumAddress</b> value is in bytes and must be aligned to the 4KB page.
-This parameter is ignored when <b>BaseAddress</b> != NULL.
 
 `MinimumAddress`
 
@@ -98,15 +84,23 @@ This parameter is ignored when <b>BaseAddress</b> != NULL.
 The <b>MinimumAddress</b> value is in bytes and must be aligned to 4KB page. 
 This parameter is ignored when <b>BaseAddress</b> != <b>NULL.</b>
 
+`MaximumAddress`
+
+(Optional) Specifies the maximum GPU virtual address to consider for the mapped range. the video memory manager will guarantee that <b>BaseAddress</b>+<b>Size</b> &lt;= <b>MaximumAddress</b>. If this is set to <b>NULL</b> the video memory manager will not apply any limit.
+The <b>MaximumAddress</b> value is in bytes and must be aligned to the 4KB page.
+This parameter is ignored when <b>BaseAddress</b> != NULL.
+
+`hAllocation`
+
+Handle to the allocation being mapped into the GPU virtual address space. Must be <b>NULL</b> when <b>Protection.NoAccess</b> or <b>Protection.Zero</b> is specified.
+
 `OffsetInPages`
 
 Specifies the offset, in 4KB, to the starting page within the specified allocation that must be mapped.
 
-`PagingFenceValue`
+`SizeInPages`
 
-Represents the device paging fence value that the video memory manager will signal when the map operation completes on the GPU.
-The user mode driver must ensure that this fence is retired or explicitly wait on either the CPU or the GPU on that fence before allowing the GPU to access the mapped range or an unrecoverable fault may occur.
-A zero fence value might be returned, meaning that the operation is already completed.
+Specifies the size of the range to map in 4KB pages.
 
 `Protection`
 
@@ -160,6 +154,10 @@ The pages will be put to the Zero state (<b>hAllocation</b> must be <b>NULL</b>)
 </tr>
 </table>
 
+`DriverProtection`
+
+Specifies a driver specific 64bits protection value associated with the VA range being allocated. The specified driver protection will be used in call to <a href="https://msdn.microsoft.com/08328e82-d1cc-4c50-bc96-7382232676ab">DxgkDdiUpdatePageTable</a> for page table entries corresponding to this virtual address range.
+
 `Reserved0`
 
 This member is reserved and should be set to zero.
@@ -168,13 +166,15 @@ This member is reserved and should be set to zero.
 
 This member is reserved and should be set to zero.
 
-`SizeInPages`
-
-Specifies the size of the range to map in 4KB pages.
-
 `VirtualAddress`
 
 The virtual address assigned to the allocation.
+
+`PagingFenceValue`
+
+Represents the device paging fence value that the video memory manager will signal when the map operation completes on the GPU.
+The user mode driver must ensure that this fence is retired or explicitly wait on either the CPU or the GPU on that fence before allowing the GPU to access the mapped range or an unrecoverable fault may occur.
+A zero fence value might be returned, meaning that the operation is already completed.
 
 
 ## Requirements
@@ -198,11 +198,3 @@ The virtual address assigned to the allocation.
 
 
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddigpuvirtualaddress_protection_type.md">D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_MAPGPUVIRTUALADDRESS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,6 +63,11 @@ typedef enum _USBFN_BUS_SPEED {
 <table>
             
                 <tr>
+                    <td>UsbfnBusSpeedLow</td>
+                    <td>A low bandwidth bus speed of 1.5 Mbit per second.</td>
+                </tr>
+            
+                <tr>
                     <td>UsbfnBusSpeedFull</td>
                     <td>A full bandwidth bus speed of 12 MBit per second.</td>
                 </tr>
@@ -73,18 +78,13 @@ typedef enum _USBFN_BUS_SPEED {
                 </tr>
             
                 <tr>
-                    <td>UsbfnBusSpeedLow</td>
-                    <td>A low bandwidth bus speed of 1.5 Mbit per second.</td>
+                    <td>UsbfnBusSpeedSuper</td>
+                    <td>A SuperSpeed mode bus speed of 5 Gbit per second.</td>
                 </tr>
             
                 <tr>
                     <td>UsbfnBusSpeedMaximum</td>
                     <td>The maximum value of the enumeration.</td>
-                </tr>
-            
-                <tr>
-                    <td>UsbfnBusSpeedSuper</td>
-                    <td>A SuperSpeed mode bus speed of 5 Gbit per second.</td>
                 </tr>
 </table>
 

@@ -68,6 +68,18 @@ typedef struct _WDF_POWER_FRAMEWORK_SETTINGS {
 ## Members
 
 
+`Size`
+
+The size, in bytes, of this structure.
+
+`EvtDeviceWdmPostPoFxRegisterDevice`
+
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device.md">EvtDeviceWdmPostPoFxRegisterDevice</a> event callback function, or NULL.
+
+`EvtDeviceWdmPrePoFxUnregisterDevice`
+
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_pre_po_fx_unregister_device.md">EvtDeviceWdmPrePoFxUnregisterDevice</a> event callback function, or NULL.
+
 `Component`
 
 A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_po_fx_component_v2.md">PO_FX_COMPONENT</a> structure that describes the only component
@@ -85,26 +97,14 @@ A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/ha
 
 A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh450931">ComponentIdleStateCallback</a> callback function, or NULL. PoFx calls this callback function when the F-state of the component changes.
 
-`EvtDeviceWdmPostPoFxRegisterDevice`
+`PowerControlCallback`
 
-A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device.md">EvtDeviceWdmPostPoFxRegisterDevice</a> event callback function, or NULL.
-
-`EvtDeviceWdmPrePoFxUnregisterDevice`
-
-A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_pre_po_fx_unregister_device.md">EvtDeviceWdmPrePoFxUnregisterDevice</a> event callback function, or NULL.
+A pointer to the client driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439564">PowerControlCallback</a> callback function, or NULL. PoFx calls this routine to pass a request for a power control operation directly to the driver. If your driver does not support any power control codes, set this parameter to NULL.
 
 `PoFxDeviceContext`
 
 A context pointer that the framework supplies to  <a href="https://msdn.microsoft.com/library/windows/hardware/hh406416">ComponentActiveConditionCallback</a>, 
     <a href="https://msdn.microsoft.com/library/windows/hardware/hh406420">ComponentIdleConditionCallback</a>,  <a href="https://msdn.microsoft.com/library/windows/hardware/hh450931">ComponentIdleStateCallback</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/hh439564">PowerControlCallback</a>.
-
-`PowerControlCallback`
-
-A pointer to the client driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439564">PowerControlCallback</a> callback function, or NULL. PoFx calls this routine to pass a request for a power control operation directly to the driver. If your driver does not support any power control codes, set this parameter to NULL.
-
-`Size`
-
-The size, in bytes, of this structure.
 
 ## Remarks
 The <b>WDF_POWER_FRAMEWORK_SETTINGS</b> structure is used an input to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmassignpowerframeworksettings.md">WdfDeviceWdmAssignPowerFrameworkSettings</a>.
@@ -136,11 +136,3 @@ This structure is not applicable to KMDF client drivers for multiple-component d
 
 
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device.md">EvtDeviceWdmPostPoFxRegisterDevice</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_POWER_FRAMEWORK_SETTINGS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -64,19 +64,19 @@ typedef struct _RILDIALEDIDSETTINGS {
 
 
 
-`dwExecutor`
-
-
-
 `dwParams`
 
 
 
-`dwProvisioning`
+`dwExecutor`
 
 
 
 `dwStatus`
+
+
+
+`dwProvisioning`
 
 
 

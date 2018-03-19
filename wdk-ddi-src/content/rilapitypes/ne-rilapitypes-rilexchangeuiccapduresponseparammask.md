@@ -60,7 +60,7 @@ typedef enum _RILEXCHANGEUICCAPDURESPONSEPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_EUAR_ALL</td>
+                    <td>RIL_PARAM_EUAR_RESPONSEAPDULENGTH</td>
                     <td></td>
                 </tr>
             
@@ -70,7 +70,7 @@ typedef enum _RILEXCHANGEUICCAPDURESPONSEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_EUAR_RESPONSEAPDULENGTH</td>
+                    <td>RIL_PARAM_EUAR_ALL</td>
                     <td></td>
                 </tr>
 </table>

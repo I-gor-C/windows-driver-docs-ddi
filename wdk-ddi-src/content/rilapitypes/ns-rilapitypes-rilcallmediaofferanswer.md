@@ -67,15 +67,7 @@ typedef struct _RILCALLMEDIAOFFERANSWER {
 
 
 
-`dwMediaAction`
-
-
-
 `dwParams`
-
-
-
-`fChange`
 
 
 
@@ -83,11 +75,19 @@ typedef struct _RILCALLMEDIAOFFERANSWER {
 
 
 
-`stNewState`
+`fChange`
+
+
+
+`dwMediaAction`
 
 
 
 `stOldState`
+
+
+
+`stNewState`
 
 
 

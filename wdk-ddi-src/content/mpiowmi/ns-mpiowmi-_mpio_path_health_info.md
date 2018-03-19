@@ -62,13 +62,13 @@ typedef struct _MPIO_PATH_HEALTH_INFO {
 
 An unsigned 32-bitfield that returns the number of health packets available that correspond to the number of available paths under MPIO control.
 
-`PathHealthPackets`
-
-A field that contains an array with health information about all the available paths under MPIO control. The number of elements of the array is given by NumberPathPackets and each element of the array is an instance of the MPIO_PATH_HEALTH_CLASS structure.
-
 `Reserved`
 
 Should be zero.
+
+`PathHealthPackets`
+
+A field that contains an array with health information about all the available paths under MPIO control. The number of elements of the array is given by NumberPathPackets and each element of the array is an instance of the MPIO_PATH_HEALTH_CLASS structure.
 
 
 ## Requirements

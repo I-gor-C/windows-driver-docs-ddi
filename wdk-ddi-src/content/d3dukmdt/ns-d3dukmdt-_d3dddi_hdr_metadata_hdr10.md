@@ -62,21 +62,21 @@ typedef struct _D3DDDI_HDR_METADATA_HDR10 {
 ## Members
 
 
-`BluePrimary`
+`RedPrimary`
 
-The chromaticity coordinates of the blue color primary in the CIE xy color space. Index 0 contains the x coordinate and index 1 contains the y coordinate. Values are normalized to 50,000.
+The chromaticity coordinates of the red color primary in the CIE xy color space. Index 0 contains the x coordinate and index 1 contains the y coordinate. Values are normalized to 50,000.
 
 `GreenPrimary`
 
 The chromaticity coordinates of the green color primary in the CIE xy color space. Index 0 contains the x coordinate and index 1 contains the y coordinate. Values are normalized to 50,000.
 
-`MaxContentLightLevel`
+`BluePrimary`
 
-The maximum content light level (MaxCLL). This is the nit value corresponding to the brightest pixel used anywhere in the content.
+The chromaticity coordinates of the blue color primary in the CIE xy color space. Index 0 contains the x coordinate and index 1 contains the y coordinate. Values are normalized to 50,000.
 
-`MaxFrameAverageLightLevel`
+`WhitePoint`
 
-The maximum frame average light level (MaxFALL). This is the nit value corresponding to the average luminance of the frame which has the brightest average luminance anywhere in the content.
+The chromaticity coordinates of the white point in the CIE xy color space. Index 0 contains the x coordinate and index 1 contains the y coordinate. Values are normalized to 50,000.
 
 `MaxMasteringLuminance`
 
@@ -86,13 +86,13 @@ The maximum number of nits of the display used to master the content. Values are
 
 The minimum number of nits of the display used to master the content. Values are normalized to 10,000.
 
-`RedPrimary`
+`MaxContentLightLevel`
 
-The chromaticity coordinates of the red color primary in the CIE xy color space. Index 0 contains the x coordinate and index 1 contains the y coordinate. Values are normalized to 50,000.
+The maximum content light level (MaxCLL). This is the nit value corresponding to the brightest pixel used anywhere in the content.
 
-`WhitePoint`
+`MaxFrameAverageLightLevel`
 
-The chromaticity coordinates of the white point in the CIE xy color space. Index 0 contains the x coordinate and index 1 contains the y coordinate. Values are normalized to 50,000.
+The maximum frame average light level (MaxFALL). This is the nit value corresponding to the average luminance of the frame which has the brightest average luminance anywhere in the content.
 
 ## Remarks
 D3DDDI_HDR_METADATA_HDR10 has equivalent definitions to <a href="https://msdn.microsoft.com/library/windows/desktop/mt732700.aspx">DXGI_HDR_METADATA_HDR10</a>.

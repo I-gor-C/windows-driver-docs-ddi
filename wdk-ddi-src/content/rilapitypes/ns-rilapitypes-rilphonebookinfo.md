@@ -78,15 +78,15 @@ typedef struct _RILPHONEBOOKINFO {
 
 
 
-`dwMaxAdditionalNumberLength`
+`dwParams`
 
 
 
-`dwMaxAdditionalNumbers`
+`dwUsed`
 
 
 
-`dwMaxAdditionalNumberTextLength`
+`dwTotal`
 
 
 
@@ -94,11 +94,35 @@ typedef struct _RILPHONEBOOKINFO {
 
 
 
-`dwMaxEmailAddressLength`
+`dwMaxTextLength`
+
+
+
+`dwMaxAdditionalNumbers`
+
+
+
+`dwMaxAdditionalNumberLength`
+
+
+
+`dwMaxAdditionalNumberTextLength`
+
+
+
+`dwUsedAdditionalNumberStrings`
+
+
+
+`dwTotalAdditionalNumberStrings`
 
 
 
 `dwMaxEmails`
+
+
+
+`dwMaxEmailAddressLength`
 
 
 
@@ -110,23 +134,7 @@ typedef struct _RILPHONEBOOKINFO {
 
 
 
-`dwMaxSecondNameStringLength`
-
-
-
-`dwMaxTextLength`
-
-
-
-`dwParams`
-
-
-
-`dwTotal`
-
-
-
-`dwTotalAdditionalNumberStrings`
+`dwUsedGroupStrings`
 
 
 
@@ -134,15 +142,7 @@ typedef struct _RILPHONEBOOKINFO {
 
 
 
-`dwUsed`
-
-
-
-`dwUsedAdditionalNumberStrings`
-
-
-
-`dwUsedGroupStrings`
+`dwMaxSecondNameStringLength`
 
 
 

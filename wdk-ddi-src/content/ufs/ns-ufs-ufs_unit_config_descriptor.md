@@ -66,46 +66,13 @@ typedef struct _UFS_UNIT_CONFIG_DESCRIPTOR {
 ## Members
 
 
-`bBootLunID`
-
-Specifies if the logical unit is a bootable logical unit.
-
-`bDataReliability`
-
-<b>bDataReliability</b> defines the device behavior
-when a power failure occurs during a write
-operation to the logical unit:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>The logical unit is not protected. Logical
-unit's entire data may be lost as a result
-of a power failure during a write
-operation</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>The logical unit is protected. Logical unit's
-data is protected against power failure.</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
-
-`bLogicalBlockSize`
-
-Specifies the logical block size.
-
 `bLUEnable`
 
 Specifies if the logical unit is enabled.
+
+`bBootLunID`
+
+Specifies if the logical unit is a bootable logical unit.
 
 `bLUWriteProtect`
 
@@ -154,6 +121,43 @@ Specifies the Memory type of the device.
 </tr>
 </table>
 
+`dNumAllocUnits`
+
+Specifies the number of allocation units assigned to the logical unit.
+
+`bDataReliability`
+
+<b>bDataReliability</b> defines the device behavior
+when a power failure occurs during a write
+operation to the logical unit:
+
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>The logical unit is not protected. Logical
+unit's entire data may be lost as a result
+of a power failure during a write
+operation</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>The logical unit is protected. Logical unit's
+data is protected against power failure.</td>
+</tr>
+<tr>
+<td>All other values</td>
+<td>Reserved for future use.</td>
+</tr>
+</table>
+
+`bLogicalBlockSize`
+
+Specifies the logical block size.
+
 `bProvisioningType`
 
 Specifies the provisioning type.
@@ -183,17 +187,13 @@ Specifies the provisioning type.
 </tr>
 </table>
 
-`dNumAllocUnits`
+`wContextCapabilities`
 
-Specifies the number of allocation units assigned to the logical unit.
+Specifies the Context Capabilities.
 
 `Reserved`
 
 Reserved for future use.
-
-`wContextCapabilities`
-
-Specifies the Context Capabilities.
 
 
 ## Requirements

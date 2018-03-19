@@ -57,13 +57,13 @@ typedef struct _ACPI_MANIPULATE_GLOBAL_LOCK_BUFFER {
 ## Members
 
 
-`LockObject`
-
-Defines the <b>PVOID</b> member <b>LockObject</b>.
-
 `Signature`
 
 Defines the <b>ULONG</b> member <b>Signature</b>.
+
+`LockObject`
+
+Defines the <b>PVOID</b> member <b>LockObject</b>.
 
 
 ## Requirements

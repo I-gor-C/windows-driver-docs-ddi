@@ -60,25 +60,25 @@ typedef struct tag_video_configure_parms {
 ## Members
 
 
-`dwSize1`
+`lpdwReturn`
 
-Specifies the size of data buffer 1.
-
-`dwSize2`
-
-Specifies the size of data buffer 2.
+Specifies the return parameter from the configure MSG.
 
 `lpData1`
 
 Specifies a pointer to data 1.
 
+`dwSize1`
+
+Specifies the size of data buffer 1.
+
 `lpData2`
 
 Specifies a pointer to data 2.
 
-`lpdwReturn`
+`dwSize2`
 
-Specifies the return parameter from the configure MSG.
+Specifies the size of data buffer 2.
 
 
 ## Requirements

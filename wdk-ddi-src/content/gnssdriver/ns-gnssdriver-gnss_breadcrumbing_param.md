@@ -61,9 +61,13 @@ typedef struct {
 ## Members
 
 
-`MaximumErrorTimeoutMs`
+`Size`
 
-Contains the maximum error timeout in milliseconds. If the location of the device is unknown for this duration, an error must be recorded in the breadcrumb data. Errors can be recorded earlier if they were already known.
+Structure size.
+
+`Version`
+
+Version number.
 
 `MaximumHorizontalUncertainty`
 
@@ -73,17 +77,13 @@ Contains the maximum horizontal uncertainty value. Any fix with an error radius 
 
 Contains the minimum distance between fixes. Only record a fix if the center of it is at least as  far apart as this value from center of the last fix, using a Haversine distance calculation.
 
-`Size`
+`MaximumErrorTimeoutMs`
 
-Structure size.
+Contains the maximum error timeout in milliseconds. If the location of the device is unknown for this duration, an error must be recorded in the breadcrumb data. Errors can be recorded earlier if they were already known.
 
 `Unused`
 
 
-
-`Version`
-
-Version number.
 
 
 ## Requirements

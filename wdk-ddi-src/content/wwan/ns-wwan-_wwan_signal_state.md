@@ -60,6 +60,85 @@ typedef struct _WWAN_SIGNAL_STATE {
 ## Members
 
 
+`Rssi`
+
+A value that represents the strength of the wireless signal. Miniport drivers that report their
+     WWAN_CELLULAR_CLASS to be 
+     <b>WwanCellularClassGSM</b> or 
+     <b>WwanCellularClassCDMA</b> must report Rssi in decibels above the device's sensitivity noise floor.
+     
+
+<table>
+<tr>
+<th>Signal Strength (in dBm)</th>
+<th>Coded Value (Minimum=0, Maximum=31)</th>
+</tr>
+<tr>
+<td>
+-113 or less
+
+</td>
+<td>
+0
+
+</td>
+</tr>
+<tr>
+<td>
+-111
+
+</td>
+<td>
+1
+
+</td>
+</tr>
+<tr>
+<td>
+-109
+
+</td>
+<td>
+2
+
+</td>
+</tr>
+<tr>
+<td>
+...
+
+</td>
+<td>
+...
+
+</td>
+</tr>
+<tr>
+<td>
+-51 or greater
+
+</td>
+<td>
+31
+
+</td>
+</tr>
+<tr>
+<td>
+Unknown or undetectable
+
+</td>
+<td>
+WWAN_RSSI_UNKNOWN
+
+</td>
+</tr>
+</table>
+ 
+
+CDMA-based devices must report signal strength based on compensated RSSI (accounts for noise) and not
+     based on raw RSSI.
+
 `ErrorRate`
 
 A coded value that represents a percentage range of error rates. For GSM-based devices, use the
@@ -198,85 +277,6 @@ WWAN_ERROR_RATE_UNKNOWN
 </tr>
 </table>
 
-`Rssi`
-
-A value that represents the strength of the wireless signal. Miniport drivers that report their
-     WWAN_CELLULAR_CLASS to be 
-     <b>WwanCellularClassGSM</b> or 
-     <b>WwanCellularClassCDMA</b> must report Rssi in decibels above the device's sensitivity noise floor.
-     
-
-<table>
-<tr>
-<th>Signal Strength (in dBm)</th>
-<th>Coded Value (Minimum=0, Maximum=31)</th>
-</tr>
-<tr>
-<td>
--113 or less
-
-</td>
-<td>
-0
-
-</td>
-</tr>
-<tr>
-<td>
--111
-
-</td>
-<td>
-1
-
-</td>
-</tr>
-<tr>
-<td>
--109
-
-</td>
-<td>
-2
-
-</td>
-</tr>
-<tr>
-<td>
-...
-
-</td>
-<td>
-...
-
-</td>
-</tr>
-<tr>
-<td>
--51 or greater
-
-</td>
-<td>
-31
-
-</td>
-</tr>
-<tr>
-<td>
-Unknown or undetectable
-
-</td>
-<td>
-WWAN_RSSI_UNKNOWN
-
-</td>
-</tr>
-</table>
- 
-
-CDMA-based devices must report signal strength based on compensated RSSI (accounts for noise) and not
-     based on raw RSSI.
-
 `RssiInterval`
 
 The current interval, in seconds, at which the miniport driver has been set to (or the default
@@ -303,11 +303,3 @@ The current threshold, in threshold units, at which the miniport driver has been
 ## See Also
 
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_signal_state.md">NDIS_WWAN_SIGNAL_STATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SIGNAL_STATE structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

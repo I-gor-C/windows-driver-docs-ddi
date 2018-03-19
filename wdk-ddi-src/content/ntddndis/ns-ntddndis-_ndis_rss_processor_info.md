@@ -68,10 +68,6 @@ typedef struct _NDIS_RSS_PROCESSOR_INFO {
 ## Members
 
 
-`Flags`
-
-Reserved. NDIS sets this member to zero.
-
 `Header`
 
 The 
@@ -108,13 +104,9 @@ NDIS 6.30
 </tr>
 </table>
 
-`MaxNumRssProcessors`
+`Flags`
 
-The maximum number of processors that are used for RSS
-
-`PreferredNumaNode`
-
-The preferred NUMA node, which is the node closest to the NIC
+Reserved. NDIS sets this member to zero.
 
 `RssBaseProcessor`
 
@@ -123,9 +115,13 @@ The starting processor number that is used for RSS.
 <div class="alert"><b>Note</b>  The RSS base CPU number is the CPU number of the first CPU that RSS can use. RSS cannot use the CPUs that are numbered below the base CPU number.</div>
 <div> </div>
 
-`RssMaxProcessor`
+`MaxNumRssProcessors`
 
-The maximum processor number that is used for RSS.
+The maximum number of processors that are used for RSS
+
+`PreferredNumaNode`
+
+The preferred NUMA node, which is the node closest to the NIC
 
 `RssProcessorArrayOffset`
 
@@ -145,6 +141,10 @@ The number of elements in the array of <a href="..\ntddndis\ns-ntddndis-_ndis_rs
 
 The size, in bytes, of elements in the array of <a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a> structures that follows this
      structure.
+
+`RssMaxProcessor`
+
+The maximum processor number that is used for RSS.
 
 `RssProfile`
 
@@ -179,11 +179,3 @@ NDIS network drivers use the <b>NDIS_RSS_PROCESSOR_INFO</b> structure in calls t
 
 
 <a href="..\ntddndis\ne-ntddndis-_ndis_rss_profile.md">NDIS_RSS_PROFILE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_PROCESSOR_INFO structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

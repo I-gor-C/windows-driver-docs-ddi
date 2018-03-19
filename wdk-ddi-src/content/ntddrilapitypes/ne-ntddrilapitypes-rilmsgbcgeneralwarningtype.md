@@ -68,12 +68,17 @@ typedef enum _RILMSGBCGENERALWARNINGTYPE {
                 </tr>
             
                 <tr>
+                    <td>RIL_WARNINGTYPE_TSUNAMI</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_WARNINGTYPE_EARTHQUAKETSUNAMI</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_WARNINGTYPE_MAX</td>
+                    <td>RIL_WARNINGTYPE_TEST</td>
                     <td></td>
                 </tr>
             
@@ -88,12 +93,7 @@ typedef enum _RILMSGBCGENERALWARNINGTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_WARNINGTYPE_TEST</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_WARNINGTYPE_TSUNAMI</td>
+                    <td>RIL_WARNINGTYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

@@ -58,12 +58,12 @@ typedef enum _RILFUNCTIONRESULTS {
 <table>
             
                 <tr>
-                    <td>RIL_RESULT_ERROR</td>
+                    <td>RIL_RESULT_OK</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_RESULT_OK</td>
+                    <td>RIL_RESULT_ERROR</td>
                     <td></td>
                 </tr>
 </table>

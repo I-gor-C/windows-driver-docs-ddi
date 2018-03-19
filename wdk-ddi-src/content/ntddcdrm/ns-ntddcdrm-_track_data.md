@@ -61,29 +61,29 @@ typedef struct _TRACK_DATA {
 ## Members
 
 
-`Address`
+`Reserved`
 
-Indicates the starting address of the track.
-
-`Adr`
-
-Indicates the type of information encoded in the Q subchannel of the track where this table of contents entry was found. For information about the permissible values for this member, see specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS).
+Reserved.
 
 `Control`
 
 Indicates the attributes of the track. For information about the permissible values for this member, see specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS).
 
-`Reserved`
+`Adr`
 
-Reserved.
+Indicates the type of information encoded in the Q subchannel of the track where this table of contents entry was found. For information about the permissible values for this member, see specification <i>T10/1363-D Revision-02A</i>, by National Committee for Information Technology Standards (NCITS).
+
+`TrackNumber`
+
+Indicates the number of the track.
 
 `Reserved1`
 
 Reserved.
 
-`TrackNumber`
+`Address`
 
-Indicates the number of the track.
+Indicates the starting address of the track.
 
 ## Remarks
 This structure contains table of contents information for a track.
@@ -100,11 +100,3 @@ This structure contains table of contents information for a track.
 
 
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_session_data.md">CDROM_TOC_SESSION_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TRACK_DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

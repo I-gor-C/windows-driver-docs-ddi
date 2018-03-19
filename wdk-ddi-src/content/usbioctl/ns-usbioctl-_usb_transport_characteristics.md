@@ -60,17 +60,9 @@ typedef struct _USB_TRANSPORT_CHARACTERISTICS {
 ## Members
 
 
-`CurrentRoundtripLatencyInMilliSeconds`
+`Version`
 
-Contains the current round-trip delay in milliseconds from the time a non-isochronous transfer is received by the USB driver stack to the time that the transfer is completed.  
-
-For MA-USB, the underlying network could be WiFi, WiGig, Ethernet etc. The delay can vary depending on the underlying network conditions. A client driver should query the latency periodically or whenever it is notified of a change.
-
-`MaxPotentialBandwidth`
-
-Contains the total bandwidth of the host controller’s shared transport. 
-
-For MA-USB, the underlying network transport could be WiFi, WiGig, Ethernet etc. The total available bandwidth can vary depending on several factors such as the negotiation WiFi channel. A client driver should query the total bandwidth periodically or whenever it is notified of a change.
+The version is set to  USB_TRANSPORT_CHARACTERISTICS_VERSION_1.
 
 `TransportCharacteristicsFlags`
 
@@ -90,9 +82,17 @@ If USB_TRANSPORT_CHARACTERISTICS_BANDWIDTH_AVAILABLE
 
 is set, <b>MaxPotentialBandwidth</b> contains valid information. Otherwise, it must not be used by the client driver.
 
-`Version`
+`CurrentRoundtripLatencyInMilliSeconds`
 
-The version is set to  USB_TRANSPORT_CHARACTERISTICS_VERSION_1.
+Contains the current round-trip delay in milliseconds from the time a non-isochronous transfer is received by the USB driver stack to the time that the transfer is completed.  
+
+For MA-USB, the underlying network could be WiFi, WiGig, Ethernet etc. The delay can vary depending on the underlying network conditions. A client driver should query the latency periodically or whenever it is notified of a change.
+
+`MaxPotentialBandwidth`
+
+Contains the total bandwidth of the host controller’s shared transport. 
+
+For MA-USB, the underlying network transport could be WiFi, WiGig, Ethernet etc. The total available bandwidth can vary depending on several factors such as the negotiation WiFi channel. A client driver should query the total bandwidth periodically or whenever it is notified of a change.
 
 
 ## Requirements
@@ -104,11 +104,3 @@ The version is set to  USB_TRANSPORT_CHARACTERISTICS_VERSION_1.
 ## See Also
 
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_transport_characteristics.md">IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_TRANSPORT_CHARACTERISTICS structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,17 +63,21 @@ typedef struct _SUB_Q_TRACK_ISRC {
 ## Members
 
 
-`FormatCode`
-
-Should have a value of IOCTL_CDROM_TRACK_ISRC.
-
 `Header`
 
 Indicates, among other things, the length of the Q subchannel data that was retrieved. See <a href="..\ntddcdrm\ns-ntddcdrm-_sub_q_header.md">SUB_Q_HEADER</a> for further details.
 
+`FormatCode`
+
+Should have a value of IOCTL_CDROM_TRACK_ISRC.
+
 `Reserved0`
 
 Reserved.
+
+`Track`
+
+Contains the number for the track for which the ISRC value was requested.
 
 `Reserved1`
 
@@ -86,10 +90,6 @@ Reserved.
 `Tcval`
 
 Indicates that ISRC data was detected, if set to 1. Otherwise, if set to zero, indicates that <b>TrackIsrc</b> is invalid.
-
-`Track`
-
-Contains the number for the track for which the ISRC value was requested.
 
 `TrackIsrc`
 
@@ -116,11 +116,3 @@ Contains an array that holds the tracking ISRC data.
 
 
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_q_channel.md">IOCTL_CDROM_READ_Q_CHANNEL</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SUB_Q_TRACK_ISRC structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

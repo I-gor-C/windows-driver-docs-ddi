@@ -96,6 +96,12 @@ typedef struct _DDPIXELFORMAT {
 ## Members
 
 
+`dwSize`
+
+Specifies the size in bytes of the DDPIXELFORMAT structure. The driver must initialize this member before the structure is used.
+
+<b>DirectX 9.0 and later versions only.</b> Specifies, on input, the version of the Microsoft DirectX runtime being used by the application. This member is set to DD_RUNTIME_VERSION, which is 0x00000900 for DirectX 9.0, in the <b>format</b> member of the <a href="..\d3dhal\ns-d3dhal-_dd_getformatdata.md">DD_GETFORMATDATA</a> structure for a D3DGDI2_TYPE_GETFORMAT query.
+
 `dwFlags`
 
 Indicates a set of flags that specify optional control flags. This member is a bitwise OR of any of the following values:
@@ -330,12 +336,6 @@ The surface is in RGBZ format.
 `dwFourCC`
 
 Specifies a surface format code including any of the codes in the D3DFORMAT enumerated type. Some <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">FOURCC</a> codes are part of D3DFORMAT. For more information about D3DFORMAT, see the SDK documentation. Hardware vendors can also define and supply format codes that are specific to their hardware.
-
-`dwSize`
-
-Specifies the size in bytes of the DDPIXELFORMAT structure. The driver must initialize this member before the structure is used.
-
-<b>DirectX 9.0 and later versions only.</b> Specifies, on input, the version of the Microsoft DirectX runtime being used by the application. This member is set to DD_RUNTIME_VERSION, which is 0x00000900 for DirectX 9.0, in the <b>format</b> member of the <a href="..\d3dhal\ns-d3dhal-_dd_getformatdata.md">DD_GETFORMATDATA</a> structure for a D3DGDI2_TYPE_GETFORMAT query.
 
 ## Remarks
 The DirectX 8.0 and later runtime imposes the following rules on the operation (op) list:

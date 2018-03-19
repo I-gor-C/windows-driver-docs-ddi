@@ -60,15 +60,15 @@ typedef struct _WSK_REGISTRATION {
 ## Members
 
 
+`ReservedRegistrationState`
+
+Reserved for system use. Do not use.
+
 `ReservedRegistrationContext`
 
 Reserved for system use. Do not use.
 
 `ReservedRegistrationLock`
-
-Reserved for system use. Do not use.
-
-`ReservedRegistrationState`
 
 Reserved for system use. Do not use.
 

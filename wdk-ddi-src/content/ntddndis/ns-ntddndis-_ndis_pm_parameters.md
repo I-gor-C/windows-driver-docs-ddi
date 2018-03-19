@@ -63,48 +63,29 @@ typedef struct _NDIS_PM_PARAMETERS {
 ## Members
 
 
-`EnabledProtocolOffloads`
+`Header`
 
-A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags that correspond to capabilities that the
-     miniport driver reported in the 
-     <b>SupportedProtocolOffloads</b> member of the 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_pm_capabilities.md">NDIS_PM_CAPABILITIES</a> structure. NDIS
-     uses these flags to enable the low power protocol offload capabilities on a network adapter. The
-     following flags are used:
-     
+The type, revision, and size of the <b>NDIS_PM_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+
+The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_PM_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
 
 
 
 
-#### NDIS_PM_PROTOCOL_OFFLOAD_ARP_ENABLED
+#### NDIS_PM_PARAMETERS_REVISION_2
 
-If this bit is set, the overlying driver will request the network adapter to enable the ARP
-       protocol offload capability. As soon as this protocol offload has been configured by a set request of 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff569763">OID_PM_ADD_PROTOCOL_OFFLOAD</a>,
-       the driver should enable the network adapter to respond to IPv4 ARP packets while it is in a low-power
-       state.
+Added various changes for NDIS 6.30.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_CAPABILITIES_REVISION_2.
 
 
 
-#### NDIS_PM_PROTOCOL_OFFLOAD_NS_ENABLED
+#### NDIS_PM_PARAMETERS_REVISION_1
 
-If this bit is set, the overlying driver will request the network adapter to enable the IPv6
-       Neighbor Solicitation (NS) protocol offload capability. As soon as this protocol offload has been
-       configured by a set request of 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff569763">OID_PM_ADD_PROTOCOL_OFFLOAD</a>,
-       the driver should enable the network adapter to respond to NS packets while it is in a low-power state.
+Original version for NDIS 6.20.
 
-
-
-#### NDIS_PM_PROTOCOL_OFFLOAD_80211_RSN_REKEY_ENABLED
-
-If this bit is set, the overlying driver will request the network adapter to enable the IEEE
-       802.11i Robust Security Network (RSN) protocol offload capability. As soon as this protocol offload
-       has been configured by a set request of 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff569763">OID_PM_ADD_PROTOCOL_OFFLOAD</a>,
-       the driver should enable the network adapter to respond to RSN re-key requests packets while it is in a low power
-       state.
+Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_CAPABILITIES_REVISION_1.
 
 `EnabledWoLPacketPatterns`
 
@@ -212,29 +193,100 @@ A value from the incoming packet in the location specified by the WOL pattern is
          source and destination addresses, as well as unspecified source and destination ports.</div>
 <div> </div>
 
-`Header`
+`EnabledProtocolOffloads`
 
-The type, revision, and size of the <b>NDIS_PM_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
-
-The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_PM_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
-
-
-
-
-
-#### NDIS_PM_PARAMETERS_REVISION_2
-
-Added various changes for NDIS 6.30.
-
-Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_CAPABILITIES_REVISION_2.
+A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags that correspond to capabilities that the
+     miniport driver reported in the 
+     <b>SupportedProtocolOffloads</b> member of the 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_pm_capabilities.md">NDIS_PM_CAPABILITIES</a> structure. NDIS
+     uses these flags to enable the low power protocol offload capabilities on a network adapter. The
+     following flags are used:
+     
 
 
 
-#### NDIS_PM_PARAMETERS_REVISION_1
 
-Original version for NDIS 6.20.
 
-Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_CAPABILITIES_REVISION_1.
+#### NDIS_PM_PROTOCOL_OFFLOAD_ARP_ENABLED
+
+If this bit is set, the overlying driver will request the network adapter to enable the ARP
+       protocol offload capability. As soon as this protocol offload has been configured by a set request of 
+       <a href="https://msdn.microsoft.com/library/windows/hardware/ff569763">OID_PM_ADD_PROTOCOL_OFFLOAD</a>,
+       the driver should enable the network adapter to respond to IPv4 ARP packets while it is in a low-power
+       state.
+
+
+
+#### NDIS_PM_PROTOCOL_OFFLOAD_NS_ENABLED
+
+If this bit is set, the overlying driver will request the network adapter to enable the IPv6
+       Neighbor Solicitation (NS) protocol offload capability. As soon as this protocol offload has been
+       configured by a set request of 
+       <a href="https://msdn.microsoft.com/library/windows/hardware/ff569763">OID_PM_ADD_PROTOCOL_OFFLOAD</a>,
+       the driver should enable the network adapter to respond to NS packets while it is in a low-power state.
+
+
+
+#### NDIS_PM_PROTOCOL_OFFLOAD_80211_RSN_REKEY_ENABLED
+
+If this bit is set, the overlying driver will request the network adapter to enable the IEEE
+       802.11i Robust Security Network (RSN) protocol offload capability. As soon as this protocol offload
+       has been configured by a set request of 
+       <a href="https://msdn.microsoft.com/library/windows/hardware/ff569763">OID_PM_ADD_PROTOCOL_OFFLOAD</a>,
+       the driver should enable the network adapter to respond to RSN re-key requests packets while it is in a low power
+       state.
+
+`WakeUpFlags`
+
+A ULONG value that contains a bitwise OR of NDIS_PM_WAKE_ON_
+     <i>Xxx</i> flags. NDIS uses these flags to enable wake-up capabilities on
+     a network adapter. This member uses the following flags:
+     
+
+
+
+
+
+#### NDIS_PM_WAKE_ON_LINK_CHANGE_ENABLED
+
+If this flag is set, the network adapter is enabled to generate a wake-up event when the link state changes from
+       media disconnected to media connected. 
+       
+
+For more information about this WOL capability, see 
+       <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/low-power-on-media-disconnect">Low Power on Media
+       Disconnect</a>.
+
+
+
+#### NDIS_PM_WAKE_ON_MEDIA_DISCONNECT_ENABLED
+
+If this flag is set, the network adapter is enabled to generate a wake-up event when the link state changes from
+       media connected to media disconnected.
+
+
+
+#### NDIS_PM_SELECTIVE_SUSPEND_ENABLED
+
+If this flag is set, the  network adapter is enabled to generate a wake-up event whenever  one of the following events occurs:
+
+<ul>
+<li>
+The network adapter receives a packet that matches a receive packet filter. The adapter is configured with these filters through OID set requests of <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-current-packet-filter">OID_GEN_CURRENT_PACKET_FILTER</a>.
+
+</li>
+<li>
+The network adapter detects other external events that require processing by the networking driver stack, such as when the  link state changes to either media disconnect or media connected.
+
+</li>
+</ul>
+<div class="alert"><b>Note</b>  The <b>NDIS_PM_SELECTIVE_SUSPEND_ENABLED</b>  flag is available in NDIS 6.30 and later.</div>
+<div> </div>
+<div class="alert"><b>Note</b>  If this flag is set, no other power management flags can be set in the <b>WakeUpFlags</b> member and the <b>EnabledWoLPacketPatterns</b> member must be set to zero.</div>
+<div> </div>
+If NDIS sets the <b>NDIS_PM_SELECTIVE_SUSPEND_ENABLED</b> flag, it issues the OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569768">OID_PM_PARAMETERS</a> directly to the miniport driver. This allows NDIS to bypass the processing by filter drivers in the networking driver stack.
+
+For more information about the selective suspend power management capability, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh451659">NDIS Selective Suspend</a>.
 
 `MediaSpecificWakeUpEvents`
 
@@ -301,58 +353,6 @@ If this flag is set, the MB network adapter is enabled to generate a wake-up eve
 
 If this flag is set, the MB network adapter is enabled to generate a wake-up event when the UICC (SIM) card is inserted, removed, or enters an error state. This flag is new in Windows 10.
 
-`WakeUpFlags`
-
-A ULONG value that contains a bitwise OR of NDIS_PM_WAKE_ON_
-     <i>Xxx</i> flags. NDIS uses these flags to enable wake-up capabilities on
-     a network adapter. This member uses the following flags:
-     
-
-
-
-
-
-#### NDIS_PM_WAKE_ON_LINK_CHANGE_ENABLED
-
-If this flag is set, the network adapter is enabled to generate a wake-up event when the link state changes from
-       media disconnected to media connected. 
-       
-
-For more information about this WOL capability, see 
-       <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/low-power-on-media-disconnect">Low Power on Media
-       Disconnect</a>.
-
-
-
-#### NDIS_PM_WAKE_ON_MEDIA_DISCONNECT_ENABLED
-
-If this flag is set, the network adapter is enabled to generate a wake-up event when the link state changes from
-       media connected to media disconnected.
-
-
-
-#### NDIS_PM_SELECTIVE_SUSPEND_ENABLED
-
-If this flag is set, the  network adapter is enabled to generate a wake-up event whenever  one of the following events occurs:
-
-<ul>
-<li>
-The network adapter receives a packet that matches a receive packet filter. The adapter is configured with these filters through OID set requests of <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-current-packet-filter">OID_GEN_CURRENT_PACKET_FILTER</a>.
-
-</li>
-<li>
-The network adapter detects other external events that require processing by the networking driver stack, such as when the  link state changes to either media disconnect or media connected.
-
-</li>
-</ul>
-<div class="alert"><b>Note</b>  The <b>NDIS_PM_SELECTIVE_SUSPEND_ENABLED</b>  flag is available in NDIS 6.30 and later.</div>
-<div> </div>
-<div class="alert"><b>Note</b>  If this flag is set, no other power management flags can be set in the <b>WakeUpFlags</b> member and the <b>EnabledWoLPacketPatterns</b> member must be set to zero.</div>
-<div> </div>
-If NDIS sets the <b>NDIS_PM_SELECTIVE_SUSPEND_ENABLED</b> flag, it issues the OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569768">OID_PM_PARAMETERS</a> directly to the miniport driver. This allows NDIS to bypass the processing by filter drivers in the networking driver stack.
-
-For more information about the selective suspend power management capability, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh451659">NDIS Selective Suspend</a>.
-
 ## Remarks
 The <b>NDIS_PM_PARAMETERS</b> structure specifies the enabled power management hardware capabilities for the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569768">OID_PM_PARAMETERS</a> OID. When the
@@ -402,11 +402,3 @@ An overlying driver should not try to enable capabilities that a network adapter
 
 
 <a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

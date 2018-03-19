@@ -59,21 +59,21 @@ typedef struct _SM_RemovePersistentBinding_IN {
 ## Members
 
 
+`HbaPortWWN`
+
+The worldwide name (WWN) of the local port whose events the WMI client will receive.
+
 `DomainPortWWN`
 
 A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.
-
-`Entry`
-
-An array of structures of type SMHBA_SCSIENTRY that describes an HBA's bindings between the operating system and the SAS identifiers.
 
 `EntryCount`
 
 The total number of persistent bindings that are associated with the HBA.
 
-`HbaPortWWN`
+`Entry`
 
-The worldwide name (WWN) of the local port whose events the WMI client will receive.
+An array of structures of type SMHBA_SCSIENTRY that describes an HBA's bindings between the operating system and the SAS identifiers.
 
 ## Remarks
 The WMI tool suite generates a declaration of the SM_RemovePersistentBinding_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.

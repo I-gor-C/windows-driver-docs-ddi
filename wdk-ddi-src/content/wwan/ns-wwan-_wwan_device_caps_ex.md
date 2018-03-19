@@ -76,66 +76,39 @@ typedef struct _WWAN_DEVICE_CAPS_EX {
 ## Members
 
 
-`CellularClassListHeader`
+`WwanDeviceType`
 
-A formatted WWAN_LIST_HEADER object that represents a list of cellular classes that a multi-mode capable device supports. The <b>ElementType</b> member in WWAN_LIST_HEADER should always be set to <b>WwanStructCellularClass</b>. The <b>ElementCount</b> member in WWAN_LIST_HEADER is set to the number of cellular classes that follow the WWAN_LIST_HEADER structure. MB devices that are not multi-mode capable should set <b>ElementCount</b> to 0.
+The type of the device. Miniport drivers must set the device type to be a value other than 
+     <b>WwanDeviceTypeUnknown</b>.
 
-`CustomBandClass`
+`WwanCellularClass`
 
-A NULL-terminated string that represents the name of the custom band class. This member is valid
-     only when the miniport driver sets the WWAN_BAND_CLASS_CUSTOM bit in either the 
-     <b>WwanGsmBandClass</b> or 
-     <b>WwanCdmaBandClass</b> members, as appropriate.
+The cellular class of the device. Miniport drivers must set the cellular class to be a value other
+     than 
+     <b>WwanCellularClassUnknown</b>. The values in this member control features that are specific to
+     cellular technology, such as network provider registration modes.
 
-`CustomDataClass`
+Miniport drivers that support multi-mode should set this to <b>WwanCellularClassGsm.</b>
 
-A NULL-terminated string that represents the name of the custom data-class. This member is valid
-     only when the miniport driver sets the WWAN_DATA_CLASS_CUSTOM bit in the 
-     <b>WwanDataClass</b> member.
+`WwanVoiceClass`
 
-`DeviceId`
+The voice class of the device. This member informs the MB Service about the presence of circuit
+     voice service, and how such service interacts with data service. Be aware that the MB Service does not
+     support circuit-switched voice natively, nor does it preclude it. It is up to the miniport driver to
+     determine how to support circuit voice. This 
+     <b>WwanVoiceClass</b> member allows the MB Service to support this feature in the future.
 
-A NULL-terminated string that represents the device ID.
+`WwanSimClass`
 
-For GSM-based devices, the string must
-     conform to the International Mobile Equipment Identity (IMEI) format (up to 15 digits).
+The class of the Subscriber Identity Module (SIM card). Miniport drivers must set the SIM class to
+     be a value other than 
+     <b>WwanSimClassUnknown</b>.
 
-For CDMA-based
-     devices, the string must conform to both the Electronic Serial Number (ESN, 11 digits) and Mobile
-     Equipment Identifier (MEID, 17 digits) formats.
+`WwanDataClass`
 
-For multi-mode capable miniport drivers, for example those that set the <b>WWAN_CTRL_CAPS_MULTI_MODE</b> flag in <b>WwanControlCaps</b>, only the GSM-based <b>DeviceId</b> must be reported.
-
-This value should be stored in the device's memory and
-     must be available even when the MB device/SIM requires a PIN to unlock.
-
-`ExecutorIndex`
-
-The <b>WwanDeviceType</b> member for <b>WWAN_DEVICE_CAPS_EX</b> no longer refers to the modem device but rather to an individual executor. Each device is an RF executor entity of which the OS is aware.
-
-`FirmwareInfo`
-
-A NULL-terminated string that represents the firmware specific information about the device. This
-     member is optional.
-
-`Manufacturer`
-
-A NULL-terminated string that represents the manufacturer of the device. This member is
-     optional.
-
-`MaxActivatedContexts`
-
-The maximum number of activated contexts that are supported by the device. Miniport drivers should
-     enforce this limit by failing any activation attempts that exceed 
-     <b>MaxActivatedContexts</b>.
-
-`Model`
-
-A NULL-terminated string that represents the model of the device. This member is optional.
-
-`WwanAuthAlgoCaps`
-
-A bitmap that represents the types of authentication methods the MB device supports.
+A bitmap that represents the data-class(es) that the device supports. The following table shows
+     the possible values for this member.
+     
 
 <table>
 <tr>
@@ -144,45 +117,308 @@ A bitmap that represents the types of authentication methods the MB device suppo
 </tr>
 <tr>
 <td>
-WWAN_AUTH_ALGO_CAPS_NONE
+WWAN_DATA_CLASS_NONE
 
 </td>
 <td>
-The MB device does not support any authentication methods.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_AUTH_ALGO_CAPS_SIM
-
-</td>
-<td>
-The MB device supports the SIM authentication method.
+The device does not support data service.
 
 </td>
 </tr>
 <tr>
 <td>
-WWAN_AUTH_ALGO_CAPS_AKA
+WWAN_DATA_CLASS_GPRS
 
 </td>
 <td>
-The MB device supports the AKA authentication method.
+General Packet Radio Service (GPRS) data service is supported. This value applies only to
+        GSM-based devices.
 
 </td>
 </tr>
 <tr>
 <td>
-WWAN_AUTH_ALGO_CAPS_AKAP
+WWAN_DATA_CLASS_EDGE
 
 </td>
 <td>
-The MB device supports the AKA' (AKA Prime) authentication method.
+Enhanced Data for Global Evolution (EDGE) data service is supported. This value applies only to
+        GSM-based devices.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_DATA_CLASS_UMTS
+
+</td>
+<td>
+Universal Mobile Telecommunications System (UMTS) data service is supported. This value applies
+        only to GSM-based devices.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_DATA_CLASS_HSDPA
+
+</td>
+<td>
+High-Speed Downlink Packet Access (HSDPA) data service is supported. This value applies only to
+        GSM-based devices.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_DATA_CLASS_HSUPA
+
+</td>
+<td>
+High-Speed Uplink Packet Access (HSUPA) data service is supported. This value applies only to
+        GSM-based devices.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_DATA_CLASS_LTE
+
+</td>
+<td>
+LTE data service is supported. This value applies only to GSM-based devices.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_DATA_CLASS_1XRTT
+
+</td>
+<td>
+CDMA 1x Radio Transmission Technology (1xRTT, also known as cdma2000, CDMA2000 1x, and so on) data
+        service is supported. This value applies only to CDMA-based devices.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_DATA_CLASS_1XEVDO
+
+</td>
+<td>
+CDMA Evolution-Data Optimized (originally Data Only, 1xEDVO, also known as CDMA2000 1x EV-DO, or
+        1x EVDO) data service is supported. This value applies only to CDMA-based devices.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_DATA_CLASS_1XEVDO_REVA
+
+</td>
+<td>
+1xEVDO RevA data service is supported. This value applies only to CDMA-based devices.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_DATA_CLASS_1XEVDV
+
+</td>
+<td>
+CDMA Evolution-Data/Voice (also known as CDMA 2000 1x EV-DV, or 1x EVDV) data service is
+        supported. This value applies only to CDMA-based devices.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_DATA_CLASS_3XRTT
+
+</td>
+<td>
+CDMA 3x Radio Transmission Technology (3xRTT) data service is supported. This value applies only
+        to CDMA-based devices.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_DATA_CLASS_1XEVDO_REVB
+
+</td>
+<td>
+1xEVDO RevB data service is supported. This value applies only to CDMA-based devices.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_DATA_CLASS_UMB
+
+</td>
+<td>
+UMB data service is supported. This value applies only to CDMA-based devices.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_DATA_CLASS_CUSTOM
+
+</td>
+<td>
+The device supports a data service not listed in this table.
 
 </td>
 </tr>
 </table>
+
+`CustomDataClass`
+
+A NULL-terminated string that represents the name of the custom data-class. This member is valid
+     only when the miniport driver sets the WWAN_DATA_CLASS_CUSTOM bit in the 
+     <b>WwanDataClass</b> member.
+
+`WwanGsmBandClass`
+
+A bitmap that represents the frequency bands GSM-based devices support. The following table shows
+     the possible values for this member.
+     
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+WWAN_BAND_CLASS_UNKNOWN
+
+</td>
+<td>
+The frequency band that is supported by the device is not given.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_BAND_CLASS_I
+
+</td>
+<td>
+The device supports the UMTS2100 spectrum.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_BAND_CLASS_II
+
+</td>
+<td>
+The device supports the UMTS1900 spectrum.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_BAND_CLASS_III
+
+</td>
+<td>
+The device supports the UMTS1800 spectrum.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_BAND_CLASS_IV
+
+</td>
+<td>
+The device supports the AWS spectrum.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_BAND_CLASS_V
+
+</td>
+<td>
+The device supports the UMTS850 spectrum.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_BAND_CLASS_VI
+
+</td>
+<td>
+The device supports the UMTS800 spectrum.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_BAND_CLASS_VII
+
+</td>
+<td>
+The device supports the UMTS2600 spectrum.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_BAND_CLASS_VIII
+
+</td>
+<td>
+The device supports the UMTS900 spectrum.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_BAND_CLASS_IX
+
+</td>
+<td>
+The device supports the UMTS1700 spectrum.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_BAND_CLASS_X
+
+</td>
+<td></td>
+</tr>
+<tr>
+<td>
+WWAN_BAND_CLASS_CUSTOM
+
+</td>
+<td>
+The device supports a spectrum other than those listed in this table.
+
+</td>
+</tr>
+</table>
+ 
+
+If the miniport driver specifies WWAN_BAND_CLASS_CUSTOM, it should also provide the name of the
+     data-class in 
+     <b>CustomBandClass</b> .
+
+For more information about these values, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569824">OID_WWAN_DEVICE_CAPS</a>.
 
 `WwanCdmaBandClass`
 
@@ -405,14 +641,89 @@ If the miniport driver specifies WWAN_BAND_CLASS_CUSTOM, it should also provide 
 For more information about these values, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569824">OID_WWAN_DEVICE_CAPS</a>.
 
-`WwanCellularClass`
+`CustomBandClass`
 
-The cellular class of the device. Miniport drivers must set the cellular class to be a value other
-     than 
-     <b>WwanCellularClassUnknown</b>. The values in this member control features that are specific to
-     cellular technology, such as network provider registration modes.
+A NULL-terminated string that represents the name of the custom band class. This member is valid
+     only when the miniport driver sets the WWAN_BAND_CLASS_CUSTOM bit in either the 
+     <b>WwanGsmBandClass</b> or 
+     <b>WwanCdmaBandClass</b> members, as appropriate.
 
-Miniport drivers that support multi-mode should set this to <b>WwanCellularClassGsm.</b>
+`WwanSmsCaps`
+
+A bitmap that represents the type of SMS messages and directional flow that the device supports.
+     The following table shows the valid SMS capabilities settings.
+     
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+WWAN_SMS_CAPS_NONE
+
+</td>
+<td>
+The device does not support SMS messages.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_SMS_CAPS_PDU_SEND
+
+</td>
+<td>
+For GSM-based devices, this value means that the device supports sending PDU-style SMS
+        messages.
+
+For CDMA-based devices, this value means that the device is capable of sending SMS messages in
+        binary format as defined in section "3.4.2.1 SMS Point-to-Point Message" in 3GPP2 specification
+        C.S0015-A "Short Message Service (SMS) for Wideband Spread Spectrum Systems".
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_SMS_CAPS_PDU_RECEIVE
+
+</td>
+<td>
+For GSM-based devices, this value means that the device supports receiving PDU-style SMS
+        messages.
+
+For CDMA-based devices, this value means that the device is capable of reading the SMS messages in
+        binary format as defined in section "3.4.2.1 SMS Point-to-Point Message" in the 3GPP2 specification
+        C.S0015-A "Short Message Service (SMS) for Wideband Spread Spectrum Systems".
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_SMS_CAPS_TEXT_SEND
+
+</td>
+<td>
+The device supports sending Text-style SMS messages. This flag applies for CDMA-based devices.
+
+</td>
+</tr>
+<tr>
+<td>
+WWAN_SMS_CAPS_TEXT_RECEIVE
+
+</td>
+<td>
+The device supports receiving Text-style SMS messages. This flag applies for CDMA-based
+        devices.
+
+</td>
+</tr>
+</table>
+ 
+
+Miniport drivers should set this member to reflect support for only GSM PDU format for receiving and sending SMS when the current home provider is multi-mode capable. Therefure, if the miniport driver receives a SMS in the cellular class native format, for example CDMA TEXT or CDMA PDU, then the miniport driver is required to do the translation to GSM PDU and indicate it to the MB Service. Similarly if the miniport driver receives a send request in GSM PDU format then it is required to do the translation to its native cellular class format.
 
 `WwanControlCaps`
 
@@ -536,188 +847,45 @@ Miniport drivers of CDMA-based devices must specify WWAN_CTRL_CAPS_CDMA_MOBILE_I
      WWAN_CTRL_CAPS_CDMA_SIMPLE_IP, or both flags to inform the MB Service about the type of IP that the
      device supports.
 
-`WwanDataClass`
+`DeviceId`
 
-A bitmap that represents the data-class(es) that the device supports. The following table shows
-     the possible values for this member.
-     
+A NULL-terminated string that represents the device ID.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_NONE
+For GSM-based devices, the string must
+     conform to the International Mobile Equipment Identity (IMEI) format (up to 15 digits).
 
-</td>
-<td>
-The device does not support data service.
+For CDMA-based
+     devices, the string must conform to both the Electronic Serial Number (ESN, 11 digits) and Mobile
+     Equipment Identifier (MEID, 17 digits) formats.
 
-</td>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_GPRS
+For multi-mode capable miniport drivers, for example those that set the <b>WWAN_CTRL_CAPS_MULTI_MODE</b> flag in <b>WwanControlCaps</b>, only the GSM-based <b>DeviceId</b> must be reported.
 
-</td>
-<td>
-General Packet Radio Service (GPRS) data service is supported. This value applies only to
-        GSM-based devices.
+This value should be stored in the device's memory and
+     must be available even when the MB device/SIM requires a PIN to unlock.
 
-</td>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_EDGE
+`Manufacturer`
 
-</td>
-<td>
-Enhanced Data for Global Evolution (EDGE) data service is supported. This value applies only to
-        GSM-based devices.
+A NULL-terminated string that represents the manufacturer of the device. This member is
+     optional.
 
-</td>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_UMTS
+`Model`
 
-</td>
-<td>
-Universal Mobile Telecommunications System (UMTS) data service is supported. This value applies
-        only to GSM-based devices.
+A NULL-terminated string that represents the model of the device. This member is optional.
 
-</td>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_HSDPA
+`FirmwareInfo`
 
-</td>
-<td>
-High-Speed Downlink Packet Access (HSDPA) data service is supported. This value applies only to
-        GSM-based devices.
+A NULL-terminated string that represents the firmware specific information about the device. This
+     member is optional.
 
-</td>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_HSUPA
+`MaxActivatedContexts`
 
-</td>
-<td>
-High-Speed Uplink Packet Access (HSUPA) data service is supported. This value applies only to
-        GSM-based devices.
+The maximum number of activated contexts that are supported by the device. Miniport drivers should
+     enforce this limit by failing any activation attempts that exceed 
+     <b>MaxActivatedContexts</b>.
 
-</td>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_LTE
+`WwanAuthAlgoCaps`
 
-</td>
-<td>
-LTE data service is supported. This value applies only to GSM-based devices.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_1XRTT
-
-</td>
-<td>
-CDMA 1x Radio Transmission Technology (1xRTT, also known as cdma2000, CDMA2000 1x, and so on) data
-        service is supported. This value applies only to CDMA-based devices.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_1XEVDO
-
-</td>
-<td>
-CDMA Evolution-Data Optimized (originally Data Only, 1xEDVO, also known as CDMA2000 1x EV-DO, or
-        1x EVDO) data service is supported. This value applies only to CDMA-based devices.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_1XEVDO_REVA
-
-</td>
-<td>
-1xEVDO RevA data service is supported. This value applies only to CDMA-based devices.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_1XEVDV
-
-</td>
-<td>
-CDMA Evolution-Data/Voice (also known as CDMA 2000 1x EV-DV, or 1x EVDV) data service is
-        supported. This value applies only to CDMA-based devices.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_3XRTT
-
-</td>
-<td>
-CDMA 3x Radio Transmission Technology (3xRTT) data service is supported. This value applies only
-        to CDMA-based devices.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_1XEVDO_REVB
-
-</td>
-<td>
-1xEVDO RevB data service is supported. This value applies only to CDMA-based devices.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_UMB
-
-</td>
-<td>
-UMB data service is supported. This value applies only to CDMA-based devices.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_DATA_CLASS_CUSTOM
-
-</td>
-<td>
-The device supports a data service not listed in this table.
-
-</td>
-</tr>
-</table>
-
-`WwanDeviceType`
-
-The type of the device. Miniport drivers must set the device type to be a value other than 
-     <b>WwanDeviceTypeUnknown</b>.
-
-`WwanGsmBandClass`
-
-A bitmap that represents the frequency bands GSM-based devices support. The following table shows
-     the possible values for this member.
-     
+A bitmap that represents the types of authentication methods the MB device supports.
 
 <table>
 <tr>
@@ -726,130 +894,49 @@ A bitmap that represents the frequency bands GSM-based devices support. The foll
 </tr>
 <tr>
 <td>
-WWAN_BAND_CLASS_UNKNOWN
+WWAN_AUTH_ALGO_CAPS_NONE
 
 </td>
 <td>
-The frequency band that is supported by the device is not given.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_BAND_CLASS_I
-
-</td>
-<td>
-The device supports the UMTS2100 spectrum.
+The MB device does not support any authentication methods.
 
 </td>
 </tr>
 <tr>
 <td>
-WWAN_BAND_CLASS_II
+WWAN_AUTH_ALGO_CAPS_SIM
 
 </td>
 <td>
-The device supports the UMTS1900 spectrum.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_BAND_CLASS_III
-
-</td>
-<td>
-The device supports the UMTS1800 spectrum.
+The MB device supports the SIM authentication method.
 
 </td>
 </tr>
 <tr>
 <td>
-WWAN_BAND_CLASS_IV
+WWAN_AUTH_ALGO_CAPS_AKA
 
 </td>
 <td>
-The device supports the AWS spectrum.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_BAND_CLASS_V
-
-</td>
-<td>
-The device supports the UMTS850 spectrum.
+The MB device supports the AKA authentication method.
 
 </td>
 </tr>
 <tr>
 <td>
-WWAN_BAND_CLASS_VI
+WWAN_AUTH_ALGO_CAPS_AKAP
 
 </td>
 <td>
-The device supports the UMTS800 spectrum.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_BAND_CLASS_VII
-
-</td>
-<td>
-The device supports the UMTS2600 spectrum.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_BAND_CLASS_VIII
-
-</td>
-<td>
-The device supports the UMTS900 spectrum.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_BAND_CLASS_IX
-
-</td>
-<td>
-The device supports the UMTS1700 spectrum.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_BAND_CLASS_X
-
-</td>
-<td></td>
-</tr>
-<tr>
-<td>
-WWAN_BAND_CLASS_CUSTOM
-
-</td>
-<td>
-The device supports a spectrum other than those listed in this table.
+The MB device supports the AKA' (AKA Prime) authentication method.
 
 </td>
 </tr>
 </table>
- 
 
-If the miniport driver specifies WWAN_BAND_CLASS_CUSTOM, it should also provide the name of the
-     data-class in 
-     <b>CustomBandClass</b> .
+`ExecutorIndex`
 
-For more information about these values, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569824">OID_WWAN_DEVICE_CAPS</a>.
+The <b>WwanDeviceType</b> member for <b>WWAN_DEVICE_CAPS_EX</b> no longer refers to the modem device but rather to an individual executor. Each device is an RF executor entity of which the OS is aware.
 
 `WwanOptionalServiceCaps`
 
@@ -972,96 +1059,9 @@ The device and driver support network blacklist configuration from the OS and th
 </tr>
 </table>
 
-`WwanSimClass`
+`CellularClassListHeader`
 
-The class of the Subscriber Identity Module (SIM card). Miniport drivers must set the SIM class to
-     be a value other than 
-     <b>WwanSimClassUnknown</b>.
-
-`WwanSmsCaps`
-
-A bitmap that represents the type of SMS messages and directional flow that the device supports.
-     The following table shows the valid SMS capabilities settings.
-     
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-WWAN_SMS_CAPS_NONE
-
-</td>
-<td>
-The device does not support SMS messages.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_SMS_CAPS_PDU_SEND
-
-</td>
-<td>
-For GSM-based devices, this value means that the device supports sending PDU-style SMS
-        messages.
-
-For CDMA-based devices, this value means that the device is capable of sending SMS messages in
-        binary format as defined in section "3.4.2.1 SMS Point-to-Point Message" in 3GPP2 specification
-        C.S0015-A "Short Message Service (SMS) for Wideband Spread Spectrum Systems".
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_SMS_CAPS_PDU_RECEIVE
-
-</td>
-<td>
-For GSM-based devices, this value means that the device supports receiving PDU-style SMS
-        messages.
-
-For CDMA-based devices, this value means that the device is capable of reading the SMS messages in
-        binary format as defined in section "3.4.2.1 SMS Point-to-Point Message" in the 3GPP2 specification
-        C.S0015-A "Short Message Service (SMS) for Wideband Spread Spectrum Systems".
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_SMS_CAPS_TEXT_SEND
-
-</td>
-<td>
-The device supports sending Text-style SMS messages. This flag applies for CDMA-based devices.
-
-</td>
-</tr>
-<tr>
-<td>
-WWAN_SMS_CAPS_TEXT_RECEIVE
-
-</td>
-<td>
-The device supports receiving Text-style SMS messages. This flag applies for CDMA-based
-        devices.
-
-</td>
-</tr>
-</table>
- 
-
-Miniport drivers should set this member to reflect support for only GSM PDU format for receiving and sending SMS when the current home provider is multi-mode capable. Therefure, if the miniport driver receives a SMS in the cellular class native format, for example CDMA TEXT or CDMA PDU, then the miniport driver is required to do the translation to GSM PDU and indicate it to the MB Service. Similarly if the miniport driver receives a send request in GSM PDU format then it is required to do the translation to its native cellular class format.
-
-`WwanVoiceClass`
-
-The voice class of the device. This member informs the MB Service about the presence of circuit
-     voice service, and how such service interacts with data service. Be aware that the MB Service does not
-     support circuit-switched voice natively, nor does it preclude it. It is up to the miniport driver to
-     determine how to support circuit voice. This 
-     <b>WwanVoiceClass</b> member allows the MB Service to support this feature in the future.
+A formatted WWAN_LIST_HEADER object that represents a list of cellular classes that a multi-mode capable device supports. The <b>ElementType</b> member in WWAN_LIST_HEADER should always be set to <b>WwanStructCellularClass</b>. The <b>ElementCount</b> member in WWAN_LIST_HEADER is set to the number of cellular classes that follow the WWAN_LIST_HEADER structure. MB devices that are not multi-mode capable should set <b>ElementCount</b> to 0.
 
 ## Remarks
 Miniport drivers should specify WWAN_DATA_CLASS_CUSTOM if the data service supported by the device
@@ -1097,11 +1097,3 @@ For CDMA-based devices, only CDMA-related data services must be specified. For e
 
 
 <a href="https://msdn.microsoft.com/BE664B41-3FE7-4E93-8739-12BD2F0AE5B8">OID_WWAN_DEVICE_CAPS_EX</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DEVICE_CAPS_EX structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

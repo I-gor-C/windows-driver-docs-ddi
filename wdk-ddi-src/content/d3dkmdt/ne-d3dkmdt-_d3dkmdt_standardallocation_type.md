@@ -61,10 +61,8 @@ typedef enum _D3DKMDT_STANDARDALLOCATION_TYPE {
 <table>
             
                 <tr>
-                    <td>D3DKMDT_STANDARDALLOCATION_GDISURFACE</td>
-                    <td>Indicates that the surface is used for GDI hardware acceleration and Desktop Windows Manager (DWM) redirection.
-
-This constant value is available beginning with Windows 7.</td>
+                    <td>D3DKMDT_STANDARDALLOCATION_SHAREDPRIMARYSURFACE</td>
+                    <td>Indicates that the surface is a shared primary surface, which is opened by multiple applications that all require direct central processing unit (CPU) access to it.</td>
                 </tr>
             
                 <tr>
@@ -73,13 +71,15 @@ This constant value is available beginning with Windows 7.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_STANDARDALLOCATION_SHAREDPRIMARYSURFACE</td>
-                    <td>Indicates that the surface is a shared primary surface, which is opened by multiple applications that all require direct central processing unit (CPU) access to it.</td>
+                    <td>D3DKMDT_STANDARDALLOCATION_STAGINGSURFACE</td>
+                    <td>Indicates that the surface is a staging surface.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_STANDARDALLOCATION_STAGINGSURFACE</td>
-                    <td>Indicates that the surface is a staging surface.</td>
+                    <td>D3DKMDT_STANDARDALLOCATION_GDISURFACE</td>
+                    <td>Indicates that the surface is used for GDI hardware acceleration and Desktop Windows Manager (DWM) redirection.
+
+This constant value is available beginning with Windows 7.</td>
                 </tr>
             
                 <tr>
@@ -114,11 +114,3 @@ This constant value is available beginning with Windows 7.</td>
 
 
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_sharedprimarysurfacedata.md">D3DKMDT_SHAREDPRIMARYSURFACEDATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_STANDARDALLOCATION_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

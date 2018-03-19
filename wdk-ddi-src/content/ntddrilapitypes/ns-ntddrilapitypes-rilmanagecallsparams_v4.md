@@ -62,11 +62,11 @@ typedef struct _RILMANAGECALLSPARAMS_V4 {
 ## Members
 
 
-`dwCommand`
-
-
-
 `dwExecutor`
+
+
+
+`dwCommand`
 
 
 
@@ -74,11 +74,11 @@ typedef struct _RILMANAGECALLSPARAMS_V4 {
 
 
 
-`dwRTTAction`
-
-
-
 `fHasOfferAnswer`
+
+
+
+`rcmOfferAnswer`
 
 
 
@@ -86,7 +86,7 @@ typedef struct _RILMANAGECALLSPARAMS_V4 {
 
 
 
-`rcmOfferAnswer`
+`dwRTTAction`
 
 
 

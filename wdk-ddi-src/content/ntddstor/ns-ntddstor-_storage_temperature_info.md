@@ -64,21 +64,33 @@ typedef struct _STORAGE_TEMPERATURE_INFO {
 ## Members
 
 
-`EventGenerated`
-
-Indicates if a notification will be generated when the current temperature crosses a threshold.
-
 `Index`
 
 Identifies the instance of temperature information. Starts from 0. Index 0 may indicate a composite value.
+
+`Temperature`
+
+A signed value that indicates the current temperature, in degrees Celsius.
 
 `OverThreshold`
 
 A signed value that specifies the maximum temperature within the desired threshold, in degrees Celsius.
 
+`UnderThreshold`
+
+A signed value that specifies the minimum temperature within the desired threshold, in degrees Celsius.
+
 `OverThresholdChangable`
 
 Indicates if <i>OverThreshold</i> can be changed by using <a href="..\ntddstor\ni-ntddstor-ioctl_storage_set_temperature_threshold.md">IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD</a>.
+
+`UnderThresholdChangable`
+
+Indicates if <i>UnderThreshold</i> can be changed by using <a href="..\ntddstor\ni-ntddstor-ioctl_storage_set_temperature_threshold.md">IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD</a>.
+
+`EventGenerated`
+
+Indicates if a notification will be generated when the current temperature crosses a threshold.
 
 `Reserved0`
 
@@ -87,18 +99,6 @@ Reserved for future use.
 `Reserved1`
 
 Reserved for future use.
-
-`Temperature`
-
-A signed value that indicates the current temperature, in degrees Celsius.
-
-`UnderThreshold`
-
-A signed value that specifies the minimum temperature within the desired threshold, in degrees Celsius.
-
-`UnderThresholdChangable`
-
-Indicates if <i>UnderThreshold</i> can be changed by using <a href="..\ntddstor\ni-ntddstor-ioctl_storage_set_temperature_threshold.md">IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD</a>.
 
 
 ## Requirements
@@ -122,11 +122,3 @@ Indicates if <i>UnderThreshold</i> can be changed by using <a href="..\ntddstor\
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_TEMPERATURE_INFO structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

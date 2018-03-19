@@ -61,7 +61,7 @@ typedef enum _RILPERSODEACTIVATIONSTATEPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_PDS_ALL</td>
+                    <td>RIL_PARAM_PDS_STATE</td>
                     <td></td>
                 </tr>
             
@@ -76,7 +76,7 @@ typedef enum _RILPERSODEACTIVATIONSTATEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_PDS_STATE</td>
+                    <td>RIL_PARAM_PDS_ALL</td>
                     <td></td>
                 </tr>
 </table>

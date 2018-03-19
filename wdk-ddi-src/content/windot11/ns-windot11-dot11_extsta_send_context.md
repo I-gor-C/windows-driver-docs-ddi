@@ -100,34 +100,34 @@ This member must be set to
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
-`uDelayedSleepValue`
+`usExemptionActionType`
 
-The time, in microseconds, before a response to the packet is expected. The 
-     <b>uDelayedSleepValue</b> member is only valid when all of the following are true:
+The type of encryption exemption for the packet. The following exemption types are defined:
      
 
-<ul>
-<li>
-The packet is a media access control (MAC) service data unit (MSDU) packet.
 
-</li>
-<li>
-The 802.11 station is operating in a power save (PS) mode. In this situation, the Extensible
-       Station (ExtSTA) 
-       <b>msDot11PowerSavingLevel</b> management information base (MIB) object has any value except
-       DOT11_POWER_SAVING_NO_POWER_SAVING. For more information about the 
-       <b>msDot11PowerSavingLevel</b> MIB value, see 
-       <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-power-mgmt-request">
-       OID_DOT11_POWER_MGMT_REQUEST</a>.
 
-</li>
-</ul>
-The 802.11 station uses the value of 
-     <b>uDelayedSleepValue</b> to optimize network performance while operating in a PS mode. For example,
-     depending upon the PS mode, the 802.11 station might keep the radio turned on after the transmission of
-     the packet if 
-     <b>uDelayedSleepValue</b> is small. By doing so, the network latency will be reduced for receiving the
-     response.
+
+
+#### DOT11_EXEMPT_NO_EXEMPTION
+
+The packet is not exempt from any cipher operations performed by the 802.11 station.
+
+
+
+#### DOT11_EXEMPT_ALWAYS
+
+The packet is exempt from any cipher operations performed by the 802.11 station. The 802.11
+       station must transmit the packet unencrypted.
+
+
+
+#### DOT11_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE
+
+The packet is exempt from any cipher operations performed by the 802.11 station only if the
+       station does not have a key-mapping key for the packet's destination media access control (MAC)
+       address. For more information about key-mapping keys, see 
+       <a href="https://msdn.microsoft.com/1de1a420-e2ec-4716-8a03-73c9278eb33b">802.11 Cipher Key Types</a>.
 
 `uPhyId`
 
@@ -164,39 +164,39 @@ The miniport driver must fail the send request if the PHY specified by
      <a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
      NdisMSendNetBufferListsComplete</a> to complete the send request.
 
+`uDelayedSleepValue`
+
+The time, in microseconds, before a response to the packet is expected. The 
+     <b>uDelayedSleepValue</b> member is only valid when all of the following are true:
+     
+
+<ul>
+<li>
+The packet is a media access control (MAC) service data unit (MSDU) packet.
+
+</li>
+<li>
+The 802.11 station is operating in a power save (PS) mode. In this situation, the Extensible
+       Station (ExtSTA) 
+       <b>msDot11PowerSavingLevel</b> management information base (MIB) object has any value except
+       DOT11_POWER_SAVING_NO_POWER_SAVING. For more information about the 
+       <b>msDot11PowerSavingLevel</b> MIB value, see 
+       <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-power-mgmt-request">
+       OID_DOT11_POWER_MGMT_REQUEST</a>.
+
+</li>
+</ul>
+The 802.11 station uses the value of 
+     <b>uDelayedSleepValue</b> to optimize network performance while operating in a PS mode. For example,
+     depending upon the PS mode, the 802.11 station might keep the radio turned on after the transmission of
+     the packet if 
+     <b>uDelayedSleepValue</b> is small. By doing so, the network latency will be reduced for receiving the
+     response.
+
 `uSendFlags`
 
 A set of flags that define send attributes. Currently, there are no flags defined. This member
      should be zero.
-
-`usExemptionActionType`
-
-The type of encryption exemption for the packet. The following exemption types are defined:
-     
-
-
-
-
-
-#### DOT11_EXEMPT_NO_EXEMPTION
-
-The packet is not exempt from any cipher operations performed by the 802.11 station.
-
-
-
-#### DOT11_EXEMPT_ALWAYS
-
-The packet is exempt from any cipher operations performed by the 802.11 station. The 802.11
-       station must transmit the packet unencrypted.
-
-
-
-#### DOT11_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE
-
-The packet is exempt from any cipher operations performed by the 802.11 station only if the
-       station does not have a key-mapping key for the packet's destination media access control (MAC)
-       address. For more information about key-mapping keys, see 
-       <a href="https://msdn.microsoft.com/1de1a420-e2ec-4716-8a03-73c9278eb33b">802.11 Cipher Key Types</a>.
 
 ## Remarks
 The miniport driver performs a send operation when its 
@@ -268,11 +268,3 @@ For more information about Native 802.11 send operations, see
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_SEND_CONTEXT structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -62,9 +62,9 @@ typedef struct _VPOSVERSIONINFO {
 ## Members
 
 
-`BuildNumber`
+`Size`
 
-Specifies the build number of the operating system.
+Specifies the size, in bytes, of the VPOSVERSIONINFO structure.
 
 `MajorVersion`
 
@@ -74,6 +74,10 @@ Specifies the major version number of the operating system. For example, for Win
 
 Specifies the minor version number of the operating system. For example, for Windows 2000, the minor version number is zero.
 
+`BuildNumber`
+
+Specifies the build number of the operating system.
+
 `ServicePackMajor`
 
 Specifies the major version number of the latest Service Pack installed on the operating system. For example, for Service Pack 3, the major version number is three.
@@ -81,10 +85,6 @@ Specifies the major version number of the latest Service Pack installed on the o
 `ServicePackMinor`
 
 Specifies the minor version number of the latest Service Pack installed on the operating system. For example, for Service Pack 3, the minor version number is zero.
-
-`Size`
-
-Specifies the size, in bytes, of the VPOSVERSIONINFO structure.
 
 ## Remarks
 This structure is available in Windows XP and later.
@@ -99,11 +99,3 @@ To obtain version information about the currently running operating system, a vi
 ## See Also
 
 <a href="..\video\nf-video-videoportgetversion.md">VideoPortGetVersion</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VPOSVERSIONINFO structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

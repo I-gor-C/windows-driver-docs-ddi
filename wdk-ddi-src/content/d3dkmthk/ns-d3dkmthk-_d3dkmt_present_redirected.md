@@ -59,21 +59,21 @@ typedef struct _D3DKMT_PRESENT_REDIRECTED {
 ## Members
 
 
-`Flags`
-
-The flags needed to give the status of the present history token.
-
 `hSyncObj`
 
 The sync object that the PHT waits on.
+
+`WaitedFenceValue`
+
+The fence value of hSyncObj that PHT waits on
 
 `PresentHistoryToken`
 
 The present history token.
 
-`WaitedFenceValue`
+`Flags`
 
-The fence value of hSyncObj that PHT waits on
+The flags needed to give the status of the present history token.
 
 
 ## Requirements

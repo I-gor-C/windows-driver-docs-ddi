@@ -61,8 +61,8 @@ typedef enum _MsrCardType {
 <table>
             
                 <tr>
-                    <td>MsrCardType_Aamva</td>
-                    <td>American Association of Motor Vehicle Administrators (AAMVA) card.</td>
+                    <td>MsrCardType_Unknown</td>
+                    <td>Unknown card type.</td>
                 </tr>
             
                 <tr>
@@ -71,13 +71,13 @@ typedef enum _MsrCardType {
                 </tr>
             
                 <tr>
-                    <td>MsrCardType_ExtendedBase</td>
-                    <td>Vendor-specific card.</td>
+                    <td>MsrCardType_Aamva</td>
+                    <td>American Association of Motor Vehicle Administrators (AAMVA) card.</td>
                 </tr>
             
                 <tr>
-                    <td>MsrCardType_Unknown</td>
-                    <td>Unknown card type.</td>
+                    <td>MsrCardType_ExtendedBase</td>
+                    <td>Vendor-specific card.</td>
                 </tr>
 </table>
 

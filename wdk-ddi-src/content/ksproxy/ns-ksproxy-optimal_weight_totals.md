@@ -58,11 +58,11 @@ typedef struct {
 ## Members
 
 
-`MaxTotalNominator`
-
-
-
 `MinTotalNominator`
+
+
+
+`MaxTotalNominator`
 
 
 

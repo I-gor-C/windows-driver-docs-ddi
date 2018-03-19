@@ -63,6 +63,10 @@ typedef struct _STORAGE_PHYSICAL_NODE_DATA {
 ## Members
 
 
+`NodeId`
+
+The hardware ID of the storage node.
+
 `AdapterCount`
 
 A value of 0 or 1 that indicates the adapter count in the storage node.
@@ -86,10 +90,6 @@ The data length of the storage device in the storage node,  in units of kilobyte
 `DeviceDataOffset`
 
 The data offset from the beginning of the data structure. The buffer contains an array of <a href="..\ntddstor\ns-ntddstor-_storage_physical_device_data.md">STORAGE_PHYSICAL_DEVICE_DATA</a>.
-
-`NodeId`
-
-The hardware ID of the storage node.
 
 `Reserved`
 

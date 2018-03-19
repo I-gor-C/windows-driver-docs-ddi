@@ -71,6 +71,10 @@ typedef struct _SOC_SUBSYSTEM_FAILURE_DETAILS {
 ## Members
 
 
+`SubsysType`
+
+A value in the <a href="..\ntddk\ne-ntddk-_soc_subsystem_type.md">SOC_SYBSYSTEM_TYPE</a> enumeration or a vendor-defined subsystem type. Subsystem types in the range 0x10000 through 0x80000000 are reserved for independent hardware vendors.
+
 `FirmwareVersion`
 
 A vendor-defined SoC firmware version number.
@@ -79,17 +83,13 @@ A vendor-defined SoC firmware version number.
 
 A  vendor-defined SoC hardware version number.
 
-`SubsysType`
+`UnifiedFailureRegionSize`
 
-A value in the <a href="..\ntddk\ne-ntddk-_soc_subsystem_type.md">SOC_SYBSYSTEM_TYPE</a> enumeration or a vendor-defined subsystem type. Subsystem types in the range 0x10000 through 0x80000000 are reserved for independent hardware vendors.
+The size, in bytes, of the <b>UnifiedFailureRegion</b> string including the <b>NULL</b> terminator.
 
 `UnifiedFailureRegion`
 
 A null-terminated string, defined by the vendor, that  contains classification details about the error that occurred.
-
-`UnifiedFailureRegionSize`
-
-The size, in bytes, of the <b>UnifiedFailureRegion</b> string including the <b>NULL</b> terminator.
 
 
 ## Requirements

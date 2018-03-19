@@ -67,13 +67,8 @@ typedef enum _D3DKMT_BRIGHTNESS_INFO_TYPE {
 <table>
             
                 <tr>
-                    <td>D3DKMT_BRIGHTNESS_INFO_BEGIN_MANUAL_MODE</td>
-                    <td>The user has begun to manually adjust the brightness level.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_BRIGHTNESS_INFO_END_MANUAL_MODE</td>
-                    <td>The user has ended the manual adjustment of the brightness level.</td>
+                    <td>D3DKMT_BRIGHTNESS_INFO_GET_POSSIBLE_LEVELS</td>
+                    <td>Retrieve all possible brightness levels that the integrated display panel supports.</td>
                 </tr>
             
                 <tr>
@@ -82,23 +77,18 @@ typedef enum _D3DKMT_BRIGHTNESS_INFO_TYPE {
                 </tr>
             
                 <tr>
+                    <td>D3DKMT_BRIGHTNESS_INFO_SET</td>
+                    <td>Set a new brightness level.</td>
+                </tr>
+            
+                <tr>
                     <td>D3DKMT_BRIGHTNESS_INFO_GET_CAPS</td>
                     <td>Retrieve brightness control capabilities of the integrated display panel.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DKMT_BRIGHTNESS_INFO_GET_POSSIBLE_LEVELS</td>
-                    <td>Retrieve all possible brightness levels that the integrated display panel supports.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_BRIGHTNESS_INFO_GET_REDUCTION</td>
-                    <td>Retrieve the current level of backlight reduction that is applied to the integrated display panel.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_BRIGHTNESS_INFO_SET</td>
-                    <td>Set a new brightness level.</td>
+                    <td>D3DKMT_BRIGHTNESS_INFO_SET_STATE</td>
+                    <td>Enable smooth brightness control.</td>
                 </tr>
             
                 <tr>
@@ -107,8 +97,18 @@ typedef enum _D3DKMT_BRIGHTNESS_INFO_TYPE {
                 </tr>
             
                 <tr>
-                    <td>D3DKMT_BRIGHTNESS_INFO_SET_STATE</td>
-                    <td>Enable smooth brightness control.</td>
+                    <td>D3DKMT_BRIGHTNESS_INFO_GET_REDUCTION</td>
+                    <td>Retrieve the current level of backlight reduction that is applied to the integrated display panel.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_BRIGHTNESS_INFO_BEGIN_MANUAL_MODE</td>
+                    <td>The user has begun to manually adjust the brightness level.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_BRIGHTNESS_INFO_END_MANUAL_MODE</td>
+                    <td>The user has ended the manual adjustment of the brightness level.</td>
                 </tr>
             
                 <tr>

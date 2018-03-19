@@ -76,25 +76,88 @@ typedef struct _MSiSCSI_HBAInformation {
 ## Members
 
 
-`AsicVersion`
+`UniqueAdapterId`
 
-A string that specifies the Asic version. The manufacturer defines this string.
+A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID).
 
-`BiDiScsiCommands`
+`IntegratedTCPIP`
 
-A Boolean value that indicates if the HBA supports bidirectional SCSI commands. If this member is <b>TRUE</b>, the HBA supports bidirectional SCSI commands. If this member is <b>FALSE</b>, the HBA does not support bidirectional commands.
+A Boolean value that indicates if the Windows TCP/IP stack manages TCP/IP traffic for the HBA. If this member is <b>TRUE</b>, the Windows TCP/IP stack manages TCP/IP traffic for the HBA. If this member is <b>FALSE</b>, the Windows TCP/IP stack does not manage TCP/IP traffic for the HBA. A miniport driver for an adapter with its own TCP/IP stack should set this member to <b>FALSE</b>.
+
+`RequiresBinaryIpAddresses`
+
+A Boolean value that indicates whether the miniport driver for the HBA instructs the iSCSI initiator service to perform DNS lookup and provide the HBA with binary IP addresses. If this member is <b>TRUE</b>, the miniport driver for the HBA instructs the iSCSI initiator service to perform DNS lookup and provide the HBA with binary IP addresses. For the iSCSI initiator service to honor this request, the HBA must be on the same network as the Windows TCP/IP stack. If <b>RequiresBinaryIpAddresses</b> is <b>FALSE</b>, the HBA and its miniport driver have direct access to DNS.
+
+`VersionMin`
+
+The earliest version of the iSCSI specification that the HBA and its miniport driver support.
+
+`VersionMax`
+
+The most recent version of the iSCSI specification that the HBA and its miniport driver support.
+
+`MultifunctionDevice`
+
+A Boolean value that indicates whether the HBA is a multifunction device. If this member is <b>TRUE</b>, the HBA is a multifunction device, and it exposes a netcard interface. If this member <b>FALSE</b>, the HBA is not a multifunction device.
 
 `CacheValid`
 
 A Boolean value that indicates if the adapter caches are value. If this member is <b>TRUE</b>, the adapter caches are valid. If this member is <b>FALSE</b>, the caches are invalid or the adapter does not cache data.
 
-`DriverName`
+`NumberOfPorts`
 
-A string that specifies the name of the driver for the HBA.
+The number of ports (or TCP/IP addresses on the adapter).
 
-`FirmwareVersion`
+`Status`
 
-A string that specifies the version of the firmware in the HBA. The manufacturer defines this string.
+The current status of HBA. This member can hold any of the following values:
+
+<table>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+ISCSI_HBA_STATUS_WORKING
+
+</td>
+<td>
+The HBA is functioning normally. 
+
+</td>
+</tr>
+<tr>
+<td>
+ISCSI_HBA_STATUS_DEGRADED
+
+</td>
+<td>
+The HBA is functioning in a degraded state of operation.
+
+</td>
+</tr>
+<tr>
+<td>
+ISCSI_HBA_STATUS_CRITICAL
+
+</td>
+<td>
+The HBA is in a critical state and might fail at any moment.
+
+</td>
+</tr>
+<tr>
+<td>
+ISCSI_HBA_STATUS_FAILED
+
+</td>
+<td>
+The HBA is not functioning at all.
+
+</td>
+</tr>
+</table>
 
 `FunctionalitySupported`
 
@@ -171,88 +234,13 @@ The HBA supports SLP discovery.
 
 The generational GUID. This GUID is the GUID value that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565678">SetGenerationalGuid</a> method in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a> last set.
 
-`IntegratedTCPIP`
-
-A Boolean value that indicates if the Windows TCP/IP stack manages TCP/IP traffic for the HBA. If this member is <b>TRUE</b>, the Windows TCP/IP stack manages TCP/IP traffic for the HBA. If this member is <b>FALSE</b>, the Windows TCP/IP stack does not manage TCP/IP traffic for the HBA. A miniport driver for an adapter with its own TCP/IP stack should set this member to <b>FALSE</b>.
-
 `MaxCDBLength`
 
 The maximum CDB length, in bytes, that the HBA supports.
 
-`MultifunctionDevice`
+`BiDiScsiCommands`
 
-A Boolean value that indicates whether the HBA is a multifunction device. If this member is <b>TRUE</b>, the HBA is a multifunction device, and it exposes a netcard interface. If this member <b>FALSE</b>, the HBA is not a multifunction device.
-
-`NumberOfPorts`
-
-The number of ports (or TCP/IP addresses on the adapter).
-
-`OptionRomVersion`
-
-A string that specifies the option ROM version of the HBA. The manufacturer defines this string.
-
-`RequiresBinaryIpAddresses`
-
-A Boolean value that indicates whether the miniport driver for the HBA instructs the iSCSI initiator service to perform DNS lookup and provide the HBA with binary IP addresses. If this member is <b>TRUE</b>, the miniport driver for the HBA instructs the iSCSI initiator service to perform DNS lookup and provide the HBA with binary IP addresses. For the iSCSI initiator service to honor this request, the HBA must be on the same network as the Windows TCP/IP stack. If <b>RequiresBinaryIpAddresses</b> is <b>FALSE</b>, the HBA and its miniport driver have direct access to DNS.
-
-`SerialNumber`
-
-A string that specifies the serial number of the HBA. The manufacturer defines this string.
-
-`Status`
-
-The current status of HBA. This member can hold any of the following values:
-
-<table>
-<tr>
-<th>Status</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-ISCSI_HBA_STATUS_WORKING
-
-</td>
-<td>
-The HBA is functioning normally. 
-
-</td>
-</tr>
-<tr>
-<td>
-ISCSI_HBA_STATUS_DEGRADED
-
-</td>
-<td>
-The HBA is functioning in a degraded state of operation.
-
-</td>
-</tr>
-<tr>
-<td>
-ISCSI_HBA_STATUS_CRITICAL
-
-</td>
-<td>
-The HBA is in a critical state and might fail at any moment.
-
-</td>
-</tr>
-<tr>
-<td>
-ISCSI_HBA_STATUS_FAILED
-
-</td>
-<td>
-The HBA is not functioning at all.
-
-</td>
-</tr>
-</table>
-
-`UniqueAdapterId`
-
-A 64-bit integer that uniquely identifies an HBA initiator and a loaded instance of a storage miniport driver that manages the HBA. The initiator should use the address of the adapter extension or another address that the device driver owns to construct this identifier (ID).
+A Boolean value that indicates if the HBA supports bidirectional SCSI commands. If this member is <b>TRUE</b>, the HBA supports bidirectional SCSI commands. If this member is <b>FALSE</b>, the HBA does not support bidirectional commands.
 
 `VendorID`
 
@@ -266,13 +254,25 @@ A string that specifies the model of the HBA. The manufacturer defines this stri
 
 A string that specifies the version of the HBA. The manufacturer defines this string.
 
-`VersionMax`
+`FirmwareVersion`
 
-The most recent version of the iSCSI specification that the HBA and its miniport driver support.
+A string that specifies the version of the firmware in the HBA. The manufacturer defines this string.
 
-`VersionMin`
+`AsicVersion`
 
-The earliest version of the iSCSI specification that the HBA and its miniport driver support.
+A string that specifies the Asic version. The manufacturer defines this string.
+
+`OptionRomVersion`
+
+A string that specifies the option ROM version of the HBA. The manufacturer defines this string.
+
+`SerialNumber`
+
+A string that specifies the serial number of the HBA. The manufacturer defines this string.
+
+`DriverName`
+
+A string that specifies the name of the driver for the HBA.
 
 ## Remarks
 You must implement this class.
@@ -293,11 +293,3 @@ You must implement this class.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565678">SetGenerationalGuid</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_HBAInformation structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

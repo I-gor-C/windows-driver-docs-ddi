@@ -64,11 +64,11 @@ typedef struct _RILUICCSLOTINFO {
 
 
 
-`dwNumOfUiccSlots`
-
-
-
 `dwParams`
+
+
+
+`dwNumOfUiccSlots`
 
 
 

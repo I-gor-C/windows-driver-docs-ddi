@@ -64,23 +64,13 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO {
 <table>
             
                 <tr>
-                    <td>DIDDT1_AspectRatio_15x9</td>
-                    <td>Indicates a 15 x 9 aspect ratio.</td>
-                </tr>
-            
-                <tr>
-                    <td>DIDDT1_AspectRatio_16x10</td>
-                    <td>Indicates a 16 x 10 aspect ratio.</td>
-                </tr>
-            
-                <tr>
-                    <td>DIDDT1_AspectRatio_16x9</td>
-                    <td>Indicates a 16 x 9 aspect ratio.</td>
-                </tr>
-            
-                <tr>
                     <td>DIDDT1_AspectRatio_1x1</td>
                     <td>Indicates a 1 x 1 aspect ratio.</td>
+                </tr>
+            
+                <tr>
+                    <td>DIDDT1_AspectRatio_5x4</td>
+                    <td>Indicates a 5 x 4 aspect ratio.</td>
                 </tr>
             
                 <tr>
@@ -89,8 +79,18 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO {
                 </tr>
             
                 <tr>
-                    <td>DIDDT1_AspectRatio_5x4</td>
-                    <td>Indicates a 5 x 4 aspect ratio.</td>
+                    <td>DIDDT1_AspectRatio_15x9</td>
+                    <td>Indicates a 15 x 9 aspect ratio.</td>
+                </tr>
+            
+                <tr>
+                    <td>DIDDT1_AspectRatio_16x9</td>
+                    <td>Indicates a 16 x 9 aspect ratio.</td>
+                </tr>
+            
+                <tr>
+                    <td>DIDDT1_AspectRatio_16x10</td>
+                    <td>Indicates a 16 x 10 aspect ratio.</td>
                 </tr>
 </table>
 

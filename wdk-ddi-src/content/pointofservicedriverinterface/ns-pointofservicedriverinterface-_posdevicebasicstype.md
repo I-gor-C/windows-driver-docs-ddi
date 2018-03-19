@@ -58,6 +58,10 @@ typedef struct _PosDeviceBasicsType {
 ## Members
 
 
+`Version`
+
+Contains the major and minor version of the POS driver interface. The top 16 bits contains the major version and the bottom 16 bits contains the minor version.
+
 `DeviceType`
 
 Indicates the <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-_posdevicetype.md">PosDeviceType</a> of the POS device (for example, a barcode scanner or a magnetic stripe reader).
@@ -65,10 +69,6 @@ Indicates the <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes
 `RecommendedBufferSize`
 
 Indicates the size of the buffer that needs to be allocated to receive event data when calling <a href="http://go.microsoft.com/fwlink/p/?LinkId=314125">ReadFile</a> to retrieve events for this device
-
-`Version`
-
-Contains the major and minor version of the POS driver interface. The top 16 bits contains the major version and the bottom 16 bits contains the minor version.
 
 
 ## Requirements

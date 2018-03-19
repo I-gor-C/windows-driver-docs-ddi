@@ -68,14 +68,6 @@ typedef struct _DLGPAGE {
 
 Caller-supplied size, in bytes, of the DLGPAGE structure.
 
-`DlgProc`
-
-Optional, caller-supplied DLGPROC-typed pointer to a dialog box procedure, used to process messages sent by the system when user events occur. (The DLGPROC pointer type is described in the Microsoft Windows SDK documentation.) If <b>NULL</b>, CPSUI supplies a dialog box procedure. For more information, see the following Remarks section.
-
-`DUMMYUNIONNAME`
-
-
-
 `Flags`
 
 Caller-supplied bit flags, as described in the following table.
@@ -111,6 +103,14 @@ If not set, <b>DlgTemplateID</b> contains a template resource identifier.
 </tr>
 </table>
 
+`DlgProc`
+
+Optional, caller-supplied DLGPROC-typed pointer to a dialog box procedure, used to process messages sent by the system when user events occur. (The DLGPROC pointer type is described in the Microsoft Windows SDK documentation.) If <b>NULL</b>, CPSUI supplies a dialog box procedure. For more information, see the following Remarks section.
+
+`pTabName`
+
+Caller-supplied pointer to a NULL-terminated string to be displayed on the page tab.
+
 `IconID`
 
 Caller-supplied, can be one of the following:
@@ -127,9 +127,9 @@ An icon handle. If a handle is specified, DPF_ICONID_AS_HICON must be set in the
 </ul>
 The specified icon is displayed on the page tab. If this value is zero, an icon is not displayed.
 
-`pTabName`
+`DUMMYUNIONNAME`
 
-Caller-supplied pointer to a NULL-terminated string to be displayed on the page tab.
+
 
 ## Remarks
 CPSUI creates a property sheet page by allocating a PROPSHEETPAGE structure and passing it to CreatePropertySheetPage (described in the Windows SDK documentation). If the caller has specified a DLGPROC-typed pointer to a dialog box procedure in <b>DlgProc</b>, that procedure is used for handling the page's window messages. If <b>DlgProc</b> is <b>NULL</b>, CPSUI's own dialog box procedures are used.

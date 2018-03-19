@@ -63,17 +63,15 @@ typedef struct _NDIS_HD_SPLIT_CURRENT_CONFIG {
 ## Members
 
 
-`BackfillSize`
+`Header`
 
-The backfill size, in bytes, that the miniport driver is using for the data portion of a split
-     frame.
-
-`CurrentCapabilities`
-
-The current header-data split capabilities that the miniport adapter supports. The miniport driver
-     uses the same flags that are defined for the 
-     <b>HardwareCapabilities</b> member. In this case, the flags are set to indicate the current capabilities
-     that depend on the current configuration settings.
+The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     NDIS_HD_SPLIT_CURRENT_CONFIG structure. The driver sets the 
+     <b>Type</b> member of the structure that 
+     <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
+     <b>Revision</b> member to NDIS_HD_SPLIT_CURRENT_CONFIG_REVISION_1, and the 
+     <b>Size</b> member to NDIS_SIZEOF_HD_SPLIT_CURRENT_CONFIG_REVISION_1.
 
 `HardwareCapabilities`
 
@@ -131,21 +129,12 @@ The miniport adapter can split TCP frames with other TCP options in addition to 
        at the beginning of the TCP header or must not split the frame.</div>
 <div> </div>
 
-`HDSplitCombineFlags`
+`CurrentCapabilities`
 
-A set of flags that specify the current header-data split settings of a miniport adapter. The
-     value of 
-     <b>HDSplitCombineFlags</b> can be a bitwise OR of the following flags:
-     
-
-
-
-
-
-#### NDIS_HD_SPLIT_COMBINE_ALL_HEADERS
-
-The miniport adapter is combining split frames. If header-data split is enabled in the hardware,
-       the miniport driver should combine the header and data before indicating the frame to NDIS.
+The current header-data split capabilities that the miniport adapter supports. The miniport driver
+     uses the same flags that are defined for the 
+     <b>HardwareCapabilities</b> member. In this case, the flags are set to indicate the current capabilities
+     that depend on the current configuration settings.
 
 `HDSplitFlags`
 
@@ -162,15 +151,26 @@ A set of flags that reports the status of header-data split for a miniport adapt
 The miniport driver has enabled header-data split in the hardware. Otherwise, header-data split
        is disabled.
 
-`Header`
+`HDSplitCombineFlags`
 
-The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
-     NDIS_HD_SPLIT_CURRENT_CONFIG structure. The driver sets the 
-     <b>Type</b> member of the structure that 
-     <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
-     <b>Revision</b> member to NDIS_HD_SPLIT_CURRENT_CONFIG_REVISION_1, and the 
-     <b>Size</b> member to NDIS_SIZEOF_HD_SPLIT_CURRENT_CONFIG_REVISION_1.
+A set of flags that specify the current header-data split settings of a miniport adapter. The
+     value of 
+     <b>HDSplitCombineFlags</b> can be a bitwise OR of the following flags:
+     
+
+
+
+
+
+#### NDIS_HD_SPLIT_COMBINE_ALL_HEADERS
+
+The miniport adapter is combining split frames. If header-data split is enabled in the hardware,
+       the miniport driver should combine the header and data before indicating the frame to NDIS.
+
+`BackfillSize`
+
+The backfill size, in bytes, that the miniport driver is using for the data portion of a split
+     frame.
 
 `MaxHeaderSize`
 
@@ -209,11 +209,3 @@ The NDIS_HD_SPLIT_CURRENT_CONFIG structure is used in the
 
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-hd-split-current-config">OID_GEN_HD_SPLIT_CURRENT_CONFIG</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_HD_SPLIT_CURRENT_CONFIG structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

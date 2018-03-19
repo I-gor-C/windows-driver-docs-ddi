@@ -57,14 +57,14 @@ typedef struct {
 ## Members
 
 
-`Buffer`
-
-Pointer to a buffer containing the binary data.
-
 `Length`
 
 The length, in bytes, of the data that the 
      <b>Buffer</b> member points to.
+
+`Buffer`
+
+Pointer to a buffer containing the binary data.
 
 ## Remarks
 The BINARY_DATA structure is used in the 
@@ -81,11 +81,3 @@ The BINARY_DATA structure is used in the
 ## See Also
 
 <a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">NDIS_CONFIGURATION_PARAMETER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20BINARY_DATA structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

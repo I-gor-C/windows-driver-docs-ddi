@@ -61,14 +61,6 @@ typedef struct _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR {
 ## Members
 
 
-`EndLba`
-
-The EndLba field (End LBA) contains the last logical block address of the extent described by this descriptor.
-
-`EndPerformance`
-
-The EndPerformance field (End Performance) contains the nominal logical unit performance at the End LBA in kilobytes per second.
-
 `StartLba`
 
 The StartLba field (Start LBA) contains the first logical block address of the extent described by this descriptor.
@@ -76,6 +68,14 @@ The StartLba field (Start LBA) contains the first logical block address of the e
 `StartPerformance`
 
 The StartPerformance field (Start Performance) contains the nominal logical unit performance at the Start LBA in kilobytes per second.
+
+`EndLba`
+
+The EndLba field (End LBA) contains the last logical block address of the extent described by this descriptor.
+
+`EndPerformance`
+
+The EndPerformance field (End Performance) contains the nominal logical unit performance at the End LBA in kilobytes per second.
 
 
 ## Requirements
@@ -90,11 +90,3 @@ The StartPerformance field (Start Performance) contains the nominal logical unit
 
 
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -62,6 +62,22 @@ typedef struct _MESSAGE_INTERRUPT_INFORMATION {
 ## Members
 
 
+`MessageId`
+
+An identifier identifies the MSI interrupt. A miniport driver can pass this value to <a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a> in the <i>MessageId</i> parameter to obtain a spin lock for synchronization purposes.
+
+`MessageData`
+
+The data associated with the message.
+
+`MessageAddress`
+
+The physical address associated with the message.
+
+`InterruptVector`
+
+The interrupt vector associated with the message.
+
 `InterruptLevel`
 
 The interrupt level associated with the message.
@@ -69,22 +85,6 @@ The interrupt level associated with the message.
 `InterruptMode`
 
 A value of type <a href="..\wudfwdm\ne-wudfwdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> that specifies the interrupt mode associated with the message.
-
-`InterruptVector`
-
-The interrupt vector associated with the message.
-
-`MessageAddress`
-
-The physical address associated with the message.
-
-`MessageData`
-
-The data associated with the message.
-
-`MessageId`
-
-An identifier identifies the MSI interrupt. A miniport driver can pass this value to <a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a> in the <i>MessageId</i> parameter to obtain a spin lock for synchronization purposes.
 
 ## Remarks
 Miniport drivers retrieve the MSI information in a <b>MESSAGE_INTERRUPT_INFORMATION</b> structure by calling the <a href="..\storport\nf-storport-storportgetmsiinfo.md">StorPortGetMSIInfo</a> routine.
@@ -97,11 +97,3 @@ Miniport drivers retrieve the MSI information in a <b>MESSAGE_INTERRUPT_INFORMAT
 ## See Also
 
 <a href="..\storport\nf-storport-storportgetmsiinfo.md">StorPortGetMSIInfo</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MESSAGE_INTERRUPT_INFORMATION structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

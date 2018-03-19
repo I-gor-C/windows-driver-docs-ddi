@@ -59,16 +59,6 @@ typedef struct _IO_SESSION_STATE_INFORMATION {
 ## Members
 
 
-`LocalSession`
-
-Indicates whether the user session identified by <i>SessionId</i> is a local session. If <b>TRUE</b>, the user is logged on locally. If <b>FALSE</b>, the user is logged on remotely. This member is valid only if the session is connected. The following <b>IO_SESSION_STATE</b> enumeration constants represent session states in which the session is connected:
-
-<ul>
-<li><b>IoSessionStateConnected</b></li>
-<li><b>IoSessionStateLoggedOn</b></li>
-<li><b>IoSessionStateLoggedOff</b></li>
-</ul>
-
 `SessionId`
 
 The session ID. This member contains the <a href="http://go.microsoft.com/fwlink/p/?linkid=155045">Terminal Services</a> session identifier of a user session. The <a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a> routine sets this member to the session ID of the session that is represented by the session object that the <i>ContainerObject</i> parameter of <b>IoGetContainerInformation</b> points to.
@@ -88,6 +78,16 @@ The current state of the user session that is identified by <i>SessionId</i>. Th
 <li><b>IoSessionStateTerminated</b></li>
 </ul>
 
+`LocalSession`
+
+Indicates whether the user session identified by <i>SessionId</i> is a local session. If <b>TRUE</b>, the user is logged on locally. If <b>FALSE</b>, the user is logged on remotely. This member is valid only if the session is connected. The following <b>IO_SESSION_STATE</b> enumeration constants represent session states in which the session is connected:
+
+<ul>
+<li><b>IoSessionStateConnected</b></li>
+<li><b>IoSessionStateLoggedOn</b></li>
+<li><b>IoSessionStateLoggedOff</b></li>
+</ul>
+
 ## Remarks
 To obtain information about a user session, a driver calls the <b>IoGetContainerInformation</b> routine. This routine's <i>Buffer</i> parameter points to an <b>IO_SESSION_STATE_INFORMATION</b> structure that contains information about the session state.
 
@@ -104,11 +104,3 @@ To obtain information about a user session, a driver calls the <b>IoGetContainer
 
 
 <a href="..\wdm\ne-wdm-_io_session_state.md">IO_SESSION_STATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_SESSION_STATE_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

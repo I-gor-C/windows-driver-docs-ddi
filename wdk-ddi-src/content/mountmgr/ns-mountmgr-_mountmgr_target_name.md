@@ -57,13 +57,13 @@ typedef struct _MOUNTMGR_TARGET_NAME {
 ## Members
 
 
-`DeviceName`
-
-Contains the nonpersistent target device name.
-
 `DeviceNameLength`
 
 Contains the length, in bytes, of the device name stored in <b>DeviceName</b>.
+
+`DeviceName`
+
+Contains the nonpersistent target device name.
 
 ## Remarks
 Nonpersistent target names must contain the full path of a target object name in the system object tree. For example: "\Device\HarddiskVolume1". For a discussion of the different between symbolic links, unique IDs, and nonpersistent device names, see <a href="https://msdn.microsoft.com/fb37f862-70d6-4514-b481-16f664346422">Supporting Mount Manager Requests in a Storage Class Driver</a>.
@@ -76,11 +76,3 @@ Nonpersistent target names must contain the full path of a target object name in
 ## See Also
 
 <a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_keep_links_when_offline.md">IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MOUNTMGR_TARGET_NAME structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

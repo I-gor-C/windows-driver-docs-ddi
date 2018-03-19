@@ -61,17 +61,12 @@ typedef enum _RILPERSODEACTIVATIONSTATEDEPERSOSTATE {
 <table>
             
                 <tr>
+                    <td>RIL_DEPERSOSTATE_READY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_DEPERSOSTATE_CK_REQUIRED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DEPERSOSTATE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DEPERSOSTATE_PUK_BLOCKED</td>
                     <td></td>
                 </tr>
             
@@ -81,7 +76,12 @@ typedef enum _RILPERSODEACTIVATIONSTATEDEPERSOSTATE {
                 </tr>
             
                 <tr>
-                    <td>RIL_DEPERSOSTATE_READY</td>
+                    <td>RIL_DEPERSOSTATE_PUK_BLOCKED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DEPERSOSTATE_MAX</td>
                     <td></td>
                 </tr>
 </table>

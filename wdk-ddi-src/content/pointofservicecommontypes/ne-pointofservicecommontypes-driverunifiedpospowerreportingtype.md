@@ -60,8 +60,8 @@ typedef enum _DriverUnifiedPosPowerReportingType {
 <table>
             
                 <tr>
-                    <td>Advanced</td>
-                    <td>The device supports the advanced power reporting type.</td>
+                    <td>UnknownPowerReportingType</td>
+                    <td>The power reporting type is not known.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum _DriverUnifiedPosPowerReportingType {
                 </tr>
             
                 <tr>
-                    <td>UnknownPowerReportingType</td>
-                    <td>The power reporting type is not known.</td>
+                    <td>Advanced</td>
+                    <td>The device supports the advanced power reporting type.</td>
                 </tr>
 </table>
 

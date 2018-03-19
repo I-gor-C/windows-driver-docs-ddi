@@ -61,13 +61,8 @@ typedef enum _POS_CX_EVENT_PRIORITY {
 <table>
             
                 <tr>
-                    <td>POS_CX_EVENT_PRIORITY__MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>POS_CX_EVENT_PRIORITY_CONTROL</td>
-                    <td>Control level priority delivered in FIFO.</td>
+                    <td>POS_CX_EVENT_PRIORITY_INVALID</td>
+                    <td>Invalid priority. This value should not be used.</td>
                 </tr>
             
                 <tr>
@@ -76,8 +71,13 @@ typedef enum _POS_CX_EVENT_PRIORITY {
                 </tr>
             
                 <tr>
-                    <td>POS_CX_EVENT_PRIORITY_INVALID</td>
-                    <td>Invalid priority. This value should not be used.</td>
+                    <td>POS_CX_EVENT_PRIORITY_CONTROL</td>
+                    <td>Control level priority delivered in FIFO.</td>
+                </tr>
+            
+                <tr>
+                    <td>POS_CX_EVENT_PRIORITY__MAX</td>
+                    <td></td>
                 </tr>
 </table>
 

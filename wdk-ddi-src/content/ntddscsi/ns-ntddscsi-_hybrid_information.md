@@ -88,144 +88,17 @@ typedef struct _HYBRID_INFORMATION {
 ## Members
 
 
-`Attributes`
+`Version`
 
-The hybrid disk attributes.
-
-
-
-#### WriteCacheChangeable
-
-Support for changes in write caching policy. The value is 1 policy changes are allowed. Otherwise, changes are ignored.
-
-
-
-#### WriteThroughIoSupported
-
-Support for individual write operations when write-through caching is used. The value is 1 if individual writes are supported. Otherwise, the values is 0.
-
-
-
-#### FlushCacheSupported
-
-Support for non-volatile cache flush. The value is 1 if flushes are supported. Otherwise, the value is 0.
-
-
-
-#### Removable
-
-Support of removal of the non-volatile cache from the disk. The value is 1 if the cache is removable. Otherwise, the value is 0.
-
-
-
-#### ReservedBits
-
-Reserved.
-
-`CacheSize`
-
-The size, in LBAs, of the non-volatile on the hybrid disk.
-
-`CacheTypeDefault`
-
-The default caching type used by the hybrid disk. The possible values are the same as for <b>CacheTypeEffective</b>.
-
-`CacheTypeEffective`
-
-The non-volatile caching type currently set for hybrid disk. The effective cache type is one of the following values.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="NvCacheTypeUnknown"></a><a id="nvcachetypeunknown"></a><a id="NVCACHETYPEUNKNOWN"></a><dl>
-<dt><b>NvCacheTypeUnknown</b></dt>
-</dl>
-</td>
-<td width="60%">
-The miniport driver is not able to report the cache type
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="NvCacheNone"></a><a id="nvcachenone"></a><a id="NVCACHENONE"></a><dl>
-<dt><b>NvCacheNone</b></dt>
-</dl>
-</td>
-<td width="60%">
-The disk does not support a non-volatile cache.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="NvCacheTypeWriteBack"></a><a id="nvcachetypewriteback"></a><a id="NVCACHETYPEWRITEBACK"></a><dl>
-<dt><b>NvCacheTypeWriteBack</b></dt>
-</dl>
-</td>
-<td width="60%">
-Write-back caching is supported by hybrid disk.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="NvCacheTypeWriteThrough"></a><a id="nvcachetypewritethrough"></a><a id="NVCACHETYPEWRITETHROUGH"></a><dl>
-<dt><b>NvCacheTypeWriteThrough</b></dt>
-</dl>
-</td>
-<td width="60%">
-Write-through caching is supported by hybrid disk.
-
-</td>
-</tr>
-</table>
-
-`FractionBase`
-
-The base value for fractional fields in this structure. This value is set to 255.
-
-`HybridSupported`
-
-Miniport supports for hybrid disks. Set to <b>TRUE</b> if hybrid disks are supported. Otherwise, <b>FALSE</b>.
-
-`Priorities`
-
-Priority settings for the hybrid disk.
-
-
-
-#### PriorityLevelCount
-
-The number of priority levels supported by the cache. Currently, a non-zero value indicates support for all priorities.
-
-
-
-#### MaxPriorityBehavior
-
-If <b>TRUE</b>, the disk I/O can fail at maximum priority if the cache is full.  Otherwise, if <b>FALSE</b>, the operation will complete to disk.
-
-
-
-#### DirtyThresholdLow
-
-The low threshold for a cache flush. This value is ratio in the range of <b>FractionBase</b>.
-
-
-
-#### DirtyThresholdHigh
-
-The low threshold for a cache flush. This value is ratio in the range of <b>FractionBase</b>.
-
-
-
-#### Priority
-
-An array of priority level descriptors. The number of descriptors present in the array is set in <b>PriorityLevelCount</b>.
+The version of this structure. Set to HYBRID_REQUEST_INFO_STRUCTURE_VERSION.
 
 `Size`
 
 The size of this structure. Set to <b>sizeof</b>(HYBRID_INFORMATION).
+
+`HybridSupported`
+
+Miniport supports for hybrid disks. Set to <b>TRUE</b> if hybrid disks are supported. Otherwise, <b>FALSE</b>.
 
 `Status`
 
@@ -278,9 +151,136 @@ The cache on the hybrid disk is enabled.
 </tr>
 </table>
 
-`Version`
+`CacheTypeEffective`
 
-The version of this structure. Set to HYBRID_REQUEST_INFO_STRUCTURE_VERSION.
+The non-volatile caching type currently set for hybrid disk. The effective cache type is one of the following values.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="NvCacheTypeUnknown"></a><a id="nvcachetypeunknown"></a><a id="NVCACHETYPEUNKNOWN"></a><dl>
+<dt><b>NvCacheTypeUnknown</b></dt>
+</dl>
+</td>
+<td width="60%">
+The miniport driver is not able to report the cache type
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="NvCacheNone"></a><a id="nvcachenone"></a><a id="NVCACHENONE"></a><dl>
+<dt><b>NvCacheNone</b></dt>
+</dl>
+</td>
+<td width="60%">
+The disk does not support a non-volatile cache.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="NvCacheTypeWriteBack"></a><a id="nvcachetypewriteback"></a><a id="NVCACHETYPEWRITEBACK"></a><dl>
+<dt><b>NvCacheTypeWriteBack</b></dt>
+</dl>
+</td>
+<td width="60%">
+Write-back caching is supported by hybrid disk.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="NvCacheTypeWriteThrough"></a><a id="nvcachetypewritethrough"></a><a id="NVCACHETYPEWRITETHROUGH"></a><dl>
+<dt><b>NvCacheTypeWriteThrough</b></dt>
+</dl>
+</td>
+<td width="60%">
+Write-through caching is supported by hybrid disk.
+
+</td>
+</tr>
+</table>
+
+`CacheTypeDefault`
+
+The default caching type used by the hybrid disk. The possible values are the same as for <b>CacheTypeEffective</b>.
+
+`FractionBase`
+
+The base value for fractional fields in this structure. This value is set to 255.
+
+`CacheSize`
+
+The size, in LBAs, of the non-volatile on the hybrid disk.
+
+`Attributes`
+
+The hybrid disk attributes.
+
+
+
+#### WriteCacheChangeable
+
+Support for changes in write caching policy. The value is 1 policy changes are allowed. Otherwise, changes are ignored.
+
+
+
+#### WriteThroughIoSupported
+
+Support for individual write operations when write-through caching is used. The value is 1 if individual writes are supported. Otherwise, the values is 0.
+
+
+
+#### FlushCacheSupported
+
+Support for non-volatile cache flush. The value is 1 if flushes are supported. Otherwise, the value is 0.
+
+
+
+#### Removable
+
+Support of removal of the non-volatile cache from the disk. The value is 1 if the cache is removable. Otherwise, the value is 0.
+
+
+
+#### ReservedBits
+
+Reserved.
+
+`Priorities`
+
+Priority settings for the hybrid disk.
+
+
+
+#### PriorityLevelCount
+
+The number of priority levels supported by the cache. Currently, a non-zero value indicates support for all priorities.
+
+
+
+#### MaxPriorityBehavior
+
+If <b>TRUE</b>, the disk I/O can fail at maximum priority if the cache is full.  Otherwise, if <b>FALSE</b>, the operation will complete to disk.
+
+
+
+#### DirtyThresholdLow
+
+The low threshold for a cache flush. This value is ratio in the range of <b>FractionBase</b>.
+
+
+
+#### DirtyThresholdHigh
+
+The low threshold for a cache flush. This value is ratio in the range of <b>FractionBase</b>.
+
+
+
+#### Priority
+
+An array of priority level descriptors. The number of descriptors present in the array is set in <b>PriorityLevelCount</b>.
 
 
 ## Requirements
@@ -292,11 +292,3 @@ The version of this structure. Set to HYBRID_REQUEST_INFO_STRUCTURE_VERSION.
 ## See Also
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_miniport_hybrid.md">IOCTL_SCSI_MINIPORT_HYBRID</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HYBRID_INFORMATION structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

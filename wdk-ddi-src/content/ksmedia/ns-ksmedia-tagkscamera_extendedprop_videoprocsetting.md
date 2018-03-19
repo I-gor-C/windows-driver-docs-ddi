@@ -61,14 +61,6 @@ typedef struct _KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING {
 ## Members
 
 
-`Max`
-
-The maximum range value for the setting in <b>VideoProc</b>.
-
-`Min`
-
-The minum range value for the setting in <b>VideoProc</b>.
-
 `Mode`
 
 The video processing mode type. Currently, this member is used to control white balance. The possible values for <b>Mode</b> are the following.
@@ -103,9 +95,13 @@ The white balance setting is a preset value specified in <b>VideoProc</b>.
 
 This member is not used for <a href="https://msdn.microsoft.com/library/windows/hardware/dn567573">KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/dn567576">KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE</a>. In these cases it must be set to 0.
 
-`Reserved`
+`Min`
 
-Reserved.
+The minum range value for the setting in <b>VideoProc</b>.
+
+`Max`
+
+The maximum range value for the setting in <b>VideoProc</b>.
 
 `Step`
 
@@ -195,6 +191,10 @@ Using the  <a href="https://msdn.microsoft.com/library/windows/hardware/dn567573
 
 Using the <a href="https://msdn.microsoft.com/library/windows/hardware/dn567576">KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE</a> property, this member contains the focal length value for manual focus mode,  KSCAMERA_EXTENDEDPROP_VIDEOPROCFLAG_MANUAL.
 
+`Reserved`
+
+Reserved.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -213,11 +213,3 @@ Using the <a href="https://msdn.microsoft.com/library/windows/hardware/dn567576"
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn567588">KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

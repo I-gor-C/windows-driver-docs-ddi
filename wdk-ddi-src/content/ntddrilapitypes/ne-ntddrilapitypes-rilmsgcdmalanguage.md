@@ -65,7 +65,7 @@ typedef enum _RILMSGCDMALANGUAGE {
 <table>
             
                 <tr>
-                    <td>RIL_MSGCDMALANG_CHINESE</td>
+                    <td>RIL_MSGCDMALANG_UNKNOWN</td>
                     <td></td>
                 </tr>
             
@@ -80,7 +80,7 @@ typedef enum _RILMSGCDMALANGUAGE {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGCDMALANG_HEBREW</td>
+                    <td>RIL_MSGCDMALANG_SPANISH</td>
                     <td></td>
                 </tr>
             
@@ -95,17 +95,17 @@ typedef enum _RILMSGCDMALANGUAGE {
                 </tr>
             
                 <tr>
+                    <td>RIL_MSGCDMALANG_CHINESE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGCDMALANG_HEBREW</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_MSGCDMALANG_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGCDMALANG_SPANISH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGCDMALANG_UNKNOWN</td>
                     <td></td>
                 </tr>
 </table>

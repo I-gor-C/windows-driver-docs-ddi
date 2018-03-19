@@ -63,30 +63,6 @@ typedef struct IDDCX_ENDPOINT_DIAGNOSTIC_INFO {
 ## Members
 
 
-`GammaSupport`
-
-Indicates how gamma is implemented.
-
-`pEndPointFriendlyName`
-
-The friendly name of the endpoint, if one exists. This is applicable if the user can give the device a name and is NULL if a friendly name does not exist.
-
-`pEndPointManufacturerName`
-
-The manufacture name of the endpoint. Must be a non-empty string.
-
-`pEndPointModelName`
-
-The model name of the endpoint. Must be a non-empty string.
-
-`pFirmwareVersion`
-
-Pointer to version info for the endpoint firmware.
-
-`pHardwareVersion`
-
-Pointer to version info for the endpoint hardware.
-
 `Size`
 
 Total size of the structure.
@@ -94,6 +70,30 @@ Total size of the structure.
 `TransmissionType`
 
 Describes the type of link the video data is being transmitted over.
+
+`pEndPointFriendlyName`
+
+The friendly name of the endpoint, if one exists. This is applicable if the user can give the device a name and is NULL if a friendly name does not exist.
+
+`pEndPointModelName`
+
+The model name of the endpoint. Must be a non-empty string.
+
+`pEndPointManufacturerName`
+
+The manufacture name of the endpoint. Must be a non-empty string.
+
+`pHardwareVersion`
+
+Pointer to version info for the endpoint hardware.
+
+`pFirmwareVersion`
+
+Pointer to version info for the endpoint firmware.
+
+`GammaSupport`
+
+Indicates how gamma is implemented.
 
 
 ## Requirements

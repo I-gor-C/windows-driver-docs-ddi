@@ -62,12 +62,7 @@ typedef enum _RILUICCCARDINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_CARDINFO_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CARDINFO_APPINFO</td>
+                    <td>RIL_PARAM_CARDINFO_ISVIRTUAL</td>
                     <td></td>
                 </tr>
             
@@ -77,12 +72,17 @@ typedef enum _RILUICCCARDINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CARDINFO_ISVIRTUAL</td>
+                    <td>RIL_PARAM_CARDINFO_NUMAPPS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CARDINFO_NUMAPPS</td>
+                    <td>RIL_PARAM_CARDINFO_APPINFO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CARDINFO_ALL</td>
                     <td></td>
                 </tr>
 </table>

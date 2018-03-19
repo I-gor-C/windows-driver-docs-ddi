@@ -87,10 +87,6 @@ The type, revision, and size of the DOT11_POWER_MGMT_MODE_STATUS_INFO structure.
 
 The current power mode of the hardware. The mode may be <b>dot11_power_mode_active</b> or <b>dot11_power_mode_powersave</b>, but should not be <b>dot11_power_mode_unknown</b>.
 
-`Reason`
-
-Reason that the device changed into the current power mode.
-
 `uPowerSaveLevel`
 
 One of the following values describing power saving levels:
@@ -117,6 +113,10 @@ One of the following values describing power saving levels:
 <td>Maximum power saving level</td>
 </tr>
 </table>
+
+`Reason`
+
+Reason that the device changed into the current power mode.
 
 ## Remarks
 At each transition of the mode change, a device should remember the reason it made the last change.

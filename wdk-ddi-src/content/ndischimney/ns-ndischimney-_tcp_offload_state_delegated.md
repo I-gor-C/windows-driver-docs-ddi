@@ -98,22 +98,6 @@ typedef struct _TCP_OFFLOAD_STATE_DELEGATED {
 ## Members
 
 
-`CWnd`
-
-The congestion window size, in bytes (see cwnd in RFC 2581).
-
-`DupAckCount`
-
-The number of ACKs that have been accepted for the same sequence number (see RFC 1323).
-
-`DWnd`
-
-
-
-`Flags`
-
-Reserved for system use.
-
 `Header`
 
 An 
@@ -123,98 +107,6 @@ An
      <b>Header</b> to the size, in bytes, of the TCP_OFFLOAD_STATE_DELEGATED structure. The 
      <b>RecognizedOptions</b> member of 
      <b>Header</b> is reserved.
-
-`KeepAlive`
-
-This member is a union that consists of the following members:
-
-
-
-#### ProbeCount
-
-The number of keepalive probes that have been sent that have not received a response (see RFC
-      1122).
-
-
-
-#### TimeoutDelta
-
-The time remaining, in clock ticks, until the next keepalive timeout (see RFC 1122). Note that a
-      value of -1 immediately after the TCP connection was offloaded indicates that the keepalive timer was
-      not running when the connection was offloaded. If the offload target's keepalive timer is not running,
-      the offload target should return -1 in this member when responding to a call to the
-      MiniportQueryOffload function or the MiniportTerminateOffload function.
-
-`MaxSndWnd`
-
-The maximum send window size, in bytes (see RFC 813).
-
-`RcvNxt`
-
-The sequence number for the next receive segment (see RCV.NEXT in RFC 793).
-
-`RcvWnd`
-
-The receive window size, in bytes (see RCV.WND in RFC 793).
-
-`Retransmit`
-
-This member is a union that consists of the following members:
-
-
-
-#### Count
-
-The number of retransmits that have been sent (see RFC 2581).
-
-
-
-#### TimeoutDelta
-
-The time, in clock ticks, remaining until the next retransmit timeout (see RFC 2581). Note that a
-      value of -1 immediately after the TCP connection was offloaded indicates that the retransmit timer was
-      not running when the connection was offloaded. The retransmit timer was not running because there was
-      no outstanding send data on the connection when the connection was offloaded. If the offload target's
-      retransmit timer is not running, the offload target should return -1 in this member when responding to
-      a call to the MiniportQueryOffload function or the MiniportTerminateOffload function.
-
-`RttVar`
-
-The round trip time variation, in clock ticks (see RTTVAR in RFC 2988).
-
-`SendWL1`
-
-The segment sequence number used for the last window update (see SND.WL1 in RFC 793).
-
-`SndMax`
-
-The maximum sequence number that has been sent on the connection. For more information, see <a href="https://msdn.microsoft.com/38039411-1ef8-47a0-9a9a-de9451dc2cc9">Send Data That Contains Data to Be Retransmitted</a>.
-
-`SndNxt`
-
-The sequence number for the next byte to send on the connection (see SND.NXT in RFC 793). For more information, see <a href="https://msdn.microsoft.com/38039411-1ef8-47a0-9a9a-de9451dc2cc9">Send Data That Contains Data to Be Retransmitted</a>.
-
-`SndUna`
-
-The sequence number for the first byte of unacknowledged data (see SND.UNA in RFC 793). For more information, see <a href="https://msdn.microsoft.com/38039411-1ef8-47a0-9a9a-de9451dc2cc9">Send Data That Contains Data to Be Retransmitted</a>.
-
-`SndWnd`
-
-The send window size, in bytes (see SND.WND in RFC 793).
-
-`SndWndProbeCount`
-
-The current send window probe round. For a description of the send window probe round, see 
-     <a href="https://msdn.microsoft.com/b45f5fd7-e80b-4718-9889-9839fa61845a">Persist Timer</a>.
-
-`SRtt`
-
-The smoothed round-trip time, in clock ticks (see SRTT in RFCs 793 and 2988). Maintained on a per
-     connection basis because it takes into account path, host, and sometimes application behavior.
-
-`SsThresh`
-
-The slow start threshold, in bytes (see ssthresh in RFC 2581).
 
 `State`
 
@@ -306,9 +198,58 @@ Waiting for enough time to pass to ensure that the remote TCP received the ackno
      <b>TcpConnectionTimeWait</b> state. The host stack can query, update, invalidate, or terminate a TCP
      connection regardless of the connection state.
 
-`TotalRT`
+`Flags`
 
-The total time, in clock ticks, that has been spent retransmitting the current TCP segment.
+Reserved for system use.
+
+`RcvNxt`
+
+The sequence number for the next receive segment (see RCV.NEXT in RFC 793).
+
+`RcvWnd`
+
+The receive window size, in bytes (see RCV.WND in RFC 793).
+
+`SndUna`
+
+The sequence number for the first byte of unacknowledged data (see SND.UNA in RFC 793). For more information, see <a href="https://msdn.microsoft.com/38039411-1ef8-47a0-9a9a-de9451dc2cc9">Send Data That Contains Data to Be Retransmitted</a>.
+
+`SndNxt`
+
+The sequence number for the next byte to send on the connection (see SND.NXT in RFC 793). For more information, see <a href="https://msdn.microsoft.com/38039411-1ef8-47a0-9a9a-de9451dc2cc9">Send Data That Contains Data to Be Retransmitted</a>.
+
+`SndMax`
+
+The maximum sequence number that has been sent on the connection. For more information, see <a href="https://msdn.microsoft.com/38039411-1ef8-47a0-9a9a-de9451dc2cc9">Send Data That Contains Data to Be Retransmitted</a>.
+
+`SndWnd`
+
+The send window size, in bytes (see SND.WND in RFC 793).
+
+`MaxSndWnd`
+
+The maximum send window size, in bytes (see RFC 813).
+
+`SendWL1`
+
+The segment sequence number used for the last window update (see SND.WL1 in RFC 793).
+
+`CWnd`
+
+The congestion window size, in bytes (see cwnd in RFC 2581).
+
+`SsThresh`
+
+The slow start threshold, in bytes (see ssthresh in RFC 2581).
+
+`SRtt`
+
+The smoothed round-trip time, in clock ticks (see SRTT in RFCs 793 and 2988). Maintained on a per
+     connection basis because it takes into account path, host, and sometimes application behavior.
+
+`RttVar`
+
+The round trip time variation, in clock ticks (see RTTVAR in RFC 2988).
 
 `TsRecent`
 
@@ -322,6 +263,65 @@ The length of time, in clock ticks, since the most recent timestamp was received
 `TsTime`
 
 The current value of the adjusted timestamp.
+
+`TotalRT`
+
+The total time, in clock ticks, that has been spent retransmitting the current TCP segment.
+
+`DupAckCount`
+
+The number of ACKs that have been accepted for the same sequence number (see RFC 1323).
+
+`SndWndProbeCount`
+
+The current send window probe round. For a description of the send window probe round, see 
+     <a href="https://msdn.microsoft.com/b45f5fd7-e80b-4718-9889-9839fa61845a">Persist Timer</a>.
+
+`KeepAlive`
+
+This member is a union that consists of the following members:
+
+
+
+#### ProbeCount
+
+The number of keepalive probes that have been sent that have not received a response (see RFC
+      1122).
+
+
+
+#### TimeoutDelta
+
+The time remaining, in clock ticks, until the next keepalive timeout (see RFC 1122). Note that a
+      value of -1 immediately after the TCP connection was offloaded indicates that the keepalive timer was
+      not running when the connection was offloaded. If the offload target's keepalive timer is not running,
+      the offload target should return -1 in this member when responding to a call to the
+      MiniportQueryOffload function or the MiniportTerminateOffload function.
+
+`Retransmit`
+
+This member is a union that consists of the following members:
+
+
+
+#### Count
+
+The number of retransmits that have been sent (see RFC 2581).
+
+
+
+#### TimeoutDelta
+
+The time, in clock ticks, remaining until the next retransmit timeout (see RFC 2581). Note that a
+      value of -1 immediately after the TCP connection was offloaded indicates that the retransmit timer was
+      not running when the connection was offloaded. The retransmit timer was not running because there was
+      no outstanding send data on the connection when the connection was offloaded. If the offload target's
+      retransmit timer is not running, the offload target should return -1 in this member when responding to
+      a call to the MiniportQueryOffload function or the MiniportTerminateOffload function.
+
+`DWnd`
+
+
 
 ## Remarks
 The host stack provides initial values for the TCP delegated variables when it offloads these
@@ -372,11 +372,3 @@ When passed to an offload target, a TCP_OFFLOAD_STATE_DELEGATED structure is ass
 
 
 <a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_cached.md">TCP_OFFLOAD_STATE_CACHED</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATE_DELEGATED structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

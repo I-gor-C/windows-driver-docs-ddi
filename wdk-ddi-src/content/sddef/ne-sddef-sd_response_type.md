@@ -68,6 +68,16 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>SDRT_UNSPECIFIED</td>
+                    <td>Indicates that the response from the card is unspecified.</td>
+                </tr>
+            
+                <tr>
+                    <td>SDRT_NONE</td>
+                    <td>Indicates that the command does not require a response from the card.</td>
+                </tr>
+            
+                <tr>
                     <td>SDRT_1</td>
                     <td>Indicates a response of type R1 that contains 32 bits of card status information. For an explanation of the R1 response, see the <i>SD Card Association</i> specification.</td>
                 </tr>
@@ -106,16 +116,6 @@ typedef enum  {
                     <td>SDRT_6</td>
                     <td>Indicates a response of type R6. For an explanation of the R6 response, see the <i>SD Card Association </i>specification.</td>
                 </tr>
-            
-                <tr>
-                    <td>SDRT_NONE</td>
-                    <td>Indicates that the command does not require a response from the card.</td>
-                </tr>
-            
-                <tr>
-                    <td>SDRT_UNSPECIFIED</td>
-                    <td>Indicates that the response from the card is unspecified.</td>
-                </tr>
 </table>
 
 
@@ -127,11 +127,3 @@ typedef enum  {
 ## See Also
 
 <a href="https://msdn.microsoft.com/7c49c394-d0b3-4594-a623-0a13825bdcec">SDCMD_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SD_RESPONSE_TYPE enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -62,14 +62,6 @@ typedef struct _DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS {
 ## Members
 
 
-`BSSID`
-
-The BSSID in the received invitation response packet.
-
-`DialogToken`
-
-The dialog token received in invitation response packet.
-
 `Header`
 
 Specifies the type, revision and size of the <b>DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following:
@@ -97,13 +89,21 @@ Specifies the type, revision and size of the <b>DOT11_RECEIVED_INVITATION_RESPON
 
 The address of the device that transmitted the invitaion response packet.
 
-`uIEsLength`
+`BSSID`
 
-The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
+The BSSID in the received invitation response packet.
+
+`DialogToken`
+
+The dialog token received in invitation response packet.
 
 `uIEsOffset`
 
 The offset, in bytes,  of the array of additional information elements (IEs) received in the invitation response packet. This offset is from the start of the buffer that contains this structure.
+
+`uIEsLength`
+
+The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
 
 
 ## Requirements
@@ -115,11 +115,3 @@ The offset, in bytes,  of the array of additional information elements (IEs) rec
 ## See Also
 
 <a href="..\windot11\ns-windot11-_dot11_received_invitation_response_parameters.md">DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

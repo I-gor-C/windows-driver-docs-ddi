@@ -59,21 +59,21 @@ typedef struct _USB_ID_STRING {
 ## Members
 
 
-`Buffer`
-
-Pointer to a string or multi-string.
-
 `LanguageId`
 
 Indicates that language ID of the string.
+
+`Pad`
+
+
 
 `LengthInBytes`
 
 Indicates the length (in bytes) of the string pointed to by <b>Buffer</b>, including the terminating <b>NULL</b>.
 
-`Pad`
+`Buffer`
 
-
+Pointer to a string or multi-string.
 
 ## Remarks
 The reserved members of this structure must be treated as opaque and are reserved for system use.
@@ -87,11 +87,3 @@ The reserved members of this structure must be treated as opaque and are reserve
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_ID_STRING structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

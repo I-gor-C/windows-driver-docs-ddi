@@ -72,27 +72,11 @@ typedef struct _ENDPOINTS_CONFIGURE {
 ## Members
 
 
-`AlternateSetting`
+`Header`
 
-The setting number of the alternate setting that contains the endpoints.
+A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that stores handles to the USB hub or device whose endpoints.
 
-`ConfigurationValue`
-
-The configuration number of the USB configuration that contains the endpoints.
-
-`EndpointsEnabledAndUnchanged`
-
-A pointer to the first endpoint handle in the array of endpoints that have not been changed.
-
-`EndpointsEnabledAndUnchangedCount`
-
-The number of endpoints that were enabled and unchanged.
-
-`EndpointsToDisable`
-
-A pointer to the first endpoint handle in the array of endpoints to  enable.
-
-`EndpointsToDisableCount`
+`EndpointsToEnableCount`
 
 The number of endpoints to configure.
 
@@ -100,25 +84,41 @@ The number of endpoints to configure.
 
 A pointer to the first endpoint handle in the array of endpoints to  enable.
 
-`EndpointsToEnableCount`
+`EndpointsToDisableCount`
 
 The number of endpoints to configure.
 
-`ExitLatencyDelta`
+`EndpointsToDisable`
 
-The Exit Latency Delta (ELD) value. For more information see section 4.6.6.1 of the eXtensible Host Controller Interface specification.
+A pointer to the first endpoint handle in the array of endpoints to  enable.
+
+`EndpointsEnabledAndUnchangedCount`
+
+The number of endpoints that were enabled and unchanged.
+
+`EndpointsEnabledAndUnchanged`
+
+A pointer to the first endpoint handle in the array of endpoints that have not been changed.
 
 `FailureFlags`
 
 The errors, if any, that might occur when attempting to configure endpoints for the USB device or hub.
 
-`Header`
+`ExitLatencyDelta`
 
-A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that stores handles to the USB hub or device whose endpoints.
+The Exit Latency Delta (ELD) value. For more information see section 4.6.6.1 of the eXtensible Host Controller Interface specification.
+
+`ConfigurationValue`
+
+The configuration number of the USB configuration that contains the endpoints.
 
 `InterfaceNumber`
 
 The interface number of the USB interface that contains the endpoints.
+
+`AlternateSetting`
+
+The setting number of the alternate setting that contains the endpoints.
 
 `Reserved1`
 
@@ -137,11 +137,3 @@ The interface number of the USB interface that contains the endpoints.
 ## See Also
 
 <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoints_configure.md">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20ENDPOINTS_CONFIGURE structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

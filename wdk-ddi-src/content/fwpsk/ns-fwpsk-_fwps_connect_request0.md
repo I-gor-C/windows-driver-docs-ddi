@@ -75,6 +75,48 @@ The local transport address of the connect request. This is an IPV4 or IPV6 addr
      formatted as a 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff570825">SOCKADDR_STORAGE</a> structure.
 
+`remoteAddressAndPort`
+
+The remote transport address of the connect request. This is an IPV4 or IPV6 address and TCP/UDP
+     port formatted as a 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570825">SOCKADDR_STORAGE</a> structure.
+
+`portReservationToken`
+
+A token used to reserve the appropriate port. The token is obtained when a port is reserved by
+     calling either 
+     <a href="https://msdn.microsoft.com/19DAF828-B0E4-49E2-843D-7350C8083C45">CreatePersistentTcpPortReservation</a> or 
+     <a href="https://msdn.microsoft.com/AFD2EFD1-55AF-49C9-8109-D4D1B7BB7C94">CreatePersistentUdpPortReservation</a>.
+
+`localRedirectTargetPID`
+
+The process identifier of the local host process that will be handling traffic to the address
+     specified in 
+     <b>localAddressAndPort</b>. This value must be set for loopback redirect changes to be accepted by the
+     engine.
+
+`previousVersion`
+
+The previous version of the connect request data. This read-only field records the modification history of the connect request. If the connect
+     request data has not been previously modified by another WFP filter, 
+     <i>previousVersion</i> will be set to <b>NULL</b>.
+
+`modifierFilterId`
+
+The value of the 
+     <b>FilterId</b> member of the 
+     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> function's 
+     <i>filter</i> parameter. For more information about the 
+     <b>FilterId</b> member, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>.
+
+`localRedirectHandle`
+
+The    redirect handle that the callout driver created by calling the <a href="..\fwpsk\nf-fwpsk-fwpsredirecthandlecreate0.md">FwpsRedirectHandleCreate0</a> function.
+
+<div class="alert"><b>Note</b>  Starting with Windows 8, the <b>localRedirectHandle</b> must be populated for redirection to work.</div>
+<div> </div>
+
 `localRedirectContext`
 
 A callout driver context area that the callout driver allocated by calling the 
@@ -89,48 +131,6 @@ The    size, in bytes, of the callout-supplied context area.
 
 <div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
 <div> </div>
-
-`localRedirectHandle`
-
-The    redirect handle that the callout driver created by calling the <a href="..\fwpsk\nf-fwpsk-fwpsredirecthandlecreate0.md">FwpsRedirectHandleCreate0</a> function.
-
-<div class="alert"><b>Note</b>  Starting with Windows 8, the <b>localRedirectHandle</b> must be populated for redirection to work.</div>
-<div> </div>
-
-`localRedirectTargetPID`
-
-The process identifier of the local host process that will be handling traffic to the address
-     specified in 
-     <b>localAddressAndPort</b>. This value must be set for loopback redirect changes to be accepted by the
-     engine.
-
-`modifierFilterId`
-
-The value of the 
-     <b>FilterId</b> member of the 
-     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> function's 
-     <i>filter</i> parameter. For more information about the 
-     <b>FilterId</b> member, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>.
-
-`portReservationToken`
-
-A token used to reserve the appropriate port. The token is obtained when a port is reserved by
-     calling either 
-     <a href="https://msdn.microsoft.com/19DAF828-B0E4-49E2-843D-7350C8083C45">CreatePersistentTcpPortReservation</a> or 
-     <a href="https://msdn.microsoft.com/AFD2EFD1-55AF-49C9-8109-D4D1B7BB7C94">CreatePersistentUdpPortReservation</a>.
-
-`previousVersion`
-
-The previous version of the connect request data. This read-only field records the modification history of the connect request. If the connect
-     request data has not been previously modified by another WFP filter, 
-     <i>previousVersion</i> will be set to <b>NULL</b>.
-
-`remoteAddressAndPort`
-
-The remote transport address of the connect request. This is an IPV4 or IPV6 address and TCP/UDP
-     port formatted as a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570825">SOCKADDR_STORAGE</a> structure.
 
 ## Remarks
 The callout driver obtains this structure by calling the 
@@ -208,11 +208,3 @@ This structure acts as a linked list that contains a record of all the changes m
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CONNECT_REQUEST0 structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

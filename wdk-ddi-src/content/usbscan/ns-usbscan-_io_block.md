@@ -60,6 +60,14 @@ typedef struct _IO_BLOCK {
 ## Members
 
 
+`uOffset`
+
+Used as the <b>Value</b> field of a USB Device Request.
+
+`uLength`
+
+Length of the buffer to transfer.
+
 `pbyData`
 
 Pointer to a data buffer with a length of <b>uLength</b>.
@@ -67,14 +75,6 @@ Pointer to a data buffer with a length of <b>uLength</b>.
 `uIndex`
 
 Used as the <b>Index</b> field of a USB Device Request.
-
-`uLength`
-
-Length of the buffer to transfer.
-
-`uOffset`
-
-Used as the <b>Value</b> field of a USB Device Request.
 
 
 ## Requirements

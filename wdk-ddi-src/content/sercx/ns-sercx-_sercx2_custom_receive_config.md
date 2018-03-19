@@ -62,9 +62,25 @@ typedef struct _SERCX2_CUSTOM_RECEIVE_CONFIG {
 ## Members
 
 
+`Size`
+
+The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2customreceivecreate.md">SerCx2CustomReceiveCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
+
 `Alignment`
 
 Data alignment requirement. Specifies how the starting address of a transfer in a custom-receive transaction must be aligned in memory. Set this member to the appropriate FILE_<i>XXX</i>_ALIGNMENT constant in the Wdm.h header file. For example, FILE_WORD_ALIGNMENT indicates that the starting address must be aligned to two-byte boundary in memory, FILE_LONG_ALIGNMENT indicates that the address must be aligned to a four-byte boundary, and so on.
+
+`MinimumTransactionLength`
+
+The minimum length, in bytes, of a data transfer in a custom-receive transaction. If the length of the buffer in a read (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>) request is less than this minimum length, SerCx2 uses programmed I/O (PIO) for the transaction.
+
+`MaximumTransactionLength`
+
+The maximum length, in bytes, of a data transfer in a custom-receive transaction. If the size of the buffer in the read request is larger than this maximum length, SerCx2 uses multiple custom-receive transactions to handle the request, and limits each transaction to the maximum length.
+
+`MinimumTransferUnit`
+
+The minimum transfer unit. The number of bytes specified by an element in a scatter/gather list must be an integer multiple of the minimum transfer unit. To indicate that the default minimum transfer unit should be used, set this member to zero. For more information about the default minimum transfer unit, see <a href="..\wdm\ns-wdm-_dma_adapter_info_v1.md">DMA_ADAPTER_INFO_V1</a>.
 
 `Exclusive`
 
@@ -75,22 +91,6 @@ Set this member to <b>TRUE</b> only if the minimum transfer unit for custom-rece
 If <b>Exclusive</b> is <b>TRUE</b>, the <b>MinimumTransferUnitOverride</b>, <b>Alignment</b>, and <b>MinimumTransactionLength</b> members must be zero.
 
 Regardless of the value of this member, PIO-receive transactions are used to save any unread data in the receive FIFO before the serial controller exits the D0 device power state to enter a low-power state.
-
-`MaximumTransactionLength`
-
-The maximum length, in bytes, of a data transfer in a custom-receive transaction. If the size of the buffer in the read request is larger than this maximum length, SerCx2 uses multiple custom-receive transactions to handle the request, and limits each transaction to the maximum length.
-
-`MinimumTransactionLength`
-
-The minimum length, in bytes, of a data transfer in a custom-receive transaction. If the length of the buffer in a read (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>) request is less than this minimum length, SerCx2 uses programmed I/O (PIO) for the transaction.
-
-`MinimumTransferUnit`
-
-The minimum transfer unit. The number of bytes specified by an element in a scatter/gather list must be an integer multiple of the minimum transfer unit. To indicate that the default minimum transfer unit should be used, set this member to zero. For more information about the default minimum transfer unit, see <a href="..\wdm\ns-wdm-_dma_adapter_info_v1.md">DMA_ADAPTER_INFO_V1</a>.
-
-`Size`
-
-The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2customreceivecreate.md">SerCx2CustomReceiveCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
 
 ## Remarks
 The <a href="..\sercx\nf-sercx-sercx2customreceivecreate.md">SerCx2CustomReceiveCreate</a> method accepts a pointer to a <b>SERCX2_CUSTOM_RECEIVE_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2CustomReceiveCreate</b>, call the <a href="..\sercx\nf-sercx-sercx2_custom_receive_config_init.md">SERCX2_CUSTOM_RECEIVE_CONFIG_INIT</a> function to initialize this structure.
@@ -116,11 +116,3 @@ The <a href="..\sercx\nf-sercx-sercx2customreceivecreate.md">SerCx2CustomReceive
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SERCX2_CUSTOM_RECEIVE_CONFIG structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -61,36 +61,6 @@ typedef struct _CMP_CREATE_PLUG {
 ## Members
 
 
-`Context`
-
-On input, a pointer to an optional caller-supplied context for the function at <b>pfnNotify</b>.
-
-`hPlug`
-
-On output, the handle of the created plug
-
-<b>PlugNum</b>
-    
-    The plug number of the newly created plug. If the plug could not be created, <b>PlugNum</b> is zero (0). 
-    
-     <b>hPlug</b>
-    
-    A handle to the newly created plug. If the plug could not be created, <b>hPlug</b> is null.
-
-.
-
-`Pcr`
-
-On input, an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537010">AV_PCR</a> structure that contains values used by the protocol driver to initialize the plug.
-
-`pfnNotify`
-
-On input, a pointer to a caller-supplied function to be called by the protocol driver when the plug is created.
-
-`PlugNum`
-
-On output, the plug number.
-
 `PlugType`
 
 On input, the type of plug to create. Can be one of the following:
@@ -109,6 +79,36 @@ An output plug, which transmits data from the device to the bus.
 
 An input plug, which receives data sent by the bus to the device.
 
+`Pcr`
+
+On input, an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537010">AV_PCR</a> structure that contains values used by the protocol driver to initialize the plug.
+
+`pfnNotify`
+
+On input, a pointer to a caller-supplied function to be called by the protocol driver when the plug is created.
+
+`Context`
+
+On input, a pointer to an optional caller-supplied context for the function at <b>pfnNotify</b>.
+
+`PlugNum`
+
+On output, the plug number.
+
+`hPlug`
+
+On output, the handle of the created plug
+
+<b>PlugNum</b>
+    
+    The plug number of the newly created plug. If the plug could not be created, <b>PlugNum</b> is zero (0). 
+    
+     <b>hPlug</b>
+    
+    A handle to the newly created plug. If the plug could not be created, <b>hPlug</b> is null.
+
+.
+
 ## Remarks
 If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
 
@@ -124,11 +124,3 @@ If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoSta
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CMP_CREATE_PLUG structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

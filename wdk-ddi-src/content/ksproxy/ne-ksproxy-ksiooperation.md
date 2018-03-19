@@ -59,12 +59,12 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KsIoOperation_Read</td>
+                    <td>KsIoOperation_Write</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>KsIoOperation_Write</td>
+                    <td>KsIoOperation_Read</td>
                     <td></td>
                 </tr>
 </table>

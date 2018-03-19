@@ -60,10 +60,6 @@ typedef struct _RILRFSTATE {
 ## Members
 
 
-`bRFData`
-
-
-
 `cbSize`
 
 
@@ -72,11 +68,15 @@ typedef struct _RILRFSTATE {
 
 
 
+`dwRFState`
+
+
+
 `dwRFDataSize`
 
 
 
-`dwRFState`
+`bRFData`
 
 
 

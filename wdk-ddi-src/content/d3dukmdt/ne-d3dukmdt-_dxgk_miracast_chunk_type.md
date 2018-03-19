@@ -64,6 +64,11 @@ typedef enum _DXGK_MIRACAST_CHUNK_TYPE {
 <table>
             
                 <tr>
+                    <td>DXGK_MIRACAST_CHUNK_TYPE_UNKNOWN</td>
+                    <td>An unknown or undefined chunk type.</td>
+                </tr>
+            
+                <tr>
                     <td>DXGK_MIRACAST_CHUNK_TYPE_COLOR_CONVERT_COMPLETE</td>
                     <td>Color conversion has completed on the chunk.</td>
                 </tr>
@@ -74,13 +79,8 @@ typedef enum _DXGK_MIRACAST_CHUNK_TYPE {
                 </tr>
             
                 <tr>
-                    <td>DXGK_MIRACAST_CHUNK_TYPE_ENCODE_DRIVER_DEFINED_1</td>
-                    <td>Encoding is driver-defined, of type 1.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_MIRACAST_CHUNK_TYPE_ENCODE_DRIVER_DEFINED_2</td>
-                    <td>Encoding is driver-defined, of type 2.</td>
+                    <td>DXGK_MIRACAST_CHUNK_TYPE_FRAME_START</td>
+                    <td>The chunk is at the start of the Wi-Fi frame.</td>
                 </tr>
             
                 <tr>
@@ -89,13 +89,13 @@ typedef enum _DXGK_MIRACAST_CHUNK_TYPE {
                 </tr>
             
                 <tr>
-                    <td>DXGK_MIRACAST_CHUNK_TYPE_FRAME_START</td>
-                    <td>The chunk is at the start of the Wi-Fi frame.</td>
+                    <td>DXGK_MIRACAST_CHUNK_TYPE_ENCODE_DRIVER_DEFINED_1</td>
+                    <td>Encoding is driver-defined, of type 1.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGK_MIRACAST_CHUNK_TYPE_UNKNOWN</td>
-                    <td>An unknown or undefined chunk type.</td>
+                    <td>DXGK_MIRACAST_CHUNK_TYPE_ENCODE_DRIVER_DEFINED_2</td>
+                    <td>Encoding is driver-defined, of type 2.</td>
                 </tr>
 </table>
 

@@ -62,13 +62,8 @@ typedef enum _SENSOR_STATE {
 <table>
             
                 <tr>
-                    <td>SensorState_Active</td>
-                    <td>Indicates that the sensor is active.</td>
-                </tr>
-            
-                <tr>
-                    <td>SensorState_Error</td>
-                    <td>Indicates that the sensor is in an error state.</td>
+                    <td>SensorState_Initializing</td>
+                    <td>Indicates that the sensor is initializing.</td>
                 </tr>
             
                 <tr>
@@ -77,8 +72,13 @@ typedef enum _SENSOR_STATE {
                 </tr>
             
                 <tr>
-                    <td>SensorState_Initializing</td>
-                    <td>Indicates that the sensor is initializing.</td>
+                    <td>SensorState_Active</td>
+                    <td>Indicates that the sensor is active.</td>
+                </tr>
+            
+                <tr>
+                    <td>SensorState_Error</td>
+                    <td>Indicates that the sensor is in an error state.</td>
                 </tr>
 </table>
 

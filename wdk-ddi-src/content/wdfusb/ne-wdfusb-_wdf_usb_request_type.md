@@ -70,21 +70,6 @@ typedef enum _WDF_USB_REQUEST_TYPE {
 <table>
             
                 <tr>
-                    <td>WdfUsbRequestTypeDeviceControlTransfer</td>
-                    <td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-devices">send a control transfer</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfUsbRequestTypeDeviceString</td>
-                    <td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-devices">obtain a device's Unicode strings</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfUsbRequestTypeDeviceUrb</td>
-                    <td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-devices">send a URB to a device</a>.</td>
-                </tr>
-            
-                <tr>
                     <td>WdfUsbRequestTypeInvalid</td>
                     <td>For internal use only.</td>
                 </tr>
@@ -95,13 +80,33 @@ typedef enum _WDF_USB_REQUEST_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WdfUsbRequestTypePipeAbort</td>
-                    <td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-pipes">stop a pipe</a>.</td>
+                    <td>WdfUsbRequestTypeDeviceString</td>
+                    <td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-devices">obtain a device's Unicode strings</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfUsbRequestTypeDeviceControlTransfer</td>
+                    <td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-devices">send a control transfer</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfUsbRequestTypeDeviceUrb</td>
+                    <td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-devices">send a URB to a device</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfUsbRequestTypePipeWrite</td>
+                    <td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-pipes">write to a pipe</a>.</td>
                 </tr>
             
                 <tr>
                     <td>WdfUsbRequestTypePipeRead</td>
                     <td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-pipes">read from a pipe</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfUsbRequestTypePipeAbort</td>
+                    <td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-pipes">stop a pipe</a>.</td>
                 </tr>
             
                 <tr>
@@ -112,11 +117,6 @@ typedef enum _WDF_USB_REQUEST_TYPE {
                 <tr>
                     <td>WdfUsbRequestTypePipeUrb</td>
                     <td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-pipes">send a URB to a pipe</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfUsbRequestTypePipeWrite</td>
-                    <td>A request to <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-pipes">write to a pipe</a>.</td>
                 </tr>
 </table>
 
@@ -134,11 +134,3 @@ The <b>WDF_USB_REQUEST_TYPE</b> enumeration is used in the <a href="..\wdfusb\ns
 ## See Also
 
 <a href="..\wdfusb\ns-wdfusb-_wdf_usb_request_completion_params.md">WDF_USB_REQUEST_COMPLETION_PARAMS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_REQUEST_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

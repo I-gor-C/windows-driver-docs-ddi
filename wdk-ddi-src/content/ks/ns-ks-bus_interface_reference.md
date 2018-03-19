@@ -59,21 +59,21 @@ typedef struct {
 ## Members
 
 
-`DereferenceDeviceObject`
-
-Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567170">KStrDereferenceDeviceObject</a> routine.
-
 `Interface`
 
 Specifies the exported <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>.
 
-`QueryReferenceString`
-
-Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567193">KStrQueryReferenceString</a> routine.
-
 `ReferenceDeviceObject`
 
 Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567198">KStrReferenceDeviceObject</a> routine.
+
+`DereferenceDeviceObject`
+
+Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567170">KStrDereferenceDeviceObject</a> routine.
+
+`QueryReferenceString`
+
+Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567193">KStrQueryReferenceString</a> routine.
 
 ## Remarks
 A driver obtains a BUS_INTERFACE_REFERENCE interface by creating and sending an IRP_MJ_PNP request that specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> minor function code. To do this, the driver should:

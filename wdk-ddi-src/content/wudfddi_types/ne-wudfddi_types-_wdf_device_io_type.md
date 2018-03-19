@@ -67,22 +67,7 @@ typedef enum _WDF_DEVICE_IO_TYPE {
 <table>
             
                 <tr>
-                    <td>WdfDeviceIoBuffered</td>
-                    <td>UMDF and the driver use <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">buffered I/O</a> to access data buffers.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDeviceIoBufferedOrDirect</td>
-                    <td>UMDF and the driver can use either buffered I/O or direct I/O to access data buffers.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDeviceIoDirect</td>
-                    <td>UMDF and the driver use <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">direct I/O</a> to access data buffers.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDeviceIoMaximum</td>
+                    <td>WdfDeviceIoUndefined</td>
                     <td>Reserved for system use.</td>
                 </tr>
             
@@ -92,7 +77,22 @@ typedef enum _WDF_DEVICE_IO_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WdfDeviceIoUndefined</td>
+                    <td>WdfDeviceIoBuffered</td>
+                    <td>UMDF and the driver use <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">buffered I/O</a> to access data buffers.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceIoDirect</td>
+                    <td>UMDF and the driver use <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">direct I/O</a> to access data buffers.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceIoBufferedOrDirect</td>
+                    <td>UMDF and the driver can use either buffered I/O or direct I/O to access data buffers.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceIoMaximum</td>
                     <td>Reserved for system use.</td>
                 </tr>
 </table>
@@ -138,11 +138,3 @@ For the KMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfd
 
 
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_buffer_retrieval.md">WDF_DEVICE_IO_BUFFER_RETRIEVAL</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_IO_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

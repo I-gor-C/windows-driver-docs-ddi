@@ -69,11 +69,6 @@ typedef enum _SECURITY_IMPERSONATION_LEVEL {
                 </tr>
             
                 <tr>
-                    <td>SecurityDelegation</td>
-                    <td>The driver can impersonate the client's security context on remote systems.</td>
-                </tr>
-            
-                <tr>
                     <td>SecurityIdentification</td>
                     <td>The driver can obtain the identity and privileges of the client but cannot impersonate the client.</td>
                 </tr>
@@ -81,6 +76,11 @@ typedef enum _SECURITY_IMPERSONATION_LEVEL {
                 <tr>
                     <td>SecurityImpersonation</td>
                     <td>The driver can impersonate the client's security context on the local system.</td>
+                </tr>
+            
+                <tr>
+                    <td>SecurityDelegation</td>
+                    <td>The driver can impersonate the client's security context on remote systems.</td>
                 </tr>
 </table>
 
@@ -100,11 +100,3 @@ For more information about the security impersonation levels, see the <b>SECURIT
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20SECURITY_IMPERSONATION_LEVEL enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

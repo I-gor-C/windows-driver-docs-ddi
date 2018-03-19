@@ -70,8 +70,8 @@ typedef enum _WHEA_ERROR_SOURCE_TYPE {
 <table>
             
                 <tr>
-                    <td>WheaErrSrcTypeBOOT</td>
-                    <td>A boot error source.</td>
+                    <td>WheaErrSrcTypeMCE</td>
+                    <td>A machine check exception (MCE).</td>
                 </tr>
             
                 <tr>
@@ -85,18 +85,38 @@ typedef enum _WHEA_ERROR_SOURCE_TYPE {
                 </tr>
             
                 <tr>
+                    <td>WheaErrSrcTypeNMI</td>
+                    <td>A nonmaskable interrupt (NMI).</td>
+                </tr>
+            
+                <tr>
+                    <td>WheaErrSrcTypePCIe</td>
+                    <td>A PCI Express (PCIe) error.</td>
+                </tr>
+            
+                <tr>
                     <td>WheaErrSrcTypeGeneric</td>
                     <td>A type of error source that does not conform to any of the other WHEA_ERROR_SOURCE_TYPE enumeration values.</td>
                 </tr>
             
                 <tr>
-                    <td>WheaErrSrcTypeGenericV2</td>
-                    <td></td>
+                    <td>WheaErrSrcTypeINIT</td>
+                    <td>An Itanium processor INIT error.</td>
                 </tr>
             
                 <tr>
-                    <td>WheaErrSrcTypeINIT</td>
-                    <td>An Itanium processor INIT error.</td>
+                    <td>WheaErrSrcTypeBOOT</td>
+                    <td>A boot error source.</td>
+                </tr>
+            
+                <tr>
+                    <td>WheaErrSrcTypeSCIGeneric</td>
+                    <td>A service control interrupt (SCI).</td>
+                </tr>
+            
+                <tr>
+                    <td>WheaErrSrcTypeIPFMCA</td>
+                    <td>An Itanium processor machine check abort (MCA).</td>
                 </tr>
             
                 <tr>
@@ -110,38 +130,18 @@ typedef enum _WHEA_ERROR_SOURCE_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WheaErrSrcTypeIPFMCA</td>
-                    <td>An Itanium processor machine check abort (MCA).</td>
-                </tr>
-            
-                <tr>
-                    <td>WheaErrSrcTypeMax</td>
-                    <td>The maximum number of error source types that can report hardware errors.</td>
-                </tr>
-            
-                <tr>
-                    <td>WheaErrSrcTypeMCE</td>
-                    <td>A machine check exception (MCE).</td>
-                </tr>
-            
-                <tr>
-                    <td>WheaErrSrcTypeNMI</td>
-                    <td>A nonmaskable interrupt (NMI).</td>
-                </tr>
-            
-                <tr>
-                    <td>WheaErrSrcTypePCIe</td>
-                    <td>A PCI Express (PCIe) error.</td>
-                </tr>
-            
-                <tr>
-                    <td>WheaErrSrcTypeSCIGeneric</td>
-                    <td>A service control interrupt (SCI).</td>
+                    <td>WheaErrSrcTypeGenericV2</td>
+                    <td></td>
                 </tr>
             
                 <tr>
                     <td>WheaErrSrcTypeSCIGenericV2</td>
                     <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WheaErrSrcTypeMax</td>
+                    <td>The maximum number of error source types that can report hardware errors.</td>
                 </tr>
 </table>
 
@@ -164,11 +164,3 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_
 
 
 <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_ERROR_SOURCE_TYPE enumeration%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

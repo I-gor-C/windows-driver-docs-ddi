@@ -59,9 +59,9 @@ typedef struct D3D11_1DDI_VIDEO_COLOR_YCbCrA {
 ## Members
 
 
-`A`
+`Y`
 
-The alpha value. Values range from 0 (transparent) to 1 (opaque).
+The Y (luma) value.
 
 `Cb`
 
@@ -71,9 +71,9 @@ The Cb chroma value.
 
 The Cr chroma value.
 
-`Y`
+`A`
 
-The Y (luma) value.
+The alpha value. Values range from 0 (transparent) to 1 (opaque).
 
 ## Remarks
 Values have a nominal range of [0...1]. Given a format with  <i>n</i> bits per channel, the value of each color component is calculated as follows:

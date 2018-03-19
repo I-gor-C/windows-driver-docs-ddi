@@ -61,11 +61,6 @@ typedef enum _IO_ACCESS_TYPE {
 <table>
             
                 <tr>
-                    <td>ModifyAccess</td>
-                    <td>Indicates that the input/output will be comprised of reads and writes.</td>
-                </tr>
-            
-                <tr>
                     <td>ReadAccess</td>
                     <td>Indicates that the input/output will be comprised solely of reads.</td>
                 </tr>
@@ -73,6 +68,11 @@ typedef enum _IO_ACCESS_TYPE {
                 <tr>
                     <td>WriteAccess</td>
                     <td>Indicates that the input/output will be comprised solely of writes.</td>
+                </tr>
+            
+                <tr>
+                    <td>ModifyAccess</td>
+                    <td>Indicates that the input/output will be comprised of reads and writes.</td>
                 </tr>
 </table>
 

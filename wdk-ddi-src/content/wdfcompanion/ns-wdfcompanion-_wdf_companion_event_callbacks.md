@@ -61,11 +61,7 @@ typedef struct _WDF_COMPANION_EVENT_CALLBACKS {
 ## Members
 
 
-`EvtCompanionPostD0Exit`
-
-
-
-`EvtCompanionPostReleaseHardware`
+`Size`
 
 
 
@@ -73,11 +69,15 @@ typedef struct _WDF_COMPANION_EVENT_CALLBACKS {
 
 
 
+`EvtCompanionPostD0Exit`
+
+
+
 `EvtCompanionPrePrepareHardware`
 
 
 
-`Size`
+`EvtCompanionPostReleaseHardware`
 
 
 

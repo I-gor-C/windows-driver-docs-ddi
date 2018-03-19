@@ -67,23 +67,6 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD {
 ## Members
 
 
-`CongestionAlgorithm`
-
-Reserved for future use.
-     
-
-If you are an independent hardware vendor (IHV) and you want to implement nondefault congestion
-     control algorithms, for example Compound TCP, contact Microsoft at 
-     <a href="mailto:offloadt@microsoft.com">External TCP Offload Triage</a>.
-
-`Encapsulation`
-
-Encapsulation settings for TCP chimney offload. For more information about this member, see the following Remarks section.
-
-`Flags`
-
-Reserved.
-
 `Header`
 
 The 
@@ -96,6 +79,10 @@ The
      <b>NDIS_TCP_CONNECTION_OFFLOAD_VERSION_1</b>, and the 
      <b>Size</b> member to 
      <b>NDIS_SIZEOF_TCP_CONNECTION_OFFLOAD_REVISION_1</b>.
+
+`Encapsulation`
+
+Encapsulation settings for TCP chimney offload. For more information about this member, see the following Remarks section.
 
 `SupportIPv4`
 
@@ -126,10 +113,23 @@ If an offload target sets the
      segments. If an offload target does not support the SACK option, the target must be able to ignore the
      SACK option and process the rest of the TCP segment normally.
 
+`CongestionAlgorithm`
+
+Reserved for future use.
+     
+
+If you are an independent hardware vendor (IHV) and you want to implement nondefault congestion
+     control algorithms, for example Compound TCP, contact Microsoft at 
+     <a href="mailto:offloadt@microsoft.com">External TCP Offload Triage</a>.
+
 `TcpConnectionOffloadCapacity`
 
 A ULONG value that an offload target sets to indicate the maximum number of offloaded TCP
      connections that it supports. This number includes both IPv4 and IPv6 connections.
+
+`Flags`
+
+Reserved.
 
 ## Remarks
 The NDIS_TCP_CONNECTION_OFFLOAD structure specifies the current or supported services that a miniport
@@ -270,11 +270,3 @@ Note that an offload target cannot directly indicate new offload capabilities. I
 
 <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
    NdisMIndicateReceiveNetBufferLists</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_CONNECTION_OFFLOAD structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

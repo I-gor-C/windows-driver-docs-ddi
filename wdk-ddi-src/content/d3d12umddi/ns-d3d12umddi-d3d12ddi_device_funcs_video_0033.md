@@ -67,45 +67,45 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_VIDEO_0033 {
 ## Members
 
 
-`pfnCalcPrivateVideoDecoderHeapSize`
+`pfnGetCaps`
 
-Calculates the private video decoder heap size.
+Get caps.
 
 `pfnCalcPrivateVideoDecoderSize`
 
 Calculates the private video decoder size.
 
-`pfnCalcPrivateVideoProcessorSize`
-
-Calculates the private video processor size.
-
 `pfnCreateVideoDecoder`
 
 Creates a video decoder.
-
-`pfnCreateVideoDecoderHeap`
-
-Creates the video decoder heap.
-
-`pfnCreateVideoProcessor`
-
-Creates the video processor.
 
 `pfnDestroyVideoDecoder`
 
 Destroys the video decoder.
 
+`pfnCalcPrivateVideoDecoderHeapSize`
+
+Calculates the private video decoder heap size.
+
+`pfnCreateVideoDecoderHeap`
+
+Creates the video decoder heap.
+
 `pfnDestroyVideoDecoderHeap`
 
 Destroys the video decoder heap.
 
+`pfnCalcPrivateVideoProcessorSize`
+
+Calculates the private video processor size.
+
+`pfnCreateVideoProcessor`
+
+Creates the video processor.
+
 `pfnDestroyVideoProcessor`
 
 Destroys the video processor.
-
-`pfnGetCaps`
-
-Get caps.
 
 
 ## Requirements

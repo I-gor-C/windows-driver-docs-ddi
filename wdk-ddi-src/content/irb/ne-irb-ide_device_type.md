@@ -62,6 +62,11 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>DeviceUnknown</td>
+                    <td>Indicates that the device does not communicate by means of a known protocol.</td>
+                </tr>
+            
+                <tr>
                     <td>DeviceIsAta</td>
                     <td>Indicates an ATA device.</td>
                 </tr>
@@ -74,11 +79,6 @@ typedef enum  {
                 <tr>
                     <td>DeviceNotExist</td>
                     <td>Indicates that the device does not exist.</td>
-                </tr>
-            
-                <tr>
-                    <td>DeviceUnknown</td>
-                    <td>Indicates that the device does not communicate by means of a known protocol.</td>
                 </tr>
 </table>
 

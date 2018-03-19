@@ -61,17 +61,12 @@ typedef enum _RILMSGMWIDETAILLISTPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_MWIDETAIL_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_MWIDETAIL_DETAILITEMS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_MWIDETAIL_EXECUTOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_MWIDETAIL_REFNUM</td>
                     <td></td>
                 </tr>
             
@@ -81,7 +76,12 @@ typedef enum _RILMSGMWIDETAILLISTPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_MWIDETAIL_REFNUM</td>
+                    <td>RIL_PARAM_MWIDETAIL_DETAILITEMS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_MWIDETAIL_ALL</td>
                     <td></td>
                 </tr>
 </table>

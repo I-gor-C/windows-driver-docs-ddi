@@ -63,13 +63,8 @@ typedef enum _DOT11_ASSOCIATION_STATE {
 <table>
             
                 <tr>
-                    <td>dot11_assoc_state_auth_assoc</td>
-                    <td>The 802.11 station is authenticated and associated with the peer.</td>
-                </tr>
-            
-                <tr>
-                    <td>dot11_assoc_state_auth_unassoc</td>
-                    <td>The 802.11 station is authenticated with the peer but is not associated.</td>
+                    <td>dot11_assoc_state_zero</td>
+                    <td>The association state is undefined.</td>
                 </tr>
             
                 <tr>
@@ -78,8 +73,13 @@ typedef enum _DOT11_ASSOCIATION_STATE {
                 </tr>
             
                 <tr>
-                    <td>dot11_assoc_state_zero</td>
-                    <td>The association state is undefined.</td>
+                    <td>dot11_assoc_state_auth_unassoc</td>
+                    <td>The 802.11 station is authenticated with the peer but is not associated.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_assoc_state_auth_assoc</td>
+                    <td>The 802.11 station is authenticated and associated with the peer.</td>
                 </tr>
 </table>
 

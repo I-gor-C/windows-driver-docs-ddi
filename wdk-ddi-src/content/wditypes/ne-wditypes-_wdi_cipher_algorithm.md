@@ -70,13 +70,33 @@ typedef enum _WDI_CIPHER_ALGORITHM {
 <table>
             
                 <tr>
-                    <td>WDI_CIPHER_ALGO_BIP</td>
-                    <td>Specifies a BIP cipher algorithm.</td>
+                    <td>WDI_CIPHER_ALGO_NONE</td>
+                    <td>Specifies that no cipher algorithm is enabled or supported.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_CIPHER_ALGO_WEP40</td>
+                    <td>Specifies a Wired Equivalent Privacy (WEP) algorithm, which is the RC4-based algorithm that is specified in the IEEE 802.11-2012 standard. This enumerator specifies the WEP cipher algorithm with a 40-bit cipher key.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_CIPHER_ALGO_TKIP</td>
+                    <td>Specifies a Temporal Key Integrity Protocol (TKIP) algorithm, which is the RC4-based cipher suite that is based on the algorithms that are defined in the WPA specification and IEEE 802.11i-2004 standard. This cipher also uses the Michael Message Integrity Code (MIC) algorithm for forgery protection.</td>
                 </tr>
             
                 <tr>
                     <td>WDI_CIPHER_ALGO_CCMP</td>
                     <td>Specifies an AES-CCMP algorithm, as specified in the IEEE 802.11i-2004 standard and RFC 3610. Advanced Encryption Standard (AES) is the encryption algorithm defined in FIPS PUB 197.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_CIPHER_ALGO_WEP104</td>
+                    <td>Specifies a WEP cipher algorithm with a 104-bit cipher key.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_CIPHER_ALGO_BIP</td>
+                    <td>Specifies a BIP cipher algorithm.</td>
                 </tr>
             
                 <tr>
@@ -87,18 +107,8 @@ Specifies a GCMP (Galois/Counter Mode Protocol) cipher algorithm. It is the only
                 </tr>
             
                 <tr>
-                    <td>WDI_CIPHER_ALGO_IHV_END</td>
-                    <td>Specifies the end of the range that is used to define proprietary authentication algorithms that are developed by an IHV.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_CIPHER_ALGO_IHV_START</td>
-                    <td>Specifies the start of the range that is used to define proprietary cipher algorithms that are developed by an independent hardware vendor (IHV).</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_CIPHER_ALGO_NONE</td>
-                    <td>Specifies that no cipher algorithm is enabled or supported.</td>
+                    <td>WDI_CIPHER_ALGO_WPA_USE_GROUP</td>
+                    <td>Specifies a Wi-Fi Protected Access (WPA) Use Group Key cipher suite. For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE 802.11i-2004 standard.</td>
                 </tr>
             
                 <tr>
@@ -107,28 +117,18 @@ Specifies a GCMP (Galois/Counter Mode Protocol) cipher algorithm. It is the only
                 </tr>
             
                 <tr>
-                    <td>WDI_CIPHER_ALGO_TKIP</td>
-                    <td>Specifies a Temporal Key Integrity Protocol (TKIP) algorithm, which is the RC4-based cipher suite that is based on the algorithms that are defined in the WPA specification and IEEE 802.11i-2004 standard. This cipher also uses the Michael Message Integrity Code (MIC) algorithm for forgery protection.</td>
-                </tr>
-            
-                <tr>
                     <td>WDI_CIPHER_ALGO_WEP</td>
                     <td>Specifies a WEP cipher algorithm with a cipher key of any length.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_CIPHER_ALGO_WEP104</td>
-                    <td>Specifies a WEP cipher algorithm with a 104-bit cipher key.</td>
+                    <td>WDI_CIPHER_ALGO_IHV_START</td>
+                    <td>Specifies the start of the range that is used to define proprietary cipher algorithms that are developed by an independent hardware vendor (IHV).</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_CIPHER_ALGO_WEP40</td>
-                    <td>Specifies a Wired Equivalent Privacy (WEP) algorithm, which is the RC4-based algorithm that is specified in the IEEE 802.11-2012 standard. This enumerator specifies the WEP cipher algorithm with a 40-bit cipher key.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_CIPHER_ALGO_WPA_USE_GROUP</td>
-                    <td>Specifies a Wi-Fi Protected Access (WPA) Use Group Key cipher suite. For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE 802.11i-2004 standard.</td>
+                    <td>WDI_CIPHER_ALGO_IHV_END</td>
+                    <td>Specifies the end of the range that is used to define proprietary authentication algorithms that are developed by an IHV.</td>
                 </tr>
 </table>
 

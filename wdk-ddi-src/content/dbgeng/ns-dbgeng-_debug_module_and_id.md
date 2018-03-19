@@ -57,13 +57,13 @@ typedef struct _DEBUG_MODULE_AND_ID {
 ## Members
 
 
-`Id`
-
-The symbol ID of the symbol within the module.
-
 `ModuleBase`
 
 The location in the target's virtual address space of the module's base address.
+
+`Id`
+
+The symbol ID of the symbol within the module.
 
 
 ## Requirements

@@ -59,9 +59,9 @@ typedef struct _PosBarcodeScannerCapabilitiesType {
 ## Members
 
 
-`IsImagePreviewSupported`
+`PowerReportingType`
 
-Indicates whether image data can be obtained from the barcode scanner device (in other words, whether <a href="https://msdn.microsoft.com/library/windows/hardware/dn757466">BarcodeScannerImagePreviewReceived</a> events will be sent by the driver).
+A <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedpospowerreportingtype.md">UnifiedPosPowerReportingType</a> that indicates whether the device supports standard or advanced power reporting.
 
 `IsStatisticsReportingSupported`
 
@@ -71,9 +71,9 @@ Indicates whether <a href="..\pointofservicedriverinterface\ni-pointofservicedri
 
 Indicates whether <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_update_statistics.md">IOCTL_POINT_OF_SERVICE_UPDATE_STATISTICS</a> is supported.
 
-`PowerReportingType`
+`IsImagePreviewSupported`
 
-A <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedpospowerreportingtype.md">UnifiedPosPowerReportingType</a> that indicates whether the device supports standard or advanced power reporting.
+Indicates whether image data can be obtained from the barcode scanner device (in other words, whether <a href="https://msdn.microsoft.com/library/windows/hardware/dn757466">BarcodeScannerImagePreviewReceived</a> events will be sent by the driver).
 
 
 ## Requirements

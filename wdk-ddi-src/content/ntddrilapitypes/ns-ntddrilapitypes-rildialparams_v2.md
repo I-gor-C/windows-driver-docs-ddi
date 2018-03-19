@@ -65,6 +65,10 @@ typedef struct _RILDIALPARAMS_V2 {
 
 
 
+`raAddress`
+
+
+
 `dwOptions`
 
 
@@ -74,10 +78,6 @@ typedef struct _RILDIALPARAMS_V2 {
 
 
 `fHasMediaOffer`
-
-
-
-`raAddress`
 
 
 

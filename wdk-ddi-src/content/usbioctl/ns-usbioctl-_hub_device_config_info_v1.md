@@ -62,6 +62,22 @@ typedef struct _HUB_DEVICE_CONFIG_INFO {
 ## Members
 
 
+`Version`
+
+Specifies the version number.  Must be set to 1.
+
+`Length`
+
+Specifies the size of the <b>HUB_DEVICE_CONFIG_INFO</b> structure. Must be set by the caller.
+
+`HubFlags`
+
+Specifies the hub capabilities in a <a href="..\usbioctl\ns-usbioctl-_usb_hub_cap_flags.md">USB_HUB_CAP_FLAGS</a> structure.
+
+`HardwareIds`
+
+The PnP hardware ID multi-string for the USB device in a <a href="..\usbioctl\ns-usbioctl-_usb_id_string.md">USB_ID_STRING</a> structure.
+
 `CompatibleIds`
 
 PnP compatible ID multi-string for the USB device in a <a href="..\usbioctl\ns-usbioctl-_usb_id_string.md">USB_ID_STRING</a> structure.
@@ -70,18 +86,6 @@ PnP compatible ID multi-string for the USB device in a <a href="..\usbioctl\ns-u
 
 Description of the device in a <a href="..\usbioctl\ns-usbioctl-_usb_id_string.md">USB_ID_STRING</a> structure. This may be set to <b>NULL</b>.
 
-`HardwareIds`
-
-The PnP hardware ID multi-string for the USB device in a <a href="..\usbioctl\ns-usbioctl-_usb_id_string.md">USB_ID_STRING</a> structure.
-
-`HubFlags`
-
-Specifies the hub capabilities in a <a href="..\usbioctl\ns-usbioctl-_usb_hub_cap_flags.md">USB_HUB_CAP_FLAGS</a> structure.
-
-`Length`
-
-Specifies the size of the <b>HUB_DEVICE_CONFIG_INFO</b> structure. Must be set by the caller.
-
 `Reserved`
 
 
@@ -89,10 +93,6 @@ Specifies the size of the <b>HUB_DEVICE_CONFIG_INFO</b> structure. Must be set b
 `UxdSettings`
 
 
-
-`Version`
-
-Specifies the version number.  Must be set to 1.
 
 ## Remarks
 The <b>Buffer</b> member of the <a href="..\usbioctl\ns-usbioctl-_usb_id_string.md">USB_ID_STRING</a> structure points to a string that contains <b>HardwareIds</b>, <b>CompatibleIds</b>, and <b>DeviceDescription</b> values.
@@ -119,11 +119,3 @@ The caller is responsible for releasing this string buffer, which is allocated b
 
 
 <a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_get_device_config_info.md">IOCTL_INTERNAL_USB_GET_DEVICE_CONFIG_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20HUB_DEVICE_CONFIG_INFO structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

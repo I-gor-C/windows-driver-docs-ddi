@@ -66,13 +66,29 @@ typedef struct _PosMagneticStripeReaderCapabilitiesType {
 ## Members
 
 
-`AuthenticationLevel`
+`PowerReportingType`
 
-The authentication level that the device supports.
+Indicates the type of power reporting that is supported by the device.
+
+`IsStatisticsReportingSupported`
+
+Indicates whether the device supports <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_retrieve_statistics.md">IOCTL_POINT_OF_SERVICE_RETRIEVE_STATISTICS</a>.
+
+`IsStatisticsUpdatingSupported`
+
+Indicates whether the device supports <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_update_statistics.md">IOCTL_POINT_OF_SERVICE_UPDATE_STATISTICS</a>.
 
 `CardAuthenticationLength`
 
 The length, in bytes, of the name of the type of authentication that the device uses.
+
+`SupportedEncryptionAlgorithms`
+
+The supported encryption algorithm. See <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrdataencryption.md">MsrDataEncryption</a>.
+
+`AuthenticationLevel`
+
+The authentication level that the device supports.
 
 `IsIsoSupported`
 
@@ -86,14 +102,6 @@ Indicates whether device supports JIS Type-I cards.
 
 Indicates whether device supports JIS Type-II cards.
 
-`IsStatisticsReportingSupported`
-
-Indicates whether the device supports <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_retrieve_statistics.md">IOCTL_POINT_OF_SERVICE_RETRIEVE_STATISTICS</a>.
-
-`IsStatisticsUpdatingSupported`
-
-Indicates whether the device supports <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_update_statistics.md">IOCTL_POINT_OF_SERVICE_UPDATE_STATISTICS</a>.
-
 `IsTrackDataMaskingSupported`
 
 Indicates whether the device is capable of masking track data.
@@ -101,14 +109,6 @@ Indicates whether the device is capable of masking track data.
 `IsTransmitSentinelsSupported`
 
 Indicates whether the devices is able to transmit start and end sentinels.
-
-`PowerReportingType`
-
-Indicates the type of power reporting that is supported by the device.
-
-`SupportedEncryptionAlgorithms`
-
-The supported encryption algorithm. See <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrdataencryption.md">MsrDataEncryption</a>.
 
 
 ## Requirements

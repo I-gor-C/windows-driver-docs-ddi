@@ -65,23 +65,23 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>DebugLevelError</td>
-                    <td>Display information about serious but recoverable error.</td>
-                </tr>
-            
-                <tr>
                     <td>DebugLevelFatal</td>
                     <td>Display only information about nonrecoverable system failure.</td>
                 </tr>
             
                 <tr>
-                    <td>DebugLevelInfo</td>
-                    <td>Display status information. System must remain responsive.</td>
+                    <td>DebugLevelError</td>
+                    <td>Display information about serious but recoverable error.</td>
                 </tr>
             
                 <tr>
-                    <td>DebugLevelMaximum</td>
-                    <td>Display maximum information.</td>
+                    <td>DebugLevelWarning</td>
+                    <td>Display warnings</td>
+                </tr>
+            
+                <tr>
+                    <td>DebugLevelInfo</td>
+                    <td>Display status information. System must remain responsive.</td>
                 </tr>
             
                 <tr>
@@ -95,8 +95,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>DebugLevelWarning</td>
-                    <td>Display warnings</td>
+                    <td>DebugLevelMaximum</td>
+                    <td>Display maximum information.</td>
                 </tr>
 </table>
 
@@ -109,11 +109,3 @@ typedef enum  {
 ## See Also
 
 <a href="..\strmini\nf-strmini-streamclassdebugprint.md">StreamClassDebugPrint</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20STREAM_DEBUG_LEVEL enumeration%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

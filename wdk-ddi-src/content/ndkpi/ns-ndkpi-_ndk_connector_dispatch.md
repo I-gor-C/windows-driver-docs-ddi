@@ -66,17 +66,13 @@ typedef struct _NDK_CONNECTOR_DISPATCH {
 ## Members
 
 
-`NdkAccept`
-
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_accept.md">NDK_FN_ACCEPT</a> dispatch function.
-
 `NdkCloseConnector`
 
 The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_close_object.md">NDK_FN_CLOSE_OBJECT</a> dispatch function.
 
-`NdkCompleteConnect`
+`NdkQueryExtension`
 
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_complete_connect.md">NDK_FN_COMPLETE_CONNECT</a> dispatch function.
+The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_query_extension_interface.md">NDK_FN_QUERY_EXTENSION_INTERFACE</a> dispatch function.
 
 `NdkConnect`
 
@@ -86,9 +82,17 @@ The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_connect.md">N
 
 The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_connect_with_shared_endpoint.md">NDK_FN_CONNECT_WITH_SHARED_ENDPOINT</a> dispatch function.
 
-`NdkDisconnect`
+`NdkCompleteConnect`
 
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_disconnect.md">NDK_FN_DISCONNECT</a> dispatch function.
+The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_complete_connect.md">NDK_FN_COMPLETE_CONNECT</a> dispatch function.
+
+`NdkAccept`
+
+The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_accept.md">NDK_FN_ACCEPT</a> dispatch function.
+
+`NdkReject`
+
+The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_reject.md">NDK_FN_REJECT</a> dispatch function.
 
 `NdkGetConnectionData`
 
@@ -102,13 +106,9 @@ The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_get_local_add
 
 The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_get_peer_address.md">NDK_FN_GET_PEER_ADDRESS</a> dispatch function.
 
-`NdkQueryExtension`
+`NdkDisconnect`
 
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_query_extension_interface.md">NDK_FN_QUERY_EXTENSION_INTERFACE</a> dispatch function.
-
-`NdkReject`
-
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_reject.md">NDK_FN_REJECT</a> dispatch function.
+The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_disconnect.md">NDK_FN_DISCONNECT</a> dispatch function.
 
 ## Remarks
 The <b>NDK_CONNECTOR_DISPATCH</b> structure is used in the <a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a> structure.
@@ -166,11 +166,3 @@ The <b>NDK_CONNECTOR_DISPATCH</b> structure is used in the <a href="..\ndkpi\ns-
 
 
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_get_peer_address.md">NDK_FN_GET_PEER_ADDRESS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_CONNECTOR_DISPATCH structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

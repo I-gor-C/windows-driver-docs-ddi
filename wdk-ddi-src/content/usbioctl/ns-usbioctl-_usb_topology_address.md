@@ -61,10 +61,6 @@ typedef struct _USB_TOPOLOGY_ADDRESS {
 ## Members
 
 
-`HubPortNumber`
-
-An array containing the port number on each external hub (between the root hub and the device) through which the USB device is connected.  The first element of the array indicates the port on the hub that is connected directly to the root hub.  An array containing all zeros indicates that the device is connected directly to the root hub.
-
 `PciBusNumber`
 
 Specifies the PCI bus number of the USB host controller to which the USB device is attached.
@@ -81,13 +77,17 @@ Specifies the PCI function number of the USB host controller to which the USB de
 
 
 
-`Reserved2`
-
-
-
 `RootHubPortNumber`
 
 Specifies the root hub port number through which the USB device is connected.  The USB device can be connected to the root port directly, or it can be connected through 1 or more external USB hubs to the port.
+
+`HubPortNumber`
+
+An array containing the port number on each external hub (between the root hub and the device) through which the USB device is connected.  The first element of the array indicates the port on the hub that is connected directly to the root hub.  An array containing all zeros indicates that the device is connected directly to the root hub.
+
+`Reserved2`
+
+
 
 ## Remarks
 The reserved members of this structure must be treated as opaque and are reserved for system use.
@@ -105,11 +105,3 @@ The reserved members of this structure must be treated as opaque and are reserve
 
 
 <a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_get_topology_address.md">IOCTL_INTERNAL_USB_GET_TOPOLOGY_ADDRESS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_TOPOLOGY_ADDRESS structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

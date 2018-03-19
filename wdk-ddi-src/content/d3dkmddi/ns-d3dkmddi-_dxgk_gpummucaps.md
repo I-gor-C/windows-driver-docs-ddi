@@ -79,22 +79,6 @@ typedef struct _DXGK_GPUMMUCAPS {
 ## Members
 
 
-`LeafPageTableSizeFor64KPagesInBytes`
-
-The size of a leaf page table when 64KB pages are used. The size must be a multiple of CPU page size (4096).
-
-`LegacyBehaviors`
-
-#### SourcePageTableVaInTransfer
-
-When set to 1, video memory manager sets <b>SourcePageTable</b> address in <b>TransferVirtual</b> during allocation eviction.
-
-`PageTableLevelCount`
-
-The number of page table levels supported. The minimum value is 2 (defined as <b>DXGK_MIN_PAGE_TABLE_LEVEL_COUNT</b>). The maximum value is <b>DXGK_MAX_PAGE_TABLE_LEVEL_COUNT</b>. 
-
-When <b>PageTableLevelCount</b> is 2, the root page table is dynamically resizable and the size of the page table is determined through <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_getrootpagetablesize.md">DxgkDdiGetRootPageTableSize</a>. When <b>PageTableLevelCount</b> is greater than 2, all page table levels have a fixed size, which is described through <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_page_table_level_desc.md">DXGK_PAGE_TABLE_LEVEL_DESC</a><b>::PageTableSizeInBytes</b>.
-
 `PageTableUpdateMode`
 
 Defines the type of addresses which are used in <a href="https://msdn.microsoft.com/08328e82-d1cc-4c50-bc96-7382232676ab">DxgkDdiUpdatePageTable</a> operations. When <b>DXGK_PAGETABLEUPDATE_GPU_VIRTUAL</b> is set, all paging operation will occur in the virtual address space of the system context. When page directories are located in a local GPU memory segment, the update mode cannot be set to <b>DXGK_PAGETABLEUPDATE_CPU_VIRTUAL</b>.
@@ -102,6 +86,22 @@ Defines the type of addresses which are used in <a href="https://msdn.microsoft.
 `VirtualAddressBitCount`
 
 The number of bits in the GPU virtual address.
+
+`LeafPageTableSizeFor64KPagesInBytes`
+
+The size of a leaf page table when 64KB pages are used. The size must be a multiple of CPU page size (4096).
+
+`PageTableLevelCount`
+
+The number of page table levels supported. The minimum value is 2 (defined as <b>DXGK_MIN_PAGE_TABLE_LEVEL_COUNT</b>). The maximum value is <b>DXGK_MAX_PAGE_TABLE_LEVEL_COUNT</b>. 
+
+When <b>PageTableLevelCount</b> is 2, the root page table is dynamically resizable and the size of the page table is determined through <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_getrootpagetablesize.md">DxgkDdiGetRootPageTableSize</a>. When <b>PageTableLevelCount</b> is greater than 2, all page table levels have a fixed size, which is described through <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_page_table_level_desc.md">DXGK_PAGE_TABLE_LEVEL_DESC</a><b>::PageTableSizeInBytes</b>.
+
+`LegacyBehaviors`
+
+#### SourcePageTableVaInTransfer
+
+When set to 1, video memory manager sets <b>SourcePageTable</b> address in <b>TransferVirtual</b> during allocation eviction.
 
 
 ## Requirements

@@ -64,7 +64,7 @@ typedef enum _RILUMTSKIND {
 <table>
             
                 <tr>
-                    <td>RIL_UMTSKIND_DC_HSPAPLUS</td>
+                    <td>RIL_UMTSKIND_UMTS</td>
                     <td></td>
                 </tr>
             
@@ -74,7 +74,17 @@ typedef enum _RILUMTSKIND {
                 </tr>
             
                 <tr>
+                    <td>RIL_UMTSKIND_HSUPA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_UMTSKIND_HSPAPLUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UMTSKIND_DC_HSPAPLUS</td>
                     <td></td>
                 </tr>
             
@@ -84,17 +94,7 @@ typedef enum _RILUMTSKIND {
                 </tr>
             
                 <tr>
-                    <td>RIL_UMTSKIND_HSUPA</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_UMTSKIND_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UMTSKIND_UMTS</td>
                     <td></td>
                 </tr>
 </table>

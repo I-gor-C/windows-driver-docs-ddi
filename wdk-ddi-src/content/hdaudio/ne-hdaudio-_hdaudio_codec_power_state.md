@@ -65,6 +65,11 @@ typedef enum _HDAUDIO_CODEC_POWER_STATE {
 <table>
             
                 <tr>
+                    <td>PowerCodecUnspecified</td>
+                    <td>An unspecified power state.</td>
+                </tr>
+            
+                <tr>
                     <td>PowerCodecD0</td>
                     <td>Power state D0</td>
                 </tr>
@@ -92,11 +97,6 @@ typedef enum _HDAUDIO_CODEC_POWER_STATE {
                 <tr>
                     <td>PowerCodecMaximum</td>
                     <td>Power state Maximum</td>
-                </tr>
-            
-                <tr>
-                    <td>PowerCodecUnspecified</td>
-                    <td>An unspecified power state.</td>
                 </tr>
 </table>
 

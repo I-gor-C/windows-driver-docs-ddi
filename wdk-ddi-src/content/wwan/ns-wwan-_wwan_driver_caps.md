@@ -59,6 +59,16 @@ typedef struct _WWAN_DRIVER_CAPS {
 ## Members
 
 
+`ulMajorVersion`
+
+The major version of the MB driver model that the miniport driver supports. Miniport drivers
+     should set this member to WWAN_MAJOR_VERSION.
+
+`ulMinorVersion`
+
+The minor version of the MB driver model that the miniport driver supports. Miniport drivers
+     should set this member to WWAN_MINOR_VERSION.
+
 `ulDriverCaps`
 
 This member is reserved for future use. Miniport drivers should set this member to the value in
@@ -73,16 +83,6 @@ This member is reserved for future use. Miniport drivers should set this member 
 
 The miniport driver has no special capabilities.
 
-`ulMajorVersion`
-
-The major version of the MB driver model that the miniport driver supports. Miniport drivers
-     should set this member to WWAN_MAJOR_VERSION.
-
-`ulMinorVersion`
-
-The minor version of the MB driver model that the miniport driver supports. Miniport drivers
-     should set this member to WWAN_MINOR_VERSION.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -93,11 +93,3 @@ The minor version of the MB driver model that the miniport driver supports. Mini
 ## See Also
 
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_driver_caps.md">NDIS_WWAN_DRIVER_CAPS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DRIVER_CAPS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

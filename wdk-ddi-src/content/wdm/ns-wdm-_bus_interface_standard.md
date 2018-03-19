@@ -65,41 +65,41 @@ typedef struct _BUS_INTERFACE_STANDARD {
 ## Members
 
 
+`Size`
+
+The size, in bytes, of this structure.
+
+`Version`
+
+The driver-defined interface version.
+
 `Context`
 
 A pointer to interface-specific context information.
-
-`GetBusData`
-
-A pointer to a <a href="..\wdm\nc-wdm-get_set_device_data.md">GetBusData</a> routine that reads data from the device's configuration space.
-
-`GetDmaAdapter`
-
-A pointer to a <a href="..\wdm\nc-wdm-get_dma_adapter.md">GetDmaAdapter</a> routine that returns a DMA adapter structure (<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>) for the target device.
-
-`InterfaceDereference`
-
-A pointer to an <a href="..\wudfwdm\nc-wudfwdm-pinterface_dereference.md">InterfaceDereference</a> routine that decrements the interface's reference count.
 
 `InterfaceReference`
 
 A pointer to an <a href="..\wudfwdm\nc-wudfwdm-pinterface_reference.md">InterfaceReference</a> routine that increments the interface's reference count.
 
-`SetBusData`
+`InterfaceDereference`
 
-A pointer to a <a href="..\wdm\nc-wdm-get_set_device_data.md">SetBusData</a> routine that writes data to the device's configuration space.
-
-`Size`
-
-The size, in bytes, of this structure.
+A pointer to an <a href="..\wudfwdm\nc-wudfwdm-pinterface_dereference.md">InterfaceDereference</a> routine that decrements the interface's reference count.
 
 `TranslateBusAddress`
 
 A pointer to a <a href="..\wdm\nc-wdm-translate_bus_address.md">TranslateBusAddress</a> routine that translates addresses on the parent bus to logical addresses.
 
-`Version`
+`GetDmaAdapter`
 
-The driver-defined interface version.
+A pointer to a <a href="..\wdm\nc-wdm-get_dma_adapter.md">GetDmaAdapter</a> routine that returns a DMA adapter structure (<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>) for the target device.
+
+`SetBusData`
+
+A pointer to a <a href="..\wdm\nc-wdm-get_set_device_data.md">SetBusData</a> routine that writes data to the device's configuration space.
+
+`GetBusData`
+
+A pointer to a <a href="..\wdm\nc-wdm-get_set_device_data.md">GetBusData</a> routine that reads data from the device's configuration space.
 
 ## Remarks
 The <b>BUS_INTERFACE_STANDARD</b> structure is an extension of the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure.
@@ -188,11 +188,3 @@ However, if a driver must obtain an adapter object while running at IRQL &gt;= D
 
 
 <a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BUS_INTERFACE_STANDARD structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

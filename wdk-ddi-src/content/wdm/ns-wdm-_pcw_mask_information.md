@@ -62,6 +62,22 @@ typedef struct _PCW_MASK_INFORMATION {
 ## Members
 
 
+`CounterMask`
+
+A bitmask. If the <i>x</i>-th bit is set, counter <i>x</i>^2 is included in the query. The <b>CounterMask</b> is assigned to identify the counters that are exposed in a registration.
+
+`InstanceMask`
+
+A Unicode string that contains a wildcard specification of the instance. That is, "*" and "?" have the usual meaning of zero-or-more-characters and any-character respectively. The <b>InstanceMask</b> identifies the name of the instance (or wildcard) that is used to filter the instances that will be collected.
+
+`InstanceId`
+
+The numeric value that identifies the instance(s) to be collected. If the value is PCW_ANY_INSTANCE_ID, no specific instance identifier is required.
+
+`CollectMultiple`
+
+The BOOLEAN value that indicates whether multiple instances should be collected or just one.
+
 `Buffer`
 
 A pointer to the consumer buffer to which the instance of the counter set will be added. Depending on the purpose of the buffer, the function either adds an instance or collects data.
@@ -69,22 +85,6 @@ A pointer to the consumer buffer to which the instance of the counter set will b
 `CancelEvent`
 
 A pointer to an initialized event object that indicates whether the request (either to collect data or enumerate instances) was canceled.
-
-`CollectMultiple`
-
-The BOOLEAN value that indicates whether multiple instances should be collected or just one.
-
-`CounterMask`
-
-A bitmask. If the <i>x</i>-th bit is set, counter <i>x</i>^2 is included in the query. The <b>CounterMask</b> is assigned to identify the counters that are exposed in a registration.
-
-`InstanceId`
-
-The numeric value that identifies the instance(s) to be collected. If the value is PCW_ANY_INSTANCE_ID, no specific instance identifier is required.
-
-`InstanceMask`
-
-A Unicode string that contains a wildcard specification of the instance. That is, "*" and "?" have the usual meaning of zero-or-more-characters and any-character respectively. The <b>InstanceMask</b> identifies the name of the instance (or wildcard) that is used to filter the instances that will be collected.
 
 
 ## Requirements

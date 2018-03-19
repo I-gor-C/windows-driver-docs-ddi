@@ -63,6 +63,21 @@ typedef enum _DXGK_GLITCH_EFFECT {
 <table>
             
                 <tr>
+                    <td>DXGK_GLITCH_EFFECT_SYNC_LOSS</td>
+                    <td>Indicates that the display connected to the target lost sync due to a glitch.  Even a short sync loss will likely lead to the user seeing a black screen while the display device re-syncs.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_GLITCH_EFFECT_GARBAGE_CONTENT</td>
+                    <td>Indicates that garbage content was sent to the display connected to the target due to a glitch.  Garbage content will be very noticeable to a user.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_GLITCH_EFFECT_STALE_CONTENT</td>
+                    <td>Indicates that stale content was sent to the display connected to the target due to a glitch.  Display of stale content would cause the affected pixel area to appear frozen.</td>
+                </tr>
+            
+                <tr>
                     <td>DXGK_GLITCH_EFFECT_BLACK_CONTENT</td>
                     <td>Indicates that black content was sent to the display connected to the target due to a glitch.  If the content was black, as would be the case when initializing the display, this will be imperceptible; otherwise it is likely that black content will be noticeable to a user.</td>
                 </tr>
@@ -73,23 +88,8 @@ typedef enum _DXGK_GLITCH_EFFECT {
                 </tr>
             
                 <tr>
-                    <td>DXGK_GLITCH_EFFECT_GARBAGE_CONTENT</td>
-                    <td>Indicates that garbage content was sent to the display connected to the target due to a glitch.  Garbage content will be very noticeable to a user.</td>
-                </tr>
-            
-                <tr>
                     <td>DXGK_GLITCH_EFFECT_SEAMLESS</td>
                     <td>Indicates that there was no user visible glitch.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_GLITCH_EFFECT_STALE_CONTENT</td>
-                    <td>Indicates that stale content was sent to the display connected to the target due to a glitch.  Display of stale content would cause the affected pixel area to appear frozen.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_GLITCH_EFFECT_SYNC_LOSS</td>
-                    <td>Indicates that the display connected to the target lost sync due to a glitch.  Even a short sync loss will likely lead to the user seeing a black screen while the display device re-syncs.</td>
                 </tr>
             
                 <tr>

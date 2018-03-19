@@ -75,47 +75,6 @@ typedef struct DOT11_PHY_ATTRIBUTES {
 ## Members
 
 
-`bCFPollable`
-
-A Boolean value that, if set to <b>TRUE</b>, indicates that the 802.11 station supports CF-Poll frames. For
-      more information about CF-Poll frames, refer to Clause 9.4 of the IEEE 802.11-2012 standard.
-
-This member is not applicable to the Extensible Access Point (ExtAP) operation mode and is ignored
-      when the NIC is in the ExtAP mode.
-
-`bHardwarePhyState`
-
-A Boolean value that specifies the hardware power state of the PHY. If <b>TRUE</b>, the hardware power
-      state is enabled. If <b>FALSE</b>, the hardware power state is disabled.
-
-For more information about the PHY's hardware power state, see 
-      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-hardware-phy-state">
-      OID_DOT11_HARDWARE_PHY_STATE</a>.
-
-<div class="alert"><b>Note</b>  Whenever the PHY's hardware power state changes, the miniport driver must make an 
-      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-phy-state-changed">
-      NDIS_STATUS_DOT11_PHY_STATE_CHANGED</a> media-specific status indication.</div>
-<div> </div>
-
-`bSoftwarePhyState`
-
-A Boolean value that specifies the software power state of the PHY. If <b>TRUE</b>, the software power
-      state is enabled. If <b>FALSE</b>, the software power state is disabled.
-
-For more information about the PHY's software power state, see 
-      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569392">OID_DOT11_NIC_POWER_STATE</a>.
-
-<div class="alert"><b>Note</b>  Whenever the PHY's software power state changes, the miniport driver must make an 
-      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-phy-state-changed">
-      NDIS_STATUS_DOT11_PHY_STATE_CHANGED</a> media-specific status indication.</div>
-<div> </div>
-
-`DiversitySupport`
-
-The PHY's type of antenna diversity, defined through a 
-      <a href="..\windot11\ne-windot11-_dot11_diversity_support.md">DOT11_DIVERSITY_SUPPORT</a> enumeration
-      value.
-
 `Header`
 
 The type, revision, and size of the DOT11_PHY_ATTRIBUTES structure. This member is formatted as an 
@@ -148,19 +107,45 @@ This member must be set to
 For more information about these members, see 
       <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
-`PhySpecificAttributes`
-
-
-
 `PhyType`
 
 The type of the PHY as specified by a 
      <a href="..\windot11\ne-windot11-_dot11_phy_type.md">DOT11_PHY_TYPE</a> enumerator value.
 
-`TempType`
+`bHardwarePhyState`
 
-The PHY's operating temperature range, defined through a 
-      <a href="..\windot11\ne-windot11-_dot11_temp_type.md">DOT11_TEMP_TYPE</a> enumeration value.
+A Boolean value that specifies the hardware power state of the PHY. If <b>TRUE</b>, the hardware power
+      state is enabled. If <b>FALSE</b>, the hardware power state is disabled.
+
+For more information about the PHY's hardware power state, see 
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-hardware-phy-state">
+      OID_DOT11_HARDWARE_PHY_STATE</a>.
+
+<div class="alert"><b>Note</b>  Whenever the PHY's hardware power state changes, the miniport driver must make an 
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-phy-state-changed">
+      NDIS_STATUS_DOT11_PHY_STATE_CHANGED</a> media-specific status indication.</div>
+<div> </div>
+
+`bSoftwarePhyState`
+
+A Boolean value that specifies the software power state of the PHY. If <b>TRUE</b>, the software power
+      state is enabled. If <b>FALSE</b>, the software power state is disabled.
+
+For more information about the PHY's software power state, see 
+      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569392">OID_DOT11_NIC_POWER_STATE</a>.
+
+<div class="alert"><b>Note</b>  Whenever the PHY's software power state changes, the miniport driver must make an 
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-phy-state-changed">
+      NDIS_STATUS_DOT11_PHY_STATE_CHANGED</a> media-specific status indication.</div>
+<div> </div>
+
+`bCFPollable`
+
+A Boolean value that, if set to <b>TRUE</b>, indicates that the 802.11 station supports CF-Poll frames. For
+      more information about CF-Poll frames, refer to Clause 9.4 of the IEEE 802.11-2012 standard.
+
+This member is not applicable to the Extensible Access Point (ExtAP) operation mode and is ignored
+      when the NIC is in the ExtAP mode.
 
 `uMPDUMaxLength`
 
@@ -171,6 +156,21 @@ The maximum length, in bytes, of a media access control (MAC) protocol data unit
 <div class="alert"><b>Note</b>  Whenever the PHY's software power state changes, the miniport driver must make an
       NDIS_STATUS_DOT11_MPDU_MAX_LENGTH_CHANGED media-specific status indication.</div>
 <div> </div>
+
+`TempType`
+
+The PHY's operating temperature range, defined through a 
+      <a href="..\windot11\ne-windot11-_dot11_temp_type.md">DOT11_TEMP_TYPE</a> enumeration value.
+
+`DiversitySupport`
+
+The PHY's type of antenna diversity, defined through a 
+      <a href="..\windot11\ne-windot11-_dot11_diversity_support.md">DOT11_DIVERSITY_SUPPORT</a> enumeration
+      value.
+
+`PhySpecificAttributes`
+
+
 
 ## Remarks
 The 
@@ -242,11 +242,3 @@ The
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_ATTRIBUTES structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

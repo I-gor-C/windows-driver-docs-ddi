@@ -62,13 +62,13 @@ typedef struct {
 
 Structure size.
 
-`Unused`
-
-
-
 `Version`
 
 Version number.
+
+`Unused`
+
+
 
 
 ## Requirements

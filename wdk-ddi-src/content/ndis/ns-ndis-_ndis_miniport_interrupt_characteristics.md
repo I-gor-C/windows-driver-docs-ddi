@@ -71,32 +71,6 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
 ## Members
 
 
-`DisableInterruptHandler`
-
-The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">
-     MiniportDisableInterruptEx</a> function.
-
-`DisableMessageInterruptHandler`
-
-The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_disable_message_interrupt.md">
-     MiniportDisableMessageInterrupt</a> function, if any. If the driver does not support message signaled
-     interrupts, set this member to <b>NULL</b>.
-
-`EnableInterruptHandler`
-
-The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_enable_interrupt.md">
-     MiniportEnableInterruptEx</a> function.
-
-`EnableMessageInterruptHandler`
-
-The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_enable_message_interrupt.md">
-     MiniportEnableMessageInterrupt</a> function, if any. If the driver does not support message-signaled
-     interrupts, set this member to <b>NULL</b>.
-
 `Header`
 
 The 
@@ -107,17 +81,74 @@ The
      <b>Revision</b> member to NDIS_MINIPORT_INTERRUPT_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_MINIPORT_INTERRUPT_CHARACTERISTICS_REVISION_1.
 
+`InterruptHandler`
+
+The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a> function that is
+     associated with this interrupt.
+
 `InterruptDpcHandler`
 
 The entry point for the 
      <a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a> function
      that is associated with this interrupt.
 
-`InterruptHandler`
+`DisableInterruptHandler`
 
 The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a> function that is
-     associated with this interrupt.
+     <a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">
+     MiniportDisableInterruptEx</a> function.
+
+`EnableInterruptHandler`
+
+The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_enable_interrupt.md">
+     MiniportEnableInterruptEx</a> function.
+
+`MsiSupported`
+
+Set this member to <b>TRUE</b> if the miniport driver supports message-signaled interrupt (MSI) service
+     functions. The miniport driver must provide entry points for the MSI service functions.
+     
+
+Setting this value to <b>FALSE</b> indicates that MSI is not supported. The MSI service function entry
+     points should be set to <b>NULL</b>.
+
+`MsiSyncWithAllMessages`
+
+Set this member to <b>TRUE</b> if the miniport driver must serialize all MSI service functions. 
+     
+
+Setting this value to <b>TRUE</b> can degrade interrupt performance. It is more efficient for multiple
+     interrupt service functions that handle different messages to run concurrently.
+
+`MessageInterruptHandler`
+
+The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_message_interrupt.md">
+     MiniportMessageInterrupt</a> function, if it exists, that is associated with this interrupt. If the
+     driver does not support message interrupts, set this member to <b>NULL</b>.
+
+`MessageInterruptDpcHandler`
+
+The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_message_interrupt_dpc.md">
+     MiniportMessageInterruptDPC</a> function, if any, that is associated with this interrupt. If the
+     driver does not support message-signaled interrupts, set this member to <b>NULL</b>.
+
+`DisableMessageInterruptHandler`
+
+The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_disable_message_interrupt.md">
+     MiniportDisableMessageInterrupt</a> function, if any. If the driver does not support message signaled
+     interrupts, set this member to <b>NULL</b>.
+
+`EnableMessageInterruptHandler`
+
+The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_enable_message_interrupt.md">
+     MiniportEnableMessageInterrupt</a> function, if any. If the driver does not support message-signaled
+     interrupts, set this member to <b>NULL</b>.
 
 `InterruptType`
 
@@ -150,37 +181,6 @@ If <b>InterruptType</b> is <b>NDIS_CONNECT_LINE_BASED</b>, <b>MessageInfoTable</
 
 </li>
 </ul>
-
-`MessageInterruptDpcHandler`
-
-The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_message_interrupt_dpc.md">
-     MiniportMessageInterruptDPC</a> function, if any, that is associated with this interrupt. If the
-     driver does not support message-signaled interrupts, set this member to <b>NULL</b>.
-
-`MessageInterruptHandler`
-
-The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_message_interrupt.md">
-     MiniportMessageInterrupt</a> function, if it exists, that is associated with this interrupt. If the
-     driver does not support message interrupts, set this member to <b>NULL</b>.
-
-`MsiSupported`
-
-Set this member to <b>TRUE</b> if the miniport driver supports message-signaled interrupt (MSI) service
-     functions. The miniport driver must provide entry points for the MSI service functions.
-     
-
-Setting this value to <b>FALSE</b> indicates that MSI is not supported. The MSI service function entry
-     points should be set to <b>NULL</b>.
-
-`MsiSyncWithAllMessages`
-
-Set this member to <b>TRUE</b> if the miniport driver must serialize all MSI service functions. 
-     
-
-Setting this value to <b>TRUE</b> can degrade interrupt performance. It is more efficient for multiple
-     interrupt service functions that handle different messages to run concurrently.
 
 ## Remarks
 A miniport driver calls the 
@@ -240,11 +240,3 @@ A miniport driver calls the
 
 
 <a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">MiniportDisableInterruptEx</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

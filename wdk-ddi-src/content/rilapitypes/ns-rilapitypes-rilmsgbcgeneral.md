@@ -71,6 +71,42 @@ typedef struct _RILMSGBCGENERAL {
 ## Members
 
 
+`dwGeoScope`
+
+
+
+`dwMsgCode`
+
+
+
+`dwUpdateNumber`
+
+
+
+`dwID`
+
+
+
+`dwSerialNumber`
+
+
+
+`rmdDataCoding`
+
+
+
+`dwTotalPages`
+
+
+
+`dwPageNumber`
+
+
+
+`dwWarningType`
+
+
+
 `bEmergencyUserAlert`
 
 
@@ -79,7 +115,7 @@ typedef struct _RILMSGBCGENERAL {
 
 
 
-`cchMsgLength`
+`stSCReceiveTime`
 
 
 
@@ -87,47 +123,11 @@ typedef struct _RILMSGBCGENERAL {
 
 
 
-`dwGeoScope`
-
-
-
-`dwID`
-
-
-
-`dwMsgCode`
-
-
-
-`dwPageNumber`
-
-
-
-`dwSerialNumber`
-
-
-
-`dwTotalPages`
-
-
-
-`dwUpdateNumber`
-
-
-
-`dwWarningType`
+`cchMsgLength`
 
 
 
 `rgbMsg`
-
-
-
-`rmdDataCoding`
-
-
-
-`stSCReceiveTime`
 
 
 

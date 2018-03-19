@@ -61,12 +61,7 @@ typedef enum _RILIMSSUBSCRIBETYPE {
 <table>
             
                 <tr>
-                    <td>RIL_IMSSUBSCRIBETYPE_CONFERENCE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_IMSSUBSCRIBETYPE_MAX</td>
+                    <td>RIL_IMSSUBSCRIBETYPE_REG</td>
                     <td></td>
                 </tr>
             
@@ -76,7 +71,12 @@ typedef enum _RILIMSSUBSCRIBETYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_IMSSUBSCRIBETYPE_REG</td>
+                    <td>RIL_IMSSUBSCRIBETYPE_CONFERENCE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMSSUBSCRIBETYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

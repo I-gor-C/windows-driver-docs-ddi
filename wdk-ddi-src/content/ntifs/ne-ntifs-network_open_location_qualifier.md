@@ -65,13 +65,13 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>NetworkOpenLocationLoopback</td>
-                    <td>Indicates that the file is restricted to only opening locally. That is, a caller can only open the file if it resides on the same computer as the caller.</td>
+                    <td>NetworkOpenLocationRemote</td>
+                    <td>Indicates that the file is restricted to only opening remotely. That is, a caller can only open the file if it resides on a different computer from the computer that the caller resides on.</td>
                 </tr>
             
                 <tr>
-                    <td>NetworkOpenLocationRemote</td>
-                    <td>Indicates that the file is restricted to only opening remotely. That is, a caller can only open the file if it resides on a different computer from the computer that the caller resides on.</td>
+                    <td>NetworkOpenLocationLoopback</td>
+                    <td>Indicates that the file is restricted to only opening locally. That is, a caller can only open the file if it resides on the same computer as the caller.</td>
                 </tr>
 </table>
 

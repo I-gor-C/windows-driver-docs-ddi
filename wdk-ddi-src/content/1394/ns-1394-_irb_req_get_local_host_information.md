@@ -57,6 +57,99 @@ typedef struct _IRB_REQ_GET_LOCAL_HOST_INFORMATION {
 ## Members
 
 
+`nLevel`
+
+Specifies what level of information is desired from this call. The following flags are provided.
+
+<table>
+<tr>
+<th>Flag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+ GET_HOST_UNIQUE_ID 
+
+</td>
+<td>
+Requests the port driver to return the 64-bit unique identifier. 
+
+</td>
+</tr>
+<tr>
+<td>
+GET_HOST_CAPABILITIES
+
+</td>
+<td>
+Requests the port driver to return the host controller's capability flags.
+
+</td>
+</tr>
+<tr>
+<td>
+GET_HOST_DDI_VERSION
+
+</td>
+<td>
+Requests the DDI version of the 1394 bus driver.
+
+</td>
+</tr>
+<tr>
+<td>
+GET_POWER_SUPPLIED
+
+</td>
+<td>
+Requests the port driver to return the power characteristics of the bus.
+
+</td>
+</tr>
+<tr>
+<td>
+GET_PHYS_ADDR_ROUTINE
+
+</td>
+<td>
+Requests the port driver to return the host controller's physical address mapping function. 
+
+</td>
+</tr>
+<tr>
+<td>
+GET_HOST_CONFIG_ROM
+
+</td>
+<td>
+Requests the port driver to return the host controller's configuration ROM.
+
+</td>
+</tr>
+<tr>
+<td>
+GET_HOST_CSR_CONTENTS
+
+</td>
+<td>
+Requests the port driver to return the speed or topology maps from the host controller's CSR. See the IEEE 1394 Specification for a description of CSRs.<div class="alert"><b>Note</b>  In Windows 7, setting <b>nLevel</b> to GET_HOST_CSR_CONTENTS and specifying the SPEED_MAP_LOCATION as <b>CsrBaseAddress</b> is not supported. The speed map is obsolete in the IEEE-1394a specification.</div>
+<div> </div>
+
+
+</td>
+</tr>
+<tr>
+<td>
+GET_HOST_DMA_CAPABILITIES
+
+</td>
+<td>
+Requests the port driver to return the host controller's capability flags and the size of the DMA buffer (PAGESIZE multiplied by the number of mapping registers).
+
+</td>
+</tr>
+</table>
+
 `Information`
 
 Points to an information block to be filled in, depending on what level of information is desired. Each block has its own particular structure.
@@ -159,99 +252,6 @@ GET_HOST_DDI_VERSION
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/gg266401">GET_LOCAL_HOST_INFO8</a>
 
-
-</td>
-</tr>
-</table>
-
-`nLevel`
-
-Specifies what level of information is desired from this call. The following flags are provided.
-
-<table>
-<tr>
-<th>Flag</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>
- GET_HOST_UNIQUE_ID 
-
-</td>
-<td>
-Requests the port driver to return the 64-bit unique identifier. 
-
-</td>
-</tr>
-<tr>
-<td>
-GET_HOST_CAPABILITIES
-
-</td>
-<td>
-Requests the port driver to return the host controller's capability flags.
-
-</td>
-</tr>
-<tr>
-<td>
-GET_HOST_DDI_VERSION
-
-</td>
-<td>
-Requests the DDI version of the 1394 bus driver.
-
-</td>
-</tr>
-<tr>
-<td>
-GET_POWER_SUPPLIED
-
-</td>
-<td>
-Requests the port driver to return the power characteristics of the bus.
-
-</td>
-</tr>
-<tr>
-<td>
-GET_PHYS_ADDR_ROUTINE
-
-</td>
-<td>
-Requests the port driver to return the host controller's physical address mapping function. 
-
-</td>
-</tr>
-<tr>
-<td>
-GET_HOST_CONFIG_ROM
-
-</td>
-<td>
-Requests the port driver to return the host controller's configuration ROM.
-
-</td>
-</tr>
-<tr>
-<td>
-GET_HOST_CSR_CONTENTS
-
-</td>
-<td>
-Requests the port driver to return the speed or topology maps from the host controller's CSR. See the IEEE 1394 Specification for a description of CSRs.<div class="alert"><b>Note</b>  In Windows 7, setting <b>nLevel</b> to GET_HOST_CSR_CONTENTS and specifying the SPEED_MAP_LOCATION as <b>CsrBaseAddress</b> is not supported. The speed map is obsolete in the IEEE-1394a specification.</div>
-<div> </div>
-
-
-</td>
-</tr>
-<tr>
-<td>
-GET_HOST_DMA_CAPABILITIES
-
-</td>
-<td>
-Requests the port driver to return the host controller's capability flags and the size of the DMA buffer (PAGESIZE multiplied by the number of mapping registers).
 
 </td>
 </tr>

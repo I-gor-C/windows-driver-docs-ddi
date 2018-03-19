@@ -58,6 +58,14 @@ typedef struct _PARALLEL_1284_COMMAND {
 ## Members
 
 
+`ID`
+
+Specifies the IEEE 1284.3 device ID.
+
+`Port`
+
+Reserved (set to zero).
+
 `CommandFlags`
 
 Specifies a bitwise OR of zero or more of the following flags:
@@ -75,14 +83,6 @@ Specifies an end-of-chain device.
 #### PAR_HAVE_PORT_KEEP_PORT
 
 Specifies that the client has the parallel port allocated, and makes a request to keep the port allocated.
-
-`ID`
-
-Specifies the IEEE 1284.3 device ID.
-
-`Port`
-
-Reserved (set to zero).
 
 ## Remarks
 The system-supplied function driver for parallel ports supports the simultaneous connection of zero to two IEEE 1284.3 daisy-chain devices and an IEEE 1284 end-of-chain device. In Windows XP, the parallel port function driver supports the simultaneous connection of zero to four IEEE 1284.3 daisy-chain devices and an IEEE 1284 end-of-chain device. The end-of-chain device must be an IEEE 1284 device, but does not have to be an IEEE 1284.3 device. 
@@ -109,11 +109,3 @@ For more information, see <a href="https://msdn.microsoft.com/1a3ac1b1-9180-4b71
 
 
 <a href="..\parallel\ni-parallel-ioctl_internal_deselect_device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PARALLEL_1284_COMMAND structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

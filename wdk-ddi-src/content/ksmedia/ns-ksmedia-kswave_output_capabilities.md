@@ -75,29 +75,77 @@ typedef struct {
 ## Members
 
 
-`Active3DConnections`
+`MaximumChannelsPerConnection`
 
-Indicates the number of active 3D connections.
+Specifies the maximum number of channels per connection.
+
+`MinimumBitsPerSample`
+
+Specifies the minimum bits per sample.
+
+`MaximumBitsPerSample`
+
+Specifies the maximum bits per sample.
+
+`MinimumSampleFrequency`
+
+Specifies the minimum sampling frequency.
+
+`MaximumSampleFrequency`
+
+Specifies the maximum sampling frequency.
+
+`TotalConnections`
+
+Indicates the total number of connections.
+
+`StaticConnections`
+
+Indicates the number of static connections.
+
+`StreamingConnections`
+
+Indicates the number of streaming connections.
 
 `ActiveConnections`
 
 Indicates the number of active connections.
 
-`ActiveStatic3DConnections`
-
-Indicates the number of static 3D connections.
-
 `ActiveStaticConnections`
 
 Indicates the number of active static connections.
+
+`ActiveStreamingConnections`
+
+Indicates the number of active streaming connections.
+
+`Total3DConnections`
+
+Indicates the total number of 3D connections.
+
+`Static3DConnections`
+
+Indicates the number of static 3D connections.
+
+`Streaming3DConnections`
+
+Indicates the number of streaming 3D connections.
+
+`Active3DConnections`
+
+Indicates the number of active 3D connections.
+
+`ActiveStatic3DConnections`
+
+Indicates the number of static 3D connections.
 
 `ActiveStreaming3DConnections`
 
 Indicates the number of streaming 3D connections.
 
-`ActiveStreamingConnections`
+`TotalSampleMemory`
 
-Indicates the number of active streaming connections.
+Specifies the total amount of sample memory.
 
 `FreeSampleMemory`
 
@@ -106,54 +154,6 @@ Specifies the available free sample memory.
 `LargestFreeContiguousSampleMemory`
 
 Specifies the largest, free contiguous amount of sample memory.
-
-`MaximumBitsPerSample`
-
-Specifies the maximum bits per sample.
-
-`MaximumChannelsPerConnection`
-
-Specifies the maximum number of channels per connection.
-
-`MaximumSampleFrequency`
-
-Specifies the maximum sampling frequency.
-
-`MinimumBitsPerSample`
-
-Specifies the minimum bits per sample.
-
-`MinimumSampleFrequency`
-
-Specifies the minimum sampling frequency.
-
-`Static3DConnections`
-
-Indicates the number of static 3D connections.
-
-`StaticConnections`
-
-Indicates the number of static connections.
-
-`Streaming3DConnections`
-
-Indicates the number of streaming 3D connections.
-
-`StreamingConnections`
-
-Indicates the number of streaming connections.
-
-`Total3DConnections`
-
-Indicates the total number of 3D connections.
-
-`TotalConnections`
-
-Indicates the total number of connections.
-
-`TotalSampleMemory`
-
-Specifies the total amount of sample memory.
 
 ## Remarks
 This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566523">KSPROPERTY_WAVE_OUTPUT_CAPABILITIES</a> property.
@@ -166,11 +166,3 @@ This structure is used by the <a href="https://msdn.microsoft.com/library/window
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566523">KSPROPERTY_WAVE_OUTPUT_CAPABILITIES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSWAVE_OUTPUT_CAPABILITIES structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

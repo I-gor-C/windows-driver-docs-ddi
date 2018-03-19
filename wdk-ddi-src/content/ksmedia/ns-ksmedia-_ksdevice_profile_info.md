@@ -65,10 +65,6 @@ typedef struct _KSDEVICE_PROFILE_INFO {
 ## Members
 
 
-`Size`
-
-This must be set to sizeof(KSDEVICE_PROFILE_INFO) structure.
-
 `Type`
 
 Defines the type of profile. Currently, the only defined type is <b>KSDEVICE_PROFILE_TYPE_CAMERA</b>.
@@ -83,6 +79,10 @@ Defines the type of profile. Currently, the only defined type is <b>KSDEVICE_PRO
 </td>
 </tr>
 </table></span></div>
+
+`Size`
+
+This must be set to sizeof(KSDEVICE_PROFILE_INFO) structure.
 
 
 ## Requirements

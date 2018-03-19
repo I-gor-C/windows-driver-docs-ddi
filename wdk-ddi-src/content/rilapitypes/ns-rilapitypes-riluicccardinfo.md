@@ -62,15 +62,7 @@ typedef struct _RILUICCCARDINFO {
 ## Members
 
 
-`AppInfo`
-
-
-
 `cbSize`
-
-
-
-`dwNumApps`
 
 
 
@@ -83,6 +75,14 @@ typedef struct _RILUICCCARDINFO {
 
 
 `IccId`
+
+
+
+`dwNumApps`
+
+
+
+`AppInfo`
 
 
 

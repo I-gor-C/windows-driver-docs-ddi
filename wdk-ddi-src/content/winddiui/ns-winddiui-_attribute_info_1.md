@@ -63,25 +63,44 @@ typedef struct _ATTRIBUTE_INFO_1 {
 ## Members
 
 
-`dwDrvNumberOfCopies`
+`dwJobNumberOfPagesPerSide`
 
-Maximum number of copies the printer and driver can handle at once, taking into account such job attributes as collating and stapling.
+Number of document pages to be placed on one side of a physical page, as requested by the user. Allowable values are 1, 2, 4, 6, 9, or 16.
 
 `dwDrvNumberOfPagesPerSide`
 
 Number of document pages that the printer and driver can place on one side of a physical page. This value must be 1 or the value specified for <b>dwJobNumberOfPagesPerSide</b>.
 
-`dwDrvPageOrderFlags`
+`dwNupBorderFlags`
 
-Bit flags indicating which page ordering options are supported by the printer and driver. Uses the same flags as <b>dwJobPageOrderFlags</b>.
+One of the following bit flag values:
 
-`dwJobNumberOfCopies`
+<table>
+<tr>
+<th>Flag</th>
+<th>Definition</th>
+</tr>
+<tr>
+<td>
+BORDER_PRINT
 
-Number of copies of the print job, as requested by the user.
+</td>
+<td>
+The print processor should draw a border around the page.
 
-`dwJobNumberOfPagesPerSide`
+</td>
+</tr>
+<tr>
+<td>
+NO_BORDER_PRINT
 
-Number of document pages to be placed on one side of a physical page, as requested by the user. Allowable values are 1, 2, 4, 6, 9, or 16.
+</td>
+<td>
+The print processor should not draw a border around the page.
+
+</td>
+</tr>
+</table>
 
 `dwJobPageOrderFlags`
 
@@ -124,36 +143,17 @@ Pages should be printed in reverse order: last page, next-to-last page, and so o
 </tr>
 </table>
 
-`dwNupBorderFlags`
+`dwDrvPageOrderFlags`
 
-One of the following bit flag values:
+Bit flags indicating which page ordering options are supported by the printer and driver. Uses the same flags as <b>dwJobPageOrderFlags</b>.
 
-<table>
-<tr>
-<th>Flag</th>
-<th>Definition</th>
-</tr>
-<tr>
-<td>
-BORDER_PRINT
+`dwJobNumberOfCopies`
 
-</td>
-<td>
-The print processor should draw a border around the page.
+Number of copies of the print job, as requested by the user.
 
-</td>
-</tr>
-<tr>
-<td>
-NO_BORDER_PRINT
+`dwDrvNumberOfCopies`
 
-</td>
-<td>
-The print processor should not draw a border around the page.
-
-</td>
-</tr>
-</table>
+Maximum number of copies the printer and driver can handle at once, taking into account such job attributes as collating and stapling.
 
 ## Remarks
 The caller (the EMF print processor) uses the <b>dwJobNumberOfPagesPerSide</b> and <b>dwDrvNumberOfPagesPerSide</b> members to determine whether the driver or the print processor handles "N-up" printing.
@@ -172,11 +172,3 @@ The print processor uses <b>dwJobNumberOfCopies</b> and <b>dwDrvNumberOfCopies</
 ## See Also
 
 <a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20ATTRIBUTE_INFO_1 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

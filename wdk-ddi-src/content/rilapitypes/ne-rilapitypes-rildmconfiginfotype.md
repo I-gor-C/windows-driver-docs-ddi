@@ -62,6 +62,11 @@ typedef enum _RILDMCONFIGINFOTYPE {
 <table>
             
                 <tr>
+                    <td>RIL_DMCV_TYPE_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_DMCV_TYPE_BOOLEAN</td>
                     <td></td>
                 </tr>
@@ -72,17 +77,12 @@ typedef enum _RILDMCONFIGINFOTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_DMCV_TYPE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DMCV_TYPE_NONE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_DMCV_TYPE_STRING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DMCV_TYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

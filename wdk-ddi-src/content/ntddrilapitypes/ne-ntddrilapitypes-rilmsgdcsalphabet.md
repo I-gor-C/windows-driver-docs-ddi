@@ -60,22 +60,22 @@ typedef enum _RILMSGDCSALPHABET {
 <table>
             
                 <tr>
-                    <td>RIL_DCSALPHABET_8BIT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_DCSALPHABET_DEFAULT</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_DCSALPHABET_MAX</td>
+                    <td>RIL_DCSALPHABET_8BIT</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_DCSALPHABET_UCS2</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSALPHABET_MAX</td>
                     <td></td>
                 </tr>
 </table>

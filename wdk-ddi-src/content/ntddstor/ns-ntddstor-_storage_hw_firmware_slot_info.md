@@ -62,6 +62,18 @@ typedef struct _STORAGE_HW_FIRMWARE_SLOT_INFO {
 ## Members
 
 
+`Version`
+
+The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_SLOT_INFO)
+
+`Size`
+
+The size of this structure.
+
+`SlotNumber`
+
+The slot number of this slot.
+
 `ReadOnly`
 
 Indicates whether this slot is read-only or not.
@@ -77,18 +89,6 @@ Reserved for future use.
 `Revision`
 
 The revision of the firmware on this slot.
-
-`Size`
-
-The size of this structure.
-
-`SlotNumber`
-
-The slot number of this slot.
-
-`Version`
-
-The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_SLOT_INFO)
 
 
 ## Requirements

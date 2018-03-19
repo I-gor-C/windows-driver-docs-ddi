@@ -64,32 +64,12 @@ typedef enum _RILMSGMWITYPE {
 <table>
             
                 <tr>
-                    <td>RIL_MSGMWITYPE_FAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGMWITYPE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGMWITYPE_MULTIMEDIA</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_MSGMWITYPE_NONE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGMWITYPE_PAGER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGMWITYPE_TEXT</td>
+                    <td>RIL_MSGMWITYPE_VOICEMAIL</td>
                     <td></td>
                 </tr>
             
@@ -99,7 +79,27 @@ typedef enum _RILMSGMWITYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGMWITYPE_VOICEMAIL</td>
+                    <td>RIL_MSGMWITYPE_FAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGMWITYPE_PAGER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGMWITYPE_MULTIMEDIA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGMWITYPE_TEXT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGMWITYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

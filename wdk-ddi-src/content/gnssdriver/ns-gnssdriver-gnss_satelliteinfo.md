@@ -60,25 +60,25 @@ typedef struct {
 ## Members
 
 
-`Azimuth`
+`SatelliteId`
 
-Azimuth value.
+Pseudorandom noise (PRN) code or other identification for the satellite.
+
+`UsedInPositiong`
+
+Indicates whether this was simply a visible satellite or actually used in the positioning.
 
 `Elevation`
 
 Elevation value
 
-`SatelliteId`
+`Azimuth`
 
-Pseudorandom noise (PRN) code or other identification for the satellite.
+Azimuth value.
 
 `SignalToNoiseRatio`
 
 Signal to noise ratio.
-
-`UsedInPositiong`
-
-Indicates whether this was simply a visible satellite or actually used in the positioning.
 
 
 ## Requirements

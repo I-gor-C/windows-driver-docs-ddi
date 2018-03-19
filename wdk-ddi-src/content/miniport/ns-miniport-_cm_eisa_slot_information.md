@@ -63,30 +63,6 @@ typedef struct _CM_EISA_SLOT_INFORMATION {
 ## Members
 
 
-`Checksum`
-
-The checksum value, allowing validation of the configuration data.
-
-`CompressedId`
-
-The EISA compressed identification of the device at this slot. This value is identical to the <b>CompressedId</b> member of the <b>CM_EISA_FUNCTION_INFORMATION</b> structure. This member can be read to determine whether the caller should call <b>HalGetBusData</b> or <b>HalGetBusDataByOffset</b> again with sufficient buffer space to get more detailed <b>CM_EISA_FUNCTION_INFORMATION</b> for a device it supports.
-
-`FunctionInformation`
-
-Whether there is available <a href="..\wdm\ns-wdm-_cm_eisa_function_information.md">CM_EISA_FUNCTION_INFORMATION</a> for this slot.
-
-`MajorRevision`
-
-Information supplied by the manufacturer.
-
-`MinorRevision`
-
-Information supplied by the manufacturer.
-
-`NumberFunctions`
-
-The number at this slot.
-
 `ReturnCode`
 
 Contains a status code if an error occurs when the EISA BIOS is queried. Possible status codes include the following:
@@ -102,6 +78,30 @@ Contains a status code if an error occurs when the EISA BIOS is queried. Possibl
 `ReturnFlags`
 
 The return flags.
+
+`MajorRevision`
+
+Information supplied by the manufacturer.
+
+`MinorRevision`
+
+Information supplied by the manufacturer.
+
+`Checksum`
+
+The checksum value, allowing validation of the configuration data.
+
+`NumberFunctions`
+
+The number at this slot.
+
+`FunctionInformation`
+
+Whether there is available <a href="..\wdm\ns-wdm-_cm_eisa_function_information.md">CM_EISA_FUNCTION_INFORMATION</a> for this slot.
+
+`CompressedId`
+
+The EISA compressed identification of the device at this slot. This value is identical to the <b>CompressedId</b> member of the <b>CM_EISA_FUNCTION_INFORMATION</b> structure. This member can be read to determine whether the caller should call <b>HalGetBusData</b> or <b>HalGetBusDataByOffset</b> again with sufficient buffer space to get more detailed <b>CM_EISA_FUNCTION_INFORMATION</b> for a device it supports.
 
 ## Remarks
 The information returned by <b>HalGetBusData</b> or <b>HalGetBusDataByOffset</b> in <b>CM_EISA_SLOT_INFORMATION</b> and in <b>CM_EISA_FUNCTION_INFORMATION</b> immediately following it is read-only.
@@ -124,11 +124,3 @@ The driver of an EISA device might call <b>HalGetBusData</b> or <b>HalGetBusData
 
 
 <a href="..\wdm\ns-wdm-_cm_eisa_function_information.md">CM_EISA_FUNCTION_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_EISA_SLOT_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

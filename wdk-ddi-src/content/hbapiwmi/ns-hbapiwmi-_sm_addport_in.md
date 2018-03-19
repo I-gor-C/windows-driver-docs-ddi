@@ -57,13 +57,13 @@ typedef struct _SM_AddPort_IN {
 ## Members
 
 
-`EventType`
-
-An event type value.
-
 `PortWWN`
 
 A worldwide name (WWN) that indicates the port whose events are to be reported.
+
+`EventType`
+
+An event type value.
 
 
 ## Requirements

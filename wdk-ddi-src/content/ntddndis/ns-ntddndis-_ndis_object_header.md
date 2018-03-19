@@ -59,6 +59,11 @@ typedef struct _NDIS_OBJECT_HEADER {
 ## Members
 
 
+`Type`
+
+The type of NDIS object that a structure describes. Use this member to identify the type of
+     structure in a memory dump.
+
 `Revision`
 
 The revision number of the structure. Every NDIS structure that has an NDIS_OBJECT_HEADER member
@@ -71,11 +76,6 @@ The revision number of the structure. Every NDIS structure that has an NDIS_OBJE
 The total size, in bytes, of the NDIS object structure that includes the NDIS_OBJECT_HEADER
      member. This size includes the size of the NDIS_OBJECT_HEADER member and the other members of the
      structure.
-
-`Type`
-
-The type of NDIS object that a structure describes. Use this member to identify the type of
-     structure in a memory dump.
 
 ## Remarks
 The reference page for every structure, that has an NDIS_OBJECT_HEADER structure as a member, defines

@@ -60,21 +60,21 @@ typedef struct _BMP_IMAGE_INFO {
 ## Members
 
 
-`ByteWidth`
+`Width`
 
-Specifies the width of the image, in bytes.
+Specifies the width of the image, in pixels.
 
 `Height`
 
 Specifies the height of the image, in lines.
 
+`ByteWidth`
+
+Specifies the width of the image, in bytes.
+
 `Size`
 
 Specifies the total size of the image, including headers, in bytes.
-
-`Width`
-
-Specifies the width of the image, in pixels.
 
 
 ## Requirements

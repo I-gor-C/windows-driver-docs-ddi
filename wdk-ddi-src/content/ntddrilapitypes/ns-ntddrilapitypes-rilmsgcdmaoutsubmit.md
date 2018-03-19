@@ -78,11 +78,11 @@ typedef struct _RILMSGCDMAOUTSUBMIT {
 ## Members
 
 
-`bBearerReplyRequest`
+`raDestAddress`
 
 
 
-`bDeliveryAckRequest`
+`rsaDestSubaddr`
 
 
 
@@ -90,67 +90,11 @@ typedef struct _RILMSGCDMAOUTSUBMIT {
 
 
 
-`bUserAckRequest`
+`stValidityPeriodAbs`
 
 
 
-`cbHdrLength`
-
-
-
-`cchMsgLength`
-
-
-
-`dwMsgDisplayMode`
-
-
-
-`dwMsgEncoding`
-
-
-
-`dwMsgID`
-
-
-
-`dwMsgLang`
-
-
-
-`dwMsgPriority`
-
-
-
-`dwMsgPrivacy`
-
-
-
-`dwReplySeqNumber`
-
-
-
-`dwTeleservice`
-
-
-
-`raCallBackNumber`
-
-
-
-`raDestAddress`
-
-
-
-`rgbHdr`
-
-
-
-`rgbMsg`
-
-
-
-`rsaDestSubaddr`
+`stValidityPeriodRel`
 
 
 
@@ -162,11 +106,67 @@ typedef struct _RILMSGCDMAOUTSUBMIT {
 
 
 
-`stValidityPeriodAbs`
+`bDeliveryAckRequest`
 
 
 
-`stValidityPeriodRel`
+`bUserAckRequest`
+
+
+
+`bBearerReplyRequest`
+
+
+
+`dwReplySeqNumber`
+
+
+
+`dwMsgDisplayMode`
+
+
+
+`raCallBackNumber`
+
+
+
+`dwMsgPriority`
+
+
+
+`dwMsgPrivacy`
+
+
+
+`dwTeleservice`
+
+
+
+`dwMsgID`
+
+
+
+`dwMsgLang`
+
+
+
+`dwMsgEncoding`
+
+
+
+`cbHdrLength`
+
+
+
+`cchMsgLength`
+
+
+
+`rgbHdr`
+
+
+
+`rgbMsg`
 
 
 

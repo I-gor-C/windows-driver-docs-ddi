@@ -76,13 +76,8 @@ typedef enum _WDF_REQUEST_TYPE {
 <table>
             
                 <tr>
-                    <td>WdfRequestCleanup</td>
-                    <td>The request object represents a file cleanup request. The driver receives this type of request object after an application's call to the Win32 <b>CloseHandle</b> function closes the last handle to a file object, but possibly before all of the file's outstanding I/O requests have been completed or canceled. The framework delivers this type of request to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554905">IFileCallbackCleanup::OnCleanupFile</a> callback function. (Also see <b>WdfRequestClose</b>.)</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfRequestClose</td>
-                    <td>The request object represents a file close request.  The driver receives this type of request object after an application's call to the Win32 <b>CloseHandle</b> function closes the last handle to a file object, and after all of the file's outstanding I/O requests have been completed or canceled.  The framework delivers this type of request to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554910">IFileCallbackClose::OnCloseFile</a> callback function. (Also see <b>WdfRequestCleanup</b>.)</td>
+                    <td>WdfRequestUndefined</td>
+                    <td>The type of the request object is undefined.</td>
                 </tr>
             
                 <tr>
@@ -91,33 +86,8 @@ typedef enum _WDF_REQUEST_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WdfRequestDeviceIoControl</td>
-                    <td>The request object represents a device I/O control request. This driver receives this type of I/O request when an application calls the Win32 <b>DeviceIoControl</b> function. The framework delivers this type of request to  the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556854">IQueueCallbackDeviceIoControl::OnDeviceIoControl</a> callback function.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfRequestFlushBuffers</td>
-                    <td>The request object represents a request to flush cached buffers. The framework delivers this type of request to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556847">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a> callback function.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfRequestInternalIoctl</td>
-                    <td>This value is reserved for internal use only.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfRequestMaximum</td>
-                    <td>The maximum value for the enumeration is exceeded.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfRequestOther</td>
-                    <td>This value is reserved for internal use only.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfRequestQueryInformation</td>
-                    <td>The request object represents a request to obtain information about a file. The framework delivers this type of request to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556847">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a> callback function.</td>
+                    <td>WdfRequestCleanup</td>
+                    <td>The request object represents a file cleanup request. The driver receives this type of request object after an application's call to the Win32 <b>CloseHandle</b> function closes the last handle to a file object, but possibly before all of the file's outstanding I/O requests have been completed or canceled. The framework delivers this type of request to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554905">IFileCallbackCleanup::OnCleanupFile</a> callback function. (Also see <b>WdfRequestClose</b>.)</td>
                 </tr>
             
                 <tr>
@@ -126,18 +96,18 @@ typedef enum _WDF_REQUEST_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WdfRequestSetInformation</td>
-                    <td>The request object represents a request to set information about a file. The framework delivers this type of request to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556847">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a> callback function.</td>
+                    <td>WdfRequestWrite</td>
+                    <td>The request object represents a write request. This driver receives this type of I/O request when an application calls the Win32 <b>WriteFile</b> or <b>WriteFileEx</b> function. The framework delivers this type of request to  the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556885">IQueueCallbackWrite::OnWrite</a> callback function.</td>
                 </tr>
             
                 <tr>
-                    <td>WdfRequestTypeNoFormat</td>
-                    <td>The request object's type has not been specified.</td>
+                    <td>WdfRequestDeviceIoControl</td>
+                    <td>The request object represents a device I/O control request. This driver receives this type of I/O request when an application calls the Win32 <b>DeviceIoControl</b> function. The framework delivers this type of request to  the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556854">IQueueCallbackDeviceIoControl::OnDeviceIoControl</a> callback function.</td>
                 </tr>
             
                 <tr>
-                    <td>WdfRequestUndefined</td>
-                    <td>The type of the request object is undefined.</td>
+                    <td>WdfRequestClose</td>
+                    <td>The request object represents a file close request.  The driver receives this type of request object after an application's call to the Win32 <b>CloseHandle</b> function closes the last handle to a file object, and after all of the file's outstanding I/O requests have been completed or canceled.  The framework delivers this type of request to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554910">IFileCallbackClose::OnCloseFile</a> callback function. (Also see <b>WdfRequestCleanup</b>.)</td>
                 </tr>
             
                 <tr>
@@ -146,8 +116,38 @@ typedef enum _WDF_REQUEST_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WdfRequestWrite</td>
-                    <td>The request object represents a write request. This driver receives this type of I/O request when an application calls the Win32 <b>WriteFile</b> or <b>WriteFileEx</b> function. The framework delivers this type of request to  the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556885">IQueueCallbackWrite::OnWrite</a> callback function.</td>
+                    <td>WdfRequestOther</td>
+                    <td>This value is reserved for internal use only.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRequestInternalIoctl</td>
+                    <td>This value is reserved for internal use only.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRequestTypeNoFormat</td>
+                    <td>The request object's type has not been specified.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRequestFlushBuffers</td>
+                    <td>The request object represents a request to flush cached buffers. The framework delivers this type of request to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556847">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a> callback function.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRequestQueryInformation</td>
+                    <td>The request object represents a request to obtain information about a file. The framework delivers this type of request to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556847">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a> callback function.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRequestSetInformation</td>
+                    <td>The request object represents a request to set information about a file. The framework delivers this type of request to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556847">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a> callback function.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRequestMaximum</td>
+                    <td>The maximum value for the enumeration is exceeded.</td>
                 </tr>
 </table>
 
@@ -189,11 +189,3 @@ For the KMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfd
 
 
 <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,26 +63,6 @@ typedef struct _SCSI_INQUIRY_DATA {
 ## Members
 
 
-`DeviceClaimed`
-
-When <b>TRUE</b>, indicates that the device has been claimed by a class driver.
-
-`InquiryData`
-
-Pointer to buffer containing the inquiry data for the logical unit.
-
-`InquiryDataLength`
-
-Indicates the length in bytes of inquiry data.
-
-`Lun`
-
-Indicates the logical unit number of the logical unit on the target device.
-
-`NextInquiryDataOffset`
-
-Contains an offset to the inquiry data for the next logical unit on the target device.
-
 `PathId`
 
 Indicates the number of the bus the device is located on.
@@ -90,6 +70,26 @@ Indicates the number of the bus the device is located on.
 `TargetId`
 
 Indicates the number of the device on the bus.
+
+`Lun`
+
+Indicates the logical unit number of the logical unit on the target device.
+
+`DeviceClaimed`
+
+When <b>TRUE</b>, indicates that the device has been claimed by a class driver.
+
+`InquiryDataLength`
+
+Indicates the length in bytes of inquiry data.
+
+`NextInquiryDataOffset`
+
+Contains an offset to the inquiry data for the next logical unit on the target device.
+
+`InquiryData`
+
+Pointer to buffer containing the inquiry data for the logical unit.
 
 ## Remarks
 The <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_get_inquiry_data.md">IOCTL_SCSI_GET_INQUIRY_DATA</a> request retrieves inquiry data for all devices associated with a specified adapter. An adapter can potentially have multiple buses. The <b>PathId</b> member identifies the bus. Each bus can have multiple target devices. The <b>TargetId</b> member identifies the target device, and each target device can have multiple logical units. The <b>Lun</b> member identifies the logical unit.
@@ -110,11 +110,3 @@ The <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_get_inquiry_data.md">IOCTL_SCSI_
 
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_get_inquiry_data.md">IOCTL_SCSI_GET_INQUIRY_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SCSI_INQUIRY_DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -62,13 +62,13 @@ typedef enum _DIRECTORY_NOTIFY_INFORMATION_CLASS {
 <table>
             
                 <tr>
-                    <td>DirectoryNotifyExtendedInformation</td>
-                    <td>A <b>FILE_NOTIFY_EXTENDED_INFORMATION</b> structure.</td>
+                    <td>DirectoryNotifyInformation</td>
+                    <td>A <b>FILE_NOTIFY_INFORMATION </b>structure.</td>
                 </tr>
             
                 <tr>
-                    <td>DirectoryNotifyInformation</td>
-                    <td>A <b>FILE_NOTIFY_INFORMATION </b>structure.</td>
+                    <td>DirectoryNotifyExtendedInformation</td>
+                    <td>A <b>FILE_NOTIFY_EXTENDED_INFORMATION</b> structure.</td>
                 </tr>
 </table>
 

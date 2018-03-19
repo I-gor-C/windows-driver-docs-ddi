@@ -64,6 +64,22 @@ typedef struct _USBC_FUNCTION_DESCRIPTOR {
 ## Members
 
 
+`FunctionNumber`
+
+The zero-based index of the interface collection.
+
+`NumberOfInterfaces`
+
+The number of interfaces in the interface collection.
+
+`InterfaceDescriptorList`
+
+An array of pointers to <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>-type structures that describe the interfaces in the interface collection.
+
+`HardwareId`
+
+The hardware identifier of the interface collection.
+
 `CompatibleId`
 
 The compatible identifier of the interface collection.
@@ -75,22 +91,6 @@ A description of the interface collection in human-readable text.
 `FunctionFlags`
 
 Vendor-defined flags that describe the interface collection.
-
-`FunctionNumber`
-
-The zero-based index of the interface collection.
-
-`HardwareId`
-
-The hardware identifier of the interface collection.
-
-`InterfaceDescriptorList`
-
-An array of pointers to <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>-type structures that describe the interfaces in the interface collection.
-
-`NumberOfInterfaces`
-
-The number of interfaces in the interface collection.
 
 `Reserved`
 
@@ -111,11 +111,3 @@ For information on how to use user-defined callback routines to provide a custom
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBC_FUNCTION_DESCRIPTOR structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

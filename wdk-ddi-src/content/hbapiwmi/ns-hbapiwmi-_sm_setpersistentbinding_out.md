@@ -58,10 +58,6 @@ typedef struct _SM_SetPersistentBinding_OUT {
 ## Members
 
 
-`EntryStatus`
-
-The status of each entry.
-
 `HBAStatus`
 
 The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
@@ -69,6 +65,10 @@ The status of the operation. For a list of allowed values and their descriptions
 `OutStatusCount`
 
 The number of entries.
+
+`EntryStatus`
+
+The status of each entry.
 
 ## Remarks
 The WMI tool suite generates a declaration of the SM__SetPersistentBinding_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.

@@ -58,13 +58,13 @@ typedef struct _VIDEO_CHILD_STATE_CONFIGURATION {
 ## Members
 
 
-`ChildStateArray`
-
-Is an array of <a href="..\video\ns-video-_video_child_state.md">VIDEO_CHILD_STATE</a> structures. Each element of this array contains the ID and state for a particular child device.
-
 `Count`
 
 Specifies the number of structures in the <b>ChildStateArray</b> member.
+
+`ChildStateArray`
+
+Is an array of <a href="..\video\ns-video-_video_child_state.md">VIDEO_CHILD_STATE</a> structures. Each element of this array contains the ID and state for a particular child device.
 
 ## Remarks
 The video port driver sends a VIDEO_CHILD_STATE_CONFIGURATION structure to the miniport driver for the following IOCTLs:
@@ -102,11 +102,3 @@ The video port driver sends a VIDEO_CHILD_STATE_CONFIGURATION structure to the m
 
 
 <a href="..\video\ns-video-_video_request_packet.md">VIDEO_REQUEST_PACKET</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_CHILD_STATE_CONFIGURATION structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

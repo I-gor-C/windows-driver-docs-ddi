@@ -60,13 +60,13 @@ typedef struct _ERROR_INFO {
 ## Members
 
 
-`dwGenericError`
-
-Win32 error code.
-
 `dwSize`
 
 Caller-supplied size, in bytes, of the STI_ERROR_INFO structure.
+
+`dwGenericError`
+
+Win32 error code.
 
 `dwVendorError`
 

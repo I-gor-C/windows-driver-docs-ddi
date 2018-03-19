@@ -61,17 +61,17 @@ typedef enum _NOTIFICATION_CALLBACK_COMMANDS {
 <table>
             
                 <tr>
+                    <td>NOTIFICATION_COMMAND_NOTIFY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>NOTIFICATION_COMMAND_CONTEXT_ACQUIRE</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>NOTIFICATION_COMMAND_CONTEXT_RELEASE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>NOTIFICATION_COMMAND_NOTIFY</td>
                     <td></td>
                 </tr>
 </table>

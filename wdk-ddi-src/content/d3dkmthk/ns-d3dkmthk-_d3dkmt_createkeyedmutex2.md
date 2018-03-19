@@ -61,21 +61,17 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX2 {
 ## Members
 
 
-`Flags`
+`InitialValue`
 
-[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createkeyedmutex2_flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a> structure that indicates how to specify a handle to a keyed mutex object.
-
-`hKeyedMutex`
-
-[out] A value of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode handle to the keyed mutex object in the current process.
+[in] A 64-bit value that specifies the initial value to create the keyed mutex for.
 
 `hSharedHandle`
 
 [out] A value of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode shared global handle to the keyed mutex object.
 
-`InitialValue`
+`hKeyedMutex`
 
-[in] A 64-bit value that specifies the initial value to create the keyed mutex for.
+[out] A value of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode handle to the keyed mutex object in the current process.
 
 `pPrivateRuntimeData`
 
@@ -84,6 +80,10 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX2 {
 `PrivateRuntimeDataSize`
 
 [in] The size, in bytes, of the buffer pointed to by the <b>pPrivateRuntimeData</b> member.
+
+`Flags`
+
+[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createkeyedmutex2_flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a> structure that indicates how to specify a handle to a keyed mutex object.
 
 
 ## Requirements
@@ -99,11 +99,3 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX2 {
 
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatekeyedmutex2.md">D3DKMTCreateKeyedMutex2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_CREATEKEYEDMUTEX2 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

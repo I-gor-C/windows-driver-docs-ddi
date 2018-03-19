@@ -68,7 +68,17 @@ typedef enum _RILMSGCDMAMSGENCODING {
 <table>
             
                 <tr>
+                    <td>RIL_MSGCODING_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_MSGCODING_7BITASCII</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGCODING_UNICODE</td>
                     <td></td>
                 </tr>
             
@@ -79,6 +89,11 @@ typedef enum _RILMSGCDMAMSGENCODING {
             
                 <tr>
                     <td>RIL_MSGCODING_8BITGSM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGCODING_OCTET</td>
                     <td></td>
                 </tr>
             
@@ -98,32 +113,17 @@ typedef enum _RILMSGCDMAMSGENCODING {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGCODING_LATIN</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_MSGCODING_LATIN_HEBREW</td>
                     <td></td>
                 </tr>
             
                 <tr>
+                    <td>RIL_MSGCODING_LATIN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_MSGCODING_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGCODING_OCTET</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGCODING_UNICODE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGCODING_UNKNOWN</td>
                     <td></td>
                 </tr>
 </table>

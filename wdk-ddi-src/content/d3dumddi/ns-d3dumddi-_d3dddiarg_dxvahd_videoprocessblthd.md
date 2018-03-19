@@ -64,21 +64,21 @@ typedef struct _D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD {
 
 [in] A handle to the DirectX VA video processing device. The user-mode display driver returns this handle in a call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_createvideoprocessor.md">CreateVideoProcessor</a> function.
 
-`OutputFrame`
-
-[in] A zero-based frame number of the composed output frames.
-
 `OutputSurface`
 
 [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_surface.md">DXVAHDDDI_SURFACE</a> structure that describes the output surface to which the video processor composes.
 
-`pStreams`
+`OutputFrame`
 
-[in] An array of <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_data.md">DXVAHDDDI_STREAM_DATA</a> structures that describe the input streams to process.
+[in] A zero-based frame number of the composed output frames.
 
 `StreamCount`
 
 [in] The number of streams to process. This number must be less than the number that the driver set in the <b>MaxStreamStates</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure.
+
+`pStreams`
+
+[in] An array of <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_data.md">DXVAHDDDI_STREAM_DATA</a> structures that describe the input streams to process.
 
 ## Remarks
 The output surface that the <b>OutputSurface</b> member specifies, which must be one of the following surface types:
@@ -128,11 +128,3 @@ Input streams are indexed from zero to less than the number that the driver sets
 
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_createvideoprocessor.md">CreateVideoProcessor</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

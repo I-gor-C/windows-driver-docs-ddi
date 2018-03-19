@@ -59,10 +59,6 @@ typedef struct _NDIS_PD_OPEN_PROVIDER_PARAMETERS {
 ## Members
 
 
-`Flags`
-
-This member is reserved and must be 0.
-
 `Header`
 
 The <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_OPEN_PROVIDER_PARAMETERS</b> structure. Set the members of this structure as follows:
@@ -73,13 +69,17 @@ The <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER<
 <li><b>Size</b> = <b>NDIS_SIZEOF_PD_OPEN_PROVIDER_PARAMETERS_REVISION_1</b></li>
 </ul>
 
-`ProviderDispatch`
+`Flags`
 
-See <a href="..\ndis\ns-ndis-_ndis_pd_provider_dispatch.md">NDIS_PD_PROVIDER_DISPATCH</a>.
+This member is reserved and must be 0.
 
 `ProviderHandle`
 
 A provider handle that identifies the PD-capable miniport driver's provider object.
+
+`ProviderDispatch`
+
+See <a href="..\ndis\ns-ndis-_ndis_pd_provider_dispatch.md">NDIS_PD_PROVIDER_DISPATCH</a>.
 
 ## Remarks
 This structure must be aligned on an 8-byte boundary.
@@ -93,11 +93,3 @@ This structure must be aligned on an 8-byte boundary.
 ## See Also
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PD_OPEN_PROVIDER_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

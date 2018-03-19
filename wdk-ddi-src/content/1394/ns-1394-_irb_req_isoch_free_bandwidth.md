@@ -56,7 +56,11 @@ typedef struct _IRB_REQ_ISOCH_FREE_BANDWIDTH {
 ## Members
 
 
-`BytesPerFrameAvailable`
+`hBandwidth`
+
+Specifies the bandwidth handle to release.
+
+`nMaxBytesPerFrameRequested`
 
 
 
@@ -64,19 +68,15 @@ typedef struct _IRB_REQ_ISOCH_FREE_BANDWIDTH {
 
 
 
-`hBandwidth`
-
-Specifies the bandwidth handle to release.
-
-`nBandwidthUnitsRequired`
-
-
-
-`nMaxBytesPerFrameRequested`
+`BytesPerFrameAvailable`
 
 
 
 `SpeedSelected`
+
+
+
+`nBandwidthUnitsRequired`
 
 
 

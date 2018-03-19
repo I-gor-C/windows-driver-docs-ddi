@@ -62,6 +62,11 @@ typedef enum _RIL_DEVSPECIFIC_CMD {
 <table>
             
                 <tr>
+                    <td>RIL_DEVSPECIFIC_CMD_OEM_GBA_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_DEVSPECIFIC_CMD_OEM_GBA_GET_GBA_CAPABLE</td>
                     <td></td>
                 </tr>
@@ -73,11 +78,6 @@ typedef enum _RIL_DEVSPECIFIC_CMD {
             
                 <tr>
                     <td>RIL_DEVSPECIFIC_CMD_OEM_GBA_GET_GBA_TOKEN_FORCE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DEVSPECIFIC_CMD_OEM_GBA_UNKNOWN</td>
                     <td></td>
                 </tr>
             

@@ -62,12 +62,17 @@ typedef enum _RILSUBSCRIBERINFOSERVICE {
 <table>
             
                 <tr>
-                    <td>RIL_SERVICE_FAX</td>
+                    <td>RIL_SERVICE_UNKNOWN</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_SERVICE_MAX</td>
+                    <td>RIL_SERVICE_VOICE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SERVICE_FAX</td>
                     <td></td>
                 </tr>
             
@@ -77,12 +82,7 @@ typedef enum _RILSUBSCRIBERINFOSERVICE {
                 </tr>
             
                 <tr>
-                    <td>RIL_SERVICE_UNKNOWN</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_SERVICE_VOICE</td>
+                    <td>RIL_SERVICE_MAX</td>
                     <td></td>
                 </tr>
 </table>

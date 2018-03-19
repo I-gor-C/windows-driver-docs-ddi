@@ -61,13 +61,18 @@ typedef enum _DXGKMDT_CERTIFICATE_TYPE {
 <table>
             
                 <tr>
+                    <td>DXGKMDT_OPM_CERTIFICATE</td>
+                    <td>Indicates an Output Protection Management (OPM) certificate.</td>
+                </tr>
+            
+                <tr>
                     <td>DXGKMDT_COPP_CERTIFICATE</td>
                     <td>Indicates a Certified Output Protection Protocol (COPP) certificate.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGKMDT_FORCE_ULONG</td>
-                    <td>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</td>
+                    <td>DXGKMDT_UAB_CERTIFICATE</td>
+                    <td>Indicates a User Accessible Bus (UAB) certificate.</td>
                 </tr>
             
                 <tr>
@@ -76,13 +81,8 @@ typedef enum _DXGKMDT_CERTIFICATE_TYPE {
                 </tr>
             
                 <tr>
-                    <td>DXGKMDT_OPM_CERTIFICATE</td>
-                    <td>Indicates an Output Protection Management (OPM) certificate.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_UAB_CERTIFICATE</td>
-                    <td>Indicates a User Accessible Bus (UAB) certificate.</td>
+                    <td>DXGKMDT_FORCE_ULONG</td>
+                    <td>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</td>
                 </tr>
 </table>
 
@@ -103,11 +103,3 @@ For more information about certificates that are used with OPM, download the Out
 
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_certificate.md">DxgkDdiOPMGetCertificate</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_CERTIFICATE_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

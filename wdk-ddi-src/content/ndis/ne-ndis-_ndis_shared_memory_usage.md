@@ -68,29 +68,28 @@ typedef enum _NDIS_SHARED_MEMORY_USAGE {
 <table>
             
                 <tr>
-                    <td>NdisSharedMemoryUsageMax</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
+                    <td>NdisSharedMemoryUsageUndefined</td>
+                    <td>The shared memory application is not defined.</td>
                 </tr>
             
                 <tr>
-                    <td>NdisSharedMemoryUsageOther</td>
-                    <td>The shared memory application is not specified.</td>
+                    <td>NdisSharedMemoryUsageXmit</td>
+                    <td>The shared memory contains transmit data buffers.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisSharedMemoryUsageXmitHeader</td>
+                    <td>The shared memory contains transmit header buffers.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisSharedMemoryUsageXmitData</td>
+                    <td>The shared memory contains transmit data.</td>
                 </tr>
             
                 <tr>
                     <td>NdisSharedMemoryUsageReceive</td>
                     <td>The shared memory contains receive data buffers.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisSharedMemoryUsageReceiveData</td>
-                    <td>The shared memory contains receive data.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisSharedMemoryUsageReceiveHeader</td>
-                    <td>The shared memory contains receive header information.</td>
                 </tr>
             
                 <tr>
@@ -104,23 +103,24 @@ typedef enum _NDIS_SHARED_MEMORY_USAGE {
                 </tr>
             
                 <tr>
-                    <td>NdisSharedMemoryUsageUndefined</td>
-                    <td>The shared memory application is not defined.</td>
+                    <td>NdisSharedMemoryUsageReceiveHeader</td>
+                    <td>The shared memory contains receive header information.</td>
                 </tr>
             
                 <tr>
-                    <td>NdisSharedMemoryUsageXmit</td>
-                    <td>The shared memory contains transmit data buffers.</td>
+                    <td>NdisSharedMemoryUsageReceiveData</td>
+                    <td>The shared memory contains receive data.</td>
                 </tr>
             
                 <tr>
-                    <td>NdisSharedMemoryUsageXmitData</td>
-                    <td>The shared memory contains transmit data.</td>
+                    <td>NdisSharedMemoryUsageOther</td>
+                    <td>The shared memory application is not specified.</td>
                 </tr>
             
                 <tr>
-                    <td>NdisSharedMemoryUsageXmitHeader</td>
-                    <td>The shared memory contains transmit header buffers.</td>
+                    <td>NdisSharedMemoryUsageMax</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 
@@ -146,11 +146,3 @@ The NDIS_SHARED_MEMORY_USAGE enumeration is used in the
 
 <a href="..\ndis\ns-ndis-_ndis_scatter_gather_list_parameters.md">
    NDIS_SCATTER_GATHER_LIST_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SHARED_MEMORY_USAGE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

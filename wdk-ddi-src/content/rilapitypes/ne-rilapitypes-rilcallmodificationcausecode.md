@@ -66,27 +66,7 @@ typedef enum _RILCALLMODIFICATIONCAUSECODE {
 <table>
             
                 <tr>
-                    <td>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_GENERIC_ERROR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_LIPSYNC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_LOW_THROUGHPUT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_PACKET_LOSS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_QOS</td>
+                    <td>RIL_CALL_MODIFIED_CAUSE_NONE</td>
                     <td></td>
                 </tr>
             
@@ -96,17 +76,37 @@ typedef enum _RILCALLMODIFICATIONCAUSECODE {
                 </tr>
             
                 <tr>
+                    <td>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_QOS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_PACKET_LOSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_LOW_THROUGHPUT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_THERMAL_MITIGATION</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CALL_MODIFIED_CAUSE_MAX</td>
+                    <td>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_LIPSYNC</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CALL_MODIFIED_CAUSE_NONE</td>
+                    <td>RIL_CALL_MODIFIED_CAUSE_DOWNGRADE_GENERIC_ERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALL_MODIFIED_CAUSE_MAX</td>
                     <td></td>
                 </tr>
 </table>

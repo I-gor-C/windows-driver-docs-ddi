@@ -64,23 +64,23 @@ typedef enum _WDF_MEMORY_DESCRIPTOR_TYPE {
 <table>
             
                 <tr>
-                    <td>WdfMemoryDescriptorTypeBuffer</td>
-                    <td>The <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure contains a buffer description.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfMemoryDescriptorTypeHandle</td>
-                    <td>The <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure contains a handle to a memory object.</td>
-                </tr>
-            
-                <tr>
                     <td>WdfMemoryDescriptorTypeInvalid</td>
                     <td>Reserved for internal use only.</td>
                 </tr>
             
                 <tr>
+                    <td>WdfMemoryDescriptorTypeBuffer</td>
+                    <td>The <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure contains a buffer description.</td>
+                </tr>
+            
+                <tr>
                     <td>WdfMemoryDescriptorTypeMdl</td>
                     <td>The <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure contains a memory descriptor list (MDL).</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfMemoryDescriptorTypeHandle</td>
+                    <td>The <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure contains a handle to a memory object.</td>
                 </tr>
 </table>
 
@@ -95,11 +95,3 @@ typedef enum _WDF_MEMORY_DESCRIPTOR_TYPE {
 ## See Also
 
 <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_MEMORY_DESCRIPTOR_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

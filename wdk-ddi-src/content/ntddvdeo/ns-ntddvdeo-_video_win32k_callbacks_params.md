@@ -63,25 +63,25 @@ typedef struct _VIDEO_WIN32K_CALLBACKS_PARAMS {
 
 Reserved for system use.
 
-`IsPostDevice`
-
-
-
-`LockUserSession`
-
-
-
-`Param`
+`PhysDisp`
 
 Reserved for system use.
 
-`PhysDisp`
+`Param`
 
 Reserved for system use.
 
 `Status`
 
 Reserved for system use.
+
+`LockUserSession`
+
+
+
+`IsPostDevice`
+
+
 
 `SurpriseRemoval`
 

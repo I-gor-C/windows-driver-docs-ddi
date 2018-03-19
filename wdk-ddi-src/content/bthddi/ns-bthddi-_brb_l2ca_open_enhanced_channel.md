@@ -99,93 +99,19 @@ typedef struct _BRB_L2CA_OPEN_ENHANCED_CHANNEL {
 ## Members
 
 
-`BtAddress`
+`Hdr`
 
-The Bluetooth address of the device for which the connection is intended.
+A 
+     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     about the current BRB.
 
-`Callback`
+`ChannelHandle`
 
-The 
-     <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback_enhanced.md">Enhanced L2CAP Callback
-     Function</a> implemented by the profile driver, that the Bluetooth driver stack should call to notify
-     the profile driver about any changes to the enhanced L2CAP connection.
+##### 
 
-`CallbackContext`
 
-The context to pass to the callback function specified in the 
-     <b>Callback</b> member. The profile driver defines this value.
 
-`CallbackFlags`
-
-A flag that specifies which events should generate a callback routine to notify the profile driver
-     that the event has occurred. Valid flag values are contained in the following table.
-     
-
-<table>
-<tr>
-<th>Flag</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>
-CALLBACK_CONFIG_EXTRA_IN
-
-</td>
-<td>
-If set, the callback routine will be called when the configuration request for the remote device
-        contains extra options. If not set, the extra configuration options will be rejected as unknown
-        options. This flag is used with <b>BRB_L2CA_OPEN_ENHANCED_CHANNEL_RESPONSE</b> BRBs.
-
-</td>
-</tr>
-<tr>
-<td>
-CALLBACK_CONFIG_EXTRA_OUT
-
-</td>
-<td>
-If set, the callback routine will be called when the remote device rejects an extra configuration
-        option from a <b>BRB_L2CA_OPEN_ENHANCED_CHANNEL</b> request. If not set and the remote device rejects the
-        configuration request due to an extra option, the connection will be closed.
-
-</td>
-</tr>
-<tr>
-<td>
-CALLBACK_CONFIG_QOS
-
-</td>
-<td>
-If set, the callback routine will be called when a remote device sends a configuration request
-        that contains a QOS value. If this flag is not set and the remote device either sends QOS parameters
-        in a configuration request or rejects the profile driver's requested QOS parameters, the connection
-        is disconnected.
-
-</td>
-</tr>
-<tr>
-<td>
-CALLBACK_DISCONNECT
-
-</td>
-<td>
-If set, the callback routine will be called when a remote device disconnects from the enhanced L2CAP
-        channel.
-
-</td>
-</tr>
-<tr>
-<td>
-CALLBACK_RECV_PACKET
-
-</td>
-<td>
-If set, the callback routine will be called when the profile driver receives an incoming enhanced L2CAP
-        packet.
-
-</td>
-</tr>
-</table>
+#######
 
 `ChannelFlags`
 
@@ -236,84 +162,9 @@ The profile driver indicates its preference that users not be prompted for a PIN
 </tr>
 </table>
 
-`ChannelHandle`
+`BtAddress`
 
-##### 
-
-
-
-#######
-
-`ConfigIn`
-
-The substructure that contains parameter settings to validate incoming
-     <b>BRB_L2CA_OPEN_ENHANCED_CHANNEL_RESPONSE</b> BRBs that are sent from a remote device.
-
-
-
-#### Flags
-
-Flags that specify the requirements for the channel to be opened. Valid flag values are listed in
-      the following table:
-      
-
-<table>
-<tr>
-<td>
-<b>Flag</b>
-
-</td>
-<td>
-<b>Description</b>
-
-</td>
-</tr>
-<tr>
-<td>
-CF_LINK_AUTHENTICATED
-
-</td>
-<td>
-The link must be authenticated.
-
-</td>
-</tr>
-<tr>
-<td>
-CF_LINK_ENCRYPTED
-
-</td>
-<td>
-The link must be encrypted. Setting this flag also sets the CF_LINK_AUTHENTICATED flag.
-
-</td>
-</tr>
-<tr>
-<td>
-CF_LINK_SUPPRESS_PIN
-
-</td>
-<td>
-The profile driver indicates its preference that users not be prompted for a PIN.
-
-</td>
-</tr>
-</table>
- 
-
-
-
-#### Mtu
-
-The range of message transfer units (MTUs) that is used to negotiate the size of the inbound
-      half of channel.
-
-
-
-#### FlushTO
-
-The range of possible values to be used for the flush timeout for the inbound half of the
-      channel.
+The Bluetooth address of the device for which the connection is intended.
 
 `ConfigOut`
 
@@ -449,26 +300,160 @@ Not supported.
 
 Not supported.
 
-`Hdr`
+`ConfigIn`
 
-A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
-     about the current BRB.
+The substructure that contains parameter settings to validate incoming
+     <b>BRB_L2CA_OPEN_ENHANCED_CHANNEL_RESPONSE</b> BRBs that are sent from a remote device.
 
-`IncomingQueueDepth`
 
-Specifies the incoming queue length in message transfer units (MTUs).
 
-`InResults`
+#### Flags
 
-A CHANNEL_CONFIG_RESULTS_ENHANCED structure that contains configuration parameters negotiated for the inbound
-     request.
+Flags that specify the requirements for the channel to be opened. Valid flag values are listed in
+      the following table:
+      
 
-`OutResults`
+<table>
+<tr>
+<td>
+<b>Flag</b>
 
-A 
-     <a href="..\bthddi\ns-bthddi-_channel_config_results_enhanced.md">CHANNEL_CONFIG_RESULTS_ENHANCED</a> structure that
-     contains configuration parameters negotiated for the outbound request.
+</td>
+<td>
+<b>Description</b>
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_AUTHENTICATED
+
+</td>
+<td>
+The link must be authenticated.
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_ENCRYPTED
+
+</td>
+<td>
+The link must be encrypted. Setting this flag also sets the CF_LINK_AUTHENTICATED flag.
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_SUPPRESS_PIN
+
+</td>
+<td>
+The profile driver indicates its preference that users not be prompted for a PIN.
+
+</td>
+</tr>
+</table>
+ 
+
+
+
+#### Mtu
+
+The range of message transfer units (MTUs) that is used to negotiate the size of the inbound
+      half of channel.
+
+
+
+#### FlushTO
+
+The range of possible values to be used for the flush timeout for the inbound half of the
+      channel.
+
+`CallbackFlags`
+
+A flag that specifies which events should generate a callback routine to notify the profile driver
+     that the event has occurred. Valid flag values are contained in the following table.
+     
+
+<table>
+<tr>
+<th>Flag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+CALLBACK_CONFIG_EXTRA_IN
+
+</td>
+<td>
+If set, the callback routine will be called when the configuration request for the remote device
+        contains extra options. If not set, the extra configuration options will be rejected as unknown
+        options. This flag is used with <b>BRB_L2CA_OPEN_ENHANCED_CHANNEL_RESPONSE</b> BRBs.
+
+</td>
+</tr>
+<tr>
+<td>
+CALLBACK_CONFIG_EXTRA_OUT
+
+</td>
+<td>
+If set, the callback routine will be called when the remote device rejects an extra configuration
+        option from a <b>BRB_L2CA_OPEN_ENHANCED_CHANNEL</b> request. If not set and the remote device rejects the
+        configuration request due to an extra option, the connection will be closed.
+
+</td>
+</tr>
+<tr>
+<td>
+CALLBACK_CONFIG_QOS
+
+</td>
+<td>
+If set, the callback routine will be called when a remote device sends a configuration request
+        that contains a QOS value. If this flag is not set and the remote device either sends QOS parameters
+        in a configuration request or rejects the profile driver's requested QOS parameters, the connection
+        is disconnected.
+
+</td>
+</tr>
+<tr>
+<td>
+CALLBACK_DISCONNECT
+
+</td>
+<td>
+If set, the callback routine will be called when a remote device disconnects from the enhanced L2CAP
+        channel.
+
+</td>
+</tr>
+<tr>
+<td>
+CALLBACK_RECV_PACKET
+
+</td>
+<td>
+If set, the callback routine will be called when the profile driver receives an incoming enhanced L2CAP
+        packet.
+
+</td>
+</tr>
+</table>
+
+`Callback`
+
+The 
+     <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback_enhanced.md">Enhanced L2CAP Callback
+     Function</a> implemented by the profile driver, that the Bluetooth driver stack should call to notify
+     the profile driver about any changes to the enhanced L2CAP connection.
+
+`CallbackContext`
+
+The context to pass to the callback function specified in the 
+     <b>Callback</b> member. The profile driver defines this value.
 
 `ReferenceObject`
 
@@ -476,6 +461,21 @@ A pointer to an object to pass to
      <a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a> and 
      <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> for which to
      maintain a reference count of.
+
+`OutResults`
+
+A 
+     <a href="..\bthddi\ns-bthddi-_channel_config_results_enhanced.md">CHANNEL_CONFIG_RESULTS_ENHANCED</a> structure that
+     contains configuration parameters negotiated for the outbound request.
+
+`InResults`
+
+A CHANNEL_CONFIG_RESULTS_ENHANCED structure that contains configuration parameters negotiated for the inbound
+     request.
+
+`IncomingQueueDepth`
+
+Specifies the incoming queue length in message transfer units (MTUs).
 
 `Reserved`
 

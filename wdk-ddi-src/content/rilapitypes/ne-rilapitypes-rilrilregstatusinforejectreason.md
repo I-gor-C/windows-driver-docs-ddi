@@ -76,32 +76,7 @@ typedef enum _RILRILREGSTATUSINFOREJECTREASON {
 <table>
             
                 <tr>
-                    <td>RIL_REGREJECTREASON_CONGESTION</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_REGREJECTREASON_CSG_NOTAUTHORIZED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_REGREJECTREASON_GSMAUTH_NOTACCEPTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_REGREJECTREASON_ILLEGAL_ME</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_REGREJECTREASON_ILLEGAL_MS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_REGREJECTREASON_IMSI_NOTACCEPTED</td>
+                    <td>RIL_REGREJECTREASON_NULL</td>
                     <td></td>
                 </tr>
             
@@ -111,32 +86,22 @@ typedef enum _RILRILREGSTATUSINFOREJECTREASON {
                 </tr>
             
                 <tr>
+                    <td>RIL_REGREJECTREASON_ILLEGAL_MS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_REGREJECTREASON_IMSIUNK_VLR</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_REGREJECTREASON_LOCAREA_NOTALLOWED</td>
+                    <td>RIL_REGREJECTREASON_IMSI_NOTACCEPTED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_REGREJECTREASON_MACFAILURE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_REGREJECTREASON_NETWORKFAILURE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_REGREJECTREASON_NOSUITABLECELL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_REGREJECTREASON_NULL</td>
+                    <td>RIL_REGREJECTREASON_ILLEGAL_ME</td>
                     <td></td>
                 </tr>
             
@@ -146,7 +111,7 @@ typedef enum _RILRILREGSTATUSINFOREJECTREASON {
                 </tr>
             
                 <tr>
-                    <td>RIL_REGREJECTREASON_REQSVCOPT_NOTSUBSCRIBED</td>
+                    <td>RIL_REGREJECTREASON_LOCAREA_NOTALLOWED</td>
                     <td></td>
                 </tr>
             
@@ -156,17 +121,52 @@ typedef enum _RILRILREGSTATUSINFOREJECTREASON {
                 </tr>
             
                 <tr>
-                    <td>RIL_REGREJECTREASON_SVCOPT_NOTSUPPORTED</td>
+                    <td>RIL_REGREJECTREASON_NOSUITABLECELL</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_REGREJECTREASON_SVCOPT_OUTOFORDER</td>
+                    <td>RIL_REGREJECTREASON_NETWORKFAILURE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGREJECTREASON_MACFAILURE</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_REGREJECTREASON_SYNCHFAILURE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGREJECTREASON_CONGESTION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGREJECTREASON_GSMAUTH_NOTACCEPTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGREJECTREASON_CSG_NOTAUTHORIZED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGREJECTREASON_SVCOPT_NOTSUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGREJECTREASON_REQSVCOPT_NOTSUBSCRIBED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGREJECTREASON_SVCOPT_OUTOFORDER</td>
                     <td></td>
                 </tr>
 </table>

@@ -63,6 +63,26 @@ typedef struct _DXGK_AGP_INTERFACE {
 ## Members
 
 
+`Size`
+
+The size, in bytes, of this structure.
+
+`Version`
+
+The version number of the AGP interface. Version number constants are defined in <i>Dispmprt.h</i> (for example, DXGK_AGP_INTERFACE_VERSION_1).
+
+`Context`
+
+A pointer to a context that is provided by the display port driver.
+
+`InterfaceReference`
+
+A pointer to an interface reference function that is implemented by the display port driver.
+
+`InterfaceDereference`
+
+A pointer to an interface dereference function that is implemented by the display port driver.
+
 `AgpAllocatePool`
 
 A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_agp_allocate_pool.md">AgpAllocatePool</a> function.
@@ -74,26 +94,6 @@ A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_a
 `AgpSetCommand`
 
 A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_agp_set_command.md">AgpSetCommand</a> function.
-
-`Context`
-
-A pointer to a context that is provided by the display port driver.
-
-`InterfaceDereference`
-
-A pointer to an interface dereference function that is implemented by the display port driver.
-
-`InterfaceReference`
-
-A pointer to an interface reference function that is implemented by the display port driver.
-
-`Size`
-
-The size, in bytes, of this structure.
-
-`Version`
-
-The version number of the AGP interface. Version number constants are defined in <i>Dispmprt.h</i> (for example, DXGK_AGP_INTERFACE_VERSION_1).
 
 ## Remarks
 The display miniport driver supplies the <b>Size</b> and <b>Version</b> members of this structure, and then calls <a href="..\dispmprt\nc-dispmprt-dxgkcb_query_services.md">DxgkCbQueryServices</a>, which fills in the remaining members of this structure.

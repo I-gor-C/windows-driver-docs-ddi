@@ -65,21 +65,29 @@ typedef struct _D3DHAL_DP2BLT {
 ## Members
 
 
-`dwDest`
-
-Specifies the handle to the destination surface.
-
-`dwDestMipLevel`
-
-Specifies the sublevel of a MIP-map texture that is the destination for the blt.
-
 `dwSource`
 
 Specifies the handle to the source surface.
 
+`rSource`
+
+Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the source surface. These points define the area of the source blit data and its position on the source surface.
+
 `dwSourceMipLevel`
 
 Specifies the sublevel of a MIP-map texture that is the source of the blt.
+
+`dwDest`
+
+Specifies the handle to the destination surface.
+
+`rDest`
+
+Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the destination surface. These points define the area in which the blit should occur and its position on the destination surface.
+
+`dwDestMipLevel`
+
+Specifies the sublevel of a MIP-map texture that is the destination for the blt.
 
 `Flags`
 
@@ -112,14 +120,6 @@ Set for point filtering.
 </tr>
 </table>
 
-`rDest`
-
-Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the destination surface. These points define the area in which the blit should occur and its position on the destination surface.
-
-`rSource`
-
-Specifies a RECTL structure that specifies the upper left and lower right points of a rectangle on the source surface. These points define the area of the source blit data and its position on the source surface.
-
 ## Remarks
 The <b>dwSource</b> or <b>dwDest</b> member specifies the kernel handle to the top-level surface and the <b>dwSourceMipLevel</b> or <b>dwDestMiplevel</b> member specifies the sublevel for the MIP-map chain where the blt occurs.
 
@@ -139,11 +139,3 @@ D3DDP2OP_BLT
 
 
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2BLT structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -59,21 +59,21 @@ typedef struct D3D12DDIARG_VIDEO_GETCAPS {
 ## Members
 
 
-`DataSize`
+`Type`
 
-The size, in bytes, of the data at <b>pData</b>.
-
-`pData`
-
-A pointer to a memory block that contains capabilities of the type that is specified by the <b>Type</b> member and possibly determined by the condition specified by the <b>pInfo</b> member.
+A type.
 
 `pInfo`
 
 A pointer to a memory block that contains data that specifies the condition on which to retrieve the capabilities of the type that is specified by the <b>Type</b> member.
 
-`Type`
+`pData`
 
-A type.
+A pointer to a memory block that contains capabilities of the type that is specified by the <b>Type</b> member and possibly determined by the condition specified by the <b>pInfo</b> member.
+
+`DataSize`
+
+The size, in bytes, of the data at <b>pData</b>.
 
 
 ## Requirements

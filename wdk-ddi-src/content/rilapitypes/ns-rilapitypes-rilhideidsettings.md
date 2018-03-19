@@ -65,19 +65,19 @@ typedef struct _RILHIDEIDSETTINGS {
 
 
 
-`dwExecutor`
-
-
-
 `dwParams`
 
 
 
-`dwProvisioning`
+`dwExecutor`
 
 
 
 `dwStatus`
+
+
+
+`dwProvisioning`
 
 
 

@@ -67,15 +67,13 @@ typedef struct _FSRTL_COMMON_FCB_HEADER {
 ## Members
 
 
-`AllocationSize`
+`NodeTypeCode`
 
-Allocation size for the file stream. 
+Reserved for system use.
 
-For more information about the <b>AllocationSize</b>, <b>FileSize</b>, and <b>ValidDataLength</b> members, see <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.
+`NodeByteSize`
 
-`FileSize`
-
-File size of the file stream.
+Reserved for system use.
 
 `Flags`
 
@@ -131,41 +129,6 @@ This flag indicates that the file system is using <a href="..\ntifs\ns-ntifs-_fs
 
 Reserved for system use.
 
-`Flags2`
-
-Bitmask of flags that the file system sets to indicate support for various features. This member must be one or more of the following values: 
-
-
-
-
-
-#### FSRTL_FLAG2_DO_MODIFIED_WRITE
-
-This flag is used together with the <b>FsContext2</b> member of the file object for the file stream as follows: 
-
-<ul>
-<li>If the <b>FsContext2</b> member of the file object is non-<b>NULL</b>, the file stream represents an open instance of a file or a directory, and the value of this flag is ignored by the operating system.</li>
-<li>If the <b>FsContext2</b> member of the file object is <b>NULL</b>, and this flag is not set, the file object is a stream file object, and the stream is a modified-no-write (MNW) stream.</li>
-<li>If the <b>FsContext2</b> member of the file object is <b>NULL</b>, and this flag is set, the file object is a stream file object, and the stream is writable.</li>
-</ul>
-
-
-#### FSRTL_FLAG2_PURGE_WHEN_MAPPED
-
-If this flag is set, the Cache Manager will flush and purge the cache map when a user first maps a file. 
-
-
-
-#### FSRTL_FLAG2_SUPPORTS_FILTER_CONTEXTS
-
-This flag indicates that the file system is using <a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a> instead of FSRTL_COMMON_FCB_HEADER in its FCB structures. This flag is required because use of the FSRTL_COMMON_FCB_HEADER structure outside of the FSRTL_ADVANCED_FCB_HEADER structure is deprecated.
-
-
-
-#### FSRTL_FLAG2_IS_PAGING_FILE
-
-If set, this FCB header is associated with a page file.
-
 `IsFastIoPossible`
 
 This member must be one of the following values: 
@@ -210,23 +173,48 @@ The FCB for the file is bad, or an opportunistic lock (also called  "oplock") ex
 
 For more information about these values, see the reference entries for <a href="..\ntifs\nf-ntifs-fsrtlaretherecurrentfilelocks.md">FsRtlAreThereCurrentFileLocks</a>, <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopyread~r7.md">FsRtlCopyRead</a>, and <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopywrite~r7.md">FsRtlCopyWrite</a>.
 
-`NodeByteSize`
+`Flags2`
 
-Reserved for system use.
+Bitmask of flags that the file system sets to indicate support for various features. This member must be one or more of the following values: 
 
-`NodeTypeCode`
 
-Reserved for system use.
 
-`PagingIoResource`
 
-Pointer to an additional resource variable, for which the file system supplies the storage that will be used to synchronize paging I/O access to the FCB. The resource variable must be allocated from nonpaged pool. 
 
-Filter drivers should treat this member as opaque.
+#### FSRTL_FLAG2_DO_MODIFIED_WRITE
+
+This flag is used together with the <b>FsContext2</b> member of the file object for the file stream as follows: 
+
+<ul>
+<li>If the <b>FsContext2</b> member of the file object is non-<b>NULL</b>, the file stream represents an open instance of a file or a directory, and the value of this flag is ignored by the operating system.</li>
+<li>If the <b>FsContext2</b> member of the file object is <b>NULL</b>, and this flag is not set, the file object is a stream file object, and the stream is a modified-no-write (MNW) stream.</li>
+<li>If the <b>FsContext2</b> member of the file object is <b>NULL</b>, and this flag is set, the file object is a stream file object, and the stream is writable.</li>
+</ul>
+
+
+#### FSRTL_FLAG2_PURGE_WHEN_MAPPED
+
+If this flag is set, the Cache Manager will flush and purge the cache map when a user first maps a file. 
+
+
+
+#### FSRTL_FLAG2_SUPPORTS_FILTER_CONTEXTS
+
+This flag indicates that the file system is using <a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a> instead of FSRTL_COMMON_FCB_HEADER in its FCB structures. This flag is required because use of the FSRTL_COMMON_FCB_HEADER structure outside of the FSRTL_ADVANCED_FCB_HEADER structure is deprecated.
+
+
+
+#### FSRTL_FLAG2_IS_PAGING_FILE
+
+If set, this FCB header is associated with a page file.
 
 `Reserved`
 
 Reserved for system use. Drivers must set this bit-field to zero.
+
+`Version`
+
+Reserved for system use.  This bit-field is set by the <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a> or <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheaderex.md">FsRtlSetupAdvancedHeaderEx</a> macro.  Starting with Windows Vista, the value of this bit-field is FSRTL_FCB_HEADER_V1 or greater; otherwise, the value is FSRTL_FCB_HEADER_V0.  See <a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a> for more information.
 
 `Resource`
 
@@ -234,13 +222,25 @@ Pointer to an initialized resource variable, for which the file system supplies 
 
 Filter drivers should treat this member as opaque.
 
+`PagingIoResource`
+
+Pointer to an additional resource variable, for which the file system supplies the storage that will be used to synchronize paging I/O access to the FCB. The resource variable must be allocated from nonpaged pool. 
+
+Filter drivers should treat this member as opaque.
+
+`AllocationSize`
+
+Allocation size for the file stream. 
+
+For more information about the <b>AllocationSize</b>, <b>FileSize</b>, and <b>ValidDataLength</b> members, see <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.
+
+`FileSize`
+
+File size of the file stream.
+
 `ValidDataLength`
 
 Valid data length of the file stream.
-
-`Version`
-
-Reserved for system use.  This bit-field is set by the <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a> or <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheaderex.md">FsRtlSetupAdvancedHeaderEx</a> macro.  Starting with Windows Vista, the value of this bit-field is FSRTL_FCB_HEADER_V1 or greater; otherwise, the value is FSRTL_FCB_HEADER_V0.  See <a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a> for more information.
 
 ## Remarks
 File systems must set the <b>FsContext</b> member of every file object to point to an <a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a> structure.  This structure can be embedded inside of a file-system-specific stream context object structure (the remainder of this structure is file-system-specific). Usually, the FSRTL_ADVANCED_FCB_HEADER  structure is a file control block (FCB). However, on some file systems that support multiple data streams, such as NTFS, it is a stream control block (SCB).
@@ -281,11 +281,3 @@ If the file is used as a paging file, the FSRTL_ADVANCED_FCB_HEADER structure mu
 
 
 <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSRTL_COMMON_FCB_HEADER structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

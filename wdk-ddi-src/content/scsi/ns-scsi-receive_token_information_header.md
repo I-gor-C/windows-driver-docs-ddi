@@ -75,17 +75,40 @@ typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
 
 The amount of data available in the <b>SenseData</b> array and any additional result information.
 
-`CompletionStatus`
+`ResponseToServiceAction`
 
-SCSI status code for the copy command operation.
+A response code indicating which command action the response is for. The service action codes are the following.
 
-`EstimatedStatusUpdateDelay`
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="SERVICE_ACTION_POPULATE_TOKEN"></a><a id="service_action_populate_token"></a><dl>
+<dt><b>SERVICE_ACTION_POPULATE_TOKEN</b></dt>
+</dl>
+</td>
+<td width="60%">
+The response information is for a POPULATE TOKEN command.
 
-The recommended time, in milliseconds, to wait before sending the next RECEIVE COPY STATUS command for updated information about the current copy operation.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="SERVICE_ACTION_WRITE_USING_TOKEN"></a><a id="service_action_write_using_token"></a><dl>
+<dt><b>SERVICE_ACTION_WRITE_USING_TOKEN</b></dt>
+</dl>
+</td>
+<td width="60%">
+The response information is for a WRITE USING TOKEN command.
 
-`OperationCounter`
+</td>
+</tr>
+</table>
 
-The number of commands processed for the current copy operation.
+`Reserved1`
+
+Reserved.
 
 `OperationStatus`
 
@@ -175,56 +198,21 @@ The operation was terminated. Possibly by an existing resource reservation.
 </tr>
 </table>
 
-`Reserved1`
-
-Reserved.
-
 `Reserved2`
 
 Reserved.
 
-`Reserved3`
+`OperationCounter`
 
-Reserved.
+The number of commands processed for the current copy operation.
 
-`ResponseToServiceAction`
+`EstimatedStatusUpdateDelay`
 
-A response code indicating which command action the response is for. The service action codes are the following.
+The recommended time, in milliseconds, to wait before sending the next RECEIVE COPY STATUS command for updated information about the current copy operation.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="SERVICE_ACTION_POPULATE_TOKEN"></a><a id="service_action_populate_token"></a><dl>
-<dt><b>SERVICE_ACTION_POPULATE_TOKEN</b></dt>
-</dl>
-</td>
-<td width="60%">
-The response information is for a POPULATE TOKEN command.
+`CompletionStatus`
 
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="SERVICE_ACTION_WRITE_USING_TOKEN"></a><a id="service_action_write_using_token"></a><dl>
-<dt><b>SERVICE_ACTION_WRITE_USING_TOKEN</b></dt>
-</dl>
-</td>
-<td width="60%">
-The response information is for a WRITE USING TOKEN command.
-
-</td>
-</tr>
-</table>
-
-`SegmentsProcessed`
-
-The number of segments processed for the data transfer operation. Segments are copy length units used internally by a storage device's copy provider. On Windowssystems, this value is reserved and applications must ignore this member.
-
-`SenseData`
-
-Sense data returned for the copy operation.
+SCSI status code for the copy command operation.
 
 `SenseDataFieldLength`
 
@@ -233,10 +221,6 @@ The length, in bytes, of the entire data area available for sense data. This val
 `SenseDataLength`
 
 The length, in bytes, of the data in <b>SenseData</b>.
-
-`TransferCount`
-
-The length of data transferred in the operation. The unit type in <b>TransferCountUnits</b> is applied to this value to give the total byte count.
 
 `TransferCountUnits`
 
@@ -329,6 +313,22 @@ Transfer count is not an exponent, but in units of logical block length.
 </tr>
 </table>
 
+`TransferCount`
+
+The length of data transferred in the operation. The unit type in <b>TransferCountUnits</b> is applied to this value to give the total byte count.
+
+`SegmentsProcessed`
+
+The number of segments processed for the data transfer operation. Segments are copy length units used internally by a storage device's copy provider. On Windowssystems, this value is reserved and applications must ignore this member.
+
+`Reserved3`
+
+Reserved.
+
+`SenseData`
+
+Sense data returned for the copy operation.
+
 ## Remarks
 If <b>RECEIVE_TOKEN_INFORMATION_HEADER</b> is for a POPULATE TOKEN command operation, and the command completed successfully, a <a href="..\storport\ns-storport-receive_token_information_response_header.md">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a> structure will also be present after <b>SenseData</b> at an offset of <b>SenseDataFieldLength</b> from the beginning of the <b>SenseData</b> array. The <b>RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</b> structure will contain the token created as a representation of data (ROD) for the range parameters sent with the command.
 
@@ -343,11 +343,3 @@ All multibyte values are in big endian format. Prior to evaluation, these values
 ## See Also
 
 <a href="..\storport\ns-storport-receive_token_information_response_header.md">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20RECEIVE_TOKEN_INFORMATION_HEADER structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

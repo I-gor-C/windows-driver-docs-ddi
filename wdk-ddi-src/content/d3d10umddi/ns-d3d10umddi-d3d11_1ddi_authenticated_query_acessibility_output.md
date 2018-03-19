@@ -59,6 +59,14 @@ typedef struct D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT {
 ## Members
 
 
+`Output`
+
+A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_authenticated_query_output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure that contains a Message Authentication Code (MAC) and other data.
+
+`BusType`
+
+A bitwise <b>OR</b> of flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_bus_type.md">D3D11_1DDI_BUS_TYPE</a> enumeration.
+
 `AccessibleInContiguousBlocks`
 
 If <b>TRUE</b>, contiguous blocks of video memory may be accessible to the CPU or the bus.
@@ -66,14 +74,6 @@ If <b>TRUE</b>, contiguous blocks of video memory may be accessible to the CPU o
 `AccessibleInNonContiguousBlocks`
 
 If <b>TRUE</b>, non-contiguous blocks of video memory may be accessible to the CPU or the bus.
-
-`BusType`
-
-A bitwise <b>OR</b> of flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_bus_type.md">D3D11_1DDI_BUS_TYPE</a> enumeration.
-
-`Output`
-
-A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_authenticated_query_output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a> structure that contains a Message Authentication Code (MAC) and other data.
 
 
 ## Requirements
@@ -93,11 +93,3 @@ A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_authenticated_query_output.md"
 
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_authenticated_query_output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

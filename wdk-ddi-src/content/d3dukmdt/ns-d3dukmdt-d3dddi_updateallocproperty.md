@@ -70,29 +70,29 @@ typedef struct D3DDDI_UPDATEALLOCPROPERTY {
 ## Members
 
 
-`Flags`
+`hPagingQueue`
 
-[in] The flags that will be used to update the allocation.
+[in] A Handle to the paging queue used to synchronize paging operations for this call.
 
 `hAllocation`
 
 [in] A handle to the allocation that will be updated.
 
-`hPagingQueue`
+`SupportedSegmentSet`
 
-[in] A Handle to the paging queue used to synchronize paging operations for this call.
-
-`PagingFenceValue`
-
-[out] The paging fence value that will be synchronized with before using the new allocation. Applies to the monitored fence synchronization object associated with hPagingQueue.
+[in] An index for the new supported segment set. If the current supported segment set is the same, then this will be ignored.
 
 `PreferredSegment`
 
 [in] An index for the new preferred segment set. If the current preferred segment set is the same, then this will be ignored.
 
-`SupportedSegmentSet`
+`Flags`
 
-[in] An index for the new supported segment set. If the current supported segment set is the same, then this will be ignored.
+[in] The flags that will be used to update the allocation.
+
+`PagingFenceValue`
+
+[out] The paging fence value that will be synchronized with before using the new allocation. Applies to the monitored fence synchronization object associated with hPagingQueue.
 
 
 ## Requirements

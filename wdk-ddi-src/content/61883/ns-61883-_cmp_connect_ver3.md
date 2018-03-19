@@ -60,6 +60,18 @@ typedef struct _CMP_CONNECT_VER3 {
 ## Members
 
 
+`hOutputPlug`
+
+The handle of an output plug.
+
+`hInputPlug`
+
+The handle of an input plug.
+
+`Type`
+
+The type of the requested connection.
+
 `Format`
 
 The requested data format.
@@ -67,18 +79,6 @@ The requested data format.
 `hConnect`
 
 The handle for the created connection.
-
-`hInputPlug`
-
-The handle of an input plug.
-
-`hOutputPlug`
-
-The handle of an output plug.
-
-`Type`
-
-The type of the requested connection.
 
 
 ## Requirements
@@ -89,11 +89,3 @@ The type of the requested connection.
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CMP_CONNECT_VER3 structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

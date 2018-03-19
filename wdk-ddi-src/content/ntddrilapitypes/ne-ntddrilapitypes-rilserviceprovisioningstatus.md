@@ -62,7 +62,7 @@ typedef enum _RILSERVICEPROVISIONINGSTATUS {
 <table>
             
                 <tr>
-                    <td>RIL_SVCPROV_MAX</td>
+                    <td>RIL_SVCPROV_UNKNOWN</td>
                     <td></td>
                 </tr>
             
@@ -77,17 +77,17 @@ typedef enum _RILSERVICEPROVISIONINGSTATUS {
                 </tr>
             
                 <tr>
-                    <td>RIL_SVCPROV_TEMPMODEALLOWED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_SVCPROV_TEMPMODERESTRICTED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_SVCPROV_UNKNOWN</td>
+                    <td>RIL_SVCPROV_TEMPMODEALLOWED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SVCPROV_MAX</td>
                     <td></td>
                 </tr>
 </table>

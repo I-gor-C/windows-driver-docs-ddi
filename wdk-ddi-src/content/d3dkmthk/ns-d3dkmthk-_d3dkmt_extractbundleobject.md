@@ -59,13 +59,13 @@ typedef struct _D3DKMT_EXTRACTBUNDLEOBJECT {
 ## Members
 
 
-`cObjects`
-
-The number of the DXGK object to be unbundled.
-
 `hNtBundleHandle`
 
 The NT bundle handle.
+
+`cObjects`
+
+The number of the DXGK object to be unbundled.
 
 `pdwDesiredAccess`
 

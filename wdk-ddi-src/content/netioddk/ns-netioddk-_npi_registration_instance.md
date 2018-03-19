@@ -62,11 +62,14 @@ typedef struct _NPI_REGISTRATION_INSTANCE {
 ## Members
 
 
-`ModuleId`
+`Version`
 
-A pointer to an 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568813">NPI_MODULEID</a> structure that uniquely
-     identifies the network module.
+The version of the NMR with which the network module is registering. A network module should set
+     this member to zero.
+
+`Size`
+
+The size, in bytes, of the NPI_REGISTRATION_INSTANCE structure.
 
 `NpiId`
 
@@ -88,6 +91,12 @@ typedef CONST NPIID *PNPIID;</pre>
 </tr>
 </table></span></div>
 
+`ModuleId`
+
+A pointer to an 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568813">NPI_MODULEID</a> structure that uniquely
+     identifies the network module.
+
 `Number`
 
 The implementation number of the 
@@ -104,15 +113,6 @@ The implementation number of the
 `OPTIONAL`
 
 
-
-`Size`
-
-The size, in bytes, of the NPI_REGISTRATION_INSTANCE structure.
-
-`Version`
-
-The version of the NMR with which the network module is registering. A network module should set
-     this member to zero.
 
 ## Remarks
 An NPI_REGISTRATION_INSTANCE structure is a member of the 
@@ -163,11 +163,3 @@ A network module must make sure that the memory for the NPIID pointed to by the
 
 
 <a href="..\netioddk\ns-netioddk-_npi_provider_characteristics.md">NPI_PROVIDER_CHARACTERISTICS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_REGISTRATION_INSTANCE structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

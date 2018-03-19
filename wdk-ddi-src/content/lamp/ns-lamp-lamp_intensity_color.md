@@ -58,17 +58,17 @@ typedef struct LAMP_INTENSITY_COLOR {
 ## Members
 
 
-`Blue`
+`Red`
 
-Blue light intensity in percentage (0-100).
+Red light intensity in percentage (0-100).
 
 `Green`
 
 Green light intensity in percentage (0-100).
 
-`Red`
+`Blue`
 
-Red light intensity in percentage (0-100).
+Blue light intensity in percentage (0-100).
 
 
 ## Requirements

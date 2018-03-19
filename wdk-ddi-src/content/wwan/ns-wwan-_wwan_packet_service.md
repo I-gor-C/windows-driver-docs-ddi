@@ -61,6 +61,16 @@ typedef struct _WWAN_PACKET_SERVICE {
 ## Members
 
 
+`uNwError`
+
+A network specific error, in the event of a packet-attach or packet-detach failure. For more
+     information about this member, see the following 
+     "Remarks" section.
+
+`PacketServiceState`
+
+The packet service state of the device.
+
 `AvailableDataClass`
 
 A bitmap that represents which data-classes are available to the device in the current network.
@@ -92,16 +102,6 @@ Miniport drivers should set this member to WWAN_DATA_CLASS_CUSTOM if the data-cl
      predefined values in the 
      <b>WwanDataClass</b> member of 
      <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>.
-
-`PacketServiceState`
-
-The packet service state of the device.
-
-`uNwError`
-
-A network specific error, in the event of a packet-attach or packet-detach failure. For more
-     information about this member, see the following 
-     "Remarks" section.
 
 ## Remarks
 The current packet-attach service state is typically reflected in the device's user interface.
@@ -181,11 +181,3 @@ Miniport drivers must report the cause code at the earliest possible instance. F
 
 
 <a href="..\wwan\ne-wwan-_wwan_packet_service_state.md">WWAN_PACKET_SERVICE_STATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PACKET_SERVICE structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -59,30 +59,13 @@ typedef struct _DXVA_Highlight {
 ## Members
 
 
-`HighlightRect`
-
-Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the area of the highlight rectangle.
-
-The following restrictions apply to the RECT dimensions:
-
-<ul>
-<li>
-<b>left</b> and <b>top</b> must be greater than or equal to zero.
-
-</li>
-<li>
-<b>right</b> and <b>bottom</b> must be greater than <b>left</b> and <b>top</b>, respectively.
-
-</li>
-<li>
-<b>right</b> must not exceed 720, and <b>bottom</b> must not exceed 576.
-
-</li>
-</ul>
-
 `wHighlightActive`
 
 Indicates whether a rectangular highlight area is active. Zero indicates inactive and 1 indicates active. If inactive, the highlight data must have no effect on the content of the blended picture.
+
+`wHighlightIndices`
+
+Contains four palette indexes. Each palette index consists of 4 bits. Each 2-bit index in the highlighted rectangular area of the DXPD is used to select among these four palette indexes. The 4 most significant bits are for index 3, the next 4 bits are for index 2, the next 4 bits are for index 1, and the 4 least significant bits are for index 0.
 
 `wHighlightAlphas`
 
@@ -109,9 +92,26 @@ For nonzero values, the specified blend is found using the following expression:
 </li>
 </ul>
 
-`wHighlightIndices`
+`HighlightRect`
 
-Contains four palette indexes. Each palette index consists of 4 bits. Each 2-bit index in the highlighted rectangular area of the DXPD is used to select among these four palette indexes. The 4 most significant bits are for index 3, the next 4 bits are for index 2, the next 4 bits are for index 1, and the 4 least significant bits are for index 0.
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the area of the highlight rectangle.
+
+The following restrictions apply to the RECT dimensions:
+
+<ul>
+<li>
+<b>left</b> and <b>top</b> must be greater than or equal to zero.
+
+</li>
+<li>
+<b>right</b> and <b>bottom</b> must be greater than <b>left</b> and <b>top</b>, respectively.
+
+</li>
+<li>
+<b>right</b> must not exceed 720, and <b>bottom</b> must not exceed 576.
+
+</li>
+</ul>
 
 ## Remarks
 The DXVA_Highlight structure is formulated in a manner compatible with the DVD video specification as specified by the DVD Forum.
@@ -127,11 +127,3 @@ The DXVA_Highlight structure is formulated in a manner compatible with the DVD v
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_Highlight structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

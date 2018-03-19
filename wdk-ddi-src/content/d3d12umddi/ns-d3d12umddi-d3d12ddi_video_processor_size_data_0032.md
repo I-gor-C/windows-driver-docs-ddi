@@ -60,6 +60,10 @@ typedef struct _D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0032 {
 ## Members
 
 
+`VideoProcessorDesc`
+
+The creation properties for a video processor heap.  Driver should map these creation properties to size.
+
 `MemoryPoolL0Size`
 
 The L0 size of the heap object.  Memory Pool L0 is the memory pool “closest” to the GPU.  In the case of UMA adapters, this is the amount of system memory used.  For discrete adapters, this is the amount of discrete memory used.
@@ -67,10 +71,6 @@ The L0 size of the heap object.  Memory Pool L0 is the memory pool “closest”
 `MemoryPoolL1Size`
 
 The L1 size of the heap object.  Memory Pool L1 is the memory pool “second closest” to the GPU.  In the case of UMA adapters, this value is zero.  In the case of discrete adapters, this is the amount of system memory used.
-
-`VideoProcessorDesc`
-
-The creation properties for a video processor heap.  Driver should map these creation properties to size.
 
 
 ## Requirements

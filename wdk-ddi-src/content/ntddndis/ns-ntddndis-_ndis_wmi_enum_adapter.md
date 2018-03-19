@@ -62,16 +62,6 @@ typedef struct _NDIS_WMI_ENUM_ADAPTER {
 ## Members
 
 
-`DeviceName`
-
-The device name of the NDIS miniport adapter interface that is associated with the GUID. The
-     device name is a null-terminated wide character string.
-
-`DeviceNameLength`
-
-The length, in bytes, of the device name of the NDIS miniport adapter interface that is associated
-     with the GUID.
-
 `Header`
 
 The 
@@ -90,6 +80,16 @@ The NDIS interface index of the NDIS miniport adapter interface that is associat
 `NetLuid`
 
 The NDIS network interface name of the miniport adapter.
+
+`DeviceNameLength`
+
+The length, in bytes, of the device name of the NDIS miniport adapter interface that is associated
+     with the GUID.
+
+`DeviceName`
+
+The device name of the NDIS miniport adapter interface that is associated with the GUID. The
+     device name is a null-terminated wide character string.
 
 ## Remarks
 NDIS returns the NDIS_WMI_ENUM_ADAPTER structure when it enumerates miniport adapters for WMI clients.
@@ -110,11 +110,3 @@ NDIS returns the NDIS_WMI_ENUM_ADAPTER structure when it enumerates miniport ada
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WMI_ENUM_ADAPTER structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,13 +63,13 @@ typedef struct {
 
 Specifies the name of the print document.
 
-`pExtraErrorInfo`
-
-Specifies the name of the client machine printing the job.
-
 `pPrinterName`
 
 Specifies the print connection.
+
+`pExtraErrorInfo`
+
+Specifies the name of the client machine printing the job.
 
 
 ## Requirements

@@ -57,13 +57,13 @@ typedef struct IDDCX_OPM_GET_INFO_PARAMETERS {
 ## Members
 
 
-`GetInfoParameters`
-
-Parameters for the get information request.
-
 `Size`
 
 Total size of the structure.
+
+`GetInfoParameters`
+
+Parameters for the get information request.
 
 
 ## Requirements

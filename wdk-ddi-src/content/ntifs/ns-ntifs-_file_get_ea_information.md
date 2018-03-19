@@ -58,17 +58,17 @@ typedef struct _FILE_GET_EA_INFORMATION {
 ## Members
 
 
-`EaName`
+`NextEntryOffset`
 
-Specifies the first character of the name of the extended attribute to be queried. This is followed in memory by the remainder of the string.
+Offset, in bytes, of the next FILE_GET_EA_INFORMATION-typed entry. This member is zero if no other entries follow this one.
 
 `EaNameLength`
 
 Length, in bytes, of the <b>EaName</b> array. This value does not include a NULL terminator.
 
-`NextEntryOffset`
+`EaName`
 
-Offset, in bytes, of the next FILE_GET_EA_INFORMATION-typed entry. This member is zero if no other entries follow this one.
+Specifies the first character of the name of the extended attribute to be queried. This is followed in memory by the remainder of the string.
 
 ## Remarks
 The FILE_GET_EA_INFORMATION structure is used to query for extended-attribute (EA) information. The EA information is returned in a <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>-structured buffer. 
@@ -91,11 +91,3 @@ This structure must be aligned on a LONG (4-byte) boundary.
 
 
 <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_GET_EA_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

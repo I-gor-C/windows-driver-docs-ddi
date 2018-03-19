@@ -59,15 +59,15 @@ typedef struct _RILSETMSGINUICCSTATUSPARAMS {
 ## Members
 
 
+`hUiccApp`
+
+
+
 `dwIndex`
 
 
 
 `dwStatus`
-
-
-
-`hUiccApp`
 
 
 

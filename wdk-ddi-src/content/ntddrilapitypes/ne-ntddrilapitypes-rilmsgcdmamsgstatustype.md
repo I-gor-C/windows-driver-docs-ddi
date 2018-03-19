@@ -71,7 +71,7 @@ typedef enum _RILMSGCDMAMSGSTATUSTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGSTATUSTYPE_MAX</td>
+                    <td>RIL_MSGSTATUSTYPE_USERACK</td>
                     <td></td>
                 </tr>
             
@@ -81,7 +81,7 @@ typedef enum _RILMSGCDMAMSGSTATUSTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGSTATUSTYPE_USERACK</td>
+                    <td>RIL_MSGSTATUSTYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

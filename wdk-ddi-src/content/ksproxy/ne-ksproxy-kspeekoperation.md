@@ -59,12 +59,12 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KsPeekOperation_AddRef</td>
+                    <td>KsPeekOperation_PeekOnly</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>KsPeekOperation_PeekOnly</td>
+                    <td>KsPeekOperation_AddRef</td>
                     <td></td>
                 </tr>
 </table>

@@ -62,10 +62,6 @@ typedef struct {
 ## Members
 
 
-`GeoRegionType`
-
-<a href="..\gnssdriver\ne-gnssdriver-gnss_georegiontype.md">GNSS_GEOREGIONTYP</a>E enumeration that defines the georegion type of a geofence.
-
 `Size`
 
 Structure size.
@@ -73,6 +69,10 @@ Structure size.
 `Version`
 
 Version number.
+
+`GeoRegionType`
+
+<a href="..\gnssdriver\ne-gnssdriver-gnss_georegiontype.md">GNSS_GEOREGIONTYP</a>E enumeration that defines the georegion type of a geofence.
 
 ## Remarks
 A geographical shape is used to define a geofence.  Windows 10 currently supports only circular geofences.

@@ -64,33 +64,33 @@ typedef struct _DOT11_PEER_STATISTICS {
 ## Members
 
 
-`ullDecryptFailureCount`
-
-The number of encrypted packets that the peer station failed to decrypt.
-
 `ullDecryptSuccessCount`
 
 The number of received encrypted packets that the peer station successfully decrypted.
 
-`ullRxPacketFailureCount`
+`ullDecryptFailureCount`
 
-The number of MSDU packets and MMPDU frames that the IEEE MAC sublayer of the peer station
-     attempted to receive, but that failed to be received.
+The number of encrypted packets that the peer station failed to decrypt.
 
-`ullRxPacketSuccessCount`
+`ullTxPacketSuccessCount`
 
-The number of MSDU packets and MMPDU frames that the IEEE MAC sublayer of the peer station
-     successfully received.
+The number of MAC service data unit (MSDU) packets and MAC management protocol data unit (MMPDU)
+     frames that the IEEE MAC sublayer of the peer station successfully transmitted.
 
 `ullTxPacketFailureCount`
 
 The number of MSDU packets and MMPDU frames that the IEEE MAC sublayer of the peer station
      attempted to transmit, but that failed to transmit.
 
-`ullTxPacketSuccessCount`
+`ullRxPacketSuccessCount`
 
-The number of MAC service data unit (MSDU) packets and MAC management protocol data unit (MMPDU)
-     frames that the IEEE MAC sublayer of the peer station successfully transmitted.
+The number of MSDU packets and MMPDU frames that the IEEE MAC sublayer of the peer station
+     successfully received.
+
+`ullRxPacketFailureCount`
+
+The number of MSDU packets and MMPDU frames that the IEEE MAC sublayer of the peer station
+     attempted to receive, but that failed to be received.
 
 
 ## Requirements
@@ -102,11 +102,3 @@ The number of MAC service data unit (MSDU) packets and MAC management protocol d
 ## See Also
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PEER_STATISTICS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

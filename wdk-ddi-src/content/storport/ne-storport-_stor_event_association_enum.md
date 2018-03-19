@@ -67,11 +67,6 @@ typedef enum _STOR_EVENT_ASSOCIATION_ENUM {
                 </tr>
             
                 <tr>
-                    <td>StorEventInvalidAssociation</td>
-                    <td>Marks end of valid enumeration range</td>
-                </tr>
-            
-                <tr>
                     <td>StorEventLunAssociation</td>
                     <td>The event is associated with the LUN.</td>
                 </tr>
@@ -79,6 +74,11 @@ typedef enum _STOR_EVENT_ASSOCIATION_ENUM {
                 <tr>
                     <td>StorEventTargetAssociation</td>
                     <td>The event is associated with the target.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorEventInvalidAssociation</td>
+                    <td>Marks end of valid enumeration range</td>
                 </tr>
 </table>
 

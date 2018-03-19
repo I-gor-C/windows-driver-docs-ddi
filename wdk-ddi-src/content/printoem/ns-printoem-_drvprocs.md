@@ -110,22 +110,6 @@ typedef struct _DRVPROCS {
 ## Members
 
 
-`BGetStandardVariable`
-
-
-
-`DrvGetDriverSetting`
-
-
-
-`DrvUnidriverTextOut`
-
-
-
-`DrvWriteAbortBuf`
-
-
-
 `DrvWriteSpoolBuf`
 
 
@@ -135,6 +119,22 @@ typedef struct _DRVPROCS {
 
 
 `DrvYMoveTo`
+
+
+
+`DrvGetDriverSetting`
+
+
+
+`BGetStandardVariable`
+
+
+
+`DrvUnidriverTextOut`
+
+
+
+`DrvWriteAbortBuf`
 
 
 

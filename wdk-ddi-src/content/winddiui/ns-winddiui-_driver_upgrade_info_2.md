@@ -69,6 +69,14 @@ typedef struct _DRIVER_UPGRADE_INFO_2 {
 ## Members
 
 
+`pPrinterName`
+
+Pointer to a NULL-terminated string that specifies the name of the printer. For more information, see the Remarks section.
+
+`pOldDriverDirectory`
+
+Pointer to a NULL-terminated string that specifies the local directory in which the old printer driver files can be found.
+
 `cVersion`
 
 Specifies the operating system version for which the driver was written. 
@@ -120,49 +128,41 @@ Windows 2000 and later
 </tr>
 </table>
 
-`pConfigFile`
+`pName`
 
-Pointer to a NULL-terminated string that specifies a file name or a full path and file name for the device driver's configuration dynamic-link library (for example, "pscrptui.dll").
-
-`pDataFile`
-
-Pointer to a NULL-terminated string that specifies a file name or a full path and file name for the file that contains driver data (for example, "qms810.ppd").
-
-`pDefaultDataType`
-
-Pointer to a NULL-terminated string that specifies the default data type of the print job (for example, "EMF").
-
-`pDependentFiles`
-
-Pointer to a NULL-terminated string that specifies the files the driver depends on. Each file name in the string is also terminated with a null character (for example, "pscript.dll\0qms810.ppd\0pscrptui.dll\0pscrptui.hlp\0pstest.txt\0\0").
-
-`pDriverPath`
-
-Pointer to a NULL-terminated string that specifies a file name or full path and file name for the file that contains the device driver (for example, "pscript.dll").
+Pointer to a NULL-terminated string that specifies the name of the driver (for example, "QMS 810"). For more information, see the Remarks section.
 
 `pEnvironment`
 
 Pointer to a NULL-terminated string that specifies the environment for which the driver was written (for example, "Windows NT x86" or "Windows Itanium").
 
+`pDriverPath`
+
+Pointer to a NULL-terminated string that specifies a file name or full path and file name for the file that contains the device driver (for example, "pscript.dll").
+
+`pDataFile`
+
+Pointer to a NULL-terminated string that specifies a file name or a full path and file name for the file that contains driver data (for example, "qms810.ppd").
+
+`pConfigFile`
+
+Pointer to a NULL-terminated string that specifies a file name or a full path and file name for the device driver's configuration dynamic-link library (for example, "pscrptui.dll").
+
 `pHelpFile`
 
 Pointer to a null-terminated string that specifies a file name or a full path and file name for the device driver's help file.
+
+`pDependentFiles`
+
+Pointer to a NULL-terminated string that specifies the files the driver depends on. Each file name in the string is also terminated with a null character (for example, "pscript.dll\0qms810.ppd\0pscrptui.dll\0pscrptui.hlp\0pstest.txt\0\0").
 
 `pMonitorName`
 
 Pointer to a NULL-terminated string that specifies a language monitor (for example, "PJL monitor"). This member can be <b>NULL</b> and should be specified as non-<b>NULL</b> only for printers capable of bidirectional communication.
 
-`pName`
+`pDefaultDataType`
 
-Pointer to a NULL-terminated string that specifies the name of the driver (for example, "QMS 810"). For more information, see the Remarks section.
-
-`pOldDriverDirectory`
-
-Pointer to a NULL-terminated string that specifies the local directory in which the old printer driver files can be found.
-
-`pPrinterName`
-
-Pointer to a NULL-terminated string that specifies the name of the printer. For more information, see the Remarks section.
+Pointer to a NULL-terminated string that specifies the default data type of the print job (for example, "EMF").
 
 `pszzPreviousNames`
 
@@ -185,11 +185,3 @@ To see how this can occur, suppose that a computer is connected to two printers,
 
 
 <a href="..\winddiui\ns-winddiui-_driver_upgrade_info_1.md">DRIVER_UPGRADE_INFO_1</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20DRIVER_UPGRADE_INFO_2 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

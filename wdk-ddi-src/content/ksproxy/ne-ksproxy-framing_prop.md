@@ -61,7 +61,7 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>FramingProp_Ex</td>
+                    <td>FramingProp_Uninitialized</td>
                     <td></td>
                 </tr>
             
@@ -76,7 +76,7 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>FramingProp_Uninitialized</td>
+                    <td>FramingProp_Ex</td>
                     <td></td>
                 </tr>
 </table>

@@ -69,28 +69,23 @@ typedef enum _NDK_OBJECT_TYPE {
 <table>
             
                 <tr>
+                    <td>NdkObjectTypeUndefined</td>
+                    <td>Specifies  an undefined NDK  object.</td>
+                </tr>
+            
+                <tr>
                     <td>NdkObjectTypeAdapter</td>
                     <td>Specifies an NDK adapter object (<a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>).</td>
                 </tr>
             
                 <tr>
-                    <td>NdkObjectTypeConnector</td>
-                    <td>Specifies an NDK connector object (<a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>).</td>
+                    <td>NdkObjectTypeQp</td>
+                    <td>Specifies an NDK queue pair (QP) object (<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>).</td>
                 </tr>
             
                 <tr>
                     <td>NdkObjectTypeCq</td>
                     <td>Specifies an NDK completion queue (CQ) object (<a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>).</td>
-                </tr>
-            
-                <tr>
-                    <td>NdkObjectTypeListener</td>
-                    <td>Specifies an NDK listener object (<a href="..\ndkpi\ns-ndkpi-_ndk_listener.md">NDK_LISTENER</a>).</td>
-                </tr>
-            
-                <tr>
-                    <td>NdkObjectTypeMax</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the header files and binaries.</td>
                 </tr>
             
                 <tr>
@@ -109,13 +104,18 @@ typedef enum _NDK_OBJECT_TYPE {
                 </tr>
             
                 <tr>
-                    <td>NdkObjectTypeQp</td>
-                    <td>Specifies an NDK queue pair (QP) object (<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>).</td>
+                    <td>NdkObjectTypeSharedEndpoint</td>
+                    <td>Specifies an NDK shared endpoint object (<a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint.md">NDK_SHARED_ENDPOINT</a>).</td>
                 </tr>
             
                 <tr>
-                    <td>NdkObjectTypeSharedEndpoint</td>
-                    <td>Specifies an NDK shared endpoint object (<a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint.md">NDK_SHARED_ENDPOINT</a>).</td>
+                    <td>NdkObjectTypeConnector</td>
+                    <td>Specifies an NDK connector object (<a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>).</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkObjectTypeListener</td>
+                    <td>Specifies an NDK listener object (<a href="..\ndkpi\ns-ndkpi-_ndk_listener.md">NDK_LISTENER</a>).</td>
                 </tr>
             
                 <tr>
@@ -124,8 +124,8 @@ typedef enum _NDK_OBJECT_TYPE {
                 </tr>
             
                 <tr>
-                    <td>NdkObjectTypeUndefined</td>
-                    <td>Specifies  an undefined NDK  object.</td>
+                    <td>NdkObjectTypeMax</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the header files and binaries.</td>
                 </tr>
 </table>
 
@@ -182,11 +182,3 @@ NDK objects include an <a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJ
 
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint.md">NDK_SHARED_ENDPOINT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_OBJECT_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -57,13 +57,13 @@ typedef struct _GetPathConfiguration_OUT {
 ## Members
 
 
-`Address`
-
-An array that returns information about the SCSI addresses. The number of elements in the array is given by EntryCount and each element of the array represents an instance of an SCSI_ADDR structure.
-
 `EntryCount`
 
 A 32-bitfield that indicates the number of entries contained in the array of SCSI addresses.
+
+`Address`
+
+An array that returns information about the SCSI addresses. The number of elements in the array is given by EntryCount and each element of the array represents an instance of an SCSI_ADDR structure.
 
 
 ## Requirements

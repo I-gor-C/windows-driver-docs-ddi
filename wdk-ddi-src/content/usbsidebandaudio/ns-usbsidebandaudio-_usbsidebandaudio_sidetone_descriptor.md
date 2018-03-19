@@ -59,11 +59,11 @@ typedef struct _USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR {
 ## Members
 
 
-`Mute`
-
-
-
 `Volume`
+
+
+
+`Mute`
 
 
 

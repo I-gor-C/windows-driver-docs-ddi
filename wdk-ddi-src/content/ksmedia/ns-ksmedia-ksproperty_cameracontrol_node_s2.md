@@ -60,56 +60,13 @@ typedef struct {
 ## Members
 
 
-`Capabilities`
+`NodeProperty`
 
-Indicates the minidriver's camera control capabilities for the specified property. This member is read-only. This member can be set to one of the following values that are defined in <i>ksmedia.h</i>:
+Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the property set, property ID, request type, and node ID.
 
-<table>
-<tr>
-<th>Flag</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-KSPROPERTY_CAMERACONTROL_FLAGS_MANUAL
+`Value1`
 
-</td>
-<td>
-Indicates that the device can be controlled manually
-
-</td>
-</tr>
-<tr>
-<td>
-KSPROPERTY_CAMERACONTROL_FLAGS_AUTO
-
-</td>
-<td>
-Indicates that the device can be controlled automatically
-
-</td>
-</tr>
-<tr>
-<td>
-KSPROPERTY_CAMERACONTROL_FLAGS_ABSOLUTE
-
-</td>
-<td>
-Indicates that the device settings are in absolute values
-
-</td>
-</tr>
-<tr>
-<td>
-KSPROPERTY_CAMERACONTROL_FLAGS_RELATIVE
-
-</td>
-<td>
-Indicates that the device settings are in relative values
-
-</td>
-</tr>
-</table>
+Specifies the first value of the property. This member is read/write.
 
 `Flags`
 
@@ -162,13 +119,56 @@ Indicates that the setting is in relative values
 </tr>
 </table>
 
-`NodeProperty`
+`Capabilities`
 
-Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the property set, property ID, request type, and node ID.
+Indicates the minidriver's camera control capabilities for the specified property. This member is read-only. This member can be set to one of the following values that are defined in <i>ksmedia.h</i>:
 
-`Value1`
+<table>
+<tr>
+<th>Flag</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+KSPROPERTY_CAMERACONTROL_FLAGS_MANUAL
 
-Specifies the first value of the property. This member is read/write.
+</td>
+<td>
+Indicates that the device can be controlled manually
+
+</td>
+</tr>
+<tr>
+<td>
+KSPROPERTY_CAMERACONTROL_FLAGS_AUTO
+
+</td>
+<td>
+Indicates that the device can be controlled automatically
+
+</td>
+</tr>
+<tr>
+<td>
+KSPROPERTY_CAMERACONTROL_FLAGS_ABSOLUTE
+
+</td>
+<td>
+Indicates that the device settings are in absolute values
+
+</td>
+</tr>
+<tr>
+<td>
+KSPROPERTY_CAMERACONTROL_FLAGS_RELATIVE
+
+</td>
+<td>
+Indicates that the device settings are in relative values
+
+</td>
+</tr>
+</table>
 
 `Value2`
 

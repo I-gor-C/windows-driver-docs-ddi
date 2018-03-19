@@ -60,17 +60,9 @@ typedef struct _DXGKARG_QUERYADAPTERINFO {
 ## Members
 
 
-`Flags`
+`Type`
 
-
-
-`InputDataSize`
-
-[in] The size, in bytes, of the input data that <b>pInputData</b> points to.
-
-`OutputDataSize`
-
-[in] The size, in bytes, of the output data that <b>pOutputData</b> points to.
+[in] A <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_queryadapterinfotype.md">DXGK_QUERYADAPTERINFOTYPE</a>-typed value that indicates the type of information to retrieve.
 
 `pInputData`
 
@@ -79,6 +71,10 @@ typedef struct _DXGKARG_QUERYADAPTERINFO {
 When <b>Type</b> specifies DXGKQAITYPE_UMDRIVERPRIVATE, <b>pInputData</b> points to a proprietary buffer that contains information about the query. When <b>Type</b> specifies DXGKQAITYPE_QUERYSEGMENT, <b>pInputData</b> points to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentin.md">DXGK_QUERYSEGMENTIN</a> structure. When <b>Type</b> specifies <b>DXGKQAITYPE_POWERCOMPONENTINFO</b>, <b>pInputData</b> points to an input buffer that contains the power component index.
 
 An input buffer is not required when <b>Type</b> specifies the DXGKQAITYPE_DRIVERCAPS value.
+
+`InputDataSize`
+
+[in] The size, in bytes, of the input data that <b>pInputData</b> points to.
 
 `pOutputData`
 
@@ -115,9 +111,13 @@ An input buffer is not required when <b>Type</b> specifies the DXGKQAITYPE_DRIVE
 </tr>
 </table>
 
-`Type`
+`OutputDataSize`
 
-[in] A <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_queryadapterinfotype.md">DXGK_QUERYADAPTERINFOTYPE</a>-typed value that indicates the type of information to retrieve.
+[in] The size, in bytes, of the output data that <b>pOutputData</b> points to.
+
+`Flags`
+
+
 
 
 ## Requirements
@@ -157,11 +157,3 @@ An input buffer is not required when <b>Type</b> specifies the DXGKQAITYPE_DRIVE
 
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_runtime_component.md">DXGK_POWER_RUNTIME_COMPONENT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_QUERYADAPTERINFO structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

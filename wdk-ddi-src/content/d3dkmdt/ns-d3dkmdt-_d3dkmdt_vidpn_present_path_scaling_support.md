@@ -60,27 +60,27 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT {
 ## Members
 
 
+`Identity`
+
+The path is capable of displaying content with no transformation.
+
+`Centered`
+
+The path is capable of displaying centered content.
+
+`Stretched`
+
+The path is capable of displaying scaled content.
+
 `AspectRatioCenteredMax`
 
 The path is capable of scaling source content to fit the target while preserving the aspect ratio of the source.
 
 This member is available beginning with Windows 7.
 
-`Centered`
-
-The path is capable of displaying centered content.
-
 `Custom`
 
 The path is capable of displaying one or more scaling modes that are not described by other members of this structure.
-
-`Identity`
-
-The path is capable of displaying content with no transformation.
-
-`Stretched`
-
-The path is capable of displaying scaled content.
 
 ## Remarks
 The <b>ScalingSupport</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_transformation.md">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure.
@@ -98,11 +98,3 @@ The <b>ScalingSupport</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vi
 
 
 <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

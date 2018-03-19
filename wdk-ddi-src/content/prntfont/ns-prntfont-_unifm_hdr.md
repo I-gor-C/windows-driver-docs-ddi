@@ -66,10 +66,6 @@ typedef struct _UNIFM_HDR {
 ## Members
 
 
-`dwReserved`
-
-Not used.
-
 `dwSize`
 
 Specifies the total size, in bytes, of the .ufm file. Note that this is the total size of all structures used to define the file. This value is not the size of the UNIFM_HDR structure.
@@ -78,33 +74,37 @@ Specifies the total size, in bytes, of the .ufm file. Note that this is the tota
 
 Specifies the file version number, as defined in prntfont.h by a constant with a name format of UNIFM_VERSION_<i>x</i>_<i>x</i>.
 
+`ulDefaultCodepage`
+
+Specifies the code page identifier for the font's default code page. For more information, see the following Remarks section.
+
 `lGlyphSetDataRCID`
 
 Specifies an RC_GTT resource identifier that identifies a .gtt (Glyph Translation Table) file, or one of the CC_-prefixed code conversion identifiers defined in prntfont.h. For more information, see the following Remarks section.
-
-`loExtTextMetric`
-
-Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont-_exttextmetric.md">EXTTEXTMETRIC</a> structure.
-
-`loIFIMetrics`
-
-Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont-_printifi32.md">PRINTIFI32</a> structure.
-
-`loKernPair`
-
-Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont-_kerndata.md">KERNDATA</a> structure.
 
 `loUnidrvInfo`
 
 Specifies the byte offset from the beginning of the .ufm (Unidrv Font Metrics) file to the location of the file's <a href="..\prntfont\ns-prntfont-_unidrvinfo.md">UNIDRVINFO</a> structure.
 
+`loIFIMetrics`
+
+Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont-_printifi32.md">PRINTIFI32</a> structure.
+
+`loExtTextMetric`
+
+Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont-_exttextmetric.md">EXTTEXTMETRIC</a> structure.
+
 `loWidthTable`
 
 Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont-_widthtable.md">WIDTHTABLE</a> structure.
 
-`ulDefaultCodepage`
+`loKernPair`
 
-Specifies the code page identifier for the font's default code page. For more information, see the following Remarks section.
+Specifies the byte offset from the beginning of the .ufm file to the location of the file's <a href="..\prntfont\ns-prntfont-_kerndata.md">KERNDATA</a> structure.
+
+`dwReserved`
+
+Not used.
 
 ## Remarks
 A UNIFM_HDR structure must be the first structure contained in a .ufm file.
@@ -192,11 +192,3 @@ If <b>lGlyphSetDataRCID</b> is CC_DEFAULT, there are no restrictions on the valu
 
 
 <a href="..\prntfont\ns-prntfont-_kerndata.md">KERNDATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20UNIFM_HDR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

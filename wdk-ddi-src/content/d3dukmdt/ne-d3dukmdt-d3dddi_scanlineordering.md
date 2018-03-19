@@ -60,8 +60,8 @@ typedef enum D3DDDI_SCANLINEORDERING {
 <table>
             
                 <tr>
-                    <td>D3DDDI_SCANLINEORDERING_INTERLACED</td>
-                    <td>The value indicates that scan-line ordering is interlaced.</td>
+                    <td>D3DDDI_SCANLINEORDERING_UNKNOWN</td>
+                    <td>The value indicates that scan-line ordering is unknown.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum D3DDDI_SCANLINEORDERING {
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_SCANLINEORDERING_UNKNOWN</td>
-                    <td>The value indicates that scan-line ordering is unknown.</td>
+                    <td>D3DDDI_SCANLINEORDERING_INTERLACED</td>
+                    <td>The value indicates that scan-line ordering is interlaced.</td>
                 </tr>
 </table>
 

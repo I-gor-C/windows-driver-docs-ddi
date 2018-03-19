@@ -63,6 +63,11 @@ typedef enum _WDF_DEVICE_FAILED_ACTION {
 <table>
             
                 <tr>
+                    <td>WdfDeviceFailedUndefined</td>
+                    <td>For internal use only.</td>
+                </tr>
+            
+                <tr>
                     <td>WdfDeviceFailedAttemptRestart</td>
                     <td>Supported in KMDF and starting in UMDF version 2.15.  If the device's drivers are not supporting other devices that are plugged into the computer, the I/O manager unloads the drivers. Next, the Plug and Play manager attempts to restart the device by requesting the bus driver to reenumerate its devices. If the bus driver supports reenumeration, your driver will be reloaded, if it was unloaded. If several consecutive restart attempts fail (because the restarted driver again reports an error), the framework stops trying to restart the device.</td>
                 </tr>
@@ -70,11 +75,6 @@ typedef enum _WDF_DEVICE_FAILED_ACTION {
                 <tr>
                     <td>WdfDeviceFailedNoRestart</td>
                     <td>If the device's drivers are not supporting other devices on the system, the I/O manager unloads the drivers.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDeviceFailedUndefined</td>
-                    <td>For internal use only.</td>
                 </tr>
 </table>
 
@@ -96,11 +96,3 @@ For information about specifying <b>WdfDeviceFailedAttemptRestart</b> in a UMDF 
 ## See Also
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetfailed.md">WdfDeviceSetFailed</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_FAILED_ACTION enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

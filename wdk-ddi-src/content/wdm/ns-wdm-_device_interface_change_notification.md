@@ -61,6 +61,14 @@ typedef struct _DEVICE_INTERFACE_CHANGE_NOTIFICATION {
 ## Members
 
 
+`Version`
+
+Specifies the version of the data structure, currently 1.
+
+`Size`
+
+Specifies the size of the structure, in bytes, including the size of the standard first three members plus the event-specific data.
+
 `Event`
 
 Specifies a GUID identifying the event:  GUID_DEVICE_INTERFACE_ARRIVAL or GUID_DEVICE_INTERFACE_REMOVAL. The GUIDs are defined in Wdmguid.h.
@@ -69,17 +77,9 @@ Specifies a GUID identifying the event:  GUID_DEVICE_INTERFACE_ARRIVAL or GUID_D
 
 Specifies the class of the device interface that has just been enabled or disabled.
 
-`Size`
-
-Specifies the size of the structure, in bytes, including the size of the standard first three members plus the event-specific data.
-
 `SymbolicLinkName`
 
 Pointer to a Unicode string that contains the name of the symbolic link for the device interface.
-
-`Version`
-
-Specifies the version of the data structure, currently 1.
 
 ## Remarks
 This structure is allocated from paged memory.
@@ -104,11 +104,3 @@ This structure is allocated from paged memory.
 
 
 <a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DEVICE_INTERFACE_CHANGE_NOTIFICATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

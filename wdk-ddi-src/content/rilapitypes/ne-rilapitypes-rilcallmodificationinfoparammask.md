@@ -65,21 +65,6 @@ typedef enum _RILCALLMODIFICATIONINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_CMI_ADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CMI_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CMI_ALPHAIDENTIFIER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_CMI_EXECUTOR</td>
                     <td></td>
                 </tr>
@@ -95,12 +80,27 @@ typedef enum _RILCALLMODIFICATIONINFOPARAMMASK {
                 </tr>
             
                 <tr>
+                    <td>RIL_PARAM_CMI_OLDCALLTYPE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PARAM_CMI_NEWCALLTYPE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CMI_OLDCALLTYPE</td>
+                    <td>RIL_PARAM_CMI_ADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CMI_ALPHAIDENTIFIER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CMI_ALL</td>
                     <td></td>
                 </tr>
 </table>

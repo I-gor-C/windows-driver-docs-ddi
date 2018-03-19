@@ -59,13 +59,13 @@ typedef enum _D3DKMT_PROTECTED_SESSION_STATUS {
 <table>
             
                 <tr>
-                    <td>D3DKMT_PROTECTED_SESSION_STATUS_INVALID</td>
-                    <td>Indicates that the status is invalid.</td>
+                    <td>D3DKMT_PROTECTED_SESSION_STATUS_OK</td>
+                    <td>Indicates that the status is okay.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DKMT_PROTECTED_SESSION_STATUS_OK</td>
-                    <td>Indicates that the status is okay.</td>
+                    <td>D3DKMT_PROTECTED_SESSION_STATUS_INVALID</td>
+                    <td>Indicates that the status is invalid.</td>
                 </tr>
 </table>
 

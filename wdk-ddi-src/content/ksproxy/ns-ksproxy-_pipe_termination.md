@@ -61,15 +61,7 @@ typedef struct _PIPE_TERMINATION {
 ## Members
 
 
-`Compression`
-
-
-
 `Flags`
-
-
-
-`OptimalRange`
 
 
 
@@ -77,11 +69,19 @@ typedef struct _PIPE_TERMINATION {
 
 
 
+`Weigth`
+
+
+
 `PhysicalRange`
 
 
 
-`Weigth`
+`OptimalRange`
+
+
+
+`Compression`
 
 
 

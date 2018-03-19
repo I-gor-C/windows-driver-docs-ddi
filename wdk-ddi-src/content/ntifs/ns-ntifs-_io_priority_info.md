@@ -59,14 +59,6 @@ typedef struct _IO_PRIORITY_INFO {
 ## Members
 
 
-`IoPriority`
-
-Read-only member used to hold a thread's I/O priority.
-
-`PagePriority`
-
-Read-only member used to hold a thread's paging priority.
-
 `Size`
 
 Read-only member initialized by the <a href="..\ntifs\nf-ntifs-ioinitializepriorityinfo.md">IoInitializePriorityInfo</a> routine.
@@ -74,6 +66,14 @@ Read-only member initialized by the <a href="..\ntifs\nf-ntifs-ioinitializeprior
 `ThreadPriority`
 
 Read-only member used to hold a thread's priority.
+
+`PagePriority`
+
+Read-only member used to hold a thread's paging priority.
+
+`IoPriority`
+
+Read-only member used to hold a thread's I/O priority.
 
 ## Remarks
 The IO_PRIORITY_INFO structure is used by the <a href="..\fltkernel\nf-fltkernel-fltretrieveiopriorityinfo.md">FltRetrieveIoPriorityInfo</a> and <a href="..\fltkernel\nf-fltkernel-fltapplypriorityinfothread.md">FltApplyPriorityInfoThread</a> routines to save and set a thread's priority state.
@@ -125,11 +125,3 @@ A structure of type IO_PRIORITY_INFO must be initialized before first use by cal
 
 
 <a href="..\fltkernel\nf-fltkernel-fltgetiopriorityhintfromfileobject.md">FltGetIoPriorityHintFromFileObject</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IO_PRIORITY_INFO structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

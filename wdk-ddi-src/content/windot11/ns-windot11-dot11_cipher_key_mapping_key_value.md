@@ -66,11 +66,31 @@ typedef struct DOT11_CIPHER_KEY_MAPPING_KEY_VALUE {
 ## Members
 
 
+`PeerMacAddr`
+
+MAC address of the peer. The peer is either an access point (AP) (for infrastructure BSS networks)
+     or peer station (for independent BSS networks) with which the 802.11 station is associated.
+     
+
+This member is used to uniquely identify a key entry. For the standard 802.11 cipher algorithms, the
+     operating system will identify the peer through peer's MAC address. For proprietary cipher algorithms
+     developed by an independent hardware vendor (IHV), the IHV can use any method to identify a key
+     entry.
+
+When the NIC is in the Extensible Access Point (ExtAP) OP mode, 
+     <b>PeerMacAddr</b> must have a unique value.
+
 `AlgorithmId`
 
 The value of the cipher algorithm that uses this key. For more information about enumerator values
      for cipher algorithms, see 
      <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
+
+`Direction`
+
+This member specifies whether the 802.11 station uses the key for receive or transmit packets. The
+     data type for this member is the 
+     <a href="..\windot11\ne-windot11-dot11_direction.md">DOT11_DIRECTION</a> enumeration.
 
 `bDelete`
 
@@ -119,26 +139,6 @@ Implicitly deleted through a method request of
 
 </li>
 </ul>
-
-`Direction`
-
-This member specifies whether the 802.11 station uses the key for receive or transmit packets. The
-     data type for this member is the 
-     <a href="..\windot11\ne-windot11-dot11_direction.md">DOT11_DIRECTION</a> enumeration.
-
-`PeerMacAddr`
-
-MAC address of the peer. The peer is either an access point (AP) (for infrastructure BSS networks)
-     or peer station (for independent BSS networks) with which the 802.11 station is associated.
-     
-
-This member is used to uniquely identify a key entry. For the standard 802.11 cipher algorithms, the
-     operating system will identify the peer through peer's MAC address. For proprietary cipher algorithms
-     developed by an independent hardware vendor (IHV), the IHV can use any method to identify a key
-     entry.
-
-When the NIC is in the Extensible Access Point (ExtAP) OP mode, 
-     <b>PeerMacAddr</b> must have a unique value.
 
 `usKeyLength`
 
@@ -207,11 +207,3 @@ If the
 
 
 <a href="..\windot11\ne-windot11-dot11_direction.md">DOT11_DIRECTION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_KEY_MAPPING_KEY_VALUE structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

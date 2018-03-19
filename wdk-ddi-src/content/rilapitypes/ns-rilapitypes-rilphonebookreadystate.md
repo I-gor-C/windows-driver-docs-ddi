@@ -63,11 +63,11 @@ typedef struct _RILPHONEBOOKREADYSTATE {
 
 
 
-`dwStoreLocations`
-
-
-
 `hUiccApp`
+
+
+
+`dwStoreLocations`
 
 
 

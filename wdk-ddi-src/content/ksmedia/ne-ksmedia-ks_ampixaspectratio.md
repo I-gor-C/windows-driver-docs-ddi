@@ -61,23 +61,23 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KS_PixAspectRatio_NTSC16x9</td>
-                    <td>Specifies a 16 × 9 NTSC pixel aspect ratio.</td>
-                </tr>
-            
-                <tr>
                     <td>KS_PixAspectRatio_NTSC4x3</td>
                     <td>Specifies a 4 × 3 NTSC pixel aspect ratio.</td>
                 </tr>
             
                 <tr>
-                    <td>KS_PixAspectRatio_PAL16x9</td>
-                    <td>Specifies a 16 × 9 PAL pixel aspect ratio.</td>
+                    <td>KS_PixAspectRatio_NTSC16x9</td>
+                    <td>Specifies a 16 × 9 NTSC pixel aspect ratio.</td>
                 </tr>
             
                 <tr>
                     <td>KS_PixAspectRatio_PAL4x3</td>
                     <td>Specifies a 4 × 3 PAL pixel aspect ratio.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_PixAspectRatio_PAL16x9</td>
+                    <td>Specifies a 16 × 9 PAL pixel aspect ratio.</td>
                 </tr>
 </table>
 

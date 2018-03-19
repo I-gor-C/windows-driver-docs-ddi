@@ -60,14 +60,14 @@ typedef struct _DOT11_SUPPORTED_ANTENNA {
 ## Members
 
 
+`uAntennaListIndex`
+
+A value, from 1 through 255, that uniquely identifies the antenna.
+
 `bSupportedAntenna`
 
 A Boolean value that indicates, if <b>TRUE</b>, that the antenna referenced by the 
      <b>uAntennaListIndex</b> value supports transmit and receive operations.
-
-`uAntennaListIndex`
-
-A value, from 1 through 255, that uniquely identifies the antenna.
 
 ## Remarks
 The meaning of the 
@@ -94,11 +94,3 @@ The meaning of the
 
 
 <a href="https://msdn.microsoft.com/en-us/library/ms893804.aspx">OID_DOT11_SUPPORTED_RX_ANTENNA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SUPPORTED_ANTENNA structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

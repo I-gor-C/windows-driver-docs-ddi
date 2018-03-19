@@ -62,6 +62,22 @@ typedef struct _NET_DEVICE_PNP_EVENT {
 ## Members
 
 
+`Header`
+
+The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <b>NET_DEVICE_PNP_EVENT</b> structure. NDIS sets the 
+     <b>Type</b> member of the structure that 
+     <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_DEFAULT</b>, the 
+     <b>Revision</b> member to <b>NET_DEVICE_PNP_EVENT_REVISION_1</b>, and the 
+     <b>Size</b> member to <b>NDIS_SIZEOF_NET_DEVICE_PNP_EVENT_REVISION_1</b>.
+
+`PortNumber`
+
+The source port of the PnP event notification. If the status indication is not specific to a port,
+     
+     <b>PortNumber</b> is zero.
+
 `DevicePnPEvent`
 
 An event code that describes the PnP event as one of the following: 
@@ -81,16 +97,6 @@ The network interface card (NIC) has been unexpectedly removed from the
 #### NdisDevicePnPEventPowerProfileChanged
 
 The power profile of the host system has changed.
-
-`Header`
-
-The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
-     <b>NET_DEVICE_PNP_EVENT</b> structure. NDIS sets the 
-     <b>Type</b> member of the structure that 
-     <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_DEFAULT</b>, the 
-     <b>Revision</b> member to <b>NET_DEVICE_PNP_EVENT_REVISION_1</b>, and the 
-     <b>Size</b> member to <b>NDIS_SIZEOF_NET_DEVICE_PNP_EVENT_REVISION_1</b>.
 
 `InformationBuffer`
 
@@ -128,12 +134,6 @@ The length, in bytes, of the buffer in the
 
 Reserved for NDIS.
 
-`PortNumber`
-
-The source port of the PnP event notification. If the status indication is not specific to a port,
-     
-     <b>PortNumber</b> is zero.
-
 ## Remarks
 To provide a device PnP event notification, NDIS passes a pointer to a <b>NET_DEVICE_PNP_EVENT</b> structure
     to the 
@@ -160,11 +160,3 @@ To provide a device PnP event notification, NDIS passes a pointer to a <b>NET_DE
 
 
 <a href="..\ndis\nc-ndis-filter_device_pnp_event_notify.md">FilterDevicePnPEventNotify</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DEVICE_PNP_EVENT structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

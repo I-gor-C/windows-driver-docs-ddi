@@ -67,12 +67,12 @@ typedef enum _RILUICCKEYREF {
                 </tr>
             
                 <tr>
-                    <td>RIL_UICCKEYREF_NEV</td>
+                    <td>RIL_UICCKEYREF_PIN1</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_UICCKEYREF_PIN1</td>
+                    <td>RIL_UICCKEYREF_UPIN</td>
                     <td></td>
                 </tr>
             
@@ -82,7 +82,7 @@ typedef enum _RILUICCKEYREF {
                 </tr>
             
                 <tr>
-                    <td>RIL_UICCKEYREF_UPIN</td>
+                    <td>RIL_UICCKEYREF_NEV</td>
                     <td></td>
                 </tr>
 </table>

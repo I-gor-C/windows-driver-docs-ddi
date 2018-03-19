@@ -57,11 +57,11 @@ typedef struct _RILVERSIONPARAMS {
 ## Members
 
 
-`Major`
-
-
-
 `Minor`
+
+
+
+`Major`
 
 
 

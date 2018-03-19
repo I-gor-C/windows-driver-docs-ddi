@@ -63,10 +63,6 @@ typedef struct _NDIS_FILTER_RESTART_PARAMETERS {
 ## Members
 
 
-`Flags`
-
-Reserved for future use.
-
 `Header`
 
 The 
@@ -76,6 +72,22 @@ The
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_FILTER_RESTART_PARAMETERS, the 
      <b>Revision</b> member to NDIS_FILTER_RESTART_PARAMETERS_REVISION_1, and the Size member to
      NDIS_SIZEOF__FILTER_RESTART_PARAMETERS_REVISION_1.
+
+`MiniportMediaType`
+
+The 
+     NdisMedium
+     <i>Xxx</i> type that the base underlying miniport adapter supports. For more information, see 
+     <a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>.
+
+`MiniportPhysicalMediaType`
+
+The physical medium type for the base underlying miniport adapter. For more information, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569621">OID_GEN_PHYSICAL_MEDIUM</a>.
+
+`RestartAttributes`
+
+A pointer to an NDIS_RESTART_ATTRIBUTES structure.
 
 `LowerIfIndex`
 
@@ -100,21 +112,9 @@ The NDIS network interface
      interface NET_LUID of the underlying physical miniport adapter or the highest-level MUX intermediate
      driver virtual miniport.
 
-`MiniportMediaType`
+`Flags`
 
-The 
-     NdisMedium
-     <i>Xxx</i> type that the base underlying miniport adapter supports. For more information, see 
-     <a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>.
-
-`MiniportPhysicalMediaType`
-
-The physical medium type for the base underlying miniport adapter. For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569621">OID_GEN_PHYSICAL_MEDIUM</a>.
-
-`RestartAttributes`
-
-A pointer to an NDIS_RESTART_ATTRIBUTES structure.
+Reserved for future use.
 
 ## Remarks
 To define filter module restart parameters, NDIS passes a pointer to an NDIS_FILTER_RESART_PARAMETERS
@@ -150,11 +150,3 @@ Filter drivers can modify the restart attributes that are specified by underlyin
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569621">OID_GEN_PHYSICAL_MEDIUM</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_RESTART_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

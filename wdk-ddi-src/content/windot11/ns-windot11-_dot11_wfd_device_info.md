@@ -61,18 +61,6 @@ typedef struct _DOT11_WFD_DEVICE_INFO {
 ## Members
 
 
-`ConfigMethods`
-
-The configuration methods supported by the WFD device.
-
-`DeviceAddress`
-
-The device address to assign to a WFD port. This address is used when constructing P2P Information Elements (IEs).
-
-`DeviceName`
-
-A friendly name assigned to the WFD device.
-
 `Header`
 
 Specifies the type, revision and size of the <b>DOT11_WFD_DEVICE_INFO</b> structure. The required settings for the members of <b>Header</b> are the following:
@@ -96,9 +84,21 @@ Specifies the type, revision and size of the <b>DOT11_WFD_DEVICE_INFO</b> struct
 </tr>
 </table>
 
+`DeviceAddress`
+
+The device address to assign to a WFD port. This address is used when constructing P2P Information Elements (IEs).
+
+`ConfigMethods`
+
+The configuration methods supported by the WFD device.
+
 `PrimaryDeviceType`
 
 The primary device type for the WFD device.
+
+`DeviceName`
+
+A friendly name assigned to the WFD device.
 
 
 ## Requirements

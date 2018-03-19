@@ -60,13 +60,13 @@ typedef enum D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS {
 <table>
             
                 <tr>
-                    <td>D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_BT709</td>
-                    <td>YUV values should be converted using the BT.709 standard, instead of the default BT.601 conversion.</td>
+                    <td>D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_NOMINAL_RANGE</td>
+                    <td>YUV values range from 16 to 235, inclusive, instead of the default range of 0 to 255, inclusive.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_NOMINAL_RANGE</td>
-                    <td>YUV values range from 16 to 235, inclusive, instead of the default range of 0 to 255, inclusive.</td>
+                    <td>D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAG_BT709</td>
+                    <td>YUV values should be converted using the BT.709 standard, instead of the default BT.601 conversion.</td>
                 </tr>
             
                 <tr>

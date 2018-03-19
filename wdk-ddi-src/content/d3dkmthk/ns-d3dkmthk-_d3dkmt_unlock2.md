@@ -57,13 +57,13 @@ typedef struct _D3DKMT_UNLOCK2 {
 ## Members
 
 
-`hAllocation`
-
-The handle to the allocation to unlock.
-
 `hDevice`
 
 The handle to the device.
+
+`hAllocation`
+
+The handle to the allocation to unlock.
 
 
 ## Requirements

@@ -61,22 +61,6 @@ typedef struct _MITIGABLE_DEVICE_INTERFACE {
 ## Members
 
 
-`Context`
-
-Driver-defined context passed by the driver.
-
-`InterfaceDereference`
-
-Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="..\wudfwdm\nc-wudfwdm-pinterface_dereference.md">InterfaceDereference</a>.
-
-`InterfaceReference`
-
-Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="..\wudfwdm\nc-wudfwdm-pinterface_reference.md">InterfaceReference</a>.
-
-`ReadWriteMitigatedRegister`
-
-Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/7cd45484-0fee-4b8e-aa35-4142883c146e">READ_WRITE_MITIGATED_REGISTER</a> callback function.
-
 `Size`
 
 Size of this structure.
@@ -84,6 +68,22 @@ Size of this structure.
 `Version`
 
 Version of this structure
+
+`Context`
+
+Driver-defined context passed by the driver.
+
+`InterfaceReference`
+
+Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="..\wudfwdm\nc-wudfwdm-pinterface_reference.md">InterfaceReference</a>.
+
+`InterfaceDereference`
+
+Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="..\wudfwdm\nc-wudfwdm-pinterface_dereference.md">InterfaceDereference</a>.
+
+`ReadWriteMitigatedRegister`
+
+Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/7cd45484-0fee-4b8e-aa35-4142883c146e">READ_WRITE_MITIGATED_REGISTER</a> callback function.
 
 ## Remarks
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to reset a specific virtual function. 

@@ -61,11 +61,6 @@ typedef enum _WDI_BSS_SELECTION_FLAGS {
 <table>
             
                 <tr>
-                    <td>WDI_BSS_SELECTION_FLAGS_AP_REQUESTED_TRANSITION</td>
-                    <td>Specifies whether this roam was requested by the AP or not (11v BSS Transition management request).</td>
-                </tr>
-            
-                <tr>
                     <td>WDI_BSS_SELECTION_HOST_PREFERRED</td>
                     <td>Set for BSS entries that the host prefers to connect to. Non-preferred BSS entries would also be provided to the port, but should only be used  for connection if port performs its own BSS ranking.</td>
                 </tr>
@@ -73,6 +68,11 @@ typedef enum _WDI_BSS_SELECTION_FLAGS {
                 <tr>
                     <td>WDI_BSS_SELECTION_RECENT_ASSOCIATION_ERROR</td>
                     <td>Set for BSS entries that had recent association failures or were recently disassociated from. This flag is already accounted for by the host when setting WDI_BSS_SELECTION_HOST_PREFERRED.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_BSS_SELECTION_FLAGS_AP_REQUESTED_TRANSITION</td>
+                    <td>Specifies whether this roam was requested by the AP or not (11v BSS Transition management request).</td>
                 </tr>
 </table>
 

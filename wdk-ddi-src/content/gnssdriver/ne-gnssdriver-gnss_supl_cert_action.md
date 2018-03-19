@@ -60,13 +60,13 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>GNSS_Supl_Cert_Delete</td>
-                    <td>Indicates that the certificate specified by the <b>SuplCertName</b> member of the <a href="..\gnssdriver\ns-gnssdriver-gnss_supl_cert_config.md">GNSS_SUPL_CERT_CONFIG</a> structure should be deleted.</td>
+                    <td>GNSS_Supl_Cert_Inject</td>
+                    <td>Indicates that the certificate should be injected.</td>
                 </tr>
             
                 <tr>
-                    <td>GNSS_Supl_Cert_Inject</td>
-                    <td>Indicates that the certificate should be injected.</td>
+                    <td>GNSS_Supl_Cert_Delete</td>
+                    <td>Indicates that the certificate specified by the <b>SuplCertName</b> member of the <a href="..\gnssdriver\ns-gnssdriver-gnss_supl_cert_config.md">GNSS_SUPL_CERT_CONFIG</a> structure should be deleted.</td>
                 </tr>
             
                 <tr>

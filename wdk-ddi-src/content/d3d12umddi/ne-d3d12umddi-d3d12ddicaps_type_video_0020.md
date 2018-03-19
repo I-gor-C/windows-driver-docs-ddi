@@ -65,18 +65,8 @@ typedef enum _D3D12DDICAPS_TYPE_VIDEO_0020 {
 <table>
             
                 <tr>
-                    <td>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_BITSTREAM_ENCRYPTION_SCHEMES</td>
-                    <td>Retrieve the list of bitstream encryption schemes supported by the adapter.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_CONVERSION_SUPPORT</td>
-                    <td>Check whether a colorspace conversion, format conversion, and scale are supported.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_FORMATS</td>
-                    <td>Retrieves the supported decode formats.</td>
+                    <td>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_SUPPORT</td>
+                    <td>Check if a decode profile, bitstream encryption, resolution, and format are supported</td>
                 </tr>
             
                 <tr>
@@ -85,8 +75,23 @@ typedef enum _D3D12DDICAPS_TYPE_VIDEO_0020 {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_SUPPORT</td>
-                    <td>Check if a decode profile, bitstream encryption, resolution, and format are supported</td>
+                    <td>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_FORMATS</td>
+                    <td>Retrieves the supported decode formats.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_CONVERSION_SUPPORT</td>
+                    <td>Check whether a colorspace conversion, format conversion, and scale are supported.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_VIDEO_0020_DECODE_BITSTREAM_ENCRYPTION_SCHEMES</td>
+                    <td>Retrieve the list of bitstream encryption schemes supported by the adapter.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_SUPPORT</td>
+                    <td>Retrieves the video processor capabilities.</td>
                 </tr>
             
                 <tr>
@@ -100,8 +105,33 @@ typedef enum _D3D12DDICAPS_TYPE_VIDEO_0020 {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDICAPS_TYPE_VIDEO_0020_PROCESS_SUPPORT</td>
-                    <td>Retrieves the video processor capabilities.</td>
+                    <td>D3D12DDICAPS_TYPE_VIDEO_0032_DECODER_HEAP_SIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_VIDEO_0032_PROCESSOR_SIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_VIDEO_0032_DECODE_PROFILE_COUNT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_VIDEO_0032_DECODE_FORMAT_COUNT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_VIDEO_0032_DECODE_BITSTREAM_ENCRYPTION_SCHEME_COUNT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDICAPS_TYPE_VIDEO_0032_CRYPTO_SESSION_SUPPORT</td>
+                    <td></td>
                 </tr>
             
                 <tr>
@@ -115,37 +145,7 @@ typedef enum _D3D12DDICAPS_TYPE_VIDEO_0020 {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDICAPS_TYPE_VIDEO_0032_CRYPTO_SESSION_SUPPORT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>D3D12DDICAPS_TYPE_VIDEO_0032_CRYPTO_SESSION_TRANSFORM_SUPPORT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_VIDEO_0032_DECODE_BITSTREAM_ENCRYPTION_SCHEME_COUNT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_VIDEO_0032_DECODE_FORMAT_COUNT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_VIDEO_0032_DECODE_PROFILE_COUNT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_VIDEO_0032_DECODER_HEAP_SIZE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDICAPS_TYPE_VIDEO_0032_PROCESSOR_SIZE</td>
                     <td></td>
                 </tr>
 </table>

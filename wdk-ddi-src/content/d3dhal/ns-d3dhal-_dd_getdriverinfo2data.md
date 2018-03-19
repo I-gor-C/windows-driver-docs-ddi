@@ -62,9 +62,9 @@ typedef struct _DD_GETDRIVERINFO2DATA {
 ## Members
 
 
-`dwExpectedSize`
+`dwReserved`
 
-Specifies the expected size, in bytes, of the information requested. Driver should only read (not write) this member.
+Specifies a reserved field. Driver should not read or write.
 
 `dwMagic`
 
@@ -74,10 +74,6 @@ Specifies the magic number. Has the value
 	  call. Otherwise this structure is, in fact, a 
 	  <a href="https://msdn.microsoft.com/library/windows/hardware/ff551716">DD_STEREOMODE</a> 
 	  call.
-
-`dwReserved`
-
-Specifies a reserved field. Driver should not read or write.
 
 `dwType`
 
@@ -325,6 +321,10 @@ Is used to query the driver for the number of
 </tr>
 </table>
 
+`dwExpectedSize`
+
+Specifies the expected size, in bytes, of the information requested. Driver should only read (not write) this member.
+
 ## Remarks
 The <b>dwExpectedSize</b> member of the DD_GETDRIVERINFODATA structure is not used when a <a href="https://msdn.microsoft.com/5e2dd363-9e72-4674-940e-8b4f06f6eb14">GetDriverInfo2</a> request is being made. Its value is undefined in this case and should be ignored. Instead, the actual expected size of the data is found in the <b>dwExpectedSize</b> member of DD_GETDRIVERINFO2DATA.
 
@@ -465,11 +465,3 @@ For more information about D3DCAPS8 and D3DCAPS9, see the DirectX SDK documentat
 
 
 <a href="..\d3dhal\ns-d3dhal-_dd_getd3dquerydata.md">DD_GETD3DQUERYDATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DD_GETDRIVERINFO2DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

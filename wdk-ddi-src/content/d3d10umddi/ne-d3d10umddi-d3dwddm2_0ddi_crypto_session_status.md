@@ -60,8 +60,8 @@ typedef enum _D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS {
 <table>
             
                 <tr>
-                    <td>D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_KEY_AND_CONTENT_LOST</td>
-                    <td>The underlying hardware key for the specified <i>CryptoSession</i> has become lost and protected content has become corrupted.</td>
+                    <td>D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_OK</td>
+                    <td>The <i>CryptoSession</i> object is in a functional state.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum _D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS {
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_OK</td>
-                    <td>The <i>CryptoSession</i> object is in a functional state.</td>
+                    <td>D3DWDDM2_0DDI_CRYPTO_SESSION_STATUS_KEY_AND_CONTENT_LOST</td>
+                    <td>The underlying hardware key for the specified <i>CryptoSession</i> has become lost and protected content has become corrupted.</td>
                 </tr>
 </table>
 

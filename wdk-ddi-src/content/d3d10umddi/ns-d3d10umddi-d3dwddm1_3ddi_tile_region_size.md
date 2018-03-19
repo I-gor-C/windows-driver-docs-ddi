@@ -60,6 +60,13 @@ typedef struct D3DWDDM1_3DDI_TILE_REGION_SIZE {
 ## Members
 
 
+`NumTiles`
+
+The number of tiles within the tiled region.
+
+<div class="alert"><b>Note</b>  <b>NumTiles</b> must equal <b>Width</b> * <b>Height</b> * <b>Depth</b>.</div>
+<div> </div>
+
 `bUseBox`
 
 If <b>TRUE</b>, the tiled region is defined by the <b>Width</b>, <b>Height</b>, and <b>Depth</b> members. In this case, one update region cannot span mipmaps, although it can span array slices using the  <b>Depth</b> member.
@@ -69,24 +76,17 @@ If <b>FALSE</b>, the <b>Width</b>, <b>Height</b>, and <b>Depth</b> members shoul
 In either case, the starting location for the region within the resource 
                   is specified as a separate parameter outside this structure.
 
-`Depth`
+`Width`
 
-The depth (in the <i>z</i>-direction) of the tiled region. Used for 3-D rendering or for arrays. In the case of arrays, advancing in depth skips to the next slice of the same mipmap size.
+The width (in the <i>x</i>-direction) of the tiled region. Used for buffer, 1-D, 2-D, and 3-D rendering.
 
 `Height`
 
 The height (in the <i>y</i>-direction) of the tiled region. Used for 2-D and 3-D rendering.
 
-`NumTiles`
+`Depth`
 
-The number of tiles within the tiled region.
-
-<div class="alert"><b>Note</b>  <b>NumTiles</b> must equal <b>Width</b> * <b>Height</b> * <b>Depth</b>.</div>
-<div> </div>
-
-`Width`
-
-The width (in the <i>x</i>-direction) of the tiled region. Used for buffer, 1-D, 2-D, and 3-D rendering.
+The depth (in the <i>z</i>-direction) of the tiled region. Used for 3-D rendering or for arrays. In the case of arrays, advancing in depth skips to the next slice of the same mipmap size.
 
 
 ## Requirements

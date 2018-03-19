@@ -60,8 +60,8 @@ typedef enum _SECURE_ELEMENT_TYPE {
 <table>
             
                 <tr>
-                    <td>DeviceHost</td>
-                    <td>Separate HCE-based secure element.</td>
+                    <td>Integrated</td>
+                    <td>Integrated secure element.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum _SECURE_ELEMENT_TYPE {
                 </tr>
             
                 <tr>
-                    <td>Integrated</td>
-                    <td>Integrated secure element.</td>
+                    <td>DeviceHost</td>
+                    <td>Separate HCE-based secure element.</td>
                 </tr>
 </table>
 

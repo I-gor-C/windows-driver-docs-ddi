@@ -67,7 +67,7 @@ typedef struct _RILLOCATIONINFO {
 
 
 
-`dwCellID`
+`dwParams`
 
 
 
@@ -75,11 +75,11 @@ typedef struct _RILLOCATIONINFO {
 
 
 
+`hUiccApp`
+
+
+
 `dwLocationAreaCode`
-
-
-
-`dwParams`
 
 
 
@@ -87,7 +87,7 @@ typedef struct _RILLOCATIONINFO {
 
 
 
-`hUiccApp`
+`dwCellID`
 
 
 

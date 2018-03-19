@@ -59,10 +59,6 @@ typedef struct _USBSCAN_TIMEOUT {
 ## Members
 
 
-`TimeoutEvent`
-
-Specifies the number of seconds to wait for an interrupt to occur.
-
 `TimeoutRead`
 
 Specifies the number of seconds to wait for a read operation to time out.
@@ -70,6 +66,10 @@ Specifies the number of seconds to wait for a read operation to time out.
 `TimeoutWrite`
 
 Specifies the number of seconds to wait for a write operation to time out.
+
+`TimeoutEvent`
+
+Specifies the number of seconds to wait for an interrupt to occur.
 
 ## Remarks
 A value of zero means to wait forever for the read or write operation or interrupt.
@@ -84,11 +84,3 @@ The USBSCAN_TIMEOUT structure is used as a parameter to <a href="https://msdn.mi
 ## See Also
 
 <a href="..\usbscan\ni-usbscan-ioctl_set_timeout.md">IOCTL_SET_TIMEOUT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20USBSCAN_TIMEOUT structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

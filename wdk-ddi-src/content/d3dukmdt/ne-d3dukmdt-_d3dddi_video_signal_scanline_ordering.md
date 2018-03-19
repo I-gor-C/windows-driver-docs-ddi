@@ -62,18 +62,8 @@ typedef enum _D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING {
 <table>
             
                 <tr>
-                    <td>D3DDDI_VSSLO_INTERLACED_LOWERFIELDFIRST</td>
-                    <td>Indicates that each field contains half of a frame, and the even scan lines are displayed first.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_VSSLO_INTERLACED_UPPERFIELDFIRST</td>
-                    <td>Indicates that each field contains half of a frame, and the odd scan lines are displayed first.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_VSSLO_OTHER</td>
-                    <td>Indicates that the video signal has a scan line ordering other than those given in the previous constants of this enumeration.</td>
+                    <td>D3DDDI_VSSLO_UNINITIALIZED</td>
+                    <td>Indicates that a variable of type D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>
@@ -82,8 +72,18 @@ typedef enum _D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING {
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_VSSLO_UNINITIALIZED</td>
-                    <td>Indicates that a variable of type D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING has not yet been assigned a meaningful value.</td>
+                    <td>D3DDDI_VSSLO_INTERLACED_UPPERFIELDFIRST</td>
+                    <td>Indicates that each field contains half of a frame, and the odd scan lines are displayed first.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_VSSLO_INTERLACED_LOWERFIELDFIRST</td>
+                    <td>Indicates that each field contains half of a frame, and the even scan lines are displayed first.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_VSSLO_OTHER</td>
+                    <td>Indicates that the video signal has a scan line ordering other than those given in the previous constants of this enumeration.</td>
                 </tr>
 </table>
 

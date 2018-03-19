@@ -66,10 +66,6 @@ typedef union _STORAGE_SPEC_VERSION {
 ## Members
 
 
-`AsUlong`
-
-The combination of the <b>MajorVersion</b> and <b>MinorVersion</b> versions of the storage specification.
-
 `DUMMYSTRUCTNAME`
 
 The major and minor version of the storage specification.
@@ -79,6 +75,10 @@ The major and minor version of the storage specification.
 #### MajorVersion
 
 The major version of the storage specification.
+
+`AsUlong`
+
+The combination of the <b>MajorVersion</b> and <b>MinorVersion</b> versions of the storage specification.
 
 ## Remarks
 This union allows for specifying the storage specification version, such as SBC 3, SATA 3.2, and NVMe 1.2.

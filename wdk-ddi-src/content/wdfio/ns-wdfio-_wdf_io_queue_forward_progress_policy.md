@@ -64,13 +64,13 @@ typedef struct _WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY {
 ## Members
 
 
-`EvtIoAllocateRequestResources`
+`Size`
 
-A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_allocate_request_resources.md">EvtIoAllocateRequestResources</a> callback function, or <b>NULL</b>.
+The length, in bytes, of this structure.
 
-`EvtIoAllocateResourcesForReservedRequest`
+`TotalForwardProgressRequests`
 
-A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_allocate_resources_for_reserved_request.md">EvtIoAllocateResourcesForReservedRequest</a> callback function, or <b>NULL</b>.
+The number of request objects that the framework will attempt to reserve for use in low-memory situations. This number must be greater than zero.
 
 `ForwardProgressReservedPolicy`
 
@@ -80,13 +80,13 @@ A <a href="..\wdfio\ne-wdfio-_wdf_io_forward_progress_reserved_policy.md">WDF_IO
 
 A <a href="..\wdfio\ns-wdfio-_wdf_io_forward_progress_reserved_policy_settings.md">WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS</a> structure that contains additional values that are specific to the policy that the <b>ForwardProgressReservedPolicy</b> member specifies. This member should be <b>NULL</b> unless the driver provides an <a href="..\wdfio\nc-wdfio-evt_wdf_io_wdm_irp_for_forward_progress.md">EvtIoWdmIrpForForwardProgress</a> callback function.
 
-`Size`
+`EvtIoAllocateResourcesForReservedRequest`
 
-The length, in bytes, of this structure.
+A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_allocate_resources_for_reserved_request.md">EvtIoAllocateResourcesForReservedRequest</a> callback function, or <b>NULL</b>.
 
-`TotalForwardProgressRequests`
+`EvtIoAllocateRequestResources`
 
-The number of request objects that the framework will attempt to reserve for use in low-memory situations. This number must be greater than zero.
+A pointer to the driver's queue-specific <a href="..\wdfio\nc-wdfio-evt_wdf_io_allocate_request_resources.md">EvtIoAllocateRequestResources</a> callback function, or <b>NULL</b>.
 
 ## Remarks
 The <b>WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</b> structure is used as input to the <a href="..\wdfio\nf-wdfio-wdfioqueueassignforwardprogresspolicy.md">WdfIoQueueAssignForwardProgressPolicy</a> method.

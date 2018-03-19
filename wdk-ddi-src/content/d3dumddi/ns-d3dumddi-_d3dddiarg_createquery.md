@@ -57,10 +57,6 @@ typedef struct _D3DDDIARG_CREATEQUERY {
 ## Members
 
 
-`hQuery`
-
-[out] A handle to the query. The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createquery.md">CreateQuery</a> function returns this handle to the Microsoft Direct3D runtime.
-
 `QueryType`
 
 [in] A D3DDDIQUERYTYPE-typed value that indicates the query type to create resources for. This member can be one of the following values.
@@ -210,6 +206,10 @@ Query for device-dependent counters.
 </tr>
 </table>
 
+`hQuery`
+
+[out] A handle to the query. The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createquery.md">CreateQuery</a> function returns this handle to the Microsoft Direct3D runtime.
+
 ## Remarks
 The Direct3D runtime uses the handle that is specified by the <b>hQuery</b> member when the runtime calls:
 
@@ -249,11 +249,3 @@ The <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroyquery.md">DestroyQuery</a>
 
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getquerydata.md">GetQueryData</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_CREATEQUERY structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

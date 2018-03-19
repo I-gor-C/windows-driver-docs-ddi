@@ -60,9 +60,17 @@ typedef struct D3D12DDI_VIDEO_PROCESS_TRANSFORM_0020 {
 ## Members
 
 
+`SourceAspectRatio`
+
+The source aspect ratio.
+
 `DestinationAspectRatio`
 
 The destination aspect ratio.
+
+`SourceRectangle`
+
+The source rectangle is the portion of the input surface that is bit block transferred to the destination surface. The source rectangle is given in pixel coordinates, relative to the input surface. Stereo format is implemented after orientation is applied.
 
 `DestinationRectangle`
 
@@ -71,14 +79,6 @@ The destination rectangle is the portion of the output surface that receives the
 `Orientation`
 
 The rotation and flip operation to apply to the source.  Source and destination rectangles are specified in post orientation coordinates.
-
-`SourceAspectRatio`
-
-The source aspect ratio.
-
-`SourceRectangle`
-
-The source rectangle is the portion of the input surface that is bit block transferred to the destination surface. The source rectangle is given in pixel coordinates, relative to the input surface. Stereo format is implemented after orientation is applied.
 
 
 ## Requirements

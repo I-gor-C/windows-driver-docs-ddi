@@ -80,6 +80,21 @@ typedef enum _RILCALLAUDIOQUALITY {
 <table>
             
                 <tr>
+                    <td>RIL_CALLAUDIOQUALITY_LOW</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLAUDIOQUALITY_STANDARD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLAUDIOQUALITY_HIGH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_CALLAUDIOQUALITY_AMR_NB</td>
                     <td></td>
                 </tr>
@@ -130,12 +145,32 @@ typedef enum _RILCALLAUDIOQUALITY {
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLAUDIOQUALITY_G711A</td>
+                    <td>RIL_CALLAUDIOQUALITY_GSM_EFR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLAUDIOQUALITY_GSM_FR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLAUDIOQUALITY_GSM_HR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLAUDIOQUALITY_QCELP13K</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_CALLAUDIOQUALITY_G711U</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLAUDIOQUALITY_G711A</td>
                     <td></td>
                 </tr>
             
@@ -155,42 +190,7 @@ typedef enum _RILCALLAUDIOQUALITY {
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLAUDIOQUALITY_GSM_EFR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLAUDIOQUALITY_GSM_FR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLAUDIOQUALITY_GSM_HR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLAUDIOQUALITY_HIGH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLAUDIOQUALITY_LOW</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_CALLAUDIOQUALITY_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLAUDIOQUALITY_QCELP13K</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLAUDIOQUALITY_STANDARD</td>
                     <td></td>
                 </tr>
 </table>

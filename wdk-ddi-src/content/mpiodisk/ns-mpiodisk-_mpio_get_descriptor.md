@@ -58,13 +58,13 @@ typedef struct _MPIO_GET_DESCRIPTOR {
 ## Members
 
 
-`DeviceName`
-
-A string field of maximum-length 63 characters that returns the device name that is created by MPIO for the LUN.
-
 `NumberPdos`
 
 An unsigned 32-bitfield that returns the number of real instances of the pseudo-LUN through its various paths.
+
+`DeviceName`
+
+A string field of maximum-length 63 characters that returns the device name that is created by MPIO for the LUN.
 
 `PdoInformation`
 

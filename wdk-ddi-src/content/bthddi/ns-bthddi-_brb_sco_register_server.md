@@ -64,27 +64,19 @@ struct _BRB_SCO_REGISTER_SERVER {
 ## Members
 
 
-`BtAddress`
-
-The address of the remote Bluetooth device for which to receive notifications.
-
 `Hdr`
 
 A 
      <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
-`IndicationCallback`
+`BtAddress`
 
-A 
-     <a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>, implemented
-     by the profile driver, that the Bluetooth driver stack should call to notify the profile driver about
-     incoming SCO connections.
+The address of the remote Bluetooth device for which to receive notifications.
 
-`IndicationCallbackContext`
+`Reserved`
 
-The context passed to the function that is defined in the 
-     <b>IndicationCallback</b> member.
+Reserved for future use. Do not use.
 
 `IndicationFlags`
 
@@ -125,6 +117,18 @@ Notify the profile driver if there are any incoming eSCO connections.
 </tr>
 </table>
 
+`IndicationCallback`
+
+A 
+     <a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>, implemented
+     by the profile driver, that the Bluetooth driver stack should call to notify the profile driver about
+     incoming SCO connections.
+
+`IndicationCallbackContext`
+
+The context passed to the function that is defined in the 
+     <b>IndicationCallback</b> member.
+
 `ReferenceObject`
 
 A pointer to an object to pass to the 
@@ -138,10 +142,6 @@ A pointer to an object to pass to the
      <a href="https://msdn.microsoft.com/53a692e7-9c71-4dca-9331-32ac97b94179">builds and sends</a> a 
      <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536630">
      BRB_SCO_UNREGISTER_SERVER</a> request.
-
-`Reserved`
-
-Reserved for future use. Do not use.
 
 `ServerHandle`
 
@@ -208,11 +208,3 @@ To stop receiving remote connection notifications, a profile driver should
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536628">BRB_SCO_REGISTER_SERVER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_SCO_REGISTER_SERVER structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

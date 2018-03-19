@@ -89,55 +89,6 @@ typedef struct _NDIS_RECEIVE_FILTER_PARAMETERS {
 ## Members
 
 
-`FieldParametersArrayElementSize`
-
-The size, in bytes, of each element in the array.
-
-`FieldParametersArrayNumElements`
-
-The number of elements in the array.
-
-`FieldParametersArrayOffset`
-
-The offset, in bytes, to the first element in an array of elements that follow this structure. The offset is measured from the start of the <b>NDIS_RECEIVE_FILTER_PARAMETERS</b> structure up to the beginning of the first element. Each element in the array is an <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a> structure.
-
-
-
-<div class="alert"><b>Note</b>  If <b>FieldParametersArrayNumElements</b> is set to zero, this member is ignored.  </div>
-<div> </div>
-
-`FilterId`
-
-A receive filter identifier. The filter identifier
-     is an integer from one to the number of receive filters that the network adapter supports. A value of zero is
-     invalid.
-
-`FilterType`
-
-The type of the receive filter.
-
-`Flags`
-
-A bitwise OR of the following flags.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_RECEIVE_FILTER_PACKET_ENCAPSULATION_GRE"></a><a id="ndis_receive_filter_packet_encapsulation_gre"></a><dl>
-<dt><b>NDIS_RECEIVE_FILTER_PACKET_ENCAPSULATION_GRE</b></dt>
-<dt>0x00000002</dt>
-</dl>
-</td>
-<td width="60%">
-If this flag is set on the receive filter, the network adapter  must match this MAC address in the inner Ethernet frame in GRE encapsulated packets.
-
-</td>
-</tr>
-</table>
-
 `Header`
 
 The 
@@ -170,16 +121,31 @@ Original version for NDIS 6.20.
 The driver sets the 
         <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_PARAMETERS_REVISION_1.
 
-`MaxCoalescingDelay`
+`Flags`
 
-The maximum time, in milliseconds, that the first packet that matches this receive filter is saved within the hardware coalescing buffer on the network adapter. 
+A bitwise OR of the following flags.
 
-As soon as the first  packet that matches the filter is received, the network adapter coalesces the packet. The adapter also starts a hardware timer whose expiration time  is set to the value of the <b>MaxCoalescingDelay</b> member. Additional packets that match the same filter must be coalesced by the adapter without resetting and restarting the hardware timer.
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_RECEIVE_FILTER_PACKET_ENCAPSULATION_GRE"></a><a id="ndis_receive_filter_packet_encapsulation_gre"></a><dl>
+<dt><b>NDIS_RECEIVE_FILTER_PACKET_ENCAPSULATION_GRE</b></dt>
+<dt>0x00000002</dt>
+</dl>
+</td>
+<td width="60%">
+If this flag is set on the receive filter, the network adapter  must match this MAC address in the inner Ethernet frame in GRE encapsulated packets.
 
-When the hardware timer expires, the adapter must generate a receive interrupt to signal the host about coalesced packets that match the receive filter.
+</td>
+</tr>
+</table>
 
-<div class="alert"><b>Note</b>  Miniport drivers that do not support <a href="https://msdn.microsoft.com/500FBF0F-54D9-4675-8E2D-447387DA8798">NDIS packet coalescing</a> must ignore this member.</div>
-<div> </div>
+`FilterType`
+
+The type of the receive filter.
 
 `QueueId`
 
@@ -189,6 +155,29 @@ A receive queue identifier. This identifier is an
 
 <div class="alert"><b>Note</b>  Miniport drivers that support <a href="https://msdn.microsoft.com/500FBF0F-54D9-4675-8E2D-447387DA8798">NDIS packet coalescing</a> or the SR-IOV interface must set the <b>QueueId</b> member to NDIS_DEFAULT_RECEIVE_QUEUE_ID.</div>
 <div> </div>
+
+`FilterId`
+
+A receive filter identifier. The filter identifier
+     is an integer from one to the number of receive filters that the network adapter supports. A value of zero is
+     invalid.
+
+`FieldParametersArrayOffset`
+
+The offset, in bytes, to the first element in an array of elements that follow this structure. The offset is measured from the start of the <b>NDIS_RECEIVE_FILTER_PARAMETERS</b> structure up to the beginning of the first element. Each element in the array is an <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a> structure.
+
+
+
+<div class="alert"><b>Note</b>  If <b>FieldParametersArrayNumElements</b> is set to zero, this member is ignored.  </div>
+<div> </div>
+
+`FieldParametersArrayNumElements`
+
+The number of elements in the array.
+
+`FieldParametersArrayElementSize`
+
+The size, in bytes, of each element in the array.
 
 `RequestedFilterIdBitCount`
 
@@ -200,6 +189,17 @@ The number of bits in a filter identifier. The miniport driver uses
      <b>NetBufferListFilteringInfo</b> data.
 
 Starting with NDIS 6.20, this member must be set to zero.
+
+`MaxCoalescingDelay`
+
+The maximum time, in milliseconds, that the first packet that matches this receive filter is saved within the hardware coalescing buffer on the network adapter. 
+
+As soon as the first  packet that matches the filter is received, the network adapter coalesces the packet. The adapter also starts a hardware timer whose expiration time  is set to the value of the <b>MaxCoalescingDelay</b> member. Additional packets that match the same filter must be coalesced by the adapter without resetting and restarting the hardware timer.
+
+When the hardware timer expires, the adapter must generate a receive interrupt to signal the host about coalesced packets that match the receive filter.
+
+<div class="alert"><b>Note</b>  Miniport drivers that do not support <a href="https://msdn.microsoft.com/500FBF0F-54D9-4675-8E2D-447387DA8798">NDIS packet coalescing</a> must ignore this member.</div>
+<div> </div>
 
 `VPortId`
 
@@ -289,11 +289,3 @@ If the network adapter supports the VMQ interface, the  adapter should forward t
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569792">OID_RECEIVE_FILTER_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

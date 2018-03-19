@@ -58,13 +58,13 @@ typedef struct IDARG_IN_OPM_CONFIGURE_PROTECTED_OUTPUT {
 ## Members
 
 
-`AdditionalParametersSizeInBytes`
-
-[in] Size of additional parameter buffer
-
 `ConfigParameters`
 
 [in] Configuration parameters
+
+`AdditionalParametersSizeInBytes`
+
+[in] Size of additional parameter buffer
 
 `pAdditionalParameters`
 

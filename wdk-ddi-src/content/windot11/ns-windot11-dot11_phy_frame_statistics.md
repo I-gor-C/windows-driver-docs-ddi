@@ -75,10 +75,15 @@ typedef struct DOT11_PHY_FRAME_STATISTICS {
 ## Members
 
 
-`ullACKFailureCount`
+`ullTransmittedFrameCount`
 
-The number of times that the 802.11 station expected and did not receive an Acknowledgement (ACK)
-     frame.
+The number of MSDU packets and MMPDU frames that the IEEE PHY layer of the 802.11 station has
+     successfully transmitted.
+
+`ullMulticastTransmittedFrameCount`
+
+The number of multicast or broadcast MSDU packets and MMPDU frames that the IEEE PHY layer of the
+     802.11 station has successfully transmitted.
 
 `ullFailedCount`
 
@@ -89,22 +94,19 @@ The number of MSDU packets and MMPDU frames that the 802.11 station failed to tr
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569415">OID_DOT11_SHORT_RETRY_LIMIT</a> or 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569380">OID_DOT11_LONG_RETRY_LIMIT</a>.
 
-`ullFCSErrorCount`
+`ullRetryCount`
 
-The number of MPDU frames that the 802.11 station received with FCS errors.
+The number of MSDU packets and MMPDU frames that the 802.11 station successfully transmitted after
+     one or more attempts.
 
-`ullFrameDuplicateCount`
+`ullMultipleRetryCount`
 
-The number of duplicate MPDU frames that the 802.11 station received. The 802.11 station
-     determines duplicate frames through the Sequence Control field of the 802.11 MAC header.
+The number of MSDU packets and MMPDU frames that the 802.11 station successfully transmitted after
+     more than one retransmission attempt. 
+     
 
-`ullMaxRXLifetimeExceededCount`
-
-The number if MSDU packets and MMPDU frames that the 802.11 station discarded because of a timeout
-     as defined by the IEEE 802.11 
-     <b>dot11MaxReceiveLifetime</b> MIB object. For more information about this MIB object, see 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-max-receive-lifetime">
-     OID_DOT11_MAX_RECEIVE_LIFETIME</a>.
+For MSDU packets, the miniport driver must increment this counter for each packet that was
+     transmitted successfully after one or more of its MPDU fragments required retransmission.
 
 `ullMaxTXLifetimeExceededCount`
 
@@ -113,6 +115,40 @@ The number of MSDU packets and MMPDU frames that the 802.11 station failed to tr
      <b>dot11MaxTransmitMSDULifetime</b> MIB object. For more information about this MIB object, see 
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-max-transmit-msdu-lifetime">
      OID_DOT11_MAX_TRANSMIT_MSDU_LIFETIME</a>.
+
+`ullTransmittedFragmentCount`
+
+The number of MPDU frames that the 802.11 station transmitted and acknowledged through a received
+     802.11 ACK frame.
+
+`ullRTSSuccessCount`
+
+The number of times that the 802.11 station received a Clear To Send (CTS) frame in response to a
+     Request To Send (RTS) frame.
+
+`ullRTSFailureCount`
+
+The number of times that the 802.11 station did not receive a CTS frame in response to an RTS
+     frame.
+
+`ullACKFailureCount`
+
+The number of times that the 802.11 station expected and did not receive an Acknowledgement (ACK)
+     frame.
+
+`ullReceivedFrameCount`
+
+The total number of MSDU packets and MMPDU frames that the 802.11 station has successfully
+     received.
+     
+
+For MSDU packets, the miniport driver must increment this counter for each packet whose MPDU
+     fragments were received and passed frame check sequence (FCS) verification and replay detection. The
+     miniport driver must increment this member regardless of whether the received MSDU packet or MPDU
+     fragment fail MAC-layer cipher decryption.
+
+This counter is optional. If the NIC does not support this counter, the miniport driver should set
+     this member to DOT11_STATISTICS_UNKNOWN.
 
 `ullMulticastReceivedFrameCount`
 
@@ -127,46 +163,6 @@ For MSDU packets, the miniport driver must increment this counter for each packe
 
 This counter is optional. If the NIC does not support this counter, the miniport driver should set
      this member to DOT11_STATISTICS_UNKNOWN.
-
-`ullMulticastTransmittedFrameCount`
-
-The number of multicast or broadcast MSDU packets and MMPDU frames that the IEEE PHY layer of the
-     802.11 station has successfully transmitted.
-
-`ullMultipleRetryCount`
-
-The number of MSDU packets and MMPDU frames that the 802.11 station successfully transmitted after
-     more than one retransmission attempt. 
-     
-
-For MSDU packets, the miniport driver must increment this counter for each packet that was
-     transmitted successfully after one or more of its MPDU fragments required retransmission.
-
-`ullPromiscuousReceivedFragmentCount`
-
-The number of MPDU frames received by the 802.11 station for MSDU packets or MMPDU frames when a
-     promiscuous packet filter was enabled. For more information about packet filters, see 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-current-packet-filter">OID_GEN_CURRENT_PACKET_FILTER</a>.
-     
-
-If a promiscuous packet filter is enabled, the miniport driver must only increment this counter for
-     received MPDU frames that would have been rejected if the filter was not enabled. The driver must not
-     increment this counter for:
-
-<ul>
-<li>
-Unicast MPDU frames with a destination MAC address that matches the 802.11 station's MAC
-       address.
-
-</li>
-<li>
-Multicast or broadcast MPDU frames with a destination MAC address that matches an entry in the
-       multicast address list of the 802.11 station. For more information about the multicast address list,
-       see 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff569388">OID_DOT11_MULTICAST_LIST</a>.
-
-</li>
-</ul>
 
 `ullPromiscuousReceivedFrameCount`
 
@@ -194,48 +190,52 @@ Multicast or broadcast MSDU packets or MMPDU frames with a destination MAC addre
 </li>
 </ul>
 
+`ullMaxRXLifetimeExceededCount`
+
+The number if MSDU packets and MMPDU frames that the 802.11 station discarded because of a timeout
+     as defined by the IEEE 802.11 
+     <b>dot11MaxReceiveLifetime</b> MIB object. For more information about this MIB object, see 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-max-receive-lifetime">
+     OID_DOT11_MAX_RECEIVE_LIFETIME</a>.
+
+`ullFrameDuplicateCount`
+
+The number of duplicate MPDU frames that the 802.11 station received. The 802.11 station
+     determines duplicate frames through the Sequence Control field of the 802.11 MAC header.
+
 `ullReceivedFragmentCount`
 
 The number of MPDU frames received by the 802.11 station for MSDU packets or MMPDU frames.
 
-`ullReceivedFrameCount`
+`ullPromiscuousReceivedFragmentCount`
 
-The total number of MSDU packets and MMPDU frames that the 802.11 station has successfully
-     received.
+The number of MPDU frames received by the 802.11 station for MSDU packets or MMPDU frames when a
+     promiscuous packet filter was enabled. For more information about packet filters, see 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-current-packet-filter">OID_GEN_CURRENT_PACKET_FILTER</a>.
      
 
-For MSDU packets, the miniport driver must increment this counter for each packet whose MPDU
-     fragments were received and passed frame check sequence (FCS) verification and replay detection. The
-     miniport driver must increment this member regardless of whether the received MSDU packet or MPDU
-     fragment fail MAC-layer cipher decryption.
+If a promiscuous packet filter is enabled, the miniport driver must only increment this counter for
+     received MPDU frames that would have been rejected if the filter was not enabled. The driver must not
+     increment this counter for:
 
-This counter is optional. If the NIC does not support this counter, the miniport driver should set
-     this member to DOT11_STATISTICS_UNKNOWN.
+<ul>
+<li>
+Unicast MPDU frames with a destination MAC address that matches the 802.11 station's MAC
+       address.
 
-`ullRetryCount`
+</li>
+<li>
+Multicast or broadcast MPDU frames with a destination MAC address that matches an entry in the
+       multicast address list of the 802.11 station. For more information about the multicast address list,
+       see 
+       <a href="https://msdn.microsoft.com/library/windows/hardware/ff569388">OID_DOT11_MULTICAST_LIST</a>.
 
-The number of MSDU packets and MMPDU frames that the 802.11 station successfully transmitted after
-     one or more attempts.
+</li>
+</ul>
 
-`ullRTSFailureCount`
+`ullFCSErrorCount`
 
-The number of times that the 802.11 station did not receive a CTS frame in response to an RTS
-     frame.
-
-`ullRTSSuccessCount`
-
-The number of times that the 802.11 station received a Clear To Send (CTS) frame in response to a
-     Request To Send (RTS) frame.
-
-`ullTransmittedFragmentCount`
-
-The number of MPDU frames that the 802.11 station transmitted and acknowledged through a received
-     802.11 ACK frame.
-
-`ullTransmittedFrameCount`
-
-The number of MSDU packets and MMPDU frames that the IEEE PHY layer of the 802.11 station has
-     successfully transmitted.
+The number of MPDU frames that the 802.11 station received with FCS errors.
 
 ## Remarks
 The members of this structure are used to record PHY-level statistics for:
@@ -278,11 +278,3 @@ The members of this structure are used to record PHY-level statistics for:
 
 
 <a href="https://msdn.microsoft.com/e6bd2abf-faa2-463f-91df-a15924afae96">Native 802.11 Statistics</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_FRAME_STATISTICS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

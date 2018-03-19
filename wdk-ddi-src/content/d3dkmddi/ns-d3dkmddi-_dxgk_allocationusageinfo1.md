@@ -79,14 +79,6 @@ typedef struct _DXGK_ALLOCATIONUSAGEINFO1 {
 ## Members
 
 
-`ByteOffset`
-
-[out] The offset, in bytes, into the video memory manager's allocation that marks the start of the driver's version of the allocation.
-
-`Depth`
-
-[out] The depth, in levels, of the allocation (for MIP-mapped and volume textures only).
-
 `Flags`
 
 [out] A union that contains either a structure (with the first eight members that are described below) or a 32-bit value (in the <b>Value</b> member) that identifies how the allocation is used:
@@ -97,6 +89,18 @@ typedef struct _DXGK_ALLOCATIONUSAGEINFO1 {
 
 Specifies a member in the union contained in the <b>Flags</b> member that can hold one 32-bit value that identifies how the allocation is used.
 
+`SwizzledFormat`
+
+[out] A swizzled format value for the allocation that is private to a specific vendor.
+
+`ByteOffset`
+
+[out] The offset, in bytes, into the video memory manager's allocation that marks the start of the driver's version of the allocation.
+
+`Width`
+
+[out] The width, in pixels, of the allocation.
+
 `Height`
 
 [out] The height, in number of lines, of the allocation.
@@ -105,17 +109,13 @@ Specifies a member in the union contained in the <b>Flags</b> member that can ho
 
 [out] The pitch, in bytes, of the allocation--that is, the distance, in bytes, to the start of the next line.
 
+`Depth`
+
+[out] The depth, in levels, of the allocation (for MIP-mapped and volume textures only).
+
 `SlicePitch`
 
 [out] The slice pitch, in bytes, from level to level (for cube and volume textures only).
-
-`SwizzledFormat`
-
-[out] A swizzled format value for the allocation that is private to a specific vendor.
-
-`Width`
-
-[out] The width, in pixels, of the allocation.
 
 
 ## Requirements
@@ -139,11 +139,3 @@ Specifies a member in the union contained in the <b>Flags</b> member that can ho
 
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_ALLOCATIONUSAGEINFO1 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

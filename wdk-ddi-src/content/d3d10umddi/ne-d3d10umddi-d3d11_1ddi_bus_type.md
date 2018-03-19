@@ -68,23 +68,33 @@ typedef enum D3D11_1DDI_BUS_TYPE {
 <table>
             
                 <tr>
-                    <td>D3D11_1DDI_BUS_IMPL_MODIFIER_DAUGHTER_BOARD_CONNECTOR</td>
-                    <td>The graphics adapter is connected to the motherboard through a daughterboard connector.</td>
+                    <td>D3D11_1DDI_BUS_TYPE_OTHER</td>
+                    <td>Indicates a type of bus other than the types listed here.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_BUS_IMPL_MODIFIER_DAUGHTER_BOARD_CONNECTOR_INSIDE_OF_NUAE</td>
-                    <td>The graphics adapter is connected to the motherboard through a daughterboard connector, and the graphics adapter is inside an enclosure that is not user accessible.</td>
+                    <td>D3D11_1DDI_BUS_TYPE_PCI</td>
+                    <td>PCI bus.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_BUS_TYPE_PCIX</td>
+                    <td>PCI-X bus.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_BUS_TYPE_PCIEXPRESS</td>
+                    <td>PCI Express bus.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_BUS_TYPE_AGP</td>
+                    <td>Accelerated Graphics Port (AGP) bus.</td>
                 </tr>
             
                 <tr>
                     <td>D3D11_1DDI_BUS_IMPL_MODIFIER_INSIDE_OF_CHIPSET</td>
                     <td>The implementation for the graphics adapter is in a motherboard chipset's north bridge. This flag implies that data never goes over an expansion bus (such as PCI or AGP) when it is transferred from main memory to the graphics adapter.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D11_1DDI_BUS_IMPL_MODIFIER_NON_STANDARD</td>
-                    <td>One of the D3D11_1DDI_BUS_IMPL_MODIFIER_Xxx flags is set.</td>
                 </tr>
             
                 <tr>
@@ -98,28 +108,18 @@ typedef enum D3D11_1DDI_BUS_TYPE {
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_BUS_TYPE_AGP</td>
-                    <td>Accelerated Graphics Port (AGP) bus.</td>
+                    <td>D3D11_1DDI_BUS_IMPL_MODIFIER_DAUGHTER_BOARD_CONNECTOR</td>
+                    <td>The graphics adapter is connected to the motherboard through a daughterboard connector.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_BUS_TYPE_OTHER</td>
-                    <td>Indicates a type of bus other than the types listed here.</td>
+                    <td>D3D11_1DDI_BUS_IMPL_MODIFIER_DAUGHTER_BOARD_CONNECTOR_INSIDE_OF_NUAE</td>
+                    <td>The graphics adapter is connected to the motherboard through a daughterboard connector, and the graphics adapter is inside an enclosure that is not user accessible.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_BUS_TYPE_PCI</td>
-                    <td>PCI bus.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D11_1DDI_BUS_TYPE_PCIEXPRESS</td>
-                    <td>PCI Express bus.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D11_1DDI_BUS_TYPE_PCIX</td>
-                    <td>PCI-X bus.</td>
+                    <td>D3D11_1DDI_BUS_IMPL_MODIFIER_NON_STANDARD</td>
+                    <td>One of the D3D11_1DDI_BUS_IMPL_MODIFIER_Xxx flags is set.</td>
                 </tr>
 </table>
 

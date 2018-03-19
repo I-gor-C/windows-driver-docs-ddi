@@ -70,15 +70,29 @@ typedef enum _D3DDDI_SYNCHRONIZATIONOBJECT_TYPE {
 <table>
             
                 <tr>
-                    <td>D3DDDI_CPU_NOTIFICATION</td>
-                    <td>The synchronization object is a CPU notification.
+                    <td>D3DDDI_SYNCHRONIZATION_MUTEX</td>
+                    <td>The synchronization object is a synchronization mutex.
 
-Supported starting with Windows 7.</td>
+Supported starting with Windows Vista.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_SEMAPHORE</td>
+                    <td>The synchronization object is a semaphore.
+
+Supported starting with Windows Vista.</td>
                 </tr>
             
                 <tr>
                     <td>D3DDDI_FENCE</td>
                     <td>The synchronization object is a fence. 
+
+Supported starting with Windows 7.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_CPU_NOTIFICATION</td>
+                    <td>The synchronization object is a CPU notification.
 
 Supported starting with Windows 7.</td>
                 </tr>
@@ -97,20 +111,6 @@ Supported starting with Windows 10.</td>
                 <tr>
                     <td>D3DDDI_PERIODIC_MONITORED_FENCE</td>
                     <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_SEMAPHORE</td>
-                    <td>The synchronization object is a semaphore.
-
-Supported starting with Windows Vista.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_SYNCHRONIZATION_MUTEX</td>
-                    <td>The synchronization object is a synchronization mutex.
-
-Supported starting with Windows Vista.</td>
                 </tr>
 </table>
 

@@ -58,10 +58,6 @@ typedef struct _D3D12DDI_CRYPTO_SESSION_TRANSFORM_OUTPUT_ARGUMENTS_0030 {
 ## Members
 
 
-`ClearHeader`
-
-Clear header.
-
 `Decrypt`
 
 Decrypt.
@@ -69,6 +65,10 @@ Decrypt.
 `Transcrypt`
 
 Transcrypt.
+
+`ClearHeader`
+
+Clear header.
 
 
 ## Requirements

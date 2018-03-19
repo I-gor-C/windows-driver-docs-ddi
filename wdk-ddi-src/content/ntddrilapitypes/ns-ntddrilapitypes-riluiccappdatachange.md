@@ -62,11 +62,11 @@ typedef struct _RILUICCAPPDATACHANGE {
 
 
 
-`dwDataChange`
-
-
-
 `hUiccApp`
+
+
+
+`dwDataChange`
 
 
 

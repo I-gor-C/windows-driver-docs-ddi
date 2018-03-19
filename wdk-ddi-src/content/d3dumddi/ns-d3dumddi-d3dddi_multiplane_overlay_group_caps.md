@@ -59,13 +59,9 @@ typedef struct D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS {
 ## Members
 
 
-`MaxShrinkFactor`
+`NumPlanes`
 
-Specifies the maximum shrink factor that is supported by the overlay planes within the capability group.
-
-The shrink factor is the ratio of the final, shrunk overlay plane size to the original size. For example, if the original overlay plane is 100 x 100 pixels, a value of 0.25 means that it can be shrunk to 25 x 25 pixels.
-
-It's not guaranteed that this shrink factor can be applied in all scenarios. For example, it might be possible to shrink only one overlay plane out of several using this factor.
+Specifies the number of overlay planes that are supported by the overlay planes within the capability group.
 
 `MaxStretchFactor`
 
@@ -75,9 +71,13 @@ The stretch factor is the ratio of the final, stretched overlay plane size to th
 
 It's not guaranteed that this stretch factor can be applied in all scenarios. For example, it might be possible to stretch only one overlay plane out of several using this factor.
 
-`NumPlanes`
+`MaxShrinkFactor`
 
-Specifies the number of overlay planes that are supported by the overlay planes within the capability group.
+Specifies the maximum shrink factor that is supported by the overlay planes within the capability group.
+
+The shrink factor is the ratio of the final, shrunk overlay plane size to the original size. For example, if the original overlay plane is 100 x 100 pixels, a value of 0.25 means that it can be shrunk to 25 x 25 pixels.
+
+It's not guaranteed that this shrink factor can be applied in all scenarios. For example, it might be possible to shrink only one overlay plane out of several using this factor.
 
 `OverlayCaps`
 
@@ -93,11 +93,3 @@ The overlay capabilities, given as a bitwise <b>OR</b> of values from the <a hre
 ## See Also
 
 <a href="..\d3dumddi\ne-d3dumddi-_d3dddi_multiplane_overlay_feature_caps.md">D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

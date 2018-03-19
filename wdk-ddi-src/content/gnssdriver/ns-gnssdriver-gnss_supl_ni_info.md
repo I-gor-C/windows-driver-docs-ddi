@@ -60,25 +60,25 @@ typedef struct {
 ## Members
 
 
-`ClientName`
+`Size`
 
+Structure size.
 
+`Version`
+
+Version number.
 
 `RequestorId`
 
 
 
-`Size`
+`ClientName`
 
-Structure size.
+
 
 `SuplNiUrl`
 
 
-
-`Version`
-
-Version number.
 
 
 ## Requirements

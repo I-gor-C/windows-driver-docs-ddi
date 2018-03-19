@@ -57,11 +57,11 @@ typedef struct _RILAVOIDCDMASYSTEMPARAMS {
 ## Members
 
 
-`dwAvoidanceReqType`
-
-
-
 `dwExecutor`
+
+
+
+`dwAvoidanceReqType`
 
 
 

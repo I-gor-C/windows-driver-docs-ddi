@@ -65,9 +65,17 @@ typedef struct _DXGK_SEGMENTDESCRIPTOR4 {
 ## Members
 
 
+`Flags`
+
+Segment bit field flags
+
 `BaseAddress`
 
 The physical base address for the segment in the GPU.
+
+`Size`
+
+The size of the segment in bytes.
 
 `CommitLimit`
 
@@ -76,31 +84,15 @@ The maximum number of bytes that can be committed to this segment.
 <div class="alert"><b>Note</b>  This applies to the aperture segment only.</div>
 <div> </div>
 
-`Flags`
+`SystemMemoryEndAddress`
 
-Segment bit field flags
+For segments that are partially composed of system memory, all allocations ending after this address are purged during hibernate.
 
 `NumInvalidMemoryRanges`
 
 The number of invalid memory ranges in the segment. If this value is not zero, the kernel mode driver will be called with DdiQueryAdapterInfo(DXGKQAITYPE_SEGMENTMEMORYSTATE) to get information about invalid memory ranges.
 
-`NumUEFIFrameBufferRanges`
-
-
-
-`NumVprSupported`
-
-
-
-`Size`
-
-The size of the segment in bytes.
-
-`SystemMemoryEndAddress`
-
-For segments that are partially composed of system memory, all allocations ending after this address are purged during hibernate.
-
-`VprAlignment`
+`VprRangeStartOffset`
 
 
 
@@ -108,11 +100,19 @@ For segments that are partially composed of system memory, all allocations endin
 
 
 
-`VprRangeStartOffset`
+`VprAlignment`
+
+
+
+`NumVprSupported`
 
 
 
 `VprReserveSize`
+
+
+
+`NumUEFIFrameBufferRanges`
 
 
 

@@ -60,17 +60,17 @@ typedef enum _RILSMSSUPPORTCAPS {
 <table>
             
                 <tr>
+                    <td>RIL_CAPS_SMSSUPPORT_PERSISTLINK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_CAPS_SMSSUPPORT_16BITREFERENCENUMBER</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_CAPS_SMSSUPPORT_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CAPS_SMSSUPPORT_PERSISTLINK</td>
                     <td></td>
                 </tr>
 </table>

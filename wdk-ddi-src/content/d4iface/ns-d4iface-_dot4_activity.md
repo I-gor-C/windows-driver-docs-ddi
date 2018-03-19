@@ -58,7 +58,7 @@ typedef struct _DOT4_ACTIVITY {
 ## Members
 
 
-`hChannel`
+`ulMessage`
 
 
 
@@ -66,7 +66,7 @@ typedef struct _DOT4_ACTIVITY {
 
 
 
-`ulMessage`
+`hChannel`
 
 
 

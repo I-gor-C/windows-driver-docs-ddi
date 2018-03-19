@@ -60,8 +60,8 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>GNSS_AGNSS_BlobInjection</td>
-                    <td>Indicates the injection request is for blob injection.</td>
+                    <td>GNSS_AGNSS_TimeInjection</td>
+                    <td>Indicates the injection request is for time injection.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>GNSS_AGNSS_TimeInjection</td>
-                    <td>Indicates the injection request is for time injection.</td>
+                    <td>GNSS_AGNSS_BlobInjection</td>
+                    <td>Indicates the injection request is for blob injection.</td>
                 </tr>
 </table>
 

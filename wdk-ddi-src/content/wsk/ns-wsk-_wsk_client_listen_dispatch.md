@@ -60,13 +60,6 @@ typedef struct _WSK_CLIENT_LISTEN_DISPATCH {
 ## Members
 
 
-`WskAbortEvent`
-
-A pointer to the WSK application's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_abort_event.md">WskAbortEvent</a> event callback function for
-     the socket. If the WSK application does not enable conditional accept mode for the socket, this pointer
-     can be <b>NULL</b>.
-
 `WskAcceptEvent`
 
 A pointer to the WSK application's 
@@ -80,6 +73,13 @@ A pointer to the WSK application's
      <a href="..\wsk\nc-wsk-pfn_wsk_inspect_event.md">WskInspectEvent</a> event callback function
      for the socket. If the WSK application does not enable conditional accept mode for the socket, this
      pointer can be <b>NULL</b>.
+
+`WskAbortEvent`
+
+A pointer to the WSK application's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_abort_event.md">WskAbortEvent</a> event callback function for
+     the socket. If the WSK application does not enable conditional accept mode for the socket, this pointer
+     can be <b>NULL</b>.
 
 ## Remarks
 A WSK application passes a pointer to a WSK_CLIENT_LISTEN_DISPATCH structure to the WSK subsystem when
@@ -112,11 +112,3 @@ A WSK application passes a pointer to a WSK_CLIENT_LISTEN_DISPATCH structure to 
 
 
 <a href="..\wsk\nc-wsk-pfn_wsk_inspect_event.md">WskInspectEvent</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_CLIENT_LISTEN_DISPATCH structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

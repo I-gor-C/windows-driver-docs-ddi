@@ -69,45 +69,41 @@ typedef struct _STORAGE_ADAPTER_DESCRIPTOR {
 ## Members
 
 
-`AcceleratedTransfer`
+`Version`
 
-Indicates when <b>TRUE</b> that the HBA supports synchronous transfers as a way of speeding up I/O. When <b>FALSE</b>, the HBA does not support synchronous transfers as a way of speeding up I/O.
+Contains the version of the structure <b>STORAGE_ADAPTER_DESCRIPTOR</b>. The value of this member will change as members are added to the structure.
 
-`AdapterScansDown`
+`Size`
 
-Indicates when <b>TRUE</b> that the HBA scans down for BIOS devices, that is, the HBA begins scanning with the highest device number rather than the lowest. When <b>FALSE</b>, the HBA begins scanning with the lowest device number. This member is reserved for legacy miniport drivers.
+Specifies the total size of the descriptor, in bytes.
+
+`MaximumTransferLength`
+
+Specifies the maximum number of bytes the host bus adapter (HBA) can transfer in a single operation.
+
+`MaximumPhysicalPages`
+
+Specifies the maximum number of discontinuous physical pages the HBA can manage in a single transfer (in other words, the extent of its scatter/gather support).
+
+`AlignmentMask`
+
+Specifies the HBA's alignment requirements for transfers. A storage class driver sets the <b>AlignmentRequirement</b> field in its device objects to this value. The alignment mask indicates alignment restrictions for buffers required by the HBA for transfer operations. The valid mask values are 0 (byte aligned), 1 (word aligned), 3 (DWORD aligned), and 7 (double DWORD aligned).
 
 `AdapterUsesPio`
 
 Indicates when <b>TRUE</b> that the HBA uses Programmed Input/Output (PIO) and requires the use of system-space virtual addresses mapped to physical memory for data buffers. When <b>FALSE</b>, the HBA does not use PIO.
 
-`AddressType`
+`AdapterScansDown`
 
-Specifies the address type of the HBA.
+Indicates when <b>TRUE</b> that the HBA scans down for BIOS devices, that is, the HBA begins scanning with the highest device number rather than the lowest. When <b>FALSE</b>, the HBA begins scanning with the lowest device number. This member is reserved for legacy miniport drivers.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="STORAGE_ADDRESS_TYPE_BTL8"></a><a id="storage_address_type_btl8"></a><dl>
-<dt><b>STORAGE_ADDRESS_TYPE_BTL8</b></dt>
-</dl>
-</td>
-<td width="60%">
-The HBA uses 8-bit bus, target, and LUN addressing.
+`CommandQueueing`
 
-</td>
-</tr>
-</table>
- 
+Indicates when <b>TRUE</b> that the HBA supports SCSI-tagged queuing and/or per-logical-unit internal queues, or the non-SCSI equivalent. When <b>FALSE</b>, the HBA neither supports SCSI-tagged queuing nor per-logical-unit internal queues.
 
-This member is valid starting with Windows 8.
+`AcceleratedTransfer`
 
-`AlignmentMask`
-
-Specifies the HBA's alignment requirements for transfers. A storage class driver sets the <b>AlignmentRequirement</b> field in its device objects to this value. The alignment mask indicates alignment restrictions for buffers required by the HBA for transfer operations. The valid mask values are 0 (byte aligned), 1 (word aligned), 3 (DWORD aligned), and 7 (double DWORD aligned).
+Indicates when <b>TRUE</b> that the HBA supports synchronous transfers as a way of speeding up I/O. When <b>FALSE</b>, the HBA does not support synchronous transfers as a way of speeding up I/O.
 
 `BusMajorVersion`
 
@@ -116,22 +112,6 @@ Specifies the major version number, if any, of the HBA.
 `BusMinorVersion`
 
 Specifies the minor version number, if any, of the HBA.
-
-`CommandQueueing`
-
-Indicates when <b>TRUE</b> that the HBA supports SCSI-tagged queuing and/or per-logical-unit internal queues, or the non-SCSI equivalent. When <b>FALSE</b>, the HBA neither supports SCSI-tagged queuing nor per-logical-unit internal queues.
-
-`MaximumPhysicalPages`
-
-Specifies the maximum number of discontinuous physical pages the HBA can manage in a single transfer (in other words, the extent of its scatter/gather support).
-
-`MaximumTransferLength`
-
-Specifies the maximum number of bytes the host bus adapter (HBA) can transfer in a single operation.
-
-`Size`
-
-Specifies the total size of the descriptor, in bytes.
 
 `SrbType`
 
@@ -167,9 +147,29 @@ The HBA uses extended SCSI request blocks.
 
 This member is valid starting with Windows 8.
 
-`Version`
+`AddressType`
 
-Contains the version of the structure <b>STORAGE_ADAPTER_DESCRIPTOR</b>. The value of this member will change as members are added to the structure.
+Specifies the address type of the HBA.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="STORAGE_ADDRESS_TYPE_BTL8"></a><a id="storage_address_type_btl8"></a><dl>
+<dt><b>STORAGE_ADDRESS_TYPE_BTL8</b></dt>
+</dl>
+</td>
+<td width="60%">
+The HBA uses 8-bit bus, target, and LUN addressing.
+
+</td>
+</tr>
+</table>
+ 
+
+This member is valid starting with Windows 8.
 
 ## Remarks
 Storage class drivers issue a device-control request with the I/O control code <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve this structure, which contains configuration information from the HBA for data transfer operations. The structure can be retrieved either from the device object for the bus or from a functional device object (FDO), which forwards the request to the underlying bus.
@@ -204,11 +204,3 @@ If excessive protocol errors occur on an HBA that supports synchronous transfers
 
 
 <a href="..\ntddstor\ns-ntddstor-_storage_device_id_descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_ADAPTER_DESCRIPTOR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

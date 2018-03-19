@@ -61,6 +61,14 @@ typedef struct _DEBUG_HANDLE_DATA_BASIC {
 ## Members
 
 
+`TypeNameSize`
+
+The size, in characters, of the object-type name.
+
+`ObjectNameSize`
+
+The size, in characters, of the object's name.
+
 `Attributes`
 
 A bit-set that contains the handle's attributes.  For possible values, see "Handle" in the Windows Driver Kit (WDK).
@@ -73,17 +81,9 @@ A bit-set that specifies the access mask for the object that is represented by t
 
 The number of handle references for the object.
 
-`ObjectNameSize`
-
-The size, in characters, of the object's name.
-
 `PointerCount`
 
 The number of pointer references for the object.
-
-`TypeNameSize`
-
-The size, in characters, of the object-type name.
 
 
 ## Requirements

@@ -67,17 +67,17 @@ typedef enum _RIL3GPP2ISDNALERTING {
                 </tr>
             
                 <tr>
+                    <td>RIL_3GPP2ISDNALERTING_NORMAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_3GPP2ISDNALERTING_INTERGROUP</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_3GPP2ISDNALERTING_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPP2ISDNALERTING_NORMAL</td>
+                    <td>RIL_3GPP2ISDNALERTING_SPECIAL</td>
                     <td></td>
                 </tr>
             
@@ -87,7 +87,7 @@ typedef enum _RIL3GPP2ISDNALERTING {
                 </tr>
             
                 <tr>
-                    <td>RIL_3GPP2ISDNALERTING_SPECIAL</td>
+                    <td>RIL_3GPP2ISDNALERTING_MAX</td>
                     <td></td>
                 </tr>
 </table>

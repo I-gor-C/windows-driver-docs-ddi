@@ -63,6 +63,10 @@ typedef struct _ScsiInquiry_IN {
 
 Contains the command descriptor block that holds the SCSI inquiry command to be sent to the target device.
 
+`HbaPortWWN`
+
+Contains a worldwise name for the HBA through which the target is accessed.
+
 `DiscoveredPortWWN`
 
 Contains a worldwide name for the port through which the target device is accessed.
@@ -70,10 +74,6 @@ Contains a worldwide name for the port through which the target device is access
 `FcLun`
 
 Indicates the logical unit number of the logical unit that will receive the SCSI inquiry command.
-
-`HbaPortWWN`
-
-Contains a worldwise name for the HBA through which the target is accessed.
 
 ## Remarks
 The WMI tool suite generates a declaration of the ScsiInquiry_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
@@ -86,11 +86,3 @@ The WMI tool suite generates a declaration of the ScsiInquiry_IN structure in <i
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564585">ScsiInquiry</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiInquiry_IN structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

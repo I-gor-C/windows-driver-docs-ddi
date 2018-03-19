@@ -71,23 +71,33 @@ typedef enum _CHANGER_DEVICE_PROBLEM_TYPE {
 <table>
             
                 <tr>
-                    <td>DeviceProblemCalibrationError</td>
-                    <td>Indicates the changer has a calibration problem.</td>
+                    <td>DeviceProblemNone</td>
+                    <td>Indicates the device has no problem.</td>
                 </tr>
             
                 <tr>
-                    <td>DeviceProblemCartridgeEjectError</td>
-                    <td>Indicates an error occurred while unloading a cartridge.</td>
-                </tr>
-            
-                <tr>
-                    <td>DeviceProblemCartridgeInsertError</td>
-                    <td>Indicates an error occurred while loading a cartridge in the drive.</td>
+                    <td>DeviceProblemHardware</td>
+                    <td>Indicates the device has had a hardware error.</td>
                 </tr>
             
                 <tr>
                     <td>DeviceProblemCHMError</td>
                     <td>Indicates the Cartridge Handling Mechanism (CHM) has some problem.</td>
+                </tr>
+            
+                <tr>
+                    <td>DeviceProblemDoorOpen</td>
+                    <td>Indicates the changer's door is open.</td>
+                </tr>
+            
+                <tr>
+                    <td>DeviceProblemCalibrationError</td>
+                    <td>Indicates the changer has a calibration problem.</td>
+                </tr>
+            
+                <tr>
+                    <td>DeviceProblemTargetFailure</td>
+                    <td>Indicates a target failure has occurred.</td>
                 </tr>
             
                 <tr>
@@ -101,28 +111,8 @@ typedef enum _CHANGER_DEVICE_PROBLEM_TYPE {
                 </tr>
             
                 <tr>
-                    <td>DeviceProblemDoorOpen</td>
-                    <td>Indicates the changer's door is open.</td>
-                </tr>
-            
-                <tr>
-                    <td>DeviceProblemDriveError</td>
-                    <td>Indicates the changer's drive is malfunctioning.</td>
-                </tr>
-            
-                <tr>
-                    <td>DeviceProblemGripperError</td>
-                    <td>Indicates the media gripper has a problem.</td>
-                </tr>
-            
-                <tr>
-                    <td>DeviceProblemHardware</td>
-                    <td>Indicates the device has had a hardware error.</td>
-                </tr>
-            
-                <tr>
-                    <td>DeviceProblemNone</td>
-                    <td>Indicates the device has no problem.</td>
+                    <td>DeviceProblemCartridgeInsertError</td>
+                    <td>Indicates an error occurred while loading a cartridge in the drive.</td>
                 </tr>
             
                 <tr>
@@ -136,8 +126,18 @@ typedef enum _CHANGER_DEVICE_PROBLEM_TYPE {
                 </tr>
             
                 <tr>
-                    <td>DeviceProblemTargetFailure</td>
-                    <td>Indicates a target failure has occurred.</td>
+                    <td>DeviceProblemCartridgeEjectError</td>
+                    <td>Indicates an error occurred while unloading a cartridge.</td>
+                </tr>
+            
+                <tr>
+                    <td>DeviceProblemGripperError</td>
+                    <td>Indicates the media gripper has a problem.</td>
+                </tr>
+            
+                <tr>
+                    <td>DeviceProblemDriveError</td>
+                    <td>Indicates the changer's drive is malfunctioning.</td>
                 </tr>
 </table>
 
@@ -154,11 +154,3 @@ typedef enum _CHANGER_DEVICE_PROBLEM_TYPE {
 
 
 <a href="..\wmidata\ns-wmidata-_wmi_changer_problem_device_error.md">WMI_CHANGER_PROBLEM_DEVICE_ERROR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CHANGER_DEVICE_PROBLEM_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

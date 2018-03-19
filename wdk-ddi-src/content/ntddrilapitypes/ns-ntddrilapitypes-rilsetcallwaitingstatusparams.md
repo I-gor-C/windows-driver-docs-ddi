@@ -63,15 +63,15 @@ typedef struct _RILSETCALLWAITINGSTATUSPARAMS {
 
 
 
+`fAllClasses`
+
+
+
 `dwInfoClasses`
 
 
 
 `dwStatus`
-
-
-
-`fAllClasses`
 
 
 

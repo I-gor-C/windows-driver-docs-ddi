@@ -67,16 +67,16 @@ typedef enum _WDI_CONNECTION_QUALITY_HINT {
                 </tr>
             
                 <tr>
-                    <td>WDI_CONNECTION_QUALITY_HIGH_THROUGHPUT</td>
-                    <td>Reserved.</td>
-                </tr>
-            
-                <tr>
                     <td>WDI_CONNECTION_QUALITY_LOW_LATENCY</td>
                     <td>This hint indicates that the host wants to use this port for low latency operations. The adapter should provide service to this port at a regular interval.
 The WLAN schedule should be so that one way latency is no more than 30ms and packet loss &lt;=0.5% and no more than 3 consecutive packets are lost.
 This can be set simultaneously on two ports. If the ports are on different channels, the max latency is relaxed to 50ms.  This is based on Windows Certification Programrequirements.
 When in this mode, the port can (optionally) use power saving as long as it can meet the above latency requirements.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_CONNECTION_QUALITY_HIGH_THROUGHPUT</td>
+                    <td>Reserved.</td>
                 </tr>
             
                 <tr>

@@ -62,11 +62,11 @@ typedef struct _RILGETCALLWAITINGSETTINGSPARAMS {
 
 
 
-`dwInfoClasses`
-
-
-
 `fAllClasses`
+
+
+
+`dwInfoClasses`
 
 
 

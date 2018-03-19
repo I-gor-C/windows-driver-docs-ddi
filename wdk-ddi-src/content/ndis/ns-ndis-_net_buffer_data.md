@@ -64,6 +64,11 @@ typedef struct _NET_BUFFER_DATA {
 ## Members
 
 
+`Next`
+
+A pointer to the next NET_BUFFER structure in a linked list of NET_BUFFER structures. If this
+     structure is the last NET_BUFFER structure in the list, this member is <b>NULL</b>.
+
 `CurrentMdl`
 
 A pointer to the first MDL that the current driver is using. This member provides an optimization
@@ -75,26 +80,21 @@ The offset, in bytes, to the beginning of the
      <i>used data space</i> in the MDL that is specified by the 
      <b>CurrentMdl</b> member.
 
-`DataOffset`
+`NbDataLength`
 
-The offset, in bytes, from the beginning of the MDL chain to the beginning of the network data in
-     the MDL chain. This offset is also the size, in bytes, of the 
-     <i>unused data space</i>.
+The length, in bytes, of the used data space in the MDL chain. The maximum length is 0xFFFFFFFF
+     bytes.
 
 `MdlChain`
 
 A pointer to a linked list of MDLs that map a data buffer. The data buffer stores the network
      data.
 
-`NbDataLength`
+`DataOffset`
 
-The length, in bytes, of the used data space in the MDL chain. The maximum length is 0xFFFFFFFF
-     bytes.
-
-`Next`
-
-A pointer to the next NET_BUFFER structure in a linked list of NET_BUFFER structures. If this
-     structure is the last NET_BUFFER structure in the list, this member is <b>NULL</b>.
+The offset, in bytes, from the beginning of the MDL chain to the beginning of the network data in
+     the MDL chain. This offset is also the size, in bytes, of the 
+     <i>unused data space</i>.
 
 ## Remarks
 The 
@@ -183,11 +183,3 @@ The
 
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568380">NET_BUFFER_CURRENT_MDL_OFFSET</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_DATA structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -67,10 +67,6 @@ typedef struct _DISK_EX_INT13_INFO {
 
 Indicates the size of the buffer that the caller provides to the BIOS in which to return the requested drive data. <b>ExBufferSize</b> must be 26 or greater. If <b>ExBufferSize</b> is less than 26, the BIOS returns an error . If <b>ExBufferSize</b> is between 30 and 66, the BIOS sets it to exactly 30 on exit. If <b>ExBufferSize</b> is 66 or greater, the BIOS sets it to exactly 66 on exit.
 
-`ExCylinders`
-
-Indicates the number of <i>physical </i>cylinders. This is one greater than the maximum cylinder number.
-
 `ExFlags`
 
 Provides information about the drive. The following table describes the significance of each bit, where bit 0 is the least significant bit and bit 15 the most significant bit. A value of one in the indicated bit means that the feature described in the "Meaning" column is available. A value of zero in the indicated bit means that the feature is not available with this drive.
@@ -162,25 +158,29 @@ Reserved, must be 0.
 </tr>
 </table>
 
+`ExCylinders`
+
+Indicates the number of <i>physical </i>cylinders. This is one greater than the maximum cylinder number.
+
 `ExHeads`
 
 Indicates the number of <i>physical </i>heads. This is one greater than the maximum head number.
 
-`ExReserved`
+`ExSectorsPerTrack`
 
-Reserved.
-
-`ExSectorSize`
-
-Indicates the sector size in bytes.
+Indicates the number of <i>physical </i>sectors per track. This number is the same as the maximum sector number.
 
 `ExSectorsPerDrive`
 
 Indicates the total count of sectors on the disk. This is one greater than the maximum logical block address.
 
-`ExSectorsPerTrack`
+`ExSectorSize`
 
-Indicates the number of <i>physical </i>sectors per track. This number is the same as the maximum sector number.
+Indicates the sector size in bytes.
+
+`ExReserved`
+
+Reserved.
 
 
 ## Requirements
@@ -195,11 +195,3 @@ Indicates the number of <i>physical </i>sectors per track. This number is the sa
 
 
 <a href="..\ntdddisk\ns-ntdddisk-_disk_int13_info.md">DISK_INT13_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DISK_EX_INT13_INFO structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

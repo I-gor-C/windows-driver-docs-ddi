@@ -59,21 +59,21 @@ typedef struct _FILE_NAMES_INFORMATION {
 ## Members
 
 
+`NextEntryOffset`
+
+Byte offset for the next FILE_NAMES_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
+
 `FileIndex`
 
 Byte offset of the file within the parent directory. This member is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order.
-
-`FileName`
-
-Specifies the first character of the file name string. This is followed in memory by the remainder of the string.
 
 `FileNameLength`
 
 Specifies the length of the file name string.
 
-`NextEntryOffset`
+`FileName`
 
-Byte offset for the next FILE_NAMES_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
+Specifies the first character of the file name string. This is followed in memory by the remainder of the string.
 
 ## Remarks
 This information can be queried in either of the following ways: 
@@ -108,11 +108,3 @@ This structure must be aligned on a LONG (4-byte) boundary. If a buffer contains
 
 
 <a href="..\rxprocs\nf-rxprocs-fsrtlnotifyfullchangedirectory.md">FsRtlNotifyFullChangeDirectory</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_NAMES_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

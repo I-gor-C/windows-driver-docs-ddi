@@ -67,7 +67,7 @@ typedef enum _WDF_TASK_QUEUE_DISPATCH_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WdfTaskQueueDispatchMax</td>
+                    <td>WdfTaskQueueDispatchSequential</td>
                     <td></td>
                 </tr>
             
@@ -77,7 +77,7 @@ typedef enum _WDF_TASK_QUEUE_DISPATCH_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WdfTaskQueueDispatchSequential</td>
+                    <td>WdfTaskQueueDispatchMax</td>
                     <td></td>
                 </tr>
 </table>

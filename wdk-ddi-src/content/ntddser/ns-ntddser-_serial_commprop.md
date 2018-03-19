@@ -73,19 +73,29 @@ typedef struct _SERIAL_COMMPROP {
 ## Members
 
 
-`CurrentRxQueue`
+`PacketLength`
 
-Receive queue size. This member specifies the size, in bytes, of the serial controller driver's internal input buffer. A value of zero indicates that the buffer size is unavailable.
+The size, in bytes, of the data packet that starts with this structure and that contains the requested property data. This size includes the <b>SERIAL_COMMPROP</b> structure and any additional <b>ProvChar</b> array elements that follow this structure.
 
-For SerCx2 and SerCx, this member is set by the associated serial controller driver. For SerCx2, the driver typically sets this member to zero. For SerCx, the driver typically sets this member to the size of the ring buffer that SerCx uses to buffer received data. This driver can call the <a href="..\sercx\nf-sercx-sercxgetringbufferutilization.md">SerCxGetRingBufferUtilization</a> method to get the ring buffer size from SerCx.
+`PacketVersion`
 
-Serial.sys sets this member to a nonzero value that indicates the input buffer size.
+The version of this structure. The current version number is 2.
 
-`CurrentTxQueue`
+`ServiceMask`
 
-Transmit queue size. This member specifies the size, in bytes, of the serial controller driver's internal output buffer. A value of zero indicates that the buffer size is unavailable.
+A bitmask that indicates which services are implemented by this communications provider. This member is always set to SERIAL_SP_SERIALCOMM by serial communications providers, including modem providers. The <b>ProvSubType</b> member indicates the specific type of serial communications that are implemented (for example, modem).
 
-For SerCx2 and SerCx, the associated serial controller driver typically sets this member to zero. Serial.sys sets this member to a nonzero value that indicates the output buffer size.
+`Reserved1`
+
+Not used.
+
+`MaxTxQueue`
+
+Maximum transmit queue size. The maximum size, in bytes, of the serial controller driver's internal output buffer. A value of zero indicates that no maximum value is imposed by the serial provider.
+
+`MaxRxQueue`
+
+Maximum receive queue size. The maximum size, in bytes, of the serial controller driver's internal input buffer. A value of zero indicates that no maximum value is imposed by the serial provider.
 
 `MaxBaud`
 
@@ -180,85 +190,6 @@ However, Serial.sys and many older serial controller drivers set <b>MaxBaud</b> 
 </tr>
 </table>
 
-`MaxRxQueue`
-
-Maximum receive queue size. The maximum size, in bytes, of the serial controller driver's internal input buffer. A value of zero indicates that no maximum value is imposed by the serial provider.
-
-`MaxTxQueue`
-
-Maximum transmit queue size. The maximum size, in bytes, of the serial controller driver's internal output buffer. A value of zero indicates that no maximum value is imposed by the serial provider.
-
-`PacketLength`
-
-The size, in bytes, of the data packet that starts with this structure and that contains the requested property data. This size includes the <b>SERIAL_COMMPROP</b> structure and any additional <b>ProvChar</b> array elements that follow this structure.
-
-`PacketVersion`
-
-The version of this structure. The current version number is 2.
-
-`ProvCapabilities`
-
-The capabilities offered by the provider. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>SERIAL_PCF_DTRDSR</td>
-<td>DTR (data terminal ready) and DSR (data set ready) are supported.</td>
-</tr>
-<tr>
-<td>SERIAL_PCF_RTSCTS</td>
-<td>RTS (request to send) and CTS (clear to send) are supported.</td>
-</tr>
-<tr>
-<td>SERIAL_PCF_CD</td>
-<td>CD (carrier detect) is supported.</td>
-</tr>
-<tr>
-<td>SERIAL_PCF_PARITY_CHECK</td>
-<td>Parity checking is supported.</td>
-</tr>
-<tr>
-<td>SERIAL_PCF_XONXOFF</td>
-<td>XON (transmit on) and XOFF (transmit off) flow control are supported.</td>
-</tr>
-<tr>
-<td>SERIAL_PCF_SETXCHAR</td>
-<td>The XON and XOFF characters are settable.</td>
-</tr>
-<tr>
-<td>SERIAL_PCF_TOTALTIMEOUTS</td>
-<td>Total-elapsed-time time-outs are supported.</td>
-</tr>
-<tr>
-<td>SERIAL_PCF_INTTIMEOUTS</td>
-<td>Interval time-outs are supported.</td>
-</tr>
-<tr>
-<td>SERIAL_PCF_SPECIALCHARS</td>
-<td>Special characters are supported.</td>
-</tr>
-<tr>
-<td>SERIAL_PCF_16BITMODE</td>
-<td>Special 16-bit mode is supported.</td>
-</tr>
-</table>
-
-`ProvChar`
-
-Provider-specific data. Applications should ignore this member unless provider-specific data about the data format required by the serial port is available. This member is the first element in a wide-character array of one or more elements. Any additional elements immediately follow this member. The <b>PacketLength</b> member specifies the size of the <b>SERIAL_COMMPROP</b> structure plus any additional <b>ProvChar</b> array elements that follow this structure.
-
-`ProvSpec1`
-
-Provider-specific data. Applications should ignore this member unless provider-specific data about the data format required by the serial port is available.
-
-`ProvSpec2`
-
-Provider-specific data. Applications should ignore this member unless provider-specific data about the data format required by the serial port is available.
-
 `ProvSubType`
 
 The specific communications provider type. When the <b>ServiceMask</b> member is set to SERIAL_SP_SERIALCOMM, <b>ProvSubType</b> is set to one of the following values.
@@ -322,23 +253,9 @@ The specific communications provider type. When the <b>ServiceMask</b> member is
 </tr>
 </table>
 
-`Reserved1`
+`ProvCapabilities`
 
-Not used.
-
-`ServiceMask`
-
-A bitmask that indicates which services are implemented by this communications provider. This member is always set to SERIAL_SP_SERIALCOMM by serial communications providers, including modem providers. The <b>ProvSubType</b> member indicates the specific type of serial communications that are implemented (for example, modem).
-
-`SettableBaud`
-
-A bitmask that indicates the baud rates that can be used. For a table that describes the SERIAL_BAUD_<i>XXX</i> flag bits that are defined for this member, see the description of the <b>MaxBaud</b> member. <b>SettableBaud</b> is set to zero or to the bitwise-OR or one or more of these flag bits.
-
-Serial controller drivers set the SERIAL_BAUD_USER flag bit in the <b>SettableBaud</b> bitmask value to indicate that they support higher baud rates than those that can be expressed by the other SERIAL_BAUD_<i>XXX</i> flag bits. For example, a driver that supports baud rates of 57600, 115200, 230400, and 460800 bps sets <b>SettableBaud</b> = (SERIAL_BAUD_57600 |  SERIAL_BAUD_115200 |  SERIAL_BAUD_USER).
-
-`SettableData`
-
-The number of data bits that can be set. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.
+The capabilities offered by the provider. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.
 
 <table>
 <tr>
@@ -346,28 +263,44 @@ The number of data bits that can be set. This member is set to zero or to the bi
 <th>Description</th>
 </tr>
 <tr>
-<td>SERIAL_DATABITS_5</td>
-<td>5 data bits</td>
+<td>SERIAL_PCF_DTRDSR</td>
+<td>DTR (data terminal ready) and DSR (data set ready) are supported.</td>
 </tr>
 <tr>
-<td>SERIAL_DATABITS_6</td>
-<td>6 data bits</td>
+<td>SERIAL_PCF_RTSCTS</td>
+<td>RTS (request to send) and CTS (clear to send) are supported.</td>
 </tr>
 <tr>
-<td>SERIAL_DATABITS_7</td>
-<td>7 data bits</td>
+<td>SERIAL_PCF_CD</td>
+<td>CD (carrier detect) is supported.</td>
 </tr>
 <tr>
-<td>SERIAL_DATABITS_8</td>
-<td>8 data bits</td>
+<td>SERIAL_PCF_PARITY_CHECK</td>
+<td>Parity checking is supported.</td>
 </tr>
 <tr>
-<td>SERIAL_DATABITS_16</td>
-<td>16 data bits</td>
+<td>SERIAL_PCF_XONXOFF</td>
+<td>XON (transmit on) and XOFF (transmit off) flow control are supported.</td>
 </tr>
 <tr>
-<td>SERIAL_DATABITS_16X</td>
-<td>Special wide path through serial hardware lines</td>
+<td>SERIAL_PCF_SETXCHAR</td>
+<td>The XON and XOFF characters are settable.</td>
+</tr>
+<tr>
+<td>SERIAL_PCF_TOTALTIMEOUTS</td>
+<td>Total-elapsed-time time-outs are supported.</td>
+</tr>
+<tr>
+<td>SERIAL_PCF_INTTIMEOUTS</td>
+<td>Interval time-outs are supported.</td>
+</tr>
+<tr>
+<td>SERIAL_PCF_SPECIALCHARS</td>
+<td>Special characters are supported.</td>
+</tr>
+<tr>
+<td>SERIAL_PCF_16BITMODE</td>
+<td>Special 16-bit mode is supported.</td>
 </tr>
 </table>
 
@@ -407,6 +340,47 @@ A bitmask that indicates the communication parameter that can be changed. This m
 <tr>
 <td>SERIAL_SP_CARRIER_DETECT</td>
 <td>Carrier detect</td>
+</tr>
+</table>
+
+`SettableBaud`
+
+A bitmask that indicates the baud rates that can be used. For a table that describes the SERIAL_BAUD_<i>XXX</i> flag bits that are defined for this member, see the description of the <b>MaxBaud</b> member. <b>SettableBaud</b> is set to zero or to the bitwise-OR or one or more of these flag bits.
+
+Serial controller drivers set the SERIAL_BAUD_USER flag bit in the <b>SettableBaud</b> bitmask value to indicate that they support higher baud rates than those that can be expressed by the other SERIAL_BAUD_<i>XXX</i> flag bits. For example, a driver that supports baud rates of 57600, 115200, 230400, and 460800 bps sets <b>SettableBaud</b> = (SERIAL_BAUD_57600 |  SERIAL_BAUD_115200 |  SERIAL_BAUD_USER).
+
+`SettableData`
+
+The number of data bits that can be set. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>SERIAL_DATABITS_5</td>
+<td>5 data bits</td>
+</tr>
+<tr>
+<td>SERIAL_DATABITS_6</td>
+<td>6 data bits</td>
+</tr>
+<tr>
+<td>SERIAL_DATABITS_7</td>
+<td>7 data bits</td>
+</tr>
+<tr>
+<td>SERIAL_DATABITS_8</td>
+<td>8 data bits</td>
+</tr>
+<tr>
+<td>SERIAL_DATABITS_16</td>
+<td>16 data bits</td>
+</tr>
+<tr>
+<td>SERIAL_DATABITS_16X</td>
+<td>Special wide path through serial hardware lines</td>
 </tr>
 </table>
 
@@ -453,6 +427,32 @@ The stop-bit and parity settings that can be selected. This member is set to zer
 </tr>
 </table>
 
+`CurrentTxQueue`
+
+Transmit queue size. This member specifies the size, in bytes, of the serial controller driver's internal output buffer. A value of zero indicates that the buffer size is unavailable.
+
+For SerCx2 and SerCx, the associated serial controller driver typically sets this member to zero. Serial.sys sets this member to a nonzero value that indicates the output buffer size.
+
+`CurrentRxQueue`
+
+Receive queue size. This member specifies the size, in bytes, of the serial controller driver's internal input buffer. A value of zero indicates that the buffer size is unavailable.
+
+For SerCx2 and SerCx, this member is set by the associated serial controller driver. For SerCx2, the driver typically sets this member to zero. For SerCx, the driver typically sets this member to the size of the ring buffer that SerCx uses to buffer received data. This driver can call the <a href="..\sercx\nf-sercx-sercxgetringbufferutilization.md">SerCxGetRingBufferUtilization</a> method to get the ring buffer size from SerCx.
+
+Serial.sys sets this member to a nonzero value that indicates the input buffer size.
+
+`ProvSpec1`
+
+Provider-specific data. Applications should ignore this member unless provider-specific data about the data format required by the serial port is available.
+
+`ProvSpec2`
+
+Provider-specific data. Applications should ignore this member unless provider-specific data about the data format required by the serial port is available.
+
+`ProvChar`
+
+Provider-specific data. Applications should ignore this member unless provider-specific data about the data format required by the serial port is available. This member is the first element in a wide-character array of one or more elements. Any additional elements immediately follow this member. The <b>PacketLength</b> member specifies the size of the <b>SERIAL_COMMPROP</b> structure plus any additional <b>ProvChar</b> array elements that follow this structure.
+
 ## Remarks
 This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_properties.md">IOCTL_SERIAL_GET_PROPERTIES</a> request.
 
@@ -464,11 +464,3 @@ This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_pr
 ## See Also
 
 <a href="..\ntddser\ni-ntddser-ioctl_serial_get_properties.md">IOCTL_SERIAL_GET_PROPERTIES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SERIAL_COMMPROP structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

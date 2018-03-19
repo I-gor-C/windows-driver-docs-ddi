@@ -59,21 +59,21 @@ typedef struct _MSiSCSI_NICPerformance {
 ## Members
 
 
-`BytesReceived`
-
-The number of bytes that are received through the Ethernet port.
-
 `BytesTransmitted`
 
 The number of bytes that are transmitted through the Ethernet port.
 
-`PDUReceived`
+`BytesReceived`
 
-The number of PDUs that are received through the Ethernet port.
+The number of bytes that are received through the Ethernet port.
 
 `PDUTransmitted`
 
 The number of PDUs that are transmitted through the Ethernet port.
+
+`PDUReceived`
+
+The number of PDUs that are received through the Ethernet port.
 
 ## Remarks
 It is optional that you implement this class.
@@ -86,11 +86,3 @@ It is optional that you implement this class.
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563089">MSiSCSI_NICPerformance WMI Class</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_NICPerformance structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

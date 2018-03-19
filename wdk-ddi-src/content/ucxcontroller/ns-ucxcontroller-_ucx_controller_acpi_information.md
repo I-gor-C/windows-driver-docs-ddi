@@ -59,6 +59,10 @@ typedef struct _UCX_CONTROLLER_ACPI_INFORMATION {
 ## Members
 
 
+`VendorId`
+
+The vendor ID of the ACPI USB controller.
+
 `DeviceId`
 
 The device ID of the ACPI USB controller.
@@ -66,10 +70,6 @@ The device ID of the ACPI USB controller.
 `RevisionId`
 
 The revision ID of the ACPI USB controller.
-
-`VendorId`
-
-The vendor ID of the ACPI USB controller.
 
 
 ## Requirements
@@ -84,11 +84,3 @@ The vendor ID of the ACPI USB controller.
 
 
 <a href="..\ucxcontroller\nf-ucxcontroller-ucx_controller_config_set_acpi_info.md">UCX_CONTROLLER_CONFIG_SET_ACPI_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UCX_CONTROLLER_ACPI_INFORMATION structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

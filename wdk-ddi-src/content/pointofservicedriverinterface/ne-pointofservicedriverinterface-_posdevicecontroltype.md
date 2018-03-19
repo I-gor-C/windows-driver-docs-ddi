@@ -74,68 +74,8 @@ typedef enum _PosDeviceControlType {
 <table>
             
                 <tr>
-                    <td>_MaxDeviceControlType</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>_MinDeviceControlType</td>
                     <td></td>
-                </tr>
-            
-                <tr>
-                    <td>BarcodeScannerGetSymbologyAttributes</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>BarcodeScannerInjectEvent</td>
-                    <td>Unused.</td>
-                </tr>
-            
-                <tr>
-                    <td>BarcodeScannerSetSymbologyAttributes</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>CashDrawerCancelWait</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>CashDrawerCreateDrawerCloseAlarm</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>CashDrawerOpenDrawer</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>CheckHealth</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_check_health.md">IOCTL_POINT_OF_SERVICE_CHECK_HEALTH</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>ClaimDevice</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_claim_device.md">IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>ConnectRemotePosDevice</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>GetDeviceBasics</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_get_device_basics.md">IOCTL_POINT_OF_SERVICE_GET_DEVICE_BASICS</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>GetProperty</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_get_property.md">IOCTL_POINT_OF_SERVICE_GET_PROPERTY</a>.</td>
                 </tr>
             
                 <tr>
@@ -144,68 +84,63 @@ typedef enum _PosDeviceControlType {
                 </tr>
             
                 <tr>
-                    <td>LineDisplayClearDescriptors</td>
-                    <td></td>
+                    <td>GetProperty</td>
+                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_get_property.md">IOCTL_POINT_OF_SERVICE_GET_PROPERTY</a>.</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayCreateWindow</td>
-                    <td></td>
+                    <td>SetProperty</td>
+                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_set_property.md">IOCTL_POINT_OF_SERVICE_SET_PROPERTY</a>.</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayDefineGlyph</td>
-                    <td></td>
+                    <td>ClaimDevice</td>
+                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_claim_device.md">IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE</a>.</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayDestroyWindow</td>
-                    <td></td>
+                    <td>ReleaseDevice</td>
+                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_release_device.md">IOCTL_POINT_OF_SERVICE_RELEASE_DEVICE</a>.</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayReadCharacterAtCursor</td>
-                    <td></td>
+                    <td>RetainDevice</td>
+                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_retain_device.md">IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE</a>.</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayRefreshWindow</td>
-                    <td></td>
+                    <td>RetrieveStatistics</td>
+                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_retrieve_statistics.md">IOCTL_POINT_OF_SERVICE_RETRIEVE_STATISTICS</a>.</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplaySetBitmap</td>
-                    <td></td>
+                    <td>ResetStatistics</td>
+                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_reset_statistics.md">IOCTL_POINT_OF_SERVICE_RESET_STATISTICS</a>.</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplaySetDescriptor</td>
-                    <td></td>
+                    <td>UpdateStatistics</td>
+                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_update_statistics.md">IOCTL_POINT_OF_SERVICE_UPDATE_STATISTICS</a>.</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayWindowClearText</td>
-                    <td></td>
+                    <td>CheckHealth</td>
+                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_check_health.md">IOCTL_POINT_OF_SERVICE_CHECK_HEALTH</a>.</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayWindowDisplayBitmap</td>
-                    <td></td>
+                    <td>GetDeviceBasics</td>
+                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_get_device_basics.md">IOCTL_POINT_OF_SERVICE_GET_DEVICE_BASICS</a>.</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayWindowDisplayText</td>
-                    <td></td>
+                    <td>BarcodeScannerInjectEvent</td>
+                    <td>Unused.</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayWindowDisplayTextAt</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayWindowScrollText</td>
-                    <td></td>
+                    <td>MsrRetrieveDeviceAuthentication</td>
+                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_msr_retrieve_device_authentication.md">IOCTL_POINT_OF_SERVICE_MSR_RETRIEVE_DEVICE_AUTHENTICATION</a>.</td>
                 </tr>
             
                 <tr>
@@ -219,22 +154,37 @@ typedef enum _PosDeviceControlType {
                 </tr>
             
                 <tr>
-                    <td>MsrRetrieveDeviceAuthentication</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_msr_retrieve_device_authentication.md">IOCTL_POINT_OF_SERVICE_MSR_RETRIEVE_DEVICE_AUTHENTICATION</a>.</td>
-                </tr>
-            
-                <tr>
                     <td>MsrUpdateKey</td>
                     <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_msr_update_key.md">IOCTL_POINT_OF_SERVICE_MSR_UPDATE_KEY</a>.</td>
                 </tr>
             
                 <tr>
-                    <td>PrinterChangePrintSide</td>
+                    <td>StartBarcodeScannerSoftwareTrigger</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>StopBarcodeScannerSoftwareTrigger</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>PrinterClearOutput</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSlipWaitForPaperInserted</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSlipWaitForPaperRemoved</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterChangePrintSide</td>
                     <td></td>
                 </tr>
             
@@ -245,6 +195,16 @@ typedef enum _PosDeviceControlType {
             
                 <tr>
                     <td>PrinterDrawRuledLine</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSlipOpenJaws</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSlipCloseJaws</td>
                     <td></td>
                 </tr>
             
@@ -264,12 +224,12 @@ typedef enum _PosDeviceControlType {
                 </tr>
             
                 <tr>
-                    <td>PrinterPrintMemoryBitmapFill</td>
+                    <td>PrinterPrintMemoryBitmapStart</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterPrintMemoryBitmapStart</td>
+                    <td>PrinterPrintMemoryBitmapFill</td>
                     <td></td>
                 </tr>
             
@@ -279,17 +239,7 @@ typedef enum _PosDeviceControlType {
                 </tr>
             
                 <tr>
-                    <td>PrinterPrintSavedBitmap</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>PrinterRotatePrint</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PrinterSetBitmapFill</td>
                     <td></td>
                 </tr>
             
@@ -299,22 +249,7 @@ typedef enum _PosDeviceControlType {
                 </tr>
             
                 <tr>
-                    <td>PrinterSlipCloseJaws</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PrinterSlipOpenJaws</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PrinterSlipWaitForPaperInserted</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PrinterSlipWaitForPaperRemoved</td>
+                    <td>PrinterSetBitmapFill</td>
                     <td></td>
                 </tr>
             
@@ -329,48 +264,113 @@ typedef enum _PosDeviceControlType {
                 </tr>
             
                 <tr>
+                    <td>PrinterPrintSavedBitmap</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>CashDrawerOpenDrawer</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>CashDrawerCreateDrawerCloseAlarm</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>CashDrawerCancelWait</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>ConnectRemotePosDevice</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>PrinterWaitForJobComplete</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>ReleaseDevice</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_release_device.md">IOCTL_POINT_OF_SERVICE_RELEASE_DEVICE</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>ResetStatistics</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_reset_statistics.md">IOCTL_POINT_OF_SERVICE_RESET_STATISTICS</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>RetainDevice</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_retain_device.md">IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>RetrieveStatistics</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_retrieve_statistics.md">IOCTL_POINT_OF_SERVICE_RETRIEVE_STATISTICS</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>SetProperty</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_set_property.md">IOCTL_POINT_OF_SERVICE_SET_PROPERTY</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>StartBarcodeScannerSoftwareTrigger</td>
+                    <td>LineDisplayCreateWindow</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>StopBarcodeScannerSoftwareTrigger</td>
+                    <td>LineDisplayDestroyWindow</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>UpdateStatistics</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_update_statistics.md">IOCTL_POINT_OF_SERVICE_UPDATE_STATISTICS</a>.</td>
+                    <td>LineDisplayRefreshWindow</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayWindowDisplayText</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayWindowDisplayTextAt</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayWindowScrollText</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayWindowClearText</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayWindowDisplayBitmap</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplaySetBitmap</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplaySetDescriptor</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayClearDescriptors</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayDefineGlyph</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayReadCharacterAtCursor</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>BarcodeScannerGetSymbologyAttributes</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>BarcodeScannerSetSymbologyAttributes</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>_MaxDeviceControlType</td>
+                    <td></td>
                 </tr>
 </table>
 

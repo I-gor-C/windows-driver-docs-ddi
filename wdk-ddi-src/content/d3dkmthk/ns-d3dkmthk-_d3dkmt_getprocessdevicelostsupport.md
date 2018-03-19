@@ -60,13 +60,13 @@ typedef struct _D3DKMT_GETPROCESSDEVICELOSTSUPPORT {
 ## Members
 
 
-`AdapterLuid`
-
-LUID of Adapter that is potentially being detached
-
 `hProcess`
 
 A handle to the process.
+
+`AdapterLuid`
+
+LUID of Adapter that is potentially being detached
 
 `Support`
 

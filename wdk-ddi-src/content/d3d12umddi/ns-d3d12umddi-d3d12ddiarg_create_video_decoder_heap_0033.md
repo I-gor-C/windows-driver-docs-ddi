@@ -65,21 +65,21 @@ typedef struct _D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033 {
 ## Members
 
 
-`BitRate`
+`NodeMask`
 
-The number of bits per second.
+The set of nodes.
 
 `Configuration`
 
 The video decode configuration.
 
-`DecodeHeight`
-
-Decode height.
-
 `DecodeWidth`
 
 Decode width.
+
+`DecodeHeight`
+
+Decode height.
 
 `Format`
 
@@ -89,13 +89,13 @@ The resource data format.
 
 A rational number that specifies the frame rate.
 
+`BitRate`
+
+The number of bits per second.
+
 `MaxDecodePictureBufferCount`
 
 Maximum decode picture buffer count.
-
-`NodeMask`
-
-The set of nodes.
 
 
 ## Requirements

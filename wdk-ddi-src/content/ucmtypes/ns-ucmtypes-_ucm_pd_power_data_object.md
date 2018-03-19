@@ -85,33 +85,9 @@ typedef union _UCM_PD_POWER_DATA_OBJECT {
 ## Members
 
 
-`BatterySupplyPdo`
+`Ul`
 
-Contains bitfields describing a battery supply PD object.
-
-
-
-#### MaximumAllowablePowerIn250mW
-
-Describes the maximum allowable power in multiples of 250 mW.
-
-
-
-#### MinimumVoltageIn50mV
-
-Describes the minimum voltage in multiples of 50 mV.
-
-
-
-#### MaximumVoltageIn50mV
-
-Describes the maximum voltage in multiples of 50 mV.
-
-
-
-#### Battery
-
-Battery type.
+Size of the structure.
 
 `Common`
 
@@ -191,10 +167,6 @@ Dual role power
 
 fixed supply
 
-`Ul`
-
-Size of the structure.
-
 `VariableSupplyNonBatteryPdo`
 
 Contains bitfields describing a variable-supply non-battery PD object.
@@ -222,6 +194,34 @@ Describes the maximum voltage in multiples of 50 mV.
 #### VariableSupportNonBattery
 
 Variable Support Non Battery type.
+
+`BatterySupplyPdo`
+
+Contains bitfields describing a battery supply PD object.
+
+
+
+#### MaximumAllowablePowerIn250mW
+
+Describes the maximum allowable power in multiples of 250 mW.
+
+
+
+#### MinimumVoltageIn50mV
+
+Describes the minimum voltage in multiples of 50 mV.
+
+
+
+#### MaximumVoltageIn50mV
+
+Describes the maximum voltage in multiples of 50 mV.
+
+
+
+#### Battery
+
+Battery type.
 
 
 ## Requirements

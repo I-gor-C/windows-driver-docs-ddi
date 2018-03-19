@@ -61,17 +61,9 @@ typedef struct _KSAUDIO_PACKETSIZE_CONSTRAINTS2 {
 ## Members
 
 
-`MaxPacketSizeInBytes`
-
-The absolute maximum packet size supported by the driver in bytes. This can be zero if the driver has no specific maximum packet size. This size should at least be large enough to support 10 ms buffer of any format supported by the pin. This size should also be greater or equal to MinPacketSize constraints.
-
 `MinPacketPeriodInHns`
 
 The absolute minimum processing period supported by the driver expressed in hundred-nanosecond (HNS) units. This value can be 0 if the driver has no specific minimum processing period.
-
-`NumProcessingModeConstraints`
-
-The number of additional constraints for specific processing modes. This value can be 0.
 
 `PacketSizeFileAlignment`
 
@@ -136,6 +128,14 @@ The byte size alignment requirement. Use one of these defined file alignment val
 
 
 #### FILE_512_BYTE_ALIGNMENT
+
+`MaxPacketSizeInBytes`
+
+The absolute maximum packet size supported by the driver in bytes. This can be zero if the driver has no specific maximum packet size. This size should at least be large enough to support 10 ms buffer of any format supported by the pin. This size should also be greater or equal to MinPacketSize constraints.
+
+`NumProcessingModeConstraints`
+
+The number of additional constraints for specific processing modes. This value can be 0.
 
 `ProcessingModeConstraints`
 

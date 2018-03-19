@@ -71,25 +71,13 @@ typedef enum _WDI_PHY_TYPE {
 <table>
             
                 <tr>
-                    <td>WDI_PHY_TYPE_ANY</td>
+                    <td>WDI_PHY_TYPE_UNKNOWN</td>
                     <td>Specifies an unknown or uninitialized PHY type.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_PHY_TYPE_DMG</td>
-                    <td>Added in Windows 10, version 1607, WDI version 1.0.21.
-
-Specifies an 802.11ad PHY.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_PHY_TYPE_DSSS</td>
-                    <td>Specifies a direct sequence spread spectrum (DSSS) PHY.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_PHY_TYPE_ERP</td>
-                    <td>Specifies an extended-rate 802.11g PHY (ERP).</td>
+                    <td>WDI_PHY_TYPE_ANY</td>
+                    <td>Specifies an unknown or uninitialized PHY type.</td>
                 </tr>
             
                 <tr>
@@ -98,23 +86,8 @@ Specifies an 802.11ad PHY.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_PHY_TYPE_HRDSSS</td>
-                    <td>Specifies a high-rate DSSS (HRDSSS) 802.11b PHY.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_PHY_TYPE_HT</td>
-                    <td>Specifies a high-throughput (HT) 802.11n PHY. Each 802.11n PHY, whether dual-band or not, is specified as this PHY type.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_PHY_TYPE_IHV_END</td>
-                    <td>Specifies the end of the range that is used to define proprietary PHY types that are developed by an IHV.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_PHY_TYPE_IHV_START</td>
-                    <td>Specifies the start of the range that is used to define proprietary PHY types that are developed by an independent hardware vendor (IHV).</td>
+                    <td>WDI_PHY_TYPE_DSSS</td>
+                    <td>Specifies a direct sequence spread spectrum (DSSS) PHY.</td>
                 </tr>
             
                 <tr>
@@ -128,13 +101,40 @@ Specifies an 802.11ad PHY.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_PHY_TYPE_UNKNOWN</td>
-                    <td>Specifies an unknown or uninitialized PHY type.</td>
+                    <td>WDI_PHY_TYPE_HRDSSS</td>
+                    <td>Specifies a high-rate DSSS (HRDSSS) 802.11b PHY.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_PHY_TYPE_ERP</td>
+                    <td>Specifies an extended-rate 802.11g PHY (ERP).</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_PHY_TYPE_HT</td>
+                    <td>Specifies a high-throughput (HT) 802.11n PHY. Each 802.11n PHY, whether dual-band or not, is specified as this PHY type.</td>
                 </tr>
             
                 <tr>
                     <td>WDI_PHY_TYPE_VHT</td>
                     <td>Specifies a very high-throughput (VHT) 802.11ac PHY.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_PHY_TYPE_DMG</td>
+                    <td>Added in Windows 10, version 1607, WDI version 1.0.21.
+
+Specifies an 802.11ad PHY.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_PHY_TYPE_IHV_START</td>
+                    <td>Specifies the start of the range that is used to define proprietary PHY types that are developed by an independent hardware vendor (IHV).</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_PHY_TYPE_IHV_END</td>
+                    <td>Specifies the end of the range that is used to define proprietary PHY types that are developed by an IHV.</td>
                 </tr>
 </table>
 

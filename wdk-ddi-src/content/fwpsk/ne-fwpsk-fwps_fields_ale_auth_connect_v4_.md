@@ -105,29 +105,39 @@ typedef enum FWPS_FIELDS_ALE_AUTH_CONNECT_V4_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ALE_EFFECTIVE_NAME</td>
-                    <td></td>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ALE_USER_ID</td>
+                    <td>The identifier of the local user.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ALE_ORIGINAL_APP_ID</td>
-                    <td>The full path of the original application for proxy connections. If the application has not been proxied, this path is identical to the xxx_ALE_APP_ID.
-
-<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
-<div> </div></td>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_LOCAL_ADDRESS</td>
+                    <td>The local IP address.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ALE_PACKAGE_ID</td>
-                    <td>The package identifier is a security identifier (SID) that identifies the associated AppContainer process. For more information about the SID structure, see the description for the SID structure in the Microsoft Windows SDK documentation.
-
-<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
-<div> </div></td>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_LOCAL_ADDRESS_TYPE</td>
+                    <td>The local IP address type. The possible values are defined by the 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a> enumeration.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ALE_REMOTE_MACHINE_ID</td>
-                    <td>The identification of the remote machine.</td>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_LOCAL_PORT</td>
+                    <td>The local transport protocol port number.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_PROTOCOL</td>
+                    <td>The IP protocol number, as specified in RFC 1700.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_REMOTE_ADDRESS</td>
+                    <td>The remote IP address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_REMOTE_PORT</td>
+                    <td>The remote transport protocol port number.</td>
                 </tr>
             
                 <tr>
@@ -136,18 +146,68 @@ typedef enum FWPS_FIELDS_ALE_AUTH_CONNECT_V4_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ALE_SECURITY_ATTRIBUTE_FQBN_VALUE</td>
-                    <td></td>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ALE_REMOTE_MACHINE_ID</td>
+                    <td>The identification of the remote machine.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ALE_USER_ID</td>
-                    <td>The identifier of the local user.</td>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_DESTINATION_ADDRESS_TYPE</td>
+                    <td>The destination IP address type. The possible values are defined by the 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a> enumeration.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ARRIVAL_INTERFACE_INDEX</td>
-                    <td>The index of the arrival network interface, as enumerated by the network stack.
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_LOCAL_INTERFACE</td>
+                    <td>The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) for the network interface associated with the
+     local IP address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_FLAGS</td>
+                    <td>A bitwise OR of a combination of filtering condition flags. For information about the possible
+     flags, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff549942">Filtering Condition Flags</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_INTERFACE_TYPE</td>
+                    <td>The type of the local network interface, as defined by the Internet Assigned Numbers Authority
+     (IANA). For more information, see 
+     <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_TUNNEL_TYPE</td>
+                    <td>The encapsulation method used by a tunnel if the 
+     <b>IfType</b> member of the IP_ADAPTER_ADDRESSES structure is IF_TYPE_TUNNEL. The tunnel type is defined
+     by IANA. For more information, see 
+     <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a> and the
+     Windows SDK.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_INTERFACE_INDEX</td>
+                    <td>The index of the network interface, as enumerated by the network stack.
+     
+
+<div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
+     Windows.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_SUB_INTERFACE_INDEX</td>
+                    <td>The index of the network subinterface, as enumerated by the network stack.
+     
+
+<div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
+     Windows.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_ARRIVAL_INTERFACE</td>
+                    <td>The LUID for the network interface that is associated with the arrival IP address.
      
 
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
@@ -179,34 +239,8 @@ typedef enum FWPS_FIELDS_ALE_AUTH_CONNECT_V4_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_BITMAP_IP_LOCAL_ADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_BITMAP_IP_LOCAL_PORT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_BITMAP_IP_REMOTE_ADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_BITMAP_IP_REMOTE_PORT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_COMPARTMENT_ID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_CURRENT_PROFILE_ID</td>
-                    <td>The current profile identifier (network category) of the network interface. The possible network
-     category values are: public (1), private (2), or domain (3).
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ARRIVAL_INTERFACE_INDEX</td>
+                    <td>The index of the arrival network interface, as enumerated by the network stack.
      
 
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
@@ -214,111 +248,19 @@ typedef enum FWPS_FIELDS_ALE_AUTH_CONNECT_V4_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_FLAGS</td>
-                    <td>A bitwise OR of a combination of filtering condition flags. For information about the possible
-     flags, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff549942">Filtering Condition Flags</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_INTERFACE_INDEX</td>
-                    <td>The index of the network interface, as enumerated by the network stack.
-     
-
-<div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
-     Windows.</div>
-<div> </div></td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_INTERFACE_QUARANTINE_EPOCH</td>
-                    <td>The time that has passed since the last media state change occurred for the network interface.
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_NEXTHOP_SUB_INTERFACE_INDEX</td>
+                    <td>The index of the logical network interface that will be used to continue forwarding of the
+     outbound packet, as enumerated by the network stack.
      
 
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
 <div> </div></td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_INTERFACE_TYPE</td>
-                    <td>The type of the local network interface, as defined by the Internet Assigned Numbers Authority
-     (IANA). For more information, see 
-     <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_ARRIVAL_INTERFACE</td>
-                    <td>The LUID for the network interface that is associated with the arrival IP address.
-     
-
-<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
-<div> </div></td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_DESTINATION_ADDRESS_TYPE</td>
-                    <td>The destination IP address type. The possible values are defined by the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a> enumeration.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_LOCAL_ADDRESS</td>
-                    <td>The local IP address.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_LOCAL_ADDRESS_TYPE</td>
-                    <td>The local IP address type. The possible values are defined by the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a> enumeration.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_LOCAL_INTERFACE</td>
-                    <td>The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) for the network interface associated with the
-     local IP address.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_LOCAL_PORT</td>
-                    <td>The local transport protocol port number.</td>
                 </tr>
             
                 <tr>
                     <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_NEXTHOP_INTERFACE</td>
                     <td>The LUID for the network interface that is the next interface for the forwarding of the outbound
      packet.
-     
-
-<div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
-     Windows.</div>
-<div> </div></td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_PROTOCOL</td>
-                    <td>The IP protocol number, as specified in RFC 1700.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_REMOTE_ADDRESS</td>
-                    <td>The remote IP address.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_IP_REMOTE_PORT</td>
-                    <td>The remote transport protocol port number.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_NEXTHOP_INTERFACE_INDEX</td>
-                    <td>The index of the network interface that will be used to continue forwarding of the outbound
-     packet, as enumerated by the network stack.
      
 
 <div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
@@ -339,16 +281,6 @@ typedef enum FWPS_FIELDS_ALE_AUTH_CONNECT_V4_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_NEXTHOP_SUB_INTERFACE_INDEX</td>
-                    <td>The index of the logical network interface that will be used to continue forwarding of the
-     outbound packet, as enumerated by the network stack.
-     
-
-<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
-<div> </div></td>
-                </tr>
-            
-                <tr>
                     <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_NEXTHOP_TUNNEL_TYPE</td>
                     <td>The encapsulation method used by a tunnel for the forwarding interface of the outbound packet, if
      the 
@@ -363,11 +295,13 @@ typedef enum FWPS_FIELDS_ALE_AUTH_CONNECT_V4_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ORIGINAL_ICMP_TYPE</td>
-                    <td>The original ICMP type for an exchange. The ICMP type field, as specified in RFC 792.
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_NEXTHOP_INTERFACE_INDEX</td>
+                    <td>The index of the network interface that will be used to continue forwarding of the outbound
+     packet, as enumerated by the network stack.
      
 
-<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
+<div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
+     Windows.</div>
 <div> </div></td>
                 </tr>
             
@@ -382,8 +316,9 @@ typedef enum FWPS_FIELDS_ALE_AUTH_CONNECT_V4_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_PEER_NAME</td>
-                    <td>The machine name that is associated with the destination IP address.
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_CURRENT_PROFILE_ID</td>
+                    <td>The current profile identifier (network category) of the network interface. The possible network
+     category values are: public (1), private (2), or domain (3).
      
 
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
@@ -403,22 +338,87 @@ typedef enum FWPS_FIELDS_ALE_AUTH_CONNECT_V4_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_SUB_INTERFACE_INDEX</td>
-                    <td>The index of the network subinterface, as enumerated by the network stack.
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_PEER_NAME</td>
+                    <td>The machine name that is associated with the destination IP address.
      
 
-<div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
-     Windows.</div>
+<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
 <div> </div></td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_TUNNEL_TYPE</td>
-                    <td>The encapsulation method used by a tunnel if the 
-     <b>IfType</b> member of the IP_ADAPTER_ADDRESSES structure is IF_TYPE_TUNNEL. The tunnel type is defined
-     by IANA. For more information, see 
-     <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a> and the
-     Windows SDK.</td>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ORIGINAL_ICMP_TYPE</td>
+                    <td>The original ICMP type for an exchange. The ICMP type field, as specified in RFC 792.
+     
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_INTERFACE_QUARANTINE_EPOCH</td>
+                    <td>The time that has passed since the last media state change occurred for the network interface.
+     
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ALE_ORIGINAL_APP_ID</td>
+                    <td>The full path of the original application for proxy connections. If the application has not been proxied, this path is identical to the xxx_ALE_APP_ID.
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ALE_PACKAGE_ID</td>
+                    <td>The package identifier is a security identifier (SID) that identifies the associated AppContainer process. For more information about the SID structure, see the description for the SID structure in the Microsoft Windows SDK documentation.
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ALE_SECURITY_ATTRIBUTE_FQBN_VALUE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_ALE_EFFECTIVE_NAME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_COMPARTMENT_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_BITMAP_IP_LOCAL_ADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_BITMAP_IP_LOCAL_PORT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_BITMAP_IP_REMOTE_ADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_BITMAP_IP_REMOTE_PORT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_AUTH_CONNECT_V4_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 
@@ -459,11 +459,3 @@ These macros are used to access the following IPV4 data fields:
 
 
 <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_FIELDS_ALE_AUTH_CONNECT_V4 enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

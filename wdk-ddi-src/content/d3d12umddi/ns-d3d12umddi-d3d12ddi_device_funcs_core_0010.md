@@ -146,94 +146,6 @@ typedef struct D3D12DDI_DEVICE_FUNCS_CORE_0010 {
 ## Members
 
 
-`pfnAddPipelineStateToLibrary`
-
-A function that adds pipeline state to a library.
-
-`pfnCalcPrivateBlendStateSize`
-
-A function that calculates the size of a private blend state.
-
-`pfnCalcPrivateCommandAllocatorSize`
-
-A function that calculates the size of a private command allocator.
-
-`pfnCalcPrivateCommandListSize`
-
-A function that calculate the size of a private command list.
-
-`pfnCalcPrivateCommandQueueSize`
-
-A function that calculates the size of a private queue.
-
-`pfnCalcPrivateCommandSignatureSize`
-
-A function that calculates the size of a private command signature.
-
-`pfnCalcPrivateDepthStencilStateSize`
-
-A function that calculates the size of the state of a private depth stencil.
-
-`pfnCalcPrivateDescriptorHeapSize`
-
-A function that calculates the size of a private descriptor heap.
-
-`pfnCalcPrivateElementLayoutSize`
-
-A function that calculates layout size for a private element.
-
-`pfnCalcPrivateFenceSize`
-
-A function that calculates a private fence size.
-
-`pfnCalcPrivateGeometryShaderWithStreamOutput`
-
-A function that calculates a private geometry shader with stream output.
-
-`pfnCalcPrivateHeapAndResourceSizes`
-
-A function that calculates sizes for private heap and resource.
-
-`pfnCalcPrivateOpenedHeapAndResourceSizes`
-
-A function that calculates sizes for private opened heap and resources.
-
-`pfnCalcPrivatePipelineLibrarySize`
-
-A function that calculates the size of a private pipeline library.
-
-`pfnCalcPrivatePipelineStateSize`
-
-A function that calculate the size of a private pipeline state.
-
-`pfnCalcPrivateQueryHeapSize`
-
-A function that calculates the size of a private query heap.
-
-`pfnCalcPrivateRasterizerStateSize`
-
-A function that calculates the size of a private rasterizer state.
-
-`pfnCalcPrivateRootSignatureSize`
-
-A function that calculates the size of a private root signature.
-
-`pfnCalcPrivateShaderSize`
-
-A function that calculates the size of a private shader.
-
-`pfnCalcPrivateTessellationShaderSize`
-
-A function that creates private tessellation shader size.
-
-`pfnCalcSerializedLibrarySize`
-
-A function that calculates the size of a serialized library.
-
-`pfnCheckExistingResourceAllocationInfo`
-
-A function that checks allocation information of an existing resource.
-
 `pfnCheckFormatSupport`
 
 A function that checks format support.
@@ -242,21 +154,261 @@ A function that checks format support.
 
 A function that checks multi-sample quality levels.
 
-`pfnCheckResourceAllocationHandle`
+`pfnGetMipPacking`
 
-A function that checks a resource allocation handle.
+A function that gets MIP packing.
 
-`pfnCheckResourceAllocationInfo`
+`pfnCalcPrivateElementLayoutSize`
 
-A function that checks allocation information of a resource.
+A function that calculates layout size for a private element.
 
-`pfnCheckResourceVirtualAddress`
+`pfnCreateElementLayout`
 
-A function that checks the virtual address of a resource.
+A function that creates an element layout.
 
-`pfnCheckSubresourceInfo`
+`pfnDestroyElementLayout`
 
-A function that checks information of a subresource.
+A function that destroys an element layout.
+
+`pfnCalcPrivateBlendStateSize`
+
+A function that calculates the size of a private blend state.
+
+`pfnCreateBlendState`
+
+A function that creates a blend state.
+
+`pfnDestroyBlendState`
+
+A function that destroys a blend state.
+
+`pfnCalcPrivateDepthStencilStateSize`
+
+A function that calculates the size of the state of a private depth stencil.
+
+`pfnCreateDepthStencilState`
+
+A function that creates a depth stencil state.
+
+`pfnDestroyDepthStencilState`
+
+A function that destroys a depth stencil state.
+
+`pfnCalcPrivateRasterizerStateSize`
+
+A function that calculates the size of a private rasterizer state.
+
+`pfnCreateRasterizerState`
+
+A function that creates a rasterizer state.
+
+`pfnDestroyRasterizerState`
+
+A function that destroys a rasterizer state.
+
+`pfnCalcPrivateShaderSize`
+
+A function that calculates the size of a private shader.
+
+`pfnCreateVertexShader`
+
+A function that creates a vertex shader.
+
+`pfnCreatePixelShader`
+
+A function that creates a shader.
+
+`pfnCreateGeometryShader`
+
+A function that creates a geometry shader.
+
+`pfnCreateComputeShader`
+
+A function that creates a compute shader.
+
+`pfnCalcPrivateGeometryShaderWithStreamOutput`
+
+A function that calculates a private geometry shader with stream output.
+
+`pfnCreateGeometryShaderWithStreamOutput`
+
+A function that creates a private geometry shader with stream output.
+
+`pfnCalcPrivateTessellationShaderSize`
+
+A function that creates private tessellation shader size.
+
+`pfnCreateHullShader`
+
+A function that creates a hull shader.
+
+`pfnCreateDomainShader`
+
+A function that creates a domain shader.
+
+`pfnDestroyShader`
+
+A function that destroys a shader.
+
+`pfnCalcPrivateCommandQueueSize`
+
+A function that calculates the size of a private queue.
+
+`pfnCreateCommandQueue`
+
+A function that creates a command queue.
+
+`pfnDestroyCommandQueue`
+
+A function that destroys a command queue.
+
+`pfnCalcPrivateCommandAllocatorSize`
+
+A function that calculates the size of a private command allocator.
+
+`pfnCreateCommandAllocator`
+
+A function that creates a command allocator.
+
+`pfnDestroyCommandAllocator`
+
+A function that destroys a command allocator.
+
+`pfnResetCommandAllocator`
+
+A function that resets a command allocator.
+
+`pfnCalcPrivatePipelineStateSize`
+
+A function that calculate the size of a private pipeline state.
+
+`pfnCreatePipelineState`
+
+A function that crates a pipeline state.
+
+`pfnDestroyPipelineState`
+
+A function that destroys a pipeline state.
+
+`pfnCalcPrivateCommandListSize`
+
+A function that calculate the size of a private command list.
+
+`pfnCreateCommandList`
+
+A function that creates a command list.
+
+`pfnDestroyCommandList`
+
+A function that destroys a command list.
+
+`pfnCalcPrivateFenceSize`
+
+A function that calculates a private fence size.
+
+`pfnCreateFence`
+
+A function that creates a fence.
+
+`pfnDestroyFence`
+
+A function that destroys a fence.
+
+`pfnCalcPrivateDescriptorHeapSize`
+
+A function that calculates the size of a private descriptor heap.
+
+`pfnCreateDescriptorHeap`
+
+A function that creates a descriptor heap.
+
+`pfnDestroyDescriptorHeap`
+
+A function that destroys a descriptor heap.
+
+`pfnGetDescriptorSizeInBytes`
+
+A function that gets the descriptor size, in bytes.
+
+`pfnGetCPUDescriptorHandleForHeapStart`
+
+A function that gets a CPU descriptor handle.
+
+`pfnGetGPUDescriptorHandleForHeapStart`
+
+A function that gets a GPU descriptor handle.
+
+`pfnCreateShaderResourceView`
+
+A function that creates a shader resource view.
+
+`pfnCreateConstantBufferView`
+
+A function that creates a constant buffer view.
+
+`pfnCreateSampler`
+
+A function that creates a sampler.
+
+`pfnCreateUnorderedAccessView`
+
+A function that creates an unordered access view.
+
+`pfnCreateRenderTargetView`
+
+A function that creates a render target view.
+
+`pfnCreateDepthStencilView`
+
+A function that creates a depth stencil view.
+
+`pfnCalcPrivateRootSignatureSize`
+
+A function that calculates the size of a private root signature.
+
+`pfnCreateRootSignature`
+
+A function that creates a root signature.
+
+`pfnDestroyRootSignature`
+
+A function that destroys a root signature.
+
+`pfnMapHeap`
+
+A function that maps a heap.
+
+`pfnUnmapHeap`
+
+A function that unmaps a heap.
+
+`pfnCalcPrivateHeapAndResourceSizes`
+
+A function that calculates sizes for private heap and resource.
+
+`pfnCreateHeapAndResource`
+
+A function that create a heap and resource.
+
+`pfnDestroyHeapAndResource`
+
+A function that destroys a heap and resource.
+
+`pfnMakeResident`
+
+A function that makes a resident.
+
+`pfnEvict`
+
+A function that evicts.
+
+`pfnCalcPrivateOpenedHeapAndResourceSizes`
+
+A function that calculates sizes for private opened heap and resources.
+
+`pfnOpenHeapAndResource`
+
+A function that opens a heap and resource.
 
 `pfnCopyDescriptors`
 
@@ -266,249 +418,97 @@ A function that copies descriptors.
 
 A function that does a simple copy of descriptors.
 
-`pfnCreateBlendState`
+`pfnCalcPrivateQueryHeapSize`
 
-A function that creates a blend state.
-
-`pfnCreateCommandAllocator`
-
-A function that creates a command allocator.
-
-`pfnCreateCommandList`
-
-A function that creates a command list.
-
-`pfnCreateCommandQueue`
-
-A function that creates a command queue.
-
-`pfnCreateCommandSignature`
-
-A function that creates a command signature.
-
-`pfnCreateComputeShader`
-
-A function that creates a compute shader.
-
-`pfnCreateConstantBufferView`
-
-A function that creates a constant buffer view.
-
-`pfnCreateDepthStencilState`
-
-A function that creates a depth stencil state.
-
-`pfnCreateDepthStencilView`
-
-A function that creates a depth stencil view.
-
-`pfnCreateDescriptorHeap`
-
-A function that creates a descriptor heap.
-
-`pfnCreateDomainShader`
-
-A function that creates a domain shader.
-
-`pfnCreateElementLayout`
-
-A function that creates an element layout.
-
-`pfnCreateFence`
-
-A function that creates a fence.
-
-`pfnCreateGeometryShader`
-
-A function that creates a geometry shader.
-
-`pfnCreateGeometryShaderWithStreamOutput`
-
-A function that creates a private geometry shader with stream output.
-
-`pfnCreateHeapAndResource`
-
-A function that create a heap and resource.
-
-`pfnCreateHullShader`
-
-A function that creates a hull shader.
-
-`pfnCreatePipelineLibrary`
-
-A function that creates a pipeline library.
-
-`pfnCreatePipelineState`
-
-A function that crates a pipeline state.
-
-`pfnCreatePixelShader`
-
-A function that creates a shader.
+A function that calculates the size of a private query heap.
 
 `pfnCreateQueryHeap`
 
 A function that creates a query heap.
 
-`pfnCreateRasterizerState`
+`pfnDestroyQueryHeap`
 
-A function that creates a rasterizer state.
+A function that destroys a query heap.
 
-`pfnCreateRenderTargetView`
+`pfnCalcPrivateCommandSignatureSize`
 
-A function that creates a render target view.
+A function that calculates the size of a private command signature.
 
-`pfnCreateRootSignature`
+`pfnCreateCommandSignature`
 
-A function that creates a root signature.
-
-`pfnCreateSampler`
-
-A function that creates a sampler.
-
-`pfnCreateShaderResourceView`
-
-A function that creates a shader resource view.
-
-`pfnCreateUnorderedAccessView`
-
-A function that creates an unordered access view.
-
-`pfnCreateVertexShader`
-
-A function that creates a vertex shader.
-
-`pfnDestroyBlendState`
-
-A function that destroys a blend state.
-
-`pfnDestroyCommandAllocator`
-
-A function that destroys a command allocator.
-
-`pfnDestroyCommandList`
-
-A function that destroys a command list.
-
-`pfnDestroyCommandQueue`
-
-A function that destroys a command queue.
+A function that creates a command signature.
 
 `pfnDestroyCommandSignature`
 
 A function that destroys a command signature.
 
-`pfnDestroyDepthStencilState`
+`pfnCheckResourceVirtualAddress`
 
-A function that destroys a depth stencil state.
+A function that checks the virtual address of a resource.
 
-`pfnDestroyDescriptorHeap`
+`pfnCheckResourceAllocationInfo`
 
-A function that destroys a descriptor heap.
+A function that checks allocation information of a resource.
 
-`pfnDestroyElementLayout`
+`pfnCheckSubresourceInfo`
 
-A function that destroys an element layout.
+A function that checks information of a subresource.
 
-`pfnDestroyFence`
+`pfnCheckExistingResourceAllocationInfo`
 
-A function that destroys a fence.
-
-`pfnDestroyHeapAndResource`
-
-A function that destroys a heap and resource.
-
-`pfnDestroyPipelineLibrary`
-
-A function that destroys a pipeline library.
-
-`pfnDestroyPipelineState`
-
-A function that destroys a pipeline state.
-
-`pfnDestroyQueryHeap`
-
-A function that destroys a query heap.
-
-`pfnDestroyRasterizerState`
-
-A function that destroys a rasterizer state.
-
-`pfnDestroyRootSignature`
-
-A function that destroys a root signature.
-
-`pfnDestroyShader`
-
-A function that destroys a shader.
-
-`pfnEvict`
-
-A function that evicts.
-
-`pfnGetCPUDescriptorHandleForHeapStart`
-
-A function that gets a CPU descriptor handle.
-
-`pfnGetDescriptorSizeInBytes`
-
-A function that gets the descriptor size, in bytes.
-
-`pfnGetGPUDescriptorHandleForHeapStart`
-
-A function that gets a GPU descriptor handle.
-
-`pfnGetImplicitPhysicalAdapterMask`
-
-A function that gets an implicit physical adapter mask.
-
-`pfnGetMipPacking`
-
-A function that gets MIP packing.
-
-`pfnGetPresentPrivateDriverDataSize`
-
-A function that gets the present size of private driver data.
-
-`pfnMakeResident`
-
-A function that makes a resident.
-
-`pfnMapHeap`
-
-A function that maps a heap.
+A function that checks allocation information of an existing resource.
 
 `pfnOfferResources`
 
 A function that offers resources.
 
-`pfnOpenHeapAndResource`
+`pfnReclaimResources`
 
-A function that opens a heap and resource.
+A function that reclaims resources.
+
+`pfnGetImplicitPhysicalAdapterMask`
+
+A function that gets an implicit physical adapter mask.
+
+`pfnGetPresentPrivateDriverDataSize`
+
+A function that gets the present size of private driver data.
 
 `pfnQueryNodeMap`
 
 A function that queries a node map.
 
-`pfnReclaimResources`
-
-A function that reclaims resources.
-
-`pfnResetCommandAllocator`
-
-A function that resets a command allocator.
-
 `pfnRetrieveShaderComment`
 
 A function that retrieves a shader comment.
 
+`pfnCheckResourceAllocationHandle`
+
+A function that checks a resource allocation handle.
+
+`pfnCalcPrivatePipelineLibrarySize`
+
+A function that calculates the size of a private pipeline library.
+
+`pfnCreatePipelineLibrary`
+
+A function that creates a pipeline library.
+
+`pfnDestroyPipelineLibrary`
+
+A function that destroys a pipeline library.
+
+`pfnAddPipelineStateToLibrary`
+
+A function that adds pipeline state to a library.
+
+`pfnCalcSerializedLibrarySize`
+
+A function that calculates the size of a serialized library.
+
 `pfnSerializeLibrary`
 
 A function that serializes a library.
-
-`pfnUnmapHeap`
-
-A function that unmaps a heap.
 
 
 ## Requirements
@@ -519,11 +519,3 @@ A function that unmaps a heap.
 ## See Also
 
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_device_funcs_video_0021.md">D3D12DDI_DEVICE_FUNCS_VIDEO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D12DDI_DEVICE_FUNCS_CORE_0010 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

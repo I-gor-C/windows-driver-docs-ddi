@@ -61,13 +61,8 @@ typedef enum _DriverUnifiedPosHealthCheckLevel {
 <table>
             
                 <tr>
-                    <td>External</td>
-                    <td>Performs a more thorough test which may affect the device. For example, a printer may produce some output.</td>
-                </tr>
-            
-                <tr>
-                    <td>Interactive</td>
-                    <td>May display a dialog box that displays test options and results so that you can test the device interactively.</td>
+                    <td>UnknownHealthCheckLevel</td>
+                    <td>The type of health check is not known.</td>
                 </tr>
             
                 <tr>
@@ -76,8 +71,13 @@ typedef enum _DriverUnifiedPosHealthCheckLevel {
                 </tr>
             
                 <tr>
-                    <td>UnknownHealthCheckLevel</td>
-                    <td>The type of health check is not known.</td>
+                    <td>External</td>
+                    <td>Performs a more thorough test which may affect the device. For example, a printer may produce some output.</td>
+                </tr>
+            
+                <tr>
+                    <td>Interactive</td>
+                    <td>May display a dialog box that displays test options and results so that you can test the device interactively.</td>
                 </tr>
 </table>
 

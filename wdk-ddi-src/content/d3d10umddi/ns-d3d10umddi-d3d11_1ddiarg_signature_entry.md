@@ -60,26 +60,6 @@ typedef struct D3D11_1DDIARG_SIGNATURE_ENTRY {
 ## Members
 
 
-`Mask`
-
-[in] The xyzw mask for the signature entry. The four least significant bits (LSBs) of the mask represent xyzw respectively.
-
-`MinPrecision`
-
-A <b>D3D11_SB_OPERAND_MIN_PRECISION</b> type that indicates a minimum precision of source and destination operands.
-
-The <b>D3D11_SB_OPERAND_MIN_PRECISION</b> enumeration is defined in the D3d10tokenizedprogramformat.hpp header file.
-
-`Register`
-
-[in] The number of the register for the signature entry.
-
-`RegisterComponentType`
-
-A  <b>D3D10_SB_REGISTER_COMPONENT_TYPE</b> type that indicates the register component type.
-
-The <b>D3D10_SB_REGISTER_COMPONENT_TYPE</b> enumeration is defined in the D3d10tokenizedprogramformat.hpp header file.
-
 `SystemValue`
 
 [in] The <b>D3D10_SB_NAME</b>-typed value that indicates the system name of the signature entry. The <b>D3D10_SB_NAME</b> enumeration is defined in the D3d10tokenizedprogramformat.hpp header file. One of the following values can be set.
@@ -190,6 +170,26 @@ Is front face.
 </td>
 </tr>
 </table>
+
+`Register`
+
+[in] The number of the register for the signature entry.
+
+`Mask`
+
+[in] The xyzw mask for the signature entry. The four least significant bits (LSBs) of the mask represent xyzw respectively.
+
+`RegisterComponentType`
+
+A  <b>D3D10_SB_REGISTER_COMPONENT_TYPE</b> type that indicates the register component type.
+
+The <b>D3D10_SB_REGISTER_COMPONENT_TYPE</b> enumeration is defined in the D3d10tokenizedprogramformat.hpp header file.
+
+`MinPrecision`
+
+A <b>D3D11_SB_OPERAND_MIN_PRECISION</b> type that indicates a minimum precision of source and destination operands.
+
+The <b>D3D11_SB_OPERAND_MIN_PRECISION</b> enumeration is defined in the D3d10tokenizedprogramformat.hpp header file.
 
 
 ## Requirements

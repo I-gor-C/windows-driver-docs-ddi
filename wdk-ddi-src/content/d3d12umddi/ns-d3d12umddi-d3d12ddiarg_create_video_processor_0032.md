@@ -63,10 +63,6 @@ typedef struct _D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0032 {
 
 Represents the set of nodes.
 
-`NumInputStreams`
-
-The number of input streams.
-
 `OutputStream`
 
 The output stream.
@@ -74,6 +70,10 @@ The output stream.
 `pInputStreams`
 
 The input stream.
+
+`NumInputStreams`
+
+The number of input streams.
 
 
 ## Requirements

@@ -59,21 +59,21 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_FLUSHTLB {
 ## Members
 
 
-`EndVirtualAddress`
+`RootPageTableAddress`
 
-The end of the affected GPU virtual address range. When both <b>StartVirtualAddress</b> and <b>EndVirtualAddress</b> are zero, the entire GPU virtual address range is affected.
+Physical address of the root page table being invalidated.
 
 `hProcess`
 
 KMD process handle,  returned from <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a>, that the page table belongs to.
 
-`RootPageTableAddress`
-
-Physical address of the root page table being invalidated.
-
 `StartVirtualAddress`
 
 The start of the affected GPU virtual address range.
+
+`EndVirtualAddress`
+
+The end of the affected GPU virtual address range. When both <b>StartVirtualAddress</b> and <b>EndVirtualAddress</b> are zero, the entire GPU virtual address range is affected.
 
 
 ## Requirements

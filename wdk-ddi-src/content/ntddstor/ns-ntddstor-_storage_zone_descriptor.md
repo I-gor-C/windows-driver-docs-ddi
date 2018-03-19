@@ -63,33 +63,33 @@ typedef struct _STORAGE_ZONE_DESCRIPTOR {
 ## Members
 
 
-`Reserved0`
-
-N/A
-
-`ResetWritePointerRecommend`
-
-
-
 `Size`
-
-N/A
-
-`WritePointerOffset`
-
-
-
-`ZoneCondition`
-
-
-
-`ZoneSize`
 
 N/A
 
 `ZoneType`
 
 N/A
+
+`ZoneCondition`
+
+
+
+`ResetWritePointerRecommend`
+
+
+
+`Reserved0`
+
+N/A
+
+`ZoneSize`
+
+N/A
+
+`WritePointerOffset`
+
+
 
 
 ## Requirements

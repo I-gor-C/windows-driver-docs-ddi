@@ -63,95 +63,9 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 ## Members
 
 
-`Filter`
+`NumberOfPairs`
 
-An array of filter structures used to select specific layout information. These contain either cluster or file reference ranges. The array length is specified by the <b>NumberOfPairs</b> member. Each range must be distinct and cannot overlap with any other range.
-
-This member is ignored if <b>QUERY_FILE_LAYOUT_FILTER_TYPE_NONE</b> is specified in <b>FilterType</b>.
-
-
-
-#### ClusterRanges
-
-Specifies a set of cluster ranges to filter layout information. The range structure has the following format.
-
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _CLUSTER_RANGE {
-    LARGE_INTEGER    StartingCluster;
-    LARGE_INTEGER    ClusterCount;
-} CLUSTER_RANGE, *PCLUSTER_RANGE;</pre>
-</td>
-</tr>
-</table></span></div>
-
-
-
-
-#### FileReferenceRanges
-
-Specifies a set of file reference ranges to filter layout information. The range structure has the following format.
-
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _FILE_REFERENCE_RANGE {
-    LARGE_INTEGER    StartingFileReference;
-    LARGE_INTEGER    EndingReferenceNumber;
-} FILE_REFERENCE_RANGE, *PFILE_REFERENCE_RANGE;</pre>
-</td>
-</tr>
-</table></span></div>
-
-`FilterType`
-
-Specifies a filtering method to restrict returned layout information. May be one of these values:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="QUERY_FILE_LAYOUT_FILTER_TYPE_NONE"></a><a id="query_file_layout_filter_type_none"></a><dl>
-<dt><b>QUERY_FILE_LAYOUT_FILTER_TYPE_NONE</b></dt>
-</dl>
-</td>
-<td width="60%">
-Perform no filtering and return all information. When using this type, <i>NumberOfPairs</i> must be 0.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS"></a><a id="query_file_layout_filter_type_clusters"></a><dl>
-<dt><b>QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS</b></dt>
-</dl>
-</td>
-<td width="60%">
-Restrict filter layout information to the ranges in <b>Filter.ClusterRanges</b>.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID"></a><a id="query_file_layout_filter_type_fileid"></a><dl>
-<dt><b>QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID</b></dt>
-</dl>
-</td>
-<td width="60%">
-Restrict filter layout information to the ranges in <b>Filter.FileReferenceRanges</b>.
-
-</td>
-</tr>
-</table>
+The number of filter ranges present in the <b>Filter</b> array.
 
 `Flags`
 
@@ -224,13 +138,99 @@ Include entries for resident streams and unallocated attributes. To use this fla
 </tr>
 </table>
 
-`NumberOfPairs`
+`FilterType`
 
-The number of filter ranges present in the <b>Filter</b> array.
+Specifies a filtering method to restrict returned layout information. May be one of these values:
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="QUERY_FILE_LAYOUT_FILTER_TYPE_NONE"></a><a id="query_file_layout_filter_type_none"></a><dl>
+<dt><b>QUERY_FILE_LAYOUT_FILTER_TYPE_NONE</b></dt>
+</dl>
+</td>
+<td width="60%">
+Perform no filtering and return all information. When using this type, <i>NumberOfPairs</i> must be 0.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS"></a><a id="query_file_layout_filter_type_clusters"></a><dl>
+<dt><b>QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS</b></dt>
+</dl>
+</td>
+<td width="60%">
+Restrict filter layout information to the ranges in <b>Filter.ClusterRanges</b>.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID"></a><a id="query_file_layout_filter_type_fileid"></a><dl>
+<dt><b>QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID</b></dt>
+</dl>
+</td>
+<td width="60%">
+Restrict filter layout information to the ranges in <b>Filter.FileReferenceRanges</b>.
+
+</td>
+</tr>
+</table>
 
 `Reserved`
 
 Reserved for system use.
+
+`Filter`
+
+An array of filter structures used to select specific layout information. These contain either cluster or file reference ranges. The array length is specified by the <b>NumberOfPairs</b> member. Each range must be distinct and cannot overlap with any other range.
+
+This member is ignored if <b>QUERY_FILE_LAYOUT_FILTER_TYPE_NONE</b> is specified in <b>FilterType</b>.
+
+
+
+#### ClusterRanges
+
+Specifies a set of cluster ranges to filter layout information. The range structure has the following format.
+
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef struct _CLUSTER_RANGE {
+    LARGE_INTEGER    StartingCluster;
+    LARGE_INTEGER    ClusterCount;
+} CLUSTER_RANGE, *PCLUSTER_RANGE;</pre>
+</td>
+</tr>
+</table></span></div>
+
+
+
+
+#### FileReferenceRanges
+
+Specifies a set of file reference ranges to filter layout information. The range structure has the following format.
+
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef struct _FILE_REFERENCE_RANGE {
+    LARGE_INTEGER    StartingFileReference;
+    LARGE_INTEGER    EndingReferenceNumber;
+} FILE_REFERENCE_RANGE, *PFILE_REFERENCE_RANGE;</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Remarks
 The <b>QUERY_FILE_LAYOUT_RESTART</b> flag is set on the first <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a> request. If filter ranges are included in the request, they are cached when <b>QUERY_FILE_LAYOUT_RESTART</b> is set. Further requests will return layout file entries until the end of the volume or until filter ranges are exhausted.
@@ -254,11 +254,3 @@ When <b>FilterType</b> is <b>QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS</b>, the <b>
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20QUERY_FILE_LAYOUT_INPUT structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

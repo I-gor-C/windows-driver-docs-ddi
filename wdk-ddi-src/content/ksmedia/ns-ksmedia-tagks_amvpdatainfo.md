@@ -68,33 +68,17 @@ typedef struct tagKS_AMVPDATAINFO {
 ## Members
 
 
-`amvpDimInfo`
+`dwSize`
 
-Describes the dimensional information of the video port, such as field and VBI dimensions.
-
-`bDataIsInterlaced`
-
-Indicates that the signal is interlaced.
-
-`bEnableDoubleClock`
-
-Specifies if the video port should enable double clocking.
-
-`bEnableVACT`
-
-Specifies if the video port should use an external VACT signal.
-
-`bFieldPolarityInverted`
-
-Indicates if the device inverts the field polarity by default.
+Specifies the size of the structure, in bytes.
 
 `dwMicrosecondsPerField`
 
 Specifies the time taken by each field, in microseconds (millionths of a second).
 
-`dwNumLinesInVREF`
+`amvpDimInfo`
 
-Specifies the number of lines of data in VREF.
+Describes the dimensional information of the video port, such as field and VBI dimensions.
 
 `dwPictAspectRatioX`
 
@@ -104,21 +88,37 @@ Indicates the picture aspect ratio in the horizontal dimension. For example, for
 
 Indicates the picture aspect ratio in the vertical dimension. For example, for a 4x3 aspect ratio this member would be 3.
 
-`dwReserved1`
+`bEnableDoubleClock`
 
-Reserved for future use. Do not use.
+Specifies if the video port should enable double clocking.
 
-`dwSize`
+`bEnableVACT`
 
-Specifies the size of the structure, in bytes.
+Specifies if the video port should use an external VACT signal.
+
+`bDataIsInterlaced`
+
+Indicates that the signal is interlaced.
+
+`lHalfLinesOdd`
+
+Indicates the number of halflines in the odd field.
+
+`bFieldPolarityInverted`
+
+Indicates if the device inverts the field polarity by default.
+
+`dwNumLinesInVREF`
+
+Specifies the number of lines of data in VREF.
 
 `lHalfLinesEven`
 
 Indicates the number of halflines in the even field.
 
-`lHalfLinesOdd`
+`dwReserved1`
 
-Indicates the number of halflines in the odd field.
+Reserved for future use. Do not use.
 
 ## Remarks
 This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566513">KSPROPERTY_VPCONFIG_VPDATAINFO</a> property.
@@ -131,11 +131,3 @@ This structure is used by the <a href="https://msdn.microsoft.com/library/window
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566513">KSPROPERTY_VPCONFIG_VPDATAINFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_AMVPDATAINFO structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

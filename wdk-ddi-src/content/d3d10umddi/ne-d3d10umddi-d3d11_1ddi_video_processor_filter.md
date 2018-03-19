@@ -65,11 +65,6 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FILTER {
 <table>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_ANAMORPHIC_SCALING</td>
-                    <td>Anamorphic scaling filter.</td>
-                </tr>
-            
-                <tr>
                     <td>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_BRIGHTNESS</td>
                     <td>Brightness filter.</td>
                 </tr>
@@ -80,13 +75,13 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FILTER {
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_EDGE_ENHANCEMENT</td>
-                    <td>Edge enhancement filter.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_HUE</td>
+                    <td>Hue filter.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_HUE</td>
-                    <td>Hue filter.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_SATURATION</td>
+                    <td>Saturation filter.</td>
                 </tr>
             
                 <tr>
@@ -95,8 +90,13 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FILTER {
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_SATURATION</td>
-                    <td>Saturation filter.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_EDGE_ENHANCEMENT</td>
+                    <td>Edge enhancement filter.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_FILTER_ANAMORPHIC_SCALING</td>
+                    <td>Anamorphic scaling filter.</td>
                 </tr>
             
                 <tr>

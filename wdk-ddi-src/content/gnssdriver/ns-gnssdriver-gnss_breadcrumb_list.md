@@ -61,10 +61,6 @@ typedef struct {
 ## Members
 
 
-`NumCrumbs`
-
-The number of breadcrumbs in the <b>IOCTL_GNSS_POP_BREADCRUMBS</b> response.
-
 `Size`
 
 Structure size.
@@ -72,6 +68,10 @@ Structure size.
 `Version`
 
 Version number.
+
+`NumCrumbs`
+
+The number of breadcrumbs in the <b>IOCTL_GNSS_POP_BREADCRUMBS</b> response.
 
 
 ## Requirements

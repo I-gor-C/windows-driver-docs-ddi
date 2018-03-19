@@ -60,17 +60,17 @@ typedef enum _RILEXECUTORFOCUSSTATEPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_EXECUTORFOCUSSTATE_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_EXECUTORFOCUSSTATE_NUMEXECUTORS</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_PARAM_EXECUTORFOCUSSTATE_STATE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_EXECUTORFOCUSSTATE_ALL</td>
                     <td></td>
                 </tr>
 </table>

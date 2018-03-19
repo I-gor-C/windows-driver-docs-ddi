@@ -64,13 +64,9 @@ struct RILEUTRAMRL {
 ## Members
 
 
-`dwCellID`
+`dwParams`
 
-Cell identity (28 bits).
-
-`dwEARFCN`
-
-EUTRA absolute radio frequency channel number (0...65535).
+A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rileutramrlparammask.md">RILEUTRAMRLPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
 
 `dwMobileCountryCode`
 
@@ -80,13 +76,21 @@ Mobile country code (0...999)
 
 Mobile Network Code (0...999)
 
-`dwParams`
+`dwCellID`
 
-A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rileutramrlparammask.md">RILEUTRAMRLPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
+Cell identity (28 bits).
+
+`dwEARFCN`
+
+EUTRA absolute radio frequency channel number (0...65535).
 
 `dwPhysCellID`
 
 Physical cell ID (0...503).
+
+`dwTAC`
+
+Tracking area code (0...65535).
 
 `dwRSRP`
 
@@ -95,10 +99,6 @@ Average reference signal received power (–1400 ... –440) in units of 0.1dBm.
 `dwRSRQ`
 
 Average reference signal received quality (–200 ... –30) in units of 0.1dBm.
-
-`dwTAC`
-
-Tracking area code (0...65535).
 
 
 ## Requirements
@@ -109,11 +109,3 @@ Tracking area code (0...65535).
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILEUTRAMRL structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -60,6 +60,43 @@ typedef struct DOT11_DATA_RATE_MAPPING_ENTRY {
 ## Members
 
 
+`ucDataRateIndex`
+
+The index value for the data rate contained in the 
+     <b>usDataRateValue</b> member. The value of the 
+     <b>ucDataRateIndex</b> member must be unique for each entry in the 
+     <b>DataRateMappingEntries</b> array.
+     
+
+This value is a bitmask as defined in the following table.
+
+<table>
+<tr>
+<th>Bits</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+0-6
+
+</td>
+<td>
+The data rate index, containing a value from 2 through127.
+
+</td>
+</tr>
+<tr>
+<td>
+7
+
+</td>
+<td>
+This bit is not used and must be set to zero.
+
+</td>
+</tr>
+</table>
+
 `ucDataRateFlag`
 
 The attributes of the data rate entry.
@@ -95,43 +132,6 @@ If set, the entry is not a standard data rate defined in IEEE 802.11 standards.
 <td></td>
 <td>
 These bits are not used and must be set to zero.
-
-</td>
-</tr>
-</table>
-
-`ucDataRateIndex`
-
-The index value for the data rate contained in the 
-     <b>usDataRateValue</b> member. The value of the 
-     <b>ucDataRateIndex</b> member must be unique for each entry in the 
-     <b>DataRateMappingEntries</b> array.
-     
-
-This value is a bitmask as defined in the following table.
-
-<table>
-<tr>
-<th>Bits</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>
-0-6
-
-</td>
-<td>
-The data rate index, containing a value from 2 through127.
-
-</td>
-</tr>
-<tr>
-<td>
-7
-
-</td>
-<td>
-This bit is not used and must be set to zero.
 
 </td>
 </tr>
@@ -412,11 +412,3 @@ The following table shows the IEEE 802.11 standard data rates, in units of megab
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-data-rate-mapping-table">
    OID_DOT11_DATA_RATE_MAPPING_TABLE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_DATA_RATE_MAPPING_ENTRY structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,13 +63,8 @@ typedef enum _STORAGE_COMPONENT_HEALTH_STATUS {
 <table>
             
                 <tr>
-                    <td>HealthStatusDisabled</td>
-                    <td>The storage device has been disabled.</td>
-                </tr>
-            
-                <tr>
-                    <td>HealthStatusFailed</td>
-                    <td>The storage device has failed.</td>
+                    <td>HealthStatusUnknown</td>
+                    <td>The storage device health status is unknown.</td>
                 </tr>
             
                 <tr>
@@ -83,13 +78,18 @@ typedef enum _STORAGE_COMPONENT_HEALTH_STATUS {
                 </tr>
             
                 <tr>
-                    <td>HealthStatusUnknown</td>
-                    <td>The storage device health status is unknown.</td>
+                    <td>HealthStatusWarning</td>
+                    <td>The storage device has issued a warning.</td>
                 </tr>
             
                 <tr>
-                    <td>HealthStatusWarning</td>
-                    <td>The storage device has issued a warning.</td>
+                    <td>HealthStatusDisabled</td>
+                    <td>The storage device has been disabled.</td>
+                </tr>
+            
+                <tr>
+                    <td>HealthStatusFailed</td>
+                    <td>The storage device has failed.</td>
                 </tr>
 </table>
 

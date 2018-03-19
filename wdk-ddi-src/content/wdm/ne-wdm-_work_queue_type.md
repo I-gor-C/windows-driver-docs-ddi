@@ -67,20 +67,8 @@ typedef enum _WORK_QUEUE_TYPE {
 <table>
             
                 <tr>
-                    <td>BackgroundWorkQueue</td>
-                    <td>System priority level. The assigned priority level is 7.</td>
-                </tr>
-            
-                <tr>
                     <td>CriticalWorkQueue</td>
                     <td>Indicates a real-time system worker thread. The assigned priority level is 13.</td>
-                </tr>
-            
-                <tr>
-                    <td>CustomPriorityWorkQueue</td>
-                    <td>The queue has a custom priority level assigned by the caller. The <b>CustomPriorityWorkQueue</b> value is the base priority level for the custom priority queue. Work items are queued at a particular priority by setting <i>QueueType</i> to <b>CustomPriorityWorkQueue</b> + <i>Priority</i> where <i>Priority</i> is the <b>KPRIORITY</b> value for the work item.
-
-This queue type is valid starting with Windows 8.1.</td>
                 </tr>
             
                 <tr>
@@ -94,13 +82,13 @@ This queue type is valid starting with Windows 8.1.</td>
                 </tr>
             
                 <tr>
-                    <td>MaximumWorkQueue</td>
-                    <td>System  priority maximum. No priority level assigned.</td>
+                    <td>NormalWorkQueue</td>
+                    <td>System priority level. The assigned priority level is 8</td>
                 </tr>
             
                 <tr>
-                    <td>NormalWorkQueue</td>
-                    <td>System priority level. The assigned priority level is 8</td>
+                    <td>BackgroundWorkQueue</td>
+                    <td>System priority level. The assigned priority level is 7.</td>
                 </tr>
             
                 <tr>
@@ -111,6 +99,18 @@ This queue type is valid starting with Windows 8.1.</td>
                 <tr>
                     <td>SuperCriticalWorkQueue</td>
                     <td>System  priority level. The assigned priority level is 14.</td>
+                </tr>
+            
+                <tr>
+                    <td>MaximumWorkQueue</td>
+                    <td>System  priority maximum. No priority level assigned.</td>
+                </tr>
+            
+                <tr>
+                    <td>CustomPriorityWorkQueue</td>
+                    <td>The queue has a custom priority level assigned by the caller. The <b>CustomPriorityWorkQueue</b> value is the base priority level for the custom priority queue. Work items are queued at a particular priority by setting <i>QueueType</i> to <b>CustomPriorityWorkQueue</b> + <i>Priority</i> where <i>Priority</i> is the <b>KPRIORITY</b> value for the work item.
+
+This queue type is valid starting with Windows 8.1.</td>
                 </tr>
 </table>
 
@@ -139,11 +139,3 @@ For more information about system worker threads, see <a href="https://msdn.micr
 
 
 <a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WORK_QUEUE_TYPE enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

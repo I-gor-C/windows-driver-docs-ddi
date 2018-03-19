@@ -153,6 +153,187 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 ## Members
 
 
+`Type`
+
+Identifies the resource type. The constant value specified for <b>Type</b> indicates which structure within the <b>u</b> union is valid, as indicated in the following table. (These flags are used within both <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> and <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structures, except where noted.)
+
+<table>
+<tr>
+<th>Type value</th>
+<th>u member substructure</th>
+</tr>
+<tr>
+<td>
+<b>CmResourceTypePort</b>
+
+</td>
+<td>
+<b>u.Port</b>
+
+</td>
+</tr>
+<tr>
+<td>
+<b>CmResourceTypeInterrupt</b>
+
+</td>
+<td><b>u.Interrupt</b> or <b>u.MessageInterrupt</b>.If the CM_RESOURCE_INTERRUPT_MESSAGE flag of <b>Flags</b> is set, use <b>u.MessageInterrupt</b>; otherwise, use <b>u.Interrupt</b>.
+
+</td>
+</tr>
+<tr>
+<td>
+<b>CmResourceTypeMemory</b>
+
+</td>
+<td>
+<b>u.Memory</b>
+
+</td>
+</tr>
+<tr>
+<td>
+<b>CmResourceTypeMemoryLarge</b>
+
+</td>
+<td>One of <b>u.Memory40</b>, <b>u.Memory48</b>, or <b>u.Memory64</b>.The CM_RESOURCE_MEMORY_LARGE_<i>XXX</i> flags set in the <b>Flags</b> member determines which structure is used.
+
+</td>
+</tr>
+<tr>
+<td>
+<b>CmResourceTypeDma</b>
+
+</td>
+<td>
+<b>u.Dma</b>
+          (if CM_RESOURCE_DMA_V3 is not set) or <b>u.DmaV3</b> (if CM_RESOURCE_DMA_V3 flag is set)
+
+</td>
+</tr>
+<tr>
+<td>
+<b>CmResourceTypeDevicePrivate</b>
+
+</td>
+<td>
+<b>u.DevicePrivate</b>
+
+</td>
+</tr>
+<tr>
+<td>
+<b>CmResourceTypeBusNumber</b>
+
+</td>
+<td>
+<b>u.BusNumber</b>
+
+</td>
+</tr>
+<tr>
+<td>
+<b>CmResourceTypeDeviceSpecific</b>
+
+</td>
+<td><b>u.DeviceSpecificData</b>(Not used within <b>IO_RESOURCE_DESCRIPTOR</b>.)
+
+</td>
+</tr>
+<tr>
+<td>
+<b>CmResourceTypePcCardConfig</b>
+
+</td>
+<td>
+<b>u.DevicePrivate</b>
+
+</td>
+</tr>
+<tr>
+<td>
+<b>CmResourceTypeMfCardConfig</b>
+
+</td>
+<td>
+<b>u.DevicePrivate</b>
+
+</td>
+</tr>
+<tr>
+<td>
+<b>CmResourceTypeConnection</b>
+
+</td>
+<td>
+<b>u.Connection</b>
+
+</td>
+</tr>
+<tr>
+<td>
+<b>CmResourceTypeConfigData</b>
+
+</td>
+<td>
+<i>Reserved for system use.</i>
+
+</td>
+</tr>
+<tr>
+<td>
+<b>CmResourceTypeNonArbitrated</b>
+
+</td>
+<td>
+<i>
+           Not used.</i>
+
+</td>
+</tr>
+</table>
+
+`ShareDisposition`
+
+Indicates whether the described resource can be shared. Valid constant values are listed in the following table.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="CmResourceShareDeviceExclusive"></a><a id="cmresourcesharedeviceexclusive"></a><a id="CMRESOURCESHAREDEVICEEXCLUSIVE"></a><dl>
+<dt><b>CmResourceShareDeviceExclusive</b></dt>
+</dl>
+</td>
+<td width="60%">
+The device requires exclusive use of the resource.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="CmResourceShareDriverExclusive"></a><a id="cmresourcesharedriverexclusive"></a><a id="CMRESOURCESHAREDRIVEREXCLUSIVE"></a><dl>
+<dt><b>CmResourceShareDriverExclusive</b></dt>
+</dl>
+</td>
+<td width="60%">
+The driver requires exclusive use of the resource. (Not supported for WDM drivers.)
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="CmResourceShareShared"></a><a id="cmresourceshareshared"></a><a id="CMRESOURCESHARESHARED"></a><dl>
+<dt><b>CmResourceShareShared</b></dt>
+</dl>
+</td>
+<td width="60%">
+The resource can be shared without restriction.
+
+</td>
+</tr>
+</table>
+
 `Flags`
 
 Contains flag bits that are specific to the resource type, as indicated in the following table. Flags can be bitwise-ORed together as appropriate.
@@ -559,187 +740,6 @@ Use the <b>DmaV3</b> member instead of the <b>Dma</b> member. The <b>DmaV3</b> m
 </tr>
 </table>
 
-`ShareDisposition`
-
-Indicates whether the described resource can be shared. Valid constant values are listed in the following table.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="CmResourceShareDeviceExclusive"></a><a id="cmresourcesharedeviceexclusive"></a><a id="CMRESOURCESHAREDEVICEEXCLUSIVE"></a><dl>
-<dt><b>CmResourceShareDeviceExclusive</b></dt>
-</dl>
-</td>
-<td width="60%">
-The device requires exclusive use of the resource.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="CmResourceShareDriverExclusive"></a><a id="cmresourcesharedriverexclusive"></a><a id="CMRESOURCESHAREDRIVEREXCLUSIVE"></a><dl>
-<dt><b>CmResourceShareDriverExclusive</b></dt>
-</dl>
-</td>
-<td width="60%">
-The driver requires exclusive use of the resource. (Not supported for WDM drivers.)
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="CmResourceShareShared"></a><a id="cmresourceshareshared"></a><a id="CMRESOURCESHARESHARED"></a><dl>
-<dt><b>CmResourceShareShared</b></dt>
-</dl>
-</td>
-<td width="60%">
-The resource can be shared without restriction.
-
-</td>
-</tr>
-</table>
-
-`Type`
-
-Identifies the resource type. The constant value specified for <b>Type</b> indicates which structure within the <b>u</b> union is valid, as indicated in the following table. (These flags are used within both <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> and <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structures, except where noted.)
-
-<table>
-<tr>
-<th>Type value</th>
-<th>u member substructure</th>
-</tr>
-<tr>
-<td>
-<b>CmResourceTypePort</b>
-
-</td>
-<td>
-<b>u.Port</b>
-
-</td>
-</tr>
-<tr>
-<td>
-<b>CmResourceTypeInterrupt</b>
-
-</td>
-<td><b>u.Interrupt</b> or <b>u.MessageInterrupt</b>.If the CM_RESOURCE_INTERRUPT_MESSAGE flag of <b>Flags</b> is set, use <b>u.MessageInterrupt</b>; otherwise, use <b>u.Interrupt</b>.
-
-</td>
-</tr>
-<tr>
-<td>
-<b>CmResourceTypeMemory</b>
-
-</td>
-<td>
-<b>u.Memory</b>
-
-</td>
-</tr>
-<tr>
-<td>
-<b>CmResourceTypeMemoryLarge</b>
-
-</td>
-<td>One of <b>u.Memory40</b>, <b>u.Memory48</b>, or <b>u.Memory64</b>.The CM_RESOURCE_MEMORY_LARGE_<i>XXX</i> flags set in the <b>Flags</b> member determines which structure is used.
-
-</td>
-</tr>
-<tr>
-<td>
-<b>CmResourceTypeDma</b>
-
-</td>
-<td>
-<b>u.Dma</b>
-          (if CM_RESOURCE_DMA_V3 is not set) or <b>u.DmaV3</b> (if CM_RESOURCE_DMA_V3 flag is set)
-
-</td>
-</tr>
-<tr>
-<td>
-<b>CmResourceTypeDevicePrivate</b>
-
-</td>
-<td>
-<b>u.DevicePrivate</b>
-
-</td>
-</tr>
-<tr>
-<td>
-<b>CmResourceTypeBusNumber</b>
-
-</td>
-<td>
-<b>u.BusNumber</b>
-
-</td>
-</tr>
-<tr>
-<td>
-<b>CmResourceTypeDeviceSpecific</b>
-
-</td>
-<td><b>u.DeviceSpecificData</b>(Not used within <b>IO_RESOURCE_DESCRIPTOR</b>.)
-
-</td>
-</tr>
-<tr>
-<td>
-<b>CmResourceTypePcCardConfig</b>
-
-</td>
-<td>
-<b>u.DevicePrivate</b>
-
-</td>
-</tr>
-<tr>
-<td>
-<b>CmResourceTypeMfCardConfig</b>
-
-</td>
-<td>
-<b>u.DevicePrivate</b>
-
-</td>
-</tr>
-<tr>
-<td>
-<b>CmResourceTypeConnection</b>
-
-</td>
-<td>
-<b>u.Connection</b>
-
-</td>
-</tr>
-<tr>
-<td>
-<b>CmResourceTypeConfigData</b>
-
-</td>
-<td>
-<i>Reserved for system use.</i>
-
-</td>
-</tr>
-<tr>
-<td>
-<b>CmResourceTypeNonArbitrated</b>
-
-</td>
-<td>
-<i>
-           Not used.</i>
-
-</td>
-</tr>
-</table>
-
 `u`
 
 
@@ -815,11 +815,3 @@ A <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure can describe either a raw (bus
 
 
 <a href="..\wudfwdm\ns-wudfwdm-_cm_full_resource_descriptor.md">CM_FULL_RESOURCE_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_PARTIAL_RESOURCE_DESCRIPTOR structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

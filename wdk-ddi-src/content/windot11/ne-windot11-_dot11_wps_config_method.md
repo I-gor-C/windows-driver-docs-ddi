@@ -62,18 +62,13 @@ typedef enum _DOT11_WPS_CONFIG_METHOD {
 <table>
             
                 <tr>
+                    <td>DOT11_WPS_CONFIG_METHOD_NULL</td>
+                    <td>No setup method is configured.</td>
+                </tr>
+            
+                <tr>
                     <td>DOT11_WPS_CONFIG_METHOD_DISPLAY</td>
                     <td>Setup is configured by a software user interface.</td>
-                </tr>
-            
-                <tr>
-                    <td>DOT11_WPS_CONFIG_METHOD_KEYPAD</td>
-                    <td>Setup is configured by a keypad action.</td>
-                </tr>
-            
-                <tr>
-                    <td>DOT11_WPS_CONFIG_METHOD_NFC_INTERFACE</td>
-                    <td></td>
                 </tr>
             
                 <tr>
@@ -82,13 +77,18 @@ typedef enum _DOT11_WPS_CONFIG_METHOD {
                 </tr>
             
                 <tr>
-                    <td>DOT11_WPS_CONFIG_METHOD_NULL</td>
-                    <td>No setup method is configured.</td>
+                    <td>DOT11_WPS_CONFIG_METHOD_NFC_INTERFACE</td>
+                    <td></td>
                 </tr>
             
                 <tr>
                     <td>DOT11_WPS_CONFIG_METHOD_PUSHBUTTON</td>
                     <td>Setup is configured by push button enablement.</td>
+                </tr>
+            
+                <tr>
+                    <td>DOT11_WPS_CONFIG_METHOD_KEYPAD</td>
+                    <td>Setup is configured by a keypad action.</td>
                 </tr>
             
                 <tr>

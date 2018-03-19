@@ -60,11 +60,7 @@ typedef struct _RILEXCHANGEUICCAPDUPARAMS {
 ## Members
 
 
-`bAPDU`
-
-
-
-`dwAPDULength`
+`dwSlotIndex`
 
 
 
@@ -72,7 +68,11 @@ typedef struct _RILEXCHANGEUICCAPDUPARAMS {
 
 
 
-`dwSlotIndex`
+`dwAPDULength`
+
+
+
+`bAPDU`
 
 
 

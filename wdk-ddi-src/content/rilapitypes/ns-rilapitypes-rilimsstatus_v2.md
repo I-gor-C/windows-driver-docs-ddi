@@ -67,7 +67,7 @@ typedef struct _RILIMSSTATUS_V2 {
 
 
 
-`dwAvailableServices`
+`dwParams`
 
 
 
@@ -75,15 +75,15 @@ typedef struct _RILIMSSTATUS_V2 {
 
 
 
-`dwParams`
+`hUiccApp`
+
+
+
+`dwAvailableServices`
 
 
 
 `dwSMSSupportedFormat`
-
-
-
-`hUiccApp`
 
 
 

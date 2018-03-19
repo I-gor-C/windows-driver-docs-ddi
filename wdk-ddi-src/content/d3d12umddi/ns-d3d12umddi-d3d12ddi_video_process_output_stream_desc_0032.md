@@ -62,6 +62,14 @@ typedef struct _D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032 {
 ## Members
 
 
+`Format`
+
+The DXGI format of the output texture.
+
+`ColorSpace`
+
+A DXGI_COLOR_SPACE_TYPE value that specifies the colorspace for the video processor output surface.
+
 `AlphaFillMode`
 
 The alpha fill mode for data that the video processor writes to the render target.  See D3D12DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE.
@@ -74,21 +82,13 @@ The zero-based index of an input stream. This parameter is used if AlphaFillMode
 
 
 
-`ColorSpace`
+`FrameRate`
 
-A DXGI_COLOR_SPACE_TYPE value that specifies the colorspace for the video processor output surface.
+The frame rate of the output video stream, specified as a DXGI_RATIONAL structure.
 
 `EnableStereo`
 
 If TRUE, stereo output is enabled. Otherwise, the video processor produces mono video frames.
-
-`Format`
-
-The DXGI format of the output texture.
-
-`FrameRate`
-
-The frame rate of the output video stream, specified as a DXGI_RATIONAL structure.
 
 
 ## Requirements

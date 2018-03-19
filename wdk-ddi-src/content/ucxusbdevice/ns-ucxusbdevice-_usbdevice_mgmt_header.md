@@ -59,13 +59,13 @@ typedef struct _USBDEVICE_MGMT_HEADER {
 ## Members
 
 
-`Hub`
-
-The handle to the USB hub that is physically connected to the bus.
-
 `Size`
 
 The size in bytes of this structure.
+
+`Hub`
+
+The handle to the USB hub that is physically connected to the bus.
 
 `UsbDevice`
 

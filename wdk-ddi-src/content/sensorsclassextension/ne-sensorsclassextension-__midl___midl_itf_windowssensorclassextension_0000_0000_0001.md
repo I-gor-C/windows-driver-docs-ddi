@@ -67,6 +67,31 @@ enum SensorState {
 <table>
             
                 <tr>
+                    <td>SENSOR_STATE_MIN</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>SENSOR_STATE_READY</td>
+                    <td>Indicates that the sensor is ready.</td>
+                </tr>
+            
+                <tr>
+                    <td>SENSOR_STATE_NOT_AVAILABLE</td>
+                    <td>Indicates that the sensor is not currently available for use.</td>
+                </tr>
+            
+                <tr>
+                    <td>SENSOR_STATE_NO_DATA</td>
+                    <td>Indicates that no data available.</td>
+                </tr>
+            
+                <tr>
+                    <td>SENSOR_STATE_INITIALIZING</td>
+                    <td>Indicates that the sensor is not yet ready for use. Try again.</td>
+                </tr>
+            
+                <tr>
                     <td>SENSOR_STATE_ACCESS_DENIED</td>
                     <td>Reserved. Do not use in driver code.</td>
                 </tr>
@@ -77,33 +102,8 @@ enum SensorState {
                 </tr>
             
                 <tr>
-                    <td>SENSOR_STATE_INITIALIZING</td>
-                    <td>Indicates that the sensor is not yet ready for use. Try again.</td>
-                </tr>
-            
-                <tr>
                     <td>SENSOR_STATE_MAX</td>
                     <td>Reserved.</td>
-                </tr>
-            
-                <tr>
-                    <td>SENSOR_STATE_MIN</td>
-                    <td>Reserved.</td>
-                </tr>
-            
-                <tr>
-                    <td>SENSOR_STATE_NO_DATA</td>
-                    <td>Indicates that no data available.</td>
-                </tr>
-            
-                <tr>
-                    <td>SENSOR_STATE_NOT_AVAILABLE</td>
-                    <td>Indicates that the sensor is not currently available for use.</td>
-                </tr>
-            
-                <tr>
-                    <td>SENSOR_STATE_READY</td>
-                    <td>Indicates that the sensor is ready.</td>
                 </tr>
 </table>
 
@@ -124,11 +124,3 @@ This enumeration also defines values used for the <a href="https://msdn.microsof
 
 
 <a href="https://msdn.microsoft.com/ae3bc846-df63-4186-9554-f4600e1f2066">ISensorClassExtension::PostStateChange</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20SensorState enumeration%20 RELEASE:%20(2/22/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

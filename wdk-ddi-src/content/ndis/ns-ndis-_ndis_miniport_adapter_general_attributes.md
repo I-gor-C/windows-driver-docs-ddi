@@ -91,74 +91,6 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
 ## Members
 
 
-`AccessType`
-
-A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a> NDIS network interface
-     access type.
-
-`AutoNegotiationFlags`
-
-The auto-negotiation settings for the miniport adapter. This member is created from a bitwise OR
-     of the following flags:
-     
-
-
-
-
-
-#### NDIS_LINK_STATE_XMIT_LINK_SPEED_AUTO_NEGOTIATED
-
-The adapter has auto-negotiated the transmit link speed with the link partner.
-
-
-
-#### NDIS_LINK_STATE_RCV_LINK_SPEED_AUTO_NEGOTIATED
-
-The adapter has auto-negotiated the receive link speed with the link partner.
-
-
-
-#### NDIS_LINK_STATE_DUPLEX_AUTO_NEGOTIATED
-
-The adapter has auto-negotiated the duplex state with the link partner.
-
-
-
-#### NDIS_LINK_STATE_PAUSE_FUNCTIONS_AUTO_NEGOTIATED
-
-The adapter has auto-negotiated the pause functions with the link partner.
-
-`ConnectionType`
-
-A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568741">NET_IF_CONNECTION_TYPE</a> NDIS network
-     interface connection type.
-
-`ContextBackFillSize`
-
-The required context backfill size, in bytes, of the driver.
-
-`CurrentMacAddress`
-
-The current MAC address. For example, the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569069">OID_802_3_CURRENT_ADDRESS</a> OID
-     specifies the current MAC address for IEEE 802.3 drivers.
-
-`DataBackFillSize`
-
-The required data backfill size, in bytes, of the driver.
-
-`DirectionType`
-
-A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a> NDIS network
-     interface direction type.
-
-`Flags`
-
-Reserved for NDIS.
-
 `Header`
 
 The 
@@ -192,47 +124,45 @@ Set the
         <b>Size</b> member to
         <b>NDIS_SIZEOF_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES_REVISION_1</b>.
 
-`IfConnectorPresent`
+`Flags`
 
-A Boolean value that indicates if a connector is present. Set this value to <b>TRUE</b> if there is a
-     physical adapter.
+Reserved for NDIS.
 
-`IfType`
+`MediaType`
 
-The Internet Assigned Numbers Authority (IANA) interface type. For example,
-     IF_TYPE_ETHERNET_CSMACD (6) is the value for 
-     <b>IfType</b> that is assigned to any Ethernet-like interface. For a list if interface types, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff565767">NDIS Interface Types</a>.
+The 
+     <b>NdisMedium<i>Xxx</i></b> type that the miniport adapter supports. For more information, see 
+     <a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>.
 
-`LookaheadSize`
+`PhysicalMediumType`
 
-The lookahead size for the miniport adapter. For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569574">OID_GEN_CURRENT_LOOKAHEAD</a>.
+The physical medium type for the miniport adapter. For more information, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569621">OID_GEN_PHYSICAL_MEDIUM</a>
 
-`MacAddressLength`
+`MtuSize`
 
-The MAC address length, in bytes. The MAC address length is specific to the type of media.
+The maximum transfer unit (MTU) size. For more information, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569598">OID_GEN_MAXIMUM_FRAME_SIZE</a>.
 
-`MacOptions`
+`MaxXmitLinkSpeed`
 
-The MAC options for the miniport adapter. For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569597">OID_GEN_MAC_OPTIONS</a>.
+The maximum transmit link speed of the adapter in bits per second. For more information, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569602">OID_GEN_MAX_LINK_SPEED</a>.
 
-`MaxMulticastListSize`
+`XmitLinkSpeed`
 
-The multicast address list size for the miniport adapter. For more information, see 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-802-3-maximum-list-size">
-     OID_802_3_MAXIMUM_LIST_SIZE</a>.
+The current transmit link speed of the adapter in bits per second. For more information, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569594">OID_GEN_LINK_SPEED_EX</a>.
 
 `MaxRcvLinkSpeed`
 
 The maximum receive link speed of the adapter in bits per second. For more information, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569602">OID_GEN_MAX_LINK_SPEED</a>.
 
-`MaxXmitLinkSpeed`
+`RcvLinkSpeed`
 
-The maximum transmit link speed of the adapter in bits per second. For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569602">OID_GEN_MAX_LINK_SPEED</a>.
+The current receive link speed of the adapter in bits per second. For more information, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569594">OID_GEN_LINK_SPEED_EX</a>.
 
 `MediaConnectState`
 
@@ -245,27 +175,10 @@ The media connect state for the miniport adapter. For more information, see
 The media duplex state for the miniport adapter. For more information, see 
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-media-duplex-state">OID_GEN_MEDIA_DUPLEX_STATE</a>.
 
-`MediaType`
+`LookaheadSize`
 
-The 
-     <b>NdisMedium<i>Xxx</i></b> type that the miniport adapter supports. For more information, see 
-     <a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>.
-
-`MtuSize`
-
-The maximum transfer unit (MTU) size. For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569598">OID_GEN_MAXIMUM_FRAME_SIZE</a>.
-
-`PermanentMacAddress`
-
-The permanent MAC address. For example, the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569074">OID_802_3_PERMANENT_ADDRESS</a> OID
-     specifies the permanent MAC address for IEEE 802.3 drivers.
-
-`PhysicalMediumType`
-
-The physical medium type for the miniport adapter. For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569621">OID_GEN_PHYSICAL_MEDIUM</a>
+The lookahead size for the miniport adapter. For more information, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569574">OID_GEN_CURRENT_LOOKAHEAD</a>.
 
 `PowerManagementCapabilities`
 
@@ -276,17 +189,38 @@ The Plug and Play (PnP) capabilities of the miniport adapter. For more informati
      <b>PowerManagementCapabilities</b> to <b>NULL</b>. NDIS 6.20 and later drivers must use the 
      <b>PowerManagementCapabilitiesEx</b> member instead.
 
-`PowerManagementCapabilitiesEx`
+`MacOptions`
 
-A pointer to an 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_pm_capabilities.md">NDIS_PM_CAPABILITIES</a> structure. This
-     structure specifies power management capabilities of the miniport adapter. This member is mandatory for
-     NDIS 6.20 and later drivers.
+The MAC options for the miniport adapter. For more information, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569597">OID_GEN_MAC_OPTIONS</a>.
 
-`RcvLinkSpeed`
+`SupportedPacketFilters`
 
-The current receive link speed of the adapter in bits per second. For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569594">OID_GEN_LINK_SPEED_EX</a>.
+The packet filter flags for the miniport adapter. For more information, see 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-supported-packet-filters">
+     OID_GEN_SUPPORTED_PACKET_FILTERS</a>.
+
+`MaxMulticastListSize`
+
+The multicast address list size for the miniport adapter. For more information, see 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-802-3-maximum-list-size">
+     OID_802_3_MAXIMUM_LIST_SIZE</a>.
+
+`MacAddressLength`
+
+The MAC address length, in bytes. The MAC address length is specific to the type of media.
+
+`PermanentMacAddress`
+
+The permanent MAC address. For example, the 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569074">OID_802_3_PERMANENT_ADDRESS</a> OID
+     specifies the permanent MAC address for IEEE 802.3 drivers.
+
+`CurrentMacAddress`
+
+The current MAC address. For example, the 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569069">OID_802_3_CURRENT_ADDRESS</a> OID
+     specifies the current MAC address for IEEE 802.3 drivers.
 
 `RecvScaleCapabilities`
 
@@ -296,62 +230,35 @@ The receive side scaling (RSS) capabilities of the NIC. If the miniport adapter 
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-receive-scale-capabilities">
      OID_GEN_RECEIVE_SCALE_CAPABILITIES</a>.
 
-`SupportedOidList`
+`AccessType`
 
-A list of OIDs that the miniport driver supports. For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569642">OID_GEN_SUPPORTED_LIST</a>.
+A 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a> NDIS network interface
+     access type.
 
-`SupportedOidListLength`
+`DirectionType`
 
-The size, in bytes, of the OID list at 
-     <b>SupportedOidList</b> .
+A 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a> NDIS network
+     interface direction type.
 
-`SupportedPacketFilters`
+`ConnectionType`
 
-The packet filter flags for the miniport adapter. For more information, see 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-supported-packet-filters">
-     OID_GEN_SUPPORTED_PACKET_FILTERS</a>.
+A 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568741">NET_IF_CONNECTION_TYPE</a> NDIS network
+     interface connection type.
 
-`SupportedPauseFunctions`
+`IfType`
 
-Support for the IEEE 802.3 pause frames as one of the following pause functions:
-     
+The Internet Assigned Numbers Authority (IANA) interface type. For example,
+     IF_TYPE_ETHERNET_CSMACD (6) is the value for 
+     <b>IfType</b> that is assigned to any Ethernet-like interface. For a list if interface types, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff565767">NDIS Interface Types</a>.
 
+`IfConnectorPresent`
 
-
-
-
-#### NdisPauseFunctionsUnsupported
-
-Indicates that the adapter or link partner does not support pause frames.
-
-
-
-#### NdisPauseFunctionsSendOnly
-
-Indicates that the adapter and link partner only support sending pause frames from the adapter
-       to the link partner.
-
-
-
-#### NdisPauseFunctionsReceiveOnly
-
-Indicates that the adapter and link partner only support sending pause frames from the link
-       partner to the adapter
-
-
-
-#### NdisPauseFunctionsSendAndReceive
-
-Indicates that the adapter and link partner support sending and receiving pause frames in both
-       transint and receive directions.
-
-
-
-#### NdisPauseFunctionsUnknown
-
-Indicates that pause frame negotiation is in progress. The pause frame support that the link
-       partner provides is unknown.
+A Boolean value that indicates if a connector is present. Set this value to <b>TRUE</b> if there is a
+     physical adapter.
 
 `SupportedStatistics`
 
@@ -493,10 +400,103 @@ The data in the
 The data in the 
        <b>ifHCOutBroadcastOctets</b> member of NDIS_STATISTICS_INFO is valid.
 
-`XmitLinkSpeed`
+`SupportedPauseFunctions`
 
-The current transmit link speed of the adapter in bits per second. For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569594">OID_GEN_LINK_SPEED_EX</a>.
+Support for the IEEE 802.3 pause frames as one of the following pause functions:
+     
+
+
+
+
+
+#### NdisPauseFunctionsUnsupported
+
+Indicates that the adapter or link partner does not support pause frames.
+
+
+
+#### NdisPauseFunctionsSendOnly
+
+Indicates that the adapter and link partner only support sending pause frames from the adapter
+       to the link partner.
+
+
+
+#### NdisPauseFunctionsReceiveOnly
+
+Indicates that the adapter and link partner only support sending pause frames from the link
+       partner to the adapter
+
+
+
+#### NdisPauseFunctionsSendAndReceive
+
+Indicates that the adapter and link partner support sending and receiving pause frames in both
+       transint and receive directions.
+
+
+
+#### NdisPauseFunctionsUnknown
+
+Indicates that pause frame negotiation is in progress. The pause frame support that the link
+       partner provides is unknown.
+
+`DataBackFillSize`
+
+The required data backfill size, in bytes, of the driver.
+
+`ContextBackFillSize`
+
+The required context backfill size, in bytes, of the driver.
+
+`SupportedOidList`
+
+A list of OIDs that the miniport driver supports. For more information, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569642">OID_GEN_SUPPORTED_LIST</a>.
+
+`SupportedOidListLength`
+
+The size, in bytes, of the OID list at 
+     <b>SupportedOidList</b> .
+
+`AutoNegotiationFlags`
+
+The auto-negotiation settings for the miniport adapter. This member is created from a bitwise OR
+     of the following flags:
+     
+
+
+
+
+
+#### NDIS_LINK_STATE_XMIT_LINK_SPEED_AUTO_NEGOTIATED
+
+The adapter has auto-negotiated the transmit link speed with the link partner.
+
+
+
+#### NDIS_LINK_STATE_RCV_LINK_SPEED_AUTO_NEGOTIATED
+
+The adapter has auto-negotiated the receive link speed with the link partner.
+
+
+
+#### NDIS_LINK_STATE_DUPLEX_AUTO_NEGOTIATED
+
+The adapter has auto-negotiated the duplex state with the link partner.
+
+
+
+#### NDIS_LINK_STATE_PAUSE_FUNCTIONS_AUTO_NEGOTIATED
+
+The adapter has auto-negotiated the pause functions with the link partner.
+
+`PowerManagementCapabilitiesEx`
+
+A pointer to an 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_pm_capabilities.md">NDIS_PM_CAPABILITIES</a> structure. This
+     structure specifies power management capabilities of the miniport adapter. This member is mandatory for
+     NDIS 6.20 and later drivers.
 
 ## Remarks
 A miniport driver passes a pointer to an NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES structure in the 
@@ -618,11 +618,3 @@ A miniport driver passes a pointer to an NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTE
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

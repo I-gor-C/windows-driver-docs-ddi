@@ -62,11 +62,6 @@ typedef enum _WDI_ACTION_FRAME_CATEGORY {
 <table>
             
                 <tr>
-                    <td>WDI_ACTION_FRAME_CATEGORY_FAST_BSS_TRANSITION</td>
-                    <td>Specifies a Fast BSS Transition Action frame.  It is used by a currently-associated AP to enable fast BSS transitions over the DS.  Over the DS transitions are not supported in Windows 10.</td>
-                </tr>
-            
-                <tr>
                     <td>WDI_ACTION_FRAME_CATEGORY_PUBLIC</td>
                     <td>Specifies a Public Action frame.  It is used in:
 
@@ -80,6 +75,11 @@ typedef enum _WDI_ACTION_FRAME_CATEGORY {
                 <tr>
                     <td>WDI_ACTION_FRAME_CATEGORY_RADIO_MEASUREMENT</td>
                     <td>Specifies a Radio Measurement Report frame. It is transmitted by a STA requesting another STA to make one or more measurements on one or more channels.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_ACTION_FRAME_CATEGORY_FAST_BSS_TRANSITION</td>
+                    <td>Specifies a Fast BSS Transition Action frame.  It is used by a currently-associated AP to enable fast BSS transitions over the DS.  Over the DS transitions are not supported in Windows 10.</td>
                 </tr>
             
                 <tr>

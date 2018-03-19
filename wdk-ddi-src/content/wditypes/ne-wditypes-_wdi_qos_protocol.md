@@ -61,16 +61,6 @@ typedef enum _WDI_QOS_PROTOCOL {
 <table>
             
                 <tr>
-                    <td>WDI_QOS_PROTOCOL_11E</td>
-                    <td>802.11E</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_QOS_PROTOCOL_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WDI_QOS_PROTOCOL_NONE</td>
                     <td>None</td>
                 </tr>
@@ -78,6 +68,16 @@ typedef enum _WDI_QOS_PROTOCOL {
                 <tr>
                     <td>WDI_QOS_PROTOCOL_WMM</td>
                     <td>Wi-Fi Multimedia (WMM, formerly known as Wireless Multimedia Extensions)</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_QOS_PROTOCOL_11E</td>
+                    <td>802.11E</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_QOS_PROTOCOL_MAX</td>
+                    <td></td>
                 </tr>
 </table>
 

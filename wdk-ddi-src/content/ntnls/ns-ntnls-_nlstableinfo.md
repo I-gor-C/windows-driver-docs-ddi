@@ -59,21 +59,21 @@ typedef struct _NLSTABLEINFO {
 ## Members
 
 
-`AnsiTableInfo`
-
-Specifies an ANSI table.
-
-`LowerCaseTable`
-
-
-
 `OemTableInfo`
 
 Specifies OEM table.
 
+`AnsiTableInfo`
+
+Specifies an ANSI table.
+
 `UpperCaseTable`
 
 Specifies an 844 format uppercase table.
+
+`LowerCaseTable`
+
+
 
 
 ## Requirements

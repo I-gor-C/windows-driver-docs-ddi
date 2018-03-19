@@ -70,8 +70,23 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
 <table>
             
                 <tr>
-                    <td>DOT11_CIPHER_ALGO_BIP</td>
-                    <td>Specifies a BIP cipher algorithm.</td>
+                    <td>DOT11_CIPHER_ALGO_NONE</td>
+                    <td>Specifies that no cipher algorithm is enabled or supported.</td>
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_WEP40</td>
+                    <td>Specifies a Wired Equivalent Privacy (WEP) algorithm, which is the RC4-based algorithm that is
+     specified in the IEEE 802.11-2012 standard. This enumerator specifies the WEP cipher algorithm with a
+     40-bit cipher key.</td>
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_TKIP</td>
+                    <td>Specifies a Temporal Key Integrity Protocol (TKIP) algorithm, which is the RC4-based cipher suite
+     that is based on the algorithms that are defined in the WPA specification and IEEE 802.11i-2004
+     standard. This cipher also uses the Michael Message Integrity Code (MIC) algorithm for forgery
+     protection.</td>
                 </tr>
             
                 <tr>
@@ -81,35 +96,26 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
                 </tr>
             
                 <tr>
+                    <td>DOT11_CIPHER_ALGO_WEP104</td>
+                    <td>Specifies a WEP cipher algorithm with a 104-bit cipher key.</td>
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_BIP</td>
+                    <td>Specifies a BIP cipher algorithm.</td>
+                </tr>
+            
+                <tr>
                     <td>DOT11_CIPHER_ALGO_GCMP</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>DOT11_CIPHER_ALGO_IHV_END</td>
-                    <td>Specifies the end of the range that is used to define proprietary authentication algorithms that
-     are developed by an IHV.
-     
+                    <td>DOT11_CIPHER_ALGO_WPA_USE_GROUP</td>
+                    <td>Specifies a Wifi Protected Access (WPA) Use Group Key cipher suite.
 
-The 
-     <b>DOT11_CIPHER_ALGO_IHV_END</b> enumerator is valid only when the miniport driver is operating in ExtSTA
-     mode.</td>
-                </tr>
-            
-                <tr>
-                    <td>DOT11_CIPHER_ALGO_IHV_START</td>
-                    <td>Specifies the start of the range that is used to define proprietary cipher algorithms that are
-     developed by an independent hardware vendor (IHV).
-     
-
-The 
-     <b>DOT11_CIPHER_ALGO_IHV_START</b> enumerator is valid only when the miniport driver is operating in
-     ExtSTA mode.</td>
-                </tr>
-            
-                <tr>
-                    <td>DOT11_CIPHER_ALGO_NONE</td>
-                    <td>Specifies that no cipher algorithm is enabled or supported.</td>
+For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE
+      802.11i-2004 standard.</td>
                 </tr>
             
                 <tr>
@@ -118,14 +124,6 @@ The
 
 For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE
       802.11i-2004 standard.</td>
-                </tr>
-            
-                <tr>
-                    <td>DOT11_CIPHER_ALGO_TKIP</td>
-                    <td>Specifies a Temporal Key Integrity Protocol (TKIP) algorithm, which is the RC4-based cipher suite
-     that is based on the algorithms that are defined in the WPA specification and IEEE 802.11i-2004
-     standard. This cipher also uses the Michael Message Integrity Code (MIC) algorithm for forgery
-     protection.</td>
                 </tr>
             
                 <tr>
@@ -147,23 +145,25 @@ A miniport driver that operates in Extensible Station (ExtSTA) mode specifies th
                 </tr>
             
                 <tr>
-                    <td>DOT11_CIPHER_ALGO_WEP104</td>
-                    <td>Specifies a WEP cipher algorithm with a 104-bit cipher key.</td>
-                </tr>
-            
-                <tr>
-                    <td>DOT11_CIPHER_ALGO_WEP40</td>
-                    <td>Specifies a Wired Equivalent Privacy (WEP) algorithm, which is the RC4-based algorithm that is
-     specified in the IEEE 802.11-2012 standard. This enumerator specifies the WEP cipher algorithm with a
-     40-bit cipher key.</td>
-                </tr>
-            
-                <tr>
-                    <td>DOT11_CIPHER_ALGO_WPA_USE_GROUP</td>
-                    <td>Specifies a Wifi Protected Access (WPA) Use Group Key cipher suite.
+                    <td>DOT11_CIPHER_ALGO_IHV_START</td>
+                    <td>Specifies the start of the range that is used to define proprietary cipher algorithms that are
+     developed by an independent hardware vendor (IHV).
+     
 
-For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE
-      802.11i-2004 standard.</td>
+The 
+     <b>DOT11_CIPHER_ALGO_IHV_START</b> enumerator is valid only when the miniport driver is operating in
+     ExtSTA mode.</td>
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_IHV_END</td>
+                    <td>Specifies the end of the range that is used to define proprietary authentication algorithms that
+     are developed by an IHV.
+     
+
+The 
+     <b>DOT11_CIPHER_ALGO_IHV_END</b> enumerator is valid only when the miniport driver is operating in ExtSTA
+     mode.</td>
                 </tr>
             
                 <tr>
@@ -250,11 +250,3 @@ If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569135">OID_DOT11_CURRENT_PHY_ID</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_ALGORITHM enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

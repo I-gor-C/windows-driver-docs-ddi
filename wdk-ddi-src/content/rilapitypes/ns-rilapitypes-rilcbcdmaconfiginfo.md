@@ -59,15 +59,15 @@ typedef struct _RILCBCDMACONFIGINFO {
 ## Members
 
 
+`fAccept`
+
+
+
 `dwBroadcastMsgLang`
 
 
 
 `dwBroadcastServiceCategory`
-
-
-
-`fAccept`
 
 
 

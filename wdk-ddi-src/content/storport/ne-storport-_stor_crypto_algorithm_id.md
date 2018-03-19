@@ -59,12 +59,22 @@ typedef enum _STOR_CRYPTO_ALGORITHM_ID {
 <table>
             
                 <tr>
-                    <td>StorCryptoAlgorithmAESECB</td>
+                    <td>StorCryptoAlgorithmUnknown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>StorCryptoAlgorithmXTSAES</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>StorCryptoAlgorithmBitlockerAESCBC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>StorCryptoAlgorithmAESECB</td>
                     <td></td>
                 </tr>
             
@@ -75,16 +85,6 @@ typedef enum _STOR_CRYPTO_ALGORITHM_ID {
             
                 <tr>
                     <td>StorCryptoAlgorithmMax</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>StorCryptoAlgorithmUnknown</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>StorCryptoAlgorithmXTSAES</td>
                     <td></td>
                 </tr>
 </table>

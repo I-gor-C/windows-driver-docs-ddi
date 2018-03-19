@@ -62,19 +62,6 @@ typedef struct DOT11_ASSOCIATION_PARAMS {
 ## Members
 
 
-`BSSID`
-
-The basic service set (BSS) identifier (BSSID) of the infrastructure BSS network for which the
-     association parameters are to be set.
-     
-
-The miniport driver should add new additional information elements (IEs) to an association request
-     only if it is attempting to associate with an access point that has the matching BSSID.
-
-If this member is set to the wildcard BSSID (0xFFFFFFFFFFFF), the miniport driver should add new
-     additional information elements (IEs) to association requests for all access points that have valid
-     BSSIDs.
-
 `Header`
 
 The type, revision, and size of the DOT11_ASSOCIATION_PARAMS structure. This member is formatted
@@ -109,16 +96,29 @@ This member must be set to
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
-`uAssocRequestIEsLength`
+`BSSID`
 
-The length of the additional IEs, in bytes, that the operating system requests be added to the
-     association response. The default value is 0.
+The basic service set (BSS) identifier (BSSID) of the infrastructure BSS network for which the
+     association parameters are to be set.
+     
+
+The miniport driver should add new additional information elements (IEs) to an association request
+     only if it is attempting to associate with an access point that has the matching BSSID.
+
+If this member is set to the wildcard BSSID (0xFFFFFFFFFFFF), the miniport driver should add new
+     additional information elements (IEs) to association requests for all access points that have valid
+     BSSIDs.
 
 `uAssocRequestIEsOffset`
 
 The offset of the additional IEs, in bytes, that the operating system requests be added to the
      association response. This offset is relative to the start of the buffer that contains the
      DOT11_ASSOCIATION_PARAMS structure. The default value is 0.
+
+`uAssocRequestIEsLength`
+
+The length of the additional IEs, in bytes, that the operating system requests be added to the
+     association response. The default value is 0.
 
 ## Remarks
 This structure is used with 
@@ -137,11 +137,3 @@ This structure is used with
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ASSOCIATION_PARAMS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

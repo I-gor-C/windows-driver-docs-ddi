@@ -60,25 +60,25 @@ typedef struct _DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL {
 ## Members
 
 
+`hAllocation`
+
+The kernel mode driver handle of the allocation being filled. The handle is returned from <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>. The allocation properties are needed in order to detect if the allocation is swizzled.
+
 `AllocationOffsetInBytes`
 
 The offset, in bytes, from the start of the allocation being filled.
-
-`DestinationVirtualAddress`
-
-The virtual address of the destination in the context of the paging process.
-
-`FillPattern`
-
-The byte pattern to fill with.
 
 `FillSizeInBytes`
 
 The number of bytes to fill.
 
-`hAllocation`
+`FillPattern`
 
-The kernel mode driver handle of the allocation being filled. The handle is returned from <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>. The allocation properties are needed in order to detect if the allocation is swizzled.
+The byte pattern to fill with.
+
+`DestinationVirtualAddress`
+
+The virtual address of the destination in the context of the paging process.
 
 
 ## Requirements
@@ -94,11 +94,3 @@ The kernel mode driver handle of the allocation being filled. The handle is retu
 
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

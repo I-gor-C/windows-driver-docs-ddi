@@ -65,6 +65,16 @@ typedef struct _WDF_USB_PIPE_INFORMATION {
 ## Members
 
 
+`Size`
+
+The size, in bytes, of this structure.
+
+`MaximumPacketSize`
+
+The maximum packet size, in bytes, that the pipe's endpoint is capable of sending or receiving.
+
+For high-speed isochronous endpoints, the received <b>MaximumPacketSize</b> value includes the number of bytes that can be transferred in additional transactions, if the endpoint supports them.
+
 `EndpointAddress`
 
 The address of the endpoint on the USB device. For more information about endpoint addresses, see the USB specification.
@@ -73,27 +83,17 @@ The address of the endpoint on the USB device. For more information about endpoi
 
 The endpoint's polling interval, if the <b>PipeType</b> member is set to <b>WdfUsbPipeTypeInterrupt</b>. For more information about polling intervals, see the USB specification.
 
-`MaximumPacketSize`
+`SettingIndex`
 
-The maximum packet size, in bytes, that the pipe's endpoint is capable of sending or receiving.
-
-For high-speed isochronous endpoints, the received <b>MaximumPacketSize</b> value includes the number of bytes that can be transferred in additional transactions, if the endpoint supports them.
-
-`MaximumTransferSize`
-
-This member is not used.
+An index value that identifies the alternate setting, within an interface, that the pipe belongs to. For more information about alternate settings, see the USB specification.
 
 `PipeType`
 
 A <a href="..\wdfusb\ne-wdfusb-_wdf_usb_pipe_type.md">WDF_USB_PIPE_TYPE</a>-typed value that specifies the type of pipe.
 
-`SettingIndex`
+`MaximumTransferSize`
 
-An index value that identifies the alternate setting, within an interface, that the pipe belongs to. For more information about alternate settings, see the USB specification.
-
-`Size`
-
-The size, in bytes, of this structure.
+This member is not used.
 
 ## Remarks
 The <b>WDF_USB_PIPE_INFORMATION</b> structure is filled in by the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipegetinformation.md">WdfUsbTargetPipeGetInformation</a>, <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>, and <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetendpointinformation.md">WdfUsbInterfaceGetEndpointInformation</a> methods.
@@ -134,11 +134,3 @@ For information on how to transfer data to and from supported isochronous endpoi
 
 
 <a href="..\wdfusb\ne-wdfusb-_wdf_usb_pipe_type.md">WDF_USB_PIPE_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_PIPE_INFORMATION structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

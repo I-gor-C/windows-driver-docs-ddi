@@ -65,29 +65,29 @@ typedef struct _SILO_MONITOR_REGISTRATION {
 ## Members
 
 
-`CreateCallback`
+`Version`
 
-A pointer to a callback that is invoked whenever a new server silo is created on the system.  This value may be <b>NULL</b>.  This gives drivers to opportunity to handle the event and set up per-silo data structures.
-
-`MonitorExistingSilos`
-
-If <b>true</b>, create and terminate notifications will be delivered for any silos that currently exist at the time of registration; otherwise, only notifications for new silos will be delivered.
+Set to <b>SERVER_SILO_MONITOR_REGISTRATION_VERSION</b>.
 
 `MonitorHost`
 
 If <b>true</b>, a create notification will be delivered for the host context.
 
+`MonitorExistingSilos`
+
+If <b>true</b>, create and terminate notifications will be delivered for any silos that currently exist at the time of registration; otherwise, only notifications for new silos will be delivered.
+
 `Reserved`
 
 Reserved for system use.
 
+`CreateCallback`
+
+A pointer to a callback that is invoked whenever a new server silo is created on the system.  This value may be <b>NULL</b>.  This gives drivers to opportunity to handle the event and set up per-silo data structures.
+
 `TerminateCallback`
 
 A pointer to a callback that is invoked whenever a server silo is terminated (about to be destroyed) on the system.  This value may be <b>NULL</b>.  This gives drivers the opportunity to complete work within the silo and begin tearing down their per-silo data structures.
-
-`Version`
-
-Set to <b>SERVER_SILO_MONITOR_REGISTRATION_VERSION</b>.
 
 
 ## Requirements

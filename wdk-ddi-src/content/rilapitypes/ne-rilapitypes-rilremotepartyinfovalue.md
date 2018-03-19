@@ -61,7 +61,12 @@ typedef enum _RILREMOTEPARTYINFOVALUE {
 <table>
             
                 <tr>
-                    <td>RIL_REMOTEPARTYINFO_MAX</td>
+                    <td>RIL_REMOTEPARTYINFO_VALID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REMOTEPARTYINFO_WITHHELD</td>
                     <td></td>
                 </tr>
             
@@ -71,12 +76,7 @@ typedef enum _RILREMOTEPARTYINFOVALUE {
                 </tr>
             
                 <tr>
-                    <td>RIL_REMOTEPARTYINFO_VALID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_REMOTEPARTYINFO_WITHHELD</td>
+                    <td>RIL_REMOTEPARTYINFO_MAX</td>
                     <td></td>
                 </tr>
 </table>

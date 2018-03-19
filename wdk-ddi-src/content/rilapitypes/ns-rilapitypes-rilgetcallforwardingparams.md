@@ -64,15 +64,15 @@ typedef struct _RILGETCALLFORWARDINGPARAMS {
 
 
 
-`dwInfoClasses`
-
-
-
 `dwReason`
 
 
 
 `fAllClasses`
+
+
+
+`dwInfoClasses`
 
 
 

@@ -57,11 +57,11 @@ typedef struct _RILSETUICCLOCKENABLEDPARAMS {
 ## Members
 
 
-`fEnable`
-
-
-
 `lockCredential`
+
+
+
+`fEnable`
 
 
 

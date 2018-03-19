@@ -63,17 +63,13 @@ typedef struct _IO_BLOCK_EX {
 ## Members
 
 
-`bmRequestType`
+`uOffset`
 
-Used as the <b>bmRequestType</b> field of a USB Device Request.
+Used as the <b>Value</b> field of a USB Device Request.
 
-`bRequest`
+`uLength`
 
-Used as the <b>bRequest</b> field of a USB Device Request.
-
-`fTransferDirectionIn`
-
-<b>TRUE</b> for transfers from device to host; <b>FALSE</b> for transfers from host to device.
+Length of the buffer to transfer.
 
 `pbyData`
 
@@ -83,13 +79,17 @@ Pointer to a data buffer with a length of <b>uLength</b>.
 
 Used as the <b>Index</b> field of a USB Device Request.
 
-`uLength`
+`bRequest`
 
-Length of the buffer to transfer.
+Used as the <b>bRequest</b> field of a USB Device Request.
 
-`uOffset`
+`bmRequestType`
 
-Used as the <b>Value</b> field of a USB Device Request.
+Used as the <b>bmRequestType</b> field of a USB Device Request.
+
+`fTransferDirectionIn`
+
+<b>TRUE</b> for transfers from device to host; <b>FALSE</b> for transfers from host to device.
 
 
 ## Requirements

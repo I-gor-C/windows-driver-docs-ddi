@@ -76,17 +76,12 @@ typedef enum _RILUNSOLICITEDSSINFONOTIFICATIONCODE {
 <table>
             
                 <tr>
-                    <td>RIL_UNSSSCODE_ADDITIONALINCOMINGCF</td>
+                    <td>RIL_UNSSSCODE_FORWARDEDCALL</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_UNSSSCODE_ALERTINGEXPLICITCALLXFER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UNSSSCODE_CALLISWAITING</td>
+                    <td>RIL_UNSSSCODE_CUGCALL</td>
                     <td></td>
                 </tr>
             
@@ -101,42 +96,7 @@ typedef enum _RILUNSOLICITEDSSINFONOTIFICATIONCODE {
                 </tr>
             
                 <tr>
-                    <td>RIL_UNSSSCODE_CALLWASFORWARDED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UNSSSCODE_CLIRSUPPRESSREJECT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UNSSSCODE_CONNECTEDEXPLICITCALLXFER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UNSSSCODE_CUGCALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UNSSSCODE_DEFLECTEDCALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_UNSSSCODE_ENTEREDMULTIPARTY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UNSSSCODE_FORWARDCHECKSS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UNSSSCODE_FORWARDEDCALL</td>
                     <td></td>
                 </tr>
             
@@ -146,17 +106,32 @@ typedef enum _RILUNSOLICITEDSSINFONOTIFICATIONCODE {
                 </tr>
             
                 <tr>
-                    <td>RIL_UNSSSCODE_INCOMINGCALLSBARRED</td>
+                    <td>RIL_UNSSSCODE_FORWARDCHECKSS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_UNSSSCODE_MAX</td>
+                    <td>RIL_UNSSSCODE_ALERTINGEXPLICITCALLXFER</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_UNSSSCODE_OUTGOINGCALLSBARRED</td>
+                    <td>RIL_UNSSSCODE_CONNECTEDEXPLICITCALLXFER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UNSSSCODE_DEFLECTEDCALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UNSSSCODE_ADDITIONALINCOMINGCF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UNSSSCODE_UNCONDITIONALCFACTIVE</td>
                     <td></td>
                 </tr>
             
@@ -166,7 +141,32 @@ typedef enum _RILUNSOLICITEDSSINFONOTIFICATIONCODE {
                 </tr>
             
                 <tr>
-                    <td>RIL_UNSSSCODE_UNCONDITIONALCFACTIVE</td>
+                    <td>RIL_UNSSSCODE_CALLWASFORWARDED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UNSSSCODE_CALLISWAITING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UNSSSCODE_OUTGOINGCALLSBARRED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UNSSSCODE_INCOMINGCALLSBARRED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UNSSSCODE_CLIRSUPPRESSREJECT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UNSSSCODE_MAX</td>
                     <td></td>
                 </tr>
 </table>

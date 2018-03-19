@@ -61,17 +61,17 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>DMUS_STREAM_MIDI_CAPTURE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>DMUS_STREAM_MIDI_INVALID</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>DMUS_STREAM_MIDI_RENDER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DMUS_STREAM_MIDI_CAPTURE</td>
                     <td></td>
                 </tr>
             

@@ -63,22 +63,7 @@ typedef enum _RILDIALPARAMSOPTIONS {
 <table>
             
                 <tr>
-                    <td>RIL_DIALOPT_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DIALOPT_ANYEXECUTORFOREMERGENCY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_DIALOPT_NONE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DIALOPT_PRESENTID</td>
                     <td></td>
                 </tr>
             
@@ -88,7 +73,22 @@ typedef enum _RILDIALPARAMSOPTIONS {
                 </tr>
             
                 <tr>
+                    <td>RIL_DIALOPT_PRESENTID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DIALOPT_ANYEXECUTORFOREMERGENCY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_DIALOPT_RTTFULL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DIALOPT_ALL</td>
                     <td></td>
                 </tr>
 </table>

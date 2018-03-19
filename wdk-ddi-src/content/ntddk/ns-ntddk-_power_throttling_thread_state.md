@@ -58,6 +58,10 @@ typedef struct _POWER_THROTTLING_THREAD_STATE {
 ## Members
 
 
+`Version`
+
+The version of this structure. Set to THREAD_POWER_THROTTLING_CURRENT_VERSION.
+
 `ControlMask`
 
 Flags that enable the caller to take control of the power throttling mechanism.
@@ -73,10 +77,6 @@ Flags that manage the power throttling mechanism on/off state.
 <ul>
 <li>THREAD_POWER_THROTTLING_EXECUTION_SPEED: Manages the execution speed of the process.</li>
 </ul>
-
-`Version`
-
-The version of this structure. Set to THREAD_POWER_THROTTLING_CURRENT_VERSION.
 
 
 ## Requirements

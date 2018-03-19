@@ -61,18 +61,6 @@ typedef struct _WIA_BARCODES {
 ## Members
 
 
-`Barcodes`
-
-Placeholder for  a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef-_wia_barcode_info.md">WIA_BARCODE_INFO</a> structures.
-
-`Count`
-
-Specifies the number of <a href="..\wiadef\ns-wiadef-_wia_barcode_info.md">WIA_BARCODE_INFO</a> elements in the Barcodes sequence.
-
-`Size`
-
-The complete size of this <b>WIA_BARCODES</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef-_wia_barcode_info.md">WIA_BARCODE_INFO</a> list.
-
 `Tag`
 
 Must be the literal 'WBAR', 4 single byte ASCII characters.
@@ -80,6 +68,18 @@ Must be the literal 'WBAR', 4 single byte ASCII characters.
 `Version`
 
 Must be the value 0x00010000 (Version 1.0).
+
+`Size`
+
+The complete size of this <b>WIA_BARCODES</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef-_wia_barcode_info.md">WIA_BARCODE_INFO</a> list.
+
+`Count`
+
+Specifies the number of <a href="..\wiadef\ns-wiadef-_wia_barcode_info.md">WIA_BARCODE_INFO</a> elements in the Barcodes sequence.
+
+`Barcodes`
+
+Placeholder for  a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef-_wia_barcode_info.md">WIA_BARCODE_INFO</a> structures.
 
 ## Remarks
 The header must be followed by a sequence of barcode information structures, one for each decoded barcode, in the order the barcodes were found and decoded.

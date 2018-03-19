@@ -72,21 +72,25 @@ typedef struct _WHEA_ERROR_PACKET_V2 {
 ## Members
 
 
-`Context`
+`Signature`
 
-Reserved for system use.
+The signature of the hardware error packet. This member contains the value WHEA_ERROR_PACKET_V2_SIGNATURE.
 
-`DataFormat`
+`Version`
 
-A <a href="..\ntddk\ne-ntddk-_whea_error_packet_data_format.md">WHEA_ERROR_PACKET_DATA_FORMAT</a> value  that indicates the format of the hardware error information that is contained in the data that is referenced through the <b>DataOffset </b>and <b>DataLength</b> members.
+The version of the WHEA_ERROR_PACKET_V2 structure. This member contains the value WHEA_ERROR_PKT_V2_VERSION.
 
-`DataLength`
+`Length`
 
-The length, in bytes, of the hardware error data.
+The size, in bytes, of the hardware error packet, including the hardware error data and PSHED data.
 
-`DataOffset`
+`Flags`
 
-An offset, in bytes, for hardware error data from the status registers for the error source. The format of the hardware error data is specified by the <b>DataFormat</b> member. The offset of the hardware error information is relative to the start of the WHEA_ERROR_PACKET_V2 structure.
+A <a href="..\ntddk\ns-ntddk-_whea_error_packet_flags.md">WHEA_ERROR_PACKET_FLAGS</a> union that specifies the format of the hardware error data.
+
+`ErrorType`
+
+A <a href="..\ntddk\ne-ntddk-_whea_error_type.md">WHEA_ERROR_TYPE</a> value that specifies the type of hardware component that reported the hardware error.
 
 `ErrorSeverity`
 
@@ -99,18 +103,6 @@ The identifier of the error source that reported the hardware error.
 `ErrorSourceType`
 
 A <a href="..\ntddk\ne-ntddk-_whea_error_source_type.md">WHEA_ERROR_SOURCE_TYPE</a> value that indicates the type of the error source that reported the hardware error.
-
-`ErrorType`
-
-A <a href="..\ntddk\ne-ntddk-_whea_error_type.md">WHEA_ERROR_TYPE</a> value that specifies the type of hardware component that reported the hardware error.
-
-`Flags`
-
-A <a href="..\ntddk\ns-ntddk-_whea_error_packet_flags.md">WHEA_ERROR_PACKET_FLAGS</a> union that specifies the format of the hardware error data.
-
-`Length`
-
-The size, in bytes, of the hardware error packet, including the hardware error data and PSHED data.
 
 `NotifyType`
 
@@ -162,25 +154,33 @@ Boot Error Record (BOOT)
 
 For error notification types that do not conform to one of the standard types in the previous list, a platform-specific GUID can be defined to identify the notification mechanism. If the notification type does not correspond to any of the standard notification types or any platform-specific notification types, this member is set to GENERIC_NOTIFY_TYPE_GUID.
 
-`PshedDataLength`
+`Context`
 
-The length, in bytes, of the PSHED data buffer.
+Reserved for system use.
 
-`PshedDataOffset`
+`DataFormat`
 
-An offset, in bytes, for a data buffer where a PSHED plug-in can add additional platform-specific error data to the hardware error packet. The offset of the PSHED data buffer is relative to the start of the WHEA_ERROR_PACKET_V2 structure.
+A <a href="..\ntddk\ne-ntddk-_whea_error_packet_data_format.md">WHEA_ERROR_PACKET_DATA_FORMAT</a> value  that indicates the format of the hardware error information that is contained in the data that is referenced through the <b>DataOffset </b>and <b>DataLength</b> members.
 
 `Reserved1`
 
 Reserved for system use.
 
-`Signature`
+`DataOffset`
 
-The signature of the hardware error packet. This member contains the value WHEA_ERROR_PACKET_V2_SIGNATURE.
+An offset, in bytes, for hardware error data from the status registers for the error source. The format of the hardware error data is specified by the <b>DataFormat</b> member. The offset of the hardware error information is relative to the start of the WHEA_ERROR_PACKET_V2 structure.
 
-`Version`
+`DataLength`
 
-The version of the WHEA_ERROR_PACKET_V2 structure. This member contains the value WHEA_ERROR_PKT_V2_VERSION.
+The length, in bytes, of the hardware error data.
+
+`PshedDataOffset`
+
+An offset, in bytes, for a data buffer where a PSHED plug-in can add additional platform-specific error data to the hardware error packet. The offset of the PSHED data buffer is relative to the start of the WHEA_ERROR_PACKET_V2 structure.
+
+`PshedDataLength`
+
+The length, in bytes, of the PSHED data buffer.
 
 ## Remarks
 The WHEA_ERROR_PACKET_V2 structure is used to report a hardware error in Windows 7 and later versions of Windows. If your <a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">platform-specific hardware error driver (PSHED) plug-ins</a> run on any WHEA-compatible Windows version, You can inspect the version of WHEA_ERROR_PACKET by following these steps:
@@ -234,11 +234,3 @@ In addition, <a href="https://msdn.microsoft.com/7c56a8e2-11e9-4ef0-83f2-50a1771
 
 
 <a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">Platform-Specific Hardware Error Driver (PSHED) Plug-Ins</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_ERROR_PACKET_V2 structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

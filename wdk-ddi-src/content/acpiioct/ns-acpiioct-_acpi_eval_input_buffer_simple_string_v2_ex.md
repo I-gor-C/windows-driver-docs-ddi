@@ -60,21 +60,21 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2_EX {
 ## Members
 
 
-`MethodName`
-
-
-
 `Signature`
 
 Defines the <b>ULONG</b> member <b>Signature</b>.
 
-`String`
+`MethodName`
 
 
 
 `StringLength`
 
 Defines the <b>ULONG</b> member <b>StringLength</b>.
+
+`String`
+
+
 
 
 ## Requirements

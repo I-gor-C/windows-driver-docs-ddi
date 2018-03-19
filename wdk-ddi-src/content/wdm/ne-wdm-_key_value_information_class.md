@@ -74,23 +74,23 @@ typedef enum _KEY_VALUE_INFORMATION_CLASS {
                 </tr>
             
                 <tr>
-                    <td>KeyValueFullInformationAlign64</td>
-                    <td>The information is stored as a <b>KEY_VALUE_FULL_INFORMATION</b> structure that is aligned to a 64-bit (that is, 8-byte) boundary in memory. If the caller-supplied buffer does not start on a 64-bit boundary, the information is stored starting at the first 64-bit boundary in the buffer.</td>
-                </tr>
-            
-                <tr>
-                    <td>KeyValueLayerInformation</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>KeyValuePartialInformation</td>
                     <td>The information is stored as a <a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a> structure.</td>
                 </tr>
             
                 <tr>
+                    <td>KeyValueFullInformationAlign64</td>
+                    <td>The information is stored as a <b>KEY_VALUE_FULL_INFORMATION</b> structure that is aligned to a 64-bit (that is, 8-byte) boundary in memory. If the caller-supplied buffer does not start on a 64-bit boundary, the information is stored starting at the first 64-bit boundary in the buffer.</td>
+                </tr>
+            
+                <tr>
                     <td>KeyValuePartialInformationAlign64</td>
                     <td>The information is stored as a <b>KEY_VALUE_PARTIAL_INFORMATION</b> structure that is aligned to a 64-bit (that is, 8-byte) boundary in memory. If the caller-supplied buffer does not start on a 64-bit boundary, the information is stored starting at the first 64-bit boundary in the buffer.</td>
+                </tr>
+            
+                <tr>
+                    <td>KeyValueLayerInformation</td>
+                    <td></td>
                 </tr>
             
                 <tr>
@@ -127,11 +127,3 @@ Use the <b>KEY_VALUE_INFORMATION_CLASS</b> values to specify the type of data to
 
 
 <a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KEY_VALUE_INFORMATION_CLASS enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

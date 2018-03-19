@@ -60,13 +60,13 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE {
 <table>
             
                 <tr>
-                    <td>DIDDT1_Interlaced</td>
-                    <td>Indicates an interlaced scanning mode.</td>
+                    <td>DIDDT1_Progressive</td>
+                    <td>Indicates a progressive scanning mode.</td>
                 </tr>
             
                 <tr>
-                    <td>DIDDT1_Progressive</td>
-                    <td>Indicates a progressive scanning mode.</td>
+                    <td>DIDDT1_Interlaced</td>
+                    <td>Indicates an interlaced scanning mode.</td>
                 </tr>
 </table>
 

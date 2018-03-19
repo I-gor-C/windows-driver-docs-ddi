@@ -57,11 +57,11 @@ typedef struct _ENG_EVENT {
 ## Members
 
 
-`fFlags`
+`pKEvent`
 
 Reserved for system use.
 
-`pKEvent`
+`fFlags`
 
 Reserved for system use.
 

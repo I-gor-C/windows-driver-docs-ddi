@@ -60,17 +60,9 @@ typedef struct _D3D12DDI_CRYPTO_SESSION_TRANSFORM_DECRYPT_HEADER_OUTPUT_ARGUMENT
 ## Members
 
 
-`ContextSize`
-
-Context size.
-
 `Enable`
 
 Enable.
-
-`pContext`
-
-Context.
 
 `pSliceHeaders`
 
@@ -79,6 +71,14 @@ Slice headers.
 `SliceHeadersSize`
 
 Slice header size.
+
+`pContext`
+
+Context.
+
+`ContextSize`
+
+Context size.
 
 
 ## Requirements

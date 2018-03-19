@@ -76,6 +76,10 @@ typedef struct _DXGK_CONNECTION_CHANGE {
 
 The per target unique id for the transition being reported.  This value must be unique across all targets on the adapter and must be monotonically increasing for each change reported.
 
+`TargetId`
+
+The target id for which the change is being reported.  This target id must have been reported to the OS before and must be in a state which supports the given change.
+
 `ConnectionStatus`
 
 The status of the connection.
@@ -83,10 +87,6 @@ The status of the connection.
 `Reserved`
 
 This value is reserved for system use.
-
-`TargetId`
-
-The target id for which the change is being reported.  This target id must have been reported to the OS before and must be in a state which supports the given change.
 
 
 ## Requirements

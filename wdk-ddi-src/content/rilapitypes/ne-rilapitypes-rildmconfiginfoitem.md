@@ -94,37 +94,22 @@ typedef enum _RILDMCONFIGINFOITEM {
 <table>
             
                 <tr>
-                    <td>RILDMCONFIG_1XRTT_FALLBACK_REDIAL_ENABLE</td>
+                    <td>RILDMCONFIG_SIP_TIMER_T1</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RILDMCONFIG_1XRTT_FALLBACK_REDIAL_TIMER</td>
+                    <td>RILDMCONFIG_SIP_TIMER_T2</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RILDMCONFIG_AMR_MODE_SET</td>
+                    <td>RILDMCONFIG_SIP_TIMER_F</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RILDMCONFIG_AMR_SRC_CTL_RATE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_AMR_WB_ENABLE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_AMR_WB_MODE_SET</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_AMR_WB_SRC_CTL_RATE</td>
+                    <td>RILDMCONFIG_SMS_FORMAT_TYPE</td>
                     <td></td>
                 </tr>
             
@@ -134,67 +119,12 @@ typedef enum _RILDMCONFIGINFOITEM {
                 </tr>
             
                 <tr>
-                    <td>RILDMCONFIG_EPDG_ADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_IMS_IRAT_REG_DELAY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_IMS_NAI</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_IMS_NW_ENABLED_FLAGS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_IMS_PRESENCE_ENABLED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_IMS_ROAMING_ENABLED</td>
+                    <td>RILDMCONFIG_SMS_OVER_IP_NW_INDICATION</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RILDMCONFIG_IMS_TEST_MODE_STATUS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_IMS_VIDEO_ENABLED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_IMS_VOICE_ENABLED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_IMS_XCAP_ENABLED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_MD5_AUTH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_MULTIPARTY_SERVER</td>
                     <td></td>
                 </tr>
             
@@ -209,27 +139,22 @@ typedef enum _RILDMCONFIGINFOITEM {
                 </tr>
             
                 <tr>
+                    <td>RILDMCONFIG_MD5_AUTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_MULTIPARTY_SERVER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RILDMCONFIG_REQUEST_CONTEXT</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RILDMCONFIG_RINGBACK_TIMER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_RINGING_TIMER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_RTC_INACTIVITY_TIMER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILDMCONFIG_RTT_MODE</td>
+                    <td>RILDMCONFIG_IMS_NAI</td>
                     <td></td>
                 </tr>
             
@@ -244,27 +169,42 @@ typedef enum _RILDMCONFIGINFOITEM {
                 </tr>
             
                 <tr>
-                    <td>RILDMCONFIG_SIP_TIMER_F</td>
+                    <td>RILDMCONFIG_AMR_WB_ENABLE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RILDMCONFIG_SIP_TIMER_T1</td>
+                    <td>RILDMCONFIG_AMR_SRC_CTL_RATE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RILDMCONFIG_SIP_TIMER_T2</td>
+                    <td>RILDMCONFIG_AMR_WB_SRC_CTL_RATE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RILDMCONFIG_SMS_FORMAT_TYPE</td>
+                    <td>RILDMCONFIG_AMR_MODE_SET</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RILDMCONFIG_SMS_OVER_IP_NW_INDICATION</td>
+                    <td>RILDMCONFIG_AMR_WB_MODE_SET</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_RINGING_TIMER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_RINGBACK_TIMER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_RTC_INACTIVITY_TIMER</td>
                     <td></td>
                 </tr>
             
@@ -274,7 +214,67 @@ typedef enum _RILDMCONFIGINFOITEM {
                 </tr>
             
                 <tr>
+                    <td>RILDMCONFIG_IMS_VOICE_ENABLED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_VIDEO_ENABLED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_NW_ENABLED_FLAGS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_IRAT_REG_DELAY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_1XRTT_FALLBACK_REDIAL_TIMER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_1XRTT_FALLBACK_REDIAL_ENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_PRESENCE_ENABLED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_ROAMING_ENABLED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_XCAP_ENABLED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_EPDG_ADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RILDMCONFIG_VOWIFI_ENTITLEMENT_CHECK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_RTT_MODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_MAX</td>
                     <td></td>
                 </tr>
 </table>

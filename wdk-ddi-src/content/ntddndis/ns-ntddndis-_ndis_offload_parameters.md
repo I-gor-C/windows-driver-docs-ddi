@@ -86,19 +86,6 @@ typedef struct _NDIS_OFFLOAD_PARAMETERS {
 ## Members
 
 
-`_ENCAPSULATION_PROTOCOL_PARAMETERS`
-
-
-
-`EncapsulationProtocolParameters`
-
-
-
-`Flags`
-
-A set of flags that can be combined with a bitwise OR operation. Set this member to zero. There
-     are currently no flags defined.
-
 `Header`
 
 The 
@@ -165,6 +152,74 @@ Set the
 </tr>
 </table>
 
+`IPv4Checksum`
+
+The IPv4 checksum setting of the miniport adapter. For more information, see the following Remarks
+     section.
+
+`TCPIPv4Checksum`
+
+The IPv4 checksum setting of the miniport adapter for TCP packets. For more information, see the
+     following Remarks section.
+
+`UDPIPv4Checksum`
+
+The IPv4 checksum setting of the miniport adapter for UDP packets. For more information, see the
+     following Remarks section.
+
+`TCPIPv6Checksum`
+
+The IPv6 checksum setting of the miniport adapter for TCP packets. For more information, see the
+     following Remarks section.
+
+`UDPIPv6Checksum`
+
+The IPv6 checksum setting of the miniport adapter for UDP packets. For more information, see the
+     following Remarks section.
+
+`LsoV1`
+
+The large send offload version 1 (LSOV1) setting of the miniport adapter. This setting should be
+     one of the following values:
+     
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
+<dt><b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b></dt>
+</dl>
+</td>
+<td width="60%">
+The miniport driver should not change the current setting.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_LSOV1_DISABLED"></a><a id="ndis_offload_parameters_lsov1_disabled"></a><dl>
+<dt><b>NDIS_OFFLOAD_PARAMETERS_LSOV1_DISABLED</b></dt>
+</dl>
+</td>
+<td width="60%">
+LSOV1 is disabled.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_LSOV1_ENABLED"></a><a id="ndis_offload_parameters_lsov1_enabled"></a><dl>
+<dt><b>NDIS_OFFLOAD_PARAMETERS_LSOV1_ENABLED</b></dt>
+</dl>
+</td>
+<td width="60%">
+LSOV1 is enabled.
+
+</td>
+</tr>
+</table>
+
 `IPsecV1`
 
 The Internet protocol security (IPsec) offload setting of the miniport adapter. This setting
@@ -225,185 +280,6 @@ The IPsec offload Encapsulating Security Payload (ESP) feature should be enabled
 </td>
 <td width="60%">
 The IPsec offload AH and ESP features areenabled for transmit and receive.
-
-</td>
-</tr>
-</table>
-
-`IPsecV2`
-
-The Internet protocol security (IPsec) offload version 2 setting of a miniport adapter that supports
-      IPv6 and IPv4. This member specifies the setting for both IPv6 and IPv4 support. This setting should be
-      one of the following values:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
-<dt><b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b></dt>
-</dl>
-</td>
-<td width="60%">
-The miniport driver should not change the current setting.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED"></a><a id="ndis_offload_parameters_ipsecv2_disabled"></a><dl>
-<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED</b></dt>
-</dl>
-</td>
-<td width="60%">
-IPsec offload version 2 is disabled.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_ah_enabled"></a><dl>
-<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED</b></dt>
-</dl>
-</td>
-<td width="60%">
-The IPsec offload version 2 Authentication Header (AH) feature should be enabled for transmit
-        and receive.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_esp_enabled"></a><dl>
-<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED</b></dt>
-</dl>
-</td>
-<td width="60%">
-The IPsec offload version 2 Encapsulating Security Payload (ESP) feature should be enabled for
-        transmit and receive.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_ah_and_esp_enabled"></a><dl>
-<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED</b></dt>
-</dl>
-</td>
-<td width="60%">
-The IPsec offload version 2A H and ESP features are enabled for transmit and receive.
-
-</td>
-</tr>
-</table>
-
-`IPsecV2IPv4`
-
-The Internet protocol security (IPsec) offload version 2 setting of a miniport adapter that supports
-      IPv4 and does not support IPv6. If the miniport driver supports IPv6, the 
-      <b>IPsecV2</b> member specifies the IPv4 setting and this member is not used. This setting should be one
-      of the following values:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
-<dt><b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b></dt>
-</dl>
-</td>
-<td width="60%">
-The miniport driver should not change the current setting.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED"></a><a id="ndis_offload_parameters_ipsecv2_disabled"></a><dl>
-<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED</b></dt>
-</dl>
-</td>
-<td width="60%">
-IPsec offload version 2 is disabled.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_ah_enabled"></a><dl>
-<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED</b></dt>
-</dl>
-</td>
-<td width="60%">
-The IPsec offload version 2 Authentication Header (AH) feature should be enabled for transmit
-        and receive.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_esp_enabled"></a><dl>
-<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED</b></dt>
-</dl>
-</td>
-<td width="60%">
-The IPsec offload version 2 Encapsulating Security Payload (ESP) feature should be enabled for
-        transmit and receive.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_ah_and_esp_enabled"></a><dl>
-<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED</b></dt>
-</dl>
-</td>
-<td width="60%">
-The IPsec offload version 2A H and ESP features are enabled for transmit and receive.
-
-</td>
-</tr>
-</table>
-
-`IPv4Checksum`
-
-The IPv4 checksum setting of the miniport adapter. For more information, see the following Remarks
-     section.
-
-`LsoV1`
-
-The large send offload version 1 (LSOV1) setting of the miniport adapter. This setting should be
-     one of the following values:
-     
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
-<dt><b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b></dt>
-</dl>
-</td>
-<td width="60%">
-The miniport driver should not change the current setting.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_LSOV1_DISABLED"></a><a id="ndis_offload_parameters_lsov1_disabled"></a><dl>
-<dt><b>NDIS_OFFLOAD_PARAMETERS_LSOV1_DISABLED</b></dt>
-</dl>
-</td>
-<td width="60%">
-LSOV1 is disabled.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_LSOV1_ENABLED"></a><a id="ndis_offload_parameters_lsov1_enabled"></a><dl>
-<dt><b>NDIS_OFFLOAD_PARAMETERS_LSOV1_ENABLED</b></dt>
-</dl>
-</td>
-<td width="60%">
-LSOV1 is enabled.
 
 </td>
 </tr>
@@ -541,25 +417,149 @@ The miniport driver should not change the current setting.
 </tr>
 </table>
 
-`TCPIPv4Checksum`
+`Flags`
 
-The IPv4 checksum setting of the miniport adapter for TCP packets. For more information, see the
-     following Remarks section.
+A set of flags that can be combined with a bitwise OR operation. Set this member to zero. There
+     are currently no flags defined.
 
-`TCPIPv6Checksum`
+`IPsecV2`
 
-The IPv6 checksum setting of the miniport adapter for TCP packets. For more information, see the
-     following Remarks section.
+The Internet protocol security (IPsec) offload version 2 setting of a miniport adapter that supports
+      IPv6 and IPv4. This member specifies the setting for both IPv6 and IPv4 support. This setting should be
+      one of the following values:
 
-`UDPIPv4Checksum`
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
+<dt><b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b></dt>
+</dl>
+</td>
+<td width="60%">
+The miniport driver should not change the current setting.
 
-The IPv4 checksum setting of the miniport adapter for UDP packets. For more information, see the
-     following Remarks section.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED"></a><a id="ndis_offload_parameters_ipsecv2_disabled"></a><dl>
+<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED</b></dt>
+</dl>
+</td>
+<td width="60%">
+IPsec offload version 2 is disabled.
 
-`UDPIPv6Checksum`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_ah_enabled"></a><dl>
+<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED</b></dt>
+</dl>
+</td>
+<td width="60%">
+The IPsec offload version 2 Authentication Header (AH) feature should be enabled for transmit
+        and receive.
 
-The IPv6 checksum setting of the miniport adapter for UDP packets. For more information, see the
-     following Remarks section.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_esp_enabled"></a><dl>
+<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED</b></dt>
+</dl>
+</td>
+<td width="60%">
+The IPsec offload version 2 Encapsulating Security Payload (ESP) feature should be enabled for
+        transmit and receive.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_ah_and_esp_enabled"></a><dl>
+<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED</b></dt>
+</dl>
+</td>
+<td width="60%">
+The IPsec offload version 2A H and ESP features are enabled for transmit and receive.
+
+</td>
+</tr>
+</table>
+
+`IPsecV2IPv4`
+
+The Internet protocol security (IPsec) offload version 2 setting of a miniport adapter that supports
+      IPv4 and does not support IPv6. If the miniport driver supports IPv6, the 
+      <b>IPsecV2</b> member specifies the IPv4 setting and this member is not used. This setting should be one
+      of the following values:
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_NO_CHANGE"></a><a id="ndis_offload_parameters_no_change"></a><dl>
+<dt><b>NDIS_OFFLOAD_PARAMETERS_NO_CHANGE</b></dt>
+</dl>
+</td>
+<td width="60%">
+The miniport driver should not change the current setting.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED"></a><a id="ndis_offload_parameters_ipsecv2_disabled"></a><dl>
+<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED</b></dt>
+</dl>
+</td>
+<td width="60%">
+IPsec offload version 2 is disabled.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_ah_enabled"></a><dl>
+<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED</b></dt>
+</dl>
+</td>
+<td width="60%">
+The IPsec offload version 2 Authentication Header (AH) feature should be enabled for transmit
+        and receive.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_esp_enabled"></a><dl>
+<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED</b></dt>
+</dl>
+</td>
+<td width="60%">
+The IPsec offload version 2 Encapsulating Security Payload (ESP) feature should be enabled for
+        transmit and receive.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED"></a><a id="ndis_offload_parameters_ipsecv2_ah_and_esp_enabled"></a><dl>
+<dt><b>NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED</b></dt>
+</dl>
+</td>
+<td width="60%">
+The IPsec offload version 2A H and ESP features are enabled for transmit and receive.
+
+</td>
+</tr>
+</table>
+
+`EncapsulationProtocolParameters`
+
+
+
+`_ENCAPSULATION_PROTOCOL_PARAMETERS`
+
+
 
 ## Remarks
 In response to an 
@@ -604,11 +604,3 @@ The preceding members can have one of the following values:
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569807">OID_TCP_OFFLOAD_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -65,23 +65,6 @@ typedef enum _WDF_IO_TARGET_OPEN_TYPE {
 <table>
             
                 <tr>
-                    <td>WdfIoTargetOpenByName</td>
-                    <td>The driver is opening a remote I/O target by supplying a Unicode name string that represents an <a href="https://msdn.microsoft.com/b30e7475-7f94-4993-b373-8e4a8b1bcb4c">object name</a>. This name can identify a device, file, or device interface.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfIoTargetOpenLocalTargetByFile</td>
-                    <td>This value is supported by UMDF only.
-
-<b>UMDF </b>The driver is opening a file handle that represents the lower stack (just like a local target), so that it can send a driver-created request down to the lower stack. A UMDF driver specifies this value when it calls <a href="..\wdfiotarget\nf-wdfiotarget-wdf_io_target_open_params_init_open_by_file.md">WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfIoTargetOpenReopen</td>
-                    <td>The driver is reopening a remote I/O target after previously calling <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcloseforqueryremove.md">WdfIoTargetCloseForQueryRemove</a>. For more information, see the following Remarks section.</td>
-                </tr>
-            
-                <tr>
                     <td>WdfIoTargetOpenUndefined</td>
                     <td>Reserved for system use.</td>
                 </tr>
@@ -91,6 +74,23 @@ typedef enum _WDF_IO_TARGET_OPEN_TYPE {
                     <td>This value is supported by KMDF only.
 
 The driver is identifying a remote I/O target by supplying a pointer to a Windows Driver Model (WDM) <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfIoTargetOpenByName</td>
+                    <td>The driver is opening a remote I/O target by supplying a Unicode name string that represents an <a href="https://msdn.microsoft.com/b30e7475-7f94-4993-b373-8e4a8b1bcb4c">object name</a>. This name can identify a device, file, or device interface.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfIoTargetOpenReopen</td>
+                    <td>The driver is reopening a remote I/O target after previously calling <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcloseforqueryremove.md">WdfIoTargetCloseForQueryRemove</a>. For more information, see the following Remarks section.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfIoTargetOpenLocalTargetByFile</td>
+                    <td>This value is supported by UMDF only.
+
+<b>UMDF </b>The driver is opening a file handle that represents the lower stack (just like a local target), so that it can send a driver-created request down to the lower stack. A UMDF driver specifies this value when it calls <a href="..\wdfiotarget\nf-wdfiotarget-wdf_io_target_open_params_init_open_by_file.md">WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE</a>.</td>
                 </tr>
 </table>
 
@@ -135,11 +135,3 @@ In this situation, you can use <b>WdfIoTargetOpenLocalTargetByFile</b> to cause 
 
 
 <a href="..\wdfiotarget\ns-wdfiotarget-_wdf_io_target_open_params.md">WDF_IO_TARGET_OPEN_PARAMS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_TARGET_OPEN_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -84,59 +84,9 @@ typedef union _UCM_PD_REQUEST_DATA_OBJECT {
 ## Members
 
 
-`BatteryRdo`
+`Ul`
 
-#### MaximumOperatingPowerIn250mW
-
-Maximum Operating Power in 250mW units. 
-
-
-
-#### OperatingPowerIn250mW
-
-Operating Power in 250mW units.
-
-
-
-#### Reserved1
-
-Reserved for future use.
-
-
-
-#### NoUsbSuspend
-
- USB Suspend. 
-
-
-
-#### UsbCommunicationCapable
-
-USB Communications Capable.
-
-
-
-#### CapabilityMismatch
-
-Capability Mismatch. 
-
-
-
-#### GiveBackFlag
-
-GiveBack Flag. 
-
-
-
-#### ObjectPosition
-
-Object Position.
-
-
-
-#### Reserved2
-
-Reserved.
+Size of the structure.
 
 `Common`
 
@@ -212,9 +162,59 @@ Object Position.
 
 Reserved for future use.
 
-`Ul`
+`BatteryRdo`
 
-Size of the structure.
+#### MaximumOperatingPowerIn250mW
+
+Maximum Operating Power in 250mW units. 
+
+
+
+#### OperatingPowerIn250mW
+
+Operating Power in 250mW units.
+
+
+
+#### Reserved1
+
+Reserved for future use.
+
+
+
+#### NoUsbSuspend
+
+ USB Suspend. 
+
+
+
+#### UsbCommunicationCapable
+
+USB Communications Capable.
+
+
+
+#### CapabilityMismatch
+
+Capability Mismatch. 
+
+
+
+#### GiveBackFlag
+
+GiveBack Flag. 
+
+
+
+#### ObjectPosition
+
+Object Position.
+
+
+
+#### Reserved2
+
+Reserved.
 
 
 ## Requirements

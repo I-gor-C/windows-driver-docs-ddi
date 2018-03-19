@@ -69,41 +69,45 @@ typedef struct _PEP_ACPI_GPIO_RESOURCE {
 ## Members
 
 
-`DebounceTimeout`
+`Type`
 
-Specifies the hardware debounce wait time, in hundredths of milliseconds.
-
-`DriveStrength`
-
-Specifies the output drive capability of the pin, in hundredths of milliamperes.
+A <a href="..\pepfx\ne-pepfx-_pep_acpi_resource_type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value that identifies the resource type for this ACPI resource.
 
 `Flags`
 
 A <a href="..\pepfx\ns-pepfx-_pep_acpi_resource_flags.md">PEP_ACPI_RESOURCE_FLAGS</a> structure that describes the capabilities of this ACPI resource.
 
-`InterruptPolarity`
-
-A <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a> enumeration value that identifies how a device signals an interrupt request on an interrupt line.
-
 `InterruptType`
 
 A <a href="..\wudfwdm\ne-wudfwdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> enumeration value that identifies the interrupt type.
 
-`IoRestrictionType`
+`InterruptPolarity`
 
-A <a href="..\pepfx\ne-pepfx-_gpio_pin_iorestriction_type.md">GPIO_PIN_IORESTRICTION_TYPE</a> enumeration value that identifies the type of IO that the pin supports.
+A <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a> enumeration value that identifies how a device signals an interrupt request on an interrupt line.
 
 `PinConfig`
 
 A <a href="..\pepfx\ne-pepfx-_gpio_pin_config_type.md">GPIO_PIN_CONFIG_TYPE</a> enumeration value that identifies the GPIO pin configuration type.
 
-`PinCount`
+`IoRestrictionType`
 
-The number of pins in <b>PinTable</b>.
+A <a href="..\pepfx\ne-pepfx-_gpio_pin_iorestriction_type.md">GPIO_PIN_IORESTRICTION_TYPE</a> enumeration value that identifies the type of IO that the pin supports.
+
+`DriveStrength`
+
+Specifies the output drive capability of the pin, in hundredths of milliamperes.
+
+`DebounceTimeout`
+
+Specifies the hardware debounce wait time, in hundredths of milliseconds.
 
 `PinTable`
 
 A list of pin numbers on the resource that are described by this descriptor.
+
+`PinCount`
+
+The number of pins in <b>PinTable</b>.
 
 `ResourceSourceIndex`
 
@@ -112,10 +116,6 @@ This member is always zero.
 `ResourceSourceName`
 
 This member is always set to "ResourceConsumer."
-
-`Type`
-
-A <a href="..\pepfx\ne-pepfx-_pep_acpi_resource_type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value that identifies the resource type for this ACPI resource.
 
 `VendorData`
 
@@ -155,11 +155,3 @@ The size of the <b>VendorData</b> buffer.
 
 
 <a href="..\pepfx\ne-pepfx-_gpio_pin_config_type.md">GPIO_PIN_CONFIG_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_GPIO_RESOURCE structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

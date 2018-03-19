@@ -58,6 +58,16 @@ typedef enum _LineDisplayStatusType {
 <table>
             
                 <tr>
+                    <td>LineDisplayStatusType_Unknown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayStatusType_Online</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>LineDisplayStatusType_Off</td>
                     <td></td>
                 </tr>
@@ -69,16 +79,6 @@ typedef enum _LineDisplayStatusType {
             
                 <tr>
                     <td>LineDisplayStatusType_OffOrOffline</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayStatusType_Online</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayStatusType_Unknown</td>
                     <td></td>
                 </tr>
 </table>

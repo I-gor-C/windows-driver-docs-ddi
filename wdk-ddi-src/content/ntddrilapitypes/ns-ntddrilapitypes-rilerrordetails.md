@@ -63,15 +63,15 @@ typedef struct _RILERRORDETAILS {
 
 
 
-`dw3gppCause`
-
-
-
 `dwParams`
 
 
 
 `hResult`
+
+
+
+`dw3gppCause`
 
 
 

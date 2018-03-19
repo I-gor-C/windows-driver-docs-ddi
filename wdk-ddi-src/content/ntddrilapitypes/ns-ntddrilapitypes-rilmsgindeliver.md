@@ -64,31 +64,11 @@ typedef struct _RILMSGINDELIVER {
 ## Members
 
 
-`cbHdrLength`
-
-
-
-`cchMsgLength`
-
-
-
-`dwMsgID`
-
-
-
-`dwProtocolID`
-
-
-
 `raOrigAddress`
 
 
 
-`rgbHdr`
-
-
-
-`rgbMsg`
+`dwProtocolID`
 
 
 
@@ -97,6 +77,26 @@ typedef struct _RILMSGINDELIVER {
 
 
 `stSCReceiveTime`
+
+
+
+`dwMsgID`
+
+
+
+`cbHdrLength`
+
+
+
+`cchMsgLength`
+
+
+
+`rgbHdr`
+
+
+
+`rgbMsg`
 
 
 

@@ -60,25 +60,25 @@ typedef struct _FILE_FS_VOLUME_INFORMATION {
 ## Members
 
 
-`SupportsObjects`
-
-<b>TRUE</b> if the file system supports object-oriented file system objects, <b>FALSE</b> otherwise.
-
 `VolumeCreationTime`
 
 Time when the volume was created.
 
-`VolumeLabel`
+`VolumeSerialNumber`
 
-Name of the volume.
+Serial number of the volume.
 
 `VolumeLabelLength`
 
 Length, in bytes, of the name of the volume.
 
-`VolumeSerialNumber`
+`SupportsObjects`
 
-Serial number of the volume.
+<b>TRUE</b> if the file system supports object-oriented file system objects, <b>FALSE</b> otherwise.
+
+`VolumeLabel`
+
+Name of the volume.
 
 ## Remarks
 This information can be queried in either of the following ways: 
@@ -117,11 +117,3 @@ This structure must be aligned on a LONGLONG (8-byte) boundary.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_FS_VOLUME_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

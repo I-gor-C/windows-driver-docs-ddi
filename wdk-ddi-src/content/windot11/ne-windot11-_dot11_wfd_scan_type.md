@@ -66,13 +66,13 @@ typedef enum _DOT11_WFD_SCAN_TYPE {
                 </tr>
             
                 <tr>
-                    <td>dot11_wfd_scan_type_auto</td>
-                    <td>Driver selected scanning is used.</td>
+                    <td>dot11_wfd_scan_type_passive</td>
+                    <td>Use passive scanning during device discovery.</td>
                 </tr>
             
                 <tr>
-                    <td>dot11_wfd_scan_type_passive</td>
-                    <td>Use passive scanning during device discovery.</td>
+                    <td>dot11_wfd_scan_type_auto</td>
+                    <td>Driver selected scanning is used.</td>
                 </tr>
 </table>
 
@@ -93,11 +93,3 @@ The system will set only one scan type at a time. The driver should use this set
 
 
 <a href="..\windot11\ns-windot11-_dot11_wfd_discover_request.md">DOT11_WFD_DISCOVER_REQUEST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_WFD_SCAN_TYPE enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

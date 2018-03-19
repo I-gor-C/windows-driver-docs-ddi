@@ -61,17 +61,9 @@ typedef struct _FILE_BASIC_INFORMATION {
 ## Members
 
 
-`ChangeTime`
-
-Specifies the last time the file was changed.
-
 `CreationTime`
 
 Specifies the time that the file was created.
-
-`FileAttributes`
-
-Specifies one or more FILE_ATTRIBUTE_<i>XXX</i> flags. For descriptions of these flags, see the documentation for the <b>GetFileAttributes</b> function in the Microsoft Windows SDK.
 
 `LastAccessTime`
 
@@ -80,6 +72,14 @@ Specifies the time that the file was last accessed.
 `LastWriteTime`
 
 Specifies the time that the file was last written to.
+
+`ChangeTime`
+
+Specifies the last time the file was changed.
+
+`FileAttributes`
+
+Specifies one or more FILE_ATTRIBUTE_<i>XXX</i> flags. For descriptions of these flags, see the documentation for the <b>GetFileAttributes</b> function in the Microsoft Windows SDK.
 
 ## Remarks
 The FILE_ATTRIBUTE_NORMAL flag cannot be set or returned in combination with any other attributes. All other <b>FileAttributes</b> values override this attribute.
@@ -112,11 +112,3 @@ To set the members of this structure, the caller must have FILE_WRITE_ATTRIBUTES
 
 
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20FILE_BASIC_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

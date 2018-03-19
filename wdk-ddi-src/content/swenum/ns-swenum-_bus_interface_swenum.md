@@ -60,21 +60,21 @@ typedef struct _BUS_INTERFACE_SWENUM {
 ## Members
 
 
-`DereferenceDeviceObject`
-
-Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksdereferencesoftwarebusobject.md">KsDereferenceSoftwareBusObject</a> routine.
-
 `Interface`
 
 Specifies the exported <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>.
 
-`QueryReferenceString`
-
-Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksquerysoftwarebusinterface.md">KsQuerySoftwareBusInterface</a> routine.
-
 `ReferenceDeviceObject`
 
 Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksreferencesoftwarebusobject.md">KsReferenceSoftwareBusObject</a> routine.
+
+`DereferenceDeviceObject`
+
+Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksdereferencesoftwarebusobject.md">KsDereferenceSoftwareBusObject</a> routine.
+
+`QueryReferenceString`
+
+Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksquerysoftwarebusinterface.md">KsQuerySoftwareBusInterface</a> routine.
 
 ## Remarks
 A driver obtains a BUS_INTERFACE_SWENUM interface by creating and sending an IRP_MJ_PNP request that specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> minor function code. To do this, the driver should:

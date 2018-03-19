@@ -59,10 +59,6 @@ typedef struct _WINBIO_CALIBRATION_INFO {
 ## Members
 
 
-`CalibrationData`
-
-A structure of type <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_data.md">WINBIO_DATA</a> that contains calibration data specific to this sensor.  This member is optional.
-
 `PayloadSize`
 
 The total size of the payload.  This includes the fixed length structure and any variable data at the end.
@@ -107,6 +103,10 @@ The device is in the middle of a vendor-specific operation.  This should only be
 </td>
 </tr>
 </table>
+
+`CalibrationData`
+
+A structure of type <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_data.md">WINBIO_DATA</a> that contains calibration data specific to this sensor.  This member is optional.
 
 
 ## Requirements

@@ -57,13 +57,13 @@ typedef struct D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING_0020 {
 ## Members
 
 
-`Alpha`
-
-The planar alpha value. The value can range from 0.0 (transparent) to 1.0 (opaque). If the <b>Enable</b> member is false, this value is ignored.
-
 `Enable`
 
 Specifies whether alpha blending is enabled.
+
+`Alpha`
+
+The planar alpha value. The value can range from 0.0 (transparent) to 1.0 (opaque). If the <b>Enable</b> member is false, this value is ignored.
 
 ## Remarks
 For each pixel, the destination color value is computed as the following: <pre class="syntax" xml:space="preserve"><code>Cd = Cs * (As * Ap * Ae) + Cd * (1.0 - As * Ap * Ae)</code></pre>

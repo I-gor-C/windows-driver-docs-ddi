@@ -61,11 +61,6 @@ typedef enum _RILIMSIPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_IMSI_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_IMSI_IMSI</td>
                     <td></td>
                 </tr>
@@ -77,6 +72,11 @@ typedef enum _RILIMSIPARAMMASK {
             
                 <tr>
                     <td>RIL_PARAM_IMSI_MNC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_IMSI_ALL</td>
                     <td></td>
                 </tr>
 </table>

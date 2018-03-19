@@ -62,6 +62,11 @@ typedef enum _WDI_POWER_SAVE_LEVEL {
 <table>
             
                 <tr>
+                    <td>WDI_POWER_SAVE_LEVEL_NO_POWER_SAVE</td>
+                    <td>No power saving.</td>
+                </tr>
+            
+                <tr>
                     <td>WDI_POWER_SAVE_LEVEL_FAST_PSP</td>
                     <td>Fast PSP.</td>
                 </tr>
@@ -74,11 +79,6 @@ typedef enum _WDI_POWER_SAVE_LEVEL {
                 <tr>
                     <td>WDI_POWER_SAVE_LEVEL_MAXIMUM_LEVEL</td>
                     <td>Maximum power saving level.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_POWER_SAVE_LEVEL_NO_POWER_SAVE</td>
-                    <td>No power saving.</td>
                 </tr>
 </table>
 

@@ -66,11 +66,11 @@ typedef struct _RILSIGNALQUALITY {
 
 
 
-`dwExecutor`
-
-
-
 `dwParams`
+
+
+
+`dwExecutor`
 
 
 

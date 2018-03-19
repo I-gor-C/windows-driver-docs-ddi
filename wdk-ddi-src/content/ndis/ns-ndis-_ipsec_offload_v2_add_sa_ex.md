@@ -78,28 +78,6 @@ typedef struct _IPSEC_OFFLOAD_V2_ADD_SA_EX {
 ## Members
 
 
-`Flags`
-
-A bitmask that indicates whether the SA that is being added is an inbound or outbound SA as
-     follows:
-     
-
-
-
-
-
-#### IPSEC_OFFLOAD_V2_IPv6
-
-If this flag is set, the addresses are IPv6. Otherwise, the addresses are IPv4
-
-
-
-
-
-#### IPSEC_OFFLOAD_V2_INBOUND
-
-If this flag is set, the SA is inbound. Otherwise, the SA is outbound.
-
 `Header`
 
 The 
@@ -109,25 +87,6 @@ The
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
      <b>Revision</b> member to NDIS_IPSEC_OFFLOAD_V2_ADD_SA_EX_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_IPSEC_OFFLOAD_V2_ADD_SA_EX_REVISION_1.
-
-`KeyLength`
-
-The length, in bytes, of the buffer at 
-     <b>KeyOffset</b>.
-
-`KeyOffset`
-
-The offset, in bytes, from the beginning of the IPSEC_OFFLOAD_V2_ADD_SA_EX structure to the beginning of a variable-length array that contains keys for the SA that is specified at 
-     <b>SecAssoc</b>. If both an encryption algorithm and an authentication algorithm are specified by the 
-     <b>EncryptionAlgorithm</b> and 
-     <b>AuthenticationAlgorithm</b> members of an 
-     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
-     IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure, the buffer at 
-     <b>KeyOffset</b> contains key information for one followed by the other. The beginning and the length of
-     the key are specified by the 
-     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_algorithm_info.md">
-   IPSEC_OFFLOAD_V2_ALGORITHM_INFO</a> structure's <b>KeyOffsetBytes</b> and 
-     <b>KeyLength</b> members, respectively.
 
 `NumExtHdrs`
 
@@ -201,6 +160,28 @@ UDP ESP
 </tr>
 </table>
 
+`Flags`
+
+A bitmask that indicates whether the SA that is being added is an inbound or outbound SA as
+     follows:
+     
+
+
+
+
+
+#### IPSEC_OFFLOAD_V2_IPv6
+
+If this flag is set, the addresses are IPv6. Otherwise, the addresses are IPv4
+
+
+
+
+
+#### IPSEC_OFFLOAD_V2_INBOUND
+
+If this flag is set, the SA is inbound. Otherwise, the SA is outbound.
+
 `OffloadHandle`
 
 The handle to the newly created SA. The miniport driver supplies this handle before completing the
@@ -215,27 +196,6 @@ The handle to the newly created SA. The miniport driver supplies this handle bef
      miniport driver. The TCP/IP transport must also specify this handle when deleting the SA with an 
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-delete-sa">
      OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a> request.
-
-`SecAssoc`
-
-An array with two elements that contain the information about the IPsec operations (AH, ESP, or
-     both) for the SA. The number of provided elements is specified in the 
-     <b>NumExtHdrs</b> member. The information for each IPsec operations is formatted as an 
-     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
-     IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure, which is described below.
-     
-
-The TCP/IP transport specifies one or two IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structures in the
-     buffer at 
-     <b>SecAssoc</b> . Each IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure indicates the type of
-     operation--authentication or encryption/decryption--for which the SA specified in the structure is to be
-     used. The order of the IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structures in the array indicates the order
-     in which the miniport driver should perform the operations for each SA. Only one combination of
-     operations is supported: encryption/decryption (ESP) followed by authentication (AH).
-
-`SourceSwitchPortId`
-
-Reserved.
 
 `UdpEspEncapsulation`
 
@@ -276,6 +236,46 @@ The tunnel-mode portion of a packet is UDP-encapsulated. The transport-mode port
 
 The tunnel-mode portion of a packet is not UDP-encapsulated. The transport-mode portion of a
        packet is UDP-encapsulated and ESP-protected.
+
+`SecAssoc`
+
+An array with two elements that contain the information about the IPsec operations (AH, ESP, or
+     both) for the SA. The number of provided elements is specified in the 
+     <b>NumExtHdrs</b> member. The information for each IPsec operations is formatted as an 
+     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
+     IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure, which is described below.
+     
+
+The TCP/IP transport specifies one or two IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structures in the
+     buffer at 
+     <b>SecAssoc</b> . Each IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure indicates the type of
+     operation--authentication or encryption/decryption--for which the SA specified in the structure is to be
+     used. The order of the IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structures in the array indicates the order
+     in which the miniport driver should perform the operations for each SA. Only one combination of
+     operations is supported: encryption/decryption (ESP) followed by authentication (AH).
+
+`KeyLength`
+
+The length, in bytes, of the buffer at 
+     <b>KeyOffset</b>.
+
+`KeyOffset`
+
+The offset, in bytes, from the beginning of the IPSEC_OFFLOAD_V2_ADD_SA_EX structure to the beginning of a variable-length array that contains keys for the SA that is specified at 
+     <b>SecAssoc</b>. If both an encryption algorithm and an authentication algorithm are specified by the 
+     <b>EncryptionAlgorithm</b> and 
+     <b>AuthenticationAlgorithm</b> members of an 
+     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
+     IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure, the buffer at 
+     <b>KeyOffset</b> contains key information for one followed by the other. The beginning and the length of
+     the key are specified by the 
+     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_algorithm_info.md">
+   IPSEC_OFFLOAD_V2_ALGORITHM_INFO</a> structure's <b>KeyOffsetBytes</b> and 
+     <b>KeyLength</b> members, respectively.
+
+`SourceSwitchPortId`
+
+Reserved.
 
 `VlanId`
 
@@ -344,11 +344,3 @@ This structure is nearly identical to the previous version,
 
 <a href="..\ndis\ns-ndis-_ipsec_offload_v2_algorithm_info.md">
    IPSEC_OFFLOAD_V2_ALGORITHM_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IPSEC_OFFLOAD_V2_ADD_SA_EX structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

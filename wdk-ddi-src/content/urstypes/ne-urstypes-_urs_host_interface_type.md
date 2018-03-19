@@ -66,13 +66,13 @@ typedef enum _URS_HOST_INTERFACE_TYPE {
                 </tr>
             
                 <tr>
-                    <td>UrsHostInterfaceTypeOther</td>
-                    <td>Indicates a generic host controller.</td>
+                    <td>UrsHostInterfaceTypeXhci</td>
+                    <td>Indicates an xHCI host controller.</td>
                 </tr>
             
                 <tr>
-                    <td>UrsHostInterfaceTypeXhci</td>
-                    <td>Indicates an xHCI host controller.</td>
+                    <td>UrsHostInterfaceTypeOther</td>
+                    <td>Indicates a generic host controller.</td>
                 </tr>
 </table>
 

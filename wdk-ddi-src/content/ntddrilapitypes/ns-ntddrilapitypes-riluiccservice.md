@@ -57,11 +57,11 @@ typedef struct _RILUICCSERVICE {
 ## Members
 
 
-`dwService`
-
-
-
 `hUiccApp`
+
+
+
+`dwService`
 
 
 

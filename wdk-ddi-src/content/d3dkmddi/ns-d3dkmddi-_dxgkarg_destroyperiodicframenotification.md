@@ -57,13 +57,13 @@ typedef struct _DXGKARG_DESTROYPERIODICFRAMENOTIFICATION {
 ## Members
 
 
-`hAdapter`
-
-A handle to the adapter that the notification object was created for.
-
 `hNotification`
 
 A handle to the notification object created by the KMD.
+
+`hAdapter`
+
+A handle to the adapter that the notification object was created for.
 
 
 ## Requirements

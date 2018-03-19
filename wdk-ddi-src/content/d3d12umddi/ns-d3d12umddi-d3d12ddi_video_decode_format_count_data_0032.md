@@ -58,6 +58,10 @@ typedef struct _D3D12DDI_VIDEO_DECODE_FORMAT_COUNT_DATA_0032 {
 ## Members
 
 
+`NodeIndex`
+
+Node index.
+
 `Configuration`
 
 Configuration.
@@ -65,10 +69,6 @@ Configuration.
 `FormatCount`
 
 Format count.
-
-`NodeIndex`
-
-Node index.
 
 
 ## Requirements

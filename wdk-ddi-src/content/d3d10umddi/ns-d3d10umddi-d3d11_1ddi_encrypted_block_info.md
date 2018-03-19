@@ -58,19 +58,19 @@ typedef struct D3D11_1DDI_ENCRYPTED_BLOCK_INFO {
 ## Members
 
 
-`NumBytesInEncryptPattern`
+`NumEncryptedBytesAtBeginning`
 
-The number of bytes that are encrypted after each block of skipped bytes.
-
-The skip and encrypt pattern is then repeated until the buffer ends. For more information about the skip-encrypt pattern, see the Remarks section.
+The number of bytes that are encrypted at the start of the buffer.
 
 `NumBytesInSkipPattern`
 
 The number of bytes that are skipped after the first <b>NumEncryptedBytesAtBeginning</b> bytes, and then after each block of <b>NumBytesInEncryptPattern</b> bytes. Skipped bytes are not encrypted.
 
-`NumEncryptedBytesAtBeginning`
+`NumBytesInEncryptPattern`
 
-The number of bytes that are encrypted at the start of the buffer.
+The number of bytes that are encrypted after each block of skipped bytes.
+
+The skip and encrypt pattern is then repeated until the buffer ends. For more information about the skip-encrypt pattern, see the Remarks section.
 
 ## Remarks
 Because the buffer's encrypted portion is specified in bytes, an application must ensure that the encrypted blocks match the GPU's crypto-block alignment.

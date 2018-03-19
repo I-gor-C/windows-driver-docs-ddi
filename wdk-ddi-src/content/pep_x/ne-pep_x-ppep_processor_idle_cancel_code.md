@@ -61,13 +61,13 @@ typedef enum _PEP_PROCESSOR_IDLE_CANCEL_CODE {
 <table>
             
                 <tr>
-                    <td>PepIdleCancelDependencyCheckFailed</td>
-                    <td>The processor can enter the selected idle state only after one or more secondary processors have entered their corresponding idle states, but not all of these secondary processors have entered the correct idle states.</td>
+                    <td>PepIdleCancelWorkPending</td>
+                    <td>The processor has pending work that prevents it from entering the selected idle state.</td>
                 </tr>
             
                 <tr>
-                    <td>PepIdleCancelMax</td>
-                    <td>Reserved for use by the operating system.</td>
+                    <td>PepIdleCancelDependencyCheckFailed</td>
+                    <td>The processor can enter the selected idle state only after one or more secondary processors have entered their corresponding idle states, but not all of these secondary processors have entered the correct idle states.</td>
                 </tr>
             
                 <tr>
@@ -76,8 +76,8 @@ typedef enum _PEP_PROCESSOR_IDLE_CANCEL_CODE {
                 </tr>
             
                 <tr>
-                    <td>PepIdleCancelWorkPending</td>
-                    <td>The processor has pending work that prevents it from entering the selected idle state.</td>
+                    <td>PepIdleCancelMax</td>
+                    <td>Reserved for use by the operating system.</td>
                 </tr>
 </table>
 
@@ -98,11 +98,3 @@ The <b>CancelCode</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_can
 
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186800">PEP_NOTIFY_PPM_CST_STATES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PROCESSOR_IDLE_CANCEL_CODE enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

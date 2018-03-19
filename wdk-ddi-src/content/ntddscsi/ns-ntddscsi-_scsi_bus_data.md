@@ -59,6 +59,10 @@ typedef struct _SCSI_BUS_DATA {
 ## Members
 
 
+`NumberOfLogicalUnits`
+
+Contains the number of logical units on the bus for which inquiry data is being retrieved.
+
 `InitiatorBusId`
 
 Contains the SCSI bus ID for the adapter.
@@ -66,10 +70,6 @@ Contains the SCSI bus ID for the adapter.
 `InquiryDataOffset`
 
 Contains an offset from the beginning of the SCSI_ADAPTER_BUS_INFO structure to the inquiry data.
-
-`NumberOfLogicalUnits`
-
-Contains the number of logical units on the bus for which inquiry data is being retrieved.
 
 
 ## Requirements
@@ -84,11 +84,3 @@ Contains the number of logical units on the bus for which inquiry data is being 
 
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_get_inquiry_data.md">IOCTL_SCSI_GET_INQUIRY_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SCSI_BUS_DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

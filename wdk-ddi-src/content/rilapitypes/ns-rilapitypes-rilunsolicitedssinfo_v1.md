@@ -68,7 +68,7 @@ typedef struct _RILUNSOLICITEDSSINFO_V1 {
 
 
 
-`dwCUGIndex`
+`dwParams`
 
 
 
@@ -84,15 +84,15 @@ typedef struct _RILUNSOLICITEDSSINFO_V1 {
 
 
 
-`dwParams`
-
-
-
 `raAddress`
 
 
 
 `rsaSubAddress`
+
+
+
+`dwCUGIndex`
 
 
 

@@ -58,21 +58,21 @@ struct _BRB_ACL_GET_MODE {
 ## Members
 
 
-`AclMode`
-
-A value from the 
-     <a href="..\bthddi\ne-bthddi-_acl_mode.md">ACL_MODE</a> enumeration that specifies the ACL mode of
-     the remote device.
-
-`BtAddress`
-
-The address of the remote device.
-
 `Hdr`
 
 A 
      <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
      about the current BRB.
+
+`BtAddress`
+
+The address of the remote device.
+
+`AclMode`
+
+A value from the 
+     <a href="..\bthddi\ne-bthddi-_acl_mode.md">ACL_MODE</a> enumeration that specifies the ACL mode of
+     the remote device.
 
 ## Remarks
 To get the current ACL connection state for a remote device, profile drivers should 
@@ -96,11 +96,3 @@ To get the current ACL connection state for a remote device, profile drivers sho
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536609">BRB_ACL_GET_MODE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_ACL_GET_MODE structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -65,18 +65,6 @@ typedef struct _PCPROPERTY_REQUEST {
 ## Members
 
 
-`Instance`
-
-Pointer to the property-instance buffer
-
-`InstanceSize`
-
-Specifies the size in bytes of the property-instance buffer.
-
-`Irp`
-
-Pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> containing the client's original property request
-
 `MajorTarget`
 
 <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointer to the main miniport object. This member contains the <i>UnknownMiniport</i> parameter value that the adapter driver previously passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a> method.
@@ -92,14 +80,6 @@ Specifies a node ID. This member identifies the target node for the request. If 
 `PropertyItem`
 
 Pointer to the property item, which is a structure of type <a href="..\portcls\ns-portcls-__unnamed_struct_0cb6_3.md">PCPROPERTY_ITEM</a>.
-
-`Value`
-
-Pointer to the property-value buffer
-
-`ValueSize`
-
-Specifies the size in bytes of the property-value buffer.
 
 `Verb`
 
@@ -157,6 +137,26 @@ KSPROPERTY_TYPE_TOPOLOGY
 </ul>
 These flags are described in <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>.
 
+`InstanceSize`
+
+Specifies the size in bytes of the property-instance buffer.
+
+`Instance`
+
+Pointer to the property-instance buffer
+
+`ValueSize`
+
+Specifies the size in bytes of the property-value buffer.
+
+`Value`
+
+Pointer to the property-value buffer
+
+`Irp`
+
+Pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> containing the client's original property request
+
 ## Remarks
 This is the structure that the port driver passes to the miniport driver's property-handler routine. The <a href="..\portcls\ns-portcls-__unnamed_struct_0cb6_3.md">PCPROPERTY_ITEM</a> structure contains a function pointer to a property handler that takes a <b>PCPROPERTY_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCPROPERTY_REQUEST</b> structure, extracts the relevant information from the original property request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
 
@@ -200,11 +200,3 @@ For background information about audio properties, see <a href="https://msdn.mic
 
 
 <a href="..\ksmedia\ns-ksmedia-ksnodeproperty_audio_channel.md">KSNODEPROPERTY_AUDIO_CHANNEL</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCPROPERTY_REQUEST structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

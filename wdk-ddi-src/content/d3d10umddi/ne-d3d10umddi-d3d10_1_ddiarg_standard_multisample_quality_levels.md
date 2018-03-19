@@ -59,13 +59,13 @@ typedef enum D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS {
 <table>
             
                 <tr>
-                    <td>D3D10_1_DDIARG_CENTER_MULTISAMPLE_PATTERN</td>
-                    <td>The same number of samples as D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN, except all the samples overlap the center of the pixel.</td>
+                    <td>D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN</td>
+                    <td>The quality level value for standard multisample pattern.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN</td>
-                    <td>The quality level value for standard multisample pattern.</td>
+                    <td>D3D10_1_DDIARG_CENTER_MULTISAMPLE_PATTERN</td>
+                    <td>The same number of samples as D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN, except all the samples overlap the center of the pixel.</td>
                 </tr>
 </table>
 
@@ -84,11 +84,3 @@ For every sample count where D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN is supp
 ## See Also
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkmultisamplequalitylevels.md">CheckMultisampleQualityLevels</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

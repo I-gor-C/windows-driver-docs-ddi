@@ -66,45 +66,45 @@ typedef struct _D3D12DDI_D3D12_OPTIONS_DATA_0032 {
 ## Members
 
 
-`ConservativeRasterizationTier`
-
-Conservative rasterization tier.
-
-`CopyQueueTimestampQueriesSupported`
-
-Copy queue timestamp queries supported.
-
-`CrossNodeSharingTier`
-
-Cross node sharing tier.
-
-`DepthBoundsTestSupported`
-
-Depth bounds test supported.
-
-`OutputMergerLogicOp`
-
-Output merger logic option.
-
-`ProgrammableSamplePositionsTier`
-
-Programmable sample positions tier.
-
 `ResourceBindingTier`
 
 Resource binding tier.
 
-`ResourceHeapTier`
+`ConservativeRasterizationTier`
 
-Resource heap tier.
+Conservative rasterization tier.
 
 `TiledResourcesTier`
 
 Tile resources tier.
 
+`CrossNodeSharingTier`
+
+Cross node sharing tier.
+
 `VPAndRTArrayIndexFromAnyShaderFeedingRasterizerSupportedWithoutGSEmulation`
 
 VP and RT array index from any shader feeding rasterizer supported without GS emulation.
+
+`OutputMergerLogicOp`
+
+Output merger logic option.
+
+`ResourceHeapTier`
+
+Resource heap tier.
+
+`DepthBoundsTestSupported`
+
+Depth bounds test supported.
+
+`ProgrammableSamplePositionsTier`
+
+Programmable sample positions tier.
+
+`CopyQueueTimestampQueriesSupported`
+
+Copy queue timestamp queries supported.
 
 `WriteBufferImmediateQueueFlags`
 

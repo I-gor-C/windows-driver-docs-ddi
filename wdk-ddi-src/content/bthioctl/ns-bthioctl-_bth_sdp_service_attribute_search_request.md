@@ -66,12 +66,6 @@ typedef struct _BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST {
 
 
 
-`range`
-
-A variable-length array of 
-     <a href="http://go.microsoft.com/fwlink/p/?linkid=50714">SdpAttributeRange</a> structures that
-     contains the range of SDP attributes for which to search.
-
 `searchFlags`
 
 ####
@@ -81,6 +75,12 @@ A variable-length array of
 An array of UUIDs that represent the services for which to query. Each entry can be a 2-byte,
      4-byte, or 16-byte type, and there can be a maximum of 12 entries. The array can be terminated before
      all 12 entries are used if a UUID entry contains all zeros.
+
+`range`
+
+A variable-length array of 
+     <a href="http://go.microsoft.com/fwlink/p/?linkid=50714">SdpAttributeRange</a> structures that
+     contains the range of SDP attributes for which to search.
 
 ## Remarks
 The Bluetooth driver stack determines the number of array items in the 
@@ -107,11 +107,3 @@ The Bluetooth driver stack determines the number of array items in the
 
 
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

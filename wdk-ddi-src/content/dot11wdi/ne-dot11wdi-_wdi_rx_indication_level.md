@@ -66,28 +66,13 @@ typedef enum _WDI_RX_INDICATION_LEVEL {
 <table>
             
                 <tr>
-                    <td>WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC</td>
-                    <td>Used for the first data indication (<a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_rx_inorder_data_ind.md">NdisWdiRxInorderDataIndication</a>) of a DPC.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC_WITH_LOW_RESSOURCES</td>
-                    <td>Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC</b>.</td>
-                </tr>
-            
-                <tr>
                     <td>WDI_RX_INDICATION_DISPATCH_GENERAL</td>
                     <td>Used for subsequent data indications in a DPC. <b>WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC</b> is used for the first data indication of a DPC.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_RX_INDICATION_DISPATCH_GENERAL_WITH_LOW_RESOURCES</td>
-                    <td>Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_DISPATCH_GENERAL</b>.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_RX_INDICATION_FLAG_RESOURCES</td>
-                    <td>Bitwise OR’d with other enum values to cause RxMgr to set <b>NDIS_RECEIVE_FLAG_RESOURCES</b>.</td>
+                    <td>WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC</td>
+                    <td>Used for the first data indication (<a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_rx_inorder_data_ind.md">NdisWdiRxInorderDataIndication</a>) of a DPC.</td>
                 </tr>
             
                 <tr>
@@ -96,13 +81,28 @@ typedef enum _WDI_RX_INDICATION_LEVEL {
                 </tr>
             
                 <tr>
-                    <td>WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES_WITH_LOW_RESOURCES</td>
-                    <td>Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES</b>.</td>
+                    <td>WDI_RX_INDICATION_PASSIVE</td>
+                    <td>Used when making data indications at passive level.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_RX_INDICATION_PASSIVE</td>
-                    <td>Used when making data indications at passive level.</td>
+                    <td>WDI_RX_INDICATION_FLAG_RESOURCES</td>
+                    <td>Bitwise OR’d with other enum values to cause RxMgr to set <b>NDIS_RECEIVE_FLAG_RESOURCES</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_RX_INDICATION_DISPATCH_GENERAL_WITH_LOW_RESOURCES</td>
+                    <td>Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_DISPATCH_GENERAL</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC_WITH_LOW_RESSOURCES</td>
+                    <td>Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES_WITH_LOW_RESOURCES</td>
+                    <td>Bitwise OR of <b>WDI_RX_INDICATION_FLAG_RESOURCES</b> and <b>WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES</b>.</td>
                 </tr>
             
                 <tr>

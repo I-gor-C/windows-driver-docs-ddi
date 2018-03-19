@@ -64,7 +64,17 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KS_MemoryTypeAnyHost</td>
+                    <td>KS_MemoryTypeDontCare</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_MemoryTypeKernelPaged</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_MemoryTypeKernelNonPaged</td>
                     <td></td>
                 </tr>
             
@@ -79,22 +89,12 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KS_MemoryTypeDontCare</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KS_MemoryTypeKernelNonPaged</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KS_MemoryTypeKernelPaged</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>KS_MemoryTypeUser</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_MemoryTypeAnyHost</td>
                     <td></td>
                 </tr>
 </table>

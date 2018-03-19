@@ -64,13 +64,13 @@ Indicates whether encryption is being used and the operation to which encryption
 
 There are only two possible values for <b>dwFunction</b> in this structure: 0xFFFF0001 when sent by a host software decoder, and 0xFFFF0801 when sent by the hardware accelerator.
 
-`guidEncryptProtocol`
-
-Contains the GUID associated with the encryption protocol.
-
 `ReservedBits`
 
 Reserved bits used for packing and alignment. This must be zero.
+
+`guidEncryptProtocol`
+
+Contains the GUID associated with the encryption protocol.
 
 ## Remarks
 The encryption protocol in use is externally defined and operates as described in <a href="https://msdn.microsoft.com/d5ce9c02-7126-4775-bb87-dae45b93b652">Encryption Support</a>.

@@ -61,6 +61,11 @@ typedef enum _PEP_DEVICE_ACCEPTANCE_TYPE {
 <table>
             
                 <tr>
+                    <td>PepDeviceNotAccepted</td>
+                    <td>The PEP does not claim ownership of this device.</td>
+                </tr>
+            
+                <tr>
                     <td>PepDeviceAccepted</td>
                     <td>The PEP claims ownership of this device.</td>
                 </tr>
@@ -68,11 +73,6 @@ typedef enum _PEP_DEVICE_ACCEPTANCE_TYPE {
                 <tr>
                     <td>PepDeviceAceptedMax</td>
                     <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PepDeviceNotAccepted</td>
-                    <td>The PEP does not claim ownership of this device.</td>
                 </tr>
 </table>
 
@@ -89,11 +89,3 @@ This enumeration is used by <b>DeviceAccepted</b> member of the <a href="..\pepf
 ## See Also
 
 <a href="..\pepfx\ns-pepfx-_pep_register_device_v2.md">PEP_REGISTER_DEVICE_V2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_DEVICE_ACCEPTANCE_TYPE enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

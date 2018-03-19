@@ -57,13 +57,13 @@ typedef struct _D3DKMT_OPENPROTECTEDSESSIONFROMNTHANDLE {
 ## Members
 
 
-`hHandle`
-
-The protected kernel session handle.
-
 `hNtHandle`
 
 The protected NT session handle.
+
+`hHandle`
+
+The protected kernel session handle.
 
 
 ## Requirements

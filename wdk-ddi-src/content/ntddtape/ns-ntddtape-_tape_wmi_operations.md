@@ -58,14 +58,6 @@ typedef struct _TAPE_WMI_OPERATIONS {
 ## Members
 
 
-`DataBuffer`
-
-Pointer to a buffer in which the tape minidriver returns the results of the operation. The first <b>sizeof</b>(ULONG) bytes of <b>DataBuffer</b> contain a value of type <a href="..\ntddtape\ne-ntddtape-_tape_drive_problem_type.md">TAPE_DRIVE_PROBLEM_TYPE</a>, followed by <b>DataBufferSize</b> - <b>sizeof</b>(ULONG) bytes of tape data.
-
-`DataBufferSize`
-
-Indicates the size in bytes of the buffer in which the tape minidriver returns the results of the operation.
-
 `Method`
 
 Indicates the operation to be performed by the tape device. The operations allowed are as follows:
@@ -94,6 +86,14 @@ Returns specific device errors, such as tape alerts. Not all tape drives support
 
 Returns general I/O error data, such as read/write errors, based on the I/O error count. All tape drives support this method.
 
+`DataBufferSize`
+
+Indicates the size in bytes of the buffer in which the tape minidriver returns the results of the operation.
+
+`DataBuffer`
+
+Pointer to a buffer in which the tape minidriver returns the results of the operation. The first <b>sizeof</b>(ULONG) bytes of <b>DataBuffer</b> contain a value of type <a href="..\ntddtape\ne-ntddtape-_tape_drive_problem_type.md">TAPE_DRIVE_PROBLEM_TYPE</a>, followed by <b>DataBufferSize</b> - <b>sizeof</b>(ULONG) bytes of tape data.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -107,11 +107,3 @@ Returns general I/O error data, such as read/write errors, based on the I/O erro
 
 
 <a href="..\ntddtape\ne-ntddtape-_tape_drive_problem_type.md">TAPE_DRIVE_PROBLEM_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TAPE_WMI_OPERATIONS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

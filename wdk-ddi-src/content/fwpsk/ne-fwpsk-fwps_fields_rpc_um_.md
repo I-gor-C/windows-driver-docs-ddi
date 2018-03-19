@@ -77,25 +77,8 @@ typedef enum FWPS_FIELDS_RPC_UM_ {
 <table>
             
                 <tr>
-                    <td>FWPS_FIELD_RPC_UM_AUTH_LEVEL</td>
-                    <td>The authentication service level. For more information about authentication service levels, see
-     Authentication-Service Constants in the RPC section of the Windows SDK documentation.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_UM_AUTH_TYPE</td>
-                    <td>The authentication service type. For more information about authentication service types, see
-     Authentication-Service Constants in the RPC section of the Microsoft Windows SDK documentation.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_UM_DCOM_APP_ID</td>
-                    <td>The identification of the COM application.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_UM_IF_FLAG</td>
-                    <td>Reserved for internal use.</td>
+                    <td>FWPS_FIELD_RPC_UM_REMOTE_USER_TOKEN</td>
+                    <td>The identification of the remote user.</td>
                 </tr>
             
                 <tr>
@@ -109,34 +92,18 @@ typedef enum FWPS_FIELDS_RPC_UM_ {
                 </tr>
             
                 <tr>
+                    <td>FWPS_FIELD_RPC_UM_IF_FLAG</td>
+                    <td>Reserved for internal use.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_UM_DCOM_APP_ID</td>
+                    <td>The identification of the COM application.</td>
+                </tr>
+            
+                <tr>
                     <td>FWPS_FIELD_RPC_UM_IMAGE_NAME</td>
                     <td>The name of the application.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_UM_LOCAL_ADDR_V4</td>
-                    <td>The local IPv4 address.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_UM_LOCAL_ADDR_V6</td>
-                    <td>The local IPv6 address.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_UM_LOCAL_PORT</td>
-                    <td>The local transport protocol port number.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_UM_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_UM_PIPE</td>
-                    <td>The name of the remote named pipe.</td>
                 </tr>
             
                 <tr>
@@ -157,18 +124,15 @@ typedef enum FWPS_FIELDS_RPC_UM_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_RPC_UM_REMOTE_ADDR_V4</td>
-                    <td>The remote IPv4 address.</td>
+                    <td>FWPS_FIELD_RPC_UM_AUTH_TYPE</td>
+                    <td>The authentication service type. For more information about authentication service types, see
+     Authentication-Service Constants in the RPC section of the Microsoft Windows SDK documentation.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_RPC_UM_REMOTE_ADDR_V6</td>
-                    <td>The remote IPv6 address. The IPv6 address of the RPC client.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_UM_REMOTE_USER_TOKEN</td>
-                    <td>The identification of the remote user.</td>
+                    <td>FWPS_FIELD_RPC_UM_AUTH_LEVEL</td>
+                    <td>The authentication service level. For more information about authentication service levels, see
+     Authentication-Service Constants in the RPC section of the Windows SDK documentation.</td>
                 </tr>
             
                 <tr>
@@ -179,6 +143,42 @@ typedef enum FWPS_FIELDS_RPC_UM_ {
                 <tr>
                     <td>FWPS_FIELD_RPC_UM_SEC_KEY_SIZE</td>
                     <td>The certificate-based SSPI encryption key size.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_UM_LOCAL_ADDR_V4</td>
+                    <td>The local IPv4 address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_UM_LOCAL_ADDR_V6</td>
+                    <td>The local IPv6 address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_UM_LOCAL_PORT</td>
+                    <td>The local transport protocol port number.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_UM_PIPE</td>
+                    <td>The name of the remote named pipe.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_UM_REMOTE_ADDR_V4</td>
+                    <td>The remote IPv4 address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_UM_REMOTE_ADDR_V6</td>
+                    <td>The remote IPv6 address. The IPv6 address of the RPC client.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_UM_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 

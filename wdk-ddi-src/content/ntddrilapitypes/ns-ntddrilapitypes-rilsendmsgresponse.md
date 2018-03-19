@@ -67,6 +67,14 @@ typedef struct _RILSENDMSGRESPONSE {
 
 
 
+`dwParams`
+
+
+
+`hrReturn`
+
+
+
 `dwCDMACauseCode`
 
 
@@ -75,23 +83,15 @@ typedef struct _RILSENDMSGRESPONSE {
 
 
 
-`dwGWLRelayCode`
-
-
-
 `dwGWLTransportCode`
 
 
 
+`dwGWLRelayCode`
+
+
+
 `dwMsgID`
-
-
-
-`dwParams`
-
-
-
-`hrReturn`
 
 
 

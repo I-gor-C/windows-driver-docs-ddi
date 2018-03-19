@@ -62,13 +62,17 @@ typedef struct _FILE_FS_SECTOR_SIZE_INFORMATION {
 ## Members
 
 
-`ByteOffsetForPartitionAlignment`
+`LogicalBytesPerSector`
 
-The offset value, in bytes, used to align the partition to a physical sector boundary. This member is set to <b>SSINFO_OFFSET_UNKNOWN</b> if proper device information is not available to calculate the value.
+Logical bytes per sector  reported by physical storage. This is the same value as the block size for used for Logical Block Addressing (LBA).
 
-`ByteOffsetForSectorAlignment`
+`PhysicalBytesPerSectorForAtomicity`
 
-The offset, in bytes, of the beginning of the first logical sector within the first physical sector. This member is set to <b>SSINFO_OFFSET_UNKNOWN</b> if proper device information is not available to calculate the value.
+Actual bytes per sector reported by physical storage used for an atomic write.
+
+`PhysicalBytesPerSectorForPerformance`
+
+Bytes per sector reported by physical storage for best performance.
 
 `FileSystemEffectivePhysicalBytesPerSectorForAtomicity`
 
@@ -125,17 +129,13 @@ The storage device supports the TRIM operation.
 </tr>
 </table>
 
-`LogicalBytesPerSector`
+`ByteOffsetForSectorAlignment`
 
-Logical bytes per sector  reported by physical storage. This is the same value as the block size for used for Logical Block Addressing (LBA).
+The offset, in bytes, of the beginning of the first logical sector within the first physical sector. This member is set to <b>SSINFO_OFFSET_UNKNOWN</b> if proper device information is not available to calculate the value.
 
-`PhysicalBytesPerSectorForAtomicity`
+`ByteOffsetForPartitionAlignment`
 
-Actual bytes per sector reported by physical storage used for an atomic write.
-
-`PhysicalBytesPerSectorForPerformance`
-
-Bytes per sector reported by physical storage for best performance.
+The offset value, in bytes, used to align the partition to a physical sector boundary. This member is set to <b>SSINFO_OFFSET_UNKNOWN</b> if proper device information is not available to calculate the value.
 
 ## Remarks
 This information can be queried in either of the following ways: 
@@ -191,11 +191,3 @@ If the system is unable to determine values for <b>PhysicalBytesPerSectorForAtom
 
 
 <a href="..\ntddk\ns-ntddk-_file_fs_size_information.md">FILE_FS_SIZE_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_FS_SECTOR_SIZE_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

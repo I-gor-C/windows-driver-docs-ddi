@@ -58,17 +58,17 @@ typedef struct _MOUNTDEV_SUGGESTED_LINK_NAME {
 ## Members
 
 
-`Name`
+`UseOnlyIfThereAreNoOtherLinks`
 
-Contains a variable-sized array of wide characters that holds the name of the suggested link in wide characters. Drive letter names must include the full path of the symbolic link in object namespace and must have the traditional Microsoft MS-DOS syntax. For instance, drive letter "D" must be represented in this manner: "\DosDevices\D:". The alternative symbolic link path of "\??\D:" may not be used, nor may abbreviations of the symbolic link such as "D:".
+Indicates that the mount manager should use the suggested link name only if there are no other persistent links assigned to the client.
 
 `NameLength`
 
 Contains the length of the suggested name.
 
-`UseOnlyIfThereAreNoOtherLinks`
+`Name`
 
-Indicates that the mount manager should use the suggested link name only if there are no other persistent links assigned to the client.
+Contains a variable-sized array of wide characters that holds the name of the suggested link in wide characters. Drive letter names must include the full path of the symbolic link in object namespace and must have the traditional Microsoft MS-DOS syntax. For instance, drive letter "D" must be represented in this manner: "\DosDevices\D:". The alternative symbolic link path of "\??\D:" may not be used, nor may abbreviations of the symbolic link such as "D:".
 
 
 ## Requirements
@@ -79,11 +79,3 @@ Indicates that the mount manager should use the suggested link name only if ther
 ## See Also
 
 <a href="..\mountdev\ni-mountdev-ioctl_mountdev_query_suggested_link_name.md">IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MOUNTDEV_SUGGESTED_LINK_NAME structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

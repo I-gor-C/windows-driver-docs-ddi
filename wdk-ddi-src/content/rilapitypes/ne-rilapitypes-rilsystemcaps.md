@@ -60,17 +60,17 @@ typedef enum _RILSYSTEMCAPS {
 <table>
             
                 <tr>
-                    <td>RIL_SYSTEMCAPS_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_SYSTEMCAPS_NONE</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_SYSTEMCAPS_VOICEDATA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMCAPS_ALL</td>
                     <td></td>
                 </tr>
 </table>

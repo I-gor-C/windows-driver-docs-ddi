@@ -72,29 +72,25 @@ typedef struct _UFS_RPMB_UNIT_DESCRIPTOR {
 ## Members
 
 
-`bBootLunID`
+`bLength`
 
-
+Specifies the length, in bytes, of this descriptor.
 
 `bDescriptorIDN`
 
 Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_UNIT_IDN</b>.
 
-`bLength`
+`bUnitIndex`
 
-Specifies the length, in bytes, of this descriptor.
-
-`bLogicalBlockSize`
-
-Specifies the logical block size of the descriptor.
+Specifies unit index
 
 `bLUEnable`
 
 Specifies if the logic unit number (LUN) is enabled. If <b>bLUEnable</b> is equal to 0x00, the logical unit is disabled.
 
-`bLUQueueDepth`
+`bBootLunID`
 
-Specifies the logical unit queue depth. Can be any value from 0x00 to 0xff.
+
 
 `bLUWriteProtect`
 
@@ -119,13 +115,9 @@ Specifies if the logical unit is write-protected. Contains one of the following 
 </tr>
 </table>
 
-`bMemoryType`
+`bLUQueueDepth`
 
-Specifies the desired memory type. Equal to 0x0F.
-
-`bProvisioningType`
-
-Specifies the provisioning type.
+Specifies the logical unit queue depth. Can be any value from 0x00 to 0xff.
 
 `bPSASensitive`
 
@@ -146,27 +138,35 @@ Specifies if the logical unit is sensitive to soldering. Contains one of the fol
 </tr>
 </table>
 
-`bUnitIndex`
+`bMemoryType`
 
-Specifies unit index
-
-`dEraseBlockSize`
-
-Specifies the erase block size.
-
-`qLogicalBlockCount`
-
-Specifies the total number of addressable logical blocks in the logical unit.
-
-`qPhyMemResourceCount`
-
-Specifies the total physical memory resources available in the logical unit.
+Specifies the desired memory type. Equal to 0x0F.
 
 `Reserved`
 
 Reserved for future use.
 
 Reserved for future use.
+
+`bLogicalBlockSize`
+
+Specifies the logical block size of the descriptor.
+
+`qLogicalBlockCount`
+
+Specifies the total number of addressable logical blocks in the logical unit.
+
+`dEraseBlockSize`
+
+Specifies the erase block size.
+
+`bProvisioningType`
+
+Specifies the provisioning type.
+
+`qPhyMemResourceCount`
+
+Specifies the total physical memory resources available in the logical unit.
 
 `Reserved2`
 

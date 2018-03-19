@@ -65,26 +65,6 @@ typedef enum _NDK_OPERATION_TYPE {
 <table>
             
                 <tr>
-                    <td>NdkOperationTypeBind</td>
-                    <td>An <i>NdkBind</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_bind.md">NDK_FN_BIND</a>)  operation.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdkOperationTypeFastRegister</td>
-                    <td>An <i>NdkFastRegister</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_fast_register.md">NDK_FN_FAST_REGISTER</a>) operation.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdkOperationTypeInvalidate</td>
-                    <td>An <i>NdkInvalidate</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_invalidate.md">NDK_FN_INVALIDATE</a>) operation.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdkOperationTypeRead</td>
-                    <td>An <i>NdkRead</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_read.md">NDK_FN_READ</a>) operation.</td>
-                </tr>
-            
-                <tr>
                     <td>NdkOperationTypeReceive</td>
                     <td>An <i>NdkReceive</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_receive.md">NDK_FN_RECEIVE</a>) operation.</td>
                 </tr>
@@ -97,6 +77,26 @@ typedef enum _NDK_OPERATION_TYPE {
                 <tr>
                     <td>NdkOperationTypeSend</td>
                     <td>An <i>NdkSend</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_send.md">NDK_FN_SEND</a>) operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkOperationTypeFastRegister</td>
+                    <td>An <i>NdkFastRegister</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_fast_register.md">NDK_FN_FAST_REGISTER</a>) operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkOperationTypeBind</td>
+                    <td>An <i>NdkBind</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_bind.md">NDK_FN_BIND</a>)  operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkOperationTypeInvalidate</td>
+                    <td>An <i>NdkInvalidate</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_invalidate.md">NDK_FN_INVALIDATE</a>) operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkOperationTypeRead</td>
+                    <td>An <i>NdkRead</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_read.md">NDK_FN_READ</a>) operation.</td>
                 </tr>
             
                 <tr>
@@ -115,11 +115,3 @@ typedef enum _NDK_OPERATION_TYPE {
 ## See Also
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_result_ex.md">NDK_RESULT_EX</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_OPERATION_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

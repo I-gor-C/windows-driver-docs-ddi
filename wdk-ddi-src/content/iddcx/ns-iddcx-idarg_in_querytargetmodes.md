@@ -65,14 +65,14 @@ typedef struct IDARG_IN_QUERYTARGETMODES {
 <div class="alert"><b>Note</b>  This may not be the monitor description the driver originally provided in the monitor arrival call, which allows for the monitor description to be updated by the OS.</div>
 <div> </div>
 
+`TargetModeBufferInputCount`
+
+[in] The number of target modes the <b>pTargetModes</b> buffer passed to the driver can hold. If the value is zero, then the driver should not copy the target mode list to <b>pTargetModes.</b>
+
 `pTargetModes`
 
 [out] Pointer to the buffer that the driver should copy the target modes it supports for this monitor
                  to.
-
-`TargetModeBufferInputCount`
-
-[in] The number of target modes the <b>pTargetModes</b> buffer passed to the driver can hold. If the value is zero, then the driver should not copy the target mode list to <b>pTargetModes.</b>
 
 
 ## Requirements

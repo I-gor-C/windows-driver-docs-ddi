@@ -60,11 +60,6 @@ typedef enum D3D12DDI_VIDEO_SCALE_SUPPORT_FLAGS_0022 {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_SCALE_SUPPORT_FLAG_0022_EVEN_DIMENSIONS_ONLY</td>
-                    <td>The scaler supports only output sizes that have even output dimensions.</td>
-                </tr>
-            
-                <tr>
                     <td>D3D12DDI_VIDEO_SCALE_SUPPORT_FLAG_0022_NONE</td>
                     <td></td>
                 </tr>
@@ -72,6 +67,11 @@ typedef enum D3D12DDI_VIDEO_SCALE_SUPPORT_FLAGS_0022 {
                 <tr>
                     <td>D3D12DDI_VIDEO_SCALE_SUPPORT_FLAG_0022_POW2_ONLY</td>
                     <td>The scaler supports only output sizes at a pow2 scale factors within the range.  The x and y scale factors must be the same for both dimensions when this flag is set.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_VIDEO_SCALE_SUPPORT_FLAG_0022_EVEN_DIMENSIONS_ONLY</td>
+                    <td>The scaler supports only output sizes that have even output dimensions.</td>
                 </tr>
 </table>
 

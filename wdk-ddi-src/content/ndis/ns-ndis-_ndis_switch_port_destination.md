@@ -61,10 +61,9 @@ typedef struct _NDIS_SWITCH_PORT_DESTINATION {
 ## Members
 
 
-`IsExcluded`
+`PortId`
 
-If this member is set to TRUE, the packet will not be delivered to the
-    destination port.
+An NDIS_SWITCH_PORT_ID value that specifies the unique identifier of the destination port on the extensible switch.
 
 `NicIndex`
 
@@ -75,17 +74,18 @@ For more information on NDIS_SWITCH_NIC_INDEX values, see <a href="https://msdn.
 <div class="alert"><b>Note</b>  This member must specify the index value of a network adapter that is in a connected state. Index values for network adapters that are in a created or disconnected state cannot be specified. For more information about network connection states, see <a href="https://msdn.microsoft.com/1E2075E3-D7CC-4364-ABB2-D5969DB361B5">Hyper-V Extensible Switch Port and Network Adapter States</a>.</div>
 <div> </div>
 
-`PortId`
+`IsExcluded`
 
-An NDIS_SWITCH_PORT_ID value that specifies the unique identifier of the destination port on the extensible switch.
-
-`PreservePriority`
-
-If this member is set to TRUE, the 802.1Q priority information will be preserved when the packet is delivered to the destination port.
+If this member is set to TRUE, the packet will not be delivered to the
+    destination port.
 
 `PreserveVLAN`
 
 If this member is set to TRUE, the 802.1Q virtual local area network (VLAN) information will be preserved when the packet is delivered to the destination port.
+
+`PreservePriority`
+
+If this member is set to TRUE, the 802.1Q priority information will be preserved when the packet is delivered to the destination port.
 
 `Reserved`
 
@@ -111,11 +111,3 @@ For more information on destination ports, see <a href="https://msdn.microsoft.c
 
 
 <b></b>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_DESTINATION structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

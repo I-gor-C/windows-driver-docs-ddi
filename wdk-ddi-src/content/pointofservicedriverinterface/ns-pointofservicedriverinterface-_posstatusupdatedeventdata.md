@@ -58,10 +58,6 @@ typedef struct _PosStatusUpdatedEventData {
 ## Members
 
 
-`ExtendedStatus`
-
-Indicates a driver-specific value intended to be used by the vendor for diagnostic purposes.
-
 `Header`
 
 A <a href="https://msdn.microsoft.com/library/windows/hardware/dn772232">PosEventDataHeader</a> structure that contains information about the event that was raised and the amount of memory, in bytes, that this event data uses.
@@ -69,6 +65,10 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/dn772232">PosEven
 `Status`
 
 Indicates a device-specific enumeration value.
+
+`ExtendedStatus`
+
+Indicates a driver-specific value intended to be used by the vendor for diagnostic purposes.
 
 
 ## Requirements

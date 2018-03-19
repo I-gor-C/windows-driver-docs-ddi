@@ -69,28 +69,13 @@ typedef enum _EATTRIBUTE_DATATYPE {
 <table>
             
                 <tr>
-                    <td>kADT_ASCII</td>
-                    <td>The attribute is an ASCII string.</td>
-                </tr>
-            
-                <tr>
-                    <td>kADT_BINARY</td>
-                    <td>The attribute consists of binary data.</td>
+                    <td>kADT_UNKNOWN</td>
+                    <td>The attribute is of unknown type.</td>
                 </tr>
             
                 <tr>
                     <td>kADT_BOOL</td>
                     <td>The attribute is of type BOOL.</td>
-                </tr>
-            
-                <tr>
-                    <td>kADT_CUSTOMSIZEPARAMS</td>
-                    <td>The attribute is an array containing CUSTOMPARAM_MAX (a constant defined in printoem.h) elements. Each element is a <a href="..\printoem\ns-printoem-_customsizeparam.md">CUSTOMSIZEPARAM</a> structure.</td>
-                </tr>
-            
-                <tr>
-                    <td>kADT_DWORD</td>
-                    <td>The attribute is of type DWORD.</td>
                 </tr>
             
                 <tr>
@@ -104,13 +89,13 @@ typedef enum _EATTRIBUTE_DATATYPE {
                 </tr>
             
                 <tr>
-                    <td>kADT_RECT</td>
-                    <td>The attribute is of type RECT.</td>
+                    <td>kADT_DWORD</td>
+                    <td>The attribute is of type DWORD.</td>
                 </tr>
             
                 <tr>
-                    <td>kADT_SIZE</td>
-                    <td>The attribute is of type SIZE.</td>
+                    <td>kADT_ASCII</td>
+                    <td>The attribute is an ASCII string.</td>
                 </tr>
             
                 <tr>
@@ -119,8 +104,23 @@ typedef enum _EATTRIBUTE_DATATYPE {
                 </tr>
             
                 <tr>
-                    <td>kADT_UNKNOWN</td>
-                    <td>The attribute is of unknown type.</td>
+                    <td>kADT_BINARY</td>
+                    <td>The attribute consists of binary data.</td>
+                </tr>
+            
+                <tr>
+                    <td>kADT_SIZE</td>
+                    <td>The attribute is of type SIZE.</td>
+                </tr>
+            
+                <tr>
+                    <td>kADT_RECT</td>
+                    <td>The attribute is of type RECT.</td>
+                </tr>
+            
+                <tr>
+                    <td>kADT_CUSTOMSIZEPARAMS</td>
+                    <td>The attribute is an array containing CUSTOMPARAM_MAX (a constant defined in printoem.h) elements. Each element is a <a href="..\printoem\ns-printoem-_customsizeparam.md">CUSTOMSIZEPARAM</a> structure.</td>
                 </tr>
 </table>
 
@@ -133,11 +133,3 @@ typedef enum _EATTRIBUTE_DATATYPE {
 ## See Also
 
 <a href="..\printoem\ns-printoem-_customsizeparam.md">CUSTOMSIZEPARAM</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20EATTRIBUTE_DATATYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

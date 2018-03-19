@@ -59,21 +59,21 @@ typedef struct D3D11_1DDI_VIDEO_COLOR_RGBA {
 ## Members
 
 
-`A`
+`R`
 
-The alpha value. Values range from 0 (transparent) to 1 (opaque).
-
-`B`
-
-The blue value.
+The red value.
 
 `G`
 
 The green value.
 
-`R`
+`B`
 
-The red value.
+The blue value.
+
+`A`
+
+The alpha value. Values range from 0 (transparent) to 1 (opaque).
 
 
 ## Requirements

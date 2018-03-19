@@ -60,13 +60,13 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>XPSRAS_RENDERING_MODE_ALIASED</td>
-                    <td>Do not use antialiasing to rasterize the specified graphics elements.</td>
+                    <td>XPSRAS_RENDERING_MODE_ANTIALIASED</td>
+                    <td>Use antialiasing to rasterize the specified graphics elements.</td>
                 </tr>
             
                 <tr>
-                    <td>XPSRAS_RENDERING_MODE_ANTIALIASED</td>
-                    <td>Use antialiasing to rasterize the specified graphics elements.</td>
+                    <td>XPSRAS_RENDERING_MODE_ALIASED</td>
+                    <td>Do not use antialiasing to rasterize the specified graphics elements.</td>
                 </tr>
 </table>
 
@@ -85,11 +85,3 @@ For more information about rasterizing XPS documents, see <a href="https://msdn.
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556350">IXpsRasterizationFactory::CreateRasterizer</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20XPSRAS_RENDERING_MODE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

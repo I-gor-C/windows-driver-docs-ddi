@@ -67,10 +67,8 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS {
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_NOMINAL_RANGE</td>
-                    <td>The video processor can convert between luminance ranges when the input and output use different luminance ranges.
-
-Supported starting with Windows 8.1.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_xvYCC</td>
+                    <td>The video processor supports the xvYCC color space for YCbCr data.</td>
                 </tr>
             
                 <tr>
@@ -79,13 +77,15 @@ Supported starting with Windows 8.1.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_xvYCC</td>
-                    <td>The video processor supports the xvYCC color space for YCbCr data.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_YCbCr_MATRIX_CONVERSION</td>
+                    <td>The video processor can apply a matrix conversion to YCbCr values when the input and output are both YCbCr. For example, the driver can convert colors from BT.601 to BT.709.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_YCbCr_MATRIX_CONVERSION</td>
-                    <td>The video processor can apply a matrix conversion to YCbCr values when the input and output are both YCbCr. For example, the driver can convert colors from BT.601 to BT.709.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS_NOMINAL_RANGE</td>
+                    <td>The video processor can convert between luminance ranges when the input and output use different luminance ranges.
+
+Supported starting with Windows 8.1.</td>
                 </tr>
 </table>
 

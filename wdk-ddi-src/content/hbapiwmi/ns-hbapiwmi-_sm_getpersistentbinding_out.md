@@ -59,21 +59,21 @@ typedef struct _SM_GetPersistentBinding_OUT {
 ## Members
 
 
-`Entry`
-
-An array of structures of type SMHBA_SCSIENTRY that describes an HBA's bindings between the operating system and the SAS identifiers.
-
 `HBAStatus`
 
 The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+
+`TotalEntryCount`
+
+The total number of persistent bindings that are associated with the HBA.
 
 `OutEntryCount`
 
 The total number of mappings that are retrieved. This value will be less than or equal to TotalEntryCount.
 
-`TotalEntryCount`
+`Entry`
 
-The total number of persistent bindings that are associated with the HBA.
+An array of structures of type SMHBA_SCSIENTRY that describes an HBA's bindings between the operating system and the SAS identifiers.
 
 ## Remarks
 The WMI tool suite generates a declaration of the SM_GetPersistentBinding_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.

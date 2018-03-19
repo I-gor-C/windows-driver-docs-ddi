@@ -60,13 +60,13 @@ typedef enum _WDI_TXRX_PEER_QOS_CAPS {
 <table>
             
                 <tr>
-                    <td>WDI_TXRX_PeerCfgQosCapable</td>
-                    <td>Specifies that QoS was negotiated for this peer during association.</td>
+                    <td>WDI_TXRX_PeerCfgQosNone</td>
+                    <td>Specifies that QoS was not negotiated for this peer during association.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_TXRX_PeerCfgQosNone</td>
-                    <td>Specifies that QoS was not negotiated for this peer during association.</td>
+                    <td>WDI_TXRX_PeerCfgQosCapable</td>
+                    <td>Specifies that QoS was negotiated for this peer during association.</td>
                 </tr>
             
                 <tr>

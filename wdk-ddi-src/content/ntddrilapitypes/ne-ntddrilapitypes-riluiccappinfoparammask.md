@@ -65,27 +65,7 @@ typedef enum _RILUICCAPPINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_UICCAPPINFO_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_UICCAPPINFO_APPID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_UICCAPPINFO_APPIDLENGTH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_UICCAPPINFO_APPNAME</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_UICCAPPINFO_APPNAMELENGTH</td>
+                    <td>RIL_PARAM_UICCAPPINFO_HUICCAPP</td>
                     <td></td>
                 </tr>
             
@@ -95,7 +75,22 @@ typedef enum _RILUICCAPPINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_UICCAPPINFO_HUICCAPP</td>
+                    <td>RIL_PARAM_UICCAPPINFO_APPIDLENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UICCAPPINFO_APPID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UICCAPPINFO_APPNAMELENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UICCAPPINFO_APPNAME</td>
                     <td></td>
                 </tr>
             
@@ -106,6 +101,11 @@ typedef enum _RILUICCAPPINFOPARAMMASK {
             
                 <tr>
                     <td>RIL_PARAM_UICCAPPINFO_PINREF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UICCAPPINFO_ALL</td>
                     <td></td>
                 </tr>
 </table>

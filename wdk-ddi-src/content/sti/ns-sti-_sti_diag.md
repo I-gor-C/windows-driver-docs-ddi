@@ -61,21 +61,21 @@ typedef struct _STI_DIAG {
 ## Members
 
 
-`dwBasicDiagCode`
-
-Bit flag indicating the type of test to be performed. Currently this must be STI_DIAGCODE_HWPRESENCE<i>.</i>
-
 `dwSize`
 
 Caller-supplied size, in bytes, of the STI_DIAG structure.
 
-`dwStatusMask`
+`dwBasicDiagCode`
 
-Reserved for future use.
+Bit flag indicating the type of test to be performed. Currently this must be STI_DIAGCODE_HWPRESENCE<i>.</i>
 
 `dwVendorDiagCode`
 
 Optional, vendor-defined diagnostic request code.
+
+`dwStatusMask`
+
+Reserved for future use.
 
 `sErrorInfo`
 

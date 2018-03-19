@@ -58,10 +58,6 @@ typedef struct {
 ## Members
 
 
-`Flags`
-
-This is any one of the capability flags reported in the <a href="..\ksmedia\ns-ksmedia-kscamera_perframesetting_cap_item_header.md">KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER</a> Flags field.
-
 `Size`
 
 The size of this header and the item payload that follows.
@@ -69,6 +65,10 @@ The size of this header and the item payload that follows.
 `Type`
 
 This contains a <a href="..\ksmedia\ne-ksmedia-kscamera_perframesetting_item_type.md">KSCAMERA_PERFRAMESETTING_ITEM_TYPE</a> structure.
+
+`Flags`
+
+This is any one of the capability flags reported in the <a href="..\ksmedia\ns-ksmedia-kscamera_perframesetting_cap_item_header.md">KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER</a> Flags field.
 
 
 ## Requirements

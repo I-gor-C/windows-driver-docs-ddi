@@ -66,21 +66,21 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_PLANE3 {
 ## Members
 
 
-`ContextCount`
+`LayerIndex`
 
-The number of contexts in the array that the Context member specifies.
+The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
 
-`DriverPrivateDataSize`
+`PresentId`
 
-The size of the private driver data.
+A 64 bit per-plane identifier used by the driver to report completion of the overlay command.
 
 `InputFlags`
 
 A DXGK_PLANE_SPECIFIC_INPUT_FLAGS structure that identifies any plane specific display operations to perform.
 
-`LayerIndex`
+`OutputFlags`
 
-The zero-based index of the overlay plane to display. The top plane (in the z-direction) has index zero. The planes' index values must be sequential from top to bottom.
+A DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS structure containing status returned by the driver.
 
 `MaxImmediateFlipLine`
 
@@ -102,9 +102,17 @@ The display line value is relative to the physical mode that is set. If the disp
 
 When a VSYNC flip is promoted to an immediate flip, the driver should set DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS. FlipConvertedToImmediate to TRUE.
 
-`OutputFlags`
+`ContextCount`
 
-A DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS structure containing status returned by the driver.
+The number of contexts in the array that the Context member specifies.
+
+`ppContextData`
+
+
+
+`DriverPrivateDataSize`
+
+The size of the private driver data.
 
 `pDriverPrivateData`
 
@@ -113,14 +121,6 @@ Private driver data.
 `PlaneAttributes`
 
 A structure of type DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3 that specifies overlay plane attributes.
-
-`ppContextData`
-
-
-
-`PresentId`
-
-A 64 bit per-plane identifier used by the driver to report completion of the overlay command.
 
 
 ## Requirements

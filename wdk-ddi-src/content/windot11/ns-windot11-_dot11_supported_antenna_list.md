@@ -60,12 +60,6 @@ typedef struct _DOT11_SUPPORTED_ANTENNA_LIST {
 ## Members
 
 
-`dot11SupportedAntenna`
-
-The list of supported antennas. Each element in this list is formatted as a 
-     <a href="..\windot11\ns-windot11-_dot11_supported_antenna.md">
-     DOT11_SUPPORTED_ANTENNA</a> structure.
-
 `uNumOfEntries`
 
 The number of entries in the 
@@ -76,6 +70,12 @@ The number of entries in the
 
 The maximum number of entries that the 
      <b>dot11SupportedAntenna</b> array can contain.
+
+`dot11SupportedAntenna`
+
+The list of supported antennas. Each element in this list is formatted as a 
+     <a href="..\windot11\ns-windot11-_dot11_supported_antenna.md">
+     DOT11_SUPPORTED_ANTENNA</a> structure.
 
 ## Remarks
 A miniport driver returns the DOT11_SUPPORTED_ANTENNA_LIST structure when queried by either 
@@ -173,11 +173,3 @@ Return NDIS_STATUS_SUCCESS from its
 
 
 <a href="https://msdn.microsoft.com/en-us/library/ms893804.aspx">OID_DOT11_SUPPORTED_RX_ANTENNA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SUPPORTED_ANTENNA_LIST structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

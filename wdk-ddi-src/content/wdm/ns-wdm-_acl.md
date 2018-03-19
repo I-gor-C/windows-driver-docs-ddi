@@ -61,10 +61,6 @@ typedef struct _ACL {
 ## Members
 
 
-`AceCount`
-
-Number of ACEs stored in the ACL.
-
 `AclRevision`
 
 Revision level of the ACL. 
@@ -73,13 +69,17 @@ Revision level of the ACL.
 
 <b>Microsoft Windows 2000 and later:</b> This value can be ACL_REVISION or ACL_REVISION_DS. It must be ACL_REVISION_DS if the ACL contains an object-specific ACE.
 
+`Sbz1`
+
+A zero byte of padding that aligns the <b>AclRevision</b> member on a 16-bit boundary.
+
 `AclSize`
 
 Size, in bytes, of the ACL. This value includes both the ACL structure and all the ACEs.
 
-`Sbz1`
+`AceCount`
 
-A zero byte of padding that aligns the <b>AclRevision</b> member on a 16-bit boundary.
+Number of ACEs stored in the ACL.
 
 `Sbz2`
 
@@ -184,11 +184,3 @@ ACL and ACE structures must be aligned on 32-bit boundaries.
 
 
 <a href="..\ntifs\ns-ntifs-_access_denied_ace.md">ACCESS_DENIED_ACE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ACL structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

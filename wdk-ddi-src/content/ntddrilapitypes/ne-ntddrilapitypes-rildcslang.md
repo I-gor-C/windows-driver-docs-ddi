@@ -79,42 +79,12 @@ typedef enum _RILDCSLANG {
 <table>
             
                 <tr>
-                    <td>RIL_DCSLANG_ALL</td>
+                    <td>RIL_DCSLANG_None</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_DCSLANG_ARABIC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DCSLANG_CZECH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DCSLANG_DANISH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DCSLANG_DUTCH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DCSLANG_ENGLISH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DCSLANG_FINNISH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DCSLANG_FRENCH</td>
+                    <td>RIL_DCSLANG_UNKNOWN</td>
                     <td></td>
                 </tr>
             
@@ -124,22 +94,7 @@ typedef enum _RILDCSLANG {
                 </tr>
             
                 <tr>
-                    <td>RIL_DCSLANG_GREEK</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DCSLANG_HEBREW</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DCSLANG_HUNGARIAN</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DCSLANG_ICELANDIC</td>
+                    <td>RIL_DCSLANG_ENGLISH</td>
                     <td></td>
                 </tr>
             
@@ -149,27 +104,7 @@ typedef enum _RILDCSLANG {
                 </tr>
             
                 <tr>
-                    <td>RIL_DCSLANG_None</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DCSLANG_NORWEGIAN</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DCSLANG_POLISH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DCSLANG_PORTUGUESE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DCSLANG_RUSSIAN</td>
+                    <td>RIL_DCSLANG_FRENCH</td>
                     <td></td>
                 </tr>
             
@@ -179,7 +114,37 @@ typedef enum _RILDCSLANG {
                 </tr>
             
                 <tr>
+                    <td>RIL_DCSLANG_DUTCH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_DCSLANG_SWEDISH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSLANG_DANISH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSLANG_PORTUGUESE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSLANG_FINNISH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSLANG_NORWEGIAN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSLANG_GREEK</td>
                     <td></td>
                 </tr>
             
@@ -189,7 +154,42 @@ typedef enum _RILDCSLANG {
                 </tr>
             
                 <tr>
-                    <td>RIL_DCSLANG_UNKNOWN</td>
+                    <td>RIL_DCSLANG_HUNGARIAN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSLANG_POLISH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSLANG_CZECH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSLANG_HEBREW</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSLANG_ARABIC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSLANG_RUSSIAN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSLANG_ICELANDIC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSLANG_ALL</td>
                     <td></td>
                 </tr>
 </table>

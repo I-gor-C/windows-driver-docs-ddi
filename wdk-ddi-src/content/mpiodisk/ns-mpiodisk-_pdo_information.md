@@ -62,33 +62,33 @@ typedef struct _PDO_INFORMATION {
 ## Members
 
 
+`ScsiAddress`
+
+A PDOSCSI_ADDR structure that represents the SCSI address of the LUN's instance that corresponds to a particular path.
+
 `DeviceState`
 
 An unsigned 32-bitfield that represents whether the path, through which this instance of the LUN was exposed, is usable.
-
-`Identifier`
-
-An unsigned 64-bitfield that represents the identifier that is associated with the path through which this instance of the LUN is exposed.
-
-`IdentifierLength`
-
-An unsigned 32-bitfield that represents the length of the identifier of the LUN's controller.
-
-`IdentifierType`
-
-An unsigned 32-bitfield that represents the identifier type of the LUN's controller.
-
-`Pad`
-
-Should be zero.
 
 `PathIdentifier`
 
 An unsigned 64-bitfield that represents the identifier that is associated with the path through which this instance of the LUN is exposed.
 
-`ScsiAddress`
+`IdentifierType`
 
-A PDOSCSI_ADDR structure that represents the SCSI address of the LUN's instance that corresponds to a particular path.
+An unsigned 32-bitfield that represents the identifier type of the LUN's controller.
+
+`IdentifierLength`
+
+An unsigned 32-bitfield that represents the length of the identifier of the LUN's controller.
+
+`Identifier`
+
+An unsigned 64-bitfield that represents the identifier that is associated with the path through which this instance of the LUN is exposed.
+
+`Pad`
+
+Should be zero.
 
 
 ## Requirements

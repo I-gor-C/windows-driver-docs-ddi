@@ -62,27 +62,27 @@ typedef struct _REPARSE_GUID_DATA_BUFFER {
 ## Members
 
 
-`GenericReparseBuffer`
+`ReparseTag`
 
-#### DataBuffer
-
-User-defined data for the reparse point. The format of this data is defined by the owner of the reparse point.
+Reparse point tag that uniquely identifies the owner of the reparse point. (See the following <b>Remarks</b> section.)
 
 `ReparseDataLength`
 
 Size, in bytes, of the reparse data in the <b>DataBuffer</b> member.
 
+`Reserved`
+
+Reserved; do not use.
+
 `ReparseGuid`
 
 GUID that uniquely identifies the owner of the reparse point. (See the following <b>Remarks</b> section.)
 
-`ReparseTag`
+`GenericReparseBuffer`
 
-Reparse point tag that uniquely identifies the owner of the reparse point. (See the following <b>Remarks</b> section.)
+#### DataBuffer
 
-`Reserved`
-
-Reserved; do not use.
+User-defined data for the reparse point. The format of this data is defined by the owner of the reparse point.
 
 ## Remarks
 The REPARSE_GUID_DATA_BUFFER structure is used by all third-party file systems, filters, and minifilters, as well as some Microsoft file systems, filters, and minifilters to store data for a reparse point. Each reparse point contains one REPARSE_GUID_DATA_BUFFER structure. 
@@ -155,11 +155,3 @@ For more information about reparse points and reparse point tags, see the Window
 
 
 <a href="..\ntifs\ns-ntifs-_file_reparse_point_information.md">FILE_REPARSE_POINT_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20REPARSE_GUID_DATA_BUFFER structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

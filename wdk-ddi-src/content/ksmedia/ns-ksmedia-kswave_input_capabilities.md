@@ -62,33 +62,33 @@ typedef struct {
 ## Members
 
 
-`ActiveConnections`
-
-Indicates the number of active connections.
-
-`MaximumBitsPerSample`
-
-Specifies the maximum bits per sample.
-
 `MaximumChannelsPerConnection`
 
 Specifies the maximum channels per connection.
-
-`MaximumSampleFrequency`
-
-Specifies the maximum sampling frequency.
 
 `MinimumBitsPerSample`
 
 Specifies the minimum bits per sample.
 
+`MaximumBitsPerSample`
+
+Specifies the maximum bits per sample.
+
 `MinimumSampleFrequency`
 
 Specifies the minimum sampling frequency.
 
+`MaximumSampleFrequency`
+
+Specifies the maximum sampling frequency.
+
 `TotalConnections`
 
 Indicates the total number of connections.
+
+`ActiveConnections`
+
+Indicates the number of active connections.
 
 ## Remarks
 This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566521">KSPROPERTY_WAVE_INPUT_CAPABILITIES</a> property.
@@ -101,11 +101,3 @@ This structure is used by the <a href="https://msdn.microsoft.com/library/window
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566521">KSPROPERTY_WAVE_INPUT_CAPABILITIES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSWAVE_INPUT_CAPABILITIES structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

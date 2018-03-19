@@ -61,7 +61,7 @@ typedef enum _RILCALLHANDOVERPHASE {
 <table>
             
                 <tr>
-                    <td>RIL_CALLHANDOVERPHASE_CANCELLED</td>
+                    <td>RIL_CALLHANDOVERPHASE_STARTED</td>
                     <td></td>
                 </tr>
             
@@ -76,12 +76,12 @@ typedef enum _RILCALLHANDOVERPHASE {
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLHANDOVERPHASE_MAX</td>
+                    <td>RIL_CALLHANDOVERPHASE_CANCELLED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLHANDOVERPHASE_STARTED</td>
+                    <td>RIL_CALLHANDOVERPHASE_MAX</td>
                     <td></td>
                 </tr>
 </table>

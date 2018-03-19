@@ -60,15 +60,7 @@ typedef struct _STORAGE_CRYPTO_DESCRIPTOR {
 ## Members
 
 
-`CryptoCapabilities`
-
-Reserved for system use.
-
-`NumCryptoCapabilities`
-
-Reserved for system use.
-
-`NumKeysSupported`
+`Version`
 
 Reserved for system use.
 
@@ -76,7 +68,15 @@ Reserved for system use.
 
 Reserved for system use.
 
-`Version`
+`NumKeysSupported`
+
+Reserved for system use.
+
+`NumCryptoCapabilities`
+
+Reserved for system use.
+
+`CryptoCapabilities`
 
 Reserved for system use.
 

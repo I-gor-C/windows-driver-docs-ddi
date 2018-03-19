@@ -103,127 +103,7 @@ typedef enum _RIL3GPPCALLCONTROLCAUSECODE {
 <table>
             
                 <tr>
-                    <td>RIL_3GPPCCCAUSE_ACCESS_INFORMATION_DISCARDED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_ACM_NOT_LESS_THAN_ACMMAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_BEARER_CAPABILITY_NOT_AUTHORIZED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_BEARER_CAPABILITY_NOT_AVAILABLE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_BEARER_SERVICE_NOT_IMPLEMENTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_CALL_REJECTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_CHANNEL_UNACCEPTABLE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_CONDITIONAL_IE_ERROR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_CONGESTION</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_DESTINATION_OUT_OF_ORDER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_FACILITY_NOT_IMPLEMENTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_FACILITY_NOT_SUBSCRIBED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_FACILITY_REJECTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_IE_NOT_IMPLEMENTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_INCOMING_CALLS_BARRED_IN_CUG</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_INCOMPATIBLE_DESTINATION</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_INTERWORKING_UNSPECIFIED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_INVALID_MANDATORY_FUNCTION</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_INVALID_NUMBER_FORMAT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_INVALID_TRANSACTION_ID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_MESSAGE_NOT_COMPATIBLE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_MESSAGE_TYPE_NOT_COMPATIBLE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_MESSAGE_TYPE_NOT_IMPLEMENTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_NETWORK_OUT_OF_ORDER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_NO_CHANNEL_AVAILABLE</td>
+                    <td>RIL_3GPPCCCAUSE_UNASSIGNED_NUMBER</td>
                     <td></td>
                 </tr>
             
@@ -233,27 +113,7 @@ typedef enum _RIL3GPPCALLCONTROLCAUSECODE {
                 </tr>
             
                 <tr>
-                    <td>RIL_3GPPCCCAUSE_NO_USER_RESPONDING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_NORMAL_CALL_CLEARING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_NORMAL_UNSPECIFIED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_NUMBER_CHANGED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_ONLY_RESTRICTED_DIGITAL_BEARER</td>
+                    <td>RIL_3GPPCCCAUSE_CHANNEL_UNACCEPTABLE</td>
                     <td></td>
                 </tr>
             
@@ -263,22 +123,87 @@ typedef enum _RIL3GPPCALLCONTROLCAUSECODE {
                 </tr>
             
                 <tr>
+                    <td>RIL_3GPPCCCAUSE_NORMAL_CALL_CLEARING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_USER_BUSY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_NO_USER_RESPONDING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_USER_ALERTING_NO_ANSWER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_CALL_REJECTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_NUMBER_CHANGED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_3GPPCCCAUSE_PREEMPTION</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_3GPPCCCAUSE_PROTOCOL_ERROR_UNSPECIFIED</td>
+                    <td>RIL_3GPPCCCAUSE_DESTINATION_OUT_OF_ORDER</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_3GPPCCCAUSE_QOS_UNAVAILABLE</td>
+                    <td>RIL_3GPPCCCAUSE_INVALID_NUMBER_FORMAT</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_3GPPCCCAUSE_RECOVERY_ON_TIMER_EXPIRY</td>
+                    <td>RIL_3GPPCCCAUSE_FACILITY_REJECTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_RESPONSE_TO_STATUS_ENQUIRY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_NORMAL_UNSPECIFIED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_NO_CHANNEL_AVAILABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_NETWORK_OUT_OF_ORDER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_TEMPORARY_FAILURE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_CONGESTION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_ACCESS_INFORMATION_DISCARDED</td>
                     <td></td>
                 </tr>
             
@@ -293,12 +218,27 @@ typedef enum _RIL3GPPCALLCONTROLCAUSECODE {
                 </tr>
             
                 <tr>
-                    <td>RIL_3GPPCCCAUSE_RESPONSE_TO_STATUS_ENQUIRY</td>
+                    <td>RIL_3GPPCCCAUSE_QOS_UNAVAILABLE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_3GPPCCCAUSE_SEMANTICALLY_INCORRECT_MESSAGE</td>
+                    <td>RIL_3GPPCCCAUSE_FACILITY_NOT_SUBSCRIBED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_INCOMING_CALLS_BARRED_IN_CUG</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_BEARER_CAPABILITY_NOT_AUTHORIZED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_BEARER_CAPABILITY_NOT_AVAILABLE</td>
                     <td></td>
                 </tr>
             
@@ -308,32 +248,92 @@ typedef enum _RIL3GPPCALLCONTROLCAUSECODE {
                 </tr>
             
                 <tr>
+                    <td>RIL_3GPPCCCAUSE_BEARER_SERVICE_NOT_IMPLEMENTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_ACM_NOT_LESS_THAN_ACMMAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_FACILITY_NOT_IMPLEMENTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_ONLY_RESTRICTED_DIGITAL_BEARER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_3GPPCCCAUSE_SVC_NOT_IMPLEMENTED_UNSPECIFIED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_3GPPCCCAUSE_TEMPORARY_FAILURE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_UNASSIGNED_NUMBER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_USER_ALERTING_NO_ANSWER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPPCCCAUSE_USER_BUSY</td>
+                    <td>RIL_3GPPCCCAUSE_INVALID_TRANSACTION_ID</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_3GPPCCCAUSE_USER_NOT_MEMBER_OF_CUG</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_INCOMPATIBLE_DESTINATION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_SEMANTICALLY_INCORRECT_MESSAGE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_INVALID_MANDATORY_FUNCTION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_MESSAGE_TYPE_NOT_IMPLEMENTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_MESSAGE_TYPE_NOT_COMPATIBLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_IE_NOT_IMPLEMENTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_CONDITIONAL_IE_ERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_MESSAGE_NOT_COMPATIBLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_RECOVERY_ON_TIMER_EXPIRY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_PROTOCOL_ERROR_UNSPECIFIED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPPCCCAUSE_INTERWORKING_UNSPECIFIED</td>
                     <td></td>
                 </tr>
 </table>

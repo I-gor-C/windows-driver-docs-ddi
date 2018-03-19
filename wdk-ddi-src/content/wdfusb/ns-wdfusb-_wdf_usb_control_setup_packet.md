@@ -88,12 +88,6 @@ typedef union _WDF_USB_CONTROL_SETUP_PACKET {
 ## Members
 
 
-`Generic`
-
-#### Bytes
-
-An 8-byte value that represents the entire setup packet. You can use this member as an alternative to specifying individual structure members.
-
 `Packet`
 
 #### bRequest
@@ -105,6 +99,12 @@ A request type. Request type constants are defined in <i>Usb100.h</i>. For more 
 #### wLength
 
 The number of bytes to transfer, if applicable. For more information about this value, see the USB specification. The framework sets this value.
+
+`Generic`
+
+#### Bytes
+
+An 8-byte value that represents the entire setup packet. You can use this member as an alternative to specifying individual structure members.
 
 ## Remarks
 The <b>WDF_USB_CONTROL_SETUP_PACKET</b> structure is used as input to the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicesendcontroltransfersynchronously.md">WdfUsbTargetDeviceSendControlTransferSynchronously</a> and <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforcontroltransfer.md">WdfUsbTargetDeviceFormatRequestForControlTransfer</a> methods.
@@ -170,11 +170,3 @@ To initialize a <b>WDF_USB_CONTROL_SETUP_PACKET</b> structure, the driver should
 
 
 <a href="..\wdfusb\ne-wdfusb-_wdf_usb_bmrequest_recipient.md">WDF_USB_BMREQUEST_RECIPIENT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_CONTROL_SETUP_PACKET union%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -62,13 +62,13 @@ typedef struct _LUID {
 ## Members
 
 
-`HighPart`
-
-High order bits.
-
 `LowPart`
 
 Low order bits.
+
+`HighPart`
+
+High order bits.
 
 
 ## Requirements

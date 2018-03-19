@@ -60,17 +60,6 @@ typedef struct _NDIS_TIMER_CHARACTERISTICS {
 ## Members
 
 
-`AllocationTag`
-
-A string that is delimited by single quotation marks and contains up to four characters, usually
-     specified in reversed order. You must provide this tag. NDIS uses this tag when it allocates memory for
-     the timer.
-
-`FunctionContext`
-
-A pointer to a driver-allocated context area. NDIS passes this pointer to the 
-     <i>NetTimerCallback</i> function when a timer fires.
-
 `Header`
 
 The 
@@ -81,11 +70,22 @@ The
      <b>Revision</b> member to NDIS_TIMER_CHARACTERISTICS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_TIMER_CHARACTERISTICS_REVISION_1.
 
+`AllocationTag`
+
+A string that is delimited by single quotation marks and contains up to four characters, usually
+     specified in reversed order. You must provide this tag. NDIS uses this tag when it allocates memory for
+     the timer.
+
 `TimerFunction`
 
 A pointer to an entry point for a 
      <a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a> function. NDIS calls
      this function when a timer fires.
+
+`FunctionContext`
+
+A pointer to a driver-allocated context area. NDIS passes this pointer to the 
+     <i>NetTimerCallback</i> function when a timer fires.
 
 ## Remarks
 To allocate and initialize a timer object, NDIS drivers call the 
@@ -114,11 +114,3 @@ To allocate and initialize a timer object, NDIS drivers call the
 
 
 <a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TIMER_CHARACTERISTICS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

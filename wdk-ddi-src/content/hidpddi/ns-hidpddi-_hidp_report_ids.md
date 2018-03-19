@@ -60,13 +60,13 @@ typedef struct _HIDP_REPORT_IDS {
 ## Members
 
 
+`ReportID`
+
+The report ID of the top-level collection.
+
 `CollectionNumber`
 
 The index of the collection in the array of  <a href="..\hidpddi\ns-hidpddi-_hidp_collection_desc.md">HIDP_COLLECTION_DESC</a> structure.
-
-`FeatureLength`
-
-The length of a feature report of this report ID.
 
 `InputLength`
 
@@ -76,9 +76,9 @@ The length of an input report of this report ID.
 
 The length of an output report of this report ID. An input report, an output report, and a feature report can use the same report.
 
-`ReportID`
+`FeatureLength`
 
-The report ID of the top-level collection.
+The length of a feature report of this report ID.
 
 
 ## Requirements
@@ -89,11 +89,3 @@ The report ID of the top-level collection.
 ## See Also
 
 <a href="..\hidpddi\nf-hidpddi-hidp_getcollectiondescription.md">HidP_GetCollectionDescription</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HIDP_REPORT_IDS structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

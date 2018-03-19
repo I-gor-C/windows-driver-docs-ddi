@@ -61,16 +61,6 @@ typedef struct _D3DKMT_SETDISPLAYMODE {
 ## Members
 
 
-`DisplayOrientation`
-
-[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a>-typed value that identifies the orientation of the display mode.
-
-`Flags`
-
-Supported in Windows 7 and later versions.
-
-[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setdisplaymode_flags.md">D3DKMT_SETDISPLAYMODE_FLAGS</a> structure that specifies, in bit-field flags, attributes for setting the display mode.
-
 `hDevice`
 
 [in] A handle to the device that requests setting of the display mode.
@@ -79,13 +69,23 @@ Supported in Windows 7 and later versions.
 
 [in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the primary allocation for scanning out.
 
+`ScanLineOrdering`
+
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_video_signal_scanline_ordering.md">D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING</a>-typed value that indicates how scan lines are ordered in the display mode.
+
+`DisplayOrientation`
+
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a>-typed value that identifies the orientation of the display mode.
+
 `PrivateDriverFormatAttribute`
 
 [out] A UINT value that specifies a private format attribute that the OpenGL installable client driver (ICD) should use to convert the current primary surface if a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetdisplaymode.md">D3DKMTSetDisplayMode</a> function failed with STATUS_GRAPHICS_INCOMPATIBLE_PRIVATE_FORMAT.
 
-`ScanLineOrdering`
+`Flags`
 
-[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_video_signal_scanline_ordering.md">D3DDDI_VIDEO_SIGNAL_SCANLINE_ORDERING</a>-typed value that indicates how scan lines are ordered in the display mode.
+Supported in Windows 7 and later versions.
+
+[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setdisplaymode_flags.md">D3DKMT_SETDISPLAYMODE_FLAGS</a> structure that specifies, in bit-field flags, attributes for setting the display mode.
 
 
 ## Requirements
@@ -109,11 +109,3 @@ Supported in Windows 7 and later versions.
 
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setdisplaymode_flags.md">D3DKMT_SETDISPLAYMODE_FLAGS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_SETDISPLAYMODE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

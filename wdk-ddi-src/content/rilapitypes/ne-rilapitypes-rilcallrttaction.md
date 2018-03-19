@@ -62,7 +62,12 @@ typedef enum _RILCALLRTTACTION {
 <table>
             
                 <tr>
-                    <td>RIL_CALLRTTACTION_ACCEPT</td>
+                    <td>RIL_CALLRTTACTION_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLRTTACTION_REJECT</td>
                     <td></td>
                 </tr>
             
@@ -72,17 +77,12 @@ typedef enum _RILCALLRTTACTION {
                 </tr>
             
                 <tr>
+                    <td>RIL_CALLRTTACTION_ACCEPT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_CALLRTTACTION_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLRTTACTION_NONE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLRTTACTION_REJECT</td>
                     <td></td>
                 </tr>
 </table>

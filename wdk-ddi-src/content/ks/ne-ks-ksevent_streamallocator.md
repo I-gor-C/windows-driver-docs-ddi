@@ -59,12 +59,12 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSEVENT_STREAMALLOCATOR_FREEFRAME</td>
+                    <td>KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME</td>
+                    <td>KSEVENT_STREAMALLOCATOR_FREEFRAME</td>
                     <td></td>
                 </tr>
 </table>

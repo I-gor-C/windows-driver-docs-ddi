@@ -69,6 +69,26 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>FileFsVolumeInformation</td>
+                    <td>Return a <a href="..\ntddk\ns-ntddk-_file_fs_volume_information.md">FILE_FS_VOLUME_INFORMATION</a> structure that contains information about the volume such as the volume label, serial number, and creation time.</td>
+                </tr>
+            
+                <tr>
+                    <td>FileFsLabelInformation</td>
+                    <td>Use a <a href="..\ntddk\ns-ntddk-_file_fs_label_information.md">FILE_FS_LABEL_INFORMATION</a> structure to set information a volume label.</td>
+                </tr>
+            
+                <tr>
+                    <td>FileFsSizeInformation</td>
+                    <td>Return a <a href="..\ntddk\ns-ntddk-_file_fs_size_information.md">FILE_FS_SIZE_INFORMATION</a> structure containing information about the amount of space on the volume that is available to the user that is associated with the calling thread.</td>
+                </tr>
+            
+                <tr>
+                    <td>FileFsDeviceInformation</td>
+                    <td>Return a <a href="..\wdm\ns-wdm-_file_fs_device_information.md">FILE_FS_DEVICE_INFORMATION</a> structure that contains device information for the volume.</td>
+                </tr>
+            
+                <tr>
                     <td>FileFsAttributeInformation</td>
                     <td>Return a <a href="..\ntifs\ns-ntifs-_file_fs_attribute_information.md">FILE_FS_ATTRIBUTE_INFORMATION</a> structure that contains attribute information about the file system responsible for the volume.</td>
                 </tr>
@@ -79,13 +99,13 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>FileFsDataCopyInformation</td>
-                    <td></td>
+                    <td>FileFsFullSizeInformation</td>
+                    <td>Return a <a href="..\ntddk\ns-ntddk-_file_fs_full_size_information.md">FILE_FS_FULL_SIZE_INFORMATION</a> structure that contains information about the total amount of space available on the volume.</td>
                 </tr>
             
                 <tr>
-                    <td>FileFsDeviceInformation</td>
-                    <td>Return a <a href="..\wdm\ns-wdm-_file_fs_device_information.md">FILE_FS_DEVICE_INFORMATION</a> structure that contains device information for the volume.</td>
+                    <td>FileFsObjectIdInformation</td>
+                    <td>Return a <a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a> structure that contains file-system-specific object ID information for the volume. Note that this is not the same as the (GUID-based) unique volume name that is assigned by the operating system.</td>
                 </tr>
             
                 <tr>
@@ -94,17 +114,17 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>FileFsFullSizeInformation</td>
-                    <td>Return a <a href="..\ntddk\ns-ntddk-_file_fs_full_size_information.md">FILE_FS_FULL_SIZE_INFORMATION</a> structure that contains information about the total amount of space available on the volume.</td>
+                    <td>FileFsVolumeFlagsInformation</td>
+                    <td>Use a <b>FILE_FS_VOLUME_FLAGS_INFORMATION</b> structure to set the flags for a volume.</td>
                 </tr>
             
                 <tr>
-                    <td>FileFsLabelInformation</td>
-                    <td>Use a <a href="..\ntddk\ns-ntddk-_file_fs_label_information.md">FILE_FS_LABEL_INFORMATION</a> structure to set information a volume label.</td>
+                    <td>FileFsSectorSizeInformation</td>
+                    <td>Return a <a href="..\ntifs\ns-ntifs-_file_fs_driver_path_information.md">FILE_FS_SECTOR_SIZE_INFORMATION</a> structure that contains information about the physical and logical sector sizes of a volume.</td>
                 </tr>
             
                 <tr>
-                    <td>FileFsMaximumInformation</td>
+                    <td>FileFsDataCopyInformation</td>
                     <td></td>
                 </tr>
             
@@ -114,28 +134,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>FileFsObjectIdInformation</td>
-                    <td>Return a <a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a> structure that contains file-system-specific object ID information for the volume. Note that this is not the same as the (GUID-based) unique volume name that is assigned by the operating system.</td>
-                </tr>
-            
-                <tr>
-                    <td>FileFsSectorSizeInformation</td>
-                    <td>Return a <a href="..\ntifs\ns-ntifs-_file_fs_driver_path_information.md">FILE_FS_SECTOR_SIZE_INFORMATION</a> structure that contains information about the physical and logical sector sizes of a volume.</td>
-                </tr>
-            
-                <tr>
-                    <td>FileFsSizeInformation</td>
-                    <td>Return a <a href="..\ntddk\ns-ntddk-_file_fs_size_information.md">FILE_FS_SIZE_INFORMATION</a> structure containing information about the amount of space on the volume that is available to the user that is associated with the calling thread.</td>
-                </tr>
-            
-                <tr>
-                    <td>FileFsVolumeFlagsInformation</td>
-                    <td>Use a <b>FILE_FS_VOLUME_FLAGS_INFORMATION</b> structure to set the flags for a volume.</td>
-                </tr>
-            
-                <tr>
-                    <td>FileFsVolumeInformation</td>
-                    <td>Return a <a href="..\ntddk\ns-ntddk-_file_fs_volume_information.md">FILE_FS_VOLUME_INFORMATION</a> structure that contains information about the volume such as the volume label, serial number, and creation time.</td>
+                    <td>FileFsMaximumInformation</td>
+                    <td></td>
                 </tr>
 </table>
 

@@ -65,15 +65,17 @@ typedef struct _WWAN_SET_CONTEXT_STATE {
 ## Members
 
 
-`AccessString`
+`ConnectionId`
 
-A NULL-terminated string to access the network. For GSM-based networks, this would be an Access
-     Point Name (APN) string such as "data.thephone-company.com". For CDMA-based networks, this might be a
-     special dial code such as "#777" or a Network Access Identifier (NAI) such as
-     "foo@thephone-company.com". This member can be <b>NULL</b>.
+MB Service specifies this member to uniquely identify the PDP Context and its corresponding state.
      
 
-The size of the string should not exceed 100 bytes.
+The MB Service uses the value in this member to uniquely identify the current active context across
+     MB network adapters.
+
+The miniport driver must use the value in this member when completing 
+     <i>set</i> requests. The MB Service uses the value in this member in subsequent 
+     <i>query</i> requests as well as disconnect requests to the miniport driver.
 
 `ActivationCommand`
 
@@ -105,6 +107,60 @@ WwanActivationCommandDeactivate
 <td>
 Deactivate a currently activated PDP context referred by 
         <b>ConnectionId</b> .
+
+</td>
+</tr>
+</table>
+
+`AccessString`
+
+A NULL-terminated string to access the network. For GSM-based networks, this would be an Access
+     Point Name (APN) string such as "data.thephone-company.com". For CDMA-based networks, this might be a
+     special dial code such as "#777" or a Network Access Identifier (NAI) such as
+     "foo@thephone-company.com". This member can be <b>NULL</b>.
+     
+
+The size of the string should not exceed 100 bytes.
+
+`UserName`
+
+A NULL-terminated string that represents the username to authenticate. This member can be
+     <b>NULL</b>.
+
+`Password`
+
+A NULL-terminated string that represents the username's password. This member can be <b>NULL</b>.
+
+`Compression`
+
+A value from the WWAN_COMPRESSION enumeration that specifies whether compression should be used in
+     the data connection for header and data. This member applies only to GSM-based devices. The MB Service
+     sets this member to 
+     <b>WwanCompressionNone</b> for CDMA-based devices.
+     
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+WwanCompressionNone
+
+</td>
+<td>
+No compression is applied.
+
+</td>
+</tr>
+<tr>
+<td>
+WwanCompressionEnable
+
+</td>
+<td>
+Enable header and data compression.
 
 </td>
 </tr>
@@ -164,57 +220,6 @@ Use the Microsoft Challenge Handshake Authentication Protocol (CHAP) v2.0.
 </tr>
 </table>
 
-`Compression`
-
-A value from the WWAN_COMPRESSION enumeration that specifies whether compression should be used in
-     the data connection for header and data. This member applies only to GSM-based devices. The MB Service
-     sets this member to 
-     <b>WwanCompressionNone</b> for CDMA-based devices.
-     
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-WwanCompressionNone
-
-</td>
-<td>
-No compression is applied.
-
-</td>
-</tr>
-<tr>
-<td>
-WwanCompressionEnable
-
-</td>
-<td>
-Enable header and data compression.
-
-</td>
-</tr>
-</table>
-
-`ConnectionId`
-
-MB Service specifies this member to uniquely identify the PDP Context and its corresponding state.
-     
-
-The MB Service uses the value in this member to uniquely identify the current active context across
-     MB network adapters.
-
-The miniport driver must use the value in this member when completing 
-     <i>set</i> requests. The MB Service uses the value in this member in subsequent 
-     <i>query</i> requests as well as disconnect requests to the miniport driver.
-
-`ConnectionMediaSource`
-
-
-
 `IPType`
 
 A value from the WWAN_IP_TYPE enumeration that specifies the type of IP.
@@ -223,14 +228,9 @@ A value from the WWAN_IP_TYPE enumeration that specifies the type of IP.
 
 
 
-`Password`
+`ConnectionMediaSource`
 
-A NULL-terminated string that represents the username's password. This member can be <b>NULL</b>.
 
-`UserName`
-
-A NULL-terminated string that represents the username to authenticate. This member can be
-     <b>NULL</b>.
 
 
 ## Requirements
@@ -254,11 +254,3 @@ A NULL-terminated string that represents the username to authenticate. This memb
 
 
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_set_context_state.md">NDIS_WWAN_SET_CONTEXT_STATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SET_CONTEXT_STATE structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -71,6 +71,51 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_IOCTL {
 <table>
             
                 <tr>
+                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS</td>
+                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_get_status.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS</a> request.</td>
+                </tr>
+            
+                <tr>
+                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL</td>
+                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_get_control.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL</a> request.</td>
+                </tr>
+            
+                <tr>
+                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONTROL</td>
+                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_control.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONTROL</a> request.</td>
+                </tr>
+            
+                <tr>
+                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT</td>
+                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_transmit.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT</a> request.</td>
+                </tr>
+            
+                <tr>
+                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT_BUFFER</td>
+                    <td>The  <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_transmit_buffer.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT_BUFFER</a> request.</td>
+                </tr>
+            
+                <tr>
+                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT</td>
+                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_receive_detect.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT</a> request.</td>
+                </tr>
+            
+                <tr>
+                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONFIG_STANDARD_OUTPUT</td>
+                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_config_standard_output.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONFIG_STANDARD_OUTPUT</a> request.</td>
+                </tr>
+            
+                <tr>
+                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_COMMAND</td>
+                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_command.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_COMMAND</a> request.</td>
+                </tr>
+            
+                <tr>
+                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_MESSAGE_HEADER_INFO</td>
+                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_message_header_info.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_MESSAGE_HEADER_INFO</a> request.</td>
+                </tr>
+            
+                <tr>
                     <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_ALTERNATE_MODE_ENTERED</td>
                     <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_alternate_mode_entered.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_ALTERNATE_MODE_ENTERED</a> request.</td>
                 </tr>
@@ -86,58 +131,13 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_IOCTL {
                 </tr>
             
                 <tr>
-                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED</td>
                     <td>The  <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_displayport_hpd_status_changed.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED</a> request.</td>
                 </tr>
             
                 <tr>
-                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL</td>
-                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_get_control.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL</a> request.</td>
-                </tr>
-            
-                <tr>
-                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS</td>
-                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_get_status.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS</a> request.</td>
-                </tr>
-            
-                <tr>
-                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_COMMAND</td>
-                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_command.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_COMMAND</a> request.</td>
-                </tr>
-            
-                <tr>
-                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONFIG_STANDARD_OUTPUT</td>
-                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_config_standard_output.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONFIG_STANDARD_OUTPUT</a> request.</td>
-                </tr>
-            
-                <tr>
-                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONTROL</td>
-                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_control.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_CONTROL</a> request.</td>
-                </tr>
-            
-                <tr>
-                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_MESSAGE_HEADER_INFO</td>
-                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_message_header_info.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_MESSAGE_HEADER_INFO</a> request.</td>
-                </tr>
-            
-                <tr>
-                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT</td>
-                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_receive_detect.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_RECEIVE_DETECT</a> request.</td>
-                </tr>
-            
-                <tr>
-                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT</td>
-                    <td>The <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_transmit.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT</a> request.</td>
-                </tr>
-            
-                <tr>
-                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT_BUFFER</td>
-                    <td>The  <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_transmit_buffer.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_TRANSMIT_BUFFER</a> request.</td>
+                    <td>_IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED</td>
+                    <td></td>
                 </tr>
 </table>
 

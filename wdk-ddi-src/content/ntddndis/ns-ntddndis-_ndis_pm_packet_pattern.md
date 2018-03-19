@@ -62,15 +62,19 @@ typedef struct _NDIS_PM_PACKET_PATTERN {
 ## Members
 
 
+`Priority`
+
+This member is reserved.
+
+`Reserved`
+
+This member is reserved.
+
 `MaskSize`
 
 Specifies the size in bytes of the pattern mask that immediately follows the
      NDIS_PM_PACKET_PATTERN structure in the 
      <i>InformationBuffer</i>.
-
-`PatternFlags`
-
-These flags are reserved.
 
 `PatternOffset`
 
@@ -81,13 +85,9 @@ Specifies in bytes the offset from the beginning of the
 
 Specifies in bytes the size of the wake-up pattern.
 
-`Priority`
+`PatternFlags`
 
-This member is reserved.
-
-`Reserved`
-
-This member is reserved.
+These flags are reserved.
 
 ## Remarks
 NDIS_PM_PACKET_PATTERN is supplied in the 
@@ -149,11 +149,3 @@ A protocol uses this OID to request a list of the wake-up patterns currently set
 
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PACKET_PATTERN structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -89,6 +89,81 @@ typedef struct _KS_H264VIDEOINFO {
 ## Members
 
 
+`wWidth`
+
+Specifies the width in pixels of pictures output from the decoding process. 
+
+<div class="alert"><b>Note</b>  The value for this member must be a multiple of 2, but it does not have to be an integer multiple of 16. It can be specified using a frame cropping rectangle in the active Sequence Parameter Set (SPS).</div>
+<div> </div>
+
+`wHeight`
+
+Specifies the height in pixels of pictures output from the decoding process.
+
+<div class="alert"><b>Note</b>   The value for this member must be a multiple of 2. When field coding or frame/field adaptive coding is used, it must be a multiple of 4. It does not have to be an integer multiple of 16. It can be specified using a frame cropping rectangle in the active SPS.</div>
+<div> </div>
+
+`wSARwidth`
+
+Specifies the sample aspect ratio width as defined in the H.264 Annex E. 
+
+<div class="alert"><b>Note</b>  It must  be relatively prime with respect to <b>wSARheight</b>.</div>
+<div> </div>
+
+`wSARheight`
+
+Specifies the sample aspect ratio height as defined in the H.264 Annex E. 
+
+<div class="alert"><b>Note</b>  It must be relatively prime with respect to <b>bSARwidth</b>.</div>
+<div> </div>
+
+`wProfile`
+
+Specifies the first two bytes of the sequence parameter set as described by profile_idc and constraint flags in the H.264 specification. 
+
+<div class="alert"><b>Note</b>  This member indicates the profile and applicable constraints to be used. </div>
+<div> </div>
+The following are examples of allowed values:
+
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x4240</td>
+<td>Constrained Baseline Profile.</td>
+</tr>
+<tr>
+<td>0x4200</td>
+<td>Baseline Profile.</td>
+</tr>
+<tr>
+<td>0x4D00</td>
+<td>Main Profile.</td>
+</tr>
+<tr>
+<td>0x6400</td>
+<td>High Profile.</td>
+</tr>
+<tr>
+<td>0x5300</td>
+<td>Scalable Baseline Profile.</td>
+</tr>
+<tr>
+<td>0x5600</td>
+<td>Scalable High Profile.</td>
+</tr>
+<tr>
+<td>0x7600</td>
+<td>Multiview High Profile.</td>
+</tr>
+<tr>
+<td>0x8000</td>
+<td>Stereo High Profile.</td>
+</tr>
+</table>
+
 `bLevelIDC`
 
 Specifies the level as described by the level_idc flag.
@@ -112,133 +187,36 @@ The following are examples of allowed values:
 </tr>
 </table>
 
-`bMaxCodecConfigDelay`
+`wConstrainedToolset`
 
-Specifies the maximum number of frames the encoder takes to respond to a command.
-
-`bmCapabilities`
-
-Defines the bitmap that specifies the capabilities for this frame descriptor.
+Constrains the features allowed by <b>wProfile</b>.
 
 <table>
 <tr>
-<th>Bits</th>
+<th>Value</th>
 <th>Description</th>
 </tr>
 <tr>
-<td>D0</td>
-<td>Context based Adaptive Variable Length Coding (CAVLC ) only.</td>
+<td>0</td>
+<td>No constraints. All tools defined by the selected <b>wProfile</b> and the bmSetting set are allowed.</td>
 </tr>
 <tr>
-<td>D1</td>
-<td>Context based Adaptive Binary Arithmetic Coding (CABAC) only.</td>
+<td>1</td>
+<td>Unified Communication (UC) Constrained High Toolset. </td>
 </tr>
 <tr>
-<td>D2</td>
-<td>Constant frame rate.</td>
+<td>2</td>
+<td>UC Scalable Constrained High1.</td>
 </tr>
 <tr>
-<td>D3</td>
-<td>Separate QP for luma/chroma.</td>
+<td>3</td>
+<td>UC Scalable Constrained Baseline1.</td>
 </tr>
 <tr>
-<td>D4</td>
-<td>Separate QP for Cb/Cr.</td>
-</tr>
-<tr>
-<td>D5</td>
-<td>No picture reordering.</td>
-</tr>
-<tr>
-<td>D15-D6</td>
-<td>Reserved; set to 0.</td>
-</tr>
-</table>
-
-`bmMVCCapabilities`
-
-Defines the bitmap that specifies the Multicast Video Coding (MVC) capabilities. 
-
-<table>
-<tr>
-<th>Bits</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>D2-D0</td>
-<td>Maximum number of temporal layers minus 1.</td>
-</tr>
-<tr>
-<td>D11-D3</td>
-<td>Maximum number of view components minus 1.</td>
-</tr>
-<tr>
-<td>D31-D11</td>
+<td>4 to 65535</td>
 <td>Reserved.</td>
 </tr>
 </table>
-
-`bmSupportedRateControlModes`
-
-Defines the bitmap that specifies the rate control modes. 
-
-<table>
-<tr>
-<th>Bits</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>D0</td>
-<td>Variable Bit Rate (VBR) without underflow (H.264 low_delay_hrd_flag = 0).</td>
-</tr>
-<tr>
-<td>D1</td>
-<td>Constant Bit Rate (CBR) (H.264 low_delay_hrd_flag = 0). </td>
-</tr>
-<tr>
-<td>D2</td>
-<td>Constant QP.</td>
-</tr>
-<tr>
-<td>D3</td>
-<td>Global VBR without underflow (H.264 low_delay_hrd_flag = 0).</td>
-</tr>
-<tr>
-<td>D4</td>
-<td>VBR with underflow allowed (H.264 low_delay_hrd_flag = 1).</td>
-</tr>
-<tr>
-<td>D5</td>
-<td>Global VBR with underflow allowed (H.264 low_delay_hrd_flag = 1).</td>
-</tr>
-</table>
-
-`bmSupportedSliceModes`
-
-Defines the bitmap that specifies the slice modes.
-
-<table>
-<tr>
-<th>Bits</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>D0</td>
-<td>Slice mode 0.</td>
-</tr>
-<tr>
-<td>D1</td>
-<td>Slice mode 1.</td>
-</tr>
-<tr>
-<td>D7-D2</td>
-<td>Reserved.</td>
-</tr>
-</table>
-
-`bmSupportedSyncFrameTypes`
-
-
 
 `bmSupportedUsages`
 
@@ -307,6 +285,45 @@ Defines the bitmap that specifies the supported usages.
 </tr>
 </table>
 
+`bmCapabilities`
+
+Defines the bitmap that specifies the capabilities for this frame descriptor.
+
+<table>
+<tr>
+<th>Bits</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>D0</td>
+<td>Context based Adaptive Variable Length Coding (CAVLC ) only.</td>
+</tr>
+<tr>
+<td>D1</td>
+<td>Context based Adaptive Binary Arithmetic Coding (CABAC) only.</td>
+</tr>
+<tr>
+<td>D2</td>
+<td>Constant frame rate.</td>
+</tr>
+<tr>
+<td>D3</td>
+<td>Separate QP for luma/chroma.</td>
+</tr>
+<tr>
+<td>D4</td>
+<td>Separate QP for Cb/Cr.</td>
+</tr>
+<tr>
+<td>D5</td>
+<td>No picture reordering.</td>
+</tr>
+<tr>
+<td>D15-D6</td>
+<td>Reserved; set to 0.</td>
+</tr>
+</table>
+
 `bmSVCCapabilities`
 
 Defines the bitmap that specifies the Scalable Video Coding (SVC) capabilities.
@@ -346,6 +363,67 @@ Defines the bitmap that specifies the Scalable Video Coding (SVC) capabilities.
 </tr>
 </table>
 
+`bmMVCCapabilities`
+
+Defines the bitmap that specifies the Multicast Video Coding (MVC) capabilities. 
+
+<table>
+<tr>
+<th>Bits</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>D2-D0</td>
+<td>Maximum number of temporal layers minus 1.</td>
+</tr>
+<tr>
+<td>D11-D3</td>
+<td>Maximum number of view components minus 1.</td>
+</tr>
+<tr>
+<td>D31-D11</td>
+<td>Reserved.</td>
+</tr>
+</table>
+
+`dwFrameInterval`
+
+Specifies the supported frame interval.
+
+<div class="alert"><b>Note</b>  This is the shortest frame interval supported, at the highest frame rate, in 100-nanoseconds units. </div>
+<div> </div>
+
+`bMaxCodecConfigDelay`
+
+Specifies the maximum number of frames the encoder takes to respond to a command.
+
+`bmSupportedSliceModes`
+
+Defines the bitmap that specifies the slice modes.
+
+<table>
+<tr>
+<th>Bits</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>D0</td>
+<td>Slice mode 0.</td>
+</tr>
+<tr>
+<td>D1</td>
+<td>Slice mode 1.</td>
+</tr>
+<tr>
+<td>D7-D2</td>
+<td>Reserved.</td>
+</tr>
+</table>
+
+`bmSupportedSyncFrameTypes`
+
+
+
 `bResolutionScaling`
 
 
@@ -369,52 +447,50 @@ Specifies the number of H.264 video streaming endpoints and the number of stream
 </tr>
 </table>
 
-`dwFrameInterval`
+`bmSupportedRateControlModes`
 
-Specifies the supported frame interval.
-
-<div class="alert"><b>Note</b>  This is the shortest frame interval supported, at the highest frame rate, in 100-nanoseconds units. </div>
-<div> </div>
-
-`wConstrainedToolset`
-
-Constrains the features allowed by <b>wProfile</b>.
+Defines the bitmap that specifies the rate control modes. 
 
 <table>
 <tr>
-<th>Value</th>
+<th>Bits</th>
 <th>Description</th>
 </tr>
 <tr>
-<td>0</td>
-<td>No constraints. All tools defined by the selected <b>wProfile</b> and the bmSetting set are allowed.</td>
+<td>D0</td>
+<td>Variable Bit Rate (VBR) without underflow (H.264 low_delay_hrd_flag = 0).</td>
 </tr>
 <tr>
-<td>1</td>
-<td>Unified Communication (UC) Constrained High Toolset. </td>
+<td>D1</td>
+<td>Constant Bit Rate (CBR) (H.264 low_delay_hrd_flag = 0). </td>
 </tr>
 <tr>
-<td>2</td>
-<td>UC Scalable Constrained High1.</td>
+<td>D2</td>
+<td>Constant QP.</td>
 </tr>
 <tr>
-<td>3</td>
-<td>UC Scalable Constrained Baseline1.</td>
+<td>D3</td>
+<td>Global VBR without underflow (H.264 low_delay_hrd_flag = 0).</td>
 </tr>
 <tr>
-<td>4 to 65535</td>
-<td>Reserved.</td>
+<td>D4</td>
+<td>VBR with underflow allowed (H.264 low_delay_hrd_flag = 1).</td>
+</tr>
+<tr>
+<td>D5</td>
+<td>Global VBR with underflow allowed (H.264 low_delay_hrd_flag = 1).</td>
 </tr>
 </table>
 
-`wHeight`
+`wMaxMBperSecOneResolutionNoScalability`
 
-Specifies the height in pixels of pictures output from the decoding process.
 
-<div class="alert"><b>Note</b>   The value for this member must be a multiple of 2. When field coding or frame/field adaptive coding is used, it must be a multiple of 4. It does not have to be an integer multiple of 16. It can be specified using a frame cropping rectangle in the active SPS.</div>
-<div> </div>
 
-`wMaxMBperSecFourResolutionsFullScalability`
+`wMaxMBperSecTwoResolutionsNoScalability`
+
+
+
+`wMaxMBperSecThreeResolutionsNoScalability`
 
 
 
@@ -422,11 +498,47 @@ Specifies the height in pixels of pictures output from the decoding process.
 
 
 
-`wMaxMBperSecFourResolutionsTemporalQualityScalability`
+`wMaxMBperSecOneResolutionTemporalScalability`
+
+
+
+`wMaxMBperSecTwoResolutionsTemporalScalablility`
+
+
+
+`wMaxMBperSecThreeResolutionsTemporalScalability`
 
 
 
 `wMaxMBperSecFourResolutionsTemporalScalability`
+
+
+
+`wMaxMBperSecOneResolutionTemporalQualityScalability`
+
+
+
+`wMaxMBperSecTwoResolutionsTemporalQualityScalability`
+
+
+
+`wMaxMBperSecThreeResolutionsTemporalQualityScalablity`
+
+
+
+`wMaxMBperSecFourResolutionsTemporalQualityScalability`
+
+
+
+`wMaxMBperSecOneResolutionTemporalSpatialScalability`
+
+
+
+`wMaxMBperSecTwoResolutionsTemporalSpatialScalability`
+
+
+
+`wMaxMBperSecThreeResolutionsTemporalSpatialScalablity`
 
 
 
@@ -438,19 +550,7 @@ Specifies the height in pixels of pictures output from the decoding process.
 
 
 
-`wMaxMBperSecOneResolutionNoScalability`
-
-
-
-`wMaxMBperSecOneResolutionTemporalQualityScalability`
-
-
-
-`wMaxMBperSecOneResolutionTemporalScalability`
-
-
-
-`wMaxMBperSecOneResolutionTemporalSpatialScalability`
+`wMaxMBperSecTwoResolutionsFullScalability`
 
 
 
@@ -458,109 +558,9 @@ Specifies the height in pixels of pictures output from the decoding process.
 
 
 
-`wMaxMBperSecThreeResolutionsNoScalability`
+`wMaxMBperSecFourResolutionsFullScalability`
 
 
-
-`wMaxMBperSecThreeResolutionsTemporalQualityScalablity`
-
-
-
-`wMaxMBperSecThreeResolutionsTemporalScalability`
-
-
-
-`wMaxMBperSecThreeResolutionsTemporalSpatialScalablity`
-
-
-
-`wMaxMBperSecTwoResolutionsFullScalability`
-
-
-
-`wMaxMBperSecTwoResolutionsNoScalability`
-
-
-
-`wMaxMBperSecTwoResolutionsTemporalQualityScalability`
-
-
-
-`wMaxMBperSecTwoResolutionsTemporalScalablility`
-
-
-
-`wMaxMBperSecTwoResolutionsTemporalSpatialScalability`
-
-
-
-`wProfile`
-
-Specifies the first two bytes of the sequence parameter set as described by profile_idc and constraint flags in the H.264 specification. 
-
-<div class="alert"><b>Note</b>  This member indicates the profile and applicable constraints to be used. </div>
-<div> </div>
-The following are examples of allowed values:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x4240</td>
-<td>Constrained Baseline Profile.</td>
-</tr>
-<tr>
-<td>0x4200</td>
-<td>Baseline Profile.</td>
-</tr>
-<tr>
-<td>0x4D00</td>
-<td>Main Profile.</td>
-</tr>
-<tr>
-<td>0x6400</td>
-<td>High Profile.</td>
-</tr>
-<tr>
-<td>0x5300</td>
-<td>Scalable Baseline Profile.</td>
-</tr>
-<tr>
-<td>0x5600</td>
-<td>Scalable High Profile.</td>
-</tr>
-<tr>
-<td>0x7600</td>
-<td>Multiview High Profile.</td>
-</tr>
-<tr>
-<td>0x8000</td>
-<td>Stereo High Profile.</td>
-</tr>
-</table>
-
-`wSARheight`
-
-Specifies the sample aspect ratio height as defined in the H.264 Annex E. 
-
-<div class="alert"><b>Note</b>  It must be relatively prime with respect to <b>bSARwidth</b>.</div>
-<div> </div>
-
-`wSARwidth`
-
-Specifies the sample aspect ratio width as defined in the H.264 Annex E. 
-
-<div class="alert"><b>Note</b>  It must  be relatively prime with respect to <b>wSARheight</b>.</div>
-<div> </div>
-
-`wWidth`
-
-Specifies the width in pixels of pictures output from the decoding process. 
-
-<div class="alert"><b>Note</b>  The value for this member must be a multiple of 2, but it does not have to be an integer multiple of 16. It can be specified using a frame cropping rectangle in the active Sequence Parameter Set (SPS).</div>
-<div> </div>
 
 ## Remarks
 The KS_H264VIDEOINFO structure contains the frame and the format descriptor information.
@@ -578,11 +578,3 @@ The KS_H264VIDEOINFO structure contains the frame and the format descriptor info
 
 
 <a href="..\ksmedia\ns-ksmedia-tagks_datarange_h264_video.md">KS_DATARANGE_H264_VIDEO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_H264VIDEOINFO structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

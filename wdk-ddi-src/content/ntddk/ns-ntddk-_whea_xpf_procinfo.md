@@ -68,6 +68,40 @@ typedef struct _WHEA_XPF_PROCINFO {
 ## Members
 
 
+`CheckInfoId`
+
+A GUID that identifies the processor error information that is contained in the <b>CheckInfo</b> member. The following are the possible GUIDs that can be specified for this member:
+
+
+
+
+
+#### WHEA_CACHECHECK_GUID
+
+The <b>CheckInfo.CacheCheck</b> member contains cache error information.
+
+
+
+#### WHEA_TLBCHECK_GUID
+
+The <b>CheckInfo.TlbCheck</b> member contains translation lookaside buffer error information.
+
+
+
+#### WHEA_BUSCHECK_GUID
+
+The <b>CheckInfo.BusCheck</b> member contains bus error information.
+
+
+
+#### WHEA_MSCHECK_GUID
+
+The <b>CheckInfo.MsCheck</b> member contains microarchitecture-specific error information.
+
+`ValidBits`
+
+A <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo_validbits.md">WHEA_XPF_PROCINFO_VALIDBITS</a> union that specifies which members of this structure contain valid data.
+
 `CheckInfo`
 
 A union of unions that are specific to each different type of processor error information.
@@ -106,41 +140,11 @@ A <a href="..\ntddk\ns-ntddk-_whea_xpf_ms_check.md">WHEA_XPF_MS_CHECK</a> union 
 
 A ULONGLONG representation of the contents of the <b>CheckInfo</b> union.
 
-`CheckInfoId`
+`TargetId`
 
-A GUID that identifies the processor error information that is contained in the <b>CheckInfo</b> member. The following are the possible GUIDs that can be specified for this member:
+An identifier that uniquely identifies the target associated with the error.
 
-
-
-
-
-#### WHEA_CACHECHECK_GUID
-
-The <b>CheckInfo.CacheCheck</b> member contains cache error information.
-
-
-
-#### WHEA_TLBCHECK_GUID
-
-The <b>CheckInfo.TlbCheck</b> member contains translation lookaside buffer error information.
-
-
-
-#### WHEA_BUSCHECK_GUID
-
-The <b>CheckInfo.BusCheck</b> member contains bus error information.
-
-
-
-#### WHEA_MSCHECK_GUID
-
-The <b>CheckInfo.MsCheck</b> member contains microarchitecture-specific error information.
-
-`InstructionPointer`
-
-The instruction pointer at the time that the error occurred.
-
-This member contains valid data only if the <b>ValidBits.InstructionPointer</b> bit is set.
+This member contains valid data only if the <b>ValidBits.TargetId</b> bit is set.
 
 `RequesterId`
 
@@ -154,15 +158,11 @@ An identifier that uniquely identifies the responder associated with the error.
 
 This member contains valid data only if the <b>ValidBits.Responder</b> bit is set.
 
-`TargetId`
+`InstructionPointer`
 
-An identifier that uniquely identifies the target associated with the error.
+The instruction pointer at the time that the error occurred.
 
-This member contains valid data only if the <b>ValidBits.TargetId</b> bit is set.
-
-`ValidBits`
-
-A <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo_validbits.md">WHEA_XPF_PROCINFO_VALIDBITS</a> union that specifies which members of this structure contain valid data.
+This member contains valid data only if the <b>ValidBits.InstructionPointer</b> bit is set.
 
 ## Remarks
 The <a href="..\ntddk\ns-ntddk-_whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure contains an array of WHEA_XPF_PROCINFO structures, each of which describes specific error information associated with the processor error that occurred.
@@ -196,11 +196,3 @@ The <a href="..\ntddk\ns-ntddk-_whea_xpf_processor_error_section.md">WHEA_XPF_PR
 
 
 <a href="..\ntddk\ns-ntddk-_whea_xpf_tlb_check.md">WHEA_XPF_TLB_CHECK</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_XPF_PROCINFO structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

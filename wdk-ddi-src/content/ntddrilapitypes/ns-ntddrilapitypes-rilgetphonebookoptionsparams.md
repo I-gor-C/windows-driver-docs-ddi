@@ -57,11 +57,11 @@ typedef struct _RILGETPHONEBOOKOPTIONSPARAMS {
 ## Members
 
 
-`dwStoreLocation`
-
-
-
 `hUiccApp`
+
+
+
+`dwStoreLocation`
 
 
 

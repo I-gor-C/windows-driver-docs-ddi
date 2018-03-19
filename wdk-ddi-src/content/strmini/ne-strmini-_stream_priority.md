@@ -63,13 +63,13 @@ typedef enum _STREAM_PRIORITY {
 <table>
             
                 <tr>
-                    <td>Dispatch</td>
-                    <td>Medium priority, IRQL equal to dispatch level.</td>
+                    <td>High</td>
+                    <td>Highest priority, IRQL equal to the adapter's ISR.</td>
                 </tr>
             
                 <tr>
-                    <td>High</td>
-                    <td>Highest priority, IRQL equal to the adapter's ISR.</td>
+                    <td>Dispatch</td>
+                    <td>Medium priority, IRQL equal to dispatch level.</td>
                 </tr>
             
                 <tr>

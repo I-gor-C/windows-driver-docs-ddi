@@ -74,53 +74,8 @@ typedef enum _PosPropertyId {
 <table>
             
                 <tr>
-                    <td>BarcodeScannerActiveProfile</td>
-                    <td>Sets the active device configuration profile. Configure the driver using one of the driver- or manufacturer-defined profiles in the list returned by the <b>BarcodeScannerSupportedProfiles</b> property. (Write-Only). For example, you may have one profile for warehouse staff and another profile for the sales department. Each profile is expected to configure the device based on the driver or manufacturer definition.</td>
-                </tr>
-            
-                <tr>
-                    <td>BarcodeScannerActiveSymbologies</td>
-                    <td>Indicates the symbologies that the barcode scanner is actively handling. (Write-only). For symbology definitions, see <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodesymbology.md">BarcodeSymbology</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>BarcodeScannerCapabilities</td>
-                    <td>Contains information about what functionality the barcode scanner supports. For example, a barcode scanner may support imaging and standard power reporting but not statistics updating and reporting. For more information about the values for barcode capabilities, see <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_posbarcodescannercapabilitiestype.md">PosBarcodeScannerCapabilitiesType</a>. (Read-only).</td>
-                </tr>
-            
-                <tr>
-                    <td>BarcodeScannerIsDecodeDataEnabled</td>
-                    <td>When set to <b>TRUE</b>, the driver must return decoded bar code data in the form of <b>ScanDataLabel</b> in addition to <b>ScanData</b> when raising a data received event. Decoded barcode data typically only contains data from the scanner with header information, scanner generated symbol character, and length identification removed. (Read/Write).</td>
-                </tr>
-            
-                <tr>
-                    <td>BarcodeScannerSupportedProfiles</td>
-                    <td>Returns the list of supported driver-defined device configuration profiles. (Read-only).</td>
-                </tr>
-            
-                <tr>
-                    <td>BarcodeScannerSupportedSymbologies</td>
-                    <td>Contains an array representing the complete list of symbologies that the barcode scanner is capable of reading. Also returns the number of bytes required for the array of symbologies. For symbology definitions, see <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodesymbology.md">BarcodeSymbology</a>. (Read-only).</td>
-                </tr>
-            
-                <tr>
-                    <td>BarcodeScannerVideoDeviceId</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>CashDrawerCapabilities</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>CashDrawerIsDrawerOpened</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>CashDrawerStatusProp</td>
-                    <td></td>
+                    <td>IsEnabled</td>
+                    <td>Indicates whether the device is enabled. An enabled device is expected to be powered on and fully functional. In a disabled state, the device is not expected to generate input and can be powered down. (Read/Write).</td>
                 </tr>
             
                 <tr>
@@ -129,138 +84,43 @@ typedef enum _PosPropertyId {
                 </tr>
             
                 <tr>
-                    <td>IsEnabled</td>
-                    <td>Indicates whether the device is enabled. An enabled device is expected to be powered on and fully functional. In a disabled state, the device is not expected to generate input and can be powered down. (Read/Write).</td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayBlinkRate</td>
+                    <td>PowerState</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayCapabilities</td>
-                    <td></td>
+                    <td>BarcodeScannerIsDecodeDataEnabled</td>
+                    <td>When set to <b>TRUE</b>, the driver must return decoded bar code data in the form of <b>ScanDataLabel</b> in addition to <b>ScanData</b> when raising a data received event. Decoded barcode data typically only contains data from the scanner with header information, scanner generated symbol character, and length identification removed. (Read/Write).</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayCharacterSet</td>
-                    <td></td>
+                    <td>BarcodeScannerCapabilities</td>
+                    <td>Contains information about what functionality the barcode scanner supports. For example, a barcode scanner may support imaging and standard power reporting but not statistics updating and reporting. For more information about the values for barcode capabilities, see <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_posbarcodescannercapabilitiestype.md">PosBarcodeScannerCapabilitiesType</a>. (Read-only).</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayCharacterSetList</td>
-                    <td></td>
+                    <td>BarcodeScannerSupportedSymbologies</td>
+                    <td>Contains an array representing the complete list of symbologies that the barcode scanner is capable of reading. Also returns the number of bytes required for the array of symbologies. For symbology definitions, see <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodesymbology.md">BarcodeSymbology</a>. (Read-only).</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayCurrentWindow</td>
-                    <td></td>
+                    <td>BarcodeScannerActiveSymbologies</td>
+                    <td>Indicates the symbologies that the barcode scanner is actively handling. (Write-only). For symbology definitions, see <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodesymbology.md">BarcodeSymbology</a>.</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayCursorAutoUpdateEnabled</td>
-                    <td></td>
+                    <td>BarcodeScannerSupportedProfiles</td>
+                    <td>Returns the list of supported driver-defined device configuration profiles. (Read-only).</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayCursorPosition</td>
-                    <td></td>
+                    <td>BarcodeScannerActiveProfile</td>
+                    <td>Sets the active device configuration profile. Configure the driver using one of the driver- or manufacturer-defined profiles in the list returned by the <b>BarcodeScannerSupportedProfiles</b> property. (Write-Only). For example, you may have one profile for warehouse staff and another profile for the sales department. Each profile is expected to configure the device based on the driver or manufacturer definition.</td>
                 </tr>
             
                 <tr>
-                    <td>LineDisplayCursorTypeProperty</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayCustomGlyphList</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayDeviceBrightness</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayDeviceControlDescription</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayDeviceControlVersion</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayDeviceServiceVersion</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayGlyphSizeInPixels</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayMapCharacterSet</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayMarqueeFormat</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayMarqueeRepeatWait</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayMarqueeType</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayMarqueeUnitWait</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayMaxBitmapSizeInPixels</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayPhysicalDeviceDescription</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayPhysicalDeviceName</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayScreenMode</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayScreenModeList</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayWindowInterCharacterWaitInterval</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>LineDisplayWindowSizeInCharacters</td>
-                    <td></td>
+                    <td>MagneticStripeReaderIsDecodeDataEnabled</td>
+                    <td>Indicates whether to provide raw or decoded data from the most recently swiped card. If decoded data is provided to the application, set to <b>true</b>; otherwise, set to <b>false</b>. (Read/write).</td>
                 </tr>
             
                 <tr>
@@ -269,8 +129,8 @@ typedef enum _PosPropertyId {
                 </tr>
             
                 <tr>
-                    <td>MagneticStripeReaderDataEncryptionAlgorithm</td>
-                    <td>Specifies the <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrdataencryption.md">MsrDataEncryption</a> that will be used to encrypt the track data. (Read/write).</td>
+                    <td>MagneticStripeReaderSupportedCardTypes</td>
+                    <td>Returns an array of <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrcardtype.md">MsrCardType</a>s supported by the MSR. (Read-only).</td>
                 </tr>
             
                 <tr>
@@ -284,13 +144,8 @@ typedef enum _PosPropertyId {
                 </tr>
             
                 <tr>
-                    <td>MagneticStripeReaderIsDecodeDataEnabled</td>
-                    <td>Indicates whether to provide raw or decoded data from the most recently swiped card. If decoded data is provided to the application, set to <b>true</b>; otherwise, set to <b>false</b>. (Read/write).</td>
-                </tr>
-            
-                <tr>
-                    <td>MagneticStripeReaderIsDeviceAuthenticated</td>
-                    <td>Indicates whether the device is authenticated. (Read-only).</td>
+                    <td>MagneticStripeReaderTracksToRead</td>
+                    <td>Specifies which tracks the application will receive following a card swipe. Does not indicate the capability of the device hardware; instead, it is an application-configurable property representing the tracks to be read. For more information about track values, see <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrtrackids.md">MsrTrackIds</a>. (Read/write).</td>
                 </tr>
             
                 <tr>
@@ -299,17 +154,17 @@ typedef enum _PosPropertyId {
                 </tr>
             
                 <tr>
-                    <td>MagneticStripeReaderSupportedCardTypes</td>
-                    <td>Returns an array of <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrcardtype.md">MsrCardType</a>s supported by the MSR. (Read-only).</td>
+                    <td>MagneticStripeReaderIsDeviceAuthenticated</td>
+                    <td>Indicates whether the device is authenticated. (Read-only).</td>
                 </tr>
             
                 <tr>
-                    <td>MagneticStripeReaderTracksToRead</td>
-                    <td>Specifies which tracks the application will receive following a card swipe. Does not indicate the capability of the device hardware; instead, it is an application-configurable property representing the tracks to be read. For more information about track values, see <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrtrackids.md">MsrTrackIds</a>. (Read/write).</td>
+                    <td>MagneticStripeReaderDataEncryptionAlgorithm</td>
+                    <td>Specifies the <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrdataencryption.md">MsrDataEncryption</a> that will be used to encrypt the track data. (Read/write).</td>
                 </tr>
             
                 <tr>
-                    <td>PowerState</td>
+                    <td>BarcodeScannerVideoDeviceId</td>
                     <td></td>
                 </tr>
             
@@ -324,12 +179,7 @@ typedef enum _PosPropertyId {
                 </tr>
             
                 <tr>
-                    <td>PrinterCharacterSet</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PrinterCoverOpen</td>
+                    <td>PrinterSupportedCharacterSets</td>
                     <td></td>
                 </tr>
             
@@ -344,52 +194,57 @@ typedef enum _PosPropertyId {
                 </tr>
             
                 <tr>
-                    <td>PrinterJournalCartridgeState</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PrinterJournalCurrentCartridge</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PrinterJournalLetterQuality</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PrinterJournalLineChars</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PrinterJournalLineHeight</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PrinterJournalLineSpacing</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PrinterJournalLineWidth</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PrinterJournalPaperEmpty</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PrinterJournalPaperNearEnd</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>PrinterMapCharacterSet</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterRotateSpecial</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSupportedJournalLineChars</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSupportedReceiptLineChars</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSupportedReceiptBarcodeRotations</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSupportedReceiptBitmapRotations</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSupportedSlipLineChars</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSupportedSlipBarcodeRotations</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSupportedSlipBitmapRotations</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterCharacterSet</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterCoverOpen</td>
                     <td></td>
                 </tr>
             
@@ -434,17 +289,47 @@ typedef enum _PosPropertyId {
                 </tr>
             
                 <tr>
-                    <td>PrinterReceiptCartridgeState</td>
+                    <td>PrinterJournalLineChars</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterReceiptCurrentCartridge</td>
+                    <td>PrinterJournalLineHeight</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterReceiptLetterQuality</td>
+                    <td>PrinterJournalLineSpacing</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterJournalLineWidth</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterJournalLetterQuality</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterJournalPaperEmpty</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterJournalPaperNearEnd</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterJournalCartridgeState</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterJournalCurrentCartridge</td>
                     <td></td>
                 </tr>
             
@@ -464,12 +349,12 @@ typedef enum _PosPropertyId {
                 </tr>
             
                 <tr>
-                    <td>PrinterReceiptLinesToPaperCut</td>
+                    <td>PrinterReceiptLineWidth</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterReceiptLineWidth</td>
+                    <td>PrinterReceiptLetterQuality</td>
                     <td></td>
                 </tr>
             
@@ -484,32 +369,27 @@ typedef enum _PosPropertyId {
                 </tr>
             
                 <tr>
-                    <td>PrinterReceiptSidewaysMaxChars</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>PrinterReceiptSidewaysMaxLines</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterRotateSpecial</td>
+                    <td>PrinterReceiptSidewaysMaxChars</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterSlipCartridgeState</td>
+                    <td>PrinterReceiptLinesToPaperCut</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterSlipCurrentCartridge</td>
+                    <td>PrinterReceiptCartridgeState</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterSlipLetterQuality</td>
+                    <td>PrinterReceiptCurrentCartridge</td>
                     <td></td>
                 </tr>
             
@@ -524,11 +404,6 @@ typedef enum _PosPropertyId {
                 </tr>
             
                 <tr>
-                    <td>PrinterSlipLinesNearEndToEnd</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>PrinterSlipLineSpacing</td>
                     <td></td>
                 </tr>
@@ -539,7 +414,7 @@ typedef enum _PosPropertyId {
                 </tr>
             
                 <tr>
-                    <td>PrinterSlipMaxLines</td>
+                    <td>PrinterSlipLetterQuality</td>
                     <td></td>
                 </tr>
             
@@ -554,7 +429,7 @@ typedef enum _PosPropertyId {
                 </tr>
             
                 <tr>
-                    <td>PrinterSlipPrintside</td>
+                    <td>PrinterSlipSidewaysMaxLines</td>
                     <td></td>
                 </tr>
             
@@ -564,7 +439,27 @@ typedef enum _PosPropertyId {
                 </tr>
             
                 <tr>
-                    <td>PrinterSlipSidewaysMaxLines</td>
+                    <td>PrinterSlipMaxLines</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSlipLinesNearEndToEnd</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSlipPrintside</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSlipCartridgeState</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PrinterSlipCurrentCartridge</td>
                     <td></td>
                 </tr>
             
@@ -574,42 +469,147 @@ typedef enum _PosPropertyId {
                 </tr>
             
                 <tr>
-                    <td>PrinterSupportedCharacterSets</td>
+                    <td>CashDrawerIsDrawerOpened</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterSupportedJournalLineChars</td>
+                    <td>CashDrawerCapabilities</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterSupportedReceiptBarcodeRotations</td>
+                    <td>CashDrawerStatusProp</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterSupportedReceiptBitmapRotations</td>
+                    <td>LineDisplayCapabilities</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterSupportedReceiptLineChars</td>
+                    <td>LineDisplayCurrentWindow</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterSupportedSlipBarcodeRotations</td>
+                    <td>LineDisplayWindowSizeInCharacters</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterSupportedSlipBitmapRotations</td>
+                    <td>LineDisplayWindowInterCharacterWaitInterval</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PrinterSupportedSlipLineChars</td>
+                    <td>LineDisplayPhysicalDeviceName</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayPhysicalDeviceDescription</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayDeviceControlDescription</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayDeviceControlVersion</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayDeviceServiceVersion</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayCursorTypeProperty</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayCursorAutoUpdateEnabled</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayCursorPosition</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayScreenModeList</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayScreenMode</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayMaxBitmapSizeInPixels</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayCharacterSetList</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayDeviceBrightness</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayBlinkRate</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayCharacterSet</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayMapCharacterSet</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayGlyphSizeInPixels</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayCustomGlyphList</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayMarqueeFormat</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayMarqueeRepeatWait</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayMarqueeUnitWait</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LineDisplayMarqueeType</td>
                     <td></td>
                 </tr>
 </table>
@@ -627,11 +627,3 @@ typedef enum _PosPropertyId {
 
 
 <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_set_property.md">IOCTL_POINT_OF_SERVICE_SET_PROPERTY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [pos\pos]:%20PosPropertyId enumeration%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,13 +63,13 @@ typedef enum _WDI_P2P_SERVICE_DISCOVERY_TYPE {
 <table>
             
                 <tr>
-                    <td>WDI_P2P_SERVICE_DISCOVERY_TYPE_MAX_VALUE</td>
-                    <td></td>
+                    <td>WDI_P2P_SERVICE_DISCOVERY_TYPE_NO_SERVICE_DISCOVERY</td>
+                    <td>The adapter should only do a WFD discovery for WFD devices.  It should not encode service hashes in the P2P IEs.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_P2P_SERVICE_DISCOVERY_TYPE_NO_SERVICE_DISCOVERY</td>
-                    <td>The adapter should only do a WFD discovery for WFD devices.  It should not encode service hashes in the P2P IEs.</td>
+                    <td>WDI_P2P_SERVICE_DISCOVERY_TYPE_SERVICE_NAME_ONLY</td>
+                    <td>The adapter encodes service hashes in the P2P IEs during probe requests and indicates probe responses.  It does not perform any GAS queries for service information.</td>
                 </tr>
             
                 <tr>
@@ -78,8 +78,8 @@ typedef enum _WDI_P2P_SERVICE_DISCOVERY_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WDI_P2P_SERVICE_DISCOVERY_TYPE_SERVICE_NAME_ONLY</td>
-                    <td>The adapter encodes service hashes in the P2P IEs during probe requests and indicates probe responses.  It does not perform any GAS queries for service information.</td>
+                    <td>WDI_P2P_SERVICE_DISCOVERY_TYPE_MAX_VALUE</td>
+                    <td></td>
                 </tr>
 </table>
 

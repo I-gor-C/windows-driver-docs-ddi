@@ -67,9 +67,64 @@ typedef struct _BRB_HEADER {
 ## Members
 
 
+`ListEntry`
+
+A LIST_ENTRY structure used by the current owner of the BRB to place the BRB in a queue.
+
+`Length`
+
+The size, in bytes, of the BRB, including the BRB_HEADER structure. The 
+     <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>, 
+     <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a> and 
+     <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
+     member.
+
+`Version`
+
+For internal use only. Do not use.
+
+`Type`
+
+The Bluetooth request block type. The 
+     <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>, 
+     <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a> and 
+     <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
+     member.Possible values include:
+     
+
+<ul>
+<li>BRB_HCI_GET_LOCAL_BD_ADDR</li>
+<li>BRB_L2CA_REGISTER_SERVER</li>
+<li>BRB_L2CA_UNREGISTER_SERVER</li>
+<li>BRB_L2CA_OPEN_CHANNEL</li>
+<li>BRB_L2CA_OPEN_CHANNEL_RESPONSE</li>
+<li>BRB_L2CA_CLOSE_CHANNEL</li>
+<li>BRB_L2CA_ACL_TRANSFER</li>
+<li>BRB_L2CA_UPDATE_CHANNEL</li>
+<li>BRB_L2CA_PING</li>
+<li>BRB_REGISTER_PSM</li>
+<li>BRB_UNREGISTER_PSM</li>
+<li>BRB_SCO_REGISTER_SERVER</li>
+<li>BRB_SCO_UNREGISTER_SERVER</li>
+<li>BRB_SCO_OPEN_CHANNEL</li>
+<li>BRB_SCO_OPEN_CHANNEL_RESPONSE</li>
+<li>BRB_SCO_CLOSE_CHANNEL</li>
+<li>BRB_SCO_TRANSFER</li>
+<li>BRB_SCO_GET_CHANNEL_INFO</li>
+<li>BRB_SCO_GET_SYSTEM_INFO</li>
+<li>BRB_SCO_FLUSH_CHANNEL</li>
+<li>BRB_ACL_GET_MODE</li>
+<li>BRB_ACL_ENTER_ACTIVE_MODE</li>
+<li>BRB_GET_DEVICE_INTERFACE_STRING</li>
+</ul>
+
 `BthportFlags`
 
 For internal use only. Do not use.
+
+`Status`
+
+The NTSTATUS code that is passed when the BRB call completes.
 
 `BtStatus`
 
@@ -122,73 +177,18 @@ The Bluetooth status code (BTSTATUS) that corresponds to the NTSTATUS code that 
 <li>BTH_ERROR_UNSUPPORTED_REMOTE_FEATURE</li>
 </ul>
 
+`Context`
+
+For internal use only. Do not use.
+
 `ClientContext`
 
 The client context that is associated with the BRB call. The caller can use this member to store a
      pointer or other information.
 
-`Context`
-
-For internal use only. Do not use.
-
-`Length`
-
-The size, in bytes, of the BRB, including the BRB_HEADER structure. The 
-     <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>, 
-     <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a> and 
-     <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
-     member.
-
-`ListEntry`
-
-A LIST_ENTRY structure used by the current owner of the BRB to place the BRB in a queue.
-
 `Reserved`
 
 Reserved for future use. Do not use.
-
-`Status`
-
-The NTSTATUS code that is passed when the BRB call completes.
-
-`Type`
-
-The Bluetooth request block type. The 
-     <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>, 
-     <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a> and 
-     <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
-     member.Possible values include:
-     
-
-<ul>
-<li>BRB_HCI_GET_LOCAL_BD_ADDR</li>
-<li>BRB_L2CA_REGISTER_SERVER</li>
-<li>BRB_L2CA_UNREGISTER_SERVER</li>
-<li>BRB_L2CA_OPEN_CHANNEL</li>
-<li>BRB_L2CA_OPEN_CHANNEL_RESPONSE</li>
-<li>BRB_L2CA_CLOSE_CHANNEL</li>
-<li>BRB_L2CA_ACL_TRANSFER</li>
-<li>BRB_L2CA_UPDATE_CHANNEL</li>
-<li>BRB_L2CA_PING</li>
-<li>BRB_REGISTER_PSM</li>
-<li>BRB_UNREGISTER_PSM</li>
-<li>BRB_SCO_REGISTER_SERVER</li>
-<li>BRB_SCO_UNREGISTER_SERVER</li>
-<li>BRB_SCO_OPEN_CHANNEL</li>
-<li>BRB_SCO_OPEN_CHANNEL_RESPONSE</li>
-<li>BRB_SCO_CLOSE_CHANNEL</li>
-<li>BRB_SCO_TRANSFER</li>
-<li>BRB_SCO_GET_CHANNEL_INFO</li>
-<li>BRB_SCO_GET_SYSTEM_INFO</li>
-<li>BRB_SCO_FLUSH_CHANNEL</li>
-<li>BRB_ACL_GET_MODE</li>
-<li>BRB_ACL_ENTER_ACTIVE_MODE</li>
-<li>BRB_GET_DEVICE_INTERFACE_STRING</li>
-</ul>
-
-`Version`
-
-For internal use only. Do not use.
 
 ## Remarks
 The BRB_HEADER structure contains common types of information about the specified BRB. The BRB_HEADER
@@ -216,11 +216,3 @@ Profile drivers should not modify any of the members of the BRB_HEADER structure
 
 
 <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BRB_HEADER structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

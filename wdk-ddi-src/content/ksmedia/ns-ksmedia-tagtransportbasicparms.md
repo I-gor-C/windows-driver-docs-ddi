@@ -85,240 +85,6 @@ typedef struct tagTRANSPORTBASICPARMS {
 ## Members
 
 
-`Ballistic`
-
-Specifies any proprietary data.
-
-`ColorFrameServo`
-
-Specifies the color frame servo.
-
-`CounterFormat`
-
-Specifies the counter format.
-
-`EditDelay`
-
-Indicates the edit delay amount.
-
-`EditField`
-
-Indicates the edit field.
-
-`EndStopAction`
-
-Specifies the stop action.
-
-<table>
-<tr>
-<th>Flag</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-ED_MODE_STOP
-
-</td>
-<td>
-Stop
-
-</td>
-</tr>
-<tr>
-<td>
-ED_MODE_REWIND
-
-</td>
-<td>
-Rewind
-
-</td>
-</tr>
-<tr>
-<td>
-ED_MODE_FREEZE
-
-</td>
-<td>
-Freeze/pause
-
-</td>
-</tr>
-</table>
-
-`FrameServo`
-
-Specifies the frame servo.
-
-`PlayTCDelay`
-
-Indicates the play timecode delay amount.
-
-`Postroll`
-
-Indicates the postroll amount.
-
-`Preroll`
-
-Indicates the preroll amount.
-
-`RecordFormat`
-
-Indicates the basic record format.
-
-<table>
-<tr>
-<th>Flag</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-ED_RECORD_FORMAT_SP
-
-</td>
-<td>
-Standard play
-
-</td>
-</tr>
-<tr>
-<td>
-ED_RECORD_FORMAT_LP
-
-</td>
-<td>
-Long play
-
-</td>
-</tr>
-<tr>
-<td>
-ED_RECORD_FORMAT_EP
-
-</td>
-<td>
-Extended play
-
-</td>
-</tr>
-</table>
-
-`RecPreroll`
-
-Indicates the record preroll amount.
-
-`RecTCDelay`
-
-Indicates the record timecode delay amount.
-
-`ServoRef`
-
-Specifies the servo ref.
-
-<table>
-<tr>
-<th>Flag</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-ED_REF_EXTERNAL
-
-</td>
-<td>
-External
-
-</td>
-</tr>
-<tr>
-<td>
-ED_REF_INPUT
-
-</td>
-<td>
-Input
-
-</td>
-</tr>
-<tr>
-<td>
-ED_REF_INTERNAL
-
-</td>
-<td>
-Internal
-
-</td>
-</tr>
-<tr>
-<td>
-ED_REF_AUTO
-
-</td>
-<td>
-Auto
-
-</td>
-</tr>
-</table>
-
-`SetpField`
-
-Indicates the field step count.
-
-`SetTracking`
-
-Specifies the tracking.
-
-<table>
-<tr>
-<th>Flag</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-ED_TRACKING_PLUS
-
-</td>
-<td>
-Plus
-
-</td>
-</tr>
-<tr>
-<td>
-ED_TRACKING_MINUS
-
-</td>
-<td>
-Minus
-
-</td>
-</tr>
-<tr>
-<td>
-ED_TRACKING_RESET
-
-</td>
-<td>
-Reset
-
-</td>
-</tr>
-</table>
-
-`Speed`
-
-Specifies the speed.
-
-`StepFrames`
-
-Indicates the frame step count.
-
-`Superimpose`
-
-Indicates whether to enable or disable the onscreen display. Specify <b>TRUE</b> to enable, <b>FALSE</b> to disable.
-
 `TimeFormat`
 
 Indicates the basic time format.
@@ -421,6 +187,256 @@ Index
 </tr>
 </table>
 
+`Superimpose`
+
+Indicates whether to enable or disable the onscreen display. Specify <b>TRUE</b> to enable, <b>FALSE</b> to disable.
+
+`EndStopAction`
+
+Specifies the stop action.
+
+<table>
+<tr>
+<th>Flag</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+ED_MODE_STOP
+
+</td>
+<td>
+Stop
+
+</td>
+</tr>
+<tr>
+<td>
+ED_MODE_REWIND
+
+</td>
+<td>
+Rewind
+
+</td>
+</tr>
+<tr>
+<td>
+ED_MODE_FREEZE
+
+</td>
+<td>
+Freeze/pause
+
+</td>
+</tr>
+</table>
+
+`RecordFormat`
+
+Indicates the basic record format.
+
+<table>
+<tr>
+<th>Flag</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+ED_RECORD_FORMAT_SP
+
+</td>
+<td>
+Standard play
+
+</td>
+</tr>
+<tr>
+<td>
+ED_RECORD_FORMAT_LP
+
+</td>
+<td>
+Long play
+
+</td>
+</tr>
+<tr>
+<td>
+ED_RECORD_FORMAT_EP
+
+</td>
+<td>
+Extended play
+
+</td>
+</tr>
+</table>
+
+`StepFrames`
+
+Indicates the frame step count.
+
+`SetpField`
+
+Indicates the field step count.
+
+`Preroll`
+
+Indicates the preroll amount.
+
+`RecPreroll`
+
+Indicates the record preroll amount.
+
+`Postroll`
+
+Indicates the postroll amount.
+
+`EditDelay`
+
+Indicates the edit delay amount.
+
+`PlayTCDelay`
+
+Indicates the play timecode delay amount.
+
+`RecTCDelay`
+
+Indicates the record timecode delay amount.
+
+`EditField`
+
+Indicates the edit field.
+
+`FrameServo`
+
+Specifies the frame servo.
+
+`ColorFrameServo`
+
+Specifies the color frame servo.
+
+`ServoRef`
+
+Specifies the servo ref.
+
+<table>
+<tr>
+<th>Flag</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+ED_REF_EXTERNAL
+
+</td>
+<td>
+External
+
+</td>
+</tr>
+<tr>
+<td>
+ED_REF_INPUT
+
+</td>
+<td>
+Input
+
+</td>
+</tr>
+<tr>
+<td>
+ED_REF_INTERNAL
+
+</td>
+<td>
+Internal
+
+</td>
+</tr>
+<tr>
+<td>
+ED_REF_AUTO
+
+</td>
+<td>
+Auto
+
+</td>
+</tr>
+</table>
+
+`WarnGenlock`
+
+Indicates the warn genlock.
+
+`SetTracking`
+
+Specifies the tracking.
+
+<table>
+<tr>
+<th>Flag</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+ED_TRACKING_PLUS
+
+</td>
+<td>
+Plus
+
+</td>
+</tr>
+<tr>
+<td>
+ED_TRACKING_MINUS
+
+</td>
+<td>
+Minus
+
+</td>
+</tr>
+<tr>
+<td>
+ED_TRACKING_RESET
+
+</td>
+<td>
+Reset
+
+</td>
+</tr>
+</table>
+
+`VolumeName`
+
+Specifies the volume name.
+
+`Ballistic`
+
+Specifies any proprietary data.
+
+`Speed`
+
+Specifies the speed.
+
+`CounterFormat`
+
+Specifies the counter format.
+
+`TunerChannel`
+
+Indicates the tuner channel.
+
+`TunerNumber`
+
+Indicates the tuner number.
+
 `TimerEvent`
 
 Specifies a timer event.
@@ -440,22 +456,6 @@ Indicates the timer stop-day.
 `TimerStopTime`
 
 Indicates the timer stop-time.
-
-`TunerChannel`
-
-Indicates the tuner channel.
-
-`TunerNumber`
-
-Indicates the tuner number.
-
-`VolumeName`
-
-Specifies the volume name.
-
-`WarnGenlock`
-
-Indicates the warn genlock.
 
 ## Remarks
 Any ED_<i>Xxx</i> tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.

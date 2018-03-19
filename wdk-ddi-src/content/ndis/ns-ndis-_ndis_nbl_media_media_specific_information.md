@@ -60,10 +60,6 @@ typedef struct _NDIS_NBL_MEDIA_MEDIA_SPECIFIC_INFORMATION {
 ## Members
 
 
-`Data`
-
-A variable sized UCHAR array that contains the media-specific information.
-
 `NextEntry`
 
 A pointer to the next media-specific information structure in a linked list.
@@ -76,6 +72,10 @@ A unique pre-assigned value that identifies the type of the media-specific infor
 
 New tags can be assigned in future system releases for new media types that require additional OOB
      data specific to a particular media type.
+
+`Data`
+
+A variable sized UCHAR array that contains the media-specific information.
 
 ## Remarks
 Any driver in an NDIS driver stack can allocate and manage media-specific information. The
@@ -128,11 +128,3 @@ To access NDIS_NBL_MEDIA_SPECIFIC_INFORMATION structures in a linked list, use t
 
 
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NBL_MEDIA_SPECIFIC_INFORMATION structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

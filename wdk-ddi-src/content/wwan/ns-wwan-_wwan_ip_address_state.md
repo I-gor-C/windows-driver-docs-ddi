@@ -66,45 +66,45 @@ typedef struct _WWAN_IP_ADDRESS_STATE {
 ## Members
 
 
-`DnsCount`
-
-The number of entries in the <b>DnsTable</b> array.
-
-`DnsTable`
-
-Pointer to the start of an array of DNS servers of the PDP context.
-
-`GatewayCount`
-
-The number of entries in the <b>GatewayTable</b> array.
-
-`GatewayTable`
-
-Pointer to the start of an array of gateways of the PDP context.
-
-`IpCount`
-
-The number of entries in the <b>IpTable</b> array.
-
-`IpTable`
-
-Pointer to the start of an array of IP addresses of the PDP context.
-
 `IPv4Flags`
 
 Flags that describe  the availability of the IPV4 address, gateway, DNS server, and MTU information of the PDP context.
-
-`IPv4MTU`
-
-The IPV4 MTU value of the PDP context.
 
 `IPv6Flags`
 
 Flags that describe the availability of the IPV6 address, gateway, DNS server, and MTU information of the PDP context.
 
+`IPv4MTU`
+
+The IPV4 MTU value of the PDP context.
+
 `IPv6MTU`
 
 The IPV6 MTU value of the PDP context.
+
+`IpTable`
+
+Pointer to the start of an array of IP addresses of the PDP context.
+
+`IpCount`
+
+The number of entries in the <b>IpTable</b> array.
+
+`GatewayTable`
+
+Pointer to the start of an array of gateways of the PDP context.
+
+`GatewayCount`
+
+The number of entries in the <b>GatewayTable</b> array.
+
+`DnsTable`
+
+Pointer to the start of an array of DNS servers of the PDP context.
+
+`DnsCount`
+
+The number of entries in the <b>DnsTable</b> array.
 
 
 ## Requirements
@@ -120,11 +120,3 @@ The IPV6 MTU value of the PDP context.
 
 
 <a href="..\wwan\ns-wwan-wwan_ip_configuration_flags.md">WWAN_IP_CONFIGURATION_FLAGS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_IP_ADDRESS_STATE structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

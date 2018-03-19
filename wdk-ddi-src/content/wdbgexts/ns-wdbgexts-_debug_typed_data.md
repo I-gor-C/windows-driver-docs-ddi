@@ -67,19 +67,25 @@ typedef struct _DEBUG_TYPED_DATA {
 ## Members
 
 
-`BaseTypeId`
+`ModBase`
 
-For generated types, the type ID of the type on which the data's type is based. For example, if the typed data represents a pointer (or an array), <b>BaseTypeId</b> is the type of the object pointed to (or held in the array).
+The base address of the module, in the target's virtual address space, that contains the typed data.
 
-For other types, <b>BaseTypeId</b> is the same as <b>TypeId</b>.
+`Offset`
+
+The location of the typed data in the target's memory. <b>Offset</b> is a virtual memory address unless there are flags present in <b>Flags</b> that specify that <b>Offset</b> is a physical memory address.
+
+`EngineHandle`
+
+Set to zero.
 
 `Data`
 
 The data cast to a ULONG64. If <b>Flags</b> does not contain the DEBUG_TYPED_DATA_IS_IN_MEMORY flag, the data is not available and <b>Data</b> is set to zero.
 
-`EngineHandle`
+`Size`
 
-Set to zero.
+The size, in bytes, of the data.
 
 `Flags`
 
@@ -142,33 +148,27 @@ DEBUG_TYPED_DATA_PHYSICAL_WRITE_COMBINED
 </tr>
 </table>
 
-`Internal`
+`TypeId`
 
-Internal <a href="https://msdn.microsoft.com/fa52a1f0-9397-48a5-acbd-ce5347c0baef">debugger engine</a> data.
+The type ID for the data's type.
 
-`ModBase`
+`BaseTypeId`
 
-The base address of the module, in the target's virtual address space, that contains the typed data.
+For generated types, the type ID of the type on which the data's type is based. For example, if the typed data represents a pointer (or an array), <b>BaseTypeId</b> is the type of the object pointed to (or held in the array).
 
-`Offset`
-
-The location of the typed data in the target's memory. <b>Offset</b> is a virtual memory address unless there are flags present in <b>Flags</b> that specify that <b>Offset</b> is a physical memory address.
-
-`Register`
-
-The index of the processor's register containing the data, or zero if the data is not contained in a register.  (Note that the zero value can represent either that the data is not in a register or that it is in the register whose index is zero.)
-
-`Size`
-
-The size, in bytes, of the data.
+For other types, <b>BaseTypeId</b> is the same as <b>TypeId</b>.
 
 `Tag`
 
 The symbol tag of the typed data. This is a value from the <b>SymTagEnum</b> enumeration. For descriptions of the values, see the DbgHelp API documentation.
 
-`TypeId`
+`Register`
 
-The type ID for the data's type.
+The index of the processor's register containing the data, or zero if the data is not contained in a register.  (Note that the zero value can represent either that the data is not in a register or that it is in the register whose index is zero.)
+
+`Internal`
+
+Internal <a href="https://msdn.microsoft.com/fa52a1f0-9397-48a5-acbd-ce5347c0baef">debugger engine</a> data.
 
 ## Remarks
 Instances of this structure should be manipulated using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541547">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI</a>
@@ -191,11 +191,3 @@ There is one exception to the preceding rule: the <b>EXT_TDOP_SET_FROM_TYPE_ID_A
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541547">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20DEBUG_TYPED_DATA structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

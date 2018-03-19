@@ -59,17 +59,17 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE {
 ## Members
 
 
-`Default`
+`Minimum`
 
-The default value of the filter.
+The minimum value of the filter.
 
 `Maximum`
 
 The maximum value of the filter.
 
-`Minimum`
+`Default`
 
-The minimum value of the filter.
+The default value of the filter.
 
 `Multiplier`
 

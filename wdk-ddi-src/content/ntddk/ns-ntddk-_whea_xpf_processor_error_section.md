@@ -59,11 +59,9 @@ typedef struct _WHEA_XPF_PROCESSOR_ERROR_SECTION {
 ## Members
 
 
-`CpuId`
+`ValidBits`
 
-A 48-byte buffer that contains the results of executing the CPUID instruction. For more information about the CPUID instruction, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.
-
-This member contains valid data only if the <b>ValidBits.CpuId </b>bit is set.
+A <a href="..\ntddk\ns-ntddk-_whea_xpf_processor_error_section_validbits.md">WHEA_XPF_PROCESSOR_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data and the number of structures that are contained in the <b>VariableInfo</b> member.
 
 `LocalAPICId`
 
@@ -71,9 +69,11 @@ The value programmed into the local APIC ID register.
 
 This member contains valid data only if the <b>ValidBits.LocalAPICId</b> bit is set.
 
-`ValidBits`
+`CpuId`
 
-A <a href="..\ntddk\ns-ntddk-_whea_xpf_processor_error_section_validbits.md">WHEA_XPF_PROCESSOR_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data and the number of structures that are contained in the <b>VariableInfo</b> member.
+A 48-byte buffer that contains the results of executing the CPUID instruction. For more information about the CPUID instruction, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.
+
+This member contains valid data only if the <b>ValidBits.CpuId </b>bit is set.
 
 `VariableInfo`
 
@@ -103,11 +103,3 @@ The WHEA_XPF_PROCESSOR_ERROR_SECTION structure describes the error data that is 
 
 
 <a href="..\ntddk\ns-ntddk-_whea_xpf_processor_error_section_validbits.md">WHEA_XPF_PROCESSOR_ERROR_SECTION_VALIDBITS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_XPF_PROCESSOR_ERROR_SECTION structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

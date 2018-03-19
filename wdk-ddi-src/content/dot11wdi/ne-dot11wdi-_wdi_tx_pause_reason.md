@@ -63,23 +63,13 @@ typedef enum _WDI_TX_PAUSE_REASON {
 <table>
             
                 <tr>
-                    <td>WDI_TX_PAUSE_REASON_CREDIT</td>
-                    <td>General reason to use for the exhaustion of some IHV resource.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_TX_PAUSE_REASON_IHV_END</td>
-                    <td>Inclusive end of range of valid pause reasons for IHV use.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_TX_PAUSE_REASON_IHV_START</td>
-                    <td>Inclusive beginning of range of valid pause reasons for IHV use.</td>
-                </tr>
-            
-                <tr>
                     <td>WDI_TX_PAUSE_REASON_NULL</td>
                     <td>Reserved.  This enum value does not represent a valid pause reason code.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_TX_PAUSE_REASON_CREDIT</td>
+                    <td>General reason to use for the exhaustion of some IHV resource.</td>
                 </tr>
             
                 <tr>
@@ -90,6 +80,16 @@ typedef enum _WDI_TX_PAUSE_REASON {
                 <tr>
                     <td>WDI_TX_PAUSE_REASON_PS</td>
                     <td>The peer is in Power Save Mode. This is only applicable when the <b>TargetPriorityQueueing</b> capability is set to false.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_TX_PAUSE_REASON_IHV_START</td>
+                    <td>Inclusive beginning of range of valid pause reasons for IHV use.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_TX_PAUSE_REASON_IHV_END</td>
+                    <td>Inclusive end of range of valid pause reasons for IHV use.</td>
                 </tr>
 </table>
 
@@ -103,11 +103,3 @@ typedef enum _WDI_TX_PAUSE_REASON {
 ## See Also
 
 <a href="..\dot11wdi\ns-dot11wdi-_wdi_txrx_target_capabilities.md">WDI_TXRX_CAPABILITIES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_TX_PAUSE_REASON enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -58,15 +58,15 @@ typedef struct _BDA_WMDRM_KEYINFOLIST {
 ## Members
 
 
-`argKeyuuidBuffer`
-
-
-
 `lResult`
 
 
 
 `ulKeyuuidBufferLen`
+
+
+
+`argKeyuuidBuffer`
 
 
 

@@ -67,8 +67,19 @@ typedef enum FWPS_FIELDS_KM_AUTHORIZATION_ {
 <table>
             
                 <tr>
+                    <td>FWPS_FIELD_KM_AUTHORIZATION_REMOTE_ID</td>
+                    <td>The peer's identifier. This can be the User or Machine Token depending on the type, auth type, and
+     mode.</td>
+                </tr>
+            
+                <tr>
                     <td>FWPS_FIELD_KM_AUTHORIZATION_AUTHENTICATION_TYPE</td>
                     <td>The type of authentication used.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_KM_AUTHORIZATION_KM_TYPE</td>
+                    <td>The type of Keying Module (KM) used.</td>
                 </tr>
             
                 <tr>
@@ -85,24 +96,13 @@ typedef enum FWPS_FIELDS_KM_AUTHORIZATION_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_KM_AUTHORIZATION_IPSEC_POLICY_KEY</td>
-                    <td>The associated IPsec policy key.</td>
-                </tr>
-            
-                <tr>
                     <td>FWPS_FIELD_KM_AUTHORIZATION_KM_MODE</td>
                     <td>The authorization mode.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_KM_AUTHORIZATION_KM_TYPE</td>
-                    <td>The type of Keying Module (KM) used.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_KM_AUTHORIZATION_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
+                    <td>FWPS_FIELD_KM_AUTHORIZATION_IPSEC_POLICY_KEY</td>
+                    <td>The associated IPsec policy key.</td>
                 </tr>
             
                 <tr>
@@ -111,9 +111,9 @@ typedef enum FWPS_FIELDS_KM_AUTHORIZATION_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_KM_AUTHORIZATION_REMOTE_ID</td>
-                    <td>The peer's identifier. This can be the User or Machine Token depending on the type, auth type, and
-     mode.</td>
+                    <td>FWPS_FIELD_KM_AUTHORIZATION_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 

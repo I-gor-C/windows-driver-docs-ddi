@@ -61,17 +61,13 @@ typedef struct _STORAGE_IDENTIFIER {
 ## Members
 
 
-`Association`
-
-Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566349">STORAGE_ASSOCIATION_TYPE</a> that indicates whether the descriptor identifies a device or a port.
-
 `CodeSet`
 
 Specifies the code set used by a SCSI identification descriptor to identify a logical unit.
 
-`Identifier`
+`Type`
 
-Contains the identifier associated with this descriptor.
+Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566990">STORAGE_IDENTIFIER_TYPE</a> that indicates the identifier type.
 
 `IdentifierSize`
 
@@ -81,9 +77,13 @@ Specifies the size in bytes of the identifier.
 
 Specifies the offset in bytes from the current descriptor to the next descriptor.
 
-`Type`
+`Association`
 
-Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566990">STORAGE_IDENTIFIER_TYPE</a> that indicates the identifier type.
+Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566349">STORAGE_ASSOCIATION_TYPE</a> that indicates whether the descriptor identifies a device or a port.
+
+`Identifier`
+
+Contains the identifier associated with this descriptor.
 
 ## Remarks
 Every device identification page (page code 0x83) of SCSI vital product data contains a series of identification descriptors. The STORAGE_IDENTIFIER structure represents a SCSI identification descriptor.
@@ -100,11 +100,3 @@ Every device identification page (page code 0x83) of SCSI vital product data con
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566349">STORAGE_ASSOCIATION_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_IDENTIFIER structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

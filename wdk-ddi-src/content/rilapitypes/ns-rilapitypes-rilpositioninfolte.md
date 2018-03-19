@@ -66,11 +66,7 @@ typedef struct _RILPOSITIONINFOLTE {
 ## Members
 
 
-`dwCellID`
-
-
-
-`dwEARFCN`
+`dwParams`
 
 
 
@@ -82,11 +78,19 @@ typedef struct _RILPOSITIONINFOLTE {
 
 
 
-`dwParams`
+`dwCellID`
+
+
+
+`dwEARFCN`
 
 
 
 `dwPhysCellID`
+
+
+
+`dwTAC`
 
 
 
@@ -95,10 +99,6 @@ typedef struct _RILPOSITIONINFOLTE {
 
 
 `dwRSRQ`
-
-
-
-`dwTAC`
 
 
 

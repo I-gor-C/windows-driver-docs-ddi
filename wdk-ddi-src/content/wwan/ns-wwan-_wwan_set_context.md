@@ -65,26 +65,6 @@ typedef struct _WWAN_SET_CONTEXT {
 ## Members
 
 
-`AccessString`
-
-A NULL-terminated string to access the network. For GSM-based networks, this would be an Access
-     Point Name (APN) string such as "data.thephone-company.com". For CDMA-based networks, this might be a
-     special dial code such as "#777" or a Network Access Identifier (NAI) such as
-     "foo@thephone-company.com". This member can be <b>NULL</b>.
-     
-
-The size of the string should not exceed 100 bytes.
-
-`AuthType`
-
-Authentication type to use for the PDP activation.
-
-`Compression`
-
-Specifies the compression to be used in the data connection for header and data. This member
-     applies only to GSM-based devices. The MB Service sets this member to 
-     <b>WwanCompressionNone</b> for CDMA-based devices.
-
 `ContextId`
 
 A unique ID for this context.
@@ -102,9 +82,33 @@ Specifies the type of context being represented, for example, Internet connectiv
      connection to a corporate network), or Voice-over-IP (VOIP). Miniport drivers should specify 
      <b>WwanContextTypeNone</b> for empty or unprovisioned contexts.
 
+`AccessString`
+
+A NULL-terminated string to access the network. For GSM-based networks, this would be an Access
+     Point Name (APN) string such as "data.thephone-company.com". For CDMA-based networks, this might be a
+     special dial code such as "#777" or a Network Access Identifier (NAI) such as
+     "foo@thephone-company.com". This member can be <b>NULL</b>.
+     
+
+The size of the string should not exceed 100 bytes.
+
+`UserName`
+
+The username to use for authentication. This member can be <b>NULL</b>.
+
 `Password`
 
 The password to use for authentication. This member can be <b>NULL</b>.
+
+`Compression`
+
+Specifies the compression to be used in the data connection for header and data. This member
+     applies only to GSM-based devices. The MB Service sets this member to 
+     <b>WwanCompressionNone</b> for CDMA-based devices.
+
+`AuthType`
+
+Authentication type to use for the PDP activation.
 
 `ProviderId`
 
@@ -114,10 +118,6 @@ A NULL-terminated string that represents the network provider identification for
      context in response to subsequent 
      <i>query</i> operations when a Subscriber Identity Module (SIM card) with this home provider ID is in the
      device.
-
-`UserName`
-
-The username to use for authentication. This member can be <b>NULL</b>.
 
 
 ## Requirements

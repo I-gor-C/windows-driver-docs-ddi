@@ -67,12 +67,32 @@ typedef struct _NET_DMA_CHANNEL_PARAMETERS {
 ## Members
 
 
-`ChannelPriority`
+`Revision`
 
-A DMA channel priority value that represents the priority for the DMA channel relative to other
-     DMA channels on the same DMA engine. A lower priority setting indicates a lower priority DMA channel. If
-     this value indicates a higher priority than the hardware supports, the highest value that the hardware
-     supports should be used. The Windows Vista NetDMA interface sets this member to zero.
+The revision number of this structure. 
+
+For Windows 7 and Windows Server 2008 R2 and later, set this member to
+     <b>NET_DMA_CHANNEL_PARAMETERS_REVISION_2</b>.
+
+For Windows Vista and Windows Server 2008, set this member to
+     <b>NET_DMA_CHANNEL_PARAMETERS_REVISION_1</b>.
+
+`Size`
+
+The size, in bytes, of this structure. Set this member to 
+     sizeof(<b>NET_DMA_CHANNEL_PARAMETERS</b>).
+
+`Flags`
+
+A set of bits for flags that define DMA channel attributes. Set this member to zero. There are
+     currently no flags defined.
+
+`CompletionVirtualAddress`
+
+The virtual address of the memory location where the DMA engine can write the DMA transfer
+     completion status. This virtual address is associated with the physical address that is specified in the
+     
+     <b>CompletionPhysicalAddress</b> member.
 
 `CompletionPhysicalAddress`
 
@@ -155,12 +175,18 @@ The DMA transfer for the first descriptor has not completed and the completed de
 </tr>
 </table>
 
-`CompletionVirtualAddress`
+`ProcessorAffinityMask`
 
-The virtual address of the memory location where the DMA engine can write the DMA transfer
-     completion status. This virtual address is associated with the physical address that is specified in the
-     
-     <b>CompletionPhysicalAddress</b> member.
+A bitmap that indicates CPUs that are available for use with this DMA channel. Each bit in 
+     <b>ProcessorAffinityMask</b> identifies a CPU. For example, setting bit 0 indicates CPU 0 can be used,
+     setting bit 1 indicates CPU 1 can be used, and so on.
+
+`ChannelPriority`
+
+A DMA channel priority value that represents the priority for the DMA channel relative to other
+     DMA channels on the same DMA engine. A lower priority setting indicates a lower priority DMA channel. If
+     this value indicates a higher priority than the hardware supports, the highest value that the hardware
+     supports should be used. The Windows Vista NetDMA interface sets this member to zero.
 
 `CpuNumber`
 
@@ -172,35 +198,9 @@ The CPU number that is associated with the DMA channel. The DMA provider driver 
      interrupt should also be associated with the indicated CPU number, unless there was no MSI-X interrupt
      available for the indicated CPU.
 
-`Flags`
-
-A set of bits for flags that define DMA channel attributes. Set this member to zero. There are
-     currently no flags defined.
-
-`ProcessorAffinityMask`
-
-A bitmap that indicates CPUs that are available for use with this DMA channel. Each bit in 
-     <b>ProcessorAffinityMask</b> identifies a CPU. For example, setting bit 0 indicates CPU 0 can be used,
-     setting bit 1 indicates CPU 1 can be used, and so on.
-
 `ProcessorAffinityMaskEx`
 
 The group number and a bitmap of the CPUs that this DMA channel could be associated with.
-
-`Revision`
-
-The revision number of this structure. 
-
-For Windows 7 and Windows Server 2008 R2 and later, set this member to
-     <b>NET_DMA_CHANNEL_PARAMETERS_REVISION_2</b>.
-
-For Windows Vista and Windows Server 2008, set this member to
-     <b>NET_DMA_CHANNEL_PARAMETERS_REVISION_1</b>.
-
-`Size`
-
-The size, in bytes, of this structure. Set this member to 
-     sizeof(<b>NET_DMA_CHANNEL_PARAMETERS</b>).
 
 ## Remarks
 Before using a DMA channel, the NetDMA interface calls the 
@@ -237,11 +237,3 @@ The NetDMA interface supplies a <b>NET_DMA_CHANNEL_PARAMETERS</b> structure at t
 
 
 <a href="..\netdma\nc-netdma-dma_abort_handler.md">ProviderAbortDma</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_CHANNEL_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

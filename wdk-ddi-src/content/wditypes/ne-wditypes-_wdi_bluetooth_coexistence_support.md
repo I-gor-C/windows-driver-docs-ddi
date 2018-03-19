@@ -63,23 +63,13 @@ typedef enum _WDI_BLUETOOTH_COEXISTENCE_SUPPORT {
 <table>
             
                 <tr>
-                    <td>WDI_BLUETOOTH_COEXISTENCE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_BLUETOOTH_COEXISTENCE_MUTUALLY_EXCLUSIVE</td>
-                    <td>Wi-Fi and Bluetooth are mutually exclusive. One of the two stops working.</td>
+                    <td>WDI_BLUETOOTH_COEXISTENCE_UNKNOWN</td>
+                    <td>Unknown.</td>
                 </tr>
             
                 <tr>
                     <td>WDI_BLUETOOTH_COEXISTENCE_PERFORMANCE_MAINTAINED</td>
                     <td>Wi-Fi and Bluetooth work at the same performance level during coexistence.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_BLUETOOTH_COEXISTENCE_UNKNOWN</td>
-                    <td>Unknown.</td>
                 </tr>
             
                 <tr>
@@ -90,6 +80,16 @@ typedef enum _WDI_BLUETOOTH_COEXISTENCE_SUPPORT {
                 <tr>
                     <td>WDI_BLUETOOTH_COEXISTENCE_WIFI_THROUGHPUT_DEGRADED</td>
                     <td>Bluetooth centered. When coexisting, Bluetooth has priority and restricts Wi-Fi performance.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_BLUETOOTH_COEXISTENCE_MUTUALLY_EXCLUSIVE</td>
+                    <td>Wi-Fi and Bluetooth are mutually exclusive. One of the two stops working.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_BLUETOOTH_COEXISTENCE_MAX</td>
+                    <td></td>
                 </tr>
 </table>
 

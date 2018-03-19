@@ -62,21 +62,9 @@ typedef struct _WSK_TRANSPORT {
 ## Members
 
 
-`AddressFamily`
+`Version`
 
-The address family that is supported by the transport. For more information about supported
-     address families, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.
-
-`Protocol`
-
-The protocol that is supported by the transport. For more information about the protocols that are
-     supported for each supported address family, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.
-
-`ProviderId`
-
-The identifier of the transport provider that implements the transport.
+The version of the transport. The format of the version number is transport-specific.
 
 `SocketType`
 
@@ -107,9 +95,21 @@ For more information about the socket types that are supported for each supporte
      
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.
 
-`Version`
+`Protocol`
 
-The version of the transport. The format of the version number is transport-specific.
+The protocol that is supported by the transport. For more information about the protocols that are
+     supported for each supported address family, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.
+
+`AddressFamily`
+
+The address family that is supported by the transport. For more information about supported
+     address families, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.
+
+`ProviderId`
+
+The identifier of the transport provider that implements the transport.
 
 ## Remarks
 A WSK application passes a pointer to an array of WSK_TRANSPORT structures to the 
@@ -150,11 +150,3 @@ A single transport provider can support multiple combinations of values for the
 
 
 <a href="..\wsk\nc-wsk-pfn_wsk_control_client.md">WskControlClient</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_TRANSPORT structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

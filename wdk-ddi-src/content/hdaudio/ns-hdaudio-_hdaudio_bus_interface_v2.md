@@ -78,17 +78,33 @@ typedef struct _HDAUDIO_BUS_INTERFACE_V2 {
 ## Members
 
 
+`Size`
+
+Specifies the size, in bytes, of the HDAUDIO_BUS_INTERFACE_V2 structure.
+
+`Version`
+
+Specifies the version of the baseline HD Audio DDI.
+
+`Context`
+
+A pointer to interface-specific context information.
+
+`InterfaceReference`
+
+A pointer to a driver-supplied routine that increments the reference count for the interface.
+
+`InterfaceDereference`
+
+A pointer to a driver-supplied routine that decrements the reference count for the interface.
+
+`TransferCodecVerbs`
+
+A function pointer to the <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a> routine.
+
 `AllocateCaptureDmaEngine`
 
 A function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a> routine.
-
-`AllocateDmaBuffer`
-
-A function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_dma_buffer.md">AllocateDmaBuffer</a> routine.
-
-`AllocateDmaBufferWithNotification`
-
-A function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_dma_buffer_with_notification.md">AllocateDmaBufferWithNotification</a> routine.
 
 `AllocateRenderDmaEngine`
 
@@ -98,77 +114,61 @@ A function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_en
 
 A function pointer to the <a href="..\hdaudio\nc-hdaudio-pchange_bandwidth_allocation.md">ChangeBandwidthAllocation</a> routine.
 
-`Context`
+`AllocateDmaBuffer`
 
-A pointer to interface-specific context information.
+A function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_dma_buffer.md">AllocateDmaBuffer</a> routine.
 
 `FreeDmaBuffer`
 
 A function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree_dma_buffer.md">FreeDmaBuffer</a> routine.
 
-`FreeDmaBufferWithNotification`
-
-A function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree_dma_buffer_with_notification.md">FreeDmaBufferWithNotification</a> routine.
-
 `FreeDmaEngine`
 
 A function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree_dma_engine.md">FreeDmaEngine</a> routine.
-
-`GetDeviceInformation`
-
-A function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_device_information.md">GetDeviceInformation</a> routine.
-
-`GetLinkPositionRegister`
-
-A function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_link_position_register.md">GetLinkPositionRegister</a> routine.
-
-`GetResourceInformation`
-
-A function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_resource_information.md">GetResourceInformation</a> routine.
-
-`GetWallClockRegister`
-
-A function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_wall_clock_register.md">GetWallClockRegister</a> routine.
-
-`InterfaceDereference`
-
-A pointer to a driver-supplied routine that decrements the reference count for the interface.
-
-`InterfaceReference`
-
-A pointer to a driver-supplied routine that increments the reference count for the interface.
-
-`RegisterEventCallback`
-
-A function pointer to the <a href="..\hdaudio\nc-hdaudio-pregister_event_callback.md">RegisterEventCallback</a> routine.
-
-`RegisterNotificationEvent`
-
-A function pointer to the <a href="..\hdaudio\nc-hdaudio-pregister_notification_event.md">RegisterNotificationEvent</a> routine.
 
 `SetDmaEngineState`
 
 A function pointer to the <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">SetDmaEngineState</a> routine.
 
-`Size`
+`GetWallClockRegister`
 
-Specifies the size, in bytes, of the HDAUDIO_BUS_INTERFACE_V2 structure.
+A function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_wall_clock_register.md">GetWallClockRegister</a> routine.
 
-`TransferCodecVerbs`
+`GetLinkPositionRegister`
 
-A function pointer to the <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a> routine.
+A function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_link_position_register.md">GetLinkPositionRegister</a> routine.
+
+`RegisterEventCallback`
+
+A function pointer to the <a href="..\hdaudio\nc-hdaudio-pregister_event_callback.md">RegisterEventCallback</a> routine.
 
 `UnregisterEventCallback`
 
 A function pointer to the <a href="..\hdaudio\nc-hdaudio-punregister_event_callback.md">UnregisterEventCallback</a> routine.
 
+`GetDeviceInformation`
+
+A function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_device_information.md">GetDeviceInformation</a> routine.
+
+`GetResourceInformation`
+
+A function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_resource_information.md">GetResourceInformation</a> routine.
+
+`AllocateDmaBufferWithNotification`
+
+A function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_dma_buffer_with_notification.md">AllocateDmaBufferWithNotification</a> routine.
+
+`FreeDmaBufferWithNotification`
+
+A function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree_dma_buffer_with_notification.md">FreeDmaBufferWithNotification</a> routine.
+
+`RegisterNotificationEvent`
+
+A function pointer to the <a href="..\hdaudio\nc-hdaudio-pregister_notification_event.md">RegisterNotificationEvent</a> routine.
+
 `UnregisterNotificationEvent`
 
 A function pointer to the <a href="..\hdaudio\nc-hdaudio-punregister_notification_event.md">UnregisterNotificationEvent</a> routine.
-
-`Version`
-
-Specifies the version of the baseline HD Audio DDI.
 
 ## Remarks
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> IOCTL uses this structure to provide interface information to a client that is querying the HD Audio bus driver for the HD Audio DDI.
@@ -252,11 +252,3 @@ The names and definitions of the first five members of the <b>HDAUDIO_BUS_INTERF
 
 
 <a href="..\hdaudio\nc-hdaudio-pget_resource_information.md">GetResourceInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20HDAUDIO_BUS_INTERFACE_V2 structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

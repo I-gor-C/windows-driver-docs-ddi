@@ -63,13 +63,13 @@ typedef struct _WWAN_USSD_STRING {
 
 The data coding scheme that specifies how the <b>String</b> member is encoded, as defined in 3GPP TS 23.038, section 5.
 
-`String`
-
-
-
 `StringLength`
 
 The length, in bytes, of USSD string in stored in the <b>String</b> member.
+
+`String`
+
+
 
 ## Remarks
 <b>StringLength</b> can be from 1 to 160 bytes. Specify 0 bytes to indicate an absent USSD string.
@@ -93,11 +93,3 @@ For USSD notifications, the miniport driver or MB device must encode the USSD st
 
 
 <a href="..\wwan\ns-wwan-_wwan_ussd_request.md">WWAN_USSD_REQUEST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_USSD_STRING structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

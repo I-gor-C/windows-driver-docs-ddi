@@ -62,14 +62,14 @@ typedef struct _SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD {
 
 Unique identifer for current connection.
 
+`eRfTechType`
+
+NFC Forum RF technology type.
+
 `eRfProtocolType`
 
 NFC Forum RF protocol
 type.
-
-`eRfTechType`
-
-NFC Forum RF technology type.
 
 
 ## Requirements

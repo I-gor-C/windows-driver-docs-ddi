@@ -61,6 +61,11 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>KSSTATE_STOP</td>
+                    <td>Indicates that the object is in minimum resource consumption mode.</td>
+                </tr>
+            
+                <tr>
                     <td>KSSTATE_ACQUIRE</td>
                     <td>Indicates that the object is acquiring resources.</td>
                 </tr>
@@ -73,11 +78,6 @@ typedef enum  {
                 <tr>
                     <td>KSSTATE_RUN</td>
                     <td>Indicates that the object is actively streaming.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSSTATE_STOP</td>
-                    <td>Indicates that the object is in minimum resource consumption mode.</td>
                 </tr>
 </table>
 

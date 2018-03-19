@@ -60,6 +60,10 @@ typedef struct tag_video_stream_init_parms {
 ## Members
 
 
+`dwMicroSecPerFrame`
+
+
+
 `dwCallback`
 
 
@@ -69,10 +73,6 @@ typedef struct tag_video_stream_init_parms {
 
 
 `dwFlags`
-
-
-
-`dwMicroSecPerFrame`
 
 
 

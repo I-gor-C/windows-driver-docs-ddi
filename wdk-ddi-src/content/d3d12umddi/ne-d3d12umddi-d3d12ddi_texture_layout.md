@@ -62,18 +62,8 @@ typedef enum D3D12DDI_TEXTURE_LAYOUT {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_TL_64KB_TILE_STANDARD_SWIZZLE</td>
-                    <td>A 64 KB tile with standard swizzle.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_TL_64KB_TILE_UNDEFINED_SWIZZLE</td>
-                    <td>A 64 KB tile with undefined swizzle.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_TL_DEVICE_DEPENDENT_SWIZZLE_0</td>
-                    <td>A device dependant swizzle.</td>
+                    <td>D3D12DDI_TL_UNDEFINED</td>
+                    <td>Texture layout undefined.</td>
                 </tr>
             
                 <tr>
@@ -82,8 +72,18 @@ typedef enum D3D12DDI_TEXTURE_LAYOUT {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_TL_UNDEFINED</td>
-                    <td>Texture layout undefined.</td>
+                    <td>D3D12DDI_TL_64KB_TILE_UNDEFINED_SWIZZLE</td>
+                    <td>A 64 KB tile with undefined swizzle.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_TL_64KB_TILE_STANDARD_SWIZZLE</td>
+                    <td>A 64 KB tile with standard swizzle.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_TL_DEVICE_DEPENDENT_SWIZZLE_0</td>
+                    <td>A device dependant swizzle.</td>
                 </tr>
 </table>
 

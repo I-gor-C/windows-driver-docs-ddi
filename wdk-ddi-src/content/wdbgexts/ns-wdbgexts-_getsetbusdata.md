@@ -62,12 +62,6 @@ typedef struct _GETSETBUSDATA {
 ## Members
 
 
-`Buffer`
-
-Specifies the buffer that contains the memory to write to the bus, or to receive the memory that is read from the bus.
-
-The size of <b>Buffer</b> must be at least the value of <b>Length</b>.
-
 `BusDataType`
 
 Specifies the bus data type to use.  For details of allowed values, see the documentation for the BUS_DATA_TYPE enumeration in the Platform SDK.
@@ -76,17 +70,23 @@ Specifies the bus data type to use.  For details of allowed values, see the docu
 
 Specifies the system-assigned number of the bus.  This is usually zero, unless the system has more than one bus of the same bus data type.
 
-`Length`
+`SlotNumber`
 
-Specifies the number of bytes to read from or write to the bus when the <b>Ioctl</b> operation is called.  Upon returning, <b>Length</b> is set to the number of bytes actually read or written.
+Specifies the logical slot number on the bus.
+
+`Buffer`
+
+Specifies the buffer that contains the memory to write to the bus, or to receive the memory that is read from the bus.
+
+The size of <b>Buffer</b> must be at least the value of <b>Length</b>.
 
 `Offset`
 
 Specifies the offset in the bus data to start reading from or writing to.
 
-`SlotNumber`
+`Length`
 
-Specifies the logical slot number on the bus.
+Specifies the number of bytes to read from or write to the bus when the <b>Ioctl</b> operation is called.  Upon returning, <b>Length</b> is set to the number of bytes actually read or written.
 
 ## Remarks
 The parameters for the IG_GET_BUS_DATA and IG_SET_BUS_DATA <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operations are the members of the BUSDATA structure.
@@ -103,11 +103,3 @@ The properties of the data in the bus depends on the system, bus, and slot.
 ## See Also
 
 <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20GETSETBUSDATA structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,9 +63,13 @@ typedef struct tagWNODE_METHOD_ITEM {
 ## Members
 
 
-`DataBlockOffset`
+`WnodeHeader`
 
-Indicates the offset from the beginning of an input <b>WNODE_METHOD_ITEM</b> to input data for the method, or the offset from the beginning of an output <b>WNODE_METHOD_ITEM</b> to output data from the method.
+Is a <a href="..\wmistr\ns-wmistr-_wnode_header.md">WNODE_HEADER</a> structure that contains information common to all <b>WNODE_<i>XXX</i></b> structures, such as the buffer size, the GUID that represents a data block associated with a request, and flags that provide information about the <b>WNODE_<i>XXX</i></b> data being passed or returned.
+
+`OffsetInstanceName`
+
+Indicates the offset in bytes from the beginning of this structure to the dynamic instance name of this instance, aligned on a USHORT boundary. This member is valid only if WNODE_FLAG_STATIC_INSTANCE_NAMES is clear in <b>WnodeHeader.Flags</b>. If the data block was registered with static instance names, WMI ignores <b>OffsetInstanceName</b>.
 
 `InstanceIndex`
 
@@ -75,9 +79,9 @@ Indicates the index of this instance into the driver's list of static instance n
 
 Specifies the ID of the method to run.
 
-`OffsetInstanceName`
+`DataBlockOffset`
 
-Indicates the offset in bytes from the beginning of this structure to the dynamic instance name of this instance, aligned on a USHORT boundary. This member is valid only if WNODE_FLAG_STATIC_INSTANCE_NAMES is clear in <b>WnodeHeader.Flags</b>. If the data block was registered with static instance names, WMI ignores <b>OffsetInstanceName</b>.
+Indicates the offset from the beginning of an input <b>WNODE_METHOD_ITEM</b> to input data for the method, or the offset from the beginning of an output <b>WNODE_METHOD_ITEM</b> to output data from the method.
 
 `SizeDataBlock`
 
@@ -86,10 +90,6 @@ Indicates the size of the input data in an input <b>WNODE_METHOD_ITEM</b>, or ze
 `VariableData`
 
 Contains additional data, including the dynamic instance name if any, and the input for or output from the method aligned on an 8-byte boundary.
-
-`WnodeHeader`
-
-Is a <a href="..\wmistr\ns-wmistr-_wnode_header.md">WNODE_HEADER</a> structure that contains information common to all <b>WNODE_<i>XXX</i></b> structures, such as the buffer size, the GUID that represents a data block associated with a request, and flags that provide information about the <b>WNODE_<i>XXX</i></b> data being passed or returned.
 
 ## Remarks
 WMI passes a <b>WNODE_METHOD_ITEM</b> with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550868">IRP_MN_EXECUTE_METHOD</a> request to specify a method to run in an instance of a data block, plus any input data required by the method.
@@ -104,11 +104,3 @@ If a method generates output, a driver overwrites the input data with the output
 ## See Also
 
 <a href="..\wmistr\ns-wmistr-_wnode_header.md">WNODE_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WNODE_METHOD_ITEM structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

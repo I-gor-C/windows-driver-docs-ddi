@@ -57,13 +57,13 @@ typedef struct IDDCX_OPM_GET_RANDOM_NUMBER {
 ## Members
 
 
-`RandomNumber`
-
-The random number the driver generated.
-
 `Size`
 
 Total size of the structure.
+
+`RandomNumber`
+
+The random number the driver generated.
 
 
 ## Requirements

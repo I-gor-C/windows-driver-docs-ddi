@@ -75,61 +75,9 @@ typedef struct _D3DHAL_DRAWPRIMITIVES2DATA {
 ## Members
 
 
-`dwCommandLength`
+`dwhContext`
 
-Specifies the number of bytes of valid command data in the surface that <b>lpDDCommands</b> points to starting at <b>dwCommandOffset</b>.
-
-`dwCommandOffset`
-
-###### 
-
-
-
-##### 
-
-
-
-###### 
-
-
-
-######
-
-`dwErrorOffset`
-
-###### 
-
-
-
-###### 
-
-
-
-###### 
-
-
-
-########  Each D3DHAL_DP2RESPONSEQUERY is followed by the following data related to the query:
-
-
-
-#### BOOL for D3DQUERYTYPE_EVENT
-
-
-
-#### DWORD for D3DQUERYTYPE_OCCLUSION
-
-
-
-#### D3DDEVINFO_VCACHE structure for D3DQUERYTYPE_VCACHE
-
-
-
-##### 
-
-
-
-#####
+Specifies the context handle of the Direct3D device.
 
 `dwFlags`
 
@@ -221,26 +169,6 @@ The vertex buffer allocated by the driver as a swap buffer is not in system memo
 </td>
 </tr>
 </table>
-
-`dwhContext`
-
-Specifies the context handle of the Direct3D device.
-
-`dwReqCommandBufSize`
-
-Specifies the minimum number of bytes that the driver must increase the swap command buffer by. This member is valid only when the D3DHALDP2_REQCOMMANDBUFSIZE flag is set. Drivers that do not support multibuffering of command buffers should ignore this member.
-
-`dwReqVertexBufSize`
-
-Specifies the minimum number of bytes that the driver must allocate for the swap vertex buffer. This member is valid only when the D3DHALDP2_REQVERTEXBUFSIZE flag is set. Drivers that do not support multibuffering of vertex buffers should ignore this member.
-
-`dwVertexLength`
-
-Specifies the number of vertices for which valid data exists in the surface pointed to by <b>lpDDVertex</b> or <b>lpVertices</b>. This valid data starts at <b>dwVertexOffset</b>.
-
-`dwVertexOffset`
-
-Specifies the number of bytes into the surface pointed to by <b>lpDDVertex</b> or <b>lpVertices</b> where the vertex data starts.
 
 `dwVertexType`
 
@@ -389,9 +317,81 @@ Each vertex has <i>x, y, z,</i> and <i>w</i> coordinates. This flag is always se
 
 #######
 
+`dwCommandOffset`
+
+###### 
+
+
+
+##### 
+
+
+
+###### 
+
+
+
+######
+
+`dwCommandLength`
+
+Specifies the number of bytes of valid command data in the surface that <b>lpDDCommands</b> points to starting at <b>dwCommandOffset</b>.
+
+`dwVertexOffset`
+
+Specifies the number of bytes into the surface pointed to by <b>lpDDVertex</b> or <b>lpVertices</b> where the vertex data starts.
+
+`dwVertexLength`
+
+Specifies the number of vertices for which valid data exists in the surface pointed to by <b>lpDDVertex</b> or <b>lpVertices</b>. This valid data starts at <b>dwVertexOffset</b>.
+
+`dwReqVertexBufSize`
+
+Specifies the minimum number of bytes that the driver must allocate for the swap vertex buffer. This member is valid only when the D3DHALDP2_REQVERTEXBUFSIZE flag is set. Drivers that do not support multibuffering of vertex buffers should ignore this member.
+
+`dwReqCommandBufSize`
+
+Specifies the minimum number of bytes that the driver must increase the swap command buffer by. This member is valid only when the D3DHALDP2_REQCOMMANDBUFSIZE flag is set. Drivers that do not support multibuffering of command buffers should ignore this member.
+
 `lpdwRStates`
 
 Points to a render state array that the driver should update when it parses render state commands from the command buffer. The driver should update this array only when the D3DHALDP2_EXECUTEBUFFER flag is set in <b>dwFlags</b>. The driver should use the <a href="..\d3d9types\ne-d3d9types-_d3drenderstatetype.md">D3DRENDERSTATETYPE</a> enumerated types to update the appropriate element of the render state array.
+
+`dwErrorOffset`
+
+###### 
+
+
+
+###### 
+
+
+
+###### 
+
+
+
+########  Each D3DHAL_DP2RESPONSEQUERY is followed by the following data related to the query:
+
+
+
+#### BOOL for D3DQUERYTYPE_EVENT
+
+
+
+#### DWORD for D3DQUERYTYPE_OCCLUSION
+
+
+
+#### D3DDEVINFO_VCACHE structure for D3DQUERYTYPE_VCACHE
+
+
+
+##### 
+
+
+
+#####
 
 ## Remarks
 Note that the <b>dwVertexOffset</b> member specifies values in bytes; the <b>dwVertexLength</b> member specifies values in vertices. 
@@ -422,11 +422,3 @@ To calculate the valid data, in bytes, that exists in the surface at <b>lpDDVert
 
 
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DRAWPRIMITIVES2DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

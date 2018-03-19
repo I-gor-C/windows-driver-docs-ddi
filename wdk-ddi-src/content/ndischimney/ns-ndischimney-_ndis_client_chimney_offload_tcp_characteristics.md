@@ -67,10 +67,6 @@ typedef struct _NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS {
 ## Members
 
 
-`Flags`
-
-Reserved for system use.
-
 `Header`
 
 The header of the NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure. The header is
@@ -81,28 +77,20 @@ The header of the NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure. The
      NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure, including the header, in bytes. The 
      <b>Type</b> member of the header is not significant.
 
+`Flags`
+
+Reserved for system use.
+
 `OffloadType`
 
 The chimney offload type. The only allowable value is 
      <b>NdisTcpChimneyOffload</b>, which specifies a TCP chimney.
 
-`TcpOffloadDisconnectCompleteHandler`
+`TcpOffloadSendCompleteHandler`
 
 The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-tcp_offload_disconnect_complete_handler.md">
-     ProtocolTcpOffloadDisconnectComplete</a> function.
-
-`TcpOffloadEventHandler`
-
-The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-tcp_offload_event_handler.md">
-     ProtocolTcpOffloadEvent</a> function.
-
-`TcpOffloadForwardCompleteHandler`
-
-The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-tcp_offload_forward_complete_handler.md">
-     ProtocolTcpOffloadForwardComplete</a> function.
+     <a href="..\ndischimney\nc-ndischimney-tcp_offload_send_complete_handler.md">
+     ProtocolTcpOffloadSendComplete</a> function.
 
 `TcpOffloadReceiveCompleteHandler`
 
@@ -110,17 +98,29 @@ The entry point of the driver's
      <a href="..\ndischimney\nc-ndischimney-tcp_offload_recv_complete_handler.md">
      ProtocolTcpOffloadReceiveComplete</a> function.
 
+`TcpOffloadDisconnectCompleteHandler`
+
+The entry point of the driver's 
+     <a href="..\ndischimney\nc-ndischimney-tcp_offload_disconnect_complete_handler.md">
+     ProtocolTcpOffloadDisconnectComplete</a> function.
+
+`TcpOffloadForwardCompleteHandler`
+
+The entry point of the driver's 
+     <a href="..\ndischimney\nc-ndischimney-tcp_offload_forward_complete_handler.md">
+     ProtocolTcpOffloadForwardComplete</a> function.
+
+`TcpOffloadEventHandler`
+
+The entry point of the driver's 
+     <a href="..\ndischimney\nc-ndischimney-tcp_offload_event_handler.md">
+     ProtocolTcpOffloadEvent</a> function.
+
 `TcpOffloadReceiveIndicateHandler`
 
 The entry point of the driver's 
      <a href="..\ndischimney\nc-ndischimney-tcp_offload_receive_indicate_handler.md">
      ProtocolTcpOffloadReceiveIndicate</a> function.
-
-`TcpOffloadSendCompleteHandler`
-
-The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-tcp_offload_send_complete_handler.md">
-     ProtocolTcpOffloadSendComplete</a> function.
 
 ## Remarks
 To register its TCP chimney offload entry points, a protocol or intermediate driver calls the 
@@ -170,11 +170,3 @@ To register its TCP chimney offload entry points, a protocol or intermediate dri
 
 
 <a href="..\ndis\nc-ndis-set_options.md">ProtocolSetOptions</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

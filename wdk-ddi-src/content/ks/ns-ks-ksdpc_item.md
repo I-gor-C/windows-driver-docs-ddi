@@ -58,10 +58,6 @@ typedef struct {
 ## Members
 
 
-`AccessLock`
-
-This lock is used to synchronize deletion of an event item with any DPC that might be running.
-
 `Dpc`
 
 Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a> structure that is queued to perform notifications that cannot occur at raised IRQL.
@@ -69,6 +65,10 @@ Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff55188
 `ReferenceCount`
 
 Specifies whether pending DPCs will reference this structure. This is initially set to 1 when the event structure is created, and decremented when the event structure is destroyed. If the reference count is nonzero at that time, then the last DPC to run frees the structure rather than the event disable call.
+
+`AccessLock`
+
+This lock is used to synchronize deletion of an event item with any DPC that might be running.
 
 ## Remarks
 KSDPC_ITEM uses a reference counting scheme to determine when to free the structure.
@@ -81,11 +81,3 @@ KSDPC_ITEM uses a reference counting scheme to determine when to free the struct
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSDPC_ITEM structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

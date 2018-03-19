@@ -71,15 +71,83 @@ typedef struct DOT11_MAC_FRAME_STATISTICS {
 ## Members
 
 
-`ullCCMPDecryptErrors`
+`ullTransmittedFrameCount`
 
-The number of received MPDU frames that the 802.11 station discarded because of errors detected by
-     the AES-CCMP decryption algorithm.
+The number of MAC service data unit (MSDU) packets and MAC management protocol data unit (MMPDU)
+     frames that the IEEE MAC sublayer of the 802.11 station successfully transmitted.
+
+`ullReceivedFrameCount`
+
+The number of MSDU packets and MMPDU frames that the IEEE MAC sublayer of the 802.11 station
+     successfully received. This member should not be incremented for received packets that failed cipher
+     decryption or MIC validation.
+
+`ullTransmittedFailureFrameCount`
+
+The number of MSDU packets and MMPDU frames that the IEEE MAC sublayer of the 802.11 station
+     failed to transmit successfully.
+
+`ullReceivedFailureFrameCount`
+
+The number of MSDU packets and MMPDU frames that the IEEE MAC sublayer of the 802.11 station
+     failed to receive successfully.
+
+`ullWEPExcludedCount`
+
+The number of unencrypted received MAC protocol data unit (MPDU) frames that the MAC sublayer
+     discarded when the IEEE 802.11 
+     <b>dot11ExcludeUnencrypted</b> management information base (MIB) object is enabled. For more information
+     about this MIB object, see 
+     <a href="https://msdn.microsoft.com/en-us/library/gg159162.aspx">OID_DOT11_EXCLUDE_UNENCRYPTED</a>.
+     
+
+MPDU frames are considered unencrypted when the Protected Frame subfield of the Frame Control field
+     in the IEEE 802.11 MAC header is set to zero.
+
+`ullTKIPLocalMICFailures`
+
+The number of received MSDU packets that the 802.11 station discarded because of MIC
+     failures.
+
+`ullTKIPReplays`
+
+The number of received MPDU frames that the 802.11 station discarded because of the TKIP replay
+     protection procedure.
+
+`ullTKIPICVErrorCount`
+
+The number of encrypted MPDU frames that the 802.11 station failed to decrypt because of a TKIP
+     ICV error.
 
 `ullCCMPReplays`
 
 The number of received MPDU frames that the 802.11 station discarded because of the AES-CCMP
      replay protection procedure.
+
+`ullCCMPDecryptErrors`
+
+The number of received MPDU frames that the 802.11 station discarded because of errors detected by
+     the AES-CCMP decryption algorithm.
+
+`ullWEPUndecryptableCount`
+
+The number of encrypted MPDU frames received for which a WEP decryption key was not available on
+     the 802.11 station.
+
+`ullWEPICVErrorCount`
+
+The number of encrypted MPDU frames that the 802.11 station failed to decrypt because of a WEP ICV
+     error.
+
+`ullDecryptSuccessCount`
+
+The number of received encrypted packets that the 802.11 station successfully decrypted. 
+     
+
+For the WEP and TKIP cipher algorithms, the miniport driver must increment this counter for each
+     received encrypted MPDU that was successfully decrypted. For the AES-CCMP cipher algorithm, the miniport
+     driver must increment this counter on each received encrypted MSDU packet that was successfully
+     decrypted.
 
 `ullDecryptFailureCount`
 
@@ -94,74 +162,6 @@ For the WEP and TKIP cipher algorithms, the miniport driver must increment this 
 The miniport driver must not increment this counter for packets that are decrypted successfully, but
      are discarded for other reasons. For example, the miniport driver must not increment this counter for
      packets discarded because of TKIP MIC failures or TKIP/CCMP replays.
-
-`ullDecryptSuccessCount`
-
-The number of received encrypted packets that the 802.11 station successfully decrypted. 
-     
-
-For the WEP and TKIP cipher algorithms, the miniport driver must increment this counter for each
-     received encrypted MPDU that was successfully decrypted. For the AES-CCMP cipher algorithm, the miniport
-     driver must increment this counter on each received encrypted MSDU packet that was successfully
-     decrypted.
-
-`ullReceivedFailureFrameCount`
-
-The number of MSDU packets and MMPDU frames that the IEEE MAC sublayer of the 802.11 station
-     failed to receive successfully.
-
-`ullReceivedFrameCount`
-
-The number of MSDU packets and MMPDU frames that the IEEE MAC sublayer of the 802.11 station
-     successfully received. This member should not be incremented for received packets that failed cipher
-     decryption or MIC validation.
-
-`ullTKIPICVErrorCount`
-
-The number of encrypted MPDU frames that the 802.11 station failed to decrypt because of a TKIP
-     ICV error.
-
-`ullTKIPLocalMICFailures`
-
-The number of received MSDU packets that the 802.11 station discarded because of MIC
-     failures.
-
-`ullTKIPReplays`
-
-The number of received MPDU frames that the 802.11 station discarded because of the TKIP replay
-     protection procedure.
-
-`ullTransmittedFailureFrameCount`
-
-The number of MSDU packets and MMPDU frames that the IEEE MAC sublayer of the 802.11 station
-     failed to transmit successfully.
-
-`ullTransmittedFrameCount`
-
-The number of MAC service data unit (MSDU) packets and MAC management protocol data unit (MMPDU)
-     frames that the IEEE MAC sublayer of the 802.11 station successfully transmitted.
-
-`ullWEPExcludedCount`
-
-The number of unencrypted received MAC protocol data unit (MPDU) frames that the MAC sublayer
-     discarded when the IEEE 802.11 
-     <b>dot11ExcludeUnencrypted</b> management information base (MIB) object is enabled. For more information
-     about this MIB object, see 
-     <a href="https://msdn.microsoft.com/en-us/library/gg159162.aspx">OID_DOT11_EXCLUDE_UNENCRYPTED</a>.
-     
-
-MPDU frames are considered unencrypted when the Protected Frame subfield of the Frame Control field
-     in the IEEE 802.11 MAC header is set to zero.
-
-`ullWEPICVErrorCount`
-
-The number of encrypted MPDU frames that the 802.11 station failed to decrypt because of a WEP ICV
-     error.
-
-`ullWEPUndecryptableCount`
-
-The number of encrypted MPDU frames received for which a WEP decryption key was not available on
-     the 802.11 station.
 
 ## Remarks
 The members of the DOT11_MAC_STATISTICS structure are used to record MAC-level statistics for:
@@ -204,11 +204,3 @@ The members of the DOT11_MAC_STATISTICS structure are used to record MAC-level s
 
 
 <a href="https://msdn.microsoft.com/e6bd2abf-faa2-463f-91df-a15924afae96">Native 802.11 Statistics</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MAC_FRAME_STATISTICS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

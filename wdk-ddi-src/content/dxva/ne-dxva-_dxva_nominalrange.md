@@ -65,6 +65,31 @@ typedef enum _DXVA_NominalRange {
 <table>
             
                 <tr>
+                    <td>DXVA_NominalRangeShift</td>
+                    <td>Specifies to shift bits by 12 positions (DXVA_ExtColorData_ShiftBase + 4, or 8 + 4).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_NominalRangeMask</td>
+                    <td>Specifies the nominal range mask. 3 (0x00007000) bits of a DWORD can be used to specify nominal range.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_NominalRange_Unknown</td>
+                    <td>Specifies that the nominal range is not specified.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_NominalRange_Normal</td>
+                    <td>Specifies that normalized chroma [0..1] maps to [0..255] (8bit) or [0..1023] (10 bit).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_NominalRange_Wide</td>
+                    <td>Specifies that normalized chroma [0..1] maps to [16..235] (8bit) or [64..940] (10 bit).</td>
+                </tr>
+            
+                <tr>
                     <td>DXVA_NominalRange_0_255</td>
                     <td>Specifies that normalized chroma [0..1] maps to [0..255] (8bit) or [0..1023] (10 bit).</td>
                 </tr>
@@ -77,31 +102,6 @@ typedef enum _DXVA_NominalRange {
                 <tr>
                     <td>DXVA_NominalRange_48_208</td>
                     <td>Specifies that normalized chroma [0..1] maps to [48..208] (8bit) or [192..832] (10 bit).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_NominalRange_Normal</td>
-                    <td>Specifies that normalized chroma [0..1] maps to [0..255] (8bit) or [0..1023] (10 bit).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_NominalRange_Unknown</td>
-                    <td>Specifies that the nominal range is not specified.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_NominalRange_Wide</td>
-                    <td>Specifies that normalized chroma [0..1] maps to [16..235] (8bit) or [64..940] (10 bit).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_NominalRangeMask</td>
-                    <td>Specifies the nominal range mask. 3 (0x00007000) bits of a DWORD can be used to specify nominal range.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_NominalRangeShift</td>
-                    <td>Specifies to shift bits by 12 positions (DXVA_ExtColorData_ShiftBase + 4, or 8 + 4).</td>
                 </tr>
 </table>
 
@@ -120,11 +120,3 @@ Wide gamut R'G'B' (that is, blackpoint at 16,16,16 and whitepoint at 235,235,235
 ## See Also
 
 <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_NominalRange enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -81,14 +81,6 @@ typedef enum _NDIS_MEDIUM {
 <table>
             
                 <tr>
-                    <td>NdisMedium1394</td>
-                    <td>Specifies an IEEE 1394 (fire wire) network. 
-
-<div class="alert"><b>Note</b>   Not supported in Windows Vista/Windows Server 2008 or later.</div>
-<div> </div></td>
-                </tr>
-            
-                <tr>
                     <td>NdisMedium802_3</td>
                     <td>Specifies an Ethernet (802.3) network.</td>
                 </tr>
@@ -102,16 +94,41 @@ typedef enum _NDIS_MEDIUM {
                 </tr>
             
                 <tr>
-                    <td>NdisMediumArcnet878_2</td>
-                    <td>Specifies an ARCNET (878.2) network.
+                    <td>NdisMediumFddi</td>
+                    <td>Specifies a Fiber Distributed Data Interface (FDDI) network.
 
 <div class="alert"><b>Note</b>   Not supported in Windows Vista/Windows Server 2008 or later.</div>
 <div> </div></td>
                 </tr>
             
                 <tr>
+                    <td>NdisMediumWan</td>
+                    <td>Specifies a wide area network. This type covers various forms of point-to-point and WAN NICs, as
+     well as variant address/header formats that must be negotiated between the protocol driver and the
+     underlying driver after the binding is established.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisMediumLocalTalk</td>
+                    <td>Specifies a LocalTalk network.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisMediumDix</td>
+                    <td>Specifies an Ethernet network for which the drivers use the DIX Ethernet header format.</td>
+                </tr>
+            
+                <tr>
                     <td>NdisMediumArcnetRaw</td>
                     <td>Specifies an ARCNET network.
+
+<div class="alert"><b>Note</b>   Not supported in Windows Vista/Windows Server 2008 or later.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>NdisMediumArcnet878_2</td>
+                    <td>Specifies an ARCNET (878.2) network.
 
 <div class="alert"><b>Note</b>   Not supported in Windows Vista/Windows Server 2008 or later.</div>
 <div> </div></td>
@@ -128,6 +145,24 @@ typedef enum _NDIS_MEDIUM {
                 </tr>
             
                 <tr>
+                    <td>NdisMediumWirelessWan</td>
+                    <td>Specifies a wireless network. NDIS 5.X miniport drivers that support wireless LAN (WLAN) or
+     wireless WAN (WWAN) packets declare their medium as 
+     <b>NdisMedium802_3</b> and emulate Ethernet to higher-level NDIS drivers.
+     
+
+
+<div class="alert"><b>Note</b>  Starting with Windows 7, this media type is supported and can
+      be used for Mobile Broadband.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>NdisMediumIrda</td>
+                    <td>Specifies an infrared (IrDA) network.</td>
+                </tr>
+            
+                <tr>
                     <td>NdisMediumBpc</td>
                     <td>Specifies a broadcast PC network.</td>
                 </tr>
@@ -138,13 +173,8 @@ typedef enum _NDIS_MEDIUM {
                 </tr>
             
                 <tr>
-                    <td>NdisMediumDix</td>
-                    <td>Specifies an Ethernet network for which the drivers use the DIX Ethernet header format.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisMediumFddi</td>
-                    <td>Specifies a Fiber Distributed Data Interface (FDDI) network.
+                    <td>NdisMedium1394</td>
+                    <td>Specifies an IEEE 1394 (fire wire) network. 
 
 <div class="alert"><b>Note</b>   Not supported in Windows Vista/Windows Server 2008 or later.</div>
 <div> </div></td>
@@ -156,28 +186,8 @@ typedef enum _NDIS_MEDIUM {
                 </tr>
             
                 <tr>
-                    <td>NdisMediumIP</td>
-                    <td>Specifies a generic medium that is capable of sending and receiving raw IP packets.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisMediumIrda</td>
-                    <td>Specifies an infrared (IrDA) network.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisMediumLocalTalk</td>
-                    <td>Specifies a LocalTalk network.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisMediumLoopback</td>
-                    <td>Specifies an NDIS loopback network.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisMediumMax</td>
-                    <td>A maximum value for testing purposes.</td>
+                    <td>NdisMediumTunnel</td>
+                    <td>Specifies a tunnel network.</td>
                 </tr>
             
                 <tr>
@@ -186,15 +196,8 @@ typedef enum _NDIS_MEDIUM {
                 </tr>
             
                 <tr>
-                    <td>NdisMediumTunnel</td>
-                    <td>Specifies a tunnel network.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisMediumWan</td>
-                    <td>Specifies a wide area network. This type covers various forms of point-to-point and WAN NICs, as
-     well as variant address/header formats that must be negotiated between the protocol driver and the
-     underlying driver after the binding is established.</td>
+                    <td>NdisMediumLoopback</td>
+                    <td>Specifies an NDIS loopback network.</td>
                 </tr>
             
                 <tr>
@@ -203,16 +206,13 @@ typedef enum _NDIS_MEDIUM {
                 </tr>
             
                 <tr>
-                    <td>NdisMediumWirelessWan</td>
-                    <td>Specifies a wireless network. NDIS 5.X miniport drivers that support wireless LAN (WLAN) or
-     wireless WAN (WWAN) packets declare their medium as 
-     <b>NdisMedium802_3</b> and emulate Ethernet to higher-level NDIS drivers.
-     
-
-
-<div class="alert"><b>Note</b>  Starting with Windows 7, this media type is supported and can
-      be used for Mobile Broadband.</div>
-<div> </div></td>
+                    <td>NdisMediumIP</td>
+                    <td>Specifies a generic medium that is capable of sending and receiving raw IP packets.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisMediumMax</td>
+                    <td>A maximum value for testing purposes.</td>
                 </tr>
 </table>
 

@@ -64,22 +64,7 @@ typedef enum _RILMSGMWISUMMARYLISTPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_MWISUMMARY_ACCTADDR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_MWISUMMARY_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_MWISUMMARY_EXECUTOR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_MWISUMMARY_NUMSUMMARYITEMS</td>
                     <td></td>
                 </tr>
             
@@ -89,12 +74,27 @@ typedef enum _RILMSGMWISUMMARYLISTPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_MWISUMMARY_SUMMARYITEMS</td>
+                    <td>RIL_PARAM_MWISUMMARY_ACCTADDR</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_PARAM_MWISUMMARY_TOTALNUMDETAILITEMS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_MWISUMMARY_NUMSUMMARYITEMS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_MWISUMMARY_SUMMARYITEMS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_MWISUMMARY_ALL</td>
                     <td></td>
                 </tr>
 </table>

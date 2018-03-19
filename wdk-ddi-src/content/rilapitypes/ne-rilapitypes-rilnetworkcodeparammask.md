@@ -64,11 +64,6 @@ typedef enum _RILNETWORKCODEPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_NETWORKCODE_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_NETWORKCODE_EXECUTOR</td>
                     <td></td>
                 </tr>
@@ -84,6 +79,11 @@ typedef enum _RILNETWORKCODEPARAMMASK {
                 </tr>
             
                 <tr>
+                    <td>RIL_PARAM_NETWORKCODE_SID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PARAM_NETWORKCODE_NID</td>
                     <td></td>
                 </tr>
@@ -94,7 +94,7 @@ typedef enum _RILNETWORKCODEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_NETWORKCODE_SID</td>
+                    <td>RIL_PARAM_NETWORKCODE_ALL</td>
                     <td></td>
                 </tr>
 </table>

@@ -66,6 +66,11 @@ typedef enum  {
                 </tr>
             
                 <tr>
+                    <td>KSPROPERTY_TOPOLOGY_NODES</td>
+                    <td>Specify for a list of the topology nodes and node types GUIDs supported by the filter.</td>
+                </tr>
+            
+                <tr>
                     <td>KSPROPERTY_TOPOLOGY_CONNECTIONS</td>
                     <td>Specify to query all connections between nodes of a KS filter.</td>
                 </tr>
@@ -73,11 +78,6 @@ typedef enum  {
                 <tr>
                     <td>KSPROPERTY_TOPOLOGY_NAME</td>
                     <td>Specify to provide the localized Unicode string name of the node.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_TOPOLOGY_NODES</td>
-                    <td>Specify for a list of the topology nodes and node types GUIDs supported by the filter.</td>
                 </tr>
 </table>
 

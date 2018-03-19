@@ -64,22 +64,7 @@ typedef enum _RILMESSAGETYPE {
 <table>
             
                 <tr>
-                    <td>RIL_MSGTYPE_BC_GENERAL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGTYPE_IN_CDMADELIVER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_MSGTYPE_IN_DELIVER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGTYPE_IN_IS637STATUS</td>
                     <td></td>
                 </tr>
             
@@ -89,12 +74,27 @@ typedef enum _RILMESSAGETYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGTYPE_OUT_CDMASUBMIT</td>
+                    <td>RIL_MSGTYPE_IN_IS637STATUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGTYPE_IN_CDMADELIVER</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_MSGTYPE_OUT_SUBMIT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGTYPE_OUT_CDMASUBMIT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGTYPE_BC_GENERAL</td>
                     <td></td>
                 </tr>
 </table>

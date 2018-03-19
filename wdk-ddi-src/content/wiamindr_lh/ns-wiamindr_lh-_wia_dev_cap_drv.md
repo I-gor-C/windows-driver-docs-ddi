@@ -98,6 +98,10 @@ Application can register for notification on the given event using the <b>IwiaDe
 </tr>
 </table>
 
+`wszName`
+
+Specifies a string that contains a short version of the capability name.
+
 `wszDescription`
 
 Specifies a string containing the version of the capability name that can be displayed to the user.
@@ -105,10 +109,6 @@ Specifies a string containing the version of the capability name that can be dis
 `wszIcon`
 
 Specifies a string containing the name of the icon for this capability. The icon can be displayed to the user .
-
-`wszName`
-
-Specifies a string that contains a short version of the capability name.
 
 ## Remarks
 The WIA service calls the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff543977">IWiaMiniDrv::drvGetCapabilities</a> function to fill in the members of a WIA_DEV_CAP_DRV structure.
@@ -128,11 +128,3 @@ When a driver is enumerating event handlers, the only valid value is WIA_IS_DEFA
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543977">IWiaMiniDrv::drvGetCapabilities</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIA_DEV_CAP_DRV structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

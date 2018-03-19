@@ -57,10 +57,6 @@ typedef struct _NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS {
 ## Members
 
 
-`DeviceServiceGuid`
-
-The GUID of the device service for which commands should be enumerated.
-
 `Header`
 
 The header with type, revision, and size information about the NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
@@ -110,6 +106,10 @@ sizeof(NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS)
 
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+
+`DeviceServiceGuid`
+
+The GUID of the device service for which commands should be enumerated.
 
 
 ## Requirements

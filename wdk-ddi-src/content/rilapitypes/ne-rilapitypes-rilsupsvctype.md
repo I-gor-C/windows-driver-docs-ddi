@@ -79,17 +79,17 @@ typedef enum _RILSUPSVCTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_SUPSVCTYPE_CNAP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_SUPSVCTYPE_COLP</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_SUPSVCTYPE_COLR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SUPSVCTYPE_CNAP</td>
                     <td></td>
                 </tr>
             

@@ -61,9 +61,87 @@ typedef struct _PEP_ACPI_SPB_UART_RESOURCE {
 ## Members
 
 
+`SpbCommon`
+
+A <a href="..\pepfx\ns-pepfx-_pep_acpi_spb_resource.md">PEP_ACPI_SPB_RESOURCE</a> structure describing this resource.
+
 `BaudRate`
 
 The baud rate of the connection.
+
+`RxBufferSize`
+
+The maximum receive buffer size, in bytes, that is supported by this connection.
+
+`TxBufferSize`
+
+The maximum transmit buffer size, in bytes, that is supported by this connection.
+
+`Parity`
+
+Indicates the parity of the connection.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>0x00</dt>
+</dl>
+</td>
+<td width="60%">
+None
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>0x01</dt>
+</dl>
+</td>
+<td width="60%">
+Even
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>0x02</dt>
+</dl>
+</td>
+<td width="60%">
+Odd
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>0x03</dt>
+</dl>
+</td>
+<td width="60%">
+Mark
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>0x04</dt>
+</dl>
+</td>
+<td width="60%">
+Space
+
+</td>
+</tr>
+</table>
 
 `LinesInUse`
 
@@ -156,84 +234,6 @@ Request to Send (RTS)
 </tr>
 </table>
 
-`Parity`
-
-Indicates the parity of the connection.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>0x00</dt>
-</dl>
-</td>
-<td width="60%">
-None
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>0x01</dt>
-</dl>
-</td>
-<td width="60%">
-Even
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>0x02</dt>
-</dl>
-</td>
-<td width="60%">
-Odd
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>0x03</dt>
-</dl>
-</td>
-<td width="60%">
-Mark
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>0x04</dt>
-</dl>
-</td>
-<td width="60%">
-Space
-
-</td>
-</tr>
-</table>
-
-`RxBufferSize`
-
-The maximum receive buffer size, in bytes, that is supported by this connection.
-
-`SpbCommon`
-
-A <a href="..\pepfx\ns-pepfx-_pep_acpi_spb_resource.md">PEP_ACPI_SPB_RESOURCE</a> structure describing this resource.
-
-`TxBufferSize`
-
-The maximum transmit buffer size, in bytes, that is supported by this connection.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -244,11 +244,3 @@ The maximum transmit buffer size, in bytes, that is supported by this connection
 ## See Also
 
 <a href="..\pepfx\ns-pepfx-_pep_acpi_spb_resource.md">PEP_ACPI_SPB_RESOURCE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_SPB_UART_RESOURCE structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

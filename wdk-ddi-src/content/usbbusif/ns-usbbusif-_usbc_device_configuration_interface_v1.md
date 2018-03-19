@@ -64,17 +64,29 @@ typedef struct _USBC_DEVICE_CONFIGURATION_INTERFACE_V1 {
 ## Members
 
 
+`Size`
+
+The size, in bytes, of this structure.
+
+`Version`
+
+The version of the interface.
+
 `Context`
 
 The USB generic parent driver does not use this member. It is populated by the vendor supplied filter driver and may be used to track instance information for the bus interface. It is passed as a parameter to <a href="..\wudfwdm\nc-wudfwdm-pinterface_reference.md">InterfaceReference</a> and <a href="..\wudfwdm\nc-wudfwdm-pinterface_dereference.md">InterfaceDereference</a>.
+
+`InterfaceReference`
+
+Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="..\wudfwdm\nc-wudfwdm-pinterface_reference.md">InterfaceReference</a>.
 
 `InterfaceDereference`
 
 Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="..\wudfwdm\nc-wudfwdm-pinterface_dereference.md">InterfaceDereference</a>.
 
-`InterfaceReference`
+`StartDeviceCallback`
 
-Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="..\wudfwdm\nc-wudfwdm-pinterface_reference.md">InterfaceReference</a>.
+Pointer to the callback routine that the filter driver furnishes to the USB generic parent driver to assist in defining interface collections on a device. For more information, see <a href="..\usbbusif\nc-usbbusif-usbc_start_device_callback.md">USBC_START_DEVICE_CALLBACK</a>.
 
 `PdoEnableCallback`
 
@@ -83,18 +95,6 @@ Reserved.
 `Reserved`
 
 Reserved.
-
-`Size`
-
-The size, in bytes, of this structure.
-
-`StartDeviceCallback`
-
-Pointer to the callback routine that the filter driver furnishes to the USB generic parent driver to assist in defining interface collections on a device. For more information, see <a href="..\usbbusif\nc-usbbusif-usbc_start_device_callback.md">USBC_START_DEVICE_CALLBACK</a>.
-
-`Version`
-
-The version of the interface.
 
 
 ## Requirements
@@ -113,11 +113,3 @@ The version of the interface.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB structures</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBC_DEVICE_CONFIGURATION_INTERFACE_V1 structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -61,6 +61,10 @@ struct _URB_HEADER {
 ## Members
 
 
+`Length`
+
+Specifies the length, in bytes, of the URB. For URB requests that use data structures other than <b>_URB_HEADER</b>, this member must be set to the length of the entire URB request structure, not the _URB_HEADER size.
+
 `Function`
 
 Specifies a numeric code indicating the requested operation for this URB. One of the following values must be set:
@@ -422,10 +426,6 @@ Closes all opened streams in the specified bulk endpoint. If set, the URB is use
 
 Available in Windows 8. For information about formatting an URB for a close-stream request, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
 
-`Length`
-
-Specifies the length, in bytes, of the URB. For URB requests that use data structures other than <b>_URB_HEADER</b>, this member must be set to the length of the entire URB request structure, not the _URB_HEADER size.
-
 `Status`
 
 Contains a USBD_STATUS_<i>XXX</i> code on return from the host controller driver.
@@ -511,11 +511,3 @@ The reserved members of this structure must be treated as opaque and are reserve
 
 
 <a href="..\usb\ns-usb-_urb.md">URB</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20_URB_HEADER structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

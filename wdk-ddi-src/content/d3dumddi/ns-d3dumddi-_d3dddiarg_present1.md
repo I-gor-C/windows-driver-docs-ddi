@@ -64,13 +64,17 @@ typedef struct D3DDDIARG_PRESENT1 {
 ## Members
 
 
-`BackBufferMultiplicity`
+`phSrcResources`
 
+[in] An array of non-<b>NULL</b> handles and zero-based indices to the source resource to display or to release. <b>phSrcResources</b> is always a valid handle for a resource to display.
 
+`SrcResources`
 
-`DirtyRects`
+[in] The number of source resources that are in the array pointed to by <b>phSrcResources.</b>
 
-[in] The number of dirty rectangles in the array pointed to by <b>pDirtyRects</b>.
+`hDstResource`
+
+[in] A handle to the destination resource to display to. If <b>NULL</b>, the destination is unknown, and the display miniport driver determines the destination just before the hardware command stream is processed.
 
 `DstSubResourceIndex`
 
@@ -84,9 +88,9 @@ typedef struct D3DDDIARG_PRESENT1 {
 
 [in] A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).
 
-`hDstResource`
+`Reserved`
 
-[in] A handle to the destination resource to display to. If <b>NULL</b>, the destination is unknown, and the display miniport driver determines the destination just before the hardware command stream is processed.
+This member is reserved and should be set to zero.
 
 `pDirtyRects`
 
@@ -94,17 +98,13 @@ typedef struct D3DDDIARG_PRESENT1 {
 
 The driver can use this member to perform optimizations, though it's not required to use the dirty rectangle info. However, the driver should never fail a function call based on the provided dirty rectangles.
 
-`phSrcResources`
+`DirtyRects`
 
-[in] An array of non-<b>NULL</b> handles and zero-based indices to the source resource to display or to release. <b>phSrcResources</b> is always a valid handle for a resource to display.
+[in] The number of dirty rectangles in the array pointed to by <b>pDirtyRects</b>.
 
-`Reserved`
+`BackBufferMultiplicity`
 
-This member is reserved and should be set to zero.
 
-`SrcResources`
-
-[in] The number of source resources that are in the array pointed to by <b>phSrcResources.</b>
 
 
 ## Requirements
@@ -131,11 +131,3 @@ This member is reserved and should be set to zero.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_PRESENT1 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

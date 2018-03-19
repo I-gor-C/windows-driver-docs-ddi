@@ -57,13 +57,13 @@ typedef struct _MPIO_DISK_INFO {
 ## Members
 
 
-`DriveInfo`
-
-An array that returns the information representing each multi-path LUN (pseudo-LUN) in the system. The number of elements in the array is given by <i>NumberDrives</i> and each element represents an instance of an MPIO_DRIVE_INFO structure.
-
 `NumberDrives`
 
 An unsigned 32-bitfield that represents the number of multi-path disks in the system.
+
+`DriveInfo`
+
+An array that returns the information representing each multi-path LUN (pseudo-LUN) in the system. The number of elements in the array is given by <i>NumberDrives</i> and each element represents an instance of an MPIO_DRIVE_INFO structure.
 
 
 ## Requirements

@@ -70,23 +70,13 @@ typedef struct _D3DKMT_UPDATEGPUVIRTUALADDRESS {
 ## Members
 
 
-`FenceValue`
+`hDevice`
 
-Specifies the <b>FenceValue</b> for <b>hFenceObject</b> that the map operation should wait on (unless <b>DoNotWait</b> is 1). When the map operation completes, the fence object will signal <b>hFenceObject</b> with <b>FenceValue</b>+1.
-
-`Flags`
-
-#### Value
-
-The consolidated value of the <b>Flags</b> union.
+A handle to the device.
 
 `hContext`
 
 A handle to a context that the map operation will be synchronized against. This also determines which kernel context the map operation will be executed against. In an linked display adapter (LDA) configuration <b>hContext</b> defines a physical GPU whose page tables are modified.
-
-`hDevice`
-
-A handle to the device.
 
 `hFenceObject`
 
@@ -107,6 +97,16 @@ This member is reserved and should be set to zero.
 `Reserved1`
 
 This member is reserved and should be set to zero.
+
+`FenceValue`
+
+Specifies the <b>FenceValue</b> for <b>hFenceObject</b> that the map operation should wait on (unless <b>DoNotWait</b> is 1). When the map operation completes, the fence object will signal <b>hFenceObject</b> with <b>FenceValue</b>+1.
+
+`Flags`
+
+#### Value
+
+The consolidated value of the <b>Flags</b> union.
 
 
 ## Requirements

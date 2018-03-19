@@ -70,29 +70,11 @@ typedef struct _NDIS_TCP_OFFLOAD_EVENT_HANDLERS {
 The NDIS object header, which is formatted as an 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-`NdisTcpOffloadDisconnectComplete`
-
-The entry point for the 
-     <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
-     NdisTcpOffloadDisconnectComplete</a> function.
-
 `NdisTcpOffloadEventHandler`
 
 The entry point for the 
      <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">
      NdisTcpOffloadEventHandler</a> function.
-
-`NdisTcpOffloadForwardComplete`
-
-The entry point for the 
-     <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_forward_complete.md">
-     NdisTcpOffloadForwardComplete</a> function.
-
-`NdisTcpOffloadReceiveComplete`
-
-The entry point for the 
-     <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_complete.md">
-     NdisTcpOffloadReceiveComplete</a> function.
 
 `NdisTcpOffloadReceiveHandler`
 
@@ -105,6 +87,24 @@ The entry point for the
 The entry point for the 
      <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">
      NdisTcpOffloadSendComplete</a> function.
+
+`NdisTcpOffloadReceiveComplete`
+
+The entry point for the 
+     <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_complete.md">
+     NdisTcpOffloadReceiveComplete</a> function.
+
+`NdisTcpOffloadDisconnectComplete`
+
+The entry point for the 
+     <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
+     NdisTcpOffloadDisconnectComplete</a> function.
+
+`NdisTcpOffloadForwardComplete`
+
+The entry point for the 
+     <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_forward_complete.md">
+     NdisTcpOffloadForwardComplete</a> function.
 
 ## Remarks
 An offload target copies the entry points in the NDIS_TCP_OFFLOAD_EVENT_HANDLERS structure into its
@@ -144,11 +144,3 @@ An offload target copies the entry points in the NDIS_TCP_OFFLOAD_EVENT_HANDLERS
 
 
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">NdisTcpOffloadEventHandler</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_EVENT_HANDLERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

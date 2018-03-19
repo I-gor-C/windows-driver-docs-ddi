@@ -60,9 +60,13 @@ typedef struct {
 ## Members
 
 
-`ApplicationTypeIndicator_MR`
+`Size`
 
-Application type indicator for any mobile originated location request to the MPC. It shall be set to the value for Microsoft resident applications based on intelligent platform.
+Structure size.
+
+`Version`
+
+Version number.
 
 `MPC`
 
@@ -72,17 +76,13 @@ Application type indicator for any mobile originated location request to the MPC
 
 
 
-`Size`
+`ApplicationTypeIndicator_MR`
 
-Structure size.
+Application type indicator for any mobile originated location request to the MPC. It shall be set to the value for Microsoft resident applications based on intelligent platform.
 
 `Unused`
 
 
-
-`Version`
-
-Version number.
 
 
 ## Requirements

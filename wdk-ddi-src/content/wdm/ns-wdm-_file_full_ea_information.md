@@ -61,9 +61,13 @@ typedef struct _FILE_FULL_EA_INFORMATION {
 ## Members
 
 
-`EaName`
+`NextEntryOffset`
 
-An array of characters naming the EA for this entry.
+The offset of the next <b>FILE_FULL_EA_INFORMATION</b>-type entry. This member is zero if no other entries follow this one.
+
+`Flags`
+
+Can be zero or can be set with FILE_NEED_EA, indicating that the file to which the EA belongs cannot be interpreted without understanding the associated extended attributes.
 
 `EaNameLength`
 
@@ -73,13 +77,9 @@ The length in bytes of the <b>EaName</b> array. This value does not include a nu
 
 The length in bytes of each EA value in the array.
 
-`Flags`
+`EaName`
 
-Can be zero or can be set with FILE_NEED_EA, indicating that the file to which the EA belongs cannot be interpreted without understanding the associated extended attributes.
-
-`NextEntryOffset`
-
-The offset of the next <b>FILE_FULL_EA_INFORMATION</b>-type entry. This member is zero if no other entries follow this one.
+An array of characters naming the EA for this entry.
 
 ## Remarks
 This structure is longword-aligned. If a set of <b>FILE_FULL_EA_INFORMATION</b> entries is buffered, <b>NextEntryOffset</b> value in each entry, except the last, falls on a longword boundary. 
@@ -94,11 +94,3 @@ The value(s) associated with each entry follows the <b>EaName</b> array. That is
 ## See Also
 
 <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20FILE_FULL_EA_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -66,7 +66,7 @@ typedef enum _RILGETPREFERENCEDOPERATORLISTFORMAT {
                 </tr>
             
                 <tr>
-                    <td>RIL_OPFORMAT_MAX</td>
+                    <td>RIL_OPFORMAT_SHORT</td>
                     <td></td>
                 </tr>
             
@@ -76,7 +76,7 @@ typedef enum _RILGETPREFERENCEDOPERATORLISTFORMAT {
                 </tr>
             
                 <tr>
-                    <td>RIL_OPFORMAT_SHORT</td>
+                    <td>RIL_OPFORMAT_MAX</td>
                     <td></td>
                 </tr>
 </table>

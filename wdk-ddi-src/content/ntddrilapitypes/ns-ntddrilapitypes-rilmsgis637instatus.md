@@ -67,27 +67,19 @@ typedef struct _RILMSGIS637INSTATUS {
 ## Members
 
 
-`cchMsgLength`
+`raOrigAddress`
+
+
+
+`rsaOrigSubaddr`
+
+
+
+`stSCReceiveTime`
 
 
 
 `dwCauseCode`
-
-
-
-`dwMsgEncoding`
-
-
-
-`dwMsgID`
-
-
-
-`dwMsgLang`
-
-
-
-`dwMsgStatusType`
 
 
 
@@ -99,19 +91,27 @@ typedef struct _RILMSGIS637INSTATUS {
 
 
 
-`raOrigAddress`
+`dwMsgStatusType`
+
+
+
+`dwMsgID`
+
+
+
+`dwMsgLang`
+
+
+
+`dwMsgEncoding`
+
+
+
+`cchMsgLength`
 
 
 
 `rgbMsg`
-
-
-
-`rsaOrigSubaddr`
-
-
-
-`stSCReceiveTime`
 
 
 

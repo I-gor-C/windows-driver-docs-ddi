@@ -61,16 +61,6 @@ typedef enum _RILMSGCDMAMSGPRIVACY {
 <table>
             
                 <tr>
-                    <td>RIL_MSGPRIVACYCLASS_CONFIDENTIAL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGPRIVACYCLASS_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_MSGPRIVACYCLASS_NOTRESTRICTED</td>
                     <td></td>
                 </tr>
@@ -81,7 +71,17 @@ typedef enum _RILMSGCDMAMSGPRIVACY {
                 </tr>
             
                 <tr>
+                    <td>RIL_MSGPRIVACYCLASS_CONFIDENTIAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_MSGPRIVACYCLASS_SECRET</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGPRIVACYCLASS_MAX</td>
                     <td></td>
                 </tr>
 </table>

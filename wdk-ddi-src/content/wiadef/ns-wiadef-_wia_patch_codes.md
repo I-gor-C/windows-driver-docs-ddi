@@ -61,18 +61,6 @@ typedef struct _WIA_PATCH_CODES {
 ## Members
 
 
-`Count`
-
-Specifies the number of <a href="..\wiadef\ns-wiadef-_wia_patch_code_info.md">WIA_PATCH_CODES_INFO</a> elements in the PatchCodes sequence.
-
-`PatchCodes`
-
-Placeholder for a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef-_wia_patch_code_info.md">WIA_PATCH_CODES_INFO</a> structures.
-
-`Size`
-
-The complete size of this <b>WIA_PATCH_CODES</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef-_wia_patch_code_info.md">WIA_PATCH_CODES_INFO</a> list.
-
 `Tag`
 
 Must be the literal 'WBAT', 4 single byte ASCII characters.
@@ -80,6 +68,18 @@ Must be the literal 'WBAT', 4 single byte ASCII characters.
 `Version`
 
 Must be the value 0x00010000 (Version 1.0).
+
+`Size`
+
+The complete size of this <b>WIA_PATCH_CODES</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef-_wia_patch_code_info.md">WIA_PATCH_CODES_INFO</a> list.
+
+`Count`
+
+Specifies the number of <a href="..\wiadef\ns-wiadef-_wia_patch_code_info.md">WIA_PATCH_CODES_INFO</a> elements in the PatchCodes sequence.
+
+`PatchCodes`
+
+Placeholder for a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef-_wia_patch_code_info.md">WIA_PATCH_CODES_INFO</a> structures.
 
 ## Remarks
 The header must be followed by a sequence of patch code information structures, one for each detected patch code, in the order the patch codes were found and decoded.

@@ -69,11 +69,11 @@ typedef struct _RILDMCONFIGINFOVALUE {
 
 
 
-`dwValue`
-
-
-
 `fValue`
+
+
+
+`dwValue`
 
 
 

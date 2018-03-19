@@ -67,15 +67,15 @@ typedef struct _RILDISPLAYINFO {
 
 
 
+`dwParams`
+
+
+
 `dwExecutor`
 
 
 
-`dwMessageSize`
-
-
-
-`dwParams`
+`dwType`
 
 
 
@@ -83,7 +83,7 @@ typedef struct _RILDISPLAYINFO {
 
 
 
-`dwType`
+`dwMessageSize`
 
 
 

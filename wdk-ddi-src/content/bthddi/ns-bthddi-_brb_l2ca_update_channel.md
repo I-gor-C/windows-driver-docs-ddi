@@ -61,6 +61,12 @@ struct _BRB_L2CA_UPDATE_CHANNEL {
 ## Members
 
 
+`Hdr`
+
+A 
+     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     about the current BRB.
+
 `BtAddress`
 
 The Bluetooth address of the remote device.
@@ -72,22 +78,16 @@ The L2CAP channel handle that was returned by Bluetooth driver stack in response
      <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536616">
      BRB_L2CA_OPEN_CHANNEL_RESPONSE</a> request.
 
+`NewChannelFlags`
+
+A combination of flag values that specify the updated requirements for the channel. This member
+      should be set to CF_ROLE_EITHER.
+
 `FailedChannelFlags`
 
 The flag or flags in the 
      <b>NewChannelFlags</b> member that the Bluetooth driver stack was not able to honor. This member contains
      information only if the BRB call failed.
-
-`Hdr`
-
-A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
-     about the current BRB.
-
-`NewChannelFlags`
-
-A combination of flag values that specify the updated requirements for the channel. This member
-      should be set to CF_ROLE_EITHER.
 
 ## Remarks
 To retrieve the current settings of a L2CAP channel, profile drivers should 
@@ -132,11 +132,3 @@ By building and sending a <b>BRB_L2CA_UPDATE_CHANNEL</b> request, profile driver
 
 
 <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_L2CA_UPDATE_CHANNEL structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

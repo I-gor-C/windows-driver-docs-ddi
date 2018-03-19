@@ -61,11 +61,6 @@ typedef enum _RILCALLMEDIADIRECTION {
 <table>
             
                 <tr>
-                    <td>RIL_CALLMEDIADIRECTION_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_CALLMEDIADIRECTION_NONE</td>
                     <td></td>
                 </tr>
@@ -76,12 +71,17 @@ typedef enum _RILCALLMEDIADIRECTION {
                 </tr>
             
                 <tr>
+                    <td>RIL_CALLMEDIADIRECTION_TX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_CALLMEDIADIRECTION_RXTX</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLMEDIADIRECTION_TX</td>
+                    <td>RIL_CALLMEDIADIRECTION_MAX</td>
                     <td></td>
                 </tr>
 </table>

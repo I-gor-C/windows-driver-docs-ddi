@@ -62,17 +62,7 @@ typedef enum _RILCALLFORWARDINGSETTINGSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_CFS_ADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CFS_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CFS_DELAYTIME</td>
+                    <td>RIL_PARAM_CFS_STATUS</td>
                     <td></td>
                 </tr>
             
@@ -82,12 +72,22 @@ typedef enum _RILCALLFORWARDINGSETTINGSPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CFS_STATUS</td>
+                    <td>RIL_PARAM_CFS_ADDRESS</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_PARAM_CFS_SUBADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CFS_DELAYTIME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CFS_ALL</td>
                     <td></td>
                 </tr>
 </table>

@@ -60,13 +60,13 @@ typedef enum _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON {
 <table>
             
                 <tr>
-                    <td>DXGK_AVIR_HOTKEY</td>
-                    <td>Indicates that the user pressed a keyboard shortcut to change the set of monitors (or other display devices) being used to display the desktop.</td>
+                    <td>DXGK_AVIR_UNINITIALIZED</td>
+                    <td>Indicates that a variable of type DXGK_ACTIVE_VIDPN_INVALIDATION_REASON has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGK_AVIR_UNINITIALIZED</td>
-                    <td>Indicates that a variable of type DXGK_ACTIVE_VIDPN_INVALIDATION_REASON has not yet been assigned a meaningful value.</td>
+                    <td>DXGK_AVIR_HOTKEY</td>
+                    <td>Indicates that the user pressed a keyboard shortcut to change the set of monitors (or other display devices) being used to display the desktop.</td>
                 </tr>
             
                 <tr>
@@ -85,11 +85,3 @@ typedef enum _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON {
 ## See Also
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtinvalidateactivevidpn.md">D3DKMTInvalidateActiveVidPN</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_ACTIVE_VIDPN_INVALIDATION_REASON enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

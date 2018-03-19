@@ -64,25 +64,9 @@ typedef struct _NFC_CX_CLIENT_CONFIG {
 ## Members
 
 
-`BusType`
+`Size`
 
-An <a href="..\nfccx\ne-nfccx-_nfc_cx_transport_type.md">NFC_CX_TRANSPORT_TYPE</a>-typed enumerator.
-
-`DeviceMode`
-
-Device mode.
-
-`DriverFlags`
-
-Combination of <a href="..\nfccx\ne-nfccx-_nfc_cx_driver_flags.md">NFC_CX_DRIVER_FLAGS</a> values.
-
-`EvtNfcCxDeviceIoControl`
-
-Pointer to an <a href="..\nfccx\nc-nfccx-evt_nfc_cx_device_io_control.md">EvtNfcCxDeviceIoControl</a> callback.
-
-`EvtNfcCxWriteNciPacket`
-
-Pointer to an <a href="..\nfccx\nc-nfccx-evt_nfc_cx_write_nci_packet.md">EvtNfcCxWriteNciPacket</a> callback.
+Size of this structure in bytes.
 
 `IsPowerPolicyOwner`
 
@@ -96,9 +80,25 @@ IdleTimeout value, in milliseconds. Default is 1 second.
 
 A <a href="..\wdfdevice\ne-wdfdevice-_wdf_power_policy_idle_timeout_type.md">WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE</a>-typed enumerator.
 
-`Size`
+`BusType`
 
-Size of this structure in bytes.
+An <a href="..\nfccx\ne-nfccx-_nfc_cx_transport_type.md">NFC_CX_TRANSPORT_TYPE</a>-typed enumerator.
+
+`DriverFlags`
+
+Combination of <a href="..\nfccx\ne-nfccx-_nfc_cx_driver_flags.md">NFC_CX_DRIVER_FLAGS</a> values.
+
+`DeviceMode`
+
+Device mode.
+
+`EvtNfcCxWriteNciPacket`
+
+Pointer to an <a href="..\nfccx\nc-nfccx-evt_nfc_cx_write_nci_packet.md">EvtNfcCxWriteNciPacket</a> callback.
+
+`EvtNfcCxDeviceIoControl`
+
+Pointer to an <a href="..\nfccx\nc-nfccx-evt_nfc_cx_device_io_control.md">EvtNfcCxDeviceIoControl</a> callback.
 
 
 ## Requirements
@@ -114,11 +114,3 @@ Size of this structure in bytes.
 
 
 <a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_CLIENT_CONFIG structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

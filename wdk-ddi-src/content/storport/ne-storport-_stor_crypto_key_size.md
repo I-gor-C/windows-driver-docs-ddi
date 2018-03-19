@@ -59,6 +59,11 @@ typedef enum _STOR_CRYPTO_KEY_SIZE {
 <table>
             
                 <tr>
+                    <td>StorCryptoKeySizeUnknown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>StorCryptoKeySize128Bits</td>
                     <td></td>
                 </tr>
@@ -80,11 +85,6 @@ typedef enum _STOR_CRYPTO_KEY_SIZE {
             
                 <tr>
                     <td>StorCryptoKeySizeMax</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>StorCryptoKeySizeUnknown</td>
                     <td></td>
                 </tr>
 </table>

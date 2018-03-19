@@ -64,37 +64,37 @@ typedef struct _USBDEVICE_UPDATE_FLAGS {
 ## Members
 
 
-`Reserved`
+`UpdateDeviceDescriptor`
 
-Do not use.
-
-`Update20HardwareLpmParameters`
-
-If set, indicates a request to update the 2.0 LPM state.
-
-`UpdateAllowIoOnInvalidPipeHandles`
-
-If set, indicates the USB device or hub has been updated to allow I/O with invalid pipe handles.
+If set, indicates a request to update the USB device descriptor.
 
 `UpdateBosDescriptor`
 
 If set, indicates a request to update the USB BOS descriptor.
 
-`UpdateDeviceDescriptor`
+`UpdateMaxExitLatency`
 
-If set, indicates a request to update the USB device descriptor.
+If set, indicates a request to update the maximum exit latency.
 
 `UpdateIsHub`
 
 If set, indicates a request to determine of the device is a hub.
 
-`UpdateMaxExitLatency`
+`UpdateAllowIoOnInvalidPipeHandles`
 
-If set, indicates a request to update the maximum exit latency.
+If set, indicates the USB device or hub has been updated to allow I/O with invalid pipe handles.
+
+`Update20HardwareLpmParameters`
+
+If set, indicates a request to update the 2.0 LPM state.
 
 `UpdateRootPortResumeTime`
 
 If set, indicates a request to  update the root port resume time.
+
+`Reserved`
+
+Do not use.
 
 
 ## Requirements
@@ -113,11 +113,3 @@ If set, indicates a request to  update the root port resume time.
 
 
 <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update.md">USBDEVICE_UPDATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBDEVICE_UPDATE_FLAGS structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

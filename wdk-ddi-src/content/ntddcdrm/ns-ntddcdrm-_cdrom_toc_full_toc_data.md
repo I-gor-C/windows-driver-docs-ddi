@@ -59,9 +59,9 @@ typedef struct _CDROM_TOC_FULL_TOC_DATA {
 ## Members
 
 
-`Descriptors`
+`Length`
 
-Contains zero or more track descriptors. See <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_full_toc_data_block.md">CDROM_TOC_FULL_TOC_DATA_BLOCK</a> for a description of the track descriptor.
+Indicates the length, in bytes, of the table of contents data. This length value does not include the length of the <b>Length </b>member itself.
 
 `FirstCompleteSession`
 
@@ -71,9 +71,9 @@ Contains the number of the first complete session.
 
 Contains the number of last complete session.
 
-`Length`
+`Descriptors`
 
-Indicates the length, in bytes, of the table of contents data. This length value does not include the length of the <b>Length </b>member itself.
+Contains zero or more track descriptors. See <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_full_toc_data_block.md">CDROM_TOC_FULL_TOC_DATA_BLOCK</a> for a description of the track descriptor.
 
 
 ## Requirements
@@ -92,11 +92,3 @@ Indicates the length, in bytes, of the table of contents data. This length value
 
 
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_full_toc_data_block.md">CDROM_TOC_FULL_TOC_DATA_BLOCK</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CDROM_TOC_FULL_TOC_DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

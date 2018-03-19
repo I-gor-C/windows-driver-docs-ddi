@@ -80,20 +80,6 @@ typedef struct _NDIS_RECEIVE_FILTER_INFO {
 ## Members
 
 
-`FilterId`
-
-A receive filter identifier. The filter identifier
-     is an integer from one up to and including the number of receive filters that the network adapter
-     supports. A value of zero is not valid.
-
-`FilterType`
-
-The type of the receive filter.
-
-`Flags`
-
-A bitwise OR of flags. This member is reserved for NDIS.
-
 `Header`
 
 The 
@@ -115,6 +101,20 @@ Original version for NDIS 6.20.
 
 The driver sets the 
         <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_INFO_REVISION_1.
+
+`Flags`
+
+A bitwise OR of flags. This member is reserved for NDIS.
+
+`FilterType`
+
+The type of the receive filter.
+
+`FilterId`
+
+A receive filter identifier. The filter identifier
+     is an integer from one up to and including the number of receive filters that the network adapter
+     supports. A value of zero is not valid.
 
 ## Remarks
 The <b>NDIS_RECEIVE_FILTER_INFO</b> structure is used with the 
@@ -140,11 +140,3 @@ The <b>NDIS_RECEIVE_FILTER_INFO</b> structure is used with the
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_info_array.md">
    NDIS_RECEIVE_FILTER_INFO_ARRAY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_INFO structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

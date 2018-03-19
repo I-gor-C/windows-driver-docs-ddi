@@ -60,25 +60,25 @@ typedef struct _D3D12DDIARG_CREATE_CRYPTO_SESSION_0030 {
 ## Members
 
 
-`BitstreamEncryption`
+`NodeMask`
 
-The bitstream encryption.
-
-`ContentProtectionSystem`
-
-The content protection system.
+Represents the set of nodes.
 
 `DecodeProfile`
 
 The decode profile.
 
+`ContentProtectionSystem`
+
+The content protection system.
+
+`BitstreamEncryption`
+
+The bitstream encryption.
+
 `Flags`
 
 The crypto session flags.
-
-`NodeMask`
-
-Represents the set of nodes.
 
 
 ## Requirements

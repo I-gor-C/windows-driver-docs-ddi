@@ -75,24 +75,6 @@ typedef struct _D3DDDICB_RENDER {
 ## Members
 
 
-`BegunAPISequenceNumberLow0Size`
-
-
-
-`BegunAPISequenceNumberLow1Size`
-
-
-
-`BroadcastContext`
-
-[in] An array of handles to the additional contexts to broadcast the current command buffer to. The D3DDDI_MAX_BROADCAST_CONTEXT constant, which is defined as 64, defines the maximum number of additional contexts that the user-mode display driver can broadcast the current command buffer to.
-
-The original context that the <b>hContext</b> member specifies and that owns the command buffer is not an element in the <b>BroadcastContext</b> array. For example, if the <b>BroadcastContext</b> array contains one element, the user-mode display driver sends the command buffer to the owning context (<b>hContext</b>) and broadcasts to that one additional context.
-
-`BroadcastContextCount`
-
-[in] The number of additional contexts in the array that the <b>BroadcastContext</b> member specifies.
-
 `CommandLength`
 
 [in] The size, in bytes, of the command buffer, starting from offset zero.
@@ -100,54 +82,6 @@ The original context that the <b>hContext</b> member specifies and that owns the
 `CommandOffset`
 
 [in] The offset, in bytes, to the first command in the command buffer.
-
-`CompletedAPISequenceNumberLow0Size`
-
-
-
-`CompletedAPISequenceNumberLow1Size`
-
-
-
-`FirstAPISequenceNumberHigh`
-
-
-
-`Flags`
-
-[in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_renderflags.md">D3DDDICB_RENDERFLAGS</a> structure that indicates information about a command buffer to be rendered.
-
-`hContext`
-
-[in] A handle to the context that the driver submits the rendering operation to. The user-mode display driver previously created this context by calling the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function.
-
-`MarkerLogType`
-
-
-
-`NewAllocationListSize`
-
-[in/out] The number of elements that the user-mode display driver requests for the next allocation list. 
-
-The driver receives the number of elements for the allocation list that will be available when the next command buffer is submitted.
-
-`NewCommandBuffer`
-
-This member is reserved and should be set to zero.
-
-This member is available beginning with Windows 7.
-
-`NewCommandBufferSize`
-
-[in/out] The size, in bytes, that the user-mode display driver requests for the next command buffer.
-
-The driver receives the size, in bytes, of the next command buffer to use.
-
-`NewPatchLocationListSize`
-
-[in/out] The number of elements that the user-mode display driver requests for the next patch-location list.
-
-The driver receives the number of elements for the patch-location list that will be available when the next command buffer is submitted.
 
 `NumAllocations`
 
@@ -157,33 +91,63 @@ The driver receives the number of elements for the patch-location list that will
 
 [in] The number of elements in the patch-location list.
 
-`pBegunAPISequenceNumberLow0`
+`pNewCommandBuffer`
 
+[out] A pointer to a command buffer that the user-mode display driver receives to use in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
 
+`NewCommandBufferSize`
 
-`pBegunAPISequenceNumberLow1`
+[in/out] The size, in bytes, that the user-mode display driver requests for the next command buffer.
 
-
-
-`pCompletedAPISequenceNumberLow0`
-
-
-
-`pCompletedAPISequenceNumberLow1`
-
-
+The driver receives the size, in bytes, of the next command buffer to use.
 
 `pNewAllocationList`
 
 [out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures that the user-mode display driver receives to use as the allocation list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
 
-`pNewCommandBuffer`
+`NewAllocationListSize`
 
-[out] A pointer to a command buffer that the user-mode display driver receives to use in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
+[in/out] The number of elements that the user-mode display driver requests for the next allocation list. 
+
+The driver receives the number of elements for the allocation list that will be available when the next command buffer is submitted.
 
 `pNewPatchLocationList`
 
 [out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures that the user-mode display driver receives to use as the patch-location list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
+
+`NewPatchLocationListSize`
+
+[in/out] The number of elements that the user-mode display driver requests for the next patch-location list.
+
+The driver receives the number of elements for the patch-location list that will be available when the next command buffer is submitted.
+
+`Flags`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_renderflags.md">D3DDDICB_RENDERFLAGS</a> structure that indicates information about a command buffer to be rendered.
+
+`hContext`
+
+[in] A handle to the context that the driver submits the rendering operation to. The user-mode display driver previously created this context by calling the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function.
+
+`BroadcastContextCount`
+
+[in] The number of additional contexts in the array that the <b>BroadcastContext</b> member specifies.
+
+`BroadcastContext`
+
+[in] An array of handles to the additional contexts to broadcast the current command buffer to. The D3DDDI_MAX_BROADCAST_CONTEXT constant, which is defined as 64, defines the maximum number of additional contexts that the user-mode display driver can broadcast the current command buffer to.
+
+The original context that the <b>hContext</b> member specifies and that owns the command buffer is not an element in the <b>BroadcastContext</b> array. For example, if the <b>BroadcastContext</b> array contains one element, the user-mode display driver sends the command buffer to the owning context (<b>hContext</b>) and broadcasts to that one additional context.
+
+`QueuedBufferCount`
+
+[out] The number of DMA buffers that are queued to the context that the <b>hContext</b> member specifies after the current submission occurs.
+
+`NewCommandBuffer`
+
+This member is reserved and should be set to zero.
+
+This member is available beginning with Windows 7.
 
 `pPrivateDriverData`
 
@@ -197,11 +161,47 @@ This member is available beginning with Windows 7.
 
 This member is available beginning with Windows 7.
 
-`QueuedBufferCount`
+`MarkerLogType`
 
-[out] The number of DMA buffers that are queued to the context that the <b>hContext</b> member specifies after the current submission occurs.
+
 
 `RenderCBSequence`
+
+
+
+`FirstAPISequenceNumberHigh`
+
+
+
+`CompletedAPISequenceNumberLow0Size`
+
+
+
+`CompletedAPISequenceNumberLow1Size`
+
+
+
+`BegunAPISequenceNumberLow0Size`
+
+
+
+`BegunAPISequenceNumberLow1Size`
+
+
+
+`pCompletedAPISequenceNumberLow0`
+
+
+
+`pCompletedAPISequenceNumberLow1`
+
+
+
+`pBegunAPISequenceNumberLow0`
+
+
+
+`pBegunAPISequenceNumberLow1`
 
 
 
@@ -227,11 +227,3 @@ This member is available beginning with Windows 7.
 
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDICB_RENDER structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

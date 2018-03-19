@@ -62,6 +62,11 @@ typedef enum _RILVOICEDOMAIN {
 <table>
             
                 <tr>
+                    <td>RIL_VOICE_DOMAIN_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_VOICE_DOMAIN_3GPP</td>
                     <td></td>
                 </tr>
@@ -78,11 +83,6 @@ typedef enum _RILVOICEDOMAIN {
             
                 <tr>
                     <td>RIL_VOICE_DOMAIN_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_VOICE_DOMAIN_NONE</td>
                     <td></td>
                 </tr>
 </table>

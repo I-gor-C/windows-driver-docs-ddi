@@ -64,26 +64,6 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>CPST_ABSOLUTE_COLORIMETRIC</td>
-                    <td>Specifies an absolute colorimetric rendering intent for WCS GMMPs.</td>
-                </tr>
-            
-                <tr>
-                    <td>CPST_CUSTOM_WORKING_SPACE</td>
-                    <td>Specifies a custom color working space.</td>
-                </tr>
-            
-                <tr>
-                    <td>CPST_EXTENDED_DISPLAY_COLOR_MODE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>CPST_NONE</td>
-                    <td>Specifies that the color profile subtype is not applicable to the selected color profile type.</td>
-                </tr>
-            
-                <tr>
                     <td>CPST_PERCEPTUAL</td>
                     <td>Specifies a perceptual rendering intent for WCS gamut map model profiles (GMMPs).</td>
                 </tr>
@@ -94,17 +74,37 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>CPST_RGB_WORKING_SPACE</td>
-                    <td>Specifies the RGB color working space for ICC profiles or WCS device model profiles (DMPs).</td>
-                </tr>
-            
-                <tr>
                     <td>CPST_SATURATION</td>
                     <td>Specifies a saturation rendering intent for WCS GMMPs.</td>
                 </tr>
             
                 <tr>
+                    <td>CPST_ABSOLUTE_COLORIMETRIC</td>
+                    <td>Specifies an absolute colorimetric rendering intent for WCS GMMPs.</td>
+                </tr>
+            
+                <tr>
+                    <td>CPST_NONE</td>
+                    <td>Specifies that the color profile subtype is not applicable to the selected color profile type.</td>
+                </tr>
+            
+                <tr>
+                    <td>CPST_RGB_WORKING_SPACE</td>
+                    <td>Specifies the RGB color working space for ICC profiles or WCS device model profiles (DMPs).</td>
+                </tr>
+            
+                <tr>
+                    <td>CPST_CUSTOM_WORKING_SPACE</td>
+                    <td>Specifies a custom color working space.</td>
+                </tr>
+            
+                <tr>
                     <td>CPST_STANDARD_DISPLAY_COLOR_MODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>CPST_EXTENDED_DISPLAY_COLOR_MODE</td>
                     <td></td>
                 </tr>
 </table>
@@ -139,11 +139,3 @@ The PCOLORPROFILESUBTYPE and LPCOLORPROFILESUBTYPE data types are defined as poi
 
 
 <a href="..\icm\ne-icm-colorprofiletype.md">COLORPROFILETYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20COLORPROFILESUBTYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

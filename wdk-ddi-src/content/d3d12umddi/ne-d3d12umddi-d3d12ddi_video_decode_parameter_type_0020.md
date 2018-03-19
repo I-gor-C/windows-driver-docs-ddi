@@ -60,13 +60,13 @@ typedef enum D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020 {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_INVERSE_QUANTIZATION_MATRIX</td>
-                    <td>Inverse quantization matrix buffer.</td>
+                    <td>D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_PICTURE_PARAMETERS</td>
+                    <td>Picture decoding parameter buffer.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_PICTURE_PARAMETERS</td>
-                    <td>Picture decoding parameter buffer.</td>
+                    <td>D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_INVERSE_QUANTIZATION_MATRIX</td>
+                    <td>Inverse quantization matrix buffer.</td>
                 </tr>
             
                 <tr>

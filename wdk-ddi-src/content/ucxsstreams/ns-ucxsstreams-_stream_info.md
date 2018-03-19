@@ -63,13 +63,13 @@ typedef struct _STREAM_INFO {
 
 The size in bytes of this structure.
 
-`StreamId`
-
-The stream identifier. The open-static streams request obtains stream identifiers that are assigned by the USB driver stack.
-
 `WdfQueue`
 
 A handle to the framework queue object that contains streams.
+
+`StreamId`
+
+The stream identifier. The open-static streams request obtains stream identifiers that are assigned by the USB driver stack.
 
 
 ## Requirements

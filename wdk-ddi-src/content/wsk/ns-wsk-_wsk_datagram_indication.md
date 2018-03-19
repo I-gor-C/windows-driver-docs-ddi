@@ -62,6 +62,12 @@ typedef struct _WSK_DATAGRAM_INDICATION {
 ## Members
 
 
+`Next`
+
+A pointer to the next WSK_DATAGRAM_INDICATION structure in a linked list of
+     WSK_DATAGRAM_INDICATION structures. If this member is <b>NULL</b>, this structure is the last
+     WSK_DATAGRAM_INDICATION structure in the linked list.
+
 `Buffer`
 
 A WSK_BUF structure that describes a datagram that has been received on the socket.
@@ -78,12 +84,6 @@ The control information that is associated with the received datagram. The contr
 
 The size of the control information that is associated with the received datagram. If this value
      is zero, there is no control information present for the datagram.
-
-`Next`
-
-A pointer to the next WSK_DATAGRAM_INDICATION structure in a linked list of
-     WSK_DATAGRAM_INDICATION structures. If this member is <b>NULL</b>, this structure is the last
-     WSK_DATAGRAM_INDICATION structure in the linked list.
 
 `RemoteAddress`
 
@@ -122,11 +122,3 @@ The WSK subsystem passes a pointer to a WSK_DATAGRAM_INDICATION structure as the
 
 
 <a href="..\wsk\nc-wsk-pfn_wsk_release_data_indication_list.md">WskRelease</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_DATAGRAM_INDICATION structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

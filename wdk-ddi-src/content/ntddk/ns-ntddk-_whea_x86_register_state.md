@@ -80,6 +80,70 @@ typedef struct _WHEA_X86_REGISTER_STATE {
 ## Members
 
 
+`Eax`
+
+The accumulator register.
+
+`Ebx`
+
+The base register.
+
+`Ecx`
+
+The count register.
+
+`Edx`
+
+The data register.
+
+`Esi`
+
+The source index register.
+
+`Edi`
+
+The destination index register.
+
+`Ebp`
+
+The base pointer register.
+
+`Esp`
+
+The stack pointer register.
+
+`Cs`
+
+The code segment register.
+
+`Ds`
+
+The data segment register.
+
+`Ss`
+
+The stack segment register.
+
+`Es`
+
+The extra segment register.
+
+`Fs`
+
+The general purpose segment register FS.
+
+`Gs`
+
+The general purpose segment register GS.
+
+`Eflags`
+
+The flags register.
+
+`Eip`
+
+The instruction pointer register.
+
 `Cr0`
 
 The control register 0.
@@ -100,69 +164,9 @@ The control register 3.
 
 The control register 4.
 
-`Cs`
-
-The code segment register.
-
-`Ds`
-
-The data segment register.
-
-`Eax`
-
-The accumulator register.
-
-`Ebp`
-
-The base pointer register.
-
-`Ebx`
-
-The base register.
-
-`Ecx`
-
-The count register.
-
-`Edi`
-
-The destination index register.
-
-`Edx`
-
-The data register.
-
-`Eflags`
-
-The flags register.
-
-`Eip`
-
-The instruction pointer register.
-
-`Es`
-
-The extra segment register.
-
-`Esi`
-
-The source index register.
-
-`Esp`
-
-The stack pointer register.
-
-`Fs`
-
-The general purpose segment register FS.
-
 `Gdtr`
 
 The global descriptor table register.
-
-`Gs`
-
-The general purpose segment register GS.
 
 `Idtr`
 
@@ -171,10 +175,6 @@ The interrupt descriptor table register.
 `Ldtr`
 
 The local descriptor table register.
-
-`Ss`
-
-The stack segment register.
 
 `Tr`
 
@@ -192,11 +192,3 @@ If the <b>RegisterContextType</b> member of a <a href="..\ntddk\ns-ntddk-_whea_x
 ## See Also
 
 <a href="..\ntddk\ns-ntddk-_whea_xpf_context_info.md">WHEA_XPF_CONTEXT_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_X86_REGISTER_STATE structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

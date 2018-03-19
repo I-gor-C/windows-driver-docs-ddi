@@ -67,14 +67,6 @@ typedef struct _WDI_FRAME_METADATA {
 ## Members
 
 
-`dPad`
-
-Padding.
-
-`FrameID`
-
-Filled in by the Microsoft component.
-
 `Linkage`
 
 Reserved for use by the Microsoft component.
@@ -82,6 +74,18 @@ Reserved for use by the Microsoft component.
 `pNBL`
 
 Set by the LE on RX path and the UE on TX path when the metadata is associated with an NBL.
+
+`FrameID`
+
+Filled in by the Microsoft component.
+
+`wPad`
+
+Padding.
+
+`dPad`
+
+Padding.
 
 `u`
 
@@ -94,10 +98,6 @@ TX metadata.
 #### rxMetaData
 
 RX metadata.
-
-`wPad`
-
-Padding.
 
 
 ## Requirements
@@ -125,11 +125,3 @@ Padding.
 
 
 <a href="..\dot11wdi\ns-dot11wdi-_wdi_tx_metadata.md">WDI_TX_METADATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_FRAME_METADATA structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

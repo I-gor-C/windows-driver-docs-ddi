@@ -68,7 +68,7 @@ typedef struct _RILSUPSERVICEDATA {
 
 
 
-`dwDataSize`
+`dwParams`
 
 
 
@@ -76,7 +76,7 @@ typedef struct _RILSUPSERVICEDATA {
 
 
 
-`dwNetworkCCErrorCause`
+`dwStatus`
 
 
 
@@ -84,15 +84,15 @@ typedef struct _RILSUPSERVICEDATA {
 
 
 
-`dwParams`
-
-
-
-`dwStatus`
+`dwNetworkCCErrorCause`
 
 
 
 `dwVendorErrorCause`
+
+
+
+`dwDataSize`
 
 
 

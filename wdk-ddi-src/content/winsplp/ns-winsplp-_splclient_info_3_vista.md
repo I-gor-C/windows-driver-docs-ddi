@@ -70,29 +70,13 @@ typedef struct _SPLCLIENT_INFO_3_VISTA {
 
 Specifies the size in bytes of this structure.
 
-`dwBuildNum`
-
-Specifies the client build number.
-
 `dwFlags`
 
 Specifies open printer additional flags to the provider.
 
-`dwMajorVersion`
-
-Specifies the major version of the client machine.
-
-`dwMinorVersion`
-
-Specifies the minor version of the client machine.
-
 `dwSize`
 
 Reserved. Used for compatibility with the <a href="https://docs.microsoft.com/en-us/dotnet/core/rid-catalog">SPLCLIENT_INFO_1</a> structure.
-
-`hSplPrinter`
-
-Specifies the server-side handle to be used for direct calls.
 
 `pMachineName`
 
@@ -102,9 +86,25 @@ Specifies the client machine name.
 
 Specifies the client user name.
 
+`dwBuildNum`
+
+Specifies the client build number.
+
+`dwMajorVersion`
+
+Specifies the major version of the client machine.
+
+`dwMinorVersion`
+
+Specifies the minor version of the client machine.
+
 `wProcessorArchitecture`
 
 Specifies the client machine architecture.
+
+`hSplPrinter`
+
+Specifies the server-side handle to be used for direct calls.
 
 
 ## Requirements

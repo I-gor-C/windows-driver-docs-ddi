@@ -61,11 +61,6 @@ typedef enum __MIDL___MIDL_itf_filterpipeline_0000_0000_0004 {
 <table>
             
                 <tr>
-                    <td>Xps_Restricted_Font_Editable</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>Xps_Restricted_Font_Installable</td>
                     <td></td>
                 </tr>
@@ -77,6 +72,11 @@ typedef enum __MIDL___MIDL_itf_filterpipeline_0000_0000_0004 {
             
                 <tr>
                     <td>Xps_Restricted_Font_PreviewPrint</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>Xps_Restricted_Font_Editable</td>
                     <td></td>
                 </tr>
 </table>

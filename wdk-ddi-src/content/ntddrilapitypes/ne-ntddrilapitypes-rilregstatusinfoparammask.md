@@ -66,21 +66,6 @@ typedef enum _RILREGSTATUSINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_REGSI_ACCESSTECHNOLOGY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_REGSI_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_REGSI_CURRENTOPERATOR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_REGSI_EXECUTOR</td>
                     <td></td>
                 </tr>
@@ -91,17 +76,12 @@ typedef enum _RILREGSTATUSINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_REGSI_NETWORKCODE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_REGSI_REGREJECTREASON</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_REGSI_REGSTATUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_REGSI_ACCESSTECHNOLOGY</td>
                     <td></td>
                 </tr>
             
@@ -111,7 +91,27 @@ typedef enum _RILREGSTATUSINFOPARAMMASK {
                 </tr>
             
                 <tr>
+                    <td>RIL_PARAM_REGSI_REGREJECTREASON</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_REGSI_CURRENTOPERATOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PARAM_REGSI_VOICEDOMAIN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_REGSI_NETWORKCODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_REGSI_ALL</td>
                     <td></td>
                 </tr>
 </table>

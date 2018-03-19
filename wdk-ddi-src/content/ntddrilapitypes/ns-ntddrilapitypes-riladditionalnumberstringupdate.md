@@ -64,7 +64,7 @@ typedef struct _RILADDITIONALNUMBERSTRINGUPDATE {
 
 
 
-`dwNumId`
+`hUiccApp`
 
 
 
@@ -72,7 +72,7 @@ typedef struct _RILADDITIONALNUMBERSTRINGUPDATE {
 
 
 
-`hUiccApp`
+`dwNumId`
 
 
 

@@ -60,6 +60,11 @@ typedef enum _IDDCX_GAMMARAMP_TYPE {
 <table>
             
                 <tr>
+                    <td>IDDCX_GAMMARAMP_TYPE_UNINITIALIZED</td>
+                    <td>Indicates that an <b>IDDCX_GAMMARAMP_TYPE</b> variable has not yet been assigned a meaningful value.</td>
+                </tr>
+            
+                <tr>
                     <td>IDDCX_GAMMARAMP_TYPE_DEFAULT</td>
                     <td>The gamma ramp is the default ramp</td>
                 </tr>
@@ -67,11 +72,6 @@ typedef enum _IDDCX_GAMMARAMP_TYPE {
                 <tr>
                     <td>IDDCX_GAMMARAMP_TYPE_RGB256x3x16</td>
                     <td>Indicates that the gamma lookup table contains three arrays, one each for the red, green, and blue color channels. Each array has 256 16-bit values.</td>
-                </tr>
-            
-                <tr>
-                    <td>IDDCX_GAMMARAMP_TYPE_UNINITIALIZED</td>
-                    <td>Indicates that an <b>IDDCX_GAMMARAMP_TYPE</b> variable has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>

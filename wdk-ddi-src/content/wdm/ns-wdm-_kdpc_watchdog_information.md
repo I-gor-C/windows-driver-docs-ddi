@@ -61,21 +61,21 @@ typedef struct _KDPC_WATCHDOG_INFORMATION {
 ## Members
 
 
-`DpcTimeCount`
-
-Time remaining for the current deferred procedure call, if DPC time-out has been enabled.
-
 `DpcTimeLimit`
 
 Time limit for a single, current deferred procedure call. If DPC time-out has been disabled, this value is set to 0.
 
-`DpcWatchdogCount`
+`DpcTimeCount`
 
-Time value remaining for the current sequence of deferred procedure calls, if enabled.
+Time remaining for the current deferred procedure call, if DPC time-out has been enabled.
 
 `DpcWatchdogLimit`
 
 Total time limit permitted for a sequence of deferred procedure calls. If DPC watchdog has been disabled, this value is set to zero.
+
+`DpcWatchdogCount`
+
+Time value remaining for the current sequence of deferred procedure calls, if enabled.
 
 `Reserved`
 
@@ -93,11 +93,3 @@ Time figures stored in each member are dimensionless.
 ## See Also
 
 <a href="..\wdm\nf-wdm-kequerydpcwatchdoginformation.md">KeQueryDpcWatchdogInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KDPC_WATCHDOG_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -60,9 +60,9 @@ typedef struct _REQUEST_REMOTE_WAKE_NOTIFICATION {
 ## Members
 
 
-`Interface`
+`Version`
 
-Specifies the device-defined index identifier of the interface with which the function is associated.
+The version of this structure. Set to 0.
 
 `Size`
 
@@ -72,9 +72,9 @@ The size of the <b>REQUEST_REMOTE_WAKE_NOTIFICATION</b> structure.
 
 A function handle that is associated with the function that sends the resume signal. The handle was obtained in a previous <a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_register_composite_device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a> request.
 
-`Version`
+`Interface`
 
-The version of this structure. Set to 0.
+Specifies the device-defined index identifier of the interface with which the function is associated.
 
 
 ## Requirements
@@ -94,11 +94,3 @@ The version of this structure. Set to 0.
 
 
 <a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_register_composite_device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20REQUEST_REMOTE_WAKE_NOTIFICATION structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

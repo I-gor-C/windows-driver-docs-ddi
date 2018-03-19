@@ -59,21 +59,21 @@ typedef struct _DISK_COPY_DATA_PARAMETERS {
 ## Members
 
 
-`CopyLength`
+`SourceOffset`
 
-Contains the number of bytes to copy. This number must be sector-aligned.
+Contains the byte offset of the source for the copy. This number must be sector-aligned.
 
 `DestinationOffset`
 
 Contains the byte offset of the destination of the copy. This number must be sector-aligned.
 
+`CopyLength`
+
+Contains the number of bytes to copy. This number must be sector-aligned.
+
 `Reserved`
 
 Must be zero.
-
-`SourceOffset`
-
-Contains the byte offset of the source for the copy. This number must be sector-aligned.
 
 ## Remarks
 The source and destination areas must not overlap.
@@ -86,11 +86,3 @@ The source and destination areas must not overlap.
 ## See Also
 
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_copy_data.md">IOCTL_DISK_COPY_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DISK_COPY_DATA_PARAMETERS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -60,17 +60,17 @@ typedef enum _D3DKMDT_GTFCOMPLIANCE {
 <table>
             
                 <tr>
+                    <td>D3DKMDT_GTF_UNINITIALIZED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>D3DKMDT_GTF_COMPLIANT</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>D3DKMDT_GTF_NOTCOMPLIANT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_GTF_UNINITIALIZED</td>
                     <td></td>
                 </tr>
 </table>

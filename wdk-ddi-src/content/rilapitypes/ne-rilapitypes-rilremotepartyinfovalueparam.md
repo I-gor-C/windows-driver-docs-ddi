@@ -65,12 +65,17 @@ typedef enum _RILREMOTEPARTYINFOVALUEPARAM {
 <table>
             
                 <tr>
+                    <td>RIL_PARAM_RPI_EXECUTOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PARAM_RPI_ADDRESS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_RPI_ALL</td>
+                    <td>RIL_PARAM_RPI_SUBADDRESS</td>
                     <td></td>
                 </tr>
             
@@ -80,12 +85,7 @@ typedef enum _RILREMOTEPARTYINFOVALUEPARAM {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_RPI_EXECUTOR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_RPI_ID</td>
+                    <td>RIL_PARAM_RPI_NUM_PRES_IND</td>
                     <td></td>
                 </tr>
             
@@ -95,12 +95,12 @@ typedef enum _RILREMOTEPARTYINFOVALUEPARAM {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_RPI_NUM_PRES_IND</td>
+                    <td>RIL_PARAM_RPI_ID</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_RPI_SUBADDRESS</td>
+                    <td>RIL_PARAM_RPI_ALL</td>
                     <td></td>
                 </tr>
 </table>

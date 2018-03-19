@@ -63,11 +63,11 @@ typedef struct _STORAGE_ZONE_GROUP {
 
 N/A
 
-`ZoneSize`
+`ZoneType`
 
 N/A
 
-`ZoneType`
+`ZoneSize`
 
 N/A
 

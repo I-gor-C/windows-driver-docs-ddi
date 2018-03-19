@@ -121,21 +121,21 @@ The current pointer has the same hotspot as the previous pointer.
 </tr>
 </table>
 
-`HWPtrBitmapEnd`
+`MaxWidth`
 
-Specifies the last offset, in CPU-addressable units, in the memory bitmap that is used to store the hardware pointer bitmap. A value of –1 is not valid.
-
-`HWPtrBitmapStart`
-
-Specifies the first offset, in CPU-addressable units, in the memory bitmap that is used to store the hardware pointer bitmap. A value of –1 is not valid.
+Specifies the maximum width of the pointer, in pixels.
 
 `MaxHeight`
 
 Specifies the maximum height of the pointer, in pixels.
 
-`MaxWidth`
+`HWPtrBitmapStart`
 
-Specifies the maximum width of the pointer, in pixels.
+Specifies the first offset, in CPU-addressable units, in the memory bitmap that is used to store the hardware pointer bitmap. A value of –1 is not valid.
+
+`HWPtrBitmapEnd`
+
+Specifies the last offset, in CPU-addressable units, in the memory bitmap that is used to store the hardware pointer bitmap. A value of –1 is not valid.
 
 
 ## Requirements

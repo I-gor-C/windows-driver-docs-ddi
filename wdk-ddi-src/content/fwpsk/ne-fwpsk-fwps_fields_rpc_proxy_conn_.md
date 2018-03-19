@@ -66,30 +66,8 @@ typedef enum FWPS_FIELDS_RPC_PROXY_CONN_ {
 <table>
             
                 <tr>
-                    <td>FWPS_FIELD_RPC_PROXY_CONN_CLIENT_CERT_KEY_LENGTH</td>
-                    <td>The secure socket layer (SSL) key length in the client certificate.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_PROXY_CONN_CLIENT_CERT_OID</td>
-                    <td>The object identifier (OID) in the client certificate.</td>
-                </tr>
-            
-                <tr>
                     <td>FWPS_FIELD_RPC_PROXY_CONN_CLIENT_TOKEN</td>
                     <td>The identification of the client when using RpcProxy.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_PROXY_CONN_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_PROXY_CONN_PROXY_AUTH_TYPE</td>
-                    <td>The RPC proxy authentication service type. For more information about authentication service
-     types, see Authentication-Service Constants in the RPC section of the Windows SDK.</td>
                 </tr>
             
                 <tr>
@@ -100,6 +78,28 @@ typedef enum FWPS_FIELDS_RPC_PROXY_CONN_ {
                 <tr>
                     <td>FWPS_FIELD_RPC_PROXY_CONN_SERVER_PORT</td>
                     <td>The port on the RPC server when using RpcProxy.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_PROXY_CONN_PROXY_AUTH_TYPE</td>
+                    <td>The RPC proxy authentication service type. For more information about authentication service
+     types, see Authentication-Service Constants in the RPC section of the Windows SDK.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_PROXY_CONN_CLIENT_CERT_KEY_LENGTH</td>
+                    <td>The secure socket layer (SSL) key length in the client certificate.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_PROXY_CONN_CLIENT_CERT_OID</td>
+                    <td>The object identifier (OID) in the client certificate.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_PROXY_CONN_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 

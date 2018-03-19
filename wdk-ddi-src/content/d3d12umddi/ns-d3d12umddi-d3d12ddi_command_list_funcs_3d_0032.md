@@ -112,73 +112,65 @@ typedef struct _D3D12DDI_COMMAND_LIST_FUNCS_3D_0032 {
 ## Members
 
 
-`pfnAtomicCopyBufferRegion`
-
-Atomic copy the buffer region.
-
-`pfnBeginQuery`
-
-Begin query.
-
-`pfnBlt`
-
-Blt.
-
-`pfnClearDepthStencilView`
-
-Clear the depth stencil view.
-
-`pfnClearRenderTargetView`
-
-Clear the render target view.
-
-`pfnClearRootArguments`
-
-Clear root arguments.
-
-`pfnClearUnorderedAccessViewFloat`
-
-Clear the unordered access view of FLOAT values.
-
-`pfnClearUnorderedAccessViewUint`
-
-Clear the unordered access view of UINT values.
-
 `pfnCloseCommandList`
 
 Close the command list.
 
-`pfnCopyBufferRegion`
+`pfnResetCommandList`
 
-Copy buffer region.
-
-`pfnCopyTextureRegion`
-
-Copy texture region.
-
-`pfnCopyTiles`
-
-Copy tiles.
-
-`pfnDiscardResource`
-
-Discard resource.
-
-`pfnDispatch`
-
-Dispatch.
-
-`pfnDrawIndexedInstanced`
-
-Draw indexed instanced.
+Reset the command list.
 
 `pfnDrawInstanced`
 
 Draw instanced.
 
-`pfnEndQuery`
+`pfnDrawIndexedInstanced`
 
-End query.
+Draw indexed instanced.
+
+`pfnDispatch`
+
+Dispatch.
+
+`pfnClearUnorderedAccessViewUint`
+
+Clear the unordered access view of UINT values.
+
+`pfnClearUnorderedAccessViewFloat`
+
+Clear the unordered access view of FLOAT values.
+
+`pfnClearRenderTargetView`
+
+Clear the render target view.
+
+`pfnClearDepthStencilView`
+
+Clear the depth stencil view.
+
+`pfnDiscardResource`
+
+Discard resource.
+
+`pfnCopyTextureRegion`
+
+Copy texture region.
+
+`pfnResourceCopy`
+
+Resource copy.
+
+`pfnCopyTiles`
+
+Copy tiles.
+
+`pfnCopyBufferRegion`
+
+Copy buffer region.
+
+`pfnResourceResolveSubresource`
+
+Resource resolve subresource.
 
 `pfnExecuteBundle`
 
@@ -188,153 +180,161 @@ Execute bundle.
 
 Execute indirect.
 
-`pfnIASetIndexBuffer`
+`pfnResourceBarrier`
 
-Set index buffer.
+Resource barrier.
 
-`pfnIaSetTopology`
+`pfnBlt`
 
-Set topology.
-
-`pfnIASetVertexBuffers`
-
-Set vertex buffers.
-
-`pfnOmSetBlendFactor`
-
-Set blend factor.
-
-`pfnOMSetDepthBounds`
-
-Set depth bounds.
-
-`pfnOMSetRenderTargets`
-
-Set render targets.
-
-`pfnOmSetStencilRef`
-
-Set stencil reference.
+Blt.
 
 `pfnPresent`
 
 Present.
 
-`pfnResetCommandList`
+`pfnBeginQuery`
 
-Reset the command list.
+Begin query.
+
+`pfnEndQuery`
+
+End query.
 
 `pfnResolveQueryData`
 
 Resolve query data.
 
-`pfnResourceBarrier`
+`pfnSetPredication`
 
-Resource barrier.
+Set predication.
 
-`pfnResourceCopy`
+`pfnIaSetTopology`
 
-Resource copy.
-
-`pfnResourceResolveSubresource`
-
-Resource resolve subresource.
-
-`pfnResourceResolveSubresourceRegion`
-
-Resource resolve subresource region.
-
-`pfnRsSetScissorRects`
-
-Set scissor rectangles.
+Set topology.
 
 `pfnRsSetViewports`
 
 Set view ports.
 
-`pfnSetComputeRoot32BitConstant`
+`pfnRsSetScissorRects`
 
-Set compute root 32-bit constant.
+Set scissor rectangles.
 
-`pfnSetComputeRoot32BitConstants`
+`pfnOmSetBlendFactor`
 
-Set compute root 32-bit constants.
+Set blend factor.
 
-`pfnSetComputeRootConstantBufferView`
+`pfnOmSetStencilRef`
 
-Set compute root constant buffer view.
-
-`pfnSetComputeRootDescriptorTable`
-
-Set compute root descriptor table.
-
-`pfnSetComputeRootShaderResourceView`
-
-Set compute root shader resource view.
-
-`pfnSetComputeRootSignature`
-
-Set compute root signature.
-
-`pfnSetComputeRootUnorderedAccessView`
-
-Set compute root unordered access view.
-
-`pfnSetDescriptorHeaps`
-
-Set descriptor heaps.
-
-`pfnSetGraphicsRoot32BitConstant`
-
-Set graphics root 32-bit constant.
-
-`pfnSetGraphicsRoot32BitConstants`
-
-Set graphics root 32-bit constants.
-
-`pfnSetGraphicsRootConstantBufferView`
-
-Set graphics root constant buffer view.
-
-`pfnSetGraphicsRootDescriptorTable`
-
-Set graphic root descriptor table.
-
-`pfnSetGraphicsRootShaderResourceView`
-
-Set graphics root shader resource view.
-
-`pfnSetGraphicsRootSignature`
-
-Set graphics root signature.
-
-`pfnSetGraphicsRootUnorderedAccessView`
-
-Set graphics root unordered access view.
-
-`pfnSetMarker`
-
-Set marker.
+Set stencil reference.
 
 `pfnSetPipelineState`
 
 Set pipeline state.
 
-`pfnSetPredication`
+`pfnSetDescriptorHeaps`
 
-Set predication.
+Set descriptor heaps.
 
-`pfnSetProtectedResourceSession`
+`pfnSetComputeRootSignature`
 
-Set protected resource session.
+Set compute root signature.
+
+`pfnSetGraphicsRootSignature`
+
+Set graphics root signature.
+
+`pfnSetComputeRootDescriptorTable`
+
+Set compute root descriptor table.
+
+`pfnSetGraphicsRootDescriptorTable`
+
+Set graphic root descriptor table.
+
+`pfnSetComputeRoot32BitConstant`
+
+Set compute root 32-bit constant.
+
+`pfnSetGraphicsRoot32BitConstant`
+
+Set graphics root 32-bit constant.
+
+`pfnSetComputeRoot32BitConstants`
+
+Set compute root 32-bit constants.
+
+`pfnSetGraphicsRoot32BitConstants`
+
+Set graphics root 32-bit constants.
+
+`pfnSetComputeRootConstantBufferView`
+
+Set compute root constant buffer view.
+
+`pfnSetGraphicsRootConstantBufferView`
+
+Set graphics root constant buffer view.
+
+`pfnSetComputeRootShaderResourceView`
+
+Set compute root shader resource view.
+
+`pfnSetGraphicsRootShaderResourceView`
+
+Set graphics root shader resource view.
+
+`pfnSetComputeRootUnorderedAccessView`
+
+Set compute root unordered access view.
+
+`pfnSetGraphicsRootUnorderedAccessView`
+
+Set graphics root unordered access view.
+
+`pfnIASetIndexBuffer`
+
+Set index buffer.
+
+`pfnIASetVertexBuffers`
+
+Set vertex buffers.
+
+`pfnSOSetTargets`
+
+Set targets.
+
+`pfnOMSetRenderTargets`
+
+Set render targets.
+
+`pfnSetMarker`
+
+Set marker.
+
+`pfnClearRootArguments`
+
+Clear root arguments.
+
+`pfnAtomicCopyBufferRegion`
+
+Atomic copy the buffer region.
+
+`pfnOMSetDepthBounds`
+
+Set depth bounds.
 
 `pfnSetSamplePositions`
 
 Set sample positions.
 
-`pfnSOSetTargets`
+`pfnResourceResolveSubresourceRegion`
 
-Set targets.
+Resource resolve subresource region.
+
+`pfnSetProtectedResourceSession`
+
+Set protected resource session.
 
 `pfnWriteBufferImmediate`
 

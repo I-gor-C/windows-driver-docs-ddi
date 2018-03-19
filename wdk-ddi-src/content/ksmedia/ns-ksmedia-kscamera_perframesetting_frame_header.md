@@ -59,6 +59,10 @@ typedef struct {
 ## Members
 
 
+`Size`
+
+The size of this header, all the item headers, value payloads, custom items, and custom data for this frame.
+
 `Id`
 
 The frame ID in the range of 0 and KSCAMERA_PERFRAMESETTING_HEADER.FrameCount - 1.
@@ -70,10 +74,6 @@ The number of item settings for this frame. The value 0 indicates using global s
 `Reserved`
 
 Reserved for future use.
-
-`Size`
-
-The size of this header, all the item headers, value payloads, custom items, and custom data for this frame.
 
 
 ## Requirements

@@ -70,18 +70,6 @@ typedef struct _D3DKMT_CREATEALLOCATIONFLAGS {
 ## Members
 
 
-`CreateCached`
-
-This member is reserved and should be set to zero. Setting this member is equivalent to setting the eighth bit of a 32-bit value (0x00000200).
-
-Supported starting with Windows 8.
-
-`CreateProtected`
-
-This member is reserved and should be set to zero. Setting this member is equivalent to setting the fourth bit of a 32-bit value (0x00000008).
-
-Supported starting with Windows 7.
-
 `CreateResource`
 
 A UINT value that specifies whether to create a device-specific resource.
@@ -100,31 +88,31 @@ For more information on using <b>CreateShared</b>, see the Remarks section.
 
 Setting this member is equivalent to setting the second bit of a 32-bit value (0x00000002).
 
-`CreateWriteCombined`
+`NonSecure`
 
-This member is reserved and should be set to zero. Setting this member is equivalent to setting the seventh bit of a 32-bit value (0x00000100).
+A UINT value that specifies whether to create an allocation that can be opened by any process. If <b>NonSecure</b> is set, secure and non-secure processes can open the allocation.
 
-Supported starting with Windows 8.
+Setting this member is equivalent to setting the third bit of a 32-bit value (0x00000004).
 
-`CrossAdapter`
+`CreateProtected`
 
+This member is reserved and should be set to zero. Setting this member is equivalent to setting the fourth bit of a 32-bit value (0x00000008).
 
+Supported starting with Windows 7.
 
-`ExistingSection`
+`RestrictSharedAccess`
 
+A UINT value that specifies whether to create a resource shared across all devices but with some restrictions.
 
+Setting this member is equivalent to setting the fifth bit of a 32-bit value (0x00000010).
+
+Supported starting with Windows 7.
 
 `ExistingSysMem`
 
 This member is reserved and should be set to zero. Setting this member is equivalent to setting the sixth bit of a 32-bit value (0x00000020).
 
 Supported starting with Windows 7.
-
-`NonSecure`
-
-A UINT value that specifies whether to create an allocation that can be opened by any process. If <b>NonSecure</b> is set, secure and non-secure processes can open the allocation.
-
-Setting this member is equivalent to setting the third bit of a 32-bit value (0x00000004).
 
 `NtSecuritySharing`
 
@@ -140,14 +128,6 @@ Setting this member is equivalent to setting the seventh bit of a 32-bit value (
 
 Supported starting with Windows 8.
 
-`OpenCrossAdapter`
-
-
-
-`PartialSharedCreation`
-
-
-
 `ReadOnly`
 
 A UINT value that specifies whether the allocation can only be read from.
@@ -156,17 +136,17 @@ Setting this member is equivalent to setting the eighth bit of a 32-bit value (0
 
 Supported starting with Windows 8.
 
-`RestrictSharedAccess`
+`CreateWriteCombined`
 
-A UINT value that specifies whether to create a resource shared across all devices but with some restrictions.
+This member is reserved and should be set to zero. Setting this member is equivalent to setting the seventh bit of a 32-bit value (0x00000100).
 
-Setting this member is equivalent to setting the fifth bit of a 32-bit value (0x00000010).
+Supported starting with Windows 8.
 
-Supported starting with Windows 7.
+`CreateCached`
 
-`StandardAllocation`
+This member is reserved and should be set to zero. Setting this member is equivalent to setting the eighth bit of a 32-bit value (0x00000200).
 
-
+Supported starting with Windows 8.
 
 `SwapChainBackBuffer`
 
@@ -174,11 +154,31 @@ This member is reserved and should be set to zero. Setting this member is equiva
 
 Supported starting with Windows 8.
 
-`WriteWatch`
+`CrossAdapter`
+
+
+
+`OpenCrossAdapter`
+
+
+
+`PartialSharedCreation`
 
 
 
 `Zeroed`
+
+
+
+`WriteWatch`
+
+
+
+`StandardAllocation`
+
+
+
+`ExistingSection`
 
 
 
@@ -206,11 +206,3 @@ Drivers should follow these guidelines on <b>D3DKMT_CREATEALLOCATIONFLAGS</b> sh
 
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreateallocation.md">D3DKMTCreateAllocation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_CREATEALLOCATIONFLAGS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

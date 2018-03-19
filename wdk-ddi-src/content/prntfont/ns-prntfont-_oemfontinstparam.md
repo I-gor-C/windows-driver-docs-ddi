@@ -66,21 +66,21 @@ typedef struct _OEMFONTINSTPARAM {
 
 Size, in bytes, of the OEMFONTINSTPARAM structure.
 
-`dwFlags`
+`hPrinter`
 
-Unidrv-supplied flags. The only defined flag is FG_CANCHANGE which, if set, indicates the user interface should allow the user to change the installed fonts. Otherwise the user interface should be displayed in read-only mode.
-
-`hHeap`
-
-Unidrv-supplied handle to a heap from which space can be allocated by calling the <b>HeapAlloc</b> function (described in the Microsoft Windows SDK documentation).
+Unidrv-supplied printer handle.
 
 `hModule`
 
 Unidrv-supplied handle to the user interface plug-in.
 
-`hPrinter`
+`hHeap`
 
-Unidrv-supplied printer handle.
+Unidrv-supplied handle to a heap from which space can be allocated by calling the <b>HeapAlloc</b> function (described in the Microsoft Windows SDK documentation).
+
+`dwFlags`
+
+Unidrv-supplied flags. The only defined flag is FG_CANCHANGE which, if set, indicates the user interface should allow the user to change the installed fonts. Otherwise the user interface should be displayed in read-only mode.
 
 `pFontInstallerName`
 

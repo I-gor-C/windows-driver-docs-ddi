@@ -60,14 +60,6 @@ typedef struct D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0020 {
 ## Members
 
 
-`CompressedBitstream`
-
-The compressed bitstream.  All source video slices should be placed contiguously, one after another, in this buffer.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_decode_compressed_bitstream_0020.md">D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM</a> structure.
-
-`DecryptionParameters`
-
-Decryption parameters.  When decryption is not used, this structure is zero initialized.
-
 `FrameArguments`
 
 The arguments to decode each frame.
@@ -79,6 +71,14 @@ The arguments to decode each frame.
 `ReferenceFrames`
 
 The reference frames needed for decoding this frame.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_decode_reference_frames_0020.md">D3D12DDI_VIDEO_DECODE_REFERENCE_FRAMES</a> structure.
+
+`CompressedBitstream`
+
+The compressed bitstream.  All source video slices should be placed contiguously, one after another, in this buffer.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_decode_compressed_bitstream_0020.md">D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM</a> structure.
+
+`DecryptionParameters`
+
+Decryption parameters.  When decryption is not used, this structure is zero initialized.
 
 
 ## Requirements
@@ -93,11 +93,3 @@ The reference frames needed for decoding this frame.  For more information, see 
 
 
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_decode_compressed_bitstream_0020.md">D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0020 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

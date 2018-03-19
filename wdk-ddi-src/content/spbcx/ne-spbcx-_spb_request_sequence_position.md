@@ -64,12 +64,15 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>SpbRequestSequencePositionContinue</td>
-                    <td>An I/O request in the middle of a sequence. This request is a read or write request that is neither the first nor the last transfer in the sequence.
+                    <td>SpbRequestSequencePositionInvalid</td>
+                    <td>For internal use only.</td>
+                </tr>
+            
+                <tr>
+                    <td>SpbRequestSequencePositionSingle</td>
+                    <td>A single-transfer I/O request. This request is either a read or write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>) request that is not part of a sequence, or it is an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> I/O control request for a sequence that consists of a single transfer.
 
-In some cases, the SPB framework extension (SpbCx) cannot identify the last transfer and labels the last transfer as <b>SpbRequestSequencePositionContinue</b> instead of <b>SpbRequestSequencePositionLast</b>. For more information, see the following Remarks section.
-
-The controller should already have the target selected before it starts this transfer, and the target should remain selected after the transfer finishes.</td>
+The controller should select the target before performing the transfer, and release the target after the transfer finishes.</td>
                 </tr>
             
                 <tr>
@@ -80,8 +83,12 @@ The controller should already have the target selected before it starts this tra
                 </tr>
             
                 <tr>
-                    <td>SpbRequestSequencePositionInvalid</td>
-                    <td>For internal use only.</td>
+                    <td>SpbRequestSequencePositionContinue</td>
+                    <td>An I/O request in the middle of a sequence. This request is a read or write request that is neither the first nor the last transfer in the sequence.
+
+In some cases, the SPB framework extension (SpbCx) cannot identify the last transfer and labels the last transfer as <b>SpbRequestSequencePositionContinue</b> instead of <b>SpbRequestSequencePositionLast</b>. For more information, see the following Remarks section.
+
+The controller should already have the target selected before it starts this transfer, and the target should remain selected after the transfer finishes.</td>
                 </tr>
             
                 <tr>
@@ -96,13 +103,6 @@ The controller should already have the target selected before it starts this tra
                 <tr>
                     <td>SpbRequestSequencePositionMax</td>
                     <td>For internal use only.</td>
-                </tr>
-            
-                <tr>
-                    <td>SpbRequestSequencePositionSingle</td>
-                    <td>A single-transfer I/O request. This request is either a read or write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>) request that is not part of a sequence, or it is an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> I/O control request for a sequence that consists of a single transfer.
-
-The controller should select the target before performing the transfer, and release the target after the transfer finishes.</td>
                 </tr>
 </table>
 
@@ -165,11 +165,3 @@ For position values of <b>SpbRequestSequencePositionContinue</b> and <b>SpbReque
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_REQUEST_SEQUENCE_POSITION enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

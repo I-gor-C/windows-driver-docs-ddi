@@ -61,11 +61,6 @@ typedef enum _D3DKMDT_MONITOR_DESCRIPTOR_TYPE {
 <table>
             
                 <tr>
-                    <td>D3DKMDT_MDT_OTHER</td>
-                    <td>Indicates that the descriptor has a type other than those indicated by the previous values of this enumeration.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DKMDT_MDT_UNINITIALIZED</td>
                     <td>Indicates that a variable of type D3DKMDT_MONITOR_DESCRIPTOR_TYPE has not yet been assigned a meaningful value.</td>
                 </tr>
@@ -78,6 +73,11 @@ typedef enum _D3DKMDT_MONITOR_DESCRIPTOR_TYPE {
                 <tr>
                     <td>D3DKMDT_MDT_VESA_EDID_V1_BLOCKMAP</td>
                     <td>Indicates that the descriptor is an EDID block map.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MDT_OTHER</td>
+                    <td>Indicates that the descriptor has a type other than those indicated by the previous values of this enumeration.</td>
                 </tr>
 </table>
 

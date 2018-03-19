@@ -67,49 +67,49 @@ typedef struct _KEY_FULL_INFORMATION {
 ## Members
 
 
-`Class`
-
-An array of wide characters that contains the name of the class of the key. This character string is <u>not</u> null-terminated. Only the first element in this array is included in the <b>KEY_FULL_INFORMATION</b> structure definition. The storage for the remaining elements in the array immediately follows this element.
-
-`ClassLength`
-
-The size, in bytes, of the key class name string in the <b>Class</b> array.
-
-`ClassOffset`
-
-The byte offset from the start of this structure to the <b>Class</b> member.
-
 `LastWriteTime`
 
 The last time this key or any of its values changed. This time value is expressed in absolute system time format. Absolute system time is the number of 100-nanosecond intervals since the start of the year 1601 in the Gregorian calendar.
-
-`MaxClassLen`
-
-The maximum size, in bytes, of a class name.
-
-`MaxNameLen`
-
-The maximum size, in bytes, of any name for a subkey.
-
-`MaxValueDataLen`
-
-The maximum size, in bytes, of a value entry data field.
-
-`MaxValueNameLen`
-
-The maximum size, in bytes, of a value entry name.
-
-`SubKeys`
-
-The number of subkeys for this key.
 
 `TitleIndex`
 
 Device and intermediate drivers should ignore this member.
 
+`ClassOffset`
+
+The byte offset from the start of this structure to the <b>Class</b> member.
+
+`ClassLength`
+
+The size, in bytes, of the key class name string in the <b>Class</b> array.
+
+`SubKeys`
+
+The number of subkeys for this key.
+
+`MaxNameLen`
+
+The maximum size, in bytes, of any name for a subkey.
+
+`MaxClassLen`
+
+The maximum size, in bytes, of a class name.
+
 `Values`
 
 The number of value entries for this key.
+
+`MaxValueNameLen`
+
+The maximum size, in bytes, of a value entry name.
+
+`MaxValueDataLen`
+
+The maximum size, in bytes, of a value entry data field.
+
+`Class`
+
+An array of wide characters that contains the name of the class of the key. This character string is <u>not</u> null-terminated. Only the first element in this array is included in the <b>KEY_FULL_INFORMATION</b> structure definition. The storage for the remaining elements in the array immediately follows this element.
 
 ## Remarks
 The <a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a> and <a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a> routines use the <b>KEY_FULL_INFORMATION</b> structure to contain the full information for a registry key. When the <i>KeyInformationClass</i> parameter of either routine is <b>KeyFullInformation</b>, the <i>KeyInformation</i> buffer is treated as a <b>KEY_FULL_INFORMATION</b> structure.  For more information about the <b>KeyFullInformation</b> enumeration value, see <a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>.
@@ -150,11 +150,3 @@ The <a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a> and <a href="..
 
 
 <a href="..\ntddk\ns-ntddk-_key_name_information.md">KEY_NAME_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KEY_FULL_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -67,13 +67,13 @@ Enable.
 
 Buffer.
 
-`Offset`
-
-Offset.
-
 `Size`
 
 Size.
+
+`Offset`
+
+Offset.
 
 
 ## Requirements

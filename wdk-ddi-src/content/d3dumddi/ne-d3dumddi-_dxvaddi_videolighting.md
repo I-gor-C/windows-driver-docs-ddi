@@ -63,23 +63,8 @@ typedef enum _DXVADDI_VIDEOLIGHTING {
 <table>
             
                 <tr>
-                    <td>DXVADDI_VideoLighting_bright</td>
-                    <td>A bright light for viewing video (for example, outside lighting conditions).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_VideoLighting_dark</td>
-                    <td>Near-darkness for viewing video (for example, movie-theatre lighting).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_VideoLighting_dim</td>
-                    <td>A dim light for viewing video (for example, low-level lighting in a living room while watching television).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_VideoLighting_office</td>
-                    <td>A medium brightness light for viewing video (for example, lighting conditions in home offices).</td>
+                    <td>DXVADDI_VideoLightingMask</td>
+                    <td>The video lighting mask. The first 4 (0x0F) bits of a DWORD can be used to specify video lighting.</td>
                 </tr>
             
                 <tr>
@@ -88,8 +73,23 @@ typedef enum _DXVADDI_VIDEOLIGHTING {
                 </tr>
             
                 <tr>
-                    <td>DXVADDI_VideoLightingMask</td>
-                    <td>The video lighting mask. The first 4 (0x0F) bits of a DWORD can be used to specify video lighting.</td>
+                    <td>DXVADDI_VideoLighting_bright</td>
+                    <td>A bright light for viewing video (for example, outside lighting conditions).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_VideoLighting_office</td>
+                    <td>A medium brightness light for viewing video (for example, lighting conditions in home offices).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_VideoLighting_dim</td>
+                    <td>A dim light for viewing video (for example, low-level lighting in a living room while watching television).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_VideoLighting_dark</td>
+                    <td>Near-darkness for viewing video (for example, movie-theatre lighting).</td>
                 </tr>
 </table>
 
@@ -108,11 +108,3 @@ The video lighting values can be used to alter the gamma to generate a comparabl
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_VIDEOLIGHTING enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -69,30 +69,25 @@ typedef struct _SENSOR_CONTROLLER_CONFIG {
 ## Members
 
 
+`Size`
+
+The allocated size of this structure (in bytes).
+
 `DriverIsPowerPolicyOwner`
 
 Indicates whether or not driver owns the power policy. This value must be either WdfFalse, WdfUseDefault, or WdfTrue. For partners to take advantage of pep-based power management, they must set this flag to WdfFalse or WdfUseDefault and remove any _PSx method in their ACPI tables.
 
-`EvtSensorCancelHistoryRetrieval`
+`EvtSensorStart`
 
+This callback function starts the sensor based on the default properties specified by the driver, or properties set by the class extension.
 
+`EvtSensorStop`
 
-`EvtSensorClearHistory`
+This callback function stops the sensor.
 
+`EvtSensorGetSupportedDataFields`
 
-
-`EvtSensorDeviceIoControl`
-
-This callback function handles IOCTLs outside of the class extension.<div class="alert"><b>Note</b>  If the driver needs to queue the IRP, it must copy the IRP to an IoQueue that the driver owns. This will prevent all IRPs for the driver to be stalled until completion.</div>
-<div> </div>
-
-`EvtSensorDisableWake`
-
-
-
-`EvtSensorEnableWake`
-
-
+This callback function returns a list of data fields supported by the specified sensor.
 
 `EvtSensorGetDataFieldProperties`
 
@@ -102,35 +97,36 @@ This callback function returns the properties of a given data field associated w
 
 This callback function returns the data interval for a specified sensor.
 
-`EvtSensorGetDataThresholds`
-
-This callback function returns the thresholds that are associated with a sensor.
-
-`EvtSensorGetProperties`
-
-This callback function returns the properties for a given sensor.
-
-`EvtSensorGetSupportedDataFields`
-
-This callback function returns a list of data fields supported by the specified sensor.
-
-`EvtSensorSetBatchLatency`
-
-This callback function sets the batch latency for a specified sensor.
-
 `EvtSensorSetDataInterval`
 
 This callback function sets the data interval for a specified sensor.
+
+`EvtSensorGetDataThresholds`
+
+This callback function returns the thresholds that are associated with a sensor.
 
 `EvtSensorSetDataThresholds`
 
 This callback function stops the sensor.
 
-`EvtSensorStart`
+`EvtSensorGetProperties`
 
-This callback function starts the sensor based on the default properties specified by the driver, or properties set by the class extension.
+This callback function returns the properties for a given sensor.
+
+`EvtSensorDeviceIoControl`
+
+This callback function handles IOCTLs outside of the class extension.<div class="alert"><b>Note</b>  If the driver needs to queue the IRP, it must copy the IRP to an IoQueue that the driver owns. This will prevent all IRPs for the driver to be stalled until completion.</div>
+<div> </div>
 
 `EvtSensorStartHistory`
+
+
+
+`EvtSensorStopHistory`
+
+
+
+`EvtSensorClearHistory`
 
 
 
@@ -138,15 +134,15 @@ This callback function starts the sensor based on the default properties specifi
 
 
 
+`EvtSensorCancelHistoryRetrieval`
+
+
+
+`EvtSensorSetBatchLatency`
+
+This callback function sets the batch latency for a specified sensor.
+
 `EvtSensorStartStateChangeNotification`
-
-
-
-`EvtSensorStop`
-
-This callback function stops the sensor.
-
-`EvtSensorStopHistory`
 
 
 
@@ -154,9 +150,13 @@ This callback function stops the sensor.
 
 
 
-`Size`
+`EvtSensorEnableWake`
 
-The allocated size of this structure (in bytes).
+
+
+`EvtSensorDisableWake`
+
+
 
 ## Remarks
 This structure is given to the class extension using the <a href="..\sensorscx\nf-sensorscx-sensorscxdeviceinitialize.md">SensorsCxDeviceInitialize</a> function. If any of the following function pointers are not set, the driver will fail to load:

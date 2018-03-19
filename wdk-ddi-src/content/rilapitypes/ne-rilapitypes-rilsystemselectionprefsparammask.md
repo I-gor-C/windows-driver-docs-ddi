@@ -65,22 +65,12 @@ typedef enum _RILSYSTEMSELECTIONPREFSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_SSP_ACQUISITIONORDER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_SSP_ACQUISITIONORDERSIZE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_SSP_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_SSP_EXECUTOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SSP_SYSTEMTYPES</td>
                     <td></td>
                 </tr>
             
@@ -100,7 +90,17 @@ typedef enum _RILSYSTEMSELECTIONPREFSPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_SSP_SYSTEMTYPES</td>
+                    <td>RIL_PARAM_SSP_ACQUISITIONORDERSIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SSP_ACQUISITIONORDER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SSP_ALL</td>
                     <td></td>
                 </tr>
 </table>

@@ -69,20 +69,13 @@ typedef enum _USB_CONNECTION_STATUS {
 <table>
             
                 <tr>
-                    <td>DeviceCausedOvercurrent</td>
-                    <td>Indicates that an attempt was made to connect a device to the port, but the attempt failed because of an overcurrent condition.</td>
+                    <td>NoDeviceConnected</td>
+                    <td>Indicates that there is no device connected to the port.</td>
                 </tr>
             
                 <tr>
                     <td>DeviceConnected</td>
                     <td>Indicates that a device was successfully connected to the port.</td>
-                </tr>
-            
-                <tr>
-                    <td>DeviceEnumerating</td>
-                    <td>Indicates that a device connected to the port is currently being enumerated.  
-
-<b>Note</b>  This constant is supported in Windows Vista and later operating systems.</td>
                 </tr>
             
                 <tr>
@@ -96,6 +89,21 @@ typedef enum _USB_CONNECTION_STATUS {
                 </tr>
             
                 <tr>
+                    <td>DeviceCausedOvercurrent</td>
+                    <td>Indicates that an attempt was made to connect a device to the port, but the attempt failed because of an overcurrent condition.</td>
+                </tr>
+            
+                <tr>
+                    <td>DeviceNotEnoughPower</td>
+                    <td>Indicates that an attempt was made to connect a device to the port, but there was not enough power to drive the device, and the connection failed.</td>
+                </tr>
+            
+                <tr>
+                    <td>DeviceNotEnoughBandwidth</td>
+                    <td>Indicates that an attempt was made to connect a device to the port, but there was not enough bandwidth available for the device to function properly, and the connection failed.</td>
+                </tr>
+            
+                <tr>
                     <td>DeviceHubNestedTooDeeply</td>
                     <td>Indicates that an attempt was made to connect a device to the port, but the nesting of USB hubs was too deep, so the connection failed.</td>
                 </tr>
@@ -106,13 +114,10 @@ typedef enum _USB_CONNECTION_STATUS {
                 </tr>
             
                 <tr>
-                    <td>DeviceNotEnoughBandwidth</td>
-                    <td>Indicates that an attempt was made to connect a device to the port, but there was not enough bandwidth available for the device to function properly, and the connection failed.</td>
-                </tr>
-            
-                <tr>
-                    <td>DeviceNotEnoughPower</td>
-                    <td>Indicates that an attempt was made to connect a device to the port, but there was not enough power to drive the device, and the connection failed.</td>
+                    <td>DeviceEnumerating</td>
+                    <td>Indicates that a device connected to the port is currently being enumerated.  
+
+<b>Note</b>  This constant is supported in Windows Vista and later operating systems.</td>
                 </tr>
             
                 <tr>
@@ -120,11 +125,6 @@ typedef enum _USB_CONNECTION_STATUS {
                     <td>Indicates that device connected to the port is currently being reset.  
 
 <b>Note</b>  This constant is supported in Windows Vista and later operating systems.</td>
-                </tr>
-            
-                <tr>
-                    <td>NoDeviceConnected</td>
-                    <td>Indicates that there is no device connected to the port.</td>
                 </tr>
 </table>
 
@@ -148,11 +148,3 @@ The USB bus driver reports connection status in a <a href="..\usbioctl\ns-usbioc
 
 
 <a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information_ex.md">USB_NODE_CONNECTION_INFORMATION_EX</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_CONNECTION_STATUS enumeration%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

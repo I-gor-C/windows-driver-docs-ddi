@@ -60,6 +60,11 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE {
 <table>
             
                 <tr>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FLIP_NONE</td>
+                    <td>The overplay plane data is not presented in stereo mode.</td>
+                </tr>
+            
+                <tr>
                     <td>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME0</td>
                     <td>Reserved for system use. Do not use in your driver.</td>
                 </tr>
@@ -67,11 +72,6 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE {
                 <tr>
                     <td>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FLIP_FRAME1</td>
                     <td>Reserved for system use. Do not use in your driver.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FLIP_NONE</td>
-                    <td>The overplay plane data is not presented in stereo mode.</td>
                 </tr>
 </table>
 

@@ -65,9 +65,13 @@ typedef struct _WHEA_GENERIC_ERROR {
 
 A <a href="..\ntddk\ns-ntddk-_whea_generic_error_blockstatus.md">WHEA_GENERIC_ERROR_BLOCKSTATUS</a> union that indicates what kind of error data is reported in the generic error status block.
 
-`Data`
+`RawDataOffset`
 
-A variable-sized buffer that contains the error data from the generic error source. This buffer contains the generic error status block followed by the raw error data.
+The offset, in bytes, from the beginning of the WHEA_GENERIC_ERROR structure to the beginning of the raw error data.
+
+`RawDataLength`
+
+The length, in bytes, of the raw error data that is located at the offset specified in the <b>RawDataOffset</b> member.
 
 `DataLength`
 
@@ -77,13 +81,9 @@ The size, in bytes, of the error data contained in the <b>Data</b> member.
 
 A <a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition.
 
-`RawDataLength`
+`Data`
 
-The length, in bytes, of the raw error data that is located at the offset specified in the <b>RawDataOffset</b> member.
-
-`RawDataOffset`
-
-The offset, in bytes, from the beginning of the WHEA_GENERIC_ERROR structure to the beginning of the raw error data.
+A variable-sized buffer that contains the error data from the generic error source. This buffer contains the generic error status block followed by the raw error data.
 
 ## Remarks
 A generic error source is described by a <a href="..\ntddk\ns-ntddk-_whea_generic_error_descriptor.md">WHEA_GENERIC_ERROR_DESCRIPTOR</a> structure. The <b>ErrStatusAddress</b> member of the WHEA_GENERIC_ERROR_DESCRIPTOR structure points to a register that contains the physical address of a WHEA_GENERIC_ERROR structure in firmware reserved memory. This WHEA_GENERIC_ERROR structure contains the error status data for the generic error source.
@@ -111,11 +111,3 @@ A WHEA_GENERIC_ERROR structure is included in the <b>RawData</b> member of a <a 
 
 
 <a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_GENERIC_ERROR structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

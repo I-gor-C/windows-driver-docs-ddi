@@ -66,13 +66,17 @@ typedef struct _WWAN_LTE_SERVING_CELL_INFO {
 ## Members
 
 
+`ProviderIdOffset`
+
+The offset in bytes, calculated from the beginning of this structure, to a numeric (0-9) string called <i>ProviderId</i> that represents the network provider identity. This string is a concatenation of a three-digit Mobile Country Code (MCC) and a two or three-digit Mobile Network Code (MNC). This member can be NULL when no <i>ProviderId</i> information is returned.
+
+`ProviderIdSize`
+
+The size, in bytes, used for <i>ProviderId</i>.
+
 `CellId`
 
 The Cell ID (0-268435455). Use 0xFFFFFFFF when this information is not available.
-
-`Data`
-
-
 
 `EARFCN`
 
@@ -82,13 +86,9 @@ The Radio Frequency Channel Number of the serving cell (0-65535). Use 0xFFFFFFFF
 
 The Physical Cell ID (0-503). Use 0xFFFFFFFF when this information is not available.
 
-`ProviderIdOffset`
+`TAC`
 
-The offset in bytes, calculated from the beginning of this structure, to a numeric (0-9) string called <i>ProviderId</i> that represents the network provider identity. This string is a concatenation of a three-digit Mobile Country Code (MCC) and a two or three-digit Mobile Network Code (MNC). This member can be NULL when no <i>ProviderId</i> information is returned.
-
-`ProviderIdSize`
-
-The size, in bytes, used for <i>ProviderId</i>.
+The Tracking Area Code (0-65535). Use 0xFFFFFFFF when this information is not available.
 
 `RSRP`
 
@@ -98,13 +98,13 @@ The Average Reference Signal Received Power. The range is -140 to -44, in units 
 
 The Average Reference Signal Received Quality. The range is -20 to -3, in units of 1dBm. Use 0xFFFFFFFF when this information is not available.
 
-`TAC`
-
-The Tracking Area Code (0-65535). Use 0xFFFFFFFF when this information is not available.
-
 `TimingAdvance`
 
 The Timing Advance (0-255). Use 0xFFFFFFFF when this information is not available.
+
+`Data`
+
+
 
 
 ## Requirements
@@ -128,11 +128,3 @@ The Timing Advance (0-255). Use 0xFFFFFFFF when this information is not availabl
 
 
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_LTE_SERVING_CELL_INFO structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

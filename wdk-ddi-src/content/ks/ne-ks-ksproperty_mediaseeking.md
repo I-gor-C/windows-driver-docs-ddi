@@ -67,22 +67,7 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSPROPERTY_MEDIASEEKING_AVAILABLE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>KSPROPERTY_MEDIASEEKING_CAPABILITIES</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_MEDIASEEKING_DURATION</td>
                     <td></td>
                 </tr>
             
@@ -92,17 +77,12 @@ typedef enum  {
                 </tr>
             
                 <tr>
+                    <td>KSPROPERTY_MEDIASEEKING_TIMEFORMAT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>KSPROPERTY_MEDIASEEKING_POSITION</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_MEDIASEEKING_POSITIONS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_MEDIASEEKING_PREROLL</td>
                     <td></td>
                 </tr>
             
@@ -112,7 +92,27 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_MEDIASEEKING_TIMEFORMAT</td>
+                    <td>KSPROPERTY_MEDIASEEKING_POSITIONS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_MEDIASEEKING_DURATION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_MEDIASEEKING_AVAILABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_MEDIASEEKING_PREROLL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT</td>
                     <td></td>
                 </tr>
 </table>

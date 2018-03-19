@@ -66,15 +66,15 @@ typedef struct _FILE_MEMORY_PARTITION_INFORMATION {
 ## Members
 
 
+`OwnerPartitionHandle`
+
+Handle to the specified partition.
+
 `Flags`
 
 #### AllFlags
 
 Bitwise of all flags.
-
-`OwnerPartitionHandle`
-
-Handle to the specified partition.
 
 
 ## Requirements

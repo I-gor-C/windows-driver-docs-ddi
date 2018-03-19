@@ -60,15 +60,7 @@ typedef struct _RILOPENUICCLOGICALCHANNELINFO {
 ## Members
 
 
-`bSelectResponse`
-
-
-
 `cbSize`
-
-
-
-`dwChannelId`
 
 
 
@@ -76,7 +68,15 @@ typedef struct _RILOPENUICCLOGICALCHANNELINFO {
 
 
 
+`dwChannelId`
+
+
+
 `dwSelectResponseLength`
+
+
+
+`bSelectResponse`
 
 
 

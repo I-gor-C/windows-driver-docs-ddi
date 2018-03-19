@@ -65,28 +65,23 @@ typedef enum _STORAGE_PROTOCOL_TYPE {
 <table>
             
                 <tr>
-                    <td>ProtocolTypeAta</td>
-                    <td>ATA protocol type.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProtocolTypeMaxReserved</td>
-                    <td>Reserved.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProtocolTypeNvme</td>
-                    <td>NVMe protocol type.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProtocolTypeProprietary</td>
-                    <td>Vendor-specific protocol type.</td>
+                    <td>ProtocolTypeUnknown</td>
+                    <td>Unknown protocol type.</td>
                 </tr>
             
                 <tr>
                     <td>ProtocolTypeScsi</td>
                     <td>SCSI protocol type.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProtocolTypeAta</td>
+                    <td>ATA protocol type.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProtocolTypeNvme</td>
+                    <td>NVMe protocol type.</td>
                 </tr>
             
                 <tr>
@@ -100,8 +95,13 @@ typedef enum _STORAGE_PROTOCOL_TYPE {
                 </tr>
             
                 <tr>
-                    <td>ProtocolTypeUnknown</td>
-                    <td>Unknown protocol type.</td>
+                    <td>ProtocolTypeProprietary</td>
+                    <td>Vendor-specific protocol type.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProtocolTypeMaxReserved</td>
+                    <td>Reserved.</td>
                 </tr>
 </table>
 

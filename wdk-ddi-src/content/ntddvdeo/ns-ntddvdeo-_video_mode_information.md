@@ -75,6 +75,70 @@ typedef struct _VIDEO_MODE_INFORMATION {
 ## Members
 
 
+`Length`
+
+Specifies the length, in bytes, of this structure. A miniport driver can use this value to determine the version of this structure.
+
+`ModeIndex`
+
+Specifies the index of the particular mode to be used in a call to the miniport driver.
+
+`VisScreenWidth`
+
+Specifies the number of visible pixels on one horizontal scan line.
+
+`VisScreenHeight`
+
+Specifies the number of visible lines (or scan lines) on the screen.
+
+`ScreenStride`
+
+Specifies the number of bytes between the start of one scan line and the next.
+
+`NumberOfPlanes`
+
+Specifies the number of separate planes combined by the device.
+
+`BitsPerPlane`
+
+Specifies the number of bits per pixel per plane.
+
+`Frequency`
+
+Specifies the screen refresh rate, in Hertz.
+
+`XMillimeter`
+
+Specifies the width, in millimeters, of the active region on the output device.
+
+`YMillimeter`
+
+Specifies the height, in millimeters, of the active region on the output device.
+
+`NumberRedBits`
+
+Specifies the number of bits in the red DAC.
+
+`NumberGreenBits`
+
+Specifies the number of bits in the green DAC.
+
+`NumberBlueBits`
+
+Specifies the number of bits in the blue DAC.
+
+`RedMask`
+
+Is the red color mask for a device with direct color modes. For example, to indicate that bits 0 through 4 are to be used for red, use the value 0x001F.
+
+`GreenMask`
+
+Is the green color mask for a device with direct color modes. For example, to indicate that bits 5 through 9 are to be used for green, use the value 0x03E0.
+
+`BlueMask`
+
+Is the blue color mask for a device with direct color modes. For example, to indicate that bits 10 through 14 are to be used for blue, use the value 0x7C00.
+
 `AttributeFlags`
 
 Is a set of flags indicating certain behavior for the device. The flags and their meanings are shown in the following table.
@@ -249,81 +313,17 @@ VIDEO_MODE_NO_64_BIT_ACCESS
 </tr>
 </table>
 
-`BitsPerPlane`
+`VideoMemoryBitmapWidth`
 
-Specifies the number of bits per pixel per plane.
-
-`BlueMask`
-
-Is the blue color mask for a device with direct color modes. For example, to indicate that bits 10 through 14 are to be used for blue, use the value 0x7C00.
-
-`DriverSpecificAttributeFlags`
-
-Is a set of flags indicating certain behavior for the device. These private flags are defined in the miniport driver, and are for the use by the miniport and display drivers only.
-
-`Frequency`
-
-Specifies the screen refresh rate, in Hertz.
-
-`GreenMask`
-
-Is the green color mask for a device with direct color modes. For example, to indicate that bits 5 through 9 are to be used for green, use the value 0x03E0.
-
-`Length`
-
-Specifies the length, in bytes, of this structure. A miniport driver can use this value to determine the version of this structure.
-
-`ModeIndex`
-
-Specifies the index of the particular mode to be used in a call to the miniport driver.
-
-`NumberBlueBits`
-
-Specifies the number of bits in the blue DAC.
-
-`NumberGreenBits`
-
-Specifies the number of bits in the green DAC.
-
-`NumberOfPlanes`
-
-Specifies the number of separate planes combined by the device.
-
-`NumberRedBits`
-
-Specifies the number of bits in the red DAC.
-
-`RedMask`
-
-Is the red color mask for a device with direct color modes. For example, to indicate that bits 0 through 4 are to be used for red, use the value 0x001F.
-
-`ScreenStride`
-
-Specifies the number of bytes between the start of one scan line and the next.
+Specifies the width, in pixels, of the video memory bitmap.
 
 `VideoMemoryBitmapHeight`
 
 Specifies the height, in pixels, of the video memory bitmap.
 
-`VideoMemoryBitmapWidth`
+`DriverSpecificAttributeFlags`
 
-Specifies the width, in pixels, of the video memory bitmap.
-
-`VisScreenHeight`
-
-Specifies the number of visible lines (or scan lines) on the screen.
-
-`VisScreenWidth`
-
-Specifies the number of visible pixels on one horizontal scan line.
-
-`XMillimeter`
-
-Specifies the width, in millimeters, of the active region on the output device.
-
-`YMillimeter`
-
-Specifies the height, in millimeters, of the active region on the output device.
+Is a set of flags indicating certain behavior for the device. These private flags are defined in the miniport driver, and are for the use by the miniport and display drivers only.
 
 ## Remarks
 The video miniport driver returns an array of VIDEO_MODE_INFORMATION structures in response to an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_avail_modes.md">IOCTL_VIDEO_QUERY_AVAIL_MODES</a> request, with each structure containing information about one mode of the adapter. The miniport driver returns one VIDEO_MODE_INFORMATION structure that contains information about the adapter's current mode in response to an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_current_mode.md">IOCTL_VIDEO_QUERY_CURRENT_MODE</a> request.
@@ -357,11 +357,3 @@ The video miniport driver returns an array of VIDEO_MODE_INFORMATION structures 
 
 
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_current_mode.md">IOCTL_VIDEO_QUERY_CURRENT_MODE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_MODE_INFORMATION structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

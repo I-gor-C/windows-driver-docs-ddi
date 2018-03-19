@@ -65,26 +65,6 @@ typedef struct _WWAN_GSM_SERVING_CELL_INFO {
 ## Members
 
 
-`ARFCN`
-
-The Absolute Radio Frequency Channel Number of the serving cell (0-1023). Use 0xFFFFFFFF when this information is not available.
-
-`BaseStationId`
-
-The Base Station ID - the base station color code and the network identity code. Use 0xFFFFFFFF when this information is not available.
-
-`CellId`
-
-The Cell ID (0-65535). Use 0xFFFFFFFF when this information is not available.
-
-`Data`
-
-
-
-`LocationAreaCode`
-
-The Location Area Code (0-65535). Use 0xFFFFFFFF when this information is not available.
-
 `ProviderIdOffset`
 
 The offset in bytes, calculated from the beginning of this structure, to a numeric (0-9) string called <i>ProviderId</i> that represents the network provider identity. This string is a concatenation of a three-digit Mobile Country Code (MCC) and a two or three-digit Mobile Network Code (MNC). This member can be NULL when no <i>ProviderId</i> information is returned.
@@ -92,6 +72,26 @@ The offset in bytes, calculated from the beginning of this structure, to a numer
 `ProviderIdSize`
 
 The size, in bytes, used for <i>ProviderId</i>.
+
+`LocationAreaCode`
+
+The Location Area Code (0-65535). Use 0xFFFFFFFF when this information is not available.
+
+`CellId`
+
+The Cell ID (0-65535). Use 0xFFFFFFFF when this information is not available.
+
+`TimingAdvance`
+
+The Timing Advance (0-255) in bit periods, where a bit period is 48/13µs. Use 0xFFFFFFFF when this information is not available.
+
+`ARFCN`
+
+The Absolute Radio Frequency Channel Number of the serving cell (0-1023). Use 0xFFFFFFFF when this information is not available.
+
+`BaseStationId`
+
+The Base Station ID - the base station color code and the network identity code. Use 0xFFFFFFFF when this information is not available.
 
 `RxLevel`
 
@@ -102,9 +102,9 @@ The received signal strength (RSS) of the serving cell (0-63), where
 <pre class="syntax" xml:space="preserve"><code>X = integer [RSS + 110], if -110 &lt;= RSS &lt;= -47</code></pre>
 Use 0xFFFFFFFF when this information is not available.
 
-`TimingAdvance`
+`Data`
 
-The Timing Advance (0-255) in bit periods, where a bit period is 48/13µs. Use 0xFFFFFFFF when this information is not available.
+
 
 
 ## Requirements
@@ -128,11 +128,3 @@ The Timing Advance (0-255) in bit periods, where a bit period is 48/13µs. Use 0
 
 
 <a href="..\wwan\ns-wwan-_wwan_base_stations_info.md">WWAN_BASE_STATIONS_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_GSM_SERVING_CELL_INFO structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

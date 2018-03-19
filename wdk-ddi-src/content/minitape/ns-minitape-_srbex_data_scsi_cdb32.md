@@ -65,17 +65,25 @@ typedef struct _SRBEX_DATA_SCSI_CDB32 {
 ## Members
 
 
-`Cdb`
+`Type`
 
-The 32-byte CDB buffer.
-
-`CdbLength`
-
-The length of the CDB data, in bytes, of the <b>Cdb</b> array.
+Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeScsiCdb32</b>.
 
 `Length`
 
 Length of the data in this structure starting with the <b>ScsiStatus</b> member. Set to SRBEX_DATA_SCSI_CDB32_LENGTH.
+
+`ScsiStatus`
+
+The SCSI status code returned for the submitted SRB.
+
+`SenseInfoBufferLength`
+
+The length of the sense information returned in the buffer pointed to by <b>SenseInfoBuffer</b>.
+
+`CdbLength`
+
+The length of the CDB data, in bytes, of the <b>Cdb</b> array.
 
 `Reserved`
 
@@ -85,21 +93,13 @@ This member is reserved. Set to 0.
 
 This member is reserved. Set to 0.
 
-`ScsiStatus`
-
-The SCSI status code returned for the submitted SRB.
-
 `SenseInfoBuffer`
 
 A pointer to a buffer containing any returned sense information.
 
-`SenseInfoBufferLength`
+`Cdb`
 
-The length of the sense information returned in the buffer pointed to by <b>SenseInfoBuffer</b>.
-
-`Type`
-
-Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeScsiCdb32</b>.
+The 32-byte CDB buffer.
 
 ## Remarks
 This structure is used to submit an extended SRB data for a CDB of 32 bytes or less.
@@ -117,11 +117,3 @@ This structure is used to submit an extended SRB data for a CDB of 32 bytes or l
 
 
 <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SRBEX_DATA_SCSI_CDB32 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

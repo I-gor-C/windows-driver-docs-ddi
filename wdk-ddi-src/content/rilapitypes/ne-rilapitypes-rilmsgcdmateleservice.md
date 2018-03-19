@@ -73,17 +73,7 @@ typedef enum _RILMSGCDMATELESERVICE {
 <table>
             
                 <tr>
-                    <td>RIL_MSGTELESERVICE_BROADCAST</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGTELESERVICE_BROADCAST_OLD</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGTELESERVICE_MESSAGING</td>
+                    <td>RIL_MSGTELESERVICE_PAGING_OLD</td>
                     <td></td>
                 </tr>
             
@@ -93,17 +83,17 @@ typedef enum _RILMSGCDMATELESERVICE {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGTELESERVICE_PAGING</td>
+                    <td>RIL_MSGTELESERVICE_VOICEMAIL_OLD</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGTELESERVICE_PAGING_OLD</td>
+                    <td>RIL_MSGTELESERVICE_WAP_OLD</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGTELESERVICE_SELFREG</td>
+                    <td>RIL_MSGTELESERVICE_BROADCAST_OLD</td>
                     <td></td>
                 </tr>
             
@@ -113,17 +103,27 @@ typedef enum _RILMSGCDMATELESERVICE {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGTELESERVICE_VOICEMAIL_MWI</td>
+                    <td>RIL_MSGTELESERVICE_PAGING</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGTELESERVICE_VOICEMAIL_OLD</td>
+                    <td>RIL_MSGTELESERVICE_MESSAGING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGTELESERVICE_WEMT</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_MSGTELESERVICE_VOICEMAIL_VMN_95</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGTELESERVICE_VOICEMAIL_MWI</td>
                     <td></td>
                 </tr>
             
@@ -143,12 +143,12 @@ typedef enum _RILMSGCDMATELESERVICE {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGTELESERVICE_WAP_OLD</td>
+                    <td>RIL_MSGTELESERVICE_BROADCAST</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGTELESERVICE_WEMT</td>
+                    <td>RIL_MSGTELESERVICE_SELFREG</td>
                     <td></td>
                 </tr>
 </table>

@@ -57,13 +57,13 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_WITH_SOURCE {
 ## Members
 
 
-`PostComposition`
-
-A DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION structure that specifies additional transforms that should be applied after the planes are composed.
-
 `VidPnSourceId`
 
 The zero-based video present network (VidPN) source identification number of the input for which the support levels are queried.
+
+`PostComposition`
+
+A DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION structure that specifies additional transforms that should be applied after the planes are composed.
 
 
 ## Requirements

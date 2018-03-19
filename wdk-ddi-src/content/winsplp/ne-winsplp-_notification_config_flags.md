@@ -62,12 +62,12 @@ typedef enum _NOTIFICATION_CONFIG_FLAGS {
 <table>
             
                 <tr>
-                    <td>NOTIFICATION_CONFIG_ASYNC_CHANNEL</td>
+                    <td>NOTIFICATION_CONFIG_CREATE_EVENT</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>NOTIFICATION_CONFIG_CREATE_EVENT</td>
+                    <td>NOTIFICATION_CONFIG_REGISTER_CALLBACK</td>
                     <td></td>
                 </tr>
             
@@ -77,7 +77,7 @@ typedef enum _NOTIFICATION_CONFIG_FLAGS {
                 </tr>
             
                 <tr>
-                    <td>NOTIFICATION_CONFIG_REGISTER_CALLBACK</td>
+                    <td>NOTIFICATION_CONFIG_ASYNC_CHANNEL</td>
                     <td></td>
                 </tr>
 </table>

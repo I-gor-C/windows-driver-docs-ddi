@@ -69,15 +69,15 @@ typedef struct _RILSUBSCRIBERINFO {
 
 
 
-`dwService`
-
-
-
 `raAddress`
 
 
 
 `wszDescription`
+
+
+
+`dwService`
 
 
 

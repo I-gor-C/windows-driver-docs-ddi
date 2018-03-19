@@ -66,17 +66,6 @@ typedef enum _WDF_FILEOBJECT_CLASS {
 <table>
             
                 <tr>
-                    <td>WdfFileObjectCanBeOptional</td>
-                    <td>The driver typically requires a framework file object, but the driver can also handle special situations in which a framework file object is missing or different. For more information about these situations, see the following Remarks section. 
-
-<b>WdfFileObjectCanBeOptional</b> is a bit flag that your driver can OR with the <b>WdfFileObjectWdfCanUseFsContext</b>, <b>WdfFileObjectWdfCanUseFsContext2</b>, or <b>WdfFileObjectWdfCannotUseFsContexts</b> enumerator value. 
-
-Most framework-based drivers do not use this bit flag.
-
-The <b>WdfFileObjectCanBeOptional</b> value is available in version 1.9 and later versions of KMDF.</td>
-                </tr>
-            
-                <tr>
                     <td>WdfFileObjectInvalid</td>
                     <td>Reserved for internal use.</td>
                 </tr>
@@ -87,11 +76,6 @@ The <b>WdfFileObjectCanBeOptional</b> value is available in version 1.9 and late
                 </tr>
             
                 <tr>
-                    <td>WdfFileObjectWdfCannotUseFsContexts</td>
-                    <td>The driver requires a framework file object. The framework cannot store the object's handle in the <b>FsContext</b> or <b>FsContext2</b> member of the file's WDM FILE_OBJECT structure, because one or more drivers are using these members. Therefore, the framework must store the handle internally.</td>
-                </tr>
-            
-                <tr>
                     <td>WdfFileObjectWdfCanUseFsContext</td>
                     <td>The driver requires a framework file object. The framework can store the object's handle in the <b>FsContext</b> member of the file's Windows Driver Model (WDM) <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure.</td>
                 </tr>
@@ -99,6 +83,22 @@ The <b>WdfFileObjectCanBeOptional</b> value is available in version 1.9 and late
                 <tr>
                     <td>WdfFileObjectWdfCanUseFsContext2</td>
                     <td>The driver requires a framework file object. The framework can store the object's handle in the <b>FsContext2</b> member of the file's WDM FILE_OBJECT structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileObjectWdfCannotUseFsContexts</td>
+                    <td>The driver requires a framework file object. The framework cannot store the object's handle in the <b>FsContext</b> or <b>FsContext2</b> member of the file's WDM FILE_OBJECT structure, because one or more drivers are using these members. Therefore, the framework must store the handle internally.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileObjectCanBeOptional</td>
+                    <td>The driver typically requires a framework file object, but the driver can also handle special situations in which a framework file object is missing or different. For more information about these situations, see the following Remarks section. 
+
+<b>WdfFileObjectCanBeOptional</b> is a bit flag that your driver can OR with the <b>WdfFileObjectWdfCanUseFsContext</b>, <b>WdfFileObjectWdfCanUseFsContext2</b>, or <b>WdfFileObjectWdfCannotUseFsContexts</b> enumerator value. 
+
+Most framework-based drivers do not use this bit flag.
+
+The <b>WdfFileObjectCanBeOptional</b> value is available in version 1.9 and later versions of KMDF.</td>
                 </tr>
 </table>
 
@@ -136,11 +136,3 @@ If the <b>WdfFileObjectCanBeOptional</b> bit flag is set, the framework's verifi
 
 
 <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_FILEOBJECT_CLASS enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

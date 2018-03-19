@@ -61,19 +61,7 @@ typedef struct _STORAGE_CRYPTO_CAPABILITY {
 ## Members
 
 
-`AlgorithmId`
-
-Reserved for system use.
-
-`CryptoCapabilityIndex`
-
-Reserved for system use.
-
-`DataUnitSizeBitmask`
-
-Reserved for system use.
-
-`KeySize`
+`Version`
 
 Reserved for system use.
 
@@ -81,7 +69,19 @@ Reserved for system use.
 
 Reserved for system use.
 
-`Version`
+`CryptoCapabilityIndex`
+
+Reserved for system use.
+
+`AlgorithmId`
+
+Reserved for system use.
+
+`KeySize`
+
+Reserved for system use.
+
+`DataUnitSizeBitmask`
 
 Reserved for system use.
 

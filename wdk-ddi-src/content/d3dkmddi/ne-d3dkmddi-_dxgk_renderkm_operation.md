@@ -64,18 +64,8 @@ typedef enum _DXGK_RENDERKM_OPERATION {
 <table>
             
                 <tr>
-                    <td>DXGK_GDIOP_ALPHABLEND</td>
-                    <td>Indicates an alpha blend.</td>
-                </tr>
-            
-                <tr>
                     <td>DXGK_GDIOP_BITBLT</td>
                     <td>Indicates a bit-block transfer (bitblt).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_GDIOP_CLEARTYPEBLEND</td>
-                    <td>Indicates a ClearType blend.</td>
                 </tr>
             
                 <tr>
@@ -84,8 +74,8 @@ typedef enum _DXGK_RENDERKM_OPERATION {
                 </tr>
             
                 <tr>
-                    <td>DXGK_GDIOP_ESCAPE</td>
-                    <td>Reserved for future use. The driver should skip this command when setting the value of the <b>CommandSize</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_renderkm_command.md">DXGK_RENDERKM_COMMAND</a> structure.</td>
+                    <td>DXGK_GDIOP_ALPHABLEND</td>
+                    <td>Indicates an alpha blend.</td>
                 </tr>
             
                 <tr>
@@ -94,8 +84,18 @@ typedef enum _DXGK_RENDERKM_OPERATION {
                 </tr>
             
                 <tr>
+                    <td>DXGK_GDIOP_ESCAPE</td>
+                    <td>Reserved for future use. The driver should skip this command when setting the value of the <b>CommandSize</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_renderkm_command.md">DXGK_RENDERKM_COMMAND</a> structure.</td>
+                </tr>
+            
+                <tr>
                     <td>DXGK_GDIOP_TRANSPARENTBLT</td>
                     <td>Indicates a blt with transparency.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_GDIOP_CLEARTYPEBLEND</td>
+                    <td>Indicates a ClearType blend.</td>
                 </tr>
 </table>
 
@@ -113,11 +113,3 @@ typedef enum _DXGK_RENDERKM_OPERATION {
 
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_renderkm.md">DxgkDdiRenderKm</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_RENDERKM_OPERATION enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

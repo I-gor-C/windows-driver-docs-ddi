@@ -67,53 +67,53 @@ typedef struct _D3DKMT_SUBMITCOMMAND {
 ## Members
 
 
-`BroadcastContext`
+`Commands`
 
-Specifies the handle of the context to execute the specified commands.
-
-`BroadcastContextCount`
-
-Specifies the number of context these command should be submitted to. This count must be at least 1.
+The GPU virtual address for the commands being submitted to the context for execution. This information is provided to the driver during command submission and is also used for debugging purposes.
 
 `CommandLength`
 
 Specifies the length, in bytes, of the commands being submitted to the GPU.
 
-`Commands`
-
-The GPU virtual address for the commands being submitted to the context for execution. This information is provided to the driver during command submission and is also used for debugging purposes.
-
 `Flags`
 
 An instance of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_submitcommandflags.md">D3DDDICB_SUBMITCOMMANDFLAGS</a> structure.
-
-`HistoryBufferArray`
-
-This member is reserved for future use.
-
-`NumHistoryBuffers`
-
-This member is reserved for future use.
-
-`NumPrimaries`
-
-Specifies the number of primaries and swapchain back buffers being written to by the submitted commands. This is equal to the number of allocations in the <b>WrittenPrimaries</b> array.
-
-`pPrivateDriverData`
-
-Pointer to the driver private data to submitted by the user mode driver.
 
 `PresentHistoryToken`
 
 This member is reserved for future use.
 
+`BroadcastContextCount`
+
+Specifies the number of context these command should be submitted to. This count must be at least 1.
+
+`BroadcastContext`
+
+Specifies the handle of the context to execute the specified commands.
+
+`pPrivateDriverData`
+
+Pointer to the driver private data to submitted by the user mode driver.
+
 `PrivateDriverDataSize`
 
 Size of the private driver data information being passed. This size must be smaller than the size requested by the kernel mode  driver for submission private driver data or the call will fail.
 
+`NumPrimaries`
+
+Specifies the number of primaries and swapchain back buffers being written to by the submitted commands. This is equal to the number of allocations in the <b>WrittenPrimaries</b> array.
+
 `WrittenPrimaries`
 
 Arrays of handle to the primaries and swapchain back buffers being written to by the submitted commands.
+
+`NumHistoryBuffers`
+
+This member is reserved for future use.
+
+`HistoryBufferArray`
+
+This member is reserved for future use.
 
 
 ## Requirements
@@ -125,11 +125,3 @@ Arrays of handle to the primaries and swapchain back buffers being written to by
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_submitcommandflags.md">D3DDDICB_SUBMITCOMMANDFLAGS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_SUBMITCOMMAND structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

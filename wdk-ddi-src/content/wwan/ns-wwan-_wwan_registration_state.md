@@ -64,9 +64,29 @@ typedef struct _WWAN_REGISTRATION_STATE {
 ## Members
 
 
-`CurrentCellularClass`
+`uNwError`
 
-The current cellular class of the registered network. For networks that only support a single cellular class this member should be set to that cellular class. For multi-mode capable networks the miniport driver sends  NDIS_STATUS_WWAN_REGISTER_STATE notifications to the MB service when the network changes its cellular class.
+A network specific error, in the event of a registration failure. For more information about this
+     member, see the following 
+     "Remarks" section.
+
+`RegisterState`
+
+The registration state of the device. For a list of defined values, see 
+     <a href="..\wwan\ne-wwan-_wwan_register_state.md">WWAN_REGISTER_STATE</a>.
+     
+
+The 
+     <b>WwanRegisterStatePartner</b> value indicates the device is roaming on a preferred partner network
+     provider, whereas 
+     <b>WwanRegisterStateRoaming</b> value indicates the device is just roaming. If the partner
+     characterization of the roaming state is not available, the miniport driver should report 
+     <b>WwanRegisterStateRoaming</b>.
+
+`RegisterMode`
+
+The registration mode of the device. For a list of defined values, see 
+     <a href="..\wwan\ne-wwan-_wwan_register_mode.md">WWAN_REGISTER_MODE</a>.
 
 `ProviderId`
 
@@ -113,24 +133,6 @@ This member is ignored when the MB Service sets the preferred provider list.
 Miniport drivers should specify a <b>NULL</b> string for devices that do not have this
      information.
 
-`RegisterMode`
-
-The registration mode of the device. For a list of defined values, see 
-     <a href="..\wwan\ne-wwan-_wwan_register_mode.md">WWAN_REGISTER_MODE</a>.
-
-`RegisterState`
-
-The registration state of the device. For a list of defined values, see 
-     <a href="..\wwan\ne-wwan-_wwan_register_state.md">WWAN_REGISTER_STATE</a>.
-     
-
-The 
-     <b>WwanRegisterStatePartner</b> value indicates the device is roaming on a preferred partner network
-     provider, whereas 
-     <b>WwanRegisterStateRoaming</b> value indicates the device is just roaming. If the partner
-     characterization of the roaming state is not available, the miniport driver should report 
-     <b>WwanRegisterStateRoaming</b>.
-
 `RoamingText`
 
 A NULL-terminated string to inform the user that the device is roaming. This member is limited to
@@ -140,12 +142,6 @@ A NULL-terminated string to inform the user that the device is roaming. This mem
 This text should provide additional information to the user when the registration state is either 
      <b>WwanRegisterStatePartner</b> or 
      <b>WwanRegisterStateRoaming</b>. This member is optional.
-
-`uNwError`
-
-A network specific error, in the event of a registration failure. For more information about this
-     member, see the following 
-     "Remarks" section.
 
 `WwanRegFlags`
 
@@ -187,6 +183,10 @@ Iindicates that the MB device manages its own packet context. The MB Service wil
 </td>
 </tr>
 </table>
+
+`CurrentCellularClass`
+
+The current cellular class of the registered network. For networks that only support a single cellular class this member should be set to that cellular class. For multi-mode capable networks the miniport driver sends  NDIS_STATUS_WWAN_REGISTER_STATE notifications to the MB service when the network changes its cellular class.
 
 ## Remarks
 <i>Query</i> and 
@@ -262,11 +262,3 @@ Miniport drivers connected to a multi-mode network should indicate the cellular 
 
 
 <a href="..\wwan\ne-wwan-_wwan_register_state.md">WWAN_REGISTER_STATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_REGISTRATION_STATE structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

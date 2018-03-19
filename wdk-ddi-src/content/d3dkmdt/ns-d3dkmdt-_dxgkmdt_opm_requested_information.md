@@ -58,6 +58,24 @@ typedef struct _DXGKMDT_OPM_REQUESTED_INFORMATION {
 ## Members
 
 
+`omac`
+
+A <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_omac.md">DXGKMDT_OPM_OMAC</a> structure that contains a One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) for message authenticity. For more information about OMAC, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70417">OMAC-1 algorithm</a>. The OMAC-1 parameters that OPM and COPP use are:
+
+<i>E</i> = AES (Advanced Encryption Standard)
+
+<i>t</i> = 128 bits
+
+<i>K</i> = The 128-bit key that the display miniport driver receives when <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> is called.
+
+<i>n</i> = 128 bits 
+
+For information about AES, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70411">RSA Laboratories</a> website.
+
+`cbRequestedInformationSize`
+
+The size, in bytes, of the valid data that the <b>abRequestedInformation</b> member points to.
+
 `abRequestedInformation`
 
 A 4076-byte array that specifies the information that is retrieved from a protected output object.
@@ -140,24 +158,6 @@ _HDCP_DEVICE_INFORMATION
 </tr>
 </table>
 
-`cbRequestedInformationSize`
-
-The size, in bytes, of the valid data that the <b>abRequestedInformation</b> member points to.
-
-`omac`
-
-A <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_omac.md">DXGKMDT_OPM_OMAC</a> structure that contains a One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) for message authenticity. For more information about OMAC, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70417">OMAC-1 algorithm</a>. The OMAC-1 parameters that OPM and COPP use are:
-
-<i>E</i> = AES (Advanced Encryption Standard)
-
-<i>t</i> = 128 bits
-
-<i>K</i> = The 128-bit key that the display miniport driver receives when <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> is called.
-
-<i>n</i> = 128 bits 
-
-For information about AES, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70411">RSA Laboratories</a> website.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -204,11 +204,3 @@ For information about AES, see the <a href="http://go.microsoft.com/fwlink/p/?li
 
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_OPM_REQUESTED_INFORMATION structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

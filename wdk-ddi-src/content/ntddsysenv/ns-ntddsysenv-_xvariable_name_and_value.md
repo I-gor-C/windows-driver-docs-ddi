@@ -62,29 +62,29 @@ typedef struct _XVARIABLE_NAME_AND_VALUE {
 ## Members
 
 
-`Attributes`
-
-Attributes of the system environment variable.
-
-`Name`
-
-Name of the system environment variable.
-
 `NextEntryOffset`
 
 The location of the next entry in the array of XVARIABLE_NAME structures reprieved by the  <a href="..\ntddsysenv\ni-ntddsysenv-ioctl_sysenv_enum_variables.md">IOCTL_SYSENV_ENUM_VARIABLES</a> request.
-
-`ValueLength`
-
-The length of the value.
 
 `ValueOffset`
 
 The value of the system environment variable.
 
+`ValueLength`
+
+The length of the value.
+
+`Attributes`
+
+Attributes of the system environment variable.
+
 `VendorGuid`
 
 The vendor GUID.
+
+`Name`
+
+Name of the system environment variable.
 
 
 ## Requirements
@@ -99,11 +99,3 @@ The vendor GUID.
 
 
 <a href="..\ntddsysenv\ni-ntddsysenv-ioctl_sysenv_enum_variables.md">IOCTL_SYSENV_ENUM_VARIABLES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20XVARIABLE_NAME_AND_VALUE structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

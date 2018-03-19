@@ -65,16 +65,6 @@ typedef struct _NDIS_FILTER_PARTIAL_CHARACTERISTICS {
 ## Members
 
 
-`CancelSendNetBufferListsHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_cancel_send_net_buffer_lists.md">
-     FilterCancelSendNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
-
-`Flags`
-
-Reserved for NDIS.
-
 `Header`
 
 The 
@@ -84,6 +74,29 @@ The
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_FILTER_PARTIAL_CHARACTERISTICS, the 
      <b>Revision</b> member to NDIS_FILTER_PARTIAL_CHARACTERISTICS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_FILTER_PARTIAL_CHARACTERISTICS_REVISION_1.
+
+`Flags`
+
+Reserved for NDIS.
+
+`SendNetBufferListsHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists.md">
+     FilterSendNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
+
+`SendNetBufferListsCompleteHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists_complete.md">
+     FilterSendNetBufferListsComplete</a> function. To bypass this function, set this member to
+     <b>NULL</b>.
+
+`CancelSendNetBufferListsHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-filter_cancel_send_net_buffer_lists.md">
+     FilterCancelSendNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
 
 `ReceiveNetBufferListsHandler`
 
@@ -96,19 +109,6 @@ The entry point of the caller's
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-filter_return_net_buffer_lists.md">
      FilterReturnNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
-
-`SendNetBufferListsCompleteHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists_complete.md">
-     FilterSendNetBufferListsComplete</a> function. To bypass this function, set this member to
-     <b>NULL</b>.
-
-`SendNetBufferListsHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists.md">
-     FilterSendNetBufferLists</a> function. To bypass this function, set this member to <b>NULL</b>.
 
 ## Remarks
 This structure specifies optional 
@@ -163,11 +163,3 @@ This structure specifies optional
 
 
 <a href="..\ndis\nc-ndis-filter_receive_net_buffer_lists.md">FilterReceiveNetBufferLists</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_PARTIAL_CHARACTERISTICS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

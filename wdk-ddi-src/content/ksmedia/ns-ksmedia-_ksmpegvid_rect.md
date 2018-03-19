@@ -59,19 +59,19 @@ typedef struct _KSMPEGVID_RECT {
 ## Members
 
 
-`EndX`
-
-
-
-`EndY`
-
-
-
 `StartX`
 
 
 
 `StartY`
+
+
+
+`EndX`
+
+
+
+`EndY`
 
 
 

@@ -74,13 +74,13 @@ typedef enum _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY {
                 </tr>
             
                 <tr>
-                    <td>WdfIoForwardProgressReservedPolicyPagingIO</td>
-                    <td>In a low-memory situation, if the <b>Flags</b> member of the I/O request's <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure indicates a paging operation, the framework uses a reserved request object, if one is available. If the I/O request is not a paging operation, the framework completes the I/O request with an error status value.</td>
+                    <td>WdfIoForwardProgressReservedPolicyUseExamine</td>
+                    <td>In a low-memory situation, the framework calls the driver's <a href="..\wdfio\nc-wdfio-evt_wdf_io_wdm_irp_for_forward_progress.md">EvtIoWdmIrpForForwardProgress</a> callback function.</td>
                 </tr>
             
                 <tr>
-                    <td>WdfIoForwardProgressReservedPolicyUseExamine</td>
-                    <td>In a low-memory situation, the framework calls the driver's <a href="..\wdfio\nc-wdfio-evt_wdf_io_wdm_irp_for_forward_progress.md">EvtIoWdmIrpForForwardProgress</a> callback function.</td>
+                    <td>WdfIoForwardProgressReservedPolicyPagingIO</td>
+                    <td>In a low-memory situation, if the <b>Flags</b> member of the I/O request's <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure indicates a paging operation, the framework uses a reserved request object, if one is available. If the I/O request is not a paging operation, the framework completes the I/O request with an error status value.</td>
                 </tr>
 </table>
 

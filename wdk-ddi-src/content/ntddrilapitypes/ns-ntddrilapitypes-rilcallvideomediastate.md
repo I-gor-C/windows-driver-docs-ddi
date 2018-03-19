@@ -59,7 +59,11 @@ typedef struct _RILCALLVIDEOMEDIASTATE {
 ## Members
 
 
-`dwContextID`
+`dwParams`
+
+
+
+`dwPeerCapabilities`
 
 
 
@@ -67,11 +71,7 @@ typedef struct _RILCALLVIDEOMEDIASTATE {
 
 
 
-`dwParams`
-
-
-
-`dwPeerCapabilities`
+`dwContextID`
 
 
 

@@ -76,11 +76,7 @@ typedef struct _RILOSGEOLOCATIONINFO {
 
 
 
-`dwAccuracy`
-
-
-
-`dwAltitude`
+`dwParams`
 
 
 
@@ -88,15 +84,19 @@ typedef struct _RILOSGEOLOCATIONINFO {
 
 
 
-`dwLocationInformationMask`
-
-
-
 `dwLongitude`
 
 
 
-`dwParams`
+`dwAltitude`
+
+
+
+`dwAccuracy`
+
+
+
+`dwLocationInformationMask`
 
 
 
@@ -116,15 +116,11 @@ typedef struct _RILOSGEOLOCATIONINFO {
 
 
 
+`wszState`
+
+
+
 `wszCountry`
-
-
-
-`wszCountryCode`
-
-
-
-`wszFormattedAddress`
 
 
 
@@ -132,11 +128,15 @@ typedef struct _RILOSGEOLOCATIONINFO {
 
 
 
+`wszFormattedAddress`
+
+
+
+`wszCountryCode`
+
+
+
 `wszRegionCode`
-
-
-
-`wszState`
 
 
 

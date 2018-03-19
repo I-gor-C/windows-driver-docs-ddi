@@ -61,8 +61,8 @@ typedef enum _WDI_OPERATION_MODE {
 <table>
             
                 <tr>
-                    <td>WDI_OPERATION_MODE_P2P_CLIENT</td>
-                    <td>Wi-Fi Direct Client.</td>
+                    <td>WDI_OPERATION_MODE_STA</td>
+                    <td>Infrastructure client.</td>
                 </tr>
             
                 <tr>
@@ -71,13 +71,13 @@ typedef enum _WDI_OPERATION_MODE {
                 </tr>
             
                 <tr>
-                    <td>WDI_OPERATION_MODE_P2P_GO</td>
-                    <td>Wi-Fi Direct Group Owner.</td>
+                    <td>WDI_OPERATION_MODE_P2P_CLIENT</td>
+                    <td>Wi-Fi Direct Client.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_OPERATION_MODE_STA</td>
-                    <td>Infrastructure client.</td>
+                    <td>WDI_OPERATION_MODE_P2P_GO</td>
+                    <td>Wi-Fi Direct Group Owner.</td>
                 </tr>
 </table>
 

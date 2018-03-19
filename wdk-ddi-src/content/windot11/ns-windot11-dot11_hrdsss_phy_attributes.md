@@ -61,11 +61,11 @@ typedef struct DOT11_HRDSSS_PHY_ATTRIBUTES {
 ## Members
 
 
-`bChannelAgilityPresent`
+`bShortPreambleOptionImplemented`
 
-A Boolean value that, if set to <b>TRUE</b>, specifies that the PHY supports channel agility. For more
-     information about channel agility, refer to Clause 18 of the IEEE 802.11b-1999 standard and Clause 19 of
-     the IEEE 802.11g-2003 standard.
+A Boolean value that, if set to <b>TRUE</b>, specifies that the PHY supports the option to enable the
+     short Physical Layer Convergence Procedure (PLCP) preamble and header. For more information about the
+     short PLCP preamble and header, refer to Clause 18.2.2.2 of the IEEE 802.11b-1999 standard
 
 `bPBCCOptionImplemented`
 
@@ -73,11 +73,11 @@ A Boolean value that, if set to <b>TRUE</b>, specifies that the PHY supports ena
      convolutional code (PBCC) modulation. For more information about PBCC modulation, refer to Clause
      18.4.6.6 of the IEEE 802.11b-1999 standard.
 
-`bShortPreambleOptionImplemented`
+`bChannelAgilityPresent`
 
-A Boolean value that, if set to <b>TRUE</b>, specifies that the PHY supports the option to enable the
-     short Physical Layer Convergence Procedure (PLCP) preamble and header. For more information about the
-     short PLCP preamble and header, refer to Clause 18.2.2.2 of the IEEE 802.11b-1999 standard
+A Boolean value that, if set to <b>TRUE</b>, specifies that the PHY supports channel agility. For more
+     information about channel agility, refer to Clause 18 of the IEEE 802.11b-1999 standard and Clause 19 of
+     the IEEE 802.11g-2003 standard.
 
 `uHRCCAModeSupported`
 
@@ -140,11 +140,3 @@ The miniport driver defines the attributes of a PHY on the 802.11 station throug
 ## See Also
 
 <a href="..\windot11\ns-windot11-dot11_phy_attributes.md">DOT11_PHY_ATTRIBUTES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_HRDSSS_PHY_ATTRIBUTES structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

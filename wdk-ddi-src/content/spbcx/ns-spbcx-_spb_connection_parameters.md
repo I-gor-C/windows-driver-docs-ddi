@@ -59,17 +59,17 @@ typedef struct SPB_CONNECTION_PARAMETERS {
 ## Members
 
 
-`ConnectionParameters`
+`Size`
 
-A pointer to the connection parameters for this target. This member points to a memory buffer that contains the target-specific parameters that the SPB controller driver needs to communicate with the target. For more information, see the following Remarks section.
+The size, in bytes, of this structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/hh450926">SpbTargetGetConnectionParameters</a> method uses the <b>Size</b> value to determine which version of this structure is being used. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406205">SPB_CONNECTION_PARAMETERS_INIT</a> function to initialize this member. For more information, see the following Remarks section.
 
 `ConnectionTag`
 
 A pointer to the connection tag for this target. The connection tag is an opaque string that contains a connection ID that identifies the connection of the target device to the bus. For more information, see <a href="https://msdn.microsoft.com/234B5858-5930-40AD-BE4C-4A774A809D10">Connection IDs for SPB-Connected Peripheral Devices</a>.
 
-`Size`
+`ConnectionParameters`
 
-The size, in bytes, of this structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/hh450926">SpbTargetGetConnectionParameters</a> method uses the <b>Size</b> value to determine which version of this structure is being used. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406205">SPB_CONNECTION_PARAMETERS_INIT</a> function to initialize this member. For more information, see the following Remarks section.
+A pointer to the connection parameters for this target. This member points to a memory buffer that contains the target-specific parameters that the SPB controller driver needs to communicate with the target. For more information, see the following Remarks section.
 
 ## Remarks
 This structure contains information about the connection of a target device to the bus. When a client (peripheral driver) opens a logical connection to the target device, the SPB controller driver retrieves the connection settings for the device and stores these settings. Later, in response to an I/O request from the client to the device, the SPB controller driver uses the connection settings to configure the controller to access the device over the bus.
@@ -112,11 +112,3 @@ To open a connection on behalf of a client (peripheral driver), the SPB framewor
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj938063">RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_CONNECTION_PARAMETERS structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

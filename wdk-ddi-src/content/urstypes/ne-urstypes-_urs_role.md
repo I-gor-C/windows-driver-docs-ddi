@@ -61,8 +61,8 @@ typedef enum _URS_ROLE {
 <table>
             
                 <tr>
-                    <td>UrsRoleFunction</td>
-                    <td>Indicates the function role of the controller.</td>
+                    <td>UrsRoleNone</td>
+                    <td>Internal use only. Must be 0.</td>
                 </tr>
             
                 <tr>
@@ -71,8 +71,8 @@ typedef enum _URS_ROLE {
                 </tr>
             
                 <tr>
-                    <td>UrsRoleNone</td>
-                    <td>Internal use only. Must be 0.</td>
+                    <td>UrsRoleFunction</td>
+                    <td>Indicates the function role of the controller.</td>
                 </tr>
 </table>
 

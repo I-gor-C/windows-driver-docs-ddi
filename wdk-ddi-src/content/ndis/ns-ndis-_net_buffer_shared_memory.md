@@ -74,13 +74,13 @@ A ULONG value that contains shared memory flags. This member is reserved for fut
 
 An NDIS_HANDLE that contains an NDIS shared memory handle.
 
-`SharedMemoryLength`
-
-A ULONG value for the length, in bytes, of the shared memory segment.
-
 `SharedMemoryOffset`
 
 A ULONG value that contains the offset, in bytes, of the shared memory.
+
+`SharedMemoryLength`
+
+A ULONG value for the length, in bytes, of the shared memory segment.
 
 ## Remarks
 An NDIS 6.20 or later driver uses the NET_BUFFER_SHARED_MEMORY structure to describe a shared memory
@@ -131,11 +131,3 @@ Use the
 
 
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_SHARED_MEMORY structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

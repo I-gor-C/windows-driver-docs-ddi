@@ -58,20 +58,20 @@ typedef struct IDDCX_MONITOR_MODE {
 ## Members
 
 
+`Size`
+
+Total size of the structure.
+
+`Origin`
+
+Where the driver derived this mode from.
+
 `MonitorVideoSignalInfo`
 
 This is the details of the Monitor mode.
 
 <div class="alert"><b>Note</b>  The<a href="https://msdn.microsoft.com/library/windows/hardware/ff554007">DISPLAYCONFIG_VIDEO_SIGNAL_INFO</a><b>AdditionalSignalInfo</b> value vSyncFreqDivider has to have a zero value.</div>
 <div> </div>
-
-`Origin`
-
-Where the driver derived this mode from.
-
-`Size`
-
-Total size of the structure.
 
 
 ## Requirements

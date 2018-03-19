@@ -68,23 +68,18 @@ typedef enum _DXVA_VideoPrimaries {
 <table>
             
                 <tr>
-                    <td>DXVA_VideoPrimaries_BT470_2_SysBG</td>
-                    <td>Specifies BT470-2 SysBG primaries.</td>
+                    <td>DXVA_VideoPrimariesShift</td>
+                    <td>Specifies to shift bits by 22 positions (DXVA_ExtColorData_ShiftBase + 14, or 8 + 14).</td>
                 </tr>
             
                 <tr>
-                    <td>DXVA_VideoPrimaries_BT470_2_SysM</td>
-                    <td>Specifies BT470-2 SysM primaries, which are the original NTSC primaries.</td>
+                    <td>DXVA_VideoPrimariesMask</td>
+                    <td>Specifies the color primaries mask. 5 (0x07C00000) bits of a DWORD can be used to specify color primaries.</td>
                 </tr>
             
                 <tr>
-                    <td>DXVA_VideoPrimaries_BT709</td>
-                    <td>Specifies BT709 primaries (including sRGB, scRGB).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoPrimaries_EBU3213</td>
-                    <td>Specifies EBU3213 primaries.</td>
+                    <td>DXVA_VideoPrimaries_Unknown</td>
+                    <td>Specifies that color primaries are not specified. The default is BT709.</td>
                 </tr>
             
                 <tr>
@@ -93,8 +88,18 @@ typedef enum _DXVA_VideoPrimaries {
                 </tr>
             
                 <tr>
-                    <td>DXVA_VideoPrimaries_SMPTE_C</td>
-                    <td>Specifies SMPTE_C primaries, which are analog '79 NTSC primaries.</td>
+                    <td>DXVA_VideoPrimaries_BT709</td>
+                    <td>Specifies BT709 primaries (including sRGB, scRGB).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoPrimaries_BT470_2_SysM</td>
+                    <td>Specifies BT470-2 SysM primaries, which are the original NTSC primaries.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoPrimaries_BT470_2_SysBG</td>
+                    <td>Specifies BT470-2 SysBG primaries.</td>
                 </tr>
             
                 <tr>
@@ -108,18 +113,13 @@ typedef enum _DXVA_VideoPrimaries {
                 </tr>
             
                 <tr>
-                    <td>DXVA_VideoPrimaries_Unknown</td>
-                    <td>Specifies that color primaries are not specified. The default is BT709.</td>
+                    <td>DXVA_VideoPrimaries_EBU3213</td>
+                    <td>Specifies EBU3213 primaries.</td>
                 </tr>
             
                 <tr>
-                    <td>DXVA_VideoPrimariesMask</td>
-                    <td>Specifies the color primaries mask. 5 (0x07C00000) bits of a DWORD can be used to specify color primaries.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoPrimariesShift</td>
-                    <td>Specifies to shift bits by 22 positions (DXVA_ExtColorData_ShiftBase + 14, or 8 + 14).</td>
+                    <td>DXVA_VideoPrimaries_SMPTE_C</td>
+                    <td>Specifies SMPTE_C primaries, which are analog '79 NTSC primaries.</td>
                 </tr>
 </table>
 
@@ -136,11 +136,3 @@ One of the enumerators of DXVA_VideoPrimaries can be specified in the <b>VideoPr
 ## See Also
 
 <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_VideoPrimaries enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

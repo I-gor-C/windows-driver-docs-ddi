@@ -61,18 +61,6 @@ typedef struct _PEP_QUERY_SOC_SUBSYSTEM_METADATA {
 ## Members
 
 
-`Flags`
-
-This member is reserved and should be set to zero.
-
-`Metadata`
-
-[in/out] An array of pointers to <a href="..\pepfx\ns-pepfx-_pep_soc_subsystem_metadata.md">PEP_SOC_SUBSYSTEM_METADATA</a> structures.  Each entry holds one key/value metadata string-pair.
-
-`MetadataCount`
-
-[in] The number of entries in the <b>Metadata</b> array.  The PEP previously provided this value as <b>PEP_QUERY_SOC_SUBSYSTEM.MetadataCount</b>.
-
 `PlatformIdleStateIndex`
 
 [in] The platform idle state index for  for the SoC subsystem that the OS is querying.
@@ -84,6 +72,18 @@ This member is reserved and should be set to zero.
 `SubsystemName`
 
 [in] The name of the subsystem whose metadata is being queried.
+
+`Flags`
+
+This member is reserved and should be set to zero.
+
+`MetadataCount`
+
+[in] The number of entries in the <b>Metadata</b> array.  The PEP previously provided this value as <b>PEP_QUERY_SOC_SUBSYSTEM.MetadataCount</b>.
+
+`Metadata`
+
+[in/out] An array of pointers to <a href="..\pepfx\ns-pepfx-_pep_soc_subsystem_metadata.md">PEP_SOC_SUBSYSTEM_METADATA</a> structures.  Each entry holds one key/value metadata string-pair.
 
 
 ## Requirements
@@ -99,11 +99,3 @@ This member is reserved and should be set to zero.
 
 
 <a href="..\pepfx\ns-pepfx-_pep_soc_subsystem_metadata.md">PEP_SOC_SUBSYSTEM_METADATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_QUERY_SOC_SUBSYSTEM_METADATA structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

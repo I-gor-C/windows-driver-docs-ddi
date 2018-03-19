@@ -68,11 +68,6 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>Trace_Default</td>
-                    <td>The default tracing level. This level tells the <a href="..\wdtf\nn-wdtf-itracer.md">ITracer</a> interface to look for the actual level in the registry. <b>ITracer</b> will look in the TraceLevel path for the implementation that you called the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539522">ITracing::SetTraceLevel</a> method on. For most implementations, this value is set to <b>Trace2_Medium</b> when you install WDTF.</td>
-                </tr>
-            
-                <tr>
                     <td>Trace0_Off</td>
                     <td>Tracing is off.</td>
                 </tr>
@@ -116,6 +111,11 @@ typedef enum  {
                     <td>Trace8_Custom</td>
                     <td>A custom trace level. Currently, this value is set to <b>Trace0_Off</b>.</td>
                 </tr>
+            
+                <tr>
+                    <td>Trace_Default</td>
+                    <td>The default tracing level. This level tells the <a href="..\wdtf\nn-wdtf-itracer.md">ITracer</a> interface to look for the actual level in the registry. <b>ITracer</b> will look in the TraceLevel path for the implementation that you called the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539522">ITracing::SetTraceLevel</a> method on. For most implementations, this value is set to <b>Trace2_Medium</b> when you install WDTF.</td>
+                </tr>
 </table>
 
 ## Remarks
@@ -138,11 +138,3 @@ Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539522">I
 
 
 <a href="..\wdtf\nn-wdtf-itracing.md">ITracing</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [dtf\dtf]:%20TTraceLevel enumeration%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

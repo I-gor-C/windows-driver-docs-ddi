@@ -64,30 +64,6 @@ typedef struct _MS_SMHBA_SASPHYSTATISTICS {
 ## Members
 
 
-`InvalidDwordCount`
-
-The number of invalid DWORDs.
-
-`LossofDwordSyncCount`
-
-The loss of synchronization count.
-
-`PhyResetProblemCount`
-
-A count of the number of physical link reset problems.
-
-`RunningDisparityErrorCount`
-
-The number of disparity error counts.
-
-`RxFrames`
-
-The number of received SAS frames across all protocols and classes.
-
-`RxWords`
-
-The number of received SAS words across all protocols and classes.
-
 `SecondsSinceLastReset`
 
 The number of seconds since the statistics were last reset.
@@ -99,6 +75,30 @@ The number of transmitted SAS frames across all protocols and classes.
 `TxWords`
 
 The number of transmitted SAS words across all protocols and classes.
+
+`RxFrames`
+
+The number of received SAS frames across all protocols and classes.
+
+`RxWords`
+
+The number of received SAS words across all protocols and classes.
+
+`InvalidDwordCount`
+
+The number of invalid DWORDs.
+
+`RunningDisparityErrorCount`
+
+The number of disparity error counts.
+
+`LossofDwordSyncCount`
+
+The loss of synchronization count.
+
+`PhyResetProblemCount`
+
+A count of the number of physical link reset problems.
 
 
 ## Requirements

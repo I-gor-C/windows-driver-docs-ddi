@@ -58,12 +58,12 @@ typedef enum _LineDisplayHorizontalBitmapAlignment {
 <table>
             
                 <tr>
-                    <td>HorizontalAlignmentCenter</td>
+                    <td>HorizontalAlignmentLeft</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>HorizontalAlignmentLeft</td>
+                    <td>HorizontalAlignmentCenter</td>
                     <td></td>
                 </tr>
             

@@ -71,17 +71,20 @@ typedef struct _BTH_ENUMERATOR_INFO {
 ## Members
 
 
+`EnumeratorType`
+
+Reserved for use by the Bluetooth driver stack. Do not use.
+
 `Action`
 
 Reserved for use by the Bluetooth driver stack. Do not use.
 
-`DeviceString`
+`Port`
 
-The device string for the remote device.
-
-`EnumeratorType`
-
-Reserved for use by the Bluetooth driver stack. Do not use.
+If the enumeration was caused by a connection request, this member contains the device's port
+     number. Otherwise, this value is undefined. For a L2CAP connection request, the port number also
+     identifies the Protocol/Service Multiplexer (PSM) that is being connected to. For an RFCOMM connection
+     request, this is an RFCOMM data link connection identifier (DLCI).
 
 `Flags`
 
@@ -106,40 +109,37 @@ The instance ID of the protocol or service if the BTH_ENUMERATORFL_INCOMING flag
 
 The instance ID of the protocol or service if the BTH_ENUMERATORFL_OUTGOING flag is set.
 
-`LocalMfg`
+`Vid`
 
-The local radio manufacturer obtained from the HCI.
-
-`Mfg`
-
-The manufacturer ID of the remote device, which is obtained from SDP.
+The vendor ID of the remote device, which is obtained from SDP.
 
 `Pid`
 
 The product ID of the remote device, which is obtained from SDP.
 
-`Port`
+`Mfg`
 
-If the enumeration was caused by a connection request, this member contains the device's port
-     number. Otherwise, this value is undefined. For a L2CAP connection request, the port number also
-     identifies the Protocol/Service Multiplexer (PSM) that is being connected to. For an RFCOMM connection
-     request, this is an RFCOMM data link connection identifier (DLCI).
+The manufacturer ID of the remote device, which is obtained from SDP.
 
-`SdpPriLangServiceName`
+`LocalMfg`
 
-The identifier used for remote services.
+The local radio manufacturer obtained from the HCI.
+
+`VidType`
+
+The remote device vendor ID type, which is obtained from SDP.
 
 `ServiceName`
 
 The service name that is used for local services.
 
-`Vid`
+`SdpPriLangServiceName`
 
-The vendor ID of the remote device, which is obtained from SDP.
+The identifier used for remote services.
 
-`VidType`
+`DeviceString`
 
-The remote device vendor ID type, which is obtained from SDP.
+The device string for the remote device.
 
 ## Remarks
 The 
@@ -166,11 +166,3 @@ The
 
 <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bthenum_get_enuminfo.md">
    IOCTL_INTERNAL_BTHENUM_GET_ENUMINFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_ENUMERATOR_INFO structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,35 +63,9 @@ typedef struct _SYNTHCAPS {
 ## Members
 
 
-`Description`
+`Guid`
 
-Contains a text description of the device. This member is a WCHAR array containing a null-terminated string (for example, "Microsoft MPU-401").
-
-`EffectFlags`
-
-Specifies the effects that the rendering device is capable of producing. This member is a bitfield whose value is either zero or the bitwise OR of the following flag bits:
-
-
-
-
-
-#### SYNTH_EFFECT_REVERB
-
-Rendering device can produce reverb effect.
-
-
-
-#### SYNTH_EFFECT_CHORUS
-
-Rendering device can produce chorus effect.
-
-
-
-#### SYNTH_EFFECT_DELAY
-
-Rendering device can produce delay effect.
-
-If the device supports none of these capabilities, set this member to SYNTH_EFFECT_NONE (zero).
+Specifies the class ID for the synthesizer's miniport driver interface.
 
 `Flags`
 
@@ -153,13 +127,9 @@ The driver supports downloadable sample collections (DLS Level 2).
 
 The synth can use system memory.
 
-`Guid`
+`MemorySize`
 
-Specifies the class ID for the synthesizer's miniport driver interface.
-
-`MaxAudioChannels`
-
-Specifies the maximum number of audio channels that the rendering device supports. If the property handler is unable to provide a valid number for this member, it should set the member to (ULONG)-1.
+Specifies the amount of sample memory on the device (in bytes). This field should contain the value SYNTH_PC_SYSTEMMEMORY if the device uses system memory for sample memory with no limitation on the amount of memory allocated.
 
 `MaxChannelGroups`
 
@@ -169,9 +139,39 @@ Specifies the maximum number of channel groups this driver supports. Each channe
 
 Specifies the maximum number of voices that the rendering device supports. If the property handler is unable to provide a valid number for this member, it should set the member to (ULONG)-1.
 
-`MemorySize`
+`MaxAudioChannels`
 
-Specifies the amount of sample memory on the device (in bytes). This field should contain the value SYNTH_PC_SYSTEMMEMORY if the device uses system memory for sample memory with no limitation on the amount of memory allocated.
+Specifies the maximum number of audio channels that the rendering device supports. If the property handler is unable to provide a valid number for this member, it should set the member to (ULONG)-1.
+
+`EffectFlags`
+
+Specifies the effects that the rendering device is capable of producing. This member is a bitfield whose value is either zero or the bitwise OR of the following flag bits:
+
+
+
+
+
+#### SYNTH_EFFECT_REVERB
+
+Rendering device can produce reverb effect.
+
+
+
+#### SYNTH_EFFECT_CHORUS
+
+Rendering device can produce chorus effect.
+
+
+
+#### SYNTH_EFFECT_DELAY
+
+Rendering device can produce delay effect.
+
+If the device supports none of these capabilities, set this member to SYNTH_EFFECT_NONE (zero).
+
+`Description`
+
+Contains a text description of the device. This member is a WCHAR array containing a null-terminated string (for example, "Microsoft MPU-401").
 
 ## Remarks
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537389">KSPROPERTY_SYNTH_CAPS</a> get-property request uses the SYNTHCAPS structure to retrieve the capabilities of a synthesizer device from a DMus miniport driver.
@@ -211,11 +211,3 @@ In this example, the 0xFFFFFFFF values indicate that the handler has no way of k
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537203">KSNODETYPE_SYNTHESIZER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20SYNTHCAPS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -69,97 +69,13 @@ typedef struct _PEP_ACPI_EXTENDED_ADDRESS {
 ## Members
 
 
-`AddressLength`
+`Type`
 
-The address length.
-
-`DescriptorName`
-
-The name of this resource descriptor.
+A <a href="..\pepfx\ne-pepfx-_pep_acpi_resource_type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value describing this resource.
 
 `Flags`
 
 A <a href="..\pepfx\ns-pepfx-_pep_acpi_resource_flags.md">PEP_ACPI_RESOURCE_FLAGS</a> structure describing this resource.
-
-`GeneralFlags`
-
-A value containing the bit flags that are common to all resource types. 
-
-<table>
-<tr>
-<th>Bit(s)</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="0_-_Consumer_Producer_flag"></a><a id="0_-_consumer_producer_flag"></a><a id="0_-_CONSUMER_PRODUCER_FLAG"></a><dl>
-<dt><b>0 - Consumer/Producer flag</b></dt>
-</dl>
-</td>
-<td width="60%">
-When set, this indicates that the device consumes this resource.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="1_-_Decode_type"></a><a id="1_-_decode_type"></a><a id="1_-_DECODE_TYPE"></a><dl>
-<dt><b>1 - Decode type</b></dt>
-</dl>
-</td>
-<td width="60%">
-When set, indicates that this bridge subtractively decodes the address. This applies to top level bridges only. 
-
-When not set, indicates that this bridge positively decodes this address.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="2_-_Minimum_address_fixed"></a><a id="2_-_minimum_address_fixed"></a><a id="2_-_MINIMUM_ADDRESS_FIXED"></a><dl>
-<dt><b>2 - Minimum address fixed</b></dt>
-</dl>
-</td>
-<td width="60%">
-When set, indicates that the minimum address is fixed.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="3_-_Max_address_fixed"></a><a id="3_-_max_address_fixed"></a><a id="3_-_MAX_ADDRESS_FIXED"></a><dl>
-<dt><b>3 - Max address fixed</b></dt>
-</dl>
-</td>
-<td width="60%">
-When set, indicates that the maximum address is fixed. 
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="4_to_7_-_Reserved"></a><a id="4_to_7_-_reserved"></a><a id="4_TO_7_-_RESERVED"></a><dl>
-<dt><b>4 to 7 - Reserved</b></dt>
-</dl>
-</td>
-<td width="60%">
-These bits are reserved and must be set to zero.
-
-</td>
-</tr>
-</table>
-
-`Granularity`
-
-A bit mask indicating which bits have been decoded.
-
-`MaximumAddress`
-
-The maximum starting address. For bridges that translate addresses, this is the address space
-on the secondary side of the bridge.
-
-`MinimumAddress`
-
-The minimum starting address. For bridges that translate addresses, this is the address space on the secondary side of the bridge.
-
-`Reserved`
-
-
 
 `ResourceFlags`
 
@@ -227,22 +143,68 @@ These values are reserved for use by the hardware vendor.
 </tr>
 </table>
 
-`RevisionId`
+`GeneralFlags`
 
-Indicates the revision of the extended address space descriptor detailed by this structure. For ACPI 3.0, this value is 1.
+A value containing the bit flags that are common to all resource types. 
 
-`TranslationAddress`
+<table>
+<tr>
+<th>Bit(s)</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="0_-_Consumer_Producer_flag"></a><a id="0_-_consumer_producer_flag"></a><a id="0_-_CONSUMER_PRODUCER_FLAG"></a><dl>
+<dt><b>0 - Consumer/Producer flag</b></dt>
+</dl>
+</td>
+<td width="60%">
+When set, this indicates that the device consumes this resource.
 
-For bridges that translate addresses across the bridge, this is the
-address on the primary side.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="1_-_Decode_type"></a><a id="1_-_decode_type"></a><a id="1_-_DECODE_TYPE"></a><dl>
+<dt><b>1 - Decode type</b></dt>
+</dl>
+</td>
+<td width="60%">
+When set, indicates that this bridge subtractively decodes the address. This applies to top level bridges only. 
 
-`Type`
+When not set, indicates that this bridge positively decodes this address.
 
-A <a href="..\pepfx\ne-pepfx-_pep_acpi_resource_type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value describing this resource.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="2_-_Minimum_address_fixed"></a><a id="2_-_minimum_address_fixed"></a><a id="2_-_MINIMUM_ADDRESS_FIXED"></a><dl>
+<dt><b>2 - Minimum address fixed</b></dt>
+</dl>
+</td>
+<td width="60%">
+When set, indicates that the minimum address is fixed.
 
-`TypeAttribute`
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="3_-_Max_address_fixed"></a><a id="3_-_max_address_fixed"></a><a id="3_-_MAX_ADDRESS_FIXED"></a><dl>
+<dt><b>3 - Max address fixed</b></dt>
+</dl>
+</td>
+<td width="60%">
+When set, indicates that the maximum address is fixed. 
 
-Indicates attributes that are specific to the resource type that is specified in the <b>ResourceFlags</b> member. If <b>ResourceFlags</b> is zero, this value is zero, otherwise the meaning of the value can be found in the <i>UEFI Specification</i> in the section titled <b>GetMemoryMap()</b>.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="4_to_7_-_Reserved"></a><a id="4_to_7_-_reserved"></a><a id="4_TO_7_-_RESERVED"></a><dl>
+<dt><b>4 to 7 - Reserved</b></dt>
+</dl>
+</td>
+<td width="60%">
+These bits are reserved and must be set to zero.
+
+</td>
+</tr>
+</table>
 
 `TypeSpecificFlags`
 
@@ -450,6 +412,44 @@ These bits are reserved and must be set to zero.
 </td>
 </tr>
 </table>
+
+`RevisionId`
+
+Indicates the revision of the extended address space descriptor detailed by this structure. For ACPI 3.0, this value is 1.
+
+`Reserved`
+
+
+
+`Granularity`
+
+A bit mask indicating which bits have been decoded.
+
+`MinimumAddress`
+
+The minimum starting address. For bridges that translate addresses, this is the address space on the secondary side of the bridge.
+
+`MaximumAddress`
+
+The maximum starting address. For bridges that translate addresses, this is the address space
+on the secondary side of the bridge.
+
+`TranslationAddress`
+
+For bridges that translate addresses across the bridge, this is the
+address on the primary side.
+
+`AddressLength`
+
+The address length.
+
+`TypeAttribute`
+
+Indicates attributes that are specific to the resource type that is specified in the <b>ResourceFlags</b> member. If <b>ResourceFlags</b> is zero, this value is zero, otherwise the meaning of the value can be found in the <i>UEFI Specification</i> in the section titled <b>GetMemoryMap()</b>.
+
+`DescriptorName`
+
+The name of this resource descriptor.
 
 
 ## Requirements

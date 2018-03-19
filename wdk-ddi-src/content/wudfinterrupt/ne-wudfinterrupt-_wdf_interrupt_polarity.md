@@ -63,6 +63,11 @@ typedef enum _WDF_INTERRUPT_POLARITY {
 <table>
             
                 <tr>
+                    <td>WdfInterruptPolarityUnknown</td>
+                    <td>The interrupt signal's polarity is unknown.</td>
+                </tr>
+            
+                <tr>
                     <td>WdfInterruptActiveHigh</td>
                     <td>The interrupt signal is active when it is high.</td>
                 </tr>
@@ -70,11 +75,6 @@ typedef enum _WDF_INTERRUPT_POLARITY {
                 <tr>
                     <td>WdfInterruptActiveLow</td>
                     <td>The interrupt signal is active when it is low.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfInterruptPolarityUnknown</td>
-                    <td>The interrupt signal's polarity is unknown.</td>
                 </tr>
 </table>
 

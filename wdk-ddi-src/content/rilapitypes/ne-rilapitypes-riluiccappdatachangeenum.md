@@ -63,12 +63,22 @@ typedef enum _RILUICCAPPDATACHANGEENUM {
 <table>
             
                 <tr>
-                    <td>RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_SET</td>
+                    <td>RIL_UICCAPP_DATACHANGE_MSISDN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCAPP_DATACHANGE_MBDN</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_UNSET</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_SET</td>
                     <td></td>
                 </tr>
             
@@ -79,16 +89,6 @@ typedef enum _RILUICCAPPDATACHANGEENUM {
             
                 <tr>
                     <td>RIL_UICCAPP_DATACHANGE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCAPP_DATACHANGE_MBDN</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCAPP_DATACHANGE_MSISDN</td>
                     <td></td>
                 </tr>
 </table>

@@ -70,7 +70,53 @@ typedef enum _NDIS_REQUEST_TYPE {
 <table>
             
                 <tr>
+                    <td>NdisRequestQueryInformation</td>
+                    <td>A query-information request. For certain requests, NDIS satisfies the request. Otherwise,
+     NDIS forwards such requests to the underlying driver's 
+     <i>MiniportOidRequest</i> function. This type of request can originate in a user-mode application, filter module, or protocol driver.
+
+<div class="alert"><b>Note</b>  Drivers should treat <b>NdisRequestQueryInformation</b> and <b>NdisRequestQueryStatistics</b> queries identically.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>NdisRequestSetInformation</td>
+                    <td>A set-information request. NDIS forwards such a request to the underlying driver's 
+     <i>MiniportOidRequest</i> function.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisRequestQueryStatistics</td>
+                    <td>A query-statistics request. For certain requests, NDIS satisfies the request. Otherwise,
+     NDIS forwards such requests to the underlying driver's 
+     <i>MiniportOidRequest</i> function. This type of request can originate in a user-mode application, filter module, or protocol driver.
+
+<div class="alert"><b>Note</b>  Drivers should treat <b>NdisRequestQueryInformation</b> and <b>NdisRequestQueryStatistics</b> queries identically.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>NdisRequestOpen</td>
+                    <td>This type is obsolete.</td>
+                </tr>
+            
+                <tr>
                     <td>NdisRequestClose</td>
+                    <td>This type is obsolete.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisRequestSend</td>
+                    <td>This type is obsolete.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisRequestTransferData</td>
+                    <td>This type is obsolete.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisRequestReset</td>
                     <td>This type is obsolete.</td>
                 </tr>
             
@@ -99,52 +145,6 @@ typedef enum _NDIS_REQUEST_TYPE {
                     <td>A method request. NDIS forwards such a request to the underlying driver's 
      <a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a> function.</td>
                 </tr>
-            
-                <tr>
-                    <td>NdisRequestOpen</td>
-                    <td>This type is obsolete.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisRequestQueryInformation</td>
-                    <td>A query-information request. For certain requests, NDIS satisfies the request. Otherwise,
-     NDIS forwards such requests to the underlying driver's 
-     <i>MiniportOidRequest</i> function. This type of request can originate in a user-mode application, filter module, or protocol driver.
-
-<div class="alert"><b>Note</b>  Drivers should treat <b>NdisRequestQueryInformation</b> and <b>NdisRequestQueryStatistics</b> queries identically.</div>
-<div> </div></td>
-                </tr>
-            
-                <tr>
-                    <td>NdisRequestQueryStatistics</td>
-                    <td>A query-statistics request. For certain requests, NDIS satisfies the request. Otherwise,
-     NDIS forwards such requests to the underlying driver's 
-     <i>MiniportOidRequest</i> function. This type of request can originate in a user-mode application, filter module, or protocol driver.
-
-<div class="alert"><b>Note</b>  Drivers should treat <b>NdisRequestQueryInformation</b> and <b>NdisRequestQueryStatistics</b> queries identically.</div>
-<div> </div></td>
-                </tr>
-            
-                <tr>
-                    <td>NdisRequestReset</td>
-                    <td>This type is obsolete.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisRequestSend</td>
-                    <td>This type is obsolete.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisRequestSetInformation</td>
-                    <td>A set-information request. NDIS forwards such a request to the underlying driver's 
-     <i>MiniportOidRequest</i> function.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisRequestTransferData</td>
-                    <td>This type is obsolete.</td>
-                </tr>
 </table>
 
 ## Remarks
@@ -170,11 +170,3 @@ The NDIS_REQUEST_TYPE enumeration is used in the
 
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_REQUEST_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -66,11 +66,6 @@ typedef enum D3D12DDI_ALLOCATION_INFO_FLAGS_0022 {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_ALLOCATION_INFO_FLAGS_0022_OVERRIDE_PRIORITY</td>
-                    <td>An override priority.</td>
-                </tr>
-            
-                <tr>
                     <td>D3D12DDI_ALLOCATION_INFO_FLAGS_0022_PRIMARY</td>
                     <td>A primary value.</td>
                 </tr>
@@ -78,6 +73,11 @@ typedef enum D3D12DDI_ALLOCATION_INFO_FLAGS_0022 {
                 <tr>
                     <td>D3D12DDI_ALLOCATION_INFO_FLAGS_0022_STEREO</td>
                     <td>A stereo value.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_ALLOCATION_INFO_FLAGS_0022_OVERRIDE_PRIORITY</td>
+                    <td>An override priority.</td>
                 </tr>
 </table>
 

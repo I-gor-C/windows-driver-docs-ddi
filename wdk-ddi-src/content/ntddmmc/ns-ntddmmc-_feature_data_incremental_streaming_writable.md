@@ -63,37 +63,37 @@ typedef struct _FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE {
 ## Members
 
 
-`AddressModeReservation`
+`Header`
 
-
-
-`BufferUnderrunFree`
-
-Indicates, when set to one, that the logical unit is capable of zero-loss linking.
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
 `DataTypeSupported`
 
 Indicates the supported data type. See the <i>SCSI Multimedia - 4 (MMC-4)</i> specification for an explanation of the values that this member can take. <b>DataTypeSupported</b>[0] must hold the most significant byte of the number of the data type. <b>DataTypeSupported</b>[1] must hold the least significant byte of the number.
 
-`Header`
+`BufferUnderrunFree`
 
-Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
+Indicates, when set to one, that the logical unit is capable of zero-loss linking.
 
-`LinkSize`
-
-Contains an array that indicates the number of logical blocks per link.
-
-`NumberOfLinkSizes`
-
-Specifies the number of link sizes available for the current media. See the <i>MMC-3</i> specification for an explanation of the values that this member can take.
-
-`Reserved01`
+`AddressModeReservation`
 
 
 
 `TrackRessourceInformation`
 
 
+
+`Reserved01`
+
+
+
+`NumberOfLinkSizes`
+
+Specifies the number of link sizes available for the current media. See the <i>MMC-3</i> specification for an explanation of the values that this member can take.
+
+`LinkSize`
+
+Contains an array that indicates the number of logical blocks per link.
 
 ## Remarks
 This structure holds data for the feature named "Incremental Streaming Writable" by the <i>MMC-3 </i>specification. Devices that support this feature can write data to a contiguous region, and can append data to a limited number of locations on the media. On CD media, this is known as "packet recording" and on a DVD media it is known as "incremental recording".
@@ -110,11 +110,3 @@ This structure holds data for the feature named "Incremental Streaming Writable"
 
 
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

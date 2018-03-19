@@ -59,12 +59,12 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KsAllocatorMode_Kernel</td>
+                    <td>KsAllocatorMode_User</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>KsAllocatorMode_User</td>
+                    <td>KsAllocatorMode_Kernel</td>
                     <td></td>
                 </tr>
 </table>

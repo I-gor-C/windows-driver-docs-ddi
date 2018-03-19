@@ -58,11 +58,11 @@ typedef struct _DOT11_WFD_GO_INTENT {
 ## Members
 
 
-`Intent`
-
-
-
 `TieBreaker`
+
+
+
+`Intent`
 
 
 

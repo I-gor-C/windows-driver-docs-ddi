@@ -60,8 +60,8 @@ typedef enum _DXGK_FRAMEBUFFER_STATE {
 <table>
             
                 <tr>
-                    <td>FrameBufferStateInitializedByDriver</td>
-                    <td>Value indicating that the hardware specific driver last initialized the frame buffer when the previous driver was stopped.  Note, the driver which initialized the frame buffer may not be the same version as is currently running if the driver has been updated.</td>
+                    <td>FrameBufferStateUnknown</td>
+                    <td>Value indicating that the OS has insufficient information to report the frame buffer state.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum _DXGK_FRAMEBUFFER_STATE {
                 </tr>
             
                 <tr>
-                    <td>FrameBufferStateUnknown</td>
-                    <td>Value indicating that the OS has insufficient information to report the frame buffer state.</td>
+                    <td>FrameBufferStateInitializedByDriver</td>
+                    <td>Value indicating that the hardware specific driver last initialized the frame buffer when the previous driver was stopped.  Note, the driver which initialized the frame buffer may not be the same version as is currently running if the driver has been updated.</td>
                 </tr>
 </table>
 

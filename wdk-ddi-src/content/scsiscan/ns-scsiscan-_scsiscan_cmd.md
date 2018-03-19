@@ -67,37 +67,9 @@ typedef struct _SCSISCAN_CMD {
 ## Members
 
 
-`Cdb`
-
-Caller-supplied <a href="https://msdn.microsoft.com/ac439eb8-b491-4215-877d-5ee177fbdb39">CDB</a> data. (The CDB structure is declared in <i>scsi.h</i>.)
-
-`CdbLength`
-
-Length, in bytes, of the <a href="https://msdn.microsoft.com/ac439eb8-b491-4215-877d-5ee177fbdb39">CDB</a> contained in the <b>Cdb</b> member.
-
-`pSenseBuffer`
-
-Caller-supplied pointer to a request-sense buffer, to be filled in by the kernel-mode driver.
-
-`pSrbStatus`
-
-Caller-supplied pointer that will receive one of the SRB_STATUS-prefixed status values defined in <i>srb.h</i>.
-
 `Reserved1`
 
 Reserved. Do not use.
-
-`Reserved2`
-
-Reserved. Do not use.
-
-`Reserved3`
-
-Reserved. Do not use.
-
-`SenseLength`
-
-Length, in bytes, of the sense buffer the <b>pSenseBuffer</b> member points to.
 
 `Size`
 
@@ -107,9 +79,37 @@ Caller-supplied size, in bytes, of the SCSISCAN_CMD structure.
 
 Caller-supplied SRB_FLAGS-prefixed bit flag specifying the requested operation. Flags are defined in <i>srb.h</i>.
 
+`CdbLength`
+
+Length, in bytes, of the <a href="https://msdn.microsoft.com/ac439eb8-b491-4215-877d-5ee177fbdb39">CDB</a> contained in the <b>Cdb</b> member.
+
+`SenseLength`
+
+Length, in bytes, of the sense buffer the <b>pSenseBuffer</b> member points to.
+
+`Reserved2`
+
+Reserved. Do not use.
+
+`Reserved3`
+
+Reserved. Do not use.
+
 `TransferLength`
 
 Length, in bytes, of the buffer to be transferred. This should match the value specified for the <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> function's <i>nOutBufferSize</i> parameter.
+
+`Cdb`
+
+Caller-supplied <a href="https://msdn.microsoft.com/ac439eb8-b491-4215-877d-5ee177fbdb39">CDB</a> data. (The CDB structure is declared in <i>scsi.h</i>.)
+
+`pSrbStatus`
+
+Caller-supplied pointer that will receive one of the SRB_STATUS-prefixed status values defined in <i>srb.h</i>.
+
+`pSenseBuffer`
+
+Caller-supplied pointer to a request-sense buffer, to be filled in by the kernel-mode driver.
 
 
 ## Requirements

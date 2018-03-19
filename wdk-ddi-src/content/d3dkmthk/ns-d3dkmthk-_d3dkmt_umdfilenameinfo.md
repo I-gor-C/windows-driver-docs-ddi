@@ -57,10 +57,6 @@ typedef struct _D3DKMT_UMDFILENAMEINFO {
 ## Members
 
 
-`UmdFileName`
-
-[out] A string that contains the name of the OpenGL ICD.
-
 `Version`
 
 [in] A KMTUMDVERSION-typed value that indicates the version of the DirectX runtime to retrieve the name of an OpenGL ICD for. The following table lists the possible values.
@@ -101,6 +97,10 @@ DirectX version 11.0
 </td>
 </tr>
 </table>
+
+`UmdFileName`
+
+[out] A string that contains the name of the OpenGL ICD.
 
 
 ## Requirements

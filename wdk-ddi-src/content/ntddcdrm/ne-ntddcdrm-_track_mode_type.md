@@ -63,23 +63,8 @@ typedef enum _TRACK_MODE_TYPE {
 <table>
             
                 <tr>
-                    <td>CDDA</td>
-                    <td>Indicates that digital audio information mode should be used. For more information, see the IEC 908:1987 specification.</td>
-                </tr>
-            
-                <tr>
-                    <td>RawWithC2</td>
-                    <td>CD_RAW_SECTOR_WITH_C2_SIZE per sector</td>
-                </tr>
-            
-                <tr>
-                    <td>RawWithC2AndSubCode</td>
-                    <td>CD_RAW_SECTOR_WITH_C2_AND_SUBCODE_SIZE per sector</td>
-                </tr>
-            
-                <tr>
-                    <td>RawWithSubCode</td>
-                    <td>CD_RAW_SECTOR_WITH_SUBCODE_SIZE per sector</td>
+                    <td>YellowMode2</td>
+                    <td>Indicates that CD-ROM mode should be used. This mode is used with read-only 120 mm Optical Data Discs (CD-ROM). For more information, see the ISO/IEC 10149 specification.</td>
                 </tr>
             
                 <tr>
@@ -88,8 +73,23 @@ typedef enum _TRACK_MODE_TYPE {
                 </tr>
             
                 <tr>
-                    <td>YellowMode2</td>
-                    <td>Indicates that CD-ROM mode should be used. This mode is used with read-only 120 mm Optical Data Discs (CD-ROM). For more information, see the ISO/IEC 10149 specification.</td>
+                    <td>CDDA</td>
+                    <td>Indicates that digital audio information mode should be used. For more information, see the IEC 908:1987 specification.</td>
+                </tr>
+            
+                <tr>
+                    <td>RawWithC2AndSubCode</td>
+                    <td>CD_RAW_SECTOR_WITH_C2_AND_SUBCODE_SIZE per sector</td>
+                </tr>
+            
+                <tr>
+                    <td>RawWithC2</td>
+                    <td>CD_RAW_SECTOR_WITH_C2_SIZE per sector</td>
+                </tr>
+            
+                <tr>
+                    <td>RawWithSubCode</td>
+                    <td>CD_RAW_SECTOR_WITH_SUBCODE_SIZE per sector</td>
                 </tr>
 </table>
 
@@ -106,11 +106,3 @@ typedef enum _TRACK_MODE_TYPE {
 
 
 <a href="..\ntddcdrm\ns-ntddcdrm-__raw_read_info.md">RAW_READ_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TRACK_MODE_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

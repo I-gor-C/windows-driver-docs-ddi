@@ -57,11 +57,11 @@ typedef struct _RILRANGE {
 ## Members
 
 
-`dwMaxValue`
-
-
-
 `dwMinValue`
+
+
+
+`dwMaxValue`
 
 
 

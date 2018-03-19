@@ -61,8 +61,8 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>Compression_Fast</td>
-                    <td>The compression for the part is optimized for speed.</td>
+                    <td>Compression_NotCompressed</td>
+                    <td>The part is not compressed.</td>
                 </tr>
             
                 <tr>
@@ -71,13 +71,13 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>Compression_NotCompressed</td>
-                    <td>The part is not compressed.</td>
+                    <td>Compression_Small</td>
+                    <td>The compression for the part is optimized for size.</td>
                 </tr>
             
                 <tr>
-                    <td>Compression_Small</td>
-                    <td>The compression for the part is optimized for size.</td>
+                    <td>Compression_Fast</td>
+                    <td>The compression for the part is optimized for speed.</td>
                 </tr>
 </table>
 

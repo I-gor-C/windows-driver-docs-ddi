@@ -57,13 +57,13 @@ typedef struct __PUBLIC_OBJECT_TYPE_INFORMATION {
 ## Members
 
 
-`Reserved`
-
-Reserved for system use.
-
 `TypeName`
 
 Specifies the type name of the object.
+
+`Reserved`
+
+Reserved for system use.
 
 
 ## Requirements

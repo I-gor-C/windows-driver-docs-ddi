@@ -60,13 +60,13 @@ typedef enum _PC_EXIT_LATENCY {
 <table>
             
                 <tr>
-                    <td>PcExitLatencyFast</td>
-                    <td>Indicates a 35-millisecond resume latency.</td>
+                    <td>PcExitLatencyInstant</td>
+                    <td>Indicates a 0-millisecond latency. This means "Do not power down" and it  will only be sent when a device is in the D0 state.</td>
                 </tr>
             
                 <tr>
-                    <td>PcExitLatencyInstant</td>
-                    <td>Indicates a 0-millisecond latency. This means "Do not power down" and it  will only be sent when a device is in the D0 state.</td>
+                    <td>PcExitLatencyFast</td>
+                    <td>Indicates a 35-millisecond resume latency.</td>
                 </tr>
             
                 <tr>

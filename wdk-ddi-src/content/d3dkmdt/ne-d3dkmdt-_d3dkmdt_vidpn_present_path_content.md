@@ -61,23 +61,23 @@ typedef enum _D3DKMDT_VIDPN_PRESENT_PATH_CONTENT {
 <table>
             
                 <tr>
-                    <td>D3DKMDT_VPPC_GRAPHICS</td>
-                    <td>Indicates that the path displays graphics content.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VPPC_NOTSPECIFIED</td>
-                    <td>Indicates that no content type has been specified.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DKMDT_VPPC_UNINITIALIZED</td>
                     <td>Indicates that a variable of type D3DKMDT_VIDPN_PRESENT_PATH_CONTENT has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>
+                    <td>D3DKMDT_VPPC_GRAPHICS</td>
+                    <td>Indicates that the path displays graphics content.</td>
+                </tr>
+            
+                <tr>
                     <td>D3DKMDT_VPPC_VIDEO</td>
                     <td>Indicates that the path displays video content.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VPPC_NOTSPECIFIED</td>
+                    <td>Indicates that no content type has been specified.</td>
                 </tr>
 </table>
 

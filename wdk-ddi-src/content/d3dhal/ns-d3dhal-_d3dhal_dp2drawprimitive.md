@@ -61,10 +61,6 @@ typedef struct _D3DHAL_DP2DRAWPRIMITIVE {
 ## Members
 
 
-`PrimitiveCount`
-
-Specifies the number of triangles, lines or points to draw for the given primitive.
-
 `primType`
 
 Specifies the type of primitive to draw (one of D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP or D3DPT_TRIANGLEFAN).
@@ -72,6 +68,10 @@ Specifies the type of primitive to draw (one of D3DPT_POINTLIST, D3DPT_LINELIST,
 `VStart`
 
 Specifies the index (into each active vertex stream) of the vertex elements with which to start drawing. Actual vertex data should be read from the current vertex streams (those referenced by the current vertex shader) rather than from the vertex data pointer in <a href="..\d3dhal\ns-d3dhal-_d3dhal_drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>.
+
+`PrimitiveCount`
+
+Specifies the number of triangles, lines or points to draw for the given primitive.
 
 ## Remarks
 The vertex data can be untransformed (if the hardware supports hardware vertex processing) or transformed if the application supplied data in that form to the runtime.
@@ -96,11 +96,3 @@ The vertex data can be untransformed (if the hardware supports hardware vertex p
 
 
 D3DDP2OP_DRAWPRIMITIVE
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2DRAWPRIMITIVE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -64,11 +64,11 @@ typedef struct _RILEXECUTORRFSTATE {
 
 
 
-`dwExecutor`
-
-
-
 `dwParams`
+
+
+
+`dwExecutor`
 
 
 

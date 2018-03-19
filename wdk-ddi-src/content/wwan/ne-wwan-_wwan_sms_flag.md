@@ -70,18 +70,8 @@ typedef enum _WWAN_SMS_FLAG {
                 </tr>
             
                 <tr>
-                    <td>WwanSmsFlagDraft</td>
-                    <td>Filter for draft messages.</td>
-                </tr>
-            
-                <tr>
                     <td>WwanSmsFlagIndex</td>
                     <td>Filter based on the value of an index.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanSmsFlagMax</td>
-                    <td>The total number of filter flags.</td>
                 </tr>
             
                 <tr>
@@ -98,6 +88,16 @@ typedef enum _WWAN_SMS_FLAG {
                     <td>WwanSmsFlagSent</td>
                     <td>Filter for sent messages.</td>
                 </tr>
+            
+                <tr>
+                    <td>WwanSmsFlagDraft</td>
+                    <td>Filter for draft messages.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanSmsFlagMax</td>
+                    <td>The total number of filter flags.</td>
+                </tr>
 </table>
 
 
@@ -110,11 +110,3 @@ typedef enum _WWAN_SMS_FLAG {
 ## See Also
 
 <a href="..\wwan\ns-wwan-_wwan_sms_filter.md">WWAN_SMS_FILTER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_FLAG enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

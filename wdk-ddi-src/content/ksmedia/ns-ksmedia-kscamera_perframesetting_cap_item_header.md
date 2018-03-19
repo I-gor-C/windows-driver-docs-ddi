@@ -58,10 +58,6 @@ typedef struct {
 ## Members
 
 
-`Flags`
-
-This contains the supported capability flags.
-
 `Size`
 
 The size of this header and the item payload that follows.
@@ -69,6 +65,10 @@ The size of this header and the item payload that follows.
 `Type`
 
 The <a href="..\ksmedia\ne-ksmedia-kscamera_perframesetting_item_type.md">KSCAMERA_PERFRAMESETTING_ITEM_TYPE</a>.
+
+`Flags`
+
+This contains the supported capability flags.
 
 
 ## Requirements

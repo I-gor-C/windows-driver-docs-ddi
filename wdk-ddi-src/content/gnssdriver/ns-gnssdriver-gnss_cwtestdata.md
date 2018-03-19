@@ -61,19 +61,13 @@ typedef struct {
 ## Members
 
 
-`Frequency`
-
-Frequency of the carrier wave detected in the measurement band.
-
-This frequency is provided as a difference to GPS frequency (1575.42 MHz) in kHz.
-
-`SignalToNoiseRatio`
-
-Signal to noise ratio in the carrier wave in dB-Hz.
-
 `Size`
 
 Structure size.
+
+`Version`
+
+Version number.
 
 `TestResultStatus`
 
@@ -90,13 +84,19 @@ Failed - with error code: test not implemented, carrier wave test already in pro
 </li>
 </ul>
 
+`SignalToNoiseRatio`
+
+Signal to noise ratio in the carrier wave in dB-Hz.
+
+`Frequency`
+
+Frequency of the carrier wave detected in the measurement band.
+
+This frequency is provided as a difference to GPS frequency (1575.42 MHz) in kHz.
+
 `Unused`
 
 
-
-`Version`
-
-Version number.
 
 
 ## Requirements

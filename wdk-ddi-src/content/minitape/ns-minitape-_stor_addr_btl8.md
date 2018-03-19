@@ -62,33 +62,33 @@ typedef struct _STOR_ADDR_BTL8 {
 ## Members
 
 
-`AddressLength`
+`Type`
 
-The byte length of the address. This value is set to <b>STOR_ADDR_BTL8_ADDRESS_LENGTH</b>.
-
-`Lun`
-
-The logical unit on the target device.
-
-`Path`
-
-The bus number for the target device.
+The address type. This member is set to <b>STOR_ADDRESS_TYPE_BTL8</b>.
 
 `Port`
 
 The host bus adapter (HBA) port number.
 
-`Reserved`
+`AddressLength`
 
-Reserved, set to 0.
+The byte length of the address. This value is set to <b>STOR_ADDR_BTL8_ADDRESS_LENGTH</b>.
+
+`Path`
+
+The bus number for the target device.
 
 `Target`
 
 The target device number.
 
-`Type`
+`Lun`
 
-The address type. This member is set to <b>STOR_ADDRESS_TYPE_BTL8</b>.
+The logical unit on the target device.
+
+`Reserved`
+
+Reserved, set to 0.
 
 
 ## Requirements
@@ -100,11 +100,3 @@ The address type. This member is set to <b>STOR_ADDRESS_TYPE_BTL8</b>.
 ## See Also
 
 <a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_ADDR_BTL8 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

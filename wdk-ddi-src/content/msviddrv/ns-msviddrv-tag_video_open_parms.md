@@ -64,33 +64,29 @@ typedef struct tag_video_open_parms {
 ## Members
 
 
-`dnDevNode`
-
-Specifies the devnode for PnP devices.
-
-`dwError`
-
-If open fails, specifies why it failed.
-
-`dwFlags`
-
-Specifies the type of channel.
-
 `dwSize`
 
 Set to the size of the <b>VIDEO_OPEN_PARMS</b> structure.
 
-`dwVersion`
+`fccType`
 
-Specifies the version of msvideo.
+'vcap'
 
 `fccComp`
 
 This member is not used.
 
-`fccType`
+`dwVersion`
 
-'vcap'
+Specifies the version of msvideo.
+
+`dwFlags`
+
+Specifies the type of channel.
+
+`dwError`
+
+If open fails, specifies why it failed.
 
 `pV1Reserved`
 
@@ -99,6 +95,10 @@ Reserved.
 `pV2Reserved`
 
 Reserved.
+
+`dnDevNode`
+
+Specifies the devnode for PnP devices.
 
 
 ## Requirements

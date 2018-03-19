@@ -62,13 +62,13 @@ typedef struct _D3D12DDI_CRYPTO_SESSION_TRANSFORM_TRANSCRYPT_OUTPUT_ARGUMENTS_00
 
 Enable.
 
-`IVSize`
-
-Initialization vector size.
-
 `pIV`
 
 Initialization vector.
+
+`IVSize`
+
+Initialization vector size.
 
 
 ## Requirements

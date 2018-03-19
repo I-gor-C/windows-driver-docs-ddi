@@ -60,13 +60,13 @@ typedef enum _WDI_ROAM_TRIGGER {
 <table>
             
                 <tr>
-                    <td>WDI_ROAM_TRIGGER_CRITICAL_BSS_TRANSITION_REQUEST</td>
-                    <td>This value is for roams due to a BSS Transition Request by the AP with the Disassociation Imminent bit set.</td>
+                    <td>WDI_ROAM_TRIGGER_OTHER</td>
+                    <td>None.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_ROAM_TRIGGER_OTHER</td>
-                    <td>None.</td>
+                    <td>WDI_ROAM_TRIGGER_CRITICAL_BSS_TRANSITION_REQUEST</td>
+                    <td>This value is for roams due to a BSS Transition Request by the AP with the Disassociation Imminent bit set.</td>
                 </tr>
 </table>
 

@@ -60,21 +60,21 @@ typedef struct _BDA_TS_SELECTORINFO {
 ## Members
 
 
-`bReserved`
-
-Reserved for future use.
-
-`bTSIDCount`
-
-Specifies the number of usTSID.
-
 `bTSInfolength`
 
 Specifies the buffer length including the extension.
 
+`bReserved`
+
+Reserved for future use.
+
 `guidNetworkType`
 
 Specifies the current type of tuning.
+
+`bTSIDCount`
+
+Specifies the number of usTSID.
 
 `usTSID`
 

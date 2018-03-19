@@ -65,17 +65,9 @@ struct RILUMTSMRL {
 ## Members
 
 
-`dwCellID`
+`dwParams`
 
-UMTS cell ID (0...268435455)
-
-`dwECNO`
-
-Signal to noise ratio of serving cell; the ratio of the received energy per PN chip for the CPICH to the total received power spectral density at the antenna. Range (-500...0) in units of 0.1dBm.
-
-`dwLocationAreaCode`
-
-Location area code (0...65535)
+A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rilumtsmrlparammask.md">RILUMTSMRLPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
 
 `dwMobileCountryCode`
 
@@ -85,13 +77,17 @@ Country code (0...999)
 
 Mobile network code (0...999)
 
-`dwParams`
+`dwLocationAreaCode`
 
-A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rilumtsmrlparammask.md">RILUMTSMRLPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
+Location area code (0...65535)
 
-`dwPathLoss`
+`dwCellID`
 
-Path loss.
+UMTS cell ID (0...268435455)
+
+`dwUARFCN`
+
+UTRA absolute radio frequency channel number (0...16383)
 
 `dwPrimaryScramblingCode`
 
@@ -101,9 +97,13 @@ Primary Scrambling Code (0...511)
 
 Received signal code power of serving cell. Range (-1200 ... -250) in units of 0.1dBm, i.e., -250 represents -25dBm.
 
-`dwUARFCN`
+`dwECNO`
 
-UTRA absolute radio frequency channel number (0...16383)
+Signal to noise ratio of serving cell; the ratio of the received energy per PN chip for the CPICH to the total received power spectral density at the antenna. Range (-500...0) in units of 0.1dBm.
+
+`dwPathLoss`
+
+Path loss.
 
 
 ## Requirements
@@ -114,11 +114,3 @@ UTRA absolute radio frequency channel number (0...16383)
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILUMTSMRL structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

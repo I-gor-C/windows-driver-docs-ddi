@@ -62,8 +62,8 @@ typedef enum _DXVA_DestinationFlags {
 <table>
             
                 <tr>
-                    <td>DXVA_DestinationFlag_Alpha_Changed</td>
-                    <td>Indicates that the planar alpha value for the destination surface changed.</td>
+                    <td>DXVA_DestinationFlagMask</td>
+                    <td>Specifies the destination-flag mask, which consists of the first 4 bits of a DWORD.</td>
                 </tr>
             
                 <tr>
@@ -72,18 +72,18 @@ typedef enum _DXVA_DestinationFlags {
                 </tr>
             
                 <tr>
-                    <td>DXVA_DestinationFlag_ColorData_Changed</td>
-                    <td>Indicates that format information for the destination surface changed.</td>
-                </tr>
-            
-                <tr>
                     <td>DXVA_DestinationFlag_TargetRect_Changed</td>
                     <td>Indicates that the target rectangle of the destination surface changed.</td>
                 </tr>
             
                 <tr>
-                    <td>DXVA_DestinationFlagMask</td>
-                    <td>Specifies the destination-flag mask, which consists of the first 4 bits of a DWORD.</td>
+                    <td>DXVA_DestinationFlag_ColorData_Changed</td>
+                    <td>Indicates that format information for the destination surface changed.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_DestinationFlag_Alpha_Changed</td>
+                    <td>Indicates that the planar alpha value for the destination surface changed.</td>
                 </tr>
 </table>
 
@@ -101,11 +101,3 @@ typedef enum _DXVA_DestinationFlags {
 
 
 <a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_DestinationFlags enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

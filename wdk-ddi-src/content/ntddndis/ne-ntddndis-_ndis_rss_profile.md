@@ -73,16 +73,6 @@ typedef enum _NDIS_RSS_PROFILE {
                 </tr>
             
                 <tr>
-                    <td>NdisRssProfileConservative</td>
-                    <td>RSS uses as few processors as possible to sustain the load. This option helps reduce the number of interrupts.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisRssProfileMaximum</td>
-                    <td>This enumeration  value is reserved. Do not use.</td>
-                </tr>
-            
-                <tr>
                     <td>NdisRssProfileNuma</td>
                     <td>Assign RSS CPUs on a round-robin basis across every NUMA node to enable applications that are running on NUMA servers to scale well.</td>
                 </tr>
@@ -90,6 +80,16 @@ typedef enum _NDIS_RSS_PROFILE {
                 <tr>
                     <td>NdisRssProfileNumaStatic</td>
                     <td>RSS processor selection is the same as for NUMA scalability without dynamic load-balancing.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisRssProfileConservative</td>
+                    <td>RSS uses as few processors as possible to sustain the load. This option helps reduce the number of interrupts.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisRssProfileMaximum</td>
+                    <td>This enumeration  value is reserved. Do not use.</td>
                 </tr>
 </table>
 
@@ -117,11 +117,3 @@ NDIS network drivers use the <b>NDIS_RSS_PROFILE</b> enumeration type to set the
 
 <a href="..\ndis\nf-ndis-ndisgetrssprocessorinformation.md">
    NdisGetRssProcessorInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_PROFILE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -65,107 +65,6 @@ typedef struct {
 ## Members
 
 
-`BusFlags`
-
-Not used.
-
-`BusType`
-
-Specifies the physical bus accessing the physical memory specified by <i>MemoryType</i>. Use this field to determine a compatible memory type based on the bus that is used for the connection medium. This distinction is crucial when a pin exposes different memory types based on the connection medium. <b>BusType</b> can have any of the values listed in the following table.
-
-<table>
-<tr>
-<th>Type</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>
-GUID_BUS_TYPE_PCI
-
-</td>
-<td>
-Peripheral component interconnect bus.
-
-</td>
-</tr>
-<tr>
-<td>
-GUID_BUS_TYPE_USB
-
-</td>
-<td>
-Universal serial bus.
-
-</td>
-</tr>
-<tr>
-<td>
-GUID_BUS_TYPE_1394
-
-</td>
-<td>
-IEEE 1394 serial bus.
-
-</td>
-</tr>
-<tr>
-<td>
-GUID_BUS_TYPE_AVC
-
-</td>
-<td>
-Audio/video control bus.
-
-</td>
-</tr>
-<tr>
-<td>
-GUID_61883_CLASS
-
-</td>
-<td>
-61883 protocol bus.
-
-</td>
-</tr>
-</table>
-
-`Flags`
-
-Similar to the <b>OptionsFlags</b> and <b>RequirementsFlags</b> union in the <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a> structure, with the addition of the following flags that add support for pipes.
-
-
-
-##### )
-
-
-
-##### )
-
-
-
-###### )
-
-
-
-##### )
-
-
-
-##### )
-
-`Frames`
-
-Specifies the total number of allowable outstanding frames. Corresponds to the <b>Frames</b> member of the <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a> structure.
-
-`FramingRange`
-
-A structure of type <a href="..\ks\ns-ks-ks_framing_range_weighted.md">KS_FRAMING_RANGE_WEIGHTED</a> that specifies the optimal range of frame sizes.
-
-`MemoryFlags`
-
-Specifies that the connection point is responsible for frame allocation. Should be set to KSALLOCATOR_REQUIREMENTF_MUST_ALLOCATE.
-
 `MemoryType`
 
 Specifies the type of memory used for buffers and data frames. There is a partial correspondence between this member and the <b>PoolType</b> member in the <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a> structure. The two members differ in that <b>PoolType</b> allows only paged or nonpaged pool. <b>MemoryType</b> can have any of the values listed in the following table.
@@ -237,6 +136,103 @@ Indicates device memory allocation type is not specified.
 </tr>
 </table>
 
+`BusType`
+
+Specifies the physical bus accessing the physical memory specified by <i>MemoryType</i>. Use this field to determine a compatible memory type based on the bus that is used for the connection medium. This distinction is crucial when a pin exposes different memory types based on the connection medium. <b>BusType</b> can have any of the values listed in the following table.
+
+<table>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+GUID_BUS_TYPE_PCI
+
+</td>
+<td>
+Peripheral component interconnect bus.
+
+</td>
+</tr>
+<tr>
+<td>
+GUID_BUS_TYPE_USB
+
+</td>
+<td>
+Universal serial bus.
+
+</td>
+</tr>
+<tr>
+<td>
+GUID_BUS_TYPE_1394
+
+</td>
+<td>
+IEEE 1394 serial bus.
+
+</td>
+</tr>
+<tr>
+<td>
+GUID_BUS_TYPE_AVC
+
+</td>
+<td>
+Audio/video control bus.
+
+</td>
+</tr>
+<tr>
+<td>
+GUID_61883_CLASS
+
+</td>
+<td>
+61883 protocol bus.
+
+</td>
+</tr>
+</table>
+
+`MemoryFlags`
+
+Specifies that the connection point is responsible for frame allocation. Should be set to KSALLOCATOR_REQUIREMENTF_MUST_ALLOCATE.
+
+`BusFlags`
+
+Not used.
+
+`Flags`
+
+Similar to the <b>OptionsFlags</b> and <b>RequirementsFlags</b> union in the <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a> structure, with the addition of the following flags that add support for pipes.
+
+
+
+##### )
+
+
+
+##### )
+
+
+
+###### )
+
+
+
+##### )
+
+
+
+##### )
+
+`Frames`
+
+Specifies the total number of allowable outstanding frames. Corresponds to the <b>Frames</b> member of the <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a> structure.
+
 `MemoryTypeWeight`
 
 A value of type ULONG that specifies the pin-wide weight of this memory type.
@@ -244,6 +240,10 @@ A value of type ULONG that specifies the pin-wide weight of this memory type.
 `PhysicalRange`
 
 A structure of type <a href="..\ks\ns-ks-ks_framing_range.md">KS_FRAMING_RANGE</a> that specifies the physical limit of frame sizes.
+
+`FramingRange`
+
+A structure of type <a href="..\ks\ns-ks-ks_framing_range_weighted.md">KS_FRAMING_RANGE_WEIGHTED</a> that specifies the optimal range of frame sizes.
 
 ## Remarks
 Do not set KSALLOCATOR_FLAG_CAN_ALLOCATE to indicate memory addressing capability. A filter might be able to access the device-specific memory over a device-specific bus by referencing the memory address on this bus, and yet not support the protocol to allocate this device-specific memory.
@@ -274,11 +274,3 @@ Each <a href="..\ks\ns-ks-ksallocator_framing_ex.md">KSALLOCATOR_FRAMING_EX</a> 
 
 
 <a href="..\ks\ns-ks-ksallocator_framing_ex.md">KSALLOCATOR_FRAMING_EX</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_FRAMING_ITEM structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

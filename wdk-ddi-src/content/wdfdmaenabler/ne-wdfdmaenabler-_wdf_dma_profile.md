@@ -79,13 +79,13 @@ typedef enum _WDF_DMA_PROFILE {
                 </tr>
             
                 <tr>
-                    <td>WdfDmaProfilePacket64</td>
-                    <td>The device supports single-packet DMA operations, using 64-bit addressing.</td>
+                    <td>WdfDmaProfileScatterGather</td>
+                    <td>The device supports packet-based, scatter/gather DMA operations, using 32-bit addressing.</td>
                 </tr>
             
                 <tr>
-                    <td>WdfDmaProfileScatterGather</td>
-                    <td>The device supports packet-based, scatter/gather DMA operations, using 32-bit addressing.</td>
+                    <td>WdfDmaProfilePacket64</td>
+                    <td>The device supports single-packet DMA operations, using 64-bit addressing.</td>
                 </tr>
             
                 <tr>
@@ -94,13 +94,13 @@ typedef enum _WDF_DMA_PROFILE {
                 </tr>
             
                 <tr>
-                    <td>WdfDmaProfileScatterGather64Duplex</td>
-                    <td>The device supports packet-based, scatter/gather DMA operations, using 64-bit addressing. The device also supports duplex operation.</td>
+                    <td>WdfDmaProfileScatterGatherDuplex</td>
+                    <td>The device supports packet-based, scatter/gather DMA operations, using 32-bit addressing. The device also supports duplex operation.</td>
                 </tr>
             
                 <tr>
-                    <td>WdfDmaProfileScatterGatherDuplex</td>
-                    <td>The device supports packet-based, scatter/gather DMA operations, using 32-bit addressing. The device also supports duplex operation.</td>
+                    <td>WdfDmaProfileScatterGather64Duplex</td>
+                    <td>The device supports packet-based, scatter/gather DMA operations, using 64-bit addressing. The device also supports duplex operation.</td>
                 </tr>
             
                 <tr>
@@ -131,11 +131,3 @@ Kernel-Mode Driver Framework (KMDF) miniport drivers such as NDIS miniport drive
 ## See Also
 
 <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DMA_PROFILE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -62,38 +62,6 @@ typedef struct _NDIS_LINK_STATE {
 ## Members
 
 
-`AutoNegotiationFlags`
-
-The auto-negotiation settings for the miniport adapter. This member is created from a bitwise OR
- of the following flags:
-      
-
-
-
-
-
-#### NDIS_LINK_STATE_XMIT_LINK_SPEED_AUTO_NEGOTIATED
-
-the miniport adapter has auto-negotiated the transmit link speed with the link partner.
-
-
-
-#### NDIS_LINK_STATE_RCV_LINK_SPEED_AUTO_NEGOTIATED
-
-the miniport adapter has auto-negotiated the receive link speed with the link partner.
-
-
-
-#### NDIS_LINK_STATE_DUPLEX_AUTO_NEGOTIATED
-
-the miniport adapter has auto-negotiated the duplex state with the link partner.
-
-
-
-#### NDIS_LINK_STATE_PAUSE_FUNCTIONS_AUTO_NEGOTIATED
-
-the miniport adapter has auto-negotiated the pause functions with the link partner.
-
 `Header`
 
 The 
@@ -114,6 +82,25 @@ The media connect state for the miniport adapter. For more information, see
 
 The media duplex state for the miniport adapter. For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-media-duplex-state">
  OID_GEN_MEDIA_DUPLEX_STATE</a> OID.
+
+`XmitLinkSpeed`
+
+The current transmit link speed of the miniport adapter in bits per second. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff569594">OID_GEN_LINK_SPEED_EX</a>.
+ 
+
+<div class="alert"><b>Note</b>  A value of NDIS_LINK_SPEED_UNKNOWN indicates that the
+ transmit link speed is unknown.</div>
+<div> </div>
+
+`RcvLinkSpeed`
+
+The current receive link speed of the miniport adapter in bits per second. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff569594">OID_GEN_LINK_SPEED_EX</a>.
+
+ 
+
+<div class="alert"><b>Note</b>  A value of NDIS_LINK_SPEED_UNKNOWN indicates that the
+ receive link speed is unknown.</div>
+<div> </div>
 
 `PauseFunctions`
 
@@ -156,24 +143,37 @@ the miniport adapter and link partner support sending and receiving pause frames
 Pause frame negotiation is in progress. The pause frame support that the link partner provides
  is unknown.
 
-`RcvLinkSpeed`
+`AutoNegotiationFlags`
 
-The current receive link speed of the miniport adapter in bits per second. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff569594">OID_GEN_LINK_SPEED_EX</a>.
+The auto-negotiation settings for the miniport adapter. This member is created from a bitwise OR
+ of the following flags:
+      
 
- 
 
-<div class="alert"><b>Note</b>  A value of NDIS_LINK_SPEED_UNKNOWN indicates that the
- receive link speed is unknown.</div>
-<div> </div>
 
-`XmitLinkSpeed`
 
-The current transmit link speed of the miniport adapter in bits per second. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff569594">OID_GEN_LINK_SPEED_EX</a>.
- 
 
-<div class="alert"><b>Note</b>  A value of NDIS_LINK_SPEED_UNKNOWN indicates that the
- transmit link speed is unknown.</div>
-<div> </div>
+#### NDIS_LINK_STATE_XMIT_LINK_SPEED_AUTO_NEGOTIATED
+
+the miniport adapter has auto-negotiated the transmit link speed with the link partner.
+
+
+
+#### NDIS_LINK_STATE_RCV_LINK_SPEED_AUTO_NEGOTIATED
+
+the miniport adapter has auto-negotiated the receive link speed with the link partner.
+
+
+
+#### NDIS_LINK_STATE_DUPLEX_AUTO_NEGOTIATED
+
+the miniport adapter has auto-negotiated the duplex state with the link partner.
+
+
+
+#### NDIS_LINK_STATE_PAUSE_FUNCTIONS_AUTO_NEGOTIATED
+
+the miniport adapter has auto-negotiated the pause functions with the link partner.
 
 ## Remarks
 Miniport drivers use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567391">NDIS_STATUS_LINK_STATE</a> status indication to notify NDIS and overlying drivers that there has been a change in the physical characteristics of a medium.
@@ -219,11 +219,3 @@ The miniport driver also returns an <b>NDIS_LINK_STATE</b> structure when it han
 
 
 <a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_LINK_STATE structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

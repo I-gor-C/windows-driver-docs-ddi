@@ -66,6 +66,11 @@ typedef enum _WDI_SCAN_TYPE {
                 </tr>
             
                 <tr>
+                    <td>WDI_SCAN_TYPE_PASSIVE_ONLY</td>
+                    <td>The port should not transmit a probe request on the channels that it scans.</td>
+                </tr>
+            
+                <tr>
                     <td>WDI_SCAN_TYPE_AUTO</td>
                     <td>The port can perform an active or passive can or can use a combination of both scan types. It should prefer using Active scans when possible. This is the default scan type setting.</td>
                 </tr>
@@ -73,11 +78,6 @@ typedef enum _WDI_SCAN_TYPE {
                 <tr>
                     <td>WDI_SCAN_TYPE_MAX_VALUE</td>
                     <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_SCAN_TYPE_PASSIVE_ONLY</td>
-                    <td>The port should not transmit a probe request on the channels that it scans.</td>
                 </tr>
 </table>
 

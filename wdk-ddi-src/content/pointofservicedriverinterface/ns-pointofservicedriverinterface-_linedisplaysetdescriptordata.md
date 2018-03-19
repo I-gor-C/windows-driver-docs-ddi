@@ -56,11 +56,11 @@ typedef struct _LineDisplaySetDescriptorData {
 ## Members
 
 
-`attribute`
-
-
-
 `descriptor`
+
+
+
+`attribute`
 
 
 

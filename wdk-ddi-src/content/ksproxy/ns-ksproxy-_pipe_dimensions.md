@@ -62,11 +62,11 @@ typedef struct _PIPE_DIMENSIONS {
 
 
 
-`EndPin`
-
-
-
 `MaxExpansionPin`
+
+
+
+`EndPin`
 
 
 

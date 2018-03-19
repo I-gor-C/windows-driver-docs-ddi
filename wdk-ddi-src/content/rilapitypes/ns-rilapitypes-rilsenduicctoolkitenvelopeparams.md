@@ -59,7 +59,7 @@ typedef struct _RILSENDUICCTOOLKITENVELOPEPARAMS {
 ## Members
 
 
-`bEnvelope`
+`dwSlotIndex`
 
 
 
@@ -67,7 +67,7 @@ typedef struct _RILSENDUICCTOOLKITENVELOPEPARAMS {
 
 
 
-`dwSlotIndex`
+`bEnvelope`
 
 
 

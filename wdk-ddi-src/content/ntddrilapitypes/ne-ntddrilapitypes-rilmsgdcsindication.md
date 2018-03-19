@@ -61,7 +61,7 @@ typedef enum _RILMSGDCSINDICATION {
 <table>
             
                 <tr>
-                    <td>RIL_DCSINDICATION_EMAIL</td>
+                    <td>RIL_DCSINDICATION_VOICEMAIL</td>
                     <td></td>
                 </tr>
             
@@ -71,7 +71,7 @@ typedef enum _RILMSGDCSINDICATION {
                 </tr>
             
                 <tr>
-                    <td>RIL_DCSINDICATION_MAX</td>
+                    <td>RIL_DCSINDICATION_EMAIL</td>
                     <td></td>
                 </tr>
             
@@ -81,7 +81,7 @@ typedef enum _RILMSGDCSINDICATION {
                 </tr>
             
                 <tr>
-                    <td>RIL_DCSINDICATION_VOICEMAIL</td>
+                    <td>RIL_DCSINDICATION_MAX</td>
                     <td></td>
                 </tr>
 </table>

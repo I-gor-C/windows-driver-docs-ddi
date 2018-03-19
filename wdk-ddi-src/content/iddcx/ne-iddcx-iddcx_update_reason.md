@@ -63,23 +63,8 @@ typedef enum _IDDCX_UPDATE_REASON {
 <table>
             
                 <tr>
-                    <td>IDDCX_UPDATE_REASON_CONFIGURATION_CONSTRAINTS</td>
-                    <td>The mode list is changing due to constraints of the product when in a new configuration</td>
-                </tr>
-            
-                <tr>
-                    <td>IDDCX_UPDATE_REASON_DISPLAY_LINK_BANDWIDTH</td>
-                    <td>The mode list is changing due to changes in bandwidth between the indirect display device and the monitor</td>
-                </tr>
-            
-                <tr>
-                    <td>IDDCX_UPDATE_REASON_HOST_LINK_BANDWIDTH</td>
-                    <td>The mode list is changing due to changes in bandwidth between the system and the indirect display device</td>
-                </tr>
-            
-                <tr>
-                    <td>IDDCX_UPDATE_REASON_OTHER</td>
-                    <td>The mode list is changing due to another reason not listed above</td>
+                    <td>IDDCX_UPDATE_REASON_UNINITIALIZED</td>
+                    <td>Indicates that an <b>IDDCX_UPDATE_REASON</b> variable has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>
@@ -88,8 +73,23 @@ typedef enum _IDDCX_UPDATE_REASON {
                 </tr>
             
                 <tr>
-                    <td>IDDCX_UPDATE_REASON_UNINITIALIZED</td>
-                    <td>Indicates that an <b>IDDCX_UPDATE_REASON</b> variable has not yet been assigned a meaningful value.</td>
+                    <td>IDDCX_UPDATE_REASON_HOST_LINK_BANDWIDTH</td>
+                    <td>The mode list is changing due to changes in bandwidth between the system and the indirect display device</td>
+                </tr>
+            
+                <tr>
+                    <td>IDDCX_UPDATE_REASON_DISPLAY_LINK_BANDWIDTH</td>
+                    <td>The mode list is changing due to changes in bandwidth between the indirect display device and the monitor</td>
+                </tr>
+            
+                <tr>
+                    <td>IDDCX_UPDATE_REASON_CONFIGURATION_CONSTRAINTS</td>
+                    <td>The mode list is changing due to constraints of the product when in a new configuration</td>
+                </tr>
+            
+                <tr>
+                    <td>IDDCX_UPDATE_REASON_OTHER</td>
+                    <td>The mode list is changing due to another reason not listed above</td>
                 </tr>
             
                 <tr>

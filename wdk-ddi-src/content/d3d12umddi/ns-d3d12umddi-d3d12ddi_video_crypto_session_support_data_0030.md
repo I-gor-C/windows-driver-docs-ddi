@@ -62,29 +62,29 @@ typedef struct _D3D12DDI_VIDEO_CRYPTO_SESSION_SUPPORT_DATA_0030 {
 ## Members
 
 
-`BitstreamEncryption`
+`NodeIndex`
 
-Bitstream encryption.
-
-`ContentProtectionSystem`
-
-Content protection system.
+Node index.
 
 `DecodeProfile`
 
 Decode profile.
 
+`ContentProtectionSystem`
+
+Content protection system.
+
 `Flags`
 
 Flags.
 
+`BitstreamEncryption`
+
+Bitstream encryption.
+
 `KeyBaseDataSize`
 
 Key base data size.
-
-`NodeIndex`
-
-Node index.
 
 `Support`
 

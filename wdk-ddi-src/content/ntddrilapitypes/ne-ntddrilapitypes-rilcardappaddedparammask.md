@@ -59,17 +59,17 @@ typedef enum _RILCARDAPPADDEDPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_CARDAPPADDED_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_CARDAPPADDED_SLOTINDEX</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_PARAM_CARDAPPADDED_UICCAPPINFO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CARDAPPADDED_ALL</td>
                     <td></td>
                 </tr>
 </table>

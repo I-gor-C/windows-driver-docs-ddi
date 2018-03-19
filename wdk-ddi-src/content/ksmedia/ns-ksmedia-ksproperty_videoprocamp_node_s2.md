@@ -60,36 +60,13 @@ typedef struct {
 ## Members
 
 
-`Capabilities`
+`NodeProperty`
 
-Specifies the capabilities of a property. This member has meaning only for get requests. The minidriver should return the capabilities of the video processing amplifier with respect to the property specified in <b>Property</b>. This member should be set to one of the following values:
+Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the node, property set, property ID, and request type.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-KSPROPERTY_VIDEOPROCAMP_FLAGS_MANUAL
+`Value1`
 
-</td>
-<td>
-The device supports manual setting of the specified property
-
-</td>
-</tr>
-<tr>
-<td>
-KSPROPERTY_VIDEOPROCAMP_FLAGS_AUTO
-
-</td>
-<td>
-The device supports automatic setting of the specified property
-
-</td>
-</tr>
-</table>
+Specifies the first value of a request. For set requests, the minidriver should set the property specified in <b>Property</b> to this value. For get requests, the minidriver should return the value of the property specified in <b>Property</b>.
 
 `Flags`
 
@@ -122,13 +99,36 @@ Indicates that the property is to be adjusted automatically
 </tr>
 </table>
 
-`NodeProperty`
+`Capabilities`
 
-Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the node, property set, property ID, and request type.
+Specifies the capabilities of a property. This member has meaning only for get requests. The minidriver should return the capabilities of the video processing amplifier with respect to the property specified in <b>Property</b>. This member should be set to one of the following values:
 
-`Value1`
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+KSPROPERTY_VIDEOPROCAMP_FLAGS_MANUAL
 
-Specifies the first value of a request. For set requests, the minidriver should set the property specified in <b>Property</b> to this value. For get requests, the minidriver should return the value of the property specified in <b>Property</b>.
+</td>
+<td>
+The device supports manual setting of the specified property
+
+</td>
+</tr>
+<tr>
+<td>
+KSPROPERTY_VIDEOPROCAMP_FLAGS_AUTO
+
+</td>
+<td>
+The device supports automatic setting of the specified property
+
+</td>
+</tr>
+</table>
 
 `Value2`
 

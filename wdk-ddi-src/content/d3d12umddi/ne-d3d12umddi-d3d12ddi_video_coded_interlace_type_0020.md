@@ -59,13 +59,13 @@ typedef enum D3D12DDI_VIDEO_CODED_INTERLACE_TYPE_0020 {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_CODED_INTERLACE_TYPE_0020_FIELD_BASED</td>
-                    <td>The coded video stream may contain a mix of progressive and interlaced frames.</td>
+                    <td>D3D12DDI_VIDEO_CODED_INTERLACE_TYPE_0020_NONE</td>
+                    <td>The coded video stream contains only progressive frames.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_CODED_INTERLACE_TYPE_0020_NONE</td>
-                    <td>The coded video stream contains only progressive frames.</td>
+                    <td>D3D12DDI_VIDEO_CODED_INTERLACE_TYPE_0020_FIELD_BASED</td>
+                    <td>The coded video stream may contain a mix of progressive and interlaced frames.</td>
                 </tr>
 </table>
 

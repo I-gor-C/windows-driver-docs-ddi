@@ -59,12 +59,6 @@ typedef struct DXGI_DDI_PRIMARY_DESC {
 ## Members
 
 
-`DriverFlags`
-
-[out] A valid bitwise OR of values that indicate how the driver can display the resource. 
-
-The DXGI_DDI_PRIMARY_DRIVER_FLAG_NO_SCANOUT (0x1) value is currently the only supported value. This bit indicates that the driver cannot support the runtime setting any subresource of the specified resource as a primary. The user-mode display driver should set this bit if it implements presentation from this surface through a copy operation. Therefore, the runtime will not use flip-style presentation if this bit is set.
-
 `Flags`
 
 [in] A valid bitwise OR of any of the following values that indicates how the resource is displayed. 
@@ -110,13 +104,19 @@ The primary represents a stereo back buffer.
 </tr>
 </table>
 
+`VidPnSourceId`
+
+[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the primary surface is created on.
+
 `ModeDesc`
 
 [in] A <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_mode_desc.md">DXGI_DDI_MODE_DESC</a> structure that describes the display mode.
 
-`VidPnSourceId`
+`DriverFlags`
 
-[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the primary surface is created on.
+[out] A valid bitwise OR of values that indicate how the driver can display the resource. 
+
+The DXGI_DDI_PRIMARY_DRIVER_FLAG_NO_SCANOUT (0x1) value is currently the only supported value. This bit indicates that the driver cannot support the runtime setting any subresource of the specified resource as a primary. The user-mode display driver should set this bit if it implements presentation from this surface through a copy operation. Therefore, the runtime will not use flip-style presentation if this bit is set.
 
 
 ## Requirements
@@ -132,11 +132,3 @@ The primary represents a stereo back buffer.
 
 
 <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_mode_desc.md">DXGI_DDI_MODE_DESC</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGI_DDI_PRIMARY_DESC structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

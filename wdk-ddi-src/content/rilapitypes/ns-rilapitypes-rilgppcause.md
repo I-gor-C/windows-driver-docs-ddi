@@ -58,11 +58,11 @@ typedef struct _RILGPPCAUSE {
 ## Members
 
 
-`dwCauseValue`
-
-
-
 `dwLocation`
+
+
+
+`dwCauseValue`
 
 
 

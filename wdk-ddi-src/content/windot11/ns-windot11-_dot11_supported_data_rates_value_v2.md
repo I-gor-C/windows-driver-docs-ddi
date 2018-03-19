@@ -59,14 +59,14 @@ typedef struct _DOT11_SUPPORTED_DATA_RATES_VALUE_V2 {
 ## Members
 
 
-`ucSupportedRxDataRatesValue`
-
-An array of the receive data rates supported by the PLCP and PMD of the PHY.
-
 `ucSupportedTxDataRatesValue`
 
 An array of the transmit data rates supported by the Physical Layer Convergence Procedure (PLCP)
      and Physical Media Dependent (PMD) sublayer of the PHY.
+
+`ucSupportedRxDataRatesValue`
+
+An array of the receive data rates supported by the PLCP and PMD of the PHY.
 
 ## Remarks
 Each entry in the 
@@ -109,11 +109,3 @@ If the number of supported rates in either array is less than 255, the miniport 
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-data-rates-value">
    OID_DOT11_SUPPORTED_DATA_RATES_VALUE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SUPPORTED_DATA_RATES_VALUE_V2 structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

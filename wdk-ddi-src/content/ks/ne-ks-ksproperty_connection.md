@@ -65,22 +65,7 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSPROPERTY_CONNECTION_ACQUIREORDERING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CONNECTION_ALLOCATORFRAMING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CONNECTION_ALLOCATORFRAMING_EX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CONNECTION_DATAFORMAT</td>
+                    <td>KSPROPERTY_CONNECTION_STATE</td>
                     <td></td>
                 </tr>
             
@@ -90,17 +75,32 @@ typedef enum  {
                 </tr>
             
                 <tr>
+                    <td>KSPROPERTY_CONNECTION_DATAFORMAT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CONNECTION_ALLOCATORFRAMING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_CONNECTION_STARTAT</td>
+                    <td>KSPROPERTY_CONNECTION_ACQUIREORDERING</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_CONNECTION_STATE</td>
+                    <td>KSPROPERTY_CONNECTION_ALLOCATORFRAMING_EX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CONNECTION_STARTAT</td>
                     <td></td>
                 </tr>
 </table>

@@ -59,12 +59,12 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KsListEntryHead</td>
+                    <td>KsListEntryTail</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>KsListEntryTail</td>
+                    <td>KsListEntryHead</td>
                     <td></td>
                 </tr>
 </table>

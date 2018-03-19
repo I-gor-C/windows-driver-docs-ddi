@@ -64,37 +64,37 @@ typedef struct _SCSISCAN_INFO {
 ## Members
 
 
-`AdapterName`
+`Size`
 
-<i>For internal use only.</i>
+Size, in bytes, of the SCSISCAN_INFO structure.
 
 `Flags`
 
 Not used, must be zero.
 
-`Lun`
+`PortNumber`
 
-Target logical unit number (LUN).
+SCSI adapter number.
 
 `PathId`
 
 Host SCSI ID.
 
-`PortNumber`
+`TargetId`
 
-SCSI adapter number.
+Target SCSI ID.
+
+`Lun`
+
+Target logical unit number (LUN).
+
+`AdapterName`
+
+<i>For internal use only.</i>
 
 `Reserved`
 
 <i>For internal use only.</i>
-
-`Size`
-
-Size, in bytes, of the SCSISCAN_INFO structure.
-
-`TargetId`
-
-Target SCSI ID.
 
 
 ## Requirements

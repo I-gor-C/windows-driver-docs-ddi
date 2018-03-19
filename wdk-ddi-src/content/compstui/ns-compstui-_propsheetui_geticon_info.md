@@ -64,6 +64,10 @@ typedef struct _PROPSHEETUI_GETICON_INFO {
 
 CPSUI-supplied size, in bytes, of the PROPSHEETUI_GETICON_INFO structure.
 
+`Flags`
+
+Reserved.
+
 `cxIcon`
 
 CPSUI-supplied icon width, in pixels.
@@ -71,10 +75,6 @@ CPSUI-supplied icon width, in pixels.
 `cyIcon`
 
 CPSUI-supplied icon height, in pixels.
-
-`Flags`
-
-Reserved.
 
 `hIcon`
 

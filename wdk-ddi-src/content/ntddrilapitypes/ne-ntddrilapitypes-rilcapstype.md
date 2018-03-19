@@ -68,27 +68,12 @@ typedef enum _RILCAPSTYPE {
 <table>
             
                 <tr>
-                    <td>RIL_CAPSTYPE_ARG_LARGEST</td>
+                    <td>RIL_CAPSTYPE_PERSOLOCKSUPPORT</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CAPSTYPE_ARG_SMALLEST</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CAPSTYPE_CALLSUPPORT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CAPSTYPE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CAPSTYPE_NITZNOTIFICATION</td>
+                    <td>RIL_CAPSTYPE_PERSOLOCKPWDLENGTH</td>
                     <td></td>
                 </tr>
             
@@ -103,16 +88,6 @@ typedef enum _RILCAPSTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_CAPSTYPE_PERSOLOCKPWDLENGTH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CAPSTYPE_PERSOLOCKSUPPORT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_CAPSTYPE_RADIOCONFIGURATIONS</td>
                     <td></td>
                 </tr>
@@ -123,7 +98,32 @@ typedef enum _RILCAPSTYPE {
                 </tr>
             
                 <tr>
+                    <td>RIL_CAPSTYPE_NITZNOTIFICATION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CAPSTYPE_CALLSUPPORT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_CAPSTYPE_SMSSUPPORT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CAPSTYPE_ARG_SMALLEST</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CAPSTYPE_ARG_LARGEST</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CAPSTYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

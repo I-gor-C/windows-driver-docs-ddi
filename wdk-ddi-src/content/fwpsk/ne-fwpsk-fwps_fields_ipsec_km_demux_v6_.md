@@ -67,38 +67,13 @@ typedef enum FWPS_FIELDS_IPSEC_KM_DEMUX_V6_ {
 <table>
             
                 <tr>
-                    <td>FWPS_FIELD_IPSEC_KM_DEMUX_V6_CURRENT_PROFILE_ID</td>
-                    <td>The profile identifier (network category) of the network interface. The possible network category values are: public (1), private (2), or domain (3). 
-
-
-
-<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
-<div> </div></td>
-                </tr>
-            
-                <tr>
                     <td>FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_LOCAL_ADDRESS</td>
                     <td>The local IP address.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_LOCAL_INTERFACE</td>
-                    <td>The IP local interface.
-     
-
-<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
-<div> </div></td>
-                </tr>
-            
-                <tr>
                     <td>FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_REMOTE_ADDRESS</td>
                     <td>The remote IP address.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_IPSEC_KM_DEMUX_V6_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
                 </tr>
             
                 <tr>
@@ -111,8 +86,33 @@ typedef enum FWPS_FIELDS_IPSEC_KM_DEMUX_V6_ {
                 </tr>
             
                 <tr>
+                    <td>FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_LOCAL_INTERFACE</td>
+                    <td>The IP local interface.
+     
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPSEC_KM_DEMUX_V6_CURRENT_PROFILE_ID</td>
+                    <td>The profile identifier (network category) of the network interface. The possible network category values are: public (1), private (2), or domain (3). 
+
+
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
                     <td>FWPS_FIELD_KM_DEMUX_V6_IPSEC_SECURITY_REALM_ID</td>
                     <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPSEC_KM_DEMUX_V6_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 

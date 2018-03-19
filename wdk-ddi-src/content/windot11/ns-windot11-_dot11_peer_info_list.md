@@ -97,13 +97,6 @@ This member must be set to
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
-`PeerInfo`
-
-An array that specifies the list of 
-     <a href="..\windot11\ns-windot11-_dot11_peer_info.md">DOT11_PEER_INFO</a> structures that specify
-     information on all peer stations within an IBSS network. Each station is represented by a
-     DOT11_PEER_INFO structure.
-
 `uNumOfEntries`
 
 The number of entries in the 
@@ -113,6 +106,13 @@ The number of entries in the
 
 The maximum number of entries that the 
      <b>PeerInfo</b> array can contain.
+
+`PeerInfo`
+
+An array that specifies the list of 
+     <a href="..\windot11\ns-windot11-_dot11_peer_info.md">DOT11_PEER_INFO</a> structures that specify
+     information on all peer stations within an IBSS network. Each station is represented by a
+     DOT11_PEER_INFO structure.
 
 ## Remarks
 This structure is used with 
@@ -135,11 +135,3 @@ This structure is used with
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PEER_INFO_LIST structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

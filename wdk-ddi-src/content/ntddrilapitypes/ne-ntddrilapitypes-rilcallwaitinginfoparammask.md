@@ -60,12 +60,7 @@ typedef enum _RILCALLWAITINGINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_CWI_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CWI_CALLERINFO</td>
+                    <td>RIL_PARAM_CWI_EXECUTOR</td>
                     <td></td>
                 </tr>
             
@@ -75,7 +70,12 @@ typedef enum _RILCALLWAITINGINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CWI_EXECUTOR</td>
+                    <td>RIL_PARAM_CWI_CALLERINFO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CWI_ALL</td>
                     <td></td>
                 </tr>
 </table>

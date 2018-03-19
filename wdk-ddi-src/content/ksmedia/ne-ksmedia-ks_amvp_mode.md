@@ -62,6 +62,11 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>KS_AMVP_MODE_WEAVE</td>
+                    <td>Specifies the weave method to display interlaced video. In the weave mode, alternating fields are combined to form a single frame.</td>
+                </tr>
+            
+                <tr>
                     <td>KS_AMVP_MODE_BOBINTERLEAVED</td>
                     <td>Specifies the interleaved bob method to display video. In the interleaved bob mode, each field is displayed individually, and the gaps between fields are filled with interpolated values.</td>
                 </tr>
@@ -79,11 +84,6 @@ typedef enum  {
                 <tr>
                     <td>KS_AMVP_MODE_SKIPODD</td>
                     <td>Specifies that odd video fields should be skipped when displaying video.</td>
-                </tr>
-            
-                <tr>
-                    <td>KS_AMVP_MODE_WEAVE</td>
-                    <td>Specifies the weave method to display interlaced video. In the weave mode, alternating fields are combined to form a single frame.</td>
                 </tr>
 </table>
 

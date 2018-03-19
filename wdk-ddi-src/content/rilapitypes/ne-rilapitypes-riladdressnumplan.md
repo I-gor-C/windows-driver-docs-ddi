@@ -65,17 +65,22 @@ typedef enum _RILADDRESSNUMPLAN {
 <table>
             
                 <tr>
+                    <td>RIL_NUMPLAN_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NUMPLAN_TELEPHONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_NUMPLAN_DATA</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_NUMPLAN_ERMES</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NUMPLAN_MAX</td>
+                    <td>RIL_NUMPLAN_TELEX</td>
                     <td></td>
                 </tr>
             
@@ -90,17 +95,12 @@ typedef enum _RILADDRESSNUMPLAN {
                 </tr>
             
                 <tr>
-                    <td>RIL_NUMPLAN_TELEPHONE</td>
+                    <td>RIL_NUMPLAN_ERMES</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_NUMPLAN_TELEX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NUMPLAN_UNKNOWN</td>
+                    <td>RIL_NUMPLAN_MAX</td>
                     <td></td>
                 </tr>
 </table>

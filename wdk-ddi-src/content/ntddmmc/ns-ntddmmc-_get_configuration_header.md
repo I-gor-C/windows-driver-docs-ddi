@@ -59,14 +59,6 @@ typedef struct _GET_CONFIGURATION_HEADER {
 ## Members
 
 
-`CurrentProfile`
-
-Contains an enumerator value of type <a href="..\ntddmmc\ne-ntddmmc-_feature_profile_type.md">FEATURE_PROFILE_TYPE</a> that indicates the device's current profile. The bytes in this array are arranged in big-endian order. <b>CurrentProfile</b>[0] has the most significant byte, and  <b>CurrentProfile</b>[3] has the least significant byte.
-
-`Data`
-
-Contains the feature data, beginning with the <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>.
-
 `DataLength`
 
 Indicates the amount of data, in bytes, that is being returned in the buffer area pointed to by the <b>Data</b> member. If the data length is greater than 65,530 bytes, multiple GET CONFIGURATION commands will be required for the Initiator to read all configuration data. The bytes in this array are arranged in big-endian order. <b>DataLength</b>[0] has the most significant byte, and  <b>DataLength</b>[3] has the least significant byte.
@@ -74,6 +66,14 @@ Indicates the amount of data, in bytes, that is being returned in the buffer are
 `Reserved`
 
 Reserved.
+
+`CurrentProfile`
+
+Contains an enumerator value of type <a href="..\ntddmmc\ne-ntddmmc-_feature_profile_type.md">FEATURE_PROFILE_TYPE</a> that indicates the device's current profile. The bytes in this array are arranged in big-endian order. <b>CurrentProfile</b>[0] has the most significant byte, and  <b>CurrentProfile</b>[3] has the least significant byte.
+
+`Data`
+
+Contains the feature data, beginning with the <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>.
 
 
 ## Requirements
@@ -96,11 +96,3 @@ Reserved.
 
 
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20GET_CONFIGURATION_HEADER structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

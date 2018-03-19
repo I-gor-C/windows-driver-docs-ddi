@@ -60,13 +60,17 @@ typedef struct _D3DDDIARG_SETMATERIAL {
 ## Members
 
 
+`Diffuse`
+
+[in] A D3DCOLORVALUE structure that indicates the diffuse color of the material. For more information about D3DCOLORVALUE, see the Microsoft Windows SDK documentation.
+
 `Ambient`
 
 [in] A D3DCOLORVALUE structure that indicates the ambient color of the material.
 
-`Diffuse`
+`Specular`
 
-[in] A D3DCOLORVALUE structure that indicates the diffuse color of the material. For more information about D3DCOLORVALUE, see the Microsoft Windows SDK documentation.
+[in] A D3DCOLORVALUE structure that indicates the specular color of the material.
 
 `Emissive`
 
@@ -75,10 +79,6 @@ typedef struct _D3DDDIARG_SETMATERIAL {
 `Power`
 
 [in] A FLOAT value that indicates the sharpness of specular highlights. To turn off specular highlights for a material, set <b>Power</b> to 0 (setting <b>Specular</b> to 0 is not enough).
-
-`Specular`
-
-[in] A D3DCOLORVALUE structure that indicates the specular color of the material.
 
 
 ## Requirements
@@ -90,11 +90,3 @@ typedef struct _D3DDDIARG_SETMATERIAL {
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setmaterial.md">SetMaterial</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_SETMATERIAL structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

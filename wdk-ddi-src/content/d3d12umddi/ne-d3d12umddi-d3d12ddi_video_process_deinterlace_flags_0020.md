@@ -60,6 +60,11 @@ typedef enum D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAGS_0020 {
 <table>
             
                 <tr>
+                    <td>D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAG_0020_NONE</td>
+                    <td>No deinterlacing.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAG_0020_BOB</td>
                     <td>The video processor can perform bob deinterlacing. In bob deinterlacing, missing field lines are interpolated from the lines above and below. Bob deinterlacing does not require reference frames.</td>
                 </tr>
@@ -67,11 +72,6 @@ typedef enum D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAGS_0020 {
                 <tr>
                     <td>D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAG_0020_CUSTOM</td>
                     <td>The video processor can perform a custom high quality deinterlacing. This feature requires the number of reference frames indicated in <b>D3D12DDI_VIDEO_PROCESS_FRAME_REFERENCE_SUPPORT</b>. If the video processor does not have the necessary number of reference frames, it falls back to bob deinterlacing.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAG_0020_NONE</td>
-                    <td>No deinterlacing.</td>
                 </tr>
 </table>
 

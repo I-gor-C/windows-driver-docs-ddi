@@ -66,15 +66,15 @@ typedef struct _RILUICCLOCKSTATE {
 
 
 
-`dwLockState`
-
-
-
 `dwParams`
 
 
 
-`dwUnblockAttemptsLeft`
+`rilUiccLock`
+
+
+
+`dwLockState`
 
 
 
@@ -82,7 +82,7 @@ typedef struct _RILUICCLOCKSTATE {
 
 
 
-`rilUiccLock`
+`dwUnblockAttemptsLeft`
 
 
 

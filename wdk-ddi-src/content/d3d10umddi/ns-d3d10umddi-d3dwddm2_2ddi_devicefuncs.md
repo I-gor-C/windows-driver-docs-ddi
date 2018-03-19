@@ -59,343 +59,27 @@ typedef struct D3DWDDM2_2DDI_DEVICEFUNCS {
 ## Members
 
 
-`pfnAbandonCommandList`
-
-
-
-`pfnAcquireResource`
-
-
-
-`pfnAssignDebugBinary`
-
-
-
-`pfnCalcDeferredContextHandleSize`
-
-
-
-`pfnCalcPrivateBlendStateSize`
-
-
-
-`pfnCalcPrivateCommandListSize`
-
-
-
-`pfnCalcPrivateDeferredContextSize`
-
-
-
-`pfnCalcPrivateDepthStencilStateSize`
-
-
-
-`pfnCalcPrivateDepthStencilViewSize`
-
-
-
-`pfnCalcPrivateElementLayoutSize`
-
-
-
-`pfnCalcPrivateGeometryShaderWithStreamOutput`
-
-
-
-`pfnCalcPrivateOpenedResourceSize`
-
-
-
-`pfnCalcPrivateQuerySize`
-
-
-
-`pfnCalcPrivateRasterizerStateSize`
-
-
-
-`pfnCalcPrivateRenderTargetViewSize`
-
-
-
-`pfnCalcPrivateResourceSize`
-
-
-
-`pfnCalcPrivateSamplerSize`
-
-
-
-`pfnCalcPrivateShaderCacheSessionSize`
-
-A callback function that returns the size of a private shader cache session.
-
-`pfnCalcPrivateShaderResourceViewSize`
-
-
-
-`pfnCalcPrivateShaderSize`
-
-
-
-`pfnCalcPrivateTessellationShaderSize`
-
-
-
-`pfnCalcPrivateUnorderedAccessViewSize`
-
-
-
-`pfnCheckCounter`
-
-
-
-`pfnCheckCounterInfo`
-
-
-
-`pfnCheckDeferredContextHandleSizes`
-
-
-
-`pfnCheckDirectFlipSupport`
-
-
-
-`pfnCheckFormatSupport`
-
-
-
-`pfnCheckMultisampleQualityLevels`
-
-
-
-`pfnClearDepthStencilView`
-
-
-
-`pfnClearRenderTargetView`
-
-
-
-`pfnClearUnorderedAccessViewFloat`
-
-
-
-`pfnClearUnorderedAccessViewUint`
-
-
-
-`pfnClearView`
-
-
-
-`pfnCommandListExecute`
-
-
-
-`pfnCopyStructureCount`
-
-
-
-`pfnCopyTileMappings`
-
-
-
-`pfnCopyTiles`
-
-
-
-`pfnCreateBlendState`
-
-
-
-`pfnCreateCommandList`
-
-
-
-`pfnCreateComputeShader`
-
-
-
-`pfnCreateDeferredContext`
-
-
-
-`pfnCreateDepthStencilState`
-
-
-
-`pfnCreateDepthStencilView`
-
-
-
-`pfnCreateDomainShader`
-
-
-
-`pfnCreateElementLayout`
-
-
-
-`pfnCreateGeometryShader`
-
-
-
-`pfnCreateGeometryShaderWithStreamOutput`
-
-
-
-`pfnCreateHullShader`
-
-
-
-`pfnCreatePixelShader`
-
-
-
-`pfnCreateQuery`
-
-
-
-`pfnCreateRasterizerState`
-
-
-
-`pfnCreateRenderTargetView`
-
-
-
-`pfnCreateResource`
-
-
-
-`pfnCreateSampler`
-
-
-
-`pfnCreateShaderCacheSession`
-
-A callback function that creates a shader cache session.
-
-`pfnCreateShaderResourceView`
-
-
-
-`pfnCreateUnorderedAccessView`
-
-
-
-`pfnCreateVertexShader`
-
-
-
-`pfnCsSetConstantBuffers`
-
-
-
-`pfnCsSetSamplers`
-
-
-
-`pfnCsSetShader`
-
-
-
-`pfnCsSetShaderResources`
-
-
-
-`pfnCsSetShaderWithIfaces`
-
-
-
-`pfnCsSetUnorderedAccessViews`
-
-
-
 `pfnDefaultConstantBufferUpdateSubresourceUP`
 
 
 
-`pfnDestroyBlendState`
+`pfnVsSetConstantBuffers`
 
 
 
-`pfnDestroyCommandList`
+`pfnPsSetShaderResources`
 
 
 
-`pfnDestroyDepthStencilState`
+`pfnPsSetShader`
 
 
 
-`pfnDestroyDepthStencilView`
+`pfnPsSetSamplers`
 
 
 
-`pfnDestroyDevice`
-
-
-
-`pfnDestroyElementLayout`
-
-
-
-`pfnDestroyQuery`
-
-
-
-`pfnDestroyRasterizerState`
-
-
-
-`pfnDestroyRenderTargetView`
-
-
-
-`pfnDestroyResource`
-
-
-
-`pfnDestroySampler`
-
-
-
-`pfnDestroyShader`
-
-
-
-`pfnDestroyShaderCacheSession`
-
-A callback function that destroys a shader cache session.
-
-`pfnDestroyShaderResourceView`
-
-
-
-`pfnDestroyUnorderedAccessView`
-
-
-
-`pfnDiscard`
-
-
-
-`pfnDispatch`
-
-
-
-`pfnDispatchIndirect`
-
-
-
-`pfnDraw`
-
-
-
-`pfnDrawAuto`
+`pfnVsSetShader`
 
 
 
@@ -403,55 +87,7 @@ A callback function that destroys a shader cache session.
 
 
 
-`pfnDrawIndexedInstanced`
-
-
-
-`pfnDrawIndexedInstancedIndirect`
-
-
-
-`pfnDrawInstanced`
-
-
-
-`pfnDrawInstancedIndirect`
-
-
-
-`pfnDsSetConstantBuffers`
-
-
-
-`pfnDsSetSamplers`
-
-
-
-`pfnDsSetShader`
-
-
-
-`pfnDsSetShaderResources`
-
-
-
-`pfnDsSetShaderWithIfaces`
-
-
-
-`pfnDynamicConstantBufferMapDiscard`
-
-
-
-`pfnDynamicConstantBufferMapNoOverwrite`
-
-
-
-`pfnDynamicConstantBufferUnmap`
-
-
-
-`pfnDynamicIABufferMapDiscard`
+`pfnDraw`
 
 
 
@@ -463,11 +99,155 @@ A callback function that destroys a shader cache session.
 
 
 
+`pfnDynamicConstantBufferMapDiscard`
+
+
+
+`pfnDynamicIABufferMapDiscard`
+
+
+
+`pfnDynamicConstantBufferUnmap`
+
+
+
+`pfnPsSetConstantBuffers`
+
+
+
+`pfnIaSetInputLayout`
+
+
+
+`pfnIaSetVertexBuffers`
+
+
+
+`pfnIaSetIndexBuffer`
+
+
+
+`pfnDrawIndexedInstanced`
+
+
+
+`pfnDrawInstanced`
+
+
+
 `pfnDynamicResourceMapDiscard`
 
 
 
 `pfnDynamicResourceUnmap`
+
+
+
+`pfnGsSetConstantBuffers`
+
+
+
+`pfnGsSetShader`
+
+
+
+`pfnIaSetTopology`
+
+
+
+`pfnStagingResourceMap`
+
+
+
+`pfnStagingResourceUnmap`
+
+
+
+`pfnVsSetShaderResources`
+
+
+
+`pfnVsSetSamplers`
+
+
+
+`pfnGsSetShaderResources`
+
+
+
+`pfnGsSetSamplers`
+
+
+
+`pfnSetRenderTargets`
+
+
+
+`pfnShaderResourceViewReadAfterWriteHazard`
+
+
+
+`pfnResourceReadAfterWriteHazard`
+
+
+
+`pfnSetBlendState`
+
+
+
+`pfnSetDepthStencilState`
+
+
+
+`pfnSetRasterizerState`
+
+
+
+`pfnQueryEnd`
+
+
+
+`pfnQueryBegin`
+
+
+
+`pfnResourceCopyRegion`
+
+
+
+`pfnResourceUpdateSubresourceUP`
+
+
+
+`pfnSoSetTargets`
+
+
+
+`pfnDrawAuto`
+
+
+
+`pfnSetViewports`
+
+
+
+`pfnSetScissorRects`
+
+
+
+`pfnClearRenderTargetView`
+
+
+
+`pfnClearDepthStencilView`
+
+
+
+`pfnSetPredication`
+
+
+
+`pfnQueryGetData`
 
 
 
@@ -479,67 +259,39 @@ A callback function that destroys a shader cache session.
 
 
 
-`pfnGetMipPacking`
+`pfnResourceCopy`
 
 
 
-`pfnGetResourceLayout`
+`pfnResourceResolveSubresource`
 
 
 
-`pfnGsSetConstantBuffers`
+`pfnResourceMap`
 
 
 
-`pfnGsSetSamplers`
+`pfnResourceUnmap`
 
 
 
-`pfnGsSetShader`
+`pfnResourceIsStagingBusy`
 
 
 
-`pfnGsSetShaderResources`
+`pfnRelocateDeviceFuncs`
 
 
 
-`pfnGsSetShaderWithIfaces`
+`pfnCalcPrivateResourceSize`
 
 
 
-`pfnHsSetConstantBuffers`
+`pfnCalcPrivateOpenedResourceSize`
 
 
 
-`pfnHsSetSamplers`
-
-
-
-`pfnHsSetShader`
-
-
-
-`pfnHsSetShaderResources`
-
-
-
-`pfnHsSetShaderWithIfaces`
-
-
-
-`pfnIaSetIndexBuffer`
-
-
-
-`pfnIaSetInputLayout`
-
-
-
-`pfnIaSetTopology`
-
-
-
-`pfnIaSetVertexBuffers`
+`pfnCreateResource`
 
 
 
@@ -547,19 +299,271 @@ A callback function that destroys a shader cache session.
 
 
 
-`pfnPsSetConstantBuffers`
+`pfnDestroyResource`
 
 
 
-`pfnPsSetSamplers`
+`pfnCalcPrivateShaderResourceViewSize`
 
 
 
-`pfnPsSetShader`
+`pfnCreateShaderResourceView`
 
 
 
-`pfnPsSetShaderResources`
+`pfnDestroyShaderResourceView`
+
+
+
+`pfnCalcPrivateRenderTargetViewSize`
+
+
+
+`pfnCreateRenderTargetView`
+
+
+
+`pfnDestroyRenderTargetView`
+
+
+
+`pfnCalcPrivateDepthStencilViewSize`
+
+
+
+`pfnCreateDepthStencilView`
+
+
+
+`pfnDestroyDepthStencilView`
+
+
+
+`pfnCalcPrivateElementLayoutSize`
+
+
+
+`pfnCreateElementLayout`
+
+
+
+`pfnDestroyElementLayout`
+
+
+
+`pfnCalcPrivateBlendStateSize`
+
+
+
+`pfnCreateBlendState`
+
+
+
+`pfnDestroyBlendState`
+
+
+
+`pfnCalcPrivateDepthStencilStateSize`
+
+
+
+`pfnCreateDepthStencilState`
+
+
+
+`pfnDestroyDepthStencilState`
+
+
+
+`pfnCalcPrivateRasterizerStateSize`
+
+
+
+`pfnCreateRasterizerState`
+
+
+
+`pfnDestroyRasterizerState`
+
+
+
+`pfnCalcPrivateShaderSize`
+
+
+
+`pfnCreateVertexShader`
+
+
+
+`pfnCreateGeometryShader`
+
+
+
+`pfnCreatePixelShader`
+
+
+
+`pfnCalcPrivateGeometryShaderWithStreamOutput`
+
+
+
+`pfnCreateGeometryShaderWithStreamOutput`
+
+
+
+`pfnDestroyShader`
+
+
+
+`pfnCalcPrivateSamplerSize`
+
+
+
+`pfnCreateSampler`
+
+
+
+`pfnDestroySampler`
+
+
+
+`pfnCalcPrivateQuerySize`
+
+
+
+`pfnCreateQuery`
+
+
+
+`pfnDestroyQuery`
+
+
+
+`pfnCheckFormatSupport`
+
+
+
+`pfnCheckMultisampleQualityLevels`
+
+
+
+`pfnCheckCounterInfo`
+
+
+
+`pfnCheckCounter`
+
+
+
+`pfnDestroyDevice`
+
+
+
+`pfnSetTextFilterSize`
+
+
+
+`pfnResourceConvert`
+
+
+
+`pfnResourceConvertRegion`
+
+
+
+`pfnResetPrimitiveID`
+
+
+
+`pfnSetVertexPipelineOutput`
+
+
+
+`pfnDrawIndexedInstancedIndirect`
+
+
+
+`pfnDrawInstancedIndirect`
+
+
+
+`pfnCommandListExecute`
+
+
+
+`pfnHsSetShaderResources`
+
+
+
+`pfnHsSetShader`
+
+
+
+`pfnHsSetSamplers`
+
+
+
+`pfnHsSetConstantBuffers`
+
+
+
+`pfnDsSetShaderResources`
+
+
+
+`pfnDsSetShader`
+
+
+
+`pfnDsSetSamplers`
+
+
+
+`pfnDsSetConstantBuffers`
+
+
+
+`pfnCreateHullShader`
+
+
+
+`pfnCreateDomainShader`
+
+
+
+`pfnCheckDeferredContextHandleSizes`
+
+
+
+`pfnCalcDeferredContextHandleSize`
+
+
+
+`pfnCalcPrivateDeferredContextSize`
+
+
+
+`pfnCreateDeferredContext`
+
+
+
+`pfnAbandonCommandList`
+
+
+
+`pfnCalcPrivateCommandListSize`
+
+
+
+`pfnCreateCommandList`
+
+
+
+`pfnDestroyCommandList`
+
+
+
+`pfnCalcPrivateTessellationShaderSize`
 
 
 
@@ -567,15 +571,83 @@ A callback function that destroys a shader cache session.
 
 
 
-`pfnQueryBegin`
+`pfnVsSetShaderWithIfaces`
 
 
 
-`pfnQueryEnd`
+`pfnGsSetShaderWithIfaces`
 
 
 
-`pfnQueryGetData`
+`pfnHsSetShaderWithIfaces`
+
+
+
+`pfnDsSetShaderWithIfaces`
+
+
+
+`pfnCsSetShaderWithIfaces`
+
+
+
+`pfnCreateComputeShader`
+
+
+
+`pfnCsSetShader`
+
+
+
+`pfnCsSetShaderResources`
+
+
+
+`pfnCsSetSamplers`
+
+
+
+`pfnCsSetConstantBuffers`
+
+
+
+`pfnCalcPrivateUnorderedAccessViewSize`
+
+
+
+`pfnCreateUnorderedAccessView`
+
+
+
+`pfnDestroyUnorderedAccessView`
+
+
+
+`pfnClearUnorderedAccessViewUint`
+
+
+
+`pfnClearUnorderedAccessViewFloat`
+
+
+
+`pfnCsSetUnorderedAccessViews`
+
+
+
+`pfnDispatch`
+
+
+
+`pfnDispatchIndirect`
+
+
+
+`pfnSetResourceMinLOD`
+
+
+
+`pfnCopyStructureCount`
 
 
 
@@ -595,79 +667,51 @@ A callback function that destroys a shader cache session.
 
 
 
-`pfnReleaseResource`
+`pfnDiscard`
 
 
 
-`pfnRelocateDeviceFuncs`
+`pfnAssignDebugBinary`
 
 
 
-`pfnResetPrimitiveID`
+`pfnDynamicConstantBufferMapNoOverwrite`
+
+
+
+`pfnCheckDirectFlipSupport`
+
+
+
+`pfnClearView`
+
+
+
+`pfnUpdateTileMappings`
+
+
+
+`pfnCopyTileMappings`
+
+
+
+`pfnCopyTiles`
+
+
+
+`pfnUpdateTiles`
+
+
+
+`pfnTiledResourceBarrier`
+
+
+
+`pfnGetMipPacking`
 
 
 
 `pfnResizeTilePool`
-
-
-
-`pfnResourceConvert`
-
-
-
-`pfnResourceConvertRegion`
-
-
-
-`pfnResourceCopy`
-
-
-
-`pfnResourceCopyRegion`
-
-
-
-`pfnResourceIsStagingBusy`
-
-
-
-`pfnResourceMap`
-
-
-
-`pfnResourceReadAfterWriteHazard`
-
-
-
-`pfnResourceResolveSubresource`
-
-
-
-`pfnResourceUnmap`
-
-
-
-`pfnResourceUpdateSubresourceUP`
-
-
-
-`pfnRetrieveShaderComment`
-
-
-
-`pfnSetBlendState`
-
-
-
-`pfnSetDepthStencilState`
-
-
-
-`pfnSetHardwareProtection`
-
-
-
-`pfnSetHardwareProtectionState`
 
 
 
@@ -679,89 +723,45 @@ A callback function that destroys a shader cache session.
 
 
 
-`pfnSetPredication`
+`pfnSetHardwareProtection`
 
 
 
-`pfnSetRasterizerState`
+`pfnGetResourceLayout`
 
 
 
-`pfnSetRenderTargets`
+`pfnRetrieveShaderComment`
 
 
 
-`pfnSetResourceMinLOD`
+`pfnSetHardwareProtectionState`
 
 
 
-`pfnSetScissorRects`
+`pfnAcquireResource`
 
 
+
+`pfnReleaseResource`
+
+
+
+`pfnCalcPrivateShaderCacheSessionSize`
+
+A callback function that returns the size of a private shader cache session.
+
+`pfnCreateShaderCacheSession`
+
+A callback function that creates a shader cache session.
+
+`pfnDestroyShaderCacheSession`
+
+A callback function that destroys a shader cache session.
 
 `pfnSetShaderCacheSession`
 
 A callback function that sets a shader cache session.
-
-`pfnSetTextFilterSize`
-
-
-
-`pfnSetVertexPipelineOutput`
-
-
-
-`pfnSetViewports`
-
-
-
-`pfnShaderResourceViewReadAfterWriteHazard`
-
-
-
-`pfnSoSetTargets`
-
-
-
-`pfnStagingResourceMap`
-
-
-
-`pfnStagingResourceUnmap`
-
-
-
-`pfnTiledResourceBarrier`
-
-
-
-`pfnUpdateTileMappings`
-
-
-
-`pfnUpdateTiles`
-
-
-
-`pfnVsSetConstantBuffers`
-
-
-
-`pfnVsSetSamplers`
-
-
-
-`pfnVsSetShader`
-
-
-
-`pfnVsSetShaderResources`
-
-
-
-`pfnVsSetShaderWithIfaces`
-
-
 
 
 ## Requirements

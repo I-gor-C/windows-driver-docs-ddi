@@ -57,11 +57,11 @@ typedef struct D3D11_1DDI_VIDEO_INPUT {
 ## Members
 
 
-`p11VideoDeviceFuncs`
+`Relocate`
 
 Reserved for system use. Do not use in your driver.
 
-`Relocate`
+`p11VideoDeviceFuncs`
 
 Reserved for system use. Do not use in your driver.
 

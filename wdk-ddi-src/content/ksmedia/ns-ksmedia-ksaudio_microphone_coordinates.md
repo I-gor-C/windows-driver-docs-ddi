@@ -151,14 +151,6 @@ KSMICARRAY_MICTYPE_VENDORDEFINED
 
 If the microphone is of type KSMICARRAY_MICTYPE_VENDORDEFINED, the value must be set to 0x0F. Additionally, the most significant bits will further define the type of microphone.
 
-`wHorizontalAngle`
-
-Specifies a value between -31416 and +31416.  When divided by 10,000, it gives a radian angle measurement.
-
-`wVerticalAngle`
-
-Specifies a value between -15708 and +15708.  When divided by 10,000, it gives a radian angle measurement.
-
 `wXCoord`
 
 Specifies the signed X-coordinate of the microphone, in millimeters. Acceptable values range from -32768 to 32767, inclusive.
@@ -170,6 +162,14 @@ Specifies the signed Y-coordinate of the microphone, in millimeters. Acceptable 
 `wZCoord`
 
 Specifies the signed Z-coordinate of the microphone, in millimeters. Acceptable values range from -32768 to 32767, inclusive.
+
+`wVerticalAngle`
+
+Specifies a value between -15708 and +15708.  When divided by 10,000, it gives a radian angle measurement.
+
+`wHorizontalAngle`
+
+Specifies a value between -31416 and +31416.  When divided by 10,000, it gives a radian angle measurement.
 
 ## Remarks
 To better understand the descriptions for <i>wHorizontalAngle</i>  and <i>wVericalAngle</i>, consider the following diagram:

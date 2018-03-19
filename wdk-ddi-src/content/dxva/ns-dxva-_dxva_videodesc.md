@@ -62,6 +62,22 @@ typedef struct _DXVA_VideoDesc {
 ## Members
 
 
+`Size`
+
+Specifies the size of this structure, in bytes.
+
+`SampleWidth`
+
+Specifies the width of the sample, in pixels.
+
+`SampleHeight`
+
+Specifies the height of the sample, in pixels.
+
+`SampleFormat`
+
+Specifies the format of the sample defined by the <a href="..\dxva\ne-dxva-_dxva_sampleformat.md">DXVA_SampleFormat</a> structure.
+
 `d3dFormat`
 
 Specifies the Direct3D surface format of the sample.
@@ -73,22 +89,6 @@ Specifies the frequency of incoming video defined by the <a href="..\dxva\ns-dxv
 `OutputFrameFreq`
 
 Specifies the desired frame rate of output video as defined by <a href="..\dxva\ns-dxva-_dxva_frequency.md">DXVA_Frequency</a>.
-
-`SampleFormat`
-
-Specifies the format of the sample defined by the <a href="..\dxva\ne-dxva-_dxva_sampleformat.md">DXVA_SampleFormat</a> structure.
-
-`SampleHeight`
-
-Specifies the height of the sample, in pixels.
-
-`SampleWidth`
-
-Specifies the width of the sample, in pixels.
-
-`Size`
-
-Specifies the size of this structure, in bytes.
 
 ## Remarks
 For examples showing structure member values for deinterlacing or converting different types of content, see <a href="https://msdn.microsoft.com/be721bde-3c72-4942-9f33-5ea1bf2d187c">DeinterlaceQueryAvailableModes</a>.
@@ -105,11 +105,3 @@ For examples showing structure member values for deinterlacing or converting dif
 
 
 <a href="..\dxva\ne-dxva-_dxva_sampleformat.md">DXVA_SampleFormat</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_VideoDesc structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -68,33 +68,13 @@ struct _URB_CONTROL_FEATURE_REQUEST {
 ## Members
 
 
-`FeatureSelector`
-
-Specifies the USB-defined feature code to be cleared or set. Using a feature code that is invalid, cannot be set, or cannot be cleared will cause the target to stall. The bus driver will copy the value in the <b>FeatureSelector</b> member to the <b>wValue</b> field of the setup packet.
-
-`hca`
-
-Reserved. Do not use.
-
 `Hdr`
 
 Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> indicates either a set or a clear feature operation, to perform on a device, interface, endpoint or other non-standard component. <b>Hdr.Function</b> must have one of the following values:
 
 <b>Hdr.Length</b> must equal <code>sizeof(_URB_CONTROL_FEATURE_REQUEST)</code>.
 
-`Index`
-
-Specifies the device-defined index, returned by a successful configuration request, if the request is for an endpoint or interface. Otherwise, <b>Index</b> must be zero. The bus driver will copy the value in the <b>Index</b> member to the <b>wIndex</b> field of the setup packet.
-
 `Reserved`
-
-Reserved. Do not use.
-
-`Reserved0`
-
-Reserved. Do not use.
-
-`Reserved1`
 
 Reserved. Do not use.
 
@@ -115,6 +95,26 @@ Reserved. Do not use.
 Reserved. Do not use.
 
 `UrbLink`
+
+Reserved. Do not use.
+
+`hca`
+
+Reserved. Do not use.
+
+`Reserved0`
+
+Reserved. Do not use.
+
+`FeatureSelector`
+
+Specifies the USB-defined feature code to be cleared or set. Using a feature code that is invalid, cannot be set, or cannot be cleared will cause the target to stall. The bus driver will copy the value in the <b>FeatureSelector</b> member to the <b>wValue</b> field of the setup packet.
+
+`Index`
+
+Specifies the device-defined index, returned by a successful configuration request, if the request is for an endpoint or interface. Otherwise, <b>Index</b> must be zero. The bus driver will copy the value in the <b>Index</b> member to the <b>wIndex</b> field of the setup packet.
+
+`Reserved1`
 
 Reserved. Do not use.
 
@@ -143,11 +143,3 @@ Likewise, when a driver issues a URB with a function type of URB_FUNCTION_SYNC_R
 
 
 <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20_URB_CONTROL_FEATURE_REQUEST structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

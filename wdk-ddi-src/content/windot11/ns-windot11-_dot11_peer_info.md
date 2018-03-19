@@ -71,20 +71,15 @@ typedef struct _DOT11_PEER_INFO {
 ## Members
 
 
-`AssociationState`
+`MacAddress`
 
-A 
-     <a href="..\windot11\ne-windot11-_dot11_association_state.md">DOT11_ASSOCIATION_STATE</a>-type value
-     that indicates the 802.11 authentication and association state of the peer station. The state can be
-     either 
-     <b>dot11_assoc_state_auth_unassoc</b> or 
-     <b>dot11_assoc_state_auth_assoc</b>.
-     
+The media access control (MAC) address of the peer station within an independent BSS (IBSS)
+     network.
 
-In the 
-     <i>IEEE 802.11 Standard</i>, the 802.11 authentication procedure is optional for an independent network.
-     Therefore, depending upon the IHV implementation, the state represented by the 
-     <b>dot11_assoc_state_auth_unassoc</b> enumeration value may not be applicable.
+`usCapabilityInformation`
+
+The 802.11 Capability Information field from the beacon or probe response frames that the 802.11
+     station most recently received from the peer.
 
 `AuthAlgo`
 
@@ -92,6 +87,26 @@ The authentication algorithm that the 802.11 station resolved with the peer stat
      association operation. For more information about the data type for the 
      <b>AuthAlgo</b> member, see 
      <a href="..\wlantypes\ne-wlantypes-_dot11_auth_algorithm.md">DOT11_AUTH_ALGORITHM</a>.
+     
+
+This member is not defined if the peer is not associated.
+
+`UnicastCipherAlgo`
+
+The unicast cipher algorithm that the 802.11 station resolved with the peer station during the
+     association operation. For more information about the data type for the 
+     <b>UnicastCipherAlgo</b> member, see 
+     <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
+     
+
+This member is not defined if the peer is not associated.
+
+`MulticastCipherAlgo`
+
+The multicast cipher algorithm that the 802.11 station resolved with the peer station during the
+     association operation. For more information about the data type for the 
+     <b>MulticastCipherAlgo</b> member, see 
+     <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
      
 
 This member is not defined if the peer is not associated.
@@ -105,41 +120,10 @@ A Boolean value that indicates whether WiFi Protected Setup (WPS) is enabled for
 
 This member should not be used if the peer is not associated.
 
-`liAssociationUpTime`
+`usListenInterval`
 
-A LARGEINTEGER value that specifies the timestamp when the 802.11 association procedure successfully
-     completed. The miniport driver calls 
-     <a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a> to get
-     the timestamp of the association completion.
-     
-
-This member has a value of zero if the peer is not associated.
-
-`MacAddress`
-
-The media access control (MAC) address of the peer station within an independent BSS (IBSS)
-     network.
-
-`MulticastCipherAlgo`
-
-The multicast cipher algorithm that the 802.11 station resolved with the peer station during the
-     association operation. For more information about the data type for the 
-     <b>MulticastCipherAlgo</b> member, see 
-     <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
-     
-
-This member is not defined if the peer is not associated.
-
-`PowerMode`
-
-A 
-     <a href="..\windot11\ne-windot11-_dot11_power_mode.md">DOT11_POWER_MODE</a>-type value that describes
-     the latest power management mode of the peer station.
-
-`Statistics`
-
-The statistics counters for data traffic, defined by the 
-     <a href="..\windot11\ns-windot11-_dot11_peer_statistics.md">DOT11_PEER_STATISTICS</a> structure.
+A USHORT value that defines the 802.11 Listen Interval field that was obtained from the
+     association request.
      
 
 This member has a value of zero if the peer is not associated.
@@ -159,16 +143,6 @@ Each entry in the
 
 This member has a value of zero if the peer is not associated.
 
-`UnicastCipherAlgo`
-
-The unicast cipher algorithm that the 802.11 station resolved with the peer station during the
-     association operation. For more information about the data type for the 
-     <b>UnicastCipherAlgo</b> member, see 
-     <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
-     
-
-This member is not defined if the peer is not associated.
-
 `usAssociationID`
 
 A USHORT value that specifies the 802.11 Association ID field from the association or
@@ -177,15 +151,41 @@ A USHORT value that specifies the 802.11 Association ID field from the associati
 
 This member has a value of 0xFFFF if the peer is not associated.
 
-`usCapabilityInformation`
+`AssociationState`
 
-The 802.11 Capability Information field from the beacon or probe response frames that the 802.11
-     station most recently received from the peer.
+A 
+     <a href="..\windot11\ne-windot11-_dot11_association_state.md">DOT11_ASSOCIATION_STATE</a>-type value
+     that indicates the 802.11 authentication and association state of the peer station. The state can be
+     either 
+     <b>dot11_assoc_state_auth_unassoc</b> or 
+     <b>dot11_assoc_state_auth_assoc</b>.
+     
 
-`usListenInterval`
+In the 
+     <i>IEEE 802.11 Standard</i>, the 802.11 authentication procedure is optional for an independent network.
+     Therefore, depending upon the IHV implementation, the state represented by the 
+     <b>dot11_assoc_state_auth_unassoc</b> enumeration value may not be applicable.
 
-A USHORT value that defines the 802.11 Listen Interval field that was obtained from the
-     association request.
+`PowerMode`
+
+A 
+     <a href="..\windot11\ne-windot11-_dot11_power_mode.md">DOT11_POWER_MODE</a>-type value that describes
+     the latest power management mode of the peer station.
+
+`liAssociationUpTime`
+
+A LARGEINTEGER value that specifies the timestamp when the 802.11 association procedure successfully
+     completed. The miniport driver calls 
+     <a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a> to get
+     the timestamp of the association completion.
+     
+
+This member has a value of zero if the peer is not associated.
+
+`Statistics`
+
+The statistics counters for data traffic, defined by the 
+     <a href="..\windot11\ns-windot11-_dot11_peer_statistics.md">DOT11_PEER_STATISTICS</a> structure.
      
 
 This member has a value of zero if the peer is not associated.
@@ -220,11 +220,3 @@ This member has a value of zero if the peer is not associated.
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PEER_INFO structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

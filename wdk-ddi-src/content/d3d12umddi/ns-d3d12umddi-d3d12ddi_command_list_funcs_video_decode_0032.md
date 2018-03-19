@@ -67,29 +67,33 @@ typedef struct _D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0032 {
 ## Members
 
 
-`pfnBeginQuery`
-
-Begin query.
-
 `pfnCloseCommandList`
 
 Close command list.
 
-`pfnDecodeFrame`
+`pfnResetCommandList`
 
-Decode frame.
+Reset command list.
 
 `pfnDiscardResource`
 
 Discard resource.
 
+`pfnSetMarker`
+
+Set marker.
+
+`pfnSetPredication`
+
+Set predication.
+
+`pfnBeginQuery`
+
+Begin query.
+
 `pfnEndQuery`
 
 End query.
-
-`pfnResetCommandList`
-
-Reset command list.
 
 `pfnResolveQueryData`
 
@@ -99,13 +103,9 @@ Resolve query data.
 
 Resource barrier.
 
-`pfnSetMarker`
+`pfnDecodeFrame`
 
-Set marker.
-
-`pfnSetPredication`
-
-Set predication.
+Decode frame.
 
 `pfnSetProtectedResourceSession`
 

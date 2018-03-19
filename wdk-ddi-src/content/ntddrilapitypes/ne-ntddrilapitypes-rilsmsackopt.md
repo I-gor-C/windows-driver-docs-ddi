@@ -58,12 +58,12 @@ typedef enum _RILSMSACKOPT {
 <table>
             
                 <tr>
-                    <td>RIL_SMSACKOPT_IMS</td>
+                    <td>RIL_SMSACKOPT_NONE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_SMSACKOPT_NONE</td>
+                    <td>RIL_SMSACKOPT_IMS</td>
                     <td></td>
                 </tr>
 </table>

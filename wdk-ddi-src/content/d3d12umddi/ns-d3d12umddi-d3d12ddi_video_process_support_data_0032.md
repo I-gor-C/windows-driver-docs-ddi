@@ -70,65 +70,65 @@ typedef struct _D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032 {
 ## Members
 
 
-`AutoProcessingSupport`
+`NodeIndex`
 
-Auto processing support.
-
-`DeinterlaceSupport`
-
-Deinterlace support.
-
-`FeatureSupport`
-
-Feature support.
-
-`FilterRangeSupport`
-
-Filter range support.
-
-`FilterSupport`
-
-Filter support.
-
-`InputFieldType`
-
-Input field type.
-
-`InputFrameRate`
-
-Input frame rate.
+Node index.
 
 `InputSample`
 
 Input sample.
 
+`InputFieldType`
+
+Input field type.
+
 `InputStereoFormat`
 
 Input stereo format.
 
-`NodeIndex`
+`InputFrameRate`
 
-Node index.
+Input frame rate.
 
 `OutputFormat`
 
 Output format.
 
+`OutputStereoFormat`
+
+Output stereo format.
+
 `OutputFrameRate`
 
 Output frame rate.
 
-`OutputStereoFormat`
+`SupportFlags`
 
-Output stereo format.
+Support flags.
 
 `ScaleSupport`
 
 Scale support.
 
-`SupportFlags`
+`FeatureSupport`
 
-Support flags.
+Feature support.
+
+`DeinterlaceSupport`
+
+Deinterlace support.
+
+`AutoProcessingSupport`
+
+Auto processing support.
+
+`FilterSupport`
+
+Filter support.
+
+`FilterRangeSupport`
+
+Filter range support.
 
 
 ## Requirements

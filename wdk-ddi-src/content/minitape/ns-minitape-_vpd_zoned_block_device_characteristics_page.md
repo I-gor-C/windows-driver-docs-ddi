@@ -75,23 +75,15 @@ N/A
 
 N/A
 
-`MaxNumberOfOpenSequentialWriteRequiredZone`
-
-N/A
-
-`OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZone`
-
-N/A
-
-`OptimalNumberOfOpenSequentialWritePreferredZone`
-
-N/A
-
 `PageCode`
 
 N/A
 
 `PageLength`
+
+N/A
+
+`URSWRZ`
 
 N/A
 
@@ -103,11 +95,19 @@ N/A
 
 N/A
 
-`Reserved3`
+`OptimalNumberOfOpenSequentialWritePreferredZone`
 
 N/A
 
-`URSWRZ`
+`OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZone`
+
+N/A
+
+`MaxNumberOfOpenSequentialWriteRequiredZone`
+
+N/A
+
+`Reserved3`
 
 N/A
 

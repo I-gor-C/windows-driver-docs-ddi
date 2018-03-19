@@ -70,7 +70,7 @@ typedef struct _RILSENDRESTRICTEDUICCCMDPARAMS {
 
 
 
-`dwDataSize`
+`rscpParameters`
 
 
 
@@ -82,11 +82,11 @@ typedef struct _RILSENDRESTRICTEDUICCCMDPARAMS {
 
 
 
+`dwDataSize`
+
+
+
 `pbData`
-
-
-
-`rscpParameters`
 
 
 

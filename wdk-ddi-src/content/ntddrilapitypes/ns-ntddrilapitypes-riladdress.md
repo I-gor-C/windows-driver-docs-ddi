@@ -64,87 +64,6 @@ struct RILADDRESS {
 
 The size of the structure in bytes.
 
-`dwNumPlan`
-
-The numbering scheme of the address. Possible values are shown in the following table.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-RIL_NUMPLAN_UNKNOWN
-
-</td>
-<td>
-Unknown numbering plan
-
-</td>
-</tr>
-<tr>
-<td>
-RIL_NUMPLAN_TELEPHONE
-
-</td>
-<td>
-ISDN/telephone numbering plan (E.164/E.163)
-
-</td>
-</tr>
-<tr>
-<td>
-RIL_NUMPLAN_DATA
-
-</td>
-<td>
-Data numbering plan (X.121)
-
-</td>
-</tr>
-<tr>
-<td>
-RIL_NUMPLAN_TELEX
-
-</td>
-<td>
-Telex numbering plan
-
-</td>
-</tr>
-<tr>
-<td>
-RIL_NUMPLAN_NATIONAL
-
-</td>
-<td>
-National/regional numbering plan
-
-</td>
-</tr>
-<tr>
-<td>
-RIL_NUMPLAN_PRIVATE
-
-</td>
-<td>
-Private numbering plan
-
-</td>
-</tr>
-<tr>
-<td>
-RIL_NUMPLAN_ERMES
-
-</td>
-<td>
-ERMES numbering plan (ETSI DE/PS 3 01-3)
-
-</td>
-</tr>
-</table>
-
 `dwParams`
 
 A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-riladdressparammask.md">RILADDRESSPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
@@ -245,6 +164,87 @@ RIL_ADDRTYPE_EMAIL
 </td>
 <td>
 Internet email address (RFC 822)
+
+</td>
+</tr>
+</table>
+
+`dwNumPlan`
+
+The numbering scheme of the address. Possible values are shown in the following table.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+RIL_NUMPLAN_UNKNOWN
+
+</td>
+<td>
+Unknown numbering plan
+
+</td>
+</tr>
+<tr>
+<td>
+RIL_NUMPLAN_TELEPHONE
+
+</td>
+<td>
+ISDN/telephone numbering plan (E.164/E.163)
+
+</td>
+</tr>
+<tr>
+<td>
+RIL_NUMPLAN_DATA
+
+</td>
+<td>
+Data numbering plan (X.121)
+
+</td>
+</tr>
+<tr>
+<td>
+RIL_NUMPLAN_TELEX
+
+</td>
+<td>
+Telex numbering plan
+
+</td>
+</tr>
+<tr>
+<td>
+RIL_NUMPLAN_NATIONAL
+
+</td>
+<td>
+National/regional numbering plan
+
+</td>
+</tr>
+<tr>
+<td>
+RIL_NUMPLAN_PRIVATE
+
+</td>
+<td>
+Private numbering plan
+
+</td>
+</tr>
+<tr>
+<td>
+RIL_NUMPLAN_ERMES
+
+</td>
+<td>
+ERMES numbering plan (ETSI DE/PS 3 01-3)
 
 </td>
 </tr>
@@ -500,11 +500,3 @@ In the case of the control digits separator, either uppercase or lowercase 'P' m
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILADDRESS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -62,9 +62,9 @@ typedef struct _STISUBSCRIBE {
 ## Members
 
 
-`dwFilter`
+`dwSize`
 
-Reserved for system use.
+Caller-supplied size, in bytes, of the STISUBSCRIBE structure.
 
 `dwFlags`
 
@@ -90,17 +90,17 @@ Event notifications should be delivered to the application using window messages
 
 This bit flag is obsolete. It is not available on Windows XP or later operating system versions.
 
-`dwSize`
+`dwFilter`
 
-Caller-supplied size, in bytes, of the STISUBSCRIBE structure.
-
-`hEvent`
-
-Handle to a Win32 event created with <b>CreateEvent</b>, which the event monitor will use with <b>SetEvent</b> when an event occurs and for which the application can wait. Used only if STI_SUBSCRIBE_FLAG_WINDOW is set in <b>dwFlags</b>.
+Reserved for system use.
 
 `hWndNotify`
 
 Handle to an application window that should receive the message specified by <b>uiNotificationMessage</b> when an event occurs. Used only if STI_SUBSCRIBE_FLAG_WINDOW is set in <b>dwFlags</b>.
+
+`hEvent`
+
+Handle to a Win32 event created with <b>CreateEvent</b>, which the event monitor will use with <b>SetEvent</b> when an event occurs and for which the application can wait. Used only if STI_SUBSCRIBE_FLAG_WINDOW is set in <b>dwFlags</b>.
 
 `uiNotificationMessage`
 

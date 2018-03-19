@@ -66,13 +66,13 @@ typedef enum _WDI_IHV_TASK_PRIORITY {
                 </tr>
             
                 <tr>
-                    <td>WDI_IHV_TASK_PRIORITY_LOW</td>
-                    <td>Low priority.</td>
+                    <td>WDI_IHV_TASK_PRIORITY_MEDIUM</td>
+                    <td>Medium priority.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_IHV_TASK_PRIORITY_MEDIUM</td>
-                    <td>Medium priority.</td>
+                    <td>WDI_IHV_TASK_PRIORITY_LOW</td>
+                    <td>Low priority.</td>
                 </tr>
 </table>
 

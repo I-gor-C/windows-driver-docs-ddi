@@ -61,13 +61,8 @@ typedef enum _POS_CX_EVENT_DEST {
 <table>
             
                 <tr>
-                    <td>POS_CX_EVENT_DEST__MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>POS_CX_EVENT_DEST_ALL</td>
-                    <td>Specifies that the event will be broadcast to all client handles.</td>
+                    <td>POS_CX_EVENT_DEST_INVALID</td>
+                    <td>Specifies that no devices will receive this event.  This value should not be used.</td>
                 </tr>
             
                 <tr>
@@ -76,8 +71,13 @@ typedef enum _POS_CX_EVENT_DEST {
                 </tr>
             
                 <tr>
-                    <td>POS_CX_EVENT_DEST_INVALID</td>
-                    <td>Specifies that no devices will receive this event.  This value should not be used.</td>
+                    <td>POS_CX_EVENT_DEST_ALL</td>
+                    <td>Specifies that the event will be broadcast to all client handles.</td>
+                </tr>
+            
+                <tr>
+                    <td>POS_CX_EVENT_DEST__MAX</td>
+                    <td></td>
                 </tr>
 </table>
 

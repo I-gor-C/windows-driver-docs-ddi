@@ -70,37 +70,57 @@ typedef struct _WHEA_PSHED_PLUGIN_CALLBACKS {
 ## Members
 
 
-`AttemptRecovery`
+`GetAllErrorSources`
 
-A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_attempt_error_recovery.md">AttemptRecovery</a> callback function. If a PSHED plug-in does not participate in error recovery, this member should be set to <b>NULL</b>.
+A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_get_all_error_sources.md">GetAllErrorSources</a> callback function. If a PSHED plug-in does not participate in error source discovery, this member should be set to <b>NULL</b>.
 
-`ClearErrorRecord`
+`Reserved`
 
-A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_clear_error_record.md">ClearErrorRecord</a> callback function. If a PSHED plug-in does not participate in error record persistence, this member should be set to <b>NULL</b>.
+Reserved for system use. This member should be set to <b>NULL</b>.
 
-`ClearErrorStatus`
+`GetErrorSourceInfo`
 
-A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_clear_error_status.md">ClearErrorStatus</a> callback function. If a PSHED plug-in does not participate in error information retrieval, this member should be set to <b>NULL</b>.
+A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_get_error_source_info.md">GetErrorSourceInfo</a> callback function. If a PSHED plug-in does not participate in error source discovery, this member should be set to <b>NULL</b>.
 
-`DisableErrorSource`
+`SetErrorSourceInfo`
 
-A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_disable_error_source.md">DisableErrorSource</a> callback function. If a PSHED plug-in does not participate in error source control, this member should be set to <b>NULL</b>.
+A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_set_error_source_info.md">SetErrorSourceInfo</a> callback function. If a PSHED plug-in does not participate in error source control, this member should be set to <b>NULL</b>.
 
 `EnableErrorSource`
 
 A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_enable_error_source.md">EnableErrorSource</a> callback function. If a PSHED plug-in does not participate in error source control, this member should be set to <b>NULL</b>.
 
+`DisableErrorSource`
+
+A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_disable_error_source.md">DisableErrorSource</a> callback function. If a PSHED plug-in does not participate in error source control, this member should be set to <b>NULL</b>.
+
+`WriteErrorRecord`
+
+A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_write_error_record.md">WriteErrorRecord</a> callback function. If a PSHED plug-in does not participate in error record persistence, this member should be set to <b>NULL</b>.
+
+`ReadErrorRecord`
+
+A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_read_error_record.md">ReadErrorRecord</a> callback function. If a PSHED plug-in does not participate in error record persistence, this member should be set to <b>NULL</b>.
+
+`ClearErrorRecord`
+
+A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_clear_error_record.md">ClearErrorRecord</a> callback function. If a PSHED plug-in does not participate in error record persistence, this member should be set to <b>NULL</b>.
+
+`RetrieveErrorInfo`
+
+A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_retrieve_error_info.md">RetrieveErrorInfo</a> callback function. If a PSHED plug-in does not participate in error information retrieval, this member should be set to <b>NULL</b>.
+
 `FinalizeErrorRecord`
 
 A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_finalize_error_record.md">FinalizeErrorRecord</a> callback function. If a PSHED plug-in does not participate in error information retrieval, this member should be set to <b>NULL</b>.
 
-`GetAllErrorSources`
+`ClearErrorStatus`
 
-A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_get_all_error_sources.md">GetAllErrorSources</a> callback function. If a PSHED plug-in does not participate in error source discovery, this member should be set to <b>NULL</b>.
+A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_clear_error_status.md">ClearErrorStatus</a> callback function. If a PSHED plug-in does not participate in error information retrieval, this member should be set to <b>NULL</b>.
 
-`GetErrorSourceInfo`
+`AttemptRecovery`
 
-A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_get_error_source_info.md">GetErrorSourceInfo</a> callback function. If a PSHED plug-in does not participate in error source discovery, this member should be set to <b>NULL</b>.
+A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_attempt_error_recovery.md">AttemptRecovery</a> callback function. If a PSHED plug-in does not participate in error recovery, this member should be set to <b>NULL</b>.
 
 `GetInjectionCapabilities`
 
@@ -109,26 +129,6 @@ A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_get_injecti
 `InjectError`
 
 A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_inject_error.md">InjectError</a> callback function. If a PSHED plug-in does not participate in error injection, this member should be set to <b>NULL</b>.
-
-`ReadErrorRecord`
-
-A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_read_error_record.md">ReadErrorRecord</a> callback function. If a PSHED plug-in does not participate in error record persistence, this member should be set to <b>NULL</b>.
-
-`Reserved`
-
-Reserved for system use. This member should be set to <b>NULL</b>.
-
-`RetrieveErrorInfo`
-
-A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_retrieve_error_info.md">RetrieveErrorInfo</a> callback function. If a PSHED plug-in does not participate in error information retrieval, this member should be set to <b>NULL</b>.
-
-`SetErrorSourceInfo`
-
-A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_set_error_source_info.md">SetErrorSourceInfo</a> callback function. If a PSHED plug-in does not participate in error source control, this member should be set to <b>NULL</b>.
-
-`WriteErrorRecord`
-
-A pointer to the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_write_error_record.md">WriteErrorRecord</a> callback function. If a PSHED plug-in does not participate in error record persistence, this member should be set to <b>NULL</b>.
 
 ## Remarks
 A WHEA_PSHED_PLUGIN_CALLBACKS structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_registration_packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure.
@@ -198,11 +198,3 @@ A WHEA_PSHED_PLUGIN_CALLBACKS structure is contained within the <a href="..\ntdd
 
 
 <a href="..\ntddk\nc-ntddk-pshed_pi_set_error_source_info.md">SetErrorSourceInfo</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_PSHED_PLUGIN_CALLBACKS structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

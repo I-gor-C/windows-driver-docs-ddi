@@ -65,8 +65,8 @@ typedef enum _DXGK_RENDER_PIPELINE_STAGE {
 <table>
             
                 <tr>
-                    <td>DXGK_RENDER_PIPELINE_STAGE_GEOMETRY_SHADER</td>
-                    <td>Indicates that the error occurred at the geometry shader stage.</td>
+                    <td>DXGK_RENDER_PIPELINE_STAGE_UNKNOWN</td>
+                    <td>Indicates that the stage where the error occurred is unknown.</td>
                 </tr>
             
                 <tr>
@@ -75,18 +75,13 @@ typedef enum _DXGK_RENDER_PIPELINE_STAGE {
                 </tr>
             
                 <tr>
-                    <td>DXGK_RENDER_PIPELINE_STAGE_OUTPUT_MERGER</td>
-                    <td>Indicates that the error occurred at the output merger stage.</td>
+                    <td>DXGK_RENDER_PIPELINE_STAGE_VERTEX_SHADER</td>
+                    <td>Indicates that the error occurred at the vertex shader stage.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGK_RENDER_PIPELINE_STAGE_PIXEL_SHADER</td>
-                    <td>Indicates that the error occurred at the pixel shader stage.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_RENDER_PIPELINE_STAGE_RASTERIZER</td>
-                    <td>Indicates that the error occurred at the rasterizer stage.</td>
+                    <td>DXGK_RENDER_PIPELINE_STAGE_GEOMETRY_SHADER</td>
+                    <td>Indicates that the error occurred at the geometry shader stage.</td>
                 </tr>
             
                 <tr>
@@ -95,13 +90,18 @@ typedef enum _DXGK_RENDER_PIPELINE_STAGE {
                 </tr>
             
                 <tr>
-                    <td>DXGK_RENDER_PIPELINE_STAGE_UNKNOWN</td>
-                    <td>Indicates that the stage where the error occurred is unknown.</td>
+                    <td>DXGK_RENDER_PIPELINE_STAGE_RASTERIZER</td>
+                    <td>Indicates that the error occurred at the rasterizer stage.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGK_RENDER_PIPELINE_STAGE_VERTEX_SHADER</td>
-                    <td>Indicates that the error occurred at the vertex shader stage.</td>
+                    <td>DXGK_RENDER_PIPELINE_STAGE_PIXEL_SHADER</td>
+                    <td>Indicates that the error occurred at the pixel shader stage.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_RENDER_PIPELINE_STAGE_OUTPUT_MERGER</td>
+                    <td>Indicates that the error occurred at the output merger stage.</td>
                 </tr>
 </table>
 

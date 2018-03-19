@@ -63,13 +63,25 @@ typedef struct _LBA_FILTER_TABLE {
 ## Members
 
 
+`StructSize`
+
+The size of this structure. This is set to <b>sizeof</b>(LBA_FILTER_TABLE).
+
 `GlobalReadLock`
 
 If TRUE, LBAs not included in the filter table are not readable. Otherwise unfiltered LBAs are readable if FALSE.
 
+`Reserved1`
+
+Reserved.
+
 `GlobalWriteLock`
 
 If TRUE, LBAs not included in the filter table are not writeable. Otherwise unfiltered LBAs are writeable if FALSE.
+
+`Reserved2`
+
+Reserved.
 
 `LbaFilterCount`
 
@@ -82,18 +94,6 @@ The size in bytes of a filter table entry. This must be set to <b>sizeof</b>(LBA
 `LbaFiltersOffset`
 
 
-
-`Reserved1`
-
-Reserved.
-
-`Reserved2`
-
-Reserved.
-
-`StructSize`
-
-The size of this structure. This is set to <b>sizeof</b>(LBA_FILTER_TABLE).
 
 ## Remarks
 LBA ranges not included in any filter table entries are considered part of the global band for the device. These ranges are managed independently by the Enhanced Storage Class driver. Access for these ranges is determined by the settings in <i>GlobalReadLock</i> and <i>GlobalWriteLock</i>.
@@ -113,11 +113,3 @@ Following the <b>LBA_FILTER_TABLE</b> structure is an array of 0 or more <a href
 
 
 <a href="..\ehstorioctl\ns-ehstorioctl-_lba_filter_table_entry.md">LBA_FILTER_TABLE_ENTRY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20LBA_FILTER_TABLE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

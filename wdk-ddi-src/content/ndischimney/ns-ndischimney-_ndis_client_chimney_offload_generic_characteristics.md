@@ -67,10 +67,6 @@ typedef struct _NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS {
 ## Members
 
 
-`Flags`
-
-Reserved for system use.
-
 `Header`
 
 The header of the NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure. The header is
@@ -81,17 +77,27 @@ The header of the NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure.
      NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure, including the header, in bytes. The 
      <b>Type</b> member of the header is not significant.
 
-`IndicateOffloadEventHandler`
+`Flags`
 
-The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-indicate_offload_event_handler.md">
-     ProtocolIndicateOffloadEvent</a> function.
+Reserved for system use.
 
 `InitiateOffloadCompleteHandler`
 
 Specifies the entry point of the driver's 
      <a href="..\ndischimney\nc-ndischimney-initiate_offload_complete_handler.md">
      ProtocolInitiateOffloadComplete</a> function.
+
+`TerminateOffloadCompleteHandler`
+
+The entry point of the driver's 
+     <a href="..\ndischimney\nc-ndischimney-terminate_offload_complete_handler.md">
+     ProtocolTerminateOffloadComplete</a> function.
+
+`UpdateOffloadCompleteHandler`
+
+The entry point of the driver's 
+     <a href="..\ndischimney\nc-ndischimney-update_offload_complete_handler.md">
+     ProtocolUpdateOffloadComplete</a> function.
 
 `InvalidateOffloadCompleteHandler`
 
@@ -105,17 +111,11 @@ The entry point of the driver's
      <a href="..\ndischimney\nc-ndischimney-query_offload_complete_handler.md">
      ProtocolQueryOffloadComplete</a> function.
 
-`TerminateOffloadCompleteHandler`
+`IndicateOffloadEventHandler`
 
 The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-terminate_offload_complete_handler.md">
-     ProtocolTerminateOffloadComplete</a> function.
-
-`UpdateOffloadCompleteHandler`
-
-The entry point of the driver's 
-     <a href="..\ndischimney\nc-ndischimney-update_offload_complete_handler.md">
-     ProtocolUpdateOffloadComplete</a> function.
+     <a href="..\ndischimney\nc-ndischimney-indicate_offload_event_handler.md">
+     ProtocolIndicateOffloadEvent</a> function.
 
 ## Remarks
 To register its generic chimney offload entry points, a protocol or intermediate driver calls the 
@@ -172,11 +172,3 @@ To register its generic chimney offload entry points, a protocol or intermediate
 
 <a href="..\ndischimney\nc-ndischimney-indicate_offload_event_handler.md">
    ProtocolIndicateOffloadEvent</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CLIENT_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -64,37 +64,37 @@ typedef struct _BOOTDISK_INFORMATION_EX {
 ## Members
 
 
-`BootDeviceGuid`
+`BootPartitionOffset`
 
-If the <b>BootDeviceIsGpt</b> member is <b>TRUE</b>, this specifies the GUID for the boot disk. Otherwise, this member is unused.
+Specifies the offset, in bytes, on the boot disk where the boot partition begins.
 
-`BootDeviceIsGpt`
+`SystemPartitionOffset`
 
-<b>TRUE</b> if the boot disk is formatted with the GPT partition table type.
+Specifies the offset, in bytes, on the system disk where the system partition begins.
 
 `BootDeviceSignature`
 
 If the <b>BootDeviceIsGpt</b> member is <b>FALSE</b>, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.
 
-`BootPartitionOffset`
+`SystemDeviceSignature`
 
-Specifies the offset, in bytes, on the boot disk where the boot partition begins.
+If the <b>SystemDeviceIsGpt</b> member is <b>FALSE</b>, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.
+
+`BootDeviceGuid`
+
+If the <b>BootDeviceIsGpt</b> member is <b>TRUE</b>, this specifies the GUID for the boot disk. Otherwise, this member is unused.
 
 `SystemDeviceGuid`
 
 If the <b>SystemDeviceIsGpt</b> member is <b>TRUE</b>, this specifies the GUID for the boot disk. Otherwise, this member is unused.
 
+`BootDeviceIsGpt`
+
+<b>TRUE</b> if the boot disk is formatted with the GPT partition table type.
+
 `SystemDeviceIsGpt`
 
 <b>TRUE</b> if the system disk is formatted with the GPT partition table type.
-
-`SystemDeviceSignature`
-
-If the <b>SystemDeviceIsGpt</b> member is <b>FALSE</b>, this specifies the signature for the disk's MBR partition table. Otherwise, this member is unused.
-
-`SystemPartitionOffset`
-
-Specifies the offset, in bytes, on the system disk where the system partition begins.
 
 ## Remarks
 On Windows XP and later, <a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoGetBootDiskInformation</a> returns this structure to describe the boot and system disks.
@@ -111,11 +111,3 @@ On Windows XP and later, <a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoG
 
 
 <a href="..\wdm\ns-wdm-_bootdisk_information.md">BOOTDISK_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BOOTDISK_INFORMATION_EX structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

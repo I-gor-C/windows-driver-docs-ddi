@@ -60,6 +60,14 @@ typedef struct _MSFC_FC4STATISTICS {
 ## Members
 
 
+`InputRequests`
+
+Indicates the number of input requests.
+
+`OutputRequests`
+
+Indicates the number of output requests.
+
 `ControlRequests`
 
 Indicates the number of control requests.
@@ -68,17 +76,9 @@ Indicates the number of control requests.
 
 Indicates the number of megabytes of data that has been input.
 
-`InputRequests`
-
-Indicates the number of input requests.
-
 `OutputMegabytes`
 
 Indicates the number of megabytes of data that has been output.
-
-`OutputRequests`
-
-Indicates the number of output requests.
 
 ## Remarks
 The statistics counters whose values are reported in the members of this structure are 64-bit signed integers that wrap to zero on exceeding 2**63-1. The statistics counters are not reset during normal operation, so traffic rates may be determined by the difference of counter values derived from two successive calls, with appropriate adjustments to for counter wrap.
@@ -101,11 +101,3 @@ If an HBA does not support a specific statistic, it shall return the value of -1
 
 
 <a href="..\hbapiwmi\ns-hbapiwmi-_getfc4statistics_out.md">GetFC4Statistics_OUT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSFC_FC4STATISTICS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

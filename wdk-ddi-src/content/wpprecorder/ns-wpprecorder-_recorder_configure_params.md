@@ -58,13 +58,13 @@ typedef struct _RECORDER_CONFIGURE_PARAMS {
 ## Members
 
 
-`CreateDefaultLog`
-
-Indicates whether WPP should use the default log for trace messages. TRUE (default), use the default log; FALSE disable the default log.
-
 `Size`
 
 Size of this structure.
+
+`CreateDefaultLog`
+
+Indicates whether WPP should use the default log for trace messages. TRUE (default), use the default log; FALSE disable the default log.
 
 ## Remarks
 To initialize this structure, the caller must call <a href="..\wpprecorder\nf-wpprecorder-recorder_configure_params_init.md">RECORDER_CONFIGURE_PARAMS_INIT</a>.

@@ -58,13 +58,13 @@ typedef struct _IRB_REQ_ISOCH_TALK {
 ## Members
 
 
-`fulFlags`
-
-Reserved. Drivers should set this to zero.
-
 `hResource`
 
 Specifies the resource handle to use for this operation. Resources are acquired through the REQUEST_ISOCH_ALLOCATE_RESOURCES request.
+
+`fulFlags`
+
+Reserved. Drivers should set this to zero.
 
 `StartTime`
 

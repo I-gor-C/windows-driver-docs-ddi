@@ -65,6 +65,22 @@ typedef struct _WWAN_CDMA_MRL_INFO {
 ## Members
 
 
+`ServingCellFlag`
+
+Indicates whether this is a serving cell. A value of 1 indicates a serving cell, while a value of 0 indicates a neighboring cell. There may be more than one serving cell at a time (notably while in a call).
+
+`NID`
+
+The Network ID (0-65535). Use 0xFFFFFFFF when this information is not available.
+
+`SID`
+
+The System ID (0-32767). Use 0xFFFFFFFF when this information is not available.
+
+`BaseStationId`
+
+The Base Station ID (0-65535). Use 0xFFFFFFFF when this information is not available.
+
 `BaseLatitude`
 
 The Base Station Latitude (0-4194303). This is encoded in units of 0.25 seconds, expressed in two’s complement representation within the low 22 bits of the DWORD. As a signed value, North latitudes are positive. Use 0xFFFFFFFF when this information is not available.
@@ -73,33 +89,17 @@ The Base Station Latitude (0-4194303). This is encoded in units of 0.25 seconds,
 
 The Base Station Longitude (0-8388607). This is encoded in units of 0.25 seconds, expressed in two’s complement representation within the low 23 bits of the DWORD. As a signed value, East longitudes are positive. Use 0xFFFFFFFF when this information is not available.
 
-`BaseStationId`
+`RefPn`
 
-The Base Station ID (0-65535). Use 0xFFFFFFFF when this information is not available.
+The Base Station PN Number (0-511). Use 0xFFFFFFFF when this information is not available.
 
 `GPSSeconds`
 
 The GPS seconds, or the time at which this arrived from the base station. Use 0xFFFFFFFF when this information is not available.
 
-`NID`
-
-The Network ID (0-65535). Use 0xFFFFFFFF when this information is not available.
-
 `PilotStrength`
 
 The Signal Strength of the pilot (0-63). Use 0xFFFFFFFF when this information is not available.
-
-`RefPn`
-
-The Base Station PN Number (0-511). Use 0xFFFFFFFF when this information is not available.
-
-`ServingCellFlag`
-
-Indicates whether this is a serving cell. A value of 1 indicates a serving cell, while a value of 0 indicates a neighboring cell. There may be more than one serving cell at a time (notably while in a call).
-
-`SID`
-
-The System ID (0-32767). Use 0xFFFFFFFF when this information is not available.
 
 ## Remarks
 <b>WWAN_CDMA_MRL_INFO</b> is designed for the CDMA2000 network type. There can be more than one CDMA2000 serving cell at the same time. Both serving cells and neighboring cells will be returned in the same list. The <b>ServingCellFlag</b> member indicates whether a cell is a serving cell or not.
@@ -121,11 +121,3 @@ The System ID (0-32767). Use 0xFFFFFFFF when this information is not available.
 
 
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CDMA_MRL_INFO structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

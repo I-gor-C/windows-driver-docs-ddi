@@ -61,10 +61,6 @@ typedef struct _DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS {
 ## Members
 
 
-`DialogToken`
-
-The dialog token received in the GO negotiation confirmation packet.
-
 `Header`
 
 The type, revision, and size of the <b>DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following.
@@ -92,13 +88,17 @@ The type, revision, and size of the <b>DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATIO
 
 The Peer-to-Peer (P2P) device address of the Wi-Fi Direct (WFD) device that sent the GO negotiation confirmation.
 
-`uIEsLength`
+`DialogToken`
 
-The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
+The dialog token received in the GO negotiation confirmation packet.
 
 `uIEsOffset`
 
 The offset, in bytes,  of the array of additional information elements (IEs) received in the GO negotiation confirmation packet. This offset is from the start of the buffer that contains this structure.
+
+`uIEsLength`
+
+The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
 
 
 ## Requirements
@@ -110,11 +110,3 @@ The offset, in bytes,  of the array of additional information elements (IEs) rec
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439787">NDIS_STATUS_DOT11_WFD_RECEIVED_GO_NEGOTIATION_CONFIRMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -66,8 +66,33 @@ typedef enum _WWAN_READY_STATE {
 <table>
             
                 <tr>
+                    <td>WwanReadyStateOff</td>
+                    <td>The device firmware stack is OFF or has not yet completed its initialization.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanReadyStateInitialized</td>
+                    <td>The device is ready to turn on and register with the provider.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanReadyStateSimNotInserted</td>
+                    <td>The SIM card is not inserted into the device.</td>
+                </tr>
+            
+                <tr>
                     <td>WwanReadyStateBadSim</td>
                     <td>The SIM card inserted into the device is invalid.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanReadyStateFailure</td>
+                    <td>A general device failure has occurred.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanReadyStateNotActivated</td>
+                    <td>The subscription is not activated.</td>
                 </tr>
             
                 <tr>
@@ -83,38 +108,13 @@ Note that if a device is locked because it requires a PIN type other than PIN1 o
                 </tr>
             
                 <tr>
-                    <td>WwanReadyStateFailure</td>
-                    <td>A general device failure has occurred.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanReadyStateInitialized</td>
-                    <td>The device is ready to turn on and register with the provider.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanReadyStateMax</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WwanReadyStateNoEsimProfile</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WwanReadyStateNotActivated</td>
-                    <td>The subscription is not activated.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanReadyStateOff</td>
-                    <td>The device firmware stack is OFF or has not yet completed its initialization.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanReadyStateSimNotInserted</td>
-                    <td>The SIM card is not inserted into the device.</td>
+                    <td>WwanReadyStateMax</td>
+                    <td></td>
                 </tr>
 </table>
 
@@ -132,11 +132,3 @@ For devices that use a SIM card, this enumeration indicates if the SIM card has 
 ## See Also
 
 <a href="..\wwan\ns-wwan-_wwan_ready_info.md">WWAN_READY_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_READY_STATE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

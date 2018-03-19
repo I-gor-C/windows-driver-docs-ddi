@@ -65,6 +65,31 @@ typedef enum _RILUICCAPPTYPE {
 <table>
             
                 <tr>
+                    <td>RIL_UICCAPPTYPE_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCAPPTYPE_MF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCAPPTYPE_MF_SIM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCAPPTYPE_MF_RUIM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCAPPTYPE_USIM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_UICCAPPTYPE_CSIM</td>
                     <td></td>
                 </tr>
@@ -76,31 +101,6 @@ typedef enum _RILUICCAPPTYPE {
             
                 <tr>
                     <td>RIL_UICCAPPTYPE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCAPPTYPE_MF</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCAPPTYPE_MF_RUIM</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCAPPTYPE_MF_SIM</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCAPPTYPE_UNKNOWN</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCAPPTYPE_USIM</td>
                     <td></td>
                 </tr>
 </table>

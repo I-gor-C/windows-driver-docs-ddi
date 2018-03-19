@@ -62,9 +62,13 @@ typedef enum _NDIS_RECEIVE_FILTER_TYPE {
 <table>
             
                 <tr>
-                    <td>NdisReceiveFilterTypeMaximum</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
+                    <td>NdisReceiveFilterTypeUndefined</td>
+                    <td>An undefined filter.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisReceiveFilterTypeVMQueue</td>
+                    <td>A filter for a virtual machine (VM) receive queue. This receive queue has been allocated by the miniport driver that supports the virtual machine queue (VMQ) or single root I/O virtualization (SR-IOV) interface.</td>
                 </tr>
             
                 <tr>
@@ -73,13 +77,9 @@ typedef enum _NDIS_RECEIVE_FILTER_TYPE {
                 </tr>
             
                 <tr>
-                    <td>NdisReceiveFilterTypeUndefined</td>
-                    <td>An undefined filter.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisReceiveFilterTypeVMQueue</td>
-                    <td>A filter for a virtual machine (VM) receive queue. This receive queue has been allocated by the miniport driver that supports the virtual machine queue (VMQ) or single root I/O virtualization (SR-IOV) interface.</td>
+                    <td>NdisReceiveFilterTypeMaximum</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 
@@ -105,11 +105,3 @@ For more information about packet coalescing, see <a href="https://msdn.microsof
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_parameters.md">
    NDIS_RECEIVE_FILTER_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

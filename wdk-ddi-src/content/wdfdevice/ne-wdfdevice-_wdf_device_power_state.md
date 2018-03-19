@@ -161,6 +161,16 @@ typedef enum _WDF_DEVICE_POWER_STATE {
 <table>
             
                 <tr>
+                    <td>WdfDevStatePowerInvalid</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerObjectCreated</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>WdfDevStatePowerCheckDeviceType</td>
                     <td></td>
                 </tr>
@@ -176,17 +186,17 @@ typedef enum _WDF_DEVICE_POWER_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePowerCheckParentStateArmedForWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerCheckParentStateArmedForWakeNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WdfDevStatePowerCheckParentStateNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerEnablingWakeAtBus</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerEnablingWakeAtBusNP</td>
                     <td></td>
                 </tr>
             
@@ -196,12 +206,7 @@ typedef enum _WDF_DEVICE_POWER_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePowerD0ArmedForWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerD0ArmedForWakeNP</td>
+                    <td>WdfDevStatePowerD0NP</td>
                     <td></td>
                 </tr>
             
@@ -216,17 +221,22 @@ typedef enum _WDF_DEVICE_POWER_STATE {
                 </tr>
             
                 <tr>
+                    <td>WdfDevStatePowerD0ArmedForWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerD0ArmedForWakeNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>WdfDevStatePowerD0DisarmingWakeAtBus</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>WdfDevStatePowerD0DisarmingWakeAtBusNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerD0NP</td>
                     <td></td>
                 </tr>
             
@@ -256,252 +266,12 @@ typedef enum _WDF_DEVICE_POWER_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePowerDx</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerDxArmedForWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerDxArmedForWakeNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerDxDisablingWakeAtBus</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerDxDisablingWakeAtBusNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerDxNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerDxStopped</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerDxStoppedArmForWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerDxStoppedArmForWakeNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerDxStoppedDecideDxState</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerDxStoppedDisarmWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerDxStoppedDisarmWakeNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerEnablingWakeAtBus</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerEnablingWakeAtBusNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerFinal</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerFinalPowerDownFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WdfDevStatePowerGotoD3Stopped</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePowerGotoDx</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerGotoDxArmedForWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerGotoDxArmedForWakeNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerGotoDxFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerGotoDxIoStopped</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerGotoDxIoStoppedArmedForWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerGotoDxIoStoppedArmedForWakeNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerGotoDxIoStoppedNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerGotoDxNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerGotoDxNPFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerGotoDxStopped</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerGotoDxStoppedDisableInterrupt</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerGotoDxStoppedDisableInterruptNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerGotoImplicitD3DisarmWakeAtBus</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerGotoStopped</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerInitialConnectInterruptFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerInitialDmaEnableFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerInitialPowerUpFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerInitialPowerUpFailedDerefParent</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerInitialPowerUpFailedPowerDown</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerInitialSelfManagedIoFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerInitialSelfManagedIoFailedStarted</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerInvalid</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerNotifyingD0EntryToWakeInterrupts</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerNotifyingD0EntryToWakeInterruptsNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerNotifyingD0ExitToWakeInterrupts</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerNotifyingD0ExitToWakeInterruptsNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerNull</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerObjectCreated</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerPowerFailedPowerDown</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerReportPowerDownFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerReportPowerUpFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerReportPowerUpFailedDerefParent</td>
+                    <td>WdfDevStatePowerStopped</td>
                     <td></td>
                 </tr>
             
@@ -516,7 +286,107 @@ typedef enum _WDF_DEVICE_POWER_STATE {
                 </tr>
             
                 <tr>
+                    <td>WdfDevStatePowerDxDisablingWakeAtBus</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerDxDisablingWakeAtBusNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoDx</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoDxNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoDxIoStopped</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoDxIoStoppedNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoDxNPFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerDx</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerDxNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoDxArmedForWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoDxArmedForWakeNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoDxIoStoppedArmedForWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoDxIoStoppedArmedForWakeNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerDxArmedForWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerDxArmedForWakeNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerCheckParentStateArmedForWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerCheckParentStateArmedForWakeNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerWaitForParentArmedForWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerWaitForParentArmedForWakeNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>WdfDevStatePowerStartSelfManagedIo</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerStartSelfManagedIoNP</td>
                     <td></td>
                 </tr>
             
@@ -531,72 +401,7 @@ typedef enum _WDF_DEVICE_POWER_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePowerStartSelfManagedIoFailedStarted</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerStartSelfManagedIoFailedStartedNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerStartSelfManagedIoNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerStopped</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerStoppedCompleteDx</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerUpFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerUpFailedDerefParent</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerUpFailedDerefParentNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerUpFailedNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerUpFailedPowerDown</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerUpFailedPowerDownNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WdfDevStatePowerWaitForParent</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerWaitForParentArmedForWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePowerWaitForParentArmedForWakeNP</td>
                     <td></td>
                 </tr>
             
@@ -621,7 +426,17 @@ typedef enum _WDF_DEVICE_POWER_STATE {
                 </tr>
             
                 <tr>
+                    <td>WdfDevStatePowerWakingNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>WdfDevStatePowerWakingConnectInterrupt</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerWakingConnectInterruptNP</td>
                     <td></td>
                 </tr>
             
@@ -636,12 +451,12 @@ typedef enum _WDF_DEVICE_POWER_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePowerWakingConnectInterruptNP</td>
+                    <td>WdfDevStatePowerWakingDmaEnable</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePowerWakingDmaEnable</td>
+                    <td>WdfDevStatePowerWakingDmaEnableNP</td>
                     <td></td>
                 </tr>
             
@@ -656,12 +471,197 @@ typedef enum _WDF_DEVICE_POWER_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePowerWakingDmaEnableNP</td>
+                    <td>WdfDevStatePowerReportPowerUpFailedDerefParent</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePowerWakingNP</td>
+                    <td>WdfDevStatePowerReportPowerUpFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerPowerFailedPowerDown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerReportPowerDownFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerInitialConnectInterruptFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerInitialDmaEnableFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerInitialSelfManagedIoFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerInitialPowerUpFailedDerefParent</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerInitialPowerUpFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerDxStoppedDisarmWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerDxStoppedDisarmWakeNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoDxStoppedDisableInterruptNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoDxStopped</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerDxStopped</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoStopped</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerStoppedCompleteDx</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerDxStoppedDecideDxState</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerDxStoppedArmForWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerDxStoppedArmForWakeNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerFinalPowerDownFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerFinal</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoImplicitD3DisarmWakeAtBus</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerUpFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerUpFailedDerefParent</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoDxFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerGotoDxStoppedDisableInterrupt</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerUpFailedNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerUpFailedDerefParentNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerNotifyingD0ExitToWakeInterrupts</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerNotifyingD0EntryToWakeInterrupts</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerNotifyingD0ExitToWakeInterruptsNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerNotifyingD0EntryToWakeInterruptsNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerInitialPowerUpFailedPowerDown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerUpFailedPowerDown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerUpFailedPowerDownNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerInitialSelfManagedIoFailedStarted</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerStartSelfManagedIoFailedStarted</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerStartSelfManagedIoFailedStartedNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePowerNull</td>
                     <td></td>
                 </tr>
 </table>

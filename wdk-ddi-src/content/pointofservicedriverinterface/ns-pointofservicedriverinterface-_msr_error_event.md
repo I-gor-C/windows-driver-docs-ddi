@@ -65,29 +65,9 @@ typedef struct _MSR_ERROR_EVENT {
 ## Members
 
 
-`CardData`
-
-Data read from a swiped magnetic stripe card.
-
-`ExtendedReason`
-
-Additional information about the error.
-
 `Header`
 
 Track 4 error status.
-
-`Message`
-
-NULL terminated error message.
-
-`Reason`
-
-Reason for the error.
-
-`Severity`
-
-Severity of the error.
 
 `Track1Status`
 
@@ -104,6 +84,26 @@ Track 3 error status.
 `Track4Status`
 
 Track 4 error status.
+
+`Severity`
+
+Severity of the error.
+
+`Reason`
+
+Reason for the error.
+
+`ExtendedReason`
+
+Additional information about the error.
+
+`CardData`
+
+Data read from a swiped magnetic stripe card.
+
+`Message`
+
+NULL terminated error message.
 
 
 ## Requirements

@@ -60,13 +60,13 @@ typedef struct _WDFMEMORY_OFFSET {
 ## Members
 
 
-`BufferLength`
-
-The length, in bytes, of the buffer's subsection. A value of zero represents the entire buffer.
-
 `BufferOffset`
 
 A byte offset from the beginning of the memory object's buffer. This offset identifies the location of the buffer's subsection. A value of zero represents the beginning of the buffer.
+
+`BufferLength`
+
+The length, in bytes, of the buffer's subsection. A value of zero represents the entire buffer.
 
 ## Remarks
 The <b>WDFMEMORY_OFFSET</b> structure is used as a member of the <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure and as an input parameter to various I/O target object methods.
@@ -81,11 +81,3 @@ The <b>WDFMEMORY_OFFSET</b> structure is used as a member of the <a href="..\wdf
 ## See Also
 
 <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDFMEMORY_OFFSET structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

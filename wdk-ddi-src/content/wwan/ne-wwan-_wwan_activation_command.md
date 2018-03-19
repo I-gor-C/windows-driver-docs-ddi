@@ -62,14 +62,14 @@ typedef enum _WWAN_ACTIVATION_COMMAND {
 <table>
             
                 <tr>
-                    <td>WwanActivationCommandActivate</td>
-                    <td>Activate PDP context.</td>
-                </tr>
-            
-                <tr>
                     <td>WwanActivationCommandDeactivate</td>
                     <td>Deactivate a currently activated PDP context identified by 
      <b>ConnectionId</b> .</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanActivationCommandActivate</td>
+                    <td>Activate PDP context.</td>
                 </tr>
             
                 <tr>
@@ -88,11 +88,3 @@ typedef enum _WWAN_ACTIVATION_COMMAND {
 ## See Also
 
 <a href="..\wwan\ns-wwan-_wwan_set_context_state.md">WWAN_SET_CONTEXT_STATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_ACTIVATION_COMMAND enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

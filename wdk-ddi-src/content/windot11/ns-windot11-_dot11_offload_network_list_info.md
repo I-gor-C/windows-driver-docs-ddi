@@ -63,14 +63,6 @@ typedef struct _DOT11_OFFLOAD_NETWORK_LIST_INFO {
 ## Members
 
 
-`FastScanIterations`
-
-Number if iterations to repeat the fast scan. When the number of iterations is reached the  NIC switches to the <b>SlowScanPeriod</b>.
-
-`FastScanPeriod`
-
-Fast scan period, in seconds. When the NIC receives the offload list, it should scan for matches to the list within the <b>FastScanPeriod</b> interval. In the fast scan period, the NIC scans for interesting SSIDs every such period for <b>FastScanIteration</b> then it switches to <b>SlowScanPeriod</b>.
-
 `Header`
 
 The type, revision, and size of the DOT11_OFFLOAD_NETWORK_LIST_INFO structure. The required settings for the members of <b>Header</b> are the following.
@@ -93,14 +85,6 @@ The type, revision, and size of the DOT11_OFFLOAD_NETWORK_LIST_INFO structure. T
 <td>DOT11_SIZEOF_OFFLOAD_NETWORK_LIST_INFO_REVISION_1</td>
 </tr>
 </table>
-
-`offloadNetworkList`
-
-
-
-`SlowScanPeriod`
-
-Slow scan period, in seconds.   After the <b>FastScanPeriod</b> expires, the NIC switch to the <b>SlowScanPeriod</b>.  The NIC should scan for matches to the list within the <b>SlowScanPeriod</b>.  The duration is open ended until Windows issues an updated  offload-list.
 
 `ulFlags`
 
@@ -125,9 +109,25 @@ Bit flags to specify extra attributes of this NLO from the following table:
 </tr>
 </table>
 
+`FastScanPeriod`
+
+Fast scan period, in seconds. When the NIC receives the offload list, it should scan for matches to the list within the <b>FastScanPeriod</b> interval. In the fast scan period, the NIC scans for interesting SSIDs every such period for <b>FastScanIteration</b> then it switches to <b>SlowScanPeriod</b>.
+
+`FastScanIterations`
+
+Number if iterations to repeat the fast scan. When the number of iterations is reached the  NIC switches to the <b>SlowScanPeriod</b>.
+
+`SlowScanPeriod`
+
+Slow scan period, in seconds.   After the <b>FastScanPeriod</b> expires, the NIC switch to the <b>SlowScanPeriod</b>.  The NIC should scan for matches to the list within the <b>SlowScanPeriod</b>.  The duration is open ended until Windows issues an updated  offload-list.
+
 `uNumOfEntries`
 
 Number of networks in the list of those requested to offload.
+
+`offloadNetworkList`
+
+
 
 
 ## Requirements

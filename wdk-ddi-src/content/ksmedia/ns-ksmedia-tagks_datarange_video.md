@@ -62,6 +62,10 @@ typedef struct tagKS_DATARANGE_VIDEO {
 ## Members
 
 
+`DataRange`
+
+Specifies the major identifier for the format.
+
 `bFixedSizeSamples`
 
 Specifies that all the samples are the same size if set to <b>TRUE</b>.
@@ -70,21 +74,17 @@ Specifies that all the samples are the same size if set to <b>TRUE</b>.
 
 Specifies whether each sample can stand independently on its own, without relying on previous or future samples.
 
-`ConfigCaps`
+`StreamDescriptionFlags`
 
-Specifies the configuration of the stream, including scaling, cropping, and frame and data rates.
-
-`DataRange`
-
-Specifies the major identifier for the format.
+Unused and should be set to zero.
 
 `MemoryAllocationFlags`
 
 Unused and should be set to zero.
 
-`StreamDescriptionFlags`
+`ConfigCaps`
 
-Unused and should be set to zero.
+Specifies the configuration of the stream, including scaling, cropping, and frame and data rates.
 
 `VideoInfoHeader`
 
@@ -121,11 +121,3 @@ For example, a stream that supports RGB16, RGB24, YVU9, and JPEG capture formats
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_DATARANGE_VIDEO structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

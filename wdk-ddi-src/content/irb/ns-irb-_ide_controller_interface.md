@@ -65,13 +65,25 @@ typedef struct _IDE_CONTROLLER_INTERFACE {
 ## Members
 
 
+`Version`
+
+The port driver sets this field to indicate the version of the port driver. The port driver sets the version to sizeof(IDE_CONTROLLER_INTERFACE). The miniport driver should verify that the version is greater than or equal to the one it is using.
+
+`Reserved`
+
+Reserved for future use. The miniport driver shall not use this field.
+
+`ControllerExtensionSize`
+
+Specifies the size in bytes required by a miniport driver for its controller device extension.
+
+`ChannelExtensionSize`
+
+Specifies the size in bytes required by a miniport driver for its per-channel device extension.
+
 `AlignmentMask`
 
 Contains a mask indicating the alignment restrictions for buffers required by the HBA for transfer operations. Valid mask values are also restricted by characteristics of the memory managers on different versions of Windows. Under Windows 2000 and Windows XP, the valid mask values are 0 (byte-aligned), 1 (word-aligned), 3 (DWORD-aligned) and 7 (double DWORD-aligned). The miniport driver should set this mask if the HBA supports scatter/gather.
-
-`AtaAdapterControl`
-
-Pointer to the miniport's <b>AtaControllerAdapterControl</b> routine. This is a required entry point.
 
 `AtaChannelInitRoutine`
 
@@ -85,21 +97,9 @@ Pointer to the miniport's <b>AtaControllerChannelEnabled</b> routine. This is an
 
 Pointer to the miniport's <b>AtaControllerTransferModeSelect</b> routine. This is an optional entry point.
 
-`ChannelExtensionSize`
+`AtaAdapterControl`
 
-Specifies the size in bytes required by a miniport driver for its per-channel device extension.
-
-`ControllerExtensionSize`
-
-Specifies the size in bytes required by a miniport driver for its controller device extension.
-
-`Reserved`
-
-Reserved for future use. The miniport driver shall not use this field.
-
-`Version`
-
-The port driver sets this field to indicate the version of the port driver. The port driver sets the version to sizeof(IDE_CONTROLLER_INTERFACE). The miniport driver should verify that the version is greater than or equal to the one it is using.
+Pointer to the miniport's <b>AtaControllerAdapterControl</b> routine. This is a required entry point.
 
 
 ## Requirements

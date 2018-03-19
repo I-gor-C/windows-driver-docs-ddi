@@ -60,19 +60,19 @@ typedef struct _WDF_TASK_QUEUE_CONFIG {
 ## Members
 
 
-`DispatchType`
-
-
-
-`EvtTaskExecuteSync`
-
-
-
 `Size`
 
 
 
 `TaskQueueId`
+
+
+
+`DispatchType`
+
+
+
+`EvtTaskExecuteSync`
 
 
 

@@ -68,32 +68,12 @@ typedef enum _RILADDRESSTYPE {
 <table>
             
                 <tr>
-                    <td>RIL_ADDRTYPE_ABBREV</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_ADDRTYPE_ALPHANUM</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_ADDRTYPE_EMAIL</td>
+                    <td>RIL_ADDRTYPE_UNKNOWN</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_ADDRTYPE_INTERNATIONAL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_ADDRTYPE_IP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_ADDRTYPE_MAX</td>
                     <td></td>
                 </tr>
             
@@ -113,12 +93,32 @@ typedef enum _RILADDRESSTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_ADDRTYPE_UNKNOWN</td>
+                    <td>RIL_ADDRTYPE_ALPHANUM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_ABBREV</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_IP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_EMAIL</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_ADDRTYPE_URI</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

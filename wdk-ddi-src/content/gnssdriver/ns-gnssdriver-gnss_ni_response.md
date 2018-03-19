@@ -59,21 +59,21 @@ typedef struct {
 ## Members
 
 
-`RequestId`
-
-The ID to uniquely identify the NI request.
-
 `Size`
 
 Structure size.
 
-`UserResponse`
-
-The user response to the NI request.
-
 `Version`
 
 Version number.
+
+`RequestId`
+
+The ID to uniquely identify the NI request.
+
+`UserResponse`
+
+The user response to the NI request.
 
 
 ## Requirements

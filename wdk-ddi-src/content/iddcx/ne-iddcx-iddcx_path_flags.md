@@ -60,8 +60,8 @@ typedef enum _IDDCX_PATH_FLAGS {
 <table>
             
                 <tr>
-                    <td>IDDCX_PATH_FLAGS_ACTIVE</td>
-                    <td>Indicates if this path is active</td>
+                    <td>IDDCX_PATH_FLAGS_NONE</td>
+                    <td>Indicates that the path is not active and has not changed.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum _IDDCX_PATH_FLAGS {
                 </tr>
             
                 <tr>
-                    <td>IDDCX_PATH_FLAGS_NONE</td>
-                    <td>Indicates that the path is not active and has not changed.</td>
+                    <td>IDDCX_PATH_FLAGS_ACTIVE</td>
+                    <td>Indicates if this path is active</td>
                 </tr>
             
                 <tr>

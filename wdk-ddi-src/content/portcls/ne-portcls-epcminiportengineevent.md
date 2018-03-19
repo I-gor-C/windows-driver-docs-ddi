@@ -71,43 +71,13 @@ typedef enum _EPcMiniportEngineEvent {
 <table>
             
                 <tr>
-                    <td>eMINIPORT_BUFFER_COMPLETE</td>
-                    <td>Specifies the ID for the buffer complete event.</td>
-                </tr>
-            
-                <tr>
-                    <td>eMINIPORT_FX_CLSID</td>
-                    <td>Specifies the class ID for the audio processing effect (FX) that was in effect when the glitch happened.</td>
-                </tr>
-            
-                <tr>
-                    <td>eMINIPORT_GET_PRESENTATION_POSITION</td>
-                    <td>Specifies the ID for a "get presentation position" event.</td>
-                </tr>
-            
-                <tr>
-                    <td>eMINIPORT_GET_STREAM_POSITION</td>
-                    <td>Specifies the ID for a "get stream position" event.</td>
-                </tr>
-            
-                <tr>
-                    <td>eMINIPORT_GLITCH_REPORT</td>
-                    <td>Specifies the ID for a "glitch report" event.</td>
-                </tr>
-            
-                <tr>
                     <td>eMINIPORT_IHV_DEFINED</td>
                     <td>Specifies the ID for an IHV-defined event.</td>
                 </tr>
             
                 <tr>
-                    <td>eMINIPORT_LAST_BUFFER_RENDERED</td>
-                    <td>Specifies the ID for the last buffer that was rendered.</td>
-                </tr>
-            
-                <tr>
-                    <td>eMINIPORT_MaxValue</td>
-                    <td>Specifies the ID for the highest enumerated value that was used to report the glitch.</td>
+                    <td>eMINIPORT_BUFFER_COMPLETE</td>
+                    <td>Specifies the ID for the buffer complete event.</td>
                 </tr>
             
                 <tr>
@@ -116,8 +86,18 @@ typedef enum _EPcMiniportEngineEvent {
                 </tr>
             
                 <tr>
-                    <td>eMINIPORT_PROCESSING_MODE</td>
-                    <td>Specifies the ID for the processing mode that was in effect when the glitch happened.</td>
+                    <td>eMINIPORT_GET_STREAM_POSITION</td>
+                    <td>Specifies the ID for a "get stream position" event.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_SET_WAVERT_BUFFER_WRITE_POSITION</td>
+                    <td>Specifies the ID for a "wave  buffer write position" event.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_GET_PRESENTATION_POSITION</td>
+                    <td>Specifies the ID for a "get presentation position" event.</td>
                 </tr>
             
                 <tr>
@@ -126,8 +106,28 @@ typedef enum _EPcMiniportEngineEvent {
                 </tr>
             
                 <tr>
-                    <td>eMINIPORT_SET_WAVERT_BUFFER_WRITE_POSITION</td>
-                    <td>Specifies the ID for a "wave  buffer write position" event.</td>
+                    <td>eMINIPORT_GLITCH_REPORT</td>
+                    <td>Specifies the ID for a "glitch report" event.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_LAST_BUFFER_RENDERED</td>
+                    <td>Specifies the ID for the last buffer that was rendered.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_PROCESSING_MODE</td>
+                    <td>Specifies the ID for the processing mode that was in effect when the glitch happened.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_FX_CLSID</td>
+                    <td>Specifies the class ID for the audio processing effect (FX) that was in effect when the glitch happened.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_MaxValue</td>
+                    <td>Specifies the ID for the highest enumerated value that was used to report the glitch.</td>
                 </tr>
 </table>
 
@@ -272,11 +272,3 @@ The following table shows the members of the  EPcMiniportEngineEvent enum that w
 
 
 <a href="https://msdn.microsoft.com/9FF2A5D6-9382-4EE6-AA21-DCF47210F73B">Glitch Reporting for Offloaded Audio</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20EPcMiniportEngineEvent enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

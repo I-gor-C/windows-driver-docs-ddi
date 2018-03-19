@@ -66,15 +66,15 @@ typedef struct _RILUICCRECORDSTATUS {
 
 
 
-`dwItemCount`
-
-
-
 `dwParams`
 
 
 
 `dwRecordType`
+
+
+
+`dwItemCount`
 
 
 

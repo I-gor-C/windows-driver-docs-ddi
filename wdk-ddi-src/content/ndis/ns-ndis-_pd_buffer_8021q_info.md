@@ -58,13 +58,13 @@ typedef struct _PD_BUFFER_8021Q_INFO {
 ## Members
 
 
-`CanonicalFormatId`
-
-The canonical format ID.
-
 `UserPriority`
 
 The user priority.
+
+`CanonicalFormatId`
+
+The canonical format ID.
 
 `VlanId`
 

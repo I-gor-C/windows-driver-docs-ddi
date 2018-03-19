@@ -76,15 +76,7 @@ typedef struct _ALLOCATOR_PROPERTIES_EX {
 ## Members
 
 
-`AllocatorPlace`
-
-
-
-`BusType`
-
-
-
-`cbAlign`
+`cBuffers`
 
 
 
@@ -92,35 +84,11 @@ typedef struct _ALLOCATOR_PROPERTIES_EX {
 
 
 
+`cbAlign`
+
+
+
 `cbPrefix`
-
-
-
-`cBuffers`
-
-
-
-`CountNextSegments`
-
-
-
-`Dimensions`
-
-
-
-`Flags`
-
-
-
-`Input`
-
-
-
-`InsideFactors`
-
-
-
-`LogicalMemoryType`
 
 
 
@@ -128,15 +96,43 @@ typedef struct _ALLOCATOR_PROPERTIES_EX {
 
 
 
-`NextSegments`
+`BusType`
 
 
 
-`NumberPins`
+`State`
+
+
+
+`Input`
 
 
 
 `Output`
+
+
+
+`Strategy`
+
+
+
+`Flags`
+
+
+
+`Weight`
+
+
+
+`LogicalMemoryType`
+
+
+
+`AllocatorPlace`
+
+
+
+`Dimensions`
 
 
 
@@ -148,15 +144,19 @@ typedef struct _ALLOCATOR_PROPERTIES_EX {
 
 
 
-`State`
+`CountNextSegments`
 
 
 
-`Strategy`
+`NextSegments`
 
 
 
-`Weight`
+`InsideFactors`
+
+
+
+`NumberPins`
 
 
 

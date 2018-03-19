@@ -85,14 +85,6 @@ typedef struct _STORPORT_TELEMETRY_EVENT {
 
 Miniport driver version.
 
-`EventBuffer`
-
-A miniport defined telemetry payload, the length of which is <b>EventBufferLength</b>.
-
-`EventBufferLength`
-
-The length of <b>EventBuffer</b>, which should be not larger than <b>EVENT_BUFFER_MAX_LENGTH</b> that is 4KB.
-
 `EventId`
 
 A miniport defined identifier for the telemetry event.
@@ -109,65 +101,73 @@ A miniport defined version for the telemetry event.
 
 Reserved.
 
+`EventBufferLength`
+
+The length of <b>EventBuffer</b>, which should be not larger than <b>EVENT_BUFFER_MAX_LENGTH</b> that is 4KB.
+
+`EventBuffer`
+
+A miniport defined telemetry payload, the length of which is <b>EventBufferLength</b>.
+
 `ParameterName0`
 
 A description of the of the meaning of ParameterValue0. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-
-`ParameterName1`
-
-A description of the of the meaning of ParameterValue1. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-
-`ParameterName2`
-
-A description of the of the meaning of ParameterValue2. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-
-`ParameterName3`
-
-A description of the of the meaning of ParameterValue3. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-
-`ParameterName4`
-
-A description of the of the meaning of ParameterValue4. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-
-`ParameterName5`
-
-A description of the of the meaning of ParameterValue5. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-
-`ParameterName6`
-
-A description of the of the meaning of ParameterValue6. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
-
-`ParameterName7`
-
-A description of the of the meaning of ParameterValue7. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
 
 `ParameterValue0`
 
 The value for parameter 0.
 
+`ParameterName1`
+
+A description of the of the meaning of ParameterValue1. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
 `ParameterValue1`
 
 The value for parameter 1.
+
+`ParameterName2`
+
+A description of the of the meaning of ParameterValue2. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
 
 `ParameterValue2`
 
 The value for parameter 2.
 
+`ParameterName3`
+
+A description of the of the meaning of ParameterValue3. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
 `ParameterValue3`
 
 The value for parameter 3.
+
+`ParameterName4`
+
+A description of the of the meaning of ParameterValue4. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
 
 `ParameterValue4`
 
 The value for parameter 4.
 
+`ParameterName5`
+
+A description of the of the meaning of ParameterValue5. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
 `ParameterValue5`
 
 The value for parameter 5.
 
+`ParameterName6`
+
+A description of the of the meaning of ParameterValue6. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
+
 `ParameterValue6`
 
 The value for parameter 6.
+
+`ParameterName7`
+
+A description of the of the meaning of ParameterValue7. This parameter name string must be &lt;= EVENT_MAX_PARAM_NAME_LEN.
 
 `ParameterValue7`
 
@@ -185,11 +185,3 @@ A <b>STORPORT_TELEMETRY_EVENT</b> structure describes the miniport telemetry dat
 ## See Also
 
 <a href="..\storport\nf-storport-storportlogtelemetry.md">StorPortLogTelemetry</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORPORT_TELEMETRY_EVENT structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

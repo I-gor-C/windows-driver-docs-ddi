@@ -59,15 +59,15 @@ typedef struct _RILWRITEMSGPARAMS {
 ## Members
 
 
-`dwStatus`
-
-
-
 `hUiccApp`
 
 
 
 `rmMessage`
+
+
+
+`dwStatus`
 
 
 

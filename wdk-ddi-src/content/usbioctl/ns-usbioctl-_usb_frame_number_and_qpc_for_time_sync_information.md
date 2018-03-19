@@ -67,25 +67,9 @@ typedef struct _USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION {
 ## Members
 
 
-`CurrentGenerationID`
+`TimeTrackingHandle`
 
-An identifier for this request of time synchronization.
-
-`CurrentHardwareFrameNumber`
-
-A 1-bit value of the current hardware frame number that is directly read  from the MFINDEX register.
-
-`CurrentHardwareMicroFrameNumber`
-
-A 3-bit value of the current hardware micro frame number that is  directly read from the MFINDEX register.
-
-`CurrentQueryPerformanceCounter`
-
-Current QPC value captured that is synchronized with the bus frame numbers represented by <b>CurrentHardwareFrameNumber</b>, <b>CurrentHardwareMicroFrameNumber</b> and <b>CurrentUSBFrameNumber</b>.
-
-`CurrentUSBFrameNumber`
-
-A 32-bit USB frame number value returned by <a href="..\usb\ns-usb-_urb_get_current_frame_number.md">_URB_GET_CURRENT_FRAME_NUMBER</a>.
+The time racking handle received in the previous <a href="..\usbioctl\ni-usbioctl-ioctl_usb_stop_tracking_for_time_sync.md">IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC</a> request.
 
 `InputFrameNumber`
 
@@ -95,10 +79,6 @@ A 32-bit USB bus frame number.
 
 A 3-bit value received from the hardware.
 
-`PredictedAccuracyInMicroSeconds`
-
-A value that represents the accuracy of the predicted QPC value in micro seconds.
-
 `QueryPerformanceCounterAtInputFrameOrMicroFrame`
 
 A value predicted by the USB driver stack that represents the system QPC value at the beginning of the frame and microframe represented by the <b>InputFrameNumber</b> and <b>InputMicroFrameNumber</b> input values.
@@ -107,9 +87,29 @@ A value predicted by the USB driver stack that represents the system QPC value a
 
 The current performance-counter frequency, in counts per second.
 
-`TimeTrackingHandle`
+`PredictedAccuracyInMicroSeconds`
 
-The time racking handle received in the previous <a href="..\usbioctl\ni-usbioctl-ioctl_usb_stop_tracking_for_time_sync.md">IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC</a> request.
+A value that represents the accuracy of the predicted QPC value in micro seconds.
+
+`CurrentGenerationID`
+
+An identifier for this request of time synchronization.
+
+`CurrentQueryPerformanceCounter`
+
+Current QPC value captured that is synchronized with the bus frame numbers represented by <b>CurrentHardwareFrameNumber</b>, <b>CurrentHardwareMicroFrameNumber</b> and <b>CurrentUSBFrameNumber</b>.
+
+`CurrentHardwareFrameNumber`
+
+A 1-bit value of the current hardware frame number that is directly read  from the MFINDEX register.
+
+`CurrentHardwareMicroFrameNumber`
+
+A 3-bit value of the current hardware micro frame number that is  directly read from the MFINDEX register.
+
+`CurrentUSBFrameNumber`
+
+A 32-bit USB frame number value returned by <a href="..\usb\ns-usb-_urb_get_current_frame_number.md">_URB_GET_CURRENT_FRAME_NUMBER</a>.
 
 
 ## Requirements

@@ -62,6 +62,22 @@ typedef struct _NDIS_CONFIGURATION_PARAMETER {
 ## Members
 
 
+`ParameterType`
+
+The type of the parameter specified as one of the 
+     <a href="..\ndis\ne-ndis-_ndis_parameter_type.md">NDIS_PARAMETER_TYPE</a> enumeration values. 
+     
+
+For successful calls to the 
+     <a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a> function, the
+     
+     <b>ParameterType</b> value matches the value at the 
+     <i>ParameterType</i> parameter. However, when the 
+     <i>ParameterType</i> parameter is 
+     <b>NdisParameterHexInteger</b>, the resulting 
+     <b>ParameterType</b> member value is 
+     <b>NdisParameterInteger</b>.
+
 `ParameterData`
 
 A union that contains the value of the given named entry. If ParameterType is a string type, this
@@ -98,22 +114,6 @@ A
       <a href="..\ndis\ns-ndis-binary_data.md">BINARY_DATA</a> structure that is used when the 
       <b>ParameterType</b> member is set to 
       <b>NdisParameterBinary</b>.
-
-`ParameterType`
-
-The type of the parameter specified as one of the 
-     <a href="..\ndis\ne-ndis-_ndis_parameter_type.md">NDIS_PARAMETER_TYPE</a> enumeration values. 
-     
-
-For successful calls to the 
-     <a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a> function, the
-     
-     <b>ParameterType</b> value matches the value at the 
-     <i>ParameterType</i> parameter. However, when the 
-     <i>ParameterType</i> parameter is 
-     <b>NdisParameterHexInteger</b>, the resulting 
-     <b>ParameterType</b> member value is 
-     <b>NdisParameterInteger</b>.
 
 ## Remarks
 To read parameters in the registry, an NDIS driver can call the 
@@ -153,11 +153,3 @@ To write parameters to the registry, an NDIS driver can call the
 
 
 <a href="..\ndis\ns-ndis-binary_data.md">BINARY_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CONFIGURATION_PARAMETER structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

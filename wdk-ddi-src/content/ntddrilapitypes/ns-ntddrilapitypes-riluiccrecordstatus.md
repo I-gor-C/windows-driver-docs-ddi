@@ -65,10 +65,6 @@ struct RILUICCRECORDSTATUS {
 
 The size of the structure in bytes.
 
-`dwItemCount`
-
-Specifies the number of items in the UICC file.
-
 `dwParams`
 
 A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-riluiccrecordstatusparammask.md">RILUICCRECORDSTATUSPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
@@ -76,6 +72,10 @@ A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-riluiccrecordsta
 `dwRecordType`
 
 Specifies the UICC file type, one of <a href="..\rilapitypes\ne-rilapitypes-riluiccrecordtype.md">RILUICCRECORDTYPE</a>.
+
+`dwItemCount`
+
+Specifies the number of items in the UICC file.
 
 `dwSize`
 
@@ -94,11 +94,3 @@ An array of type <a href="..\rilapitypes\ns-rilapitypes-riluiccfilelockstatus.md
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILUICCRECORDSTATUS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

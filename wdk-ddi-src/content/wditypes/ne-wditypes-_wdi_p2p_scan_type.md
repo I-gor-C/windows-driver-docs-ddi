@@ -66,6 +66,11 @@ typedef enum _WDI_P2P_SCAN_TYPE {
                 </tr>
             
                 <tr>
+                    <td>WDI_P2P_SCAN_TYPE_PASSIVE</td>
+                    <td>Use passive scanning during device discovery.</td>
+                </tr>
+            
+                <tr>
                     <td>WDI_P2P_SCAN_TYPE_AUTO</td>
                     <td>Adapter determines scan type during device discovery. It should prefer using Active scans when possible. This is the default scan type setting.</td>
                 </tr>
@@ -73,11 +78,6 @@ typedef enum _WDI_P2P_SCAN_TYPE {
                 <tr>
                     <td>WDI_P2P_SCAN_TYPE_MAX_VALUE</td>
                     <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_P2P_SCAN_TYPE_PASSIVE</td>
-                    <td>Use passive scanning during device discovery.</td>
                 </tr>
 </table>
 

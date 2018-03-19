@@ -63,11 +63,11 @@ typedef struct _RILREMOVECALLFORWARDINGPARAMS {
 
 
 
-`dwInfoClasses`
-
-
-
 `dwReason`
+
+
+
+`dwInfoClasses`
 
 
 

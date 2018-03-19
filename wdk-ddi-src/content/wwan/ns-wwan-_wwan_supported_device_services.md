@@ -60,23 +60,23 @@ typedef struct _WWAN_SUPPORTED_DEVICE_SERVICES {
 ## Members
 
 
-`ListHeader`
-
-A formatted WWAN_LIST_HEADER object that represents a list of supported device services and the number of services  in the list.
-
-This member points to the list of the <a href="..\wwan\ns-wwan-_wwan_device_service_entry.md">WWAN_DEVICE_SERVICE_ENTRY</a> by using the WWAN_LIST_HEADER structure.
-
 `uMaxCommandDataSize`
 
 The maximum size, in bytes, of data that can be associated with a device service command.
+
+`uMaxSessionDataSize`
+
+The maximum size, in bytes, of data that can be associated with a device service session.
 
 `uMaxSessionCount`
 
 The maximum number of device service sessions supported by the miniport driver.
 
-`uMaxSessionDataSize`
+`ListHeader`
 
-The maximum size, in bytes, of data that can be associated with a device service session.
+A formatted WWAN_LIST_HEADER object that represents a list of supported device services and the number of services  in the list.
+
+This member points to the list of the <a href="..\wwan\ns-wwan-_wwan_device_service_entry.md">WWAN_DEVICE_SERVICE_ENTRY</a> by using the WWAN_LIST_HEADER structure.
 
 
 ## Requirements
@@ -96,11 +96,3 @@ The maximum size, in bytes, of data that can be associated with a device service
 
 
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_supported_device_services.md">NDIS_WWAN_SUPPORTED_DEVICE_SERVICES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SUPPORTED_DEVICE_SERVICES structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

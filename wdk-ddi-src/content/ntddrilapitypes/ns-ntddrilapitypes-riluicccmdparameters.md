@@ -65,6 +65,14 @@ typedef struct _RILUICCCMDPARAMETERS {
 
 
 
+`dwParams`
+
+
+
+`filePath`
+
+
+
 `dwParameter1`
 
 
@@ -74,14 +82,6 @@ typedef struct _RILUICCCMDPARAMETERS {
 
 
 `dwParameter3`
-
-
-
-`dwParams`
-
-
-
-`filePath`
 
 
 

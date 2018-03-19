@@ -62,24 +62,17 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>DxgkBacklightOptimizationDesktop</td>
-                    <td>The display miniport driver should optimize backlight settings for desktop presentation when the system is on DC power and the other possible scenarios (disabled, dynamic, and dimmed) are not active. This type of optimization is appropriate for displaying photos, internet browsers, common document types, and video playback controls.
-
-This is the default adaptive brightness setting when the system is on DC power.</td>
-                </tr>
-            
-                <tr>
-                    <td>DxgkBacklightOptimizationDimmed</td>
-                    <td>The display miniport driver should optimize backlight settings to display at a low light level that is still visible even if it is not easily readable. In this scenario the display is typically set to a 30 percent brightness level.
-
-After a defined period of no user input, the operating system sets this value to dim the display.</td>
-                </tr>
-            
-                <tr>
                     <td>DxgkBacklightOptimizationDisable</td>
                     <td>The display miniport driver must completely disable adaptive brightness control.
 
 The operating system always sets this value if the system is on AC power.</td>
+                </tr>
+            
+                <tr>
+                    <td>DxgkBacklightOptimizationDesktop</td>
+                    <td>The display miniport driver should optimize backlight settings for desktop presentation when the system is on DC power and the other possible scenarios (disabled, dynamic, and dimmed) are not active. This type of optimization is appropriate for displaying photos, internet browsers, common document types, and video playback controls.
+
+This is the default adaptive brightness setting when the system is on DC power.</td>
                 </tr>
             
                 <tr>
@@ -89,6 +82,13 @@ The operating system always sets this value if the system is on AC power.</td>
 The operating system sets this value if a full-screen Windows App is using the HTML5 video tag with JavaScript or the <a href="https://msdn.microsoft.com/5146a1d4-17f0-4da2-a8ba-b121f9beeb21">MediaElement</a> control with XAML.
 
 The operating system sets this value only when only full-screen video content is displayed on the screen. This value is not set if playback controls or charms are displayed during video playback; in this case, adaptive brightness will not be enabled.</td>
+                </tr>
+            
+                <tr>
+                    <td>DxgkBacklightOptimizationDimmed</td>
+                    <td>The display miniport driver should optimize backlight settings to display at a low light level that is still visible even if it is not easily readable. In this scenario the display is typically set to a 30 percent brightness level.
+
+After a defined period of no user input, the operating system sets this value to dim the display.</td>
                 </tr>
             
                 <tr>
@@ -110,11 +110,3 @@ For more information on usage scenarios involving <b>DXGK_BACKLIGHT_OPTIMIZATION
 ## See Also
 
 <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_set_backlight_optimization.md">DxgkDdiSetBacklightOptimization</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_BACKLIGHT_OPTIMIZATION_LEVEL enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -61,25 +61,25 @@ typedef struct _ROOTHUB_30PORT_INFO {
 ## Members
 
 
-`DebugCapable`
+`PortNumber`
 
-A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is debug capable.
-
-`HubDepth`
-
-The hub depth limit.
+The USB 3.0 port number connected to the root hub.
 
 `MinorRevision`
 
 Revision number.
 
-`PortNumber`
+`HubDepth`
 
-The USB 3.0 port number connected to the root hub.
+The hub depth limit.
 
 `Removable`
 
 A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is removable.
+
+`DebugCapable`
+
+A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is debug capable.
 
 
 ## Requirements

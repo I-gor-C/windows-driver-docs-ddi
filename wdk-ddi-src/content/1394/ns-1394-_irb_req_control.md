@@ -61,29 +61,29 @@ typedef struct _IRB_REQ_CONTROL {
 ## Members
 
 
-`BytesReturned`
+`ulIoControlCode`
 
-Specifies the number of bytes returned.
+Specifies the control code used in this request. Vendors should make these control codes unique, so that they do not overlap.
 
 `pInBuffer`
 
 Points to an MDL that describes the input buffer. The input buffer contains user-defined information.
 
-`pOutBuffer`
-
-Points to an MDL that describes the output buffer. The output buffer contains user-defined information.
-
 `ulInBufferLength`
 
 Specifies the length of the input buffer.
 
-`ulIoControlCode`
+`pOutBuffer`
 
-Specifies the control code used in this request. Vendors should make these control codes unique, so that they do not overlap.
+Points to an MDL that describes the output buffer. The output buffer contains user-defined information.
 
 `ulOutBufferLength`
 
 Specifies the length of the output buffer.
+
+`BytesReturned`
+
+Specifies the number of bytes returned.
 
 
 ## Requirements

@@ -59,13 +59,13 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSCAMERA_EXTENDEDPROP_ROITYPE_FACE</td>
-                    <td>The ROI type is face.</td>
+                    <td>KSCAMERA_EXTENDEDPROP_ROITYPE_UNKNOWN</td>
+                    <td>The ROI type is unknown.</td>
                 </tr>
             
                 <tr>
-                    <td>KSCAMERA_EXTENDEDPROP_ROITYPE_UNKNOWN</td>
-                    <td>The ROI type is unknown.</td>
+                    <td>KSCAMERA_EXTENDEDPROP_ROITYPE_FACE</td>
+                    <td>The ROI type is face.</td>
                 </tr>
 </table>
 

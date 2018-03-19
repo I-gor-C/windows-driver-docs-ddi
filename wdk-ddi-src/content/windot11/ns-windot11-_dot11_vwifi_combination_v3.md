@@ -85,13 +85,13 @@ The type, revision, and size of the <b>DOT11_VWIFI_COMBINATION_V3</b> structure.
 </tr>
 </table>
 
-`uNumAdhoc`
-
-The number of adhoc stations supported.
-
 `uNumInfrastructure`
 
 The number of 802.11 infrastructure stations supported.
+
+`uNumAdhoc`
+
+The number of adhoc stations supported.
 
 `uNumSoftAP`
 

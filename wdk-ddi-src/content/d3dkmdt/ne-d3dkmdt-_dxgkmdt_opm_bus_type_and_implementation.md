@@ -69,23 +69,33 @@ typedef enum _DXGKMDT_OPM_BUS_TYPE_AND_IMPLEMENTATION {
 <table>
             
                 <tr>
-                    <td>DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_DAUGHTER_BOARD_CONNECTOR</td>
-                    <td>Indicates that the graphics adapter is connected to the motherboard through a daughterboard connector. Mobile PCI Express Module (MXM) and Advanced eXpress I/O Module (Axiom) are examples of daughterboard connectors. This value should be set only if an OPM-protected output has OPM semantics.</td>
+                    <td>DXGKMDT_OPM_BUS_TYPE_OTHER</td>
+                    <td>Indicates that the graphics adapter does not communicate with the north bridge by using the PCI, PCI-X, PCI Express, or AGP expansion bus.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_DAUGHTER_BOARD_CONNECTOR_INSIDE_OF_NUAE</td>
-                    <td>Indicates that the graphics adapter is connected to the motherboard through a daughterboard connector and that the graphics adapter is inside a non-user accessible enclosure (NUAE). This value should be set only if an OPM-protected output has OPM semantics.</td>
+                    <td>DXGKMDT_OPM_BUS_TYPE_PCI</td>
+                    <td>Indicates that the PCI bus is used to transfer data from a computer's main memory to the graphics adapter. For information about the PCI bus, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=71290">PCI Local Bus Specification</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_BUS_TYPE_PCIX</td>
+                    <td>Indicates that the PCI-X bus is used to transfer data from a computer's main memory to the graphics adapter. For information about PCI-X, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=71293">PCI-X Specification</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_BUS_TYPE_PCIEXPRESS</td>
+                    <td>Indicates that the PCI Express bus is used to transfer data from a computer's main memory to the graphics adapter. For information about PCI Express, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=69486">PCI Express Specification</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_BUS_TYPE_AGP</td>
+                    <td>Indicates that the Accelerated Graphics Port (AGP) is used to transfer data from a computer's main memory to the graphics adapter.</td>
                 </tr>
             
                 <tr>
                     <td>DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_INSIDE_OF_CHIPSET</td>
                     <td>Indicates that the implementation for the graphics adapter is in a motherboard chipset's north bridge. A graphics adapter reports this implementation modifier to imply that data never goes over an expansion bus when data is transferred from main memory to the graphics adapter. PCI, PCI-X, PCI Express, and AGP are examples of expansion buses. This value cannot be combined with DXGKMDT_OPM_BUS_TYPE_PCI, DXGKMDT_OPM_BUS_TYPE_PCIX, DXGKMDT_OPM_BUS_TYPE_PCIEXPRESS, or DXGKMDT_OPM_BUS_TYPE_AGP. This value should only be set if an OPM protected output has OPM semantics.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_NON_STANDARD</td>
-                    <td>(Optional.) Indicates that any of the optional implementation modifier values (DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_Xxx) are set in the 32-bit bus characteristics ULONG value. For more information about this ULONG, see the Remarks section. This value should be set only if an OPM-protected output has OPM semantics.</td>
                 </tr>
             
                 <tr>
@@ -99,28 +109,18 @@ typedef enum _DXGKMDT_OPM_BUS_TYPE_AND_IMPLEMENTATION {
                 </tr>
             
                 <tr>
-                    <td>DXGKMDT_OPM_BUS_TYPE_AGP</td>
-                    <td>Indicates that the Accelerated Graphics Port (AGP) is used to transfer data from a computer's main memory to the graphics adapter.</td>
+                    <td>DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_DAUGHTER_BOARD_CONNECTOR</td>
+                    <td>Indicates that the graphics adapter is connected to the motherboard through a daughterboard connector. Mobile PCI Express Module (MXM) and Advanced eXpress I/O Module (Axiom) are examples of daughterboard connectors. This value should be set only if an OPM-protected output has OPM semantics.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGKMDT_OPM_BUS_TYPE_OTHER</td>
-                    <td>Indicates that the graphics adapter does not communicate with the north bridge by using the PCI, PCI-X, PCI Express, or AGP expansion bus.</td>
+                    <td>DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_DAUGHTER_BOARD_CONNECTOR_INSIDE_OF_NUAE</td>
+                    <td>Indicates that the graphics adapter is connected to the motherboard through a daughterboard connector and that the graphics adapter is inside a non-user accessible enclosure (NUAE). This value should be set only if an OPM-protected output has OPM semantics.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGKMDT_OPM_BUS_TYPE_PCI</td>
-                    <td>Indicates that the PCI bus is used to transfer data from a computer's main memory to the graphics adapter. For information about the PCI bus, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=71290">PCI Local Bus Specification</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_BUS_TYPE_PCIEXPRESS</td>
-                    <td>Indicates that the PCI Express bus is used to transfer data from a computer's main memory to the graphics adapter. For information about PCI Express, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=69486">PCI Express Specification</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_BUS_TYPE_PCIX</td>
-                    <td>Indicates that the PCI-X bus is used to transfer data from a computer's main memory to the graphics adapter. For information about PCI-X, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=71293">PCI-X Specification</a>.</td>
+                    <td>DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_NON_STANDARD</td>
+                    <td>(Optional.) Indicates that any of the optional implementation modifier values (DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_Xxx) are set in the 32-bit bus characteristics ULONG value. For more information about this ULONG, see the Remarks section. This value should be set only if an OPM-protected output has OPM semantics.</td>
                 </tr>
             
                 <tr>
@@ -154,11 +154,3 @@ When a bus-type value (for example, DXGKMDT_OPM_BUS_TYPE_PCI) is combined with a
 
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_OPM_BUS_TYPE_AND_IMPLEMENTATION enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

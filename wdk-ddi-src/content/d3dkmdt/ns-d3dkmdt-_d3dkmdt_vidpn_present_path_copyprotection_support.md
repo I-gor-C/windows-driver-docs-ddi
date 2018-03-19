@@ -59,6 +59,10 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT {
 ## Members
 
 
+`NoProtection`
+
+The path is not capable of providing any copy protection.
+
 `MacroVisionApsTrigger`
 
 The path is capable of providing Rovi (formerly Macrovision) analog protection support (APS).
@@ -66,10 +70,6 @@ The path is capable of providing Rovi (formerly Macrovision) analog protection s
 `MacroVisionFull`
 
 The path is capable of providing full Rovi (formerly Macrovision) copy protection.
-
-`NoProtection`
-
-The path is not capable of providing any copy protection.
 
 `Reserved`
 

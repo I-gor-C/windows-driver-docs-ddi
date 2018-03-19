@@ -59,15 +59,15 @@ typedef struct _NDIS_OFFLOAD_HANDLE {
 ## Members
 
 
+`NdisReserved`
+
+Reserved for use by NDIS.
+
 `MiniportOffloadContext`
 
 A pointer that references a host memory location into which the underlying driver writes a PVOID
      value when completing the initiate offload operation. This PVOID value references the underlying
      driver's offload context for the offloaded state object.
-
-`NdisReserved`
-
-Reserved for use by NDIS.
 
 ## Remarks
 When propagating the offload of a TCP chimney state object, an intermediate driver supplies a pointer
@@ -95,11 +95,3 @@ For more information about the use of the NDIS_OFFLOAD_HANDLE structure, see
 
 
 <a href="..\ndischimney\nf-ndischimney-ndisminitiateoffloadcomplete.md">NdisMInitiateOffloadComplete</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OFFLOAD_HANDLE structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

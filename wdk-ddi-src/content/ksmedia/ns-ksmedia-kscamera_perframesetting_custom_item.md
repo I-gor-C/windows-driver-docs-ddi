@@ -58,17 +58,17 @@ typedef struct {
 ## Members
 
 
-`Id`
+`Size`
 
-A GUID that identifies the custom item.
+The size of this header and custom data that follows.
 
 `Reserved`
 
 Reserved for future use.
 
-`Size`
+`Id`
 
-The size of this header and custom data that follows.
+A GUID that identifies the custom item.
 
 
 ## Requirements

@@ -67,19 +67,7 @@ typedef struct _VIDEO_PORT_AGP_SERVICES {
 ## Members
 
 
-`AgpCommitPhysical`
-
-
-
-`AgpCommitVirtual`
-
-
-
-`AgpFreePhysical`
-
-
-
-`AgpFreeVirtual`
+`AgpReservePhysical`
 
 
 
@@ -87,15 +75,27 @@ typedef struct _VIDEO_PORT_AGP_SERVICES {
 
 
 
-`AgpReleaseVirtual`
+`AgpCommitPhysical`
 
 
 
-`AgpReservePhysical`
+`AgpFreePhysical`
 
 
 
 `AgpReserveVirtual`
+
+
+
+`AgpReleaseVirtual`
+
+
+
+`AgpCommitVirtual`
+
+
+
+`AgpFreeVirtual`
 
 
 

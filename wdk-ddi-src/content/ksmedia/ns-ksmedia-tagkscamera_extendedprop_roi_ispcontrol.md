@@ -78,17 +78,17 @@ KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE
 </li>
 </ul>
 
-`Reserved`
+`ROICount`
 
-Reserved for future use.
+The number of ROIs associated with this ISP control.
 
 `Result`
 
 The error results of the last SET operation for this ISP control.
 
-`ROICount`
+`Reserved`
 
-The number of ROIs associated with this ISP control.
+Reserved for future use.
 
 
 ## Requirements

@@ -73,23 +73,23 @@ typedef enum _DXGK_GLITCH_DURATION {
                 </tr>
             
                 <tr>
-                    <td>DXGK_GLITCH_DURATION_MULTI_LINE</td>
-                    <td>Indicates that a glitch lasted for multiple lines within a frame.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_GLITCH_DURATION_NONE</td>
-                    <td>Indicates that there was no user visible glitch.</td>
-                </tr>
-            
-                <tr>
                     <td>DXGK_GLITCH_DURATION_SINGLE_FRAME</td>
                     <td>Indicates that a glitch lasted for no more than one frame.</td>
                 </tr>
             
                 <tr>
+                    <td>DXGK_GLITCH_DURATION_MULTI_LINE</td>
+                    <td>Indicates that a glitch lasted for multiple lines within a frame.</td>
+                </tr>
+            
+                <tr>
                     <td>DXGK_GLITCH_DURATION_SINGLE_LINE</td>
                     <td>Indicates that a glitch lasted for no more than one line.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_GLITCH_DURATION_NONE</td>
+                    <td>Indicates that there was no user visible glitch.</td>
                 </tr>
             
                 <tr>

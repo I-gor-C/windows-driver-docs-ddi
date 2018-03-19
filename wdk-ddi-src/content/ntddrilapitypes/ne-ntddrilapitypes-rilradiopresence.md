@@ -59,17 +59,17 @@ typedef enum _RILRADIOPRESENCE {
 <table>
             
                 <tr>
-                    <td>RIL_RADIOPRESENCE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_RADIOPRESENCE_NOTPRESENT</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_RADIOPRESENCE_PRESENT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_RADIOPRESENCE_MAX</td>
                     <td></td>
                 </tr>
 </table>

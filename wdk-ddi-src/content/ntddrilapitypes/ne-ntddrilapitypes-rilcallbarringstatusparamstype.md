@@ -66,42 +66,7 @@ typedef enum _RILCALLBARRINGSTATUSPARAMSTYPE {
 <table>
             
                 <tr>
-                    <td>RIL_BARRTYPE_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_BARRTYPE_ALLBARRING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_BARRTYPE_ALLINCOMING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_BARRTYPE_ALLINCOMINGBARRING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_BARRTYPE_ALLOUTGOING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_BARRTYPE_ALLOUTGOINGBARRING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_BARRTYPE_INCOMINGNOTINUICC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_BARRTYPE_INCOMINGROAMING</td>
                     <td></td>
                 </tr>
             
@@ -112,6 +77,41 @@ typedef enum _RILCALLBARRINGSTATUSPARAMSTYPE {
             
                 <tr>
                     <td>RIL_BARRTYPE_OUTGOINGINTEXTOHOME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_BARRTYPE_ALLINCOMING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_BARRTYPE_INCOMINGROAMING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_BARRTYPE_INCOMINGNOTINUICC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_BARRTYPE_ALLBARRING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_BARRTYPE_ALLOUTGOINGBARRING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_BARRTYPE_ALLINCOMINGBARRING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_BARRTYPE_ALL</td>
                     <td></td>
                 </tr>
 </table>

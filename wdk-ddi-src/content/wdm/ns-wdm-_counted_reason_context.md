@@ -67,9 +67,9 @@ typedef struct _COUNTED_REASON_CONTEXT {
 ## Members
 
 
-`DUMMYUNIONNAME`
+`Version`
 
-
+The version number of the structure. Set this member to DIAGNOSTIC_REASON_VERSION.
 
 `Flags`
 
@@ -87,9 +87,9 @@ DIAGNOSTIC_REASON_DETAILED_STRING
 </ul>
 If <b>Flags</b> = DIAGNOSTIC_REASON_SIMPLE_STRING, the <b>SimpleString</b> member of the union is valid. If <b>Flags</b> = DIAGNOSTIC_REASON_DETAILED_STRING, the <b>ResourceFileName</b>, <b>ResourceReasonId</b>, <b>StringCount</b>, and <b>ReasonStrings</b> members are valid (and the <b>SimpleString</b> member is not valid).
 
-`Version`
+`DUMMYUNIONNAME`
 
-The version number of the structure. Set this member to DIAGNOSTIC_REASON_VERSION.
+
 
 ## Remarks
 This structure is used by the <a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.
@@ -109,11 +109,3 @@ The DIAGNOSTIC_REASON_DETAILED_STRING flag supports localization. If the localiz
 ## See Also
 
 <a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20COUNTED_REASON_CONTEXT structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

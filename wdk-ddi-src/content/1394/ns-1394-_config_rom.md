@@ -60,13 +60,17 @@ typedef struct _CONFIG_ROM {
 ## Members
 
 
-`CR_BusInfoBlockCaps`
-
-Specifies the bus capabilities of the device.
-
 `CR_Info`
 
 Specifies the first 4 bytes of the configuration ROM.
+
+`CR_Signiture`
+
+Specifies a signature that will be the same for all 1394 devices.
+
+`CR_BusInfoBlockCaps`
+
+Specifies the bus capabilities of the device.
 
 `CR_Node_UniqueID`
 
@@ -75,10 +79,6 @@ Specifies the node's 64-bit vendor-assigned unique ID.
 `CR_Root_Info`
 
 Specifies the first 4 bytes of the root directory information.
-
-`CR_Signiture`
-
-Specifies a signature that will be the same for all 1394 devices.
 
 ## Remarks
 See the <a href="http://go.microsoft.com/fwlink/p/?linkid=8729">IEEE 1394 Trade Association specification</a> website for more details about the layout of the standard configuration ROM.

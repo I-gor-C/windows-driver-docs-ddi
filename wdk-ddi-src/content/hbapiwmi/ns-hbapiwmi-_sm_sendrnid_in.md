@@ -60,25 +60,25 @@ typedef struct _SM_SendRNID_IN {
 ## Members
 
 
-`DestFCID`
+`HbaPortWWN`
 
-The address identifier of the destination port.
+The worldwide name (WWN) of the local port.
 
 `DestWWN`
 
 The worldwide name (WWN) of the destination port.
 
-`HbaPortWWN`
+`DestFCID`
 
-The worldwide name (WWN) of the local port.
-
-`InRespBufferMaxSize`
-
-The maximum response buffer size.
+The address identifier of the destination port.
 
 `NodeIdDataFormat`
 
 The node identification data format.
+
+`InRespBufferMaxSize`
+
+The maximum response buffer size.
 
 ## Remarks
 The WMI tool suite generates a declaration of the SM_SendRNID_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.

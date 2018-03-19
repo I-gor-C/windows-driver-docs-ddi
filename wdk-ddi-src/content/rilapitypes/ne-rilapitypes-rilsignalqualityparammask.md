@@ -63,12 +63,12 @@ typedef enum _RILSIGNALQUALITYPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_SQ_ALL</td>
+                    <td>RIL_PARAM_SQ_EXECUTOR</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_SQ_EXECUTOR</td>
+                    <td>RIL_PARAM_SQ_SYSTEMTYPE</td>
                     <td></td>
                 </tr>
             
@@ -88,7 +88,7 @@ typedef enum _RILSIGNALQUALITYPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_SQ_SYSTEMTYPE</td>
+                    <td>RIL_PARAM_SQ_ALL</td>
                     <td></td>
                 </tr>
 </table>

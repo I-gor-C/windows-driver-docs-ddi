@@ -61,30 +61,30 @@ typedef struct _D3DDDICB_RECLAIMALLOCATIONS2 {
 ## Members
 
 
-`HandleList`
+`PagingQueue`
 
-[in]  An array of allocation handles. If non-NULL, <b>pResources</b> must be NULL.
+[in] The paging queue, supplied by the user-mode driver, to page in the allocation list.
 
 `NumAllocations`
 
 [in]  The number of items in <b>pDiscarded</b> and whichever of <b>pResources</b> or <b>HandleList</b> is non-NULL.
 
-`PagingFenceValue`
+`pResources`
 
-[out] The paging fence to synchronize against before submitting work to the GPU which
-                                                                           references any of the resources or allocations in the provided arrays
+[in]  An array of Direct3D runtime resource handles.
 
-`PagingQueue`
+`HandleList`
 
-[in] The paging queue, supplied by the user-mode driver, to page in the allocation list.
+[in]  An array of allocation handles. If non-NULL, <b>pResources</b> must be NULL.
 
 `pDiscarded`
 
 [out] Optional array of boolean values specifying whether each resource or allocation was discarded.
 
-`pResources`
+`PagingFenceValue`
 
-[in]  An array of Direct3D runtime resource handles.
+[out] The paging fence to synchronize against before submitting work to the GPU which
+                                                                           references any of the resources or allocations in the provided arrays
 
 
 ## Requirements

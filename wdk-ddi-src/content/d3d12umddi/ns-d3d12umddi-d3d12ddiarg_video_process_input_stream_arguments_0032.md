@@ -63,29 +63,29 @@ typedef struct _D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0032 {
 ## Members
 
 
-`AlphaBlending`
+`InputStream`
 
-The video process alpha blending.
+The input stream of bytes.
 
-`FilterLevels`
+`Transform`
 
-The video process filter levels.
+The video process transform.
 
 `Flags`
 
 The video process input stream flags.
 
-`InputStream`
-
-The input stream of bytes.
-
 `RateInfo`
 
 The rate of the video process input stream.
 
-`Transform`
+`FilterLevels`
 
-The video process transform.
+The video process filter levels.
+
+`AlphaBlending`
+
+The video process alpha blending.
 
 
 ## Requirements

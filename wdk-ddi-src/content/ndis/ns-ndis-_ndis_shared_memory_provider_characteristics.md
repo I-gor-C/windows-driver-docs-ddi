@@ -61,21 +61,6 @@ typedef struct _NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS {
 ## Members
 
 
-`AllocateSharedMemoryHandler`
-
-An entry point for the 
-     <a href="..\ndis\nc-ndis-allocate_shared_memory_handler.md">
-     NetAllocateSharedMemory</a> function.
-
-`Flags`
-
-Reserved for NDIS.
-
-`FreeSharedMemoryHandler`
-
-An entry point for the 
-     <a href="..\ndis\nc-ndis-free_shared_memory_handler.md">NetFreeSharedMemory</a> function.
-
 `Header`
 
 The 
@@ -86,12 +71,27 @@ The
      <b>Revision</b> member to NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_SHARED_MEMORY_PROVIDER_CHARACTERISTICS_REVISION_1.
 
+`Flags`
+
+Reserved for NDIS.
+
 `ProviderContext`
 
 An NDIS_HANDLE to a block of driver-allocated context information that stores information about
      the provider. NDIS passes the context information in calls to 
      <i>NetXxxSharedMemory</i> functions at the 
      <i>ProviderContext</i> parameter.
+
+`AllocateSharedMemoryHandler`
+
+An entry point for the 
+     <a href="..\ndis\nc-ndis-allocate_shared_memory_handler.md">
+     NetAllocateSharedMemory</a> function.
+
+`FreeSharedMemoryHandler`
+
+An entry point for the 
+     <a href="..\ndis\nc-ndis-free_shared_memory_handler.md">NetFreeSharedMemory</a> function.
 
 ## Remarks
 To specify entry points for shared memory services, an NDIS driver initializes an
@@ -120,11 +120,3 @@ To specify entry points for shared memory services, an NDIS driver initializes a
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

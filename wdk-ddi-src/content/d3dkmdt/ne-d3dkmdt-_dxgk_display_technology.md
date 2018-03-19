@@ -61,28 +61,8 @@ typedef enum _DXGK_DISPLAY_TECHNOLOGY {
 <table>
             
                 <tr>
-                    <td>BYTE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>DXGK_DT_INVALID</td>
                     <td>Invalid type.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_DT_LCD</td>
-                    <td>A display using an LCD panel.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_DT_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_DT_OLED</td>
-                    <td>A display using an OLED panel.</td>
                 </tr>
             
                 <tr>
@@ -91,7 +71,27 @@ typedef enum _DXGK_DISPLAY_TECHNOLOGY {
                 </tr>
             
                 <tr>
+                    <td>DXGK_DT_LCD</td>
+                    <td>A display using an LCD panel.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_DT_OLED</td>
+                    <td>A display using an OLED panel.</td>
+                </tr>
+            
+                <tr>
                     <td>DXGK_DT_PROJECTOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_DT_MAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>BYTE</td>
                     <td></td>
                 </tr>
 </table>

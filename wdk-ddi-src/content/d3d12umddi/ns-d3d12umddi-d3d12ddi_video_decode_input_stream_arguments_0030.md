@@ -60,14 +60,6 @@ typedef struct _D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0030 {
 ## Members
 
 
-`CompressedBitstream`
-
-Compressed bitstream.
-
-`DecryptionParameters`
-
-Decryption parameters.
-
 `FrameArguments`
 
 Frame arguments.
@@ -79,6 +71,14 @@ Frame arguments count.
 `ReferenceFrames`
 
 Reference frames.
+
+`CompressedBitstream`
+
+Compressed bitstream.
+
+`DecryptionParameters`
+
+Decryption parameters.
 
 
 ## Requirements

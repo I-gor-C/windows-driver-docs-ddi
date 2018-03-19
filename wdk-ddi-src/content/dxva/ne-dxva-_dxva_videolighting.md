@@ -64,28 +64,8 @@ typedef enum _DXVA_VideoLighting {
 <table>
             
                 <tr>
-                    <td>DXVA_VideoLighting_bright</td>
-                    <td>Specifies bright light for viewing video (for example, outside lighting conditions).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoLighting_dark</td>
-                    <td>Specifies near darkness for viewing video (for example, movie-theatre lighting).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoLighting_dim</td>
-                    <td>Specifies a dim light for viewing video (for example, low-level lighting in a living room while watching television).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoLighting_office</td>
-                    <td>Specifies a medium brightness light for viewing video (for example, lighting conditions in home offices).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoLighting_Unknown</td>
-                    <td>Specifies that the video lighting condition is not specified. The default is dim.</td>
+                    <td>DXVA_VideoLightingShift</td>
+                    <td>Specifies to shift bits by 18 positions (DXVA_ExtColorData_ShiftBase + 10, or 8 + 10).</td>
                 </tr>
             
                 <tr>
@@ -94,8 +74,28 @@ typedef enum _DXVA_VideoLighting {
                 </tr>
             
                 <tr>
-                    <td>DXVA_VideoLightingShift</td>
-                    <td>Specifies to shift bits by 18 positions (DXVA_ExtColorData_ShiftBase + 10, or 8 + 10).</td>
+                    <td>DXVA_VideoLighting_Unknown</td>
+                    <td>Specifies that the video lighting condition is not specified. The default is dim.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoLighting_bright</td>
+                    <td>Specifies bright light for viewing video (for example, outside lighting conditions).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoLighting_office</td>
+                    <td>Specifies a medium brightness light for viewing video (for example, lighting conditions in home offices).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoLighting_dim</td>
+                    <td>Specifies a dim light for viewing video (for example, low-level lighting in a living room while watching television).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoLighting_dark</td>
+                    <td>Specifies near darkness for viewing video (for example, movie-theatre lighting).</td>
                 </tr>
 </table>
 
@@ -114,11 +114,3 @@ The video lighting enumerators can be used to alter the gamma to generate a comp
 ## See Also
 
 <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_VideoLighting enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

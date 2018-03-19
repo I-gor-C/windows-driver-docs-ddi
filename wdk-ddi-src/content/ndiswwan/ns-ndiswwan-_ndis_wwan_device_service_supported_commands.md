@@ -108,15 +108,15 @@ sizeof(NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS)
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
+`uStatus`
+
+The status of the device services command enumeration operation.
+
 `SupportedCommands`
 
 A formatted WWAN_LIST_HEADER object that represents the list of command supported on a device services.
 
 This member points to the list of the command ID (ULONG) by using the WWAN_LIST_HEADER structure.
-
-`uStatus`
-
-The status of the device services command enumeration operation.
 
 
 ## Requirements

@@ -66,8 +66,23 @@ typedef enum _WDF_REQUEST_SEND_OPTIONS_FLAGS {
 <table>
             
                 <tr>
+                    <td>WDF_REQUEST_SEND_OPTION_TIMEOUT</td>
+                    <td>If the driver sets this flag, the <b>Timeout</b> member of the WDF_REQUEST_SEND_OPTIONS structure is valid.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDF_REQUEST_SEND_OPTION_SYNCHRONOUS</td>
+                    <td>If the driver sets this flag, the framework handles the associated I/O request synchronously. (The driver does not have to set this flag if it is calling an object method whose name ends with "Synchronously", such as <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendreadsynchronously.md">WdfIoTargetSendReadSynchronously</a>.)</td>
+                </tr>
+            
+                <tr>
                     <td>WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE</td>
                     <td>If the driver sets this flag, the framework sends the I/O request to the I/O target, regardless of the I/O target's state. If not set, the framework queues the request if the target is stopped. Setting this flag allows a driver to send a request, such as a request to reset a USB pipe, to a device after the driver has called <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET</td>
+                    <td>If the driver sets this flag, the driver is sending the request asynchronously and does not need to be notified when the request is completed or canceled. The framework sends the I/O request to the I/O target, regardless of the I/O target's state. The driver does not set a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function or call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> for the request. If the driver sets this flag, it cannot set any other flags. For more information about this flag, see the following Remarks section.</td>
                 </tr>
             
                 <tr>
@@ -78,21 +93,6 @@ typedef enum _WDF_REQUEST_SEND_OPTIONS_FLAGS {
                 <tr>
                     <td>WDF_REQUEST_SEND_OPTION_IMPERSONATION_IGNORE_FAILURE</td>
                     <td>This flag applies to UMDF only. If set, the framework still sends the request even if impersonation fails.  You can use this value only with <b>WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT</b>.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET</td>
-                    <td>If the driver sets this flag, the driver is sending the request asynchronously and does not need to be notified when the request is completed or canceled. The framework sends the I/O request to the I/O target, regardless of the I/O target's state. The driver does not set a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function or call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> for the request. If the driver sets this flag, it cannot set any other flags. For more information about this flag, see the following Remarks section.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDF_REQUEST_SEND_OPTION_SYNCHRONOUS</td>
-                    <td>If the driver sets this flag, the framework handles the associated I/O request synchronously. (The driver does not have to set this flag if it is calling an object method whose name ends with "Synchronously", such as <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendreadsynchronously.md">WdfIoTargetSendReadSynchronously</a>.)</td>
-                </tr>
-            
-                <tr>
-                    <td>WDF_REQUEST_SEND_OPTION_TIMEOUT</td>
-                    <td>If the driver sets this flag, the <b>Timeout</b> member of the WDF_REQUEST_SEND_OPTIONS structure is valid.</td>
                 </tr>
 </table>
 
@@ -136,11 +136,3 @@ For the UMDF version of this enumeration, see <a href="..\wdfrequest\ne-wdfreque
 
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_SEND_OPTIONS_FLAGS enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

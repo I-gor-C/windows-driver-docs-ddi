@@ -61,6 +61,24 @@ typedef struct _NET_DMA_PNP_NOTIFICATION {
 ## Members
 
 
+`StructureRevision`
+
+The revision for this structure. The NetDMA provider driver must set this member to
+     NET_DMA_PNP_NOTIFICATION_REVISION_1.
+
+`StructureSize`
+
+The size, in bytes, of the notification structure. This size does not include the size of the
+     notification specific data at 
+     <b>Buffer</b>, if any. A NetDMA provider driver must set this member to 
+     sizeof(NET_DMA_PNP_NOTIFICATION).
+
+`NotificationCode`
+
+A value that identifies the DMA provider event. This value must be one of the values from the 
+     <a href="..\netdma\ne-netdma-_net_dma_pnp_notification_code.md">
+     NET_DMA_PNP_NOTIFICATION_CODE</a> enumeration.
+
 `Buffer`
 
 A pointer to notification-specific data, if any. NetDMA provider drivers set this member to <b>NULL</b>
@@ -74,24 +92,6 @@ The length, in bytes, of the notification-specific data at the
      <b>Buffer</b> member. NetDMA provider drivers set this member to zero for 
      <b>NetDmaNotificationProviderPowerDown</b> and 
      <b>NetDmaNotificationProviderPowerUp</b> notifications.
-
-`NotificationCode`
-
-A value that identifies the DMA provider event. This value must be one of the values from the 
-     <a href="..\netdma\ne-netdma-_net_dma_pnp_notification_code.md">
-     NET_DMA_PNP_NOTIFICATION_CODE</a> enumeration.
-
-`StructureRevision`
-
-The revision for this structure. The NetDMA provider driver must set this member to
-     NET_DMA_PNP_NOTIFICATION_REVISION_1.
-
-`StructureSize`
-
-The size, in bytes, of the notification structure. This size does not include the size of the
-     notification specific data at 
-     <b>Buffer</b>, if any. A NetDMA provider driver must set this member to 
-     sizeof(NET_DMA_PNP_NOTIFICATION).
 
 ## Remarks
 To send a power management notification to the NetDMA interface, NetDMA provider drivers call the 
@@ -112,11 +112,3 @@ To send a power management notification to the NetDMA interface, NetDMA provider
 
 
 <a href="..\netdma\nf-netdma-netdmapnpeventnotify.md">NetDmaPnPEventNotify</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PNP_NOTIFICATION structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

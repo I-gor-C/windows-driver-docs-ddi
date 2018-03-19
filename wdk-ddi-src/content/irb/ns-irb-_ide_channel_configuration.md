@@ -66,9 +66,17 @@ typedef struct _IDE_CHANNEL_CONFIGURATION {
 ## Members
 
 
-`AdvancedChannelConfiguration`
+`Version`
 
+The port driver sets this member to sizeof(IDE_CHANNEL_CONFIGURATION). The miniport driver should verify that the version is greater than or equal to the one it is using.
 
+`ChannelNumber`
+
+The port driver sets this field to the number assigned for this channel. For non-native mode controllers, the primary channel will always be assigned 0 and the secondary channel will always be assigned 1.
+
+`SupportedAdvances`
+
+####
 
 `ChannelMode`
 
@@ -111,37 +119,29 @@ Similar to the IdeModeNormal, this indicates the ATA miniport must take extra st
 </tr>
 </table>
 
-`ChannelNumber`
-
-The port driver sets this field to the number assigned for this channel. For non-native mode controllers, the primary channel will always be assigned 0 and the secondary channel will always be assigned 1.
-
 `ChannelResources`
 
 The port driver uses this pointer to pass miniport hardware resources to be used to access the HBA on a PCI bus.
-
-`MaxTargetId`
-
-The miniport should set this member to the maximum target ID supported on this channel. Typically, this is 1 less than the maximum number of devices supported on the channel. By default, the port driver sets this is set to 1 to indicate that 2 devices are supported on a channel.
 
 `NumberOfOverlappedRequests`
 
 The miniport driver should set this field to the number of requests the channel can handle at a time. By default, the port driver sets this to 1.
 
-`SupportedAdvances`
+`MaxTargetId`
 
-####
-
-`SupportsWmi`
-
-Indicates support for WMI. The miniport driver must set this member to <b>TRUE</b>.
+The miniport should set this member to the maximum target ID supported on this channel. Typically, this is 1 less than the maximum number of devices supported on the channel. By default, the port driver sets this is set to 1 to indicate that 2 devices are supported on a channel.
 
 `SyncWithIsr`
 
 Indicates support for unsynchronized I/O processing in the miniport driver. The miniport driver must set this member to <b>TRUE</b>.
 
-`Version`
+`SupportsWmi`
 
-The port driver sets this member to sizeof(IDE_CHANNEL_CONFIGURATION). The miniport driver should verify that the version is greater than or equal to the one it is using.
+Indicates support for WMI. The miniport driver must set this member to <b>TRUE</b>.
+
+`AdvancedChannelConfiguration`
+
+
 
 
 ## Requirements

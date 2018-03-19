@@ -75,23 +75,15 @@ typedef struct _NET_IF_INFORMATION {
 ## Members
 
 
-`AccessType`
+`Header`
 
-A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a> NDIS network interface
-     access type.
-
-`ConnectionType`
-
-A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568741">NET_IF_CONNECTION_TYPE</a> NDIS network
-     interface connection type.
-
-`DirectionType`
-
-A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a> NDIS network
-     interface direction type.
+The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     interface information structure (NET_IF_INFORMATION). The provider sets the 
+     <b>Type</b> member of the structure that 
+     <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
+     <b>Revision</b> member to NDIS_OBJECT_REVISION_1, and the 
+     <b>Size</b> member to NDIS_SIZEOF_NET_IF_INFORMATION_REVISION_1.
 
 `Flags`
 
@@ -132,63 +124,44 @@ Reserved for NDIS.
 
 Reserved for NDIS.
 
-`FriendlyNameLength`
+`PhysicalLocation`
 
-The length, in bytes, of the friendly name for the interface that this structure describes. This
-     length is the length of the WCHAR array that is located at the offset in the 
-     <b>FriendlyNameOffset</b> member.
+The physical location for the hardware that is associated with an interface specified in a 
+     <a href="https://msdn.microsoft.com/e5661e05-a83f-4632-af98-2a021eeb7d80">
+     NET_PHYSICAL_LOCATION</a> structure.
 
-`FriendlyNameOffset`
+`WanTunnelType`
 
-The offset of the beginning of the friendly name, in bytes, from the beginning of this structure.
-     This name should include the name of the manufacturer, the product, and the version of the interface
-     hardware and software. The name is specified as an array of WCHAR values. The 
-     <b>FriendlyNameLength</b> member specifies the length of the array.
+The tunnelIfEncapsMethod (from 
+     RFC 2667) for WAN devices. If the WAN tunnel type is unknown, set this
+     member to NIIF_WAN_TUNNEL_TYPE_UNKNOWN.
 
-`Header`
+`PortNumber`
 
-The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
-     interface information structure (NET_IF_INFORMATION). The provider sets the 
-     <b>Type</b> member of the structure that 
-     <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
-     <b>Revision</b> member to NDIS_OBJECT_REVISION_1, and the 
-     <b>Size</b> member to NDIS_SIZEOF_NET_IF_INFORMATION_REVISION_1.
+The NDIS port number for the interface.
+
+`AccessType`
+
+A 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a> NDIS network interface
+     access type.
+
+`DirectionType`
+
+A 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a> NDIS network
+     interface direction type.
+
+`ConnectionType`
+
+A 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568741">NET_IF_CONNECTION_TYPE</a> NDIS network
+     interface connection type.
 
 `ifConnectorPresent`
 
 A Boolean value that indicates if a connector is present. Set this value to <b>TRUE</b> if there is a
      physical adapter or <b>FALSE</b> if there is no physical adapter.
-
-`InterfaceGuid`
-
-The GUID that is associated with the interface. The interface provider generates the interface
-     GUID for the interface. The provider can call the 
-     <a href="..\ntddk\nf-ntddk-exuuidcreate.md">ExUuidCreate</a> routine to create the GUID. The
-     interface GUID should be associated with the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value that is assigned to the interface.
-     If the provider retains information about the interface in persistent storage, it should save the GUID
-     and reuse the GUID when it reregisters the interface after the computer restarts.
-
-`MediaType`
-
-The 
-     <b>NdisMedium</b><i>Xxx</i> type that the interface supports. For more information, see 
-     <a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>.
-
-`NetworkGuid`
-
-The GUID that is associated with the network that the interface belongs to. If the interface
-     provider cannot provide the network GUID, it can pass a zero GUID. In this case, NDIS will register the
-     interface in the default network of the primary compartment.
-
-`PermanentPhysAddressOffset`
-
-The offset of the permanent physical address, in bytes, from the beginning of this structure. The
-     permanent physical address is an array of bytes. The length of the array is specified in the 
-     <b>PhysAddressLength</b> member. The permanent physical address is the same value that the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569074">OID_802_3_PERMANENT_ADDRESS</a> OID
-     returns.
 
 `PhysAddressLength`
 
@@ -205,20 +178,42 @@ The offset of the current physical address, in bytes, from the beginning of this
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569069">OID_802_3_CURRENT_ADDRESS</a> OID
      returns.
 
-`PhysicalLocation`
+`PermanentPhysAddressOffset`
 
-The physical location for the hardware that is associated with an interface specified in a 
-     <a href="https://msdn.microsoft.com/e5661e05-a83f-4632-af98-2a021eeb7d80">
-     NET_PHYSICAL_LOCATION</a> structure.
+The offset of the permanent physical address, in bytes, from the beginning of this structure. The
+     permanent physical address is an array of bytes. The length of the array is specified in the 
+     <b>PhysAddressLength</b> member. The permanent physical address is the same value that the 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569074">OID_802_3_PERMANENT_ADDRESS</a> OID
+     returns.
 
-`PhysicalMediumType`
+`FriendlyNameLength`
 
-The physical medium type for the interface. For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569621">OID_GEN_PHYSICAL_MEDIUM</a>
+The length, in bytes, of the friendly name for the interface that this structure describes. This
+     length is the length of the WCHAR array that is located at the offset in the 
+     <b>FriendlyNameOffset</b> member.
 
-`PortNumber`
+`FriendlyNameOffset`
 
-The NDIS port number for the interface.
+The offset of the beginning of the friendly name, in bytes, from the beginning of this structure.
+     This name should include the name of the manufacturer, the product, and the version of the interface
+     hardware and software. The name is specified as an array of WCHAR values. The 
+     <b>FriendlyNameLength</b> member specifies the length of the array.
+
+`InterfaceGuid`
+
+The GUID that is associated with the interface. The interface provider generates the interface
+     GUID for the interface. The provider can call the 
+     <a href="..\ntddk\nf-ntddk-exuuidcreate.md">ExUuidCreate</a> routine to create the GUID. The
+     interface GUID should be associated with the 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value that is assigned to the interface.
+     If the provider retains information about the interface in persistent storage, it should save the GUID
+     and reuse the GUID when it reregisters the interface after the computer restarts.
+
+`NetworkGuid`
+
+The GUID that is associated with the network that the interface belongs to. If the interface
+     provider cannot provide the network GUID, it can pass a zero GUID. In this case, NDIS will register the
+     interface in the default network of the primary compartment.
 
 `SupportedStatistics`
 
@@ -227,11 +222,16 @@ The statistics that the interface supports. For more information, see the
      <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_general_attributes.md">
      NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> structure .
 
-`WanTunnelType`
+`MediaType`
 
-The tunnelIfEncapsMethod (from 
-     RFC 2667) for WAN devices. If the WAN tunnel type is unknown, set this
-     member to NIIF_WAN_TUNNEL_TYPE_UNKNOWN.
+The 
+     <b>NdisMedium</b><i>Xxx</i> type that the interface supports. For more information, see 
+     <a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>.
+
+`PhysicalMediumType`
+
+The physical medium type for the interface. For more information, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569621">OID_GEN_PHYSICAL_MEDIUM</a>
 
 ## Remarks
 A network interface provider initializes a NET_IF_INFORMATION structure to provide NDIS with
@@ -308,11 +308,3 @@ The interface provider should allocate enough memory for the structure and the a
 
 
 <a href="..\ntddk\nf-ntddk-exuuidcreate.md">ExUuidCreate</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_IF_INFORMATION structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -64,41 +64,41 @@ typedef struct _D3DKMT_CREATEDCFROMMEMORY {
 ## Members
 
 
+`pMemory`
+
+[in] A pointer to a block of memory for the display context.
+
 `Format`
 
 [in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format for the memory block that <b>pMemory</b> points to.
 
-`hBitmap`
+`Width`
 
-[out] A handle to a bitmap that is related to the display context. The OpenGL runtime generates a handle and passes it back to the driver.
-
-`hDc`
-
-[out] A handle to the display context. The OpenGL runtime generates a handle and passes it back to the driver.
-
-`hDeviceDc`
-
-[in] A handle to the display context for the device.
+[in] The width, in pixels, of the memory block that <b>pMemory</b> points to.
 
 `Height`
 
 [in] The height, in pixels, of the memory block that <b>pMemory</b> points to.
 
-`pColorTable`
-
-[in] An array of 2, 4, 16, or 256 PALETTEENTRY structures that are used to initialize the colors for the memory block that <b>pMemory</b> points to. For more information about PALETTEENTRY, see the Microsoft Window SDK documentation.
-
 `Pitch`
 
 [in] The pitch, in bytes, of the memory block that <b>pMemory</b> points to--that is, the distance in bytes to the start of the next line.
 
-`pMemory`
+`hDeviceDc`
 
-[in] A pointer to a block of memory for the display context.
+[in] A handle to the display context for the device.
 
-`Width`
+`pColorTable`
 
-[in] The width, in pixels, of the memory block that <b>pMemory</b> points to.
+[in] An array of 2, 4, 16, or 256 PALETTEENTRY structures that are used to initialize the colors for the memory block that <b>pMemory</b> points to. For more information about PALETTEENTRY, see the Microsoft Window SDK documentation.
+
+`hDc`
+
+[out] A handle to the display context. The OpenGL runtime generates a handle and passes it back to the driver.
+
+`hBitmap`
+
+[out] A handle to a bitmap that is related to the display context. The OpenGL runtime generates a handle and passes it back to the driver.
 
 
 ## Requirements
@@ -114,11 +114,3 @@ typedef struct _D3DKMT_CREATEDCFROMMEMORY {
 
 
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_CREATEDCFROMMEMORY structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

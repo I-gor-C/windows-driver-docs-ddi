@@ -58,6 +58,10 @@ typedef struct _CLIENT_DEVICE_INFORMATION {
 ## Members
 
 
+`Version`
+
+Specifies the version number of this structure. This value must be provided by the client driver to the class extension. The class extension is responsible for verifying that this version is supported. The hardware notification payload version number is <b>HWN_DEVICE_INFORMATION_VERSION</b>.
+
 `Size`
 
 The size, in bytes, of the <b>CLIENT_DEVICE_INFORMATION</b> data structure.
@@ -65,10 +69,6 @@ The size, in bytes, of the <b>CLIENT_DEVICE_INFORMATION</b> data structure.
 `TotalHwNs`
 
 The total number of hardware notifications that the client device driver provides.
-
-`Version`
-
-Specifies the version number of this structure. This value must be provided by the client driver to the class extension. The class extension is responsible for verifying that this version is supported. The hardware notification payload version number is <b>HWN_DEVICE_INFORMATION_VERSION</b>.
 
 
 ## Requirements
@@ -84,11 +84,3 @@ Specifies the version number of this structure. This value must be provided by t
 
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [gpiobtn\gpiobtn]:%20CLIENT_DEVICE_INFORMATION structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

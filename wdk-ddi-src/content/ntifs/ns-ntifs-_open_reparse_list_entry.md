@@ -62,6 +62,14 @@ typedef struct _OPEN_REPARSE_LIST_ENTRY  {
 ## Members
 
 
+`OpenReparseListEntry`
+
+The entry in the open reparse list.
+
+`ReparseTag`
+
+The reparse tag that should be opened directly without returning <b>STATUS_REPARSE</b>.
+
 `Flags`
 
 Flags that control behavior when a reparse point is encountered on a directory that may be non-empty (one whose reparse tag is  recognized by <b>FsRtlIsNonEmptyDirectoryReparsePointAllowed</b>)
@@ -137,26 +145,18 @@ Indicates that the fields of this structure are valid.
 <div class="alert"><b>Note</b>  When the <b>OPEN_REPARSE_POINT_REPARSE_IF_CHILD_EXISTS</b>,  <b>OPEN_REPARSE_POINT_REPARSE_IF_CHILD_NOT_EXISTS</b>, and <b>OPEN_REPARSE_POINT_REPARSE_IF_DIRECTORY_FINAL_COMPONENT</b> flags are used together at the same time, it indicates that the system is to reparse on any directory reparse point.</div>
 <div> </div>
 
-`OpenReparseListEntry`
+`ReparseGuid`
 
-The entry in the open reparse list.
+The GUID of the reparse tag that should be opened directly without returning <b>STATUS_REPARSE</b>.
+
+`Size`
+
+The size of this structure.
 
 `RemainingLength`
 
 The unprocessed path length when the reparse point was
     encountered.
-
-`ReparseGuid`
-
-The GUID of the reparse tag that should be opened directly without returning <b>STATUS_REPARSE</b>.
-
-`ReparseTag`
-
-The reparse tag that should be opened directly without returning <b>STATUS_REPARSE</b>.
-
-`Size`
-
-The size of this structure.
 
 ## Remarks
 This structure lets callers open specific reparse points without

@@ -60,6 +60,53 @@ typedef struct _DXGKMDT_OPM_CONFIGURE_PARAMETERS {
 ## Members
 
 
+`omac`
+
+A <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_omac.md">DXGKMDT_OPM_OMAC</a> structure that contains a One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) for message authenticity. For more information about OMAC, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70417">OMAC-1 algorithm</a>. The OMAC-1 parameters that OPM and COPP use are:
+
+<i>E</i> = AES (Advanced Encryption Standard)
+
+<i>t</i> = 128 bits
+
+<i>K</i> = The 128-bit key the display miniport driver receives when <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> is called.
+
+<i>n</i> = 128 bits 
+
+For information about AES, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70411">RSA Laboratories</a> website.
+
+`guidSetting`
+
+The GUID that is used to configure the protected output object. <b>guidSetting</b> can be set to one of the following GUIDs:
+
+<ul>
+<li>
+DXGKMDT_OPM_SET_PROTECTION_LEVEL
+
+</li>
+<li>
+DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING
+
+</li>
+<li>
+DXGKMDT_OPM_SET_HDCP_SRM
+
+</li>
+<li>
+Supported in Windows 7 and later versions.
+
+DXGKMDT_OPM_SET_PROTECTION_LEVEL_ACCORDING_TO_CSS_DVD
+
+</li>
+</ul>
+
+`ulSequenceNumber`
+
+A sequence number. For the <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a> function to process a configure request, the value in <b>ulSequenceNumber</b> must match the current 4-byte sequence number that the display miniport driver stores. If a match is not detected, <i>DxgkDdiOPMConfigureProtectedOutput</i> returns an error code. If a match is detected, <i>DxgkDdiOPMConfigureProtectedOutput</i> increments the stored sequence number before returning. The initial 4-byte sequence number is part of the 256-byte array that the <i>EncryptedParameters</i> parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> function points to.
+
+`cbParametersSize`
+
+The size, in bytes, of the valid configuration data that the <b>abParameters</b> member points to.
+
 `abParameters`
 
 A 4056-byte array that specifies how to configure the protected output object.
@@ -94,53 +141,6 @@ These are possible GUIDs and structures for configuration information:
 
 <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_set_hdcp_srm_parameters.md">DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS</a>
 
-`cbParametersSize`
-
-The size, in bytes, of the valid configuration data that the <b>abParameters</b> member points to.
-
-`guidSetting`
-
-The GUID that is used to configure the protected output object. <b>guidSetting</b> can be set to one of the following GUIDs:
-
-<ul>
-<li>
-DXGKMDT_OPM_SET_PROTECTION_LEVEL
-
-</li>
-<li>
-DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING
-
-</li>
-<li>
-DXGKMDT_OPM_SET_HDCP_SRM
-
-</li>
-<li>
-Supported in Windows 7 and later versions.
-
-DXGKMDT_OPM_SET_PROTECTION_LEVEL_ACCORDING_TO_CSS_DVD
-
-</li>
-</ul>
-
-`omac`
-
-A <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_omac.md">DXGKMDT_OPM_OMAC</a> structure that contains a One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) for message authenticity. For more information about OMAC, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70417">OMAC-1 algorithm</a>. The OMAC-1 parameters that OPM and COPP use are:
-
-<i>E</i> = AES (Advanced Encryption Standard)
-
-<i>t</i> = 128 bits
-
-<i>K</i> = The 128-bit key the display miniport driver receives when <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> is called.
-
-<i>n</i> = 128 bits 
-
-For information about AES, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70411">RSA Laboratories</a> website.
-
-`ulSequenceNumber`
-
-A sequence number. For the <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a> function to process a configure request, the value in <b>ulSequenceNumber</b> must match the current 4-byte sequence number that the display miniport driver stores. If a match is not detected, <i>DxgkDdiOPMConfigureProtectedOutput</i> returns an error code. If a match is detected, <i>DxgkDdiOPMConfigureProtectedOutput</i> increments the stored sequence number before returning. The initial 4-byte sequence number is part of the 256-byte array that the <i>EncryptedParameters</i> parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a> function points to.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -171,11 +171,3 @@ A sequence number. For the <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configur
 
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_OPM_CONFIGURE_PARAMETERS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

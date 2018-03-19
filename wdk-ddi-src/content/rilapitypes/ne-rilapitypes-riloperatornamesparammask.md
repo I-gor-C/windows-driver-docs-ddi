@@ -63,22 +63,7 @@ typedef enum _RILOPERATORNAMESPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_ON_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_ON_COUNTRY_CODE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_ON_LONGNAME</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_ON_NUMNAME</td>
                     <td></td>
                 </tr>
             
@@ -88,7 +73,22 @@ typedef enum _RILOPERATORNAMESPARAMMASK {
                 </tr>
             
                 <tr>
+                    <td>RIL_PARAM_ON_NUMNAME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_ON_COUNTRY_CODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PARAM_ON_SYSTEMTYPE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_ON_ALL</td>
                     <td></td>
                 </tr>
 </table>

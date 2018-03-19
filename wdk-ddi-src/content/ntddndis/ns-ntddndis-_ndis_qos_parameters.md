@@ -65,26 +65,6 @@ typedef struct _NDIS_QOS_PARAMETERS {
 ## Members
 
 
-`ClassificationElementSize`
-
-A <b>ULONG</b> value that specifies the size, in bytes, of each element in the traffic classification array.
-
-<div class="alert"><b>Note</b>  Starting with NDIS 6.30, this member must be set  to <code>sizeof(NDIS_QOS_CLASSIFICATION_ELEMENT</code>).</div>
-<div> </div>
-
-`FirstClassificationElementOffset`
-
-A <b>ULONG</b> value that specifies the offset, in bytes, to the first element in an array of traffic classification elements that follow this structure. The offset is measured from the start of the <b>NDIS_QOS_PARAMETERS</b> structure up to the beginning of the first element. Each element in the array is an <a href="..\ntddndis\ns-ntddndis-_ndis_qos_classification_element.md">NDIS_QOS_CLASSIFICATION_ELEMENT</a> structure.
-
-
-
-<div class="alert"><b>Note</b>  If <b>NumClassificationElements</b> is set to zero, this member is ignored.  </div>
-<div> </div>
-
-`Flags`
-
-A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags that specify the status of the NDIS QoS parameters for the network adapter. For more information about this member, see <a href="https://docs.microsoft.com/">Overview of the Flags Member</a>.
-
 `Header`
 
 The type, revision, and size of the <b>NDIS_QOS_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
@@ -101,12 +81,9 @@ Original version for NDIS 6.30 and later.
 
 Set the <b>Size</b> member to NDIS_SIZEOF_QOS_PARAMETERS_REVISION_1.
 
-`NumClassificationElements`
+`Flags`
 
-A <b>ULONG</b> value that specifies the number of elements in the traffic classification array. The offset to the first element in this array is specified  by the <b>FirstClassificationElementOffset</b> member.
-
-<div class="alert"><b>Note</b>  Each element in the array is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_qos_classification_element.md">NDIS_QOS_CLASSIFICATION_ELEMENT</a> structure.</div>
-<div> </div>
+A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags that specify the status of the NDIS QoS parameters for the network adapter. For more information about this member, see <a href="https://docs.microsoft.com/">Overview of the Flags Member</a>.
 
 `NumTrafficClasses`
 
@@ -114,6 +91,52 @@ A <b>ULONG</b> value that specifies the number of NDIS QoS traffic classes that 
 
 <div class="alert"><b>Note</b>  The value of the <b>NumTrafficClasses</b> member must be less than or equal to <b>min</b>(<b>NDIS_QOS_MAXIMUM_TRAFFIC_CLASSES</b>, <i>MaxNumTrafficClasses</i>), where <i>MaxNumTrafficClasses</i> is the value of the <b>MaxNumTrafficClasses</b> member that was specified  in the <a href="..\ntddndis\ns-ntddndis-_ndis_qos_capabilities.md">NDIS_QOS_CAPABILITIES</a> structure.</div>
 <div> </div>
+
+`PriorityAssignmentTable`
+
+An array of <b>UCHAR</b> elements that specifies an IEEE 802.1p priority level for each traffic class. The <b>PriorityAssignmentTable</b> array is indexed  by the  802.1p priority level (0–7). 
+
+Each element contains the traffic class identifier. This identifier is the index of the <a href="..\ntddndis\ns-ntddndis-_ndis_qos_classification_element.md">NDIS_QOS_CLASSIFICATION_ELEMENT</a> structure for the traffic class within the classification array.
+
+<div class="alert"><b>Note</b>  Each element in the <b>PriorityAssignmentTable</b> array must be assigned a valid traffic class identifier. A traffic class identifier can be assigned to more than one element in the <b>PriorityAssignmentTable</b> array.</div>
+<div> </div>
+
+`TcBandwidthAssignmentTable`
+
+An array of <b>UCHAR</b> elements that specifies the percentage of the bandwidth allocation assigned to each traffic class. The <b>TcBandwidthAssignmentTable</b> array is indexed by the   traffic class identifier. 
+
+Each element of the <b>TcBandwidthAssignmentTable</b> array specifies the bandwidth allocation for the traffic classes. The total value of all bandwidth allocation assignments  in the <b>TcBandwidthAssignmentTable</b> array must equal 100.
+
+<div class="alert"><b>Note</b>  Bandwidth allocation is supported only for the Enhanced Transmission Selection (ETS) TSA. If the element for the traffic class in the <b>TsaAssignmentTable</b> array is not set to NDIS_QOS_TSA_ETS, the element for the traffic class in the <b>TcBandwidthAssignmentTable</b> array must be set to zero.</div>
+<div> </div>
+
+`TsaAssignmentTable`
+
+An array of <b>UCHAR</b> elements that specifies the TSA assigned to each traffic class. The <b>TsaAssignmentTable</b> array is indexed by the   traffic class identifier. 
+
+Each element of the <b>TsaAssignmentTable</b> array contains one of the following values:
+
+
+
+
+
+#### NDIS_QOS_TSA_STRICT
+
+The strict priority algorithm must be used as the TSA for the traffic class. For more information about this TSA, see <a href="https://msdn.microsoft.com/7C7A34CA-673C-4EFC-970D-08458AA83EAD">Strict Priority Algorithm</a>.
+
+
+
+#### NDIS_QOS_TSA_CBS
+
+The IEEE 802.1Qav credit-based shaper (CBS) algorithm must be used as the TSA for the traffic class.
+
+<div class="alert"><b>Note</b>  Starting with Windows Server 2012, the DCB component (Msdcb.sys) does not support the CBS TSA and won't enable this parameter through object identifier (OID) method requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451835">OID_QOS_PARAMETERS</a>. For more information on the DCB component, see <a href="https://msdn.microsoft.com/ECB156D8-ECD5-49DE-BC75-6562B90F6056">NDIS QoS Architecture for Data Center Bridging</a>.</div>
+<div> </div>
+
+
+#### NDIS_QOS_TSA_ETS
+
+The IEEE 802.1Qaz Enhanced Transmission Selection (ETS) algorithm must be used as the TSA for the traffic class. For more information about this TSA, see <a href="https://msdn.microsoft.com/952ECB1E-96AD-4717-8E49-68558E7E9AD4">Enhanced Transmission Selection (ETS) Algorithm</a>.
 
 `PfcEnable`
 
@@ -168,51 +191,28 @@ is enabled on the IEEE 802.1p priority level. If the bit is set to one, PFC is e
 <div> </div>
 For more information about priority levels, see <a href="https://msdn.microsoft.com/C7EB3D85-544E-4898-A456-843621F6488D">IEEE 802.1p Priority Levels</a>.
 
-`PriorityAssignmentTable`
+`NumClassificationElements`
 
-An array of <b>UCHAR</b> elements that specifies an IEEE 802.1p priority level for each traffic class. The <b>PriorityAssignmentTable</b> array is indexed  by the  802.1p priority level (0–7). 
+A <b>ULONG</b> value that specifies the number of elements in the traffic classification array. The offset to the first element in this array is specified  by the <b>FirstClassificationElementOffset</b> member.
 
-Each element contains the traffic class identifier. This identifier is the index of the <a href="..\ntddndis\ns-ntddndis-_ndis_qos_classification_element.md">NDIS_QOS_CLASSIFICATION_ELEMENT</a> structure for the traffic class within the classification array.
-
-<div class="alert"><b>Note</b>  Each element in the <b>PriorityAssignmentTable</b> array must be assigned a valid traffic class identifier. A traffic class identifier can be assigned to more than one element in the <b>PriorityAssignmentTable</b> array.</div>
+<div class="alert"><b>Note</b>  Each element in the array is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_qos_classification_element.md">NDIS_QOS_CLASSIFICATION_ELEMENT</a> structure.</div>
 <div> </div>
 
-`TcBandwidthAssignmentTable`
+`ClassificationElementSize`
 
-An array of <b>UCHAR</b> elements that specifies the percentage of the bandwidth allocation assigned to each traffic class. The <b>TcBandwidthAssignmentTable</b> array is indexed by the   traffic class identifier. 
+A <b>ULONG</b> value that specifies the size, in bytes, of each element in the traffic classification array.
 
-Each element of the <b>TcBandwidthAssignmentTable</b> array specifies the bandwidth allocation for the traffic classes. The total value of all bandwidth allocation assignments  in the <b>TcBandwidthAssignmentTable</b> array must equal 100.
-
-<div class="alert"><b>Note</b>  Bandwidth allocation is supported only for the Enhanced Transmission Selection (ETS) TSA. If the element for the traffic class in the <b>TsaAssignmentTable</b> array is not set to NDIS_QOS_TSA_ETS, the element for the traffic class in the <b>TcBandwidthAssignmentTable</b> array must be set to zero.</div>
+<div class="alert"><b>Note</b>  Starting with NDIS 6.30, this member must be set  to <code>sizeof(NDIS_QOS_CLASSIFICATION_ELEMENT</code>).</div>
 <div> </div>
 
-`TsaAssignmentTable`
+`FirstClassificationElementOffset`
 
-An array of <b>UCHAR</b> elements that specifies the TSA assigned to each traffic class. The <b>TsaAssignmentTable</b> array is indexed by the   traffic class identifier. 
-
-Each element of the <b>TsaAssignmentTable</b> array contains one of the following values:
+A <b>ULONG</b> value that specifies the offset, in bytes, to the first element in an array of traffic classification elements that follow this structure. The offset is measured from the start of the <b>NDIS_QOS_PARAMETERS</b> structure up to the beginning of the first element. Each element in the array is an <a href="..\ntddndis\ns-ntddndis-_ndis_qos_classification_element.md">NDIS_QOS_CLASSIFICATION_ELEMENT</a> structure.
 
 
 
-
-
-#### NDIS_QOS_TSA_STRICT
-
-The strict priority algorithm must be used as the TSA for the traffic class. For more information about this TSA, see <a href="https://msdn.microsoft.com/7C7A34CA-673C-4EFC-970D-08458AA83EAD">Strict Priority Algorithm</a>.
-
-
-
-#### NDIS_QOS_TSA_CBS
-
-The IEEE 802.1Qav credit-based shaper (CBS) algorithm must be used as the TSA for the traffic class.
-
-<div class="alert"><b>Note</b>  Starting with Windows Server 2012, the DCB component (Msdcb.sys) does not support the CBS TSA and won't enable this parameter through object identifier (OID) method requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451835">OID_QOS_PARAMETERS</a>. For more information on the DCB component, see <a href="https://msdn.microsoft.com/ECB156D8-ECD5-49DE-BC75-6562B90F6056">NDIS QoS Architecture for Data Center Bridging</a>.</div>
+<div class="alert"><b>Note</b>  If <b>NumClassificationElements</b> is set to zero, this member is ignored.  </div>
 <div> </div>
-
-
-#### NDIS_QOS_TSA_ETS
-
-The IEEE 802.1Qaz Enhanced Transmission Selection (ETS) algorithm must be used as the TSA for the traffic class. For more information about this TSA, see <a href="https://msdn.microsoft.com/952ECB1E-96AD-4717-8E49-68558E7E9AD4">Enhanced Transmission Selection (ETS) Algorithm</a>.
 
 ## Remarks
 The <b>NDIS_QOS_PARAMETERS</b> structure specifies the parameters that define how the network adapter prioritizes transmit, or <i>egress</i>, packets. This structure is used in the following OID requests:
@@ -328,11 +328,3 @@ The <b>NDIS_QOS_PARAMETERS_<i>Xxx</i>_CHANGED</b> flags provide hints as to whet
 
 
 <b></b>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_QOS_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

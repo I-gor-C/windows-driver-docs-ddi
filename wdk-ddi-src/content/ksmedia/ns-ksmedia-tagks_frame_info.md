@@ -74,13 +74,9 @@ typedef struct tagKS_FRAME_INFO {
 ## Members
 
 
-`DirectDrawRect`
+`ExtendedHeaderSize`
 
-Specifies the portion of the DirectDraw surface that has been locked. This is normally the entire surface.
-
-`DropCount`
-
-Specifies the number of pictures that were not captured. During capture, the minidriver sets this member. This counter should be incremented whenever a frame should have been captured but was not; this condition usually arises when no buffers were available during capture. Initialize or update this value on transition into KSSTATE_ACQUIRE.
+Specifies the size of this structure, in bytes.
 
 `dwFrameFlags`
 
@@ -153,9 +149,13 @@ Indicates that this is a bidirectional frame.
 </tr>
 </table>
 
-`ExtendedHeaderSize`
+`PictureNumber`
 
-Specifies the size of this structure, in bytes.
+Specifies a count representing the current picture number. Initialize or update this value on transition into KSSTATE_ACQUIRE.
+
+`DropCount`
+
+Specifies the number of pictures that were not captured. During capture, the minidriver sets this member. This counter should be incremented whenever a frame should have been captured but was not; this condition usually arises when no buffers were available during capture. Initialize or update this value on transition into KSSTATE_ACQUIRE.
 
 `hDirectDraw`
 
@@ -165,9 +165,9 @@ Specifies the user-mode handle to DirectDraw. This handle is only provided to th
 
 Specifies the user-mode handle to the DirectDraw surface. This handle is only provided to the minidriver when capturing to a DirectDraw surface for preview or overlay purposes.
 
-`PictureNumber`
+`DirectDrawRect`
 
-Specifies a count representing the current picture number. Initialize or update this value on transition into KSSTATE_ACQUIRE.
+Specifies the portion of the DirectDraw surface that has been locked. This is normally the entire surface.
 
 `Reserved2`
 
@@ -202,11 +202,3 @@ For more information about updating <b>PictureNumber</b> and <b>DropCount</b> se
 ## See Also
 
 <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_FRAME_INFO structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

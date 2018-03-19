@@ -61,6 +61,11 @@ typedef enum _STORAGE_QUERY_TYPE {
 <table>
             
                 <tr>
+                    <td>PropertyStandardQuery</td>
+                    <td>Instructs the port driver to report a device descriptor, an adapter descriptor or a unique hardware device ID (DUID).</td>
+                </tr>
+            
+                <tr>
                     <td>PropertyExistsQuery</td>
                     <td>Instructs the port driver to report whether the descriptor is supported.</td>
                 </tr>
@@ -73,11 +78,6 @@ typedef enum _STORAGE_QUERY_TYPE {
                 <tr>
                     <td>PropertyQueryMaxDefined</td>
                     <td>Specifies the upper limit of the list of query types. This is used to validate the query type.</td>
-                </tr>
-            
-                <tr>
-                    <td>PropertyStandardQuery</td>
-                    <td>Instructs the port driver to report a device descriptor, an adapter descriptor or a unique hardware device ID (DUID).</td>
                 </tr>
 </table>
 
@@ -103,11 +103,3 @@ Caller defines the exact nature of an <a href="..\ntddstor\ni-ntddstor-ioctl_sto
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_QUERY_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

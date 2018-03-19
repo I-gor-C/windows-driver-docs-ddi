@@ -64,8 +64,18 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSEVENTS_ERESOURCE</td>
-                    <td>Lock is assumed to be an ERESOURCE.</td>
+                    <td>KSEVENTS_NONE</td>
+                    <td>No lock.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSEVENTS_SPINLOCK</td>
+                    <td>Lock is assumed to be a KSPIN_LOCK.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSEVENTS_MUTEX</td>
+                    <td>Lock is assumed to be a KMUTEX.</td>
                 </tr>
             
                 <tr>
@@ -84,18 +94,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSEVENTS_MUTEX</td>
-                    <td>Lock is assumed to be a KMUTEX.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSEVENTS_NONE</td>
-                    <td>No lock.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSEVENTS_SPINLOCK</td>
-                    <td>Lock is assumed to be a KSPIN_LOCK.</td>
+                    <td>KSEVENTS_ERESOURCE</td>
+                    <td>Lock is assumed to be an ERESOURCE.</td>
                 </tr>
 </table>
 

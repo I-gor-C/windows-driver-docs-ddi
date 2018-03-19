@@ -63,6 +63,10 @@ typedef struct _SM_SendLIRR_OUT {
 
 The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
+`TotalRespBufferSize`
+
+The size, in bytes, of the results common transport (CT) command.
+
 `OutRespBufferSize`
 
 The size, in bytes, of the data that was actually retrieved.
@@ -70,10 +74,6 @@ The size, in bytes, of the data that was actually retrieved.
 `RespBuffer`
 
 The results of the common transport command.
-
-`TotalRespBufferSize`
-
-The size, in bytes, of the results common transport (CT) command.
 
 ## Remarks
 The WMI tool suite generates a declaration of the SM_SendRNID_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.

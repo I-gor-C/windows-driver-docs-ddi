@@ -63,7 +63,7 @@ typedef enum _RILSENDMSGRESPONSEPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_MSGRES_ALL</td>
+                    <td>RIL_PARAM_MSGRES_RETURN</td>
                     <td></td>
                 </tr>
             
@@ -78,12 +78,12 @@ typedef enum _RILSENDMSGRESPONSEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_MSGRES_GWLRELAYCODE</td>
+                    <td>RIL_PARAM_MSGRES_GWLTRANSPORTCODE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_MSGRES_GWLTRANSPORTCODE</td>
+                    <td>RIL_PARAM_MSGRES_GWLRELAYCODE</td>
                     <td></td>
                 </tr>
             
@@ -93,7 +93,7 @@ typedef enum _RILSENDMSGRESPONSEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_MSGRES_RETURN</td>
+                    <td>RIL_PARAM_MSGRES_ALL</td>
                     <td></td>
                 </tr>
 </table>

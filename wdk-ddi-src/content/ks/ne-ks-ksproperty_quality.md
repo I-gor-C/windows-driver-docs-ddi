@@ -59,12 +59,12 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSPROPERTY_QUALITY_ERROR</td>
+                    <td>KSPROPERTY_QUALITY_REPORT</td>
                     <td>Specify if the pin supports quality management.</td>
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_QUALITY_REPORT</td>
+                    <td>KSPROPERTY_QUALITY_ERROR</td>
                     <td>Specify if the pin supports quality management.</td>
                 </tr>
 </table>

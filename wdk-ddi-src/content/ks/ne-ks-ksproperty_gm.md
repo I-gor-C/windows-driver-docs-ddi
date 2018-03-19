@@ -66,17 +66,17 @@ typedef enum  {
                 </tr>
             
                 <tr>
+                    <td>KSPROPERTY_GM_TIMESTAMP_CLOCK</td>
+                    <td>Not supported.</td>
+                </tr>
+            
+                <tr>
                     <td>KSPROPERTY_GM_RATEMATCH</td>
                     <td>Not supported.</td>
                 </tr>
             
                 <tr>
                     <td>KSPROPERTY_GM_RENDER_CLOCK</td>
-                    <td>Not supported.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_GM_TIMESTAMP_CLOCK</td>
                     <td>Not supported.</td>
                 </tr>
 </table>

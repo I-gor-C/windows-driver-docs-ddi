@@ -63,9 +63,9 @@ typedef struct _BAND_MANAGEMENT_CAPABILITIES {
 ## Members
 
 
-`BandMetadataSize`
+`StructSize`
 
-The size, in bytes, of the per band metadata store.
+The size of this structure in bytes. Set to <b>sizeof</b>(BAND_MANAGEMENT_CAPABILITIES).
 
 `Capabilities`
 
@@ -149,6 +149,10 @@ Keys are encrypted by keys derived from band authentication keys. Key derivation
 </tr>
 </table>
 
+`MinAuthKeyLength`
+
+The minimum length, in bytes, of the  band authentication or erase keys accepted by the storage device.
+
 `MaxAuthKeyLength`
 
 The maximum length, in bytes, of the  band authentication or erase keys accepted by the storage device.
@@ -161,13 +165,9 @@ The maximum number of simultaneous bands configured in the storage device. This 
 
 The number of simultaneous band re-encryptions the hardware on the device supports. If this member is 0, hardware-driven band re-encryptions are not supported.
 
-`MinAuthKeyLength`
+`BandMetadataSize`
 
-The minimum length, in bytes, of the  band authentication or erase keys accepted by the storage device.
-
-`StructSize`
-
-The size of this structure in bytes. Set to <b>sizeof</b>(BAND_MANAGEMENT_CAPABILITIES).
+The size, in bytes, of the per band metadata store.
 
 ## Remarks
 If <b>CAPS_ACTIVATED</b> is not set in <b>Capabilities</b>, security functionality can be activated with the <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_activate.md">IOCTL_EHSTOR_BANDMGMT_ACTIVATE</a> request.
@@ -185,11 +185,3 @@ If <b>CAPS_ACTIVATED</b> is not set in <b>Capabilities</b>, security functionali
 
 
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_query_capabilities.md">IOCTL_EHSTOR_BANDMGMT_QUERY_CAPABILITIES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20BAND_MANAGEMENT_CAPABILITIES structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

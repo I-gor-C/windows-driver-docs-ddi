@@ -60,13 +60,13 @@ typedef enum D3D12DDI_DEALLOCATE_FLAGS_0022 {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_DEALLOCATE_FLAGS_0022_ASSUME_NOT_IN_USE</td>
-                    <td>Assume that the allocation is not in use.</td>
+                    <td>D3D12DDI_DEALLOCATE_FLAGS_0022_NONE</td>
+                    <td>No flag value.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_DEALLOCATE_FLAGS_0022_NONE</td>
-                    <td>No flag value.</td>
+                    <td>D3D12DDI_DEALLOCATE_FLAGS_0022_ASSUME_NOT_IN_USE</td>
+                    <td>Assume that the allocation is not in use.</td>
                 </tr>
             
                 <tr>

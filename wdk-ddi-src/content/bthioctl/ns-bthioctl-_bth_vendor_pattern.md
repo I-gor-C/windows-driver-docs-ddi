@@ -63,13 +63,13 @@ typedef struct _BTH_VENDOR_PATTERN {
 The offset, in bytes, of the pattern from the beginning of the event data, excluding the event
      header.
 
-`Pattern`
-
-A buffer that contains pattern data.
-
 `Size`
 
 The size, in bytes, of the pattern.
+
+`Pattern`
+
+A buffer that contains pattern data.
 
 ## Remarks
 The BTH_VENDOR_PATTERN structure specifies vendor patterns for the 
@@ -91,11 +91,3 @@ Patterns are required if a vendor-specific command does not follow the standard 
 ## See Also
 
 <a href="..\bthioctl\ns-bthioctl-_bth_vendor_specific_command.md">BTH_VENDOR_SPECIFIC_COMMAND</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_VENDOR_PATTERN structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

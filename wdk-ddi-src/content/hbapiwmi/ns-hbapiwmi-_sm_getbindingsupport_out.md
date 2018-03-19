@@ -57,13 +57,13 @@ typedef struct _SM_GetBindingSupport_OUT {
 ## Members
 
 
-`Flags`
-
-The HBA_BIND_CAPABILITY binding capabilities.
-
 `HBAStatus`
 
 The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
+
+`Flags`
+
+The HBA_BIND_CAPABILITY binding capabilities.
 
 ## Remarks
 The WMI tool suite generates a declaration of the SM_GetBindingSupport_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.

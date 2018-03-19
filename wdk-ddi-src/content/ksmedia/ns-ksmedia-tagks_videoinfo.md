@@ -66,22 +66,6 @@ typedef struct tagKS_VIDEOINFO {
 ## Members
 
 
-`AvgTimePerFrame`
-
-Specifies the average time per frame in 100-nanosecond units.
-
-`bmiHeader`
-
-Describes a <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.
-
-`dwBitErrorRate`
-
-Specifies a value that indicates the video stream's data error rate, in bit errors per second.
-
-`dwBitRate`
-
-Specifies a value that indicates the video stream's approximate data rate, in bits per second.
-
 `rcSource`
 
 Specifies a clipping rectangle that selects the portion of the active video signal to use.
@@ -89,6 +73,22 @@ Specifies a clipping rectangle that selects the portion of the active video sign
 `rcTarget`
 
 Specifies a rectangle that indicates which part of the target buffer to use.
+
+`dwBitRate`
+
+Specifies a value that indicates the video stream's approximate data rate, in bits per second.
+
+`dwBitErrorRate`
+
+Specifies a value that indicates the video stream's data error rate, in bit errors per second.
+
+`AvgTimePerFrame`
+
+Specifies the average time per frame in 100-nanosecond units.
+
+`bmiHeader`
+
+Describes a <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.
 
 ## Remarks
 This structure must not be used unless the <b>biSize</b> member of the KS_BITMAPINFOHEADER member is set to <b>sizeof</b>(KS_BITMAPINFOHEADER).
@@ -115,11 +115,3 @@ The <b>rcTarget</b> member specifies the destination rectangle for the video. Mo
 
 
 <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VIDEOINFO structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

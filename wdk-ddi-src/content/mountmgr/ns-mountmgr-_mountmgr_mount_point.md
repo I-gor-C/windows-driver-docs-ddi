@@ -61,41 +61,41 @@ typedef struct _MOUNTMGR_MOUNT_POINT {
 ## Members
 
 
-`DeviceNameLength`
+`SymbolicLinkNameOffset`
 
-Contains the length, in bytes, of the nonpersistent device name.
-
-`DeviceNameOffset`
-
-Contains an offset, in bytes, into the output buffer where the nonpersistent device name is located.
-
-`Reserved1`
-
-
-
-`Reserved2`
-
-
-
-`Reserved3`
-
-
+Contains an offset, in bytes, into the output buffer where the symbolic link is located.
 
 `SymbolicLinkNameLength`
 
 Contains the length, in bytes, of the symbolic link.
 
-`SymbolicLinkNameOffset`
+`Reserved1`
 
-Contains an offset, in bytes, into the output buffer where the symbolic link is located.
+
+
+`UniqueIdOffset`
+
+Contains an offset, in bytes, into the output buffer where the unique ID is located.
 
 `UniqueIdLength`
 
 Contains the length, in bytes, of the unique ID.
 
-`UniqueIdOffset`
+`Reserved2`
 
-Contains an offset, in bytes, into the output buffer where the unique ID is located.
+
+
+`DeviceNameOffset`
+
+Contains an offset, in bytes, into the output buffer where the nonpersistent device name is located.
+
+`DeviceNameLength`
+
+Contains the length, in bytes, of the nonpersistent device name.
+
+`Reserved3`
+
+
 
 ## Remarks
 None of the names returned are <b>NULL</b> terminated, nor do the buffers require terminating <b>NULL</b> characters. The caller of <a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_query_points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a> is not required to provide data in all of the members of the MOUNTMGR_MOUNT_POINT structure, but empty members must have an offset of zero.
@@ -114,11 +114,3 @@ For a discussion of the different between symbolic links, unique IDs, and nonper
 ## See Also
 
 <a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_query_points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MOUNTMGR_MOUNT_POINT structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

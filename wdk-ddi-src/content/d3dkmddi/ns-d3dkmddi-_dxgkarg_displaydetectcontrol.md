@@ -59,6 +59,14 @@ typedef struct _DXGKARG_DISPLAYDETECTCONTROL {
 ## Members
 
 
+`TargetId`
+
+
+
+`Type`
+
+Detection action type requested.
+
 `NonDestructiveOnly`
 
 Only used for polling the types of requests.
@@ -68,14 +76,6 @@ If FALSE, the driver should perform any action necessary to detect the status of
 `Reserved`
 
 This value is reserved for system use.
-
-`TargetId`
-
-
-
-`Type`
-
-Detection action type requested.
 
 
 ## Requirements

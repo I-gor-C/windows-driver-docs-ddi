@@ -64,13 +64,13 @@ typedef struct _STREAM_TIME_REFERENCE {
 
 Current value of the adapter clock.
 
-`CurrentSystemTime`
-
-KeQueryPerformanceCounter time.
-
 `OnboardClockFrequency`
 
 Frequency of the adapter clock.
+
+`CurrentSystemTime`
+
+KeQueryPerformanceCounter time.
 
 `Reserved`
 

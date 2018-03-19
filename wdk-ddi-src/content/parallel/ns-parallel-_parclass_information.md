@@ -72,21 +72,45 @@ typedef struct _PARCLASS_INFORMATION {
 
 Specifies the base I/O address allocated to a parallel port.
 
-`DetermineIeeeModes`
-
-Pointer to the <a href="..\parallel\nc-parallel-pdetermine_ieee_modes.md">PDETERMINE_IEEE_MODES</a> callback routine that determines which IEEE protocols a parallel device supports.
-
 `EcrController`
 
 
 
-`FifoDepth`
+`SpanOfController`
 
-Specifies the size, in words, of the ECP FIFO. The ECP FIFO word size, in bits, is the value of <b>FifoWidth</b>.
+Specifies the range in bytes of I/O address space allocated to a parallel port.
 
-`FifoWidth`
+`DetermineIeeeModes`
 
-Specifies the ECP FIFO word size, in bits, which is the number of bits handled in parallel.
+Pointer to the <a href="..\parallel\nc-parallel-pdetermine_ieee_modes.md">PDETERMINE_IEEE_MODES</a> callback routine that determines which IEEE protocols a parallel device supports.
+
+`NegotiateIeeeMode`
+
+Pointer to the <a href="..\parallel\nc-parallel-pnegotiate_ieee_mode.md">PNEGOTIATE_IEEE_MODE</a> callback routine that negotiates the fastest protocol that the system-supplied bus driver for parallel ports supports from among those specified by the caller.
+
+`TerminateIeeeMode`
+
+Pointer to the <a href="..\parallel\nc-parallel-pterminate_ieee_mode.md">PTERMINATE_IEEE_MODE</a> callback routine that terminates the current IEEE mode and sets the mode to IEEE_COMPATIBILITY.
+
+`IeeeFwdToRevMode`
+
+Pointer to the <a href="..\parallel\nc-parallel-pparallel_ieee_fwd_to_rev.md">PPARALLEL_IEEE_FWD_TO_REV</a> callback routine that changes the transfer mode from forward to reverse.
+
+`IeeeRevToFwdMode`
+
+Pointer to the <a href="..\parallel\nc-parallel-pparallel_ieee_rev_to_fwd.md">PPARALLEL_IEEE_REV_TO_FWD</a> callback routine that changes the transfer mode from reverse to forward.
+
+`ParallelRead`
+
+Pointer to the <a href="..\parallel\nc-parallel-pparallel_read.md">PPARALLEL_READ</a> callback routine that a client can use to read from a parallel device.
+
+`ParallelWrite`
+
+Pointer to the <a href="..\parallel\nc-parallel-pparallel_write.md">PPARALLEL_WRITE</a> callback routine that a client can use to write to a parallel device.
+
+`ParclassContext`
+
+Pointer to the device extension of a parallel device's physical device object (<a href="https://msdn.microsoft.com/139a10e9-203b-499b-9291-8537eae9189c">PDO</a>).
 
 `HardwareCapabilities`
 
@@ -124,45 +148,21 @@ Specifies which hardware capabilities are present. <b>HardwareCapabilities</b> i
 
 #### PPT_1284_3_PRESENT
 
-`IeeeFwdToRevMode`
+`FifoDepth`
 
-Pointer to the <a href="..\parallel\nc-parallel-pparallel_ieee_fwd_to_rev.md">PPARALLEL_IEEE_FWD_TO_REV</a> callback routine that changes the transfer mode from forward to reverse.
+Specifies the size, in words, of the ECP FIFO. The ECP FIFO word size, in bits, is the value of <b>FifoWidth</b>.
 
-`IeeeRevToFwdMode`
+`FifoWidth`
 
-Pointer to the <a href="..\parallel\nc-parallel-pparallel_ieee_rev_to_fwd.md">PPARALLEL_IEEE_REV_TO_FWD</a> callback routine that changes the transfer mode from reverse to forward.
-
-`NegotiateIeeeMode`
-
-Pointer to the <a href="..\parallel\nc-parallel-pnegotiate_ieee_mode.md">PNEGOTIATE_IEEE_MODE</a> callback routine that negotiates the fastest protocol that the system-supplied bus driver for parallel ports supports from among those specified by the caller.
-
-`ParallelDeSelect`
-
-
-
-`ParallelRead`
-
-Pointer to the <a href="..\parallel\nc-parallel-pparallel_read.md">PPARALLEL_READ</a> callback routine that a client can use to read from a parallel device.
+Specifies the ECP FIFO word size, in bits, which is the number of bits handled in parallel.
 
 `ParallelTryselect`
 
 
 
-`ParallelWrite`
+`ParallelDeSelect`
 
-Pointer to the <a href="..\parallel\nc-parallel-pparallel_write.md">PPARALLEL_WRITE</a> callback routine that a client can use to write to a parallel device.
 
-`ParclassContext`
-
-Pointer to the device extension of a parallel device's physical device object (<a href="https://msdn.microsoft.com/139a10e9-203b-499b-9291-8537eae9189c">PDO</a>).
-
-`SpanOfController`
-
-Specifies the range in bytes of I/O address space allocated to a parallel port.
-
-`TerminateIeeeMode`
-
-Pointer to the <a href="..\parallel\nc-parallel-pterminate_ieee_mode.md">PTERMINATE_IEEE_MODE</a> callback routine that terminates the current IEEE mode and sets the mode to IEEE_COMPATIBILITY.
 
 ## Remarks
 A kernel-mode driver can obtain this information from the system-supplied bus driver for parallel ports using an <a href="..\parallel\ni-parallel-ioctl_internal_parclass_connect.md">IOCTL_INTERNAL_PARCLASS_CONNECT</a> request. The system-supplied bus driver for parallel ports supplies all the callback routines. 
@@ -211,11 +211,3 @@ For more information, see <a href="https://msdn.microsoft.com/c05a1a1e-308a-4b9f
 
 
 <a href="..\parallel\nc-parallel-pparallel_write.md">PPARALLEL_WRITE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [parports\parports]:%20PARCLASS_INFORMATION structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

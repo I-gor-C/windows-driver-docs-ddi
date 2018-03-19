@@ -58,13 +58,13 @@ typedef struct _SECURE_ELEMENT_PROTO_ROUTING_INFO {
 ## Members
 
 
-`eRfProtocolType`
-
-NFC Forum RF protocol.
-
 `guidSecureElementId`
 
 Secure element unique identifier returned by enumeration DDI.
+
+`eRfProtocolType`
+
+NFC Forum RF protocol.
 
 
 ## Requirements

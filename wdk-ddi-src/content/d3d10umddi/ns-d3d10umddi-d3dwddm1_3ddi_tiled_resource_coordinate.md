@@ -59,12 +59,6 @@ typedef struct D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE {
 ## Members
 
 
-`Subresource`
-
-The subresource of the tiled resource. Used to index into mipmaps and arrays for 1-D, 2-D, and 3-D rendering.
-
-If mipmaps are packed into a single tile, any subresource value that indicates any of the packed mipmaps refers to the same tile.
-
 `X`
 
 The <i>x</i> coordinate of the tiled resource. Used for buffer, 1-D, 2-D, and 3-D rendering.
@@ -76,6 +70,12 @@ The <i>y</i> coordinate of the tiled resource. Used for 2-D and 3-D rendering.
 `Z`
 
 The <i>z</i> coordinate of the tiled resource. Used for 3-D rendering.
+
+`Subresource`
+
+The subresource of the tiled resource. Used to index into mipmaps and arrays for 1-D, 2-D, and 3-D rendering.
+
+If mipmaps are packed into a single tile, any subresource value that indicates any of the packed mipmaps refers to the same tile.
 
 
 ## Requirements

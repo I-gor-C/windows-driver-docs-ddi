@@ -65,17 +65,13 @@ typedef struct _PERF_CONFIGURATION_DATA {
 ## Members
 
 
-`ConcurrentChannels`
+`Version`
 
-The number of concurrent calls to the <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine that the miniport driver and the device  support. This member is only accessed when the STOR_PERF_CONCURRENT_CHANNELS flag has been set. Prior to Windows 8, miniports must not set this value.
+The version number of the structure. Set this member when querying and initializing optimizations.
 
-`DeviceNode`
+`Size`
 
-When the <b>Flags</b> member has the STOR_PERF_ADV_CONFIG_LOCALITY flag set, Storport initializes this field to contain the NUMA node number in which the miniport driver's device resides.
-
-`FirstRedirectionMessageNumber`
-
-When the <b>Flags</b> member has the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag set, the miniport driver initializes interrupt redirection to begin with this message number. This member is only accessed when the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag is set.
+The size of the structure, set to <b>sizeof(PERF_CONFIGURATION_DATA)</b>.
 
 `Flags`
 
@@ -175,25 +171,29 @@ This flag is valid when <b>Version</b> is set to 5.
 </tr>
 </table>
 
+`ConcurrentChannels`
+
+The number of concurrent calls to the <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine that the miniport driver and the device  support. This member is only accessed when the STOR_PERF_CONCURRENT_CHANNELS flag has been set. Prior to Windows 8, miniports must not set this value.
+
+`FirstRedirectionMessageNumber`
+
+When the <b>Flags</b> member has the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag set, the miniport driver initializes interrupt redirection to begin with this message number. This member is only accessed when the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag is set.
+
 `LastRedirectionMessageNumber`
 
 When the <b>Flags</b> member has the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag set, the miniport driver initializes interrupt redirection to end with this message number. This member is only accessed when the STOR_PERF_INTERRUPT_MESSAGE_RANGES flag is set.
 
-`MessageTargets`
+`DeviceNode`
 
-When the <b>Flags</b> member has the STOR_PERF_ADV_CONFIG_LOCALITY flag set, Storport initializes the fields of in the structures of a <a href="..\minitape\ns-minitape-_group_affinity.md">GROUP_AFFINITY</a> array. These structures correspond to the redirection messages that are currently in use. The array itself is zero-based, but <b>FirstRedirectionMessageNumber</b> is not required to be zero. The miniport allocates this array and sets <b>MessageTargets</b> to point to it. The miniport driver must allocate a <b>GROUP_AFFINITY</b> array large enough to hold all the returned affinity masks.
+When the <b>Flags</b> member has the STOR_PERF_ADV_CONFIG_LOCALITY flag set, Storport initializes this field to contain the NUMA node number in which the miniport driver's device resides.
 
 `Reserved`
 
 Reserved for system use.
 
-`Size`
+`MessageTargets`
 
-The size of the structure, set to <b>sizeof(PERF_CONFIGURATION_DATA)</b>.
-
-`Version`
-
-The version number of the structure. Set this member when querying and initializing optimizations.
+When the <b>Flags</b> member has the STOR_PERF_ADV_CONFIG_LOCALITY flag set, Storport initializes the fields of in the structures of a <a href="..\minitape\ns-minitape-_group_affinity.md">GROUP_AFFINITY</a> array. These structures correspond to the redirection messages that are currently in use. The array itself is zero-based, but <b>FirstRedirectionMessageNumber</b> is not required to be zero. The miniport allocates this array and sets <b>MessageTargets</b> to point to it. The miniport driver must allocate a <b>GROUP_AFFINITY</b> array large enough to hold all the returned affinity masks.
 
 ## Remarks
 The current version of this structure is defined by <b>STOR_PERF_VERSION</b>. Setting <b>Version</b> to this value will allow <b>Flags</b> to specify all  supported optimizations.
@@ -212,11 +212,3 @@ For information about enabling message-signaled interrupts for a device, see <a 
 ## See Also
 
 <a href="..\storport\nf-storport-storportinitializeperfopts.md">StorPortInitializePerfOpts</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20PERF_CONFIGURATION_DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

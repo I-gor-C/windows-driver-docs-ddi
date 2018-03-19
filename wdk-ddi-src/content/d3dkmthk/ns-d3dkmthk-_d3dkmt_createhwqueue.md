@@ -63,13 +63,21 @@ typedef struct _D3DKMT_CREATEHWQUEUE {
 ## Members
 
 
+`hHwContext`
+
+Handle to the hardware context the queue is associated with.
+
 `Flags`
 
 Hardware queue creation flags.
 
-`hHwContext`
+`PrivateDriverDataSize`
 
-Handle to the hardware context the queue is associated with.
+Size of private driver data.
+
+`pPrivateDriverData`
+
+Private driver data.
 
 `hHwQueue`
 
@@ -86,14 +94,6 @@ Read-only mapping of the queue progress fence value for the CPU.
 `HwQueueProgressFenceGPUVirtualAddress`
 
 Read/write mapping of the queue progress fence value for the GPU.
-
-`pPrivateDriverData`
-
-Private driver data.
-
-`PrivateDriverDataSize`
-
-Size of private driver data.
 
 
 ## Requirements

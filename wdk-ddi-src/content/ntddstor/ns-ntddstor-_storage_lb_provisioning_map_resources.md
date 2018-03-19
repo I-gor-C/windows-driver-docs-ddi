@@ -67,9 +67,87 @@ typedef struct _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
 ## Members
 
 
-`AvailableMappingResources`
+`Size`
 
-The count, in bytes, of the available mapping resources for a disk.
+The size of this structure. This is set to <b>sizeof</b>(STORAGE_LB_PROVISIONING_MAP_RESOURCES).
+
+`Version`
+
+The version of this structure.
+
+`AvailableMappingResourcesValid`
+
+The validity of the <b>AvailableMappingResources</b> member.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+<b>AvailableMappingResources</b> is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+<b>AvailableMappingResources</b> is valid.
+
+</td>
+</tr>
+</table>
+
+`UsedMappingResourcesValid`
+
+The validity of the <b>UsedMappingResources</b> member.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+<b>UsedMappingResources</b> is not valid.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+<b>UsedMappingResources</b> is valid.
+
+</td>
+</tr>
+</table>
+
+`Reserved0`
+
+Reserved.
+
+`Reserved1`
+
+Reserved.
 
 `AvailableMappingResourcesScope`
 
@@ -115,63 +193,6 @@ Mapping resources dedicated to a LUN pool.
 </tr>
 </table>
 
-`AvailableMappingResourcesValid`
-
-The validity of the <b>AvailableMappingResources</b> member.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>0</dt>
-</dl>
-</td>
-<td width="60%">
-<b>AvailableMappingResources</b> is not valid.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>1</dt>
-</dl>
-</td>
-<td width="60%">
-<b>AvailableMappingResources</b> is valid.
-
-</td>
-</tr>
-</table>
-
-`Reserved0`
-
-Reserved.
-
-`Reserved1`
-
-Reserved.
-
-`Reserved2`
-
-Reserved.
-
-`Reserved3`
-
-Reserved.
-
-`Size`
-
-The size of this structure. This is set to <b>sizeof</b>(STORAGE_LB_PROVISIONING_MAP_RESOURCES).
-
-`UsedMappingResources`
-
-The count, in bytes, of the used mapping resources for a disk.
-
 `UsedMappingResourcesScope`
 
 Resources scope used by a LUN or LUN pool.
@@ -216,42 +237,21 @@ Mapping resources dedicated to a LUN pool.
 </tr>
 </table>
 
-`UsedMappingResourcesValid`
+`Reserved2`
 
-The validity of the <b>UsedMappingResources</b> member.
+Reserved.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>0</dt>
-</dl>
-</td>
-<td width="60%">
-<b>UsedMappingResources</b> is not valid.
+`Reserved3`
 
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>1</dt>
-</dl>
-</td>
-<td width="60%">
-<b>UsedMappingResources</b> is valid.
+Reserved.
 
-</td>
-</tr>
-</table>
+`AvailableMappingResources`
 
-`Version`
+The count, in bytes, of the available mapping resources for a disk.
 
-The version of this structure.
+`UsedMappingResources`
+
+The count, in bytes, of the used mapping resources for a disk.
 
 ## Remarks
 As a managed storage element, resource usage for a thinly provisioned LUN is tracked. Resource allocation is logged for the device by the storage subsystem. A storage application can query for this resource usage  information using the <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_lb_provisioning_map_resources.md"> IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES</a> request.
@@ -269,11 +269,3 @@ Resource counts are in bytes instead of totals of blocks or slabs.
 ## See Also
 
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_lb_provisioning_map_resources.md"> IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_LB_PROVISIONING_MAP_RESOURCES structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

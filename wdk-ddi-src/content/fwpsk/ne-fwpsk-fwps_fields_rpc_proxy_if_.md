@@ -68,16 +68,6 @@ typedef enum FWPS_FIELDS_RPC_PROXY_IF_ {
 <table>
             
                 <tr>
-                    <td>FWPS_FIELD_RPC_PROXY_IF_CLIENT_CERT_KEY_LENGTH</td>
-                    <td>The secure socket layer (SSL) key length in the client certificate.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_PROXY_IF_CLIENT_CERT_OID</td>
-                    <td>The object identifier (OID) in the client certificate.</td>
-                </tr>
-            
-                <tr>
                     <td>FWPS_FIELD_RPC_PROXY_IF_CLIENT_TOKEN</td>
                     <td>The identification of the client when using RpcProxy.</td>
                 </tr>
@@ -93,9 +83,13 @@ typedef enum FWPS_FIELDS_RPC_PROXY_IF_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_RPC_PROXY_IF_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
+                    <td>FWPS_FIELD_RPC_PROXY_IF_SERVER_NAME</td>
+                    <td>The name of the RPC server when using RpcProxy.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_PROXY_IF_SERVER_PORT</td>
+                    <td>The port on the RPC server when using RpcProxy.</td>
                 </tr>
             
                 <tr>
@@ -105,13 +99,19 @@ typedef enum FWPS_FIELDS_RPC_PROXY_IF_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_RPC_PROXY_IF_SERVER_NAME</td>
-                    <td>The name of the RPC server when using RpcProxy.</td>
+                    <td>FWPS_FIELD_RPC_PROXY_IF_CLIENT_CERT_KEY_LENGTH</td>
+                    <td>The secure socket layer (SSL) key length in the client certificate.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_RPC_PROXY_IF_SERVER_PORT</td>
-                    <td>The port on the RPC server when using RpcProxy.</td>
+                    <td>FWPS_FIELD_RPC_PROXY_IF_CLIENT_CERT_OID</td>
+                    <td>The object identifier (OID) in the client certificate.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_PROXY_IF_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 

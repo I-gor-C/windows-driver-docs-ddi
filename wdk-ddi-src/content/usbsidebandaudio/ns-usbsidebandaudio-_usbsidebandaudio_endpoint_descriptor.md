@@ -64,7 +64,7 @@ typedef struct _USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR {
 ## Members
 
 
-`Capabilities`
+`CbSize`
 
 
 
@@ -72,11 +72,11 @@ typedef struct _USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR {
 
 
 
-`CbSize`
-
-
-
 `Direction`
+
+
+
+`Capabilities`
 
 
 
@@ -84,11 +84,11 @@ typedef struct _USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR {
 
 
 
-`SidetoneVolumePropertyValueSize`
-
-
-
 `VolumePropertyValuesSize`
+
+
+
+`SidetoneVolumePropertyValueSize`
 
 
 

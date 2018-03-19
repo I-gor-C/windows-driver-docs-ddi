@@ -64,14 +64,6 @@ typedef struct _TEXTUAL_LEAF {
 
 Specifies the CRC of the text string.
 
-`TL_Data`
-
-Specifies a vendor-specified textual description of the device.
-
-`TL_Language_Id`
-
-Specifies the language of the <b>TL_Data</b> member.
-
 `TL_Length`
 
 Specifies the length of the text string, in bytes.
@@ -79,6 +71,14 @@ Specifies the length of the text string, in bytes.
 `TL_Spec_Id`
 
 Specifies which specification describes the meaning of the <b>TL_Language_ID</b> member.
+
+`TL_Language_Id`
+
+Specifies the language of the <b>TL_Data</b> member.
+
+`TL_Data`
+
+Specifies a vendor-specified textual description of the device.
 
 
 ## Requirements
@@ -89,11 +89,3 @@ Specifies which specification describes the meaning of the <b>TL_Language_ID</b>
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537642">REQUEST_GET_CONFIGURATION_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20TEXTUAL_LEAF structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

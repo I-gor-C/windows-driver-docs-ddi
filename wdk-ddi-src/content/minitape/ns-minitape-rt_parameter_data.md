@@ -63,6 +63,10 @@ typedef struct _RT_PARAMETER_DATA {
 ## Members
 
 
+`ParameterDataLength`
+
+Indicates the number of bytes that follow in the parameter data.
+
 `Origin`
 
 Indicates the most recent event that initialized the returned device clock.
@@ -129,10 +133,6 @@ Reserved for future use.
 </tr>
 </table>
 
-`ParameterDataLength`
-
-Indicates the number of bytes that follow in the parameter data.
-
 `Reserved1`
 
 Reserved for future use.
@@ -141,13 +141,13 @@ Reserved for future use.
 
 Reserved for future use.
 
-`Reserved3`
-
-Reserved for future use.
-
 `Timestamp`
 
 Contains the current value of a device clock.
+
+`Reserved3`
+
+Reserved for future use.
 
 
 ## Requirements
@@ -159,11 +159,3 @@ Contains the current value of a device clock.
 ## See Also
 
 <a href="..\storport\ns-storport-st_parameter_data.md">ST_PARAMETER_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20RT_PARAMETER_DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

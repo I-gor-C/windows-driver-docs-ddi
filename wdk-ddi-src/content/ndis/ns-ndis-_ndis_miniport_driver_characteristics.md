@@ -85,85 +85,6 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
 ## Members
 
 
-`CancelDirectOidRequestHandler`
-
-The entry point for the 
-      <a href="..\ndis\nc-ndis-miniport_cancel_direct_oid_request.md">
-      MiniportCancelDirectOidRequest</a> function. This is an optional entry point. Set this member to <b>NULL</b>
-      if the miniport driver does not handle direct OID requests.
-
-Optional for Ethernet; however, if one is provided, then both must be provided.
-
-Required for WLAN and Ethernet miniports that implement RDMA or IPSec offload.
-
-`CancelOidRequestHandler`
-
-Required. The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_cancel_oid_request.md">
-     MiniportCancelOidRequest</a> function.
-
-`CancelSendHandler`
-
-Required. The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_cancel_send.md">MiniportCancelSend</a> function.
-
-`CheckForHangHandlerEx`
-
-Optional. The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_check_for_hang.md">
-     MiniportCheckForHangEx</a> function. 
-     
-
-<i>MiniportCheckForHangEx</i> is not required for intermediate drivers or virtual miniports because they are not physical devices that can hang, so they must set this entry
-     point to <b>NULL</b>. 
-
-<i>MiniportCheckForHangEx</i> is forbidden on any AOAC device due to the impact on battery life, so miniport drivers for these devices must set this entry point to <b>NULL</b>.
-
-<i>MiniportCheckForHangEx</i> is discouraged for miniport drivers intended to be installed on non-AOAC, battery-powered devices due to the impact on battery life, so they should set this entry point to <b>NULL</b>.
-
-<i>MiniportCheckForHangEx</i> is permitted but not required for miniport drivers that are intended to be installed in line-powered (mains-powered) devices. For drivers targeting NDIS 6.30 and later, consider using <a href="..\ndis\nf-ndis-ndismresetminiport.md">NdisMResetMiniport</a> instead.
-
-`DevicePnPEventNotifyHandler`
-
-Required. The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_device_pnp_event_notify.md">
-     MiniportDevicePnPEventNotify</a> function.
-
-`DirectOidRequestHandler`
-
-The entry point for the 
-      <a href="..\ndis\nc-ndis-miniport_direct_oid_request.md">
-      MiniportDirectOidRequest</a> function. This is an optional entry point. Set this member to <b>NULL</b> if
-      the miniport driver does not handle direct OID requests. 
-
-Optional for Ethernet; however, if one is provided, then both must be provided.
-
-Required for WLAN and Ethernet miniports that implement RDMA or IPSec offload.
-
-`Flags`
-
-A bitmask that can be set to zero or any of the following flags, combined with bitwise OR: 
-     
-
-
-
-
-
-#### NDIS_INTERMEDIATE_DRIVER
-
-Set if the caller is an NDIS intermediate driver.
-
-
-
-#### NDIS_WDM_DRIVER
-
-Set if the caller is an NDIS-WDM miniport driver.
-
-`HaltHandlerEx`
-
-Required. The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a> function.
-
 `Header`
 
 The 
@@ -205,25 +126,9 @@ Original version for NDIS 6.0.
 Set the 
         <b>Size</b> member to NDIS_SIZEOF_MINIPORT_DRIVER_CHARACTERISTICS_REVISION_1.
 
-`InitializeHandlerEx`
-
-Required. The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_initialize.md">
-     MiniportInitializeEx</a> function.
-
-`MajorDriverVersion`
-
-Reserved for the major version number of the driver. Miniport drivers can specify any value that
-     they require.
-
 `MajorNdisVersion`
 
 The major version of the NDIS library the driver is using. The current value is 0x06.
-
-`MinorDriverVersion`
-
-Reserved for the minor version number of the driver. Miniport drivers can specify any value that
-     they require.
 
 `MinorNdisVersion`
 
@@ -335,39 +240,34 @@ NDIS 6.80
 </tr>
 </table>
 
-`OidRequestHandler`
+`MajorDriverVersion`
 
-The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a> function. Required for all connection-less miniport drivers, including all Ethernet, WLAN, and IM drivers. Optional for some CoNDIS miniport drivers.
+Reserved for the major version number of the driver. Miniport drivers can specify any value that
+     they require.
 
-`PauseHandler`
+`MinorDriverVersion`
 
-Required. The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_pause.md">MiniportPause</a> function.
+Reserved for the minor version number of the driver. Miniport drivers can specify any value that
+     they require.
 
-`ResetHandlerEx`
+`Flags`
 
-Optional (required if you provide <b>CheckForHangHandlerEx</b>). The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a> function. 
-     <i>MiniportResetEx</i> is not required for intermediate drivers, so they should set this entry point to
-     <b>NULL</b>.
+A bitmask that can be set to zero or any of the following flags, combined with bitwise OR: 
+     
 
-`RestartHandler`
 
-Required. The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_restart.md">MiniportRestart</a> function.
 
-`ReturnNetBufferListsHandler`
 
-Required. The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
-     MiniportReturnNetBufferLists</a> function.
 
-`SendNetBufferListsHandler`
+#### NDIS_INTERMEDIATE_DRIVER
 
-Required. The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">
-     MiniportSendNetBufferLists</a> function.
+Set if the caller is an NDIS intermediate driver.
+
+
+
+#### NDIS_WDM_DRIVER
+
+Set if the caller is an NDIS-WDM miniport driver.
 
 `SetOptionsHandler`
 
@@ -376,10 +276,116 @@ The entry point for the caller's
 
 Required for Co-NDIS. Suggested for Ethernet miniport drivers that support RSS using MSI-C over PCI.
 
+`InitializeHandlerEx`
+
+Required. The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_initialize.md">
+     MiniportInitializeEx</a> function.
+
+`HaltHandlerEx`
+
+Required. The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a> function.
+
+`UnloadHandler`
+
+Required. The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_unload.md">
+     MiniportDriverUnload</a> function.
+
+`PauseHandler`
+
+Required. The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_pause.md">MiniportPause</a> function.
+
+`RestartHandler`
+
+Required. The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_restart.md">MiniportRestart</a> function.
+
+`OidRequestHandler`
+
+The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a> function. Required for all connection-less miniport drivers, including all Ethernet, WLAN, and IM drivers. Optional for some CoNDIS miniport drivers.
+
+`SendNetBufferListsHandler`
+
+Required. The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">
+     MiniportSendNetBufferLists</a> function.
+
+`ReturnNetBufferListsHandler`
+
+Required. The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
+     MiniportReturnNetBufferLists</a> function.
+
+`CancelSendHandler`
+
+Required. The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_cancel_send.md">MiniportCancelSend</a> function.
+
+`CheckForHangHandlerEx`
+
+Optional. The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_check_for_hang.md">
+     MiniportCheckForHangEx</a> function. 
+     
+
+<i>MiniportCheckForHangEx</i> is not required for intermediate drivers or virtual miniports because they are not physical devices that can hang, so they must set this entry
+     point to <b>NULL</b>. 
+
+<i>MiniportCheckForHangEx</i> is forbidden on any AOAC device due to the impact on battery life, so miniport drivers for these devices must set this entry point to <b>NULL</b>.
+
+<i>MiniportCheckForHangEx</i> is discouraged for miniport drivers intended to be installed on non-AOAC, battery-powered devices due to the impact on battery life, so they should set this entry point to <b>NULL</b>.
+
+<i>MiniportCheckForHangEx</i> is permitted but not required for miniport drivers that are intended to be installed in line-powered (mains-powered) devices. For drivers targeting NDIS 6.30 and later, consider using <a href="..\ndis\nf-ndis-ndismresetminiport.md">NdisMResetMiniport</a> instead.
+
+`ResetHandlerEx`
+
+Optional (required if you provide <b>CheckForHangHandlerEx</b>). The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a> function. 
+     <i>MiniportResetEx</i> is not required for intermediate drivers, so they should set this entry point to
+     <b>NULL</b>.
+
+`DevicePnPEventNotifyHandler`
+
+Required. The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_device_pnp_event_notify.md">
+     MiniportDevicePnPEventNotify</a> function.
+
 `ShutdownHandlerEx`
 
 Required. The entry point for the 
      <a href="..\ndis\nc-ndis-miniport_shutdown.md">MiniportShutdownEx</a> function.
+
+`CancelOidRequestHandler`
+
+Required. The entry point for the 
+     <a href="..\ndis\nc-ndis-miniport_cancel_oid_request.md">
+     MiniportCancelOidRequest</a> function.
+
+`DirectOidRequestHandler`
+
+The entry point for the 
+      <a href="..\ndis\nc-ndis-miniport_direct_oid_request.md">
+      MiniportDirectOidRequest</a> function. This is an optional entry point. Set this member to <b>NULL</b> if
+      the miniport driver does not handle direct OID requests. 
+
+Optional for Ethernet; however, if one is provided, then both must be provided.
+
+Required for WLAN and Ethernet miniports that implement RDMA or IPSec offload.
+
+`CancelDirectOidRequestHandler`
+
+The entry point for the 
+      <a href="..\ndis\nc-ndis-miniport_cancel_direct_oid_request.md">
+      MiniportCancelDirectOidRequest</a> function. This is an optional entry point. Set this member to <b>NULL</b>
+      if the miniport driver does not handle direct OID requests.
+
+Optional for Ethernet; however, if one is provided, then both must be provided.
+
+Required for WLAN and Ethernet miniports that implement RDMA or IPSec offload.
 
 `SynchronousOidRequestHandler`
 
@@ -389,12 +395,6 @@ The entry point for the
       the miniport driver does not handle Synchronous OID requests. 
 
 Required for WLAN and Ethernet miniports that implement RSSv2.
-
-`UnloadHandler`
-
-Required. The entry point for the 
-     <a href="..\ndis\nc-ndis-miniport_unload.md">
-     MiniportDriverUnload</a> function.
 
 ## Remarks
 An NDIS driver passes a pointer to its <b>NDIS_MINIPORT_DRIVER_CHARACTERISTICS</b> structure in the 
@@ -490,11 +490,3 @@ An NDIS driver passes a pointer to its <b>NDIS_MINIPORT_DRIVER_CHARACTERISTICS</
 
 
 <a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">MiniportSendNetBufferLists</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

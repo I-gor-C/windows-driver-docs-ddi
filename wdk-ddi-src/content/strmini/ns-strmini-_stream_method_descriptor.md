@@ -61,6 +61,10 @@ typedef struct _STREAM_METHOD_DESCRIPTOR {
 ## Members
 
 
+`MethodSetID`
+
+
+
 `Method`
 
 
@@ -74,10 +78,6 @@ typedef struct _STREAM_METHOD_DESCRIPTOR {
 
 
 `MethodOutputSize`
-
-
-
-`MethodSetID`
 
 
 

@@ -64,32 +64,7 @@ typedef enum _RILSUPSERVICEDATAPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_SSDI_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_SSDI_CC_ERROR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_SSDI_DATA</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_SSDI_DATASIZE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_SSDI_EXECUTOR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_SSDI_SS_ERROR</td>
                     <td></td>
                 </tr>
             
@@ -99,7 +74,32 @@ typedef enum _RILSUPSERVICEDATAPARAMMASK {
                 </tr>
             
                 <tr>
+                    <td>RIL_PARAM_SSDI_SS_ERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SSDI_CC_ERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PARAM_SSDI_VENDOR_ERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SSDI_DATASIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SSDI_DATA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SSDI_ALL</td>
                     <td></td>
                 </tr>
 </table>

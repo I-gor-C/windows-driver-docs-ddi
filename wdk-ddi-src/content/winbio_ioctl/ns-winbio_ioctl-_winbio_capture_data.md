@@ -61,122 +61,9 @@ typedef struct _WINBIO_CAPTURE_DATA {
 ## Members
 
 
-`CaptureData`
-
-A structure of type <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_data.md">WINBIO_DATA</a> that contains data captured by the device, of the format specified. The <b>Data</b> array member of the WINBIO_DATA structure should contain a <a href="..\winbio_types\ns-winbio_types-_winbio_bir.md">WINBIO_BIR</a> structure.
-
 `PayloadSize`
 
 The total size of the payload.  This includes the fixed length structure and any variable data at the end.
-
-`RejectDetail`
-
-If the sensor status was WINBIO_SENSOR_REJECT, this member contains a WINBIO_REJECT_DETAIL value. WINBIO_SENSOR_REJECT specifies the reason a biometric sampling operation failed.
-
-<div class="alert"><b>Important</b>    Values defined for Windows 7 are for fingerprint reject details only.</div>
-<div> </div>
-Failure detail values for WINBIO_TYPE_FINGERPRINT include:
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>#define WINBIO_FP_TOO_HIGH          ((WINBIO_REJECT_DETAIL)1)
-#define WINBIO_FP_TOO_LOW           ((WINBIO_REJECT_DETAIL)2)
-#define WINBIO_FP_TOO_LEFT          ((WINBIO_REJECT_DETAIL)3)
-#define WINBIO_FP_TOO_RIGHT         ((WINBIO_REJECT_DETAIL)4)
-#define WINBIO_FP_TOO_FAST          ((WINBIO_REJECT_DETAIL)5)
-#define WINBIO_FP_TOO_SLOW          ((WINBIO_REJECT_DETAIL)6)
-#define WINBIO_FP_POOR_QUALITY      ((WINBIO_REJECT_DETAIL)7)
-#define WINBIO_FP_TOO_SKEWED        ((WINBIO_REJECT_DETAIL)8)
-#define WINBIO_FP_TOO_SHORT         ((WINBIO_REJECT_DETAIL)9)
-#define WINBIO_FP_MERGE_FAILURE     ((WINBIO_REJECT_DETAIL)10)</pre>
-</td>
-</tr>
-</table></span></div>
-
-`SensorStatus`
-
-The WINBIO_SENSOR_STATUS status of the sensor after the capture has occurred. It specifies the operating status of the sensor.
-
-WINBIO_SENSOR_STATUS can be queried at any time.  When WINBIO_SENSOR_STATUS is returned upon a capture I/O completion, it indicates whether a capture was successful. Possible values are shown in the following table.
-
-<table>
-<tr>
-<th>
-              
-                Sensor status code
-              
-            </th>
-<th>
-              
-                Description
-              
-            </th>
-</tr>
-<tr>
-<td>
-WINBIO_SENSOR_ACCEPT
-
-</td>
-<td>
-The sensor just successfully completed a capture operation.  This should only be returned immediately after a capture operation.  The sensor will then return to WINBIO_SENSOR_READY or WINBIO_SENSOR_BUSY.
-
-</td>
-</tr>
-<tr>
-<td>
-WINBIO_SENSOR_REJECT
-
-</td>
-<td>
-The sensor rejected the previous capture operation.  This should only be returned immediately following a capture operation.  The sensor will then return to WINBIO_SENSOR_READY or WINBIO_SENSOR_BUSY.
-
-</td>
-</tr>
-<tr>
-<td>
-WINBIO_SENSOR_READY
-
-</td>
-<td>
-The sensor is ready to capture data.  If there is a pending data capture IOCTL, the sensor is ready to accept data.
-
-</td>
-</tr>
-<tr>
-<td>
-WINBIO_SENSOR_BUSY
-
-</td>
-<td>
-The sensor is busy or in a state where it cannot capture data.  For example, the device could still be initializing after it has been turned on.
-
-</td>
-</tr>
-<tr>
-<td>
-WINBIO_SENSOR_NOT_CALIBRATED
-
-</td>
-<td>
-The sensor must be calibrated before it is put into data collection mode.
-
-</td>
-</tr>
-<tr>
-<td>
-WINBIO_SENSOR_FAILURE
-
-</td>
-<td>
-The sensor device failed.
-
-</td>
-</tr>
-</table>
 
 `WinBioHresult`
 
@@ -279,6 +166,119 @@ The capture purpose specified is not supported by the driver.
 </tr>
 </table>
 
+`SensorStatus`
+
+The WINBIO_SENSOR_STATUS status of the sensor after the capture has occurred. It specifies the operating status of the sensor.
+
+WINBIO_SENSOR_STATUS can be queried at any time.  When WINBIO_SENSOR_STATUS is returned upon a capture I/O completion, it indicates whether a capture was successful. Possible values are shown in the following table.
+
+<table>
+<tr>
+<th>
+              
+                Sensor status code
+              
+            </th>
+<th>
+              
+                Description
+              
+            </th>
+</tr>
+<tr>
+<td>
+WINBIO_SENSOR_ACCEPT
+
+</td>
+<td>
+The sensor just successfully completed a capture operation.  This should only be returned immediately after a capture operation.  The sensor will then return to WINBIO_SENSOR_READY or WINBIO_SENSOR_BUSY.
+
+</td>
+</tr>
+<tr>
+<td>
+WINBIO_SENSOR_REJECT
+
+</td>
+<td>
+The sensor rejected the previous capture operation.  This should only be returned immediately following a capture operation.  The sensor will then return to WINBIO_SENSOR_READY or WINBIO_SENSOR_BUSY.
+
+</td>
+</tr>
+<tr>
+<td>
+WINBIO_SENSOR_READY
+
+</td>
+<td>
+The sensor is ready to capture data.  If there is a pending data capture IOCTL, the sensor is ready to accept data.
+
+</td>
+</tr>
+<tr>
+<td>
+WINBIO_SENSOR_BUSY
+
+</td>
+<td>
+The sensor is busy or in a state where it cannot capture data.  For example, the device could still be initializing after it has been turned on.
+
+</td>
+</tr>
+<tr>
+<td>
+WINBIO_SENSOR_NOT_CALIBRATED
+
+</td>
+<td>
+The sensor must be calibrated before it is put into data collection mode.
+
+</td>
+</tr>
+<tr>
+<td>
+WINBIO_SENSOR_FAILURE
+
+</td>
+<td>
+The sensor device failed.
+
+</td>
+</tr>
+</table>
+
+`RejectDetail`
+
+If the sensor status was WINBIO_SENSOR_REJECT, this member contains a WINBIO_REJECT_DETAIL value. WINBIO_SENSOR_REJECT specifies the reason a biometric sampling operation failed.
+
+<div class="alert"><b>Important</b>    Values defined for Windows 7 are for fingerprint reject details only.</div>
+<div> </div>
+Failure detail values for WINBIO_TYPE_FINGERPRINT include:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>#define WINBIO_FP_TOO_HIGH          ((WINBIO_REJECT_DETAIL)1)
+#define WINBIO_FP_TOO_LOW           ((WINBIO_REJECT_DETAIL)2)
+#define WINBIO_FP_TOO_LEFT          ((WINBIO_REJECT_DETAIL)3)
+#define WINBIO_FP_TOO_RIGHT         ((WINBIO_REJECT_DETAIL)4)
+#define WINBIO_FP_TOO_FAST          ((WINBIO_REJECT_DETAIL)5)
+#define WINBIO_FP_TOO_SLOW          ((WINBIO_REJECT_DETAIL)6)
+#define WINBIO_FP_POOR_QUALITY      ((WINBIO_REJECT_DETAIL)7)
+#define WINBIO_FP_TOO_SKEWED        ((WINBIO_REJECT_DETAIL)8)
+#define WINBIO_FP_TOO_SHORT         ((WINBIO_REJECT_DETAIL)9)
+#define WINBIO_FP_MERGE_FAILURE     ((WINBIO_REJECT_DETAIL)10)</pre>
+</td>
+</tr>
+</table></span></div>
+
+`CaptureData`
+
+A structure of type <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_data.md">WINBIO_DATA</a> that contains data captured by the device, of the format specified. The <b>Data</b> array member of the WINBIO_DATA structure should contain a <a href="..\winbio_types\ns-winbio_types-_winbio_bir.md">WINBIO_BIR</a> structure.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -289,11 +289,3 @@ The capture purpose specified is not supported by the driver.
 ## See Also
 
 <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_capture_data.md">IOCTL_BIOMETRIC_CAPTURE_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [biometric\biometric]:%20WINBIO_CAPTURE_DATA structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

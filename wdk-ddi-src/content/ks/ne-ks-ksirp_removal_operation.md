@@ -61,22 +61,22 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KsAcquireAndRemove</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KsAcquireAndRemoveOnlySingleItem</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>KsAcquireOnly</td>
                     <td></td>
                 </tr>
             
                 <tr>
+                    <td>KsAcquireAndRemove</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>KsAcquireOnlySingleItem</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KsAcquireAndRemoveOnlySingleItem</td>
                     <td></td>
                 </tr>
 </table>

@@ -59,13 +59,13 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>ISCSI_DIGEST_TYPE_CRC32C</td>
-                    <td>The digest that guarantees data integrity uses a 32-bit cyclic redundancy check.</td>
+                    <td>ISCSI_DIGEST_TYPE_NONE</td>
+                    <td>There is no usable digest that guarantees data integrity.</td>
                 </tr>
             
                 <tr>
-                    <td>ISCSI_DIGEST_TYPE_NONE</td>
-                    <td>There is no usable digest that guarantees data integrity.</td>
+                    <td>ISCSI_DIGEST_TYPE_CRC32C</td>
+                    <td>The digest that guarantees data integrity uses a 32-bit cyclic redundancy check.</td>
                 </tr>
 </table>
 

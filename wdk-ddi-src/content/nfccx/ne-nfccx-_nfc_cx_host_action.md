@@ -61,11 +61,6 @@ typedef enum _NFC_CX_HOST_ACTION {
 <table>
             
                 <tr>
-                    <td>HostActionRestart</td>
-                    <td>Specifies a full driver restart.</td>
-                </tr>
-            
-                <tr>
                     <td>HostActionStart</td>
                     <td>Specifies full initialization.</td>
                 </tr>
@@ -73,6 +68,11 @@ typedef enum _NFC_CX_HOST_ACTION {
                 <tr>
                     <td>HostActionStop</td>
                     <td>Specifies de-initialization.</td>
+                </tr>
+            
+                <tr>
+                    <td>HostActionRestart</td>
+                    <td>Specifies a full driver restart.</td>
                 </tr>
             
                 <tr>
@@ -95,11 +95,3 @@ typedef enum _NFC_CX_HOST_ACTION {
 
 
 <a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_HOST_ACTION enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

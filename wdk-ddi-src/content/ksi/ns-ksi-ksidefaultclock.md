@@ -77,15 +77,23 @@ typedef struct {
 ## Members
 
 
-`CancelTimer`
+`Frequency`
 
 
 
-`Context`
+`LastDueTime`
 
 
 
-`CorrelatedTime`
+`RunningTimeDelta`
+
+
+
+`LastRunningTime`
+
+
+
+`TimeAccessLock`
 
 
 
@@ -97,31 +105,7 @@ typedef struct {
 
 
 
-`ExternalTimeReferenceCount`
-
-
-
-`ExternalTimeValid`
-
-
-
-`FreeEvent`
-
-
-
-`Frequency`
-
-
-
-`LastDueTime`
-
-
-
-`LastRunningTime`
-
-
-
-`LastStreamTime`
+`QueueTimer`
 
 
 
@@ -129,23 +113,7 @@ typedef struct {
 
 
 
-`QueueTimer`
-
-
-
 `ReferenceCount`
-
-
-
-`Resolution`
-
-
-
-`RunningTimeDelta`
-
-
-
-`SetTimer`
 
 
 
@@ -161,7 +129,39 @@ typedef struct {
 
 
 
-`TimeAccessLock`
+`SetTimer`
+
+
+
+`CancelTimer`
+
+
+
+`CorrelatedTime`
+
+
+
+`Context`
+
+
+
+`Resolution`
+
+
+
+`FreeEvent`
+
+
+
+`ExternalTimeReferenceCount`
+
+
+
+`ExternalTimeValid`
+
+
+
+`LastStreamTime`
 
 
 

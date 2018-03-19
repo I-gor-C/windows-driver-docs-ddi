@@ -61,21 +61,21 @@ typedef struct _UFS_INTERCONNECT_DESCRIPTOR {
 ## Members
 
 
-`bcdMphyVersion`
+`bLength`
 
-Specifies the MIPI M-PHY® version number in BCD format.
-
-`bcdUniproVersion`
-
-Specifies the MIPI UniPro℠ version number in Binary Coded Decimal (BCD) format.
+Specifies the length, in bytes, of this descriptor.
 
 `bDescriptorIDN`
 
 Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_INTERCONNECT_IDN</b>.
 
-`bLength`
+`bcdUniproVersion`
 
-Specifies the length, in bytes, of this descriptor.
+Specifies the MIPI UniPro℠ version number in Binary Coded Decimal (BCD) format.
+
+`bcdMphyVersion`
+
+Specifies the MIPI M-PHY® version number in BCD format.
 
 
 ## Requirements

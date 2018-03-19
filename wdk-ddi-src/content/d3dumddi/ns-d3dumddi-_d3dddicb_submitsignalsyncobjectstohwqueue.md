@@ -61,21 +61,17 @@ typedef struct _D3DDDICB_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE {
 ## Members
 
 
-`BroadcastHwQueueArray`
+`Flags`
 
-Specifies hardware queue handles to broadcast to.
+Specifies signal behavior.
 
 `BroadcastHwQueueCount`
 
 Specifies the number of hardware queues to broadcast this signal to.
 
-`FenceValueArray`
+`BroadcastHwQueueArray`
 
-monitored fence values to signal.
-
-`Flags`
-
-Specifies signal behavior.
+Specifies hardware queue handles to broadcast to.
 
 `ObjectCount`
 
@@ -84,6 +80,10 @@ Number of objects to signal.
 `ObjectHandleArray`
 
 Handles to monitored fence synchronization objects to signal.
+
+`FenceValueArray`
+
+monitored fence values to signal.
 
 
 ## Requirements

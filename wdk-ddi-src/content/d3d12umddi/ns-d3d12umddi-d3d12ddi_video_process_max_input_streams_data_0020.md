@@ -57,13 +57,13 @@ typedef struct D3D12DDI_VIDEO_PROCESS_MAX_INPUT_STREAMS_DATA_0020 {
 ## Members
 
 
-`MaxInputStreams`
-
-The maximum number of streams that can be enabled for the video processor at the same time.
-
 `NodeIndex`
 
 In multi-adapter operation, this indicates which physical adapter of the device this operation applies to.
+
+`MaxInputStreams`
+
+The maximum number of streams that can be enabled for the video processor at the same time.
 
 
 ## Requirements

@@ -63,17 +63,7 @@ typedef enum _RILCALLFORWARDINGSETTINGSREASON {
 <table>
             
                 <tr>
-                    <td>RIL_FWDREASON_ALLCONDITIONAL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_FWDREASON_ALLFORWARDING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_FWDREASON_MAX</td>
+                    <td>RIL_FWDREASON_UNCONDITIONAL</td>
                     <td></td>
                 </tr>
             
@@ -88,12 +78,22 @@ typedef enum _RILCALLFORWARDINGSETTINGSREASON {
                 </tr>
             
                 <tr>
-                    <td>RIL_FWDREASON_UNCONDITIONAL</td>
+                    <td>RIL_FWDREASON_UNREACHABLE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_FWDREASON_UNREACHABLE</td>
+                    <td>RIL_FWDREASON_ALLFORWARDING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_FWDREASON_ALLCONDITIONAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_FWDREASON_MAX</td>
                     <td></td>
                 </tr>
 </table>

@@ -80,9 +80,25 @@ typedef struct _TRACK_INFORMATION2 {
 ## Members
 
 
-`Blank`
+`Length`
 
-The blank bit, when set to 1, indicates that the track contains no written data and last recorded address field is invalid. For a complete explanation of the meaning of this bit, see the <i>SCSI Multimedia Commands - 3 (MMC-3)</i> specification.
+The length, in bytes, of this structure.
+
+`TrackNumberLsb`
+
+The least significant byte of the track number.
+
+`SessionNumberLsb`
+
+The least significant byte of the session number.
+
+`Reserved4`
+
+Reserved.
+
+`TrackMode`
+
+The track mode. See the <i>SCSI-3 Multi-Media </i>specification for an explanation of meaning of this member.
 
 `Copy`
 
@@ -91,6 +107,10 @@ The copy bit indicates whether the track is a copy or not. If this bit is 1, the
 `Damage`
 
 The damage bit indicates, together with the NWA_V bit, whether a write to the media is complete or not, and what sort of methods the CD-ROM class driver can use to complete the write. See the <i>SCSI-3 Multi-Media </i>specification for an explanation of how to interpret the values in the <b>Damage</b> and <b>NWA_V</b> members.
+
+`Reserved5`
+
+Reserved.
 
 `DataMode`
 
@@ -143,85 +163,65 @@ There is no track descriptor block, and therefore the data block type of the tra
 
 The fixed packet bit indicates, under some circumstances, when set to 1, that write operations to the track must must use fixed packets. For a complete explanation of the meaning of this bit, see the <i>SCSI Multimedia Commands - 3 (MMC-3)</i> specification.
 
-`FixedPacketSize`
-
-The blocking factor. This value The fixed packet size is valid only when the Packet and the FP bits are both set to one.
-
-`FreeBlocks`
-
-The maximum number of user data blocks that are available for recording in the track.
-
-`LastRecordedAddress`
-
-
-
-`Length`
-
-The length, in bytes, of this structure.
-
-`LRA_V`
-
-A boolean value that indicates whether the <b>LastRecordedAddress</b> member is valid or not. If <b>LRA_V</b> is 1, the <b>LastRecordedAddress</b> member is valid. If 0, the <b>LastRecordedAddress</b> member is not valid.
-
-`NextWritableAddress`
-
-The logical block address of the next writable user block in the track specified by the track number (<b>TrackNumberLsb</b> and <b>TrackNumberMsb</b>).
-
-`NWA_V`
-
-A boolean value that indicates, when 1, that the value in <b>NextWritableAddress</b> is valid. If 0, the value in <b>NextWritableAddress</b> is invalid.
-
 `Packet`
 
 The fixed packet bit indicates, under some circumstances, when set to 1, that write operations to the track must must use fixed packets. For a complete explanation of the meaning of this bit, see the <i>SCSI Multimedia Commands - 3 (MMC-3)</i> specification.
 
-`Reserved4`
+`Blank`
 
-Reserved.
-
-`Reserved5`
-
-Reserved.
-
-`Reserved6`
-
-Reserved.
-
-`Reserved7`
-
-Reserved7
+The blank bit, when set to 1, indicates that the track contains no written data and last recorded address field is invalid. For a complete explanation of the meaning of this bit, see the <i>SCSI Multimedia Commands - 3 (MMC-3)</i> specification.
 
 `ReservedTrack`
 
 The reserved track bit, when 1, indicates that the track is reserved.
 
-`SessionNumberLsb`
+`NWA_V`
 
-The least significant byte of the session number.
+A boolean value that indicates, when 1, that the value in <b>NextWritableAddress</b> is valid. If 0, the value in <b>NextWritableAddress</b> is invalid.
 
-`SessionNumberMsb`
+`LRA_V`
 
-The most significant byte of the session number.
+A boolean value that indicates whether the <b>LastRecordedAddress</b> member is valid or not. If <b>LRA_V</b> is 1, the <b>LastRecordedAddress</b> member is valid. If 0, the <b>LastRecordedAddress</b> member is not valid.
 
-`TrackMode`
+`Reserved6`
 
-The track mode. See the <i>SCSI-3 Multi-Media </i>specification for an explanation of meaning of this member.
+Reserved.
 
-`TrackNumberLsb`
+`TrackStartAddress`
 
-The least significant byte of the track number.
+The starting address of the specified track.
 
-`TrackNumberMsb`
+`NextWritableAddress`
 
-The most significant byte of the track number.
+The logical block address of the next writable user block in the track specified by the track number (<b>TrackNumberLsb</b> and <b>TrackNumberMsb</b>).
+
+`FreeBlocks`
+
+The maximum number of user data blocks that are available for recording in the track.
+
+`FixedPacketSize`
+
+The blocking factor. This value The fixed packet size is valid only when the Packet and the FP bits are both set to one.
 
 `TrackSize`
 
 Track Size is the number of user data blocks in the track.
 
-`TrackStartAddress`
+`LastRecordedAddress`
 
-The starting address of the specified track.
+
+
+`TrackNumberMsb`
+
+The most significant byte of the track number.
+
+`SessionNumberMsb`
+
+The most significant byte of the session number.
+
+`Reserved7`
+
+Reserved7
 
 
 ## Requirements

@@ -62,17 +62,13 @@ typedef struct _ROOTHUB_INFO {
 ## Members
 
 
+`Size`
+
+The size in bytes of this structure.
+
 `ControllerType`
 
 A <a href="..\ucxroothub\ne-ucxroothub-_controller_type.md">CONTROLLER_TYPE</a> value that identifies the type of eXtensible Host Controller Interface (xHCI) which has the root hub.
-
-`MaxU1ExitLatency`
-
-The exit latency for the slowest link for U1 transition.
-
-`MaxU2ExitLatency`
-
-The exit latency for the slowest link for U2 transition.
 
 `NumberOf20Ports`
 
@@ -82,9 +78,13 @@ The number of USB 2.0 ports connected to the root hub.
 
 The number of USB 3.0 ports connected to the root hub.
 
-`Size`
+`MaxU1ExitLatency`
 
-The size in bytes of this structure.
+The exit latency for the slowest link for U1 transition.
+
+`MaxU2ExitLatency`
+
+The exit latency for the slowest link for U2 transition.
 
 
 ## Requirements
@@ -95,11 +95,3 @@ The size in bytes of this structure.
 ## See Also
 
 <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_info.md">EVT_UCX_ROOTHUB_GET_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20ROOTHUB_INFO structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

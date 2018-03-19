@@ -65,6 +65,38 @@ typedef struct _CHANNEL_CONFIG_PARAMETERS_ENHANCED {
 ## Members
 
 
+`Flags`
+
+Combination of CFG_XXX flags.
+
+`Mtu`
+
+MTU for the direction.
+
+`FlushTO`
+
+Flush timeout for the direction
+
+`NumExtraOptions`
+
+Number of elements in the ExtraOptions array
+
+`ExtraOptions`
+
+Array of extra options
+
+`Flow`
+
+QOS for the direction
+
+`RetransmissionAndFlow`
+
+Retransmission and flow for the direction
+
+`Fcs`
+
+Frame check sequence
+
 `ExtendedFlowSpec`
 
 Extended flow specification for the L2CAP channel. This member is reserved. Do not use.
@@ -72,38 +104,6 @@ Extended flow specification for the L2CAP channel. This member is reserved. Do n
 `ExtendedWindowSize`
 
 Extended window size. This member is reserved. Do not use.
-
-`ExtraOptions`
-
-Array of extra options
-
-`Fcs`
-
-Frame check sequence
-
-`Flags`
-
-Combination of CFG_XXX flags.
-
-`Flow`
-
-QOS for the direction
-
-`FlushTO`
-
-Flush timeout for the direction
-
-`Mtu`
-
-MTU for the direction.
-
-`NumExtraOptions`
-
-Number of elements in the ExtraOptions array
-
-`RetransmissionAndFlow`
-
-Retransmission and flow for the direction
 
 
 ## Requirements

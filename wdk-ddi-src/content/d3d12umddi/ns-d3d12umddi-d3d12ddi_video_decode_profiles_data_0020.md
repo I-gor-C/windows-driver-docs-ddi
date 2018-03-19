@@ -62,13 +62,13 @@ typedef struct D3D12DDI_VIDEO_DECODE_PROFILES_DATA_0020 {
 
 In multi-adapter operation, this indicates which physical adapter of the device this operation applies to.
 
-`pProfiles`
-
-A pointer to the returned supported profiles.  The calling application allocates storage for the profile list.
-
 `ProfileCount`
 
 The number of profiles to retrieve.  The runtime ensures this value matches the value returned from PFND3D12DDI_VIDEO_GETCAPS with D3D12DDI_CAPSTYPE_VIDEO set to D3D12DDICAPS_TYPE_VIDEO_DECODE_PROFILE_COUNT.
+
+`pProfiles`
+
+A pointer to the returned supported profiles.  The calling application allocates storage for the profile list.
 
 
 ## Requirements

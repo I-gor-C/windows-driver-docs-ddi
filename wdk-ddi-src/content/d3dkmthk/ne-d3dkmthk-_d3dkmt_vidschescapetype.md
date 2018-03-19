@@ -67,27 +67,7 @@ typedef enum _D3DKMT_VIDSCHESCAPETYPE {
 <table>
             
                 <tr>
-                    <td>D3DKMT_VIDSCHESCAPETYPE_CONFIGURE_TDR_LIMIT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_VIDSCHESCAPETYPE_ENABLECONTEXTDELAY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_VIDSCHESCAPETYPE_PFN_CONTROL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>D3DKMT_VIDSCHESCAPETYPE_PREEMPTIONCONTROL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMT_VIDSCHESCAPETYPE_SUSPENDRESUME</td>
                     <td></td>
                 </tr>
             
@@ -102,7 +82,27 @@ typedef enum _D3DKMT_VIDSCHESCAPETYPE {
                 </tr>
             
                 <tr>
+                    <td>D3DKMT_VIDSCHESCAPETYPE_SUSPENDRESUME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDSCHESCAPETYPE_ENABLECONTEXTDELAY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDSCHESCAPETYPE_CONFIGURE_TDR_LIMIT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>D3DKMT_VIDSCHESCAPETYPE_VGPU_RESET</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDSCHESCAPETYPE_PFN_CONTROL</td>
                     <td></td>
                 </tr>
 </table>

@@ -66,11 +66,6 @@ typedef enum _STORAGE_ZONE_CONDITION {
 <table>
             
                 <tr>
-                    <td>ZoneConditionClosed</td>
-                    <td>N/A</td>
-                </tr>
-            
-                <tr>
                     <td>ZoneConditionConventional</td>
                     <td>N/A</td>
                 </tr>
@@ -81,7 +76,22 @@ typedef enum _STORAGE_ZONE_CONDITION {
                 </tr>
             
                 <tr>
+                    <td>ZoneConditionImplicitlyOpened</td>
+                    <td>N/A</td>
+                </tr>
+            
+                <tr>
                     <td>ZoneConditionExplicitlyOpened</td>
+                    <td>N/A</td>
+                </tr>
+            
+                <tr>
+                    <td>ZoneConditionClosed</td>
+                    <td>N/A</td>
+                </tr>
+            
+                <tr>
+                    <td>ZoneConditionReadOnly</td>
                     <td>N/A</td>
                 </tr>
             
@@ -91,17 +101,7 @@ typedef enum _STORAGE_ZONE_CONDITION {
                 </tr>
             
                 <tr>
-                    <td>ZoneConditionImplicitlyOpened</td>
-                    <td>N/A</td>
-                </tr>
-            
-                <tr>
                     <td>ZoneConditionOffline</td>
-                    <td>N/A</td>
-                </tr>
-            
-                <tr>
-                    <td>ZoneConditionReadOnly</td>
                     <td>N/A</td>
                 </tr>
 </table>

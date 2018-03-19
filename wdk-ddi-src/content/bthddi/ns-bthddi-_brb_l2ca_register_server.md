@@ -64,28 +64,20 @@ struct _BRB_L2CA_REGISTER_SERVER {
 ## Members
 
 
-`BtAddress`
-
-The address of the remote Bluetooth device to receive notifications for. Specify BTH_ADDR_NULL to
-     receive notification for any incoming connections.
-
 `Hdr`
 
 A 
      <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
-`IndicationCallback`
+`BtAddress`
 
-A 
-     <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>,
-     implemented by the profile driver, that the Bluetooth driver stack should call to notify the profile
-     driver about incoming L2CAP connections.
+The address of the remote Bluetooth device to receive notifications for. Specify BTH_ADDR_NULL to
+     receive notification for any incoming connections.
 
-`IndicationCallbackContext`
+`PSM`
 
-The context to be passed to the callback function that is specified in the 
-     <b>IndicationCallback</b> member.
+The Protocol/Service Multiplexer (PSM) that accepts connection requests.
 
 `IndicationFlags`
 
@@ -131,9 +123,17 @@ The profile driver will accept notifications when a device is unpersonalized.
 </tr>
 </table>
 
-`PSM`
+`IndicationCallback`
 
-The Protocol/Service Multiplexer (PSM) that accepts connection requests.
+A 
+     <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>,
+     implemented by the profile driver, that the Bluetooth driver stack should call to notify the profile
+     driver about incoming L2CAP connections.
+
+`IndicationCallbackContext`
+
+The context to be passed to the callback function that is specified in the 
+     <b>IndicationCallback</b> member.
 
 `ReferenceObject`
 
@@ -236,11 +236,3 @@ While this procedure allows a profile driver to accept incoming connection reque
 
 
 <a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_L2CA_REGISTER_SERVER structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

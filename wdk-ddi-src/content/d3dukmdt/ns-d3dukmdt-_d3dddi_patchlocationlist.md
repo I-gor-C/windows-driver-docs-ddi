@@ -71,13 +71,13 @@ typedef struct _D3DDDI_PATCHLOCATIONLIST {
 
 [in] An index of the element in the allocation list that specifies the allocation that is referenced by the patch location.
 
-`AllocationOffset`
-
-[in/out] The starting offset, in bytes, within the allocation that is referenced.
-
 `DriverId`
 
 [in/out] The driver-defined identifier of the allocation specification.
+
+`AllocationOffset`
+
+[in/out] The starting offset, in bytes, within the allocation that is referenced.
 
 `PatchOffset`
 
@@ -113,11 +113,3 @@ typedef struct _D3DDDI_PATCHLOCATIONLIST {
 
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_render.md">D3DDDICB_RENDER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_PATCHLOCATIONLIST structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

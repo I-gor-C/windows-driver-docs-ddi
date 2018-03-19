@@ -62,10 +62,6 @@ typedef struct _DXVA_ExtendedFormat {
 ## Members
 
 
-`NominalRange`
-
-Specifies whether sample data includes headroom (values beyond 1.0 white) and toeroom (superblacks below the reference 0.0 black). The 3 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva-_dxva_nominalrange.md">DXVA_NominalRange</a> enumeration type.
-
 `SampleFormat`
 
 Specifies how a video frame is sampled. The 8 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva-_dxva_sampleformat.md">DXVA_SampleFormat</a> enumeration type.
@@ -73,6 +69,14 @@ Specifies how a video frame is sampled. The 8 bits are defined by one of the enu
 `VideoChromaSubsampling`
 
 Specifies the chroma encoding scheme for Y'Cb'Cr' data. The 4 bits are defined by an ORed combination of the enumerators in the <a href="..\dxva\ne-dxva-_dxva_videochromasubsampling.md">DXVA_VideoChromaSubsampling</a> enumeration type.
+
+`NominalRange`
+
+Specifies whether sample data includes headroom (values beyond 1.0 white) and toeroom (superblacks below the reference 0.0 black). The 3 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva-_dxva_nominalrange.md">DXVA_NominalRange</a> enumeration type.
+
+`VideoTransferMatrix`
+
+Specifies the conversion matrix from Y'Cb'Cr' to (studio) R'G'B'. The 3 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva-_dxva_videotransfermatrix.md">DXVA_VideoTransferMatrix</a> enumeration type.
 
 `VideoLighting`
 
@@ -85,10 +89,6 @@ Specifies color primaries, which state which RGB basis functions are used. The 5
 `VideoTransferFunction`
 
 Specifies the conversion function from R'G'B' to RGB. The 5 bits are defined by the <a href="..\dxva\ne-dxva-_dxva_videotransferfunction.md">DXVA_VideoTransferFunction</a> enumeration type.
-
-`VideoTransferMatrix`
-
-Specifies the conversion matrix from Y'Cb'Cr' to (studio) R'G'B'. The 3 bits are defined by one of the enumerators in the <a href="..\dxva\ne-dxva-_dxva_videotransfermatrix.md">DXVA_VideoTransferMatrix</a> enumeration type.
 
 
 ## Requirements
@@ -124,11 +124,3 @@ Specifies the conversion matrix from Y'Cb'Cr' to (studio) R'G'B'. The 3 bits are
 
 
 <a href="..\dxva\ne-dxva-_dxva_videoprimaries.md">DXVA_VideoPrimaries</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_ExtendedFormat structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

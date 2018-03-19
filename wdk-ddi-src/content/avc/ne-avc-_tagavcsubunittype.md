@@ -72,48 +72,23 @@ typedef enum _tagAvcSubunitType {
 <table>
             
                 <tr>
+                    <td>AVC_SUBUNITTYPE_VIDEO_MONITOR</td>
+                    <td>Specifies a video monitor subunit type.</td>
+                </tr>
+            
+                <tr>
                     <td>AVC_SUBUNITTYPE_AUDIO</td>
                     <td>Specifies an audio subunit type.</td>
                 </tr>
             
                 <tr>
-                    <td>AVC_SUBUNITTYPE_BULLETINBOARD</td>
-                    <td>Specifies a bulletin board subunit type.</td>
-                </tr>
-            
-                <tr>
-                    <td>AVC_SUBUNITTYPE_CA</td>
-                    <td>Specifies a conditional access (CA) subunit type.</td>
-                </tr>
-            
-                <tr>
-                    <td>AVC_SUBUNITTYPE_CAMERASTORAGE</td>
-                    <td>Specifies a camera storage subunit type.</td>
+                    <td>AVC_SUBUNITTYPE_PRINTER</td>
+                    <td>Specifies a printer subunit type.</td>
                 </tr>
             
                 <tr>
                     <td>AVC_SUBUNITTYPE_DISC_PLAYER</td>
                     <td>Specifies a disc player subunit type.</td>
-                </tr>
-            
-                <tr>
-                    <td>AVC_SUBUNITTYPE_EXTENDED</td>
-                    <td>Specifies an extended subunit type.</td>
-                </tr>
-            
-                <tr>
-                    <td>AVC_SUBUNITTYPE_EXTENDED_FULL</td>
-                    <td>This is used only in extension bytes</td>
-                </tr>
-            
-                <tr>
-                    <td>AVC_SUBUNITTYPE_PANEL</td>
-                    <td>Specifies a panel subunit type.</td>
-                </tr>
-            
-                <tr>
-                    <td>AVC_SUBUNITTYPE_PRINTER</td>
-                    <td>Specifies a printer subunit type.</td>
                 </tr>
             
                 <tr>
@@ -127,13 +102,8 @@ typedef enum _tagAvcSubunitType {
                 </tr>
             
                 <tr>
-                    <td>AVC_SUBUNITTYPE_UNIT</td>
-                    <td>Specifies a generic subunit type.</td>
-                </tr>
-            
-                <tr>
-                    <td>AVC_SUBUNITTYPE_VENDOR_UNIQUE</td>
-                    <td>Specifies a vendor unique subunit type.</td>
+                    <td>AVC_SUBUNITTYPE_CA</td>
+                    <td>Specifies a conditional access (CA) subunit type.</td>
                 </tr>
             
                 <tr>
@@ -142,8 +112,38 @@ typedef enum _tagAvcSubunitType {
                 </tr>
             
                 <tr>
-                    <td>AVC_SUBUNITTYPE_VIDEO_MONITOR</td>
-                    <td>Specifies a video monitor subunit type.</td>
+                    <td>AVC_SUBUNITTYPE_PANEL</td>
+                    <td>Specifies a panel subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_BULLETINBOARD</td>
+                    <td>Specifies a bulletin board subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_CAMERASTORAGE</td>
+                    <td>Specifies a camera storage subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_VENDOR_UNIQUE</td>
+                    <td>Specifies a vendor unique subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_EXTENDED</td>
+                    <td>Specifies an extended subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_EXTENDED_FULL</td>
+                    <td>This is used only in extension bytes</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_UNIT</td>
+                    <td>Specifies a generic subunit type.</td>
                 </tr>
 </table>
 

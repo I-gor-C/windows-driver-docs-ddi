@@ -62,6 +62,11 @@ typedef enum _DOT11_TEMP_TYPE {
 <table>
             
                 <tr>
+                    <td>dot11_temp_type_unknown</td>
+                    <td>An uninitialized or unknown temperature type.</td>
+                </tr>
+            
+                <tr>
                     <td>dot11_temp_type_1</td>
                     <td>The commercial temperature range from 0 through 40 degrees Celsius.</td>
                 </tr>
@@ -69,11 +74,6 @@ typedef enum _DOT11_TEMP_TYPE {
                 <tr>
                     <td>dot11_temp_type_2</td>
                     <td>The industrial temperature range from -30 through 70 degrees Celsius.</td>
-                </tr>
-            
-                <tr>
-                    <td>dot11_temp_type_unknown</td>
-                    <td>An uninitialized or unknown temperature type.</td>
                 </tr>
 </table>
 
@@ -95,11 +95,3 @@ There are different operating temperature requirements dependent on the anticipa
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569431">OID_DOT11_TEMP_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_TEMP_TYPE enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

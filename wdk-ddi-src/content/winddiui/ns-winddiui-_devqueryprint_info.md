@@ -67,21 +67,13 @@ typedef struct _DEVQUERYPRINT_INFO {
 
 Spooler-supplied size, in bytes, of the DEVQUERYPRINT_INFO structure.
 
-`cchErrorStr`
+`Level`
 
-Spooler-supplied size, in bytes, of the string buffer pointed to by <b>pszErrorStr</b>.
-
-`cchNeeded`
-
-Driver-supplied length, in bytes, of the error string supplied in the buffer pointed to by <b>pszErrorStr</b>. If the string is too large to fit in the buffer, the string should be truncated, but the untruncated length should be specified here.
+Spooler-supplied level of the DEVQUERYPRINT_INFO structure. Currently, this member is always set to 1.
 
 `hPrinter`
 
 Spooler-supplied printer handle.
-
-`Level`
-
-Spooler-supplied level of the DEVQUERYPRINT_INFO structure. Currently, this member is always set to 1.
 
 `pDevMode`
 
@@ -90,6 +82,14 @@ Spooler-supplied pointer to a <a href="https://msdn.microsoft.com/library/window
 `pszErrorStr`
 
 Spooler-supplied pointer to a buffer to receive a NULL-terminated error text string, if the print job cannot be printed.
+
+`cchErrorStr`
+
+Spooler-supplied size, in bytes, of the string buffer pointed to by <b>pszErrorStr</b>.
+
+`cchNeeded`
+
+Driver-supplied length, in bytes, of the error string supplied in the buffer pointed to by <b>pszErrorStr</b>. If the string is too large to fit in the buffer, the string should be truncated, but the untruncated length should be specified here.
 
 
 ## Requirements
@@ -100,11 +100,3 @@ Spooler-supplied pointer to a buffer to receive a NULL-terminated error text str
 ## See Also
 
 <a href="..\winddiui\nf-winddiui-devqueryprintex.md">DevQueryPrintEx</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20DEVQUERYPRINT_INFO structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

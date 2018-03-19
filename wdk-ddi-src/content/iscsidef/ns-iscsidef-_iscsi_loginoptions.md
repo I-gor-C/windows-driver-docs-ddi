@@ -63,26 +63,6 @@ typedef struct _ISCSI_LoginOptions {
 ## Members
 
 
-`AuthType`
-
-A <a href="..\iscsidef\ne-iscsidef-piscsi_auth_types.md">ISCSI_AUTH_TYPES</a> value that indicates the authentication method that is used to establish a logon connection.
-
-`DataDigest`
-
-A <a href="..\iscsidef\ne-iscsidef-piscsi_digest_types.md">ISCSI_DIGEST_TYPES</a> value that indicates the method that the initiator uses to verify the integrity of the data digest in a logon PDU.
-
-`DefaultTime2Retain`
-
-The maximum time, in seconds, to reassign a connection after the initial wait that is indicated in <b>DefaultTime2Wait</b> has elapsed. The initiator and target negotiate to determine this value.
-
-`DefaultTime2Wait`
-
-The minimum time to wait, in seconds, before the initiator attempts to reconnect or reassign a connection (or task) that has been dropped after an unexpected connection termination or reset. The initiator and target negotiate to determine this value.
-
-`HeaderDigest`
-
-A <a href="..\iscsidef\ne-iscsidef-piscsi_digest_types.md">ISCSI_DIGEST_TYPES</a> value that indicates the method that the initiator uses to verify the integrity of the header digest in a logon PDU.
-
 `InformationSpecified`
 
 A bitmap that indicates which members of the ISCSI_LoginOptions structure contain valid data. The following table describes the possible values: 
@@ -174,6 +154,26 @@ The password to be used during logon.
 </tr>
 </table>
 
+`HeaderDigest`
+
+A <a href="..\iscsidef\ne-iscsidef-piscsi_digest_types.md">ISCSI_DIGEST_TYPES</a> value that indicates the method that the initiator uses to verify the integrity of the header digest in a logon PDU.
+
+`DataDigest`
+
+A <a href="..\iscsidef\ne-iscsidef-piscsi_digest_types.md">ISCSI_DIGEST_TYPES</a> value that indicates the method that the initiator uses to verify the integrity of the data digest in a logon PDU.
+
+`MaximumConnections`
+
+A value between 1 and 65535 that specifies the maximum number of connections to target devices that can be associated with a single logon session. A value of 0 indicates that there is no limit to the number of connections.
+
+`DefaultTime2Wait`
+
+The minimum time to wait, in seconds, before the initiator attempts to reconnect or reassign a connection (or task) that has been dropped after an unexpected connection termination or reset. The initiator and target negotiate to determine this value.
+
+`DefaultTime2Retain`
+
+The maximum time, in seconds, to reassign a connection after the initial wait that is indicated in <b>DefaultTime2Wait</b> has elapsed. The initiator and target negotiate to determine this value.
+
 `LoginFlags`
 
 A bitwise OR of logon flags that define certain characteristics of the logon session. The following table indicates the values that you can assign to this member.
@@ -245,9 +245,9 @@ Use RADIUS to verify CHAP response.
 </tr>
 </table>
 
-`MaximumConnections`
+`AuthType`
 
-A value between 1 and 65535 that specifies the maximum number of connections to target devices that can be associated with a single logon session. A value of 0 indicates that there is no limit to the number of connections.
+A <a href="..\iscsidef\ne-iscsidef-piscsi_auth_types.md">ISCSI_AUTH_TYPES</a> value that indicates the authentication method that is used to establish a logon connection.
 
 
 ## Requirements
@@ -266,11 +266,3 @@ A value between 1 and 65535 that specifies the maximum number of connections to 
 
 
 <a href="..\iscsidef\ne-iscsidef-piscsi_digest_types.md">ISCSI_DIGEST_TYPES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_LoginOptions structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -62,21 +62,17 @@ typedef struct D3DDDIARG_UPDATESUBRESOURCEUP {
 ## Members
 
 
-`DepthPitch`
+`hResource`
 
-The offset, in bytes, to move to the next depth slice of source data.
+A handle to the destination resource to copy to.
+
+`SubResourceIndex`
+
+The index of the destination subresource to which data is to be copied.
 
 `DstBox`
 
 A destination region, of type  <a href="..\d3dumddi\ns-d3dumddi-_d3dddibox.md">D3DDDIBOX</a>, of the subresource to which data is to be copied. If <b>Flags</b>-&gt;<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_copyflags.md">BoxValid</a> is not set, the entire subresource must be updated.
-
-`Flags`
-
-A <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_copyflags.md">D3DDDIARG_COPYFLAGS</a> structure that specifies additional characteristics of the subresource update operation.
-
-`hResource`
-
-A handle to the destination resource to copy to.
 
 `pSysMemUP`
 
@@ -86,9 +82,13 @@ A pointer to the beginning address of the source data that the <a href="..\d3dum
 
 The offset, in bytes, to move to the next row of source data.
 
-`SubResourceIndex`
+`DepthPitch`
 
-The index of the destination subresource to which data is to be copied.
+The offset, in bytes, to move to the next depth slice of source data.
+
+`Flags`
+
+A <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_copyflags.md">D3DDDIARG_COPYFLAGS</a> structure that specifies additional characteristics of the subresource update operation.
 
 
 ## Requirements
@@ -108,11 +108,3 @@ The index of the destination subresource to which data is to be copied.
 
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddibox.md">D3DDDIBOX</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_UPDATESUBRESOURCEUP structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

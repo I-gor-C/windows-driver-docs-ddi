@@ -70,6 +70,30 @@ typedef struct _DXGI1_2_DDI_BASE_FUNCTIONS {
 ## Members
 
 
+`pfnPresent`
+
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a> function.
+
+`pfnGetGammaCaps`
+
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff566790">GetGammaCapsDXGI</a> function.
+
+`pfnSetDisplayMode`
+
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569536">SetDisplayModeDXGI</a> function.
+
+`pfnSetResourcePriority`
+
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569657">SetResourcePriorityDXGI</a> function.
+
+`pfnQueryResourceResidency`
+
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569224">QueryResourceResidencyDXGI</a> function.
+
+`pfnRotateResourceIdentities`
+
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569514">RotateResourceIdentitiesDXGI</a> function.
+
 `pfnBlt`
 
 A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff538252">BltDXGI</a> function.
@@ -152,41 +176,17 @@ Additionally, to support stereo presentation, the BltDXGI function must allow an
 
 A pointer to a <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_blt1.md">DXGI_DDI_ARG_BLT1</a> structure that describes the parameters of a bit-block transfer (bitblt).
 
+`pfnResolveSharedResource`
+
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569488">ResolveSharedResourceDXGI</a> function.
+
 `pfnBlt1`
 
 A pointer to the driver's  <a href="https://msdn.microsoft.com/library/windows/hardware/hh406235">Blt1DXGI</a> function.
 
-`pfnCheckMultiplaneOverlaySupport`
-
-
-
-`pfnGetGammaCaps`
-
-A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff566790">GetGammaCapsDXGI</a> function.
-
-`pfnGetMultiplaneOverlayCaps`
-
-
-
-`pfnGetMultiplaneOverlayFilterRange`
-
-
-
 `pfnOfferResources`
 
 A pointer to the driver's <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_offerresources.md">pfnOfferResources</a> function.
-
-`pfnPresent`
-
-A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a> function.
-
-`pfnPresentMultiplaneOverlay`
-
-
-
-`pfnQueryResourceResidency`
-
-A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569224">QueryResourceResidencyDXGI</a> function.
 
 `pfnReclaimResources`
 
@@ -198,21 +198,21 @@ Called by the DXGI runtime to reclaim video memory resources that the user-mode 
 
 A pointer to a <a href="..\dxgiddi\ns-dxgiddi-_dxgi_ddi_arg_reclaimresources.md">DXGI_DDI_ARG_RECLAIMRESOURCES</a> structure that defines the video memory resources to reclaim.
 
-`pfnResolveSharedResource`
+`pfnGetMultiplaneOverlayCaps`
 
-A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569488">ResolveSharedResourceDXGI</a> function.
 
-`pfnRotateResourceIdentities`
 
-A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569514">RotateResourceIdentitiesDXGI</a> function.
+`pfnGetMultiplaneOverlayFilterRange`
 
-`pfnSetDisplayMode`
 
-A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569536">SetDisplayModeDXGI</a> function.
 
-`pfnSetResourcePriority`
+`pfnCheckMultiplaneOverlaySupport`
 
-A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569657">SetResourcePriorityDXGI</a> function.
+
+
+`pfnPresentMultiplaneOverlay`
+
+
 
 
 ## Requirements
@@ -240,11 +240,3 @@ A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/ha
 
 
 <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_base_functions.md">DXGI_DDI_BASE_FUNCTIONS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGI1_2_DDI_BASE_FUNCTIONS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

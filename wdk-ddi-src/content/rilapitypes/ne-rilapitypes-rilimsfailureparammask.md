@@ -63,7 +63,17 @@ typedef enum _RILIMSFAILUREPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_IMSFAILURE_ALL</td>
+                    <td>RIL_PARAM_IMSFAILURE_EXECUTOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_IMSFAILURE_MESSAGETYPE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_IMSFAILURE_MESSAGESUBTYPE</td>
                     <td></td>
                 </tr>
             
@@ -78,17 +88,7 @@ typedef enum _RILIMSFAILUREPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_IMSFAILURE_EXECUTOR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_IMSFAILURE_MESSAGESUBTYPE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_IMSFAILURE_MESSAGETYPE</td>
+                    <td>RIL_PARAM_IMSFAILURE_ALL</td>
                     <td></td>
                 </tr>
 </table>

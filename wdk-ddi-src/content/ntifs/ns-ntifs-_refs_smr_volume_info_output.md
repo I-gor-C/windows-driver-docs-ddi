@@ -65,45 +65,45 @@ typedef struct _REFS_SMR_VOLUME_INFO_OUTPUT {
 ## Members
 
 
+`Version`
+
+Currently ignored.  Will be set to zero for now.
+
 `Flags`
 
 Currently ignored. Will be set to zero for now.
-
-`FreeSpaceInRandomlyWritableTier`
-
-Specifies the free space within the randomly writable tier.
-
-`FreeSpaceInSMRTier`
-
-Specifies the free space the Shingled Magnetic Recording (SMR) tier.
 
 `SizeOfRandomlyWritableTier`
 
 Specifies the total size of the randomly writable tier.
 
+`FreeSpaceInRandomlyWritableTier`
+
+Specifies the free space within the randomly writable tier.
+
 `SizeofSMRTier`
 
 Specifies the total size of the Shingled Magnetic Recording (SMR) tier.
 
-`Unused`
+`FreeSpaceInSMRTier`
 
-Reserved for future use.
+Specifies the free space the Shingled Magnetic Recording (SMR) tier.
 
 `UsableFreeSpaceInSMRTier`
 
 Specifies the usable space the Shingled Magnetic Recording (SMR) tier.
 
-`Version`
+`VolumeGcState`
 
-Currently ignored.  Will be set to zero for now.
+Specifies the current state of the garbage collector.
 
 `VolumeGcLastStatus`
 
 Specifies the status of the last garbage collection using the specified method in <a href="..\ntifs\ne-ntifs-_refs_smr_volume_gc_method.md">REFS_SMR_VOLUME_GC_METHOD</a>.
 
-`VolumeGcState`
+`Unused`
 
-Specifies the current state of the garbage collector.
+Reserved for future use.
 
 
 ## Requirements

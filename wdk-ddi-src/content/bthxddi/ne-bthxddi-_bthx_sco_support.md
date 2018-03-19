@@ -60,6 +60,11 @@ typedef enum _BTHX_SCO_SUPPORT {
 <table>
             
                 <tr>
+                    <td>ScoSupportNone</td>
+                    <td>SCO is not supported.</td>
+                </tr>
+            
+                <tr>
                     <td>ScoSupportHCI</td>
                     <td>SCO data passes through the HCI layer (stack).</td>
                 </tr>
@@ -67,11 +72,6 @@ typedef enum _BTHX_SCO_SUPPORT {
                 <tr>
                     <td>ScoSupportHCIBypass</td>
                     <td>SCO data does not pass through the HCI layer but through a sideband mechanism like an I2S channel.</td>
-                </tr>
-            
-                <tr>
-                    <td>ScoSupportNone</td>
-                    <td>SCO is not supported.</td>
                 </tr>
 </table>
 

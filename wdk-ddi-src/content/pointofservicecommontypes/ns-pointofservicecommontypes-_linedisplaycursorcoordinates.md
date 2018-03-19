@@ -56,11 +56,11 @@ typedef struct _LineDisplayCursorCoordinates {
 ## Members
 
 
-`Column`
-
-
-
 `Row`
+
+
+
+`Column`
 
 
 

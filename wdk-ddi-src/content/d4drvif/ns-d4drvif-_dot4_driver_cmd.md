@@ -63,13 +63,13 @@ typedef struct _DOT4_DRIVER_CMD {
 
 Specifies the handle to the channel.
 
-`ulOffset`
-
-Specifies the offset into the  buffer.
-
 `ulSize`
 
 Specifies the length of the request.
+
+`ulOffset`
+
+Specifies the offset into the  buffer.
 
 `ulTimeout`
 

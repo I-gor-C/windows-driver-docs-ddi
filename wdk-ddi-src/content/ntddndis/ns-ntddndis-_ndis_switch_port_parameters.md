@@ -63,10 +63,6 @@ typedef struct _NDIS_SWITCH_PORT_PARAMETERS {
 ## Members
 
 
-`Flags`
-
-A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.
-
 `Header`
 
 The type, revision, and size of the <b>NDIS_SWITCH_PORT_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
@@ -83,13 +79,9 @@ Original version for NDIS 6.30 and later.
 
 Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_SWITCH_PORT_PARAMETERS_REVISION_1.
 
-`IsValidationPort`
+`Flags`
 
-If TRUE, indicates a port that is temporarily created for test and validation purposes before a VM network adapter connection is established. For more information about this port type, see <a href="https://msdn.microsoft.com/67556275-EF02-4996-A3A2-E9D5D6FCD1AF">Validation Ports</a>.
-
-`PortFriendlyName`
-
-An NDIS_SWITCH_PORT_FRIENDLYNAME value that specifies the user-friendly description of the extensible switch port.
+A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.
 
 `PortId`
 
@@ -101,13 +93,21 @@ An NDIS_SWITCH_PORT_NAME value that specifies the unique internal name of the ex
 
 The internal port name is used by WMI-based policy management applications. For more information, see <a href="https://msdn.microsoft.com/F58A4BC0-C5C6-440D-BEA3-2224F7051BA5">Managing Hyper-V Extensible Switch Policies</a>.
 
-`PortState`
+`PortFriendlyName`
 
-An <a href="..\ntddndis\ne-ntddndis-_ndis_switch_port_state.md">NDIS_SWITCH_PORT_STATE</a> value that specifies the current state of the port.
+An NDIS_SWITCH_PORT_FRIENDLYNAME value that specifies the user-friendly description of the extensible switch port.
 
 `PortType`
 
 An <a href="..\ntddndis\ne-ntddndis-_ndis_switch_port_type.md">NDIS_SWITCH_PORT_TYPE</a> value that specifies the type of the extensible switch port.
+
+`IsValidationPort`
+
+If TRUE, indicates a port that is temporarily created for test and validation purposes before a VM network adapter connection is established. For more information about this port type, see <a href="https://msdn.microsoft.com/67556275-EF02-4996-A3A2-E9D5D6FCD1AF">Validation Ports</a>.
+
+`PortState`
+
+An <a href="..\ntddndis\ne-ntddndis-_ndis_switch_port_state.md">NDIS_SWITCH_PORT_STATE</a> value that specifies the current state of the port.
 
 ## Remarks
 The <b>InformationBuffer</b> member of the <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>  structure contains a pointer to an <b>NDIS_SWITCH_PORT_PARAMETERS</b> structure for the following OID requests:
@@ -204,11 +204,3 @@ Extensible switch extensions can access the  port property buffer inside an <b>N
 
 
 <b></b>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

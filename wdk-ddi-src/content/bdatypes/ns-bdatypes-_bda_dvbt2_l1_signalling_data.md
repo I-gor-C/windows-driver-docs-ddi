@@ -69,7 +69,7 @@ typedef struct _BDA_DVBT2_L1_SIGNALLING_DATA {
 ## Members
 
 
-`L1PostData`
+`L1Pre_TYPE`
 
 
 
@@ -77,11 +77,7 @@ typedef struct _BDA_DVBT2_L1_SIGNALLING_DATA {
 
 
 
-`L1Pre_CELL_ID`
-
-
-
-`L1Pre_CRC32`
+`L1Pre_REPETITION_GUARD_PAPR`
 
 
 
@@ -89,31 +85,7 @@ typedef struct _BDA_DVBT2_L1_SIGNALLING_DATA {
 
 
 
-`L1Pre_NETWORK_ID`
-
-
-
-`L1Pre_NUM_DATA_REGENFLAG_L1POSTEXT`
-
-
-
-`L1Pre_NUM_T2_FRAMES`
-
-
-
-`L1Pre_NUMRF_CURRENTRF_RESERVED`
-
-
-
 `L1Pre_POSTSIZE_INFO_PILOT`
-
-
-
-`L1Pre_REPETITION_GUARD_PAPR`
-
-
-
-`L1Pre_T2SYSTEM_ID`
 
 
 
@@ -121,7 +93,35 @@ typedef struct _BDA_DVBT2_L1_SIGNALLING_DATA {
 
 
 
-`L1Pre_TYPE`
+`L1Pre_CELL_ID`
+
+
+
+`L1Pre_NETWORK_ID`
+
+
+
+`L1Pre_T2SYSTEM_ID`
+
+
+
+`L1Pre_NUM_T2_FRAMES`
+
+
+
+`L1Pre_NUM_DATA_REGENFLAG_L1POSTEXT`
+
+
+
+`L1Pre_NUMRF_CURRENTRF_RESERVED`
+
+
+
+`L1Pre_CRC32`
+
+
+
+`L1PostData`
 
 
 

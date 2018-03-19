@@ -75,11 +75,11 @@ typedef struct _RILOPERATORNAMES {
 
 
 
-`wszCountryCode`
-
-
-
 `wszLongName`
+
+
+
+`wszShortName`
 
 
 
@@ -87,7 +87,7 @@ typedef struct _RILOPERATORNAMES {
 
 
 
-`wszShortName`
+`wszCountryCode`
 
 
 

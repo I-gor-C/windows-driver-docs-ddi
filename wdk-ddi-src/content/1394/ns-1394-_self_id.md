@@ -69,59 +69,25 @@ typedef struct _SELF_ID {
 ## Members
 
 
-`SID_Contender`
+`SID_Phys_ID`
 
-One if this node is a contender for bus or isochronous resource manager, zero otherwise. This member contains bit 3 of byte 2 of the self-ID packet.
-
-`SID_Delay`
-
-Currently always zero. This member contains bits 4-5 of byte 2 of the self-ID packet.
-
-`SID_Gap_Count`
-
-Specifies the current value of the node's PHY_CONFIGURATION register's gap_count member. This member contains bits 0-5 of byte 1 of the self-ID packet.
-
-`SID_Initiated_Rst`
-
-One if this node initiated the most recent bus reset, zero otherwise. This member contains bit 1 of byte 3 of the self-ID packet.
-
-`SID_Link_Active`
-
-One if the device's link and transaction layers are active, zero otherwise. This member contains bit 6 of byte 1 of the self-ID packet.
-
-`SID_More_Packets`
-
-One if this packet will be followed by SELF_ID_MORE packets, zero otherwise. This member contains bit 0 of byte 3 of the self-ID packet.
+Specifies the device node number. This member contains bits 0-5 of byte 0 of the self-ID packet.
 
 `SID_Packet_ID`
 
 Must be PHY_PACKET_ID_SELF_ID. This member contains bits 6-7 of byte 0 of the self-ID packet.
 
-`SID_Phys_ID`
+`SID_Gap_Count`
 
-Specifies the device node number. This member contains bits 0-5 of byte 0 of the self-ID packet.
+Specifies the current value of the node's PHY_CONFIGURATION register's gap_count member. This member contains bits 0-5 of byte 1 of the self-ID packet.
 
-`SID_Port1`
+`SID_Link_Active`
 
-Specifies port status. Possible values are:
+One if the device's link and transaction layers are active, zero otherwise. This member contains bit 6 of byte 1 of the self-ID packet.
 
-SELF_ID_CONNECTED_TO_CHILD
+`SID_Zero`
 
-SELF_ID_CONNECTED_TO_PARENT
-
-SELF_ID_NOT_CONNECTED
-
-SELF_ID_NOT_PRESENT
-
-Member <b>SID_Port1</b> contains bits 2-3 of byte 3 of the self-ID packet. Member <b>SID_Port2</b> contains bits 4-5 of byte 3 of the self-ID packet. Member <b>SID_Port3</b> contains bits 6-7 of byte 3 of the self-ID packet.
-
-`SID_Port2`
-
-Byte 3 - Bits 4-5
-
-`SID_Port3`
-
-Byte 3 - Bits 2-3
+Always zero. This member contains bit 7 of byte 1 of the self-ID packet.
 
 `SID_Power_Class`
 
@@ -144,6 +110,14 @@ POWER_CLASS_IS_POWERED_UPTO_1W_NEEDS_5W
 POWER_CLASS_IS_POWERED_UPTO_1W_NEEDS_9W
 
 This member contains bits 0-2 of byte 2 of the self-ID packet.
+
+`SID_Contender`
+
+One if this node is a contender for bus or isochronous resource manager, zero otherwise. This member contains bit 3 of byte 2 of the self-ID packet.
+
+`SID_Delay`
+
+Currently always zero. This member contains bits 4-5 of byte 2 of the self-ID packet.
 
 `SID_Speed`
 
@@ -196,9 +170,35 @@ Reserved (generally treated as S400/S800 speed)
 </tr>
 </table>
 
-`SID_Zero`
+`SID_More_Packets`
 
-Always zero. This member contains bit 7 of byte 1 of the self-ID packet.
+One if this packet will be followed by SELF_ID_MORE packets, zero otherwise. This member contains bit 0 of byte 3 of the self-ID packet.
+
+`SID_Initiated_Rst`
+
+One if this node initiated the most recent bus reset, zero otherwise. This member contains bit 1 of byte 3 of the self-ID packet.
+
+`SID_Port3`
+
+Byte 3 - Bits 2-3
+
+`SID_Port2`
+
+Byte 3 - Bits 4-5
+
+`SID_Port1`
+
+Specifies port status. Possible values are:
+
+SELF_ID_CONNECTED_TO_CHILD
+
+SELF_ID_CONNECTED_TO_PARENT
+
+SELF_ID_NOT_CONNECTED
+
+SELF_ID_NOT_PRESENT
+
+Member <b>SID_Port1</b> contains bits 2-3 of byte 3 of the self-ID packet. Member <b>SID_Port2</b> contains bits 4-5 of byte 3 of the self-ID packet. Member <b>SID_Port3</b> contains bits 6-7 of byte 3 of the self-ID packet.
 
 ## Remarks
 This structure corresponds to self ID packet 0, as described in the <i>P1394a</i> specification.
@@ -211,11 +211,3 @@ This structure corresponds to self ID packet 0, as described in the <i>P1394a</i
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538877">TOPOLOGY_MAP</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20SELF_ID structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

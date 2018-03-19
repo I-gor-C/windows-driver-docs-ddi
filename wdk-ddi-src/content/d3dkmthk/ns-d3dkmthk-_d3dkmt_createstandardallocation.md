@@ -60,13 +60,13 @@ typedef struct _D3DKMT_CREATESTANDARDALLOCATION {
 ## Members
 
 
-`Flags`
-
-Holds the flags needed to create a standard allocation.
-
 `Type`
 
 The type of the standard allocation.
+
+`Flags`
+
+Holds the flags needed to create a standard allocation.
 
 
 ## Requirements

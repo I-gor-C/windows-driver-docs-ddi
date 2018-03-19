@@ -65,78 +65,13 @@ typedef struct _STOR_REQUEST_INFO_V1 {
 ## Members
 
 
-`Flags`
+`Version`
 
-Flags set for handling the request. May be a combination of these values:
+The version of this structure. Set this member to <b>STOR_REQUEST_INFO_VER_1</b>.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="REQUEST_INFO_NO_CACHE_FLAG"></a><a id="request_info_no_cache_flag"></a><dl>
-<dt><b>REQUEST_INFO_NO_CACHE_FLAG</b></dt>
-</dl>
-</td>
-<td width="60%">
-Non-cached writes are specified for this request.
+`Size`
 
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="REQUEST_INFO_PAGING_IO_FLAG"></a><a id="request_info_paging_io_flag"></a><dl>
-<dt><b>REQUEST_INFO_PAGING_IO_FLAG</b></dt>
-</dl>
-</td>
-<td width="60%">
-Paging IO is specified for this request.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="REQUEST_INFO_SEQUENTIAL_IO_FLAG"></a><a id="request_info_sequential_io_flag"></a><dl>
-<dt><b>REQUEST_INFO_SEQUENTIAL_IO_FLAG</b></dt>
-</dl>
-</td>
-<td width="60%">
-Reads or writes are sequential.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="REQUEST_INFO_TEMPORARY_FLAG"></a><a id="request_info_temporary_flag"></a><dl>
-<dt><b>REQUEST_INFO_TEMPORARY_FLAG</b></dt>
-</dl>
-</td>
-<td width="60%">
-The file for this request is temporary.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="REQUEST_INFO_WRITE_THROUGH_FLAG"></a><a id="request_info_write_through_flag"></a><dl>
-<dt><b>REQUEST_INFO_WRITE_THROUGH_FLAG</b></dt>
-</dl>
-</td>
-<td width="60%">
-No system buffering for the request.
-
-</td>
-</tr>
-</table>
-
-`IsWriteRequest`
-
-True if this is a write request. Otherwise, false, if this is a read request.
-
-`Key`
-
-The read or write key for the request.
-
-`Length`
-
-The length of the data in this request.
+The size of this structure. Set this value to <b>sizeof</b>(STOR_REQUEST_INFO).
 
 `PriorityHint`
 
@@ -204,17 +139,82 @@ Critical priority.
 </tr>
 </table>
 
+`Flags`
+
+Flags set for handling the request. May be a combination of these values:
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="REQUEST_INFO_NO_CACHE_FLAG"></a><a id="request_info_no_cache_flag"></a><dl>
+<dt><b>REQUEST_INFO_NO_CACHE_FLAG</b></dt>
+</dl>
+</td>
+<td width="60%">
+Non-cached writes are specified for this request.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="REQUEST_INFO_PAGING_IO_FLAG"></a><a id="request_info_paging_io_flag"></a><dl>
+<dt><b>REQUEST_INFO_PAGING_IO_FLAG</b></dt>
+</dl>
+</td>
+<td width="60%">
+Paging IO is specified for this request.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="REQUEST_INFO_SEQUENTIAL_IO_FLAG"></a><a id="request_info_sequential_io_flag"></a><dl>
+<dt><b>REQUEST_INFO_SEQUENTIAL_IO_FLAG</b></dt>
+</dl>
+</td>
+<td width="60%">
+Reads or writes are sequential.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="REQUEST_INFO_TEMPORARY_FLAG"></a><a id="request_info_temporary_flag"></a><dl>
+<dt><b>REQUEST_INFO_TEMPORARY_FLAG</b></dt>
+</dl>
+</td>
+<td width="60%">
+The file for this request is temporary.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="REQUEST_INFO_WRITE_THROUGH_FLAG"></a><a id="request_info_write_through_flag"></a><dl>
+<dt><b>REQUEST_INFO_WRITE_THROUGH_FLAG</b></dt>
+</dl>
+</td>
+<td width="60%">
+No system buffering for the request.
+
+</td>
+</tr>
+</table>
+
+`Key`
+
+The read or write key for the request.
+
+`Length`
+
+The length of the data in this request.
+
+`IsWriteRequest`
+
+True if this is a write request. Otherwise, false, if this is a read request.
+
 `Reserved`
 
 Reserved.
-
-`Size`
-
-The size of this structure. Set this value to <b>sizeof</b>(STOR_REQUEST_INFO).
-
-`Version`
-
-The version of this structure. Set this member to <b>STOR_REQUEST_INFO_VER_1</b>.
 
 ## Remarks
 The caller to <a href="..\storport\nf-storport-storportgetrequestinfo.md">StorPortGetRequestInfo</a> allocates the <b>STOR_REQUEST_INFO</b> structure. Prior to calling <b>StorPortGetRequestInfo</b>,  <b>Version</b> must be set to <b>STOR_REQUEST_INFO_VER_1</b> and <b>Size</b> must be set to <b>sizeof</b>(STOR_REQUEST_INFO). Otherwise, <b>StorPortGetRequestInfo</b> will return with a status of <b>STOR_STATUS_INVALID_PARAMETER</b>.
@@ -228,11 +228,3 @@ The caller to <a href="..\storport\nf-storport-storportgetrequestinfo.md">StorPo
 ## See Also
 
 <a href="..\storport\nf-storport-storportgetrequestinfo.md">StorPortGetRequestInfo</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20_STOR_REQUEST_INFO_V1 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -61,11 +61,11 @@ typedef struct _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES {
 ## Members
 
 
-`CbDataSize`
-
-
-
 `CbSize`
+
+
+
+`CbDataSize`
 
 
 

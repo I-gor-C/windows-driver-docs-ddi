@@ -69,19 +69,6 @@ typedef struct _NDIS_SHARED_MEMORY_PARAMETERS {
 ## Members
 
 
-`Flags`
-
-A UCHAR value that contains a bitwise OR of the following value:
-     
-
-
-
-
-
-#### NDIS_SHARED_MEM_PARAMETERS_CONTIGOUS
-
-The shared memory is in a contiguous block of memory.
-
 `Header`
 
 The type, revision, and size of the NDIS_SHARED_MEMORY_PARAMETERS structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
@@ -106,13 +93,18 @@ Original version for NDIS 6.20.
 
 Set the <b>Size</b> member to NDIS_SIZEOF_SHARED_MEMORY_PARAMETERS_REVISION_1.
 
-`Length`
+`Flags`
 
-A ULONG value that contains the length, in bytes, of the shared memory block.
+A UCHAR value that contains a bitwise OR of the following value:
+     
 
-`PreferredNode`
 
-A NODE_REQUIREMENT value that indicates the preferred node to use while allocating memory. If the driver does not have a preference, then the value must be set to MM_ANY_NODE_OK.
+
+
+
+#### NDIS_SHARED_MEM_PARAMETERS_CONTIGOUS
+
+The shared memory is in a contiguous block of memory.
 
 `QueueId`
 
@@ -123,15 +115,6 @@ An NDIS_RECEIVE_QUEUE_ID value that contains a virtual machine queue (VMQ) or si
 <div class="alert"><b>Note</b>  Starting with Windows Server 2012, the SR-IOV interface only supports the default receive queue on both default and nondefault virtual ports (VPorts). Miniport drivers that support the SR-IOV interface must set the <b>QueueId</b> member to NDIS_DEFAULT_RECEIVE_QUEUE_ID.</div>
 <div> </div>
 
-`SGListBuffer`
-
-A pointer to a 
-     <a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a> structure.
-
-`SGListBufferLength`
-
-A ULONG value that contains the length, in bytes, of the scatter gather list buffer.
-
 `SharedMemoryHandle`
 
 An NDIS_HANDLE value that identifies a block of shared memory. NDIS provides this handle before it
@@ -139,17 +122,34 @@ An NDIS_HANDLE value that identifies a block of shared memory. NDIS provides thi
      <a href="..\ndis\nf-ndis-ndisallocatesharedmemory.md">
      NdisAllocateSharedMemory</a> function.
 
+`PreferredNode`
+
+A NODE_REQUIREMENT value that indicates the preferred node to use while allocating memory. If the driver does not have a preference, then the value must be set to MM_ANY_NODE_OK.
+
 `Usage`
 
 An 
      <a href="..\ndis\ne-ndis-_ndis_shared_memory_usage.md">NDIS_SHARED_MEMORY_USAGE</a> enumeration
      value that specifies the purpose of the shared memory.
 
+`Length`
+
+A ULONG value that contains the length, in bytes, of the shared memory block.
+
 `VirtualAddress`
 
 A PVOID value that contains the base virtual address of the shared memory. NDIS provides this
      value before it returns from the 
      <b>NdisAllocateSharedMemory</b> function.
+
+`SGListBufferLength`
+
+A ULONG value that contains the length, in bytes, of the scatter gather list buffer.
+
+`SGListBuffer`
+
+A pointer to a 
+     <a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a> structure.
 
 `VPortId`
 
@@ -195,11 +195,3 @@ NDIS drivers pass this structure to the
 
 
 <a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SHARED_MEMORY_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

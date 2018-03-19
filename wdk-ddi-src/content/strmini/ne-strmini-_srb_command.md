@@ -99,63 +99,13 @@ typedef enum _SRB_COMMAND {
 <table>
             
                 <tr>
-                    <td>SRB_BEGIN_FLUSH</td>
-                    <td>Stream-specific code that begins the flush state.</td>
+                    <td>SRB_READ_DATA</td>
+                    <td>Stream-specific code that specifies to read data from hardware.</td>
                 </tr>
             
                 <tr>
-                    <td>SRB_CHANGE_POWER_STATE</td>
-                    <td>Device instance-specific code that changes the power state.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_CLOSE_DEVICE_INSTANCE</td>
-                    <td>Device instance-specific code that closes an instance of the device.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_CLOSE_MASTER_CLOCK</td>
-                    <td>Stream-specific code that indicates that the master clock is closed.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_CLOSE_STREAM</td>
-                    <td>Device instance-specific code that closes the specific stream.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_DEVICE_METHOD</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_END_FLUSH</td>
-                    <td>Stream-specific code that ends the flush state.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_GET_DATA_FORMAT</td>
-                    <td>Stream-specific code that returns the current data format.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_GET_DATA_INTERSECTION</td>
-                    <td>Device instance-specific code that returns stream data intersection.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_GET_DEVICE_PROPERTY</td>
-                    <td>Device instance-specific code that gets the property of the device.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_GET_STREAM_INFO</td>
-                    <td>Device instance-specific code that gets the stream information structure.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_GET_STREAM_PROPERTY</td>
-                    <td>Stream-specific code that specifies to get a property value for the stream.</td>
+                    <td>SRB_WRITE_DATA</td>
+                    <td>Stream-specific code that specifies to write data to the hardware.</td>
                 </tr>
             
                 <tr>
@@ -164,68 +114,8 @@ typedef enum _SRB_COMMAND {
                 </tr>
             
                 <tr>
-                    <td>SRB_INDICATE_MASTER_CLOCK</td>
-                    <td>Stream-specific code that specifies that the handle is supplied to the master clock.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_INITIALIZATION_COMPLETE</td>
-                    <td>Device instance-specific code that indicates that the initialization sequence has completed.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_INITIALIZE_DEVICE</td>
-                    <td>Device instance-specific code that initializes the device.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_NOTIFY_IDLE_STATE</td>
-                    <td>Device instance-specific code that specifies to call on first open and last close.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_OPEN_DEVICE_INSTANCE</td>
-                    <td>Device instance-specific code that opens an instance of the device.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_OPEN_MASTER_CLOCK</td>
-                    <td>Stream-specific code that indicates that the master clock is on this stream.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_OPEN_STREAM</td>
-                    <td>Device instance-specific code that opens the specified stream.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_PAGING_OUT_DRIVER</td>
-                    <td>Device instance-specific code that indicates that the driver is to be paged out only if it is enabled in the registry. Board ints should be disabled and STATUS_SUCCESS returned.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_PROPOSE_DATA_FORMAT</td>
-                    <td>Stream-specific code that specifies that a new rate is proposed, it does not change the rate.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_PROPOSE_STREAM_RATE</td>
-                    <td>Stream-specific code that indicates a new rate is proposed, it does not change the rate.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_READ_DATA</td>
-                    <td>Stream-specific code that specifies to read data from hardware.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_SET_DATA_FORMAT</td>
-                    <td>Stream-specific code that sets a new data format.</td>
-                </tr>
-            
-                <tr>
-                    <td>SRB_SET_DEVICE_PROPERTY</td>
-                    <td>Device instance-specific code that sets the property of the device.</td>
+                    <td>SRB_SET_STREAM_STATE</td>
+                    <td>Stream-specific code that specifies to set the state of the stream.</td>
                 </tr>
             
                 <tr>
@@ -234,23 +124,108 @@ typedef enum _SRB_COMMAND {
                 </tr>
             
                 <tr>
+                    <td>SRB_GET_STREAM_PROPERTY</td>
+                    <td>Stream-specific code that specifies to get a property value for the stream.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_OPEN_MASTER_CLOCK</td>
+                    <td>Stream-specific code that indicates that the master clock is on this stream.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_INDICATE_MASTER_CLOCK</td>
+                    <td>Stream-specific code that specifies that the handle is supplied to the master clock.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_UNKNOWN_STREAM_COMMAND</td>
+                    <td>Stream-specific code that specifies that the IRP function is unknown to the class driver.</td>
+                </tr>
+            
+                <tr>
                     <td>SRB_SET_STREAM_RATE</td>
                     <td>Stream-specific code that specifies that the rate is set at which the stream should run.</td>
                 </tr>
             
                 <tr>
-                    <td>SRB_SET_STREAM_STATE</td>
-                    <td>Stream-specific code that specifies to set the state of the stream.</td>
+                    <td>SRB_PROPOSE_DATA_FORMAT</td>
+                    <td>Stream-specific code that specifies that a new rate is proposed, it does not change the rate.</td>
                 </tr>
             
                 <tr>
-                    <td>SRB_STREAM_METHOD</td>
-                    <td></td>
+                    <td>SRB_CLOSE_MASTER_CLOCK</td>
+                    <td>Stream-specific code that indicates that the master clock is closed.</td>
                 </tr>
             
                 <tr>
-                    <td>SRB_SURPRISE_REMOVAL</td>
-                    <td>Device instance-specific code that indicates a surprise removal of hardware has occurred.</td>
+                    <td>SRB_PROPOSE_STREAM_RATE</td>
+                    <td>Stream-specific code that indicates a new rate is proposed, it does not change the rate.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_SET_DATA_FORMAT</td>
+                    <td>Stream-specific code that sets a new data format.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_GET_DATA_FORMAT</td>
+                    <td>Stream-specific code that returns the current data format.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_BEGIN_FLUSH</td>
+                    <td>Stream-specific code that begins the flush state.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_END_FLUSH</td>
+                    <td>Stream-specific code that ends the flush state.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_GET_STREAM_INFO</td>
+                    <td>Device instance-specific code that gets the stream information structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_OPEN_STREAM</td>
+                    <td>Device instance-specific code that opens the specified stream.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_CLOSE_STREAM</td>
+                    <td>Device instance-specific code that closes the specific stream.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_OPEN_DEVICE_INSTANCE</td>
+                    <td>Device instance-specific code that opens an instance of the device.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_CLOSE_DEVICE_INSTANCE</td>
+                    <td>Device instance-specific code that closes an instance of the device.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_GET_DEVICE_PROPERTY</td>
+                    <td>Device instance-specific code that gets the property of the device.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_SET_DEVICE_PROPERTY</td>
+                    <td>Device instance-specific code that sets the property of the device.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_INITIALIZE_DEVICE</td>
+                    <td>Device instance-specific code that initializes the device.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_CHANGE_POWER_STATE</td>
+                    <td>Device instance-specific code that changes the power state.</td>
                 </tr>
             
                 <tr>
@@ -264,13 +239,38 @@ typedef enum _SRB_COMMAND {
                 </tr>
             
                 <tr>
-                    <td>SRB_UNKNOWN_STREAM_COMMAND</td>
-                    <td>Stream-specific code that specifies that the IRP function is unknown to the class driver.</td>
+                    <td>SRB_PAGING_OUT_DRIVER</td>
+                    <td>Device instance-specific code that indicates that the driver is to be paged out only if it is enabled in the registry. Board ints should be disabled and STATUS_SUCCESS returned.</td>
                 </tr>
             
                 <tr>
-                    <td>SRB_WRITE_DATA</td>
-                    <td>Stream-specific code that specifies to write data to the hardware.</td>
+                    <td>SRB_GET_DATA_INTERSECTION</td>
+                    <td>Device instance-specific code that returns stream data intersection.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_INITIALIZATION_COMPLETE</td>
+                    <td>Device instance-specific code that indicates that the initialization sequence has completed.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_SURPRISE_REMOVAL</td>
+                    <td>Device instance-specific code that indicates a surprise removal of hardware has occurred.</td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_DEVICE_METHOD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_STREAM_METHOD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>SRB_NOTIFY_IDLE_STATE</td>
+                    <td>Device instance-specific code that specifies to call on first open and last close.</td>
                 </tr>
 </table>
 

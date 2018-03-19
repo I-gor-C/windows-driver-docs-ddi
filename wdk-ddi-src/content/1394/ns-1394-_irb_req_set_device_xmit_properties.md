@@ -57,10 +57,6 @@ typedef struct _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES {
 ## Members
 
 
-`fulPriority`
-
-Specifies the priority.
-
 `fulSpeed`
 
 Specifies the maximum speed for transactions to the device. The possible speed values are SPEED_FLAGS_xxx, where xxx is the (approximate) transfer rate in megabits per second. Existing hardware supports transfer rates of 100, 200, and 400 Mb/sec.
@@ -107,6 +103,10 @@ Reserved.
 
 <div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">New Flags for Speed and Payload Size</a> and <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div>
 <div> </div>
+
+`fulPriority`
+
+Specifies the priority.
 
 ## Remarks
 By default, the maximum permitted transmission speed is the physical maximum. A driver should use this request to lower the maximum permitted speed.

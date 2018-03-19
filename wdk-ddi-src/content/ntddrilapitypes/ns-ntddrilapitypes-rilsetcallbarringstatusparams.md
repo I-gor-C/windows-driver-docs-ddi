@@ -66,14 +66,6 @@ typedef struct _RILSETCALLBARRINGSTATUSPARAMS {
 
 
 
-`dwInfoClasses`
-
-
-
-`dwStatus`
-
-
-
 `dwType`
 
 
@@ -82,11 +74,19 @@ typedef struct _RILSETCALLBARRINGSTATUSPARAMS {
 
 
 
+`dwInfoClasses`
+
+
+
 `fPassword`
 
 
 
 `szPassword`
+
+
+
+`dwStatus`
 
 
 

@@ -59,6 +59,37 @@ typedef struct _OPLOCK_KEY_CONTEXT {
 ## Members
 
 
+`Version`
+
+The oplock key version. The version is set to one of the following values.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="OPLOCK_KEY_VERSION_WIN7"></a><a id="oplock_key_version_win7"></a><dl>
+<dt><b>OPLOCK_KEY_VERSION_WIN7</b></dt>
+</dl>
+</td>
+<td width="60%">
+This is a Windows 7 oplock key.
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="OPLOCK_KEY_VERSION_WIN8"></a><a id="oplock_key_version_win8"></a><dl>
+<dt><b>OPLOCK_KEY_VERSION_WIN8</b></dt>
+</dl>
+</td>
+<td width="60%">
+This is a Windows 8 oplock key.
+
+</td>
+</tr>
+</table>
+
 `Flags`
 
 A set of flags that indicate the oplock key type. <b>Flags</b> is set to one or both of the following values.
@@ -94,44 +125,13 @@ A valid oplock key is present in <b>TargetOplockKey.</b>
 
 A <b>GUID</b>  that represents the parent oplock  key value.
 
-`Reserved`
-
-
-
 `TargetOplockKey`
 
 A <b>GUID</b>  that represents the target oplock  key value.
 
-`Version`
+`Reserved`
 
-The oplock key version. The version is set to one of the following values.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="OPLOCK_KEY_VERSION_WIN7"></a><a id="oplock_key_version_win7"></a><dl>
-<dt><b>OPLOCK_KEY_VERSION_WIN7</b></dt>
-</dl>
-</td>
-<td width="60%">
-This is a Windows 7 oplock key.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="OPLOCK_KEY_VERSION_WIN8"></a><a id="oplock_key_version_win8"></a><dl>
-<dt><b>OPLOCK_KEY_VERSION_WIN8</b></dt>
-</dl>
-</td>
-<td width="60%">
-This is a Windows 8 oplock key.
-
-</td>
-</tr>
-</table>
 
 ## Remarks
 If an oplock is requested for a file during an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> request, a file system that supports oplocks   will attach an oplock key context to the file object created. The oplock key  context is later available through a pointer to an <b>OPLOCK_KEY_CONTEXT</b> structure.  The <b>OPLOCK_KEY_CONTEXT</b> structure is returned from a call to <a href="..\ntddk\nf-ntddk-iogetoplockkeycontextex.md">IoGetOplockKeyContextEx</a>.
@@ -153,11 +153,3 @@ If an oplock is requested for a file during an <a href="https://msdn.microsoft.c
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406392">DUAL_OPLOCK_KEY_ECP_CONTEXT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20OPLOCK_KEY_CONTEXT structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

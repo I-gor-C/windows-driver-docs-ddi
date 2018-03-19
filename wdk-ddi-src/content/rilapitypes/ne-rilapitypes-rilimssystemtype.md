@@ -61,22 +61,22 @@ typedef enum _RILIMSSYSTEMTYPE {
 <table>
             
                 <tr>
-                    <td>RIL_IMSSYSTEMTYPE_LTE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_IMSSYSTEMTYPE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_IMSSYSTEMTYPE_UNKNOWN</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_IMSSYSTEMTYPE_WIFI</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMSSYSTEMTYPE_LTE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMSSYSTEMTYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

@@ -59,14 +59,6 @@ typedef struct {
 ## Members
 
 
-`NotificationText`
-
-
-
-`RequestorId`
-
-
-
 `Size`
 
 Structure size.
@@ -74,6 +66,14 @@ Structure size.
 `Version`
 
 Version number.
+
+`RequestorId`
+
+
+
+`NotificationText`
+
+
 
 
 ## Requirements

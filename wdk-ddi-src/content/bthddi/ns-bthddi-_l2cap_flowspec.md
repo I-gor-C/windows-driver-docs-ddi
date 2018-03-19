@@ -62,19 +62,7 @@ typedef struct _L2CAP_FLOWSPEC {
 ## Members
 
 
-`DelayVariation`
-
-Reserved.
-
 `Flags`
-
-Reserved.
-
-`Latency`
-
-Reserved.
-
-`PeakBandwidth`
 
 Reserved.
 
@@ -82,11 +70,23 @@ Reserved.
 
 Reserved.
 
+`TokenRate`
+
+Reserved.
+
 `TokenBucketSize`
 
 Reserved.
 
-`TokenRate`
+`PeakBandwidth`
+
+Reserved.
+
+`Latency`
+
+Reserved.
+
+`DelayVariation`
 
 Reserved.
 

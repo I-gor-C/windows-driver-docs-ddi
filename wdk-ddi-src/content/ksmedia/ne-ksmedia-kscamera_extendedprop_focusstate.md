@@ -62,13 +62,8 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FAILED</td>
-                    <td>The focus state is failed.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FOCUSED</td>
-                    <td>The focus state is focused.</td>
+                    <td>KSCAMERA_EXTENDEDPROP_FOCUSSTATE_UNINITIALIZED</td>
+                    <td>The focus state is not initialized.</td>
                 </tr>
             
                 <tr>
@@ -82,8 +77,13 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSCAMERA_EXTENDEDPROP_FOCUSSTATE_UNINITIALIZED</td>
-                    <td>The focus state is not initialized.</td>
+                    <td>KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FOCUSED</td>
+                    <td>The focus state is focused.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FAILED</td>
+                    <td>The focus state is failed.</td>
                 </tr>
 </table>
 

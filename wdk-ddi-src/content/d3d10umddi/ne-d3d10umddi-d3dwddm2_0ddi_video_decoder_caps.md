@@ -66,17 +66,17 @@ typedef enum D3DWDDM2_0DDI_VIDEO_DECODER_CAPS {
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM2_0DDI_VIDEO_DECODER_CAP_DOWNSAMPLE_REQUIRED</td>
-                    <td>Indicates that the decode configuration can be supported only if down sampling is applied.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DWDDM2_0DDI_VIDEO_DECODER_CAP_NON_REAL_TIME</td>
                     <td>The decode operation is supported, but cannot be performed real-time.  Indicates that the decode hardware cannot support the decode operation in real-time. Decode is still viable for transcode scenarios. 
 
 
 
 It is possible that decode can occur in real-time if downsampling is applied.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DWDDM2_0DDI_VIDEO_DECODER_CAP_DOWNSAMPLE_REQUIRED</td>
+                    <td>Indicates that the decode configuration can be supported only if down sampling is applied.</td>
                 </tr>
             
                 <tr>
@@ -95,11 +95,3 @@ It is possible that decode can occur in real-time if downsampling is applied.</t
 ## See Also
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm2_0ddi_queryvideocapabilities.md">QueryVideoCapabilities</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DWDDM2_0DDI_VIDEO_DECODER_CAPS enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

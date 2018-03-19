@@ -65,6 +65,11 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>MIRACAST_CHUNK_TYPE_UNKNOWN</td>
+                    <td>An unknown or undefined chunk type.</td>
+                </tr>
+            
+                <tr>
                     <td>MIRACAST_CHUNK_TYPE_COLOR_CONVERT_COMPLETE</td>
                     <td>Color conversion has completed on the chunk.</td>
                 </tr>
@@ -72,6 +77,16 @@ typedef enum  {
                 <tr>
                     <td>MIRACAST_CHUNK_TYPE_ENCODE_COMPLETE</td>
                     <td>Encoding has completed on the chunk.</td>
+                </tr>
+            
+                <tr>
+                    <td>MIRACAST_CHUNK_TYPE_FRAME_START</td>
+                    <td>The chunk is at the start of the Wi-Fi frame.</td>
+                </tr>
+            
+                <tr>
+                    <td>MIRACAST_CHUNK_TYPE_FRAME_DROPPED</td>
+                    <td>The chunk is in a dropped Wi-Fi frame.</td>
                 </tr>
             
                 <tr>
@@ -87,21 +102,6 @@ typedef enum  {
                 <tr>
                     <td>MIRACAST_CHUNK_TYPE_ENCODE_FORCE_UINT32</td>
                     <td>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</td>
-                </tr>
-            
-                <tr>
-                    <td>MIRACAST_CHUNK_TYPE_FRAME_DROPPED</td>
-                    <td>The chunk is in a dropped Wi-Fi frame.</td>
-                </tr>
-            
-                <tr>
-                    <td>MIRACAST_CHUNK_TYPE_FRAME_START</td>
-                    <td>The chunk is at the start of the Wi-Fi frame.</td>
-                </tr>
-            
-                <tr>
-                    <td>MIRACAST_CHUNK_TYPE_UNKNOWN</td>
-                    <td>An unknown or undefined chunk type.</td>
                 </tr>
 </table>
 

@@ -67,49 +67,49 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_VIDEO_0030 {
 ## Members
 
 
+`pfnGetCaps`
+
+Get caps.
+
 `pfnCalcPrivateVideoDecoderSize`
 
 Calculate private video decoder size.
-
-`pfnCalcPrivateVideoProcessorSize`
-
-Calculate private video processor size.
 
 `pfnCreateVideoDecoder`
 
 Create video decoder.
 
-`pfnCreateVideoProcessor`
-
-Create video processor.
-
-`pfnDecoderTrimAllocations`
-
-Decoder trim allocations.
-
 `pfnDestroyVideoDecoder`
 
 Destroy video decoder.
+
+`pfnCalcPrivateVideoProcessorSize`
+
+Calculate private video processor size.
+
+`pfnCreateVideoProcessor`
+
+Create video processor.
 
 `pfnDestroyVideoProcessor`
 
 Destroy video processor.
 
-`pfnGetBitstreamEncryptionSchemeCount`
+`pfnGetDecodeProfileCount`
 
-Get bitstream encryption scheme count.
-
-`pfnGetCaps`
-
-Get caps.
+Get decode profile count.
 
 `pfnGetDecodeFormatCount`
 
 Get decode format count.
 
-`pfnGetDecodeProfileCount`
+`pfnGetBitstreamEncryptionSchemeCount`
 
-Get decode profile count.
+Get bitstream encryption scheme count.
+
+`pfnDecoderTrimAllocations`
+
+Decoder trim allocations.
 
 `pfnProcessorTrimAllocations`
 

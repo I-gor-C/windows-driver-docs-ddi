@@ -66,11 +66,6 @@ typedef enum _RILCALLSUPPORTCAPS {
 <table>
             
                 <tr>
-                    <td>RIL_CAPS_CALLSUPPORT_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_CAPS_CALLSUPPORT_CCBS</td>
                     <td></td>
                 </tr>
@@ -106,12 +101,17 @@ typedef enum _RILCALLSUPPORTCAPS {
                 </tr>
             
                 <tr>
+                    <td>RIL_CAPS_CALLSUPPORT_USSD_PHASE2</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_CAPS_CALLSUPPORT_USS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CAPS_CALLSUPPORT_USSD_PHASE2</td>
+                    <td>RIL_CAPS_CALLSUPPORT_ALL</td>
                     <td></td>
                 </tr>
 </table>

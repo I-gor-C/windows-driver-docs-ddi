@@ -65,15 +65,7 @@ typedef struct _RILTDSCDMAMRL {
 ## Members
 
 
-`dwCellID`
-
-
-
-`dwCellParameterID`
-
-
-
-`dwLocationAreaCode`
+`dwParams`
 
 
 
@@ -85,11 +77,19 @@ typedef struct _RILTDSCDMAMRL {
 
 
 
-`dwParams`
+`dwLocationAreaCode`
 
 
 
-`dwPathLoss`
+`dwCellID`
+
+
+
+`dwUARFCN`
+
+
+
+`dwCellParameterID`
 
 
 
@@ -97,7 +97,7 @@ typedef struct _RILTDSCDMAMRL {
 
 
 
-`dwUARFCN`
+`dwPathLoss`
 
 
 

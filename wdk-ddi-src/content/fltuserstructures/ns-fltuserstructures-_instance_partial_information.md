@@ -60,25 +60,25 @@ typedef struct _INSTANCE_PARTIAL_INFORMATION {
 ## Members
 
 
-`AltitudeBufferOffset`
+`NextEntryOffset`
 
-Byte offset of the first character of the altitude string. This character is followed in memory by the remainder of the string.
-
-`AltitudeLength`
-
-Length, in bytes, of the altitude string for the instance.
-
-`InstanceNameBufferOffset`
-
-Byte offset of the first character of the instance name string. This character is followed in memory by the remainder of the string.
+Byte offset of the next INSTANCE_PARTIAL_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
 
 `InstanceNameLength`
 
 Length, in bytes, of the instance name.
 
-`NextEntryOffset`
+`InstanceNameBufferOffset`
 
-Byte offset of the next INSTANCE_PARTIAL_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
+Byte offset of the first character of the instance name string. This character is followed in memory by the remainder of the string.
+
+`AltitudeLength`
+
+Length, in bytes, of the altitude string for the instance.
+
+`AltitudeBufferOffset`
+
+Byte offset of the first character of the altitude string. This character is followed in memory by the remainder of the string.
 
 ## Remarks
 This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer contains two or more of these structures, the <b>NextEntryOffset</b> value in each entry, except the last, falls on an 8-byte boundary.
@@ -131,11 +131,3 @@ This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer cont
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541551">FilterVolumeInstanceFindNext</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20INSTANCE_PARTIAL_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

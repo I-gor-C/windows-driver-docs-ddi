@@ -61,15 +61,15 @@ typedef struct _RILWRITEPHONEBOOKENTRYPARAMS {
 ## Members
 
 
+`hUiccApp`
+
+
+
 `dwStoreLocation`
 
 
 
 `fHasLockVerification`
-
-
-
-`hUiccApp`
 
 
 

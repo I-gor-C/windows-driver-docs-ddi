@@ -62,6 +62,11 @@ enum SensorConnectionType {
 <table>
             
                 <tr>
+                    <td>SENSOR_CONNECTION_TYPE_PC_INTEGRATED</td>
+                    <td>Indicates that the sensor is built into the computer.</td>
+                </tr>
+            
+                <tr>
                     <td>SENSOR_CONNECTION_TYPE_PC_ATTACHED</td>
                     <td>Indicates that the sensor is attached to the computer, such as through a peripheral device.</td>
                 </tr>
@@ -69,11 +74,6 @@ enum SensorConnectionType {
                 <tr>
                     <td>SENSOR_CONNECTION_TYPE_PC_EXTERNAL</td>
                     <td>Indicates that the sensor is connected by external means, such as through a network connection.</td>
-                </tr>
-            
-                <tr>
-                    <td>SENSOR_CONNECTION_TYPE_PC_INTEGRATED</td>
-                    <td>Indicates that the sensor is built into the computer.</td>
                 </tr>
 </table>
 
@@ -91,11 +91,3 @@ enum SensorConnectionType {
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn957027">Enumeration properties</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [sensors\sensors]:%20SensorConnectionType enumeration%20 RELEASE:%20(2/22/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

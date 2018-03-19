@@ -58,6 +58,14 @@ typedef struct _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR {
 ## Members
 
 
+`Version`
+
+Contains the version of the data reported.
+
+`Size`
+
+Indicates the quantity of data reported, in bytes. This is the <code>sizeof(STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR)</code>.
+
 `Attributes`
 
 <table>
@@ -132,14 +140,6 @@ Attribute that indicates a storage device has IO performance independent of IO s
 </td>
 </tr>
 </table>
-
-`Size`
-
-Indicates the quantity of data reported, in bytes. This is the <code>sizeof(STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR)</code>.
-
-`Version`
-
-Contains the version of the data reported.
 
 
 ## Requirements

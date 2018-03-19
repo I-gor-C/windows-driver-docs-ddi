@@ -58,10 +58,6 @@ typedef struct {
 ## Members
 
 
-`NmeaSentences`
-
-
-
 `Size`
 
 Structure size.
@@ -69,6 +65,10 @@ Structure size.
 `Version`
 
 Version number.
+
+`NmeaSentences`
+
+
 
 
 ## Requirements

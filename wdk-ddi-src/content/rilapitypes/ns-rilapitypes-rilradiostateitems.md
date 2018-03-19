@@ -59,11 +59,11 @@ typedef struct _RILRADIOSTATEITEMS {
 ## Members
 
 
-`dwCntItems`
-
-
-
 `dwGroupId`
+
+
+
+`dwCntItems`
 
 
 

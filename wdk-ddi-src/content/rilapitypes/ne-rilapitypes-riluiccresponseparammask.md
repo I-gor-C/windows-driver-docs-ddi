@@ -62,12 +62,12 @@ typedef enum _RILUICCRESPONSEPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_SR_ALL</td>
+                    <td>RIL_PARAM_SR_STATUSWORD1</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_SR_RESPONSE</td>
+                    <td>RIL_PARAM_SR_STATUSWORD2</td>
                     <td></td>
                 </tr>
             
@@ -77,12 +77,12 @@ typedef enum _RILUICCRESPONSEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_SR_STATUSWORD1</td>
+                    <td>RIL_PARAM_SR_RESPONSE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_SR_STATUSWORD2</td>
+                    <td>RIL_PARAM_SR_ALL</td>
                     <td></td>
                 </tr>
 </table>

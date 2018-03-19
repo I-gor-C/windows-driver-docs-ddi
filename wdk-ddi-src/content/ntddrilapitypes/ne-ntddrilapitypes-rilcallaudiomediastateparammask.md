@@ -60,12 +60,7 @@ typedef enum _RILCALLAUDIOMEDIASTATEPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_CALLAUDIO_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CALLAUDIO_FLAGS</td>
+                    <td>RIL_PARAM_CALLAUDIO_SOURCE</td>
                     <td></td>
                 </tr>
             
@@ -75,7 +70,12 @@ typedef enum _RILCALLAUDIOMEDIASTATEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CALLAUDIO_SOURCE</td>
+                    <td>RIL_PARAM_CALLAUDIO_FLAGS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CALLAUDIO_ALL</td>
                     <td></td>
                 </tr>
 </table>

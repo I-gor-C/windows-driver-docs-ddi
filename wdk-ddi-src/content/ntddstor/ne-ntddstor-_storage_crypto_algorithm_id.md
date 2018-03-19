@@ -63,12 +63,22 @@ typedef enum _STORAGE_CRYPTO_ALGORITHM_ID {
 <table>
             
                 <tr>
-                    <td>StorageCryptoAlgorithmAESECB</td>
+                    <td>StorageCryptoAlgorithmUnknown</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorageCryptoAlgorithmXTSAES</td>
                     <td>Reserved for system use.</td>
                 </tr>
             
                 <tr>
                     <td>StorageCryptoAlgorithmBitlockerAESCBC</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorageCryptoAlgorithmAESECB</td>
                     <td>Reserved for system use.</td>
                 </tr>
             
@@ -79,16 +89,6 @@ typedef enum _STORAGE_CRYPTO_ALGORITHM_ID {
             
                 <tr>
                     <td>StorageCryptoAlgorithmMax</td>
-                    <td>Reserved for system use.</td>
-                </tr>
-            
-                <tr>
-                    <td>StorageCryptoAlgorithmUnknown</td>
-                    <td>Reserved for system use.</td>
-                </tr>
-            
-                <tr>
-                    <td>StorageCryptoAlgorithmXTSAES</td>
                     <td>Reserved for system use.</td>
                 </tr>
 </table>

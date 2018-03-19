@@ -62,6 +62,14 @@ typedef struct _VIDEO_REQUEST_PACKET {
 ## Members
 
 
+`IoControlCode`
+
+Specifies an IOCTL_VIDEO_<i>XXX</i> value passed to the <b>EngDeviceIoControl</b> function by the caller and sent to the video port driver in an IRP code. For more information about the set of system-defined IOCTL_VIDEO_<i>XXX</i> that miniport drivers must support, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff570515">Video Miniport Driver I/O Control Codes</a>.
+
+`StatusBlock`
+
+Pointer to a STATUS_BLOCK structure in the <a href="https://msdn.microsoft.com/a1de1905-09f3-4689-ace9-06690a1f930a">VRP</a>. <b>StatusBlock</b> is filled in by the miniport driver with return information upon completion of each VRP.
+
 `InputBuffer`
 
 Pointer to an input buffer that contains information passed in by the caller. The structure for the data depends on the value of <b>IoControlCode</b>. This member actually points to the same buffer as that indicated by <b>OutputBuffer</b>.
@@ -70,10 +78,6 @@ Pointer to an input buffer that contains information passed in by the caller. Th
 
 Specifies the size in bytes of the input buffer.
 
-`IoControlCode`
-
-Specifies an IOCTL_VIDEO_<i>XXX</i> value passed to the <b>EngDeviceIoControl</b> function by the caller and sent to the video port driver in an IRP code. For more information about the set of system-defined IOCTL_VIDEO_<i>XXX</i> that miniport drivers must support, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff570515">Video Miniport Driver I/O Control Codes</a>.
-
 `OutputBuffer`
 
 Pointer to an output buffer into which the miniport driver transfers data to be returned to the caller. The structure for the data depends on the value of <b>IoControlCode.</b> Because this member points to the same buffer as <b>InputBuffer</b>, a miniport driver must not write output in the <b>OutputBuffer</b> before it has consumed all input data from the <b>InputBuffer</b>.
@@ -81,10 +85,6 @@ Pointer to an output buffer into which the miniport driver transfers data to be 
 `OutputBufferLength`
 
 Specifies the size in bytes of the output buffer. A miniport driver cannot enlarge this buffer. A miniport driver should set the <b>Status</b> member of the <b>StatusBlock</b> with ERROR_INSUFFICIENT_BUFFER or ERROR_MORE_DATA if the given <b>OutputBuffer</b> is too small to contain all the returned information.
-
-`StatusBlock`
-
-Pointer to a STATUS_BLOCK structure in the <a href="https://msdn.microsoft.com/a1de1905-09f3-4689-ace9-06690a1f930a">VRP</a>. <b>StatusBlock</b> is filled in by the miniport driver with return information upon completion of each VRP.
 
 
 ## Requirements
@@ -103,11 +103,3 @@ Pointer to a STATUS_BLOCK structure in the <a href="https://msdn.microsoft.com/a
 
 
 <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_REQUEST_PACKET structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

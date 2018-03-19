@@ -68,6 +68,18 @@ typedef struct _UFS_CONFIG_DESCRIPTOR {
 ## Members
 
 
+`bLength`
+
+Specifies the size, in bytes, of this descriptor.
+
+`bDescriptorIDN`
+
+Specifies the Configuration Descriptor Type Identifier. This descriptor will have a value of <b>UFS_DESC_CONFIGURATION_IDN</b>.
+
+`Reserved1`
+
+Reserved for future use.
+
 `bBootEnable`
 
 Specifies if a device's boot feature is enabled.
@@ -77,35 +89,27 @@ Specifies if a device's boot feature is enabled.
 Enables access to the Device Descriptor after the
 partial initialization phase of the boot sequence.
 
-`bDescriptorIDN`
+`bInitPowerMode`
 
-Specifies the Configuration Descriptor Type Identifier. This descriptor will have a value of <b>UFS_DESC_CONFIGURATION_IDN</b>.
+Specifies the power mode after device initialization
+or hardware reset.
 
 `bHighPriorityLUN`
 
 <b>bHighPriorityLUN</b> configures the high priority logical unit.
+
+`bSecureRemovalType`
+
+Configures the secure removal type.
 
 `bInitActiveICCLevel`
 
 Configures the ICC level in Active mode after device
 initialization or hardware reset.
 
-`bInitPowerMode`
+`wPeriodicRTCUpdate`
 
-Specifies the power mode after device initialization
-or hardware reset.
-
-`bLength`
-
-Specifies the size, in bytes, of this descriptor.
-
-`bSecureRemovalType`
-
-Configures the secure removal type.
-
-`Reserved1`
-
-Reserved for future use.
+Specifies the frequency and method of real-time clock updates.
 
 `Reserved2`
 
@@ -114,10 +118,6 @@ Reserved for future use.
 `UnitConfig`
 
 Contains the configurable parameters of the Unit Descriptor.
-
-`wPeriodicRTCUpdate`
-
-Specifies the frequency and method of real-time clock updates.
 
 
 ## Requirements
@@ -129,11 +129,3 @@ Specifies the frequency and method of real-time clock updates.
 ## See Also
 
 <a href="..\ufs\ns-ufs-ufs_unit_config_descriptor.md">UFS_UNIT_CONFIG_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20UFS_CONFIG_DESCRIPTOR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

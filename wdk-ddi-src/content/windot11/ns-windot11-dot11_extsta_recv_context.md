@@ -104,40 +104,6 @@ This member must be set to
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
-`lRSSI`
-
-The received signal strength indication (RSSI) value for the last received MPDU fragment of the
-     802.11 packet. The RSSI value is in units of decibels referenced to 1.0 milliwatts (dBm).
-
-`ucDataRate`
-
-The data rate at which the 802.11 station received the packet. The value of 
-     <b>ucDataRate</b> is the value of the 
-     <b>ucDataRateIndex</b> member of the data rate from the 802.11 station's data rate mapping table. For
-     more information about the data rate mapping table, see 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-data-rate-mapping-table">
-     OID_DOT11_DATA_RATE_MAPPING_TABLE</a>.
-
-`uChCenterFrequency`
-
-The channel center frequency, in units of megahertz (MHz), of the frequency band on which the
-     802.11 station received the packet.
-
-`ullTimestamp`
-
-An 802.11 timing synchronization function (TSF) timer value, in microseconds, that specifies the
-     time when the packet was received. This member is provided to support 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/indicating-raw-802-11-packets">indicating raw 802.11 packets</a>.
-     
-
-If a NIC does not support 
-     <b>ullTimestamp</b>, it must not set the DOT11_RECV_FLAG_RAW_PACKET_TIMESTAMP flag in the 
-     <b>uReceiveFlags</b> member.
-
-`uPhyId`
-
-The identifier (ID) of the PHY on which the 802.11 station received the packet.
-
 `uReceiveFlags`
 
 The attributes of the received packet data specified through a bitmask. 
@@ -176,6 +142,35 @@ If this bit is set, the raw packet data was received with frame check sequence (
 If this bit is set, the NIC sets the timestamp information in the 
        <b>ullTimestamp</b> member.
 
+`uPhyId`
+
+The identifier (ID) of the PHY on which the 802.11 station received the packet.
+
+`uChCenterFrequency`
+
+The channel center frequency, in units of megahertz (MHz), of the frequency band on which the
+     802.11 station received the packet.
+
+`usNumberOfMPDUsReceived`
+
+The number of media access control (MAC) protocol data unit (MPDU) fragments received and
+     reassembled by the 802.11 station for the packet. The value of 
+     <b>usNumberOfMPDUsReceived</b> must be from one through the value of DOT11_MAX_NUM_OF_FRAGMENTS.
+
+`lRSSI`
+
+The received signal strength indication (RSSI) value for the last received MPDU fragment of the
+     802.11 packet. The RSSI value is in units of decibels referenced to 1.0 milliwatts (dBm).
+
+`ucDataRate`
+
+The data rate at which the 802.11 station received the packet. The value of 
+     <b>ucDataRate</b> is the value of the 
+     <b>ucDataRateIndex</b> member of the data rate from the 802.11 station's data rate mapping table. For
+     more information about the data rate mapping table, see 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-data-rate-mapping-table">
+     OID_DOT11_DATA_RATE_MAPPING_TABLE</a>.
+
 `uSizeMediaSpecificInfo`
 
 The size, in bytes, of the media specific information at the 
@@ -188,11 +183,16 @@ The size, in bytes, of the media specific information at the
      zero.</div>
 <div> </div>
 
-`usNumberOfMPDUsReceived`
+`ullTimestamp`
 
-The number of media access control (MAC) protocol data unit (MPDU) fragments received and
-     reassembled by the 802.11 station for the packet. The value of 
-     <b>usNumberOfMPDUsReceived</b> must be from one through the value of DOT11_MAX_NUM_OF_FRAGMENTS.
+An 802.11 timing synchronization function (TSF) timer value, in microseconds, that specifies the
+     time when the packet was received. This member is provided to support 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/indicating-raw-802-11-packets">indicating raw 802.11 packets</a>.
+     
+
+If a NIC does not support 
+     <b>ullTimestamp</b>, it must not set the DOT11_RECV_FLAG_RAW_PACKET_TIMESTAMP flag in the 
+     <b>uReceiveFlags</b> member.
 
 ## Remarks
 When performing a Native 802.11 receive operation, the miniport driver must format each received
@@ -289,11 +289,3 @@ For more information about Native 802.11 receive operations, see
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_RECV_CONTEXT structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

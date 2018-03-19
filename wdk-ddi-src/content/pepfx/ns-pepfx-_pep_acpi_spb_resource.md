@@ -62,24 +62,13 @@ typedef struct _PEP_ACPI_SPB_RESOURCE {
 ## Members
 
 
-`Flags`
-
-A <a href="..\pepfx\ns-pepfx-_pep_acpi_resource_flags.md">PEP_ACPI_RESOURCE_FLAGS</a> structure that describes the capabilities of this ACPI resource.
-
-`ResourceSourceIndex`
-
-
-
-`ResourceSourceName`
-
-The name of the serial bus controller device to which this
-connection descriptor applies. The name can be a fully
-qualified path, a relative path, or a simple name segment
-that utilizes the namespace search rules.
-
 `Type`
 
 A <a href="..\pepfx\ne-pepfx-_pep_acpi_resource_type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value describing this resource.
+
+`Flags`
+
+A <a href="..\pepfx\ns-pepfx-_pep_acpi_resource_flags.md">PEP_ACPI_RESOURCE_FLAGS</a> structure that describes the capabilities of this ACPI resource.
 
 `TypeSpecificFlags`
 
@@ -125,6 +114,17 @@ These bits are reserved and must be set to zero.
 </td>
 </tr>
 </table>
+
+`ResourceSourceIndex`
+
+
+
+`ResourceSourceName`
+
+The name of the serial bus controller device to which this
+connection descriptor applies. The name can be a fully
+qualified path, a relative path, or a simple name segment
+that utilizes the namespace search rules.
 
 `VendorData`
 

@@ -58,6 +58,14 @@ typedef struct _ECP_OPEN_PARAMETERS {
 ## Members
 
 
+`Size`
+
+Specifies the size of this context structure, in bytes.
+
+`Reserved`
+
+Reserved for future use. This must be initialized to 0.
+
 `Flags`
 
 Flags that Specify the parameters or purpose for opening a file. Contains one of the following values:
@@ -84,14 +92,6 @@ Flags that Specify the parameters or purpose for opening a file. Contains one of
 <td>Opening file to delete it.</td>
 </tr>
 </table>
-
-`Reserved`
-
-Reserved for future use. This must be initialized to 0.
-
-`Size`
-
-Specifies the size of this context structure, in bytes.
 
 
 ## Requirements

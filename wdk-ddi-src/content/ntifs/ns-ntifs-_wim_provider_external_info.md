@@ -59,9 +59,9 @@ typedef struct _WIM_PROVIDER_EXTERNAL_INFO {
 ## Members
 
 
-`DataSourceId`
+`Version`
 
-An identifier value for the WIM file data source.
+The WIM provider version. Set to WIM_PROVIDER_CURRENT_VERSION.
 
 `Flags`
 
@@ -94,13 +94,13 @@ Indicates that the provider is dismounted. Recovery will be attempted.
 </tr>
 </table>
 
+`DataSourceId`
+
+An identifier value for the WIM file data source.
+
 `ResourceHash`
 
 An identifier for the object contained within the WIM.  Conventionally a hash of the contents of a file, stored within the WIM.
-
-`Version`
-
-The WIM provider version. Set to WIM_PROVIDER_CURRENT_VERSION.
 
 ## Remarks
 The backing source for a file is set with a <a href="https://msdn.microsoft.com/library/windows/hardware/dn632443">FSCTL_SET_EXTERNAL_BACKING</a> control code request. The WIM file backing the file specified in the request is set in the <b>DataSourceId</b> member of <b>WIM_PROVIDER_EXTERNAL_INFO</b>.
@@ -120,11 +120,3 @@ The <b>Flags</b> and <b>ResourceHash</b> members are valid when the provider inf
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn632441">FSCTL_GET_EXTERNAL_BACKING</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20WIM_PROVIDER_EXTERNAL_INFO structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

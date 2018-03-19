@@ -58,14 +58,14 @@ typedef struct _DOT11EXT_IHV_SECURITY_PROFILE {
 ## Members
 
 
+`pszXmlFragmentIhvSecurity`
+
+A pointer to the string that defines the IHV security profile.
+
 `bUseMSOnex`
 
 A flag that indicates whether the IHV security profile is using the Microsoft 802.1X
      implementation. If <b>TRUE</b>, the profile uses the Microsoft 802.1X implementation.
-
-`pszXmlFragmentIhvSecurity`
-
-A pointer to the string that defines the IHV security profile.
 
 
 ## Requirements

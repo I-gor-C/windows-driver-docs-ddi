@@ -59,12 +59,12 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSSTREAM_POINTER_STATE_LOCKED</td>
+                    <td>KSSTREAM_POINTER_STATE_UNLOCKED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>KSSTREAM_POINTER_STATE_UNLOCKED</td>
+                    <td>KSSTREAM_POINTER_STATE_LOCKED</td>
                     <td></td>
                 </tr>
 </table>

@@ -59,21 +59,21 @@ typedef struct _KSCAMERA_EXTENDEDPROP_CAMERAOFFSET {
 ## Members
 
 
-`Flag`
-
-Reserved. Set to 0.
-
 `PitchAngle`
 
 The angle offset of the camera look direction from the horizontal axis of the camera facing direction.
 
-`Reserved`
-
-Reserved. Set to 0.
-
 `YawAngle`
 
 The angle offset of the camera look direction from the vertical axis of the camera facing direction.
+
+`Flag`
+
+Reserved. Set to 0.
+
+`Reserved`
+
+Reserved. Set to 0.
 
 
 ## Requirements
@@ -89,11 +89,3 @@ The angle offset of the camera look direction from the vertical axis of the came
 
 
 <a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_header.md">KSCAMERA_EXTENDEDPROP_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSCAMERA_EXTENDEDPROP_CAMERAOFFSET structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

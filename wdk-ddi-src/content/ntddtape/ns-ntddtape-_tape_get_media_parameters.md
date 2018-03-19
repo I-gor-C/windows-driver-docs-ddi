@@ -60,21 +60,21 @@ typedef struct _TAPE_GET_MEDIA_PARAMETERS {
 ## Members
 
 
-`BlockSize`
-
-Indicates the block size, in bytes, or zero if the drive is using variable block size.
-
 `Capacity`
 
 Indicates the total number of bytes of user data the tape can hold.
 
-`PartitionCount`
-
-Indicates the number of partitions on the tape. If the tape is not partitioned, <b>PartitionCount</b> is 1.
-
 `Remaining`
 
 Indicates the number of bytes from the current position to the end of the tape.
+
+`BlockSize`
+
+Indicates the block size, in bytes, or zero if the drive is using variable block size.
+
+`PartitionCount`
+
+Indicates the number of partitions on the tape. If the tape is not partitioned, <b>PartitionCount</b> is 1.
 
 `WriteProtected`
 
@@ -89,11 +89,3 @@ Is set to <b>TRUE</b> if the tape is write-protected.
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567937">TapeMiniGetMediaParameters</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TAPE_GET_MEDIA_PARAMETERS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -85,34 +85,6 @@ typedef struct _NDIS_RECEIVE_FILTER_INFO_ARRAY {
 ## Members
 
 
-`ElementSize`
-
-The size, in bytes, of each element in the array.
-
-`FirstElementOffset`
-
-The offset, in bytes, to the first element in an array of elements that follow this structure. The offset is measured from the start of the <b>NDIS_RECEIVE_FILTER_INFO_ARRAY</b> structure up to the beginning of the first element. Each element in the array is an <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_info.md">NDIS_RECEIVE_FILTER_INFO</a> structure.
-
-
-
-<div class="alert"><b>Note</b>  If <b>NumElements</b> is set to zero, this member is ignored.  </div>
-<div> </div>
-
-`Flags`
-
-A  bitwise OR of the following flags: 
-
-
-
-
-
-#### NDIS_RECEIVE_FILTER_INFO_ARRAY_VPORT_ID_SPECIFIED
-
-If this flag is set, information is requested about receive filters that are configured on the virtual port (VPort) specified by the <b>VPortId</b> member.
-
-<div class="alert"><b>Note</b>  This flag is only valid for the SR-IOV interface.</div>
-<div> </div>
-
 `Header`
 
 The type, revision, and size of the <b>NDIS_RECEIVE_FILTER_INFO_ARRAY</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
@@ -137,10 +109,6 @@ Original version for NDIS 6.20.
 
 Set the <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_INFO_ARRAY_REVISION_1.
 
-`NumElements`
-
-The number of elements in the array.
-
 `QueueId`
 
 A receive queue identifier. This identifier is an
@@ -148,6 +116,38 @@ A receive queue identifier. This identifier is an
      the default receive queue.
 
 <div class="alert"><b>Note</b>  Miniport drivers that support <a href="https://msdn.microsoft.com/500FBF0F-54D9-4675-8E2D-447387DA8798">NDIS packet coalescing</a> or SR-IOV interface must set the <b>QueueId</b> member to NDIS_DEFAULT_RECEIVE_QUEUE_ID.</div>
+<div> </div>
+
+`FirstElementOffset`
+
+The offset, in bytes, to the first element in an array of elements that follow this structure. The offset is measured from the start of the <b>NDIS_RECEIVE_FILTER_INFO_ARRAY</b> structure up to the beginning of the first element. Each element in the array is an <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_info.md">NDIS_RECEIVE_FILTER_INFO</a> structure.
+
+
+
+<div class="alert"><b>Note</b>  If <b>NumElements</b> is set to zero, this member is ignored.  </div>
+<div> </div>
+
+`NumElements`
+
+The number of elements in the array.
+
+`ElementSize`
+
+The size, in bytes, of each element in the array.
+
+`Flags`
+
+A  bitwise OR of the following flags: 
+
+
+
+
+
+#### NDIS_RECEIVE_FILTER_INFO_ARRAY_VPORT_ID_SPECIFIED
+
+If this flag is set, information is requested about receive filters that are configured on the virtual port (VPort) specified by the <b>VPortId</b> member.
+
+<div class="alert"><b>Note</b>  This flag is only valid for the SR-IOV interface.</div>
 <div> </div>
 
 `VPortId`
@@ -205,11 +205,3 @@ The <b>NDIS_RECEIVE_FILTER_INFO_ARRAY</b> structure is used in the
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_info.md">NDIS_RECEIVE_FILTER_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_INFO_ARRAY structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -68,6 +68,10 @@ typedef struct _RILNETWORKCODE {
 
 
 
+`dwParams`
+
+
+
 `dwExecutor`
 
 
@@ -80,19 +84,15 @@ typedef struct _RILNETWORKCODE {
 
 
 
+`dwSID`
+
+
+
 `dwNID`
 
 
 
-`dwParams`
-
-
-
 `dwRI`
-
-
-
-`dwSID`
 
 
 

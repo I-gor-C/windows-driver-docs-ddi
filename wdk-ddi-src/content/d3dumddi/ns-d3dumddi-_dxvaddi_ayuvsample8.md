@@ -59,21 +59,21 @@ typedef struct _DXVADDI_AYUVSAMPLE8 {
 ## Members
 
 
-`Alpha`
+`Cr`
 
-[in] The 8-bit opacity of the pixel when it is used as a source graphic for blending with another picture.
+[in] An 8-bit chrominance (V) sample value.
 
 `Cb`
 
 [in] An 8-bit chrominance (U) sample value.
 
-`Cr`
-
-[in] An 8-bit chrominance (V) sample value.
-
 `Y`
 
 [in] An 8-bit luminance (Y) sample value.
+
+`Alpha`
+
+[in] The 8-bit opacity of the pixel when it is used as a source graphic for blending with another picture.
 
 ## Remarks
 A value of 0 in the <b>Alpha</b> member indicates that the pixel is transparent (so that the other entries have no effect on the resulting blended picture), and a value of 255 indicates that the pixel is opaque (so that the other entries completely determine the value of the resulting blended picture sample). 
@@ -111,11 +111,3 @@ The width and height of the AYUV alpha-blending surface are specified in the ass
 
 
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_decodebufferdesc.md">DXVADDI_DECODEBUFFERDESC</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_AYUVSAMPLE8 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -67,21 +67,23 @@ typedef struct _DEVICE_COPY_OFFLOAD_DESCRIPTOR {
 ## Members
 
 
-`DefaultTokenLifetime`
+`Version`
 
-The default lifetime of the token, in seconds.
+Contains the size of this structure, in bytes. The value of this member will change as members are added to 
+      the structure.
 
-`MaximumDataDescriptors`
+`Size`
 
-The maximum number of data descriptors.
+Specifies the total size of the data returned, in bytes. This may include data that follows this 
+      structure.
 
 `MaximumTokenLifetime`
 
 The maximum lifetime of the token, in seconds.
 
-`MaximumTransferLengthPerDescriptor`
+`DefaultTokenLifetime`
 
-The maximum transfer length, in blocks, per descriptor.
+The default lifetime of the token, in seconds.
 
 `MaximumTransferSize`
 
@@ -91,28 +93,26 @@ The maximum transfer size, in bytes.
 
 The optimal transfer size, in bytes.
 
-`OptimalTransferLengthGranularity`
+`MaximumDataDescriptors`
 
-The granularity of the optimal transfer length, in blocks. Transfer lengths that are not an even multiple 
-      of this length may be delayed.
+The maximum number of data descriptors.
+
+`MaximumTransferLengthPerDescriptor`
+
+The maximum transfer length, in blocks, per descriptor.
 
 `OptimalTransferLengthPerDescriptor`
 
 The optimal transfer length, in blocks, per descriptor.
 
+`OptimalTransferLengthGranularity`
+
+The granularity of the optimal transfer length, in blocks. Transfer lengths that are not an even multiple 
+      of this length may be delayed.
+
 `Reserved`
 
 Reserved for future use.
-
-`Size`
-
-Specifies the total size of the data returned, in bytes. This may include data that follows this 
-      structure.
-
-`Version`
-
-Contains the size of this structure, in bytes. The value of this member will change as members are added to 
-      the structure.
 
 
 ## Requirements
@@ -124,11 +124,3 @@ Contains the size of this structure, in bytes. The value of this member will cha
 ## See Also
 
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_COPY_OFFLOAD_DESCRIPTOR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

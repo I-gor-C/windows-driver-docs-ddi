@@ -70,15 +70,15 @@ A handle to the graphics context device. On input to the <a href="..\d3dkmddi\nc
 
 The driver generates a unique handle and passes it back to the DirectX graphics subsystem. On output from the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a> function, <b>hDevice</b> specifies the handle that the DirectX graphics subsystem should use in subsequent driver calls to identify the device.
 
-`hKmdProcess`
-
-A handle to the corresponding kernel mode driver process object.
-
-Supported starting with Windows 10.
-
 `Pasid`
 
 The owner process PASID for a support vector machine GPU.
+
+Supported starting with Windows 10.
+
+`hKmdProcess`
+
+A handle to the corresponding kernel mode driver process object.
 
 Supported starting with Windows 10.
 
@@ -100,11 +100,3 @@ Supported starting with Windows 10.
 
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_deviceinfo.md">DXGK_DEVICEINFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_CREATEDEVICE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

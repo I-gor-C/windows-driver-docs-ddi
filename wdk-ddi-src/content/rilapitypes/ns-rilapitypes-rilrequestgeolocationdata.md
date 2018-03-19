@@ -66,6 +66,10 @@ typedef struct _RILREQUESTGEOLOCATIONDATA {
 
 
 
+`dwParams`
+
+
+
 `dwExecutor`
 
 
@@ -75,10 +79,6 @@ typedef struct _RILREQUESTGEOLOCATIONDATA {
 
 
 `dwLocationRequestAccuracy`
-
-
-
-`dwParams`
 
 
 

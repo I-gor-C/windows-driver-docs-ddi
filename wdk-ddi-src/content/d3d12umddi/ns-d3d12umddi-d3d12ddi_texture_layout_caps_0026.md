@@ -68,10 +68,6 @@ A device dependent layout count. This must be the number of device-dependent lay
 
 A device dependent swizzle count. This must be the number of device-dependent swizzle patterns supported by the adapter.
 
-`IndexableSwizzlePatterns`
-
-Whether the texture layout can choose any swizzle pattern for a subresource.
-
 `Supports64KStandardSwizzle`
 
 Whether the texture layout supports 64K standard swizzle.
@@ -79,6 +75,10 @@ Whether the texture layout supports 64K standard swizzle.
 `SupportsRowMajorTexture`
 
 Whether the texture layout supports row major texture.
+
+`IndexableSwizzlePatterns`
+
+Whether the texture layout can choose any swizzle pattern for a subresource.
 
 
 ## Requirements

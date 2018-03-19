@@ -82,81 +82,13 @@ typedef struct _EXTTEXTMETRIC {
 ## Members
 
 
-`emCapHeight`
+`emSize`
 
-Specifies the height, in font units, of uppercase characters in the font. Typically, this is the height of uppercase H.
+Specifies the size of the structure, in bytes.
 
-`emDoubleLowerUnderlineOffset`
+`emPointSize`
 
-Specifies the offset, in font units, downward from the base line, where the top of the lower double-underline bar should appear.
-
-`emDoubleLowerUnderlineWidth`
-
-Specifies the thickness, in font units, of the lower underline bar.
-
-`emDoubleUpperUnderlineOffset`
-
-Specifies the offset, in font units, downward from the base line, where the top of the upper double-underline bar should appear.
-
-`emDoubleUpperUnderlineWidth`
-
-Specifies the thickness, in font units, of the upper underline bar.
-
-`emKernPairs`
-
-Specifies the number of character kerning pairs defined for this font.
-
-`emKernTracks`
-
-Specifies the number of kerning tracks defined for this font.
-
-`emLowerCaseAscent`
-
-Specifies the distance, in font units, that the ascender of lowercase letters extends above the base line. Typically, this is the height of lowercase d.
-
-`emLowerCaseDescent`
-
-Specifies the distance, in font units, that the descender of lowercase letters extends below the base line. Typically, this is specified for the descender of lowercase p.
-
-`emMasterHeight`
-
-Specifies the font size, in device units, for which the values in this font's extent table are exact.
-
-`emMasterUnits`
-
-Specifies the integral number of units per em, where an em equals the value of the <b>emMasterHeight</b> member. (That is, <b>emMasterUnits</b> is <b>emMasterHeight</b> expressed in font units instead of device units.)
-
-`emMaxScale`
-
-Specifies the maximum valid point size for this font. The following equation illustrates how the maximum point size is determined:
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>largest point size = (etmMaxScale * 72) / dfVertRes </pre>
-</td>
-</tr>
-</table></span></div>
-The value 72 represents the number of points per inch. The <i>dfVertRes</i> value is the number of dots per inch.
-
-`emMinScale`
-
-Specifies the minimum valid point size for this font. The following equation illustrates how the minimum point size is determined:
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>smallest point size = (emMinScale * 72) / dfVertRes </pre>
-</td>
-</tr>
-</table></span></div>
-The value 72 represents the number of points per inch. The <i>dfVertRes</i> value is the number of dots per inch.
+Specifies the nominal point size of this font, in twips (1/20 of a point, or 1/1440 inch). This is the intended size of the font; the actual size may differ slightly depending on the resolution of the device.
 
 `emOrientation`
 
@@ -199,41 +131,81 @@ Landscape orientation
 </tr>
 </table>
 
-`emPointSize`
+`emMasterHeight`
 
-Specifies the nominal point size of this font, in twips (1/20 of a point, or 1/1440 inch). This is the intended size of the font; the actual size may differ slightly depending on the resolution of the device.
+Specifies the font size, in device units, for which the values in this font's extent table are exact.
 
-`emSize`
+`emMinScale`
 
-Specifies the size of the structure, in bytes.
+Specifies the minimum valid point size for this font. The following equation illustrates how the minimum point size is determined:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>smallest point size = (emMinScale * 72) / dfVertRes </pre>
+</td>
+</tr>
+</table></span></div>
+The value 72 represents the number of points per inch. The <i>dfVertRes</i> value is the number of dots per inch.
+
+`emMaxScale`
+
+Specifies the maximum valid point size for this font. The following equation illustrates how the maximum point size is determined:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>largest point size = (etmMaxScale * 72) / dfVertRes </pre>
+</td>
+</tr>
+</table></span></div>
+The value 72 represents the number of points per inch. The <i>dfVertRes</i> value is the number of dots per inch.
+
+`emMasterUnits`
+
+Specifies the integral number of units per em, where an em equals the value of the <b>emMasterHeight</b> member. (That is, <b>emMasterUnits</b> is <b>emMasterHeight</b> expressed in font units instead of device units.)
+
+`emCapHeight`
+
+Specifies the height, in font units, of uppercase characters in the font. Typically, this is the height of uppercase H.
+
+`emXHeight`
+
+Specifies the height, in font units, of lowercase characters in the font. Typically, this is the height of lowercase x.
+
+`emLowerCaseAscent`
+
+Specifies the distance, in font units, that the ascender of lowercase letters extends above the base line. Typically, this is the height of lowercase d.
+
+`emLowerCaseDescent`
+
+Specifies the distance, in font units, that the descender of lowercase letters extends below the base line. Typically, this is specified for the descender of lowercase p.
 
 `emSlant`
 
 For an italic or slanted font, specifies the angle of the slant measured in tenths of a degree clockwise from the upright version of the font.
 
-`emStrikeOutOffset`
+`emSuperScript`
 
-Specifies the offset, in font units, upward from the base line, where the top of a strikeout bar should appear.
-
-`emStrikeOutWidth`
-
-Specifies the thickness, in font units, of the strikeout bar.
+Specifies the recommended amount, in font units, to offset superscript characters from the base line. This is typically a negative value.
 
 `emSubScript`
 
 Specifies the recommended amount, in font units, to offset subscript characters from the base line. This is typically a positive value.
 
-`emSubScriptSize`
-
-Specifies the recommended size, in font units, of subscript characters for this font.
-
-`emSuperScript`
-
-Specifies the recommended amount, in font units, to offset superscript characters from the base line. This is typically a negative value.
-
 `emSuperScriptSize`
 
 Specifies the recommended size, in font units, of superscript characters for this font.
+
+`emSubScriptSize`
+
+Specifies the recommended size, in font units, of subscript characters for this font.
 
 `emUnderlineOffset`
 
@@ -243,9 +215,37 @@ Specifies the offset, in font units, downward from the base line, where the top 
 
 Specifies the thickness, in font units, of the underline bar.
 
-`emXHeight`
+`emDoubleUpperUnderlineOffset`
 
-Specifies the height, in font units, of lowercase characters in the font. Typically, this is the height of lowercase x.
+Specifies the offset, in font units, downward from the base line, where the top of the upper double-underline bar should appear.
+
+`emDoubleLowerUnderlineOffset`
+
+Specifies the offset, in font units, downward from the base line, where the top of the lower double-underline bar should appear.
+
+`emDoubleUpperUnderlineWidth`
+
+Specifies the thickness, in font units, of the upper underline bar.
+
+`emDoubleLowerUnderlineWidth`
+
+Specifies the thickness, in font units, of the lower underline bar.
+
+`emStrikeOutOffset`
+
+Specifies the offset, in font units, upward from the base line, where the top of a strikeout bar should appear.
+
+`emStrikeOutWidth`
+
+Specifies the thickness, in font units, of the strikeout bar.
+
+`emKernPairs`
+
+Specifies the number of character kerning pairs defined for this font.
+
+`emKernTracks`
+
+Specifies the number of kerning tracks defined for this font.
 
 
 ## Requirements

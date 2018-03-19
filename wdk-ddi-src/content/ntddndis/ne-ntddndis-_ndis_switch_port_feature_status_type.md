@@ -62,6 +62,11 @@ typedef enum _NDIS_SWITCH_PORT_FEATURE_STATUS_TYPE {
 <table>
             
                 <tr>
+                    <td>NdisSwitchPortFeatureStatusTypeUndefined</td>
+                    <td>The port feature status information is not defined.</td>
+                </tr>
+            
+                <tr>
                     <td>NdisSwitchPortFeatureStatusTypeCustom</td>
                     <td>The feature status information is for a custom extensible switch port feature that is provided by an ISV.</td>
                 </tr>
@@ -69,11 +74,6 @@ typedef enum _NDIS_SWITCH_PORT_FEATURE_STATUS_TYPE {
                 <tr>
                     <td>NdisSwitchPortFeatureStatusTypeMaximum</td>
                     <td>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisSwitchPortFeatureStatusTypeUndefined</td>
-                    <td>The port feature status information is not defined.</td>
                 </tr>
 </table>
 
@@ -96,11 +96,3 @@ For more information about extensible switch port policies, see <a href="https:/
 
 
 <b></b>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_FEATURE_STATUS_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

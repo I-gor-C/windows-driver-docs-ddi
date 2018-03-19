@@ -60,6 +60,14 @@ typedef struct IDDCX_MONITOR_INFO {
 ## Members
 
 
+`Size`
+
+Total size of the structure
+
+`MonitorType`
+
+The monitor connector type of the monitor
+
 `ConnectorIndex`
 
 This is a zero-based unique identifier for this connector. It should be unique for this adapter and the value should not change for this connector across system reboot or driver upgrade. 
@@ -68,21 +76,13 @@ This is a zero-based unique identifier for this connector. It should be unique f
                  </div>
 <div> </div>
 
-`MonitorContainerId`
-
-Container Id of the monitor being connected. If any device is also inside the monitor (eg audio, touch etc), then those devices should all have the same container id.
-
 `MonitorDescription`
 
 Pointer to the monitor description for the monitor. If the monitor does not have any description data, this should be set to NULL
 
-`MonitorType`
+`MonitorContainerId`
 
-The monitor connector type of the monitor
-
-`Size`
-
-Total size of the structure
+Container Id of the monitor being connected. If any device is also inside the monitor (eg audio, touch etc), then those devices should all have the same container id.
 
 
 ## Requirements

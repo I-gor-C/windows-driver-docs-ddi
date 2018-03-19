@@ -61,6 +61,18 @@ typedef struct _GETVERSIONINPARAMS {
 ## Members
 
 
+`bVersion`
+
+Contains an integer that indicates the version number of the binary driver.
+
+`bRevision`
+
+Contains an integer that indicates the revision number of the binary driver.
+
+`bReserved`
+
+Reserved.
+
 `bIDEDeviceMap`
 
 Contains the bitmap. The following table explains the meaning of the bitmap:
@@ -152,22 +164,6 @@ The device is an ATAPI drive, and it is the subordinate device on the secondary 
 </tr>
 </table>
 
-`bReserved`
-
-Reserved.
-
-`bRevision`
-
-Contains an integer that indicates the revision number of the binary driver.
-
-`bVersion`
-
-Contains an integer that indicates the version number of the binary driver.
-
-`dwReserved`
-
-Reserved.
-
 `fCapabilities`
 
 Contains the bitmask of driver capabilities. 
@@ -209,6 +205,10 @@ The device supports SMART commands.
 </tr>
 </table>
 
+`dwReserved`
+
+Reserved.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -218,11 +218,3 @@ The device supports SMART commands.
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566202">SMART_GET_VERSION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20GETVERSIONINPARAMS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

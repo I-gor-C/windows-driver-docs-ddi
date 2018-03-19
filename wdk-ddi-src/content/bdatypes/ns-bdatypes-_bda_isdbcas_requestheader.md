@@ -59,10 +59,6 @@ typedef struct _BDA_ISDBCAS_REQUESTHEADER {
 ## Members
 
 
-`argbIsdbCommand`
-
-
-
 `bInstruction`
 
 EMD/EMG
@@ -74,6 +70,10 @@ Reserved for future use.
 `ulDataLength`
 
 Specifies the size in bytes of the <b>argbIsdbCommand</b> member.
+
+`argbIsdbCommand`
+
+
 
 
 ## Requirements

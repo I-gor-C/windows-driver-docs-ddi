@@ -67,6 +67,10 @@ typedef struct _PCSTREAMRESOURCE_DESCRIPTOR {
 ## Members
 
 
+`Size`
+
+This field is init to the size of the struct.
+
 `Flags`
 
 Reserved for future use. Set to zero.
@@ -74,6 +78,10 @@ Reserved for future use. Set to zero.
 `Pdo`
 
 The physical device object of the stack that created this resource.
+
+`Type`
+
+The union of the different stream resource types.
 
 `Resource`
 
@@ -87,14 +95,6 @@ Thread.
 
 Reserved for future use, set to NULL. Only device-scoped resources are supported at this time.
 
-`Size`
-
-This field is init to the size of the struct.
-
-`Type`
-
-The union of the different stream resource types.
-
 ## Remarks
 Stream resources are any resources used by the audio driver to process audio streams or ensure audio data flow. Two type of stream resources are supported: interrupts and driver-owned threads. Audio drivers should register a resource after creating the resource, and unregister the resource before deleted it.
 
@@ -107,11 +107,3 @@ Stream resources are any resources used by the audio driver to process audio str
 ## See Also
 
 <a href="..\portcls\ne-portcls-_pcstreamresourcetype.md">PcStreamResourceType</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20PCSTREAMRESOURCE_DESCRIPTOR structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

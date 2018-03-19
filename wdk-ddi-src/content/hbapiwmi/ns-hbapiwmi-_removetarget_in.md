@@ -58,17 +58,17 @@ typedef struct _RemoveTarget_IN {
 ## Members
 
 
-`AllTargets`
+`HbaPortWWN`
 
-Indicates the scope of the target events to cease reporting. If this member is zero, the WMI provider client will cease reporting events associated with the port that is indicated by <b>DiscoveredPortWWN</b>. If this member is nonzero, the WMI provider will cease reporting all events associated any target.
+Contains a worldwide name that indicates the local port that should be removed from the list of ports whose events are reported to the WMI client..
 
 `DiscoveredPortWWN`
 
 Contains a worldwide name that indicates the remote discovered port that should be removed from the list of ports whose events are reported to the WMI client..
 
-`HbaPortWWN`
+`AllTargets`
 
-Contains a worldwide name that indicates the local port that should be removed from the list of ports whose events are reported to the WMI client..
+Indicates the scope of the target events to cease reporting. If this member is zero, the WMI provider client will cease reporting events associated with the port that is indicated by <b>DiscoveredPortWWN</b>. If this member is nonzero, the WMI provider will cease reporting all events associated any target.
 
 ## Remarks
 The WMI tool suite generates a declaration of the RemoveTarget_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562490">MSFC_EventControl WMI Class</a>.
@@ -81,11 +81,3 @@ The WMI tool suite generates a declaration of the RemoveTarget_IN structure in <
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564030">RemoveTarget</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20RemoveTarget_IN structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

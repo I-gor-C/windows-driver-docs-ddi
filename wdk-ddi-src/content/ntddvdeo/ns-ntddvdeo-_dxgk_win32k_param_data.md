@@ -60,11 +60,11 @@ typedef struct _DXGK_WIN32K_PARAM_DATA {
 ## Members
 
 
-`ModesArray`
+`PathsArray`
 
 Reserved for system use.
 
-`NumModeArrayElements`
+`ModesArray`
 
 Reserved for system use.
 
@@ -72,7 +72,7 @@ Reserved for system use.
 
 Reserved for system use.
 
-`PathsArray`
+`NumModeArrayElements`
 
 Reserved for system use.
 

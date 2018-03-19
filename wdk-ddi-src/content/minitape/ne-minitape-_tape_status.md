@@ -88,18 +88,8 @@ typedef enum _TAPE_STATUS {
 <table>
             
                 <tr>
-                    <td>TAPE_STATUS_BEGINNING_OF_MEDIA</td>
-                    <td>Indicates that the beginning of the media was encountered during a tape operation.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_BUFFER_OVERFLOW</td>
-                    <td>Indicates that a buffer overflow occurred.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_BUS_RESET</td>
-                    <td>Indicates that the bus has been reset.</td>
+                    <td>TAPE_STATUS_SEND_SRB_AND_CALLBACK</td>
+                    <td>Directs the tape class driver to send the SRB to the device. A tape miniclass routine usually returns this status after filling in the SRB passed by the tape class driver. If the operation is successful, the class driver increments a counter called a "call number" and calls the miniclass routine again. If the SRB fails, the class driver might call the miniclass routine again. For more information about how and when tape miniclass drivers should report this status value, see <a href="https://msdn.microsoft.com/de6edfc6-9b4b-4866-8fdb-1047b43163de">Processing Tape Device Control Requests</a>.</td>
                 </tr>
             
                 <tr>
@@ -113,48 +103,8 @@ typedef enum _TAPE_STATUS {
                 </tr>
             
                 <tr>
-                    <td>TAPE_STATUS_CLEANER_CARTRIDGE_INSTALLED</td>
-                    <td>Indicates that the media currently in the drive is a cleaner cartridge.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_DATA_OVERRUN</td>
-                    <td>Indicates that the tape operation could not be performed because of a data overrun.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_DEVICE_BUSY</td>
-                    <td>Indicates that the tape operation could not be performed, because the device is busy.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_DEVICE_DATA_ERROR</td>
-                    <td>Indicates that a cyclic redundancy check (CRC) error occurred.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_DEVICE_NOT_CONNECTED</td>
-                    <td>Indicates that the device is disconnected.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_DEVICE_NOT_READY</td>
-                    <td>Indicates that the device is not ready.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_END_OF_MEDIA</td>
-                    <td>Indicates that the end of the media was encountered during a tape operation.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_EOM_OVERFLOW</td>
-                    <td>Indicates that an attempt was made to exceed the physical end of the media during a tape operation.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_FILEMARK_DETECTED</td>
-                    <td>Indicates that a filemark was encountered during a tape operation.</td>
+                    <td>TAPE_STATUS_SUCCESS</td>
+                    <td>Indicates that the operation was successful.</td>
                 </tr>
             
                 <tr>
@@ -163,8 +113,8 @@ typedef enum _TAPE_STATUS {
                 </tr>
             
                 <tr>
-                    <td>TAPE_STATUS_INVALID_BLOCK_LENGTH</td>
-                    <td>Indicates that the block length is invalid.</td>
+                    <td>TAPE_STATUS_NOT_IMPLEMENTED</td>
+                    <td>Indicates that the requested operation is not supported.</td>
                 </tr>
             
                 <tr>
@@ -178,53 +128,13 @@ typedef enum _TAPE_STATUS {
                 </tr>
             
                 <tr>
-                    <td>TAPE_STATUS_IO_DEVICE_ERROR</td>
-                    <td>Indicates that an I/O error occurred during a tape operation.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_IO_TIMEOUT</td>
-                    <td>Indicates that the I/O operation timed out.</td>
-                </tr>
-            
-                <tr>
                     <td>TAPE_STATUS_MEDIA_CHANGED</td>
                     <td>Indicates that the media in the drive might have changed.</td>
                 </tr>
             
                 <tr>
-                    <td>TAPE_STATUS_MEDIA_WRITE_PROTECTED</td>
-                    <td>Indicates that the media is write protected.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_NO_DATA_DETECTED</td>
-                    <td>Indicates that no data was detected.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_NO_MEDIA</td>
-                    <td>Indicates that the tape operation failed, because there is no media in the drive.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_NO_SUCH_DEVICE</td>
-                    <td>Indicates that no such device exists.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_NOT_IMPLEMENTED</td>
-                    <td>Indicates that the requested operation is not supported.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_REQUIRES_CLEANING</td>
-                    <td>Indicates that the tape operation could not be performed because the device requires cleaning.</td>
-                </tr>
-            
-                <tr>
-                    <td>TAPE_STATUS_SEND_SRB_AND_CALLBACK</td>
-                    <td>Directs the tape class driver to send the SRB to the device. A tape miniclass routine usually returns this status after filling in the SRB passed by the tape class driver. If the operation is successful, the class driver increments a counter called a "call number" and calls the miniclass routine again. If the SRB fails, the class driver might call the miniclass routine again. For more information about how and when tape miniclass drivers should report this status value, see <a href="https://msdn.microsoft.com/de6edfc6-9b4b-4866-8fdb-1047b43163de">Processing Tape Device Control Requests</a>.</td>
+                    <td>TAPE_STATUS_BUS_RESET</td>
+                    <td>Indicates that the bus has been reset.</td>
                 </tr>
             
                 <tr>
@@ -233,13 +143,103 @@ typedef enum _TAPE_STATUS {
                 </tr>
             
                 <tr>
-                    <td>TAPE_STATUS_SUCCESS</td>
-                    <td>Indicates that the operation was successful.</td>
+                    <td>TAPE_STATUS_FILEMARK_DETECTED</td>
+                    <td>Indicates that a filemark was encountered during a tape operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_BEGINNING_OF_MEDIA</td>
+                    <td>Indicates that the beginning of the media was encountered during a tape operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_END_OF_MEDIA</td>
+                    <td>Indicates that the end of the media was encountered during a tape operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_BUFFER_OVERFLOW</td>
+                    <td>Indicates that a buffer overflow occurred.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_NO_DATA_DETECTED</td>
+                    <td>Indicates that no data was detected.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_EOM_OVERFLOW</td>
+                    <td>Indicates that an attempt was made to exceed the physical end of the media during a tape operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_NO_MEDIA</td>
+                    <td>Indicates that the tape operation failed, because there is no media in the drive.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_IO_DEVICE_ERROR</td>
+                    <td>Indicates that an I/O error occurred during a tape operation.</td>
                 </tr>
             
                 <tr>
                     <td>TAPE_STATUS_UNRECOGNIZED_MEDIA</td>
                     <td>Indicates that the type of the media is not supported.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_DEVICE_NOT_READY</td>
+                    <td>Indicates that the device is not ready.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_MEDIA_WRITE_PROTECTED</td>
+                    <td>Indicates that the media is write protected.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_DEVICE_DATA_ERROR</td>
+                    <td>Indicates that a cyclic redundancy check (CRC) error occurred.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_NO_SUCH_DEVICE</td>
+                    <td>Indicates that no such device exists.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_INVALID_BLOCK_LENGTH</td>
+                    <td>Indicates that the block length is invalid.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_IO_TIMEOUT</td>
+                    <td>Indicates that the I/O operation timed out.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_DEVICE_NOT_CONNECTED</td>
+                    <td>Indicates that the device is disconnected.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_DATA_OVERRUN</td>
+                    <td>Indicates that the tape operation could not be performed because of a data overrun.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_DEVICE_BUSY</td>
+                    <td>Indicates that the tape operation could not be performed, because the device is busy.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_REQUIRES_CLEANING</td>
+                    <td>Indicates that the tape operation could not be performed because the device requires cleaning.</td>
+                </tr>
+            
+                <tr>
+                    <td>TAPE_STATUS_CLEANER_CARTRIDGE_INSTALLED</td>
+                    <td>Indicates that the media currently in the drive is a cleaner cartridge.</td>
                 </tr>
 </table>
 
@@ -252,11 +252,3 @@ typedef enum _TAPE_STATUS {
 ## See Also
 
 <a href="..\ntddtape\ni-ntddtape-ioctl_tape_get_status.md">IOCTL_TAPE_GET_STATUS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TAPE_STATUS enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

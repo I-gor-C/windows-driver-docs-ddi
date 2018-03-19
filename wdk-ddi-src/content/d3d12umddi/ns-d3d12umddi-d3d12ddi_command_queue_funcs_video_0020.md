@@ -60,21 +60,21 @@ typedef struct D3D12DDI_COMMAND_QUEUE_FUNCS_VIDEO_0020 {
 ## Members
 
 
-`pfnCopyTileMappings`
-
-Copy tile mappings.
-
 `pfnExecuteCommandLists`
 
 Execute command lists.
 
-`pfnSignalFence`
-
-Signal fence.
-
 `pfnUpdateTileMappings`
 
 Update tile mappings.
+
+`pfnCopyTileMappings`
+
+Copy tile mappings.
+
+`pfnSignalFence`
+
+Signal fence.
 
 `pfnWaitForFence`
 

@@ -68,21 +68,15 @@ typedef struct _KSCAMERA_PROFILE_MEDIAINFO {
 ## Members
 
 
-`Data0`
+`Resolution`
 
-Reserved. Must be set to 0.
+The X (horizontal) and Y (vertical) frame size in pixels.
 
-`Data1`
+`MaxFrameRate`
 
-Reserved. Must be set to 0.
+The numerator/denominator ratio of frame rate (for example, 30 / 1 = 30fps).  This frame rate represents the maximum frame rate of the specified resolution under ideal lighting conditions.  Actual frame rate may be lower than this value.
 
-`Data2`
-
-Reserved. Must be set to 0.
-
-`Data3`
-
-Reserved. Must be set to 0.
+For photo media information, if photo sequence cannot be enabled because of hardware constraints for the given photo resolution, the frame rate must be set to 0 (numerator=0, denominator=0).  This will inform the application layer that photo sequence control will be rejected by the driver when that particular photo media type is selected.
 
 `Flags`
 
@@ -109,15 +103,21 @@ This flag may only be set for media info on the photo pin.  Presence of this fla
 </li>
 </ul>
 
-`MaxFrameRate`
+`Data0`
 
-The numerator/denominator ratio of frame rate (for example, 30 / 1 = 30fps).  This frame rate represents the maximum frame rate of the specified resolution under ideal lighting conditions.  Actual frame rate may be lower than this value.
+Reserved. Must be set to 0.
 
-For photo media information, if photo sequence cannot be enabled because of hardware constraints for the given photo resolution, the frame rate must be set to 0 (numerator=0, denominator=0).  This will inform the application layer that photo sequence control will be rejected by the driver when that particular photo media type is selected.
+`Data1`
 
-`Resolution`
+Reserved. Must be set to 0.
 
-The X (horizontal) and Y (vertical) frame size in pixels.
+`Data2`
+
+Reserved. Must be set to 0.
+
+`Data3`
+
+Reserved. Must be set to 0.
 
 
 ## Requirements

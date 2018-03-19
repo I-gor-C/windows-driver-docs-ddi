@@ -61,18 +61,6 @@ typedef struct _CLS_IO_STATISTICS_HEADER {
 ## Members
 
 
-`cbLength`
-
-The size, in bytes, of the <b>CLFS_IO_STATISTICS</b> structure, including the header.
-
-`coffData`
-
-The offset, in bytes, from the beginning of the <b>CLFS_IO_STATISTICS</b> structure to the beginning of the statistics data. This member allows for transparent modifications to the header.
-
-`eStatsClass`
-
-Reserved for future use. This member is ignored.
-
 `ubMajorVersion`
 
 The major version of the <a href="..\wdm\ns-wdm-_cls_io_statistics.md">CLFS_IO_STATISTICS</a> structure.
@@ -80,6 +68,18 @@ The major version of the <a href="..\wdm\ns-wdm-_cls_io_statistics.md">CLFS_IO_S
 `ubMinorVersion`
 
 The minor version of the <b>CLFS_IO_STATISTICS</b> structure.
+
+`eStatsClass`
+
+Reserved for future use. This member is ignored.
+
+`cbLength`
+
+The size, in bytes, of the <b>CLFS_IO_STATISTICS</b> structure, including the header.
+
+`coffData`
+
+The offset, in bytes, from the beginning of the <b>CLFS_IO_STATISTICS</b> structure to the beginning of the statistics data. This member allows for transparent modifications to the header.
 
 
 ## Requirements
@@ -94,11 +94,3 @@ The minor version of the <b>CLFS_IO_STATISTICS</b> structure.
 
 
 <a href="..\wdm\ns-wdm-_cls_io_statistics.md">CLFS_IO_STATISTICS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLS_IO_STATISTICS_HEADER structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

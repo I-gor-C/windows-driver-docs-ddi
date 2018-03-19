@@ -59,13 +59,28 @@ typedef struct _DXVA_COPPSetProtectionLevelCmdData {
 ## Members
 
 
-`ExtendedInfoChangeMask`
+`ProtType`
 
-Specifies a value that indicates the valid bitfields in the following <b>ExtendedInfoData</b> member.
+Specifies one of the following protection types to set on the physical connector associated with a COPP device:
 
-`ExtendedInfoData`
+<ul>
+<li>
+COPP_ProtectionType_None (0x00)
 
-Specifies additional 32-bit data for the protection type in <b>ProtType</b>. Not currently used.
+</li>
+<li>
+COPP_ProtectionType_HDCP (0x01)
+
+</li>
+<li>
+COPP_ProtectionType_ACP (0x02)
+
+</li>
+<li>
+COPP_ProtectionType_CGMSA (0x04)
+
+</li>
+</ul>
 
 `ProtLevel`
 
@@ -96,28 +111,13 @@ Specifies the protection level to set for the protection type in <b>ProtType</b>
 </li>
 </ul>
 
-`ProtType`
+`ExtendedInfoChangeMask`
 
-Specifies one of the following protection types to set on the physical connector associated with a COPP device:
+Specifies a value that indicates the valid bitfields in the following <b>ExtendedInfoData</b> member.
 
-<ul>
-<li>
-COPP_ProtectionType_None (0x00)
+`ExtendedInfoData`
 
-</li>
-<li>
-COPP_ProtectionType_HDCP (0x01)
-
-</li>
-<li>
-COPP_ProtectionType_ACP (0x02)
-
-</li>
-<li>
-COPP_ProtectionType_CGMSA (0x04)
-
-</li>
-</ul>
+Specifies additional 32-bit data for the protection type in <b>ProtType</b>. Not currently used.
 
 
 ## Requirements
@@ -133,11 +133,3 @@ COPP_ProtectionType_CGMSA (0x04)
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539642">COPPCommand</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_COPPSetProtectionLevelCmdData structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

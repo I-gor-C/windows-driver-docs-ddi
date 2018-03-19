@@ -58,6 +58,10 @@ typedef struct _FSCTL_OFFLOAD_WRITE_OUTPUT {
 ## Members
 
 
+`Size`
+
+The size of this structure. Set this member to <b>sizeof</b>(FSCTL_OFFLOAD_WRITE_OUTPUT).
+
 `Flags`
 
 Result flags for the offload write operation. This value is either 0 or the following:
@@ -84,10 +88,6 @@ The file to write to is too small for an offload operation.
 
 The length of data written for the transfer specified in <a href="..\ntifs\ns-ntifs-_fsctl_offload_write_input.md">FSCTL_OFFLOAD_WRITE_INPUT</a>.
 
-`Size`
-
-The size of this structure. Set this member to <b>sizeof</b>(FSCTL_OFFLOAD_WRITE_OUTPUT).
-
 ## Remarks
 The resulting length written, <b>LengthWritten</b>, may be smaller than what was originally specified in the <b>CopyLength</b> member of <a href="..\ntifs\ns-ntifs-_fsctl_offload_write_input.md">FSCTL_OFFLOAD_WRITE_INPUT</a>. A smaller value indicates that less data was able to be logically written with the specified <b>Token</b> than was requested.
 
@@ -106,11 +106,3 @@ The resulting length written, <b>LengthWritten</b>, may be smaller than what was
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451122">FSCTL_OFFLOAD_WRITE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSCTL_OFFLOAD_WRITE_OUTPUT structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

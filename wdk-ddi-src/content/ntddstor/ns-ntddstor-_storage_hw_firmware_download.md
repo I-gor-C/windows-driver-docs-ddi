@@ -63,9 +63,13 @@ typedef struct _STORAGE_HW_FIRMWARE_DOWNLOAD {
 ## Members
 
 
-`BufferSize`
+`Version`
 
-The buffer size of the ImageBuffer. This should be a multiple of ImagePayloadAlignment from <a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info.md">STORAGE_HW_FIRMWARE_INFO</a>.
+The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_DOWNLOAD).
+
+`Size`
+
+The size of this structure and the download image buffer.
 
 `Flags`
 
@@ -86,29 +90,25 @@ Flags associated with this download. The following are valid flags that this mem
 </tr>
 </table>
 
-`ImageBuffer`
+`Slot`
 
-The firmware image file.
-
-`Offset`
-
-The offset in this buffer of where the Image file begins. This should be aligned to ImagePayloadAlignment from <a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info.md">STORAGE_HW_FIRMWARE_INFO</a>.
+The slot number that the firmware image will be downloaded to.
 
 `Reserved`
 
 Reserved for future use.
 
-`Size`
+`Offset`
 
-The size of this structure and the download image buffer.
+The offset in this buffer of where the Image file begins. This should be aligned to ImagePayloadAlignment from <a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info.md">STORAGE_HW_FIRMWARE_INFO</a>.
 
-`Slot`
+`BufferSize`
 
-The slot number that the firmware image will be downloaded to.
+The buffer size of the ImageBuffer. This should be a multiple of ImagePayloadAlignment from <a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info.md">STORAGE_HW_FIRMWARE_INFO</a>.
 
-`Version`
+`ImageBuffer`
 
-The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_DOWNLOAD).
+The firmware image file.
 
 
 ## Requirements

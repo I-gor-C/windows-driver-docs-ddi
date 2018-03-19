@@ -66,18 +66,13 @@ typedef enum _USBFN_DEVICE_STATE {
 <table>
             
                 <tr>
-                    <td>UsbfnDeviceStateAddressed</td>
-                    <td>Device has been assigned a non-default USB address by the host.</td>
+                    <td>UsbfnDeviceStateMinimum</td>
+                    <td>The minimum value of the enumeration.</td>
                 </tr>
             
                 <tr>
                     <td>UsbfnDeviceStateAttached</td>
                     <td>Device is attached to an upstream port.</td>
-                </tr>
-            
-                <tr>
-                    <td>UsbfnDeviceStateConfigured</td>
-                    <td>Device has been configured by the host.</td>
                 </tr>
             
                 <tr>
@@ -91,18 +86,23 @@ typedef enum _USBFN_DEVICE_STATE {
                 </tr>
             
                 <tr>
-                    <td>UsbfnDeviceStateMinimum</td>
-                    <td>The minimum value of the enumeration.</td>
+                    <td>UsbfnDeviceStateAddressed</td>
+                    <td>Device has been assigned a non-default USB address by the host.</td>
                 </tr>
             
                 <tr>
-                    <td>UsbfnDeviceStateStateMaximum</td>
-                    <td>The maximum value of the enumeration.</td>
+                    <td>UsbfnDeviceStateConfigured</td>
+                    <td>Device has been configured by the host.</td>
                 </tr>
             
                 <tr>
                     <td>UsbfnDeviceStateSuspended</td>
                     <td>Device has been suspended.</td>
+                </tr>
+            
+                <tr>
+                    <td>UsbfnDeviceStateStateMaximum</td>
+                    <td>The maximum value of the enumeration.</td>
                 </tr>
 </table>
 

@@ -59,18 +59,6 @@ typedef struct _DXGKARG_COLLECTDBGINFO {
 ## Members
 
 
-`BufferSize`
-
-[in] The maximum size, in bytes, to copy to the buffer that <b>pBuffer</b> points to.
-
-`pBuffer`
-
-[out] A pointer to a buffer that receives the debug information that <b>Reason</b> specifies.
-
-`pExtension`
-
-[out] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_collectdbginfo_ext.md">DXGKARG_COLLECTDBGINFO_EXT</a> structure that is allocated by the operating system and that the driver optionally populates with debug extension information.
-
 `Reason`
 
 [in] The <a href="https://msdn.microsoft.com/DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB">bug-check code</a> for which to return debug information in the buffer that <b>pBuffer</b> points to. These are possible values:
@@ -106,6 +94,18 @@ Available starting in Windows 8.
 </tr>
 </table>
 
+`pBuffer`
+
+[out] A pointer to a buffer that receives the debug information that <b>Reason</b> specifies.
+
+`BufferSize`
+
+[in] The maximum size, in bytes, to copy to the buffer that <b>pBuffer</b> points to.
+
+`pExtension`
+
+[out] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_collectdbginfo_ext.md">DXGKARG_COLLECTDBGINFO_EXT</a> structure that is allocated by the operating system and that the driver optionally populates with debug extension information.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -124,11 +124,3 @@ Available starting in Windows 8.
 
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_collectdbginfo_ext.md">DXGKARG_COLLECTDBGINFO_EXT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_COLLECTDBGINFO structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

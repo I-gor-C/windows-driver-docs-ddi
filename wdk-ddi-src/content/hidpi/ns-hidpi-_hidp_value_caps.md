@@ -99,37 +99,21 @@ typedef struct _HIDP_VALUE_CAPS {
 ## Members
 
 
-`BitField`
+`UsagePage`
 
-Contains the data fields (one or two bytes) associated with an input, output, or feature main item.
+Specifies the usage page of the usage or usage range.
 
-`BitSize`
+`ReportID`
 
-Specifies the size, in bits, of a usage's data field in a report. If <b>ReportCount</b> is greater than one, each usage has a separate data field of this size.
-
-`HasNull`
-
-Specifies, if <b>TRUE</b>, that the usage supports a <b>NULL</b> value, which indicates that the data is not valid and should be ignored. Otherwise, if <b>HasNull</b> is <b>FALSE</b>, the usage does not have a <b>NULL</b> value.
-
-`IsAbsolute`
-
-Specifies, if <b>TRUE</b>, that the usage or usage range provides absolute data. Otherwise, if <b>IsAbsolute</b> is <b>FALSE</b>, the value is the change in state from the previous value.
+Specifies the report ID of the HID report that contains the usage or usage range.
 
 `IsAlias`
 
 Indicates, if <b>TRUE</b>, that the usage is member of a set of aliased usages. Otherwise, if <b>IsAlias</b> is <b>FALSE</b>, the value has only one usage.
 
-`IsDesignatorRange`
+`BitField`
 
-Specifies, if <b>TRUE</b>, that the usage or usage range has a set of designators. Otherwise, if <b>IsDesignatorRange</b> is <b>FALSE</b>, the usage or usage range has zero or one designator.
-
-`IsRange`
-
-Specifies, if <b>TRUE</b>, that the structure describes a usage range. Otherwise, if <b>IsRange</b> is <b>FALSE</b>, the structure describes a single usage.
-
-`IsStringRange`
-
-Specifies, if <b>TRUE</b>, that the usage or usage range has a set of string descriptors. Otherwise, if <b>IsStringRange</b> is <b>FALSE</b>, the usage or usage range has zero or one string descriptor.
+Contains the data fields (one or two bytes) associated with an input, output, or feature main item.
 
 `LinkCollection`
 
@@ -143,49 +127,65 @@ Specifies the usage of the link collection that contains the usage or usage rang
 
 Specifies the usage page of the link collection that contains the usage or usage range. If <b>LinkCollection</b> is zero, <b>LinkUsagePage</b> specifies the usage page of the top-level collection.
 
-`LogicalMax`
+`IsRange`
 
-Specifies a usage's signed upper bound.
+Specifies, if <b>TRUE</b>, that the structure describes a usage range. Otherwise, if <b>IsRange</b> is <b>FALSE</b>, the structure describes a single usage.
 
-`LogicalMin`
+`IsStringRange`
 
-Specifies a usage's signed lower bound.
+Specifies, if <b>TRUE</b>, that the usage or usage range has a set of string descriptors. Otherwise, if <b>IsStringRange</b> is <b>FALSE</b>, the usage or usage range has zero or one string descriptor.
 
-`PhysicalMax`
+`IsDesignatorRange`
 
-Specifies a usage's signed upper bound after scaling is applied to the logical maximum value.
+Specifies, if <b>TRUE</b>, that the usage or usage range has a set of designators. Otherwise, if <b>IsDesignatorRange</b> is <b>FALSE</b>, the usage or usage range has zero or one designator.
 
-`PhysicalMin`
+`IsAbsolute`
 
-Specifies a usage's signed lower bound after scaling is applied to the logical minimum value.
+Specifies, if <b>TRUE</b>, that the usage or usage range provides absolute data. Otherwise, if <b>IsAbsolute</b> is <b>FALSE</b>, the value is the change in state from the previous value.
 
-`ReportCount`
+`HasNull`
 
-Specifies the number of usages that this structure describes.
-
-`ReportID`
-
-Specifies the report ID of the HID report that contains the usage or usage range.
+Specifies, if <b>TRUE</b>, that the usage supports a <b>NULL</b> value, which indicates that the data is not valid and should be ignored. Otherwise, if <b>HasNull</b> is <b>FALSE</b>, the usage does not have a <b>NULL</b> value.
 
 `Reserved`
 
 Reserved for internal system use.
 
+`BitSize`
+
+Specifies the size, in bits, of a usage's data field in a report. If <b>ReportCount</b> is greater than one, each usage has a separate data field of this size.
+
+`ReportCount`
+
+Specifies the number of usages that this structure describes.
+
 `Reserved2`
 
 Reserved for internal system use.
-
-`Units`
-
-Specifies the usage's units, as described by the USB HID Standard.
 
 `UnitsExp`
 
 Specifies the usage's exponent, as described by the USB HID standard.
 
-`UsagePage`
+`Units`
 
-Specifies the usage page of the usage or usage range.
+Specifies the usage's units, as described by the USB HID Standard.
+
+`LogicalMin`
+
+Specifies a usage's signed lower bound.
+
+`LogicalMax`
+
+Specifies a usage's signed upper bound.
+
+`PhysicalMin`
+
+Specifies a usage's signed lower bound after scaling is applied to the logical minimum value.
+
+`PhysicalMax`
+
+Specifies a usage's signed upper bound after scaling is applied to the logical maximum value.
 
 ## Remarks
 Clients obtain a <a href="https://msdn.microsoft.com/d447dda6-a1e5-4e57-b06f-f79f8662c236">value capability array</a> by calling <a href="..\hidpi\nf-hidpi-hidp_getvaluecaps.md">HidP_GetValueCaps</a> or <a href="..\hidpi\nf-hidpi-hidp_getspecificvaluecaps.md">HidP_GetSpecificValueCaps</a>. These routines return an array of HIDP_VALUE_CAPS structures in a caller-allocated buffer. The required buffer length is specified in the <a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a> structure returned by <a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>. 
@@ -228,11 +228,3 @@ For information about the capabilities of HID control values, see <a href="https
 
 
 <a href="..\hidpi\nf-hidpi-hidp_getusagevaluearray.md">HidP_GetUsageValueArray</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HIDP_VALUE_CAPS structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

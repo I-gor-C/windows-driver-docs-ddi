@@ -61,6 +61,11 @@ typedef enum _MsrDataEncryption {
 <table>
             
                 <tr>
+                    <td>MsrDataEncryption_None</td>
+                    <td>Indicates no encryption algorithm.</td>
+                </tr>
+            
+                <tr>
                     <td>MsrDataEncryption_3DEA_DUKPT</td>
                     <td>The Triple Data Encryption Standard (DES) Derived Unique Key Per Transaction (DUKPT) encryption algorithm.</td>
                 </tr>
@@ -73,11 +78,6 @@ typedef enum _MsrDataEncryption {
                 <tr>
                     <td>MsrDataEncryption_ExtendedBase</td>
                     <td>A vendor-specific encryption algorithm. Service-specific values begin at 0x01000000 and are reserved for additional encryption algorithms.</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrDataEncryption_None</td>
-                    <td>Indicates no encryption algorithm.</td>
                 </tr>
 </table>
 

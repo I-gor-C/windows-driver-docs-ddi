@@ -63,17 +63,17 @@ typedef struct _DXVAHDDDI_CUSTOM_RATE_DATA {
 
 [in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents the input and output frame rate.
 
-`InputFramesOrFields`
+`OutputFrames`
 
-[in] The number of the input frames or fields.
+[in] The number of frames that the driver outputs.
 
 `InputInterlaced`
 
 [in] A Boolean value that specifies whether the input stream is progressive (frame) or interlaced (field).
 
-`OutputFrames`
+`InputFramesOrFields`
 
-[in] The number of frames that the driver outputs.
+[in] The number of the input frames or fields.
 
 ## Remarks
 The driver can expose custom rates for the frame rate conversion or the inverse telecine. For example, the driver can provide the following information in the members of DXVAHDDDI_CUSTOM_RATE_DATA for the indicated operation:
@@ -87,11 +87,3 @@ The driver can expose custom rates for the frame rate conversion or the inverse 
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_CUSTOM_RATE_DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

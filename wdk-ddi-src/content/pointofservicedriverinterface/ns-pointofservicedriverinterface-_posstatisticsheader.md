@@ -58,17 +58,17 @@ typedef struct _PosStatisticsHeader {
 ## Members
 
 
-`DataLength`
+`EntryCount`
 
-Indicates the length, in bytes, of the <b>PosStatisticsHeader</b> and the buffer of <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_posvaluestatisticsentry.md">PosValueStatisticsEntry</a> that follow this structure in memory.
+Indicates the number of statistics that follow this header.
 
 `DeviceInformation`
 
 A <a href="..\pointofservicecommontypes\ns-pointofservicecommontypes-_posdeviceinformation.md">PosDeviceInformation</a> structure that contains UPOS standard information about the device, such as its category, manufacturer, and firmware revision.
 
-`EntryCount`
+`DataLength`
 
-Indicates the number of statistics that follow this header.
+Indicates the length, in bytes, of the <b>PosStatisticsHeader</b> and the buffer of <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_posvaluestatisticsentry.md">PosValueStatisticsEntry</a> that follow this structure in memory.
 
 
 ## Requirements

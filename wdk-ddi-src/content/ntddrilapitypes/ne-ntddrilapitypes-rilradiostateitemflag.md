@@ -63,27 +63,7 @@ typedef enum _RILRADIOSTATEITEMFLAG {
 <table>
             
                 <tr>
-                    <td>RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_RADIOSTATE_ITEMFLAG_USE_INTVAL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_RADIOSTATE_ITEMFLAG_USE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY</td>
                     <td></td>
                 </tr>
             
@@ -94,6 +74,26 @@ typedef enum _RILRADIOSTATEITEMFLAG {
             
                 <tr>
                     <td>RIL_RADIOSTATE_ITEMFLAG_USE_WSZVAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_RADIOSTATE_ITEMFLAG_USE_MAX</td>
                     <td></td>
                 </tr>
 </table>

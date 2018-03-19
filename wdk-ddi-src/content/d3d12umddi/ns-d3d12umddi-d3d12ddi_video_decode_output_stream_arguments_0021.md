@@ -58,10 +58,6 @@ typedef struct D3D12DDI_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS_0021 {
 ## Members
 
 
-`ConversionArguments`
-
-
-
 `hDrvOutputTexture2D`
 
 The output texture.  If decode conversion is enabled, this output specifies the post conversion output.  If decode conversion is not enabled, this is the decode output.
@@ -69,6 +65,10 @@ The output texture.  If decode conversion is enabled, this output specifies the 
 `OutputSubresource`
 
 The output subresource to use for the <i>hDrvOutputTexture2D</i> parameter. If the output is an array, this allows specifying array indices.
+
+`ConversionArguments`
+
+
 
 
 ## Requirements

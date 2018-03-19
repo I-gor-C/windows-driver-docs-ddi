@@ -59,21 +59,21 @@ typedef struct {
 ## Members
 
 
-`ChunkId`
-
-The identifier for this chunk, of type <a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_id.md">MIRACAST_CHUNK_ID</a>.
-
 `ChunkType`
 
 The type of chunk that is to be processed, specified as a <a href="..\netdispumdddi\ne-netdispumdddi-miracast_chunk_type.md">MIRACAST_CHUNK_TYPE</a> enumeration value.
 
-`EncodeRate`
+`ChunkId`
 
-The encode bit rate, in kilobits per second, that the user-mode driver reported for this chunk.
+The identifier for this chunk, of type <a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_id.md">MIRACAST_CHUNK_ID</a>.
 
 `ProcessingTime`
 
 The time, in microseconds, that it took to process this chunk.
+
+`EncodeRate`
+
+The encode bit rate, in kilobits per second, that the user-mode driver reported for this chunk.
 
 
 ## Requirements
@@ -89,11 +89,3 @@ The time, in microseconds, that it took to process this chunk.
 
 
 <a href="..\netdispumdddi\ne-netdispumdddi-miracast_chunk_type.md">MIRACAST_CHUNK_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20MIRACAST_CHUNK_INFO structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

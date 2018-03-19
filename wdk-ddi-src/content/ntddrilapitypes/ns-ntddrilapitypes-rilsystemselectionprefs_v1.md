@@ -66,19 +66,11 @@ typedef struct _RILSYSTEMSELECTIONPREFS_V1 {
 
 
 
-`dwExecutor`
-
-
-
-`dwMode`
-
-
-
 `dwParams`
 
 
 
-`dwRoamingMode`
+`dwExecutor`
 
 
 
@@ -86,7 +78,15 @@ typedef struct _RILSYSTEMSELECTIONPREFS_V1 {
 
 
 
+`dwMode`
+
+
+
 `plmnInfo`
+
+
+
+`dwRoamingMode`
 
 
 

@@ -62,17 +62,21 @@ typedef struct _NFC_CX_RF_DISCOVERY_CONFIG {
 ## Members
 
 
-`BailoutConfig`
+`Size`
 
-Combination of <a href="..\nfccx\ne-nfccx-_nfc_cx_poll_bailout_config.md">NFC_CX_POLL_BAILOUT_CONFIG</a> values. Default is disabled.
+Size of this structure in bytes.
 
-This member enables configuration of PA_BAIL_OUT and PB_BAIL_OUT as described in the NCI specification.
+`TotalDuration`
 
-`NfcCEMode`
+Total duration of the single discovery period in milliseconds. Default is 300 milliseconds.
 
-Combination of <a href="..\nfccx\ne-nfccx-_nfc_cx_ce_mode_config.md">NFC_CX_CE_MODE_CONFIG</a> values. 
+This member corresponds to TOTAL_DURATION specified in the NCI specification. Values can be between 0 to 0xFFFF.  Use an appropriate value that factors into account both the discovery latency as well as power consumption.
 
-This member enables configuration of NFC-CE mode settings. The default enables passive listen NFC-A, passive listen NFC-B, and passive listen NFC-F phases.
+`PollConfig`
+
+Combination of <a href="..\nfccx\ne-nfccx-_nfc_cx_poll_mode_config.md">NFC_CX_POLL_MODE_CONFIG</a> values. 
+
+This member enables configuration of poll mode settings. The default enables polling for passive poll NFC-A, passive poll NFC-B, and passive poll NFC-F (212 and 424k). Its recommended that NFC clients configure additional active modes if they are supported.
 
 `NfcIPMode`
 
@@ -86,21 +90,17 @@ Combination of <a href="..\nfccx\ne-nfccx-_nfc_cx_nfcip_tgt_mode_config.md">NFC_
 
 This member enables configuration of NFC-IP target mode settings. The default enables passive listen NFC-A and passive listen NFC-F phases.
 
-`PollConfig`
+`NfcCEMode`
 
-Combination of <a href="..\nfccx\ne-nfccx-_nfc_cx_poll_mode_config.md">NFC_CX_POLL_MODE_CONFIG</a> values. 
+Combination of <a href="..\nfccx\ne-nfccx-_nfc_cx_ce_mode_config.md">NFC_CX_CE_MODE_CONFIG</a> values. 
 
-This member enables configuration of poll mode settings. The default enables polling for passive poll NFC-A, passive poll NFC-B, and passive poll NFC-F (212 and 424k). Its recommended that NFC clients configure additional active modes if they are supported.
+This member enables configuration of NFC-CE mode settings. The default enables passive listen NFC-A, passive listen NFC-B, and passive listen NFC-F phases.
 
-`Size`
+`BailoutConfig`
 
-Size of this structure in bytes.
+Combination of <a href="..\nfccx\ne-nfccx-_nfc_cx_poll_bailout_config.md">NFC_CX_POLL_BAILOUT_CONFIG</a> values. Default is disabled.
 
-`TotalDuration`
-
-Total duration of the single discovery period in milliseconds. Default is 300 milliseconds.
-
-This member corresponds to TOTAL_DURATION specified in the NCI specification. Values can be between 0 to 0xFFFF.  Use an appropriate value that factors into account both the discovery latency as well as power consumption.
+This member enables configuration of PA_BAIL_OUT and PB_BAIL_OUT as described in the NCI specification.
 
 
 ## Requirements
@@ -116,11 +116,3 @@ This member corresponds to TOTAL_DURATION specified in the NCI specification. Va
 
 
 <a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_RF_DISCOVERY_CONFIG structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

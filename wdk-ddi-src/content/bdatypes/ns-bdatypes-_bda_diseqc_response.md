@@ -58,7 +58,7 @@ typedef struct _BDA_DISEQC_RESPONSE {
 ## Members
 
 
-`argbPacketData`
+`ulRequestId`
 
 
 
@@ -66,7 +66,7 @@ typedef struct _BDA_DISEQC_RESPONSE {
 
 
 
-`ulRequestId`
+`argbPacketData`
 
 
 

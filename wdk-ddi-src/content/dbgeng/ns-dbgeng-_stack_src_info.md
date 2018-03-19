@@ -61,18 +61,6 @@ typedef struct _STACK_SRC_INFO {
 ## Members
 
 
-`Column`
-
-A column number.
-
-`Displacement`
-
-A displacement value.
-
-`Function`
-
-A function.
-
 `ImagePath`
 
 An image path.
@@ -81,9 +69,21 @@ An image path.
 
 A module name.
 
+`Function`
+
+A function.
+
+`Displacement`
+
+A displacement value.
+
 `Row`
 
 A row number.
+
+`Column`
+
+A column number.
 
 
 ## Requirements

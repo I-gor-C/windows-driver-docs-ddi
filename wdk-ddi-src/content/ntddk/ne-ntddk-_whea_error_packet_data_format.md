@@ -66,18 +66,13 @@ typedef enum _WHEA_ERROR_PACKET_DATA_FORMAT {
 <table>
             
                 <tr>
-                    <td>WheaDataFormatGeneric</td>
-                    <td>The raw data in the hardware error packet is formatted as a <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a> structure.</td>
-                </tr>
-            
-                <tr>
                     <td>WheaDataFormatIPFSalRecord</td>
                     <td>The raw data in the hardware error packet contains an Itanium processor family system abstraction layer (SAL) error record. For more information about the format of a SAL error record, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=72212">Intel Itanium Processor Family System Abstraction Layer Specification</a>.</td>
                 </tr>
             
                 <tr>
-                    <td>WheaDataFormatMax</td>
-                    <td>The maximum number of formats of raw hardware error data.</td>
+                    <td>WheaDataFormatXPFMCA</td>
+                    <td>The raw data in the hardware error packet is formatted as an MCA_EXCEPTION structure. For more information about the MCA_EXCEPTION structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540659">HalQuerySystemInformation</a>.</td>
                 </tr>
             
                 <tr>
@@ -86,13 +81,13 @@ typedef enum _WHEA_ERROR_PACKET_DATA_FORMAT {
                 </tr>
             
                 <tr>
-                    <td>WheaDataFormatNMIPort</td>
-                    <td>The raw data in the hardware error packet contains the data that was read from the nonmaskable interrupt (NMI) I/O ports by the NMI low-level hardware error handler (LLHEH). The format of this error data is specific to the implementation.</td>
+                    <td>WheaDataFormatPCIExpress</td>
+                    <td>The raw data in the hardware error packet is formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a> structure.</td>
                 </tr>
             
                 <tr>
-                    <td>WheaDataFormatPCIExpress</td>
-                    <td>The raw data in the hardware error packet is formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a> structure.</td>
+                    <td>WheaDataFormatNMIPort</td>
+                    <td>The raw data in the hardware error packet contains the data that was read from the nonmaskable interrupt (NMI) I/O ports by the NMI low-level hardware error handler (LLHEH). The format of this error data is specific to the implementation.</td>
                 </tr>
             
                 <tr>
@@ -106,8 +101,13 @@ typedef enum _WHEA_ERROR_PACKET_DATA_FORMAT {
                 </tr>
             
                 <tr>
-                    <td>WheaDataFormatXPFMCA</td>
-                    <td>The raw data in the hardware error packet is formatted as an MCA_EXCEPTION structure. For more information about the MCA_EXCEPTION structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540659">HalQuerySystemInformation</a>.</td>
+                    <td>WheaDataFormatGeneric</td>
+                    <td>The raw data in the hardware error packet is formatted as a <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>WheaDataFormatMax</td>
+                    <td>The maximum number of formats of raw hardware error data.</td>
                 </tr>
 </table>
 
@@ -132,11 +132,3 @@ The <a href="..\ntddk\ns-ntddk-_whea_error_packet_v2.md">WHEA_ERROR_PACKET_V2</a
 
 
 <a href="..\ntddk\ns-ntddk-_whea_error_packet_v2.md">WHEA_ERROR_PACKET_V2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_ERROR_PACKET_DATA_FORMAT enumeration%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -78,37 +78,33 @@ typedef struct _SCSI_PNP_REQUEST_BLOCK {
 ## Members
 
 
-`DataBuffer`
+`Length`
 
-Miniport driver should ignore this member.
-
-`DataTransferLength`
-
-Miniport driver should ignore this member.
+The size, in bytes, of the <b>SCSI_PNP_REQUEST_BLOCK</b> structure.
 
 `Function`
 
 The operation to perform. For the <b>SCSI_PNP_REQUEST_BLOCK</b> structure, this member is always set to SRB_FUNCTION_PNP.
 
-`Length`
+`SrbStatus`
 
-The size, in bytes, of the <b>SCSI_PNP_REQUEST_BLOCK</b> structure.
+The status of the completed request. The miniport driver should set this value before notifying the Storport driver that the request has completed. A miniport driver notifies the Storport driver that the request has completed by calling the <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a> routine with a notification type of <b>RequestComplete</b>. For a list of possible status values, see <a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>.
 
-`Lun`
+`PnPSubFunction`
 
-The logical unit number (LUN) of the device.
-
-`NextSrb`
-
-Miniport driver should ignore this member.
-
-`OriginalRequest`
-
-Miniport driver should ignore this member.
+This member is not currently used. Miniport drivers ignore this member.
 
 `PathId`
 
 The SCSI port or bus identifier for the request. This value is zero based.
+
+`TargetId`
+
+The target controller or device identifier on the bus.
+
+`Lun`
+
+The logical unit number (LUN) of the device.
 
 `PnPAction`
 
@@ -198,9 +194,41 @@ Surprise Removal of the device. This value was added in Windows 7.
 </tr>
 </table>
 
-`PnPSubFunction`
+`SrbFlags`
 
-This member is not currently used. Miniport drivers ignore this member.
+Miniport driver should ignore this member.
+
+`DataTransferLength`
+
+Miniport driver should ignore this member.
+
+`TimeOutValue`
+
+The interval, in seconds, that the request can execute before the Storport driver determines that the request has timed out.
+
+`DataBuffer`
+
+Miniport driver should ignore this member.
+
+`SenseInfoBuffer`
+
+Miniport driver should ignore this member.
+
+`NextSrb`
+
+Miniport driver should ignore this member.
+
+`OriginalRequest`
+
+Miniport driver should ignore this member.
+
+`SrbExtension`
+
+A pointer to the SRB extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure. The Storport driver does not initialize the memory that this member points to. The HBA can directly access the data that the miniport driver writes into the SRB extension. A miniport driver can obtain the physical address of the SRB extension by calling the <a href="..\storport\nf-storport-storportgetphysicaladdress.md">StorPortGetPhysicalAddress</a> routine.
+
+`SrbPnPFlags`
+
+The PNP flags. Currently, the only flag allowed is SRB_PNP_FLAGS_ADAPTER_REQUEST, which indicates that the PNP request is for the adapter, and not for one of the devices on the adapter. If this flag is set, the miniport driver should ignore the values in the <b>PathId</b>, <b>TargetId</b>, and <b>Lun</b>.
 
 `Reserved`
 
@@ -209,34 +237,6 @@ Reserved for system use.
 `Reserved4`
 
 Reserved for system use.
-
-`SenseInfoBuffer`
-
-Miniport driver should ignore this member.
-
-`SrbExtension`
-
-A pointer to the SRB extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure. The Storport driver does not initialize the memory that this member points to. The HBA can directly access the data that the miniport driver writes into the SRB extension. A miniport driver can obtain the physical address of the SRB extension by calling the <a href="..\storport\nf-storport-storportgetphysicaladdress.md">StorPortGetPhysicalAddress</a> routine.
-
-`SrbFlags`
-
-Miniport driver should ignore this member.
-
-`SrbPnPFlags`
-
-The PNP flags. Currently, the only flag allowed is SRB_PNP_FLAGS_ADAPTER_REQUEST, which indicates that the PNP request is for the adapter, and not for one of the devices on the adapter. If this flag is set, the miniport driver should ignore the values in the <b>PathId</b>, <b>TargetId</b>, and <b>Lun</b>.
-
-`SrbStatus`
-
-The status of the completed request. The miniport driver should set this value before notifying the Storport driver that the request has completed. A miniport driver notifies the Storport driver that the request has completed by calling the <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a> routine with a notification type of <b>RequestComplete</b>. For a list of possible status values, see <a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>.
-
-`TargetId`
-
-The target controller or device identifier on the bus.
-
-`TimeOutValue`
-
-The interval, in seconds, that the request can execute before the Storport driver determines that the request has timed out.
 
 ## Remarks
 The Storport driver sends <b>SCSI_PNP_REQUEST_BLOCK</b> requests to a miniport driver to notify the miniport driver of Windows plug and play events that affect storage devices that are connected to the adapter.
@@ -259,11 +259,3 @@ The Storport driver calls <a href="..\storport\nc-storport-hw_buildio.md">HwStor
 
 
 <a href="..\storport\nc-storport-hw_buildio.md">HwStorBuildIo</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SCSI_PNP_REQUEST_BLOCK structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

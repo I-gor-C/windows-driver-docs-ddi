@@ -61,11 +61,6 @@ typedef enum _RILDIALEDIDSETTINGSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_DIDS_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_DIDS_EXECUTOR</td>
                     <td></td>
                 </tr>
@@ -77,6 +72,11 @@ typedef enum _RILDIALEDIDSETTINGSPARAMMASK {
             
                 <tr>
                     <td>RIL_PARAM_DIDS_STATUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_DIDS_ALL</td>
                     <td></td>
                 </tr>
 </table>

@@ -58,6 +58,10 @@ typedef struct _IRB_REQ_ISOCH_ALLOCATE_CHANNEL {
 ## Members
 
 
+`nRequestedChannel`
+
+Specifies the particular channel to allocate, or ISOCH_ANY_CHANNEL for an arbitrary channel.
+
 `Channel`
 
 Specifies the channel allocated, if the request succeeds.
@@ -68,10 +72,6 @@ A bitmap specifying the available channels. The highest order bit (bit 63) speci
 
 <div class="alert"><b>Note</b>  Drivers should not rely on this information  because another device may allocate or deallocate channels at any time. The bus driver fills in this member, even if the request fails.</div>
 <div> </div>
-
-`nRequestedChannel`
-
-Specifies the particular channel to allocate, or ISOCH_ANY_CHANNEL for an arbitrary channel.
 
 
 ## Requirements

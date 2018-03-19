@@ -59,111 +59,31 @@ typedef struct D3DWDDM2_2DDI_CORELAYER_DEVICECALLBACKS {
 ## Members
 
 
-`pfnCreateContextCb`
-
-
-
-`pfnCreateContextVirtualCb`
-
-
-
-`pfnDisableDeferredStagingResourceDestruction`
-
-
-
-`pfnPerformAmortizedProcessingCb`
-
-
-
 `pfnSetErrorCb`
 
 
 
-`pfnShaderCacheAddRefCb`
-
-A callback function that adds a reference to the shader cache.
-
-`pfnShaderCacheGetValueCb`
+`pfnStateVsConstBufCb`
 
 
 
-`pfnShaderCacheReleaseCb`
-
-A callback function that releases a reference to a cache.
-
-`pfnShaderCacheStoreValueCb`
+`pfnStatePsSrvCb`
 
 
 
-`pfnStateCsConstBufCb`
+`pfnStatePsShaderCb`
 
 
 
-`pfnStateCsSamplerCb`
+`pfnStatePsSamplerCb`
 
 
 
-`pfnStateCsShaderCb`
+`pfnStateVsShaderCb`
 
 
 
-`pfnStateCsSrvCb`
-
-
-
-`pfnStateCsUavCb`
-
-
-
-`pfnStateDsConstBufCb`
-
-
-
-`pfnStateDsSamplerCb`
-
-
-
-`pfnStateDsShaderCb`
-
-
-
-`pfnStateDsSrvCb`
-
-
-
-`pfnStateGsConstBufCb`
-
-
-
-`pfnStateGsSamplerCb`
-
-
-
-`pfnStateGsShaderCb`
-
-
-
-`pfnStateGsSrvCb`
-
-
-
-`pfnStateHsConstBufCb`
-
-
-
-`pfnStateHsSamplerCb`
-
-
-
-`pfnStateHsShaderCb`
-
-
-
-`pfnStateHsSrvCb`
-
-
-
-`pfnStateIaIndexBufCb`
+`pfnStatePsConstBufCb`
 
 
 
@@ -171,11 +91,43 @@ A callback function that releases a reference to a cache.
 
 
 
+`pfnStateIaVertexBufCb`
+
+
+
+`pfnStateIaIndexBufCb`
+
+
+
+`pfnStateGsConstBufCb`
+
+
+
+`pfnStateGsShaderCb`
+
+
+
 `pfnStateIaPrimitiveTopologyCb`
 
 
 
-`pfnStateIaVertexBufCb`
+`pfnStateVsSrvCb`
+
+
+
+`pfnStateVsSamplerCb`
+
+
+
+`pfnStateGsSrvCb`
+
+
+
+`pfnStateGsSamplerCb`
+
+
+
+`pfnStateOmRenderTargetsCb`
 
 
 
@@ -187,35 +139,7 @@ A callback function that releases a reference to a cache.
 
 
 
-`pfnStateOmRenderTargetsCb`
-
-
-
-`pfnStatePsConstBufCb`
-
-
-
-`pfnStatePsSamplerCb`
-
-
-
-`pfnStatePsShaderCb`
-
-
-
-`pfnStatePsSrvCb`
-
-
-
 `pfnStateRsRastStateCb`
-
-
-
-`pfnStateRsScissorCb`
-
-
-
-`pfnStateRsViewportsCb`
 
 
 
@@ -223,25 +147,101 @@ A callback function that releases a reference to a cache.
 
 
 
+`pfnStateRsViewportsCb`
+
+
+
+`pfnStateRsScissorCb`
+
+
+
+`pfnDisableDeferredStagingResourceDestruction`
+
+
+
 `pfnStateTextFilterSizeCb`
 
 
 
-`pfnStateVsConstBufCb`
+`pfnStateHsSrvCb`
 
 
 
-`pfnStateVsSamplerCb`
+`pfnStateHsShaderCb`
 
 
 
-`pfnStateVsShaderCb`
+`pfnStateHsSamplerCb`
 
 
 
-`pfnStateVsSrvCb`
+`pfnStateHsConstBufCb`
 
 
+
+`pfnStateDsSrvCb`
+
+
+
+`pfnStateDsShaderCb`
+
+
+
+`pfnStateDsSamplerCb`
+
+
+
+`pfnStateDsConstBufCb`
+
+
+
+`pfnPerformAmortizedProcessingCb`
+
+
+
+`pfnStateCsSrvCb`
+
+
+
+`pfnStateCsUavCb`
+
+
+
+`pfnStateCsShaderCb`
+
+
+
+`pfnStateCsSamplerCb`
+
+
+
+`pfnStateCsConstBufCb`
+
+
+
+`pfnCreateContextCb`
+
+
+
+`pfnCreateContextVirtualCb`
+
+
+
+`pfnShaderCacheGetValueCb`
+
+
+
+`pfnShaderCacheStoreValueCb`
+
+
+
+`pfnShaderCacheAddRefCb`
+
+A callback function that adds a reference to the shader cache.
+
+`pfnShaderCacheReleaseCb`
+
+A callback function that releases a reference to a cache.
 
 
 ## Requirements

@@ -64,23 +64,7 @@ typedef struct _RILSYSTEMTIME {
 ## Members
 
 
-`wDay`
-
-
-
-`wDayOfWeek`
-
-
-
-`wHour`
-
-
-
-`wMilliseconds`
-
-
-
-`wMinute`
+`wYear`
 
 
 
@@ -88,11 +72,27 @@ typedef struct _RILSYSTEMTIME {
 
 
 
+`wDayOfWeek`
+
+
+
+`wDay`
+
+
+
+`wHour`
+
+
+
+`wMinute`
+
+
+
 `wSecond`
 
 
 
-`wYear`
+`wMilliseconds`
 
 
 

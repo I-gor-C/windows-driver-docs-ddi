@@ -70,111 +70,13 @@ typedef struct _ISCSI_ConnectionStaticInfo {
 ## Members
 
 
-`AuthType`
+`UniqueConnectionId`
 
-The type of authentication that is used to establish a connection. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561490">ISCSI_ConnectionStaticInfo WMI Class</a>, which is defined in <i>Mgmt.mof</i>, does specify values for this member; but if your software includes <i>Iscsidsc.h</i>, it can use the <a href="..\iscsidef\ne-iscsidef-piscsi_auth_types.md">ISCSI_AUTH_TYPES</a> enumeration to assign values to this member.
+The connection identifier (ID) that the operating system and application software use to uniquely identify the connection. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the <i>UniqueConnectionId</i> parameter. Do not confuse this value with the connection ID (CID).
 
 `CID`
 
 The iSCSI connection ID (CID) for this connection instance. The iSCSI protocol uses this value to identify the connection.
-
-`DataIntegrity`
-
-The name of the iSCSI data digest scheme that is associated with this connection session. This member can have the following symbolic constant values, which are defined in <i>Iscsimgt.h</i>.
-
-<table>
-<tr>
-<th>HeaderIntegrity</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-None
-
-</td>
-<td>
-The session is not using a data digest. 
-
-</td>
-</tr>
-<tr>
-<td>
-crc32c
-
-</td>
-<td>
-The session is using a 32-bit CRC digest.
-
-</td>
-</tr>
-</table>
-
-`EstimatedThroughput`
-
-The estimated throughput, in bytes per second, of the connection.
-
-`HeaderIntegrity`
-
-The name of the iSCSI header digest scheme that is associated with this connection session. This member can have the following symbolic constant values, which are defined in <i>Iscsimgt.h</i>.
-
-<table>
-<tr>
-<th>HeaderIntegrity</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-None
-
-</td>
-<td>
-The session is not using a header digest. 
-
-</td>
-</tr>
-<tr>
-<td>
-crc32c
-
-</td>
-<td>
-The session is using a 32-bit CRC digest.
-
-</td>
-</tr>
-</table>
-
-`LocalAddr`
-
-A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that holds the IP address of the local network card that the initiator uses to connect to the network.
-
-`LocalPort`
-
-The local port number that this connection instance uses.
-
-`MaxDatagramSize`
-
-The maximum size, in bytes, of the datagram that the transport supports.
-
-`MaxRecvDataSegmentLength`
-
-The maximum data payload size, in bytes, that is supported for command or data PDUs within this connection session.
-
-`Protocol`
-
-The transport protocol that is used to establish this connection instance. For a list of values that you can assign to this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561494">ISCSI_CONNECTION_PROTOCOL_TYPE_QUALIFIERS</a>.
-
-`RemoteAddr`
-
-A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that holds the IP address of the remote network card that this connection instance uses.
-
-`RemotePort`
-
-The remote port number that the initiator used to make the connection.
-
-`Reserved`
-
-Reserved for Microsoft use only. You must set this member to 0.
 
 `State`
 
@@ -217,9 +119,107 @@ The initiator has sent a valid logoff command, but the connection has not yet be
 </tr>
 </table>
 
-`UniqueConnectionId`
+`Protocol`
 
-The connection identifier (ID) that the operating system and application software use to uniquely identify the connection. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the <i>UniqueConnectionId</i> parameter. Do not confuse this value with the connection ID (CID).
+The transport protocol that is used to establish this connection instance. For a list of values that you can assign to this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561494">ISCSI_CONNECTION_PROTOCOL_TYPE_QUALIFIERS</a>.
+
+`HeaderIntegrity`
+
+The name of the iSCSI header digest scheme that is associated with this connection session. This member can have the following symbolic constant values, which are defined in <i>Iscsimgt.h</i>.
+
+<table>
+<tr>
+<th>HeaderIntegrity</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+None
+
+</td>
+<td>
+The session is not using a header digest. 
+
+</td>
+</tr>
+<tr>
+<td>
+crc32c
+
+</td>
+<td>
+The session is using a 32-bit CRC digest.
+
+</td>
+</tr>
+</table>
+
+`DataIntegrity`
+
+The name of the iSCSI data digest scheme that is associated with this connection session. This member can have the following symbolic constant values, which are defined in <i>Iscsimgt.h</i>.
+
+<table>
+<tr>
+<th>HeaderIntegrity</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+None
+
+</td>
+<td>
+The session is not using a data digest. 
+
+</td>
+</tr>
+<tr>
+<td>
+crc32c
+
+</td>
+<td>
+The session is using a 32-bit CRC digest.
+
+</td>
+</tr>
+</table>
+
+`Reserved`
+
+Reserved for Microsoft use only. You must set this member to 0.
+
+`MaxRecvDataSegmentLength`
+
+The maximum data payload size, in bytes, that is supported for command or data PDUs within this connection session.
+
+`AuthType`
+
+The type of authentication that is used to establish a connection. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561490">ISCSI_ConnectionStaticInfo WMI Class</a>, which is defined in <i>Mgmt.mof</i>, does specify values for this member; but if your software includes <i>Iscsidsc.h</i>, it can use the <a href="..\iscsidef\ne-iscsidef-piscsi_auth_types.md">ISCSI_AUTH_TYPES</a> enumeration to assign values to this member.
+
+`LocalAddr`
+
+A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that holds the IP address of the local network card that the initiator uses to connect to the network.
+
+`LocalPort`
+
+The local port number that this connection instance uses.
+
+`RemoteAddr`
+
+A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that holds the IP address of the remote network card that this connection instance uses.
+
+`RemotePort`
+
+The remote port number that the initiator used to make the connection.
+
+`EstimatedThroughput`
+
+The estimated throughput, in bytes per second, of the connection.
+
+`MaxDatagramSize`
+
+The maximum size, in bytes, of the datagram that the transport supports.
 
 
 ## Requirements
@@ -250,11 +250,3 @@ The connection identifier (ID) that the operating system and application softwar
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_ConnectionStaticInfo structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

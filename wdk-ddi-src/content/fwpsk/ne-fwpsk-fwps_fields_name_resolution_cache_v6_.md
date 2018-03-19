@@ -64,18 +64,13 @@ typedef enum FWPS_FIELDS_NAME_RESOLUTION_CACHE_V6_ {
 <table>
             
                 <tr>
-                    <td>FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_ALE_APP_ID</td>
-                    <td>The full path of the application.</td>
-                </tr>
-            
-                <tr>
                     <td>FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_ALE_USER_ID</td>
                     <td>The identifier of the local user.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_COMPARTMENT_ID</td>
-                    <td></td>
+                    <td>FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_ALE_APP_ID</td>
+                    <td>The full path of the application.</td>
                 </tr>
             
                 <tr>
@@ -84,14 +79,19 @@ typedef enum FWPS_FIELDS_NAME_RESOLUTION_CACHE_V6_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
+                    <td>FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_PEER_NAME</td>
+                    <td>The machine name that is associated with the destination IP address.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_PEER_NAME</td>
-                    <td>The machine name that is associated with the destination IP address.</td>
+                    <td>FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_COMPARTMENT_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 

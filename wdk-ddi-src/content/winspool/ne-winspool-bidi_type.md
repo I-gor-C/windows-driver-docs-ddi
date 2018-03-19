@@ -66,23 +66,8 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>BIDI_BLOB</td>
-                    <td>Indicates that the bidi data is binary data.</td>
-                </tr>
-            
-                <tr>
-                    <td>BIDI_BOOL</td>
-                    <td>Indicates that the bidi data is either <b>TRUE</b> or <b>FALSE</b>.</td>
-                </tr>
-            
-                <tr>
-                    <td>BIDI_ENUM</td>
-                    <td>Indicates that the bidi data value is a Unicode string.</td>
-                </tr>
-            
-                <tr>
-                    <td>BIDI_FLOAT</td>
-                    <td>Indicates that the bidi data is a floating-point number.</td>
+                    <td>BIDI_NULL</td>
+                    <td>Indicates that there is no data.</td>
                 </tr>
             
                 <tr>
@@ -91,8 +76,13 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>BIDI_NULL</td>
-                    <td>Indicates that there is no data.</td>
+                    <td>BIDI_FLOAT</td>
+                    <td>Indicates that the bidi data is a floating-point number.</td>
+                </tr>
+            
+                <tr>
+                    <td>BIDI_BOOL</td>
+                    <td>Indicates that the bidi data is either <b>TRUE</b> or <b>FALSE</b>.</td>
                 </tr>
             
                 <tr>
@@ -103,6 +93,16 @@ typedef enum  {
                 <tr>
                     <td>BIDI_TEXT</td>
                     <td>Indicates that the bidi data is a nonlocalizable Unicode string.</td>
+                </tr>
+            
+                <tr>
+                    <td>BIDI_ENUM</td>
+                    <td>Indicates that the bidi data value is a Unicode string.</td>
+                </tr>
+            
+                <tr>
+                    <td>BIDI_BLOB</td>
+                    <td>Indicates that the bidi data is binary data.</td>
                 </tr>
 </table>
 

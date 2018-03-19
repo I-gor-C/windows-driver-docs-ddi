@@ -59,10 +59,6 @@ typedef union _WDI_TXRX_MPDU_PN {
 ## Members
 
 
-`Pn128`
-
-WAPI: 128-bit PN
-
 `Pn24`
 
 WEP: 24-bit PN
@@ -70,6 +66,10 @@ WEP: 24-bit PN
 `Pn48`
 
 TKIP or CCMP: 48-bit PN
+
+`Pn128`
+
+WAPI: 128-bit PN
 
 
 ## Requirements

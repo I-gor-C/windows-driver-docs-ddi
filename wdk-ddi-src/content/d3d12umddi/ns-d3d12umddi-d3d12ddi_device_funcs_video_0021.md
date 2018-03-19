@@ -73,21 +73,45 @@ typedef struct D3D12DDI_DEVICE_FUNCS_VIDEO_0021 {
 ## Members
 
 
-`pfnCalcPrivateContentProtectionSessionSize`
+`pfnGetCaps`
 
-A function that calculates the size of a private content protection session.
+A function that gets video capabilities.
 
 `pfnCalcPrivateVideoDecoderSize`
 
 A function that calculates the size of a private decoder.
 
+`pfnCreateVideoDecoder`
+
+A function that creates a video decoder.
+
+`pfnDestroyVideoDecoder`
+
+A function that destroys a video decoder.
+
 `pfnCalcPrivateVideoProcessorSize`
 
 A function that calculates the size of a private video processor.
 
-`pfnContentProtectionSessionGetStatus`
+`pfnCreateVideoProcessor`
 
-A function that gets the status of a content protection session.
+A function that creates a video processor.
+
+`pfnDestroyVideoProcessor`
+
+A function that destroys a video processor.
+
+`pfnCalcPrivateContentProtectionSessionSize`
+
+A function that calculates the size of a private content protection session.
+
+`pfnCreateContentProtectionSession`
+
+A function that creates a content protection system.
+
+`pfnDestroyContentProtectionSession`
+
+A function that destroys a content protection system.
 
 `pfnContentProtectionSessionInvokeFunction`
 
@@ -97,49 +121,25 @@ A function that invokes a function in a content protection session.
 
 A function that sets up a hardware key for a content protection session.
 
-`pfnCreateContentProtectionSession`
+`pfnContentProtectionSessionGetStatus`
 
-A function that creates a content protection system.
+A function that gets the status of a content protection session.
 
-`pfnCreateVideoDecoder`
+`pfnGetDecodeProfileCount`
 
-A function that creates a video decoder.
-
-`pfnCreateVideoProcessor`
-
-A function that creates a video processor.
-
-`pfnDecoderTrimAllocations`
-
-A function that trims decoder allocations.
-
-`pfnDestroyContentProtectionSession`
-
-A function that destroys a content protection system.
-
-`pfnDestroyVideoDecoder`
-
-A function that destroys a video decoder.
-
-`pfnDestroyVideoProcessor`
-
-A function that destroys a video processor.
-
-`pfnGetBitstreamEncryptionSchemeCount`
-
-A function that gets the count of bitstream encryption schemes.
-
-`pfnGetCaps`
-
-A function that gets video capabilities.
+A function that gets the decode profile count.
 
 `pfnGetDecodeFormatCount`
 
 A function that gets the decode format count.
 
-`pfnGetDecodeProfileCount`
+`pfnGetBitstreamEncryptionSchemeCount`
 
-A function that gets the decode profile count.
+A function that gets the count of bitstream encryption schemes.
+
+`pfnDecoderTrimAllocations`
+
+A function that trims decoder allocations.
 
 `pfnProcessorTrimAllocations`
 
@@ -154,11 +154,3 @@ A function that trims processor allocations.
 ## See Also
 
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_device_funcs_core_0010.md">D3D12DDI_DEVICE_FUNCS_CORE_0010</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D12DDI_DEVICE_FUNCS_VIDEO_0021 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

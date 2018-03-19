@@ -59,56 +59,6 @@ typedef struct {
 ## Members
 
 
-`Flags`
-
-Specifies the type of entries in the members list. The size of valid values is determined by value type, as specified in the <b>PropTypeSet</b> member of the <a href="..\ks\ns-ks-ksproperty_description.md">KSPROPERTY_DESCRIPTION</a> structure. The number of range pairs is determined by <b>MembersCount</b>. This should be one of the values listed in the following table.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>
-KSPROPERTY_MEMBER_RANGES
-
-</td>
-<td>
-Indicates that list members are ranges, of type <a href="..\ks\ns-ks-ksproperty_bounds_long.md">KSPROPERTY_BOUNDS_LONG</a> or <a href="..\ks\ns-ks-ksproperty_bounds_longlong.md">KSPROPERTY_BOUNDS_LONGLONG</a>.
-
-</td>
-</tr>
-<tr>
-<td>
-
-<dl>
-<dt>KSPROPERTY_MEMBER</dt>
-<dt>_STEPPEDRANGES</dt>
-</dl>
-
-
-</td>
-<td>
-Indicates that the following members are stepped values within ranges, of type <a href="..\ks\ns-ks-ksproperty_stepping_long.md">KSPROPERTY_STEPPING_LONG</a> or <a href="..\ks\ns-ks-ksproperty_stepping_longlong.md">KSPROPERTY_STEPPING_LONGLONG</a>..
-
-</td>
-</tr>
-<tr>
-<td>
-KSPROPERTY_MEMBER_VALUES
-
-</td>
-<td>
-Each entry in the members array is a single value.
-
-</td>
-</tr>
-</table>
-
-`MembersCount`
-
-Specifies the number of entries in the members array.
-
 `MembersFlags`
 
 Specifies the type of entries in the members list. The size of valid values is determined by value type, as specified in the <b>PropTypeSet</b> member of the <a href="..\ks\ns-ks-ksproperty_description.md">KSPROPERTY_DESCRIPTION</a> structure. The number of range pairs is determined by <b>MembersCount</b>. This should be one of the values listed in the following table.
@@ -159,6 +109,56 @@ Each entry in the members array is a single value.
 
 Specifies the size, in bytes, of an individual array element.
 
+`MembersCount`
+
+Specifies the number of entries in the members array.
+
+`Flags`
+
+Specifies the type of entries in the members list. The size of valid values is determined by value type, as specified in the <b>PropTypeSet</b> member of the <a href="..\ks\ns-ks-ksproperty_description.md">KSPROPERTY_DESCRIPTION</a> structure. The number of range pairs is determined by <b>MembersCount</b>. This should be one of the values listed in the following table.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+KSPROPERTY_MEMBER_RANGES
+
+</td>
+<td>
+Indicates that list members are ranges, of type <a href="..\ks\ns-ks-ksproperty_bounds_long.md">KSPROPERTY_BOUNDS_LONG</a> or <a href="..\ks\ns-ks-ksproperty_bounds_longlong.md">KSPROPERTY_BOUNDS_LONGLONG</a>.
+
+</td>
+</tr>
+<tr>
+<td>
+
+<dl>
+<dt>KSPROPERTY_MEMBER</dt>
+<dt>_STEPPEDRANGES</dt>
+</dl>
+
+
+</td>
+<td>
+Indicates that the following members are stepped values within ranges, of type <a href="..\ks\ns-ks-ksproperty_stepping_long.md">KSPROPERTY_STEPPING_LONG</a> or <a href="..\ks\ns-ks-ksproperty_stepping_longlong.md">KSPROPERTY_STEPPING_LONGLONG</a>..
+
+</td>
+</tr>
+<tr>
+<td>
+KSPROPERTY_MEMBER_VALUES
+
+</td>
+<td>
+Each entry in the members array is a single value.
+
+</td>
+</tr>
+</table>
+
 ## Remarks
 The size of the array can be determined by multiplying <b>MembersCount</b> by <b>MembersSize</b>.
 
@@ -200,11 +200,3 @@ For more information about KSPROPERTY_MEMBER_FLAG_DEFAULT, see <a href="..\ks\ns
 
 
 <a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_MEMBERSHEADER structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

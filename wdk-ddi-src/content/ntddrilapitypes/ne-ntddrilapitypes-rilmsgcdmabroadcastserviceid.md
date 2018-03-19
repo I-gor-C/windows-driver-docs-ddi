@@ -61,7 +61,7 @@ typedef enum _RILMSGCDMABROADCASTSERVICEID {
 <table>
             
                 <tr>
-                    <td>RIL_1xBROADCAST_CMAS_AMBER</td>
+                    <td>RIL_1xBROADCAST_CMAS_PRESIDENTIAL</td>
                     <td></td>
                 </tr>
             
@@ -71,12 +71,12 @@ typedef enum _RILMSGCDMABROADCASTSERVICEID {
                 </tr>
             
                 <tr>
-                    <td>RIL_1xBROADCAST_CMAS_PRESIDENTIAL</td>
+                    <td>RIL_1xBROADCAST_CMAS_SEVERE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_1xBROADCAST_CMAS_SEVERE</td>
+                    <td>RIL_1xBROADCAST_CMAS_AMBER</td>
                     <td></td>
                 </tr>
             

@@ -67,21 +67,33 @@ typedef struct _D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030 {
 ## Members
 
 
-`BitstreamEncryption`
+`NodeIndex`
 
-Bitstream encryption.
-
-`ContentProtectionSystem`
-
-Content protection system.
+Node index.
 
 `DecodeProfile`
 
 Decode profile.
 
+`ContentProtectionSystem`
+
+Content protection system.
+
 `Flags`
 
 Flags.
+
+`BitstreamEncryption`
+
+Bitstream encryption.
+
+`Operation`
+
+Operation.
+
+`ProtectedOutputRequired`
+
+Protected output required.
 
 `InputAlignment`
 
@@ -91,14 +103,6 @@ Input alignment.
 
 Input preamble size.
 
-`NodeIndex`
-
-Node index.
-
-`Operation`
-
-Operation.
-
 `OutputAlignment`
 
 Output alignment.
@@ -106,10 +110,6 @@ Output alignment.
 `OutputPreambleSize`
 
 Output preamble size.
-
-`ProtectedOutputRequired`
-
-Protected output required.
 
 `Support`
 

@@ -56,14 +56,6 @@ typedef struct _LineDisplaySetBitmapData {
 ## Members
 
 
-`alignmentX`
-
-
-
-`alignmentY`
-
-
-
 `bitmapNumber`
 
 
@@ -73,6 +65,14 @@ typedef struct _LineDisplaySetBitmapData {
 
 
 `width`
+
+
+
+`alignmentX`
+
+
+
+`alignmentY`
 
 
 

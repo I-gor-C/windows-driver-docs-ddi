@@ -91,148 +91,18 @@ typedef enum _FEATURE_PROFILE_TYPE {
 <table>
             
                 <tr>
-                    <td>ProfileAS_MO</td>
-                    <td>Indicates the profile named "AS-MO" by the <i>MMC-3</i> specification. This profile is used with devices that implement Advance Storage technology and manage magneto-optical media.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileBDRewritable</td>
-                    <td>Reserved 0x0044 - 0x004F</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileBDRom</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileBDRRandomWritable</td>
-                    <td>BD-R 'RRM'</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileBDRSequentialWritable</td>
-                    <td>BD-R 'SRM'</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileCdRecordable</td>
-                    <td>Indicates the profile named "CD-R" by the <i>MMC-3</i> specification. This profile is used with devices that manage write-once compact disc media.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileCdRewritable</td>
-                    <td>Indicates the profile named "CD-RW" by the <i>MMC-3</i> specification. This profile is used with devices that manage rewritable compact disc media.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileCdrom</td>
-                    <td>Indicates the profile named "CD-ROM" by the <i>MMC-3</i> specification. This profile is used with devices that manage read-only compact disc media.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileDDCdRecordable</td>
-                    <td>Indicates the profile named "DDCD-R" by the <i>MMC-3</i> specification. This profile is used with devices that can read "DDCD-R specific structure." For a full list of the features supported with this profile, see the <i>MMC-3</i> specification.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileDDCdRewritable</td>
-                    <td>Indicates the profile named "DDCD-RW" by the <i>MMC-3</i> specification. This profile is used with devices that can read "DDCD-RW specific structure." For a full list of the features supported with this profile, see the <i>MMC-3</i> specification.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileDDCdrom</td>
-                    <td>Indicates the profile named "DDCD-ROM" by the <i>MMC-3</i> specification. This profile is used with devices that can read "DDCD specific structure." For a full list of the features supported with this profile, see the <i>MMC-3</i> specification.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileDvdDashRDualLayer</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileDvdDashRLayerJump</td>
-                    <td>Reserved 0x0017 - 0x0019</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileDvdPlusR</td>
-                    <td>Reserved 0x001C - 001F</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileDvdPlusRDualLayer</td>
-                    <td>Reserved 0x002C - 0x003F</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileDvdPlusRW</td>
-                    <td>Indicates the profile named "DVD+RW" by the <i>MMC-3</i> specification. This profile is used with devices that implement a series of features required to manage DVD media that is both readable and writable. For a full list of the features supported with this profile, see the <i>MMC-3</i> specification.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileDvdPlusRWDualLayer</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileDvdRam</td>
-                    <td>Indicates the profile named "DVD-RAM or DVD+RW" by the <i>MMC-3</i> specification. This profile is used with devices that manage rewritable DVD media.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileDvdRecordable</td>
-                    <td>Indicates the profile named "DVD-R" by the <i>MMC-3</i> specification. This profile is used with devices that manage write-once DVD media and operate in sequential recording mode.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileDvdRewritable</td>
-                    <td>Indicates the profile named "DVD-RW Restricted Overwrite" by the <i>MMC-3</i> specification. This profile is used with devices that manage rerecordable DVD media and operate in packet-writing mode.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileDvdRom</td>
-                    <td>Indicates the profile named "DVD-ROM" by the <i>MMC-3</i> specification. This profile is used with devices that manage read-only DVD media.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileDvdRWSequential</td>
-                    <td>Indicates the profile named "DVD-RW Sequential Recording" by the <i>MMC-3</i> specification. This profile is used with devices that implement a series of features associated with sequential recording, such as the features "Incremental Streaming Writable" and "Real-Time Streaming". For a full list of the features supported with this profile, see the <i>MMC-3</i> specification.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileHDDVDRam</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileHDDVDRDualLayer</td>
-                    <td>Reserved 0x0059 - 0x0059</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileHDDVDRecordable</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileHDDVDRewritable</td>
-                    <td>Reserved 0x0054 - 0x0057</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileHDDVDRom</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileHDDVDRWDualLayer</td>
-                    <td>Reserved 0x005B - 0xfffe</td>
-                </tr>
-            
-                <tr>
                     <td>ProfileInvalid</td>
                     <td>Does not indicate a valid profile.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileNonRemovableDisk</td>
+                    <td>Indicates the profile named "Nonremovable disk" by the <i>SCSI-3 Multimedia (MMC-3)</i> specification. This profile is used with devices that manage rewritable media and are capable of changing behavior.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileRemovableDisk</td>
+                    <td>Indicates the profile named "Removable disk" by the <i>MMC-3</i> specification. This profile is used with devices that manage rewritable, removable media.</td>
                 </tr>
             
                 <tr>
@@ -246,18 +116,148 @@ typedef enum _FEATURE_PROFILE_TYPE {
                 </tr>
             
                 <tr>
-                    <td>ProfileNonRemovableDisk</td>
-                    <td>Indicates the profile named "Nonremovable disk" by the <i>SCSI-3 Multimedia (MMC-3)</i> specification. This profile is used with devices that manage rewritable media and are capable of changing behavior.</td>
+                    <td>ProfileAS_MO</td>
+                    <td>Indicates the profile named "AS-MO" by the <i>MMC-3</i> specification. This profile is used with devices that implement Advance Storage technology and manage magneto-optical media.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileCdrom</td>
+                    <td>Indicates the profile named "CD-ROM" by the <i>MMC-3</i> specification. This profile is used with devices that manage read-only compact disc media.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileCdRecordable</td>
+                    <td>Indicates the profile named "CD-R" by the <i>MMC-3</i> specification. This profile is used with devices that manage write-once compact disc media.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileCdRewritable</td>
+                    <td>Indicates the profile named "CD-RW" by the <i>MMC-3</i> specification. This profile is used with devices that manage rewritable compact disc media.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileDvdRom</td>
+                    <td>Indicates the profile named "DVD-ROM" by the <i>MMC-3</i> specification. This profile is used with devices that manage read-only DVD media.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileDvdRecordable</td>
+                    <td>Indicates the profile named "DVD-R" by the <i>MMC-3</i> specification. This profile is used with devices that manage write-once DVD media and operate in sequential recording mode.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileDvdRam</td>
+                    <td>Indicates the profile named "DVD-RAM or DVD+RW" by the <i>MMC-3</i> specification. This profile is used with devices that manage rewritable DVD media.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileDvdRewritable</td>
+                    <td>Indicates the profile named "DVD-RW Restricted Overwrite" by the <i>MMC-3</i> specification. This profile is used with devices that manage rerecordable DVD media and operate in packet-writing mode.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileDvdRWSequential</td>
+                    <td>Indicates the profile named "DVD-RW Sequential Recording" by the <i>MMC-3</i> specification. This profile is used with devices that implement a series of features associated with sequential recording, such as the features "Incremental Streaming Writable" and "Real-Time Streaming". For a full list of the features supported with this profile, see the <i>MMC-3</i> specification.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileDvdDashRDualLayer</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileDvdDashRLayerJump</td>
+                    <td>Reserved 0x0017 - 0x0019</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileDvdPlusRW</td>
+                    <td>Indicates the profile named "DVD+RW" by the <i>MMC-3</i> specification. This profile is used with devices that implement a series of features required to manage DVD media that is both readable and writable. For a full list of the features supported with this profile, see the <i>MMC-3</i> specification.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileDvdPlusR</td>
+                    <td>Reserved 0x001C - 001F</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileDDCdrom</td>
+                    <td>Indicates the profile named "DDCD-ROM" by the <i>MMC-3</i> specification. This profile is used with devices that can read "DDCD specific structure." For a full list of the features supported with this profile, see the <i>MMC-3</i> specification.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileDDCdRecordable</td>
+                    <td>Indicates the profile named "DDCD-R" by the <i>MMC-3</i> specification. This profile is used with devices that can read "DDCD-R specific structure." For a full list of the features supported with this profile, see the <i>MMC-3</i> specification.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileDDCdRewritable</td>
+                    <td>Indicates the profile named "DDCD-RW" by the <i>MMC-3</i> specification. This profile is used with devices that can read "DDCD-RW specific structure." For a full list of the features supported with this profile, see the <i>MMC-3</i> specification.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileDvdPlusRWDualLayer</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileDvdPlusRDualLayer</td>
+                    <td>Reserved 0x002C - 0x003F</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileBDRom</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileBDRSequentialWritable</td>
+                    <td>BD-R 'SRM'</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileBDRRandomWritable</td>
+                    <td>BD-R 'RRM'</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileBDRewritable</td>
+                    <td>Reserved 0x0044 - 0x004F</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileHDDVDRom</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileHDDVDRecordable</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileHDDVDRam</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileHDDVDRewritable</td>
+                    <td>Reserved 0x0054 - 0x0057</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileHDDVDRDualLayer</td>
+                    <td>Reserved 0x0059 - 0x0059</td>
+                </tr>
+            
+                <tr>
+                    <td>ProfileHDDVDRWDualLayer</td>
+                    <td>Reserved 0x005B - 0xfffe</td>
                 </tr>
             
                 <tr>
                     <td>ProfileNonStandard</td>
                     <td>Indicates that the device does not conform to any profile.</td>
-                </tr>
-            
-                <tr>
-                    <td>ProfileRemovableDisk</td>
-                    <td>Indicates the profile named "Removable disk" by the <i>MMC-3</i> specification. This profile is used with devices that manage rewritable, removable media.</td>
                 </tr>
 </table>
 
@@ -270,11 +270,3 @@ typedef enum _FEATURE_PROFILE_TYPE {
 ## See Also
 
 <a href="..\ntddmmc\ns-ntddmmc-_feature_data_profile_list.md">FEATURE_DATA_PROFILE_LIST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_PROFILE_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

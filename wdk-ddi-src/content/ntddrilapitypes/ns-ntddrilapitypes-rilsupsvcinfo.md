@@ -74,43 +74,7 @@ typedef struct _RILSUPSVCINFO {
 ## Members
 
 
-`aiIdentifier`
-
-
-
-`callerIdSettings`
-
-
-
-`callForwardSettings`
-
-
-
 `cbSize`
-
-
-
-`dialedIdSettings`
-
-
-
-`dwCallBarringType`
-
-
-
-`dwCallForwardingReason`
-
-
-
-`dwExecutor`
-
-
-
-`dwFailureReason`
-
-
-
-`dwInfoClasses`
 
 
 
@@ -118,11 +82,7 @@ typedef struct _RILSUPSVCINFO {
 
 
 
-`dwSupSvcAction`
-
-
-
-`dwSupSvcType`
+`dwExecutor`
 
 
 
@@ -130,15 +90,31 @@ typedef struct _RILSUPSVCINFO {
 
 
 
-`hideConnectedIdSettings`
+`dwFailureReason`
 
 
 
-`hideIdSettings`
+`dwSupSvcAction`
 
 
 
-`supServiceData`
+`dwCallForwardingReason`
+
+
+
+`dwCallBarringType`
+
+
+
+`dwSupSvcType`
+
+
+
+`dwInfoClasses`
+
+
+
+`aiIdentifier`
 
 
 
@@ -147,6 +123,30 @@ typedef struct _RILSUPSVCINFO {
 
 
 `szNewCallBarringPassword`
+
+
+
+`callForwardSettings`
+
+
+
+`callerIdSettings`
+
+
+
+`dialedIdSettings`
+
+
+
+`hideIdSettings`
+
+
+
+`hideConnectedIdSettings`
+
+
+
+`supServiceData`
 
 
 

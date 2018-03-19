@@ -62,8 +62,18 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS {
 <table>
             
                 <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_BILINEAR_FILTER</td>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_ROTATION_WITHOUT_INDEPENDENT_FLIP</td>
                     <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_VERTICAL_FLIP</td>
+                    <td>The overlay plane can flip the data vertically, making it appear upside-down.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HORIZONTAL_FLIP</td>
+                    <td>The overlay plane can flip the data horizontally, making it appear as a right-to-left mirror image.</td>
                 </tr>
             
                 <tr>
@@ -72,7 +82,22 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS {
                 </tr>
             
                 <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_FULLSCREEN_POST_COMPOSITION</td>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_STEREO</td>
+                    <td>Reserved for system use. The user-mode display driver should not use this value.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_RGB</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_YUV</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_BILINEAR_FILTER</td>
                     <td></td>
                 </tr>
             
@@ -82,32 +107,17 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS {
                 </tr>
             
                 <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HORIZONTAL_FLIP</td>
-                    <td>The overlay plane can flip the data horizontally, making it appear as a right-to-left mirror image.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_IMMEDIATE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_PLANE0_FOR_VIRTUAL_MODE_ONLY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_RGB</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_ROTATION</td>
                     <td>The overlay plane can rotate the data 90, 180, and 270 degrees.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_ROTATION_WITHOUT_INDEPENDENT_FLIP</td>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_FULLSCREEN_POST_COMPOSITION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_RESERVED1</td>
                     <td></td>
                 </tr>
             
@@ -117,22 +127,12 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS {
                 </tr>
             
                 <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_STEREO</td>
-                    <td>Reserved for system use. The user-mode display driver should not use this value.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_VERTICAL_FLIP</td>
-                    <td>The overlay plane can flip the data vertically, making it appear upside-down.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_YUV</td>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_IMMEDIATE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_RESERVED1</td>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_PLANE0_FOR_VIRTUAL_MODE_ONLY</td>
                     <td></td>
                 </tr>
 </table>

@@ -66,10 +66,6 @@ typedef struct _D3DKMT_CREATEPROTECTEDSESSION {
 
 A handle for the device.
 
-`hHandle`
-
-The protected session handle.
-
 `hSyncObject`
 
 A monitored fence handle associated with the session.
@@ -78,17 +74,21 @@ A monitored fence handle associated with the session.
 
 Private driver data.
 
-`pPrivateRuntimeData`
-
-Private runtime data.
-
 `PrivateDriverDataSize`
 
 Size of private driver data.
 
+`pPrivateRuntimeData`
+
+Private runtime data.
+
 `PrivateRuntimeDataSize`
 
 Size of private runtime data.
+
+`hHandle`
+
+The protected session handle.
 
 
 ## Requirements

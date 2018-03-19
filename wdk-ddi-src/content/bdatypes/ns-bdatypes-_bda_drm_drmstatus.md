@@ -59,7 +59,7 @@ typedef struct _BDA_DRM_DRMSTATUS {
 ## Members
 
 
-`argbDrmUuidListString`
+`lResult`
 
 
 
@@ -67,11 +67,11 @@ typedef struct _BDA_DRM_DRMSTATUS {
 
 
 
-`lResult`
-
-
-
 `ulDrmUuidListStringSize`
+
+
+
+`argbDrmUuidListString`
 
 
 

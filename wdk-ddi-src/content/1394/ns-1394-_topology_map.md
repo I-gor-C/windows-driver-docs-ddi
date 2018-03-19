@@ -61,6 +61,10 @@ typedef struct _TOPOLOGY_MAP {
 ## Members
 
 
+`TOP_Length`
+
+Specifies the length in quadlets of the topology map.
+
 `TOP_CRC`
 
 Specifies the CRC value for the topology map.
@@ -69,21 +73,17 @@ Specifies the CRC value for the topology map.
 
 Specifies the bus reset generation for which the topology map was created.
 
-`TOP_Length`
-
-Specifies the length in quadlets of the topology map.
-
 `TOP_Node_Count`
 
 Specifies the number of nodes in the topology map.
 
-`TOP_Self_ID_Array`
-
-Pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff538073">SELF_ID</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff538080">SELF_ID_MORE</a> structures (the two structures are the same size).
-
 `TOP_Self_ID_Count`
 
 Specifies the number of entries in <b>TOP_Self_ID_Array</b>.
+
+`TOP_Self_ID_Array`
+
+Pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff538073">SELF_ID</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff538080">SELF_ID_MORE</a> structures (the two structures are the same size).
 
 ## Remarks
 All data will be in big-endian format.
@@ -96,11 +96,3 @@ All data will be in big-endian format.
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537646">REQUEST_GET_SPEED_TOPOLOGY_MAPS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20TOPOLOGY_MAP structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

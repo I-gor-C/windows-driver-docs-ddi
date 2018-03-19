@@ -66,8 +66,33 @@ typedef enum D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020 {
 <table>
             
                 <tr>
+                    <td>D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020_DEFAULT</td>
+                    <td>No change to the orientation.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020_FLIP_HORIZONTAL</td>
+                    <td>Flip the image horizontally.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020_CLOCKWISE_90</td>
+                    <td>Rotate the image clockwise 90 degrees.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020_CLOCKWISE_90_FLIP_HORIZONTAL</td>
+                    <td>Rotate the image clockwise 90 degrees and then flips it horizontally.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020_CLOCKWISE_180</td>
                     <td>Rotate the image clockwise 180 degrees.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020_FLIP_VERTICAL</td>
+                    <td>Flip the image vertically. This is the same as the <b>D3D12DDI_VIDEO_PROCESS_ORIENTATION_CLOCKWISE_180_FLIP_HORIZONTAL</b> constant.</td>
                 </tr>
             
                 <tr>
@@ -83,31 +108,6 @@ typedef enum D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020 {
                 <tr>
                     <td>D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020_CLOCKWISE_270_FLIP_HORIZONTAL</td>
                     <td>Rotate the image clockwise 270 degrees and then flips horizontally.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020_CLOCKWISE_90</td>
-                    <td>Rotate the image clockwise 90 degrees.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020_CLOCKWISE_90_FLIP_HORIZONTAL</td>
-                    <td>Rotate the image clockwise 90 degrees and then flips it horizontally.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020_DEFAULT</td>
-                    <td>No change to the orientation.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020_FLIP_HORIZONTAL</td>
-                    <td>Flip the image horizontally.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020_FLIP_VERTICAL</td>
-                    <td>Flip the image vertically. This is the same as the <b>D3D12DDI_VIDEO_PROCESS_ORIENTATION_CLOCKWISE_180_FLIP_HORIZONTAL</b> constant.</td>
                 </tr>
 </table>
 

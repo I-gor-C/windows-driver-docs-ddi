@@ -66,8 +66,8 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>DvdAsf</td>
-                    <td>Gets the current state of the authentication success flag (ASF).</td>
+                    <td>DvdChallengeKey</td>
+                    <td>Gets a challenge key. This is used during the authentication key exchange process.</td>
                 </tr>
             
                 <tr>
@@ -81,23 +81,13 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>DvdChallengeKey</td>
-                    <td>Gets a challenge key. This is used during the authentication key exchange process.</td>
+                    <td>DvdTitleKey</td>
+                    <td>Gets a title key that is obfuscated by a bus key.</td>
                 </tr>
             
                 <tr>
-                    <td>DvdDiskKey</td>
-                    <td>Gets the disc key.</td>
-                </tr>
-            
-                <tr>
-                    <td>DvdGetRpcKey</td>
-                    <td>Gets the region playback contents (RPC) for the logical unit.</td>
-                </tr>
-            
-                <tr>
-                    <td>DvdInvalidateAGID</td>
-                    <td>Invalidates the specified authentication grant ID (AGID).</td>
+                    <td>DvdAsf</td>
+                    <td>Gets the current state of the authentication success flag (ASF).</td>
                 </tr>
             
                 <tr>
@@ -106,8 +96,18 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>DvdTitleKey</td>
-                    <td>Gets a title key that is obfuscated by a bus key.</td>
+                    <td>DvdGetRpcKey</td>
+                    <td>Gets the region playback contents (RPC) for the logical unit.</td>
+                </tr>
+            
+                <tr>
+                    <td>DvdDiskKey</td>
+                    <td>Gets the disc key.</td>
+                </tr>
+            
+                <tr>
+                    <td>DvdInvalidateAGID</td>
+                    <td>Invalidates the specified authentication grant ID (AGID).</td>
                 </tr>
 </table>
 
@@ -133,11 +133,3 @@ Drivers can issue a report key command to retrieve key data by means of an <a hr
 
 
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_send_key.md">IOCTL_DVD_SEND_KEY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DVD_KEY_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

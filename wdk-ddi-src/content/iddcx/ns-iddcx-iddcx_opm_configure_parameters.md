@@ -57,13 +57,13 @@ typedef struct IDDCX_OPM_CONFIGURE_PARAMETERS {
 ## Members
 
 
-`ConfigParameters`
-
-Configuration parameters.
-
 `Size`
 
 Total size of the structure.
+
+`ConfigParameters`
+
+Configuration parameters.
 
 
 ## Requirements

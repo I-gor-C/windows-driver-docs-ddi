@@ -56,19 +56,19 @@ typedef struct _LineDisplayWindowDisplayBitmapData {
 ## Members
 
 
-`alignmentX`
-
-
-
-`alignmentY`
-
-
-
 `fileName`
 
 
 
 `width`
+
+
+
+`alignmentX`
+
+
+
+`alignmentY`
 
 
 

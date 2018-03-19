@@ -57,13 +57,13 @@ typedef struct _D3DDDI_RATIONAL {
 ## Members
 
 
-`Denominator`
-
-[in] The denominator of the frequency fraction.
-
 `Numerator`
 
 [in] The numerator of the frequency fraction.
+
+`Denominator`
+
+[in] The denominator of the frequency fraction.
 
 ## Remarks
 Vertical and horizontal frequencies are stored in Hertz (Hz). 

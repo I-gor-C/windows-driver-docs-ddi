@@ -64,41 +64,41 @@ typedef struct _tagKSJACK_SINK_INFORMATION {
 ## Members
 
 
-`AICapable`
-
-Specifies that this jack sink provides support for the following data packet types: audio content protection (ACP), international standard recording code-1 (ISRC1), and ISRC2.
-
-`AudioLatency`
-
-Specifies the sink audio latency.
-
 `ConnType`
 
 Specifies the connection type of the sink. This parameter is an enumeration of type <a href="http://go.microsoft.com/fwlink/p/?linkid=143848">KSJACK_SINK_CONNECTIONTYPE</a>.
-
-`HDCPCapable`
-
-Specifies that this jack sink provides support for High-bandwidth Digital Content Protection (HDCP).
 
 `ManufacturerId`
 
 Specifies the sink manufacturer ID.
 
-`PortId`
-
-
-
 `ProductId`
 
 Specifies the sink product ID.
+
+`AudioLatency`
+
+Specifies the sink audio latency.
+
+`HDCPCapable`
+
+Specifies that this jack sink provides support for High-bandwidth Digital Content Protection (HDCP).
+
+`AICapable`
+
+Specifies that this jack sink provides support for the following data packet types: audio content protection (ACP), international standard recording code-1 (ISRC1), and ISRC2.
+
+`SinkDescriptionLength`
+
+Specifies the length of the <b>SinkDescription</b>[] member.
 
 `SinkDescription`
 
 Specifies a string that contains the sink name, which must be NULL-terminated. The maximum length is defined by the MAX_SINK_DESCRIPTION_NAME_LENGTH constant (31  characters, plus a terminating <b>NULL</b>).
 
-`SinkDescriptionLength`
+`PortId`
 
-Specifies the length of the <b>SinkDescription</b>[] member.
+
 
 
 ## Requirements
@@ -110,11 +110,3 @@ Specifies the length of the <b>SinkDescription</b>[] member.
 ## See Also
 
 <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSJACK_SINK_INFORMATION structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

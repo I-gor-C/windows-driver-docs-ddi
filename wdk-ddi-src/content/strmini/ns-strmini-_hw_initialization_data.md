@@ -83,34 +83,6 @@ typedef struct _HW_INITIALIZATION_DATA {
 ## Members
 
 
-`BufferAlignment`
-
-
-
-`BusMasterDMA`
-
-
-
-`DeviceExtensionSize`
-
-Specifies the size in bytes required by the miniport driver for its per-HBA device extension. A miniport driver uses its device extension as storage for driver-determined HBA information. The OS-specific port driver initializes each device extension it allocates with zeros, and passes a pointer to the HBA-specific device extension in every call to a miniport driver except to its <b>DriverEntry</b> routine. The given size does not include any miniport driver-requested per-logical-unit storage, described next.
-
-`Dma24BitAddresses`
-
-
-
-`DmaBufferSize`
-
-
-
-`FilterInstanceExtensionSize`
-
-
-
-`HwCancelPacket`
-
-
-
 `HwInitializationDataSize`
 
 Specifies the size of this structure in bytes, as returned by <b>sizeof</b>(). In effect, this member indicates the version of this structure being used by the miniport driver. A miniport driver's <b>DriverEntry</b> routine should set this member's value for the port driver.
@@ -123,17 +95,17 @@ Pointer to the miniport driver's <a href="..\strmini\nc-strmini-phw_interrupt.md
 
 
 
+`HwCancelPacket`
+
+
+
 `HwRequestTimeoutHandler`
 
 
 
-`NameExtensionArray`
+`DeviceExtensionSize`
 
-
-
-`NumNameExtensions`
-
-
+Specifies the size in bytes required by the miniport driver for its per-HBA device extension. A miniport driver uses its device extension as storage for driver-determined HBA information. The OS-specific port driver initializes each device extension it allocates with zeros, and passes a pointer to the HBA-specific device extension in every call to a miniport driver except to its <b>DriverEntry</b> routine. The given size does not include any miniport driver-requested per-logical-unit storage, described next.
 
 `PerRequestExtensionSize`
 
@@ -143,13 +115,41 @@ Pointer to the miniport driver's <a href="..\strmini\nc-strmini-phw_interrupt.md
 
 
 
-`Reserved`
+`FilterInstanceExtensionSize`
 
-Reserved for system use and not available for use by miniport drivers.
+
+
+`BusMasterDMA`
+
+
+
+`Dma24BitAddresses`
+
+
+
+`BufferAlignment`
+
+
 
 `TurnOffSynchronization`
 
 
+
+`DmaBufferSize`
+
+
+
+`NumNameExtensions`
+
+
+
+`NameExtensionArray`
+
+
+
+`Reserved`
+
+Reserved for system use and not available for use by miniport drivers.
 
 ## Remarks
 Each miniport driver must initialize the HW_INITIALIZATION_DATA structure with zeros before it sets the values of relevant members in this structure and calls <b>ScsiPortInitialize</b>.
@@ -178,11 +178,3 @@ Both HW_INITIALIZATION_DATA and PORT_CONFIGURATION_INFORMATION have a pair of me
 
 
 <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20_HW_INITIALIZATION_DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -65,19 +65,11 @@ typedef struct VAL {
 ## Members
 
 
-`dblVal`
+`lVal`
 
 Specifies a command value to return to the WIA Flatbed driver. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a> for a list of available commands for this parameter.
 
-`handle`
-
-Points to a ShutDown event handle that will be signaled by the WIA Flatbed Driver when the driver is being unloaded or shut down.
-
-`lReserved`
-
-Reserved. Do not use.
-
-`lVal`
+`dblVal`
 
 Specifies a command value to return to the WIA Flatbed driver. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a> for a list of available commands for this parameter.
 
@@ -85,17 +77,25 @@ Specifies a command value to return to the WIA Flatbed driver. See <a href="http
 
 Points to the GUID of the pressed button. If no button was pressed, this member points to GUID_NULL.
 
-`pHandle`
+`pScanInfo`
 
-Points to an event handle.
+Points to a <a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a> structure.
+
+`handle`
+
+Points to a ShutDown event handle that will be signaled by the WIA Flatbed Driver when the driver is being unloaded or shut down.
 
 `ppButtonNames`
 
 Specifies the address of a pointer to an array of button names.
 
-`pScanInfo`
+`pHandle`
 
-Points to a <a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a> structure.
+Points to an event handle.
+
+`lReserved`
+
+Reserved. Do not use.
 
 `szVal`
 

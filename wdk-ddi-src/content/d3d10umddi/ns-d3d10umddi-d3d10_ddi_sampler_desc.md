@@ -65,6 +65,10 @@ typedef struct D3D10_DDI_SAMPLER_DESC {
 ## Members
 
 
+`Filter`
+
+[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_filter.md">D3D10_DDI_FILTER</a>-typed value that indicates the filter property for a sampler.
+
 `AddressU`
 
 [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_texture_address_mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the u coordinate.
@@ -77,33 +81,29 @@ typedef struct D3D10_DDI_SAMPLER_DESC {
 
 [in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_texture_address_mode.md">D3D10_DDI_TEXTURE_ADDRESS_MODE</a>-typed value that indicates the texture-address mode for the w coordinate.
 
-`BorderColor`
+`MipLODBias`
 
-[in] A four-element array of single-precision float vectors for RGBA, where Red == 0. The border color is used when the D3D10_DDI_TEXTURE_ADDRESS_BORDER value is specified in the <b>AddressU</b>, <b>AddressV</b>, or <b>AddressW</b> member. The float should be converted to the appropriate resource format.
-
-`ComparisonFunc`
-
-[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_comparison_func.md">D3D10_DDI_COMPARISON_FUNC</a>-typed value that indicates the sampler-comparison function to perform.
-
-`Filter`
-
-[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_filter.md">D3D10_DDI_FILTER</a>-typed value that indicates the filter property for a sampler.
+[in] A single-precision float that affects the level that the driver selects for MIP-map level of detail (LOD).
 
 `MaxAnisotropy`
 
 [in] The maximum valid value for the anisotropy texture-stage state.
 
-`MaxLOD`
+`ComparisonFunc`
 
-[in] A single-precision float vector for the maximum level of detail (LOD) for the sampler.
+[in] A <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_ddi_comparison_func.md">D3D10_DDI_COMPARISON_FUNC</a>-typed value that indicates the sampler-comparison function to perform.
+
+`BorderColor`
+
+[in] A four-element array of single-precision float vectors for RGBA, where Red == 0. The border color is used when the D3D10_DDI_TEXTURE_ADDRESS_BORDER value is specified in the <b>AddressU</b>, <b>AddressV</b>, or <b>AddressW</b> member. The float should be converted to the appropriate resource format.
 
 `MinLOD`
 
 [in] A single-precision float vector for the minimum level of detail (LOD) for the sampler.
 
-`MipLODBias`
+`MaxLOD`
 
-[in] A single-precision float that affects the level that the driver selects for MIP-map level of detail (LOD).
+[in] A single-precision float vector for the maximum level of detail (LOD) for the sampler.
 
 
 ## Requirements
@@ -131,11 +131,3 @@ typedef struct D3D10_DDI_SAMPLER_DESC {
 
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatesamplersize.md">CalcPrivateSamplerSize</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10_DDI_SAMPLER_DESC structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

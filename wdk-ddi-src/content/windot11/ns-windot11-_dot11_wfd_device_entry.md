@@ -72,6 +72,14 @@ typedef struct _DOT11_WFD_DEVICE_ENTRY {
 ## Members
 
 
+`uPhyId`
+
+The identifer of the PHY the miniport used to detect the device. This identifier is in the index range of the list of supported PHYs returned from an <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-phy-types">OID_DOT11_SUPPORTED_PHY_TYPES</a> query request. This identifer cannot be <b>DOT_PHY_ID_ANY</b>.
+
+`PhySpecificInfo`
+
+The attributes of the PHY identified by <b>uPhyId</b>.
+
 `dot11BSSID`
 
 The MAC address of the device that sent the beacon or probe response packet during a discovery.
@@ -80,29 +88,25 @@ The MAC address of the device that sent the beacon or probe response packet duri
 
 The BSS network type. This member is set to <b>dot11_BSS_type_infrastructure</b> for all discovered WFD devices and WFD GOs.
 
-`lRSSI`
-
-The recieved signal strength indicator value of the discovered device. The units for this value are in decibels referenced to 1 milliwatt (dBm).
-
-`PhySpecificInfo`
-
-The attributes of the PHY identified by <b>uPhyId</b>.
-
 `TransmitterAddress`
 
 The MAC address for the transmitter of the device that sent the beacon or probe response packet during a discovery.
 
-`uBeaconIEsLength`
+`lRSSI`
 
-The length, in bytes, of the IEs at <b>uBeaconIEsOffset</b>. This is an exact length value and contains no padding for alignment. If no beacon packet was received, this value should be 0.
-
-`uBeaconIEsOffset`
-
-The offset, in bytes, from the beginning of this structure  of the list of information elements (IEs) from the last beacon packet received from this device. If no beacon packet was received, this value should be 0.
+The recieved signal strength indicator value of the discovered device. The units for this value are in decibels referenced to 1 milliwatt (dBm).
 
 `uLinkQuality`
 
 Link quality value ranging from 0 to 100. A value of 100 indicates highest link quality.
+
+`usBeaconPeriod`
+
+The value received from the beacon interval field of the most recent beacon or probe response packet.
+
+`ullTimestamp`
+
+The value received from the timestamp field of the most recent beacon or probe response packet.
 
 `ullBeaconHostTimestamp`
 
@@ -112,29 +116,25 @@ The timestamp, determined by a value returned from <a href="..\ndis\nf-ndis-ndis
 
 The timestamp, determined by a value returned from <a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>, recording the time when the probe response packet was received.
 
-`ullTimestamp`
+`usCapabilityInformation`
 
-The value received from the timestamp field of the most recent beacon or probe response packet.
+The value received from the capability field of the most recent beacon or probe response packet.
 
-`uPhyId`
+`uBeaconIEsOffset`
 
-The identifer of the PHY the miniport used to detect the device. This identifier is in the index range of the list of supported PHYs returned from an <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-phy-types">OID_DOT11_SUPPORTED_PHY_TYPES</a> query request. This identifer cannot be <b>DOT_PHY_ID_ANY</b>.
+The offset, in bytes, from the beginning of this structure  of the list of information elements (IEs) from the last beacon packet received from this device. If no beacon packet was received, this value should be 0.
 
-`uProbeResponseIEsLength`
+`uBeaconIEsLength`
 
-The length, in bytes, of the IEs at <b>uProbeResponseIEsOffset</b>. This is an exact length value and contains no padding for alignment. If no probe response packet was received, this value should be 0.
+The length, in bytes, of the IEs at <b>uBeaconIEsOffset</b>. This is an exact length value and contains no padding for alignment. If no beacon packet was received, this value should be 0.
 
 `uProbeResponseIEsOffset`
 
 The offset, in bytes, from the beginning of this structure  of the list of information elements (IEs) from the last probe response packet received from this device. If no beacon packet was received, this value should be 0.
 
-`usBeaconPeriod`
+`uProbeResponseIEsLength`
 
-The value received from the beacon interval field of the most recent beacon or probe response packet.
-
-`usCapabilityInformation`
-
-The value received from the capability field of the most recent beacon or probe response packet.
+The length, in bytes, of the IEs at <b>uProbeResponseIEsOffset</b>. This is an exact length value and contains no padding for alignment. If no probe response packet was received, this value should be 0.
 
 
 ## Requirements
@@ -170,11 +170,3 @@ The value received from the capability field of the most recent beacon or probe 
 
 
 <a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20 DOT11_WFD_DEVICE_ENTRY structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

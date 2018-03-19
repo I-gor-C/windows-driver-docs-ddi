@@ -61,7 +61,7 @@ typedef enum _RILGEOLOCATIONTYPEMASK {
 <table>
             
                 <tr>
-                    <td>RIL_GEOLOCATION_ALL</td>
+                    <td>RIL_GEOLOCATION_NONE</td>
                     <td></td>
                 </tr>
             
@@ -76,7 +76,7 @@ typedef enum _RILGEOLOCATIONTYPEMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_GEOLOCATION_NONE</td>
+                    <td>RIL_GEOLOCATION_ALL</td>
                     <td></td>
                 </tr>
 </table>

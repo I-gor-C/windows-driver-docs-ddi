@@ -60,6 +60,10 @@ typedef struct _STOR_UNIT_ATTRIBUTES {
 ## Members
 
 
+`DeviceAttentionSupported`
+
+Set to 1 if device attention is supported for the unit. Otherwise, set to 0.
+
 `AsyncNotificationSupported`
 
 Set to 1 if the device supports asynchronous notifications. Otherwise, set to 0.
@@ -67,10 +71,6 @@ Set to 1 if the device supports asynchronous notifications. Otherwise, set to 0.
 `D3ColdNotSupported`
 
 Set to 1 if the D3 Cold power state is NOT supported. Otherwise, set to 0.
-
-`DeviceAttentionSupported`
-
-Set to 1 if device attention is supported for the unit. Otherwise, set to 0.
 
 `Reserved`
 
@@ -94,11 +94,3 @@ If the miniport driver supports asynchronous notifications, the <b>AsyncNotifica
 
 
 <a href="..\storport\nf-storport-storportasyncnotificationdetected.md">StorPortAsyncNotificationDetected</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_UNIT_ATTRIBUTES structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

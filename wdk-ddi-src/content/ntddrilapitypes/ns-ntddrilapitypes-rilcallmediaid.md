@@ -57,11 +57,11 @@ typedef struct _RILCALLMEDIAID {
 ## Members
 
 
-`dwID`
-
-
-
 `dwType`
+
+
+
+`dwID`
 
 
 

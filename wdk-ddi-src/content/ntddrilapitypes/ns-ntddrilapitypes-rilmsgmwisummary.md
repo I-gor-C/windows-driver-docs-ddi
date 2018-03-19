@@ -68,11 +68,11 @@ typedef struct _RILMSGMWISUMMARY {
 
 
 
-`dwNumberOfNewUrgentMessages`
-
-
-
 `dwNumberOfOldMessages`
+
+
+
+`dwNumberOfNewUrgentMessages`
 
 
 

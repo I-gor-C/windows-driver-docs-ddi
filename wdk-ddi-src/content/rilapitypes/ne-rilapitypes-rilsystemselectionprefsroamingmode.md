@@ -61,17 +61,17 @@ typedef enum _RILSYSTEMSELECTIONPREFSROAMINGMODE {
 <table>
             
                 <tr>
+                    <td>RIL_ROAMMODE_HOMEONLY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_ROAMMODE_AUTOMATIC</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_ROAMMODE_DOMESTIC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_ROAMMODE_HOMEONLY</td>
                     <td></td>
                 </tr>
             

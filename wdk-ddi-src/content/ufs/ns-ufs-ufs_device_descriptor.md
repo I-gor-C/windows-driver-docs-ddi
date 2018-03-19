@@ -94,17 +94,105 @@ typedef struct _UFS_DEVICE_DESCRIPTOR {
 ## Members
 
 
-`bBackgroundOpsTermLat`
+`bLength`
 
-<b>bBackgroundOpsTermLat</b> defines the maximum latency for starting data transmission when background
-operations are ongoing. The termination latency limit applies to two cases:
+Specifies the length, in bytes, of this descriptor.
 
-<ul>
-<li>When the device receives a COMMAND UFS Protocol Information Units (UPIU) with a transfer request. The device shall start the data
-transfer and send a DATA IN UPIU or a RTT UPIU within the latency limit.</li>
-<li>When the device receives QUERY REQUEST UPIU to clear the <b>fBackgroundOpsEn</b> Flag. The device is
-expected to terminate background operations within the latency limit.</li>
-</ul>
+`bDescriptorIDN`
+
+Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_DEVICE_IDN</b>.
+
+`bDevice`
+
+Specifies the device type.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>Device</td>
+</tr>
+<tr>
+<td>All other values</td>
+<td>Reserved for future use.</td>
+</tr>
+</table>
+
+`bDeviceClass`
+
+Specifies the device class.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>Mass Storage</td>
+</tr>
+<tr>
+<td>All other values</td>
+<td>Reserved for future use.</td>
+</tr>
+</table>
+
+`bDeviceSubClass`
+
+Specifies the UFS mass storage subclasses in a bit map as follows:
+
+<table>
+<tr>
+<th>Bit</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>0</td>
+<td>Bootable / Non-Bootable</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Embedded / Removable</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Reserved for JESD220-1 (UME)</td>
+</tr>
+<tr>
+<td>All other values</td>
+<td>Reserved for future use.</td>
+</tr>
+</table>
+
+`bProtocol`
+
+Specifies the protocol support by the UFS device.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>SCSI</td>
+</tr>
+<tr>
+<td>All other values</td>
+<td>Reserved for future use.</td>
+</tr>
+</table>
+
+`bNumberLU`
+
+Specifies the number of Logical Units. This does not include the number of well known logical units.
+
+`bNumberWLU`
+
+Specifies the number of well known logical units.
 
 `bBootEnable`
 
@@ -154,97 +242,6 @@ boot sequence.
 </tr>
 </table>
 
-`bDescriptorIDN`
-
-Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_DEVICE_IDN</b>.
-
-`bDevice`
-
-Specifies the device type.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>Device</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
-
-`bDeviceClass`
-
-Specifies the device class.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>Mass Storage</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
-
-`bDeviceRTTCap`
-
-Specifies the maximum number of outstanding READY TO TRANSFER UPIU'S
-supported by device. The minimum value is 2.
-
-`bDeviceSubClass`
-
-Specifies the UFS mass storage subclasses in a bit map as follows:
-
-<table>
-<tr>
-<th>Bit</th>
-<th>Value</th>
-</tr>
-<tr>
-<td>0</td>
-<td>Bootable / Non-Bootable</td>
-</tr>
-<tr>
-<td>1</td>
-<td>Embedded / Removable</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Reserved for JESD220-1 (UME)</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
-
-`bFFUTimeout`
-
-The maximum time, in seconds, that access
-to the device is limited or not possible through
-any ports associated due to execution of a
-WRITE BUFFER command.
-
-`bHighPriorityLUN`
-
-<b>bHighPriorityLUN</b> defines the high priority
-logical unit.
-
-`bInitActiveICCLevel`
-
-<b>bInitActiveICCLevel</b> defines the <b>bActiveICCLevel</b>
-value after power on or reset. The range of the value is from 0x00 to 0x0F.
-
 `bInitPowerMode`
 
 <b>bInitPowerMode</b> defines the Power Mode
@@ -269,47 +266,10 @@ after device initialization or hardware reset.
 </tr>
 </table>
 
-`bLength`
+`bHighPriorityLUN`
 
-Specifies the length, in bytes, of this descriptor.
-
-`bNumberLU`
-
-Specifies the number of Logical Units. This does not include the number of well known logical units.
-
-`bNumberWLU`
-
-Specifies the number of well known logical units.
-
-`bNumSecureWPArea`
-
-Specifies the total number of
-Secure Write Protect Areas supported by the
-device. The value of this member is between <b>bNumberLU</b> and 32
-
-`bProtocol`
-
-Specifies the protocol support by the UFS device.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>SCSI</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
-
-`bQueueDepth`
-
-Specifies the queue depth. If this member is equal to 0, the device implements the per-LU
-queuing architecture.
+<b>bHighPriorityLUN</b> defines the high priority
+logical unit.
 
 `bSecureRemovalType`
 
@@ -371,6 +331,51 @@ Specifies if there is support for security LU's
 </tr>
 </table>
 
+`bBackgroundOpsTermLat`
+
+<b>bBackgroundOpsTermLat</b> defines the maximum latency for starting data transmission when background
+operations are ongoing. The termination latency limit applies to two cases:
+
+<ul>
+<li>When the device receives a COMMAND UFS Protocol Information Units (UPIU) with a transfer request. The device shall start the data
+transfer and send a DATA IN UPIU or a RTT UPIU within the latency limit.</li>
+<li>When the device receives QUERY REQUEST UPIU to clear the <b>fBackgroundOpsEn</b> Flag. The device is
+expected to terminate background operations within the latency limit.</li>
+</ul>
+
+`bInitActiveICCLevel`
+
+<b>bInitActiveICCLevel</b> defines the <b>bActiveICCLevel</b>
+value after power on or reset. The range of the value is from 0x00 to 0x0F.
+
+`wSpecVersion`
+
+Indicates the specification version in Binary Coded Decimal (BCD) format.
+
+`wManufactureDate`
+
+Specifies the manufacturing date  in BCD format as 0xMMYY.
+
+`iManufacturerName`
+
+Contains an index value to the string which contains the manufacturer's name.
+
+`iProductName`
+
+Contains an index value to the string which contains the product's name.
+
+`iSerialNumberID`
+
+Contains an index value to the string which contains the serial's number.
+
+`iOemID`
+
+Contains an index value to the string which contains the OEM ID.
+
+`wManufacturerID`
+
+Specifies the Manufacturer ID of the device.
+
 `bUD0BaseOffset`
 
 Specifies the Offset of Unit Descriptor 0's configurable
@@ -381,6 +386,15 @@ Descriptor, <a href="..\ufs\ns-ufs-ufs_config_descriptor.md">UFS_CONFIG_DESCRIPT
 
 Total size of a <b>UFS_UNIT_CONFIG_DESCRIPTOR</b>'s
 parameters.
+
+`bDeviceRTTCap`
+
+Specifies the maximum number of outstanding READY TO TRANSFER UPIU'S
+supported by device. The minimum value is 2.
+
+`wPeriodicRTCUpdate`
+
+Specifies the frequency and method of real-time clock updates. Bits 10 to 15 are reserved.
 
 `bUFSFeaturesSupport`
 
@@ -409,6 +423,28 @@ Specifies which features are supported on this device. A feature is supported if
 </tr>
 </table>
 
+`bFFUTimeout`
+
+The maximum time, in seconds, that access
+to the device is limited or not possible through
+any ports associated due to execution of a
+WRITE BUFFER command.
+
+`bQueueDepth`
+
+Specifies the queue depth. If this member is equal to 0, the device implements the per-LU
+queuing architecture.
+
+`wDeviceVersion`
+
+Specifies the device version.
+
+`bNumSecureWPArea`
+
+Specifies the total number of
+Secure Write Protect Areas supported by the
+device. The value of this member is between <b>bNumberLU</b> and 32
+
 `dPSAMaxDataSize`
 
 Specifies the maximum
@@ -419,26 +455,10 @@ pre-soldering phase of the PSA flow.
 
 
 
-`iManufacturerName`
-
-Contains an index value to the string which contains the manufacturer's name.
-
-`iOemID`
-
-Contains an index value to the string which contains the OEM ID.
-
-`iProductName`
-
-Contains an index value to the string which contains the product's name.
-
 `iProductRevisionLevel`
 
 Specifies the index to the string which contains the Product
 Revision Level.
-
-`iSerialNumberID`
-
-Contains an index value to the string which contains the serial's number.
 
 `Reserved`
 
@@ -447,26 +467,6 @@ Reserved for future use.
 `Reserved2`
 
 Reserved for future use.
-
-`wDeviceVersion`
-
-Specifies the device version.
-
-`wManufactureDate`
-
-Specifies the manufacturing date  in BCD format as 0xMMYY.
-
-`wManufacturerID`
-
-Specifies the Manufacturer ID of the device.
-
-`wPeriodicRTCUpdate`
-
-Specifies the frequency and method of real-time clock updates. Bits 10 to 15 are reserved.
-
-`wSpecVersion`
-
-Indicates the specification version in Binary Coded Decimal (BCD) format.
 
 ## Remarks
 If <b>bBootEnable</b> in the <b>UFS_DEVICE_DESCRIPTOR</b> is set to zero or if the Boot well known logical unit is not mapped to an enabled logical unit, then the Boot well known logical unit shall terminate.
@@ -514,11 +514,3 @@ If <b>bBootEnable</b> in the <b>UFS_DEVICE_DESCRIPTOR</b> is set to zero or if t
 
 
 <a href="..\ufs\ns-ufs-_ufs_string_descriptor.md">UFS_STRING_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20UFS_DEVICE_DESCRIPTOR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

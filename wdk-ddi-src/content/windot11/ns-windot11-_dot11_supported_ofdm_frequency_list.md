@@ -60,13 +60,6 @@ typedef struct _DOT11_SUPPORTED_OFDM_FREQUENCY_LIST {
 ## Members
 
 
-`dot11SupportedOFDMFrequency`
-
-An array that specifies the list of supported channel center frequencies that the NIC can operate
-     with. Each element in this list is formatted as a 
-     <a href="..\windot11\ns-windot11-_dot11_supported_ofdm_frequency.md">
-     DOT11_SUPPORTED_OFDM_FREQUENCY</a> structure.
-
 `uNumOfEntries`
 
 The number of entries in the 
@@ -76,6 +69,13 @@ The number of entries in the
 
 The maximum number of entries that the 
      <b>dot11SupportedOFDMFrequency</b> array can contain.
+
+`dot11SupportedOFDMFrequency`
+
+An array that specifies the list of supported channel center frequencies that the NIC can operate
+     with. Each element in this list is formatted as a 
+     <a href="..\windot11\ns-windot11-_dot11_supported_ofdm_frequency.md">
+     DOT11_SUPPORTED_OFDM_FREQUENCY</a> structure.
 
 ## Remarks
 A miniport driver returns the DOT11_SUPPORTED_OFDM_FREQUENCY_LIST structure when queried by 
@@ -97,11 +97,3 @@ A miniport driver returns the DOT11_SUPPORTED_OFDM_FREQUENCY_LIST structure when
 
 <a href="..\windot11\ns-windot11-_dot11_supported_ofdm_frequency.md">
    DOT11_SUPPORTED_OFDM_FREQUENCY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SUPPORTED_OFDM_FREQUENCY_LIST structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

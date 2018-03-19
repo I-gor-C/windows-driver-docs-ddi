@@ -62,15 +62,15 @@ typedef enum _DXGKMDT_OPM_STATUS {
 <table>
             
                 <tr>
+                    <td>DXGKMDT_OPM_STATUS_NORMAL</td>
+                    <td>Indicates that the protected output is working correctly.</td>
+                </tr>
+            
+                <tr>
                     <td>DXGKMDT_OPM_STATUS_LINK_LOST</td>
                     <td>Indicates that although the protected output detected no tampering, an output protection technology unexpectedly stopped working. 
 
 This status bit must be set if DXGKMDT_OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED is also set.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_STATUS_NORMAL</td>
-                    <td>Indicates that the protected output is working correctly.</td>
                 </tr>
             
                 <tr>
@@ -79,13 +79,13 @@ This status bit must be set if DXGKMDT_OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED i
                 </tr>
             
                 <tr>
-                    <td>DXGKMDT_OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED</td>
-                    <td>Indicates that a revoked High-bandwidth Digital Content Protection (HDCP) device is directly or indirectly attached to a protected output. If HDCP is not enabled, the protected output is not required to detect revoked devices. If HDCP is enabled, the protected output must detect revoked devices. The driver sets this status value only from a call to its <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a> function to determine if HDCP is enabled.</td>
+                    <td>DXGKMDT_OPM_STATUS_TAMPERING_DETECTED</td>
+                    <td>Indicates that tampering with the graphics adapter or the adapter's display miniport driver has occurred.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGKMDT_OPM_STATUS_TAMPERING_DETECTED</td>
-                    <td>Indicates that tampering with the graphics adapter or the adapter's display miniport driver has occurred.</td>
+                    <td>DXGKMDT_OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED</td>
+                    <td>Indicates that a revoked High-bandwidth Digital Content Protection (HDCP) device is directly or indirectly attached to a protected output. If HDCP is not enabled, the protected output is not required to detect revoked devices. If HDCP is enabled, the protected output must detect revoked devices. The driver sets this status value only from a call to its <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a> function to determine if HDCP is enabled.</td>
                 </tr>
 </table>
 
@@ -122,11 +122,3 @@ The display miniport driver returns status about a protected output whenever the
 
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_OPM_STATUS enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

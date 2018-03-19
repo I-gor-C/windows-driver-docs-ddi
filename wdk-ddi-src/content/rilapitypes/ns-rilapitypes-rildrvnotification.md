@@ -74,11 +74,11 @@ typedef struct _RILDRVNOTIFICATION {
 
 
 
-`dwDataSize`
-
-
-
 `hrCmdID`
+
+
+
+`dwDataSize`
 
 
 

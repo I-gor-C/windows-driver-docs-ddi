@@ -134,13 +134,13 @@ Use the debugger's or process server's implicit command line to start the proces
 </tr>
 </table>
 
-`Reserved`
-
-Set to zero.
-
 `VerifierFlags`
 
 The Application Verifier flags.  Only used if DEBUG_ECREATE_PROCESS_USE_VERIFIER_FLAGS is set in the <b>EngCreateFlags</b> field.  For possible values, see the <a href="https://msdn.microsoft.com/d3040254-aa9b-4aae-b850-966078df7988">Application Verifier</a> documentation.
+
+`Reserved`
+
+Set to zero.
 
 
 ## Requirements

@@ -64,6 +64,10 @@ typedef struct _GNSS_GEOFENCES_TRACKINGSTATUS_DATA {
 
 Structure size.
 
+`Version`
+
+Version number.
+
 `Status`
 
 A failure code indicates that the GNSS engine is unable to track the geofences (due to bad signal conditions or other transient errors).
@@ -77,10 +81,6 @@ The UTC time of this status.
 `Unused`
 
 
-
-`Version`
-
-Version number.
 
 ## Remarks
 The GNSS engine must not raise  events when it is not tracking any mobile-originated geofences (but tracking network-initiated Geofences), or when the geofence tracking has been reset by the GNSS_ResetGeofenceTracking command.

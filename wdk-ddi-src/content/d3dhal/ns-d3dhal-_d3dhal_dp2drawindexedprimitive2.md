@@ -64,6 +64,10 @@ typedef struct _D3DHAL_DP2DRAWINDEXEDPRIMITIVE2 {
 ## Members
 
 
+`primType`
+
+Specifies the type of primitive to draw (one of D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP or D3DPT_TRIANGLEFAN).
+
 `BaseVertexOffset`
 
 Specifies the offset that should be added to each vertex in vertex stream 0 by the various primitives to determine the actual vertex in vertex stream 0. This offset could be negative, but when an index is added to the offset the result is positive.
@@ -76,17 +80,13 @@ Specifies the minimum index of a range of vertices that are potentially accessed
 
 Specifies the number of vertices in a range that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.
 
-`PrimitiveCount`
-
-Specifies the number of triangles, lines or points to draw for the given primitive.
-
-`primType`
-
-Specifies the type of primitive to draw (one of D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP or D3DPT_TRIANGLEFAN).
-
 `StartIndexOffset`
 
 Specifies the offset of the first index in the index buffer from which indices are read to draw the primitives.
+
+`PrimitiveCount`
+
+Specifies the number of triangles, lines or points to draw for the given primitive.
 
 ## Remarks
 The vertex data has been transformed by the runtime.
@@ -109,11 +109,3 @@ D3DDP2OP_DRAWINDEXEDPRIMITIVE2
 
 
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2DRAWINDEXEDPRIMITIVE2 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

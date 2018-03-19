@@ -67,13 +67,13 @@ Indicates the copyright protection type. For more information about copyright pr
 
 Indicates the region code of the currently mounted DVD media. This is an eight-bit bitmask, with one bit for each DVD region. A value of 0x00 means that no region is specified.
 
-`ResetCount`
-
-Indicates the remaining number of times the DVD device's region code can be changed by the user. This member can hold a value between 0 and 7.
-
 `SystemRegion`
 
 Indicates the region code of the DVD player. This is an eight-bit bitmask, with one bit for each system region. A value of 0x00 means that no region is specified.
+
+`ResetCount`
+
+Indicates the remaining number of times the DVD device's region code can be changed by the user. This member can hold a value between 0 and 7.
 
 
 ## Requirements
@@ -84,11 +84,3 @@ Indicates the region code of the DVD player. This is an eight-bit bitmask, with 
 ## See Also
 
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_get_region.md">IOCTL_DVD_GET_REGION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DVD_REGION structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

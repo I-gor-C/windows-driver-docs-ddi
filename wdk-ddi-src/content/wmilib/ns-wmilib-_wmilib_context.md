@@ -64,10 +64,6 @@ typedef struct _WMILIB_CONTEXT {
 ## Members
 
 
-`ExecuteWmiMethod`
-
-Pointer to the driver's <a href="..\wmilib\nc-wmilib-wmi_execute_method_callback.md">DpWmiExecuteMethod</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_INVALID_DEVICE_REQUEST to the caller in response to any <a href="https://msdn.microsoft.com/library/windows/hardware/ff550868">IRP_MN_EXECUTE_METHOD</a> request.
-
 `GuidCount`
 
 Specifies the number of blocks registered by the driver.
@@ -76,13 +72,13 @@ Specifies the number of blocks registered by the driver.
 
 Pointer to an array of <b>GuidCount</b> <a href="..\wmilib\ns-wmilib-_wmiguidreginfo.md">WMIGUIDREGINFO</a> structures that contain registration information for each block.
 
-`QueryWmiDataBlock`
-
-Pointer to the driver's <a href="..\wmilib\nc-wmilib-wmi_query_datablock_callback.md">DpWmiQueryDataBlock</a> routine, which is a required entry point for drivers that call WMI library support routines.
-
 `QueryWmiRegInfo`
 
 Pointer to the driver's <a href="..\wmilib\nc-wmilib-wmi_query_reginfo_callback.md">DpWmiQueryReginfo</a> routine, which is a required entry point for drivers that call WMI library support routines.
+
+`QueryWmiDataBlock`
+
+Pointer to the driver's <a href="..\wmilib\nc-wmilib-wmi_query_datablock_callback.md">DpWmiQueryDataBlock</a> routine, which is a required entry point for drivers that call WMI library support routines.
 
 `SetWmiDataBlock`
 
@@ -91,6 +87,10 @@ Pointer to the driver's <a href="..\wmilib\nc-wmilib-wmi_set_datablock_callback.
 `SetWmiDataItem`
 
 Pointer to the driver's <a href="..\wmilib\nc-wmilib-wmi_set_dataitem_callback.md">DpWmiSetDataItem</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_WMI_READ_ONLY to the caller in response to any <a href="https://msdn.microsoft.com/library/windows/hardware/ff550836">IRP_MN_CHANGE_SINGLE_ITEM</a> request.
+
+`ExecuteWmiMethod`
+
+Pointer to the driver's <a href="..\wmilib\nc-wmilib-wmi_execute_method_callback.md">DpWmiExecuteMethod</a> routine, which is an optional entry point for drivers that call WMI library support routines. If the driver does not implement this routine, it must set this member to <b>NULL</b>. In this case, WMI returns STATUS_INVALID_DEVICE_REQUEST to the caller in response to any <a href="https://msdn.microsoft.com/library/windows/hardware/ff550868">IRP_MN_EXECUTE_METHOD</a> request.
 
 `WmiFunctionControl`
 
@@ -139,11 +139,3 @@ Memory for this structure can be allocated from paged pool.
 
 
 <a href="..\wmilib\nc-wmilib-wmi_query_datablock_callback.md">DpWmiQueryDataBlock</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WMILIB_CONTEXT structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

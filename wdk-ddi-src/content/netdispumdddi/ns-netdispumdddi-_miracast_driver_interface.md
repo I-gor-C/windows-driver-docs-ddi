@@ -61,6 +61,10 @@ typedef struct _MIRACAST_DRIVER_INTERFACE {
 ## Members
 
 
+`Size`
+
+The size, in bytes, of the <b>MIRACAST_DRIVER_INTERFACE</b> structure that the driver returns when the operating system calls the <a href="..\netdispumdddi\nc-netdispumdddi-query_miracast_driver_interface.md">QueryMiracastDriverInterface</a> function.
+
 `CreateMiracastContext`
 
 A pointer to the driver's  <a href="..\netdispumdddi\nc-netdispumdddi-pfn_create_miracast_context.md">CreateMiracastContext</a> function.
@@ -69,14 +73,6 @@ A pointer to the driver's  <a href="..\netdispumdddi\nc-netdispumdddi-pfn_create
 
 A pointer to the driver's  <a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a> function.
 
-`HandleKernelModeMessage`
-
-A pointer to the driver's  <a href="..\netdispumdddi\nc-netdispumdddi-pfn_handle_kmd_message.md">HandleKernelModeMessage</a> function.
-
-`Size`
-
-The size, in bytes, of the <b>MIRACAST_DRIVER_INTERFACE</b> structure that the driver returns when the operating system calls the <a href="..\netdispumdddi\nc-netdispumdddi-query_miracast_driver_interface.md">QueryMiracastDriverInterface</a> function.
-
 `StartMiracastSession`
 
 A pointer to the driver's  <a href="..\netdispumdddi\nc-netdispumdddi-pfn_start_miracast_session.md">StartMiracastSession</a> function.
@@ -84,6 +80,10 @@ A pointer to the driver's  <a href="..\netdispumdddi\nc-netdispumdddi-pfn_start_
 `StopMiracastSession`
 
 A pointer to the driver's   <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a> function.
+
+`HandleKernelModeMessage`
+
+A pointer to the driver's  <a href="..\netdispumdddi\nc-netdispumdddi-pfn_handle_kmd_message.md">HandleKernelModeMessage</a> function.
 
 
 ## Requirements
@@ -115,11 +115,3 @@ A pointer to the driver's   <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_
 
 
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_create_miracast_context.md">CreateMiracastContext</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20MIRACAST_DRIVER_INTERFACE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

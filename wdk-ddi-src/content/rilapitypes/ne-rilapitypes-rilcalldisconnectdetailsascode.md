@@ -61,6 +61,11 @@ typedef enum _RILCALLDISCONNECTDETAILSASCODE {
 <table>
             
                 <tr>
+                    <td>RIL_CD_PHYSICAL_LAYER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_CD_L2</td>
                     <td></td>
                 </tr>
@@ -72,11 +77,6 @@ typedef enum _RILCALLDISCONNECTDETAILSASCODE {
             
                 <tr>
                     <td>RIL_CD_LAYER_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CD_PHYSICAL_LAYER</td>
                     <td></td>
                 </tr>
 </table>

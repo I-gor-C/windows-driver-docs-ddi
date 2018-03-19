@@ -66,14 +66,6 @@ typedef struct {
 
 Indicates the total size of the WMI registration data associated with this <b>WMIREGINFO</b> structure, calculated as follows: (<b>sizeof</b>(<b>WMIREGINFO</b>) + (<b>GuidCount</b> * <b>sizeof</b>(<b>WMIREGGUID</b>) + <i>additionaldata</i>). Additional data might include items such as the MOF resource name, registry path, and static instance names for blocks.
 
-`GuidCount`
-
-Indicates the number of <a href="..\wmistr\ns-wmistr-wmiregguidw.md">WMIREGGUID</a> structures in the array at <b>WmiRegGuid</b>.
-
-`MofResourceName`
-
-Indicates the offset in bytes from the beginning of this structure to a counted Unicode string that specifies the name of the MOF resource in the driver's image file. The string must be aligned on a USHORT boundary. This member should be set only in response to a WMI registration request (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a> with <b>Parameters.WMI.DataPath</b> set to WMIREGISTER).
-
 `NextWmiRegInfo`
 
 If a driver handles WMI requests on behalf of another driver, as a class driver might on behalf of a miniclass driver, <b>NextWmiRegInfo</b> indicates the offset in bytes from the beginning of this <b>WMIREGINFO</b> to the next <b>WMIREGINFO</b> structure that contains WMI registration information for the other driver. Otherwise, <b>NextWmiRegInfo</b> is zero.
@@ -81,6 +73,14 @@ If a driver handles WMI requests on behalf of another driver, as a class driver 
 `RegistryPath`
 
 Indicates the offset in bytes from the beginning of this structure to a counted Unicode string that specifies the registry path passed to the driver's <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine. The string must be aligned on a USHORT boundary. This member should be set only in response to a WMI registration request (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a> with <b>Parameters.WMI.DataPath</b> set to WMIREGISTER).
+
+`MofResourceName`
+
+Indicates the offset in bytes from the beginning of this structure to a counted Unicode string that specifies the name of the MOF resource in the driver's image file. The string must be aligned on a USHORT boundary. This member should be set only in response to a WMI registration request (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a> with <b>Parameters.WMI.DataPath</b> set to WMIREGISTER).
+
+`GuidCount`
+
+Indicates the number of <a href="..\wmistr\ns-wmistr-wmiregguidw.md">WMIREGGUID</a> structures in the array at <b>WmiRegGuid</b>.
 
 `WmiRegGuid`
 
@@ -113,11 +113,3 @@ A driver can use the same <b>WMIREGINFO</b> structure(s) to remove or update blo
 
 
 <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WMIREGINFOW structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

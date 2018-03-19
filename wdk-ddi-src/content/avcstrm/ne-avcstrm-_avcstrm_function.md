@@ -66,23 +66,18 @@ typedef enum _AVCSTRM_FUNCTION {
 <table>
             
                 <tr>
+                    <td>AVCSTRM_READ</td>
+                    <td>Read data from a stream.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVCSTRM_WRITE</td>
+                    <td>Write data to a stream.</td>
+                </tr>
+            
+                <tr>
                     <td>AVCSTRM_ABORT_STREAMING</td>
                     <td>Abort streaming. This cancels <i>all</i> streaming IRPs. To cancel an individual IRP, use <a href="..\wdm\nf-wdm-iocancelirp.md">IoCancelIrp</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>AVCSTRM_CLOSE</td>
-                    <td>Close a stream and free any resources allocated for the stream.</td>
-                </tr>
-            
-                <tr>
-                    <td>AVCSTRM_GET_PROPERTY</td>
-                    <td>Get stream property. This function is not implemented.</td>
-                </tr>
-            
-                <tr>
-                    <td>AVCSTRM_GET_STATE</td>
-                    <td>Obtain the stream state.</td>
                 </tr>
             
                 <tr>
@@ -91,13 +86,13 @@ typedef enum _AVCSTRM_FUNCTION {
                 </tr>
             
                 <tr>
-                    <td>AVCSTRM_READ</td>
-                    <td>Read data from a stream.</td>
+                    <td>AVCSTRM_CLOSE</td>
+                    <td>Close a stream and free any resources allocated for the stream.</td>
                 </tr>
             
                 <tr>
-                    <td>AVCSTRM_SET_PROPERTY</td>
-                    <td>Set stream property. This function is not implemented.</td>
+                    <td>AVCSTRM_GET_STATE</td>
+                    <td>Obtain the stream state.</td>
                 </tr>
             
                 <tr>
@@ -106,8 +101,13 @@ typedef enum _AVCSTRM_FUNCTION {
                 </tr>
             
                 <tr>
-                    <td>AVCSTRM_WRITE</td>
-                    <td>Write data to a stream.</td>
+                    <td>AVCSTRM_GET_PROPERTY</td>
+                    <td>Get stream property. This function is not implemented.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVCSTRM_SET_PROPERTY</td>
+                    <td>Set stream property. This function is not implemented.</td>
                 </tr>
 </table>
 
@@ -152,11 +152,3 @@ typedef enum _AVCSTRM_FUNCTION {
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554121">AVCSTRM_GET_PROPERTY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVCSTRM_FUNCTION enumeration%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

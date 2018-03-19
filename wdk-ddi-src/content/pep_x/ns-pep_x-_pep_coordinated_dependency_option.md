@@ -59,24 +59,24 @@ typedef struct _PEP_COORDINATED_DEPENDENCY_OPTION {
 ## Members
 
 
-`DependentState`
-
-Indicates if this state is a valid state for a dependent processor to be in.
-
 `ExpectedStateIndex`
 
 Supplies the index of the idle state (coordinated idle state or processor idle state) that must have already been entered/be entered by this idle transition.
-
-`InitiatingState`
-
-Indicates if the OS may simultaneously enter the state referred to by this dependency.
-If <b>FALSE</b>, this state is only valid when another processor has previously entered it.
 
 `LooseDependency`
 
 When <b> FALSE</b>, the OS must use synchronization to guarantee that the state referred to by this dependency has already been entered.
 When <b>TRUE</b>,  the OS may perform best-effort coordination that the target state is entered.
 The PEP must set <b>LooseDependency</b> to <b>TRUE</b> if the <b>ExpectedState</b> is a processor state and has the <b>WakesSpuriously</b> flag set.
+
+`InitiatingState`
+
+Indicates if the OS may simultaneously enter the state referred to by this dependency.
+If <b>FALSE</b>, this state is only valid when another processor has previously entered it.
+
+`DependentState`
+
+Indicates if this state is a valid state for a dependent processor to be in.
 
 
 ## Requirements
@@ -92,11 +92,3 @@ The PEP must set <b>LooseDependency</b> to <b>TRUE</b> if the <b>ExpectedState</
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt186775">PEP_NOTIFY_PPM_QUERY_COORDINATED_DEPENDENCY notification</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_COORDINATED_DEPENDENCY_OPTION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -59,13 +59,13 @@ typedef struct _RANGEVALUE {
 ## Members
 
 
-`lMax`
-
-Specifies the maximum value for a parameter.
-
 `lMin`
 
 Specifies the minimum value for a parameter.
+
+`lMax`
+
+Specifies the maximum value for a parameter.
 
 `lStep`
 

@@ -64,21 +64,21 @@ typedef struct _SDEV_SECURE_ACPI_INFO_ENTRY {
 
 A header.
 
-`IdentifierLength`
-
-The length of the identifier.
-
 `IdentifierOffset`
 
 An identifier offset value.
 
-`VendorInfoLength`
+`IdentifierLength`
 
-The length of the vendor information.
+The length of the identifier.
 
 `VendorInfoOffset`
 
 A vendor information offset value.
+
+`VendorInfoLength`
+
+The length of the vendor information.
 
 
 ## Requirements

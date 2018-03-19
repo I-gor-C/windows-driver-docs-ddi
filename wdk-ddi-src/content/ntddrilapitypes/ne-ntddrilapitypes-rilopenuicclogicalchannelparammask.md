@@ -60,11 +60,6 @@ typedef enum _RILOPENUICCLOGICALCHANNELPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_OULC_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_OULC_CHANNELID</td>
                     <td></td>
                 </tr>
@@ -76,6 +71,11 @@ typedef enum _RILOPENUICCLOGICALCHANNELPARAMMASK {
             
                 <tr>
                     <td>RIL_PARAM_OULC_SELECTRESPONSE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_OULC_ALL</td>
                     <td></td>
                 </tr>
 </table>

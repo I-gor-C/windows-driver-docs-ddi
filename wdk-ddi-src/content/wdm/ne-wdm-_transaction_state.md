@@ -61,8 +61,8 @@ typedef enum _TRANSACTION_STATE {
 <table>
             
                 <tr>
-                    <td>TransactionStateCommittedNotify</td>
-                    <td>The transaction has been committed. Commit notifications might (or might not) have been delivered to all enlistments.</td>
+                    <td>TransactionStateNormal</td>
+                    <td>The transaction's state is neither in doubt nor committed.</td>
                 </tr>
             
                 <tr>
@@ -71,8 +71,8 @@ typedef enum _TRANSACTION_STATE {
                 </tr>
             
                 <tr>
-                    <td>TransactionStateNormal</td>
-                    <td>The transaction's state is neither in doubt nor committed.</td>
+                    <td>TransactionStateCommittedNotify</td>
+                    <td>The transaction has been committed. Commit notifications might (or might not) have been delivered to all enlistments.</td>
                 </tr>
 </table>
 
@@ -89,11 +89,3 @@ The <b>TRANSACTION_STATE</b> enumeration is used in the <a href="..\wdm\ns-wdm-_
 ## See Also
 
 <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20TRANSACTION_STATE enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

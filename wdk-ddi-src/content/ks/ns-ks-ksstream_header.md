@@ -64,13 +64,17 @@ typedef struct {
 ## Members
 
 
-`Data`
+`Size`
 
-Specifies the virtual address of the data buffer.
+Specifies the size, in bytes, of the structure. This should be at least <b>sizeof</b>(KSSTREAM_HEADER).
 
-`DataUsed`
+`TypeSpecificFlags`
 
-For a write operation, this member specifies the number of bytes within the frame that are valid when submitting a frame to a lower-level driver. The headers are not modified on a write operation; however, the <b>Information</b> member of the IO_STATUS_BLOCK structure contains the total number of bytes actually written. For a read operation, this member is not used when submitting a frame to a lower-level driver and must be set to zero. On return, this member contains the number of bytes actually filled in this frame and the <b>Information</b> member of the IO_STATUS_BLOCK structure contains the size of the list of headers actually used. Note that if the minidriver specifies KSPIN_FLAG_GENERATE_MAPPINGS in <a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>, when a stream pointer is advanced past a frame, <b>DataUsed</b> is set to <b>Count</b> minus <b>Remaining</b> (members of <a href="..\ks\ns-ks-_ksstream_pointer_offset.md">KSSTREAM_POINTER_OFFSET</a>). If the driver does not specify this flag, the minidriver is responsible for setting <b>DataUsed</b>.
+Specifies flags that are specific to a data format. The only flag currently supported for <i>TypeSpecificFlags</i> is KS_AM_UseNewCSSKey. This flag indicates that the hardware decoder should switch to the next queued CSS (Content Scramble System) decryption key, because the data sample that immediately follows the header is the first data sample to which a new title key applies.
+
+`PresentationTime`
+
+A <a href="..\ks\ns-ks-kstime.md">KSTIME</a> structure that specifies the presentation time for the related stream buffer in 100-nanosecond units. For more information, see the <b>Remarks</b> section.
 
 `Duration`
 
@@ -79,6 +83,14 @@ Specifies the duration of this stream segment in the same units as the presentat
 `FrameExtent`
 
 Specifies the size of the entire frame. The region within the frame extent is available to the filter, and the resulting valid data size for the stream operation is reflected in the <b>DataUsed</b> member.
+
+`DataUsed`
+
+For a write operation, this member specifies the number of bytes within the frame that are valid when submitting a frame to a lower-level driver. The headers are not modified on a write operation; however, the <b>Information</b> member of the IO_STATUS_BLOCK structure contains the total number of bytes actually written. For a read operation, this member is not used when submitting a frame to a lower-level driver and must be set to zero. On return, this member contains the number of bytes actually filled in this frame and the <b>Information</b> member of the IO_STATUS_BLOCK structure contains the size of the list of headers actually used. Note that if the minidriver specifies KSPIN_FLAG_GENERATE_MAPPINGS in <a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>, when a stream pointer is advanced past a frame, <b>DataUsed</b> is set to <b>Count</b> minus <b>Remaining</b> (members of <a href="..\ks\ns-ks-_ksstream_pointer_offset.md">KSSTREAM_POINTER_OFFSET</a>). If the driver does not specify this flag, the minidriver is responsible for setting <b>DataUsed</b>.
+
+`Data`
+
+Specifies the virtual address of the data buffer.
 
 `OptionsFlags`
 
@@ -252,21 +264,9 @@ KSSTREAM_HEADER_OPTIONSF_BUFFEREDTRANSFER
 </tr>
 </table>
 
-`PresentationTime`
-
-A <a href="..\ks\ns-ks-kstime.md">KSTIME</a> structure that specifies the presentation time for the related stream buffer in 100-nanosecond units. For more information, see the <b>Remarks</b> section.
-
 `Reserved`
 
 Reserved for internal use.
-
-`Size`
-
-Specifies the size, in bytes, of the structure. This should be at least <b>sizeof</b>(KSSTREAM_HEADER).
-
-`TypeSpecificFlags`
-
-Specifies flags that are specific to a data format. The only flag currently supported for <i>TypeSpecificFlags</i> is KS_AM_UseNewCSSKey. This flag indicates that the hardware decoder should switch to the next queued CSS (Content Scramble System) decryption key, because the data sample that immediately follows the header is the first data sample to which a new title key applies.
 
 ## Remarks
 This structure can be followed in memory by additional information specific to the type of data in the data packet.
@@ -305,11 +305,3 @@ If you are using the <a href="..\ks\nn-ks-iksreferenceclock.md">IKsReferenceCloc
 ## See Also
 
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSSTREAM_HEADER structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

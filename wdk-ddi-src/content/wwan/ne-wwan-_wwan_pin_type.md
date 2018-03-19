@@ -78,74 +78,14 @@ typedef enum _WWAN_PIN_TYPE {
 <table>
             
                 <tr>
-                    <td>WwanPinTypeAdm</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WwanPinTypeCorporatePin</td>
-                    <td>The corporate personalization key.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanPinTypeCorporatePuk</td>
-                    <td>The corporate personalization unlock key.</td>
+                    <td>WwanPinTypeNone</td>
+                    <td>No PIN is pending to be entered.</td>
                 </tr>
             
                 <tr>
                     <td>WwanPinTypeCustom</td>
                     <td>The PIN type is a custom type and is none of the other PIN types listed in this
      enumeration.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanPinTypeDeviceFirstSimPin</td>
-                    <td>The device to very first SIM key.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanPinTypeDeviceFirstSimPuk</td>
-                    <td>The device to very first SIM PIN unlock key.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanPinTypeDeviceSimPin</td>
-                    <td>The device to SIM key.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanPinTypeMax</td>
-                    <td>The total number of supported PIN types.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanPinTypeNetworkPin</td>
-                    <td>The network personalization key.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanPinTypeNetworkPuk</td>
-                    <td>The network personalization unlock key.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanPinTypeNetworkSubsetPin</td>
-                    <td>The network subset personalization key.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanPinTypeNetworkSubsetPuk</td>
-                    <td>The network subset personalization unlock key.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanPinTypeNev</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WwanPinTypeNone</td>
-                    <td>No PIN is pending to be entered.</td>
                 </tr>
             
                 <tr>
@@ -159,6 +99,41 @@ typedef enum _WWAN_PIN_TYPE {
                 </tr>
             
                 <tr>
+                    <td>WwanPinTypeDeviceSimPin</td>
+                    <td>The device to SIM key.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanPinTypeDeviceFirstSimPin</td>
+                    <td>The device to very first SIM key.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanPinTypeNetworkPin</td>
+                    <td>The network personalization key.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanPinTypeNetworkSubsetPin</td>
+                    <td>The network subset personalization key.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanPinTypeSvcProviderPin</td>
+                    <td>The service provider (SP) personalization key.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanPinTypeCorporatePin</td>
+                    <td>The corporate personalization key.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanPinTypeSubsidyLock</td>
+                    <td>The subsidy unlock key.</td>
+                </tr>
+            
+                <tr>
                     <td>WwanPinTypePuk1</td>
                     <td>The Personal Identification Number1 Unlock Key (PUK1).</td>
                 </tr>
@@ -169,18 +144,43 @@ typedef enum _WWAN_PIN_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WwanPinTypeSubsidyLock</td>
-                    <td>The subsidy unlock key.</td>
+                    <td>WwanPinTypeDeviceFirstSimPuk</td>
+                    <td>The device to very first SIM PIN unlock key.</td>
                 </tr>
             
                 <tr>
-                    <td>WwanPinTypeSvcProviderPin</td>
-                    <td>The service provider (SP) personalization key.</td>
+                    <td>WwanPinTypeNetworkPuk</td>
+                    <td>The network personalization unlock key.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanPinTypeNetworkSubsetPuk</td>
+                    <td>The network subset personalization unlock key.</td>
                 </tr>
             
                 <tr>
                     <td>WwanPinTypeSvcProviderPuk</td>
                     <td>The service provider (SP) personalization unlock key.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanPinTypeCorporatePuk</td>
+                    <td>The corporate personalization unlock key.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanPinTypeNev</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanPinTypeAdm</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanPinTypeMax</td>
+                    <td>The total number of supported PIN types.</td>
                 </tr>
 </table>
 
@@ -198,11 +198,3 @@ typedef enum _WWAN_PIN_TYPE {
 
 
 <a href="..\wwan\ns-wwan-_wwan_pin_info.md">WWAN_PIN_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -59,21 +59,21 @@ typedef struct _MOUNTMGR_CREATE_POINT_INPUT {
 ## Members
 
 
-`DeviceNameLength`
+`SymbolicLinkNameOffset`
 
-Contains the length in bytes of the nonpersistent (target) device name.
-
-`DeviceNameOffset`
-
-Contains an offset in bytes into the output buffer where the nonpersistent (target) device name is located.
+Contains an offset in bytes into the output buffer where the symbolic link name is located.
 
 `SymbolicLinkNameLength`
 
 Contains the length in bytes of the symbolic link name stored in the output buffer.
 
-`SymbolicLinkNameOffset`
+`DeviceNameOffset`
 
-Contains an offset in bytes into the output buffer where the symbolic link name is located.
+Contains an offset in bytes into the output buffer where the nonpersistent (target) device name is located.
+
+`DeviceNameLength`
+
+Contains the length in bytes of the nonpersistent (target) device name.
 
 ## Remarks
 The name given for purposes of identifying the volume can be of any type: a unique volume name, a symbolic link name, or a nonpersistent device name. For a discussion of the difference between symbolic link names and nonpersistent target device names, see <a href="https://msdn.microsoft.com/fb37f862-70d6-4514-b481-16f664346422">Supporting Mount Manager Requests in a Storage Class Driver</a>.
@@ -86,11 +86,3 @@ The name given for purposes of identifying the volume can be of any type: a uniq
 ## See Also
 
 <a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_create_point.md">IOCTL_MOUNTMGR_CREATE_POINT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MOUNTMGR_CREATE_POINT_INPUT structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,6 +63,18 @@ typedef struct _REGISTER_COMPOSITE_DEVICE {
 ## Members
 
 
+`Version`
+
+The version of this structure. <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.
+
+`Size`
+
+The size of this structure. <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.
+
+`Reserved`
+
+Reserved. <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.
+
 `CapabilityFlags`
 
 The capabilities that are supported by the composite driver.
@@ -72,18 +84,6 @@ member of <b>COMPOSITE_DEVICE_CAPABILITIES</b> to 1. Finally, call <a href="..\u
 `FunctionCount`
 
 The number of functions supported by the composite device. The <b>FunctionCount</b> value must not exceed 255.
-
-`Reserved`
-
-Reserved. <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.
-
-`Size`
-
-The size of this structure. <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.
-
-`Version`
-
-The version of this structure. <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> sets this  member.
 
 
 ## Requirements
@@ -107,11 +107,3 @@ The version of this structure. <a href="..\usbdlib\nf-usbdlib-usbd_buildregister
 
 
 <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20REGISTER_COMPOSITE_DEVICE structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

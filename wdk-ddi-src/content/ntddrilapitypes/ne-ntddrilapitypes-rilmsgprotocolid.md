@@ -96,22 +96,12 @@ typedef enum _RILMSGPROTOCOLID {
 <table>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_DEPERSONALIZATION</td>
+                    <td>RIL_MSGPROTOCOL_UNKNOWN</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_EMAIL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGPROTOCOL_ERMES</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGPROTOCOL_GSMSTATION</td>
+                    <td>RIL_MSGPROTOCOL_SMETOSME</td>
                     <td></td>
                 </tr>
             
@@ -121,17 +111,27 @@ typedef enum _RILMSGPROTOCOLID {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_MAX</td>
+                    <td>RIL_MSGPROTOCOL_TELEX</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_ME_DOWNLOAD</td>
+                    <td>RIL_MSGPROTOCOL_TELEFAX_GROUP3</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_MSGHANDLING</td>
+                    <td>RIL_MSGPROTOCOL_TELEFAX_GROUP4</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGPROTOCOL_VOICEPHONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGPROTOCOL_ERMES</td>
                     <td></td>
                 </tr>
             
@@ -141,42 +141,52 @@ typedef enum _RILMSGPROTOCOLID {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_RETURNCALL</td>
+                    <td>RIL_MSGPROTOCOL_VIDEOTEX</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_RSM_TYPE1</td>
+                    <td>RIL_MSGPROTOCOL_TELETEX</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_RSM_TYPE2</td>
+                    <td>RIL_MSGPROTOCOL_TELETEX_PSPDN</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_RSM_TYPE3</td>
+                    <td>RIL_MSGPROTOCOL_TELETEX_CSPDN</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_RSM_TYPE4</td>
+                    <td>RIL_MSGPROTOCOL_TELETEX_PSTN</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_RSM_TYPE5</td>
+                    <td>RIL_MSGPROTOCOL_TELETEX_ISDN</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_RSM_TYPE6</td>
+                    <td>RIL_MSGPROTOCOL_UCI</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_RSM_TYPE7</td>
+                    <td>RIL_MSGPROTOCOL_MSGHANDLING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGPROTOCOL_X400</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGPROTOCOL_EMAIL</td>
                     <td></td>
                 </tr>
             
@@ -216,57 +226,62 @@ typedef enum _RILMSGPROTOCOLID {
                 </tr>
             
                 <tr>
+                    <td>RIL_MSGPROTOCOL_GSMSTATION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_MSGPROTOCOL_SM_TYPE0</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_SMETOSME</td>
+                    <td>RIL_MSGPROTOCOL_RSM_TYPE1</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_TELEFAX_GROUP3</td>
+                    <td>RIL_MSGPROTOCOL_RSM_TYPE2</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_TELEFAX_GROUP4</td>
+                    <td>RIL_MSGPROTOCOL_RSM_TYPE3</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_TELETEX</td>
+                    <td>RIL_MSGPROTOCOL_RSM_TYPE4</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_TELETEX_CSPDN</td>
+                    <td>RIL_MSGPROTOCOL_RSM_TYPE5</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_TELETEX_ISDN</td>
+                    <td>RIL_MSGPROTOCOL_RSM_TYPE6</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_TELETEX_PSPDN</td>
+                    <td>RIL_MSGPROTOCOL_RSM_TYPE7</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_TELETEX_PSTN</td>
+                    <td>RIL_MSGPROTOCOL_RETURNCALL</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_TELEX</td>
+                    <td>RIL_MSGPROTOCOL_ME_DOWNLOAD</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_UCI</td>
+                    <td>RIL_MSGPROTOCOL_DEPERSONALIZATION</td>
                     <td></td>
                 </tr>
             
@@ -276,22 +291,7 @@ typedef enum _RILMSGPROTOCOLID {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPROTOCOL_UNKNOWN</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGPROTOCOL_VIDEOTEX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGPROTOCOL_VOICEPHONE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGPROTOCOL_X400</td>
+                    <td>RIL_MSGPROTOCOL_MAX</td>
                     <td></td>
                 </tr>
 </table>

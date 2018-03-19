@@ -85,6 +85,10 @@ typedef struct _DXGK_SET_TIMING_PATH_INFO {
 ## Members
 
 
+`VidPnTargetId`
+
+The identifier of a display adapter's video present target.
+
 `SelectedWireFormat`
 
 A <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_wire_format_and_preference.md">D3DKMDT_WIRE_FORMAT_AND_PREFERENCE</a> value which indicates the wire format to be set for the path. The Preference field is reserved in this context so should be ignored by the driver.  In the remaining five bit-fields, the OS will set one of the thirty bits to indicate which color encoding and at which bit depth the link should be driven.
@@ -96,10 +100,6 @@ Indicates the target state as a result of this call. Since changing timings may 
 If the target state is unchanged, this field should contain a copy of the last state reported on the target, including the same ConnectionChangeId which was previously reported.
 
 If the target state is changed, this field should contain a copy of the queued, connection change which reflects the state resulting from the SetTiming call.
-
-`VidPnTargetId`
-
-The identifier of a display adapter's video present target.
 
 
 ## Requirements

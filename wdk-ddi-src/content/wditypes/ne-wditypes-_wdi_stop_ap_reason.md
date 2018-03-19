@@ -63,8 +63,8 @@ typedef enum _WDI_STOP_AP_REASON {
 <table>
             
                 <tr>
-                    <td>WDI_STOP_AP_REASON_AP_ACTIVE</td>
-                    <td>The adapter determined that an AP is already active on another 802.11 MAC entity for this physical wireless LAN adapter.</td>
+                    <td>WDI_STOP_AP_REASON_FREQUENCY_NOT_AVAILABLE</td>
+                    <td>The adapter determined that no valid operating frequency is available.</td>
                 </tr>
             
                 <tr>
@@ -73,18 +73,18 @@ typedef enum _WDI_STOP_AP_REASON {
                 </tr>
             
                 <tr>
-                    <td>WDI_STOP_AP_REASON_FREQUENCY_NOT_AVAILABLE</td>
-                    <td>The adapter determined that no valid operating frequency is available.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_STOP_AP_REASON_IHV_END</td>
-                    <td>The end value of possible IHV-specified reasons.</td>
+                    <td>WDI_STOP_AP_REASON_AP_ACTIVE</td>
+                    <td>The adapter determined that an AP is already active on another 802.11 MAC entity for this physical wireless LAN adapter.</td>
                 </tr>
             
                 <tr>
                     <td>WDI_STOP_AP_REASON_IHV_START</td>
                     <td>The start value of possible IHV-specified reasons.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_STOP_AP_REASON_IHV_END</td>
+                    <td>The end value of possible IHV-specified reasons.</td>
                 </tr>
 </table>
 

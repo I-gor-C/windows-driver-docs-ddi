@@ -73,22 +73,18 @@ typedef struct _NET_DMA_PROVIDER_CHARACTERISTICS {
 ## Members
 
 
-`AbortDma`
+`MajorVersion`
 
-The entry point for the 
-     <a href="..\netdma\nc-netdma-dma_abort_handler.md">ProviderAbortDma</a> function. If this
-     function is not supported, set this member to <b>NULL</b>.
+The major version number of the DMA provider driver.
 
-`AllocateDmaChannel`
+`MinorVersion`
 
-The entry point for the 
-     <a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">
-     ProviderAllocateDmaChannel</a> function.
+The minor version number of the DMA provider driver.
 
-`AppendDma`
+`Size`
 
-The entry point for the 
-     <a href="..\netdma\nc-netdma-dma_append_handler.md">ProviderAppendDma</a> function.
+The size, in bytes, of this NET_DMA_PROVIDER_CHARACTERISTICS structure. Set this member to 
+     sizeof(NET_DMA_PROVIDER_CHARACTERISTICS).
 
 `Flags`
 
@@ -106,29 +102,6 @@ NetDMA 2.0 and later drivers can use the following flags.
 The NetDMA provider supports 
        <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/direct-cache-access--dca-">Direct Cache Access (DCA)</a>.
 
-`FreeDmaChannel`
-
-The entry point for the 
-     <a href="..\netdma\nc-netdma-dma_channel_free_handler.md">
-     ProviderFreeDmaChannel</a> function.
-
-`FriendlyName`
-
-A Unicode string that represents the user-readable description of the NetDMA provider
-     driver.
-
-`MajorVersion`
-
-The major version number of the DMA provider driver.
-
-`MaxDmaChannelCount`
-
-The maximum number of DMA channels that the DMA provider can support.
-
-`MinorVersion`
-
-The minor version number of the DMA provider driver.
-
 `PhysicalDeviceObject`
 
 The physical device object (PDO) that is associated with the DMA provider. The Plug and Play (PnP)
@@ -136,17 +109,9 @@ The physical device object (PDO) that is associated with the DMA provider. The P
      <i>PhysicalDeviceObject</i> parameter to the 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine.
 
-`ResetChannel`
+`MaxDmaChannelCount`
 
-The entry point for the 
-     <a href="..\netdma\nc-netdma-dma_reset_handler.md">ProviderResetChannel</a> function. If
-     this function is not supported, set this member to <b>NULL</b>.
-
-`ResumeDma`
-
-The entry point for the 
-     <a href="..\netdma\nc-netdma-dma_resume_handler.md">ProviderResumeDma</a> function. If this
-     function is not supported, set this member to <b>NULL</b>.
+The maximum number of DMA channels that the DMA provider can support.
 
 `SetDmaChannelCpuAffinity`
 
@@ -154,10 +119,17 @@ The entry point for the
      <a href="..\netdma\nc-netdma-dma_channels_cpu_affinity_handler.md">
      ProviderSetDmaChannelCpuAffinity</a> function.
 
-`Size`
+`AllocateDmaChannel`
 
-The size, in bytes, of this NET_DMA_PROVIDER_CHARACTERISTICS structure. Set this member to 
-     sizeof(NET_DMA_PROVIDER_CHARACTERISTICS).
+The entry point for the 
+     <a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">
+     ProviderAllocateDmaChannel</a> function.
+
+`FreeDmaChannel`
+
+The entry point for the 
+     <a href="..\netdma\nc-netdma-dma_channel_free_handler.md">
+     ProviderFreeDmaChannel</a> function.
 
 `StartDma`
 
@@ -169,6 +141,34 @@ The entry point for the
 The entry point for the 
      <a href="..\netdma\nc-netdma-dma_suspend_handler.md">ProviderSuspendDma</a> function. If this
      function is not supported, set this member to <b>NULL</b>.
+
+`ResumeDma`
+
+The entry point for the 
+     <a href="..\netdma\nc-netdma-dma_resume_handler.md">ProviderResumeDma</a> function. If this
+     function is not supported, set this member to <b>NULL</b>.
+
+`AbortDma`
+
+The entry point for the 
+     <a href="..\netdma\nc-netdma-dma_abort_handler.md">ProviderAbortDma</a> function. If this
+     function is not supported, set this member to <b>NULL</b>.
+
+`AppendDma`
+
+The entry point for the 
+     <a href="..\netdma\nc-netdma-dma_append_handler.md">ProviderAppendDma</a> function.
+
+`ResetChannel`
+
+The entry point for the 
+     <a href="..\netdma\nc-netdma-dma_reset_handler.md">ProviderResetChannel</a> function. If
+     this function is not supported, set this member to <b>NULL</b>.
+
+`FriendlyName`
+
+A Unicode string that represents the user-readable description of the NetDMA provider
+     driver.
 
 ## Remarks
 To register a DMA provider, a DMA provider driver calls the 
@@ -230,11 +230,3 @@ The DMA provider driver supplies a NET_DMA_PROVIDER_CHARACTERISTICS structure at
 
 
 <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

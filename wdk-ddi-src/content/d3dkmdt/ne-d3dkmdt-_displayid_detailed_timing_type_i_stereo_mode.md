@@ -61,11 +61,6 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_STEREO_MODE {
 <table>
             
                 <tr>
-                    <td>DIDDT1_Dependent</td>
-                    <td>Indicates that the mode depends upon user action.</td>
-                </tr>
-            
-                <tr>
                     <td>DIDDT1_Monoscopic</td>
                     <td>Indicates monoscopic mode (no stereo vision).</td>
                 </tr>
@@ -73,6 +68,11 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_STEREO_MODE {
                 <tr>
                     <td>DIDDT1_Stereo</td>
                     <td>Indicates stereo mode.</td>
+                </tr>
+            
+                <tr>
+                    <td>DIDDT1_Dependent</td>
+                    <td>Indicates that the mode depends upon user action.</td>
                 </tr>
 </table>
 

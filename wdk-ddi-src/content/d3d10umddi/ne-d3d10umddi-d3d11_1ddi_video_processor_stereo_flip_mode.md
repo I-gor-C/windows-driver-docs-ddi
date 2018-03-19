@@ -60,6 +60,11 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE {
 <table>
             
                 <tr>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_NONE</td>
+                    <td>Neither frame is flipped.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_FRAME0</td>
                     <td>The data in frame 0 is flipped.</td>
                 </tr>
@@ -67,11 +72,6 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE {
                 <tr>
                     <td>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_FRAME1</td>
                     <td>The data in frame 1 is flipped.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_NONE</td>
-                    <td>Neither frame is flipped.</td>
                 </tr>
 </table>
 

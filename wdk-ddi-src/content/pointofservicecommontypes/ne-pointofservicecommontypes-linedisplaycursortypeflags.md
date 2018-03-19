@@ -58,12 +58,7 @@ typedef enum _LineDisplayCursorTypeFlags {
 <table>
             
                 <tr>
-                    <td>CursorTypeBlink</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>CursorTypeBlock</td>
+                    <td>CursorTypeNone</td>
                     <td></td>
                 </tr>
             
@@ -73,17 +68,17 @@ typedef enum _LineDisplayCursorTypeFlags {
                 </tr>
             
                 <tr>
+                    <td>CursorTypeBlock</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>CursorTypeHalfBlock</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>CursorTypeNone</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>CursorTypeOther</td>
+                    <td>CursorTypeUnderline</td>
                     <td></td>
                 </tr>
             
@@ -93,7 +88,12 @@ typedef enum _LineDisplayCursorTypeFlags {
                 </tr>
             
                 <tr>
-                    <td>CursorTypeUnderline</td>
+                    <td>CursorTypeOther</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>CursorTypeBlink</td>
                     <td></td>
                 </tr>
 </table>

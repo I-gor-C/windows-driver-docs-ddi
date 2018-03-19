@@ -59,21 +59,21 @@ typedef struct _SM_SetPersistentBinding_IN {
 ## Members
 
 
-`DomainPortWWN`
-
-A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.
-
-`Entry`
-
-A list of MS_SMHBA_BINDINGENTRY types for persistent binding.
-
 `HbaPortWWN`
 
 The worldwide name (WWN) of the local port whose events the WMI client will receive.
 
+`DomainPortWWN`
+
+A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.
+
 `InEntryCount`
 
 The number of persistent bindings that are associated with the HBA.
+
+`Entry`
+
+A list of MS_SMHBA_BINDINGENTRY types for persistent binding.
 
 ## Remarks
 The WMI tool suite generates a declaration of the SM_SetPersistentBinding_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.

@@ -73,22 +73,7 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSPROPERTY_PIN_CATEGORY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>KSPROPERTY_PIN_CINSTANCES</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_PIN_COMMUNICATION</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_PIN_CONSTRAINEDDATARANGES</td>
                     <td></td>
                 </tr>
             
@@ -103,17 +88,12 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_PIN_DATAINTERSECTION</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>KSPROPERTY_PIN_DATARANGES</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_PIN_GLOBALCINSTANCES</td>
+                    <td>KSPROPERTY_PIN_DATAINTERSECTION</td>
                     <td></td>
                 </tr>
             
@@ -128,7 +108,12 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_PIN_NAME</td>
+                    <td>KSPROPERTY_PIN_COMMUNICATION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_PIN_GLOBALCINSTANCES</td>
                     <td></td>
                 </tr>
             
@@ -139,6 +124,21 @@ typedef enum  {
             
                 <tr>
                     <td>KSPROPERTY_PIN_PHYSICALCONNECTION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_PIN_CATEGORY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_PIN_NAME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_PIN_CONSTRAINEDDATARANGES</td>
                     <td></td>
                 </tr>
             

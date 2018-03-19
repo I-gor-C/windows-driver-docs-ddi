@@ -67,28 +67,8 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSCAMERA_EXTENDEDPROP_MetadataAlignment_1024</td>
-                    <td>This identifies an alignment of 1024 bytes.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSCAMERA_EXTENDEDPROP_MetadataAlignment_128</td>
-                    <td>This identifies an alignment of 128 bytes.</td>
-                </tr>
-            
-                <tr>
                     <td>KSCAMERA_EXTENDEDPROP_MetadataAlignment_16</td>
                     <td>This identifies an alignment of 16 bytes.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSCAMERA_EXTENDEDPROP_MetadataAlignment_2048</td>
-                    <td>This identifies an alignment of 2048 bytes.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSCAMERA_EXTENDEDPROP_MetadataAlignment_256</td>
-                    <td>This identifies an alignment of 256 bytes.</td>
                 </tr>
             
                 <tr>
@@ -97,8 +77,18 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSCAMERA_EXTENDEDPROP_MetadataAlignment_4096</td>
-                    <td>This identifies an alignment of 4096 bytes.</td>
+                    <td>KSCAMERA_EXTENDEDPROP_MetadataAlignment_64</td>
+                    <td>This identifies an alignment of 64 bytes.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSCAMERA_EXTENDEDPROP_MetadataAlignment_128</td>
+                    <td>This identifies an alignment of 128 bytes.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSCAMERA_EXTENDEDPROP_MetadataAlignment_256</td>
+                    <td>This identifies an alignment of 256 bytes.</td>
                 </tr>
             
                 <tr>
@@ -107,8 +97,18 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSCAMERA_EXTENDEDPROP_MetadataAlignment_64</td>
-                    <td>This identifies an alignment of 64 bytes.</td>
+                    <td>KSCAMERA_EXTENDEDPROP_MetadataAlignment_1024</td>
+                    <td>This identifies an alignment of 1024 bytes.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSCAMERA_EXTENDEDPROP_MetadataAlignment_2048</td>
+                    <td>This identifies an alignment of 2048 bytes.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSCAMERA_EXTENDEDPROP_MetadataAlignment_4096</td>
+                    <td>This identifies an alignment of 4096 bytes.</td>
                 </tr>
             
                 <tr>

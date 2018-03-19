@@ -70,10 +70,6 @@ typedef struct _D3DKMT_QUERYRESOURCEINFO {
 
 [in] A handle to the shared resource to open.
 
-`NumAllocations`
-
-[out] The number of allocations that are associated with the resource.
-
 `pPrivateRuntimeData`
 
 [in] If non-<b>NULL</b>, a pointer to a buffer that receives the runtime-private data that is supplied at create time. The OpenGL ICD should first call the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryresourceinfo.md">D3DKMTQueryResourceInfo</a> function with <b>pPrivateRuntimeData</b> set to <b>NULL</b> to obtain the buffer size and then call again with the correct size buffer.
@@ -82,13 +78,17 @@ typedef struct _D3DKMT_QUERYRESOURCEINFO {
 
 [in/out] The size, in bytes, of the buffer that <b>pPrivateRuntimeData</b> points to. If <b>pPrivateRuntimeData</b> is <b>NULL</b>, <b>PrivateRuntimeDataSize</b> is set to the size, in bytes, that is required for the buffer to store the runtime-private data.
 
+`TotalPrivateDriverDataSize`
+
+[out] The size, in bytes, of the buffer that is required to hold the private driver data for all of the allocations that are associated with the resource.
+
 `ResourcePrivateDriverDataSize`
 
 [out] The size, in bytes, of the buffer that is required to hold the private driver data for the resource.
 
-`TotalPrivateDriverDataSize`
+`NumAllocations`
 
-[out] The size, in bytes, of the buffer that is required to hold the private driver data for all of the allocations that are associated with the resource.
+[out] The number of allocations that are associated with the resource.
 
 
 ## Requirements
@@ -104,11 +104,3 @@ typedef struct _D3DKMT_QUERYRESOURCEINFO {
 
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryresourceinfo.md">D3DKMTQueryResourceInfo</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_QUERYRESOURCEINFO structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -69,6 +69,21 @@ typedef enum  {
                 </tr>
             
                 <tr>
+                    <td>VideoPortServicesI2C</td>
+                    <td>Represents the I2C interface.</td>
+                </tr>
+            
+                <tr>
+                    <td>VideoPortServicesHeadless</td>
+                    <td>Represents the Headless interface.</td>
+                </tr>
+            
+                <tr>
+                    <td>VideoPortServicesInt10</td>
+                    <td>Represents the Int10 interface.</td>
+                </tr>
+            
+                <tr>
                     <td>VideoPortServicesDebugReport</td>
                     <td>Represents the Debug Report interface, which is available in the following operating systems:
  
@@ -78,21 +93,6 @@ typedef enum  {
 <li>Windows Server 2003 SP1 and subsequent service packs</li>
 <li>Windows XP SP2 and subsequent service packs </li>
 </ul></td>
-                </tr>
-            
-                <tr>
-                    <td>VideoPortServicesHeadless</td>
-                    <td>Represents the Headless interface.</td>
-                </tr>
-            
-                <tr>
-                    <td>VideoPortServicesI2C</td>
-                    <td>Represents the I2C interface.</td>
-                </tr>
-            
-                <tr>
-                    <td>VideoPortServicesInt10</td>
-                    <td>Represents the Int10 interface.</td>
                 </tr>
             
                 <tr>
@@ -131,11 +131,3 @@ The video miniport driver obtains a set of function pointers by passing a value 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551792">Debug Report Functions Implemented by the Video Port Driver</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_PORT_SERVICES enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

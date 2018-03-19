@@ -60,11 +60,6 @@ typedef enum _IDDCX_ADAPTER_FLAGS {
 <table>
             
                 <tr>
-                    <td>IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS</td>
-                    <td>Indicates if the driver can utilize move regions provided by the OS in addition to dirty rects when encoding the image.  The driver should only set this to TRUE if it uses the move regions because  this costs additional resource for the OS to generate them. If driver sets this to FALSE, the OS converts all move regions to dirty rects.</td>
-                </tr>
-            
-                <tr>
                     <td>IDDCX_ADAPTER_FLAGS_NONE</td>
                     <td>Indicates that there are no flags set for the adapter.</td>
                 </tr>
@@ -75,6 +70,11 @@ typedef enum _IDDCX_ADAPTER_FLAGS {
 
 <div class="alert"><b>Note</b>  Setting this flag results in a mode change each time the desktop resolution is changed.</div>
 <div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS</td>
+                    <td>Indicates if the driver can utilize move regions provided by the OS in addition to dirty rects when encoding the image.  The driver should only set this to TRUE if it uses the move regions because  this costs additional resource for the OS to generate them. If driver sets this to FALSE, the OS converts all move regions to dirty rects.</td>
                 </tr>
             
                 <tr>

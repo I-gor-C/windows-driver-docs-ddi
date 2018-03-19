@@ -58,10 +58,6 @@ typedef struct IDDCX_MOVEREGION {
 ## Members
 
 
-`DestRect`
-
-Defines the destination rect of the move.
-
 `Size`
 
 Total size of the structure.
@@ -70,6 +66,10 @@ Total size of the structure.
 
 The location within the surface of the top left of the source rect. The source rect size is the same as the
     destination rect size.
+
+`DestRect`
+
+Defines the destination rect of the move.
 
 
 ## Requirements

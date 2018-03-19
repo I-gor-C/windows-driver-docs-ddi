@@ -59,21 +59,21 @@ typedef struct _MSR_UPDATE_KEY {
 ## Members
 
 
-`Key`
-
-The new encryption key.
-
 `KeyLength`
 
 Length, in bytes, of the key stored in <b>Key[MSR_KEY_SIZE]</b>.
 
-`KeyName`
-
-
-
 `KeyNameLength`
 
 Length, in bytes, of the key name stored in <b>KeyName[MSR_KEY_SIZE]</b>.
+
+`Key`
+
+The new encryption key.
+
+`KeyName`
+
+
 
 
 ## Requirements

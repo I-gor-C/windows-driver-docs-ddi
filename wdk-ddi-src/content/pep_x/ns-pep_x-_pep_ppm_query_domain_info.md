@@ -61,6 +61,10 @@ typedef struct _PEP_PPM_QUERY_DOMAIN_INFO {
 ## Members
 
 
+`DomainId`
+
+On input, the domain ID of the domain being queried.
+
 `CoordinationType`
 
 On output, indicates the coordination type of the performance domain. The possible values are:
@@ -71,10 +75,6 @@ On output, indicates the coordination type of the performance domain. The possib
 <li>PROCESSOR_DOMAIN_COORDIANTION_HW_ALL (0x02)</li>
 </ul>
 If this notification is not supported, PROCESSOR_DOMAIN_COORDIANTION_SW_ALL coordination is used.
-
-`DomainId`
-
-On input, the domain ID of the domain being queried.
 
 `IdleProcessorsDiscounted`
 
@@ -103,11 +103,3 @@ On output, this value indicates the worst case overhead (PEP code execution time
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt186881">Processor power management (PPM) notifications</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_QUERY_DOMAIN_INFO structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

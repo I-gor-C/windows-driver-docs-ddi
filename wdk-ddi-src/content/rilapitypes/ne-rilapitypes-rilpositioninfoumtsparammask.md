@@ -70,7 +70,17 @@ typedef enum _RILPOSITIONINFOUMTSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_POSITION_UMTS_ALL</td>
+                    <td>RIL_PARAM_POSITION_UMTS_MCC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_UMTS_MNC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_UMTS_LAC</td>
                     <td></td>
                 </tr>
             
@@ -80,7 +90,7 @@ typedef enum _RILPOSITIONINFOUMTSPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_POSITION_UMTS_ECNO</td>
+                    <td>RIL_PARAM_POSITION_UMTS_FREQINFO_UL</td>
                     <td></td>
                 </tr>
             
@@ -95,27 +105,7 @@ typedef enum _RILPOSITIONINFOUMTSPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_POSITION_UMTS_FREQINFO_UL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_POSITION_UMTS_LAC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_POSITION_UMTS_MCC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_POSITION_UMTS_MNC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_POSITION_UMTS_PATHLOSS</td>
+                    <td>RIL_PARAM_POSITION_UMTS_UARFCN</td>
                     <td></td>
                 </tr>
             
@@ -130,7 +120,17 @@ typedef enum _RILPOSITIONINFOUMTSPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_POSITION_UMTS_UARFCN</td>
+                    <td>RIL_PARAM_POSITION_UMTS_ECNO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_UMTS_PATHLOSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_UMTS_ALL</td>
                     <td></td>
                 </tr>
 </table>

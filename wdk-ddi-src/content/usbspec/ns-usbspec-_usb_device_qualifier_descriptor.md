@@ -65,29 +65,29 @@ typedef struct _USB_DEVICE_QUALIFIER_DESCRIPTOR {
 ## Members
 
 
-`bcdUSB`
+`bLength`
 
-Identifies the version of the USB specification that this descriptor structure complies with. This value is a binary-coded decimal number.
+Specifies the length, in bytes, of this descriptor.
 
 `bDescriptorType`
 
 Specifies the descriptor type. Must be set to <b>USB_DEVICE_QUALIFIER_DESCRIPTOR_TYPE</b>.
 
+`bcdUSB`
+
+Identifies the version of the USB specification that this descriptor structure complies with. This value is a binary-coded decimal number.
+
 `bDeviceClass`
 
 Specifies the class code of the device as assigned by the USB specification group.
-
-`bDeviceProtocol`
-
-Specifies the protocol code of the device as assigned by the USB specification group.
 
 `bDeviceSubClass`
 
 Specifies the subclass code of the device as assigned by the USB specification group.
 
-`bLength`
+`bDeviceProtocol`
 
-Specifies the length, in bytes, of this descriptor.
+Specifies the protocol code of the device as assigned by the USB specification group.
 
 `bMaxPacketSize0`
 
@@ -120,11 +120,3 @@ This structure is similar to <a href="..\usbspec\ns-usbspec-_usb_device_descript
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_DEVICE_QUALIFIER_DESCRIPTOR structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -66,26 +66,6 @@ typedef enum _RILTDSCDMAMRLPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_TDSCDMAMRL_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_TDSCDMAMRL_CELLID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_TDSCDMAMRL_CELLPARAM</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_TDSCDMAMRL_LAC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_TDSCDMAMRL_MCC</td>
                     <td></td>
                 </tr>
@@ -96,7 +76,22 @@ typedef enum _RILTDSCDMAMRLPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_TDSCDMAMRL_PATHLOSS</td>
+                    <td>RIL_PARAM_TDSCDMAMRL_LAC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TDSCDMAMRL_CELLID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TDSCDMAMRL_UARFCN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TDSCDMAMRL_CELLPARAM</td>
                     <td></td>
                 </tr>
             
@@ -106,7 +101,12 @@ typedef enum _RILTDSCDMAMRLPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_TDSCDMAMRL_UARFCN</td>
+                    <td>RIL_PARAM_TDSCDMAMRL_PATHLOSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TDSCDMAMRL_ALL</td>
                     <td></td>
                 </tr>
 </table>

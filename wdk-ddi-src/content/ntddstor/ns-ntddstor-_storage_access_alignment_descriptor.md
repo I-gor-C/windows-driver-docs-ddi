@@ -62,9 +62,29 @@ typedef struct _STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR {
 ## Members
 
 
+`Version`
+
+Contains the size of the structure STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR. The value of this member will change as members are added to the structure.
+
+`Size`
+
+Specifies the total size of the descriptor, in bytes.
+
+`BytesPerCacheLine`
+
+The number of bytes in a cache line of the device.
+
 `BytesOffsetForCacheAlignment`
 
 The address offset necessary for proper cache access alignment, in bytes.
+
+`BytesPerLogicalSector`
+
+The number of bytes in a logical sector of the device.
+
+`BytesPerPhysicalSector`
+
+The number of bytes in a physical sector of the device.
 
 `BytesOffsetForSectorAlignment`
 
@@ -89,26 +109,6 @@ Example:  Offset = 3 Logical sectors
 </table></span></div>
 In this example, BytesOffsetForSectorAlignment = 3 * size_of_logical_sector.
 
-`BytesPerCacheLine`
-
-The number of bytes in a cache line of the device.
-
-`BytesPerLogicalSector`
-
-The number of bytes in a logical sector of the device.
-
-`BytesPerPhysicalSector`
-
-The number of bytes in a physical sector of the device.
-
-`Size`
-
-Specifies the total size of the descriptor, in bytes.
-
-`Version`
-
-Contains the size of the structure STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR. The value of this member will change as members are added to the structure.
-
 ## Remarks
 Storage class drivers issue a device-control request with the I/O control code  <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve this structure, which contains access alignment information for data transfer operations. The structure can be retrieved either from the device object for the bus or from an FDO, which forwards the request to the underlying bus.
 
@@ -120,11 +120,3 @@ Storage class drivers issue a device-control request with the I/O control code  
 ## See Also
 
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

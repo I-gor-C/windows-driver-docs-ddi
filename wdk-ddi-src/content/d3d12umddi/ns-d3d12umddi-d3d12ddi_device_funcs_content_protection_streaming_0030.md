@@ -67,49 +67,49 @@ typedef struct _D3D12DDI_DEVICE_FUNCS_CONTENT_PROTECTION_STREAMING_0030 {
 ## Members
 
 
-`pfnCalcPrivateCryptoSessionPolicySize`
-
-Calculate private crypto session policy size.
-
 `pfnCalcPrivateCryptoSessionSize`
 
 Calculate private crypto session size.
-
-`pfnCalcPrivateOpenedCryptoSessionPolicySize`
-
-Calculate private opened crypto session policy size.
-
-`pfnCalcPrivateOpenedCryptoSessionSize`
-
-Calculate private opened crypto session size.
 
 `pfnCreateCryptoSession`
 
 Create crypto session.
 
-`pfnCreateCryptoSessionPolicy`
+`pfnCalcPrivateOpenedCryptoSessionSize`
 
-Create crypto session policy.
-
-`pfnDestroyCryptoSession`
-
-Destroy crypto session.
-
-`pfnDestroyCryptoSessionPolicy`
-
-Destroy crypto session policy.
-
-`pfnGetKeyBaseData`
-
-Get key base data.
+Calculate private opened crypto session size.
 
 `pfnOpenCryptoSession`
 
 Open crypto session.
 
+`pfnDestroyCryptoSession`
+
+Destroy crypto session.
+
+`pfnGetKeyBaseData`
+
+Get key base data.
+
+`pfnCalcPrivateCryptoSessionPolicySize`
+
+Calculate private crypto session policy size.
+
+`pfnCreateCryptoSessionPolicy`
+
+Create crypto session policy.
+
+`pfnCalcPrivateOpenedCryptoSessionPolicySize`
+
+Calculate private opened crypto session policy size.
+
 `pfnOpenCryptoSessionPolicy`
 
 Open crypto session policy.
+
+`pfnDestroyCryptoSessionPolicy`
+
+Destroy crypto session policy.
 
 `pfnTransformEncryptedData`
 

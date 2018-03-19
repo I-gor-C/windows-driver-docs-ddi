@@ -59,18 +59,6 @@ typedef struct _D3DDDIARG_CLEAR {
 ## Members
 
 
-`FillColor`
-
-[in] The color value that the driver should clear the context's render target to.
-
-`FillDepth`
-
-[in] The value that the driver should use to set the depth in the context's depth buffer. This member can be a value in the range from 0.0 through 1.0.
-
-`FillStencil`
-
-[in] The value that the driver should clear the context's stencil buffer to. This member can be an integer in the range from 0 through 2ⁿ-1, where <i>n</i> is the number of bits in the stencil buffer.
-
 `Flags`
 
 [in] A UINT value that specifies which buffers the driver should clear and how the clear operation should be performed. This member can be a bitwise OR of the following values. For more information, see the Remarks section in the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_clear.md">Clear</a> reference page.
@@ -122,6 +110,18 @@ If rectangles are specified for clearing, the driver should clip them against th
 </tr>
 </table>
 
+`FillColor`
+
+[in] The color value that the driver should clear the context's render target to.
+
+`FillDepth`
+
+[in] The value that the driver should use to set the depth in the context's depth buffer. This member can be a value in the range from 0.0 through 1.0.
+
+`FillStencil`
+
+[in] The value that the driver should clear the context's stencil buffer to. This member can be an integer in the range from 0 through 2ⁿ-1, where <i>n</i> is the number of bits in the stencil buffer.
+
 ## Remarks
 In a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_clear.md">Clear</a> function, a pointer to a D3DDDIARG_CLEAR structure is passed in the <i>pData</i> parameter. The Microsoft Direct3D runtime passes information to the <i>NumRect</i> and <i>pRect</i> parameters in a call to the user-mode display driver's <b>Clear</b> function to specify the rectangular areas of the buffer that the driver should clear.
 
@@ -134,11 +134,3 @@ In a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfn
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_clear.md">Clear</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_CLEAR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

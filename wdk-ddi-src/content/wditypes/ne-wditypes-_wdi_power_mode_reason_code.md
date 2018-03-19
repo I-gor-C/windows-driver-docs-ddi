@@ -64,13 +64,13 @@ typedef enum _WDI_POWER_MODE_REASON_CODE {
 <table>
             
                 <tr>
-                    <td>WDI_POWER_MODE_REASON_CODE_COMPLIANT_AP</td>
-                    <td>AP is compliant.</td>
+                    <td>WDI_POWER_MODE_REASON_CODE_NO_CHANGE</td>
+                    <td>Device is initially in this state and has not changed since.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_POWER_MODE_REASON_CODE_COMPLIANT_P2P_DEVICE</td>
-                    <td>All connected WFD device can do PSM.</td>
+                    <td>WDI_POWER_MODE_REASON_CODE_NONCOMPLANT_AP</td>
+                    <td></td>
                 </tr>
             
                 <tr>
@@ -79,13 +79,13 @@ typedef enum _WDI_POWER_MODE_REASON_CODE {
                 </tr>
             
                 <tr>
-                    <td>WDI_POWER_MODE_REASON_CODE_NO_CHANGE</td>
-                    <td>Device is initially in this state and has not changed since.</td>
+                    <td>WDI_POWER_MODE_REASON_CODE_COMPLIANT_AP</td>
+                    <td>AP is compliant.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_POWER_MODE_REASON_CODE_NONCOMPLANT_AP</td>
-                    <td></td>
+                    <td>WDI_POWER_MODE_REASON_CODE_COMPLIANT_P2P_DEVICE</td>
+                    <td>All connected WFD device can do PSM.</td>
                 </tr>
             
                 <tr>

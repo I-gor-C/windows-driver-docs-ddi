@@ -59,14 +59,6 @@ typedef struct _SRBEX_DATA {
 ## Members
 
 
-`Data`
-
-The extended SRB data block contents.
-
-`Length`
-
-Length of the SRB data, in bytes, present  in the <b>Data</b> member.
-
 `Type`
 
 Data type indicator for the extended SRB data structure. The possible values for <b>Type</b> are one of the following.
@@ -167,6 +159,14 @@ The SRB extended data is formatted as an <a href="..\storport\ns-storport-_srbex
 </td>
 </tr>
 </table>
+
+`Length`
+
+Length of the SRB data, in bytes, present  in the <b>Data</b> member.
+
+`Data`
+
+The extended SRB data block contents.
 
 ## Remarks
 The SRB extended data is present when the <b>SrbExDataOffset</b> array in the <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a> structure contains valid offset locations.  A storage driver initially references a memory offset location contained in <b>SrbExDataOffset</b> as an <b>SRBEX_DATA</b> structure. A pointer to the data block is then cast to the appropriate structure type based on the data type value in the <b>Type</b> member.
@@ -285,11 +285,3 @@ The following example code fragment shows how to access the extended data for th
 
 
 <a href="..\storport\ns-storport-_srbex_data_wmi.md">SRBEX_DATA_WMI</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SRBEX_DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

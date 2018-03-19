@@ -67,15 +67,11 @@ typedef struct _RILMSGMWISUMMARYLIST {
 
 
 
-`dwExecutor`
-
-
-
-`dwNumberOfSummaryItems`
-
-
-
 `dwParams`
+
+
+
+`dwExecutor`
 
 
 
@@ -83,11 +79,15 @@ typedef struct _RILMSGMWISUMMARYLIST {
 
 
 
+`stAccountAddress`
+
+
+
 `dwTotalNumberOfDetailItems`
 
 
 
-`stAccountAddress`
+`dwNumberOfSummaryItems`
 
 
 

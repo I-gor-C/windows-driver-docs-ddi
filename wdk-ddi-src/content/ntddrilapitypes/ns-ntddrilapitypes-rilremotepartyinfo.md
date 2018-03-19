@@ -68,23 +68,11 @@ typedef struct _RILREMOTEPARTYINFO {
 
 
 
-`dwExecutor`
-
-
-
-`dwID`
-
-
-
-`dwNamePresentationIndicator`
-
-
-
-`dwNumberPresentationIndicator`
-
-
-
 `dwParams`
+
+
+
+`dwExecutor`
 
 
 
@@ -97,6 +85,18 @@ typedef struct _RILREMOTEPARTYINFO {
 
 
 `wszDescription`
+
+
+
+`dwNumberPresentationIndicator`
+
+
+
+`dwNamePresentationIndicator`
+
+
+
+`dwID`
 
 
 

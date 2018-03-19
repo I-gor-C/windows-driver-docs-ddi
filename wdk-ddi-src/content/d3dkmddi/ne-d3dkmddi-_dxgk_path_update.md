@@ -61,6 +61,11 @@ typedef enum _DXGK_PATH_UPDATE {
 <table>
             
                 <tr>
+                    <td>DXGK_PATH_UPDATE_UNMODIFIED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>DXGK_PATH_UPDATE_ADDED</td>
                     <td>Indicates that this path is new so the driver will have to fully comprehend the description of what is required.  Since there is no allocation from which to scan out, the driver must scan out black until the OS associates one or more planes to be scanned out.</td>
                 </tr>
@@ -73,11 +78,6 @@ typedef enum _DXGK_PATH_UPDATE {
                 <tr>
                     <td>DXGK_PATH_UPDATE_REMOVED</td>
                     <td>Indicates that this path was present in the previous VidPn but has been removed. The driver should be able to optimize the removal without interrogating VidPn to see that the path has been removed.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_PATH_UPDATE_UNMODIFIED</td>
-                    <td></td>
                 </tr>
             
                 <tr>

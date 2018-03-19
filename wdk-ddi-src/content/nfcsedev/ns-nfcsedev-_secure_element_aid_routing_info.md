@@ -58,13 +58,13 @@ typedef struct _SECURE_ELEMENT_AID_ROUTING_INFO {
 ## Members
 
 
-`cbAid`
-
-Length of applet ID buffer.
-
 `guidSecureElementId`
 
 Secure element unique identifier returned by enumeration DDI.
+
+`cbAid`
+
+Length of applet ID buffer.
 
 `pbAid`
 

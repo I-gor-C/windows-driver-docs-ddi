@@ -59,10 +59,6 @@ typedef struct _IRB_REQ_FREE_ADDRESS_RANGE {
 ## Members
 
 
-`DeviceExtension`
-
-Points to the device extension associated with the device object. Not setting this member can lead to unexpected behavior when the driver tries to access the allocated address space.
-
 `nAddressesToFree`
 
 Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff536908">ADDRESS_RANGE</a> structures pointed to by <b>IRB.u.FreeAddressRange.p1394AddressRange</b>
@@ -74,6 +70,10 @@ Specifies a pointer to an array of <a href="https://msdn.microsoft.com/library/w
 `pAddressRange`
 
 Points to the handle that was previously received in <b>IRB.u.AllocateAddressRange.hAddressRange</b> in the  <a href="https://msdn.microsoft.com/library/windows/hardware/ff537632">REQUEST_ALLOCATE_ADDRESS_RANGE</a> request.
+
+`DeviceExtension`
+
+Points to the device extension associated with the device object. Not setting this member can lead to unexpected behavior when the driver tries to access the allocated address space.
 
 
 ## Requirements

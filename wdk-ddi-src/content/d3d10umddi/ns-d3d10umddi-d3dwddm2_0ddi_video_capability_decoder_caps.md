@@ -60,33 +60,33 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS {
 ## Members
 
 
+`DecodeProfile`
+
+Indicates the decode profile for which the capabilities are queried.
+
+`SampleWidth`
+
+Indicates the video width for which the capabilities are queried.
+
+`SampleHeight`
+
+Indicates the video height for which the capabilities are queried.
+
+`FrameRate`
+
+Indicates the frame rate of the video content.
+
 `BitRate`
+
+
+
+`pCryptoType`
 
 
 
 `Caps`
 
 Returns a combination of <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm2_0ddi_video_decoder_caps.md">D3DWDDM2_0DDI_VIDEO_DECODER_CAPS</a> enumeration values combined together using a bitwise <i>OR</i> operation.
-
-`DecodeProfile`
-
-Indicates the decode profile for which the capabilities are queried.
-
-`FrameRate`
-
-Indicates the frame rate of the video content.
-
-`pCryptoType`
-
-
-
-`SampleHeight`
-
-Indicates the video height for which the capabilities are queried.
-
-`SampleWidth`
-
-Indicates the video width for which the capabilities are queried.
 
 
 ## Requirements

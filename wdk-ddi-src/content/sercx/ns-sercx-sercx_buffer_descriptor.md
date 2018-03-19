@@ -59,6 +59,10 @@ typedef struct _SERCX_BUFFER_DESCRIPTOR {
 ## Members
 
 
+`Size`
+
+The size, in bytes, of this structure.  The <a href="..\sercx\nf-sercx-sercxretrievereceivebuffer.md">SerCxRetrieveReceiveBuffer</a> and <a href="..\sercx\nf-sercx-sercxretrievetransmitbuffer.md">SerCxRetrieveTransmitBuffer</a> methods use this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
+
 `Buffer`
 
 The virtual memory address of the buffer. The memory for the buffer is nonpaged.
@@ -66,10 +70,6 @@ The virtual memory address of the buffer. The memory for the buffer is nonpaged.
 `Length`
 
 The number of bytes available in the buffer. This size determines the maximize number of bytes that can be transferred by the receive or transmit operation.
-
-`Size`
-
-The size, in bytes, of this structure.  The <a href="..\sercx\nf-sercx-sercxretrievereceivebuffer.md">SerCxRetrieveReceiveBuffer</a> and <a href="..\sercx\nf-sercx-sercxretrievetransmitbuffer.md">SerCxRetrieveTransmitBuffer</a> methods use this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
 
 ## Remarks
 The serial  controller driver uses the information in this structure to determine where in memory to read data from during a receive operation, and where in memory to write data during a transmit operation.
@@ -97,11 +97,3 @@ The controller driver must call the <a href="..\sercx\nf-sercx-sercx_buffer_desc
 
 
 <a href="..\sercx\nf-sercx-sercxretrievereceivebuffer.md">SerCxRetrieveReceiveBuffer</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [serports\serports]:%20SERCX_BUFFER_DESCRIPTOR structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

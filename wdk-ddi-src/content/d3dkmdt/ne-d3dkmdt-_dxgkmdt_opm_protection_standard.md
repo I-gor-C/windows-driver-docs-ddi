@@ -74,8 +74,68 @@ typedef enum _DXGKMDT_OPM_PROTECTION_STANDARD {
 <table>
             
                 <tr>
-                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_ARIBTRB15_1125I</td>
-                    <td>Indicates that the video output supports the ARIBTRB15_1125I standard.</td>
+                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_OTHER</td>
+                    <td>Indicates a protected television signal type other than those given in the following constants of this enumeration.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_NONE</td>
+                    <td>Indicates that the video output does not support protection for any television signals.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_IEC61880_525I</td>
+                    <td>Indicates that the video output supports the IEC61880_525I standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_IEC61880_2_525I</td>
+                    <td>Indicates that the video output supports the IEC61880_2_525I standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_IEC62375_625P</td>
+                    <td>Indicates that the video output supports the IEC62375_625P standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_EIA608B_525</td>
+                    <td>Indicates that the video output supports the EIA608B_525 standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_EN300294_625I</td>
+                    <td>Indicates that the video output supports the EN300294_625I standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEA_525P</td>
+                    <td>Indicates that the video output supports the CEA805A_TYPEA_525P standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEA_750P</td>
+                    <td>Indicates that the video output supports the CEA805A_TYPEA_750P standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEA_1125I</td>
+                    <td>Indicates that the video output supports the CEA805A_TYPEA_1125I standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEB_525P</td>
+                    <td>Indicates that the video output supports the CEA805A_TYPEB_525P standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEB_750P</td>
+                    <td>Indicates that the video output supports the CEA805A_TYPEB_750P standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEB_1125I</td>
+                    <td>Indicates that the video output supports the CEA805A_TYPEB_1125I standard.</td>
                 </tr>
             
                 <tr>
@@ -94,68 +154,8 @@ typedef enum _DXGKMDT_OPM_PROTECTION_STANDARD {
                 </tr>
             
                 <tr>
-                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEA_1125I</td>
-                    <td>Indicates that the video output supports the CEA805A_TYPEA_1125I standard.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEA_525P</td>
-                    <td>Indicates that the video output supports the CEA805A_TYPEA_525P standard.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEA_750P</td>
-                    <td>Indicates that the video output supports the CEA805A_TYPEA_750P standard.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEB_1125I</td>
-                    <td>Indicates that the video output supports the CEA805A_TYPEB_1125I standard.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEB_525P</td>
-                    <td>Indicates that the video output supports the CEA805A_TYPEB_525P standard.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_CEA805A_TYPEB_750P</td>
-                    <td>Indicates that the video output supports the CEA805A_TYPEB_750P standard.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_EIA608B_525</td>
-                    <td>Indicates that the video output supports the EIA608B_525 standard.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_EN300294_625I</td>
-                    <td>Indicates that the video output supports the EN300294_625I standard.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_IEC61880_2_525I</td>
-                    <td>Indicates that the video output supports the IEC61880_2_525I standard.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_IEC61880_525I</td>
-                    <td>Indicates that the video output supports the IEC61880_525I standard.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_IEC62375_625P</td>
-                    <td>Indicates that the video output supports the IEC62375_625P standard.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_NONE</td>
-                    <td>Indicates that the video output does not support protection for any television signals.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_OTHER</td>
-                    <td>Indicates a protected television signal type other than those given in the following constants of this enumeration.</td>
+                    <td>DXGKMDT_OPM_PROTECTION_STANDARD_ARIBTRB15_1125I</td>
+                    <td>Indicates that the video output supports the ARIBTRB15_1125I standard.</td>
                 </tr>
 </table>
 
@@ -185,11 +185,3 @@ typedef enum _DXGKMDT_OPM_PROTECTION_STANDARD {
 
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_OPM_PROTECTION_STANDARD enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

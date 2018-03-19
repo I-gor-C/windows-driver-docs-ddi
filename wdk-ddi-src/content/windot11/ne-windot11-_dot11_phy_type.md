@@ -70,23 +70,13 @@ typedef enum _DOT11_PHY_TYPE {
 <table>
             
                 <tr>
-                    <td>dot11_phy_type_any</td>
+                    <td>dot11_phy_type_unknown</td>
                     <td>Specifies an unknown or uninitialized PHY type.</td>
                 </tr>
             
                 <tr>
-                    <td>dot11_phy_type_dmg</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>dot11_phy_type_dsss</td>
-                    <td>Specifies a direct sequence spread spectrum (DSSS) PHY.</td>
-                </tr>
-            
-                <tr>
-                    <td>dot11_phy_type_erp</td>
-                    <td>Specifies an extended-rate 802.11g PHY (ERP).</td>
+                    <td>dot11_phy_type_any</td>
+                    <td>Specifies an unknown or uninitialized PHY type.</td>
                 </tr>
             
                 <tr>
@@ -95,8 +85,28 @@ typedef enum _DOT11_PHY_TYPE {
                 </tr>
             
                 <tr>
+                    <td>dot11_phy_type_dsss</td>
+                    <td>Specifies a direct sequence spread spectrum (DSSS) PHY.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_irbaseband</td>
+                    <td>Specifies an infrared (IR) baseband PHY.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_ofdm</td>
+                    <td>Specifies an orthogonal frequency division multiplexing (OFDM) 802.11a PHY.</td>
+                </tr>
+            
+                <tr>
                     <td>dot11_phy_type_hrdsss</td>
                     <td>Specifies a high-rate DSSS (HRDSSS) 802.11b PHY.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_erp</td>
+                    <td>Specifies an extended-rate 802.11g PHY (ERP).</td>
                 </tr>
             
                 <tr>
@@ -106,14 +116,13 @@ typedef enum _DOT11_PHY_TYPE {
                 </tr>
             
                 <tr>
-                    <td>dot11_phy_type_IHV_end</td>
-                    <td>Specifies the end of the range that is used to define proprietary PHY types that are developed by
-     an IHV.
-     
-
-The 
-     <b>dot11_phy_type_IHV_end</b> enumerator value is valid only when the miniport driver is operating in
-     ExtSTA mode.</td>
+                    <td>dot11_phy_type_vht</td>
+                    <td>Specifies a very high-throughput (VHT) 802.11ac PHY.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_dmg</td>
+                    <td></td>
                 </tr>
             
                 <tr>
@@ -128,23 +137,14 @@ The
                 </tr>
             
                 <tr>
-                    <td>dot11_phy_type_irbaseband</td>
-                    <td>Specifies an infrared (IR) baseband PHY.</td>
-                </tr>
-            
-                <tr>
-                    <td>dot11_phy_type_ofdm</td>
-                    <td>Specifies an orthogonal frequency division multiplexing (OFDM) 802.11a PHY.</td>
-                </tr>
-            
-                <tr>
-                    <td>dot11_phy_type_unknown</td>
-                    <td>Specifies an unknown or uninitialized PHY type.</td>
-                </tr>
-            
-                <tr>
-                    <td>dot11_phy_type_vht</td>
-                    <td>Specifies a very high-throughput (VHT) 802.11ac PHY.</td>
+                    <td>dot11_phy_type_IHV_end</td>
+                    <td>Specifies the end of the range that is used to define proprietary PHY types that are developed by
+     an IHV.
+     
+
+The 
+     <b>dot11_phy_type_IHV_end</b> enumerator value is valid only when the miniport driver is operating in
+     ExtSTA mode.</td>
                 </tr>
             
                 <tr>
@@ -182,11 +182,3 @@ An IHV can assign a value for its proprietary PHY types from
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PHY_TYPE enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

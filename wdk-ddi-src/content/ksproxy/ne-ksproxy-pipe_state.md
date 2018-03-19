@@ -62,17 +62,12 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>PipeState_CompressionUnknown</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>PipeState_DontCare</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>PipeState_Finalized</td>
+                    <td>PipeState_RangeNotFixed</td>
                     <td></td>
                 </tr>
             
@@ -82,7 +77,12 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>PipeState_RangeNotFixed</td>
+                    <td>PipeState_CompressionUnknown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PipeState_Finalized</td>
                     <td></td>
                 </tr>
 </table>

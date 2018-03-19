@@ -89,43 +89,33 @@ typedef enum _WDI_PACKET_FILTER_TYPE {
 <table>
             
                 <tr>
-                    <td>WDI_PACKET_FILTER_802_11_ALL_MULTICAST_MGMT</td>
-                    <td>All multicast 802.11 management packets received by the 802.11 station, regardless of whether the destination address in the 802.11 MAC header is in the multicast address list.</td>
+                    <td>WDI_PACKET_FILTER_NONE</td>
+                    <td>None.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_PACKET_FILTER_802_11_BROADCAST_CTRL</td>
-                    <td>Broadcast 802.11 control packets received by the 802.11 station.</td>
+                    <td>WDI_PACKET_FILTER_DIRECTED</td>
+                    <td>Directed packets. Directed packets contain a destination address equal to the station address of the NIC.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_PACKET_FILTER_802_11_BROADCAST_MGMT</td>
-                    <td>Broadcast 802.11 management packets received by the 802.11 station.</td>
+                    <td>WDI_PACKET_FILTER_MULTICAST</td>
+                    <td>Multicast address packets sent to addresses in the multicast address list.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_PACKET_FILTER_802_11_DIRECTED_CTRL</td>
-                    <td>Directed 802.11 control packets. Directed packets contain a destination address equal to the station address of the NIC.</td>
+                    <td>WDI_PACKET_FILTER_ALL_MULTICAST</td>
+                    <td>All multicast address packets, not just the ones enumerated in the multicast address list.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_PACKET_FILTER_802_11_DIRECTED_MGMT</td>
-                    <td>Directed 802.11 management packets. Directed packets contain a destination address equal to the station address of the NIC.</td>
+                    <td>WDI_PACKET_FILTER_BROADCAST</td>
+                    <td>Broadcast packets.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_PACKET_FILTER_802_11_MULTICAST_MGMT</td>
-                    <td>Multicast 802.11 management packets sent to addresses in the multicast address list.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_PACKET_FILTER_802_11_PROMISCUOUS_CTRL</td>
-                    <td>All 802.11 control packets received by the 802.11 station.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_PACKET_FILTER_802_11_PROMISCUOUS_MGMT</td>
-                    <td>All 802.11 management packets received by the 802.11 station.</td>
+                    <td>WDI_PACKET_FILTER_PROMISCUOUS</td>
+                    <td>Specifies all packets regardless of whether VLAN filtering is enabled or not and whether the VLAN identifier matches or not.</td>
                 </tr>
             
                 <tr>
@@ -142,6 +132,31 @@ If enabled, this filter type only affects other standard packet filters, such as
                 </tr>
             
                 <tr>
+                    <td>WDI_PACKET_FILTER_802_11_DIRECTED_MGMT</td>
+                    <td>Directed 802.11 management packets. Directed packets contain a destination address equal to the station address of the NIC.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_PACKET_FILTER_802_11_BROADCAST_MGMT</td>
+                    <td>Broadcast 802.11 management packets received by the 802.11 station.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_PACKET_FILTER_802_11_MULTICAST_MGMT</td>
+                    <td>Multicast 802.11 management packets sent to addresses in the multicast address list.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_PACKET_FILTER_802_11_ALL_MULTICAST_MGMT</td>
+                    <td>All multicast 802.11 management packets received by the 802.11 station, regardless of whether the destination address in the 802.11 MAC header is in the multicast address list.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_PACKET_FILTER_802_11_PROMISCUOUS_MGMT</td>
+                    <td>All 802.11 management packets received by the 802.11 station.</td>
+                </tr>
+            
+                <tr>
                     <td>WDI_PACKET_FILTER_802_11_RAW_MGMT</td>
                     <td>An 802.11 MPDU management frame, which contains all of the data in the format received by the 802.11 station. When this filter is set, the driver must indicate every unmodified MPDU fragment before it indicates the MAC management protocol data unit (MMPDU) packet reassembled from the MPDU fragments. 
 
@@ -151,38 +166,23 @@ If enabled, this filter type only affects other 802.11 management packet filters
                 </tr>
             
                 <tr>
+                    <td>WDI_PACKET_FILTER_802_11_DIRECTED_CTRL</td>
+                    <td>Directed 802.11 control packets. Directed packets contain a destination address equal to the station address of the NIC.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_PACKET_FILTER_802_11_BROADCAST_CTRL</td>
+                    <td>Broadcast 802.11 control packets received by the 802.11 station.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_PACKET_FILTER_802_11_PROMISCUOUS_CTRL</td>
+                    <td>All 802.11 control packets received by the 802.11 station.</td>
+                </tr>
+            
+                <tr>
                     <td>WDI_PACKET_FILTER_ALL</td>
                     <td>All packet types.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_PACKET_FILTER_ALL_MULTICAST</td>
-                    <td>All multicast address packets, not just the ones enumerated in the multicast address list.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_PACKET_FILTER_BROADCAST</td>
-                    <td>Broadcast packets.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_PACKET_FILTER_DIRECTED</td>
-                    <td>Directed packets. Directed packets contain a destination address equal to the station address of the NIC.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_PACKET_FILTER_MULTICAST</td>
-                    <td>Multicast address packets sent to addresses in the multicast address list.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_PACKET_FILTER_NONE</td>
-                    <td>None.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_PACKET_FILTER_PROMISCUOUS</td>
-                    <td>Specifies all packets regardless of whether VLAN filtering is enabled or not and whether the VLAN identifier matches or not.</td>
                 </tr>
 </table>
 

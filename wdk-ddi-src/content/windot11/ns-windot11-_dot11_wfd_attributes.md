@@ -71,22 +71,6 @@ typedef struct _DOT11_WFD_ATTRIBUTES {
 ## Members
 
 
-`bClientDiscoverabilitySupported`
-
-If TRUE, the miniport supports the WFD Client Discoverability. Otherwise, Client Discoverability is not supported.
-
-`bInfrastructureManagementSupported`
-
-If TRUE, the miniport supports management by the infrastructure network. Otherwise, infrastructure network management is not supported.
-
-`bServiceDiscoverySupported`
-
-If TRUE, the miniport supports sending and responding to WFD Service Discovery Queries. Otherwise, Service Discovery Queries are not supported.
-
-`DeviceAddress`
-
-The WFD Peer-to-Peer  (P2P) device address. This address is used as a unique identifier to reference the P2P device.
-
 `Header`
 
 The type, revision, and size of the <b>DOT11_WFD_ATTRIBUTES</b> structure. The required settings for the members of <b>Header</b> are the following.
@@ -110,9 +94,49 @@ The type, revision, and size of the <b>DOT11_WFD_ATTRIBUTES</b> structure. The r
 </tr>
 </table>
 
+`uNumConcurrentGORole`
+
+The number of operational Wi-Fi Direct Group Owner (GO) roles simultaneously supported by the miniport driver. This value is the number of ports that can be simultaneously configured in <b>DOT11_OPERATION_MODE_WFD_GROUP_OWNER</b> operation mode. This member must be less than or equal to  <b>uNumWFDGroup</b> in  <a href="..\windot11\ns-windot11-_dot11_vwifi_combination_v3.md">DOT11_VWIFI_COMBINATION_V3</a> returned by the miniport driver.
+
+`uNumConcurrentClientRole`
+
+The number of operational Wi-Fi Direct Client roles simultaneously supported by the miniport driver. This value is the number of ports that can be simultaneously configured in <b>DOT11_OPERATION_MODE_WFD_CLIENT</b> operation mode. This member must be less than or equal to <b> uNumWFDGroup</b> in  <a href="..\windot11\ns-windot11-_dot11_vwifi_combination_v3.md">DOT11_VWIFI_COMBINATION_V3</a> returned by the miniport driver.
+
+`WPSVersionsSupported`
+
+The Wi-Fi Protected Services (WPS) versions supported by the miniport driver. The miniport driver must be able to interpret WPS Information Elements (IEs) formatted to these supported WPS version specifications.
+
+`bServiceDiscoverySupported`
+
+If TRUE, the miniport supports sending and responding to WFD Service Discovery Queries. Otherwise, Service Discovery Queries are not supported.
+
+`bClientDiscoverabilitySupported`
+
+If TRUE, the miniport supports the WFD Client Discoverability. Otherwise, Client Discoverability is not supported.
+
+`bInfrastructureManagementSupported`
+
+If TRUE, the miniport supports management by the infrastructure network. Otherwise, infrastructure network management is not supported.
+
+`uMaxSecondaryDeviceTypeListSize`
+
+The maximum number of Secondary Device Types that can be configured on the WFD device.
+
+`DeviceAddress`
+
+The WFD Peer-to-Peer  (P2P) device address. This address is used as a unique identifier to reference the P2P device.
+
+`uInterfaceAddressListCount`
+
+The number of P2P Interface Addresses supported by the WFD device. This value must be less than or equal to <b>uNumWFDGroup</b> in <a href="..\windot11\ns-windot11-_dot11_vwifi_combination_v3.md">DOT11_VWIFI_COMBINATION_V3</a> returned by the miniport.
+
 `pInterfaceAddressList`
 
 A pointer to an array of P2P Interface Addresses supported by the WFD device.
+
+`uNumSupportedCountryOrRegionStrings`
+
+The number of country or region strings supported by the 802.11 station. To support multiple regulatory domains, as specified by the IEEE 802.11d-2001 standard, each country or region string identifies a regulatory domain supported by the 802.11 station.
 
 `pSupportedCountryOrRegionStrings`
 
@@ -127,30 +151,6 @@ The Discovery filters list that the WFD device must apply for device discovery i
 `uGORoleClientTableSize`
 
 The maximum number of associations that each WFD GO port supports simultaneously. The miniport must have at least this number of entries in its key-mapping key table.
-
-`uInterfaceAddressListCount`
-
-The number of P2P Interface Addresses supported by the WFD device. This value must be less than or equal to <b>uNumWFDGroup</b> in <a href="..\windot11\ns-windot11-_dot11_vwifi_combination_v3.md">DOT11_VWIFI_COMBINATION_V3</a> returned by the miniport.
-
-`uMaxSecondaryDeviceTypeListSize`
-
-The maximum number of Secondary Device Types that can be configured on the WFD device.
-
-`uNumConcurrentClientRole`
-
-The number of operational Wi-Fi Direct Client roles simultaneously supported by the miniport driver. This value is the number of ports that can be simultaneously configured in <b>DOT11_OPERATION_MODE_WFD_CLIENT</b> operation mode. This member must be less than or equal to <b> uNumWFDGroup</b> in  <a href="..\windot11\ns-windot11-_dot11_vwifi_combination_v3.md">DOT11_VWIFI_COMBINATION_V3</a> returned by the miniport driver.
-
-`uNumConcurrentGORole`
-
-The number of operational Wi-Fi Direct Group Owner (GO) roles simultaneously supported by the miniport driver. This value is the number of ports that can be simultaneously configured in <b>DOT11_OPERATION_MODE_WFD_GROUP_OWNER</b> operation mode. This member must be less than or equal to  <b>uNumWFDGroup</b> in  <a href="..\windot11\ns-windot11-_dot11_vwifi_combination_v3.md">DOT11_VWIFI_COMBINATION_V3</a> returned by the miniport driver.
-
-`uNumSupportedCountryOrRegionStrings`
-
-The number of country or region strings supported by the 802.11 station. To support multiple regulatory domains, as specified by the IEEE 802.11d-2001 standard, each country or region string identifies a regulatory domain supported by the 802.11 station.
-
-`WPSVersionsSupported`
-
-The Wi-Fi Protected Services (WPS) versions supported by the miniport driver. The miniport driver must be able to interpret WPS Information Elements (IEs) formatted to these supported WPS version specifications.
 
 
 ## Requirements
@@ -170,11 +170,3 @@ The Wi-Fi Protected Services (WPS) versions supported by the miniport driver. Th
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565926">NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_WFD_ATTRIBUTES structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

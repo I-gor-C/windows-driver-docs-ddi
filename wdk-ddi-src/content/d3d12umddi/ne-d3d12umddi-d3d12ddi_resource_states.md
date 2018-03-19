@@ -76,6 +76,81 @@ typedef enum D3D12DDI_RESOURCE_STATES {
 <table>
             
                 <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_COMMON</td>
+                    <td>Common.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_VERTEX_AND_CONSTANT_BUFFER</td>
+                    <td>Vertex and constant buffer.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_INDEX_BUFFER</td>
+                    <td>Index buffer.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_RENDER_TARGET</td>
+                    <td>Render target.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_UNORDERED_ACCESS</td>
+                    <td>Unordered access.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_DEPTH_WRITE</td>
+                    <td>Depth write.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_DEPTH_READ</td>
+                    <td>Depth read.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_NON_PIXEL_SHADER_RESOURCE</td>
+                    <td>Non-pixel shader resource.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_PIXEL_SHADER_RESOURCE</td>
+                    <td>Pixel shader retsource.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_STREAM_OUT</td>
+                    <td>Stream out.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_INDIRECT_ARGUMENT</td>
+                    <td>Indirect argument.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_COPY_DEST</td>
+                    <td>Copy destination.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_COPY_SOURCE</td>
+                    <td>Copy source.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_RESOLVE_DEST</td>
+                    <td>Resolve destination.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_STATE_RESOLVE_SOURCE</td>
+                    <td>Resolve source.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D12DDI_RESOURCE_STATE_0020_VIDEO_DECODE_READ</td>
                     <td>Video decode read.</td>
                 </tr>
@@ -93,81 +168,6 @@ typedef enum D3D12DDI_RESOURCE_STATES {
                 <tr>
                     <td>D3D12DDI_RESOURCE_STATE_0020_VIDEO_PROCESS_WRITE</td>
                     <td>Video process write.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_COMMON</td>
-                    <td>Common.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_COPY_DEST</td>
-                    <td>Copy destination.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_COPY_SOURCE</td>
-                    <td>Copy source.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_DEPTH_READ</td>
-                    <td>Depth read.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_DEPTH_WRITE</td>
-                    <td>Depth write.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_INDEX_BUFFER</td>
-                    <td>Index buffer.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_INDIRECT_ARGUMENT</td>
-                    <td>Indirect argument.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_NON_PIXEL_SHADER_RESOURCE</td>
-                    <td>Non-pixel shader resource.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_PIXEL_SHADER_RESOURCE</td>
-                    <td>Pixel shader retsource.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_RENDER_TARGET</td>
-                    <td>Render target.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_RESOLVE_DEST</td>
-                    <td>Resolve destination.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_RESOLVE_SOURCE</td>
-                    <td>Resolve source.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_STREAM_OUT</td>
-                    <td>Stream out.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_UNORDERED_ACCESS</td>
-                    <td>Unordered access.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_STATE_VERTEX_AND_CONSTANT_BUFFER</td>
-                    <td>Vertex and constant buffer.</td>
                 </tr>
 </table>
 

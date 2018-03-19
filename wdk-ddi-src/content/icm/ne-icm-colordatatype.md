@@ -64,6 +64,26 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>COLOR_BYTE</td>
+                    <td>Color data is stored as 8 bits per channel, with a value from 0 to 255, inclusive.</td>
+                </tr>
+            
+                <tr>
+                    <td>COLOR_WORD</td>
+                    <td>Color data is stored as 16 bits per channel, with a value from 0 to 65535, inclusive.</td>
+                </tr>
+            
+                <tr>
+                    <td>COLOR_FLOAT</td>
+                    <td>Color data is stored as 32 bits value per channel, as defined by the IEEE 32-bit floating point standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>COLOR_S2DOT13FIXED</td>
+                    <td>Color data is stored as 16 bits per channel, with a fixed range of -4 to +4, inclusive. A signed format is used, with 1 bit for the sign, 2 bits for the integer portion, and 13 bits for the fractional portion.</td>
+                </tr>
+            
+                <tr>
                     <td>COLOR_10b_R10G10B10A2</td>
                     <td>Packed WORD per channel. data range [0, 1]</td>
                 </tr>
@@ -74,28 +94,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>COLOR_BYTE</td>
-                    <td>Color data is stored as 8 bits per channel, with a value from 0 to 255, inclusive.</td>
-                </tr>
-            
-                <tr>
-                    <td>COLOR_FLOAT</td>
-                    <td>Color data is stored as 32 bits value per channel, as defined by the IEEE 32-bit floating point standard.</td>
-                </tr>
-            
-                <tr>
                     <td>COLOR_FLOAT16</td>
                     <td>FLOAT16 per channel.</td>
-                </tr>
-            
-                <tr>
-                    <td>COLOR_S2DOT13FIXED</td>
-                    <td>Color data is stored as 16 bits per channel, with a fixed range of -4 to +4, inclusive. A signed format is used, with 1 bit for the sign, 2 bits for the integer portion, and 13 bits for the fractional portion.</td>
-                </tr>
-            
-                <tr>
-                    <td>COLOR_WORD</td>
-                    <td>Color data is stored as 16 bits per channel, with a value from 0 to 65535, inclusive.</td>
                 </tr>
 </table>
 

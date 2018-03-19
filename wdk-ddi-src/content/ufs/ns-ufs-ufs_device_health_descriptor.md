@@ -62,9 +62,46 @@ typedef struct _UFS_DEVICE_HEALTH_DESCRIPTOR {
 ## Members
 
 
+`bLength`
+
+Specifies the length, in bytes, of this descriptor.
+
 `bDescriptorIDN`
 
 Specifies the descriptor's Identification value. <b>UFS_DEVICE_HEALTH_DESCRIPTOR </b>will have a value of <b>UFS_DESC_HEALTH_IDN</b>.
+
+`bPreEOLInfo`
+
+Contains Pre-End of Life Information. This member supplies information about a device's life time as reflected by the average number of reserved blocks. Contains one of the following values:
+
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>Member is not defined.</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>Normal. Consumed less than 80% of reserved blocks.</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>Consumed 80% of
+reserved blocks.</td>
+</tr>
+<tr>
+<td>0x03</td>
+<td>Critical. Consumed 90% of
+reserved blocks.</td>
+</tr>
+<tr>
+<td>All other values</td>
+<td>Reserved for future use.</td>
+</tr>
+</table>
 
 `bDeviceLifeTimeEstA`
 
@@ -132,43 +169,6 @@ Specifies the descriptor's Identification value. <b>UFS_DEVICE_HEALTH_DESCRIPTOR
 `bDeviceLifeTimeEstB`
 
 <b>bDeviceLifeTimeEstB</b> provides an estimation of how much of a device's estimated life time has been used based on the amount of performed program/erase cycles. This calculation is vendor-specific and is referred as method B. Contains the same possible values as <b>bDeviceLifeTimeEstA</b>.
-
-`bLength`
-
-Specifies the length, in bytes, of this descriptor.
-
-`bPreEOLInfo`
-
-Contains Pre-End of Life Information. This member supplies information about a device's life time as reflected by the average number of reserved blocks. Contains one of the following values:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>Member is not defined.</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Normal. Consumed less than 80% of reserved blocks.</td>
-</tr>
-<tr>
-<td>0x02</td>
-<td>Consumed 80% of
-reserved blocks.</td>
-</tr>
-<tr>
-<td>0x03</td>
-<td>Critical. Consumed 90% of
-reserved blocks.</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
 
 `VendorPropInfo`
 

@@ -75,13 +75,33 @@ typedef struct _HDAUDIO_BUS_INTERFACE_BDL {
 ## Members
 
 
+`Size`
+
+Specifies the size in bytes of the HDAUDIO_BUS_INTERFACE_BDL structure.
+
+`Version`
+
+Specifies the version of the extended HD Audio DDI.
+
+`Context`
+
+Pointer to interface-specific context information.
+
+`InterfaceReference`
+
+Pointer to a driver-supplied routine that increments the interface's reference count.
+
+`InterfaceDereference`
+
+Pointer to a driver-supplied routine that decrements the interface's reference count.
+
+`TransferCodecVerbs`
+
+Function pointer to the <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a> routine.
+
 `AllocateCaptureDmaEngine`
 
 Function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a> routine.
-
-`AllocateContiguousDmaBuffer`
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_contiguous_dma_buffer.md">AllocateContiguousDmaBuffer</a> routine.
 
 `AllocateRenderDmaEngine`
 
@@ -91,9 +111,13 @@ Function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engi
 
 Function pointer to the <a href="..\hdaudio\nc-hdaudio-pchange_bandwidth_allocation.md">ChangeBandwidthAllocation</a> routine.
 
-`Context`
+`AllocateContiguousDmaBuffer`
 
-Pointer to interface-specific context information.
+Function pointer to the <a href="..\hdaudio\nc-hdaudio-pallocate_contiguous_dma_buffer.md">AllocateContiguousDmaBuffer</a> routine.
+
+`SetupDmaEngineWithBdl`
+
+Function pointer to the <a href="..\hdaudio\nc-hdaudio-psetup_dma_engine_with_bdl.md">SetupDmaEngineWithBdl</a> routine.
 
 `FreeContiguousDmaBuffer`
 
@@ -103,57 +127,33 @@ Function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree_contiguous_dma_buff
 
 Function pointer to the <a href="..\hdaudio\nc-hdaudio-pfree_dma_engine.md">FreeDmaEngine</a> routine.
 
-`GetDeviceInformation`
+`SetDmaEngineState`
 
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_device_information.md">GetDeviceInformation</a> routine.
-
-`GetLinkPositionRegister`
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_link_position_register.md">GetLinkPositionRegister</a> routine.
-
-`GetResourceInformation`
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_resource_information.md">GetResourceInformation</a> routine.
+Function pointer to the <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">SetDmaEngineState</a> routine.
 
 `GetWallClockRegister`
 
 Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_wall_clock_register.md">GetWallClockRegister</a> routine.
 
-`InterfaceDereference`
+`GetLinkPositionRegister`
 
-Pointer to a driver-supplied routine that decrements the interface's reference count.
-
-`InterfaceReference`
-
-Pointer to a driver-supplied routine that increments the interface's reference count.
+Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_link_position_register.md">GetLinkPositionRegister</a> routine.
 
 `RegisterEventCallback`
 
 Function pointer to the <a href="..\hdaudio\nc-hdaudio-pregister_event_callback.md">RegisterEventCallback</a> routine.
 
-`SetDmaEngineState`
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">SetDmaEngineState</a> routine.
-
-`SetupDmaEngineWithBdl`
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-psetup_dma_engine_with_bdl.md">SetupDmaEngineWithBdl</a> routine.
-
-`Size`
-
-Specifies the size in bytes of the HDAUDIO_BUS_INTERFACE_BDL structure.
-
-`TransferCodecVerbs`
-
-Function pointer to the <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a> routine.
-
 `UnregisterEventCallback`
 
 Function pointer to the <a href="..\hdaudio\nc-hdaudio-punregister_event_callback.md">UnregisterEventCallback</a> routine.
 
-`Version`
+`GetDeviceInformation`
 
-Specifies the version of the extended HD Audio DDI.
+Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_device_information.md">GetDeviceInformation</a> routine.
+
+`GetResourceInformation`
+
+Function pointer to the <a href="..\hdaudio\nc-hdaudio-pget_resource_information.md">GetResourceInformation</a> routine.
 
 ## Remarks
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> IOCTL uses this structure to provide interface information to a client that is querying the HD Audio bus driver for the HD Audio DDI. Another variant of this DDI is specified by the HDAUDIO_BUS_INTERFACE structure.
@@ -238,11 +238,3 @@ The names and definitions of the first five members (<b>Size</b>, <b>Version</b>
 
 
 <a href="..\hdaudio\nc-hdaudio-pget_resource_information.md">GetResourceInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20HDAUDIO_BUS_INTERFACE_BDL structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

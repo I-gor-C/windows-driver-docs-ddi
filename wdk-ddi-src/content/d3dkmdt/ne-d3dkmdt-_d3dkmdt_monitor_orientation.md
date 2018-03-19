@@ -62,8 +62,18 @@ typedef enum _D3DKMDT_MONITOR_ORIENTATION {
 <table>
             
                 <tr>
+                    <td>D3DKMDT_MO_UNINITIALIZED</td>
+                    <td>Indicates that a variable of type D3DKMDT_MONITOR_ORIENTATION has not yet been assigned a meaningful value.</td>
+                </tr>
+            
+                <tr>
                     <td>D3DKMDT_MO_0DEG</td>
                     <td>Indicates that the display device has not been rotated from its default orientation.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MO_90DEG</td>
+                    <td>Indicates that the display device has been rotated 90 degrees clockwise from its default orientation.</td>
                 </tr>
             
                 <tr>
@@ -74,16 +84,6 @@ typedef enum _D3DKMDT_MONITOR_ORIENTATION {
                 <tr>
                     <td>D3DKMDT_MO_270DEG</td>
                     <td>Indicates that the display device has been rotated 270 degrees clockwise from its default orientation.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_MO_90DEG</td>
-                    <td>Indicates that the display device has been rotated 90 degrees clockwise from its default orientation.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_MO_UNINITIALIZED</td>
-                    <td>Indicates that a variable of type D3DKMDT_MONITOR_ORIENTATION has not yet been assigned a meaningful value.</td>
                 </tr>
 </table>
 

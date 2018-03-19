@@ -67,26 +67,6 @@ typedef enum _RILPOSITIONINFOTDSCDMAPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_POSITION_TDSCDMA_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_POSITION_TDSCDMA_CELLID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_POSITION_TDSCDMA_CELLPARAM</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_POSITION_TDSCDMA_LAC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_POSITION_TDSCDMA_MCC</td>
                     <td></td>
                 </tr>
@@ -97,12 +77,22 @@ typedef enum _RILPOSITIONINFOTDSCDMAPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_POSITION_TDSCDMA_PATHLOSS</td>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_LAC</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_POSITION_TDSCDMA_RSCP</td>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_CELLID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_UARFCN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_CELLPARAM</td>
                     <td></td>
                 </tr>
             
@@ -112,7 +102,17 @@ typedef enum _RILPOSITIONINFOTDSCDMAPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_POSITION_TDSCDMA_UARFCN</td>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_RSCP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_PATHLOSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_ALL</td>
                     <td></td>
                 </tr>
 </table>

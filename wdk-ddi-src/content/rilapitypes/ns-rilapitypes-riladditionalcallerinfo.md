@@ -66,11 +66,7 @@ typedef struct _RILADDITIONALCALLERINFO {
 
 
 
-`dwCallerInfoLength`
-
-
-
-`dwCallId`
+`dwParams`
 
 
 
@@ -78,7 +74,11 @@ typedef struct _RILADDITIONALCALLERINFO {
 
 
 
-`dwParams`
+`dwCallId`
+
+
+
+`dwCallerInfoLength`
 
 
 

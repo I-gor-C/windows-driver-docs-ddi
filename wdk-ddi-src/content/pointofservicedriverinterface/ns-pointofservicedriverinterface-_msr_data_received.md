@@ -81,17 +81,89 @@ typedef struct _MSR_DATA_RECEIVED {
 ## Members
 
 
-`AdditionalSecurityInformation`
+`CardType`
 
-Additional security information read from the swiped card.
+Type of card that was swiped.
 
-`AdditionalSecurityInformationLength`
+`Track1EncryptedDataLength`
 
-The amount of additional security information, in bytes, stored in <b>AdditionalSecurityInformation[MSR_ADDITIONAL_SECURITY_INFORMATION_SIZE]</b>.
+The amount of encrypted track 1 data, in bytes, that is stored in <b>Track1EncryptedData[MSR_TRACK_SIZE].</b>
 
-`CardAuthenicationData`
+`Track2EncryptedDataLength`
 
-Authentication data read from the swiped card.
+The amount of encrypted track 2 data, in bytes, that is stored in <b>Track2EncryptedData[MSR_TRACK_SIZE].</b>
+
+`Track3EncryptedDataLength`
+
+The amount of encrypted track 3 data, in bytes, that is stored in <b>Track3EncryptedData[MSR_TRACK_SIZE].</b>
+
+`Track4EncryptedDataLength`
+
+The amount of encrypted track 4 data, in bytes, that is stored in <b>Track4EncryptedData[MSR_TRACK_SIZE].</b>
+
+`Track1EncryptedData`
+
+The encrypted data read from track 1 of the swiped card.
+
+`Track2EncryptedData`
+
+The encrypted data read from track 2 of the swiped card.
+
+`Track3EncryptedData`
+
+The encrypted data read from track 3 of the swiped card.
+
+`Track4EncryptedData`
+
+The encrypted data read from track 4 of the swiped card.
+
+`Track1MaskedDataLength`
+
+The amount of masked track 1 data, in bytes, that is stored in <b>Track1MaskedData[MSR_TRACK_SIZE]</b>.
+
+`Track2MaskedDataLength`
+
+The amount of masked track 2 data, in bytes, that is stored in <b>Track2MaskedData[MSR_TRACK_SIZE]</b>.
+
+`Track3MaskedDataLength`
+
+The amount of masked track 3 data, in bytes, that is stored in <b>Track3MaskedData[MSR_TRACK_SIZE]</b>.
+
+`Track4MaskedDataLength`
+
+The amount of masked track 4 data, in bytes, that is stored in <b>Track4MaskedData[MSR_TRACK_SIZE]</b>.
+
+`Track1MaskedData`
+
+The masked data read from track 1 of the swiped card.
+
+`Track2MaskedData`
+
+The masked data read from track 2 of the swiped card.
+
+`Track3MaskedData`
+
+The masked data read from track 3 of the swiped card.
+
+`Track4MaskedData`
+
+The masked data read from track 4 of the swiped card.
+
+`Track1DiscretionaryDataLength`
+
+The amount of discretionary track 1 data, in bytes, that is stored in <b>Track1DiscretionaryData[MSR_TRACK_SIZE]</b>.
+
+`Track2DiscretionaryDataLength`
+
+The amount of discretionary track 2 data, in bytes, that is stored in <b>Track2DiscretionaryData[MSR_TRACK_SIZE]</b>.
+
+`Track1DiscretionaryData`
+
+The amount of discretionary  track 1 data, in bytes, that is stored in <b>Track1DiscretionaryData[MSR_TRACK_SIZE]</b>.
+
+`Track2DiscretionaryData`
+
+The amount of discretionary track 2 data, in bytes, that is stored in <b>Track1DiscretionaryData[MSR_TRACK_SIZE]</b>.
 
 `CardAuthenicationDataLength`
 
@@ -101,89 +173,17 @@ The amount of encrypted card authentication data, in bytes, that is stored in <b
 
 The amount of card authentication data, in bytes, before encryption. This value may be used to remove padding on decryption.
 
-`CardType`
+`CardAuthenicationData`
 
-Type of card that was swiped.
+Authentication data read from the swiped card.
 
-`Track1DiscretionaryData`
+`AdditionalSecurityInformationLength`
 
-The amount of discretionary  track 1 data, in bytes, that is stored in <b>Track1DiscretionaryData[MSR_TRACK_SIZE]</b>.
+The amount of additional security information, in bytes, stored in <b>AdditionalSecurityInformation[MSR_ADDITIONAL_SECURITY_INFORMATION_SIZE]</b>.
 
-`Track1DiscretionaryDataLength`
+`AdditionalSecurityInformation`
 
-The amount of discretionary track 1 data, in bytes, that is stored in <b>Track1DiscretionaryData[MSR_TRACK_SIZE]</b>.
-
-`Track1EncryptedData`
-
-The encrypted data read from track 1 of the swiped card.
-
-`Track1EncryptedDataLength`
-
-The amount of encrypted track 1 data, in bytes, that is stored in <b>Track1EncryptedData[MSR_TRACK_SIZE].</b>
-
-`Track1MaskedData`
-
-The masked data read from track 1 of the swiped card.
-
-`Track1MaskedDataLength`
-
-The amount of masked track 1 data, in bytes, that is stored in <b>Track1MaskedData[MSR_TRACK_SIZE]</b>.
-
-`Track2DiscretionaryData`
-
-The amount of discretionary track 2 data, in bytes, that is stored in <b>Track1DiscretionaryData[MSR_TRACK_SIZE]</b>.
-
-`Track2DiscretionaryDataLength`
-
-The amount of discretionary track 2 data, in bytes, that is stored in <b>Track2DiscretionaryData[MSR_TRACK_SIZE]</b>.
-
-`Track2EncryptedData`
-
-The encrypted data read from track 2 of the swiped card.
-
-`Track2EncryptedDataLength`
-
-The amount of encrypted track 2 data, in bytes, that is stored in <b>Track2EncryptedData[MSR_TRACK_SIZE].</b>
-
-`Track2MaskedData`
-
-The masked data read from track 2 of the swiped card.
-
-`Track2MaskedDataLength`
-
-The amount of masked track 2 data, in bytes, that is stored in <b>Track2MaskedData[MSR_TRACK_SIZE]</b>.
-
-`Track3EncryptedData`
-
-The encrypted data read from track 3 of the swiped card.
-
-`Track3EncryptedDataLength`
-
-The amount of encrypted track 3 data, in bytes, that is stored in <b>Track3EncryptedData[MSR_TRACK_SIZE].</b>
-
-`Track3MaskedData`
-
-The masked data read from track 3 of the swiped card.
-
-`Track3MaskedDataLength`
-
-The amount of masked track 3 data, in bytes, that is stored in <b>Track3MaskedData[MSR_TRACK_SIZE]</b>.
-
-`Track4EncryptedData`
-
-The encrypted data read from track 4 of the swiped card.
-
-`Track4EncryptedDataLength`
-
-The amount of encrypted track 4 data, in bytes, that is stored in <b>Track4EncryptedData[MSR_TRACK_SIZE].</b>
-
-`Track4MaskedData`
-
-The masked data read from track 4 of the swiped card.
-
-`Track4MaskedDataLength`
-
-The amount of masked track 4 data, in bytes, that is stored in <b>Track4MaskedData[MSR_TRACK_SIZE]</b>.
+Additional security information read from the swiped card.
 
 
 ## Requirements

@@ -60,21 +60,21 @@ typedef struct _FILE_MAILSLOT_QUERY_INFORMATION {
 ## Members
 
 
-`MailslotQuota`
-
-The size, in bytes, of the in-memory pool that is reserved for writes to this mailslot.
-
 `MaximumMessageSize`
 
 The maximum size, in bytes, of a single message that can be written to the mailslot, or 0 for a message of any size.
 
-`MessagesAvailable`
+`MailslotQuota`
 
-The total number of messages waiting to be read from the mailslot.
+The size, in bytes, of the in-memory pool that is reserved for writes to this mailslot.
 
 `NextMessageSize`
 
 The next message size, in bytes.
+
+`MessagesAvailable`
+
+The total number of messages waiting to be read from the mailslot.
 
 `ReadTimeout`
 

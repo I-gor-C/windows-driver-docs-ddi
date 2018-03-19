@@ -64,19 +64,19 @@ typedef struct _RILMSGSERVICEINFO {
 
 
 
-`dwMsgSupport`
-
-
-
 `dwParams`
 
 
 
-`dwStoreTotal`
+`dwMsgSupport`
 
 
 
 `dwStoreUsed`
+
+
+
+`dwStoreTotal`
 
 
 

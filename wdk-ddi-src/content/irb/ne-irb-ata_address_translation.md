@@ -62,13 +62,13 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>ChsMode</td>
-                    <td>Indicates that sectors are to be addressed using cylinder/head/sector (CHS) values.</td>
+                    <td>UnknownMode</td>
+                    <td></td>
                 </tr>
             
                 <tr>
-                    <td>Lba48BitMode</td>
-                    <td>Indicates support for 48-bit LBAs.</td>
+                    <td>ChsMode</td>
+                    <td>Indicates that sectors are to be addressed using cylinder/head/sector (CHS) values.</td>
                 </tr>
             
                 <tr>
@@ -77,8 +77,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>UnknownMode</td>
-                    <td></td>
+                    <td>Lba48BitMode</td>
+                    <td>Indicates support for 48-bit LBAs.</td>
                 </tr>
 </table>
 

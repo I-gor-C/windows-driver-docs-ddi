@@ -60,6 +60,11 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>GNSS_GeofenceState_Unknown</td>
+                    <td>The state of the geofence is unknown.</td>
+                </tr>
+            
+                <tr>
                     <td>GNSS_GeofenceState_Entered</td>
                     <td>The geofence has been entered.</td>
                 </tr>
@@ -67,11 +72,6 @@ typedef enum  {
                 <tr>
                     <td>GNSS_GeofenceState_Exited</td>
                     <td>The geofence has been exited.</td>
-                </tr>
-            
-                <tr>
-                    <td>GNSS_GeofenceState_Unknown</td>
-                    <td>The state of the geofence is unknown.</td>
                 </tr>
 </table>
 

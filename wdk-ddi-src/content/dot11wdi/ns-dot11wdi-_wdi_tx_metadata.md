@@ -71,21 +71,13 @@ typedef struct _WDI_TX_METADATA {
 ## Members
 
 
-`bAllowLegacyRates`
+`PortID`
 
-Specifies if legacy rates should be used for transmitting the frame.
+Port ID of the frame.
 
-`bTxCompleteRequired`
+`PeerID`
 
-Specifies if an <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_complete_ind.md">NdisWdiTxSendCompleteIndication</a> is required for this frame.
-
-`Ethertype`
-
-Specifies the Ethertype of the frame.
-
-`ExemptionAction`
-
-Specifies the <a href="..\dot11wdi\ne-dot11wdi-_wdi_exemption_action_type.md">WDI_EXEMPTION_ACTION_TYPE</a> value for this frame.
+Peer ID of the frame (only if <b>TargetPriorityQueueing</b> is false).
 
 `ExTID`
 
@@ -95,21 +87,33 @@ Extended TID of the frame (only if <b>TargetPriorityQueueing</b> is false).
 
 Specifies if the frame is for a unicast recipient address.
 
-`MpduPn`
+`bAllowLegacyRates`
 
-Specifies the MpduPn for the frame. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.
+Specifies if legacy rates should be used for transmitting the frame.
 
-`PeerID`
+`Ethertype`
 
-Peer ID of the frame (only if <b>TargetPriorityQueueing</b> is false).
+Specifies the Ethertype of the frame.
+
+`bTxCompleteRequired`
+
+Specifies if an <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_complete_ind.md">NdisWdiTxSendCompleteIndication</a> is required for this frame.
 
 `PnLength`
 
 Specifies the PnLength for the frame. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.
 
-`PortID`
+`TxCost`
 
-Port ID of the frame.
+Specifies the number of credits required to dequeue the frame.
+
+`ExemptionAction`
+
+Specifies the <a href="..\dot11wdi\ne-dot11wdi-_wdi_exemption_action_type.md">WDI_EXEMPTION_ACTION_TYPE</a> value for this frame.
+
+`MpduPn`
+
+Specifies the MpduPn for the frame. This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.
 
 `ReplayIHVReserved0`
 
@@ -122,10 +126,6 @@ Reserved for use by the IHV miniport for Requeued/Replayed TX frames. This is on
 `SeqCtl`
 
 Specifies the SeqCtl (if necessary). This is only applicable to Requeued/Replayed TX frames.  Otherwise, set to zero.
-
-`TxCost`
-
-Specifies the number of credits required to dequeue the frame.
 
 `wPad`
 
@@ -145,11 +145,3 @@ Reserved.
 
 
 <a href="..\dot11wdi\ns-dot11wdi-_wdi_txrx_target_capabilities.md">WDI_TXRX_CAPABILITIES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDI_TX_METADATA structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,10 +63,6 @@ typedef struct _DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS {
 ## Members
 
 
-`DialogToken`
-
-The dialog token from the invitation request packet. This must match the dialog token sent with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451806">OID_DOT11_WFD_SEND_INVITATION_REQUEST</a> request.
-
 `Header`
 
 The type, revision, and size of the <b>DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following.
@@ -98,17 +94,21 @@ The device address of the Peer-to-Peer (P2P) Wi-Fi Direct (WFD) device that the 
 
 The address of the device that received the invitation request.
 
+`DialogToken`
+
+The dialog token from the invitation request packet. This must match the dialog token sent with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451806">OID_DOT11_WFD_SEND_INVITATION_REQUEST</a> request.
+
 `Status`
 
 The status of the request send attempt. Set to <b>NDIS_STATUS_SUCCESS</b> if the packet was successfully transmitted.
 
-`uIEsLength`
-
-The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
-
 `uIEsOffset`
 
 The offset, in bytes,  of the array of additional information elements (IEs) that were included in the invitation request packet. This offset is from the start of the buffer that contains this structure.
+
+`uIEsLength`
+
+The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
 
 
 ## Requirements

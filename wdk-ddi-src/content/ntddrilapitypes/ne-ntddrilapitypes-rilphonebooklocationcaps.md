@@ -62,17 +62,17 @@ typedef enum _RILPHONEBOOKLOCATIONCAPS {
 <table>
             
                 <tr>
-                    <td>RIL_CAPS_PBLOC_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CAPS_PBLOC_OWNNUMBERS</td>
+                    <td>RIL_CAPS_PBLOC_UNKOWN</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_CAPS_PBLOC_UICCFIXDIALING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CAPS_PBLOC_OWNNUMBERS</td>
                     <td></td>
                 </tr>
             
@@ -87,7 +87,7 @@ typedef enum _RILPHONEBOOKLOCATIONCAPS {
                 </tr>
             
                 <tr>
-                    <td>RIL_CAPS_PBLOC_UNKOWN</td>
+                    <td>RIL_CAPS_PBLOC_ALL</td>
                     <td></td>
                 </tr>
 </table>

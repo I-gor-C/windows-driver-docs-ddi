@@ -96,21 +96,28 @@ This member must be set to
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
-`MacMcastCounters`
+`ullFourWayHandshakeFailures`
 
-The MAC layer counters based on multicast or broadcast packets sent or received by the 802.11
-     station. The data structure for this member is the 
-     <a href="..\windot11\ns-windot11-dot11_mac_frame_statistics.md">
-     DOT11_MAC_FRAME_STATISTICS</a> structure.
+The number of four-way handshake failures that the 802.11 station encountered during Wi-Fi
+     Protected Access (WPA) or Robust Security Network Association (RSNA) authentication.
      
 
-<div class="alert"><b>Note</b>  <p class="note"> Counters for received multicast or broadcast packets must only be incremented for those
-     packets with a destination MAC address in the 802.11 MAC header that matches an entry in the multicast
-     address list of the 802.11 station. For more information about the multicast address list, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569388">OID_DOT11_MULTICAST_LIST</a>.
+If the 802.11 station is not performing the WPA or RSNA authentication, it should set this member to
+     DOT11_STATISTICS_UNKNOWN.
 
-</div>
-<div> </div>
+`ullTKIPCounterMeasuresInvoked`
+
+The number of times that the 802.11 station invoked countermeasures following a message integrity
+     code (MIC) failure.
+     
+
+If the 802.11 station is not performing TKIP countermeasures, it should set this member to
+     DOT11_STATISTICS_UNKNOWN.
+
+`ullReserved`
+
+This member is reserved for use by the operating system. The miniport driver must not write to
+     this member.
 
 `MacUcastCounters`
 
@@ -123,6 +130,22 @@ The MAC layer counters based on unicast packets sent or received by the 802.11 s
 <div class="alert"><b>Note</b>  <p class="note"> Counters for received unicast packets must only be incremented for those packets with a
      destination MAC address in the 802.11 MAC header that matches the 802.11 station's MAC
      address.
+
+</div>
+<div> </div>
+
+`MacMcastCounters`
+
+The MAC layer counters based on multicast or broadcast packets sent or received by the 802.11
+     station. The data structure for this member is the 
+     <a href="..\windot11\ns-windot11-dot11_mac_frame_statistics.md">
+     DOT11_MAC_FRAME_STATISTICS</a> structure.
+     
+
+<div class="alert"><b>Note</b>  <p class="note"> Counters for received multicast or broadcast packets must only be incremented for those
+     packets with a destination MAC address in the 802.11 MAC header that matches an entry in the multicast
+     address list of the 802.11 station. For more information about the multicast address list, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569388">OID_DOT11_MULTICAST_LIST</a>.
 
 </div>
 <div> </div>
@@ -143,29 +166,6 @@ Entries within the
      when queried by 
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-phy-types">
      OID_DOT11_SUPPORTED_PHY_TYPES</a>.
-
-`ullFourWayHandshakeFailures`
-
-The number of four-way handshake failures that the 802.11 station encountered during Wi-Fi
-     Protected Access (WPA) or Robust Security Network Association (RSNA) authentication.
-     
-
-If the 802.11 station is not performing the WPA or RSNA authentication, it should set this member to
-     DOT11_STATISTICS_UNKNOWN.
-
-`ullReserved`
-
-This member is reserved for use by the operating system. The miniport driver must not write to
-     this member.
-
-`ullTKIPCounterMeasuresInvoked`
-
-The number of times that the 802.11 station invoked countermeasures following a message integrity
-     code (MIC) failure.
-     
-
-If the 802.11 station is not performing TKIP countermeasures, it should set this member to
-     DOT11_STATISTICS_UNKNOWN.
 
 ## Remarks
 The miniport driver must unconditionally set all of the counters in the DOT11_STATISTICS structure to
@@ -198,11 +198,3 @@ For more information about the statistics gathered by a Native 802.11 miniport d
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569420">OID_DOT11_STATISTICS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_STATISTICS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

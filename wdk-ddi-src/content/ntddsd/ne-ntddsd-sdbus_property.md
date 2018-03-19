@@ -70,43 +70,18 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>SDP_BUS_CLOCK</td>
-                    <td>Indicates that the operation applies to the bus clock speed property. The value of this property is in KHz. This property is only supported in version 2.0 or later of the driver.</td>
+                    <td>SDP_MEDIA_CHANGECOUNT</td>
+                    <td>Indicates that the operation applies to the media change count property. This property includes 4 bytes of data (ULONG) that describe SD storage functions. This property is read-only.</td>
                 </tr>
             
                 <tr>
-                    <td>SDP_BUS_DRIVER_VERSION</td>
-                    <td>Indicates that the operation applies to the driver version property. This property is read-only. This property is only supported in version 2.0 or later of the driver.</td>
+                    <td>SDP_MEDIA_STATE</td>
+                    <td>Indicates that the operation applies to the media state property. Provided for compatibility with SD storage-only host controllers. Valid only for SD storage functions. For a list of valid media states, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537944">SDPROP_MEDIA_STATE</a><u>.</u> This property is read-only.</td>
                 </tr>
             
                 <tr>
-                    <td>SDP_BUS_INTERFACE_CONTROL</td>
-                    <td>Indicates that the operation applies to the SDIO bus interface control property.This property is corresponding to CCCR[7], which is defined in the <i>Secure Digital I/O (SDIO) Card Specification</i>. For setting bus width, SDP_BUS_WIDTH should be used to synchronize the memory function of a combination card. This property is only supported in version 2.0 or later of the driver.</td>
-                </tr>
-            
-                <tr>
-                    <td>SDP_BUS_WIDTH</td>
-                    <td>Indicates that the operation applies to the bus width property. The value of this property is either 1 or 4. This property is only supported in version 2.0 or later of the driver.</td>
-                </tr>
-            
-                <tr>
-                    <td>SDP_CHAINED_MDL_SUPPORTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>SDP_FN0_BLOCK_LENGTH</td>
-                    <td>Indicates that the operation applies to the SDIO function zero block length property. This property is shared by all functions of the SDIO card. This property is only supported in version 2.0 or later of the driver.</td>
-                </tr>
-            
-                <tr>
-                    <td>SDP_FUNCTION_BLOCK_LENGTH</td>
-                    <td>Indicates that the operation applies to the SDIO function block length property. This property is only supported in version 2.0 or later of the driver.</td>
-                </tr>
-            
-                <tr>
-                    <td>SDP_FUNCTION_INT_ENABLE</td>
-                    <td>Indicates that the operation applies to the SDIO function interrupt enable property. It is a Boolean-type property and only applies to the current function. This property is only supported in version 2.0 or later of the driver.</td>
+                    <td>SDP_WRITE_PROTECTED</td>
+                    <td>Indicates that the operation applies to the write-protected property and the state of the WriteProtect switch on the SD card. This property is read-only.</td>
                 </tr>
             
                 <tr>
@@ -120,8 +95,23 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>SDP_HIGH_CAPACITY_SUPPORTED</td>
-                    <td></td>
+                    <td>SDP_BUS_DRIVER_VERSION</td>
+                    <td>Indicates that the operation applies to the driver version property. This property is read-only. This property is only supported in version 2.0 or later of the driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>SDP_BUS_WIDTH</td>
+                    <td>Indicates that the operation applies to the bus width property. The value of this property is either 1 or 4. This property is only supported in version 2.0 or later of the driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>SDP_BUS_CLOCK</td>
+                    <td>Indicates that the operation applies to the bus clock speed property. The value of this property is in KHz. This property is only supported in version 2.0 or later of the driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>SDP_BUS_INTERFACE_CONTROL</td>
+                    <td>Indicates that the operation applies to the SDIO bus interface control property.This property is corresponding to CCCR[7], which is defined in the <i>Secure Digital I/O (SDIO) Card Specification</i>. For setting bus width, SDP_BUS_WIDTH should be used to synchronize the memory function of a combination card. This property is only supported in version 2.0 or later of the driver.</td>
                 </tr>
             
                 <tr>
@@ -130,18 +120,18 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>SDP_HPI_SUPPORTED</td>
-                    <td></td>
+                    <td>SDP_FUNCTION_BLOCK_LENGTH</td>
+                    <td>Indicates that the operation applies to the SDIO function block length property. This property is only supported in version 2.0 or later of the driver.</td>
                 </tr>
             
                 <tr>
-                    <td>SDP_MEDIA_CHANGECOUNT</td>
-                    <td>Indicates that the operation applies to the media change count property. This property includes 4 bytes of data (ULONG) that describe SD storage functions. This property is read-only.</td>
+                    <td>SDP_FN0_BLOCK_LENGTH</td>
+                    <td>Indicates that the operation applies to the SDIO function zero block length property. This property is shared by all functions of the SDIO card. This property is only supported in version 2.0 or later of the driver.</td>
                 </tr>
             
                 <tr>
-                    <td>SDP_MEDIA_STATE</td>
-                    <td>Indicates that the operation applies to the media state property. Provided for compatibility with SD storage-only host controllers. Valid only for SD storage functions. For a list of valid media states, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537944">SDPROP_MEDIA_STATE</a><u>.</u> This property is read-only.</td>
+                    <td>SDP_FUNCTION_INT_ENABLE</td>
+                    <td>Indicates that the operation applies to the SDIO function interrupt enable property. It is a Boolean-type property and only applies to the current function. This property is only supported in version 2.0 or later of the driver.</td>
                 </tr>
             
                 <tr>
@@ -155,8 +145,18 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>SDP_WRITE_PROTECTED</td>
-                    <td>Indicates that the operation applies to the write-protected property and the state of the WriteProtect switch on the SD card. This property is read-only.</td>
+                    <td>SDP_HIGH_CAPACITY_SUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>SDP_CHAINED_MDL_SUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>SDP_HPI_SUPPORTED</td>
+                    <td></td>
                 </tr>
 </table>
 
@@ -199,11 +199,3 @@ Send the request to the bus driver by passing the initialized SDBUS_REQUEST_PACK
 
 
 <a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SDBUS_PROPERTY enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

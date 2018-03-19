@@ -68,28 +68,18 @@ typedef enum _DriverUnifiedPosErrorReason {
 <table>
             
                 <tr>
-                    <td>Busy</td>
-                    <td>The device is busy and cannot complete the operation.</td>
+                    <td>UnknownErrorReason</td>
+                    <td>The reason for the error is not known.</td>
                 </tr>
             
                 <tr>
-                    <td>Closed</td>
-                    <td>The device is closed.</td>
+                    <td>NoService</td>
+                    <td>Cannot communicate with the device due to the current configuration.</td>
                 </tr>
             
                 <tr>
                     <td>Disabled</td>
                     <td>The device must be enabled in order to perform the operation.</td>
-                </tr>
-            
-                <tr>
-                    <td>Extended</td>
-                    <td>The device returned a vendor specified error.</td>
-                </tr>
-            
-                <tr>
-                    <td>Failure</td>
-                    <td>The device is connected and powered on, but it failed to perform the operation.</td>
                 </tr>
             
                 <tr>
@@ -103,8 +93,8 @@ typedef enum _DriverUnifiedPosErrorReason {
                 </tr>
             
                 <tr>
-                    <td>NoService</td>
-                    <td>Cannot communicate with the device due to the current configuration.</td>
+                    <td>Closed</td>
+                    <td>The device is closed.</td>
                 </tr>
             
                 <tr>
@@ -113,13 +103,23 @@ typedef enum _DriverUnifiedPosErrorReason {
                 </tr>
             
                 <tr>
+                    <td>Failure</td>
+                    <td>The device is connected and powered on, but it failed to perform the operation.</td>
+                </tr>
+            
+                <tr>
                     <td>Timeout</td>
                     <td>The operation timed out on the device.</td>
                 </tr>
             
                 <tr>
-                    <td>UnknownErrorReason</td>
-                    <td>The reason for the error is not known.</td>
+                    <td>Busy</td>
+                    <td>The device is busy and cannot complete the operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>Extended</td>
+                    <td>The device returned a vendor specified error.</td>
                 </tr>
 </table>
 

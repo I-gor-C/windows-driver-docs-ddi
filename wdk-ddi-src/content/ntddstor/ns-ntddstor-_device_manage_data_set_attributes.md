@@ -70,6 +70,12 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
 ## Members
 
 
+`Size`
+
+Contains the size of the structure 
+      <b>DEVICE_MANAGE_DATA_SET_ATTRIBUTES</b>. 
+      The value of this member will change as members are added to the structure.
+
 `Action`
 
 The action to be performed as specified by a 
@@ -103,26 +109,6 @@ The specified action is non-destructive. If this flag is set, the driver can saf
 </tr>
 </table>
 
-`DataSetRangesLength`
-
-Specifies the length, in bytes, of the block of data set ranges within the payload of the 
-       <a href="..\ntddstor\ni-ntddstor-ioctl_storage_manage_data_set_attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
-       request.
-
-If set to zero, then the block of data set ranges does not exist.
-
-`DataSetRangesOffset`
-
-Specifies the start of the block of data set ranges within the system buffer of the 
-       <a href="..\ntddstor\ni-ntddstor-ioctl_storage_manage_data_set_attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
-       request. This block consists of one or more contiguous entries that are formatted as 
-       <a href="..\ntddstor\ns-ntddstor-_device_data_set_range.md">DEVICE_DATA_SET_RANGE</a> structures.
-
-<div class="alert"><b>Note</b>  The offset of the data set range block must be aligned on the address boundary of the 
-       <a href="..\ntddstor\ns-ntddstor-_device_data_set_range.md">DEVICE_DATA_SET_RANGE</a> structure.</div>
-<div> </div>
-If set to zero, then the block of data set ranges does not exist.
-
 `Flags`
 
 These flags are global to all control actions. The following flags can be set in the 
@@ -147,14 +133,6 @@ Specifies that the control action is specified for the entire block of data set 
 </tr>
 </table>
 
-`ParameterBlockLength`
-
-Specifies the length, in bytes, of the parameter block within the payload of the 
-       <a href="..\ntddstor\ni-ntddstor-ioctl_storage_manage_data_set_attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
-       request.
-
-If set to zero, then the parameter block does not exist.
-
 `ParameterBlockOffset`
 
 Specifies the start of the parameter block within the system buffer of the 
@@ -168,11 +146,33 @@ Specifies the start of the parameter block within the system buffer of the
 <div> </div>
 If set to zero, then the parameter block does not exist.
 
-`Size`
+`ParameterBlockLength`
 
-Contains the size of the structure 
-      <b>DEVICE_MANAGE_DATA_SET_ATTRIBUTES</b>. 
-      The value of this member will change as members are added to the structure.
+Specifies the length, in bytes, of the parameter block within the payload of the 
+       <a href="..\ntddstor\ni-ntddstor-ioctl_storage_manage_data_set_attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
+       request.
+
+If set to zero, then the parameter block does not exist.
+
+`DataSetRangesOffset`
+
+Specifies the start of the block of data set ranges within the system buffer of the 
+       <a href="..\ntddstor\ni-ntddstor-ioctl_storage_manage_data_set_attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
+       request. This block consists of one or more contiguous entries that are formatted as 
+       <a href="..\ntddstor\ns-ntddstor-_device_data_set_range.md">DEVICE_DATA_SET_RANGE</a> structures.
+
+<div class="alert"><b>Note</b>  The offset of the data set range block must be aligned on the address boundary of the 
+       <a href="..\ntddstor\ns-ntddstor-_device_data_set_range.md">DEVICE_DATA_SET_RANGE</a> structure.</div>
+<div> </div>
+If set to zero, then the block of data set ranges does not exist.
+
+`DataSetRangesLength`
+
+Specifies the length, in bytes, of the block of data set ranges within the payload of the 
+       <a href="..\ntddstor\ni-ntddstor-ioctl_storage_manage_data_set_attributes.md">IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES</a> 
+       request.
+
+If set to zero, then the block of data set ranges does not exist.
 
 ## Remarks
 The block of data set ranges is specified by the <b>DataSetRangesOffset</b> and 
@@ -194,11 +194,3 @@ The block of data set ranges is specified by the <b>DataSetRangesOffset</b> and
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552520">DEVICE_DATA_MANAGEMENT_SET_ACTION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_MANAGE_DATA_SET_ATTRIBUTES structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

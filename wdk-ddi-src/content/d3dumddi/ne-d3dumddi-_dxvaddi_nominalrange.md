@@ -64,6 +64,26 @@ typedef enum _DXVADDI_NOMINALRANGE {
 <table>
             
                 <tr>
+                    <td>DXVADDI_NominalRangeMask</td>
+                    <td>The nominal range mask. The first 3 (0x07) bits of a DWORD can be used to specify nominal range.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_NominalRange_Unknown</td>
+                    <td>The nominal range is not specified.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_NominalRange_Normal</td>
+                    <td>Normalized chroma [0..1] maps to [0..255] (8bit) or [0..1023] (10 bit).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_NominalRange_Wide</td>
+                    <td>Normalized chroma [0..1] maps to [16..235] (8bit) or [64..940] (10 bit).</td>
+                </tr>
+            
+                <tr>
                     <td>DXVADDI_NominalRange_0_255</td>
                     <td>Normalized chroma [0..1] maps explicitly to [0..255] (8bit).</td>
                 </tr>
@@ -76,26 +96,6 @@ typedef enum _DXVADDI_NOMINALRANGE {
                 <tr>
                     <td>DXVADDI_NominalRange_48_208</td>
                     <td>Normalized chroma [0..1] maps explicitly to [48..208] (8bit).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_NominalRange_Normal</td>
-                    <td>Normalized chroma [0..1] maps to [0..255] (8bit) or [0..1023] (10 bit).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_NominalRange_Unknown</td>
-                    <td>The nominal range is not specified.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_NominalRange_Wide</td>
-                    <td>Normalized chroma [0..1] maps to [16..235] (8bit) or [64..940] (10 bit).</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_NominalRangeMask</td>
-                    <td>The nominal range mask. The first 3 (0x07) bits of a DWORD can be used to specify nominal range.</td>
                 </tr>
 </table>
 
@@ -114,11 +114,3 @@ Wide gamut R'G'B' (that is, blackpoint at 16,16,16 and whitepoint at 235,235,235
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_NOMINALRANGE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

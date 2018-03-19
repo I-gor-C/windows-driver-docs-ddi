@@ -76,8 +76,8 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
 <table>
             
                 <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_COLOR_CONVERT_END</td>
-                    <td>Used to mark the end of a color convert operation</td>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_UNINITIALIZED</td>
+                    <td>Indicates that an <b>IDDCX_FRAME_STATISTICS_STEP_TYPE</b> variable has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>
@@ -86,23 +86,48 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                 </tr>
             
                 <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_1</td>
-                    <td>Driver defined processing step</td>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_COLOR_CONVERT_END</td>
+                    <td>Used to mark the end of a color convert operation</td>
                 </tr>
             
                 <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_10</td>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCODE_START</td>
+                    <td>Used to mark the start of a encode operation</td>
+                </tr>
+            
+                <tr>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCODE_END</td>
+                    <td>Used to mark the end of a encode operation</td>
+                </tr>
+            
+                <tr>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCRYPT_START</td>
+                    <td>Used to mark the start of a encrypt operation</td>
+                </tr>
+            
+                <tr>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCRYPT_END</td>
+                    <td>Used to mark the end of a encrypt operation</td>
+                </tr>
+            
+                <tr>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_MUX_START</td>
+                    <td>Used to mark the start of a mux'ing operation</td>
+                </tr>
+            
+                <tr>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_MUX_END</td>
+                    <td>Used to mark the end of a mux'ing operation</td>
+                </tr>
+            
+                <tr>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_1</td>
                     <td>Driver defined processing step</td>
                 </tr>
             
                 <tr>
                     <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_2</td>
                     <td>Driver defined processing step</td>
-                </tr>
-            
-                <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_256</td>
-                    <td></td>
                 </tr>
             
                 <tr>
@@ -141,22 +166,12 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                 </tr>
             
                 <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_END_INTERVAL_1</td>
-                    <td></td>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_10</td>
+                    <td>Driver defined processing step</td>
                 </tr>
             
                 <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_END_INTERVAL_2</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_END_INTERVAL_256</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_END_INTERVAL_3</td>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_256</td>
                     <td></td>
                 </tr>
             
@@ -166,12 +181,17 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                 </tr>
             
                 <tr>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_END_INTERVAL_1</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_START_INTERVAL_2</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_START_INTERVAL_256</td>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_END_INTERVAL_2</td>
                     <td></td>
                 </tr>
             
@@ -181,38 +201,18 @@ typedef enum _IDDCX_FRAME_STATISTICS_STEP_TYPE {
                 </tr>
             
                 <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCODE_END</td>
-                    <td>Used to mark the end of a encode operation</td>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_END_INTERVAL_3</td>
+                    <td></td>
                 </tr>
             
                 <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCODE_START</td>
-                    <td>Used to mark the start of a encode operation</td>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_START_INTERVAL_256</td>
+                    <td></td>
                 </tr>
             
                 <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCRYPT_END</td>
-                    <td>Used to mark the end of a encrypt operation</td>
-                </tr>
-            
-                <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_ENCRYPT_START</td>
-                    <td>Used to mark the start of a encrypt operation</td>
-                </tr>
-            
-                <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_MUX_END</td>
-                    <td>Used to mark the end of a mux'ing operation</td>
-                </tr>
-            
-                <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_MUX_START</td>
-                    <td>Used to mark the start of a mux'ing operation</td>
-                </tr>
-            
-                <tr>
-                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_UNINITIALIZED</td>
-                    <td>Indicates that an <b>IDDCX_FRAME_STATISTICS_STEP_TYPE</b> variable has not yet been assigned a meaningful value.</td>
+                    <td>IDDCX_FRAME_STATISTICS_STEP_TYPE_DRIVER_DEFINED_END_INTERVAL_256</td>
+                    <td></td>
                 </tr>
             
                 <tr>

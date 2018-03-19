@@ -63,6 +63,18 @@ typedef struct _DXVADDI_VIDEODESC {
 ## Members
 
 
+`SampleWidth`
+
+[in] The width of the video sample, in pixels.
+
+`SampleHeight`
+
+[in] The height of the video sample, in pixels.
+
+`SampleFormat`
+
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure that describes the extended format of the video sample.
+
 `Format`
 
 [in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> structure that describes the extended format of the video sample.
@@ -75,25 +87,13 @@ typedef struct _DXVADDI_VIDEODESC {
 
 [in] A DXVADDI_FREQUENCY structure that defines the frame rate of output video.
 
-`Reserved`
-
-[in] Reserved. Do not use this member.
-
-`SampleFormat`
-
-[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure that describes the extended format of the video sample.
-
-`SampleHeight`
-
-[in] The height of the video sample, in pixels.
-
-`SampleWidth`
-
-[in] The width of the video sample, in pixels.
-
 `UABProtectionLevel`
 
 [in] A UINT value that specifies the level of data protection that is required when the user accessible bus is present.
+
+`Reserved`
+
+[in] Reserved. Do not use this member.
 
 
 ## Requirements
@@ -113,11 +113,3 @@ typedef struct _DXVADDI_VIDEODESC {
 
 
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_VIDEODESC structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

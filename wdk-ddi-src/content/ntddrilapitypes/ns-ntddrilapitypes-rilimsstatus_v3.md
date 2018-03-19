@@ -67,7 +67,7 @@ typedef struct _RILIMSSTATUS_V3 {
 
 
 
-`dwAvailableServices`
+`dwParams`
 
 
 
@@ -75,11 +75,11 @@ typedef struct _RILIMSSTATUS_V3 {
 
 
 
-`dwIMSSystemType`
+`hUiccApp`
 
 
 
-`dwParams`
+`dwAvailableServices`
 
 
 
@@ -87,11 +87,11 @@ typedef struct _RILIMSSTATUS_V3 {
 
 
 
-`hUiccApp`
-
-
-
 `wszServingDomain`
+
+
+
+`dwIMSSystemType`
 
 
 

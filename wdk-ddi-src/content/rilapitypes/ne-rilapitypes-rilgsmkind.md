@@ -61,7 +61,7 @@ typedef enum _RILGSMKIND {
 <table>
             
                 <tr>
-                    <td>RIL_GSMKIND_EDGE</td>
+                    <td>RIL_GSMKIND_GSM</td>
                     <td></td>
                 </tr>
             
@@ -71,7 +71,7 @@ typedef enum _RILGSMKIND {
                 </tr>
             
                 <tr>
-                    <td>RIL_GSMKIND_GSM</td>
+                    <td>RIL_GSMKIND_EDGE</td>
                     <td></td>
                 </tr>
             

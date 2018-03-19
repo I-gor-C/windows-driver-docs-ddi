@@ -57,13 +57,13 @@ typedef struct _CHANNEL_CONFIG_RESULTS_ENHANCED {
 ## Members
 
 
-`ExtraOptionsBufferSize`
-
-Amount of buffer required to retrieve the current extra options for the given direction
-
 `Params`
 
 Channel parameters for the given direction of the channel
+
+`ExtraOptionsBufferSize`
+
+Amount of buffer required to retrieve the current extra options for the given direction
 
 
 ## Requirements

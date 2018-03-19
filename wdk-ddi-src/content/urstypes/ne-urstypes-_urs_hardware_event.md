@@ -64,13 +64,13 @@ typedef enum _URS_HARDWARE_EVENT {
 <table>
             
                 <tr>
-                    <td>UrsHardwareEventDetach</td>
-                    <td>A detach event occurred on a port of a USB Type-C system.</td>
+                    <td>UrsHardwareEventNone</td>
+                    <td>Internal use only.</td>
                 </tr>
             
                 <tr>
-                    <td>UrsHardwareEventIdFloat</td>
-                    <td>This event indicates that the ID pin is floating.</td>
+                    <td>UrsHardwareEventDetach</td>
+                    <td>A detach event occurred on a port of a USB Type-C system.</td>
                 </tr>
             
                 <tr>
@@ -79,8 +79,8 @@ typedef enum _URS_HARDWARE_EVENT {
                 </tr>
             
                 <tr>
-                    <td>UrsHardwareEventNone</td>
-                    <td>Internal use only.</td>
+                    <td>UrsHardwareEventIdFloat</td>
+                    <td>This event indicates that the ID pin is floating.</td>
                 </tr>
             
                 <tr>

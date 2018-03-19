@@ -73,39 +73,7 @@ typedef struct _RILPOSITIONINFO_V1 {
 
 
 
-`dwCntC2KMRL`
-
-
-
-`dwCntEUTRAMRL`
-
-
-
-`dwCntGSMNMR`
-
-
-
-`dwCntUMTSMRL`
-
-
-
 `dwSystemType`
-
-
-
-`rc2kMRL`
-
-
-
-`reMRL`
-
-
-
-`rgNMR`
-
-
-
-`ruMRL`
 
 
 
@@ -113,11 +81,43 @@ typedef struct _RILPOSITIONINFO_V1 {
 
 
 
+`stUMTSServingCellInfo`
+
+
+
 `stLTEServingCellInfo`
 
 
 
-`stUMTSServingCellInfo`
+`dwCntGSMNMR`
+
+
+
+`rgNMR`
+
+
+
+`dwCntUMTSMRL`
+
+
+
+`ruMRL`
+
+
+
+`dwCntEUTRAMRL`
+
+
+
+`reMRL`
+
+
+
+`dwCntC2KMRL`
+
+
+
+`rc2kMRL`
 
 
 

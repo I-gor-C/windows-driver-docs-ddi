@@ -61,6 +61,16 @@ typedef struct _NDIS_RECEIVE_HASH_PARAMETERS {
 ## Members
 
 
+`Header`
+
+The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     NDIS_RECEIVE_HASH_PARAMETERS structure. Set the 
+     <b>Type</b> member of the structure that 
+     <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
+     <b>Revision</b> member to NDIS_RECEIVE_HASH_PARAMETERS_REVISION_1, and the 
+     <b>Size</b> member to NDIS_SIZEOF_RECEIVE_HASH_PARAMETERS_REVISION_1.
+
 `Flags`
 
 A USHORT value that indicates what the miniport driver should do with the hash parameters. The
@@ -131,6 +141,10 @@ Miniport drivers can use the
      <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567266">
      NDIS_RSS_HASH_FUNC_FROM_HASH_INFO</a> macro to get the hash function.
 
+`HashSecretKeySize`
+
+The size of the secret key array of the hash function, in bytes. The size of the array is 40 bytes for NdisHashFunctionToeplitz.
+
 `HashSecretKeyOffset`
 
 The offset of the secret key array of the hash function from the beginning of the
@@ -140,20 +154,6 @@ The offset of the secret key array of the hash function from the beginning of th
 In a set request, the secret key can contain any data that the overlying driver chooses.
 
 In a query request, the secret key contains the data that the NIC is using.
-
-`HashSecretKeySize`
-
-The size of the secret key array of the hash function, in bytes. The size of the array is 40 bytes for NdisHashFunctionToeplitz.
-
-`Header`
-
-The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
-     NDIS_RECEIVE_HASH_PARAMETERS structure. Set the 
-     <b>Type</b> member of the structure that 
-     <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
-     <b>Revision</b> member to NDIS_RECEIVE_HASH_PARAMETERS_REVISION_1, and the 
-     <b>Size</b> member to NDIS_SIZEOF_RECEIVE_HASH_PARAMETERS_REVISION_1.
 
 ## Remarks
 The NDIS_RECEIVE_HASH_PARAMETERS structure defines the hash parameters for the 
@@ -200,11 +200,3 @@ The NDIS_RECEIVE_HASH_PARAMETERS structure defines the hash parameters for the
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569635">OID_GEN_RECEIVE_HASH</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_HASH_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -67,33 +67,43 @@ typedef struct _WSK_PROVIDER_DISPATCH {
 ## Members
 
 
-`Reserved`
-
-Reserved for system use.
-
 `Version`
 
 The version of the WSK 
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/network-programming-interface">Network Programming Interface
      (NPI)</a> that the WSK subsystem will use for its attachment to the WSK application.
 
+`Reserved`
+
+Reserved for system use.
+
+`WskSocket`
+
+A pointer to the WSK subsystem's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a> function.
+
+`WskSocketConnect`
+
+A pointer to the WSK subsystem's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_socket_connect.md">WskSocketConnect</a> function.
+
 `WskControlClient`
 
 A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_control_client.md">WskControlClient</a> function.
 
-`WskFreeAddressInfo`
-
-A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_free_address_info.md">WskFreeAddressInfo</a> function.
-     
-
-This member is available beginning with Windows 7.
-
 `WskGetAddressInfo`
 
 A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_get_address_info.md">WskGetAddressInfo</a> function.
+     
+
+This member is available beginning with Windows 7.
+
+`WskFreeAddressInfo`
+
+A pointer to the WSK subsystem's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_free_address_info.md">WskFreeAddressInfo</a> function.
      
 
 This member is available beginning with Windows 7.
@@ -105,16 +115,6 @@ A pointer to the WSK subsystem's
      
 
 This member is available beginning with Windows 7.
-
-`WskSocket`
-
-A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a> function.
-
-`WskSocketConnect`
-
-A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_socket_connect.md">WskSocketConnect</a> function.
 
 ## Remarks
 When a WSK application calls the 
@@ -195,11 +195,3 @@ For more information about attaching a WSK application to the WSK subsystem, see
 
 
 <a href="..\wsk\ns-wsk-_wsk_client_npi.md">WSK_CLIENT_NPI</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_DISPATCH structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

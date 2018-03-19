@@ -62,13 +62,25 @@ typedef struct tagKS_MPEGVIDEOINFO2 {
 ## Members
 
 
-`bSequenceHeader`
+`hdr`
 
-The length of the <b>bSequenceHeader</b> member, in bytes (zero for DVD).
+Specifies a <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader2.md">KS_VIDEOINFOHEADER2</a> structure that describes the details of the video stream.
+
+`dwStartTimeCode`
+
+A 25-bit "group-of-pictures" time code at the start of data (not used for DVD).
 
 `cbSequenceHeader`
 
 The length of the <b>bSequenceHeader</b> member, in bytes (zero for DVD).
+
+`dwProfile`
+
+Specifies the MPEG-2 profile. This member must be one of the values from the <a href="..\ksmedia\ne-ksmedia-ks_mpeg2profile.md">KS_MPEG2Profile</a> enumeration.
+
+`dwLevel`
+
+Specifies the MPEG-2 level. This member must be one of the values from the <a href="..\ksmedia\ne-ksmedia-ks_mpeg2level.md">KS_MPEG2Level</a> enumeration.
 
 `dwFlags`
 
@@ -171,21 +183,9 @@ If set, the PTS and DTS timestamps advance at 27 MHz rather than 90 kHz.
 </tr>
 </table>
 
-`dwLevel`
+`bSequenceHeader`
 
-Specifies the MPEG-2 level. This member must be one of the values from the <a href="..\ksmedia\ne-ksmedia-ks_mpeg2level.md">KS_MPEG2Level</a> enumeration.
-
-`dwProfile`
-
-Specifies the MPEG-2 profile. This member must be one of the values from the <a href="..\ksmedia\ne-ksmedia-ks_mpeg2profile.md">KS_MPEG2Profile</a> enumeration.
-
-`dwStartTimeCode`
-
-A 25-bit "group-of-pictures" time code at the start of data (not used for DVD).
-
-`hdr`
-
-Specifies a <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader2.md">KS_VIDEOINFOHEADER2</a> structure that describes the details of the video stream.
+The length of the <b>bSequenceHeader</b> member, in bytes (zero for DVD).
 
 
 ## Requirements
@@ -196,11 +196,3 @@ Specifies a <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader2.md">KS_VIDEOIN
 ## See Also
 
 <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader2.md">KS_VIDEOINFOHEADER2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_MPEGVIDEOINFO2 structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

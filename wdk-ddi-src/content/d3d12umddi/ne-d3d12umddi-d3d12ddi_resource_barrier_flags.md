@@ -62,13 +62,8 @@ typedef enum D3D12DDI_RESOURCE_BARRIER_FLAGS {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_RESOURCE_BARRIER_FLAG_0022_ALIASING</td>
-                    <td>Indicates that an aliasing barrier has been converted to a ranged barrier.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_RESOURCE_BARRIER_FLAG_0022_ATOMIC_COPY</td>
-                    <td>Indicates that ranged barriers are associated with a parameter of an atomic copy operation.</td>
+                    <td>D3D12DDI_RESOURCE_BARRIER_FLAG_NONE</td>
+                    <td>No flag value.</td>
                 </tr>
             
                 <tr>
@@ -82,8 +77,13 @@ typedef enum D3D12DDI_RESOURCE_BARRIER_FLAGS {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_RESOURCE_BARRIER_FLAG_NONE</td>
-                    <td>No flag value.</td>
+                    <td>D3D12DDI_RESOURCE_BARRIER_FLAG_0022_ATOMIC_COPY</td>
+                    <td>Indicates that ranged barriers are associated with a parameter of an atomic copy operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_RESOURCE_BARRIER_FLAG_0022_ALIASING</td>
+                    <td>Indicates that an aliasing barrier has been converted to a ranged barrier.</td>
                 </tr>
 </table>
 

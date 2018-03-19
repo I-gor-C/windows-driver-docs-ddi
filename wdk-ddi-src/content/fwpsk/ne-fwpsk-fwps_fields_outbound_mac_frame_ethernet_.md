@@ -73,13 +73,38 @@ typedef enum FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET_ {
 <table>
             
                 <tr>
-                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_COMPARTMENT_ID</td>
-                    <td></td>
+                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_INTERFACE_MAC_ADDRESS</td>
+                    <td>The outbound MAC frame IEEE 802.3 interface MAC address field.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_LOCAL_ADDRESS</td>
+                    <td>The outbound MAC frame IEEE 802.3 local MAC address field.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_REMOTE_ADDRESS</td>
+                    <td>The outbound MAC frame IEEE 802.3 remote MAC address field.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_LOCAL_ADDRESS_TYPE</td>
+                    <td>The outbound MAC frame IEEE 802.3 local MAC address type field.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_REMOTE_ADDRESS_TYPE</td>
+                    <td>The outbound MAC frame IEEE 802.3 remote MAC address type field.</td>
                 </tr>
             
                 <tr>
                     <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_ETHER_TYPE</td>
                     <td>The outbound MAC frame IEEE 802.3 EtherType field.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_VLAN_ID</td>
+                    <td>The outbound MAC frame IEEE 802.3  VLAN   identifier field.</td>
                 </tr>
             
                 <tr>
@@ -93,8 +118,8 @@ typedef enum FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_INTERFACE_MAC_ADDRESS</td>
-                    <td>The outbound MAC frame IEEE 802.3 interface MAC address field.</td>
+                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_NDIS_PORT</td>
+                    <td>The outbound MAC frame IEEE 802.3 NDIS port field.</td>
                 </tr>
             
                 <tr>
@@ -103,39 +128,14 @@ typedef enum FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_LOCAL_ADDRESS</td>
-                    <td>The outbound MAC frame IEEE 802.3 local MAC address field.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_LOCAL_ADDRESS_TYPE</td>
-                    <td>The outbound MAC frame IEEE 802.3 local MAC address type field.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_REMOTE_ADDRESS</td>
-                    <td>The outbound MAC frame IEEE 802.3 remote MAC address field.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_REMOTE_ADDRESS_TYPE</td>
-                    <td>The outbound MAC frame IEEE 802.3 remote MAC address type field.</td>
+                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_COMPARTMENT_ID</td>
+                    <td></td>
                 </tr>
             
                 <tr>
                     <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAX</td>
                     <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_NDIS_PORT</td>
-                    <td>The outbound MAC frame IEEE 802.3 NDIS port field.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_VLAN_ID</td>
-                    <td>The outbound MAC frame IEEE 802.3  VLAN   identifier field.</td>
                 </tr>
 </table>
 
@@ -149,11 +149,3 @@ typedef enum FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET_ {
 ## See Also
 
 <a href="..\fwpsk\ne-fwpsk-fwps_fields_inbound_mac_frame_ethernet_.md">FWPS_FIELDS_INBOUND_MAC_FRAME_ETHERNET</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

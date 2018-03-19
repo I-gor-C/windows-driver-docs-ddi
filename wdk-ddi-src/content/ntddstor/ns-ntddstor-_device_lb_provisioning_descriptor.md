@@ -67,58 +67,9 @@ typedef struct _DEVICE_LB_PROVISIONING_DESCRIPTOR {
 ## Members
 
 
-`AnchorSupported`
+`Version`
 
-Support for the anchored LBA mapping state.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>0</dt>
-</dl>
-</td>
-<td width="60%">
-The anchored LBA mapping state is not supported.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>1</dt>
-</dl>
-</td>
-<td width="60%">
-The anchored LBA mapping state is supported.
-
-</td>
-</tr>
-</table>
-
-`MaxUnmapBlockDescriptorCount`
-
-Maximum number of descriptors allowed in a single UNMAP command. This is valid only in Windows 10 and above.
-
-`MaxUnmapLbaCount`
-
-Maximum amount of LBAs that can be unmapped in a single UNMAP command, in units of logical blocks. This is valid only in Windows 10 and above.
-
-`OptimalUnmapGranularity`
-
-The optimal number of blocks for unmap granularity for the device.
-
-`Reserved0`
-
-
-
-`Reserved1`
-
-
+The version of this structure.
 
 `Size`
 
@@ -190,9 +141,38 @@ Reads return zeros.
 </tr>
 </table>
 
-`UnmapGranularityAlignment`
+`AnchorSupported`
 
-The current value, in blocks, set for unmap granularity alignment on the device.   The value <b>UnmapGranularityAlignmentValid</b> indicates the validity of this member.
+Support for the anchored LBA mapping state.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>0</dt>
+</dl>
+</td>
+<td width="60%">
+The anchored LBA mapping state is not supported.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+The anchored LBA mapping state is supported.
+
+</td>
+</tr>
+</table>
 
 `UnmapGranularityAlignmentValid`
 
@@ -227,9 +207,29 @@ Unmap granularity alignment is valid.
 </tr>
 </table>
 
-`Version`
+`Reserved0`
 
-The version of this structure.
+
+
+`Reserved1`
+
+
+
+`OptimalUnmapGranularity`
+
+The optimal number of blocks for unmap granularity for the device.
+
+`UnmapGranularityAlignment`
+
+The current value, in blocks, set for unmap granularity alignment on the device.   The value <b>UnmapGranularityAlignmentValid</b> indicates the validity of this member.
+
+`MaxUnmapLbaCount`
+
+Maximum amount of LBAs that can be unmapped in a single UNMAP command, in units of logical blocks. This is valid only in Windows 10 and above.
+
+`MaxUnmapBlockDescriptorCount`
+
+Maximum number of descriptors allowed in a single UNMAP command. This is valid only in Windows 10 and above.
 
 ## Remarks
 This structure is returned in the system buffer from a <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request when the <b>PropertyId</b> member of <a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a> is set to <b>StorageDeviceLBProvisioningProperty</b>. 
@@ -253,11 +253,3 @@ If the underlying storage device is a SCSI device, unmapping capability can be q
 
 
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_LB_PROVISIONING_DESCRIPTOR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

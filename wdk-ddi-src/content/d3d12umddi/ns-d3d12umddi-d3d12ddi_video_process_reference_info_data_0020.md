@@ -64,41 +64,41 @@ typedef struct D3D12DDI_VIDEO_PROCESS_REFERENCE_INFO_DATA_0020 {
 ## Members
 
 
+`NodeIndex`
+
+In multi-adapter operation, this indicates which physical adapter of the device this operation applies to.
+
 `DeinterlaceMode`
 
 The deinterlacing mode for which to retrieve the number of past and future frames.  Only a single mode may be queried at once.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_deinterlace_flags_0020.md">D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAGS</a> enumeration.
-
-`EnableAutoProcessing`
-
-Whether automatic processing is used.
-
-`FeatureSupport`
-
-The features for which to retrieve the number of past and future frames.  For more information, see the  <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_feature_support_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAGS</a> enumeration.
 
 `Filters`
 
 The filters for which to retrieve the number of past and future frames.  You can specify multiple filters may be specified.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS</a> enumeration.
 
-`FutureFrames`
+`FeatureSupport`
 
-The number of future reference frames required to support this processing.
+The features for which to retrieve the number of past and future frames.  For more information, see the  <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_feature_support_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAGS</a> enumeration.
 
 `InputFrameRate`
 
 
 
-`NodeIndex`
-
-In multi-adapter operation, this indicates which physical adapter of the device this operation applies to.
-
 `OutputFrameRate`
 
 
 
+`EnableAutoProcessing`
+
+Whether automatic processing is used.
+
 `PastFrames`
 
 The number of past reference frames required to support this processing.
+
+`FutureFrames`
+
+The number of future reference frames required to support this processing.
 
 
 ## Requirements
@@ -117,11 +117,3 @@ The number of past reference frames required to support this processing.
 
 
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_flags_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D12DDI_VIDEO_PROCESS_REFERENCE_INFO_DATA_0020 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

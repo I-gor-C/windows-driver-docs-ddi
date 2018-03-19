@@ -58,17 +58,17 @@ typedef struct _DXGK_HDR_METADATA {
 ## Members
 
 
-`pMetaData`
+`Type`
 
-Pointer to the HDR metadata. Interpret this data according to the <a href="../d3dukmdt/ne-d3dukmdt-_d3dddi_hdr_metadata_type">D3DDDI_HDR_METADATA_TYPE</a> value in the Type field.
+Indicates the type of the HDR metadata.
 
 `Size`
 
 Indicates the size of the HDR metadata.
 
-`Type`
+`pMetaData`
 
-Indicates the type of the HDR metadata.
+Pointer to the HDR metadata. Interpret this data according to the <a href="../d3dukmdt/ne-d3dukmdt-_d3dddi_hdr_metadata_type">D3DDDI_HDR_METADATA_TYPE</a> value in the Type field.
 
 
 ## Requirements

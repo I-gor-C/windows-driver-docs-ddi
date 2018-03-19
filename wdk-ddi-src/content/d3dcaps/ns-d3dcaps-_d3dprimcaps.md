@@ -72,13 +72,9 @@ typedef struct _D3DPrimCaps {
 ## Members
 
 
-`dwAlphaCmpCaps`
+`dwSize`
 
-Specifies alpha-test comparison functions that the driver can perform. This member uses the same comparison functions as are defined for the <b>dwZCmpCaps</b> member. If the <b>dwAlphaCmpCaps</b> member of the D3DPRIMCAPS structure is 0, the driver does not support alpha test render states D3DRENDERSTATE_ALPHAFUNC, D3DRENDERSTATE_ALPHAREF, and D3DRENDERSTATE_ALPHATESTENABLE.
-
-`dwDestBlendCaps`
-
-Specifies destination blending capabilities supported by the driver through the D3DRENDERSTATE_DESTBLEND render state. This member can be the same capabilities that are defined for the <b>dwSrcBlendCaps</b> member.
+Specifies the size, in bytes, of the D3DPRIMCAPS structure.
 
 `dwMiscCaps`
 
@@ -240,79 +236,56 @@ D3DPRASTERCAPS_PAT and D3DPMISCCAPS_LINEPATTERNREP must be set consistently (bot
 </tr>
 </table>
 
-`dwShadeCaps`
+`dwZCmpCaps`
 
-Specifies shading operations that the device can perform. It is assumed, in general, that if a device supports a given command (such as D3DOP_TRIANGLE) at all, it supports the D3DSHADE_FLAT mode (as specified in the D3DSHADEMODE enumerated type in the DirectX SDK documentation). This flag specifies whether the driver can also support Gouraud and Phong shading and whether alpha color components are supported for each of the three color-generation modes. When alpha components are not supported in a given mode, the alpha value of colors generated in that mode is implicitly 255. This is the maximum possible alpha (that is, the alpha component is at full intensity).
-
+Specifies Z-buffer comparison functions that the driver can perform through the D3DRENDERSTATE_ZFUNC render state. This member can be one or more of the following:  
+  
  
-The color, specular highlights, fog, and alpha interpolants of a triangle each have capability flags that an application can use to find out how they are implemented by the device driver. These are modified by the shade mode and color model, and by whether the alpha component of a color is blended or stippled.
+ 
 
-This member can be one or more of values listed in the following table. Related flags are grouped together in this table.
 
 <table>
 <tr>
-<th>Value</th>
-<th>Meaning</th>
+<th>Comparison Function</th>
+<th>Description</th>
 </tr>
 <tr>
-<td>D3DPSHADECAPS_ALPHAFLATBLEND
-D3DPSHADECAPS_ALPHAFLATSTIPPLED</td>
-<td>The device can support an alpha component for flat-blended and stippled (D3DRENDERSTATE_STIPPLEDALPHA) transparency, respectively (the D3DSHADE_FLAT state for the D3DSHADEMODE enumerated type). In these modes, the alpha color component for a primitive is provided as part of the color for the first vertex of the primitive.</td>
+<td>D3DPCMPCAPS_ALWAYS   
+   
+ </td>
+<td>Always pass the z test. 
+</td>
 </tr>
 <tr>
-<td>D3DPSHADECAPS_ALPHAGOURAUDBLEND
-D3DPSHADECAPS_ALPHAGOURAUDSTIPPLED</td>
-<td>The device can support an alpha component for Gouraud blended and stippled (D3DRENDERSTATE_STIPPLEDALPHA) transparency, respectively (the D3DSHADE_GOURAUD state for the D3DSHADEMODE enumerated type). In these modes, the alpha color component for a primitive is provided at vertices and interpolated across a face along with the other color components.</td>
+<td>D3DPCMPCAPS_EQUAL</td>
+<td>Pass the z test if the new z equals the current z.</td>
 </tr>
 <tr>
-<td>D3DPSHADECAPS_ALPHAPHONGBLEND
-D3DPSHADECAPS_ALPHAPHONGSTIPPLED</td>
-<td>The device can support an alpha component for Phong-blended and stippled (D3DRENDERSTATE_STIPPLEDALPHA) transparency, respectively (the D3DSHADE_PHONG state for the D3DSHADEMODE enumerated type). In these modes, vertex parameters are reevaluated on a per-pixel basis, applying lighting effects for the red, green, and blue color components.</td>
+<td>D3DPCMPCAPS_GREATER</td>
+<td>Pass the z test if the new z is greater than the current z.</td>
 </tr>
 <tr>
-<td>D3DPSHADECAPS_COLORFLATMONO
-D3DPSHADECAPS_COLORFLATRGB</td>
-<td>The device can support colored flat shading in the D3DCOLOR_MONO and D3DCOLOR_RGB color models, respectively. In these modes, the color component for a primitive is provided as part of the color for the first vertex of the primitive. In monochromatic lighting modes, only the blue component of the color is interpolated; in RGB lighting modes, of course, the red, green, and blue components are interpolated.</td>
+<td>D3DPCMPCAPS_GREATEREQUAL</td>
+<td>Pass the z test if the new z is greater than or equal to the current z.</td>
 </tr>
 <tr>
-<td>D3DPSHADECAPS_COLORGOURAUDMONO
-D3DPSHADECAPS_COLORGOURAUDRGB</td>
-<td>The device can support colored Gouraud shading in the D3DCOLOR_MONO and D3DCOLOR_RGB color models, respectively. In these modes, the color component for a primitive is provided at vertices and interpolated across a face along with the other color components. In monochromatic lighting modes, only the blue component of the color is interpolated; in RGB lighting modes, of course, the red, green, and blue components are interpolated.</td>
+<td>D3DPCMPCAPS_LESS</td>
+<td>Pass the z test if the new z is less than the current z.</td>
 </tr>
 <tr>
-<td>D3DPSHADECAPS_COLORPHONGMONO
-D3DPSHADECAPS_COLORPHONGRGB</td>
-<td>The device can support colored Phong shading in the D3DCOLOR_MONO and D3DCOLOR_RGB color models, respectively. In these modes, vertex parameters are reevaluated on a per-pixel basis. Lighting effects are applied for the red, green, and blue color components in RGB mode, and for the blue component only for monochromatic mode.</td>
+<td>D3DPCMPCAPS_LESSEQUAL </td>
+<td>Pass the z test if the new z is less than or equal to the current z. 
+</td>
 </tr>
 <tr>
-<td>D3DPSHADECAPS_FOGFLAT
-D3DPSHADECAPS_FOGGOURAUD,
-D3DPSHADECAPS_FOGPHONG</td>
-<td>The device can support fog in the flat, Gouraud, and Phong shading models, respectively.</td>
+<td>D3DPCMPCAPS_NEVER </td>
+<td>Always fail the z test.</td>
 </tr>
 <tr>
-<td>D3DPSHADECAPS_SPECULARFLATMONO
-D3DPSHADECAPS_SPECULARFLATRGB</td>
-<td>The device can support specular highlights through the D3DRENDERSTATE_SPECULARENABLE render state in flat shading in the D3DCOLOR_MONO and D3DCOLOR_RGB color models, respectively.</td>
-</tr>
-<tr>
-<td>D3DPSHADECAPS_SPECULARGOURAUDMONO
-D3DPSHADECAPS_SPECULARGOURAUDRGB</td>
-<td>The device can support specular highlights through the D3DRENDERSTATE_SPECULARENABLE render state in Gouraud shading in the D3DCOLOR_MONO and D3DCOLOR_RGB color models, respectively.</td>
-</tr>
-<tr>
-<td>D3DPSHADECAPS_SPECULARPHONGMONO
-D3DPSHADECAPS_SPECULARPHONGRGB</td>
-<td>The device can support specular highlights through the D3DRENDERSTATE_SPECULARENABLE render state in Phong shading in the D3DCOLOR_MONO and D3DCOLOR_RGB color models, respectively. Phong shading is not supported for DirectX 2.0.</td>
+<td>D3DPCMPCAPS_NOTEQUAL </td>
+<td>Pass the z test if the new z does not equal the current z.</td>
 </tr>
 </table>
- 
-
-Most hardware drivers should expose the D3DPSHADECAPS_COLORFLATRGB and D3DPSHADECAPS_COLORGOURAUDRGB capabilities. Hardware that supports intensity (grayscale) lighting (see D3DRENDERSTATE_MONOENABLE for more details) should also expose the D3DPSHADECAPS_COLORFLATMONO and D3DSHADECAPS_COLORGOURAUDMONO capabilities.
-
-`dwSize`
-
-Specifies the size, in bytes, of the D3DPRIMCAPS structure.
 
 `dwSrcBlendCaps`
 
@@ -386,52 +359,22 @@ Specifies source blending capabilities supported by the driver through the D3DRE
 </tr>
 </table>
 
-`dwStippleHeight`
+`dwDestBlendCaps`
 
-Specify the maximum width and height of the supported stipple (up to 32-by-32).
+Specifies destination blending capabilities supported by the driver through the D3DRENDERSTATE_DESTBLEND render state. This member can be the same capabilities that are defined for the <b>dwSrcBlendCaps</b> member.
 
-`dwStippleWidth`
+`dwAlphaCmpCaps`
 
+Specifies alpha-test comparison functions that the driver can perform. This member uses the same comparison functions as are defined for the <b>dwZCmpCaps</b> member. If the <b>dwAlphaCmpCaps</b> member of the D3DPRIMCAPS structure is 0, the driver does not support alpha test render states D3DRENDERSTATE_ALPHAFUNC, D3DRENDERSTATE_ALPHAREF, and D3DRENDERSTATE_ALPHATESTENABLE.
 
+`dwShadeCaps`
 
-`dwTextureAddressCaps`
+Specifies shading operations that the device can perform. It is assumed, in general, that if a device supports a given command (such as D3DOP_TRIANGLE) at all, it supports the D3DSHADE_FLAT mode (as specified in the D3DSHADEMODE enumerated type in the DirectX SDK documentation). This flag specifies whether the driver can also support Gouraud and Phong shading and whether alpha color components are supported for each of the three color-generation modes. When alpha components are not supported in a given mode, the alpha value of colors generated in that mode is implicitly 255. This is the maximum possible alpha (that is, the alpha component is at full intensity).
 
-Specifies the texture-addressing capabilities. This member can be one or more of the following, corresponding to D3DTEXTUREADDRESS texture-addressing modes:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>D3DPTADDRESSCAPS_BORDER</td>
-<td>The device supports setting coordinates outside the range [0.0, 1.0] to the border color, as specified by the D3DTSS_BORDERCOLOR texture stage state. This ability corresponds to the D3DTADDRESS_BORDER texture-addressing mode. 
- </td>
-</tr>
-<tr>
-<td>D3DPTADDRESSCAPS_CLAMP</td>
-<td>The device can clamp textures to addresses. This ability corresponds to the D3DTADDRESS_CLAMP texture-addressing mode.</td>
-</tr>
-<tr>
-<td>D3DPTADDRESSCAPS_INDEPENDENTUV</td>
-<td>The device can separate the texture-addressing modes of the U and V coordinates of the texture. This ability corresponds to the D3DTSS_ADDRESSU and D3DTSS_ADDRESSV texture stage states. 
-</td>
-</tr>
-<tr>
-<td>D3DPTADDRESSCAPS_MIRROR</td>
-<td>The device can mirror textures to addresses. This ability corresponds to the D3DTADDRESS_MIRROR texture-addressing mode.</td>
-</tr>
-<tr>
-<td>D3DPTADDRESSCAPS_WRAP</td>
-<td>The device can wrap textures to addresses. This ability corresponds to the D3DTADDRESS_WRAP texture-addressing mode.</td>
-</tr>
-</table>
-
-`dwTextureBlendCaps`
-
-Specifies texture-blending capabilities. See the D3DRENDERSTATE_TEXTUREMAPBLEND enumerated type for discussions of the various texture-blending modes. This member can be one or more of the following:   
-  
  
+The color, specular highlights, fog, and alpha interpolants of a triangle each have capability flags that an application can use to find out how they are implemented by the device driver. These are modified by the shade mode and color model, and by whether the alpha component of a color is blended or stippled.
+
+This member can be one or more of values listed in the following table. Related flags are grouped together in this table.
 
 <table>
 <tr>
@@ -439,41 +382,60 @@ Specifies texture-blending capabilities. See the D3DRENDERSTATE_TEXTUREMAPBLEND 
 <th>Meaning</th>
 </tr>
 <tr>
-<td>D3DPTBLENDCAPS_ADD</td>
-<td>Add mode texture-blending is supported (D3DTBLEND_COPY from the D3DTEXTUREBLEND enumerated type).</td>
+<td>D3DPSHADECAPS_ALPHAFLATBLEND
+D3DPSHADECAPS_ALPHAFLATSTIPPLED</td>
+<td>The device can support an alpha component for flat-blended and stippled (D3DRENDERSTATE_STIPPLEDALPHA) transparency, respectively (the D3DSHADE_FLAT state for the D3DSHADEMODE enumerated type). In these modes, the alpha color component for a primitive is provided as part of the color for the first vertex of the primitive.</td>
 </tr>
 <tr>
-<td>D3DPTBLENDCAPS_COPY</td>
-<td>Copy mode texture-blending is supported (D3DTBLEND_COPY from the D3DTEXTUREBLEND enumerated type). 
-</td>
+<td>D3DPSHADECAPS_ALPHAGOURAUDBLEND
+D3DPSHADECAPS_ALPHAGOURAUDSTIPPLED</td>
+<td>The device can support an alpha component for Gouraud blended and stippled (D3DRENDERSTATE_STIPPLEDALPHA) transparency, respectively (the D3DSHADE_GOURAUD state for the D3DSHADEMODE enumerated type). In these modes, the alpha color component for a primitive is provided at vertices and interpolated across a face along with the other color components.</td>
 </tr>
 <tr>
-<td>D3DPTBLENDCAPS_DECAL</td>
-<td> Decal texture-blending mode is supported (D3DTBLEND_DECAL from the D3DTEXTUREBLEND enumerated type).</td>
+<td>D3DPSHADECAPS_ALPHAPHONGBLEND
+D3DPSHADECAPS_ALPHAPHONGSTIPPLED</td>
+<td>The device can support an alpha component for Phong-blended and stippled (D3DRENDERSTATE_STIPPLEDALPHA) transparency, respectively (the D3DSHADE_PHONG state for the D3DSHADEMODE enumerated type). In these modes, vertex parameters are reevaluated on a per-pixel basis, applying lighting effects for the red, green, and blue color components.</td>
 </tr>
 <tr>
-<td>D3DPTBLENDCAPS_DECALALPHA</td>
-<td>Decal-alpha texture-blending mode is supported (D3DTBLEND_DECALALPHA from the D3DTEXTUREBLEND enumerated type). 
- </td>
+<td>D3DPSHADECAPS_COLORFLATMONO
+D3DPSHADECAPS_COLORFLATRGB</td>
+<td>The device can support colored flat shading in the D3DCOLOR_MONO and D3DCOLOR_RGB color models, respectively. In these modes, the color component for a primitive is provided as part of the color for the first vertex of the primitive. In monochromatic lighting modes, only the blue component of the color is interpolated; in RGB lighting modes, of course, the red, green, and blue components are interpolated.</td>
 </tr>
 <tr>
-<td>D3DPTBLENDCAPS_DECALMASK</td>
-<td>Decal-mask texture-blending mode is supported (D3DTBLEND_DECALMASK from the D3DTEXTUREBLEND enumerated type).</td>
+<td>D3DPSHADECAPS_COLORGOURAUDMONO
+D3DPSHADECAPS_COLORGOURAUDRGB</td>
+<td>The device can support colored Gouraud shading in the D3DCOLOR_MONO and D3DCOLOR_RGB color models, respectively. In these modes, the color component for a primitive is provided at vertices and interpolated across a face along with the other color components. In monochromatic lighting modes, only the blue component of the color is interpolated; in RGB lighting modes, of course, the red, green, and blue components are interpolated.</td>
 </tr>
 <tr>
-<td>D3DPTBLENDCAPS_MODULATE</td>
-<td>Modulate-texture-blending mode is supported (D3DTBLEND_MODULATE from the D3DTEXTUREBLEND enumerated type).</td>
+<td>D3DPSHADECAPS_COLORPHONGMONO
+D3DPSHADECAPS_COLORPHONGRGB</td>
+<td>The device can support colored Phong shading in the D3DCOLOR_MONO and D3DCOLOR_RGB color models, respectively. In these modes, vertex parameters are reevaluated on a per-pixel basis. Lighting effects are applied for the red, green, and blue color components in RGB mode, and for the blue component only for monochromatic mode.</td>
 </tr>
 <tr>
-<td>D3DPTBLENDCAPS_MODULATEALPHA</td>
-<td>Modulate-alpha texture-blending mode is supported (D3DTBLEND_MODULATEALPHA from the D3DTEXTUREBLEND enumerated type).</td>
+<td>D3DPSHADECAPS_FOGFLAT
+D3DPSHADECAPS_FOGGOURAUD,
+D3DPSHADECAPS_FOGPHONG</td>
+<td>The device can support fog in the flat, Gouraud, and Phong shading models, respectively.</td>
 </tr>
 <tr>
-<td>D3DPTBLENDCAPS_MODULATEMASK</td>
-<td>Modulate-mask texture-blending mode is supported (D3DTBLEND_MODULATEMASK from the D3DTEXTUREBLEND enumerated type). 
-</td>
+<td>D3DPSHADECAPS_SPECULARFLATMONO
+D3DPSHADECAPS_SPECULARFLATRGB</td>
+<td>The device can support specular highlights through the D3DRENDERSTATE_SPECULARENABLE render state in flat shading in the D3DCOLOR_MONO and D3DCOLOR_RGB color models, respectively.</td>
+</tr>
+<tr>
+<td>D3DPSHADECAPS_SPECULARGOURAUDMONO
+D3DPSHADECAPS_SPECULARGOURAUDRGB</td>
+<td>The device can support specular highlights through the D3DRENDERSTATE_SPECULARENABLE render state in Gouraud shading in the D3DCOLOR_MONO and D3DCOLOR_RGB color models, respectively.</td>
+</tr>
+<tr>
+<td>D3DPSHADECAPS_SPECULARPHONGMONO
+D3DPSHADECAPS_SPECULARPHONGRGB</td>
+<td>The device can support specular highlights through the D3DRENDERSTATE_SPECULARENABLE render state in Phong shading in the D3DCOLOR_MONO and D3DCOLOR_RGB color models, respectively. Phong shading is not supported for DirectX 2.0.</td>
 </tr>
 </table>
+ 
+
+Most hardware drivers should expose the D3DPSHADECAPS_COLORFLATRGB and D3DPSHADECAPS_COLORGOURAUDRGB capabilities. Hardware that supports intensity (grayscale) lighting (see D3DRENDERSTATE_MONOENABLE for more details) should also expose the D3DPSHADECAPS_COLORFLATMONO and D3DSHADECAPS_COLORGOURAUDMONO capabilities.
 
 `dwTextureCaps`
 
@@ -633,56 +595,94 @@ Specifies that bilinear filtering on the magnify filter is supported.</td>
 </tr>
 </table>
 
-`dwZCmpCaps`
+`dwTextureBlendCaps`
 
-Specifies Z-buffer comparison functions that the driver can perform through the D3DRENDERSTATE_ZFUNC render state. This member can be one or more of the following:  
+Specifies texture-blending capabilities. See the D3DRENDERSTATE_TEXTUREMAPBLEND enumerated type for discussions of the various texture-blending modes. This member can be one or more of the following:   
   
  
- 
-
 
 <table>
 <tr>
-<th>Comparison Function</th>
-<th>Description</th>
+<th>Value</th>
+<th>Meaning</th>
 </tr>
 <tr>
-<td>D3DPCMPCAPS_ALWAYS   
-   
+<td>D3DPTBLENDCAPS_ADD</td>
+<td>Add mode texture-blending is supported (D3DTBLEND_COPY from the D3DTEXTUREBLEND enumerated type).</td>
+</tr>
+<tr>
+<td>D3DPTBLENDCAPS_COPY</td>
+<td>Copy mode texture-blending is supported (D3DTBLEND_COPY from the D3DTEXTUREBLEND enumerated type). 
+</td>
+</tr>
+<tr>
+<td>D3DPTBLENDCAPS_DECAL</td>
+<td> Decal texture-blending mode is supported (D3DTBLEND_DECAL from the D3DTEXTUREBLEND enumerated type).</td>
+</tr>
+<tr>
+<td>D3DPTBLENDCAPS_DECALALPHA</td>
+<td>Decal-alpha texture-blending mode is supported (D3DTBLEND_DECALALPHA from the D3DTEXTUREBLEND enumerated type). 
  </td>
-<td>Always pass the z test. 
+</tr>
+<tr>
+<td>D3DPTBLENDCAPS_DECALMASK</td>
+<td>Decal-mask texture-blending mode is supported (D3DTBLEND_DECALMASK from the D3DTEXTUREBLEND enumerated type).</td>
+</tr>
+<tr>
+<td>D3DPTBLENDCAPS_MODULATE</td>
+<td>Modulate-texture-blending mode is supported (D3DTBLEND_MODULATE from the D3DTEXTUREBLEND enumerated type).</td>
+</tr>
+<tr>
+<td>D3DPTBLENDCAPS_MODULATEALPHA</td>
+<td>Modulate-alpha texture-blending mode is supported (D3DTBLEND_MODULATEALPHA from the D3DTEXTUREBLEND enumerated type).</td>
+</tr>
+<tr>
+<td>D3DPTBLENDCAPS_MODULATEMASK</td>
+<td>Modulate-mask texture-blending mode is supported (D3DTBLEND_MODULATEMASK from the D3DTEXTUREBLEND enumerated type). 
 </td>
-</tr>
-<tr>
-<td>D3DPCMPCAPS_EQUAL</td>
-<td>Pass the z test if the new z equals the current z.</td>
-</tr>
-<tr>
-<td>D3DPCMPCAPS_GREATER</td>
-<td>Pass the z test if the new z is greater than the current z.</td>
-</tr>
-<tr>
-<td>D3DPCMPCAPS_GREATEREQUAL</td>
-<td>Pass the z test if the new z is greater than or equal to the current z.</td>
-</tr>
-<tr>
-<td>D3DPCMPCAPS_LESS</td>
-<td>Pass the z test if the new z is less than the current z.</td>
-</tr>
-<tr>
-<td>D3DPCMPCAPS_LESSEQUAL </td>
-<td>Pass the z test if the new z is less than or equal to the current z. 
-</td>
-</tr>
-<tr>
-<td>D3DPCMPCAPS_NEVER </td>
-<td>Always fail the z test.</td>
-</tr>
-<tr>
-<td>D3DPCMPCAPS_NOTEQUAL </td>
-<td>Pass the z test if the new z does not equal the current z.</td>
 </tr>
 </table>
+
+`dwTextureAddressCaps`
+
+Specifies the texture-addressing capabilities. This member can be one or more of the following, corresponding to D3DTEXTUREADDRESS texture-addressing modes:
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>D3DPTADDRESSCAPS_BORDER</td>
+<td>The device supports setting coordinates outside the range [0.0, 1.0] to the border color, as specified by the D3DTSS_BORDERCOLOR texture stage state. This ability corresponds to the D3DTADDRESS_BORDER texture-addressing mode. 
+ </td>
+</tr>
+<tr>
+<td>D3DPTADDRESSCAPS_CLAMP</td>
+<td>The device can clamp textures to addresses. This ability corresponds to the D3DTADDRESS_CLAMP texture-addressing mode.</td>
+</tr>
+<tr>
+<td>D3DPTADDRESSCAPS_INDEPENDENTUV</td>
+<td>The device can separate the texture-addressing modes of the U and V coordinates of the texture. This ability corresponds to the D3DTSS_ADDRESSU and D3DTSS_ADDRESSV texture stage states. 
+</td>
+</tr>
+<tr>
+<td>D3DPTADDRESSCAPS_MIRROR</td>
+<td>The device can mirror textures to addresses. This ability corresponds to the D3DTADDRESS_MIRROR texture-addressing mode.</td>
+</tr>
+<tr>
+<td>D3DPTADDRESSCAPS_WRAP</td>
+<td>The device can wrap textures to addresses. This ability corresponds to the D3DTADDRESS_WRAP texture-addressing mode.</td>
+</tr>
+</table>
+
+`dwStippleWidth`
+
+
+
+`dwStippleHeight`
+
+Specify the maximum width and height of the supported stipple (up to 32-by-32).
 
 ## Remarks
 This structure has been replaced by D3DCAPS8 (see the DirectX 8.0 SDK documentation) for DirectX 8.0 and later runtimes, but is required for DirectX 7.0 and earlier runtime compatibility. See <a href="https://msdn.microsoft.com/a03a7cbc-95be-4251-8e3a-bef4a093f03d">Reporting DirectX 8.0 Style Direct3D Capabilities</a> for details.
@@ -697,11 +697,3 @@ This structure is used when a device is created and when the capabilities of a d
 ## See Also
 
 <a href="..\d3dhal\ns-d3dhal-_d3ddevicedesc_v1.md">D3DDEVICEDESC_V1</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DPRIMCAPS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

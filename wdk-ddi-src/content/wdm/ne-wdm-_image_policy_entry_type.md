@@ -70,27 +70,12 @@ typedef enum _IMAGE_POLICY_ENTRY_TYPE {
 <table>
             
                 <tr>
-                    <td>ImagePolicyEntryTypeAnsiString</td>
-                    <td>Reserved.</td>
+                    <td>ImagePolicyEntryTypeNone</td>
+                    <td></td>
                 </tr>
             
                 <tr>
                     <td>ImagePolicyEntryTypeBool</td>
-                    <td>Reserved.</td>
-                </tr>
-            
-                <tr>
-                    <td>ImagePolicyEntryTypeInt16</td>
-                    <td>Reserved.</td>
-                </tr>
-            
-                <tr>
-                    <td>ImagePolicyEntryTypeInt32</td>
-                    <td>Reserved.</td>
-                </tr>
-            
-                <tr>
-                    <td>ImagePolicyEntryTypeInt64</td>
                     <td>Reserved.</td>
                 </tr>
             
@@ -100,17 +85,22 @@ typedef enum _IMAGE_POLICY_ENTRY_TYPE {
                 </tr>
             
                 <tr>
-                    <td>ImagePolicyEntryTypeMaximum</td>
+                    <td>ImagePolicyEntryTypeUInt8</td>
                     <td>Reserved.</td>
                 </tr>
             
                 <tr>
-                    <td>ImagePolicyEntryTypeNone</td>
-                    <td></td>
+                    <td>ImagePolicyEntryTypeInt16</td>
+                    <td>Reserved.</td>
                 </tr>
             
                 <tr>
                     <td>ImagePolicyEntryTypeUInt16</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>ImagePolicyEntryTypeInt32</td>
                     <td>Reserved.</td>
                 </tr>
             
@@ -120,17 +110,27 @@ typedef enum _IMAGE_POLICY_ENTRY_TYPE {
                 </tr>
             
                 <tr>
+                    <td>ImagePolicyEntryTypeInt64</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
                     <td>ImagePolicyEntryTypeUInt64</td>
                     <td>Reserved.</td>
                 </tr>
             
                 <tr>
-                    <td>ImagePolicyEntryTypeUInt8</td>
+                    <td>ImagePolicyEntryTypeAnsiString</td>
                     <td>Reserved.</td>
                 </tr>
             
                 <tr>
                     <td>ImagePolicyEntryTypeUnicodeString</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>ImagePolicyEntryTypeMaximum</td>
                     <td>Reserved.</td>
                 </tr>
 </table>

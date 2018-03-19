@@ -215,112 +215,7 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
 <table>
             
                 <tr>
-                    <td>WdfDevStatePwrPolCancelingUsbSSForSystemSleep</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolCancelingWakeForSystemSleep</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolCancelingWakeForSystemSleepWakeCanceled</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolCancelUsbSS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolCheckPowerPageable</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolDeviceD0PowerRequestFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolDeviceIdleReturnToActive</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolDeviceIdleSleeping</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolDeviceIdleStopping</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolDevicePowerRequestFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolDisarmingWakeForSystemSleepCompletePowerUp</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolDx</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolFinal</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolGotoD0</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolGotoD0InD0</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolGotoDx</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolGotoDxInDx</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolIdleCapableDeviceIdle</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WdfDevStatePwrPolInvalid</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolIoPresentArmed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolIoPresentArmedWakeCanceled</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolNull</td>
                     <td></td>
                 </tr>
             
@@ -330,187 +225,7 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolPowerUpForSystemSleepFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolPowerUpForSystemSleepNotSeen</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolRemoved</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolRestarting</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolRestartingFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolS0NoWakeCompletePowerUp</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolS0NoWakePowerUp</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolS0WakeCompletePowerUp</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolS0WakeDisarm</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSleeping</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSleepingNoWakeCompletePowerDown</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSleepingNoWakeDxRequestFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSleepingNoWakePowerDown</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSleepingPowerDownNotProcessed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSleepingSendWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSleepingWakePowerDown</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSleepingWakePowerDownFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSleepingWakePowerDownFailedWakeCanceled</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSleepingWakeRevertArmWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSleepingWakeRevertArmWakeNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSleepingWakeWakeArrived</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSleepingWakeWakeArrivedNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStarted</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStartedCancelTimer</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStartedIdleCapable</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStartedIdleCapableCancelTimerForSleep</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStartedIdleCapableWaitForIdleTimeout</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStartedWaitForIdleTimeout</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStartedWakeCapable</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStartedWakeCapableCancelTimerForSleep</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStartedWakeCapableSleepingUsbSS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStartedWakeCapableWaitForIdleTimeout</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WdfDevStatePwrPolStarting</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStartingDecideS0Wake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStartingFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStartingPoweredUp</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStartingPoweredUpFailed</td>
                     <td></td>
                 </tr>
             
@@ -520,127 +235,47 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolStopped</td>
+                    <td>WdfDevStatePwrPolStartingFailed</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolStoppedRemoving</td>
+                    <td>WdfDevStatePwrPolStartingDecideS0Wake</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolStopping</td>
+                    <td>WdfDevStatePwrPolStartedIdleCapable</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolStoppingCancelTimer</td>
+                    <td>WdfDevStatePwrPolTimerExpiredNoWake</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolStoppingCancelUsbSS</td>
+                    <td>WdfDevStatePwrPolTimerExpiredNoWakeCompletePowerDown</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolStoppingCancelWake</td>
+                    <td>WdfDevStatePwrPolWaitingUnarmed</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolStoppingD0</td>
+                    <td>WdfDevStatePwrPolWaitingUnarmedQueryIdle</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolStoppingD0CancelUsbSS</td>
+                    <td>WdfDevStatePwrPolS0NoWakePowerUp</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolStoppingD0Failed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStoppingDisarmWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStoppingDisarmWakeCancelWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStoppingDisarmWakeWakeCanceled</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStoppingFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStoppingPoweringDown</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStoppingPoweringUp</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStoppingResetDevice</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStoppingResetDeviceCompletePowerUp</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStoppingResetDeviceFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStoppingSendStatus</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStoppingWaitForIdleTimeout</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStoppingWaitForUsbSSCompletion</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolStoppingWaitingForImplicitPowerDown</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemAsleepNoWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemAsleepWakeArmed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemAsleepWakeArmedNP</td>
+                    <td>WdfDevStatePwrPolS0NoWakeCompletePowerUp</td>
                     <td></td>
                 </tr>
             
@@ -665,6 +300,156 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
                 </tr>
             
                 <tr>
+                    <td>WdfDevStatePwrPolCheckPowerPageable</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSleepingWakeWakeArrived</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSleepingWakeRevertArmWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemAsleepWakeArmed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeEnabled</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeEnabledWakeCanceled</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeDisarm</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeTriggered</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredS0</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWokeDisarm</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSleepingWakeWakeArrivedNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSleepingWakeRevertArmWakeNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSleepingWakePowerDownFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSleepingWakePowerDownFailedWakeCanceled</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemAsleepWakeArmedNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeEnabledNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeEnabledWakeCanceledNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeDisarmNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredS0NP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWokeDisarmNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeCompletePowerUp</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSleeping</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSleepingNoWakePowerDown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSleepingNoWakeCompletePowerDown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSleepingNoWakeDxRequestFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSleepingWakePowerDown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSleepingSendWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemAsleepNoWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeDisabled</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>WdfDevStatePwrPolSystemWakeDeviceToD0</td>
                     <td></td>
                 </tr>
@@ -675,87 +460,12 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeCompletePowerUp</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeDisabled</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeDisarm</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeDisarmNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeEnabled</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeEnabledNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeEnabledWakeCanceled</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeEnabledWakeCanceledNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeInterruptFired</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeInterruptFiredNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeTriggered</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredS0</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeTriggeredS0NP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWokeDisarm</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolSystemWakeDeviceWokeDisarmNP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WdfDevStatePwrPolSystemWakeQueryIdle</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStartedWakeCapable</td>
                     <td></td>
                 </tr>
             
@@ -765,87 +475,12 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredNoWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredNoWakeCompletePowerDown</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredNoWakePowerDownNotProcessed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredNoWakePoweredDownDisableIdleTimer</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredNoWakeReturnToActive</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredNoWakeUndoPowerDown</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeCapableCancelWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeCapableCleanup</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeCapableDxAllocFailed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDown</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedCancelWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedUsbSS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedWakeCanceled</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedWakeInterruptArrived</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownNotProcessed</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WdfDevStatePwrPolTimerExpiredWakeCapableSendWake</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeCapableUndoPowerDown</td>
                     <td></td>
                 </tr>
             
@@ -860,32 +495,22 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
                 </tr>
             
                 <tr>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeCapableCancelWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>WdfDevStatePwrPolTimerExpiredWakeCapableWakeCanceled</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeCapableWakeFailed</td>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeCapableCleanup</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeCapableWakeInterruptArrived</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeCapableWakeSucceeded</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeCompletedDisarm</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeCompletedHardwareStarted</td>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeCapableDxAllocFailed</td>
                     <td></td>
                 </tr>
             
@@ -900,7 +525,7 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolTimerExpiredWakeSucceeded</td>
+                    <td>WdfDevStatePwrPolWaitingArmedUsbSS</td>
                     <td></td>
                 </tr>
             
@@ -910,67 +535,92 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolWaitingArmedIoPresentCancelUsbSS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WdfDevStatePwrPolWaitingArmedQueryIdle</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolWaitingArmedStoppingCancelUsbSS</td>
+                    <td>WdfDevStatePwrPolIoPresentArmed</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolWaitingArmedUsbSS</td>
+                    <td>WdfDevStatePwrPolIoPresentArmedWakeCanceled</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolWaitingArmedWakeFailedCancelUsbSS</td>
+                    <td>WdfDevStatePwrPolS0WakeDisarm</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolWaitingArmedWakeInterruptFired</td>
+                    <td>WdfDevStatePwrPolS0WakeCompletePowerUp</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolWaitingArmedWakeInterruptFiredDuringPowerDown</td>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeSucceeded</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolWaitingArmedWakeSucceededCancelUsbSS</td>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeCompletedDisarm</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolWaitingUnarmed</td>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeCapableWakeSucceeded</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolWaitingUnarmedQueryIdle</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolWakeCapableDeviceIdle</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDevStatePwrPolWakeCapableUsbSSCompleted</td>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeCapableWakeFailed</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>WdfDevStatePwrPolWakeFailedUsbSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedCancelWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedWakeCanceled</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedUsbSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolCancelingWakeForSystemSleep</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolCancelingWakeForSystemSleepWakeCanceled</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolDisarmingWakeForSystemSleepCompletePowerUp</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolPowerUpForSystemSleepFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolWokeFromS0UsbSS</td>
                     <td></td>
                 </tr>
             
@@ -985,7 +635,357 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
                 </tr>
             
                 <tr>
-                    <td>WdfDevStatePwrPolWokeFromS0UsbSS</td>
+                    <td>WdfDevStatePwrPolStoppingResetDevice</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingResetDeviceCompletePowerUp</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingResetDeviceFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingD0</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingD0Failed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingDisarmWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingDisarmWakeCancelWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingDisarmWakeWakeCanceled</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStopping</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingSendStatus</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingCancelTimer</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingWaitForIdleTimeout</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingCancelUsbSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingWaitForUsbSSCompletion</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingCancelWake</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStopped</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolCancelUsbSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStarted</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStartedCancelTimer</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStartedWaitForIdleTimeout</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStartedWakeCapableCancelTimerForSleep</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStartedWakeCapableWaitForIdleTimeout</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStartedWakeCapableSleepingUsbSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStartedIdleCapableCancelTimerForSleep</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStartedIdleCapableWaitForIdleTimeout</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolDeviceD0PowerRequestFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolDevicePowerRequestFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolGotoDx</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolGotoDxInDx</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolDx</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolGotoD0</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolGotoD0InD0</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolFinal</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSleepingPowerDownNotProcessed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownNotProcessed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolTimerExpiredNoWakePowerDownNotProcessed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolTimerExpiredNoWakePoweredDownDisableIdleTimer</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingWaitingForImplicitPowerDown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingPoweringUp</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingPoweringDown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolPowerUpForSystemSleepNotSeen</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolWaitingArmedStoppingCancelUsbSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolWaitingArmedWakeFailedCancelUsbSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolWaitingArmedIoPresentCancelUsbSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolWaitingArmedWakeSucceededCancelUsbSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolCancelingUsbSSForSystemSleep</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppingD0CancelUsbSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStartingPoweredUp</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolIdleCapableDeviceIdle</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolDeviceIdleReturnToActive</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolDeviceIdleSleeping</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolDeviceIdleStopping</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolTimerExpiredNoWakeUndoPowerDown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolWakeCapableDeviceIdle</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolWakeCapableUsbSSCompleted</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeCapableUndoPowerDown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeCompletedHardwareStarted</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStoppedRemoving</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolRemoved</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolRestarting</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolRestartingFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolStartingPoweredUpFailed</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolTimerExpiredNoWakeReturnToActive</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolWaitingArmedWakeInterruptFired</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeInterruptFired</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolSystemWakeDeviceWakeInterruptFiredNP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeCapableWakeInterruptArrived</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolTimerExpiredWakeCapablePowerDownFailedWakeInterruptArrived</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolWaitingArmedWakeInterruptFiredDuringPowerDown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDevStatePwrPolNull</td>
                     <td></td>
                 </tr>
 </table>

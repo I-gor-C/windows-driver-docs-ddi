@@ -63,13 +63,13 @@ typedef struct _BTH_VENDOR_EVENT_INFO {
 
 The address of the local radio that is associated with the event.
 
-`EventInfo`
-
-A UCHAR array for the event buffer. The buffer includes the event header.
-
 `EventSize`
 
 The size, in bytes, of the event buffer. The size includes the event header.
+
+`EventInfo`
+
+A UCHAR array for the event buffer. The buffer includes the event header.
 
 ## Remarks
 The BTH_VENDOR_EVENT_INFO structure contains data that is associated with a

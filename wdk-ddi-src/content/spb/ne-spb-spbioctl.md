@@ -66,13 +66,18 @@ typedef enum _SpbIoctl {
 <table>
             
                 <tr>
-                    <td>IOCTL_SPB_EXECUTE_SEQUENCE</td>
-                    <td>The <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spb-ioctls">IOCTL_SPB_EXECUTE_SEQUENCE</a> I/O control code enables a client (peripheral driver) of the SPB controller driver to perform a sequence of transfers (reads and writes) as a single, atomic operation with one I/O request. The designated device on the bus is the target for all transfers in the sequence.</td>
+                    <td>IOCTL_SPB_LOCK_CONTROLLER</td>
+                    <td>The <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spb-ioctls">IOCTL_SPB_LOCK_CONTROLLER</a> control code is used by a client (peripheral driver) to lock the SPB controller. While the controller is locked, the client has exclusive use of the bus to access the specified target device for the lock.</td>
                 </tr>
             
                 <tr>
-                    <td>IOCTL_SPB_FULL_DUPLEX</td>
-                    <td>The <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spb-ioctls">IOCTL_SPB_FULL_DUPLEX</a> control code is used by a client (peripheral driver) to request a full-duplex I/O operation. Full-duplex I/O operations are supported by controllers for buses such as SPI that can simultaneously read and write data.</td>
+                    <td>IOCTL_SPB_UNLOCK_CONTROLLER</td>
+                    <td>The <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spb-ioctls">IOCTL_SPB_UNLOCK_CONTROLLER</a> I/O control code is used by a client (peripheral driver) to unlock the SPB controller. The client previously locked the controller to gain exclusive use of the bus to access a target device on the bus.</td>
+                </tr>
+            
+                <tr>
+                    <td>IOCTL_SPB_EXECUTE_SEQUENCE</td>
+                    <td>The <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spb-ioctls">IOCTL_SPB_EXECUTE_SEQUENCE</a> I/O control code enables a client (peripheral driver) of the SPB controller driver to perform a sequence of transfers (reads and writes) as a single, atomic operation with one I/O request. The designated device on the bus is the target for all transfers in the sequence.</td>
                 </tr>
             
                 <tr>
@@ -81,18 +86,13 @@ typedef enum _SpbIoctl {
                 </tr>
             
                 <tr>
-                    <td>IOCTL_SPB_LOCK_CONTROLLER</td>
-                    <td>The <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spb-ioctls">IOCTL_SPB_LOCK_CONTROLLER</a> control code is used by a client (peripheral driver) to lock the SPB controller. While the controller is locked, the client has exclusive use of the bus to access the specified target device for the lock.</td>
-                </tr>
-            
-                <tr>
                     <td>IOCTL_SPB_UNLOCK_CONNECTION</td>
                     <td>The <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spb-ioctls">IOCTL_SPB_UNLOCK_CONNECTION</a> I/O control code is used by a client (peripheral driver) to release the connection lock on an SPB-connected target device that is shared with another client. The client previously sent an <a href="https://msdn.microsoft.com/library/windows/hardware/jj819324">IOCTL_SPB_LOCK_CONNECTION</a> request to acquire exclusive access to the device.</td>
                 </tr>
             
                 <tr>
-                    <td>IOCTL_SPB_UNLOCK_CONTROLLER</td>
-                    <td>The <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spb-ioctls">IOCTL_SPB_UNLOCK_CONTROLLER</a> I/O control code is used by a client (peripheral driver) to unlock the SPB controller. The client previously locked the controller to gain exclusive use of the bus to access a target device on the bus.</td>
+                    <td>IOCTL_SPB_FULL_DUPLEX</td>
+                    <td>The <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spb-ioctls">IOCTL_SPB_FULL_DUPLEX</a> control code is used by a client (peripheral driver) to request a full-duplex I/O operation. Full-duplex I/O operations are supported by controllers for buses such as SPI that can simultaneously read and write data.</td>
                 </tr>
 </table>
 

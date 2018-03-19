@@ -63,22 +63,12 @@ typedef enum _RILDISPLAYINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_DISPLAY_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_DISPLAY_EXECUTOR</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_DISPLAY_MESSAGE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_DISPLAY_MESSAGESIZE</td>
+                    <td>RIL_PARAM_DISPLAY_TYPE</td>
                     <td></td>
                 </tr>
             
@@ -88,7 +78,17 @@ typedef enum _RILDISPLAYINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_DISPLAY_TYPE</td>
+                    <td>RIL_PARAM_DISPLAY_MESSAGESIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_DISPLAY_MESSAGE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_DISPLAY_ALL</td>
                     <td></td>
                 </tr>
 </table>

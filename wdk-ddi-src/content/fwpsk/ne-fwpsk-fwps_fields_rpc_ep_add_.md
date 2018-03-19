@@ -64,22 +64,6 @@ typedef enum FWPS_FIELDS_RPC_EP_ADD_ {
 <table>
             
                 <tr>
-                    <td>FWPS_FIELD_RPC_EP_ADD_EP_FLAGS</td>
-                    <td>Reserved for internal use.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_EP_ADD_EP_VALUE</td>
-                    <td>Reserved for internal use.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_RPC_EP_ADD_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
-                </tr>
-            
-                <tr>
                     <td>FWPS_FIELD_RPC_EP_ADD_PROCESS_WITH_RPC_IF_UUID</td>
                     <td>The UUID of the process with the RPC interface.</td>
                 </tr>
@@ -99,6 +83,22 @@ typedef enum FWPS_FIELDS_RPC_EP_ADD_ {
 
 
 #### RPC_PROTSEQ_NMP</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_EP_ADD_EP_VALUE</td>
+                    <td>Reserved for internal use.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_EP_ADD_EP_FLAGS</td>
+                    <td>Reserved for internal use.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_RPC_EP_ADD_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 

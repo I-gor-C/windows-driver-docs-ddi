@@ -61,6 +61,11 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>IdePowerUnSpecified</td>
+                    <td>Indicates that the power level is unspecified.</td>
+                </tr>
+            
+                <tr>
                     <td>IdePowerD0</td>
                     <td>Indicates a device power level of 0.</td>
                 </tr>
@@ -68,11 +73,6 @@ typedef enum  {
                 <tr>
                     <td>IdePowerD3</td>
                     <td>Indicates a device power level of 3.</td>
-                </tr>
-            
-                <tr>
-                    <td>IdePowerUnSpecified</td>
-                    <td>Indicates that the power level is unspecified.</td>
                 </tr>
 </table>
 
@@ -88,11 +88,3 @@ The IDE_POWER_STATE enumeration type is used in conjunction with the <a href="..
 ## See Also
 
 <a href="..\irb\nf-irb-ataportrequestpowerstatechange.md">AtaPortRequestPowerStateChange</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IDE_POWER_STATE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

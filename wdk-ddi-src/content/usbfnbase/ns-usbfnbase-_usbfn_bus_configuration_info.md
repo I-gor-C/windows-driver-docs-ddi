@@ -64,14 +64,14 @@ typedef struct _USBFN_BUS_CONFIGURATION_INFO {
 
 A NULL-terminated string that indicates the name of a configuration.
 
-`IsActive`
-
-Indicates whether the configuration is active. This is a read-only information that is returned by USB function class extension (UFX) and is ignored in requests sent to UFX.
-
 `IsCurrent`
 
 Indicates whether this configuration is the 
     current configuration.
+
+`IsActive`
+
+Indicates whether the configuration is active. This is a read-only information that is returned by USB function class extension (UFX) and is ignored in requests sent to UFX.
 
 
 ## Requirements

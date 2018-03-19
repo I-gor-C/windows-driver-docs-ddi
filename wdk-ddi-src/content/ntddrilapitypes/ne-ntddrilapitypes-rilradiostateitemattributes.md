@@ -61,12 +61,7 @@ typedef enum _RILRADIOSTATEITEMATTRIBUTES {
 <table>
             
                 <tr>
-                    <td>RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS</td>
+                    <td>RIL_RADIOSTATE_ITEM_ATTRIBUTE_NO_ATTRIBUTE</td>
                     <td></td>
                 </tr>
             
@@ -81,7 +76,12 @@ typedef enum _RILRADIOSTATEITEMATTRIBUTES {
                 </tr>
             
                 <tr>
-                    <td>RIL_RADIOSTATE_ITEM_ATTRIBUTE_NO_ATTRIBUTE</td>
+                    <td>RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL</td>
                     <td></td>
                 </tr>
 </table>

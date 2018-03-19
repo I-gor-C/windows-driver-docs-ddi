@@ -65,33 +65,29 @@ typedef struct _PNP_SERIAL_BUS_DESCRIPTOR {
 ## Members
 
 
-`GeneralFlags`
+`Tag`
 
-Flags that are common to all serial bus types. Bit 0 is the slave-mode flag. If this bit is set to 1, the communication of this connection is initiated by the bus controller; otherwise, the communication is initiated by the target device. Bit 1 is the consumer/producer flag, and is always set to 1. No other flag bits are currently defined. For more information, see the ACPI 5.0 specification.
+The serial bus type. This member is set to 0x8e for a serial bus (I2C, SPI, or UART) connection. For more information, see the description of the serial bus connection descriptor in revision 5.0 of the the Advanced Configuration and Power Interface Specification (ACPI 5.0) at the <a href="http://www.acpi.info">ACPI</a> website.
 
 `Length`
 
 The length, in bytes, of the serial bus connection descriptor. To be consistent with the ACPI 5.0 specification, the byte count in the <b>Length</b> member of the <b>PNP_SERIAL_BUS_DESCRIPTOR</b> structure equals the structure size, minus the three bytes in the <b>Tag</b> and <b>Length</b> members at the start of the structure, plus the number of bytes of bus-type-specific data and Resource Source string that follow the structure. The Resource Source string, which is a required field, has a minimum size of two bytes (for a one-character Resource Source name and a terminating null). Thus, the minimum valid <b>Length</b> value is 11. For more information, see the ACPI 5.0 specification.
 
-`ResourceSourceIndex`
-
-Reserved for future use. This member is unused and set to zero.
-
 `RevisionId`
 
 The revision ID of the serial bus connection descriptor. This member is set to the SERIAL_BUS_DESCRIPTOR_REVISION constant, which is defined in the Reshub.h header file.
+
+`ResourceSourceIndex`
+
+Reserved for future use. This member is unused and set to zero.
 
 `SerialBusType`
 
 The serial bus type. This member is set to 1 (for I2C), 2 (for SPI), or 3 (for UART). Other values are either reserved for future use, or are defined by the hardware vendor. For more information, see the ACPI 5.0 specification.
 
-`Tag`
+`GeneralFlags`
 
-The serial bus type. This member is set to 0x8e for a serial bus (I2C, SPI, or UART) connection. For more information, see the description of the serial bus connection descriptor in revision 5.0 of the the Advanced Configuration and Power Interface Specification (ACPI 5.0) at the <a href="http://www.acpi.info">ACPI</a> website.
-
-`TypeDataLength`
-
-The length, in bytes, of the bus-type-specific data that follows the <b>PNP_SERIAL_BUS_DESCRIPTOR</b> structure. This length value includes the data between the end of the <b>TypeDataLength</b> member and the start of the Resource Source string, but does not include the Resource Source string. For more information, see the ACPI 5.0 specification.
+Flags that are common to all serial bus types. Bit 0 is the slave-mode flag. If this bit is set to 1, the communication of this connection is initiated by the bus controller; otherwise, the communication is initiated by the target device. Bit 1 is the consumer/producer flag, and is always set to 1. No other flag bits are currently defined. For more information, see the ACPI 5.0 specification.
 
 `TypeSpecificFlags`
 
@@ -100,6 +96,10 @@ Flags that are specific to the serial bus type. For an I2C bus, bit 0 is set if 
 `TypeSpecificRevisionId`
 
 The revision ID of the variant of this structure that is used for the serial bus type (I2C, SPI, and UART) that is specified by the <b>Tag</b> member. Each serial bus type extends the <b>PNP_SERIAL_BUS_DESCRIPTOR</b> structure by adding fields that are specific to the bus type. For more information, see the ACPI 5.0 specification.
+
+`TypeDataLength`
+
+The length, in bytes, of the bus-type-specific data that follows the <b>PNP_SERIAL_BUS_DESCRIPTOR</b> structure. This length value includes the data between the end of the <b>TypeDataLength</b> member and the start of the Resource Source string, but does not include the Resource Source string. For more information, see the ACPI 5.0 specification.
 
 ## Remarks
 This structure defines the data fields in a serial bus connection descriptor, as described in section 6.4.3.8.2 of the ACPI 5.0 specification. This descriptor describes the bus connection to a target device that is connected to a serial bus (I2C, SPI, or UART).

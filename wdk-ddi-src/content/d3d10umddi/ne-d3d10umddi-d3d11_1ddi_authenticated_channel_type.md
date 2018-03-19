@@ -59,13 +59,13 @@ typedef enum D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE {
 <table>
             
                 <tr>
-                    <td>D3D11_1DDI_AUTHENTICATED_CHANNEL_DRIVER_HARDWARE</td>
-                    <td>Hardware driver channel. This channel provides communication with a driver that implements content protection mechanisms in the GPU hardware.</td>
+                    <td>D3D11_1DDI_AUTHENTICATED_CHANNEL_DRIVER_SOFTWARE</td>
+                    <td>Software driver channel. This channel provides communication with a driver that implements content protection mechanisms in software.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_AUTHENTICATED_CHANNEL_DRIVER_SOFTWARE</td>
-                    <td>Software driver channel. This channel provides communication with a driver that implements content protection mechanisms in software.</td>
+                    <td>D3D11_1DDI_AUTHENTICATED_CHANNEL_DRIVER_HARDWARE</td>
+                    <td>Hardware driver channel. This channel provides communication with a driver that implements content protection mechanisms in the GPU hardware.</td>
                 </tr>
 </table>
 

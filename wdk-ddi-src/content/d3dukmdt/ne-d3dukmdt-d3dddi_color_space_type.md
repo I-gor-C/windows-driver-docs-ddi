@@ -78,88 +78,6 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <table>
             
                 <tr>
-                    <td>D3DDDI_COLOR_SPACE_CUSTOM</td>
-                    <td>A custom color definition is used.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_COLOR_SPACE_RESERVED</td>
-                    <td>Reserved for future use.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_COLOR_SPACE_RGB_FULL_G10_NONE_P709</td>
-                    <td><table>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-<tr>
-<td>Colorspace</td>
-<td>RGB</td>
-</tr>
-<tr>
-<td>Range</td>
-<td>0-255</td>
-</tr>
-<tr>
-<td>Gamma</td>
-<td>1.0</td>
-</tr>
-<tr>
-<td>Costing</td>
-<td>Image</td>
-</tr>
-<tr>
-<td>Primaries</td>
-<td>BT.709</td>
-</tr>
-</table>
- 
-
-This is the standard definition for <i>scRGB</i>.
-
-
-
-This is usually used with 16 bit integer, 16 bit floating point, and 32 bit floating point channels.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_COLOR_SPACE_RGB_FULL_G2084_NONE_P2020</td>
-                    <td><table>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-<tr>
-<td>Colorspace</td>
-<td>RGB</td>
-</tr>
-<tr>
-<td>Range</td>
-<td>0-255</td>
-</tr>
-<tr>
-<td>Gamma</td>
-<td>2084</td>
-</tr>
-<tr>
-<td>Costing</td>
-<td>Center</td>
-</tr>
-<tr>
-<td>Primaries</td>
-<td>BT.2020</td>
-</tr>
-</table></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P2020</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>D3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P709</td>
                     <td><table>
 <tr>
@@ -200,7 +118,7 @@ This is usually used with 8 bit and 10 bit color channels.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_COLOR_SPACE_RGB_STUDIO_G2084_NONE_P2020</td>
+                    <td>D3DDDI_COLOR_SPACE_RGB_FULL_G10_NONE_P709</td>
                     <td><table>
 <tr>
 <th>Property</th>
@@ -212,41 +130,11 @@ This is usually used with 8 bit and 10 bit color channels.</td>
 </tr>
 <tr>
 <td>Range</td>
-<td>16-235</td>
+<td>0-255</td>
 </tr>
 <tr>
 <td>Gamma</td>
-<td>2084</td>
-</tr>
-<tr>
-<td>Costing</td>
-<td>Center</td>
-</tr>
-<tr>
-<td>Primaries</td>
-<td>BT.2020</td>
-</tr>
-</table></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020</td>
-                    <td><table>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-<tr>
-<td>Colorspace</td>
-<td>RGB</td>
-</tr>
-<tr>
-<td>Range</td>
-<td>16-235</td>
-</tr>
-<tr>
-<td>Gamma</td>
-<td>2.2</td>
+<td>1.0</td>
 </tr>
 <tr>
 <td>Costing</td>
@@ -254,12 +142,16 @@ This is usually used with 8 bit and 10 bit color channels.</td>
 </tr>
 <tr>
 <td>Primaries</td>
-<td>BT.2020</td>
+<td>BT.709</td>
 </tr>
 </table>
  
 
-This is usually used with 10, 12, or 16 bit color channels.</td>
+This is the standard definition for <i>scRGB</i>.
+
+
+
+This is usually used with 16 bit integer, 16 bit floating point, and 32 bit floating point channels.</td>
                 </tr>
             
                 <tr>
@@ -300,17 +192,7 @@ This is usually used with 8 bit and 10 bit color channels.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_COLOR_SPACE_RGB_STUDIO_G24_NONE_P2020</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_COLOR_SPACE_RGB_STUDIO_G24_NONE_P709</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020</td>
+                    <td>D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020</td>
                     <td><table>
 <tr>
 <th>Property</th>
@@ -318,11 +200,11 @@ This is usually used with 8 bit and 10 bit color channels.</td>
 </tr>
 <tr>
 <td>Colorspace</td>
-<td>YCbCr</td>
+<td>RGB</td>
 </tr>
 <tr>
 <td>Range</td>
-<td>0-255</td>
+<td>16-235</td>
 </tr>
 <tr>
 <td>Gamma</td>
@@ -330,7 +212,7 @@ This is usually used with 8 bit and 10 bit color channels.</td>
 </tr>
 <tr>
 <td>Costing</td>
-<td>Video</td>
+<td>Image</td>
 </tr>
 <tr>
 <td>Primaries</td>
@@ -343,77 +225,8 @@ This is usually used with 10, 12, or 16 bit color channels.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P601</td>
-                    <td><table>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-<tr>
-<td>Colorspace</td>
-<td>YCbCr</td>
-</tr>
-<tr>
-<td>Range</td>
-<td>0-255</td>
-</tr>
-<tr>
-<td>Gamma</td>
-<td>2.2</td>
-</tr>
-<tr>
-<td>Costing</td>
-<td>Video</td>
-</tr>
-<tr>
-<td>Primaries</td>
-<td>BT.601</td>
-</tr>
-</table>
- 
-
-This is sometimes used for <i>H.264</i> camera capture.
-
-
-
-This is usually used with 8, 10, 12, or 16 bit color channels.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709</td>
-                    <td><table>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-<tr>
-<td>Colorspace</td>
-<td>YCbCr</td>
-</tr>
-<tr>
-<td>Range</td>
-<td>0-255</td>
-</tr>
-<tr>
-<td>Gamma</td>
-<td>2.2</td>
-</tr>
-<tr>
-<td>Costing</td>
-<td>Video</td>
-</tr>
-<tr>
-<td>Primaries</td>
-<td>BT.709</td>
-</tr>
-</table>
- 
-
-This is sometimes used for <i>H.264</i> camera capture.
-
-
-
-This is usually used with 8, 10, 12, or 16 bit color channels.</td>
+                    <td>D3DDDI_COLOR_SPACE_RESERVED</td>
+                    <td>Reserved for future use.</td>
                 </tr>
             
                 <tr>
@@ -458,108 +271,6 @@ This is usually used with 8, 10, 12, or 16 bit color channels.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_COLOR_SPACE_YCBCR_FULL_GHLG_TOPLEFT_P2020</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_LEFT_P2020</td>
-                    <td><table>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-<tr>
-<td>Colorspace</td>
-<td>YCbCr</td>
-</tr>
-<tr>
-<td>Range</td>
-<td>16-235</td>
-</tr>
-<tr>
-<td>Gamma</td>
-<td>2084</td>
-</tr>
-<tr>
-<td>Costing</td>
-<td>Left</td>
-</tr>
-<tr>
-<td>Primaries</td>
-<td>BT.2020</td>
-</tr>
-</table></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_TOPLEFT_P2020</td>
-                    <td><table>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-<tr>
-<td>Colorspace</td>
-<td>YCbCr</td>
-</tr>
-<tr>
-<td>Range</td>
-<td>16-235</td>
-</tr>
-<tr>
-<td>Gamma</td>
-<td>2084</td>
-</tr>
-<tr>
-<td>Costing</td>
-<td>Top Left</td>
-</tr>
-<tr>
-<td>Primaries</td>
-<td>BT.2020</td>
-</tr>
-</table></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020</td>
-                    <td><table>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-<tr>
-<td>Colorspace</td>
-<td>YCbCr</td>
-</tr>
-<tr>
-<td>Range</td>
-<td>16-235</td>
-</tr>
-<tr>
-<td>Gamma</td>
-<td>2.2</td>
-</tr>
-<tr>
-<td>Costing</td>
-<td>Video</td>
-</tr>
-<tr>
-<td>Primaries</td>
-<td>BT.2020</td>
-</tr>
-</table>
- 
-
-This definition may be used by <i>HEVC</i>.
-
-
-
-This is usually used with 10, 12, or 16 bit color channels.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P601</td>
                     <td><table>
 <tr>
@@ -590,6 +301,43 @@ This is usually used with 10, 12, or 16 bit color channels.</td>
  
 
 This definition is commonly used for <i>MPEG2</i>.
+
+
+
+This is usually used with 8, 10, 12, or 16 bit color channels.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P601</td>
+                    <td><table>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>Colorspace</td>
+<td>YCbCr</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td>Gamma</td>
+<td>2.2</td>
+</tr>
+<tr>
+<td>Costing</td>
+<td>Video</td>
+</tr>
+<tr>
+<td>Primaries</td>
+<td>BT.601</td>
+</tr>
+</table>
+ 
+
+This is sometimes used for <i>H.264</i> camera capture.
 
 
 
@@ -634,6 +382,203 @@ This is usually used with 8, 10, 12, or 16 bit color channels.</td>
                 </tr>
             
                 <tr>
+                    <td>D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709</td>
+                    <td><table>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>Colorspace</td>
+<td>YCbCr</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td>Gamma</td>
+<td>2.2</td>
+</tr>
+<tr>
+<td>Costing</td>
+<td>Video</td>
+</tr>
+<tr>
+<td>Primaries</td>
+<td>BT.709</td>
+</tr>
+</table>
+ 
+
+This is sometimes used for <i>H.264</i> camera capture.
+
+
+
+This is usually used with 8, 10, 12, or 16 bit color channels.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020</td>
+                    <td><table>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>Colorspace</td>
+<td>YCbCr</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>16-235</td>
+</tr>
+<tr>
+<td>Gamma</td>
+<td>2.2</td>
+</tr>
+<tr>
+<td>Costing</td>
+<td>Video</td>
+</tr>
+<tr>
+<td>Primaries</td>
+<td>BT.2020</td>
+</tr>
+</table>
+ 
+
+This definition may be used by <i>HEVC</i>.
+
+
+
+This is usually used with 10, 12, or 16 bit color channels.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020</td>
+                    <td><table>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>Colorspace</td>
+<td>YCbCr</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td>Gamma</td>
+<td>2.2</td>
+</tr>
+<tr>
+<td>Costing</td>
+<td>Video</td>
+</tr>
+<tr>
+<td>Primaries</td>
+<td>BT.2020</td>
+</tr>
+</table>
+ 
+
+This is usually used with 10, 12, or 16 bit color channels.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_COLOR_SPACE_RGB_FULL_G2084_NONE_P2020</td>
+                    <td><table>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>Colorspace</td>
+<td>RGB</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>0-255</td>
+</tr>
+<tr>
+<td>Gamma</td>
+<td>2084</td>
+</tr>
+<tr>
+<td>Costing</td>
+<td>Center</td>
+</tr>
+<tr>
+<td>Primaries</td>
+<td>BT.2020</td>
+</tr>
+</table></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_LEFT_P2020</td>
+                    <td><table>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>Colorspace</td>
+<td>YCbCr</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>16-235</td>
+</tr>
+<tr>
+<td>Gamma</td>
+<td>2084</td>
+</tr>
+<tr>
+<td>Costing</td>
+<td>Left</td>
+</tr>
+<tr>
+<td>Primaries</td>
+<td>BT.2020</td>
+</tr>
+</table></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_COLOR_SPACE_RGB_STUDIO_G2084_NONE_P2020</td>
+                    <td><table>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>Colorspace</td>
+<td>RGB</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>16-235</td>
+</tr>
+<tr>
+<td>Gamma</td>
+<td>2084</td>
+</tr>
+<tr>
+<td>Costing</td>
+<td>Center</td>
+</tr>
+<tr>
+<td>Primaries</td>
+<td>BT.2020</td>
+</tr>
+</table></td>
+                </tr>
+            
+                <tr>
                     <td>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_TOPLEFT_P2020</td>
                     <td><table>
 <tr>
@@ -664,17 +609,37 @@ This is usually used with 8, 10, 12, or 16 bit color channels.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G24_LEFT_P2020</td>
-                    <td></td>
+                    <td>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_TOPLEFT_P2020</td>
+                    <td><table>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>Colorspace</td>
+<td>YCbCr</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>16-235</td>
+</tr>
+<tr>
+<td>Gamma</td>
+<td>2084</td>
+</tr>
+<tr>
+<td>Costing</td>
+<td>Top Left</td>
+</tr>
+<tr>
+<td>Primaries</td>
+<td>BT.2020</td>
+</tr>
+</table></td>
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G24_LEFT_P709</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G24_TOPLEFT_P2020</td>
+                    <td>D3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P2020</td>
                     <td></td>
                 </tr>
             
@@ -709,6 +674,41 @@ This is usually used with 8, 10, 12, or 16 bit color channels.</td>
  
 
 This colorspace can be used as an input to the video processor DDIs, but will never be used to scan out.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_COLOR_SPACE_YCBCR_FULL_GHLG_TOPLEFT_P2020</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_COLOR_SPACE_RGB_STUDIO_G24_NONE_P709</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_COLOR_SPACE_RGB_STUDIO_G24_NONE_P2020</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G24_LEFT_P709</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G24_LEFT_P2020</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G24_TOPLEFT_P2020</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_COLOR_SPACE_CUSTOM</td>
+                    <td>A custom color definition is used.</td>
                 </tr>
 </table>
 

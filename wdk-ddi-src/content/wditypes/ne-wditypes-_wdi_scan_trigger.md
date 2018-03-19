@@ -64,8 +64,8 @@ typedef enum _WDI_SCAN_TRIGGER {
 <table>
             
                 <tr>
-                    <td>WDI_SCAN_TRIGGER_ANQP_QUERY</td>
-                    <td>The scan was initiated for performing an ANQP query.</td>
+                    <td>WDI_SCAN_TRIGGER_MANUAL</td>
+                    <td>The scan was initiated due to a user or application trigger. If this is set, the port must perform a complete scan on all supported channels.</td>
                 </tr>
             
                 <tr>
@@ -74,23 +74,23 @@ typedef enum _WDI_SCAN_TRIGGER {
                 </tr>
             
                 <tr>
+                    <td>WDI_SCAN_TRIGGER_ROAM</td>
+                    <td>The scan was initiated for roaming purposes. If the adapter was doing background scans internally and has recent results, it can perform only a subset or no scan. If it does not have recent results, it should perform an appropriate scan.</td>
+                </tr>
+            
+                <tr>
                     <td>WDI_SCAN_TRIGGER_CONNECT</td>
                     <td>The scan was initiated for connecting. This connect may be a first time connect or a connect after a disconnection. The port must always honor this request to perform a scan.</td>
                 </tr>
             
                 <tr>
+                    <td>WDI_SCAN_TRIGGER_ANQP_QUERY</td>
+                    <td>The scan was initiated for performing an ANQP query.</td>
+                </tr>
+            
+                <tr>
                     <td>WDI_SCAN_TRIGGER_FAST_ROAM</td>
                     <td>This scan was initiated for roaming purposes, and the host has additional information (for example, neighbor reports or instant connect last channel) to put in specific values in the scan request (such as SSID, BSSID, or band channel).</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_SCAN_TRIGGER_MANUAL</td>
-                    <td>The scan was initiated due to a user or application trigger. If this is set, the port must perform a complete scan on all supported channels.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_SCAN_TRIGGER_ROAM</td>
-                    <td>The scan was initiated for roaming purposes. If the adapter was doing background scans internally and has recent results, it can perform only a subset or no scan. If it does not have recent results, it should perform an appropriate scan.</td>
                 </tr>
 </table>
 

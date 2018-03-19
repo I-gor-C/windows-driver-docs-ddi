@@ -59,18 +59,6 @@ typedef struct _WIM_PROVIDER_ADD_OVERLAY_INPUT {
 ## Members
 
 
-`WimFileNameLength`
-
-The length, in bytes, of the file name at found at  <b>WimFileNameOffset</b>.
-
-`WimFileNameOffset`
-
-The offset, in bytes, from the beginning of this structure of the file name for the WIM file to add as a backing source. The file name is a string of <b>WCHAR</b> character values.
-
-`WimIndex`
-
-The index of the image in the WIM file whose filename is specified at <b>WimFileNameOffset</b>.
-
 `WimType`
 
 The type of WIM file set as a backing source. The WIM file type is set to one of the following values.
@@ -102,6 +90,18 @@ The WIM file contains non-operating system files.
 </tr>
 </table>
 
+`WimIndex`
+
+The index of the image in the WIM file whose filename is specified at <b>WimFileNameOffset</b>.
+
+`WimFileNameOffset`
+
+The offset, in bytes, from the beginning of this structure of the file name for the WIM file to add as a backing source. The file name is a string of <b>WCHAR</b> character values.
+
+`WimFileNameLength`
+
+The length, in bytes, of the file name at found at  <b>WimFileNameOffset</b>.
+
 ## Remarks
 The WIM file name is included immediately following <b>WIM_PROVIDER_ADD_OVERLAY_INPUT</b> in the system buffer for a <a href="https://msdn.microsoft.com/library/windows/hardware/dn632437">FSCTL_ADD_OVERLAY</a> control request. The <b>WimFileNameOffset</b> member is set to <b>sizeof</b>(WIM_PROVIDER_ADD_OVERLAY_INPUT).
 
@@ -128,11 +128,3 @@ The WIM file name includes a terminating NULL character. <b>WimFileNameLength</b
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn632437">FSCTL_ADD_OVERLAY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20WIM_PROVIDER_ADD_OVERLAY_INPUT structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -83,10 +83,6 @@ Specifies the type, revision and size of the <b>DOT11_WFD_SECONDARY_DEVICE_TYPE_
 </tr>
 </table>
 
-`SecondaryDeviceTypes`
-
-An array of secondary device types.
-
 `uNumOfEntries`
 
 The number of entries present in <b>SecondaryDeviceTypes</b>.
@@ -94,6 +90,10 @@ The number of entries present in <b>SecondaryDeviceTypes</b>.
 `uTotalNumOfEntries`
 
 The maximum number of entries the <b>SecondaryDeviceTypes</b> array can contain.
+
+`SecondaryDeviceTypes`
+
+An array of secondary device types.
 
 
 ## Requirements

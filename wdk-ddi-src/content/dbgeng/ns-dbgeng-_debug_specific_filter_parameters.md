@@ -60,28 +60,28 @@ typedef struct _DEBUG_SPECIFIC_FILTER_PARAMETERS {
 ## Members
 
 
+`ExecutionOption`
+
+The <a href="https://msdn.microsoft.com/1f8f738b-7b2b-419a-949e-b71f937de02d">break status</a> of the specific event filter.  For possible values, see <b>DEBUG_FILTER_XXX</b>.
+
+`ContinueOption`
+
+The <a href="https://msdn.microsoft.com/1f8f738b-7b2b-419a-949e-b71f937de02d">handling status</a> of the specific event filter.  For possible values, see <b>DEBUG_FILTER_XXX</b>.
+
+`TextSize`
+
+The size, in characters (including the terminator), of the name of the specific event filter.
+
+`CommandSize`
+
+The size, in characters, of the command (including the terminator), to execute when the event occurs.
+
 `ArgumentSize`
 
 Specifies the size, in characters, of the specific event filter argument.  This size includes the NULL terminator.  If the specific event filter does not take an argument, <b>ArgumentSize</b> is zero.
 
 <div class="alert"><b>Note</b>  If the filter does take an argument, but the argument is empty, <b>ArgumentSize</b> will be one, reflecting the NULL terminator.</div>
 <div> </div>
-
-`CommandSize`
-
-The size, in characters, of the command (including the terminator), to execute when the event occurs.
-
-`ContinueOption`
-
-The <a href="https://msdn.microsoft.com/1f8f738b-7b2b-419a-949e-b71f937de02d">handling status</a> of the specific event filter.  For possible values, see <b>DEBUG_FILTER_XXX</b>.
-
-`ExecutionOption`
-
-The <a href="https://msdn.microsoft.com/1f8f738b-7b2b-419a-949e-b71f937de02d">break status</a> of the specific event filter.  For possible values, see <b>DEBUG_FILTER_XXX</b>.
-
-`TextSize`
-
-The size, in characters (including the terminator), of the name of the specific event filter.
 
 
 ## Requirements
@@ -96,11 +96,3 @@ The size, in characters (including the terminator), of the name of the specific 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556795">SetSpecificFilterParameters</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20DEBUG_SPECIFIC_FILTER_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

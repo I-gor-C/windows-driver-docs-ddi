@@ -59,11 +59,6 @@ typedef enum D3D12DDI_SWIZZLE_PATTERN_FLAGS {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_SWIZZLE_PATTERN_FLAGS_0022_CONDITIONAL_POSTAMBLE_XORS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>D3D12DDI_SWIZZLE_PATTERN_FLAGS_NONE</td>
                     <td>No flag value.</td>
                 </tr>
@@ -71,6 +66,11 @@ typedef enum D3D12DDI_SWIZZLE_PATTERN_FLAGS {
                 <tr>
                     <td>D3D12DDI_SWIZZLE_PATTERN_FLAGS_STACK_DEPTH_SLICES</td>
                     <td>Depth slices are treated as being stacked vertically prior to swizzling.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_SWIZZLE_PATTERN_FLAGS_0022_CONDITIONAL_POSTAMBLE_XORS</td>
+                    <td></td>
                 </tr>
 </table>
 

@@ -64,8 +64,13 @@ typedef enum _WWAN_AUTH_PROTOCOL {
 <table>
             
                 <tr>
-                    <td>WwanAuthProtocolAuto</td>
-                    <td></td>
+                    <td>WwanAuthProtocolNone</td>
+                    <td>No authentication protocol.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanAuthProtocolPap</td>
+                    <td>Unencrypted password authentication.</td>
                 </tr>
             
                 <tr>
@@ -74,23 +79,18 @@ typedef enum _WWAN_AUTH_PROTOCOL {
                 </tr>
             
                 <tr>
-                    <td>WwanAuthProtocolMax</td>
-                    <td>The total number of supported authentication protocols.</td>
-                </tr>
-            
-                <tr>
                     <td>WwanAuthProtocolMsChapV2</td>
                     <td>Use the Microsoft Challenge Handshake Authentication Protocol (CHAP) v2.0.</td>
                 </tr>
             
                 <tr>
-                    <td>WwanAuthProtocolNone</td>
-                    <td>No authentication protocol.</td>
+                    <td>WwanAuthProtocolAuto</td>
+                    <td></td>
                 </tr>
             
                 <tr>
-                    <td>WwanAuthProtocolPap</td>
-                    <td>Unencrypted password authentication.</td>
+                    <td>WwanAuthProtocolMax</td>
+                    <td>The total number of supported authentication protocols.</td>
                 </tr>
 </table>
 
@@ -112,11 +112,3 @@ This enumeration applies only to GSM devices. The MB Service specifies
 
 
 <a href="..\wwan\ns-wwan-_wwan_context.md">WWAN_CONTEXT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_AUTH_PROTOCOL enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

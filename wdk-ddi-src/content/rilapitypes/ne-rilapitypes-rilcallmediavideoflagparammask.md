@@ -62,17 +62,12 @@ typedef enum _RILCALLMEDIAVIDEOFLAGPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_CALLMEDIAVIDEOFLAG_ALL</td>
+                    <td>RIL_CALLMEDIAVIDEOFLAG_NONE</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_CALLMEDIAVIDEOFLAG_CAPABILITY_UNKNOWN</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLMEDIAVIDEOFLAG_NONE</td>
                     <td></td>
                 </tr>
             
@@ -83,6 +78,11 @@ typedef enum _RILCALLMEDIAVIDEOFLAGPARAMMASK {
             
                 <tr>
                     <td>RIL_CALLMEDIAVIDEOFLAG_TEMPORARILY_UNAVAILABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLMEDIAVIDEOFLAG_ALL</td>
                     <td></td>
                 </tr>
 </table>

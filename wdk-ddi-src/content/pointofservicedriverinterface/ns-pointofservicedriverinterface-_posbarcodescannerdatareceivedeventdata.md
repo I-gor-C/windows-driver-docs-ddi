@@ -59,21 +59,21 @@ typedef struct _PosBarcodeScannerDataReceivedEventData {
 ## Members
 
 
-`DataType`
-
-Indicates which <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodesymbology.md">BarcodeSymbology</a> is associated with the scan data.
-
 `Header`
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/dn772232">PosEventDataHeader</a> header information for this event.
 
-`ScanDataLabelLength`
+`DataType`
 
-Indicates the number of bytes of decoded scan data. A label is the decoded scan data in which the header and footer information has been removed, leaving only the raw scanner data.
+Indicates which <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodesymbology.md">BarcodeSymbology</a> is associated with the scan data.
 
 `ScanDataLength`
 
 Indicates the number of bytes of raw scanned data.
+
+`ScanDataLabelLength`
+
+Indicates the number of bytes of decoded scan data. A label is the decoded scan data in which the header and footer information has been removed, leaving only the raw scanner data.
 
 ## Remarks
 <i>ScanDataLength</i> bytes of scan data immediately follows the <i>PosBarcodeScannerDataReceivedEventData</i> structure, followed by <i>ScanDataLabelLength</i> bytes of label data.

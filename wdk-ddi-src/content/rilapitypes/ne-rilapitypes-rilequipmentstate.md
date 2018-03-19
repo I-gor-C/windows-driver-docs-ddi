@@ -61,22 +61,22 @@ typedef enum _RILEQUIPMENTSTATE {
 <table>
             
                 <tr>
-                    <td>RIL_EQSTATE_FULL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_EQSTATE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_EQSTATE_MINIMUM</td>
                     <td></td>
                 </tr>
             
                 <tr>
+                    <td>RIL_EQSTATE_FULL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_EQSTATE_SHUTDOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EQSTATE_MAX</td>
                     <td></td>
                 </tr>
 </table>

@@ -59,13 +59,13 @@ typedef struct _OEM_DMEXTRAHEADER {
 ## Members
 
 
-`dwSignature`
-
-Unique signature value that the plug-in also returns when its <a href="https://msdn.microsoft.com/library/windows/hardware/ff554178">IPrintOemUI::GetInfo</a> method receives the OEMGI_GETSIGNATURE flag.
-
 `dwSize`
 
 Total size, in bytes, of the added private DEVMODEW structure members, including the bytes contained in the OEM_DMEXTRAHEADER structure.
+
+`dwSignature`
+
+Unique signature value that the plug-in also returns when its <a href="https://msdn.microsoft.com/library/windows/hardware/ff554178">IPrintOemUI::GetInfo</a> method receives the OEMGI_GETSIGNATURE flag.
 
 `dwVersion`
 

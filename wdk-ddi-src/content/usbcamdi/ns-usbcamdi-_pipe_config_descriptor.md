@@ -58,6 +58,47 @@ typedef struct _pipe_config_descriptor {
 ## Members
 
 
+`StreamAssociation`
+
+Specifies the type of stream. This should be set to one of the following values:
+
+<table>
+<tr>
+<th>Flag</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+USBCAMD_VIDEO_STREAM
+
+</td>
+<td>
+Indicates that the stream contains video data.
+
+</td>
+</tr>
+<tr>
+<td>
+USBCAMD_STILL_STREAM
+
+</td>
+<td>
+Indicates that the stream contains still data.
+
+</td>
+</tr>
+<tr>
+<td>
+USBCAMD_VIDEO_STILL_STREAM
+
+</td>
+<td>
+Indicates that the stream contains both video and still data.
+
+</td>
+</tr>
+</table>
+
 `PipeConfigFlags`
 
 Specifies the pipe characteristics. This should be set to one of the following values:
@@ -109,47 +150,6 @@ Indicates a pipe that is not to be used for video or still streaming.
 </tr>
 </table>
 
-`StreamAssociation`
-
-Specifies the type of stream. This should be set to one of the following values:
-
-<table>
-<tr>
-<th>Flag</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-USBCAMD_VIDEO_STREAM
-
-</td>
-<td>
-Indicates that the stream contains video data.
-
-</td>
-</tr>
-<tr>
-<td>
-USBCAMD_STILL_STREAM
-
-</td>
-<td>
-Indicates that the stream contains still data.
-
-</td>
-</tr>
-<tr>
-<td>
-USBCAMD_VIDEO_STILL_STREAM
-
-</td>
-<td>
-Indicates that the stream contains both video and still data.
-
-</td>
-</tr>
-</table>
-
 ## Remarks
 The camera minidriver indicates pipe stream associations by identifying all streams associated with a particular pipe. If there is more than one stream association, USBCAMD creates a virtual still pin. The still stream pin always follows the video stream pin (that is, the video stream pin is the first stream pin). 
 
@@ -169,11 +169,3 @@ The USBCAMD library requires that the camera must have a single configuration de
 ## See Also
 
 <a href="..\usbcamdi\nc-usbcamdi-pcam_configure_routine_ex.md">CamConfigureEx</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_Pipe_Config_Descriptor structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

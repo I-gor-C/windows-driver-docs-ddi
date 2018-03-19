@@ -62,16 +62,6 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KS_StreamingHint_CompQuality</td>
-                    <td>Specifies compression that is based on compression quality.</td>
-                </tr>
-            
-                <tr>
-                    <td>KS_StreamingHint_CompWindowSize</td>
-                    <td>Specifies compression that is based on compression window size.</td>
-                </tr>
-            
-                <tr>
                     <td>KS_StreamingHint_FrameInterval</td>
                     <td>Specifies compression that is based on the interval between video frames.</td>
                 </tr>
@@ -84,6 +74,16 @@ typedef enum  {
                 <tr>
                     <td>KS_StreamingHint_PFrameRate</td>
                     <td>Specifies compression that is based on predicted frames.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_StreamingHint_CompQuality</td>
+                    <td>Specifies compression that is based on compression quality.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_StreamingHint_CompWindowSize</td>
+                    <td>Specifies compression that is based on compression window size.</td>
                 </tr>
 </table>
 

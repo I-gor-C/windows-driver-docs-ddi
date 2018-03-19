@@ -71,6 +71,14 @@ typedef struct _DEBUG_MODULE_PARAMETERS {
 
 The location in the target's virtual address space of the module's base.  If the value of <b>Base</b> is DEBUG_INVALID_OFFSET, the structure is invalid.
 
+`Size`
+
+The size, in bytes, of the memory range that is occupied by the module.
+
+`TimeDateStamp`
+
+The date and time stamp of the module's executable file.  This is the number of seconds elapsed since midnight (00:00:00), January 1, 1970 Coordinated Universal Time (UTC) as stored in the image file header.
+
 `Checksum`
 
 The checksum of the image.  This value can be zero.
@@ -115,34 +123,6 @@ The checksum in the symbol file did not match the checksum for the module image.
 </td>
 </tr>
 </table>
-
-`ImageNameSize`
-
-The size of the file name for the module. The size is measured in characters, including the terminator.
-
-`LoadedImageNameSize`
-
-The size of the loaded image name for the module. The size is measured in characters, including the terminator.
-
-`MappedImageNameSize`
-
-The size of the mapped image name of the module. The size is measured in characters, including the terminator.
-
-`ModuleNameSize`
-
-The size of the module name of the module. The size is measured in characters, including the terminator.
-
-`Reserved`
-
-Reserved for system use.
-
-`Size`
-
-The size, in bytes, of the memory range that is occupied by the module.
-
-`SymbolFileNameSize`
-
-The size of the symbol file name for the module. The size is measured in characters, including the terminator.
 
 `SymbolType`
 
@@ -235,9 +215,29 @@ Symbols in PDB format have been loaded through the DIA interface.
 </tr>
 </table>
 
-`TimeDateStamp`
+`ImageNameSize`
 
-The date and time stamp of the module's executable file.  This is the number of seconds elapsed since midnight (00:00:00), January 1, 1970 Coordinated Universal Time (UTC) as stored in the image file header.
+The size of the file name for the module. The size is measured in characters, including the terminator.
+
+`ModuleNameSize`
+
+The size of the module name of the module. The size is measured in characters, including the terminator.
+
+`LoadedImageNameSize`
+
+The size of the loaded image name for the module. The size is measured in characters, including the terminator.
+
+`SymbolFileNameSize`
+
+The size of the symbol file name for the module. The size is measured in characters, including the terminator.
+
+`MappedImageNameSize`
+
+The size of the mapped image name of the module. The size is measured in characters, including the terminator.
+
+`Reserved`
+
+Reserved for system use.
 
 ## Remarks
 This structure is returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff547161">GetModuleParameters</a>.

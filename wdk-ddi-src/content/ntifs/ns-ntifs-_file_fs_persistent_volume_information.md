@@ -59,18 +59,6 @@ typedef struct _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
 ## Members
 
 
-`FlagMask`
-
-A mask value for the valid flags that can appear in <b>VolumeFlags</b>. This is a bitwise OR combination of the desired flags described for <b>VolumeFlags</b>.
-
-`Reserved`
-
-Reserved. Set to 0;
-
-`Version`
-
-The version number of this structure. Set to 1.
-
 `VolumeFlags`
 
 The persistent state settings for a file system volume. This value is a bitwise OR combination of the following.
@@ -171,6 +159,18 @@ This flag is valid starting with Windows 8.1 Update.
 </tr>
 </table>
 
+`FlagMask`
+
+A mask value for the valid flags that can appear in <b>VolumeFlags</b>. This is a bitwise OR combination of the desired flags described for <b>VolumeFlags</b>.
+
+`Version`
+
+The version number of this structure. Set to 1.
+
+`Reserved`
+
+Reserved. Set to 0;
+
 ## Remarks
 The <b>FILE_FS_PERSISTENT_VOLUME_INFORMATION</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545564">FSCTL_SET_PERSISTENT_VOLUME_STATE</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff545496">FSCTL_QUERY_PERSISTENT_VOLUME_STATE</a> control codes.
 
@@ -223,11 +223,3 @@ The <b>Version</b> member must be set to the current version of 1 for both a que
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545564">FSCTL_SET_PERSISTENT_VOLUME_STATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_FS_PERSISTENT_VOLUME_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

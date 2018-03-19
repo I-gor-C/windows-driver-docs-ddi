@@ -67,11 +67,15 @@ typedef struct _RILSENDMSGACKPARAMS_V2 {
 
 
 
-`dwAckID`
-
-
-
 `dwExecutor`
+
+
+
+`hUiccApp`
+
+
+
+`dwAckID`
 
 
 
@@ -79,15 +83,11 @@ typedef struct _RILSENDMSGACKPARAMS_V2 {
 
 
 
-`dwOptions`
-
-
-
 `dwSmsFormat`
 
 
 
-`hUiccApp`
+`dwOptions`
 
 
 

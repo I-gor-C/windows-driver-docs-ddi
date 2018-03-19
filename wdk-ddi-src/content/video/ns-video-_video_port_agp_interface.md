@@ -70,54 +70,6 @@ typedef struct _VIDEO_PORT_AGP_INTERFACE {
 ## Members
 
 
-`AgpAllocationLimit`
-
-Specifies the maximum total number of bytes of AGP memory that a miniport driver can commit.
-
-`AgpCommitPhysical`
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_commit_physical.md">AgpCommitPhysical</a> routine.
-
-`AgpCommitVirtual`
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_commit_virtual.md">AgpCommitVirtual</a> routine.
-
-`AgpFreePhysical`
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_free_physical.md">AgpFreePhysical</a> routine.
-
-`AgpFreeVirtual`
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_free_virtual.md">AgpFreeVirtual</a> routine.
-
-`AgpReleasePhysical`
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_release_physical.md">AgpReleasePhysical</a> routine.
-
-`AgpReleaseVirtual`
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_release_virtual.md">AgpReleaseVirtual</a> routine.
-
-`AgpReservePhysical`
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a> routine.
-
-`AgpReserveVirtual`
-
-Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_reserve_virtual.md">AgpReserveVirtual</a> routine.
-
-`Context`
-
-Pointer to a video port driver-defined context for the interface.
-
-`InterfaceDereference`
-
-Pointer to the video port driver-implemented dereference routine for this interface.
-
-`InterfaceReference`
-
-Pointer to the video port driver-implemented reference routine for this interface.
-
 `Size`
 
 Specifies the size in bytes of this structure.
@@ -125,6 +77,54 @@ Specifies the size in bytes of this structure.
 `Version`
 
 Specifies the version of the interface to be returned by the video port driver. The current interface version is defined in <i>video.h</i> and has the form VIDEO_PORT_AGP_INTERFACE_<i>N</i>.
+
+`Context`
+
+Pointer to a video port driver-defined context for the interface.
+
+`InterfaceReference`
+
+Pointer to the video port driver-implemented reference routine for this interface.
+
+`InterfaceDereference`
+
+Pointer to the video port driver-implemented dereference routine for this interface.
+
+`AgpReservePhysical`
+
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a> routine.
+
+`AgpReleasePhysical`
+
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_release_physical.md">AgpReleasePhysical</a> routine.
+
+`AgpCommitPhysical`
+
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_commit_physical.md">AgpCommitPhysical</a> routine.
+
+`AgpFreePhysical`
+
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_free_physical.md">AgpFreePhysical</a> routine.
+
+`AgpReserveVirtual`
+
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_reserve_virtual.md">AgpReserveVirtual</a> routine.
+
+`AgpReleaseVirtual`
+
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_release_virtual.md">AgpReleaseVirtual</a> routine.
+
+`AgpCommitVirtual`
+
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_commit_virtual.md">AgpCommitVirtual</a> routine.
+
+`AgpFreeVirtual`
+
+Pointer to the video port driver-implemented <a href="..\videoagp\nc-videoagp-pagp_free_virtual.md">AgpFreeVirtual</a> routine.
+
+`AgpAllocationLimit`
+
+Specifies the maximum total number of bytes of AGP memory that a miniport driver can commit.
 
 ## Remarks
 PnP video miniport drivers that can use AGP must fill in the <b>Size</b> and <b>Version</b> members, and then call the <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a> function, which initializes the remaining members of this structure.
@@ -141,11 +141,3 @@ PnP video miniport drivers that can use AGP must fill in the <b>Size</b> and <b>
 
 
 <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_PORT_AGP_INTERFACE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

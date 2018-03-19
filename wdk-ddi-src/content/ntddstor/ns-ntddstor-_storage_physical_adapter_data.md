@@ -70,11 +70,23 @@ typedef struct _STORAGE_PHYSICAL_ADAPTER_DATA {
 
 The hardware ID of the storage adapter.
 
+`HealthStatus`
+
+Indicates the health status of a storage adapter, of type <a href="..\ntddstor\ne-ntddstor-_storage_component_health_status.md">STORAGE_COMPONENT_HEALTH_STATUS</a>.
+
 `CommandProtocol`
 
 Specifies the storage command protocols that are used between software and hardware, of type <a href="..\ntddstor\ne-ntddstor-_storage_protocol_type.md">STORAGE_PROTOCOL_TYPE</a>.
 
-`ExpanderConnected`
+`SpecVersion`
+
+Indicates the specification of the storage adapter, of type <a href="..\ntddstor\ns-ntddstor-_storage_spec_version.md">STORAGE_SPEC_VERSION</a>.
+
+`Vendor`
+
+
+
+`Model`
 
 
 
@@ -82,15 +94,11 @@ Specifies the storage command protocols that are used between software and hardw
 
 
 
-`HealthStatus`
-
-Indicates the health status of a storage adapter, of type <a href="..\ntddstor\ne-ntddstor-_storage_component_health_status.md">STORAGE_COMPONENT_HEALTH_STATUS</a>.
-
-`Model`
-
-
-
 `PhysicalLocation`
+
+
+
+`ExpanderConnected`
 
 
 
@@ -99,14 +107,6 @@ Indicates the health status of a storage adapter, of type <a href="..\ntddstor\n
 
 
 `Reserved1`
-
-
-
-`SpecVersion`
-
-Indicates the specification of the storage adapter, of type <a href="..\ntddstor\ns-ntddstor-_storage_spec_version.md">STORAGE_SPEC_VERSION</a>.
-
-`Vendor`
 
 
 

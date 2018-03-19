@@ -59,10 +59,6 @@ typedef struct _D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE {
 ## Members
 
 
-`FenceValueArray`
-
-Monitored fence values to be waited on.
-
 `hHwQueue`
 
 Hardware queue to queue the wait on.
@@ -74,6 +70,10 @@ Number of objects to wait on.
 `ObjectHandleArray`
 
 Handles to monitored fence synchronization objects to wait on.
+
+`FenceValueArray`
+
+Monitored fence values to be waited on.
 
 
 ## Requirements

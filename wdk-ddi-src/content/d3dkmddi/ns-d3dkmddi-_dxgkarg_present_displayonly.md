@@ -65,21 +65,37 @@ typedef struct _DXGKARG_PRESENT_DISPLAYONLY {
 ## Members
 
 
+`VidPnSourceId`
+
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology on which to restrict displaying.
+
+`pSource`
+
+The virtual start address of the source image.
+
 `BytesPerPixel`
 
 The number of bytes per pixel in the source image.
+
+`Pitch`
+
+The pitch, in bytes, of each line in the source image—that is, the distance, in bytes, to the start of the next line.
 
 `Flags`
 
 A <a href="..\d3dkmddi\ns-d3dkmddi-_d3dkmt_present_display_only_flags.md">D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS</a> structure that identifies how to display the source image in the present operation.
 
-`NumDirtyRects`
-
-The number of dirty rectangles that are pointed to by the <b>pDirtyRect</b> member.
-
 `NumMoves`
 
 The number of screen-to-screen moves that are pointed to by the <b>pMoves</b> member.
+
+`pMoves`
+
+A pointer to a list of <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmt_move_rect.md">D3DKMT_MOVE_RECT</a> screen-to-screen moves.
+
+`NumDirtyRects`
+
+The number of dirty rectangles that are pointed to by the <b>pDirtyRect</b> member.
 
 `pDirtyRect`
 
@@ -88,22 +104,6 @@ A pointer to a list of <a href="https://msdn.microsoft.com/library/windows/hardw
 `pfnPresentDisplayOnlyProgress`
 
 Reserved for system use. The operating system sets this member to <b>NULL</b>.
-
-`Pitch`
-
-The pitch, in bytes, of each line in the source image—that is, the distance, in bytes, to the start of the next line.
-
-`pMoves`
-
-A pointer to a list of <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmt_move_rect.md">D3DKMT_MOVE_RECT</a> screen-to-screen moves.
-
-`pSource`
-
-The virtual start address of the source image.
-
-`VidPnSourceId`
-
-The zero-based identification number of the video present source in a path of a video present network (VidPN) topology on which to restrict displaying.
 
 
 ## Requirements
@@ -131,11 +131,3 @@ The zero-based identification number of the video present source in a path of a 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_PRESENT_DISPLAYONLY structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

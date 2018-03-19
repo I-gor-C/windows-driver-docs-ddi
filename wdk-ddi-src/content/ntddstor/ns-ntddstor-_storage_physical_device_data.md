@@ -67,51 +67,51 @@ typedef struct _STORAGE_PHYSICAL_DEVICE_DATA {
 ## Members
 
 
-`Capacity`
-
-The capacity of the storage device in units of kilobytes (1024 bytes).
-
-`CommandProtocol`
-
-Specifies the storage command protocols that are used between software and hardware, of type <a href="..\ntddstor\ne-ntddstor-_storage_protocol_type.md">STORAGE_PROTOCOL_TYPE</a>.
-
 `DeviceId`
 
 The hardware ID of the storage device.
 
-`FirmwareRevision`
+`Role`
 
-
-
-`FormFactor`
-
-Indicates the form factor of a storage device, of type <a href="..\ntddstor\ne-ntddstor-_storage_device_form_factor.md">STORAGE_DEVICE_FORM_FACTOR</a>.
+The role of the storage device. A bitmask can be use to specify multiple roles, including <b>STORAGE_COMPONENT_ROLE_CACHE</b> (0x00000001), <b>STORAGE_COMPONENT_ROLE_TIERING</b> (0x00000002), and <b>STORAGE_COMPONENT_ROLE_DATA</b> (0x00000004).
 
 `HealthStatus`
 
 Indicates the health status of a storage device, of type <a href="..\ntddstor\ne-ntddstor-_storage_component_health_status.md">STORAGE_COMPONENT_HEALTH_STATUS</a>.
 
+`CommandProtocol`
+
+Specifies the storage command protocols that are used between software and hardware, of type <a href="..\ntddstor\ne-ntddstor-_storage_protocol_type.md">STORAGE_PROTOCOL_TYPE</a>.
+
+`SpecVersion`
+
+Indicates the specification of the storage device, of type <a href="..\ntddstor\ns-ntddstor-_storage_spec_version.md">STORAGE_SPEC_VERSION</a>.
+
+`FormFactor`
+
+Indicates the form factor of a storage device, of type <a href="..\ntddstor\ne-ntddstor-_storage_device_form_factor.md">STORAGE_DEVICE_FORM_FACTOR</a>.
+
+`Vendor`
+
+
+
 `Model`
 
 
+
+`FirmwareRevision`
+
+
+
+`Capacity`
+
+The capacity of the storage device in units of kilobytes (1024 bytes).
 
 `PhysicalLocation`
 
 
 
 `Reserved`
-
-
-
-`Role`
-
-The role of the storage device. A bitmask can be use to specify multiple roles, including <b>STORAGE_COMPONENT_ROLE_CACHE</b> (0x00000001), <b>STORAGE_COMPONENT_ROLE_TIERING</b> (0x00000002), and <b>STORAGE_COMPONENT_ROLE_DATA</b> (0x00000004).
-
-`SpecVersion`
-
-Indicates the specification of the storage device, of type <a href="..\ntddstor\ns-ntddstor-_storage_spec_version.md">STORAGE_SPEC_VERSION</a>.
-
-`Vendor`
 
 
 

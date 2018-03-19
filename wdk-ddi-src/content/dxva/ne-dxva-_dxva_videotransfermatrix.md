@@ -63,23 +63,8 @@ typedef enum _DXVA_VideoTransferMatrix {
 <table>
             
                 <tr>
-                    <td>DXVA_VideoTransferMatrix_BT601</td>
-                    <td>Specifies the BT601 transfer matrix.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoTransferMatrix_BT709</td>
-                    <td>Specifies the BT709 transfer matrix.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoTransferMatrix_SMPTE240M</td>
-                    <td>Specifies a HD video standard rarely used in Japan.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoTransferMatrix_Unknown</td>
-                    <td>Specifies that the video transfer matrix is not specified. The default is BT601 for standard definition (SD) video and BT709 for high definition (HD) video.</td>
+                    <td>DXVA_VideoTransferMatrixShift</td>
+                    <td>Specifies to shift bits by 15 positions (DXVA_ExtColorData_ShiftBase + 7, or 8 + 7).</td>
                 </tr>
             
                 <tr>
@@ -88,8 +73,23 @@ typedef enum _DXVA_VideoTransferMatrix {
                 </tr>
             
                 <tr>
-                    <td>DXVA_VideoTransferMatrixShift</td>
-                    <td>Specifies to shift bits by 15 positions (DXVA_ExtColorData_ShiftBase + 7, or 8 + 7).</td>
+                    <td>DXVA_VideoTransferMatrix_Unknown</td>
+                    <td>Specifies that the video transfer matrix is not specified. The default is BT601 for standard definition (SD) video and BT709 for high definition (HD) video.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoTransferMatrix_BT709</td>
+                    <td>Specifies the BT709 transfer matrix.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoTransferMatrix_BT601</td>
+                    <td>Specifies the BT601 transfer matrix.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoTransferMatrix_SMPTE240M</td>
+                    <td>Specifies a HD video standard rarely used in Japan.</td>
                 </tr>
 </table>
 
@@ -106,11 +106,3 @@ One of the enumerators of DXVA_VideoTransferMatrix can be specified in the <b>Vi
 ## See Also
 
 <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_VideoTransferMatrix enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

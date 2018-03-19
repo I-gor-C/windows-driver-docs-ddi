@@ -57,12 +57,6 @@ typedef struct _NDIS_WWAN_DRIVER_CAPS {
 ## Members
 
 
-`DriverCaps`
-
-A 
-     <a href="..\wwan\ns-wwan-_wwan_driver_caps.md">WWAN_DRIVER_CAPS</a> structure that represents
-     the capabilities of the miniport driver.
-
 `Header`
 
 The header with type, revision, and size information about the NDIS_WWAN_DRIVER_CAPS structure.
@@ -113,6 +107,12 @@ sizeof(NDIS_WWAN_DRIVER_CAPS)
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
+`DriverCaps`
+
+A 
+     <a href="..\wwan\ns-wwan-_wwan_driver_caps.md">WWAN_DRIVER_CAPS</a> structure that represents
+     the capabilities of the miniport driver.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -127,11 +127,3 @@ For more information about these members, see
 
 
 <a href="..\wwan\ns-wwan-_wwan_driver_caps.md">WWAN_DRIVER_CAPS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_DRIVER_CAPS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

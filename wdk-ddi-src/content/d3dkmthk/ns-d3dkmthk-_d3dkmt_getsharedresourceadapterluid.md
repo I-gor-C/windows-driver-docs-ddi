@@ -58,10 +58,6 @@ typedef struct _D3DKMT_GETSHAREDRESOURCEADAPTERLUID {
 ## Members
 
 
-`AdapterLuid`
-
-[out] A LUID that serves as an identifier for the device that the resource indicated by <b>hGlobalShare</b> was created on. <b>LUID</b> is defined in Dxgi.h.
-
 `hGlobalShare`
 
 [in] A handle to the shared resource.
@@ -69,6 +65,10 @@ typedef struct _D3DKMT_GETSHAREDRESOURCEADAPTERLUID {
 `hNtHandle`
 
 [in] An NT handle to the process.
+
+`AdapterLuid`
+
+[out] A LUID that serves as an identifier for the device that the resource indicated by <b>hGlobalShare</b> was created on. <b>LUID</b> is defined in Dxgi.h.
 
 
 ## Requirements

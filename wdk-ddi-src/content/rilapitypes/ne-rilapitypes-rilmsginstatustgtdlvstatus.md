@@ -91,7 +91,17 @@ typedef enum _RILMSGINSTATUSTGTDLVSTATUS {
 <table>
             
                 <tr>
-                    <td>RIL_MSGDLVSTATUS_CONGESTION</td>
+                    <td>RIL_MSGDLVSTATUS_RECEIVEDBYSME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_FORWARDEDTOSME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_REPLACEDBYSC</td>
                     <td></td>
                 </tr>
             
@@ -101,7 +111,87 @@ typedef enum _RILMSGINSTATUSTGTDLVSTATUS {
                 </tr>
             
                 <tr>
+                    <td>RIL_MSGDLVSTATUS_SMEBUSY_TRYING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SMENOTRESPONDING_TRYING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SVCREJECTED_TRYING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TRYING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SMEERROR_TRYING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_CONGESTION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SMEBUSY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SMENOTRESPONDING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SVCREJECTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TEMP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SMEERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_REMOTEPROCERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_INCOMPATIBLEDEST</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_MSGDLVSTATUS_CONNECTIONREJECTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_NOTOBTAINABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_NOINTERNETWORKING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_VPEXPIRED</td>
                     <td></td>
                 </tr>
             
@@ -116,32 +206,7 @@ typedef enum _RILMSGINSTATUSTGTDLVSTATUS {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGDLVSTATUS_FORWARDEDTOSME</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_INCOMPATIBLEDEST</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_NOINTERNETWORKING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_MSGDLVSTATUS_NOLONGEREXISTS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_NOTOBTAINABLE</td>
                     <td></td>
                 </tr>
             
@@ -151,32 +216,12 @@ typedef enum _RILMSGINSTATUSTGTDLVSTATUS {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TEMP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TRYING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_RECEIVEDBYSME</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_REMOTEPROCERROR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_REPLACEDBYSC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_MSGDLVSTATUS_RESERVED_COMPLETED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_RESERVED_TRYING</td>
                     <td></td>
                 </tr>
             
@@ -191,12 +236,12 @@ typedef enum _RILMSGINSTATUSTGTDLVSTATUS {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGDLVSTATUS_RESERVED_TRYING</td>
+                    <td>RIL_MSGDLVSTATUS_SCSPECIFIC_COMPLETED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGDLVSTATUS_SCSPECIFIC_COMPLETED</td>
+                    <td>RIL_MSGDLVSTATUS_SCSPECIFIC_TRYING</td>
                     <td></td>
                 </tr>
             
@@ -211,52 +256,7 @@ typedef enum _RILMSGINSTATUSTGTDLVSTATUS {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGDLVSTATUS_SCSPECIFIC_TRYING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_SMEBUSY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_SMEBUSY_TRYING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_SMEERROR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_SMEERROR_TRYING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_SMENOTRESPONDING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_SMENOTRESPONDING_TRYING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_SVCREJECTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_SVCREJECTED_TRYING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGDLVSTATUS_VPEXPIRED</td>
+                    <td>RIL_MSGDLVSTATUS_MAX</td>
                     <td></td>
                 </tr>
 </table>

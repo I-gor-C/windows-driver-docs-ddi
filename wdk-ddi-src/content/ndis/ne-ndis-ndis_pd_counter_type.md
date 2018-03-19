@@ -62,13 +62,8 @@ typedef enum _NDIS_PD_COUNTER_TYPE {
 <table>
             
                 <tr>
-                    <td>PDCounterTypeMax</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of NDIS header files and binaries.</td>
-                </tr>
-            
-                <tr>
-                    <td>PDCounterTypeReceiveFilter</td>
-                    <td>The counter is a receive filter counter.</td>
+                    <td>PDCounterTypeUnknown</td>
+                    <td>The counter type is not known.</td>
                 </tr>
             
                 <tr>
@@ -82,8 +77,13 @@ typedef enum _NDIS_PD_COUNTER_TYPE {
                 </tr>
             
                 <tr>
-                    <td>PDCounterTypeUnknown</td>
-                    <td>The counter type is not known.</td>
+                    <td>PDCounterTypeReceiveFilter</td>
+                    <td>The counter is a receive filter counter.</td>
+                </tr>
+            
+                <tr>
+                    <td>PDCounterTypeMax</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of NDIS header files and binaries.</td>
                 </tr>
 </table>
 
@@ -97,11 +97,3 @@ typedef enum _NDIS_PD_COUNTER_TYPE {
 ## See Also
 
 <a href="..\ndis\ns-ndis-_ndis_pd_counter_parameters.md">NDIS_PD_COUNTER_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PD_COUNTER_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

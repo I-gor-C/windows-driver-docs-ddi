@@ -66,17 +66,7 @@ typedef enum _RILMESSAGEFLAGS {
 <table>
             
                 <tr>
-                    <td>RIL_MSGFLAG_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGFLAG_CAUSEDBYCOMMAND</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGFLAG_HEADER</td>
+                    <td>RIL_MSGFLAG_NONE</td>
                     <td></td>
                 </tr>
             
@@ -86,7 +76,12 @@ typedef enum _RILMESSAGEFLAGS {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGFLAG_NONE</td>
+                    <td>RIL_MSGFLAG_REPLYPATH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGFLAG_HEADER</td>
                     <td></td>
                 </tr>
             
@@ -96,7 +91,7 @@ typedef enum _RILMESSAGEFLAGS {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGFLAG_REPLYPATH</td>
+                    <td>RIL_MSGFLAG_STATUSREPORTRETURNED</td>
                     <td></td>
                 </tr>
             
@@ -106,7 +101,12 @@ typedef enum _RILMESSAGEFLAGS {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGFLAG_STATUSREPORTRETURNED</td>
+                    <td>RIL_MSGFLAG_CAUSEDBYCOMMAND</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGFLAG_ALL</td>
                     <td></td>
                 </tr>
 </table>

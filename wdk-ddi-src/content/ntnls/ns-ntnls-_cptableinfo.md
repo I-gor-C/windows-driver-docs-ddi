@@ -71,33 +71,17 @@ typedef struct _CPTABLEINFO {
 
 Specifies the code page number.
 
-`DBCSCodePage`
+`MaximumCharacterSize`
 
-Specifies non-zero for DBCS code pages.
-
-`DBCSOffsets`
-
-Specifies a pointer to DBCS offsets.
-
-`DBCSRanges`
-
-Specifies a pointer to DBCS ranges.
+Specifies the maximum length in bytes of a character.
 
 `DefaultChar`
 
 Specifies the default character (MB).
 
-`LeadByte`
+`UniDefaultChar`
 
-Specifies the lead byte ranges.
-
-`MaximumCharacterSize`
-
-Specifies the maximum length in bytes of a character.
-
-`MultiByteTable`
-
-Specifies a pointer to a MB translation table.
+Specifies the default character (Unicode).
 
 `TransDefaultChar`
 
@@ -107,13 +91,29 @@ Specifies the translation of the default character (Unicode).
 
 Specifies the translation of the Unicode default character (MB).
 
-`UniDefaultChar`
+`DBCSCodePage`
 
-Specifies the default character (Unicode).
+Specifies non-zero for DBCS code pages.
+
+`LeadByte`
+
+Specifies the lead byte ranges.
+
+`MultiByteTable`
+
+Specifies a pointer to a MB translation table.
 
 `WideCharTable`
 
 Specifies a pointer to a WC translation table.
+
+`DBCSRanges`
+
+Specifies a pointer to DBCS ranges.
+
+`DBCSOffsets`
+
+Specifies a pointer to DBCS offsets.
 
 
 ## Requirements

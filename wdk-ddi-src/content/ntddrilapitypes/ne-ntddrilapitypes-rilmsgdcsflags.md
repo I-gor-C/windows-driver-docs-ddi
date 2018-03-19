@@ -61,7 +61,7 @@ typedef enum _RILMSGDCSFLAGS {
 <table>
             
                 <tr>
-                    <td>RIL_DCSFLAG_ALL</td>
+                    <td>RIL_DCSFLAG_NONE</td>
                     <td></td>
                 </tr>
             
@@ -71,17 +71,17 @@ typedef enum _RILMSGDCSFLAGS {
                 </tr>
             
                 <tr>
-                    <td>RIL_DCSFLAG_DISCARD</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_DCSFLAG_INDICATIONACTIVE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_DCSFLAG_NONE</td>
+                    <td>RIL_DCSFLAG_DISCARD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSFLAG_ALL</td>
                     <td></td>
                 </tr>
 </table>

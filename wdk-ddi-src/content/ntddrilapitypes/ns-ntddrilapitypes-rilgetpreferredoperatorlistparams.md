@@ -57,11 +57,11 @@ typedef struct _RILGETPREFERREDOPERATORLISTPARAMS {
 ## Members
 
 
-`dwFormat`
-
-
-
 `hUiccApp`
+
+
+
+`dwFormat`
 
 
 

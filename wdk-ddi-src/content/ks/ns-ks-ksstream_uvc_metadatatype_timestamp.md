@@ -70,6 +70,10 @@ typedef struct {
 
 Specifies the presentation timestamp.
 
+`SourceClockReference`
+
+Specifies the source clock reference.
+
 `Reserved0`
 
 Reserved.
@@ -77,10 +81,6 @@ Reserved.
 `Reserved1`
 
 Reserved.
-
-`SourceClockReference`
-
-Specifies the source clock reference.
 
 
 ## Requirements

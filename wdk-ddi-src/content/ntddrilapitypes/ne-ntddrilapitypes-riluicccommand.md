@@ -61,11 +61,6 @@ typedef enum _RILUICCCOMMAND {
 <table>
             
                 <tr>
-                    <td>RIL_UICCCMD_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_UICCCMD_READBINARY</td>
                     <td></td>
                 </tr>
@@ -82,6 +77,11 @@ typedef enum _RILUICCCOMMAND {
             
                 <tr>
                     <td>RIL_UICCCMD_UPDATERECORD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCCMD_MAX</td>
                     <td></td>
                 </tr>
 </table>

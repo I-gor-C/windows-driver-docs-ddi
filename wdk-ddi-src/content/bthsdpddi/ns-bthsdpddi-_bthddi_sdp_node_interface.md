@@ -87,79 +87,31 @@ A structure that describes the
      structure, see 
      <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>.
 
-`SdpAddAttributeToTree`
+`SdpCreateNodeTree`
 
 A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">
-     SdpAddAttributeToTree</a> function.
+     <a href="..\sdplib\nf-sdplib-sdpcreatenodetree.md">SdpCreateNodeTree</a> function.
 
-`SdpAppendNodeToContainerNode`
-
-A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpappendnodetocontainernode.md">
-     SdpAppendNodeToContainerNode</a> function.
-
-`SdpCreateNodeAlternative`
+`SdpFreeTree`
 
 A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpcreatenodealternative.md">
-     SdpCreateNodeAlternative</a> function.
-
-`SdpCreateNodeBoolean`
-
-A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpcreatenodeboolean.md">SdpCreateNodeBoolean</a> function.
-
-`SdpCreateNodeInt128`
-
-A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpcreatenodeint128.md">SdpCreateNodeInt128</a> function.
-
-`SdpCreateNodeInt16`
-
-A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpcreatenodeint16.md">SdpCreateNodeInt16</a> function.
-
-`SdpCreateNodeInt32`
-
-A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpcreatenodeint32.md">SdpCreateNodeInt32</a> function.
-
-`SdpCreateNodeInt64`
-
-A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpcreatenodeint64.md">SdpCreateNodeInt64</a> function.
-
-`SdpCreateNodeInt8`
-
-A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpcreatenodeuint128.md">SdpCreateNodeInt8</a> function.
+     <a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a> function
+     <i>.</i>
 
 `SdpCreateNodeNil`
 
 A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodenil.md">SdpCreateNodeNil</a> function.
 
-`SdpCreateNodeSequence`
+`SdpCreateNodeBoolean`
 
 A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpcreatenodesequence.md">
-     SdpCreateNodeSequence</a> function.
+     <a href="..\sdplib\nf-sdplib-sdpcreatenodeboolean.md">SdpCreateNodeBoolean</a> function.
 
-`SdpCreateNodeString`
-
-A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpcreatenodestring.md">SdpCreateNodeString</a> function.
-
-`SdpCreateNodeTree`
+`SdpCreateNodeUint8`
 
 A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpcreatenodetree.md">SdpCreateNodeTree</a> function.
-
-`SdpCreateNodeUint128`
-
-A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpcreatenodeuint128.md">SdpCreateNodeUInt128</a> function.
+     <a href="..\sdplib\nf-sdplib-sdpcreatenodeuint8.md">SdpCreateNodeUInt8</a> function.
 
 `SdpCreateNodeUint16`
 
@@ -176,20 +128,35 @@ A pointer to the
 A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeuint64.md">SdpCreateNodeUInt64</a> function.
 
-`SdpCreateNodeUint8`
+`SdpCreateNodeUint128`
 
 A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpcreatenodeuint8.md">SdpCreateNodeUInt8</a> function.
+     <a href="..\sdplib\nf-sdplib-sdpcreatenodeuint128.md">SdpCreateNodeUInt128</a> function.
 
-`SdpCreateNodeUrl`
-
-A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpcreatenodeurl.md">SdpCreateNodeUrl</a> function.
-
-`SdpCreateNodeUuid128`
+`SdpCreateNodeInt8`
 
 A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpcreatenodeuuid128.md">SdpCreateNodeUUID128</a> function.
+     <a href="..\sdplib\nf-sdplib-sdpcreatenodeuint128.md">SdpCreateNodeInt8</a> function.
+
+`SdpCreateNodeInt16`
+
+A pointer to the 
+     <a href="..\sdplib\nf-sdplib-sdpcreatenodeint16.md">SdpCreateNodeInt16</a> function.
+
+`SdpCreateNodeInt32`
+
+A pointer to the 
+     <a href="..\sdplib\nf-sdplib-sdpcreatenodeint32.md">SdpCreateNodeInt32</a> function.
+
+`SdpCreateNodeInt64`
+
+A pointer to the 
+     <a href="..\sdplib\nf-sdplib-sdpcreatenodeint64.md">SdpCreateNodeInt64</a> function.
+
+`SdpCreateNodeInt128`
+
+A pointer to the 
+     <a href="..\sdplib\nf-sdplib-sdpcreatenodeint128.md">SdpCreateNodeInt128</a> function.
 
 `SdpCreateNodeUuid16`
 
@@ -201,11 +168,44 @@ A pointer to the
 A pointer to the 
      <a href="..\sdplib\nf-sdplib-sdpcreatenodeuuid32.md">SdpCreateNodeUUID32</a> function.
 
-`SdpFreeTree`
+`SdpCreateNodeUuid128`
 
 A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a> function
-     <i>.</i>
+     <a href="..\sdplib\nf-sdplib-sdpcreatenodeuuid128.md">SdpCreateNodeUUID128</a> function.
+
+`SdpCreateNodeString`
+
+A pointer to the 
+     <a href="..\sdplib\nf-sdplib-sdpcreatenodestring.md">SdpCreateNodeString</a> function.
+
+`SdpCreateNodeUrl`
+
+A pointer to the 
+     <a href="..\sdplib\nf-sdplib-sdpcreatenodeurl.md">SdpCreateNodeUrl</a> function.
+
+`SdpCreateNodeAlternative`
+
+A pointer to the 
+     <a href="..\sdplib\nf-sdplib-sdpcreatenodealternative.md">
+     SdpCreateNodeAlternative</a> function.
+
+`SdpCreateNodeSequence`
+
+A pointer to the 
+     <a href="..\sdplib\nf-sdplib-sdpcreatenodesequence.md">
+     SdpCreateNodeSequence</a> function.
+
+`SdpAddAttributeToTree`
+
+A pointer to the 
+     <a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">
+     SdpAddAttributeToTree</a> function.
+
+`SdpAppendNodeToContainerNode`
+
+A pointer to the 
+     <a href="..\sdplib\nf-sdplib-sdpappendnodetocontainernode.md">
+     SdpAppendNodeToContainerNode</a> function.
 
 ## Remarks
 Profile drivers should specify the 
@@ -316,11 +316,3 @@ All the members of this structure, other than the
 
 
 <a href="..\sdplib\nf-sdplib-sdpcreatenodeuint8.md">SdpCreateNodeUInt8</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTHDDI_SDP_NODE_INTERFACE structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

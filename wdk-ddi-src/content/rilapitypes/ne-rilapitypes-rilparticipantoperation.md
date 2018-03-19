@@ -65,12 +65,12 @@ typedef enum _RILPARTICIPANTOPERATION {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARTICIPANT_MAX</td>
+                    <td>RIL_PARTICIPANT_REMOVE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARTICIPANT_REMOVE</td>
+                    <td>RIL_PARTICIPANT_MAX</td>
                     <td></td>
                 </tr>
 </table>

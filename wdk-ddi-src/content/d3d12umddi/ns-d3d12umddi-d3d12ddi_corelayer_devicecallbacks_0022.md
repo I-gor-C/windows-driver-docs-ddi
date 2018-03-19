@@ -69,9 +69,17 @@ typedef struct D3D12DDI_CORELAYER_DEVICECALLBACKS_0022 {
 ## Members
 
 
-`pfnAllocateCb`
+`pfnSetErrorCb`
 
-A pointer to the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_allocate_cb_0022.md">pfnAllocateCb</a> function.
+A pointer to the pfnSetErrorCb function.
+
+`pfnSetCommandListErrorCb`
+
+A pointer to the function.
+
+`pfnSetCommandListDDITableCb`
+
+A pointer to the pfnSetCommandListErrorCb function.
 
 `pfnCreateContextCb`
 
@@ -81,49 +89,41 @@ A pointer to the pfnCreateContextCb function.
 
 A pointer to the pfnCreateContextVirtualCb function.
 
-`pfnCreatePagingQueueCb`
-
-A pointer to the pfnCreatePagingQueueCb function.
-
-`pfnDeallocateCb`
-
-A pointer to the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_deallocate_cb_0022.md">pfnDeallocateCb</a> function.
-
 `pfnDestroyContextCb`
 
 A pointer to the pfnDestroyContextCb function.
+
+`pfnCreatePagingQueueCb`
+
+A pointer to the pfnCreatePagingQueueCb function.
 
 `pfnDestroyPagingQueueCb`
 
 A pointer to the pfnDestroyPagingQueueCb function.
 
-`pfnEvictCb`
-
-A pointer to the pfnEvictCb function.
-
 `pfnMakeResidentCb`
 
 A pointer to the pfnMakeResidentCb function.
 
-`pfnOfferAllocationsCb`
+`pfnEvictCb`
 
-A pointer to the pfnOfferAllocationsCb function.
+A pointer to the pfnEvictCb function.
 
 `pfnReclaimAllocations2Cb`
 
 A pointer to the pfnReclaimAllocations2Cb function.
 
-`pfnSetCommandListDDITableCb`
+`pfnOfferAllocationsCb`
 
-A pointer to the pfnSetCommandListErrorCb function.
+A pointer to the pfnOfferAllocationsCb function.
 
-`pfnSetCommandListErrorCb`
+`pfnAllocateCb`
 
-A pointer to the function.
+A pointer to the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_allocate_cb_0022.md">pfnAllocateCb</a> function.
 
-`pfnSetErrorCb`
+`pfnDeallocateCb`
 
-A pointer to the pfnSetErrorCb function.
+A pointer to the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_deallocate_cb_0022.md">pfnDeallocateCb</a> function.
 
 
 ## Requirements

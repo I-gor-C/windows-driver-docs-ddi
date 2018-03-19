@@ -60,9 +60,9 @@ typedef struct _HDAUDIO_DEVICE_INFORMATION {
 ## Members
 
 
-`CodecsDetected`
+`Size`
 
-Specifies the number of codecs that the HD Audio controller detects on the HD Audio Link.
+Specifies the size in bytes of the HDAUDIO_DEVICE_INFORMATION structure.
 
 `DeviceVersion`
 
@@ -72,13 +72,13 @@ Specifies the HD Audio controller device version.
 
 Specifies the HD Audio bus driver version.
 
+`CodecsDetected`
+
+Specifies the number of codecs that the HD Audio controller detects on the HD Audio Link.
+
 `IsStripingSupported`
 
 Specifies whether the HD Audio controller supports <a href="https://msdn.microsoft.com/29ab650c-0c3b-4693-a277-4d9ba63b7b66">striping</a>. If <b>TRUE</b>, it supports striping (with at least two SDO lines). If <b>FALSE</b>, it does not support striping.
-
-`Size`
-
-Specifies the size in bytes of the HDAUDIO_DEVICE_INFORMATION structure.
 
 ## Remarks
 The <a href="..\hdaudio\nc-hdaudio-pget_device_information.md">GetDeviceInformation</a> routine uses this structure to provide information about the HD Audio controller's device-specific capabilities to clients.
@@ -91,11 +91,3 @@ The <a href="..\hdaudio\nc-hdaudio-pget_device_information.md">GetDeviceInformat
 ## See Also
 
 <a href="..\hdaudio\nc-hdaudio-pget_device_information.md">GetDeviceInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20HDAUDIO_DEVICE_INFORMATION structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

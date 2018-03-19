@@ -59,11 +59,11 @@ typedef struct _RILSENDSUPSERVICEDATAPARAMS {
 ## Members
 
 
-`dwDataSize`
-
-
-
 `dwExecutor`
+
+
+
+`dwDataSize`
 
 
 

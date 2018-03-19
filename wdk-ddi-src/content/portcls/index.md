@@ -298,11 +298,11 @@ portcls.h contains the following programming interfaces:
 | ---- |:---- |
 | [PCPROPERTY_ITEM](ns-portcls-__unnamed_struct_0cb6_3.md) | The PCPROPERTY_ITEM structure describes a property that is supported by a particular filter, pin, or node. |
 | [*PPCMETHOD_ITEM](ns-portcls-__unnamed_struct_0cb6_4.md) | The PCMETHOD_ITEM structure describes a method supported by a filter, pin, or node. |
-| [*PPCEVENT_ITEM](ns-portcls-__unnamed_struct_0cb6_5.md) | The PCEVENT_ITEM structure is used to describe an event that is supported by a particular filter, pin, or node. |
+| [PCEVENT_ITEM](ns-portcls-__unnamed_struct_0cb6_5.md) | The PCEVENT_ITEM structure is used to describe an event that is supported by a particular filter, pin, or node. |
 | [*PPCAUTOMATION_TABLE](ns-portcls-__unnamed_struct_0cb6_6.md) | The PCAUTOMATION_TABLE structure contains a miniport driver's master table of properties, methods, and events. |
-| [*PPCPIN_DESCRIPTOR](ns-portcls-__unnamed_struct_0cb6_7.md) | The PCPIN_DESCRIPTOR structure describes a pin factory. |
+| [PCPIN_DESCRIPTOR](ns-portcls-__unnamed_struct_0cb6_7.md) | The PCPIN_DESCRIPTOR structure describes a pin factory. |
 | [PCNODE_DESCRIPTOR](ns-portcls-__unnamed_struct_0cb6_8.md) | The PCNODE_DESCRIPTOR structure describes a node in the filter that a topology miniport driver implements. |
-| [PCFILTER_DESCRIPTOR](ns-portcls-__unnamed_struct_0cb6_9.md) | The PCFILTER_DESCRIPTOR structure describes a miniport driver's implementation of a filter. The structure specifies the filter's pins, nodes, connections, and properties. |
+| [*PPCFILTER_DESCRIPTOR](ns-portcls-__unnamed_struct_0cb6_9.md) | The PCFILTER_DESCRIPTOR structure describes a miniport driver's implementation of a filter. The structure specifies the filter's pins, nodes, connections, and properties. |
 | [_PCEVENT_REQUEST](ns-portcls-_pcevent_request.md) | The PCEVENT_REQUEST structure specifies an event request. |
 | [_PCMETHOD_REQUEST](ns-portcls-_pcmethod_request.md) | The PCMETHOD_REQUEST structure specifies a method request. |
 | [_PCNOTIFICATION_BUFFER](ns-portcls-_pcnotification_buffer.md) | The notification buffer used by IPortClsNotifications. |

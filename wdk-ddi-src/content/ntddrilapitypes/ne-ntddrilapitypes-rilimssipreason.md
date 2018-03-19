@@ -59,17 +59,17 @@ typedef enum _RILIMSSIPREASON {
 <table>
             
                 <tr>
-                    <td>RIL_IMSSIPREASON_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_IMSSIPREASON_NONE</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_IMSSIPREASON_NOT_AUTHORIZED_FOR_SERVICE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMSSIPREASON_MAX</td>
                     <td></td>
                 </tr>
 </table>

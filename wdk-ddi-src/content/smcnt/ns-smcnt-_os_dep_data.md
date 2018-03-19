@@ -70,25 +70,25 @@ typedef struct _OS_DEP_DATA {
 ## Members
 
 
+`DeviceObject`
+
+A pointer to the smart card reader device object. (Must be set by the driver.)
+
 `CurrentIrp`
 
 A pointer to the current IRP to process. Access to this field must be sequentialized by using the spin lock pointed to by the <b>OsData-&gt;SpinLock</b> member of <a href="..\smclib\ns-smclib-_smartcard_extension.md">SMARTCARD_EXTENSION</a>.
 
-`DebugDeviceObject`
+`NotificationIrp`
 
-Unused.
-
-`DeviceObject`
-
-A pointer to the smart card reader device object. (Must be set by the driver.)
+A pointer to an IRP that the smart card reader driver uses to notify applications when a smart card has been inserted or removedl. Access to this field must be sequentialized by using the spin lock that is pointed to by the <b>OsData-&gt;SpinLock</b> member of SMARTCARD_EXTENSION.
 
 `Mutex`
 
 Contains a mutex that applications use to synchronize access to the reader driver.
 
-`NotificationIrp`
+`SpinLock`
 
-A pointer to an IRP that the smart card reader driver uses to notify applications when a smart card has been inserted or removedl. Access to this field must be sequentialized by using the spin lock that is pointed to by the <b>OsData-&gt;SpinLock</b> member of SMARTCARD_EXTENSION.
+Contains a mutex that drivers use to synchronize access to protected members of the OS_DEP_DATA structure. For more information, see <a href="..\smclib\ns-smclib-_scard_card_capabilities.md">SCARD_CARD_CAPABILITIES</a>.
 
 `RemoveLock`
 
@@ -118,9 +118,9 @@ A pointer to an event that synchronizes spin lock removal.
 
 A pointer to a linked list of structures, each of which contains a tag string that identifies a remove spin lock.
 
-`SpinLock`
+`DebugDeviceObject`
 
-Contains a mutex that drivers use to synchronize access to protected members of the OS_DEP_DATA structure. For more information, see <a href="..\smclib\ns-smclib-_scard_card_capabilities.md">SCARD_CARD_CAPABILITIES</a>.
+Unused.
 
 ## Remarks
 To allocate this structure, drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548944">SmartcardInitialize (WDM)</a>. After this call, drivers should copy the pointer of the smart card device object to <b>DeviceObject</b>. Otherwise, the smart card driver library will not work. Do not use this structure to store driver-dependent information. However, when the smart card driver library calls one of your driver's callback functions, it sets <b>CurrentIrp</b> to the requesting IRP, unless the request is a smart card tracking request. For smart card tracking requests, the driver library sets <b>NotificationIrp</b> to the requesting IRP. For more information about smart card tracking, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548920">RDF_CARD_TRACKING</a>.

@@ -61,6 +61,10 @@ typedef struct _D3DDDIARG_DRAWINDEXEDPRIMITIVE {
 ## Members
 
 
+`PrimitiveType`
+
+[in] A D3DPRIMITIVETYPE-typed value that indicates the type of primitive to draw. This member can be one of the following values: D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP, or D3DPT_TRIANGLEFAN. For more information about D3DPRIMITIVETYPE, see the Microsoft Windows SDK documentation.
+
 `BaseVertexIndex`
 
 [in] The number that should be added to each index that is referenced by the various primitives to determine the actual index of the vertex elements in each vertex stream.
@@ -73,17 +77,13 @@ typedef struct _D3DDDIARG_DRAWINDEXEDPRIMITIVE {
 
 [in] The number of vertices in a range that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.
 
-`PrimitiveCount`
-
-[in] The number of triangles, lines, or points to draw for the given primitive.
-
-`PrimitiveType`
-
-[in] A D3DPRIMITIVETYPE-typed value that indicates the type of primitive to draw. This member can be one of the following values: D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP, or D3DPT_TRIANGLEFAN. For more information about D3DPRIMITIVETYPE, see the Microsoft Windows SDK documentation.
-
 `StartIndex`
 
 [in] The first index in the index buffer from which indices are read to draw the primitives.
+
+`PrimitiveCount`
+
+[in] The number of triangles, lines, or points to draw for the given primitive.
 
 ## Remarks
 The Microsoft Direct3D runtime does not transform the index data before passing a pointer to the description of the index data in the <i>pData</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_drawindexedprimitive.md">DrawIndexedPrimitive</a> function.
@@ -97,11 +97,3 @@ The Microsoft Direct3D runtime does not transform the index data before passing 
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_drawindexedprimitive.md">DrawIndexedPrimitive</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_DRAWINDEXEDPRIMITIVE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

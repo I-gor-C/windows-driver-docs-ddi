@@ -60,10 +60,6 @@ typedef struct _RILEXCHANGEUICCAPDURESPONSE {
 ## Members
 
 
-`bResponseAPDU`
-
-
-
 `cbSize`
 
 
@@ -73,6 +69,10 @@ typedef struct _RILEXCHANGEUICCAPDURESPONSE {
 
 
 `dwResponseAPDULength`
+
+
+
+`bResponseAPDU`
 
 
 

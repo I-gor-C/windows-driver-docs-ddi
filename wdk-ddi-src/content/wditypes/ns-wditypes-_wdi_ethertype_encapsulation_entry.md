@@ -59,13 +59,13 @@ typedef struct _WDI_ETHERTYPE_ENCAPSULATION_ENTRY {
 ## Members
 
 
-`EncapsulationType`
-
-The type of encapsulation to be performed on the specified EtherType.
-
 `EtherType`
 
 The value of the IEEE EtherType in big-endian byte order.
+
+`EncapsulationType`
+
+The type of encapsulation to be performed on the specified EtherType.
 
 
 ## Requirements

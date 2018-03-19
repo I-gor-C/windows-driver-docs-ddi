@@ -61,6 +61,11 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>Framing_Cache_Update</td>
+                    <td>Specifies a request to bypass the cache when reading or writing.</td>
+                </tr>
+            
+                <tr>
                     <td>Framing_Cache_ReadLast</td>
                     <td></td>
                 </tr>
@@ -68,11 +73,6 @@ typedef enum  {
                 <tr>
                     <td>Framing_Cache_ReadOrig</td>
                     <td></td>
-                </tr>
-            
-                <tr>
-                    <td>Framing_Cache_Update</td>
-                    <td>Specifies a request to bypass the cache when reading or writing.</td>
                 </tr>
             
                 <tr>

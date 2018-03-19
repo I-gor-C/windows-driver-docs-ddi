@@ -105,32 +105,32 @@ enum RILNOTIFICATIONS  {
 <table>
             
                 <tr>
-                    <td>RIL_NOTIFY_ADDITIONALCALLERINFO</td>
+                    <td>RIL_NOTIFY_OEM_MAX</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_NOTIFY_ADDITIONALNUMBERSTRINGUPDATED</td>
+                    <td>RIL_NOTIFY_RADIOEQUIPMENTSTATECHANGED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_NOTIFY_CALLMODIFICATIONINFO</td>
+                    <td>RIL_NOTIFY_RADIOPRESENCECHANGED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_NOTIFY_CALLPROGRESSINFO</td>
+                    <td>RIL_NOTIFY_UICCFILE_DATACHANGE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_NOTIFY_CALLWAITING</td>
+                    <td>RIL_NOTIFY_UICCAPP_DATACHANGE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_NOTIFY_CARDAPPADDED</td>
+                    <td>RIL_NOTIFY_SLOTINFOCHANGED</td>
                     <td></td>
                 </tr>
             
@@ -140,147 +140,17 @@ enum RILNOTIFICATIONS  {
                 </tr>
             
                 <tr>
-                    <td>RIL_NOTIFY_CLEARIDLEMODETEXT</td>
+                    <td>RIL_NOTIFY_CARDAPPADDED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_NOTIFY_CONFPARTICIPANTSTATUS</td>
+                    <td>RIL_NOTIFY_UICCLOCKSTATUS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_NOTIFY_COUNT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_DIALEDID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_DISPLAY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_EMERGENCYMODEENTERED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_EMERGENCYMODEEXITED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_EMERGENCYNUMBERLISTCHANGED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_EXECUTORFOCUSSTATECHANGED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_EXECUTORRFSTATE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_EXECUTORSTATE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_FORWARDBURSTDTMF</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_FORWARDSTARTDTMF</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_FORWARDSTOPDTMF</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_IMSFAILURE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_IMSHANDOVERATTEMPT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_IMSSTATUS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_LINECONTROL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_LOCATIONUPDATE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_MANAGED_ROAMING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_MESSAGE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_MESSAGE_IN_UICC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_MESSAGE_STORAGE_FULL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_MODEMRESET</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_MWIDETAILS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_MWISUMMARY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_NETWORKCODECHANGED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_NITZ</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_OEM_MAX</td>
+                    <td>RIL_NOTIFY_UICCAPPPERSOCHECKSTATUS</td>
                     <td></td>
                 </tr>
             
@@ -300,7 +170,182 @@ enum RILNOTIFICATIONS  {
                 </tr>
             
                 <tr>
+                    <td>RIL_NOTIFY_EMERGENCYNUMBERLISTCHANGED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_REGSTATUSCHANGED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_LOCATIONUPDATE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_NETWORKCODECHANGED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_NOTIFY_PROVISION_STATUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_SYSTEMPREFSCHANGED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_EXECUTORSTATE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_MANAGED_ROAMING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_SIGNALQUALITY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_NITZ</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_UICCTOOLKITCMD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_CALLMODIFICATIONINFO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_CALLPROGRESSINFO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_EMERGENCYMODEENTERED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_EMERGENCYMODEEXITED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_CALLWAITING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_DIALEDID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_DISPLAY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_SUPSVCINFO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_SUPSERVICEDATA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_UNSOLICITEDSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_LINECONTROL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_MESSAGE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_MESSAGE_IN_UICC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_IMSSTATUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_ADDITIONALNUMBERSTRINGUPDATED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_SUPSERVICEDATATERMINATED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_CLEARIDLEMODETEXT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_MESSAGE_STORAGE_FULL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_TONESIGNAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_FORWARDSTARTDTMF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_FORWARDSTOPDTMF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_FORWARDBURSTDTMF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_EXECUTORFOCUSSTATECHANGED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_EXECUTORRFSTATE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_MODEMRESET</td>
                     <td></td>
                 </tr>
             
@@ -310,17 +355,37 @@ enum RILNOTIFICATIONS  {
                 </tr>
             
                 <tr>
-                    <td>RIL_NOTIFY_RADIOEQUIPMENTSTATECHANGED</td>
+                    <td>RIL_NOTIFY_IMSHANDOVERATTEMPT</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_NOTIFY_RADIOPRESENCECHANGED</td>
+                    <td>RIL_NOTIFY_ADDITIONALCALLERINFO</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_NOTIFY_REGSTATUSCHANGED</td>
+                    <td>RIL_NOTIFY_MWISUMMARY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_MWIDETAILS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_IMSFAILURE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_CONFPARTICIPANTSTATUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NOTIFY_SMSREADYSTATUS</td>
                     <td></td>
                 </tr>
             
@@ -335,72 +400,7 @@ enum RILNOTIFICATIONS  {
                 </tr>
             
                 <tr>
-                    <td>RIL_NOTIFY_SIGNALQUALITY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_SLOTINFOCHANGED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_SMSREADYSTATUS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_SUPSERVICEDATA</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_SUPSERVICEDATATERMINATED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_SUPSVCINFO</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_SYSTEMPREFSCHANGED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_TONESIGNAL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_UICCAPP_DATACHANGE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_UICCAPPPERSOCHECKSTATUS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_UICCFILE_DATACHANGE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_UICCLOCKSTATUS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_UICCTOOLKITCMD</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_NOTIFY_UNSOLICITEDSS</td>
+                    <td>RIL_NOTIFY_COUNT</td>
                     <td></td>
                 </tr>
 </table>
@@ -414,11 +414,3 @@ enum RILNOTIFICATIONS  {
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILNOTIFICATIONS enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

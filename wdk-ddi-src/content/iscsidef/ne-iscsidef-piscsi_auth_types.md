@@ -60,6 +60,11 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>ISCSI_NO_AUTH_TYPE</td>
+                    <td>No authentication type was specified.</td>
+                </tr>
+            
+                <tr>
                     <td>ISCSI_CHAP_AUTH_TYPE</td>
                     <td>Challenge handshake authentication protocol (CHAP).</td>
                 </tr>
@@ -67,11 +72,6 @@ typedef enum  {
                 <tr>
                     <td>ISCSI_MUTUAL_CHAP_AUTH_TYPE</td>
                     <td>Mutual (2-way) CHAP authentication.</td>
-                </tr>
-            
-                <tr>
-                    <td>ISCSI_NO_AUTH_TYPE</td>
-                    <td>No authentication type was specified.</td>
                 </tr>
 </table>
 

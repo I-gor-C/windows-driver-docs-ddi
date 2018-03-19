@@ -78,13 +78,11 @@ typedef struct _DXGKARG_PATCH {
 ## Members
 
 
-`AllocationListSize`
+`DmaBufferSegmentId`
 
-[in] The number of elements in the array that <b>pAllocationList</b> specifies.
+[in] The identifier of the memory segment that the DMA buffer was paged in. 
 
-Note that <b>AllocationListSize</b> represents the total size of the allocation list; however, the portion of the allocation list that is associated with the current submission might be smaller. 
-
-Note that for paging operations <b>AllocationListSize</b> is zero because paging buffers are not associated with allocation lists.
+The identifier can be zero if the driver indicated not to map the DMA buffer into the segment by setting the <b>DmaBufferSegmentSet</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_contextinfo.md">DXGK_CONTEXTINFO</a> structure to 0 in a call to the driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a> function. If <b>DmaBufferSegmentId</b> is zero, the DMA buffer was allocated as a contiguous block of system memory.
 
 `DmaBufferPhysicalAddress`
 
@@ -96,25 +94,9 @@ If <b>DmaBufferSegmentId</b> is nonzero, <b>DmaBufferPhysicalAddress</b> is the 
 
 Note that <b>DmaBufferPhysicalAddress</b> always refers to the beginning of the DMA buffer even though the driver might be required to patch or submit a section of the DMA buffer that does not include the beginning of the DMA buffer (that is, if the <b>DmaBufferSubmissionStartOffset</b> member is nonzero).
 
-`DmaBufferPrivateDataSize`
+`pDmaBuffer`
 
-[in] The size, in bytes, of the private driver data at <b>pDmaBufferPrivateData</b>.
-
-Note that <b>DmaBufferPrivateDataSize</b> represents the entire length of the private driver data buffer; however, the portion that is associated with the current submission might be smaller.
-
-`DmaBufferPrivateDataSubmissionEndOffset`
-
-[in] The offset, in bytes, from the beginning of the DMA buffer private data that <b>pDmaBufferPrivateData</b> specifies to the end of the portion of the private data that is associated with the current submission.
-
-`DmaBufferPrivateDataSubmissionStartOffset`
-
-[in] The offset, in bytes, from the beginning of the DMA buffer private data that <b>pDmaBufferPrivateData</b> specifies to the start of the portion of the private data that is associated with the current submission. <b>DmaBufferPrivateDataSubmissionStartOffset</b> is always zero for a nonpaging request.
-
-`DmaBufferSegmentId`
-
-[in] The identifier of the memory segment that the DMA buffer was paged in. 
-
-The identifier can be zero if the driver indicated not to map the DMA buffer into the segment by setting the <b>DmaBufferSegmentSet</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_contextinfo.md">DXGK_CONTEXTINFO</a> structure to 0 in a call to the driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a> function. If <b>DmaBufferSegmentId</b> is zero, the DMA buffer was allocated as a contiguous block of system memory.
+[in] A pointer to the start of the DMA buffer (that is, the virtual address of the beginning of the DMA buffer).
 
 `DmaBufferSize`
 
@@ -122,21 +104,33 @@ The identifier can be zero if the driver indicated not to map the DMA buffer int
 
 Note that <b>DmaBufferSize</b> represents the entire length of the DMA buffer; however, the request to patch or submit might refer to only a portion of the DMA buffer.
 
-`DmaBufferSubmissionEndOffset`
-
-[in] The offset, in bytes, from the beginning of the DMA buffer that <b>pDmaBuffer</b> specifies to the end of the portion of the DMA buffer that requires patching or submitting. The offset that is received at patch time matches the offset that is received at submission time.
-
 `DmaBufferSubmissionStartOffset`
 
 [in] The offset, in bytes, from the beginning of the DMA buffer that <b>pDmaBuffer</b> specifies to the start of the portion of the DMA buffer that requires patching or submitting. The offset that is received at patch time matches the offset that is received at submission time.
 
-`EngineOrdinal`
+`DmaBufferSubmissionEndOffset`
 
-[in] Reserved for future use.
+[in] The offset, in bytes, from the beginning of the DMA buffer that <b>pDmaBuffer</b> specifies to the end of the portion of the DMA buffer that requires patching or submitting. The offset that is received at patch time matches the offset that is received at submission time.
 
-`Flags`
+`pDmaBufferPrivateData`
 
-[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_patchflags.md">DXGK_PATCHFLAGS</a> structure that identifies information about the DMA buffer that requires patching.
+[in] A pointer to the driver-resident private data that is associated with the DMA buffer that <b>pDmaBuffer</b> points to. 
+
+For paging operations, a single paging buffer is used for multiple independent submissions. In that scenario, the driver can indicate—by returning the appropriate private driver data pointer in a call to its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a> function—to have either a single driver private data range for all submissions or one for each submission.
+
+`DmaBufferPrivateDataSize`
+
+[in] The size, in bytes, of the private driver data at <b>pDmaBufferPrivateData</b>.
+
+Note that <b>DmaBufferPrivateDataSize</b> represents the entire length of the private driver data buffer; however, the portion that is associated with the current submission might be smaller.
+
+`DmaBufferPrivateDataSubmissionStartOffset`
+
+[in] The offset, in bytes, from the beginning of the DMA buffer private data that <b>pDmaBufferPrivateData</b> specifies to the start of the portion of the private data that is associated with the current submission. <b>DmaBufferPrivateDataSubmissionStartOffset</b> is always zero for a nonpaging request.
+
+`DmaBufferPrivateDataSubmissionEndOffset`
+
+[in] The offset, in bytes, from the beginning of the DMA buffer private data that <b>pDmaBufferPrivateData</b> specifies to the end of the portion of the private data that is associated with the current submission.
 
 `pAllocationList`
 
@@ -144,35 +138,13 @@ Note that <b>DmaBufferSize</b> represents the entire length of the DMA buffer; h
 
 For paging operations, <b>pAllocationList</b> is <b>NULL</b> because paging buffers are not associated with allocation lists.
 
-`PatchLocationListSize`
+`AllocationListSize`
 
-[in] The number of elements in the array that <b>pPatchLocationList</b> specifies.
+[in] The number of elements in the array that <b>pAllocationList</b> specifies.
 
-Note that <b>PatchLocationListSize</b> represents the total size of the patch-location list; however, the range that the driver must process is typically smaller. 
+Note that <b>AllocationListSize</b> represents the total size of the allocation list; however, the portion of the allocation list that is associated with the current submission might be smaller. 
 
-For paging operations, <b>PatchLocationListSize</b> is zero because paging buffers are not associated with patch-location lists.
-
-`PatchLocationListSubmissionLength`
-
-[in] The number of elements in the patch-location list that <b>pPatchLocationList</b> specifies that must be processed.
-
-For paging operations, <b>PatchLocationListSubmissionLength</b> is zero.
-
-`PatchLocationListSubmissionStart`
-
-[in] The index of the first element in the patch-location list that <b>pPatchLocationList</b> specifies that must be processed. 
-
-For paging operations, <b>PatchLocationListSubmissionStart</b> is zero.
-
-`pDmaBuffer`
-
-[in] A pointer to the start of the DMA buffer (that is, the virtual address of the beginning of the DMA buffer).
-
-`pDmaBufferPrivateData`
-
-[in] A pointer to the driver-resident private data that is associated with the DMA buffer that <b>pDmaBuffer</b> points to. 
-
-For paging operations, a single paging buffer is used for multiple independent submissions. In that scenario, the driver can indicate—by returning the appropriate private driver data pointer in a call to its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a> function—to have either a single driver private data range for all submissions or one for each submission.
+Note that for paging operations <b>AllocationListSize</b> is zero because paging buffers are not associated with allocation lists.
 
 `pPatchLocationList`
 
@@ -182,9 +154,37 @@ Note that the array can begin with an element that is before the range that is u
 
 For paging operations, <b>pPatchLocationList</b> is <b>NULL</b> because paging buffers are not associated with patch-location lists.
 
+`PatchLocationListSize`
+
+[in] The number of elements in the array that <b>pPatchLocationList</b> specifies.
+
+Note that <b>PatchLocationListSize</b> represents the total size of the patch-location list; however, the range that the driver must process is typically smaller. 
+
+For paging operations, <b>PatchLocationListSize</b> is zero because paging buffers are not associated with patch-location lists.
+
+`PatchLocationListSubmissionStart`
+
+[in] The index of the first element in the patch-location list that <b>pPatchLocationList</b> specifies that must be processed. 
+
+For paging operations, <b>PatchLocationListSubmissionStart</b> is zero.
+
+`PatchLocationListSubmissionLength`
+
+[in] The number of elements in the patch-location list that <b>pPatchLocationList</b> specifies that must be processed.
+
+For paging operations, <b>PatchLocationListSubmissionLength</b> is zero.
+
 `SubmissionFenceId`
 
 [in] A unique identifier that the driver can write into the fence command at the end of the DMA buffer. For more information about this type of identifier, see <a href="https://msdn.microsoft.com/0ec8a4eb-c441-47ae-b5de-d86e6065ffd4">Supplying Fence Identifiers</a>.
+
+`Flags`
+
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_patchflags.md">DXGK_PATCHFLAGS</a> structure that identifies information about the DMA buffer that requires patching.
+
+`EngineOrdinal`
+
+[in] Reserved for future use.
 
 ## Remarks
 The display miniport driver returns an array in the <b>pAllocationList</b> member of a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_present.md">DXGKARG_PRESENT</a> or <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_render.md">DXGKARG_RENDER</a> structure from its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a> or <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a> function after it translates the command buffer to a direct memory access (DMA) buffer. The video memory manager assigns physical addresses to the <b>PhysicalAddress</b> members of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a> structures in the array and passes this array to the driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_patch.md">DxgkDdiPatch</a> function. <b>DxgkDdiPatch</b> patches places in the DMA buffer with these physical addresses.
@@ -238,11 +238,3 @@ The display miniport driver returns an array in the <b>pAllocationList</b> membe
 
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_patchflags.md">DXGK_PATCHFLAGS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_PATCH structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -64,13 +64,8 @@ typedef enum D3D12DDI_HEAP_FLAGS {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_HEAP_FLAG_BUFFERS</td>
-                    <td>The heap supports resources allocated for buffers.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_HEAP_FLAG_COHERENT_SYSTEMWIDE</td>
-                    <td>The heap supports resources allocated for coherent systemwide.</td>
+                    <td>D3D12DDI_HEAP_FLAG_NONE</td>
+                    <td>No flags.</td>
                 </tr>
             
                 <tr>
@@ -79,8 +74,13 @@ typedef enum D3D12DDI_HEAP_FLAGS {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_HEAP_FLAG_NONE</td>
-                    <td>No flags.</td>
+                    <td>D3D12DDI_HEAP_FLAG_BUFFERS</td>
+                    <td>The heap supports resources allocated for buffers.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_HEAP_FLAG_COHERENT_SYSTEMWIDE</td>
+                    <td>The heap supports resources allocated for coherent systemwide.</td>
                 </tr>
             
                 <tr>

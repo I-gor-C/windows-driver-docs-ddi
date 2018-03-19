@@ -75,9 +75,11 @@ A
       <a href="https://msdn.microsoft.com/library/windows/hardware/ff569846">ONEX_REASON_CODE</a> type that specifies the
       reason code of the 802.1X exchange.
 
-`dwMPPERecvKeyLen`
+`pbMPPESendKey`
 
-The size, in bytes, of the MPPE Receive-Key.
+A pointer to a Microsoft Point-to-Point Encryption (MPPE) Send-Key. This key is encrypted and
+     should be decrypted by calling the 
+     <b>CryptUnprotectData</b> function that is documented in the Windows SDK.
 
 `dwMPPESendKeyLen`
 
@@ -89,11 +91,9 @@ A pointer to a Microsoft Point-to-Point Encryption (MPPE) Receive-Key. This key 
      should be decrypted by calling the 
      <b>CryptUnprotectData</b> function that is documented in the Windows SDK.
 
-`pbMPPESendKey`
+`dwMPPERecvKeyLen`
 
-A pointer to a Microsoft Point-to-Point Encryption (MPPE) Send-Key. This key is encrypted and
-     should be decrypted by calling the 
-     <b>CryptUnprotectData</b> function that is documented in the Windows SDK.
+The size, in bytes, of the MPPE Receive-Key.
 
 `pDot11EapResult`
 
@@ -119,11 +119,3 @@ A pointer to a
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569845">ONEX_AUTH_STATUS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MSONEX_RESULT_PARAMS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

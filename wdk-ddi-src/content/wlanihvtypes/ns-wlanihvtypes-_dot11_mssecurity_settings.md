@@ -75,20 +75,20 @@ A
      <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a> type that
      specifies the cipher algorithm for data encryption and decryption.
 
-`dwEapConnectionDataLen`
+`fOneXEnabled`
 
-The size, in bytes, of the EAP connection data buffer pointed to by the 
-     <b>pEapConnectionData</b> member.
+A Boolean value that indicates whether the Microsoft 802.1X implementation is enabled. If <b>TRUE</b>,
+     Microsoft 802.1X is enabled; otherwise, Microsoft 802.1X is disabled.
 
 `eapMethodType`
 
 An EAP_METHOD_TYPE type that specifies the extensible authentication protocol (EAP) method. For
      information about EAP_METHOD_TYPE, see the Microsoft Windows SDK.
 
-`fOneXEnabled`
+`dwEapConnectionDataLen`
 
-A Boolean value that indicates whether the Microsoft 802.1X implementation is enabled. If <b>TRUE</b>,
-     Microsoft 802.1X is enabled; otherwise, Microsoft 802.1X is disabled.
+The size, in bytes, of the EAP connection data buffer pointed to by the 
+     <b>pEapConnectionData</b> member.
 
 `pEapConnectionData`
 
@@ -108,11 +108,3 @@ A pointer to the EAP connection data buffer.
 
 
 <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MSSECURITY_SETTINGS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -59,13 +59,13 @@ typedef enum _D3DDDI_HDR_METADATA_TYPE {
 <table>
             
                 <tr>
-                    <td>D3DDDI_HDR_METADATA_TYPE_HDR10</td>
-                    <td>The HDR metadata is defined using the D3DDDI_HDR_METADATA_HDR10 structure.</td>
+                    <td>D3DDDI_HDR_METADATA_TYPE_NONE</td>
+                    <td>No HDR metadata is present.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_HDR_METADATA_TYPE_NONE</td>
-                    <td>No HDR metadata is present.</td>
+                    <td>D3DDDI_HDR_METADATA_TYPE_HDR10</td>
+                    <td>The HDR metadata is defined using the D3DDDI_HDR_METADATA_HDR10 structure.</td>
                 </tr>
 </table>
 

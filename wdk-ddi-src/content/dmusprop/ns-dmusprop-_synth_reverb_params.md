@@ -59,10 +59,6 @@ typedef struct _SYNTH_REVERB_PARAMS {
 ## Members
 
 
-`fHighFreqRTRatio`
-
-Specifies the ratio of the high frequencies to the global reverb time. Unless very 'splashy-bright' reverberations are desired, this should be set to a value less than 1.0. For example, if <b>dRevTime</b> is 1000ms and HHighFreqRTRatio is 0.1, then the decay time for high frequencies will be 100ms.
-
 `fInGain`
 
 Specifies the input gain in decibels (dB) to avoid output overflows.
@@ -74,6 +70,10 @@ Specifies the reverb mix in dB. 0dB specifies 100% wet reverb (no direct signal)
 `fReverbTime`
 
 Specifies the reverb delay time in milliseconds.
+
+`fHighFreqRTRatio`
+
+Specifies the ratio of the high frequencies to the global reverb time. Unless very 'splashy-bright' reverberations are desired, this should be set to a value less than 1.0. For example, if <b>dRevTime</b> is 1000ms and HHighFreqRTRatio is 0.1, then the decay time for high frequencies will be 100ms.
 
 
 ## Requirements

@@ -78,25 +78,38 @@ typedef enum _DOT11_AUTH_ALGORITHM {
                 </tr>
             
                 <tr>
-                    <td>DOT11_AUTH_ALGO_IHV_END</td>
-                    <td>Specifies the end of the range that specifies proprietary authentication algorithms that are
-     developed by an IHV.
+                    <td>DOT11_AUTH_ALGO_WPA</td>
+                    <td>Specifies a Wi-Fi Protected Access (WPA) algorithm. IEEE 802.1X port authorization is performed by
+     the supplicant, authenticator, and authentication server. Cipher keys are dynamically derived through
+     the authentication process. 
      
 
-The 
-     DOT11_AUTH_ALGO_IHV_END enumerator is valid only when the miniport driver is operating in ExtSTA
-     mode.</td>
+This algorithm is valid only for basic service set (BSS) types of 
+     dot11_BSS_type_infrastructure.
+
+When the WPA algorithm is enabled, the 802.11 station associates only with an access point whose
+     beacon or probe responses contain the authentication suite of type 1 (802.1X) within the WPA information
+     element (IE).</td>
                 </tr>
             
                 <tr>
-                    <td>DOT11_AUTH_ALGO_IHV_START</td>
-                    <td>Specifies the start of the range that specifies proprietary authentication algorithms that are
-     developed by an IHV.
+                    <td>DOT11_AUTH_ALGO_WPA_PSK</td>
+                    <td>Specifies a Wi-Fi Protected Access (WPA) algorithm that uses preshared keys (PSK). IEEE 802.1X
+     port authorization is performed by the supplicant and authenticator. Cipher keys are dynamically derived
+     through a preshared key that is used on both the supplicant and authenticator. 
      
 
-The 
-     DOT11_AUTH_ALGO_IHV_START enumerator is valid only when the miniport driver is operating in
-     Extensible Station (ExtSTA) mode.</td>
+This algorithm is valid only for BSS types of 
+     dot11_BSS_type_infrastructure.
+
+When the WPA PSK algorithm is enabled, the 802.11 station will associate only with an access point
+     whose beacon or probe responses contain the authentication suite of type 2 (preshared key) within the
+     WPA IE.</td>
+                </tr>
+            
+                <tr>
+                    <td>DOT11_AUTH_ALGO_WPA_NONE</td>
+                    <td>This value is not supported.</td>
                 </tr>
             
                 <tr>
@@ -127,38 +140,25 @@ When the RSNA PSK algorithm is enabled, the 802.11 station will associate only w
                 </tr>
             
                 <tr>
-                    <td>DOT11_AUTH_ALGO_WPA</td>
-                    <td>Specifies a Wi-Fi Protected Access (WPA) algorithm. IEEE 802.1X port authorization is performed by
-     the supplicant, authenticator, and authentication server. Cipher keys are dynamically derived through
-     the authentication process. 
+                    <td>DOT11_AUTH_ALGO_IHV_START</td>
+                    <td>Specifies the start of the range that specifies proprietary authentication algorithms that are
+     developed by an IHV.
      
 
-This algorithm is valid only for basic service set (BSS) types of 
-     dot11_BSS_type_infrastructure.
-
-When the WPA algorithm is enabled, the 802.11 station associates only with an access point whose
-     beacon or probe responses contain the authentication suite of type 1 (802.1X) within the WPA information
-     element (IE).</td>
+The 
+     DOT11_AUTH_ALGO_IHV_START enumerator is valid only when the miniport driver is operating in
+     Extensible Station (ExtSTA) mode.</td>
                 </tr>
             
                 <tr>
-                    <td>DOT11_AUTH_ALGO_WPA_NONE</td>
-                    <td>This value is not supported.</td>
-                </tr>
-            
-                <tr>
-                    <td>DOT11_AUTH_ALGO_WPA_PSK</td>
-                    <td>Specifies a Wi-Fi Protected Access (WPA) algorithm that uses preshared keys (PSK). IEEE 802.1X
-     port authorization is performed by the supplicant and authenticator. Cipher keys are dynamically derived
-     through a preshared key that is used on both the supplicant and authenticator. 
+                    <td>DOT11_AUTH_ALGO_IHV_END</td>
+                    <td>Specifies the end of the range that specifies proprietary authentication algorithms that are
+     developed by an IHV.
      
 
-This algorithm is valid only for BSS types of 
-     dot11_BSS_type_infrastructure.
-
-When the WPA PSK algorithm is enabled, the 802.11 station will associate only with an access point
-     whose beacon or probe responses contain the authentication suite of type 2 (preshared key) within the
-     WPA IE.</td>
+The 
+     DOT11_AUTH_ALGO_IHV_END enumerator is valid only when the miniport driver is operating in ExtSTA
+     mode.</td>
                 </tr>
             
                 <tr>
@@ -222,11 +222,3 @@ If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport
 
 <a href="..\windot11\ns-windot11-dot11_association_completion_parameters.md">
    DOT11_ASSOCIATION_COMPLETION_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_AUTH_ALGORITHM enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

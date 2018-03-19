@@ -66,6 +66,11 @@ typedef enum _DXGK_DISPLAYPANELORIENTATION {
                 </tr>
             
                 <tr>
+                    <td>DXGK_DPO_90</td>
+                    <td>Indicates a 90 degree rotation.</td>
+                </tr>
+            
+                <tr>
                     <td>DXGK_DPO_180</td>
                     <td>Indicates a 180 degree rotation.</td>
                 </tr>
@@ -73,11 +78,6 @@ typedef enum _DXGK_DISPLAYPANELORIENTATION {
                 <tr>
                     <td>DXGK_DPO_270</td>
                     <td>Indicates a 270 degree rotation.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_DPO_90</td>
-                    <td>Indicates a 90 degree rotation.</td>
                 </tr>
             
                 <tr>

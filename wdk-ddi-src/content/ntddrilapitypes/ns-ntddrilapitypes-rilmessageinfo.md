@@ -65,7 +65,7 @@ typedef struct _RILMESSAGEINFO {
 
 
 
-`dwIndex`
+`hUiccApp`
 
 
 
@@ -73,11 +73,11 @@ typedef struct _RILMESSAGEINFO {
 
 
 
+`dwIndex`
+
+
+
 `dwStatus`
-
-
-
-`hUiccApp`
 
 
 

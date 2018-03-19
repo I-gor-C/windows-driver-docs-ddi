@@ -61,6 +61,10 @@ typedef struct _D3DDDICB_CREATECONTEXTVIRTUAL {
 ## Members
 
 
+`NodeOrdinal`
+
+[in] The zero-based index for the node that the context is scheduled on.
+
 `EngineAffinity`
 
 [in] The zero-based index for the engine, within the node that <b>NodeOrdinal</b> specifies, that the context can run in.
@@ -69,14 +73,6 @@ typedef struct _D3DDDICB_CREATECONTEXTVIRTUAL {
 
 [in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context.
 
-`hContext`
-
-[out] A handle to the context that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcontextvirtualcb.md">pfnCreateContextVirtualCb</a> function creates.
-
-`NodeOrdinal`
-
-[in] The zero-based index for the node that the context is scheduled on.
-
 `pPrivateDriverData`
 
 [in] A pointer to private data that is passed to a display miniport driver.
@@ -84,6 +80,10 @@ typedef struct _D3DDDICB_CREATECONTEXTVIRTUAL {
 `PrivateDriverDataSize`
 
 [in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
+
+`hContext`
+
+[out] A handle to the context that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcontextvirtualcb.md">pfnCreateContextVirtualCb</a> function creates.
 
 
 ## Requirements
@@ -99,11 +99,3 @@ typedef struct _D3DDDICB_CREATECONTEXTVIRTUAL {
 
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcontextvirtualcb.md">pfnCreateContextVirtualCb</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDICB_CREATECONTEXTVIRTUAL structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

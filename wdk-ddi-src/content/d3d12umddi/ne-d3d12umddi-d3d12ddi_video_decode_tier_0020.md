@@ -61,6 +61,11 @@ typedef enum D3D12DDI_VIDEO_DECODE_TIER_0020 {
 <table>
             
                 <tr>
+                    <td>D3D12DDI_VIDEO_DECODE_TIER_0020_NOT_SUPPORTED</td>
+                    <td>The decode profile is not supported.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D12DDI_VIDEO_DECODE_TIER_0020_1</td>
                     <td>Video decode tier 1.</td>
                 </tr>
@@ -73,11 +78,6 @@ typedef enum D3D12DDI_VIDEO_DECODE_TIER_0020 {
                 <tr>
                     <td>D3D12DDI_VIDEO_DECODE_TIER_0020_3</td>
                     <td>Video decode tier 3.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_VIDEO_DECODE_TIER_0020_NOT_SUPPORTED</td>
-                    <td>The decode profile is not supported.</td>
                 </tr>
 </table>
 

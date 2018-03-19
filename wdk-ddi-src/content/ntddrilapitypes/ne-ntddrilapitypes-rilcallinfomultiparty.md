@@ -59,7 +59,7 @@ typedef enum _RILCALLINFOMULTIPARTY {
 <table>
             
                 <tr>
-                    <td>RIL_CALL_MAX</td>
+                    <td>RIL_CALL_SINGLEPARTY</td>
                     <td></td>
                 </tr>
             
@@ -69,7 +69,7 @@ typedef enum _RILCALLINFOMULTIPARTY {
                 </tr>
             
                 <tr>
-                    <td>RIL_CALL_SINGLEPARTY</td>
+                    <td>RIL_CALL_MAX</td>
                     <td></td>
                 </tr>
 </table>

@@ -81,10 +81,6 @@ Contains an enumeration value of type <a href="https://msdn.microsoft.com/librar
 
 that specifies the class of the SD command.
 
-`ResponseType`
-
-Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538025">SD_RESPONSE_TYPE</a> that indicates the type of response that the card sends in response to the command indicated in the <b>Cmd</b> member.
-
 `TransferDirection`
 
 Contains an enumeration value of type <a href="https://msdn.microsoft.com/1e821ca5-ff65-48a1-be5c-6d776c61f166">SD_TRANSFER_DIRECTION</a> that indicates the direction of the data transfer.
@@ -92,6 +88,10 @@ Contains an enumeration value of type <a href="https://msdn.microsoft.com/1e821c
 `TransferType`
 
 Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538045">SD_TRANSFER_TYPE</a> that indicates the type of the data transfer.
+
+`ResponseType`
+
+Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538025">SD_RESPONSE_TYPE</a> that indicates the type of response that the card sends in response to the command indicated in the <b>Cmd</b> member.
 
 ## Remarks
 To send a command to an SD device, a device driver must complete the following steps:
@@ -148,11 +148,3 @@ If a driver submits a command request without properly initializing the <b>Trans
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SDCMD_DESCRIPTOR structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

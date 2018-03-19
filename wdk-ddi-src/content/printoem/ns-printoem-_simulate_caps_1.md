@@ -61,21 +61,9 @@ typedef struct _SIMULATE_CAPS_1 {
 ## Members
 
 
-`dwCollate`
-
-Specifies whether the spooler supports collation. A value of 1 indicates that the spooler supports collation, and a value of 0 indicates that it does not.
-
 `dwLevel`
 
 Specifies the version of this structure. This value must be 1.
-
-`dwNumberOfCopies`
-
-Specifies the maximum number of copies the spooler can handle.
-
-`dwNupOptions`
-
-Is a bitmask representing the various numbers of document pages the printer can print on a physical page. The least significant bit represents 1 document page per page, the next bit represents 2 document pages per page, the next bit represents 3 document pages per physical page, and so on. For example, 0x0000810B indicates that the spooler supports 1, 2, 4, 9, and 16 document pages per physical page.
 
 `dwPageOrderFlags`
 
@@ -118,6 +106,18 @@ Pages should be printed in reverse order: last page, next-to-last page, and so o
 </tr>
 </table>
 
+`dwNumberOfCopies`
+
+Specifies the maximum number of copies the spooler can handle.
+
+`dwCollate`
+
+Specifies whether the spooler supports collation. A value of 1 indicates that the spooler supports collation, and a value of 0 indicates that it does not.
+
+`dwNupOptions`
+
+Is a bitmask representing the various numbers of document pages the printer can print on a physical page. The least significant bit represents 1 document page per page, the next bit represents 2 document pages per page, the next bit represents 3 document pages per physical page, and so on. For example, 0x0000810B indicates that the spooler supports 1, 2, 4, 9, and 16 document pages per physical page.
+
 ## Remarks
 The <b>IPrintCoreUI2::QuerySimulationSupport</b> method uses this structure to report the spooler's level of simulation support to a user-interface plug-in.
 
@@ -129,11 +129,3 @@ The <b>IPrintCoreUI2::QuerySimulationSupport</b> method uses this structure to r
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553074">IPrintCoreUI2::QuerySimulationSupport</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20SIMULATE_CAPS_1 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

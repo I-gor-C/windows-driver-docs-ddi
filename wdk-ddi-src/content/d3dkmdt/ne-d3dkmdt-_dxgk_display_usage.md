@@ -61,13 +61,8 @@ typedef enum _DXGK_DISPLAY_USAGE {
 <table>
             
                 <tr>
-                    <td>BYTE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_DU_AR</td>
-                    <td>A head mounted augmented reality display.</td>
+                    <td>DXGK_DU_INVALID</td>
+                    <td>Invalid type.</td>
                 </tr>
             
                 <tr>
@@ -76,8 +71,13 @@ typedef enum _DXGK_DISPLAY_USAGE {
                 </tr>
             
                 <tr>
-                    <td>DXGK_DU_INVALID</td>
-                    <td>Invalid type.</td>
+                    <td>DXGK_DU_AR</td>
+                    <td>A head mounted augmented reality display.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_DU_VR</td>
+                    <td>A head mounted virtual reality display.</td>
                 </tr>
             
                 <tr>
@@ -86,8 +86,8 @@ typedef enum _DXGK_DISPLAY_USAGE {
                 </tr>
             
                 <tr>
-                    <td>DXGK_DU_VR</td>
-                    <td>A head mounted virtual reality display.</td>
+                    <td>BYTE</td>
+                    <td></td>
                 </tr>
 </table>
 

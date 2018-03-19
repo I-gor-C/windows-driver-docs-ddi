@@ -64,6 +64,11 @@ typedef enum _NDIS_PM_WOL_PACKET {
 <table>
             
                 <tr>
+                    <td>NdisPMWoLPacketUnspecified</td>
+                    <td>The WOL packet type is not specified.</td>
+                </tr>
+            
+                <tr>
                     <td>NdisPMWoLPacketBitmapPattern</td>
                     <td>Specifies a bitmap pattern. This packet type is specified in the 
      <b>WoLBitMapPattern</b> member of the 
@@ -71,9 +76,10 @@ typedef enum _NDIS_PM_WOL_PACKET {
                 </tr>
             
                 <tr>
-                    <td>NdisPMWoLPacketEapolRequestIdMessage</td>
-                    <td>Specifies an EAPOL request message packet. This packet type is specified in the 
-     <b>EapolRequestIdMessageParameters</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wol_pattern.md">NDIS_PM_WOL_PATTERN</a> structure.</td>
+                    <td>NdisPMWoLPacketMagicPacket</td>
+                    <td>WOL packets based on WOL magic packet. The media access control (MAC) address in the 
+     <a href="https://technet.microsoft.com/en-us/windows/hh147630.aspx">magic packet</a> is the current MAC
+     address of the network adapter.</td>
                 </tr>
             
                 <tr>
@@ -89,21 +95,15 @@ typedef enum _NDIS_PM_WOL_PACKET {
                 </tr>
             
                 <tr>
-                    <td>NdisPMWoLPacketMagicPacket</td>
-                    <td>WOL packets based on WOL magic packet. The media access control (MAC) address in the 
-     <a href="https://technet.microsoft.com/en-us/windows/hh147630.aspx">magic packet</a> is the current MAC
-     address of the network adapter.</td>
+                    <td>NdisPMWoLPacketEapolRequestIdMessage</td>
+                    <td>Specifies an EAPOL request message packet. This packet type is specified in the 
+     <b>EapolRequestIdMessageParameters</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wol_pattern.md">NDIS_PM_WOL_PATTERN</a> structure.</td>
                 </tr>
             
                 <tr>
                     <td>NdisPMWoLPacketMaximum</td>
                     <td>The maximum value for this enumeration. This value might change in future versions of NDIS header
      files and binaries.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisPMWoLPacketUnspecified</td>
-                    <td>The WOL packet type is not specified.</td>
                 </tr>
 </table>
 
@@ -127,11 +127,3 @@ The <b>NDIS_PM_WOL_PACKET</b> enumeration is used in the
 ## See Also
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wol_pattern.md">NDIS_PM_WOL_PATTERN</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_WOL_PACKET enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

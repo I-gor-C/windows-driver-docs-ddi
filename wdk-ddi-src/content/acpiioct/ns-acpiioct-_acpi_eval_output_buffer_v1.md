@@ -59,21 +59,21 @@ typedef struct _ACPI_EVAL_OUTPUT_BUFFER_V1 {
 ## Members
 
 
-`Argument`
+`Signature`
 
-An array of <b>ACPI_METHOD_ARGUMENT</b> structures. For more information, see Remarks.
-
-`Count`
-
-The number of <a href="..\acpiioct\ns-acpiioct-_acpi_method_argument_v1.md">ACPI_METHOD_ARGUMENT</a> structures that the <b>Argument</b> array contains.
+The signature of the output buffer, which must be set to ACPI_EVAL_OUTPUT_BUFFER_SIGNATURE.
 
 `Length`
 
 The size, in bytes, of the output buffer. This size includes the storage for the <b>ACPI_EVAL_OUTPUT_BUFFER</b> structure at the start of the output buffer, plus any additional storage that might be required for data in the <b>Argument</b> array that extends past the end of the <b>ACPI_EVAL_OUTPUT_BUFFER</b> structure.
 
-`Signature`
+`Count`
 
-The signature of the output buffer, which must be set to ACPI_EVAL_OUTPUT_BUFFER_SIGNATURE.
+The number of <a href="..\acpiioct\ns-acpiioct-_acpi_method_argument_v1.md">ACPI_METHOD_ARGUMENT</a> structures that the <b>Argument</b> array contains.
+
+`Argument`
+
+An array of <b>ACPI_METHOD_ARGUMENT</b> structures. For more information, see Remarks.
 
 ## Remarks
 The following ACPI IOCTLs return output arguments from ACPI control methods in an <b>ACPI_EVAL_OUTPUT_BUFFER</b> structure:
@@ -107,11 +107,3 @@ For more information about how to use <b>ACPI_EVAL_OUTPUT_BUFFER</b> structures 
 ## See Also
 
 <a href="..\acpiioct\ns-acpiioct-_acpi_method_argument_v1.md">ACPI_METHOD_ARGUMENT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20ACPI_EVAL_OUTPUT_BUFFER_V1 structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

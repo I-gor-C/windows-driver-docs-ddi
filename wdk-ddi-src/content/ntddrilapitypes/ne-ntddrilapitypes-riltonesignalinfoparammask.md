@@ -61,17 +61,7 @@ typedef enum _RILTONESIGNALINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_TONESIGNAL_All</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_TONESIGNAL_EXECUTOR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_TONESIGNAL_GPP2ISDNALERTING</td>
+                    <td>RIL_PARAM_TONESIGNAL_GPPTONE</td>
                     <td></td>
                 </tr>
             
@@ -81,7 +71,17 @@ typedef enum _RILTONESIGNALINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_TONESIGNAL_GPPTONE</td>
+                    <td>RIL_PARAM_TONESIGNAL_GPP2ISDNALERTING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TONESIGNAL_EXECUTOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TONESIGNAL_All</td>
                     <td></td>
                 </tr>
 </table>

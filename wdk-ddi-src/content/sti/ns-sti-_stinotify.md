@@ -59,10 +59,6 @@ typedef struct _STINOTIFY {
 ## Members
 
 
-`abNotificationData`
-
-Byte array containing optional, vendor-defined information.
-
 `dwSize`
 
 Caller-supplied size, in bytes, of the STINOTIFY structure.
@@ -70,6 +66,10 @@ Caller-supplied size, in bytes, of the STINOTIFY structure.
 `guidNotificationCode`
 
 GUID of the event. For more information, see <a href="https://msdn.microsoft.com/5f9be89c-8442-4894-b2f6-a4d3558464bf">Still Image Device Events</a>.
+
+`abNotificationData`
+
+Byte array containing optional, vendor-defined information.
 
 
 ## Requirements

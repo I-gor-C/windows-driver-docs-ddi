@@ -60,6 +60,11 @@ typedef enum _FILTER_DUMP_TYPE {
 <table>
             
                 <tr>
+                    <td>DumpTypeUndefined</td>
+                    <td>This dump type is undefined.</td>
+                </tr>
+            
+                <tr>
                     <td>DumpTypeCrashdump</td>
                     <td>This dump type is for the crash dump stack.</td>
                 </tr>
@@ -67,11 +72,6 @@ typedef enum _FILTER_DUMP_TYPE {
                 <tr>
                     <td>DumpTypeHibernation</td>
                     <td>This dump type is for hibernation.</td>
-                </tr>
-            
-                <tr>
-                    <td>DumpTypeUndefined</td>
-                    <td>This dump type is undefined.</td>
                 </tr>
 </table>
 

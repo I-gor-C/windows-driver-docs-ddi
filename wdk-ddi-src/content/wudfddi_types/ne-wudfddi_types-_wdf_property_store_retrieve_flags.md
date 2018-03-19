@@ -67,6 +67,11 @@ typedef enum _WDF_PROPERTY_STORE_RETRIEVE_FLAGS {
 <table>
             
                 <tr>
+                    <td>WdfPropertyStoreNormal</td>
+                    <td>Do not create the registry key if it does not exist.</td>
+                </tr>
+            
+                <tr>
                     <td>WdfPropertyStoreCreateIfMissing</td>
                     <td>Create the registry key if it does not exist. The key will be <i>nonvolatile</i>, which means that it will not be deleted when Windows restarts.</td>
                 </tr>
@@ -74,11 +79,6 @@ typedef enum _WDF_PROPERTY_STORE_RETRIEVE_FLAGS {
                 <tr>
                     <td>WdfPropertyStoreCreateVolatile</td>
                     <td>Create the registry key if it does not exist. The key will be volatile, which means that it will be deleted when Windows restarts. This flag is available in UMDF versions 1.9 and later.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfPropertyStoreNormal</td>
-                    <td>Do not create the registry key if it does not exist.</td>
                 </tr>
             
                 <tr>
@@ -107,11 +107,3 @@ typedef enum _WDF_PROPERTY_STORE_RETRIEVE_FLAGS {
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PROPERTY_STORE_RETRIEVE_FLAGS enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

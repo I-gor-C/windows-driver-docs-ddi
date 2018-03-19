@@ -57,13 +57,13 @@ typedef struct _D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS {
 ## Members
 
 
-`BrightnessLevels`
-
-The specific brightness levels that the integrated display panel supports.
-
 `LevelCount`
 
 The number of brightness levels that the integrated display panel supports.
+
+`BrightnessLevels`
+
+The specific brightness levels that the integrated display panel supports.
 
 
 ## Requirements

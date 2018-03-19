@@ -62,18 +62,8 @@ typedef enum _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON {
 <table>
             
                 <tr>
-                    <td>DXGK_RVT_AUGMENTATION_LKGOVERRIDE</td>
-                    <td>Indicates that the call is being made during the VidPN topology augmentation by the display mode manager (DMM), giving the display miniport driver a chance to override the last known good VidPN topology.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_RVT_AUGMENTATION_NOLKG</td>
-                    <td>Indicates that the call is being made during the VidPN topology augmentation by the display mode manager (DMM) after an attempt to use the last known good VidPN topology failed.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_RVT_INITIALIZATION_LKGOVERRIDE</td>
-                    <td>Indicates that the call is being made during the initialization of the display adapter, giving the display miniport driver a chance to override the last known good VidPN topology.</td>
+                    <td>DXGK_RVT_UNINITIALIZED</td>
+                    <td>Indicates that a variable of type <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_recommendvidpntopology_reason.md">DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</a> has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>
@@ -82,8 +72,18 @@ typedef enum _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON {
                 </tr>
             
                 <tr>
-                    <td>DXGK_RVT_UNINITIALIZED</td>
-                    <td>Indicates that a variable of type <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_recommendvidpntopology_reason.md">DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</a> has not yet been assigned a meaningful value.</td>
+                    <td>DXGK_RVT_AUGMENTATION_NOLKG</td>
+                    <td>Indicates that the call is being made during the VidPN topology augmentation by the display mode manager (DMM) after an attempt to use the last known good VidPN topology failed.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_RVT_AUGMENTATION_LKGOVERRIDE</td>
+                    <td>Indicates that the call is being made during the VidPN topology augmentation by the display mode manager (DMM), giving the display miniport driver a chance to override the last known good VidPN topology.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_RVT_INITIALIZATION_LKGOVERRIDE</td>
+                    <td>Indicates that the call is being made during the initialization of the display adapter, giving the display miniport driver a chance to override the last known good VidPN topology.</td>
                 </tr>
 </table>
 

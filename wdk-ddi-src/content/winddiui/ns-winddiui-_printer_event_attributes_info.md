@@ -63,13 +63,13 @@ typedef struct _PRINTER_EVENT_ATTRIBUTES_INFO {
 
 Specifies the size of this structure.
 
-`dwNewAttributes`
-
-A set of bits describing the new printer attributes to be applied to the printer.
-
 `dwOldAttributes`
 
 A set of bits describing the current printer attributes.
+
+`dwNewAttributes`
+
+A set of bits describing the new printer attributes to be applied to the printer.
 
 ## Remarks
 The bits in the <b>dwOldAttributes</b> and <b>dwNewAttributes</b> members of this structure are set in accordance with the <b>Attributes</b> member of the PRINTER_INFO_2 structure (defined in the Microsoft Windows SDK documentation).
@@ -88,11 +88,3 @@ Because this structure might become larger in future operating system versions, 
 
 
 <a href="..\winddiui\nf-winddiui-drvprinterevent.md">DrvPrinterEvent</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20PRINTER_EVENT_ATTRIBUTES_INFO structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

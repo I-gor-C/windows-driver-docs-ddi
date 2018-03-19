@@ -62,6 +62,17 @@ typedef struct _WWAN_SMS_SEND_CDMA {
 ## Members
 
 
+`EncodingId`
+
+The encoding that is used in the CDMA message. 
+     <b>EncodedMsg</b> message should be interpreted based on the value of this member.
+
+`LanguageId`
+
+The language used in CDMA message. This is an indicator of the language used in SMS message and
+     may be set to 
+     <b>WwanSmsCdmaLangUnknown</b>, if the language is not known.
+
 `Address`
 
 A NULL-terminated string with a maximum length of 15 digits that represents a mobile number. The
@@ -87,21 +98,6 @@ If
      <i>WwanMsgStatusNew</i> or 
      <i>WwanMsgStatusOld</i>, miniport drivers should specify the sender's mobile number.
 
-`EncodedMsg`
-
-The encoded content that represents the CDMA-based SMS text message.
-
-`EncodingId`
-
-The encoding that is used in the CDMA message. 
-     <b>EncodedMsg</b> message should be interpreted based on the value of this member.
-
-`LanguageId`
-
-The language used in CDMA message. This is an indicator of the language used in SMS message and
-     may be set to 
-     <b>WwanSmsCdmaLangUnknown</b>, if the language is not known.
-
 `SizeInBytes`
 
 The size, in bytes, of 
@@ -116,6 +112,10 @@ Size of
      <b>EncodingId</b> is set to 
      <i>WwanSmsCdmaEncodingShiftJis</i> or 
      <i>WwanSmsCdmaEncodingKorean</i>.
+
+`EncodedMsg`
+
+The encoded content that represents the CDMA-based SMS text message.
 
 
 ## Requirements
@@ -135,11 +135,3 @@ Size of
 
 
 <a href="..\wwan\ne-wwan-_wwan_sms_cdma_encoding.md">WWAN_SMS_CDMA_ENCODING</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_SEND_CDMA structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

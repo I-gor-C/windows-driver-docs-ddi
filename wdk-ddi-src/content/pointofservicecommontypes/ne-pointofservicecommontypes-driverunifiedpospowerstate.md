@@ -58,6 +58,16 @@ typedef enum _DriverUnifiedPosPowerState {
 <table>
             
                 <tr>
+                    <td>PowerStateUnknown</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PowerStateOnline</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>PowerStateOff</td>
                     <td></td>
                 </tr>
@@ -69,16 +79,6 @@ typedef enum _DriverUnifiedPosPowerState {
             
                 <tr>
                     <td>PowerStateOffOffline</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PowerStateOnline</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PowerStateUnknown</td>
                     <td></td>
                 </tr>
 </table>

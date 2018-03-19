@@ -60,19 +60,10 @@ typedef struct _BTH_VENDOR_SPECIFIC_COMMAND {
 ## Members
 
 
-`Data`
+`ManufacturerId`
 
-A UCHAR array that contains the data and patterns for the command that is specified in the 
-     <b>HciHeader</b> member. Patterns are specified with 
-     <a href="..\bthioctl\ns-bthioctl-_bth_vendor_pattern.md">BTH_VENDOR_PATTERN</a> structures.
-
-`HciHeader`
-
-A 
-     <a href="..\bthioctl\ns-bthioctl-_bth_command_header.md">BTH_COMMAND_HEADER</a> structure that
-     contains information about the vendor-specific command that includes an operation code and buffer
-     length. The buffer length should only include the size of the data to be sent to the radio. It should
-     not include the size of the patterns.
+The manufacturer identifier of the radio. Radios that have this manufacturer identifier can
+     receive the vendor-specific command.
 
 `LmpVersion`
 
@@ -80,11 +71,6 @@ A UCHAR that contains the link management protocol (LMP) version. If the LMP ver
      greater than this value, the command is sent to the radio. Otherwise, the radio does not receive the
      command. If 
      <b>LmpVersion</b> is zero, all radios will receive the vendor-specific command.
-
-`ManufacturerId`
-
-The manufacturer identifier of the radio. Radios that have this manufacturer identifier can
-     receive the vendor-specific command.
 
 `MatchAnySinglePattern`
 
@@ -95,6 +81,20 @@ A BOOLEAN value that specifies if all the patterns in the
      <b>MatchAnySinglePattern</b> is <b>FALSE</b>, all the patterns must match to associate an event with the
      command. If 
      <b>MatchAnySinglePattern</b> is <b>TRUE</b>, matching any pattern associates an event with the command.
+
+`HciHeader`
+
+A 
+     <a href="..\bthioctl\ns-bthioctl-_bth_command_header.md">BTH_COMMAND_HEADER</a> structure that
+     contains information about the vendor-specific command that includes an operation code and buffer
+     length. The buffer length should only include the size of the data to be sent to the radio. It should
+     not include the size of the patterns.
+
+`Data`
+
+A UCHAR array that contains the data and patterns for the command that is specified in the 
+     <b>HciHeader</b> member. Patterns are specified with 
+     <a href="..\bthioctl\ns-bthioctl-_bth_vendor_pattern.md">BTH_VENDOR_PATTERN</a> structures.
 
 ## Remarks
 This BTH_VENDOR_SPECIFIC_COMMAND structure specifies the input buffer for the 
@@ -135,11 +135,3 @@ If such patterns are specified, the
 
 
 <a href="..\bthioctl\ns-bthioctl-_bth_vendor_pattern.md">BTH_VENDOR_PATTERN</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_VENDOR_SPECIFIC_COMMAND structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

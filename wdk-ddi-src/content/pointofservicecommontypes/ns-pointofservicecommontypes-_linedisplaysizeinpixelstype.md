@@ -56,11 +56,11 @@ typedef struct _LineDisplaySizeInPixelsType {
 ## Members
 
 
-`Height`
-
-
-
 `Width`
+
+
+
+`Height`
 
 
 

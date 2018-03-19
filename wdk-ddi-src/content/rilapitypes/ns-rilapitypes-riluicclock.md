@@ -58,11 +58,11 @@ typedef struct _RILUICCLOCK {
 ## Members
 
 
-`dwKeyRef`
-
-
-
 `hUiccApp`
+
+
+
+`dwKeyRef`
 
 
 

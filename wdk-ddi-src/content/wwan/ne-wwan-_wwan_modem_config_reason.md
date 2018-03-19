@@ -68,6 +68,31 @@ typedef enum _WWAN_MODEM_CONFIG_REASON {
 <table>
             
                 <tr>
+                    <td>WwanModemConfigReasonNone</td>
+                    <td>Default value that can be used if other optional reasons are not supported.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanModemConfigReasonSIMDetected</td>
+                    <td>Required. A SIM card was detected by a modem.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanModemConfigReasonNOSIM</td>
+                    <td>Optional. There is no SIM card.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanModemConfigReasonSIMRemoved</td>
+                    <td>Optional. A SIM card was removed.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanModemConfigReasonIMSIReset</td>
+                    <td>Optional. A SIM card was reset with new IMSI programmed into it.</td>
+                </tr>
+            
+                <tr>
                     <td>WwanModemConfigReasonActivationFailure</td>
                     <td>Optional. Activation of a new configuration failed.</td>
                 </tr>
@@ -78,14 +103,8 @@ typedef enum _WWAN_MODEM_CONFIG_REASON {
                 </tr>
             
                 <tr>
-                    <td>WwanModemConfigReasonIMSIReset</td>
-                    <td>Optional. A SIM card was reset with new IMSI programmed into it.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanModemConfigReasonMax</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
+                    <td>WwanModemConfigReasonModemReset</td>
+                    <td>Optional. The modem reset and configuration was not lost.</td>
                 </tr>
             
                 <tr>
@@ -94,28 +113,9 @@ typedef enum _WWAN_MODEM_CONFIG_REASON {
                 </tr>
             
                 <tr>
-                    <td>WwanModemConfigReasonModemReset</td>
-                    <td>Optional. The modem reset and configuration was not lost.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanModemConfigReasonNone</td>
-                    <td>Default value that can be used if other optional reasons are not supported.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanModemConfigReasonNOSIM</td>
-                    <td>Optional. There is no SIM card.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanModemConfigReasonSIMDetected</td>
-                    <td>Required. A SIM card was detected by a modem.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanModemConfigReasonSIMRemoved</td>
-                    <td>Optional. A SIM card was removed.</td>
+                    <td>WwanModemConfigReasonMax</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 
@@ -129,11 +129,3 @@ typedef enum _WWAN_MODEM_CONFIG_REASON {
 ## See Also
 
 <a href="..\wwan\ns-wwan-_wwan_modem_config_status.md">WWAN_MODEM_CONFIG_STATUS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_MODEM_CONFIG_REASON enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

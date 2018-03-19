@@ -71,37 +71,17 @@ typedef struct {
 ## Members
 
 
-`AltitudeAccuracy`
+`Size`
 
-Reserved, do not use.
+Structure size.
 
-`AltitudeConfidence`
+`Version`
 
-Reserved, do not use.
-
-`HeadingAccuracy`
-
-Reserved, do not use.
-
-`HeadingConfidence`
-
-Reserved, do not use.
+Version number.
 
 `HorizontalAccuracy`
 
 Accuracy reported with 95% confidence.
-
-`HorizontalConfidence`
-
-Reserved, do not use.
-
-`HorizontalDilutionOfPrecision`
-
-Horizontal dilution of precision (HDOP).
-
-`HorizontalErrorAngle`
-
-Horizontal uncertainty ellipse orientation angle with  95% confidence accuracy.
 
 `HorizontalErrorMajorAxis`
 
@@ -111,17 +91,31 @@ Horizontal uncertainty ellipse semi-major axis with  95% confidence accuracy.
 
 Horizontal uncertainty ellipse semi-minor axis with  95% confidence accuracy.
 
-`PositionDilutionOfPrecision`
+`HorizontalErrorAngle`
 
-Position dilution of precision (PDOP).
+Horizontal uncertainty ellipse orientation angle with  95% confidence accuracy.
 
-Satellite-based positions with a dilution of precision (DOP) value of 0 or a DOP value higher than 10 may be filtered by the GNSS adapter.
+`HeadingAccuracy`
 
-`Size`
+Reserved, do not use.
 
-Structure size.
+`AltitudeAccuracy`
+
+Reserved, do not use.
 
 `SpeedAccuracy`
+
+Reserved, do not use.
+
+`HorizontalConfidence`
+
+Reserved, do not use.
+
+`HeadingConfidence`
+
+Reserved, do not use.
+
+`AltitudeConfidence`
 
 Reserved, do not use.
 
@@ -129,9 +123,15 @@ Reserved, do not use.
 
 Reserved, do not use.
 
-`Version`
+`PositionDilutionOfPrecision`
 
-Version number.
+Position dilution of precision (PDOP).
+
+Satellite-based positions with a dilution of precision (DOP) value of 0 or a DOP value higher than 10 may be filtered by the GNSS adapter.
+
+`HorizontalDilutionOfPrecision`
+
+Horizontal dilution of precision (HDOP).
 
 `VerticalDilutionOfPrecision`
 

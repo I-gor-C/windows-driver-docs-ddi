@@ -79,31 +79,20 @@ typedef struct _NDIS_CO_CLIENT_OPTIONAL_HANDLERS {
 ## Members
 
 
-`ClAddPartyCompleteHandler`
+`Header`
 
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">
-     ProtocolClAddPartyComplete</a> function. A client uses this function to establish point-to-multipoint
-     VCs for outgoing calls to remote machines.
+The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     protocol driver CoNDIS characteristics structure (NDIS_CO_CLIENT_OPTIONAL_HANDLERS). The driver sets the
+     
+     <b>Type</b> member of the structure that 
+     <b>Header</b> specifies to NDIS_OBJECT_TYPE_CO_CLIENT_OPTIONAL_HANDLERS, the 
+     <b>Revision</b> member to NDIS_CO_CLIENT_OPTIONAL_HANDLERS_REVISION_1, and the 
+     <b>Size</b> member to NDIS_SIZEOF_CO_CLIENT_OPTIONAL_HANDLERS_REVISION_1.
 
-`ClCallConnectedHandler`
+`Reserved`
 
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cl_call_connected.md">
-     ProtocolClCallConnected</a> function. A client uses this function to accept incoming calls from remote
-     machines.
-
-`ClCloseAfCompleteHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cl_close_af_complete.md">
-     ProtocolClCloseAfComplete</a> function.
-
-`ClCloseCallCompleteHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">
-     ProtocolClCloseCallComplete</a> function.
+Reserved for NDIS.
 
 `ClCreateVcHandler`
 
@@ -115,11 +104,70 @@ The entry point of the caller's
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a> function.
 
+`ClOidRequestHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_co_oid_request.md">
+     ProtocolCoOidRequest</a> function.
+
+`ClOidRequestCompleteHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_co_oid_request_complete.md">
+     ProtocolCoOidRequestComplete</a> function.
+
+`ClOpenAfCompleteHandlerEx`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cl_open_af_complete_ex.md">
+     ProtocolClOpenAfCompleteEx</a> function.
+
+`ClCloseAfCompleteHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cl_close_af_complete.md">
+     ProtocolClCloseAfComplete</a> function.
+
+`ClRegisterSapCompleteHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cl_register_sap_complete.md">
+     ProtocolClRegisterSapComplete</a> function. A client uses this function to accept incoming calls from
+     remote machines.
+
 `ClDeregisterSapCompleteHandler`
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cl_deregister_sap_complete.md">
      ProtocolClDeregisterSapComplete</a> function.
+
+`ClMakeCallCompleteHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cl_make_call_complete.md">
+     ProtocolClMakeCallComplete</a> function. A client uses this function to make outgoing calls to remote
+     machines.
+
+`ClModifyCallQoSCompleteHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cl_modify_call_qos_complete.md">
+     ProtocolClModifyCallQoSComplete</a> function. A client uses this function to dynamically make changes
+     in the quality of service (QoS) on an established virtual connection (VC) or to negotiate with the call
+     manager to establish the QoS when the client sets up an incoming call.
+
+`ClCloseCallCompleteHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">
+     ProtocolClCloseCallComplete</a> function.
+
+`ClAddPartyCompleteHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">
+     ProtocolClAddPartyComplete</a> function. A client uses this function to establish point-to-multipoint
+     VCs for outgoing calls to remote machines.
 
 `ClDropPartyCompleteHandler`
 
@@ -153,66 +201,18 @@ The entry point of the caller's
      <a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">
      ProtocolClIncomingDropParty</a> function.
 
-`ClMakeCallCompleteHandler`
+`ClCallConnectedHandler`
 
 The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cl_make_call_complete.md">
-     ProtocolClMakeCallComplete</a> function. A client uses this function to make outgoing calls to remote
+     <a href="..\ndis\nc-ndis-protocol_cl_call_connected.md">
+     ProtocolClCallConnected</a> function. A client uses this function to accept incoming calls from remote
      machines.
-
-`ClModifyCallQoSCompleteHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cl_modify_call_qos_complete.md">
-     ProtocolClModifyCallQoSComplete</a> function. A client uses this function to dynamically make changes
-     in the quality of service (QoS) on an established virtual connection (VC) or to negotiate with the call
-     manager to establish the QoS when the client sets up an incoming call.
 
 `ClNotifyCloseAfHandler`
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_cl_notify_close_af.md">
      ProtocolClNotifyCloseAf</a> function.
-
-`ClOidRequestCompleteHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_co_oid_request_complete.md">
-     ProtocolCoOidRequestComplete</a> function.
-
-`ClOidRequestHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_co_oid_request.md">
-     ProtocolCoOidRequest</a> function.
-
-`ClOpenAfCompleteHandlerEx`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cl_open_af_complete_ex.md">
-     ProtocolClOpenAfCompleteEx</a> function.
-
-`ClRegisterSapCompleteHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cl_register_sap_complete.md">
-     ProtocolClRegisterSapComplete</a> function. A client uses this function to accept incoming calls from
-     remote machines.
-
-`Header`
-
-The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
-     protocol driver CoNDIS characteristics structure (NDIS_CO_CLIENT_OPTIONAL_HANDLERS). The driver sets the
-     
-     <b>Type</b> member of the structure that 
-     <b>Header</b> specifies to NDIS_OBJECT_TYPE_CO_CLIENT_OPTIONAL_HANDLERS, the 
-     <b>Revision</b> member to NDIS_CO_CLIENT_OPTIONAL_HANDLERS_REVISION_1, and the 
-     <b>Size</b> member to NDIS_SIZEOF_CO_CLIENT_OPTIONAL_HANDLERS_REVISION_1.
-
-`Reserved`
-
-Reserved for NDIS.
 
 ## Remarks
 To specify entry points as a CoNDIS client, a protocol driver initializes an
@@ -328,11 +328,3 @@ The client calls
 
 
 <a href="..\ndis\nc-ndis-protocol_cl_drop_party_complete.md">ProtocolClDropPartyComplete</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CO_CLIENT_OPTIONAL_HANDLERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

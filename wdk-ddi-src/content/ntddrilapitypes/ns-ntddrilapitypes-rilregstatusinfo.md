@@ -70,27 +70,11 @@ typedef struct _RILREGSTATUSINFO {
 
 
 
-`dwExecutor`
-
-
-
 `dwParams`
 
 
 
-`dwRegRejectReason`
-
-
-
-`dwRegStatus`
-
-
-
-`dwSystemCaps`
-
-
-
-`dwVoiceDomain`
+`dwExecutor`
 
 
 
@@ -98,15 +82,31 @@ typedef struct _RILREGSTATUSINFO {
 
 
 
+`dwRegStatus`
+
+
+
 `ratAccessTechnology`
 
 
 
-`rncNetworkCode`
+`dwSystemCaps`
+
+
+
+`dwRegRejectReason`
 
 
 
 `ronCurrentOperator`
+
+
+
+`dwVoiceDomain`
+
+
+
+`rncNetworkCode`
 
 
 

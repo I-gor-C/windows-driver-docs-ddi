@@ -62,11 +62,11 @@ typedef struct _RILDIALPARAMS_V1 {
 
 
 
-`dwOptions`
-
-
-
 `raAddress`
+
+
+
+`dwOptions`
 
 
 

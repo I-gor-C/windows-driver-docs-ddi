@@ -59,13 +59,13 @@ typedef enum _D3D12DDI_CRYPTO_SESSION_FLAGS_0030 {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_CRYPTO_SESSION_FLAG_0030_HARDWARE</td>
-                    <td>The crypto session flag is of type hardware.</td>
+                    <td>D3D12DDI_CRYPTO_SESSION_FLAG_0030_NONE</td>
+                    <td>No crypto session flag is defined.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_CRYPTO_SESSION_FLAG_0030_NONE</td>
-                    <td>No crypto session flag is defined.</td>
+                    <td>D3D12DDI_CRYPTO_SESSION_FLAG_0030_HARDWARE</td>
+                    <td>The crypto session flag is of type hardware.</td>
                 </tr>
 </table>
 

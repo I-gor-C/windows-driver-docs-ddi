@@ -75,6 +75,11 @@ typedef enum _RILSUPSVCACTION {
                 </tr>
             
                 <tr>
+                    <td>RIL_SUPSVCACTION_REGISTER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_SUPSVCACTION_ERASE</td>
                     <td></td>
                 </tr>
@@ -85,22 +90,17 @@ typedef enum _RILSUPSVCACTION {
                 </tr>
             
                 <tr>
-                    <td>RIL_SUPSVCACTION_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_SUPSVCACTION_REGISTER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_SUPSVCACTION_REGISTER_PW</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_SUPSVCACTION_USSD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SUPSVCACTION_MAX</td>
                     <td></td>
                 </tr>
 </table>

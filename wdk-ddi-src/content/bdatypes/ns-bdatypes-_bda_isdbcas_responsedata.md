@@ -60,15 +60,11 @@ typedef struct _BDA_ISDBCAS_RESPONSEDATA {
 ## Members
 
 
-`argbIsdbCommandData`
-
-
-
 `lResult`
 
 
 
-`ulIsdbDataSize`
+`ulRequestID`
 
 
 
@@ -76,7 +72,11 @@ typedef struct _BDA_ISDBCAS_RESPONSEDATA {
 
 
 
-`ulRequestID`
+`ulIsdbDataSize`
+
+
+
+`argbIsdbCommandData`
 
 
 

@@ -60,17 +60,17 @@ typedef enum _RILCALLINFOFLAGS {
 <table>
             
                 <tr>
+                    <td>RILCALLINFO_FLAG_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RILCALLINFO_FLAG_ALIENCALL</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RILCALLINFO_FLAG_EMERGENCYCALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RILCALLINFO_FLAG_NONE</td>
                     <td></td>
                 </tr>
 </table>

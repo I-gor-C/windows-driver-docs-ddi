@@ -65,23 +65,7 @@ typedef struct _RILSYSTEMSELECTIONPREFS_V2 {
 ## Members
 
 
-`AcquisitionOrder`
-
-
-
 `cbSize`
-
-
-
-`dwAcquisitionOrderSize`
-
-
-
-`dwExecutor`
-
-
-
-`dwMode`
 
 
 
@@ -89,7 +73,7 @@ typedef struct _RILSYSTEMSELECTIONPREFS_V2 {
 
 
 
-`dwRoamingMode`
+`dwExecutor`
 
 
 
@@ -97,7 +81,23 @@ typedef struct _RILSYSTEMSELECTIONPREFS_V2 {
 
 
 
+`dwMode`
+
+
+
 `plmnInfo`
+
+
+
+`dwRoamingMode`
+
+
+
+`dwAcquisitionOrderSize`
+
+
+
+`AcquisitionOrder`
 
 
 

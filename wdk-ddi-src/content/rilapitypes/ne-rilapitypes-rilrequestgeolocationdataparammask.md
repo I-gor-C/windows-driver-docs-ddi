@@ -64,7 +64,12 @@ typedef enum _RILREQUESTGEOLOCATIONDATAPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_REQUESTGEOLOCATIONDATA_ALL</td>
+                    <td>RIL_PARAM_REQUESTGEOLOCATIONDATA_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_REQUESTGEOLOCATIONDATA_SIZE</td>
                     <td></td>
                 </tr>
             
@@ -79,11 +84,6 @@ typedef enum _RILREQUESTGEOLOCATIONDATAPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_REQUESTGEOLOCATIONDATA_NONE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_REQUESTGEOLOCATIONDATA_REQUESTACCCURACY</td>
                     <td></td>
                 </tr>
@@ -94,7 +94,7 @@ typedef enum _RILREQUESTGEOLOCATIONDATAPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_REQUESTGEOLOCATIONDATA_SIZE</td>
+                    <td>RIL_PARAM_REQUESTGEOLOCATIONDATA_ALL</td>
                     <td></td>
                 </tr>
 </table>

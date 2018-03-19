@@ -63,9 +63,9 @@ typedef struct _D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032 {
 ## Members
 
 
-`BitRate`
+`NodeIndex`
 
-Bitrate.
+Node index.
 
 `Configuration`
 
@@ -75,25 +75,25 @@ Configuration.
 
 Decode sample.
 
-`FrameRate`
-
-Frame rate.
-
-`NodeIndex`
-
-Node index.
-
 `OutputFormat`
 
 Output format.
 
-`ScaleSupport`
+`FrameRate`
 
-Scale support.
+Frame rate.
+
+`BitRate`
+
+Bitrate.
 
 `SupportFlags`
 
 Support flags.
+
+`ScaleSupport`
+
+Scale support.
 
 
 ## Requirements

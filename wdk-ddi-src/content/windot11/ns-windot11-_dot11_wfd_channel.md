@@ -59,10 +59,6 @@ typedef struct _DOT11_WFD_CHANNEL {
 ## Members
 
 
-`ChannelNumber`
-
-The channel number for the P2P group.
-
 `CountryRegionString`
 
 The country or region code where <b>OperatingClass</b> and <b>ChannelNumber</b> are valid.
@@ -70,6 +66,10 @@ The country or region code where <b>OperatingClass</b> and <b>ChannelNumber</b> 
 `OperatingClass`
 
 The frequency band for <b>ChannelNumber</b>.
+
+`ChannelNumber`
+
+The channel number for the P2P group.
 
 
 ## Requirements

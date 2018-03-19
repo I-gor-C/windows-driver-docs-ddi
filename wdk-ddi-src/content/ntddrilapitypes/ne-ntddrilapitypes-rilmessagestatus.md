@@ -62,12 +62,7 @@ typedef enum _RILMESSAGESTATUS {
 <table>
             
                 <tr>
-                    <td>RIL_MSGSTATUS_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGSTATUS_RECREAD</td>
+                    <td>RIL_MSGSTATUS_UNKNOWN</td>
                     <td></td>
                 </tr>
             
@@ -77,7 +72,7 @@ typedef enum _RILMESSAGESTATUS {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGSTATUS_STOSENT</td>
+                    <td>RIL_MSGSTATUS_RECREAD</td>
                     <td></td>
                 </tr>
             
@@ -87,7 +82,12 @@ typedef enum _RILMESSAGESTATUS {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGSTATUS_UNKNOWN</td>
+                    <td>RIL_MSGSTATUS_STOSENT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGSTATUS_MAX</td>
                     <td></td>
                 </tr>
 </table>

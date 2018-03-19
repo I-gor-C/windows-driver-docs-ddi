@@ -63,15 +63,6 @@ typedef struct _NDIS_WMI_EVENT_HEADER {
 ## Members
 
 
-`DeviceNameLength`
-
-The length, in bytes, of the device name.
-
-`DeviceNameOffset`
-
-The offset, in bytes, to the beginning of the device name from the beginning of the
-     NDIS_WMI_EVENT_HEADER structure.
-
 `Header`
 
 The 
@@ -91,15 +82,6 @@ The NDIS interface index of the NDIS miniport adapter interface that is associat
 
 The NDIS network interface name of the miniport adapter.
 
-`Padding`
-
-This member is reserved.
-
-`PortNumber`
-
-The miniport adapter port, if any. If the GUID is not specific to a port, 
-     <b>PortNumber</b> is zero.
-
 `RequestId`
 
 An identifier for the request. If a miniport driver must complete a request immediately and it
@@ -118,6 +100,24 @@ NDIS or overlying drivers can also use the
 For more information about this member, see 
      <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>.
 
+`PortNumber`
+
+The miniport adapter port, if any. If the GUID is not specific to a port, 
+     <b>PortNumber</b> is zero.
+
+`DeviceNameLength`
+
+The length, in bytes, of the device name.
+
+`DeviceNameOffset`
+
+The offset, in bytes, to the beginning of the device name from the beginning of the
+     NDIS_WMI_EVENT_HEADER structure.
+
+`Padding`
+
+This member is reserved.
+
 ## Remarks
 NDIS translates NDIS status indications to WMI GUID event indications.
 
@@ -133,11 +133,3 @@ WMI GUID event indications that are specific to NDIS 6.0 and later versions incl
 ## See Also
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WMI_EVENT_HEADER structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

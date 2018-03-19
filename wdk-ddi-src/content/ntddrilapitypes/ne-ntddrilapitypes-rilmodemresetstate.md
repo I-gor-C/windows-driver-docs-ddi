@@ -60,12 +60,7 @@ typedef enum _RILMODEMRESETSTATE {
 <table>
             
                 <tr>
-                    <td>RIL_MODEMRESETSTATE_FAILED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MODEMRESETSTATE_MAX</td>
+                    <td>RIL_MODEMRESETSTATE_STARTED</td>
                     <td></td>
                 </tr>
             
@@ -75,7 +70,12 @@ typedef enum _RILMODEMRESETSTATE {
                 </tr>
             
                 <tr>
-                    <td>RIL_MODEMRESETSTATE_STARTED</td>
+                    <td>RIL_MODEMRESETSTATE_FAILED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MODEMRESETSTATE_MAX</td>
                     <td></td>
                 </tr>
 </table>

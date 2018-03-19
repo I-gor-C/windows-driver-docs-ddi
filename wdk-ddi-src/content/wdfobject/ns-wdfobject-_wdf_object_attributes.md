@@ -66,13 +66,9 @@ typedef struct _WDF_OBJECT_ATTRIBUTES {
 ## Members
 
 
-`ContextSizeOverride`
+`Size`
 
-If not zero, this value overrides the <b>ContextSize</b> member of the <a href="..\wdfobject\ns-wdfobject-_wdf_object_context_type_info.md">WDF_OBJECT_CONTEXT_TYPE_INFO</a> structure that the <b>ContextTypeInfo</b> member references. This value is optional and can be zero. If the value is not zero, it must specify a size, in bytes, that is larger than the value that is specified for the <b>ContextSize</b> member of the WDF_OBJECT_CONTEXT_TYPE_INFO structure. For more information, see the following Remarks section.
-
-`ContextTypeInfo`
-
-A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_context_type_info.md">WDF_OBJECT_CONTEXT_TYPE_INFO</a> structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552405">WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE</a> macro sets this pointer.
+The size, in bytes, of this structure.
 
 `EvtCleanupCallback`
 
@@ -86,19 +82,23 @@ A pointer to the driver's <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_cont
 
 A <a href="..\wdfobject\ne-wdfobject-_wdf_execution_level.md">WDF_EXECUTION_LEVEL</a>-typed value that specifies the maximum IRQL at which the framework will call the object's event callback functions. For a list of framework objects for which the driver can specify an <b>ExecutionLevel</b> value, see <a href="..\wdfobject\ne-wdfobject-_wdf_execution_level.md">WDF_EXECUTION_LEVEL</a>.
 
+`SynchronizationScope`
+
+A <a href="..\wdfobject\ne-wdfobject-_wdf_synchronization_scope.md">WDF_SYNCHRONIZATION_SCOPE</a>-typed value that specifies how the framework will synchronize execution of the object's event callback functions. For a list of framework objects for which the driver can specify a <b>SynchronizationScope</b> value, see <a href="..\wdfobject\ne-wdfobject-_wdf_synchronization_scope.md">WDF_SYNCHRONIZATION_SCOPE</a>.
+
 `ParentObject`
 
 A handle to the object's parent object, or <b>NULL</b> if the object does not have a driver-specified parent. 
 
 See <a href="https://msdn.microsoft.com/799284a5-91c0-47b0-8f20-75a5f8e2284d">Summary of Framework Objects</a> for a table that shows the objects that allow a driver-specified parent. The table also shows the default parent of each object.
 
-`Size`
+`ContextSizeOverride`
 
-The size, in bytes, of this structure.
+If not zero, this value overrides the <b>ContextSize</b> member of the <a href="..\wdfobject\ns-wdfobject-_wdf_object_context_type_info.md">WDF_OBJECT_CONTEXT_TYPE_INFO</a> structure that the <b>ContextTypeInfo</b> member references. This value is optional and can be zero. If the value is not zero, it must specify a size, in bytes, that is larger than the value that is specified for the <b>ContextSize</b> member of the WDF_OBJECT_CONTEXT_TYPE_INFO structure. For more information, see the following Remarks section.
 
-`SynchronizationScope`
+`ContextTypeInfo`
 
-A <a href="..\wdfobject\ne-wdfobject-_wdf_synchronization_scope.md">WDF_SYNCHRONIZATION_SCOPE</a>-typed value that specifies how the framework will synchronize execution of the object's event callback functions. For a list of framework objects for which the driver can specify a <b>SynchronizationScope</b> value, see <a href="..\wdfobject\ne-wdfobject-_wdf_synchronization_scope.md">WDF_SYNCHRONIZATION_SCOPE</a>.
+A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_context_type_info.md">WDF_OBJECT_CONTEXT_TYPE_INFO</a> structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552405">WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE</a> macro sets this pointer.
 
 ## Remarks
 The WDF_OBJECT_ATTRIBUTES structure is used as an input argument to several methods that create framework objects.
@@ -187,11 +187,3 @@ The driver can then create an object with a customized context size.
 
 
 <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_OBJECT_ATTRIBUTES structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -60,17 +60,17 @@ typedef struct _WIA_MICR_INFO {
 ## Members
 
 
-`Length`
+`Size`
 
-Length of the MICR text, in characters, excluding the length of the NULL terminator.
+The total size of this structure, in bytes.
 
 `Page`
 
 The page number where the MICR code was detected. A zero-based index referring to the current scan job.
 
-`Size`
+`Length`
 
-The total size of this structure, in bytes.
+Length of the MICR text, in characters, excluding the length of the NULL terminator.
 
 `Text`
 

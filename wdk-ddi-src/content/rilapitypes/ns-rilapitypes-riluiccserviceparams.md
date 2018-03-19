@@ -60,7 +60,7 @@ typedef struct _RILUICCSERVICEPARAMS {
 ## Members
 
 
-`fEnable`
+`service`
 
 
 
@@ -72,7 +72,7 @@ typedef struct _RILUICCSERVICEPARAMS {
 
 
 
-`service`
+`fEnable`
 
 
 

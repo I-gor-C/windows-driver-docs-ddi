@@ -62,21 +62,13 @@ typedef struct _UCM_CONNECTOR_TYPEC_CONFIG {
 ## Members
 
 
-`AudioAccessoryCapable`
+`Size`
 
-Indicates whether the connector is capable of detecting a USB Type-C analog input as 3.5 mm audio jack.
-
-`EvtSetDataRole`
-
-A pointer to the client driver's implementation of the <a href="..\ucmmanager\nc-ucmmanager-evt_ucm_connector_set_data_role.md">EVT_UCM_CONNECTOR_SET_DATA_ROLE</a> callback function.
+Size of the <b>UCM_CONNECTOR_TYPEC_CONFIG</b> structure.
 
 `IsSupported`
 
 TRUE indicates a Type-C connector. FALSE, otherwise.  is supported.
-
-`Size`
-
-Size of the <b>UCM_CONNECTOR_TYPEC_CONFIG</b> structure.
 
 `SupportedOperatingModes`
 
@@ -85,6 +77,14 @@ Indicates the supported operating mode of the connector. This value is a bitwise
 `SupportedPowerSourcingCapabilities`
 
 Indicates the supported power source capabilities of the connector. This value is a bitwise OR of <a href="..\ucmtypes\ne-ucmtypes-_ucm_typec_current.md">UCM_TYPEC_CURRENT</a>-typed flags.
+
+`AudioAccessoryCapable`
+
+Indicates whether the connector is capable of detecting a USB Type-C analog input as 3.5 mm audio jack.
+
+`EvtSetDataRole`
+
+A pointer to the client driver's implementation of the <a href="..\ucmmanager\nc-ucmmanager-evt_ucm_connector_set_data_role.md">EVT_UCM_CONNECTOR_SET_DATA_ROLE</a> callback function.
 
 ## Remarks
 Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm_connector_typec_config_init.md">UCM_CONNECTOR_TYPEC_CONFIG_INIT</a>. An initialized <b>UCM_CONNECTOR_TYPEC_CONFIG</b> structure is an input parameter value to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a> that is used by Policy Manager to create a connector object.
@@ -100,11 +100,3 @@ Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm_co
 ## See Also
 
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UCM_CONNECTOR_TYPEC_CONFIG structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

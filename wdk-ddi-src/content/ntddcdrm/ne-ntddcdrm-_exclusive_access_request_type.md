@@ -60,13 +60,13 @@ typedef enum _EXCLUSIVE_ACCESS_REQUEST_TYPE {
 <table>
             
                 <tr>
-                    <td>ExclusiveAccessLockDevice</td>
-                    <td>A request for the CD-ROM class driver to lock a CD-ROM device for exclusive access by the caller.</td>
+                    <td>ExclusiveAccessQueryState</td>
+                    <td>A query for the access state of a CD-ROM device.</td>
                 </tr>
             
                 <tr>
-                    <td>ExclusiveAccessQueryState</td>
-                    <td>A query for the access state of a CD-ROM device.</td>
+                    <td>ExclusiveAccessLockDevice</td>
+                    <td>A request for the CD-ROM class driver to lock a CD-ROM device for exclusive access by the caller.</td>
                 </tr>
             
                 <tr>
@@ -87,11 +87,3 @@ The EXCLUSIVE_ACCESS_REQUEST_TYPE enumeration is used with the <a href="..\ntddc
 ## See Also
 
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_exclusive_access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20EXCLUSIVE_ACCESS_REQUEST_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

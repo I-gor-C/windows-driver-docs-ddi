@@ -63,6 +63,10 @@ typedef struct _IRB_REQ_ASYNC_STREAM {
 ## Members
 
 
+`nNumberOfBytesToStream`
+
+Specifies the number of bytes to write.
+
 `fulFlags`
 
 Reserved. Drivers must set this to zero.
@@ -71,13 +75,21 @@ Reserved. Drivers must set this to zero.
 
 Specifies the source buffer.
 
+`ulTag`
+
+Specifies the Tag field for any packets generated from this request.
+
 `nChannel`
 
 Specifies the channel to which the data will be written.
 
-`nNumberOfBytesToStream`
+`ulSynch`
 
-Specifies the number of bytes to write.
+Specifies the Sy field for any packets generated from this request.
+
+`Reserved`
+
+Reserved. Drivers must set this to zero.
 
 `nSpeed`
 
@@ -123,18 +135,6 @@ SPEED_FLAGS_400
 
 <div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">New Flags for Speed and Payload Size</a> and <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div>
 <div> </div>
-
-`Reserved`
-
-Reserved. Drivers must set this to zero.
-
-`ulSynch`
-
-Specifies the Sy field for any packets generated from this request.
-
-`ulTag`
-
-Specifies the Tag field for any packets generated from this request.
 
 
 ## Requirements

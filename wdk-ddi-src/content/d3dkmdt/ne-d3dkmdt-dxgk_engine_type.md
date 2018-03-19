@@ -65,40 +65,13 @@ typedef enum _DXGK_ENGINE_TYPE {
 <table>
             
                 <tr>
-                    <td>DXGK_ENGINE_TYPE_3D</td>
-                    <td>The adapter's 3-D processing engine. All adapters that are not a <a href="https://msdn.microsoft.com/584E78DD-5D08-4A20-B59B-F35178F6595C">display-only device</a> have one 3-D engine.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_ENGINE_TYPE_COPY</td>
-                    <td>The engine that is a copy engine used for moving data. This engine can perform subresource updates, blitting, paging, or other similar data handling.
-
-The workload packets for calls to <b>CopySubresourceRegion</b> or <b>UpdateSubResource</b> methods of Direct3D 10 and Direct3D 11 must appear on either the copy engine or the 3-D engine.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_ENGINE_TYPE_CRYPTO</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_ENGINE_TYPE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>DXGK_ENGINE_TYPE_OTHER</td>
                     <td>The engine does not match any of the other <a href="..\d3dkmdt\ne-d3dkmdt-dxgk_engine_type.md">DXGK_ENGINE_TYPE</a> enumeration values. This value is used for proprietary or unique functionality that is not exposed by typical adapters, as well as for an engine that performs work that doesn't fall under another category.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGK_ENGINE_TYPE_OVERLAY</td>
-                    <td>The virtual engine that is used for synchronized flipping of overlays in Direct3D 9.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_ENGINE_TYPE_SCENE_ASSEMBLY</td>
-                    <td>The engine that performs vertex processing of 3-D workloads as a preliminary pass prior to the remainder of the 3-D rendering. This engine also stores vertices in bins that tile-based rendering engines use.</td>
+                    <td>DXGK_ENGINE_TYPE_3D</td>
+                    <td>The adapter's 3-D processing engine. All adapters that are not a <a href="https://msdn.microsoft.com/584E78DD-5D08-4A20-B59B-F35178F6595C">display-only device</a> have one 3-D engine.</td>
                 </tr>
             
                 <tr>
@@ -118,6 +91,33 @@ The workload packets for an H.264 video codec workload test must appear on eithe
                     <td>The engine that is responsible for any video processing that is done after a video input stream is decoded. Such processing can include RGB surface conversion, filtering, stretching, color correction, deinterlacing, or other steps that are required before the final image is rendered to the display screen.
 
 The workload packets for workload tests must appear on either the video processing engine or the 3-D engine.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_ENGINE_TYPE_SCENE_ASSEMBLY</td>
+                    <td>The engine that performs vertex processing of 3-D workloads as a preliminary pass prior to the remainder of the 3-D rendering. This engine also stores vertices in bins that tile-based rendering engines use.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_ENGINE_TYPE_COPY</td>
+                    <td>The engine that is a copy engine used for moving data. This engine can perform subresource updates, blitting, paging, or other similar data handling.
+
+The workload packets for calls to <b>CopySubresourceRegion</b> or <b>UpdateSubResource</b> methods of Direct3D 10 and Direct3D 11 must appear on either the copy engine or the 3-D engine.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_ENGINE_TYPE_OVERLAY</td>
+                    <td>The virtual engine that is used for synchronized flipping of overlays in Direct3D 9.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_ENGINE_TYPE_CRYPTO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_ENGINE_TYPE_MAX</td>
+                    <td></td>
                 </tr>
 </table>
 

@@ -63,14 +63,6 @@ typedef struct _VIDEO_POINTER_ATTRIBUTES {
 ## Members
 
 
-`Column`
-
-Horizontal coordinate of the pointer's hot spot.
-
-`Enable`
-
-Specifies whether the pointer is visible. A nonzero value specifies that the pointer is visible. A value of zero specifies that the pointer is not visible.
-
 `Flags`
 
 A set of flags that specify certain attributes of the pointer. <b>Flags</b> can be a combination of the following values:
@@ -132,25 +124,33 @@ The current pointer has the same hotspot as the previous pointer.
 </tr>
 </table>
 
+`Width`
+
+Specifies the width of the pointer in pixels.
+
 `Height`
 
 Specifies the height of the pointer in pixels.
 
-`Pixels`
+`WidthInBytes`
 
-The pointer data, in device-compatible DIB format. Mask data is always in 1-bpp DIB format.
+Specifies the width of the pointer in bytes.
+
+`Enable`
+
+Specifies whether the pointer is visible. A nonzero value specifies that the pointer is visible. A value of zero specifies that the pointer is not visible.
+
+`Column`
+
+Horizontal coordinate of the pointer's hot spot.
 
 `Row`
 
 Vertical coordinate of the pointer's hot spot.
 
-`Width`
+`Pixels`
 
-Specifies the width of the pointer in pixels.
-
-`WidthInBytes`
-
-Specifies the width of the pointer in bytes.
+The pointer data, in device-compatible DIB format. Mask data is always in 1-bpp DIB format.
 
 
 ## Requirements
@@ -165,11 +165,3 @@ Specifies the width of the pointer in bytes.
 
 
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_set_pointer_attr.md">IOCTL_VIDEO_SET_POINTER_ATTR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_POINTER_ATTRIBUTES structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

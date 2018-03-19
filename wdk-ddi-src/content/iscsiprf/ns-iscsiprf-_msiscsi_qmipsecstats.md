@@ -77,29 +77,9 @@ typedef struct _MSiSCSI_QMIPSECStats {
 
 The number of active IPsec security associations (SAs).
 
-`ActiveTunnels`
+`PendingKeyOperations`
 
-The number of active IPsec tunnels.
-
-`AuthenticatedBytesReceived`
-
-The number of bytes that are received by using the AH protocol.
-
-`AuthenticatedBytesSent`
-
-The number of bytes that are sent by using the authentication header (AH) protocol.
-
-`BadSPIPackets`
-
-The number of packets for which the security parameters index (SPI) was incorrect.
-
-`ConfidentialBytesReceived`
-
-The number of bytes that are received by using the ESP protocol.
-
-`ConfidentialBytesSent`
-
-The number of bytes that are sent by using the encapsulating security payload (ESP) protocol.
+The number of IPsec key operations that are in progress.
 
 `KeyAdditions`
 
@@ -109,41 +89,61 @@ The number of successful IPsec SA negotiations.
 
 The number of IPsec SA key deletions.
 
-`PacketsNotAuthenticated`
+`ReKeys`
 
-The number of packets for which data could not be verified.
+The number of re-key operations for IPsec SAs.
+
+`ActiveTunnels`
+
+The number of active IPsec tunnels.
+
+`BadSPIPackets`
+
+The number of packets for which the security parameters index (SPI) was incorrect.
 
 `PacketsNotDecrypted`
 
 The number of failed decryption packets.
 
+`PacketsNotAuthenticated`
+
+The number of packets for which data could not be verified.
+
 `PacketsWithReplayDetection`
 
 The number of packets that contained a valid sequence number field.
 
-`PendingKeyOperations`
+`ConfidentialBytesSent`
 
-The number of IPsec key operations that are in progress.
+The number of bytes that are sent by using the encapsulating security payload (ESP) protocol.
 
-`ReKeys`
+`ConfidentialBytesReceived`
 
-The number of re-key operations for IPsec SAs.
+The number of bytes that are received by using the ESP protocol.
 
-`TransportBytesReceived`
+`AuthenticatedBytesSent`
 
-The number of bytes that are received by using the IPsec protocol.
+The number of bytes that are sent by using the authentication header (AH) protocol.
+
+`AuthenticatedBytesReceived`
+
+The number of bytes that are received by using the AH protocol.
 
 `TransportBytesSent`
 
 The number of bytes that are sent by using the IPsec protocol.
 
-`TunnelBytesReceived`
+`TransportBytesReceived`
 
-The number of bytes that are received by using the IPsec tunnel mode.
+The number of bytes that are received by using the IPsec protocol.
 
 `TunnelBytesSent`
 
 The number of bytes that are sent by using the IPsec tunnel mode.
+
+`TunnelBytesReceived`
+
+The number of bytes that are received by using the IPsec tunnel mode.
 
 ## Remarks
 It is optional that you implement this class.
@@ -156,11 +156,3 @@ It is optional that you implement this class.
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563105">MSiSCSI_QMIPSECStats WMI Class</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_QMIPSECStats structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

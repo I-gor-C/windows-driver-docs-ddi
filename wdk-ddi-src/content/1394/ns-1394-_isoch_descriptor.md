@@ -69,41 +69,6 @@ typedef struct _ISOCH_DESCRIPTOR {
 ## Members
 
 
-`BusReserved`
-
-Reserved.
-
-`Callback`
-
-Pointer to a callback routine. If non-NULL, the bus driver calls this routine to indicate that the associated attached buffers are ready to be detached. The callback executes at IRQL DISPATCH_LEVEL. The callback is of the following type:
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>void Callback(IN PVOID Context1, IN PVOID Context2);</pre>
-</td>
-</tr>
-</table></span></div>
-
-`Context1`
-
-Specifies the first parameter when the bus driver calls the routine passed in <b>Callback</b>.
-
-`Context2`
-
-Specifies the second parameter when the bus driver calls the routine passed in <b>Callback</b>.
-
-`CycleTime`
-
-If the DESCRIPTOR_SYNCH_ON_TIME flag is set, this member specifies the isochronous cycle time to synchronize on. (The timing resolution is per isochronous cycle. The <b>CycleOffset</b> member of the cycle time is not used.) If the DESCRIPTOR_TIME_STAMP_ON_COMPLETION flag is set, the bus driver fills this member with the isochronous cycle time on completion of the operation that used this buffer.
-
-`DeviceReserved`
-
-Reserved.
-
 `fulFlags`
 
 Specifies various flags for this isochronous descriptor. Each attached buffer on the channel has an associated isoch descriptor. 
@@ -222,13 +187,48 @@ The host controller treats the data in this buffer as a sequence of headers. The
 
 Specifies the MDL representing a buffer in which the data is, or will be, contained.
 
+`ulLength`
+
+Specifies the length of the <b>Mdl</b>.
+
 `nMaxBytesPerFrame`
 
 Specifies the maximum bytes contained in each isochronous frame. On writes, the data in the buffer is split into isochronous packets of this size.
 
-`PortReserved`
+`ulSynch`
 
-Reserved.
+For IsochTalk requests, if the DESCRIPTOR_SYNCH_ON_SY flag is set, this member specifies the Sy field of the outgoing packet. For REQUEST_ISOCH_LISTEN requests, if the DESCRIPTOR_SYNCH_ON_SY flag is set, this member specifies the value the host controller will match against the Sy field in isochronous packet headers.
+
+`ulTag`
+
+For IsochTalk requests, this member specifies the Tag field of the outgoing packet. For REQUEST_ISOCH_LISTEN requests, if the DESCRIPTOR_SYNCH_ON_TAG flag is set, this member specifies the value the host controller will match against the Tag field in isochronous packet headers.
+
+`CycleTime`
+
+If the DESCRIPTOR_SYNCH_ON_TIME flag is set, this member specifies the isochronous cycle time to synchronize on. (The timing resolution is per isochronous cycle. The <b>CycleOffset</b> member of the cycle time is not used.) If the DESCRIPTOR_TIME_STAMP_ON_COMPLETION flag is set, the bus driver fills this member with the isochronous cycle time on completion of the operation that used this buffer.
+
+`Callback`
+
+Pointer to a callback routine. If non-NULL, the bus driver calls this routine to indicate that the associated attached buffers are ready to be detached. The callback executes at IRQL DISPATCH_LEVEL. The callback is of the following type:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>void Callback(IN PVOID Context1, IN PVOID Context2);</pre>
+</td>
+</tr>
+</table></span></div>
+
+`Context1`
+
+Specifies the first parameter when the bus driver calls the routine passed in <b>Callback</b>.
+
+`Context2`
+
+Specifies the second parameter when the bus driver calls the routine passed in <b>Callback</b>.
 
 `status`
 
@@ -238,17 +238,17 @@ For <a href="https://msdn.microsoft.com/library/windows/hardware/ff537650">REQUE
 <div class="alert"><b>Note</b>  The <b>status</b> member must be initialized to STATUS_SUCCESS before the <b>REQUEST_ISOCH_ATTACH_BUFFERS</b> request is made.</div>
 <div> </div>
 
-`ulLength`
+`DeviceReserved`
 
-Specifies the length of the <b>Mdl</b>.
+Reserved.
 
-`ulSynch`
+`BusReserved`
 
-For IsochTalk requests, if the DESCRIPTOR_SYNCH_ON_SY flag is set, this member specifies the Sy field of the outgoing packet. For REQUEST_ISOCH_LISTEN requests, if the DESCRIPTOR_SYNCH_ON_SY flag is set, this member specifies the value the host controller will match against the Sy field in isochronous packet headers.
+Reserved.
 
-`ulTag`
+`PortReserved`
 
-For IsochTalk requests, this member specifies the Tag field of the outgoing packet. For REQUEST_ISOCH_LISTEN requests, if the DESCRIPTOR_SYNCH_ON_TAG flag is set, this member specifies the value the host controller will match against the Tag field in isochronous packet headers.
+Reserved.
 
 ## Remarks
 Not all DESCRIPTOR_XXX flags are supported on all hardware. The device driver can use the REQUEST_GET_LOCAL_HOST_INFO request, with <b>nLevel</b> = GET_HOST_CAPABILITIES, to determine which DESCRIPTOR_XXX flags are supported. The bus driver returns a pointer to a GET_LOCAL_HOST_INFO2 structure, whose <b>HostCapabilities</b> member contains flags that determine which flags the host controller supports. The following table lists which DESCRIPTOR_XXX flags require hardware support, and the corresponding <b>HostCapabilities</b> flag the driver should check.
@@ -313,11 +313,3 @@ The DESCRIPTOR_HEADER_SCATTER_GATHER flag is not supported on Windows 98/Me. It 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537660">REQUEST_ISOCH_TALK</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20ISOCH_DESCRIPTOR structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -61,6 +61,11 @@ typedef enum D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020 {
 <table>
             
                 <tr>
+                    <td>D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020_OPAQUE</td>
+                    <td>Alpha values inside the target rectangle are set to opaque.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020_BACKGROUND</td>
                     <td>Alpha values inside the target rectangle are set to the alpha value specified in the background color.</td>
                 </tr>
@@ -68,11 +73,6 @@ typedef enum D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020 {
                 <tr>
                     <td>D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020_DESTINATION</td>
                     <td>Existing alpha values remain unchanged in the output surface.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020_OPAQUE</td>
-                    <td>Alpha values inside the target rectangle are set to opaque.</td>
                 </tr>
             
                 <tr>

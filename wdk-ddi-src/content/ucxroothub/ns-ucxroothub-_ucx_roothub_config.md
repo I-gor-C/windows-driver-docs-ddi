@@ -71,6 +71,14 @@ typedef struct _UCX_ROOTHUB_CONFIG {
 ## Members
 
 
+`Size`
+
+The size in bytes of this structure.
+
+`NumberOfPresentedControlUrbCallbacks`
+
+The number of control requests sent to the default endpoint.
+
 `EvtRootHubClearHubFeature`
 
 A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
@@ -79,37 +87,13 @@ A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_ur
 
 A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
 
-`EvtRootHubControlUrb`
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-
-`EvtRootHubGet20PortInfo`
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_20port_info.md">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function.
-
-`EvtRootHubGet30PortInfo`
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_30port_info.md">EVT_UCX_ROOTHUB_GET_30PORT_INFO</a> callback function.
-
 `EvtRootHubGetHubStatus`
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-
-`EvtRootHubGetInfo`
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_info.md">EVT_UCX_ROOTHUB_GET_INFO</a> callback function.
-
-`EvtRootHubGetPortErrorCount`
 
 A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
 
 `EvtRootHubGetPortStatus`
 
 A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
-
-`EvtRootHubInterruptTx`
-
-A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_interrupt_tx.md">EVT_UCX_ROOTHUB_INTERRUPT_TX</a> callback function.
 
 `EvtRootHubSetHubFeature`
 
@@ -119,13 +103,29 @@ A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_ur
 
 A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
 
-`NumberOfPresentedControlUrbCallbacks`
+`EvtRootHubGetPortErrorCount`
 
-The number of control requests sent to the default endpoint.
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
 
-`Size`
+`EvtRootHubControlUrb`
 
-The size in bytes of this structure.
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_control_urb.md">EVT_UCX_ROOTHUB_CONTROL_URB</a> callback function.
+
+`EvtRootHubInterruptTx`
+
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_interrupt_tx.md">EVT_UCX_ROOTHUB_INTERRUPT_TX</a> callback function.
+
+`EvtRootHubGetInfo`
+
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_info.md">EVT_UCX_ROOTHUB_GET_INFO</a> callback function.
+
+`EvtRootHubGet20PortInfo`
+
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_20port_info.md">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function.
+
+`EvtRootHubGet30PortInfo`
+
+A pointer to the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_30port_info.md">EVT_UCX_ROOTHUB_GET_30PORT_INFO</a> callback function.
 
 `WdfRequestAttributes`
 

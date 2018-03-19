@@ -59,17 +59,17 @@ typedef struct _UFX_HARDWARE_FAILURE_CONTEXT {
 ## Members
 
 
-`Data`
+`Size`
 
-A variable-length array of data associated with the hardware failure.
+The size of the <b>UFX_HARDWARE_FAILURE_CONTEXT</b> structure.
 
 `ExceptionCode`
 
 The controller-specific hardware failure code.
 
-`Size`
+`Data`
 
-The size of the <b>UFX_HARDWARE_FAILURE_CONTEXT</b> structure.
+A variable-length array of data associated with the hardware failure.
 
 ## Remarks
 In cases where the function controller has experienced a fatal error, the client driver may allocate a variable-length <b>UFX_HARDWARE_FAILURE_CONTEXT</b> structure, set the <b>Size</b> field to the allocated size, set the <b>ExceptionCode</b> field to a value indicating the type of hardware error (as defined by the client driver) and fill in any associated information in the <b>Data</b> array.  It may then pass this structure to the <a href="..\ufxclient\nf-ufxclient-ufxdevicenotifyhardwarefailure.md">UfxDeviceNotifyHardwareFailure</a> UFX function. UFX will in turn pass this structure to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_controller_reset.md">EVT_UFX_DEVICE_CONTROLLER_RESET</a> event callback function (if it exists).

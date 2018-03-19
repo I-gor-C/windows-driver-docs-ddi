@@ -67,13 +67,8 @@ typedef enum _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE {
 <table>
             
                 <tr>
-                    <td>DeleteDeviceEvent</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DeviceNotificationMaximum</td>
-                    <td></td>
+                    <td>ReadyForNextDeviceRequest</td>
+                    <td>Indicates that the minidriver is ready for the next device request.</td>
                 </tr>
             
                 <tr>
@@ -82,8 +77,8 @@ typedef enum _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE {
                 </tr>
             
                 <tr>
-                    <td>ReadyForNextDeviceRequest</td>
-                    <td>Indicates that the minidriver is ready for the next device request.</td>
+                    <td>SignalMultipleDeviceEvents</td>
+                    <td></td>
                 </tr>
             
                 <tr>
@@ -92,12 +87,17 @@ typedef enum _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE {
                 </tr>
             
                 <tr>
-                    <td>SignalMultipleDeviceEvents</td>
+                    <td>DeleteDeviceEvent</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>SignalMultipleDeviceInstanceEvents</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DeviceNotificationMaximum</td>
                     <td></td>
                 </tr>
 </table>

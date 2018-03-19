@@ -68,21 +68,29 @@ typedef struct tagTRANSPORTSTATUS {
 ## Members
 
 
+`Mode`
+
+Specifies the ED_MODE_Xxx.
+
 `LastError`
 
 Specifies the last error.
 
-`LinkMode`
+`RecordInhibit`
 
-Indicates linked mode. <b>TRUE</b> if linked, <b>FALSE</b> otherwise.
+Specifies if recording is inhibited. <b>TRUE</b> if recording is prevented, <b>FALSE</b> otherwise.
 
-`MediaLength`
+`ServoLock`
 
-Specifies the length of the media.
+Indicates the servo lock.
 
 `MediaPresent`
 
 Specifies if media is present.
+
+`MediaLength`
+
+Specifies the length of the media.
 
 `MediaSize`
 
@@ -104,21 +112,13 @@ Indicates the media track size.
 
 Indicates the type of media.
 
-`Mode`
+`LinkMode`
 
-Specifies the ED_MODE_Xxx.
+Indicates linked mode. <b>TRUE</b> if linked, <b>FALSE</b> otherwise.
 
 `NotifyOn`
 
 Specifies event notification. <b>TRUE</b> enables event notification, <b>FALSE</b> disables event notification.
-
-`RecordInhibit`
-
-Specifies if recording is inhibited. <b>TRUE</b> if recording is prevented, <b>FALSE</b> otherwise.
-
-`ServoLock`
-
-Indicates the servo lock.
 
 ## Remarks
 Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.

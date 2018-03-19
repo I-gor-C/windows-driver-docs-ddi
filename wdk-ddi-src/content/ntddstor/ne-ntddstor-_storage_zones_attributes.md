@@ -67,7 +67,7 @@ typedef enum _STORAGE_ZONES_ATTRIBUTES {
                 </tr>
             
                 <tr>
-                    <td>ZonesAttributeTypeMayDifferentLengthSame</td>
+                    <td>ZonesAttributeTypeSameLengthSame</td>
                     <td>N/A</td>
                 </tr>
             
@@ -77,7 +77,7 @@ typedef enum _STORAGE_ZONES_ATTRIBUTES {
                 </tr>
             
                 <tr>
-                    <td>ZonesAttributeTypeSameLengthSame</td>
+                    <td>ZonesAttributeTypeMayDifferentLengthSame</td>
                     <td>N/A</td>
                 </tr>
 </table>

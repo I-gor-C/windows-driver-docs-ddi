@@ -61,6 +61,11 @@ typedef struct _NPI_PROVIDER_CHARACTERISTICS {
 ## Members
 
 
+`Version`
+
+The version of the NMR with which the provider is registering. A provider module should set this
+     member to zero.
+
 `Length`
 
 The size, in bytes, of the NPI_PROVIDER_CHARACTERISTICS structure.
@@ -69,6 +74,12 @@ The size, in bytes, of the NPI_PROVIDER_CHARACTERISTICS structure.
 
 A pointer to the provider module's 
      <a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a> callback
+     function.
+
+`ProviderDetachClient`
+
+A pointer to the provider module's 
+     <a href="..\netioddk\nc-netioddk-npi_provider_detach_client_fn.md">ProviderDetachClient</a> callback
      function.
 
 `ProviderCleanupBindingContext`
@@ -83,12 +94,6 @@ A pointer to the provider module's
      <i>
      ProviderCleanupBindingContext</i> callback function, then this member must be set to <b>NULL</b>.
 
-`ProviderDetachClient`
-
-A pointer to the provider module's 
-     <a href="..\netioddk\nc-netioddk-npi_provider_detach_client_fn.md">ProviderDetachClient</a> callback
-     function.
-
 `ProviderRegistrationInstance`
 
 An 
@@ -96,11 +101,6 @@ An
      NPI_REGISTRATION_INSTANCE</a> structure that specifies the identity of the provider module and the 
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/network-programming-interface">NPI</a> for which it is
      registering.
-
-`Version`
-
-The version of the NMR with which the provider is registering. A provider module should set this
-     member to zero.
 
 ## Remarks
 A provider module passes a pointer to an NPI_PROVIDER_CHARACTERISTICS structure to the 
@@ -136,11 +136,3 @@ A provider module must make sure that this structure remains valid and resident 
 
 
 <a href="..\netioddk\ns-netioddk-_npi_registration_instance.md">NPI_REGISTRATION_INSTANCE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_PROVIDER_CHARACTERISTICS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

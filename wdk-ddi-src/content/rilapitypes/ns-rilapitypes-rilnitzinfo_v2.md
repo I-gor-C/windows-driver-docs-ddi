@@ -67,7 +67,7 @@ typedef struct _RILNITZINFO_V2 {
 
 
 
-`DaylightSavingOffsetMinutes`
+`dwParams`
 
 
 
@@ -75,11 +75,11 @@ typedef struct _RILNITZINFO_V2 {
 
 
 
-`dwParams`
+`TimeZoneOffsetMinutes`
 
 
 
-`dwSystemTypes`
+`DaylightSavingOffsetMinutes`
 
 
 
@@ -87,7 +87,7 @@ typedef struct _RILNITZINFO_V2 {
 
 
 
-`TimeZoneOffsetMinutes`
+`dwSystemTypes`
 
 
 

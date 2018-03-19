@@ -64,62 +64,9 @@ typedef struct _TWAIN_CAPABILITY {
 ## Members
 
 
-`Data`
+`lSize`
 
-Is an array that contains the capability data. The actual size, in bytes, of the array is indicated by the <b>lDataSize</b> member.
-
-`lCapID`
-
-Specifies the ID of the capability to set or get.
-
-`lCC`
-
-Specifies the TWAIN condition code. This value can be one of the following:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-TWCC_BUMMER
-
-</td>
-<td>
-The operation failed for an unknown reason.
-
-</td>
-</tr>
-<tr>
-<td>
-TWCC_SUCCESS
-
-</td>
-<td>
-The operation was successful.
-
-</td>
-</tr>
-<tr>
-<td>
-TWCC_XXX
-
-</td>
-<td>
-See the <b>Remarks</b> section.
-
-</td>
-</tr>
-</table>
-
-`lConType`
-
-Specifies the capability's container type.
-
-`lDataSize`
-
-Specifies the size, in bytes of the data in the <b>Data</b> array.
+Specifies the size, in bytes, of the TWAIN_CAPABILITY structure.
 
 `lMSG`
 
@@ -182,6 +129,14 @@ Set a capability.
 </tr>
 </table>
 
+`lCapID`
+
+Specifies the ID of the capability to set or get.
+
+`lConType`
+
+Specifies the capability's container type.
+
 `lRC`
 
 Specifies the TWAIN return code. This value can be on of the following:
@@ -223,9 +178,54 @@ See the <b>Remarks</b> section.
 </tr>
 </table>
 
-`lSize`
+`lCC`
 
-Specifies the size, in bytes, of the TWAIN_CAPABILITY structure.
+Specifies the TWAIN condition code. This value can be one of the following:
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+TWCC_BUMMER
+
+</td>
+<td>
+The operation failed for an unknown reason.
+
+</td>
+</tr>
+<tr>
+<td>
+TWCC_SUCCESS
+
+</td>
+<td>
+The operation was successful.
+
+</td>
+</tr>
+<tr>
+<td>
+TWCC_XXX
+
+</td>
+<td>
+See the <b>Remarks</b> section.
+
+</td>
+</tr>
+</table>
+
+`lDataSize`
+
+Specifies the size, in bytes of the data in the <b>Data</b> array.
+
+`Data`
+
+Is an array that contains the capability data. The actual size, in bytes, of the array is indicated by the <b>lDataSize</b> member.
 
 ## Remarks
 A TWAIN-capable application communicates with a WIA driver by way of the TWAIN compatibility later to find out whether the driver has any private capabilities, and if so, what they are. A TWAIN_CAPABILITY structure is used in this communication. For more information, see <a href="https://msdn.microsoft.com/270e62dd-590c-4495-be22-002957932031">TWAIN Compatibility</a>. 

@@ -61,6 +61,11 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>Pipe_Allocator_None</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>Pipe_Allocator_FirstPin</td>
                     <td></td>
                 </tr>
@@ -72,11 +77,6 @@ typedef enum  {
             
                 <tr>
                     <td>Pipe_Allocator_MiddlePin</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>Pipe_Allocator_None</td>
                     <td></td>
                 </tr>
 </table>

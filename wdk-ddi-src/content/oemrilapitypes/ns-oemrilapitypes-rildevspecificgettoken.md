@@ -61,7 +61,15 @@ typedef struct _RILDEVSPECIFICGETTOKEN {
 ## Members
 
 
-`bHeader`
+`cbSize`
+
+
+
+`dwParams`
+
+
+
+`dwTimeout`
 
 
 
@@ -73,15 +81,7 @@ typedef struct _RILDEVSPECIFICGETTOKEN {
 
 
 
-`cbSize`
-
-
-
-`dwParams`
-
-
-
-`dwTimeout`
+`bHeader`
 
 
 

@@ -58,6 +58,36 @@ typedef struct {
 ## Members
 
 
+`Flags`
+
+Specifies the buffer configuration. This member can be set to the bitwise OR of one or more of the following flag bits:
+
+
+
+
+
+#### KSDSOUND_BUFFER_PRIMARY
+
+Indicates that the buffer is a primary sound buffer (the buffer the user hears when a game is playing).
+
+
+
+#### KSDSOUND_BUFFER_STATIC
+
+Indicates that the buffer will be used for static sound data.
+
+
+
+#### KSDSOUND_BUFFER_LOCHARDWARE
+
+Forces the buffer to use hardware mixing.
+
+
+
+#### KSDSOUND_BUFFER_LOCSOFTWARE
+
+Forces the buffer to be stored in system memory and use software mixing.
+
 `Control`
 
 Specifies the capabilities of the buffer. The capabilities of a buffer are represented by a set of control flags. This member can be set to the bitwise OR of one or more of the following flag bits:
@@ -99,36 +129,6 @@ Indicates that the buffer has volume-control capability. If this bit is set, the
 #### KSDSOUND_BUFFER_CTRL_POSITIONNOTIFY
 
 Indicates that the buffer has position-notification capability. If this bit is set, the pin representing the buffer supports the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537297">KSPROPERTY_AUDIO_POSITION</a> property.
-
-`Flags`
-
-Specifies the buffer configuration. This member can be set to the bitwise OR of one or more of the following flag bits:
-
-
-
-
-
-#### KSDSOUND_BUFFER_PRIMARY
-
-Indicates that the buffer is a primary sound buffer (the buffer the user hears when a game is playing).
-
-
-
-#### KSDSOUND_BUFFER_STATIC
-
-Indicates that the buffer will be used for static sound data.
-
-
-
-#### KSDSOUND_BUFFER_LOCHARDWARE
-
-Forces the buffer to use hardware mixing.
-
-
-
-#### KSDSOUND_BUFFER_LOCSOFTWARE
-
-Forces the buffer to be stored in system memory and use software mixing.
 
 `WaveFormatEx`
 
@@ -175,11 +175,3 @@ Note that the <b>WaveFormatEx</b> member of the KSDSOUND_BUFFERDESC structure ca
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSDSOUND_BUFFERDESC structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -60,12 +60,12 @@ typedef enum _RILCALLMODIFICATIONINFOMODIFICATIONTYPE {
 <table>
             
                 <tr>
-                    <td>RIL_CALLMODIFICATIONTYPE_BLOCKED</td>
+                    <td>RIL_CALLMODIFICATIONTYPE_UNKNOWN</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLMODIFICATIONTYPE_MAX</td>
+                    <td>RIL_CALLMODIFICATIONTYPE_BLOCKED</td>
                     <td></td>
                 </tr>
             
@@ -75,7 +75,7 @@ typedef enum _RILCALLMODIFICATIONINFOMODIFICATIONTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLMODIFICATIONTYPE_UNKNOWN</td>
+                    <td>RIL_CALLMODIFICATIONTYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

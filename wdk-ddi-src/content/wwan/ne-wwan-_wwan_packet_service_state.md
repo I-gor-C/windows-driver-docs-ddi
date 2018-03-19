@@ -64,8 +64,9 @@ typedef enum _WWAN_PACKET_SERVICE_STATE {
 <table>
             
                 <tr>
-                    <td>WwanPacketServiceStateAttached</td>
-                    <td>Packet service is attached.</td>
+                    <td>WwanPacketServiceStateUnknown</td>
+                    <td>Packet service state is unknown. The miniport driver should specify this state on a failure to set
+     the MB packet service state.</td>
                 </tr>
             
                 <tr>
@@ -74,8 +75,8 @@ typedef enum _WWAN_PACKET_SERVICE_STATE {
                 </tr>
             
                 <tr>
-                    <td>WwanPacketServiceStateDetached</td>
-                    <td>Packet service is detached.</td>
+                    <td>WwanPacketServiceStateAttached</td>
+                    <td>Packet service is attached.</td>
                 </tr>
             
                 <tr>
@@ -84,9 +85,8 @@ typedef enum _WWAN_PACKET_SERVICE_STATE {
                 </tr>
             
                 <tr>
-                    <td>WwanPacketServiceStateUnknown</td>
-                    <td>Packet service state is unknown. The miniport driver should specify this state on a failure to set
-     the MB packet service state.</td>
+                    <td>WwanPacketServiceStateDetached</td>
+                    <td>Packet service is detached.</td>
                 </tr>
 </table>
 
@@ -103,11 +103,3 @@ The packet service attach or detach state is typically reflected in the device's
 ## See Also
 
 <a href="..\wwan\ns-wwan-_wwan_packet_service.md">WWAN_PACKET_SERVICE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PACKET_SERVICE_STATE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

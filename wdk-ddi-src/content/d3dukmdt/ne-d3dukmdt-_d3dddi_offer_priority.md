@@ -62,21 +62,6 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
 <table>
             
                 <tr>
-                    <td>D3DDDI_OFFER_PRIORITY_AUTO</td>
-                    <td>The video memory manager should make a policy decision on the allocation's value based on its  priority for eviction.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_OFFER_PRIORITY_HIGH</td>
-                    <td>The allocation has useful content and cannot easily be regenerated. The video memory manager (which is part of Dxgkrnl.sys) should therefore avoid discarding this allocation before other offered allocations.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_OFFER_PRIORITY_LOW</td>
-                    <td>The allocation has low value and should be discarded before other offered allocations. Specify this type for allocations that have no useful content.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DDDI_OFFER_PRIORITY_NONE</td>
                     <td>The allocation should not be offered.
 
@@ -85,8 +70,23 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
                 </tr>
             
                 <tr>
+                    <td>D3DDDI_OFFER_PRIORITY_LOW</td>
+                    <td>The allocation has low value and should be discarded before other offered allocations. Specify this type for allocations that have no useful content.</td>
+                </tr>
+            
+                <tr>
                     <td>D3DDDI_OFFER_PRIORITY_NORMAL</td>
                     <td>The allocation has useful content but can easily be regenerated.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_OFFER_PRIORITY_HIGH</td>
+                    <td>The allocation has useful content and cannot easily be regenerated. The video memory manager (which is part of Dxgkrnl.sys) should therefore avoid discarding this allocation before other offered allocations.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_OFFER_PRIORITY_AUTO</td>
+                    <td>The video memory manager should make a policy decision on the allocation's value based on its  priority for eviction.</td>
                 </tr>
 </table>
 
@@ -104,11 +104,3 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
 
 
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_OFFER_PRIORITY enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

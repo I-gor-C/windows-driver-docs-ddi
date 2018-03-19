@@ -58,13 +58,13 @@ typedef struct _USBFN_ON_ATTACH {
 ## Members
 
 
-`AttachAction`
-
-The operation that must be performed depending on the port type. This value is defined in the <a href="..\usbfnattach\ne-usbfnattach-_usbfn_attach_action.md">USBFN_ATTACH_ACTION</a> enumeration.
-
 `PortType`
 
 Detected port type defined by one of the <a href="..\usbfnbase\ne-usbfnbase-_usbfn_port_type.md">USBFN_PORT_TYPE</a>-typed values.
+
+`AttachAction`
+
+The operation that must be performed depending on the port type. This value is defined in the <a href="..\usbfnattach\ne-usbfnattach-_usbfn_attach_action.md">USBFN_ATTACH_ACTION</a> enumeration.
 
 
 ## Requirements
@@ -75,11 +75,3 @@ Detected port type defined by one of the <a href="..\usbfnbase\ne-usbfnbase-_usb
 ## See Also
 
 <a href="..\usbfnattach\nc-usbfnattach-usbfn_get_attach_action.md">USBFN_GET_ATTACH_ACTION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBFN_ON_ATTACH structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

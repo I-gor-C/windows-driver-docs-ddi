@@ -61,8 +61,8 @@ typedef enum _DOT11_BSS_TYPE {
 <table>
             
                 <tr>
-                    <td>dot11_BSS_type_any</td>
-                    <td>Specifies either infrastructure or IBSS network.</td>
+                    <td>dot11_BSS_type_infrastructure</td>
+                    <td>Specifies an infrastructure BSS network.</td>
                 </tr>
             
                 <tr>
@@ -71,8 +71,8 @@ typedef enum _DOT11_BSS_TYPE {
                 </tr>
             
                 <tr>
-                    <td>dot11_BSS_type_infrastructure</td>
-                    <td>Specifies an infrastructure BSS network.</td>
+                    <td>dot11_BSS_type_any</td>
+                    <td>Specifies either infrastructure or IBSS network.</td>
                 </tr>
 </table>
 
@@ -114,11 +114,3 @@ The
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_TYPE enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

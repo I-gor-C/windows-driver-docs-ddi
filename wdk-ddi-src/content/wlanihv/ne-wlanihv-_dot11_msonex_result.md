@@ -63,6 +63,11 @@ typedef enum _DOT11_MSONEX_RESULT {
 <table>
             
                 <tr>
+                    <td>DOT11_MSONEX_SUCCESS</td>
+                    <td>The 802.1X authentication operation succeeded.</td>
+                </tr>
+            
+                <tr>
                     <td>DOT11_MSONEX_FAILURE</td>
                     <td>The 802.1X authentication operation failed.</td>
                 </tr>
@@ -70,11 +75,6 @@ typedef enum _DOT11_MSONEX_RESULT {
                 <tr>
                     <td>DOT11_MSONEX_IN_PROGRESS</td>
                     <td>The 802.1X authentication operation is in progress.</td>
-                </tr>
-            
-                <tr>
-                    <td>DOT11_MSONEX_SUCCESS</td>
-                    <td>The 802.1X authentication operation succeeded.</td>
                 </tr>
 </table>
 
@@ -101,11 +101,3 @@ After the IHV Extensions DLL initiates an 802.1X authentication operation, the o
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_onex_start.md">Dot11ExtStartOneX</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MSONEX_RESULT enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

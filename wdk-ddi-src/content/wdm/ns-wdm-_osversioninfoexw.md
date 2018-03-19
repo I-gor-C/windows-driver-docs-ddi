@@ -67,9 +67,9 @@ typedef struct _OSVERSIONINFOEXW {
 ## Members
 
 
-`dwBuildNumber`
+`dwOSVersionInfoSize`
 
-The build number of the operating system.
+The size, in bytes, of an <b>RTL_OSVERSIONINFOEXW</b> structure. This member must be set before the structure is used with <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>.
 
 `dwMajorVersion`
 
@@ -79,9 +79,9 @@ The major version number of the operating system. For example, for Windows 2000,
 
 The minor version number of the operating system. For example, for Windows 2000, the minor version number is zero. For more information, see the table in Remarks.
 
-`dwOSVersionInfoSize`
+`dwBuildNumber`
 
-The size, in bytes, of an <b>RTL_OSVERSIONINFOEXW</b> structure. This member must be set before the structure is used with <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>.
+The build number of the operating system.
 
 `dwPlatformId`
 
@@ -90,51 +90,6 @@ The operating system platform. For Win32 on NT-based operating systems, <b>RtlGe
 `szCSDVersion`
 
 The service-pack version string. This member contains a null-terminated string, such as "Service Pack 3", which indicates the latest service pack installed on the system. If no service pack is installed, <b>RtlGetVersion</b> might not initialize this string. Initialize <i>szCSDVersion</i> to zero (empty string) before the call to <b>RtlGetVersion</b>.
-
-`wProductType`
-
-The product type. This member contains additional information about the system. This member can be one of the following values: 
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-VER_NT_WORKSTATION
-
-</td>
-<td>
-Windows 2000 or later professional version
-
-</td>
-</tr>
-<tr>
-<td>
-VER_NT_DOMAIN_CONTROLLER
-
-</td>
-<td>
-Windows 2000 or later domain controller
-
-</td>
-</tr>
-<tr>
-<td>
-VER_NT_SERVER
-
-</td>
-<td>
-Windows 2000 or later server
-
-</td>
-</tr>
-</table>
-
-`wReserved`
-
-Reserved for future use.
 
 `wServicePackMajor`
 
@@ -290,6 +245,51 @@ Windows Home Server is installed.
 
 <div class="alert"><b>Note</b>    You should not rely solely on the VER_SUITE_SMALLBUSINESS flag to determine whether Small Business Server is currently installed. Both this flag and the VER_SUITE_SMALLBUSINESS_RESTRICTED flag are set when this product suite is installed. If you upgrade this installation to Windows Server, Standard Edition, the VER_SUITE_SMALLBUSINESS_RESTRICTED flag is cleared, but the VER_SUITE_SMALLBUSINESS flag remains set, which, in this case, indicates that Small Business Server was previously installed on this system. If this installation is further upgraded to Windows Server, Enterprise Edition, the VER_SUITE_SMALLBUSINESS flag remains set.</div>
 <div> </div>
+
+`wProductType`
+
+The product type. This member contains additional information about the system. This member can be one of the following values: 
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+VER_NT_WORKSTATION
+
+</td>
+<td>
+Windows 2000 or later professional version
+
+</td>
+</tr>
+<tr>
+<td>
+VER_NT_DOMAIN_CONTROLLER
+
+</td>
+<td>
+Windows 2000 or later domain controller
+
+</td>
+</tr>
+<tr>
+<td>
+VER_NT_SERVER
+
+</td>
+<td>
+Windows 2000 or later server
+
+</td>
+</tr>
+</table>
+
+`wReserved`
+
+Reserved for future use.
 
 ## Remarks
 The information in this structure includes the major and minor version numbers, the build number, the platform identifier, the installed product suites, and the latest service pack that is installed on the system. This structure is used with the <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a> and <a href="..\wdm\nf-wdm-rtlverifyversioninfo.md">RtlVerifyVersionInfo</a> routines.
@@ -594,11 +594,3 @@ Not applicable
 
 
 <a href="..\wdm\nf-wdm-rtlverifyversioninfo.md">RtlVerifyVersionInfo</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RTL_OSVERSIONINFOEXW structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

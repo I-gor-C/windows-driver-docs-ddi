@@ -64,13 +64,13 @@ typedef struct D3D12DDI_SWIZZLE_PATTERN_DESC_0022 {
 ## Members
 
 
-`Flags`
-
-Flags.
-
 `InterleavePatternSourceBits`
 
 The interleave pattern source bits.
+
+`InterleavePatternXORSourceBits`
+
+The interleave pattern XOR source bits.
 
 `InterleavePatternXOR2SourceBits`
 
@@ -84,9 +84,9 @@ The interleave pattern third XOR source bits.
 
 The interleave pattern fourth XOR source bits.
 
-`InterleavePatternXORSourceBits`
+`PostambleXORSourceBits`
 
-The interleave pattern XOR source bits.
+Postamble XOR source bits.
 
 `PostambleXOR2SourceBits`
 
@@ -96,9 +96,9 @@ Postamble second XOR source bits.
 
 A postamble XOR immediate value.
 
-`PostambleXORSourceBits`
+`Flags`
 
-Postamble XOR source bits.
+Flags.
 
 
 ## Requirements

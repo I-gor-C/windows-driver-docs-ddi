@@ -60,7 +60,7 @@ typedef enum _RILMSGACKSTATUS {
 <table>
             
                 <tr>
-                    <td>RIL_MSGACKSTATUS_ERROR</td>
+                    <td>RIL_MSGACKSTATUS_STORED</td>
                     <td></td>
                 </tr>
             
@@ -70,12 +70,12 @@ typedef enum _RILMSGACKSTATUS {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGACKSTATUS_MAX</td>
+                    <td>RIL_MSGACKSTATUS_ERROR</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGACKSTATUS_STORED</td>
+                    <td>RIL_MSGACKSTATUS_MAX</td>
                     <td></td>
                 </tr>
 </table>

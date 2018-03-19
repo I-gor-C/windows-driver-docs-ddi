@@ -66,7 +66,11 @@ typedef struct _REPORT_ZONES_DATA {
 ## Members
 
 
-`MaxLBA`
+`ZoneListLength`
+
+N/A
+
+`Same`
 
 N/A
 
@@ -78,19 +82,15 @@ N/A
 
 N/A
 
+`MaxLBA`
+
+N/A
+
 `Reserved3`
 
 N/A
 
-`Same`
-
-N/A
-
 `ZoneDescriptors`
-
-N/A
-
-`ZoneListLength`
 
 N/A
 

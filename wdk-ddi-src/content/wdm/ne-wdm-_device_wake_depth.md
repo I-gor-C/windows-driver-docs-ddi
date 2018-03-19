@@ -65,6 +65,11 @@ typedef enum _DEVICE_WAKE_DEPTH {
 <table>
             
                 <tr>
+                    <td>DeviceWakeDepthNotWakeable</td>
+                    <td>There is no device power state that can trigger a wake signal.</td>
+                </tr>
+            
+                <tr>
                     <td>DeviceWakeDepthD0</td>
                     <td>D0 is the deepest device power state from which the device can trigger a wake signal. For more information, see Remarks.</td>
                 </tr>
@@ -80,23 +85,18 @@ typedef enum _DEVICE_WAKE_DEPTH {
                 </tr>
             
                 <tr>
-                    <td>DeviceWakeDepthD3cold</td>
-                    <td>D3cold is the deepest low-power device power state from which the device can trigger a wake signal.</td>
-                </tr>
-            
-                <tr>
                     <td>DeviceWakeDepthD3hot</td>
                     <td>D3hot is the deepest low-power device power state from which the device can trigger a wake signal.</td>
                 </tr>
             
                 <tr>
-                    <td>DeviceWakeDepthMaximum</td>
-                    <td>Reserved for use by the operating system.</td>
+                    <td>DeviceWakeDepthD3cold</td>
+                    <td>D3cold is the deepest low-power device power state from which the device can trigger a wake signal.</td>
                 </tr>
             
                 <tr>
-                    <td>DeviceWakeDepthNotWakeable</td>
-                    <td>There is no device power state that can trigger a wake signal.</td>
+                    <td>DeviceWakeDepthMaximum</td>
+                    <td>Reserved for use by the operating system.</td>
                 </tr>
 </table>
 
@@ -114,11 +114,3 @@ The drivers for most devices have no reason to arm a wake signal when the device
 ## See Also
 
 <a href="..\wdm\nc-wdm-get_idle_wake_info.md">GetIdleWakeInfo</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DEVICE_WAKE_DEPTH enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

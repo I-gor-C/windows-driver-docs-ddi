@@ -61,14 +61,6 @@ typedef struct _ACPI_METHOD_ARGUMENT_V1 {
 ## Members
 
 
-`DataLength`
-
-The number of UCHAR elements in the <b>Data</b> array that contains the argument data.
-
-`DUMMYUNIONNAME`
-
-
-
 `Type`
 
 The type of the method argument, as specified by one of the following:
@@ -98,6 +90,14 @@ The <b>Data</b> array contains custom data, and <b>DataLength</b> supplies the n
 #### ACPI_METHOD_ARGUMENT_PACKAGE
 
 The <b>Data</b> array contains an ACPI package descriptor and <b>DataLength</b> supplies the number of consecutive array elements that contain the package descriptor, beginning with the <b>Data</b>[0] element.
+
+`DataLength`
+
+The number of UCHAR elements in the <b>Data</b> array that contains the argument data.
+
+`DUMMYUNIONNAME`
+
+
 
 ## Remarks
 An ACPI_EVAL_OUTPUT_BUFFER structure includes an <b>Argument</b> array of ACPI_METHOD_ARGUMENT structures. The following IOCTLs evaluate control methods and return output arguments in an <a href="..\acpiioct\ns-acpiioct-_acpi_eval_output_buffer_v1.md">ACPI_EVAL_OUTPUT_BUFFER</a> structure:
@@ -139,11 +139,3 @@ For more information about how to use ACPI_METHOD_ARGUMENT structures to supply 
 
 
 <a href="..\acpiioct\ns-acpiioct-_acpi_eval_output_buffer_v1.md">ACPI_EVAL_OUTPUT_BUFFER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20ACPI_METHOD_ARGUMENT_V1 structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

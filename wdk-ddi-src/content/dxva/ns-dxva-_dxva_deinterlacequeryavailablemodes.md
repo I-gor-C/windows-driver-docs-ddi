@@ -58,17 +58,17 @@ typedef struct _DXVA_DeinterlaceQueryAvailableModes {
 ## Members
 
 
-`Guids`
+`Size`
 
-An array of GUIDs that are returned for the available deinterlace modes.
+Indicates the size of this structure.
 
 `NumGuids`
 
 Indicates the number of GUIDs that are returned in the <b>Guids</b> member for the available modes.
 
-`Size`
+`Guids`
 
-Indicates the size of this structure.
+An array of GUIDs that are returned for the available deinterlace modes.
 
 ## Remarks
 The driver receives the DXVA_DeinterlaceQueryAvailableModes structure with the <b>Size</b> member assigned, assigns values to the remaining members, and returns DXVA_DeinterlaceQueryAvailableModes to the renderer.

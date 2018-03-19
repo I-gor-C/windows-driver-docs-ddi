@@ -81,48 +81,13 @@ typedef enum _UFS_ATTRIBUTES_DESCRIPTOR {
 <table>
             
                 <tr>
-                    <td>UFS_bActiveICCLevel</td>
-                    <td>Specifies the maximum
-current consumption allowed during
-Active Mode. Value ranges from 0x00 to 0x0F.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_bBackgroundOpStatus</td>
-                    <td>Specifies if the device has a need for background operations. Contains one of the following values:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>Device requires no background operations.</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Device has a non-critical need of background operations.</td>
-</tr>
-<tr>
-<td>0x02</td>
-<td>Device has a performance impacted-based need of background operations.</td>
-</tr>
-<tr>
-<td>0x03</td>
-<td>Device has a critical need of background operations. </td>
-</tr>
-</table></td>
-                </tr>
-            
-                <tr>
                     <td>UFS_bBootLunEn</td>
                     <td>Indicates if the Boot Logical Unit Number(LUN) is enabled.</td>
                 </tr>
             
                 <tr>
-                    <td>UFS_bConfigDescrLock</td>
-                    <td>Specifies if the configuration descriptor is locked.</td>
+                    <td>UFS_Reserved01</td>
+                    <td>Reserved for future use.</td>
                 </tr>
             
                 <tr>
@@ -170,6 +135,174 @@ Active Mode. Value ranges from 0x00 to 0x0F.</td>
                 </tr>
             
                 <tr>
+                    <td>UFS_bActiveICCLevel</td>
+                    <td>Specifies the maximum
+current consumption allowed during
+Active Mode. Value ranges from 0x00 to 0x0F.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_bOutOfOrderDataEn</td>
+                    <td>Specifies if out-of-order data transfer is
+enabled</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_bBackgroundOpStatus</td>
+                    <td>Specifies if the device has a need for background operations. Contains one of the following values:
+
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>Device requires no background operations.</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>Device has a non-critical need of background operations.</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>Device has a performance impacted-based need of background operations.</td>
+</tr>
+<tr>
+<td>0x03</td>
+<td>Device has a critical need of background operations. </td>
+</tr>
+</table></td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_bPurgeStatus</td>
+                    <td>Specifies the current purge operation's status.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_bMaxDataInSize</td>
+                    <td>Specifies the maximum data size in a DATA IN UFS Protocol Information Units (UPIU). This parameter can be written by the
+host only when all logical unit task queues are
+empty.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_bMaxDataOutSize</td>
+                    <td>Specifies the maximum data-out size. This parameter can be written by the
+host only when all logical unit task queues are
+empty.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_dDynCapNeeded</td>
+                    <td>Specifies the dynamic capacity need.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_bRefClkFreq</td>
+                    <td>Specifies the reference clock frequency value.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>19.2 MHz</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>26 MHz</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>38.4 MHz</td>
+</tr>
+<tr>
+<td>0x03</td>
+<td>52 MHz</td>
+</tr>
+</table></td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_bConfigDescrLock</td>
+                    <td>Specifies if the configuration descriptor is locked.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_bMaxNumOfRTT</td>
+                    <td>Defines the current maximum number of outstanding READY TO TRANSFER UPIU’s (RTT's) that are
+allowed. This value can be set by the host.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_wExceptionEventControl</td>
+                    <td>Specifies the Exception Event Controller. <b>UFS_wExceptionEventControl</b> enables the setting of the
+<b>EVENT_ALERT</b> bit in the Device
+Information field, which is contained in
+the RESPONSE UPIU.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_wExceptionEventStatus</td>
+                    <td>Specifies a bitmap of each exception event status.A bit will be set only if the
+relevant event has occurred
+(regardless of the
+<b>UFS_wExceptionEventControl</b> status). Contains the following bits:
+
+<table>
+<tr>
+<th>Bit</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>0</td>
+<td>DYNCAP_NEEDED</td>
+</tr>
+<tr>
+<td>1</td>
+<td>SYSPOOL_EXHAUSTED</td>
+</tr>
+<tr>
+<td>2</td>
+<td>URGENT_BKOPS</td>
+</tr>
+<tr>
+<td>3 to 15</td>
+<td>Reserved.</td>
+</tr>
+</table></td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_dSecondsPassed</td>
+                    <td>Specifies the time passed in seconds.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_wContextConf</td>
+                    <td>Specifies the context attribute.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_Obsolete</td>
+                    <td>Obselete</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_Reserved02</td>
+                    <td>Reserved for future use.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_Reserved03</td>
+                    <td>Reserved for future use.</td>
+                </tr>
+            
+                <tr>
                     <td>UFS_bDeviceFFUStatus</td>
                     <td>Specifies the Device Field Firmware Update (FFU) status.
 
@@ -207,32 +340,6 @@ Active Mode. Value ranges from 0x00 to 0x0F.</td>
 <td>General Error.</td>
 </tr>
 </table></td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_bMaxDataInSize</td>
-                    <td>Specifies the maximum data size in a DATA IN UFS Protocol Information Units (UPIU). This parameter can be written by the
-host only when all logical unit task queues are
-empty.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_bMaxDataOutSize</td>
-                    <td>Specifies the maximum data-out size. This parameter can be written by the
-host only when all logical unit task queues are
-empty.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_bMaxNumOfRTT</td>
-                    <td>Defines the current maximum number of outstanding READY TO TRANSFER UPIU’s (RTT's) that are
-allowed. This value can be set by the host.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_bOutOfOrderDataEn</td>
-                    <td>Specifies if out-of-order data transfer is
-enabled</td>
                 </tr>
             
                 <tr>
@@ -277,117 +384,10 @@ is locked after it is in
                 </tr>
             
                 <tr>
-                    <td>UFS_bPurgeStatus</td>
-                    <td>Specifies the current purge operation's status.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_bRefClkFreq</td>
-                    <td>Specifies the reference clock frequency value.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>19.2 MHz</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>26 MHz</td>
-</tr>
-<tr>
-<td>0x02</td>
-<td>38.4 MHz</td>
-</tr>
-<tr>
-<td>0x03</td>
-<td>52 MHz</td>
-</tr>
-</table></td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_dDynCapNeeded</td>
-                    <td>Specifies the dynamic capacity need.</td>
-                </tr>
-            
-                <tr>
                     <td>UFS_dPSADataSize</td>
                     <td>Specifies the amount of data that the host plans
 to load to all logical units with
 <b>bPSASensitive</b> set to 1.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_dSecondsPassed</td>
-                    <td>Specifies the time passed in seconds.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_Obsolete</td>
-                    <td>Obselete</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_Reserved01</td>
-                    <td>Reserved for future use.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_Reserved02</td>
-                    <td>Reserved for future use.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_Reserved03</td>
-                    <td>Reserved for future use.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_wContextConf</td>
-                    <td>Specifies the context attribute.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_wExceptionEventControl</td>
-                    <td>Specifies the Exception Event Controller. <b>UFS_wExceptionEventControl</b> enables the setting of the
-<b>EVENT_ALERT</b> bit in the Device
-Information field, which is contained in
-the RESPONSE UPIU.</td>
-                </tr>
-            
-                <tr>
-                    <td>UFS_wExceptionEventStatus</td>
-                    <td>Specifies a bitmap of each exception event status.A bit will be set only if the
-relevant event has occurred
-(regardless of the
-<b>UFS_wExceptionEventControl</b> status). Contains the following bits:
-
-<table>
-<tr>
-<th>Bit</th>
-<th>Value</th>
-</tr>
-<tr>
-<td>0</td>
-<td>DYNCAP_NEEDED</td>
-</tr>
-<tr>
-<td>1</td>
-<td>SYSPOOL_EXHAUSTED</td>
-</tr>
-<tr>
-<td>2</td>
-<td>URGENT_BKOPS</td>
-</tr>
-<tr>
-<td>3 to 15</td>
-<td>Reserved.</td>
-</tr>
-</table></td>
                 </tr>
 </table>
 
@@ -446,11 +446,3 @@ microcode activation event occurs.
 
 
 <a href="..\ufs\ns-ufs-_ufs_string_descriptor.md">UFS_STRING_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20UFS_ATTRIBUTES_DESCRIPTOR enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

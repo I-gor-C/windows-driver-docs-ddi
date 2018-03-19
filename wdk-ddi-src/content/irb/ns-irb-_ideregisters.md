@@ -64,29 +64,9 @@ typedef struct _IDEREGISTERS {
 ## Members
 
 
-`bCommandReg`
-
-Specifies the contents of the ATA Command register.
-
-`bCylHighReg`
-
-Specifies the contents of the ATA Cylinder High register.
-
-`bCylLowReg`
-
-Specifies the contents of the ATA Cylinder Low register.
-
-`bDriveHeadReg`
-
-Specifies the contents of the ATA Device/Head register.
-
 `bFeaturesReg`
 
 Specifies the contents of the ATA features register.
-
-`bReserved`
-
-Reserved for future use. The miniport driver shall not use this field.
 
 `bSectorCountReg`
 
@@ -95,6 +75,26 @@ Specifies the contents of the ATA Sector Count register.
 `bSectorNumberReg`
 
 Specifies the contents of the ATA Sector Number register.
+
+`bCylLowReg`
+
+Specifies the contents of the ATA Cylinder Low register.
+
+`bCylHighReg`
+
+Specifies the contents of the ATA Cylinder High register.
+
+`bDriveHeadReg`
+
+Specifies the contents of the ATA Device/Head register.
+
+`bCommandReg`
+
+Specifies the contents of the ATA Command register.
+
+`bReserved`
+
+Reserved for future use. The miniport driver shall not use this field.
 
 ## Remarks
 The information reported in the IDEREGISTERS structure is intended to be a superset of the information contained in <a href="..\ntdddisk\ns-ntdddisk-_ideregs.md">IDEREGS</a>. Microsoft might expand the contents of the IDEREGISTERS structure in the future. If you need a structure whose size is stable across different versions of the operating system, you should use <b>IDEREGS</b>.
@@ -107,11 +107,3 @@ The information reported in the IDEREGISTERS structure is intended to be a super
 ## See Also
 
 <a href="..\ntdddisk\ns-ntdddisk-_ideregs.md">IDEREGS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IDEREGISTERS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

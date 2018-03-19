@@ -63,8 +63,23 @@ typedef enum _PosDeviceType {
 <table>
             
                 <tr>
+                    <td>PosDeviceType_Unknown</td>
+                    <td>Indicates that the type of device is not known.</td>
+                </tr>
+            
+                <tr>
                     <td>PosDeviceType_BarcodeScanner</td>
                     <td>Indicates that the type of device is a barcode scanner.</td>
+                </tr>
+            
+                <tr>
+                    <td>PosDeviceType_MagneticStripeReader</td>
+                    <td>Indicates that the type of device is a magnetic stripe reader.</td>
+                </tr>
+            
+                <tr>
+                    <td>PosDeviceType_Printer</td>
+                    <td>Indicates that the type of device is a printer.</td>
                 </tr>
             
                 <tr>
@@ -78,23 +93,8 @@ typedef enum _PosDeviceType {
                 </tr>
             
                 <tr>
-                    <td>PosDeviceType_MagneticStripeReader</td>
-                    <td>Indicates that the type of device is a magnetic stripe reader.</td>
-                </tr>
-            
-                <tr>
                     <td>PosDeviceType_Max</td>
                     <td>Unused.</td>
-                </tr>
-            
-                <tr>
-                    <td>PosDeviceType_Printer</td>
-                    <td>Indicates that the type of device is a printer.</td>
-                </tr>
-            
-                <tr>
-                    <td>PosDeviceType_Unknown</td>
-                    <td>Indicates that the type of device is not known.</td>
                 </tr>
 </table>
 

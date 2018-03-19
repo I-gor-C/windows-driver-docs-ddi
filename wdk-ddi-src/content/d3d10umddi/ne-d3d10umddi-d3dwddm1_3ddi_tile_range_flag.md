@@ -69,17 +69,17 @@ number of tiles in all the tile regions, and the <i>pTilePoolStartOffsets</i> pa
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM_1_3DDI_TILE_RANGE_REUSE_SINGLE_TILE</td>
-                    <td>A single tile in the tile pool should be reused.
-
-If this flag is set in the UpdateTileMappings function's <i>pRangeFlags</i> parameter, the <i>pTilePoolStartOffsets</i> parameter specifies the single tile in the tile pool to map to, and the <i>pRangeTileCounts</i> parameter specifies how many tiles from the tile region to map to that tile pool location.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DWDDM_1_3DDI_TILE_RANGE_SKIP</td>
                     <td>Tiles should be skipped over, and existing tile mappings should be left unchanged.
 
 If this flag is set in the UpdateTileMappings function's <i>pRangeFlags</i> parameter, the <i>pRangeTileCounts</i> parameter specifies how many tiles from the tile regions to skip over, and the <i>pTilePoolStartOffsets</i> parameter is ignored.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DWDDM_1_3DDI_TILE_RANGE_REUSE_SINGLE_TILE</td>
+                    <td>A single tile in the tile pool should be reused.
+
+If this flag is set in the UpdateTileMappings function's <i>pRangeFlags</i> parameter, the <i>pTilePoolStartOffsets</i> parameter specifies the single tile in the tile pool to map to, and the <i>pRangeTileCounts</i> parameter specifies how many tiles from the tile region to map to that tile pool location.</td>
                 </tr>
 </table>
 

@@ -61,17 +61,17 @@ typedef enum _RILRMCVTYPE {
 <table>
             
                 <tr>
+                    <td>RIL_RMCV_TYPE_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_RMCV_TYPE_BOOLEAN</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_RMCV_TYPE_DWORD</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_RMCV_TYPE_NONE</td>
                     <td></td>
                 </tr>
             

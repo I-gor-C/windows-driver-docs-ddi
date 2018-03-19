@@ -57,13 +57,13 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_FOCUS {
 ## Members
 
 
-`Reserved`
-
-Reserved for future use.
-
 `ROIInfo`
 
 See the <a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_info.md">KSCAMERA_EXTENDEDPROP_ROI_INFO</a> structure for more information.
+
+`Reserved`
+
+Reserved for future use.
 
 
 ## Requirements

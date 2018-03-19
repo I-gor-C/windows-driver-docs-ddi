@@ -61,11 +61,11 @@ typedef struct _RILSMSMODIFICATIONINFO {
 ## Members
 
 
-`aiIdentifier`
-
-
-
 `cbSize`
+
+
+
+`dwParams`
 
 
 
@@ -77,11 +77,11 @@ typedef struct _RILSMSMODIFICATIONINFO {
 
 
 
-`dwParams`
-
-
-
 `raAddress`
+
+
+
+`aiIdentifier`
 
 
 

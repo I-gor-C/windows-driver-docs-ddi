@@ -62,7 +62,7 @@ typedef enum _RILMSGMWIPRIORITY {
 <table>
             
                 <tr>
-                    <td>RIL_MSGMWIPRIORITY_EMERGENCY</td>
+                    <td>RIL_MSGMWIPRIORITY_UNKNOWN</td>
                     <td></td>
                 </tr>
             
@@ -72,22 +72,22 @@ typedef enum _RILMSGMWIPRIORITY {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGMWIPRIORITY_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_MSGMWIPRIORITY_NORMAL</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGMWIPRIORITY_UNKNOWN</td>
+                    <td>RIL_MSGMWIPRIORITY_URGENT</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGMWIPRIORITY_URGENT</td>
+                    <td>RIL_MSGMWIPRIORITY_EMERGENCY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGMWIPRIORITY_MAX</td>
                     <td></td>
                 </tr>
 </table>

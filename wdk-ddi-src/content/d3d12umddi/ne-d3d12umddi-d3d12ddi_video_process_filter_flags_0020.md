@@ -66,8 +66,8 @@ typedef enum D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS_0020 {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_FLAG_0020_ANAMORPHIC_SCALING</td>
-                    <td>The video processor can perform anamorphic scaling. Anamorphic scaling can be used to stretch 4:3 content to a widescreen 16:9 aspect ratio.</td>
+                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_FLAG_0020_NONE</td>
+                    <td></td>
                 </tr>
             
                 <tr>
@@ -81,13 +81,13 @@ typedef enum D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS_0020 {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_FLAG_0020_EDGE_ENHANCEMENT</td>
-                    <td>The video processor can perform edge enhancement.</td>
+                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_FLAG_0020_HUE</td>
+                    <td>The video processor can adjust hue.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_FLAG_0020_HUE</td>
-                    <td>The video processor can adjust hue.</td>
+                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_FLAG_0020_SATURATION</td>
+                    <td>The video processor can adjust the saturation level.</td>
                 </tr>
             
                 <tr>
@@ -96,13 +96,13 @@ typedef enum D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS_0020 {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_FLAG_0020_NONE</td>
-                    <td></td>
+                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_FLAG_0020_EDGE_ENHANCEMENT</td>
+                    <td>The video processor can perform edge enhancement.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_FLAG_0020_SATURATION</td>
-                    <td>The video processor can adjust the saturation level.</td>
+                    <td>D3D12DDI_VIDEO_PROCESS_FILTER_FLAG_0020_ANAMORPHIC_SCALING</td>
+                    <td>The video processor can perform anamorphic scaling. Anamorphic scaling can be used to stretch 4:3 content to a widescreen 16:9 aspect ratio.</td>
                 </tr>
             
                 <tr>
@@ -123,11 +123,3 @@ Brightness, hue, contrast, and saturation support are always supported. These ca
 ## See Also
 
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS_0020 enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

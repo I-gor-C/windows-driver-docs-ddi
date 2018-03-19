@@ -61,29 +61,29 @@ typedef struct _KSCAMERA_MAXVIDEOFPS_FORPHOTORES {
 ## Members
 
 
-`CaptureFPSDenom`
+`PhotoResWidth`
 
-The denominator value of the capture frame rate.
-
-`CaptureFPSNum`
-
-The numerator value of the capture frame rate.
+The photo resolution width in pixels.
 
 `PhotoResHeight`
 
 The photo resolution height in pixels.
 
-`PhotoResWidth`
+`PreviewFPSNum`
 
-The photo resolution width in pixels.
+The numerator value of the preview frame rate.
 
 `PreviewFPSDenom`
 
 The denominator value of the preview frame rate.
 
-`PreviewFPSNum`
+`CaptureFPSNum`
 
-The numerator value of the preview frame rate.
+The numerator value of the capture frame rate.
+
+`CaptureFPSDenom`
+
+The denominator value of the capture frame rate.
 
 ## Remarks
 When setting the property, using a KSPROPERTY_TYPE_SET  request, the <b>PhotoResWidth</b> and <b>PhotoResHeight</b> members are  supplied by the application based on the available photo media types.  The camera driver must retain this resolution information internally.  The preview and capture frame rate members must be ignored by the driver on KSPROPERTY_TYPE_SET requests.

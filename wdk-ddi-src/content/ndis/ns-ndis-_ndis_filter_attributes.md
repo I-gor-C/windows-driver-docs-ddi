@@ -57,10 +57,6 @@ typedef struct _NDIS_FILTER_ATTRIBUTES {
 ## Members
 
 
-`Flags`
-
-Reserved. Set this member to zero.
-
 `Header`
 
 The 
@@ -70,6 +66,10 @@ The
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_FILTER_ATTRIBUTES, the 
      <b>Revision</b> member to NDIS_FILTER_ATTRIBUTES_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_FILTER_ATTRIBUTES_REVISION_1.
+
+`Flags`
+
+Reserved. Set this member to zero.
 
 ## Remarks
 A filter drivers passes an NDIS_FILTER_ATTRIBUTES structure to the 
@@ -88,11 +88,3 @@ A filter drivers passes an NDIS_FILTER_ATTRIBUTES structure to the
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_ATTRIBUTES structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -65,11 +65,11 @@ typedef struct _RILCALLDISCONNECTDETAILS {
 ## Members
 
 
-`causeUnion`
-
-
-
 `dwDisconnectGroup`
+
+
+
+`causeUnion`
 
 
 

@@ -62,11 +62,6 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>MIRACAST_PROTOCOL_EVENT_FORCE_UINT32</td>
-                    <td>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</td>
-                </tr>
-            
-                <tr>
                     <td>MIRACAST_PROTOCOL_EVENT_IFRAME_RQ</td>
                     <td>The driver received a request for a new IDR type of I-frame from the Miracast sink.</td>
                 </tr>
@@ -84,6 +79,11 @@ typedef enum  {
                 <tr>
                     <td>MIRACAST_PROTOCOL_EVENT_SINK_FAILED_PREFERRED_MODE_CHANGE</td>
                     <td>Reserved for system use. Do not use in your driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>MIRACAST_PROTOCOL_EVENT_FORCE_UINT32</td>
+                    <td>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</td>
                 </tr>
 </table>
 

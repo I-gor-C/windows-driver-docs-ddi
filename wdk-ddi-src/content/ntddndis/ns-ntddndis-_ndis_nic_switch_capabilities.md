@@ -92,10 +92,6 @@ typedef struct _NDIS_NIC_SWITCH_CAPABILITIES {
 ## Members
 
 
-`Flags`
-
-A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.
-
 `Header`
 
 The type, revision, and size of the <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
@@ -132,124 +128,40 @@ Original version for NDIS 6.20.
 
 Set the <b>Size</b> member to NDIS_SIZEOF_NIC_SWITCH_CAPABILITIES_REVISION_1.
 
-`MaxNumMacAddresses`
+`Flags`
 
-A ULONG value that specifies the maximum number of unicast MAC address filters that are available on the NIC switch.  
-
-<div class="alert"><b>Note</b>  This value must be greater than or equal to the value of <b>MaxNumVPorts</b>. This enables each VPort (including the default VPort) to be configured to have at least one unicast MAC address filter.</div>
-<div> </div>
-
-`MaxNumQueuePairs`
-
-A ULONG value that specifies the maximum number of queue pairs that can be assigned to all VPorts. This includes the default VPort that is attached to the PF.
-
-<div class="alert"><b>Note</b>  This value must be greater than or equal to the value of <b>MaxNumVPorts</b>.</div>
-<div> </div>
-
-`MaxNumQueuePairsForDefaultVPort`
-
-A ULONG value that specifies the maximum number of queue pairs that can be assigned to the default VPort. 
-
-This value is specified in powers of 2, and provides for asymmetric configuration and assignment of queue pairs to VPorts. For more information, see <a href="https://msdn.microsoft.com/B4BA1567-D536-4E7D-924C-7476FB82DAEB">Symmetric and Asymmetric Assignment of Queue Pairs</a>.
-
-`MaxNumQueuePairsPerNonDefaultVPort`
-
-A ULONG value that specifies the maximum number of queue pairs that can be assigned to a nondefault VPort. 
-
-This value is specified in powers of 2, and provides for asymmetric configuration and assignment of queue pairs to VPorts. For more information, see <a href="https://msdn.microsoft.com/B4BA1567-D536-4E7D-924C-7476FB82DAEB">Symmetric and Asymmetric Assignment of Queue Pairs</a>.
-
-`MaxNumRssCapableNonDefaultPFVPorts`
-
-A ULONG value that specifies the maximum number of RSS-capable non-default PFVPorts.
-
-`MaxNumSwitches`
-
-A ULONG value that specifies the maximum number of switches that can be created on the network adapter's PCI Express (PCIe) Physical Function (PF).
-
-<div class="alert"><b>Note</b>  Starting with Windows Server 2012, Windows only supports the default NIC switch on the network adapter. Therefore, this member must always be set to one. 
-</div>
-<div> </div>
-
-`MaxNumVFs`
-
-A ULONG value that specifies the maximum number of VFs that can be created on the NIC switch. 
-
-<div class="alert"><b>Note</b>  Depending on the available hardware resources on the network adapter, the miniport driver can set the <b>MaxNumVFs</b> member to a value that is less than its <b>*NumVFs</b>
-keyword. For more information about this keyword, see <a href="https://msdn.microsoft.com/5CA33B4F-E43A-4EB6-BCAB-365CA1FD3EF2">Standardized INF Keywords for SR-IOV</a>.</div>
-<div> </div>
-
-`MaxNumVPorts`
-
-A ULONG value that specifies the maximum number of VPorts that can be created on a network adapter. This includes the default VPort that is always attached to the PF. 
-
-<div class="alert"><b>Note</b>  The NIC switch must support at least (<b>MaxNumVFs</b> + 1) VPorts.</div>
-<div> </div>
+A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.
 
 `NdisReserved1`
 
 Reserved for NDIS.
 
-`NdisReserved10`
+`NumTotalMacAddresses`
 
-Reserved for NDIS.
+A ULONG value that contains the total number of media access control (MAC) addresses that the network adapter supports.
 
-`NdisReserved11`
+<div class="alert"><b>Note</b>  Drivers must set this member to zero for revision 2 and later revisions of this structure.</div>
+<div> </div>
 
-Reserved for NDIS.
+`NumMacAddressesPerPort`
 
-`NdisReserved12`
+A ULONG value that contains the number of MAC addresses that are supported for each port.
 
-Reserved for NDIS.
+<div class="alert"><b>Note</b>  Drivers must set this member to zero for revision 2 and later revisions of this structure.</div>
+<div> </div>
 
-`NdisReserved13`
+`NumVlansPerPort`
 
-Reserved for NDIS.
+A ULONG value that contains the number of VLANs that are supported for each port.
 
-`NdisReserved14`
-
-Reserved for NDIS.
-
-`NdisReserved15`
-
-Reserved for NDIS.
-
-`NdisReserved16`
-
-Reserved for NDIS.
-
-`NdisReserved17`
-
-Reserved for NDIS.
+<div class="alert"><b>Note</b>  Drivers must set this member to zero for revision 2 and later revisions of this structure.</div>
+<div> </div>
 
 `NdisReserved2`
 
 Reserved for NDIS.
 
 `NdisReserved3`
-
-Reserved for NDIS.
-
-`NdisReserved4`
-
-Reserved for NDIS.
-
-`NdisReserved5`
-
-Reserved for NDIS.
-
-`NdisReserved6`
-
-Reserved for NDIS.
-
-`NdisReserved7`
-
-Reserved for NDIS.
-
-`NdisReserved8`
-
-Reserved for NDIS.
-
-`NdisReserved9`
 
 Reserved for NDIS.
 
@@ -319,6 +231,109 @@ For more information about VMQ, see <a href="https://msdn.microsoft.com/c502c7d6
 
 For more information about VPorts, see <a href="https://msdn.microsoft.com/BF3DFE01-6583-4FBB-AFFA-2C017A3D9A05">Managing Virtual Ports</a>.
 
+`MaxNumSwitches`
+
+A ULONG value that specifies the maximum number of switches that can be created on the network adapter's PCI Express (PCIe) Physical Function (PF).
+
+<div class="alert"><b>Note</b>  Starting with Windows Server 2012, Windows only supports the default NIC switch on the network adapter. Therefore, this member must always be set to one. 
+</div>
+<div> </div>
+
+`MaxNumVPorts`
+
+A ULONG value that specifies the maximum number of VPorts that can be created on a network adapter. This includes the default VPort that is always attached to the PF. 
+
+<div class="alert"><b>Note</b>  The NIC switch must support at least (<b>MaxNumVFs</b> + 1) VPorts.</div>
+<div> </div>
+
+`NdisReserved4`
+
+Reserved for NDIS.
+
+`MaxNumVFs`
+
+A ULONG value that specifies the maximum number of VFs that can be created on the NIC switch. 
+
+<div class="alert"><b>Note</b>  Depending on the available hardware resources on the network adapter, the miniport driver can set the <b>MaxNumVFs</b> member to a value that is less than its <b>*NumVFs</b>
+keyword. For more information about this keyword, see <a href="https://msdn.microsoft.com/5CA33B4F-E43A-4EB6-BCAB-365CA1FD3EF2">Standardized INF Keywords for SR-IOV</a>.</div>
+<div> </div>
+
+`MaxNumQueuePairs`
+
+A ULONG value that specifies the maximum number of queue pairs that can be assigned to all VPorts. This includes the default VPort that is attached to the PF.
+
+<div class="alert"><b>Note</b>  This value must be greater than or equal to the value of <b>MaxNumVPorts</b>.</div>
+<div> </div>
+
+`NdisReserved5`
+
+Reserved for NDIS.
+
+`NdisReserved6`
+
+Reserved for NDIS.
+
+`NdisReserved7`
+
+Reserved for NDIS.
+
+`MaxNumQueuePairsPerNonDefaultVPort`
+
+A ULONG value that specifies the maximum number of queue pairs that can be assigned to a nondefault VPort. 
+
+This value is specified in powers of 2, and provides for asymmetric configuration and assignment of queue pairs to VPorts. For more information, see <a href="https://msdn.microsoft.com/B4BA1567-D536-4E7D-924C-7476FB82DAEB">Symmetric and Asymmetric Assignment of Queue Pairs</a>.
+
+`NdisReserved8`
+
+Reserved for NDIS.
+
+`NdisReserved9`
+
+Reserved for NDIS.
+
+`NdisReserved10`
+
+Reserved for NDIS.
+
+`NdisReserved11`
+
+Reserved for NDIS.
+
+`NdisReserved12`
+
+Reserved for NDIS.
+
+`MaxNumMacAddresses`
+
+A ULONG value that specifies the maximum number of unicast MAC address filters that are available on the NIC switch.  
+
+<div class="alert"><b>Note</b>  This value must be greater than or equal to the value of <b>MaxNumVPorts</b>. This enables each VPort (including the default VPort) to be configured to have at least one unicast MAC address filter.</div>
+<div> </div>
+
+`NdisReserved13`
+
+Reserved for NDIS.
+
+`NdisReserved14`
+
+Reserved for NDIS.
+
+`NdisReserved15`
+
+Reserved for NDIS.
+
+`NdisReserved16`
+
+Reserved for NDIS.
+
+`NdisReserved17`
+
+Reserved for NDIS.
+
+`MaxNumRssCapableNonDefaultPFVPorts`
+
+A ULONG value that specifies the maximum number of RSS-capable non-default PFVPorts.
+
 `NumberOfIndirectionTableEntriesForDefaultVPort`
 
 A ULONG value that specifies the number of indirection table entries for the default VPort.
@@ -327,26 +342,11 @@ A ULONG value that specifies the number of indirection table entries for the def
 
 A ULONG value that specifies the number of indirection table entries for each non-default PFVPort.
 
-`NumMacAddressesPerPort`
+`MaxNumQueuePairsForDefaultVPort`
 
-A ULONG value that contains the number of MAC addresses that are supported for each port.
+A ULONG value that specifies the maximum number of queue pairs that can be assigned to the default VPort. 
 
-<div class="alert"><b>Note</b>  Drivers must set this member to zero for revision 2 and later revisions of this structure.</div>
-<div> </div>
-
-`NumTotalMacAddresses`
-
-A ULONG value that contains the total number of media access control (MAC) addresses that the network adapter supports.
-
-<div class="alert"><b>Note</b>  Drivers must set this member to zero for revision 2 and later revisions of this structure.</div>
-<div> </div>
-
-`NumVlansPerPort`
-
-A ULONG value that contains the number of VLANs that are supported for each port.
-
-<div class="alert"><b>Note</b>  Drivers must set this member to zero for revision 2 and later revisions of this structure.</div>
-<div> </div>
+This value is specified in powers of 2, and provides for asymmetric configuration and assignment of queue pairs to VPorts. For more information, see <a href="https://msdn.microsoft.com/B4BA1567-D536-4E7D-924C-7476FB82DAEB">Symmetric and Asymmetric Assignment of Queue Pairs</a>.
 
 ## Remarks
 The <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure is used in the 
@@ -411,11 +411,3 @@ OID query requests of <a href="https://docs.microsoft.com/en-us/windows-hardware
 
 
 <b></b>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_CAPABILITIES structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

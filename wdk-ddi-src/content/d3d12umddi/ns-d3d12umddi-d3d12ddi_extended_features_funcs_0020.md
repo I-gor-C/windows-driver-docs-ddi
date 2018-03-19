@@ -58,10 +58,6 @@ typedef struct _D3D12DDI_EXTENDED_FEATURES_FUNCS_0020 {
 ## Members
 
 
-`pfnEnableExtendedFeature`
-
-A pointer for a callback function to enable an extended feature.
-
 `pfnGetSupportedExtendedFeatures`
 
 A pointer for a callback function to get supported extended features.
@@ -69,6 +65,10 @@ A pointer for a callback function to get supported extended features.
 `pfnGetSupportedExtendedFeatureVersions`
 
 A pointer for a callback function to get the supported versions of extended features.
+
+`pfnEnableExtendedFeature`
+
+A pointer for a callback function to enable an extended feature.
 
 
 ## Requirements

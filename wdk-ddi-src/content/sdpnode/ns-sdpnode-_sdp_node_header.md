@@ -69,16 +69,16 @@ A linked-list structure that is used to link peer SDP record nodes when this str
      <b>u.sequence</b> or 
      <b>u.alternative</b> part of the individual SDP_NODE structure.
 
-`SpecificType`
-
-Extra information about the data type associated with the 
-     <b>SDP_NODE_DATA</b> union that is associated with the SDP record element.
-
 `Type`
 
 The data type of the 
      <a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a> union held in the 
      <b>u</b> member of the SDP_NODE structure.
+
+`SpecificType`
+
+Extra information about the data type associated with the 
+     <b>SDP_NODE_DATA</b> union that is associated with the SDP record element.
 
 ## Remarks
 Each SDP_NODE structure in the tree representation of an SDP record contains a SDP_NODE_HEADER
@@ -117,11 +117,3 @@ The header specifies the type of data. Driver developers can access links to pee
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SDP_NODE_HEADER structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

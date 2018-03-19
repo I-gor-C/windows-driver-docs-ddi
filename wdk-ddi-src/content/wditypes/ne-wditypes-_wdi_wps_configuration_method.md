@@ -65,23 +65,13 @@ typedef enum _WDI_WPS_CONFIGURATION_METHOD {
 <table>
             
                 <tr>
+                    <td>WDI_WPS_CONFIGURATION_METHOD_NULL</td>
+                    <td>WFDS.</td>
+                </tr>
+            
+                <tr>
                     <td>WDI_WPS_CONFIGURATION_METHOD_DISPLAY</td>
                     <td>Pin display.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_WPS_CONFIGURATION_METHOD_DUMMY_MAX_VALUE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_WPS_CONFIGURATION_METHOD_KEYPAD</td>
-                    <td>Pin keypad.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_WPS_CONFIGURATION_METHOD_NFC_INTERFACE</td>
-                    <td>NFC interface.</td>
                 </tr>
             
                 <tr>
@@ -90,8 +80,8 @@ typedef enum _WDI_WPS_CONFIGURATION_METHOD {
                 </tr>
             
                 <tr>
-                    <td>WDI_WPS_CONFIGURATION_METHOD_NULL</td>
-                    <td>WFDS.</td>
+                    <td>WDI_WPS_CONFIGURATION_METHOD_NFC_INTERFACE</td>
+                    <td>NFC interface.</td>
                 </tr>
             
                 <tr>
@@ -100,8 +90,18 @@ typedef enum _WDI_WPS_CONFIGURATION_METHOD {
                 </tr>
             
                 <tr>
+                    <td>WDI_WPS_CONFIGURATION_METHOD_KEYPAD</td>
+                    <td>Pin keypad.</td>
+                </tr>
+            
+                <tr>
                     <td>WDI_WPS_CONFIGURATION_METHOD_WFDS_DEFAULT</td>
                     <td>WFDS.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_WPS_CONFIGURATION_METHOD_DUMMY_MAX_VALUE</td>
+                    <td></td>
                 </tr>
 </table>
 

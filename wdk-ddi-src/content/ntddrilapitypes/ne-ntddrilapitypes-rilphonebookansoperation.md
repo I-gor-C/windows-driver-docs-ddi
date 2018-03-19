@@ -65,12 +65,12 @@ typedef enum _RILPHONEBOOKANSOPERATION {
                 </tr>
             
                 <tr>
-                    <td>RIL_PHONEBOOK_ANSDELETED</td>
+                    <td>RIL_PHONEBOOK_ANSMODIFIED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PHONEBOOK_ANSMODIFIED</td>
+                    <td>RIL_PHONEBOOK_ANSDELETED</td>
                     <td></td>
                 </tr>
             

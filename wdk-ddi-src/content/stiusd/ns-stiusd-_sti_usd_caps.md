@@ -58,6 +58,10 @@ typedef struct _STI_USD_CAPS {
 ## Members
 
 
+`dwVersion`
+
+STI version number. This value must be STI_VERSION, defined in <i>Sti.h</i>.
+
 `dwGenericCaps`
 
 Bit flags indicating driver capabilities. The following flags are defined in <i>Stiusd.h</i>.
@@ -77,10 +81,6 @@ The driver supports asynchronous device notifications.
 #### STI_USD_GENCAP_OPEN_DEVICE_FOR_ME
 
 <i>Not used.</i>
-
-`dwVersion`
-
-STI version number. This value must be STI_VERSION, defined in <i>Sti.h</i>.
 
 
 ## Requirements

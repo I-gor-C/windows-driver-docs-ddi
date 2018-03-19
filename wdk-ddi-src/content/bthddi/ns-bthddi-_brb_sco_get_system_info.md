@@ -63,22 +63,11 @@ struct _BRB_SCO_GET_SYSTEM_INFO {
 ## Members
 
 
-`DataFormats`
+`Hdr`
 
-A flag or combination of flags the indicates the voice-encoding data formats supported by the
-     local system. Possible values include:
-     
-
-
-<dl>
-<dt>SCO_DATA_FORMAT_A_LAW_LOG 
-     </dt>
-<dt>SCO_DATA_FORMAT_CVSD
-     </dt>
-<dt>SCO_DATA_FORMAT_MU_LAW_LOG
-     </dt>
-<dt>SCO_DATA_FORMAT_TRANSPARENT</dt>
-</dl>
+A 
+     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     about the current BRB.
 
 `Features`
 
@@ -93,16 +82,15 @@ A flag or combination of flags that indicates what SCO features the system suppo
 <dt>SCO_FEATURE_SCO_LINKS</dt>
 </dl>
 
-`Hdr`
-
-A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
-     about the current BRB.
-
 `MaxChannels`
 
 The maximum number of active SCO channels that the system supports. This member is set to 0xFFFF
      if there is no limit or if the limit is unknown.
+
+`TransferUnit`
+
+The minimum data transfer speed per each request, in milliseconds . Set to 0xFFFF if this value is
+     variable or unknown.
 
 `PacketTypes`
 
@@ -126,14 +114,26 @@ A flag or combination of flags that indicates the type of SCO data packets that 
 <dt>SCO_EV5</dt>
 </dl>
 
+`DataFormats`
+
+A flag or combination of flags the indicates the voice-encoding data formats supported by the
+     local system. Possible values include:
+     
+
+
+<dl>
+<dt>SCO_DATA_FORMAT_A_LAW_LOG 
+     </dt>
+<dt>SCO_DATA_FORMAT_CVSD
+     </dt>
+<dt>SCO_DATA_FORMAT_MU_LAW_LOG
+     </dt>
+<dt>SCO_DATA_FORMAT_TRANSPARENT</dt>
+</dl>
+
 `Reserved`
 
 Reserved for future use. Do not use.
-
-`TransferUnit`
-
-The minimum data transfer speed per each request, in milliseconds . Set to 0xFFFF if this value is
-     variable or unknown.
 
 ## Remarks
 To get the local system's support for SCO connections, profile drivers should 
@@ -157,11 +157,3 @@ Higher-level profile drivers can build and send a <b>BRB_SCO_GET_SYSTEM_INFO</b>
 
 
 <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_SCO_GET_SYSTEM_INFO structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

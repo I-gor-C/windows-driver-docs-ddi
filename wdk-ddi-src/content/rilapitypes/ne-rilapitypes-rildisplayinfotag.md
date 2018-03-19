@@ -86,52 +86,12 @@ typedef enum _RILDISPLAYINFOTAG {
 <table>
             
                 <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_ACCUMULATED_DIGITS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_EXTENDED_DISPLAY_TAG_BLANK</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_CALL_APPEARANCE_ID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_CALLED_ADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_CALLED_PARTY_NAME</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_CALLING_ADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_CALLING_PARTY_NAME</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_CAUSE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_CONNECTED_NAME</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_CONNECTED_NUMBER</td>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_SKIP</td>
                     <td></td>
                 </tr>
             
@@ -141,42 +101,12 @@ typedef enum _RILDISPLAYINFOTAG {
                 </tr>
             
                 <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_DATE_TIME_OF_DAY</td>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_CALLED_ADDRESS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_FEATURE_ADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_INBAND</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_NOTIFICATION_INDICATOR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_ORIGINAL_CALLED_NAME</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_ORIGINAL_CALLED_NUMBER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_ORIGINATING_RESTRICT</td>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_CAUSE</td>
                     <td></td>
                 </tr>
             
@@ -186,7 +116,32 @@ typedef enum _RILDISPLAYINFOTAG {
                 </tr>
             
                 <tr>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_NOTIFICATION_INDICATOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_EXTENDED_DISPLAY_TAG_PROMPT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_ACCUMULATED_DIGITS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_STATUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_INBAND</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_CALLING_ADDRESS</td>
                     <td></td>
                 </tr>
             
@@ -196,12 +151,47 @@ typedef enum _RILDISPLAYINFOTAG {
                 </tr>
             
                 <tr>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_CALLING_PARTY_NAME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_CALLED_PARTY_NAME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_ORIGINAL_CALLED_NAME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_EXTENDED_DISPLAY_TAG_REDIRECTING_NAME</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_REDIRECTING_NUMBER</td>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_CONNECTED_NAME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_ORIGINATING_RESTRICT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_DATE_TIME_OF_DAY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_CALL_APPEARANCE_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_FEATURE_ADDRESS</td>
                     <td></td>
                 </tr>
             
@@ -216,17 +206,27 @@ typedef enum _RILDISPLAYINFOTAG {
                 </tr>
             
                 <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_SKIP</td>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_REDIRECTING_NUMBER</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_EXTENDED_DISPLAY_TAG_STATUS</td>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_ORIGINAL_CALLED_NUMBER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_CONNECTED_NUMBER</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_EXTENDED_DISPLAY_TAG_TEXT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EXTENDED_DISPLAY_TAG_MAX</td>
                     <td></td>
                 </tr>
 </table>

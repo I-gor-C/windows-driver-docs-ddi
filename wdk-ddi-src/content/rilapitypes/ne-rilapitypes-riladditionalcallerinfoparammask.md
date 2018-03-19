@@ -62,17 +62,7 @@ typedef enum _RILADDITIONALCALLERINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_ADDTLCI_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_ADDTLCI_CALLERINFO</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_ADDTLCI_CALLERINFOLENGTH</td>
+                    <td>RIL_PARAM_ADDTLCI_EXECUTOR</td>
                     <td></td>
                 </tr>
             
@@ -82,7 +72,17 @@ typedef enum _RILADDITIONALCALLERINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_ADDTLCI_EXECUTOR</td>
+                    <td>RIL_PARAM_ADDTLCI_CALLERINFOLENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_ADDTLCI_CALLERINFO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_ADDTLCI_ALL</td>
                     <td></td>
                 </tr>
 </table>

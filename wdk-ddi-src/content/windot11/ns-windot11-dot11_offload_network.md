@@ -60,14 +60,6 @@ typedef struct _DOT11_OFFLOAD_NETWORK {
 ## Members
 
 
-`AuthAlgo`
-
-Wireless LAN authentication algorithm.
-
-`Dot11ChannelHints`
-
-
-
 `Ssid`
 
 SSID interface.
@@ -75,6 +67,14 @@ SSID interface.
 `UnicastCipher`
 
 Cipher algorithm for data encryption and decryption.
+
+`AuthAlgo`
+
+Wireless LAN authentication algorithm.
+
+`Dot11ChannelHints`
+
+
 
 
 ## Requirements

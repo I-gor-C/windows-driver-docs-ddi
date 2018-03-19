@@ -68,9 +68,11 @@ The initial 48-bit value of the TKIP Sequence Counter (TSC), which is used for r
      For more information about the TSC, see 
      <a href="https://msdn.microsoft.com/4f0c45f0-3125-4b19-82c1-3681b2e31c96">TKIP</a>.
 
-`ucTKIPMICKeys`
+`ulTKIPKeyLength`
 
-The TKIP and MIC key material.
+The length, in bytes, of the TKIP key material in the 
+     <b>ucTKIPMICKeys</b> array. If the authentication and cipher key derivation is performed by the operating
+     system, this member will always have a value of 16.
 
 `ulMICKeyLength`
 
@@ -79,11 +81,9 @@ The length, in bytes, of the MIC key material in the
      system, this member will always have a value of 16. The first 8 bytes will be the MIC key used for
      received packets and the last 8 bytes will be the MIC key used for transmitted packets.
 
-`ulTKIPKeyLength`
+`ucTKIPMICKeys`
 
-The length, in bytes, of the TKIP key material in the 
-     <b>ucTKIPMICKeys</b> array. If the authentication and cipher key derivation is performed by the operating
-     system, this member will always have a value of 16.
+The TKIP and MIC key material.
 
 ## Remarks
 The TKIP key starts at 
@@ -125,11 +125,3 @@ Initialize the TSC counter used for the send path to any value.
 
 <a href="..\windot11\ns-windot11-dot11_cipher_default_key_value.md">
    DOT11_CIPHER_DEFAULT_KEY_VALUE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_KEY_ALGO_TKIP_MIC structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

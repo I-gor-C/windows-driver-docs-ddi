@@ -90,6 +90,106 @@ typedef struct _WHEA_X64_REGISTER_STATE {
 ## Members
 
 
+`Rax`
+
+The accumulator register.
+
+`Rbx`
+
+The base register.
+
+`Rcx`
+
+The count register.
+
+`Rdx`
+
+The data register.
+
+`Rsi`
+
+The source index register.
+
+`Rdi`
+
+The destination index register.
+
+`Rbp`
+
+The base pointer register.
+
+`Rsp`
+
+The stack pointer register.
+
+`R8`
+
+The general purpose register R8.
+
+`R9`
+
+The general purpose register R9.
+
+`R10`
+
+The general purpose register R10.
+
+`R11`
+
+The general purpose register R11.
+
+`R12`
+
+The general purpose register R12.
+
+`R13`
+
+The general purpose register R13.
+
+`R14`
+
+The general purpose register R14.
+
+`R15`
+
+The general purpose register R15.
+
+`Cs`
+
+The code segment register.
+
+`Ds`
+
+The data segment register.
+
+`Ss`
+
+The stack segment register.
+
+`Es`
+
+The extra segment register.
+
+`Fs`
+
+The general purpose segment register FS.
+
+`Gs`
+
+The general purpose segment register GS.
+
+`Reserved`
+
+Reserved for system use.
+
+`Rflags`
+
+The flags register.
+
+`Eip`
+
+The instruction pointer register.
+
 `Cr0`
 
 The control register 0.
@@ -113,26 +213,6 @@ The control register 4.
 `Cr8`
 
 The control register 8.
-
-`Cs`
-
-The code segment register.
-
-`Ds`
-
-The data segment register.
-
-`Eip`
-
-The instruction pointer register.
-
-`Es`
-
-The extra segment register.
-
-`Fs`
-
-The general purpose segment register FS.
 
 `Gdtr`
 
@@ -165,10 +245,6 @@ The low order 64 bits of the 128-bit value.
 
 The high order 64 bits of the 128-bit value.
 
-`Gs`
-
-The general purpose segment register GS.
-
 `Idtr`
 
 A WHEA128A structure that contains the state of the interrupt descriptor table register. For a description of the WHEA128A structure, see the description for the <b>Gdtr</b> member.
@@ -176,82 +252,6 @@ A WHEA128A structure that contains the state of the interrupt descriptor table r
 `Ldtr`
 
 The local descriptor table register.
-
-`R10`
-
-The general purpose register R10.
-
-`R11`
-
-The general purpose register R11.
-
-`R12`
-
-The general purpose register R12.
-
-`R13`
-
-The general purpose register R13.
-
-`R14`
-
-The general purpose register R14.
-
-`R15`
-
-The general purpose register R15.
-
-`R8`
-
-The general purpose register R8.
-
-`R9`
-
-The general purpose register R9.
-
-`Rax`
-
-The accumulator register.
-
-`Rbp`
-
-The base pointer register.
-
-`Rbx`
-
-The base register.
-
-`Rcx`
-
-The count register.
-
-`Rdi`
-
-The destination index register.
-
-`Rdx`
-
-The data register.
-
-`Reserved`
-
-Reserved for system use.
-
-`Rflags`
-
-The flags register.
-
-`Rsi`
-
-The source index register.
-
-`Rsp`
-
-The stack pointer register.
-
-`Ss`
-
-The stack segment register.
 
 `Tr`
 
@@ -269,11 +269,3 @@ If the <b>RegisterContextType</b> member of a <a href="..\ntddk\ns-ntddk-_whea_x
 ## See Also
 
 <a href="..\ntddk\ns-ntddk-_whea_xpf_context_info.md">WHEA_XPF_CONTEXT_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_X64_REGISTER_STATE structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

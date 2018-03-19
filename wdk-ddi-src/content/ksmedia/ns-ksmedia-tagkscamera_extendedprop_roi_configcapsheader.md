@@ -58,6 +58,10 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER {
 ## Members
 
 
+`Size`
+
+The size of this header and all <a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_configcaps.md">KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS</a> structures that follow.
+
 `ConfigCapCount`
 
 Contains the number of <b>KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS</b> structures that follow.
@@ -65,10 +69,6 @@ Contains the number of <b>KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS</b> structures th
 `Reserved`
 
 Reserved for future use.
-
-`Size`
-
-The size of this header and all <a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_configcaps.md">KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS</a> structures that follow.
 
 
 ## Requirements

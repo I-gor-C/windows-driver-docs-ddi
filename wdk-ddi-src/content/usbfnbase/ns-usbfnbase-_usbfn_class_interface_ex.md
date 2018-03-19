@@ -68,13 +68,13 @@ The index number of the interface.
 
 The number of USB interfaces contained in  the selected function.
 
-`PipeArr`
-
-An array of <a href="..\usbfnbase\ns-usbfnbase-_usbfn_pipe_information.md">USBFN_PIPE_INFORMATION</a> structures that describes the endpoints in the interface.
-
 `PipeCount`
 
 The number of endpoints contained in  the interface.
+
+`PipeArr`
+
+An array of <a href="..\usbfnbase\ns-usbfnbase-_usbfn_pipe_information.md">USBFN_PIPE_INFORMATION</a> structures that describes the endpoints in the interface.
 
 
 ## Requirements

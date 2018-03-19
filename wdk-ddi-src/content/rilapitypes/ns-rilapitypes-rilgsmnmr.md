@@ -64,19 +64,7 @@ typedef struct _RILGSMNMR {
 ## Members
 
 
-`dwARFCN`
-
-
-
-`dwBaseStationID`
-
-
-
-`dwCellID`
-
-
-
-`dwLocationAreaCode`
+`dwParams`
 
 
 
@@ -88,7 +76,19 @@ typedef struct _RILGSMNMR {
 
 
 
-`dwParams`
+`dwLocationAreaCode`
+
+
+
+`dwCellID`
+
+
+
+`dwARFCN`
+
+
+
+`dwBaseStationID`
 
 
 

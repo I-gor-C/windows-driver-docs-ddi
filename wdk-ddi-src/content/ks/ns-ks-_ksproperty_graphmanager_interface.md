@@ -57,11 +57,11 @@ typedef struct _KSPROPERTY_GRAPHMANAGER_INTERFACE {
 ## Members
 
 
-`FunctionTable`
-
-
-
 `GraphManager`
+
+
+
+`FunctionTable`
 
 
 

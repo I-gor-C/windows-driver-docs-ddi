@@ -62,7 +62,7 @@ typedef enum _RILSUPSERVICEDATASTATUS {
 <table>
             
                 <tr>
-                    <td>RIL_SUPSVCDATASTATUS_ERROR</td>
+                    <td>RIL_SUPSVCDATASTATUS_NOINFOREQUIRED</td>
                     <td></td>
                 </tr>
             
@@ -72,17 +72,17 @@ typedef enum _RILSUPSERVICEDATASTATUS {
                 </tr>
             
                 <tr>
-                    <td>RIL_SUPSVCDATASTATUS_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_SUPSVCDATASTATUS_NOINFOREQUIRED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_SUPSVCDATASTATUS_TIMEOUT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SUPSVCDATASTATUS_ERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SUPSVCDATASTATUS_MAX</td>
                     <td></td>
                 </tr>
 </table>

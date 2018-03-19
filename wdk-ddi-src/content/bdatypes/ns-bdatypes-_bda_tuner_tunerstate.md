@@ -58,15 +58,15 @@ typedef struct _BDA_TUNER_TUNERSTATE {
 ## Members
 
 
-`argbTuneData`
-
-
-
 `lResult`
 
 
 
 `ulTuneLength`
+
+
+
+`argbTuneData`
 
 
 

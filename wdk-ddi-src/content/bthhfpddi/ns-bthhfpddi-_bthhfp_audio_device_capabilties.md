@@ -57,13 +57,13 @@ typedef struct _BTHHFP_AUDIO_DEVICE_CAPABILTIES {
 ## Members
 
 
-`Supports16kHzSampling`
-
-Whether the device supports 16 kHz sampling.
-
 `Version`
 
 The version of the device.
+
+`Supports16kHzSampling`
+
+Whether the device supports 16 kHz sampling.
 
 
 ## Requirements

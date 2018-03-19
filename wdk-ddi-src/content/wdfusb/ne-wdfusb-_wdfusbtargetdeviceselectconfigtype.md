@@ -67,23 +67,18 @@ typedef enum _WdfUsbTargetDeviceSelectConfigType {
 <table>
             
                 <tr>
+                    <td>WdfUsbTargetDeviceSelectConfigTypeInvalid</td>
+                    <td>For internal use only.</td>
+                </tr>
+            
+                <tr>
                     <td>WdfUsbTargetDeviceSelectConfigTypeDeconfig</td>
                     <td>Deconfigure the device. This value applies to KMDF only.</td>
                 </tr>
             
                 <tr>
-                    <td>WdfUsbTargetDeviceSelectConfigTypeInterfacesDescriptor</td>
-                    <td>Configure the device by using configuration parameters that are contained in USB descriptors. This value applies to KMDF only.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfUsbTargetDeviceSelectConfigTypeInterfacesPairs</td>
-                    <td>Configure the device to use multiple interfaces, possibly with alternate settings. Alternate settings are described in the USB specification.  This value applies to KMDF and UMDF.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfUsbTargetDeviceSelectConfigTypeInvalid</td>
-                    <td>For internal use only.</td>
+                    <td>WdfUsbTargetDeviceSelectConfigTypeSingleInterface</td>
+                    <td>Configure the device to use a single, specified interface. This value applies to KMDF and UMDF.</td>
                 </tr>
             
                 <tr>
@@ -92,8 +87,13 @@ typedef enum _WdfUsbTargetDeviceSelectConfigType {
                 </tr>
             
                 <tr>
-                    <td>WdfUsbTargetDeviceSelectConfigTypeSingleInterface</td>
-                    <td>Configure the device to use a single, specified interface. This value applies to KMDF and UMDF.</td>
+                    <td>WdfUsbTargetDeviceSelectConfigTypeInterfacesPairs</td>
+                    <td>Configure the device to use multiple interfaces, possibly with alternate settings. Alternate settings are described in the USB specification.  This value applies to KMDF and UMDF.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfUsbTargetDeviceSelectConfigTypeInterfacesDescriptor</td>
+                    <td>Configure the device by using configuration parameters that are contained in USB descriptors. This value applies to KMDF only.</td>
                 </tr>
             
                 <tr>
@@ -124,11 +124,3 @@ The <b>WdfUsbTargetDeviceSelectConfigType</b> enumeration is used to specify the
 
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceSelectConfigType enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

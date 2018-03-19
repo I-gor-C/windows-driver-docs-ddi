@@ -63,33 +63,33 @@ typedef struct _ROOTHUB_20PORT_INFO {
 ## Members
 
 
-`ControllerUsb20HardwareLpmFlags`
+`PortNumber`
 
-A value that indicates Link Power Management (LPM) flags for the controller.
-
-`DebugCapable`
-
-A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is debug capable.
-
-`HubDepth`
-
-The hub depth limit.
-
-`IntegratedHubImplemented`
-
-A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is implemented.
+The USB 2.0 root hub port number.
 
 `MinorRevision`
 
 Minor revision number.
 
-`PortNumber`
+`HubDepth`
 
-The USB 2.0 root hub port number.
+The hub depth limit.
 
 `Removable`
 
 A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is removable.
+
+`IntegratedHubImplemented`
+
+A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is implemented.
+
+`DebugCapable`
+
+A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is debug capable.
+
+`ControllerUsb20HardwareLpmFlags`
+
+A value that indicates Link Power Management (LPM) flags for the controller.
 
 
 ## Requirements

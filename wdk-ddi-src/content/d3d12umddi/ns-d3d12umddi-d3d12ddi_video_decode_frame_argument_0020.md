@@ -58,6 +58,10 @@ typedef struct D3D12DDI_VIDEO_DECODE_FRAME_ARGUMENT_0020 {
 ## Members
 
 
+`Type`
+
+The type of the parameter.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_decode_parameter_type_0020.md">D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE</a> enumeration.
+
 `pData`
 
 A pointer to the parameter data.
@@ -65,10 +69,6 @@ A pointer to the parameter data.
 `Size`
 
 The size, in bytes, of the parameter data specified by the <i>pParameter</i> parameter.
-
-`Type`
-
-The type of the parameter.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_decode_parameter_type_0020.md">D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE</a> enumeration.
 
 
 ## Requirements
@@ -79,11 +79,3 @@ The type of the parameter.  For more information, see the <a href="..\d3d12umddi
 ## See Also
 
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_decode_parameter_type_0020.md">D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D12DDI_VIDEO_DECODE_FRAME_ARGUMENT_0020 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

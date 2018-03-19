@@ -60,13 +60,9 @@ typedef struct _DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS {
 ## Members
 
 
-`MaxShrinkFactor`
+`NumPlanes`
 
-Specifies the maximum shrink factor that is supported by the overlay planes within the capability group.
-
-The shrink factor is the ratio of the final, shrunk overlay plane size to the original size. For example, if the original overlay plane is 100 x 100 pixels, a value of 0.25 means that it can be shrunk to 25 x 25 pixels.
-
-It's not guaranteed that this shrink factor can be applied in all scenarios. For example, it might be possible to shrink only one overlay plane out of several using this factor.
+Specifies the number of overlay planes that are supported by the overlay planes within the capability group.
 
 `MaxStretchFactor`
 
@@ -76,9 +72,13 @@ The stretch factor is the ratio of the final, stretched overlay plane size to th
 
 It's not guaranteed that this stretch factor can be applied in all scenarios. For example, it might be possible to stretch only one overlay plane out of several using this factor.
 
-`NumPlanes`
+`MaxShrinkFactor`
 
-Specifies the number of overlay planes that are supported by the overlay planes within the capability group.
+Specifies the maximum shrink factor that is supported by the overlay planes within the capability group.
+
+The shrink factor is the ratio of the final, shrunk overlay plane size to the original size. For example, if the original overlay plane is 100 x 100 pixels, a value of 0.25 means that it can be shrunk to 25 x 25 pixels.
+
+It's not guaranteed that this shrink factor can be applied in all scenarios. For example, it might be possible to shrink only one overlay plane out of several using this factor.
 
 `OverlayCaps`
 

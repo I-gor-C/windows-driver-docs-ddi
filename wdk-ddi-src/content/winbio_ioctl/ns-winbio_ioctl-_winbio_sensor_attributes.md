@@ -68,6 +68,90 @@ typedef struct _WINBIO_SENSOR_ATTRIBUTES {
 ## Members
 
 
+`PayloadSize`
+
+A DWORD value that indicates the total size of the payload, including the fixed length structure and any variable data at the end.
+
+`WinBioHresult`
+
+An HRESULT value that indicates containing status detail of the I/O operation.   The following table includes possible values.
+
+<table>
+<tr>
+<th>Status value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+S_OK
+
+</td>
+<td>
+The operation completed successfully.
+
+</td>
+</tr>
+<tr>
+<td>
+HRESULT_FROM_NT(STATUS_IO_DEVICE_ERROR)
+
+</td>
+<td>
+The driver could not gather the necessary information from the device.
+
+</td>
+</tr>
+</table>
+
+`WinBioVersion`
+
+A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_version.md">WINBIO_VERSION</a> that contains a WinBio WBDI version that is supported by the driver. To be compatible with the WinBio service, <b>WinBioVersion</b> must contain the same major version as the current major version of the WinBio service, in addition to a minor version that is less than or equal to the current minor version of the WinBio service.
+
+`SensorType`
+
+A DWORD bitmask of type WINBIO_BIOMETRIC_TYPE that contains biometric data that is collected by the sensor. In Windows 7, only WINBIO_TYPE_FINGERPRINT is supported.
+
+`SensorSubType`
+
+A WINBIO_BIOMETRIC_SENSOR_SUBTYPE subtype that contains additional information about the sensor.  For example, this member could specify whether the sensor requires the user to simply touch the sensor or swipe a finger over the sensor.
+
+WINBIO_BIOMETRIC_SENSOR_SUBTYPE can contain the values in the following table.
+
+<table>
+<tr>
+<th>
+              
+                Biometric subtype value
+              
+            </th>
+<th>
+              
+                Description
+              
+            </th>
+</tr>
+<tr>
+<td>
+WINBIO_FP_SENSOR_SUBTYPE_SWIPE
+
+</td>
+<td>
+The device requires the user to swipe their fingertip over the sensor.
+
+</td>
+</tr>
+<tr>
+<td>
+WINBIO_FP_SENSOR_SUBTYPE_TOUCH
+
+</td>
+<td>
+The device requires the user to place their entire fingerprint on a sensor pad.
+
+</td>
+</tr>
+</table>
+
 `Capabilities`
 
 A WINBIO_CAPABILITIES subtype, which indicates which capabilities are supported by the device. 
@@ -203,10 +287,6 @@ The device supports security methods available in the WinBio engine adapter inte
 </tr>
 </table>
 
-`FirmwareVersion`
-
-A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_version.md">WINBIO_VERSION</a> that contains the version of the firmware that is loaded on the device.
-
 `ManufacturerName`
 
 A structure of type WINBIO_STRING that contains the name of the device manufacturer.
@@ -215,101 +295,21 @@ A structure of type WINBIO_STRING that contains the name of the device manufactu
 
 A structure of type WINBIO_STRING that contains the name of the device model.
 
-`PayloadSize`
-
-A DWORD value that indicates the total size of the payload, including the fixed length structure and any variable data at the end.
-
-`SensorSubType`
-
-A WINBIO_BIOMETRIC_SENSOR_SUBTYPE subtype that contains additional information about the sensor.  For example, this member could specify whether the sensor requires the user to simply touch the sensor or swipe a finger over the sensor.
-
-WINBIO_BIOMETRIC_SENSOR_SUBTYPE can contain the values in the following table.
-
-<table>
-<tr>
-<th>
-              
-                Biometric subtype value
-              
-            </th>
-<th>
-              
-                Description
-              
-            </th>
-</tr>
-<tr>
-<td>
-WINBIO_FP_SENSOR_SUBTYPE_SWIPE
-
-</td>
-<td>
-The device requires the user to swipe their fingertip over the sensor.
-
-</td>
-</tr>
-<tr>
-<td>
-WINBIO_FP_SENSOR_SUBTYPE_TOUCH
-
-</td>
-<td>
-The device requires the user to place their entire fingerprint on a sensor pad.
-
-</td>
-</tr>
-</table>
-
-`SensorType`
-
-A DWORD bitmask of type WINBIO_BIOMETRIC_TYPE that contains biometric data that is collected by the sensor. In Windows 7, only WINBIO_TYPE_FINGERPRINT is supported.
-
 `SerialNumber`
 
 A structure of type WINBIO_STRING that contains the serial number of the device, if one exists.
 
-`SupportedFormat`
+`FirmwareVersion`
 
-A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_registered_format.md">WINBIO_REGISTERED_FORMAT</a> that contains a list of the formats supported by the driver and device.
+A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_version.md">WINBIO_VERSION</a> that contains the version of the firmware that is loaded on the device.
 
 `SupportedFormatEntries`
 
 The number of formats that are supported by the driver and device.  There must be at least one, which is the Windows standard format.
 
-`WinBioHresult`
+`SupportedFormat`
 
-An HRESULT value that indicates containing status detail of the I/O operation.   The following table includes possible values.
-
-<table>
-<tr>
-<th>Status value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>
-S_OK
-
-</td>
-<td>
-The operation completed successfully.
-
-</td>
-</tr>
-<tr>
-<td>
-HRESULT_FROM_NT(STATUS_IO_DEVICE_ERROR)
-
-</td>
-<td>
-The driver could not gather the necessary information from the device.
-
-</td>
-</tr>
-</table>
-
-`WinBioVersion`
-
-A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_version.md">WINBIO_VERSION</a> that contains a WinBio WBDI version that is supported by the driver. To be compatible with the WinBio service, <b>WinBioVersion</b> must contain the same major version as the current major version of the WinBio service, in addition to a minor version that is less than or equal to the current minor version of the WinBio service.
+A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_registered_format.md">WINBIO_REGISTERED_FORMAT</a> that contains a list of the formats supported by the driver and device.
 
 
 ## Requirements
@@ -321,11 +321,3 @@ A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_version.md"
 ## See Also
 
 <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_get_attributes.md">IOCTL_BIOMETRIC_GET_ATTRIBUTES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [biometric\biometric]:%20WINBIO_SENSOR_ATTRIBUTES structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

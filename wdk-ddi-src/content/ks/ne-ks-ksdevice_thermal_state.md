@@ -59,13 +59,13 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSDEVICE_THERMAL_STATE_HIGH</td>
-                    <td>This represents the HIGH value for thermal notifications. This is usually determined by the Avstream driver and conveyed to KS in response to the thermal notification callbacks.</td>
+                    <td>KSDEVICE_THERMAL_STATE_LOW</td>
+                    <td>This represents the LOW value for thermal notifications. This is usually determined by the Avstream driver and conveyed to KS in response to the thermal notification callbacks.</td>
                 </tr>
             
                 <tr>
-                    <td>KSDEVICE_THERMAL_STATE_LOW</td>
-                    <td>This represents the LOW value for thermal notifications. This is usually determined by the Avstream driver and conveyed to KS in response to the thermal notification callbacks.</td>
+                    <td>KSDEVICE_THERMAL_STATE_HIGH</td>
+                    <td>This represents the HIGH value for thermal notifications. This is usually determined by the Avstream driver and conveyed to KS in response to the thermal notification callbacks.</td>
                 </tr>
 </table>
 

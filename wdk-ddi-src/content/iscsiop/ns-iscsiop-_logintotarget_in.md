@@ -70,65 +70,65 @@ typedef struct _LoginToTarget_IN {
 ## Members
 
 
-`InitiatorAlias`
+`PortNumber`
 
-The iSCSI alias of the initiator node.
-
-`InitiatorNode`
-
-The iSCSI name of the initiator node to use for the connection. If this member is empty, the HBA's miniport driver can choose any initiator node name during authentication. The initiator node name is usually an iSCSI qualified name (IQN).
-
-`Key`
-
-A variable-length array of UCHAR values that defines the preshared key that is associated with the target IP address.
-
-`KeySize`
-
-The size, in bytes, of the string in <b>Key</b>.
+The number of the port (initiator portal) that the HBA initiator uses to establish the logon session. This value must match the <b>Index</b> member of the <a href="..\iscsimgt\ns-iscsimgt-_iscsi_portalinfo.md">ISCSI_PortalInfo</a> structure.
 
 `LoginOptions`
 
 A <a href="..\iscsidef\ns-iscsidef-_iscsi_loginoptions.md">ISCSI_LoginOptions</a> structure that specifies the characteristics of the logon session.
 
-`Mappings`
+`SessionType`
 
-A <a href="..\iscsidef\ns-iscsidef-_iscsi_targetmapping.md">ISCSI_TargetMapping</a> structure that maps a collection of logical unit numbers (LUNs) that are locally defined to a group of 64-bit iSCSI LUNs. If the initiator service does not specify mappings, the HBA's miniport driver can use any mappings for the LUNs. The miniport driver should report unmapped LUNs to the port driver to be enumerated.
-
-`PasswordSize`
-
-The size, in bytes, of the string in <b>Password</b>.
-
-`PersistentLogin`
-
-A Boolean value that indicates if the logon should be persistent. If this member is <b>TRUE</b>, the logon should be persistent. The HBA's miniport driver should store the characteristics of this logon in non-volatile memory and log on to the target automatically every time the operating system loads the miniport driver. If this member is <b>FALSE</b>, the logon is not persistent.
-
-`PortNumber`
-
-The number of the port (initiator portal) that the HBA initiator uses to establish the logon session. This value must match the <b>Index</b> member of the <a href="..\iscsimgt\ns-iscsimgt-_iscsi_portalinfo.md">ISCSI_PortalInfo</a> structure.
+A <a href="..\iscsiop\ne-iscsiop-ploginsessiontype.md">LOGINSESSIONTYPE</a> enumeration value that specifies the type of logon session.
 
 `SecurityFlags`
 
 A bitwise OR of security flags that indicate the security requirements that are associated with the authentication key that is used to establish the logon session. For a list of the flags that you can combine to define this member's value, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>.
 
-`SessionType`
-
-A <a href="..\iscsiop\ne-iscsiop-ploginsessiontype.md">LOGINSESSIONTYPE</a> enumeration value that specifies the type of logon session.
-
-`TargetName`
-
-The iSCSI target name with which to establish the logon session.
-
 `TargetPortal`
 
 A <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a> structure that indicates which target portal to use to make the connection.
+
+`UsernameSize`
+
+The size, in bytes, of the string in <b>Username</b>.
+
+`PasswordSize`
+
+The size, in bytes, of the string in <b>Password</b>.
+
+`KeySize`
+
+The size, in bytes, of the string in <b>Key</b>.
 
 `UniqueIdForISID`
 
 A number that the miniport driver that manages the HBA can use to construct a unique session identifier (ISID).
 
-`UsernameSize`
+`PersistentLogin`
 
-The size, in bytes, of the string in <b>Username</b>.
+A Boolean value that indicates if the logon should be persistent. If this member is <b>TRUE</b>, the logon should be persistent. The HBA's miniport driver should store the characteristics of this logon in non-volatile memory and log on to the target automatically every time the operating system loads the miniport driver. If this member is <b>FALSE</b>, the logon is not persistent.
+
+`InitiatorNode`
+
+The iSCSI name of the initiator node to use for the connection. If this member is empty, the HBA's miniport driver can choose any initiator node name during authentication. The initiator node name is usually an iSCSI qualified name (IQN).
+
+`InitiatorAlias`
+
+The iSCSI alias of the initiator node.
+
+`TargetName`
+
+The iSCSI target name with which to establish the logon session.
+
+`Mappings`
+
+A <a href="..\iscsidef\ns-iscsidef-_iscsi_targetmapping.md">ISCSI_TargetMapping</a> structure that maps a collection of logical unit numbers (LUNs) that are locally defined to a group of 64-bit iSCSI LUNs. If the initiator service does not specify mappings, the HBA's miniport driver can use any mappings for the LUNs. The miniport driver should report unmapped LUNs to the port driver to be enumerated.
+
+`Key`
+
+A variable-length array of UCHAR values that defines the preshared key that is associated with the target IP address.
 
 ## Remarks
 You must implement this method.
@@ -173,11 +173,3 @@ You must implement this method.
 
 
 <a href="..\iscsiop\ns-iscsiop-_logintotarget_out.md">LoginToTarget_OUT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20LoginToTarget_IN structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

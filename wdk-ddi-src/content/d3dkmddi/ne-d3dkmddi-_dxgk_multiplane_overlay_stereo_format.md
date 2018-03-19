@@ -65,13 +65,8 @@ typedef enum _DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT {
 <table>
             
                 <tr>
-                    <td>DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_CHECKERBOARD</td>
-                    <td>Reserved for system use. Do not use in your driver.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_COLUMN_INTERLEAVED</td>
-                    <td>Reserved for system use. Do not use in your driver.</td>
+                    <td>DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO</td>
+                    <td>The overplay plane data is presented in mono (non-stereo) format.</td>
                 </tr>
             
                 <tr>
@@ -80,8 +75,13 @@ typedef enum _DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT {
                 </tr>
             
                 <tr>
-                    <td>DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO</td>
-                    <td>The overplay plane data is presented in mono (non-stereo) format.</td>
+                    <td>DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_VERTICAL</td>
+                    <td>Reserved for system use. Do not use in your driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_SEPARATE</td>
+                    <td>Reserved for system use. Do not use in your driver.</td>
                 </tr>
             
                 <tr>
@@ -95,12 +95,12 @@ typedef enum _DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT {
                 </tr>
             
                 <tr>
-                    <td>DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_SEPARATE</td>
+                    <td>DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_COLUMN_INTERLEAVED</td>
                     <td>Reserved for system use. Do not use in your driver.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_VERTICAL</td>
+                    <td>DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT_CHECKERBOARD</td>
                     <td>Reserved for system use. Do not use in your driver.</td>
                 </tr>
 </table>

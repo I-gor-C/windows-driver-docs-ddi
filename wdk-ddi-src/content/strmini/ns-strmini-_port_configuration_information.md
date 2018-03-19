@@ -108,9 +108,25 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 ## Members
 
 
-`AccessRanges`
+`SizeOfThisPacket`
 
 
+
+`HwDeviceExtension`
+
+
+
+`ClassDeviceObject`
+
+
+
+`PhysicalDeviceObject`
+
+
+
+`SystemIoBusNumber`
+
+Specifies the system-assigned number of the I/O bus to which the HBA is connected. The OS-specific port driver always initializes this member. Its value is system-assigned because the platform might have several I/O buses of the given <b>AdapterInterfaceType</b>.
 
 `AdapterInterfaceType`
 
@@ -124,27 +140,23 @@ Specifies the bus-relative interrupt request level. The OS-specific port driver 
 
 Specifies the bus-relative vector returned by the HBA. The OS-specific port driver makes no assumptions about the HBA's interrupt usage, so the default value is zero. This member is irrelevant to drivers that set up the <b>BusInterruptLevel</b> member for their HBAs. It is pertinent for HBAs on types of I/O buses that use interrupt vectors, such as <b>PCIBus</b>.
 
-`ClassDeviceObject`
+`InterruptMode`
 
-
-
-`DmaAdapterObject`
-
-
+Specifies whether the HBA uses <b>LevelSensitive</b> or <b>Latched</b> (sometimes called "edge-triggered") interrupts. The OS-specific port driver initializes this member to an appropriate value for the bus and the device--for example, <b>LevelSensitive</b> for <b>PCIBus</b>. Drivers of <b>Eisa</b> HBAs must reset this value if the adapter is configured for level-sensitive interrupts, as must drivers of HBAs on I/O buses that use level-sensitive interrupts, such as <b>MicroChannel</b> type buses.
 
 `DmaChannel`
 
 Specifies the DMA channel used by a subordinate HBA. By default, the value of this member is SP_UNINITIALIZED_VALUE. If the HBA uses a system DMA controller and the given <b>AdapterInterfaceType</b> is any value except <b>MicroChannel</b>, the miniport driver must reset this member.
 
-`HwDeviceExtension`
+`NumberOfAccessRanges`
+
+Specifies the number of <b>AccessRanges</b> elements in the array, described next. The OS-specific port driver always sets this member to the value passed in the HW_INITIALIZATION_DATA structure when the miniport driver called <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>.
+
+`AccessRanges`
 
 
 
-`InterruptMode`
-
-Specifies whether the HBA uses <b>LevelSensitive</b> or <b>Latched</b> (sometimes called "edge-triggered") interrupts. The OS-specific port driver initializes this member to an appropriate value for the bus and the device--for example, <b>LevelSensitive</b> for <b>PCIBus</b>. Drivers of <b>Eisa</b> HBAs must reset this value if the adapter is configured for level-sensitive interrupts, as must drivers of HBAs on I/O buses that use level-sensitive interrupts, such as <b>MicroChannel</b> type buses.
-
-`InterruptObject`
+`StreamDescriptorSize`
 
 
 
@@ -152,11 +164,11 @@ Specifies whether the HBA uses <b>LevelSensitive</b> or <b>Latched</b> (sometime
 
 
 
-`NumberOfAccessRanges`
+`InterruptObject`
 
-Specifies the number of <b>AccessRanges</b> elements in the array, described next. The OS-specific port driver always sets this member to the value passed in the HW_INITIALIZATION_DATA structure when the miniport driver called <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>.
 
-`PhysicalDeviceObject`
+
+`DmaAdapterObject`
 
 
 
@@ -167,18 +179,6 @@ Specifies the number of <b>AccessRanges</b> elements in the array, described nex
 `Reserved`
 
 Reserved for system use and not available for use by miniport drivers.
-
-`SizeOfThisPacket`
-
-
-
-`StreamDescriptorSize`
-
-
-
-`SystemIoBusNumber`
-
-Specifies the system-assigned number of the I/O bus to which the HBA is connected. The OS-specific port driver always initializes this member. Its value is system-assigned because the platform might have several I/O buses of the given <b>AdapterInterfaceType</b>.
 
 ## Remarks
 The specific members initialized depend on the HBA miniport driver and on the configuration information available to the OS-specific port driver. The OS-specific port driver sets default values in all members for which it cannot supply configuration information to the miniport driver's <i>HwScsiFindAdapter</i> routine.
@@ -233,11 +233,3 @@ This means that if the miniport driver needs additional space in either the LUN 
 
 
 <a href="..\strmini\ns-strmini-_access_range.md">ACCESS_RANGE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20_PORT_CONFIGURATION_INFORMATION structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

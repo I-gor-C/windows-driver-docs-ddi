@@ -73,37 +73,57 @@ typedef struct _CLS_INFORMATION {
 ## Members
 
 
-`Attributes`
+`TotalAvailable`
 
-A set of flags that specify stream (or physical log) attributes. See the <i>fFlagsAndAttributes</i> parameter of the <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a> function.
-
-`BaseFileSize`
-
-The size, in bytes, of the base log file.
-
-`BaseLsn`
-
-The LSN of the oldest record in the stream (or physical log) that is still needed by the stream (or log) clients.
-
-`ContainerSize`
-
-The size, in bytes, of an individual container in the log. Note that all containers in the log are the same size.
+The total available space allocated to the log. This is calculated as the sum of the sizes of all containers in the log.
 
 `CurrentAvailable`
 
 The amount of space available in the log for new records and reservation allocations. This space is the total available space minus the undo commitment space and space used for storing owner pages in a multiplexed log.
 
-`FlushThreshold`
+`TotalReservation`
 
-The number of bytes of data (including headers) that are allowed to remain pending on the internal flush queue before CLFS automatically schedules a thread to write the flush queue to stable storage.
+The amount of space reserved in the stream (or physical log) for undo operations.
+
+`BaseFileSize`
+
+The size, in bytes, of the base log file.
+
+`ContainerSize`
+
+The size, in bytes, of an individual container in the log. Note that all containers in the log are the same size.
+
+`TotalContainers`
+
+The number of containers in the log.
 
 `FreeContainers`
 
 The number of containers in the log that are not active.
 
-`Identity`
+`TotalClients`
 
-A GUID that serves as a unique identifier for the log.
+The number of streams that share the log.
+
+`Attributes`
+
+A set of flags that specify stream (or physical log) attributes. See the <i>fFlagsAndAttributes</i> parameter of the <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a> function.
+
+`FlushThreshold`
+
+The number of bytes of data (including headers) that are allowed to remain pending on the internal flush queue before CLFS automatically schedules a thread to write the flush queue to stable storage.
+
+`SectorSize`
+
+The sector size, in bytes, of the underlying disk geometry. The sector size is assumed to be a multiple of 512 and consistent across containers.
+
+`MinArchiveTailLsn`
+
+The LSN of the oldest record in the log for which archiving has not taken place. The minimum of this and the base LSN determines the last container that can be reused when containers are recycled.
+
+`BaseLsn`
+
+The LSN of the oldest record in the stream (or physical log) that is still needed by the stream (or log) clients.
 
 `LastFlushedLsn`
 
@@ -113,33 +133,13 @@ The LSN of the last record that was flushed to stable storage.
 
 The LSN of the youngest record in the stream (or physical log) that is still needed by the stream (or log) clients.
 
-`MinArchiveTailLsn`
-
-The LSN of the oldest record in the log for which archiving has not taken place. The minimum of this and the base LSN determines the last container that can be reused when containers are recycled.
-
 `RestartLsn`
 
 The LSN of the last restart record written to the stream (or physical log). If there are no restart records, this member is equal to CLFS_LSN_INVALID.
 
-`SectorSize`
+`Identity`
 
-The sector size, in bytes, of the underlying disk geometry. The sector size is assumed to be a multiple of 512 and consistent across containers.
-
-`TotalAvailable`
-
-The total available space allocated to the log. This is calculated as the sum of the sizes of all containers in the log.
-
-`TotalClients`
-
-The number of streams that share the log.
-
-`TotalContainers`
-
-The number of containers in the log.
-
-`TotalReservation`
-
-The amount of space reserved in the stream (or physical log) for undo operations.
+A GUID that serves as a unique identifier for the log.
 
 ## Remarks
 The <a href="..\wdm\nf-wdm-clfsquerylogfileinformation.md">ClfsQueryLogFileInformation</a> function returns information about a CLFS stream and/or its underlying physical log. The type of information returned depends on the <i>eInformationClass</i> parameter. 
@@ -187,11 +187,3 @@ If <i>eInformationClass</i> parameter is equal to <b>ClfsLogBasicInformation</b>
 
 
 <a href="..\wdm\nf-wdm-clfssetlogfileinformation.md">ClfsSetLogFileInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLS_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

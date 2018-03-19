@@ -67,30 +67,6 @@ typedef struct _DEBUG_SYMBOL_SOURCE_ENTRY {
 ## Members
 
 
-`EndColumn`
-
-The column number of the end of the region of source code. The number of the first column is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
-
-`EndLine`
-
-The line number of the end of the region of source code in the file. The number of the first line in the file is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
-
-`EngineInternal`
-
-Reserved for internal debugger engine use.
-
-`FileNameId`
-
-Identifier for the source code file name. If this information is not available, <b>FieldNameId</b> is set to zero.
-
-`FileNameSize`
-
-The number of characters in the source filename, including the terminator.
-
-`Flags`
-
-Set to zero.
-
 `ModuleBase`
 
 The base address, in the target's virtual address space, of the module that the source symbol came from.
@@ -99,21 +75,45 @@ The base address, in the target's virtual address space, of the module that the 
 
 The location of the memory corresponding to the source code in the target's virtual address space.
 
-`Reserved`
+`FileNameId`
 
-Reserved for future use.
+Identifier for the source code file name. If this information is not available, <b>FieldNameId</b> is set to zero.
+
+`EngineInternal`
+
+Reserved for internal debugger engine use.
 
 `Size`
 
 The size of the region of memory corresponding to the source code. If this information is not available, <b>Size</b> is set to one.
 
-`StartColumn`
+`Flags`
 
-The column number of the start of the region of source code. The number of the first column is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
+Set to zero.
+
+`FileNameSize`
+
+The number of characters in the source filename, including the terminator.
 
 `StartLine`
 
 The line number of the start of the region of source code in the file. The number of the first line in the file is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
+
+`EndLine`
+
+The line number of the end of the region of source code in the file. The number of the first line in the file is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
+
+`StartColumn`
+
+The column number of the start of the region of source code. The number of the first column is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
+
+`EndColumn`
+
+The column number of the end of the region of source code. The number of the first column is one. If this information is not available, <b>StartLine</b> is set to DEBUG_ANY_ID.
+
+`Reserved`
+
+Reserved for future use.
 
 
 ## Requirements

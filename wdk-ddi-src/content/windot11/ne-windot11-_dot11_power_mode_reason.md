@@ -64,13 +64,13 @@ typedef enum _DOT11_POWER_MODE_REASON {
 <table>
             
                 <tr>
-                    <td>dot11_power_mode_reason_compliant_AP</td>
-                    <td>AP is compliant.</td>
+                    <td>dot11_power_mode_reason_no_change</td>
+                    <td>Device is initially in this state and has not changed since.</td>
                 </tr>
             
                 <tr>
-                    <td>dot11_power_mode_reason_compliant_WFD_device</td>
-                    <td>All connected WFD device can do PSM.</td>
+                    <td>dot11_power_mode_reason_noncompliant_AP</td>
+                    <td>AP is not compliant. As to be in CAM.</td>
                 </tr>
             
                 <tr>
@@ -79,13 +79,13 @@ typedef enum _DOT11_POWER_MODE_REASON {
                 </tr>
             
                 <tr>
-                    <td>dot11_power_mode_reason_no_change</td>
-                    <td>Device is initially in this state and has not changed since.</td>
+                    <td>dot11_power_mode_reason_compliant_AP</td>
+                    <td>AP is compliant.</td>
                 </tr>
             
                 <tr>
-                    <td>dot11_power_mode_reason_noncompliant_AP</td>
-                    <td>AP is not compliant. As to be in CAM.</td>
+                    <td>dot11_power_mode_reason_compliant_WFD_device</td>
+                    <td>All connected WFD device can do PSM.</td>
                 </tr>
             
                 <tr>

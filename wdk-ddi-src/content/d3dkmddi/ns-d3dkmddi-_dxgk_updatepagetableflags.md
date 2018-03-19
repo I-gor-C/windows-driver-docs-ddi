@@ -60,6 +60,10 @@ typedef struct _DXGK_UPDATEPAGETABLEFLAGS {
 ## Members
 
 
+`Repeat`
+
+When set to <b>TRUE</b>, page table entries will point to a single page table entry value that needs to be replicated to all page table entries being updated.
+
 `InitialUpdate`
 
 Indicates that the page table is initialized very first time after being made resident in memory.
@@ -68,17 +72,13 @@ Indicates that the page table is initialized very first time after being made re
 
 Indicates that the page table is about to be evicted.
 
-`Repeat`
+`Use64KBPages`
 
-When set to <b>TRUE</b>, page table entries will point to a single page table entry value that needs to be replicated to all page table entries being updated.
+Indicates that page table entries  point to page tables pointing to 64 KB pages.
 
 `Reserved`
 
 This member is reserved and should be set to zero.
-
-`Use64KBPages`
-
-Indicates that page table entries  point to page tables pointing to 64 KB pages.
 
 
 ## Requirements

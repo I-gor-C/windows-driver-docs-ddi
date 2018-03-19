@@ -65,12 +65,12 @@ typedef enum _RILREGSTAT {
 <table>
             
                 <tr>
-                    <td>RIL_REGSTAT_ATTEMPTING</td>
+                    <td>RIL_REGSTAT_UNKNOWN</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_REGSTAT_DENIED</td>
+                    <td>RIL_REGSTAT_UNREGISTERED</td>
                     <td></td>
                 </tr>
             
@@ -80,7 +80,12 @@ typedef enum _RILREGSTAT {
                 </tr>
             
                 <tr>
-                    <td>RIL_REGSTAT_MAX</td>
+                    <td>RIL_REGSTAT_ATTEMPTING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGSTAT_DENIED</td>
                     <td></td>
                 </tr>
             
@@ -95,12 +100,7 @@ typedef enum _RILREGSTAT {
                 </tr>
             
                 <tr>
-                    <td>RIL_REGSTAT_UNKNOWN</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_REGSTAT_UNREGISTERED</td>
+                    <td>RIL_REGSTAT_MAX</td>
                     <td></td>
                 </tr>
 </table>

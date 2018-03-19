@@ -66,37 +66,17 @@ typedef struct _FILE_DIRECTORY_INFORMATION {
 ## Members
 
 
-`AllocationSize`
+`NextEntryOffset`
 
-File allocation size, in bytes. Usually, this value is a multiple of the sector or cluster size of the underlying physical device.
-
-`ChangeTime`
-
-Last time the file was changed.
-
-`CreationTime`
-
-Time when the file was created.
-
-`EndOfFile`
-
-Absolute new end-of-file position as a byte offset from the start of the file. <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file. In other words, <b>EndOfFile</b> is the offset to the byte immediately following the last valid byte in the file.
-
-`FileAttributes`
-
-File attributes, which can be any valid combination of the following:
+Byte offset of the next FILE_DIRECTORY_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
 
 `FileIndex`
 
 Byte offset of the file within the parent directory. This member is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order.
 
-`FileName`
+`CreationTime`
 
-Specifies the first character of the file name string. This is followed in memory by the remainder of the string.
-
-`FileNameLength`
-
-Specifies the length of the file name string.
+Time when the file was created.
 
 `LastAccessTime`
 
@@ -106,9 +86,29 @@ Last time the file was accessed.
 
 Last time information was written to the file.
 
-`NextEntryOffset`
+`ChangeTime`
 
-Byte offset of the next FILE_DIRECTORY_INFORMATION entry, if multiple entries are present in a buffer. This member is zero if no other entries follow this one.
+Last time the file was changed.
+
+`EndOfFile`
+
+Absolute new end-of-file position as a byte offset from the start of the file. <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file. In other words, <b>EndOfFile</b> is the offset to the byte immediately following the last valid byte in the file.
+
+`AllocationSize`
+
+File allocation size, in bytes. Usually, this value is a multiple of the sector or cluster size of the underlying physical device.
+
+`FileAttributes`
+
+File attributes, which can be any valid combination of the following:
+
+`FileNameLength`
+
+Specifies the length of the file name string.
+
+`FileName`
+
+Specifies the first character of the file name string. This is followed in memory by the remainder of the string.
 
 ## Remarks
 This information can be queried in either of the following ways: 
@@ -145,11 +145,3 @@ This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer cont
 
 
 <a href="..\rxprocs\nf-rxprocs-fsrtlnotifyfullchangedirectory.md">FsRtlNotifyFullChangeDirectory</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_DIRECTORY_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

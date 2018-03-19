@@ -68,10 +68,6 @@ typedef struct _CIP_FRAME {
 ## Members
 
 
-`CompletedBytes`
-
-
-
 `Flags`
 
 Specifies options associated with this frame. 
@@ -134,13 +130,27 @@ For packets to be transmitted or received, <b>Flags</b> can also be set with the
 
 Instructs the protocol driver to resume a stopped stream at the beginning of the frame instead of the next source packet.
 
-`NotifyContext`
+`pfnValidate`
 
-Points to an optional caller-defined context for the caller-supplied function at <b>pfnNotify</b>. If the function does not require a context, <b>NotifyContext</b> can be <b>NULL</b>.
+Points to a caller-supplied function to validate a source packet. This function uses the following prototype: The parameter <b>ValidateInfo</b> must point to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537048">CIP_VALIDATE_INFO</a> structure that contains information about the frame. 
 
-`Packet`
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>ULONG 
+  (*PCIP_VALIDATE_ROUTINE) ( 
+    IN PCIP_VALIDATE_INFO ValidateInfo
+   );</pre>
+</td>
+</tr>
+</table></span></div>
 
-Points to the beginning of a caller-allocated data buffer to be transmitted or received with this frame. The frame length specified in the associated <a href="https://msdn.microsoft.com/library/windows/hardware/ff536950">Av61883_AttachFrame</a> request indicates the size of the buffer.
+`ValidateContext`
+
+Points to an optional caller-defined context for the function at <b>pfnValidate</b>. If the function does not require a context, <b>ValidateContext</b> can be <b>NULL</b>.
 
 `pfnNotify`
 
@@ -167,23 +177,17 @@ This function uses the following prototype:
 
 #####
 
-`pfnValidate`
+`NotifyContext`
 
-Points to a caller-supplied function to validate a source packet. This function uses the following prototype: The parameter <b>ValidateInfo</b> must point to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537048">CIP_VALIDATE_INFO</a> structure that contains information about the frame. 
+Points to an optional caller-defined context for the caller-supplied function at <b>pfnNotify</b>. If the function does not require a context, <b>NotifyContext</b> can be <b>NULL</b>.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>ULONG 
-  (*PCIP_VALIDATE_ROUTINE) ( 
-    IN PCIP_VALIDATE_INFO ValidateInfo
-   );</pre>
-</td>
-</tr>
-</table></span></div>
+`Timestamp`
+
+The time associated with completion of the frame. 
+
+For packets to be received, the protocol driver sets this member to the time when transmission of the frame was completed, unless CIP_USE_SOURCE_HEADER_TIMESTAMP is set in <b>Flags</b>. 
+
+For packets to be transmitted, CIP-DV_STYLE_SYT or CIP_AUDIO_STYLE_SYT in <b>Flags</b> indicates the format of the timestamp.
 
 `Status`
 
@@ -195,17 +199,13 @@ CIP_STATUS_CORRUPT_FRAME
 
 CIP_STATUS_FIRST_FRAME
 
-`Timestamp`
+`Packet`
 
-The time associated with completion of the frame. 
+Points to the beginning of a caller-allocated data buffer to be transmitted or received with this frame. The frame length specified in the associated <a href="https://msdn.microsoft.com/library/windows/hardware/ff536950">Av61883_AttachFrame</a> request indicates the size of the buffer.
 
-For packets to be received, the protocol driver sets this member to the time when transmission of the frame was completed, unless CIP_USE_SOURCE_HEADER_TIMESTAMP is set in <b>Flags</b>. 
+`CompletedBytes`
 
-For packets to be transmitted, CIP-DV_STYLE_SYT or CIP_AUDIO_STYLE_SYT in <b>Flags</b> indicates the format of the timestamp.
 
-`ValidateContext`
-
-Points to an optional caller-defined context for the function at <b>pfnValidate</b>. If the function does not require a context, <b>ValidateContext</b> can be <b>NULL</b>.
 
 
 ## Requirements
@@ -220,11 +220,3 @@ Points to an optional caller-defined context for the function at <b>pfnValidate<
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536950">Av61883_AttachFrame</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CIP_FRAME structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

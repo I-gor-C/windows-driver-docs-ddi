@@ -59,10 +59,6 @@ typedef struct _BDA_WMDRM_RENEWLICENSE {
 ## Members
 
 
-`argbXmrLicenceOutputBuffer`
-
-Specifies the license and entitlement token buffer.
-
 `lResult`
 
 
@@ -74,6 +70,10 @@ Specifies the license and entitlement token buffer.
 `ulXmrLicenseOutputLength`
 
 
+
+`argbXmrLicenceOutputBuffer`
+
+Specifies the license and entitlement token buffer.
 
 
 ## Requirements

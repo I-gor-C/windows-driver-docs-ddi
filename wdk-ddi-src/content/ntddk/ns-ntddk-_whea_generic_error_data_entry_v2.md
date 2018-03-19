@@ -64,72 +64,6 @@ typedef struct _WHEA_GENERIC_ERROR_DATA_ENTRY {
 ## Members
 
 
-`Data`
-
-A variable-sized buffer that contains the error data for the error data section. The format of the data that is contained in this buffer is determined by the section type that is specified in the <b>SectionType</b> member.
-
-`ErrorDataLength`
-
-The length, in bytes, of the error data that is contained in the <b>Data</b> member.
-
-`ErrorSeverity`
-
-A <a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition that is described by the error data section.
-
-`Flags`
-
-A bitwise OR'ed combination of values that describes the error data section. Possible values are:
-
-
-
-
-
-#### 0x01
-
-A single bit that indicates that this error data section is the primary section within the generic error status block. When there are multiple sections contained in a generic error status block, the primary section is the section that is used for error recovery.
-
-
-
-#### 0x02
-
-A single bit that indicates that the error described by this error data section was not contained within the processor or memory hierarchy. In this situation, the error might have propagated to other components of the system.
-
-
-
-#### 0x04
-
-A single bit that indicates that the component must be reinitialized or re-enabled by the operating system.
-
-
-
-#### 0x08
-
-A single bit that indicates that an error threshold has been exceeded.
-
-
-
-#### 0x10
-
-A single bit that indicates that a resource could not be queried for error information due to conflicts with other system software or resources. In this situation, some of the fields of the error data section will be invalid.
-
-
-
-#### 0x20
-
-A single bit that indicates that the reported error is a latent error (one not yet consumed) that could result in a more severe error when it is consumed.
-
-`FRUId`
-
-A GUID that identifies the Field Replaceable Unit (FRU) that contains the hardware where the error occurred. This member contains valid data only if the <b>0x01</b> bit is set in the <b>ValidBits</b> member.
-
-`FRUText`
-
-A character string that identifies the Field Replaceable Unit (FRU) that contains the hardware where the error occurred. This member contains valid data only if the <b>0x02</b> bit is set in the <b>ValidBits</b> member.
-
-`Revision`
-
-A <a href="..\ntddk\ns-ntddk-_whea_revision.md">WHEA_REVISION</a> union that describes the revision level of the WHEA_GENERIC_ERROR_DATA_ENTRY structure.
-
 `SectionType`
 
 A GUID that identifies the type of error data that is contained in the error data section. The standard section types are defined as follows:
@@ -194,9 +128,13 @@ The error data section contains processor error data that is specific to the x86
 
 For error data sections that do not conform to one of the standard section types, this member contains a platform-specific GUID that identifies the type of error data that is contained in the error data section. If a platform-specific GUID is not defined for the type of error data that is contained in the error data section, this member contains GENERIC_SECTION_GUID.
 
-`Timestamp`
+`ErrorSeverity`
 
+A <a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition that is described by the error data section.
 
+`Revision`
+
+A <a href="..\ntddk\ns-ntddk-_whea_revision.md">WHEA_REVISION</a> union that describes the revision level of the WHEA_GENERIC_ERROR_DATA_ENTRY structure.
 
 `ValidBits`
 
@@ -216,6 +154,68 @@ A single bit that indicates that the <b>FRUId</b> member contains valid data.
 
 A single bit that indicates that the <b>FRUText</b> member contains valid data.
 
+`Flags`
+
+A bitwise OR'ed combination of values that describes the error data section. Possible values are:
+
+
+
+
+
+#### 0x01
+
+A single bit that indicates that this error data section is the primary section within the generic error status block. When there are multiple sections contained in a generic error status block, the primary section is the section that is used for error recovery.
+
+
+
+#### 0x02
+
+A single bit that indicates that the error described by this error data section was not contained within the processor or memory hierarchy. In this situation, the error might have propagated to other components of the system.
+
+
+
+#### 0x04
+
+A single bit that indicates that the component must be reinitialized or re-enabled by the operating system.
+
+
+
+#### 0x08
+
+A single bit that indicates that an error threshold has been exceeded.
+
+
+
+#### 0x10
+
+A single bit that indicates that a resource could not be queried for error information due to conflicts with other system software or resources. In this situation, some of the fields of the error data section will be invalid.
+
+
+
+#### 0x20
+
+A single bit that indicates that the reported error is a latent error (one not yet consumed) that could result in a more severe error when it is consumed.
+
+`ErrorDataLength`
+
+The length, in bytes, of the error data that is contained in the <b>Data</b> member.
+
+`FRUId`
+
+A GUID that identifies the Field Replaceable Unit (FRU) that contains the hardware where the error occurred. This member contains valid data only if the <b>0x01</b> bit is set in the <b>ValidBits</b> member.
+
+`FRUText`
+
+A character string that identifies the Field Replaceable Unit (FRU) that contains the hardware where the error occurred. This member contains valid data only if the <b>0x02</b> bit is set in the <b>ValidBits</b> member.
+
+`Timestamp`
+
+
+
+`Data`
+
+A variable-sized buffer that contains the error data for the error data section. The format of the data that is contained in this buffer is determined by the section type that is specified in the <b>SectionType</b> member.
+
 ## Remarks
 A generic error status block can contain one or more WHEA_GENERIC_ERROR_DATA_ENTRY structures. Each WHEA_GENERIC_ERROR_DATA_ENTRY structure describes a section of error information that is part of the error status data for a generic error source.
 
@@ -234,11 +234,3 @@ The <b>Data</b> member of the <a href="..\ntddk\ns-ntddk-_whea_generic_error.md"
 
 
 <a href="..\ntddk\ns-ntddk-_whea_generic_error_blockstatus.md">WHEA_GENERIC_ERROR_BLOCKSTATUS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_GENERIC_ERROR_DATA_ENTRY structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -67,17 +67,13 @@ typedef struct _AVCSTRM_FORMAT_INFO {
 ## Members
 
 
+`SizeOfThisBlock`
+
+Specifies the size of this data structure, in bytes.
+
 `AVCStrmFormat`
 
 Specifies one of the AV/C streaming subunit formats defined in <a href="..\avcstrm\ne-avcstrm-_avcstrm_format.md">AVCSTRM_FORMAT</a>.
-
-`AvgTimePerFrame`
-
-Specifies the average time per frame in 100 nanosecond units.
-
-`BlockPeriod`
-
-Specifies the block period. This is used for transmit only. It is calculated from 1/ BlockPerSecond * 1,000,000,000 picoseconds. For SDDV, it transmits one block per 1394 cycle. 1/(29.97 * 250) * 1,000,000,000,000 = 133,466,800 picoseconds.
 
 `cipHdr1`
 
@@ -86,6 +82,10 @@ Specifies the definition of the first quadlet of the two quadlet CIP header.
 `cipHdr2`
 
 Specifies the definition of the second quadlet of the two quadlet CIP header.
+
+`SrcPacketsPerFrame`
+
+Specifies the number of source packets to fill a data frame.
 
 `FrameSize`
 
@@ -124,17 +124,17 @@ Strip the SPH (source packet header) from the 192-byte data packet for MPEG2TS.
 </tr>
 </table>
 
+`AvgTimePerFrame`
+
+Specifies the average time per frame in 100 nanosecond units.
+
+`BlockPeriod`
+
+Specifies the block period. This is used for transmit only. It is calculated from 1/ BlockPerSecond * 1,000,000,000 picoseconds. For SDDV, it transmits one block per 1394 cycle. 1/(29.97 * 250) * 1,000,000,000,000 = 133,466,800 picoseconds.
+
 `Reserved`
 
 Reserved. Do not use. Must be set to 0.
-
-`SizeOfThisBlock`
-
-Specifies the size of this data structure, in bytes.
-
-`SrcPacketsPerFrame`
-
-Specifies the number of source packets to fill a data frame.
 
 
 ## Requirements
@@ -161,11 +161,3 @@ Specifies the number of source packets to fill a data frame.
 
 
 <a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVCSTRM_FORMAT_INFO structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

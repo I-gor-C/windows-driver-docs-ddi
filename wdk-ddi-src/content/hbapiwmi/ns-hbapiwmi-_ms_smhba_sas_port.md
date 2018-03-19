@@ -60,13 +60,17 @@ typedef struct _MS_SMHBA_SAS_Port {
 ## Members
 
 
-`AttachedSASAddress`
+`PortProtocol`
 
-The SAS address of the entity that is at the opposite end of the SAS link from this local SAS port.
+The protocols that are supported by this SAS port.
 
 `LocalSASAddress`
 
 The Port_Identifier of this SAS port
+
+`AttachedSASAddress`
+
+The SAS address of the entity that is at the opposite end of the SAS link from this local SAS port.
 
 `NumberofDiscoveredPorts`
 
@@ -75,10 +79,6 @@ The number of end ports that are visible to the local SAS port. The discovered p
 `NumberofPhys`
 
 The number of physical ports that are associated with this SAS port. If the value is more than one, this SAS port is considered to be a wide port.
-
-`PortProtocol`
-
-The protocols that are supported by this SAS port.
 
 
 ## Requirements

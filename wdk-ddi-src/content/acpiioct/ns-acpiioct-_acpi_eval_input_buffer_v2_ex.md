@@ -57,13 +57,13 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_V2_EX {
 ## Members
 
 
-`MethodName`
-
-
-
 `Signature`
 
 Defines the <b>ULONG</b> member <b>Signature</b>.
+
+`MethodName`
+
+
 
 
 ## Requirements

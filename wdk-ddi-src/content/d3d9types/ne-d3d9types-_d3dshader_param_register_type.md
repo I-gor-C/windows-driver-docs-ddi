@@ -80,8 +80,33 @@ typedef enum _D3DSHADER_PARAM_REGISTER_TYPE {
 <table>
             
                 <tr>
+                    <td>D3DSPR_TEMP</td>
+                    <td>Temporary register file.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DSPR_INPUT</td>
+                    <td>Input register file.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DSPR_CONST</td>
+                    <td>For PS, constant register file  0 - 2047 (DEF instruction). For VS, reserved.</td>
+                </tr>
+            
+                <tr>
                     <td>D3DSPR_ADDR</td>
                     <td>Address register (VS).</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DSPR_TEXTURE</td>
+                    <td>Texture register file (PS).</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DSPR_RASTOUT</td>
+                    <td>For VS, rasterizer output register file.</td>
                 </tr>
             
                 <tr>
@@ -90,13 +115,33 @@ typedef enum _D3DSHADER_PARAM_REGISTER_TYPE {
                 </tr>
             
                 <tr>
+                    <td>D3DSPR_TEXCRDOUT</td>
+                    <td>Texture coordinate output register file.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DSPR_OUTPUT</td>
+                    <td>For &amp;lt; VS 3_0, texture coordinate output register file. For &amp;gt;/= VS 3_0, output register file. For PS, reserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DSPR_CONSTINT</td>
+                    <td>Constant integer vector register file.</td>
+                </tr>
+            
+                <tr>
                     <td>D3DSPR_COLOROUT</td>
                     <td>Color output register file.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DSPR_CONST</td>
-                    <td>For PS, constant register file  0 - 2047 (DEF instruction). For VS, reserved.</td>
+                    <td>D3DSPR_DEPTHOUT</td>
+                    <td>Depth output register file.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DSPR_SAMPLER</td>
+                    <td>Sampler state register file.</td>
                 </tr>
             
                 <tr>
@@ -120,63 +165,8 @@ typedef enum _D3DSHADER_PARAM_REGISTER_TYPE {
                 </tr>
             
                 <tr>
-                    <td>D3DSPR_CONSTINT</td>
-                    <td>Constant integer vector register file.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DSPR_DEPTHOUT</td>
-                    <td>Depth output register file.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DSPR_FORCE_DWORD</td>
-                    <td>Force 32-bit size enumeration.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DSPR_INPUT</td>
-                    <td>Input register file.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DSPR_LABEL</td>
-                    <td>Label.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DSPR_LOOP</td>
                     <td>Loop counter register file.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DSPR_MISCTYPE</td>
-                    <td>Miscellaneous (single) registers.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DSPR_OUTPUT</td>
-                    <td>For &amp;lt; VS 3_0, texture coordinate output register file. For &amp;gt;/= VS 3_0, output register file. For PS, reserved.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DSPR_PREDICATE</td>
-                    <td>Predicate register.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DSPR_RASTOUT</td>
-                    <td>For VS, rasterizer output register file.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DSPR_SAMPLER</td>
-                    <td>Sampler state register file.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DSPR_TEMP</td>
-                    <td>Temporary register file.</td>
                 </tr>
             
                 <tr>
@@ -185,13 +175,23 @@ typedef enum _D3DSHADER_PARAM_REGISTER_TYPE {
                 </tr>
             
                 <tr>
-                    <td>D3DSPR_TEXCRDOUT</td>
-                    <td>Texture coordinate output register file.</td>
+                    <td>D3DSPR_MISCTYPE</td>
+                    <td>Miscellaneous (single) registers.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DSPR_TEXTURE</td>
-                    <td>Texture register file (PS).</td>
+                    <td>D3DSPR_LABEL</td>
+                    <td>Label.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DSPR_PREDICATE</td>
+                    <td>Predicate register.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DSPR_FORCE_DWORD</td>
+                    <td>Force 32-bit size enumeration.</td>
                 </tr>
 </table>
 

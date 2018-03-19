@@ -57,13 +57,13 @@ typedef struct _NDIS_PD_TRANSMIT_QUEUE_COUNTER {
 ## Members
 
 
-`BytesTransmitted`
-
-The amount of bytes transmitted.
-
 `PacketsTransmitted`
 
 The amount of packets transmitted.
+
+`BytesTransmitted`
+
+The amount of bytes transmitted.
 
 
 ## Requirements

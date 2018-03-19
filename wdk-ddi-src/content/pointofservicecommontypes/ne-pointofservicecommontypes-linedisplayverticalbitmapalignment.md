@@ -58,7 +58,7 @@ typedef enum _LineDisplayVerticalBitmapAlignment {
 <table>
             
                 <tr>
-                    <td>VerticalAlignmentBottom</td>
+                    <td>VerticalAlignmentTop</td>
                     <td></td>
                 </tr>
             
@@ -68,7 +68,7 @@ typedef enum _LineDisplayVerticalBitmapAlignment {
                 </tr>
             
                 <tr>
-                    <td>VerticalAlignmentTop</td>
+                    <td>VerticalAlignmentBottom</td>
                     <td></td>
                 </tr>
 </table>

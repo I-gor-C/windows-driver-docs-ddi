@@ -60,7 +60,7 @@ typedef struct _VIDEO_WIN32K_CALLBACKS {
 ## Members
 
 
-`bACPI`
+`PhysDisp`
 
 Reserved for system use.
 
@@ -68,15 +68,15 @@ Reserved for system use.
 
 Reserved for system use.
 
-`DualviewFlags`
-
-Reserved for system use.
-
-`PhysDisp`
+`bACPI`
 
 Reserved for system use.
 
 `pPhysDeviceObject`
+
+Reserved for system use.
+
+`DualviewFlags`
 
 Reserved for system use.
 

@@ -60,13 +60,8 @@ typedef enum _WDI_RX_THROTTLE_LEVEL {
 <table>
             
                 <tr>
-                    <td>WDI_RxThrottleLevelAggressive</td>
-                    <td>Aggressive throttling.</td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_RxThrottleLevelMax</td>
-                    <td></td>
+                    <td>WDI_RxThrottleLevelNone</td>
+                    <td>No throttling.</td>
                 </tr>
             
                 <tr>
@@ -75,8 +70,13 @@ typedef enum _WDI_RX_THROTTLE_LEVEL {
                 </tr>
             
                 <tr>
-                    <td>WDI_RxThrottleLevelNone</td>
-                    <td>No throttling.</td>
+                    <td>WDI_RxThrottleLevelAggressive</td>
+                    <td>Aggressive throttling.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_RxThrottleLevelMax</td>
+                    <td></td>
                 </tr>
 </table>
 

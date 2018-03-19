@@ -61,6 +61,11 @@ typedef enum _RILOPERATORINFOSTATUS {
 <table>
             
                 <tr>
+                    <td>RIL_OPSTATUS_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_OPSTATUS_AVAILABLE</td>
                     <td></td>
                 </tr>
@@ -77,11 +82,6 @@ typedef enum _RILOPERATORINFOSTATUS {
             
                 <tr>
                     <td>RIL_OPSTATUS_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_OPSTATUS_UNKNOWN</td>
                     <td></td>
                 </tr>
 </table>

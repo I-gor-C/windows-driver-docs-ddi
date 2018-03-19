@@ -74,6 +74,18 @@ typedef enum _DXGK_INTERRUPT_TYPE {
 <table>
             
                 <tr>
+                    <td>DXGK_INTERRUPT_DMA_COMPLETED</td>
+                    <td>A direct memory access (DMA) buffer is completed by using a fence identifier. The driver must supply the DMA buffer fence identifier in the <b>SubmissionFenceId</b> member of the <b>DmaCompleted</b> structure in the union that is contained in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a> function. This DMA buffer fence identifier was assigned during a call to the driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommand.md">DxgkDdiSubmitCommand</a> function for the latest completed DMA buffer.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_INTERRUPT_DMA_PREEMPTED</td>
+                    <td>A preemption request is completed. The driver must supply the preemption fence identifier in the <b>PreemptionFenceId</b> member and the latest fence identifier that hardware completed (not preempted) in the <b>LastCompletedFenceId</b> member of the <b>DmaPreempted</b> structure in the union that is contained in the DXGKARGCB_NOTIFY_INTERRUPT_DATA structure in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a> function.
+
+The GPU scheduler determines that the graphics hardware preempted all of the commands between the preemption request and the submission with the latest fence identifier.</td>
+                </tr>
+            
+                <tr>
                     <td>DXGK_INTERRUPT_CRTC_VSYNC</td>
                     <td>A scan out is completed. The driver must supply information in the <b>CrtcVsync</b> structure in the union that is contained in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a> function. 
 
@@ -81,22 +93,8 @@ The display miniport driver notifies with this interrupt type after video hardwa
                 </tr>
             
                 <tr>
-                    <td>DXGK_INTERRUPT_CRTC_VSYNC_WITH_MULTIPLANE_OVERLAY</td>
-                    <td>A Vsync has completed in a display miniport driver that supports multiplane overlays.
-
-Supported starting with Windows 8.1.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_INTERRUPT_CRTC_VSYNC_WITH_MULTIPLANE_OVERLAY2</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_INTERRUPT_DISPLAYONLY_PRESENT_PROGRESS</td>
-                    <td>In a kernel mode display-only driver, a present operation has completed or has failed.
-
-Supported starting with Windows 8.</td>
+                    <td>DXGK_INTERRUPT_DMA_FAULTED</td>
+                    <td>Reserved for system use. Do not use in your driver.</td>
                 </tr>
             
                 <tr>
@@ -107,13 +105,22 @@ Supported starting with Windows 8.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGK_INTERRUPT_DMA_COMPLETED</td>
-                    <td>A direct memory access (DMA) buffer is completed by using a fence identifier. The driver must supply the DMA buffer fence identifier in the <b>SubmissionFenceId</b> member of the <b>DmaCompleted</b> structure in the union that is contained in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a> function. This DMA buffer fence identifier was assigned during a call to the driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommand.md">DxgkDdiSubmitCommand</a> function for the latest completed DMA buffer.</td>
+                    <td>DXGK_INTERRUPT_DISPLAYONLY_PRESENT_PROGRESS</td>
+                    <td>In a kernel mode display-only driver, a present operation has completed or has failed.
+
+Supported starting with Windows 8.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGK_INTERRUPT_DMA_FAULTED</td>
-                    <td>Reserved for system use. Do not use in your driver.</td>
+                    <td>DXGK_INTERRUPT_CRTC_VSYNC_WITH_MULTIPLANE_OVERLAY</td>
+                    <td>A Vsync has completed in a display miniport driver that supports multiplane overlays.
+
+Supported starting with Windows 8.1.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_INTERRUPT_MICACAST_CHUNK_PROCESSING_COMPLETE</td>
+                    <td></td>
                 </tr>
             
                 <tr>
@@ -127,14 +134,12 @@ Supported starting with Windows 10.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGK_INTERRUPT_DMA_PREEMPTED</td>
-                    <td>A preemption request is completed. The driver must supply the preemption fence identifier in the <b>PreemptionFenceId</b> member and the latest fence identifier that hardware completed (not preempted) in the <b>LastCompletedFenceId</b> member of the <b>DmaPreempted</b> structure in the union that is contained in the DXGKARGCB_NOTIFY_INTERRUPT_DATA structure in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a> function.
-
-The GPU scheduler determines that the graphics hardware preempted all of the commands between the preemption request and the submission with the latest fence identifier.</td>
+                    <td>DXGK_INTERRUPT_CRTC_VSYNC_WITH_MULTIPLANE_OVERLAY2</td>
+                    <td></td>
                 </tr>
             
                 <tr>
-                    <td>DXGK_INTERRUPT_HWCONTEXTLIST_SWITCH_COMPLETED</td>
+                    <td>DXGK_INTERRUPT_MONITORED_FENCE_SIGNALED</td>
                     <td></td>
                 </tr>
             
@@ -144,12 +149,7 @@ The GPU scheduler determines that the graphics hardware preempted all of the com
                 </tr>
             
                 <tr>
-                    <td>DXGK_INTERRUPT_MICACAST_CHUNK_PROCESSING_COMPLETE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_INTERRUPT_MONITORED_FENCE_SIGNALED</td>
+                    <td>DXGK_INTERRUPT_HWCONTEXTLIST_SWITCH_COMPLETED</td>
                     <td></td>
                 </tr>
             
@@ -187,11 +187,3 @@ Supported starting with Windows 10.</td>
 
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_controlinterrupt.md">DxgkDdiControlInterrupt</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_INTERRUPT_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

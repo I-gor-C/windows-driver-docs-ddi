@@ -77,102 +77,6 @@ typedef struct _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS {
 ## Members
 
 
-`CmActivateVcCompleteHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_activate_vc_complete.md">
-     ProtocolCmActivateVcComplete</a> function.
-
-`CmAddPartyHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a> function.
-
-`CmCloseAfHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_close_af.md">ProtocolCmCloseAf</a> function.
-
-`CmCloseCallHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_close_call.md">
-     ProtocolCmCloseCall</a> function.
-
-`CmCreateVcHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function.
-
-`CmDeactivateVcCompleteHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_deactivate_vc_complete.md">
-     ProtocolCmDeactivateVcComplete</a> function.
-
-`CmDeleteVcHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a> function.
-
-`CmDeregisterSapHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">
-     ProtocolCmDeregisterSap</a> function.
-
-`CmDropPartyHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_drop_party.md">
-     ProtocolCmDropParty</a> function.
-
-`CmIncomingCallCompleteHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_incoming_call_complete.md">
-     ProtocolCmIncomingCallComplete</a> function.
-
-`CmMakeCallHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_make_call.md">ProtocolCmMakeCall</a> function.
-
-`CmModifyCallQoSHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_modify_qos_call.md">
-     ProtocolCmModifyCallQoS</a> function.
-
-`CmNotifyCloseAfCompleteHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_notify_close_af_complete.md">
-     ProtocolCmNotifyCloseAfComplete</a> function.
-
-`CmOidRequestCompleteHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_co_oid_request_complete.md">
-     ProtocolCoOidRequestComplete</a> function.
-
-`CmOidRequestHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_co_oid_request.md">
-     ProtocolCoOidRequest</a> function.
-
-`CmOpenAfHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a> function.
-
-`CmRegisterSapHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">
-     ProtocolCmRegisterSap</a> function.
-
 `Header`
 
 The 
@@ -186,6 +90,102 @@ The
 `Reserved`
 
 Reserved for NDIS.
+
+`CmCreateVcHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function.
+
+`CmDeleteVcHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a> function.
+
+`CmOpenAfHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a> function.
+
+`CmCloseAfHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_close_af.md">ProtocolCmCloseAf</a> function.
+
+`CmRegisterSapHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">
+     ProtocolCmRegisterSap</a> function.
+
+`CmDeregisterSapHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">
+     ProtocolCmDeregisterSap</a> function.
+
+`CmMakeCallHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_make_call.md">ProtocolCmMakeCall</a> function.
+
+`CmCloseCallHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_close_call.md">
+     ProtocolCmCloseCall</a> function.
+
+`CmIncomingCallCompleteHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_incoming_call_complete.md">
+     ProtocolCmIncomingCallComplete</a> function.
+
+`CmAddPartyHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a> function.
+
+`CmDropPartyHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_drop_party.md">
+     ProtocolCmDropParty</a> function.
+
+`CmActivateVcCompleteHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_activate_vc_complete.md">
+     ProtocolCmActivateVcComplete</a> function.
+
+`CmDeactivateVcCompleteHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_deactivate_vc_complete.md">
+     ProtocolCmDeactivateVcComplete</a> function.
+
+`CmModifyCallQoSHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_modify_qos_call.md">
+     ProtocolCmModifyCallQoS</a> function.
+
+`CmOidRequestHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_co_oid_request.md">
+     ProtocolCoOidRequest</a> function.
+
+`CmOidRequestCompleteHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_co_oid_request_complete.md">
+     ProtocolCoOidRequestComplete</a> function.
+
+`CmNotifyCloseAfCompleteHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_cm_notify_close_af_complete.md">
+     ProtocolCmNotifyCloseAfComplete</a> function.
 
 ## Remarks
 To specify entry points as a CoNDIS call manager, a protocol driver or miniport call manager (MCM)
@@ -362,11 +362,3 @@ An MCM driver cannot set the
 
 
 <a href="..\ndis\nc-ndis-set_options.md">ProtocolSetOptions</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

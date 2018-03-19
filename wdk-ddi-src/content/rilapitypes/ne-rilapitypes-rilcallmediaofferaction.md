@@ -64,17 +64,7 @@ typedef enum _RILCALLMEDIAOFFERACTION {
 <table>
             
                 <tr>
-                    <td>RIL_CALLMEDIAOFFERACTION_ACCEPT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLMEDIAOFFERACTION_ASK</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLMEDIAOFFERACTION_CANCEL</td>
+                    <td>RIL_CALLMEDIAOFFERACTION_NONE</td>
                     <td></td>
                 </tr>
             
@@ -84,17 +74,27 @@ typedef enum _RILCALLMEDIAOFFERACTION {
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLMEDIAOFFERACTION_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLMEDIAOFFERACTION_NONE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_CALLMEDIAOFFERACTION_REJECT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLMEDIAOFFERACTION_ASK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLMEDIAOFFERACTION_ACCEPT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLMEDIAOFFERACTION_CANCEL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLMEDIAOFFERACTION_MAX</td>
                     <td></td>
                 </tr>
 </table>

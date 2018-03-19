@@ -71,119 +71,19 @@ struct _BRB_SCO_GET_CHANNEL_INFO {
 ## Members
 
 
-`BasebandInfo`
-
-A 
-     <a href="..\bthddi\ns-bthddi-_baseband_channel_info.md">BASEBAND_CHANNEL_INFO</a> structure that
-     contains information for the SCO connection. This information is only available for links established
-     using the 1.2 Bluetooth Synchronous Commands.
-
-`BtAddress`
-
-The Bluetooth address of the remote device.
-
-`ChannelFlags`
-
-Flags that specify how the channel was opened. Valid flag values are listed in the following
-     table.
-     
-
-<table>
-<tr>
-<th>Flag</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>
-SCO_CF_LINK_AUTHENTICATED
-
-</td>
-<td>
-The link must be authenticated.
-
-</td>
-</tr>
-<tr>
-<td>
-SCO_CF_LINK_ENCRYPTED
-
-</td>
-<td>
-The link must be encrypted. Setting this flag also sets the SCO_CF_LINK_AUTHENTICATED flag.
-
-</td>
-</tr>
-<tr>
-<td>
-SCO_CF_LINK_SUPPRESS_PIN
-
-</td>
-<td>
-The profile driver indicates its preference that users not be prompted for a PIN.
-
-</td>
-</tr>
-</table>
-
-`ChannelHandle`
-
-The handle to the SCO channel to query.
-
-`ContentFormat`
-
-The audio voice setting for the channel. Use the following definitions to decode this member:
-     
-
-
-<dl>
-<dt>SCO_VS_AIR_CODING_DATA
-     </dt>
-<dt>SCO_VS_AIR_CODING_FORMAT_ALAW
-     </dt>
-<dt>SCO_VS_AIR_CODING_FORMAT_CVSD
-     </dt>
-<dt>SCO_VS_AIR_CODING_FORMAT_MASK
-     </dt>
-<dt>SCO_VS_AIR_CODING_FORMAT_MULAW
-     </dt>
-<dt>SCO_VS_IN_CODING_ALAW
-     </dt>
-<dt>SCO_VS_IN_CODING_LINEAR
-     </dt>
-<dt>SCO_VS_IN_CODING_MASK
-     </dt>
-<dt>SCO_VS_IN_CODING_MULAW
-     </dt>
-<dt>SCO_VS_IN_DATA_FORMAT_1C
-     </dt>
-<dt>SCO_VS_IN_DATA_FORMAT_2C
-     </dt>
-<dt>SCO_VS_IN_DATA_FORMAT_MASK
-     </dt>
-<dt>SCO_VS_IN_DATA_FORMAT_SM
-     </dt>
-<dt>SCO_VS_IN_DATA_FORMAT_US
-     </dt>
-<dt>SCO_VS_IN_SAMPLE_SIZE_8BIT
-     </dt>
-<dt>SCO_VS_IN_SAMPLE_SIZE_16BIT
-     </dt>
-<dt>SCO_VS_IN_SAMPLE_SIZE_MASK
-     </dt>
-<dt>SCO_VS_PCM_BIT_POS_MASK
-     </dt>
-<dt>SCO_VS_SETTING_DEFAULT</dt>
-</dl>
-
-`HciConnectionHandle`
-
-The host controller interface's connection handle for the SCO connection.
-
 `Hdr`
 
 A 
      <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
      about the current BRB.
+
+`BtAddress`
+
+The Bluetooth address of the remote device.
+
+`ChannelHandle`
+
+The handle to the SCO channel to query.
 
 `InfoFlags`
 
@@ -209,11 +109,13 @@ If set, baseband settings are available for the SCO channel.
 </tr>
 </table>
 
-`LinkType`
+`TransmitBandwidth`
 
-The 
-     <a href="..\bthddi\ne-bthddi-_sco_link_type.md">SCO_LINK_TYPE</a> that is associated with the host
-     controller interface.
+The transmission bandwidth of the channel, in bytes per second.
+
+`ReceiveBandwidth`
+
+The reception bandwidth of the channel, in bytes per second.
 
 `MaxLatency`
 
@@ -282,9 +184,51 @@ A flag or combination of flags that indicates the type of data packets that the 
 <dt>SCO_EV5</dt>
 </dl>
 
-`ReceiveBandwidth`
+`ContentFormat`
 
-The reception bandwidth of the channel, in bytes per second.
+The audio voice setting for the channel. Use the following definitions to decode this member:
+     
+
+
+<dl>
+<dt>SCO_VS_AIR_CODING_DATA
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_ALAW
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_CVSD
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_MASK
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_MULAW
+     </dt>
+<dt>SCO_VS_IN_CODING_ALAW
+     </dt>
+<dt>SCO_VS_IN_CODING_LINEAR
+     </dt>
+<dt>SCO_VS_IN_CODING_MASK
+     </dt>
+<dt>SCO_VS_IN_CODING_MULAW
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_1C
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_2C
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_MASK
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_SM
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_US
+     </dt>
+<dt>SCO_VS_IN_SAMPLE_SIZE_8BIT
+     </dt>
+<dt>SCO_VS_IN_SAMPLE_SIZE_16BIT
+     </dt>
+<dt>SCO_VS_IN_SAMPLE_SIZE_MASK
+     </dt>
+<dt>SCO_VS_PCM_BIT_POS_MASK
+     </dt>
+<dt>SCO_VS_SETTING_DEFAULT</dt>
+</dl>
 
 `Reserved`
 
@@ -296,9 +240,65 @@ A
      <a href="..\bthddi\ne-bthddi-_sco_retransmission_effort.md">SCO_RETRANSMISSION_EFFORT</a> value that
      determines the channel's retransmission policies.
 
-`TransmitBandwidth`
+`ChannelFlags`
 
-The transmission bandwidth of the channel, in bytes per second.
+Flags that specify how the channel was opened. Valid flag values are listed in the following
+     table.
+     
+
+<table>
+<tr>
+<th>Flag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+SCO_CF_LINK_AUTHENTICATED
+
+</td>
+<td>
+The link must be authenticated.
+
+</td>
+</tr>
+<tr>
+<td>
+SCO_CF_LINK_ENCRYPTED
+
+</td>
+<td>
+The link must be encrypted. Setting this flag also sets the SCO_CF_LINK_AUTHENTICATED flag.
+
+</td>
+</tr>
+<tr>
+<td>
+SCO_CF_LINK_SUPPRESS_PIN
+
+</td>
+<td>
+The profile driver indicates its preference that users not be prompted for a PIN.
+
+</td>
+</tr>
+</table>
+
+`HciConnectionHandle`
+
+The host controller interface's connection handle for the SCO connection.
+
+`LinkType`
+
+The 
+     <a href="..\bthddi\ne-bthddi-_sco_link_type.md">SCO_LINK_TYPE</a> that is associated with the host
+     controller interface.
+
+`BasebandInfo`
+
+A 
+     <a href="..\bthddi\ns-bthddi-_baseband_channel_info.md">BASEBAND_CHANNEL_INFO</a> structure that
+     contains information for the SCO connection. This information is only available for links established
+     using the 1.2 Bluetooth Synchronous Commands.
 
 ## Remarks
 To get the settings and statistics of a SCO channel, profile drivers should 
@@ -331,11 +331,3 @@ To get the settings and statistics of a SCO channel, profile drivers should
 
 
 <a href="..\bthddi\ns-bthddi-_baseband_channel_info.md">BASEBAND_CHANNEL_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_SCO_GET_CHANNEL_INFO structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

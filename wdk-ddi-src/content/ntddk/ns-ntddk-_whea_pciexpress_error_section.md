@@ -65,15 +65,75 @@ typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION {
 ## Members
 
 
-`AerInfo`
+`ValidBits`
 
-A buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a> structure that describes the PCIe advanced error reporting (AER) extended capability structure for the device where the error occurred.
+A <a href="..\ntddk\ns-ntddk-_whea_pciexpress_error_section_validbits.md">WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.
 
-This member contains valid data only if the <b>ValidBits.AerInfo</b> bit is set.
+`PortType`
 
-`BridgeControlStatus`
+The device type or port type of the PCIe component where the error occurred. Possible values are:
 
-A WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union that contains the contents of the PCI control and secondary status registers of the bridge device where the error occurred. The WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union is defined as follows:
+
+
+
+
+#### WheaPciExpressEndpoint
+
+A PCIe endpoint device.
+
+
+
+#### WheaPciExpressLegacyEndpoint
+
+A legacy PCIe endpoint device.
+
+
+
+#### WheaPciExpressRootPort
+
+A root port of a PCIe root complex.
+
+
+
+#### WheaPciExpressUpstreamSwitchPort
+
+An upstream port of a PCIe switch.
+
+
+
+#### WheaPciExpressDownstreamSwitchPort
+
+A downstream port of a PCIe switch.
+
+
+
+#### WheaPciExpressToPciXBridge
+
+A PCIe-to-PCI or PCI-X bridge.
+
+
+
+#### WheaPciXToExpressBridge
+
+A PCI or PCI-X-to-PCIe bridge.
+
+
+
+#### WheaPciExpressRootComplexIntegratedEndpoint
+
+A PCIe endpoint device that is integrated into the root complex.
+
+
+
+#### WheaPciExpressRootComplexEventCollector
+
+A PCIe root complex event collector.
+
+This member contains valid data only if the <b>ValidBits.PortType</b> bit is set.
+
+`Version`
+
+A WHEA_PCIEXPRESS_VERSION union that contains the version of the PCIe specification that is supported by the hardware platform. The WHEA_PCIEXPRESS_VERSION union is defined as follows:
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -81,13 +141,14 @@ A WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union that contains the contents of the 
 </tr>
 <tr>
 <td>
-<pre>typedef union _WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS {
+<pre>typedef union _WHEA_PCIEXPRESS_VERSION {
   struct {
-    USHORT  BridgeSecondaryStatus;
-    USHORT  BridgeControl;
+    UCHAR  MinorVersion;
+    UCHAR  MajorVersion;
+    USHORT  Reserved;
   };
   ULONG  AsULONG;
-} WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS, *PWHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS;</pre>
+} WHEA_PCIEXPRESS_VERSION, *PWHEA_PCIEXPRESS_VERSION;</pre>
 </td>
 </tr>
 </table></span></div>
@@ -95,23 +156,29 @@ A WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union that contains the contents of the 
 
 
 
-#### BridgeSecondaryStatus
+#### MinorVersion
 
-The contents of the secondary status register of the bridge device.
+The minor version number.
 
 
 
-#### BridgeControl
+#### MajorVersion
 
-The contents of the control register of the bridge device.
+The major version number.
+
+
+
+#### Reserved
+
+Reserved for system use.
 
 
 
 #### AsULONG
 
-A ULONG representation of the contents of the WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union.
+A ULONG representation of the contents of the WHEA_PCIEXPRESS_VERSION union.
 
-This member contains valid data only if the <b>ValidBits.BridgeControlStatus</b> bit is set.
+This member contains valid data only if the <b>ValidBits.Version</b> bit is set.
 
 `CommandStatus`
 
@@ -154,6 +221,10 @@ The contents of the PCI status register.
 A ULONG representation of the contents of the WHEA_PCIEXPRESS_COMMAND_STATUS union.
 
 This member contains valid data only if the <b>ValidBits.CommandStatus</b> bit is set.
+
+`Reserved`
+
+Reserved for system use.
 
 `DeviceId`
 
@@ -256,85 +327,9 @@ The serial number of the PCIe device where the error occurred.
 
 This member contains valid data only if the <b>ValidBits.DeviceSerialNumber</b> bit is set.
 
-`ExpressCapability`
+`BridgeControlStatus`
 
-A buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537460">PCI_EXPRESS_CAPABILITY</a> structure that describes the PCIe capability structure for the device where the error occurred.
-
-This member contains valid data only if the <b>ValidBits.ExpressCapability</b> bit is set.
-
-`PortType`
-
-The device type or port type of the PCIe component where the error occurred. Possible values are:
-
-
-
-
-
-#### WheaPciExpressEndpoint
-
-A PCIe endpoint device.
-
-
-
-#### WheaPciExpressLegacyEndpoint
-
-A legacy PCIe endpoint device.
-
-
-
-#### WheaPciExpressRootPort
-
-A root port of a PCIe root complex.
-
-
-
-#### WheaPciExpressUpstreamSwitchPort
-
-An upstream port of a PCIe switch.
-
-
-
-#### WheaPciExpressDownstreamSwitchPort
-
-A downstream port of a PCIe switch.
-
-
-
-#### WheaPciExpressToPciXBridge
-
-A PCIe-to-PCI or PCI-X bridge.
-
-
-
-#### WheaPciXToExpressBridge
-
-A PCI or PCI-X-to-PCIe bridge.
-
-
-
-#### WheaPciExpressRootComplexIntegratedEndpoint
-
-A PCIe endpoint device that is integrated into the root complex.
-
-
-
-#### WheaPciExpressRootComplexEventCollector
-
-A PCIe root complex event collector.
-
-This member contains valid data only if the <b>ValidBits.PortType</b> bit is set.
-
-`Reserved`
-
-Reserved for system use.
-
-`ValidBits`
-
-A <a href="..\ntddk\ns-ntddk-_whea_pciexpress_error_section_validbits.md">WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.
-
-`Version`
-
-A WHEA_PCIEXPRESS_VERSION union that contains the version of the PCIe specification that is supported by the hardware platform. The WHEA_PCIEXPRESS_VERSION union is defined as follows:
+A WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union that contains the contents of the PCI control and secondary status registers of the bridge device where the error occurred. The WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union is defined as follows:
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -342,14 +337,13 @@ A WHEA_PCIEXPRESS_VERSION union that contains the version of the PCIe specificat
 </tr>
 <tr>
 <td>
-<pre>typedef union _WHEA_PCIEXPRESS_VERSION {
+<pre>typedef union _WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS {
   struct {
-    UCHAR  MinorVersion;
-    UCHAR  MajorVersion;
-    USHORT  Reserved;
+    USHORT  BridgeSecondaryStatus;
+    USHORT  BridgeControl;
   };
   ULONG  AsULONG;
-} WHEA_PCIEXPRESS_VERSION, *PWHEA_PCIEXPRESS_VERSION;</pre>
+} WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS, *PWHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS;</pre>
 </td>
 </tr>
 </table></span></div>
@@ -357,29 +351,35 @@ A WHEA_PCIEXPRESS_VERSION union that contains the version of the PCIe specificat
 
 
 
-#### MinorVersion
+#### BridgeSecondaryStatus
 
-The minor version number.
-
-
-
-#### MajorVersion
-
-The major version number.
+The contents of the secondary status register of the bridge device.
 
 
 
-#### Reserved
+#### BridgeControl
 
-Reserved for system use.
+The contents of the control register of the bridge device.
 
 
 
 #### AsULONG
 
-A ULONG representation of the contents of the WHEA_PCIEXPRESS_VERSION union.
+A ULONG representation of the contents of the WHEA_PCIEXPRESS_BRIDGE_CONTROL_STATUS union.
 
-This member contains valid data only if the <b>ValidBits.Version</b> bit is set.
+This member contains valid data only if the <b>ValidBits.BridgeControlStatus</b> bit is set.
+
+`ExpressCapability`
+
+A buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537460">PCI_EXPRESS_CAPABILITY</a> structure that describes the PCIe capability structure for the device where the error occurred.
+
+This member contains valid data only if the <b>ValidBits.ExpressCapability</b> bit is set.
+
+`AerInfo`
+
+A buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a> structure that describes the PCIe advanced error reporting (AER) extended capability structure for the device where the error occurred.
+
+This member contains valid data only if the <b>ValidBits.AerInfo</b> bit is set.
 
 ## Remarks
 The WHEA_PCIEXPRESS_ERROR_SECTION structure describes the error data that is contained in a PCI Express (PCIe) error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains a PCIe error section only if the <b>SectionType </b>member of one of the <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe the error record sections for that error record contains PCIEXPRESS_ERROR_SECTION_GUID.
@@ -409,11 +409,3 @@ The WHEA_PCIEXPRESS_ERROR_SECTION structure describes the error data that is con
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537460">PCI_EXPRESS_CAPABILITY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_PCIEXPRESS_ERROR_SECTION structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

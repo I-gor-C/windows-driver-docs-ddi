@@ -66,6 +66,21 @@ typedef enum _RILCALLINFOSTATUS {
 <table>
             
                 <tr>
+                    <td>RIL_CPISTAT_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CPISTAT_NEW_OUTGOING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CPISTAT_NEW_INCOMING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_CPISTAT_CONNECTED</td>
                     <td></td>
                 </tr>
@@ -76,12 +91,7 @@ typedef enum _RILCALLINFOSTATUS {
                 </tr>
             
                 <tr>
-                    <td>RIL_CPISTAT_HANDOVER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CPISTAT_MAX</td>
+                    <td>RIL_CPISTAT_ONHOLD</td>
                     <td></td>
                 </tr>
             
@@ -91,22 +101,12 @@ typedef enum _RILCALLINFOSTATUS {
                 </tr>
             
                 <tr>
-                    <td>RIL_CPISTAT_NEW_INCOMING</td>
+                    <td>RIL_CPISTAT_HANDOVER</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CPISTAT_NEW_OUTGOING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CPISTAT_ONHOLD</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CPISTAT_UNKNOWN</td>
+                    <td>RIL_CPISTAT_MAX</td>
                     <td></td>
                 </tr>
 </table>

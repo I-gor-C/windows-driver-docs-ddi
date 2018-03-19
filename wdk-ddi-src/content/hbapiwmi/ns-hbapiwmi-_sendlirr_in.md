@@ -59,6 +59,10 @@ typedef struct _SendLIRR_IN {
 ## Members
 
 
+`SourceWWN`
+
+Contains a worldwide name for the local port through which the link incident record registration (LIRR) command is sent.
+
 `DestWWN`
 
 Contains a worldwide name for the destination port.
@@ -66,10 +70,6 @@ Contains a worldwide name for the destination port.
 `Function`
 
 Contains the code that identifies which registration function is to be performed. For an explanation of which values can be assigned to this member, see the T11 committee's <i>Fibre Channel Framing and Signaling</i> specification.
-
-`SourceWWN`
-
-Contains a worldwide name for the local port through which the link incident record registration (LIRR) command is sent.
 
 `Type`
 
@@ -86,11 +86,3 @@ The WMI tool suite generates a declaration of the SendLIRR_IN structure in <i>Hb
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565419">SendLIRR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SendLIRR_IN structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

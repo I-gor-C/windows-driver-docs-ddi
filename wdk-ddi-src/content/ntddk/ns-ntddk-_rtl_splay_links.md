@@ -58,13 +58,13 @@ typedef struct _RTL_SPLAY_LINKS {
 ## Members
 
 
-`LeftChild`
-
-An opaque pointer to the left child node for this node.  If no left-child node exists, the value of this member is <b>NULL</b>.
-
 `Parent`
 
 An opaque pointer to the parent node for this node.  If only one node in the splay link tree exists, the value of this member is <b>NULL</b>.
+
+`LeftChild`
+
+An opaque pointer to the left child node for this node.  If no left-child node exists, the value of this member is <b>NULL</b>.
 
 `RightChild`
 
@@ -124,11 +124,3 @@ Callers of the <b>Rtl</b><b><i>Xxx</i></b> splay tree routines are responsible f
 
 
 <a href="..\ntddk\nf-ntddk-rtlleftchild.md">RtlLeftChild</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RTL_SPLAY_LINKS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

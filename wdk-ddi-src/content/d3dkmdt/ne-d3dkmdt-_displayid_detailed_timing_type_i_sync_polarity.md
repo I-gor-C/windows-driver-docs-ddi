@@ -60,13 +60,13 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_SYNC_POLARITY {
 <table>
             
                 <tr>
-                    <td>DIDDT1_Sync_Negative</td>
-                    <td>Indicates that the sync polarity is negative.</td>
+                    <td>DIDDT1_Sync_Positive</td>
+                    <td>Indicates that the sync polarity is positive.</td>
                 </tr>
             
                 <tr>
-                    <td>DIDDT1_Sync_Positive</td>
-                    <td>Indicates that the sync polarity is positive.</td>
+                    <td>DIDDT1_Sync_Negative</td>
+                    <td>Indicates that the sync polarity is negative.</td>
                 </tr>
 </table>
 

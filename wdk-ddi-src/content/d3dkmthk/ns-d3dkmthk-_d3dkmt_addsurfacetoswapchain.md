@@ -59,21 +59,21 @@ typedef struct _D3DKMT_ADDSURFACETOSWAPCHAIN {
 ## Members
 
 
+`hNtSwapChain`
+
+An NT handle for the swapchain in this process.
+
 `bProducer`
 
 Indicates if the surface is a producer or consumer.
-
-`BufferIdx`
-
-Index of were the texture was placed on the surface table.
 
 `hNtSurfaceHandle`
 
 An NT handle for the surface to be added.
 
-`hNtSwapChain`
+`BufferIdx`
 
-An NT handle for the swapchain in this process.
+Index of were the texture was placed on the surface table.
 
 
 ## Requirements

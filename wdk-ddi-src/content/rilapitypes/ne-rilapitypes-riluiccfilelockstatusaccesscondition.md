@@ -66,27 +66,7 @@ typedef enum _RILUICCFILELOCKSTATUSACCESSCONDITION {
 <table>
             
                 <tr>
-                    <td>RIL_UICCFILEACCESSCONDITION_ADM5</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCFILEACCESSCONDITION_ADM6</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_UICCFILEACCESSCONDITION_ALW</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCFILEACCESSCONDITION_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCFILEACCESSCONDITION_NEV</td>
                     <td></td>
                 </tr>
             
@@ -107,6 +87,26 @@ typedef enum _RILUICCFILELOCKSTATUSACCESSCONDITION {
             
                 <tr>
                     <td>RIL_UICCFILEACCESSCONDITION_RFU4</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCFILEACCESSCONDITION_ADM5</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCFILEACCESSCONDITION_ADM6</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCFILEACCESSCONDITION_NEV</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCFILEACCESSCONDITION_MAX</td>
                     <td></td>
                 </tr>
 </table>

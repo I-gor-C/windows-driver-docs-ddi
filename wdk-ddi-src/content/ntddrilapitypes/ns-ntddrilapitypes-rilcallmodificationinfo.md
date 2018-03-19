@@ -64,11 +64,11 @@ typedef struct _RILCALLMODIFICATIONINFO {
 ## Members
 
 
-`aiIdentifier`
-
-
-
 `cbSize`
+
+
+
+`dwParams`
 
 
 
@@ -84,19 +84,19 @@ typedef struct _RILCALLMODIFICATIONINFO {
 
 
 
-`dwNewCallType`
-
-
-
 `dwOldCallType`
 
 
 
-`dwParams`
+`dwNewCallType`
 
 
 
 `raAddress`
+
+
+
+`aiIdentifier`
 
 
 

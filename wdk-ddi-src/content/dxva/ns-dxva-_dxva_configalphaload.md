@@ -58,6 +58,18 @@ typedef struct _DXVA_ConfigAlphaLoad {
 ## Members
 
 
+`dwFunction`
+
+Indicates the type of query or response when using probing and locking commands. The most significant 24 bits of <b>dwFunction</b> is the <a href="https://msdn.microsoft.com/bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5">DXVA_ConfigQueryOrReplyFlag</a> variable.
+
+The least significant 4 bits of the <i>DXVA_ConfigQueryOrReplyFlag</i> variable contains status indicators for the query or response being performed.
+
+The least significant 8 bits of <b>dwFunction</b> is the <a href="https://msdn.microsoft.com/6db9fa71-7bc2-4eb6-afcb-b16df48f7e8b">bDXVA_Func variable</a> that, in this case, is equal to 2.
+
+`dwReservedBits`
+
+Reserved bits used for packing and alignment. These bits are zero.
+
 `bConfigDataType`
 
 Specifies the type of alpha-blend data to be used. This member can be set to one of the following values.
@@ -111,18 +123,6 @@ AYUV graphic surface.
  
 
 The preferred values for an accelerator to support for <b>bConfigDataType</b> are 1 and 3.
-
-`dwFunction`
-
-Indicates the type of query or response when using probing and locking commands. The most significant 24 bits of <b>dwFunction</b> is the <a href="https://msdn.microsoft.com/bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5">DXVA_ConfigQueryOrReplyFlag</a> variable.
-
-The least significant 4 bits of the <i>DXVA_ConfigQueryOrReplyFlag</i> variable contains status indicators for the query or response being performed.
-
-The least significant 8 bits of <b>dwFunction</b> is the <a href="https://msdn.microsoft.com/6db9fa71-7bc2-4eb6-afcb-b16df48f7e8b">bDXVA_Func variable</a> that, in this case, is equal to 2.
-
-`dwReservedBits`
-
-Reserved bits used for packing and alignment. These bits are zero.
 
 
 ## Requirements

@@ -67,28 +67,8 @@ typedef enum _PEP_ACPI_RESOURCE_TYPE {
 <table>
             
                 <tr>
-                    <td>PepAcpiExtendedIo</td>
-                    <td>Indicates that the resource is an ACPI extended IO resource.</td>
-                </tr>
-            
-                <tr>
-                    <td>PepAcpiExtendedMemory</td>
-                    <td>Indicates that the resource is an ACPI extended memory resource.</td>
-                </tr>
-            
-                <tr>
-                    <td>PepAcpiGpioInt</td>
-                    <td>Indicates that the resource is an ACPI GPIO interrupt resource.</td>
-                </tr>
-            
-                <tr>
-                    <td>PepAcpiGpioIo</td>
-                    <td>Indicates that the resource is an ACPI GPIO resource.</td>
-                </tr>
-            
-                <tr>
-                    <td>PepAcpiInterrupt</td>
-                    <td>Indicates that the resource is an ACPI interrupt resource.</td>
+                    <td>PepAcpiMemory</td>
+                    <td>Indicates that the resource is an ACPI memory resource.</td>
                 </tr>
             
                 <tr>
@@ -97,8 +77,18 @@ typedef enum _PEP_ACPI_RESOURCE_TYPE {
                 </tr>
             
                 <tr>
-                    <td>PepAcpiMemory</td>
-                    <td>Indicates that the resource is an ACPI memory resource.</td>
+                    <td>PepAcpiInterrupt</td>
+                    <td>Indicates that the resource is an ACPI interrupt resource.</td>
+                </tr>
+            
+                <tr>
+                    <td>PepAcpiGpioIo</td>
+                    <td>Indicates that the resource is an ACPI GPIO resource.</td>
+                </tr>
+            
+                <tr>
+                    <td>PepAcpiGpioInt</td>
+                    <td>Indicates that the resource is an ACPI GPIO interrupt resource.</td>
                 </tr>
             
                 <tr>
@@ -114,6 +104,16 @@ typedef enum _PEP_ACPI_RESOURCE_TYPE {
                 <tr>
                     <td>PepAcpiSpbUart</td>
                     <td>Indicates that the resource is an ACPI UART serial bus resource.</td>
+                </tr>
+            
+                <tr>
+                    <td>PepAcpiExtendedMemory</td>
+                    <td>Indicates that the resource is an ACPI extended memory resource.</td>
+                </tr>
+            
+                <tr>
+                    <td>PepAcpiExtendedIo</td>
+                    <td>Indicates that the resource is an ACPI extended IO resource.</td>
                 </tr>
 </table>
 
@@ -131,11 +131,3 @@ typedef enum _PEP_ACPI_RESOURCE_TYPE {
 
 
 <a href="..\pepfx\ns-pepfx-_pep_acpi_request_convert_to_bios_resources.md">PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_RESOURCE_TYPE enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

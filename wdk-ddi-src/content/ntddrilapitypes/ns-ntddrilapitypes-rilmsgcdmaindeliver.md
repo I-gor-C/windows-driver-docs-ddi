@@ -78,83 +78,11 @@ typedef struct _RILMSGCDMAINDELIVER {
 ## Members
 
 
-`bUserAckRequest`
-
-
-
-`cbHdrLength`
-
-
-
-`cchMsgLength`
-
-
-
-`dwAlertOnMsgDelivery`
-
-
-
-`dwMsgDisplayMode`
-
-
-
-`dwMsgEncoding`
-
-
-
-`dwMsgID`
-
-
-
-`dwMsgLang`
-
-
-
-`dwMsgPriority`
-
-
-
-`dwMsgPrivacy`
-
-
-
-`dwNumMsgs`
-
-
-
-`dwServiceID`
-
-
-
-`dwTeleservice`
-
-
-
-`raCallBackNumber`
-
-
-
 `raOrigAddress`
 
 
 
-`rgbHdr`
-
-
-
-`rgbMsg`
-
-
-
 `rsaOrigSubaddr`
-
-
-
-`stDeferredDelTimeAbs`
-
-
-
-`stDeferredDelTimeRel`
 
 
 
@@ -167,6 +95,78 @@ typedef struct _RILMSGCDMAINDELIVER {
 
 
 `stValidityPeriodRel`
+
+
+
+`stDeferredDelTimeAbs`
+
+
+
+`stDeferredDelTimeRel`
+
+
+
+`dwNumMsgs`
+
+
+
+`raCallBackNumber`
+
+
+
+`dwMsgPriority`
+
+
+
+`dwAlertOnMsgDelivery`
+
+
+
+`dwMsgPrivacy`
+
+
+
+`bUserAckRequest`
+
+
+
+`dwMsgDisplayMode`
+
+
+
+`dwTeleservice`
+
+
+
+`dwServiceID`
+
+
+
+`dwMsgID`
+
+
+
+`dwMsgLang`
+
+
+
+`dwMsgEncoding`
+
+
+
+`cbHdrLength`
+
+
+
+`cchMsgLength`
+
+
+
+`rgbHdr`
+
+
+
+`rgbMsg`
 
 
 

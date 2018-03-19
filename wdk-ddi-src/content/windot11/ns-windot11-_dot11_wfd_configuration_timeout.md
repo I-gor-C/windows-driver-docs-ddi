@@ -58,13 +58,13 @@ typedef struct _DOT11_WFD_CONFIGURATION_TIMEOUT {
 ## Members
 
 
-`ClientTimeout`
-
-The time, in milliseconds, allowed to configure as a client. The miniport must convert this value to the correct units before including it in a P2P IE.
-
 `GOTimeout`
 
 The time, in milliseconds, allowed to configure as a Group Owner (GO). The miniport must convert this value to the correct units before including it in a Peer-to-Peer Information Element (P2P IE).
+
+`ClientTimeout`
+
+The time, in milliseconds, allowed to configure as a client. The miniport must convert this value to the correct units before including it in a P2P IE.
 
 
 ## Requirements

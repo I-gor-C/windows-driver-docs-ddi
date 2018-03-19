@@ -64,13 +64,13 @@ typedef struct _DEVICE_MANAGE_DATA_SET_ATTRIBUTES_OUTPUT {
 ## Members
 
 
+`Size`
+
+The size of this structure. This is set to <b>sizeof</b>(DEVICE_MANAGE_DATA_SET_ATTRIBUTES_OUTPUT).
+
 `Action`
 
 The action related to the instance of this structure. This is a value from the <a href="..\ntddstor\ns-ntddstor-_device_manage_data_set_attributes.md">DEVICE_DATA_MANAGEMENT_SET_ACTION</a> enumeration.
-
-`ExtendedError`
-
-An extended error value originating from Windows or a driver.
 
 `Flags`
 
@@ -80,25 +80,25 @@ Flags for the data set management action. See the <b>Flags</b> member of <a href
 
 An status resulting from the operation a performed for <b>Action</b>.
 
-`OutputBlockLength`
+`ExtendedError`
 
-The length of the action-specific data.
+An extended error value originating from Windows or a driver.
 
-`OutputBlockOffset`
+`TargetDetailedError`
 
-The position, after the beginning of this structure, where action-specific data is located.
+An error value resulting from a failure execute the operation for <b>Action</b> at the target.
 
 `ReservedStatus`
 
 Reserved.
 
-`Size`
+`OutputBlockOffset`
 
-The size of this structure. This is set to <b>sizeof</b>(DEVICE_MANAGE_DATA_SET_ATTRIBUTES_OUTPUT).
+The position, after the beginning of this structure, where action-specific data is located.
 
-`TargetDetailedError`
+`OutputBlockLength`
 
-An error value resulting from a failure execute the operation for <b>Action</b> at the target.
+The length of the action-specific data.
 
 ## Remarks
 Depending on the value of <b>Action</b>, an output block is written at an offset of <b>OutputBlockOffset</b> after the beginning of this structure. The size of the output block is specified in <b>OutputBlockLength</b>. 
@@ -122,11 +122,3 @@ Currently, only the <b>DeviceDsmAction_Allocation</b> action uses this structure
 
 
 <a href="..\ntddstor\ns-ntddstor-_device_data_set_lb_provisioning_state.md">DEVICE_DATA_SET_LB_PROVISIONING_STATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_MANAGE_DATA_SET_ATTRIBUTES_OUTPUT structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

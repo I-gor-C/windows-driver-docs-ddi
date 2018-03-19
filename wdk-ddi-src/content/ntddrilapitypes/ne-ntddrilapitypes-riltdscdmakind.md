@@ -62,7 +62,7 @@ typedef enum _RILTDSCDMAKIND {
 <table>
             
                 <tr>
-                    <td>RIL_TDSCDMAKIND_DC_HSPAPLUS</td>
+                    <td>RIL_TDSCDMAKIND_UMTS</td>
                     <td></td>
                 </tr>
             
@@ -72,22 +72,22 @@ typedef enum _RILTDSCDMAKIND {
                 </tr>
             
                 <tr>
-                    <td>RIL_TDSCDMAKIND_HSPAPLUS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_TDSCDMAKIND_HSUPA</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_TDSCDMAKIND_MAX</td>
+                    <td>RIL_TDSCDMAKIND_HSPAPLUS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_TDSCDMAKIND_UMTS</td>
+                    <td>RIL_TDSCDMAKIND_DC_HSPAPLUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_TDSCDMAKIND_MAX</td>
                     <td></td>
                 </tr>
 </table>

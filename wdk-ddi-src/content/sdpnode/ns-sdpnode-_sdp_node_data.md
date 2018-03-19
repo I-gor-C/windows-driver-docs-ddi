@@ -80,37 +80,69 @@ typedef union _SDP_NODE_DATA {
 ## Members
 
 
-`alternative`
-
-An SDP_NODE_HEADER structure that references the elements of an alternate list sequence.
-
-`boolean`
-
-The union member for a Boolean value.
-
-`container`
-
-A list of pointers to user-mode specific interfaces.
-
 `int128`
 
 The union member for a 128-bit integer.
 
-`int16`
+`uint128`
 
-The union member for a 16-bit integer.
+The union member for an unsigned 128-bit integer.
 
-`int32`
+`uuid128`
 
-The union member for a 32-bit integer.
+The union member for a 128-bit universally unique identifier (UUID).
+
+`uuid32`
+
+The union member for a 32-bit UUID.
+
+`uuid16`
+
+The union member for a 16-bit UUID.
 
 `int64`
 
 The union member for a 64-bit integer.
 
+`uint64`
+
+The union member for an unsigned 64-bit integer.
+
+`int32`
+
+The union member for a 32-bit integer.
+
+`uint32`
+
+The union member for an unsigned 32-bit integer.
+
+`int16`
+
+The union member for a 16-bit integer.
+
+`uint16`
+
+The union member for an unsigned 16-bit integer.
+
 `int8`
 
 The union reserved for an 8-bit integer.
+
+`uint8`
+
+The union member for an unsigned 8-bit integer.
+
+`boolean`
+
+The union member for a Boolean value.
+
+`string`
+
+The union member for a string value.
+
+`url`
+
+The union member for a URL value.
 
 `sequence`
 
@@ -118,45 +150,13 @@ An
      <a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a> structure that references
      the elements of a sequence.
 
-`string`
+`alternative`
 
-The union member for a string value.
+An SDP_NODE_HEADER structure that references the elements of an alternate list sequence.
 
-`uint128`
+`container`
 
-The union member for an unsigned 128-bit integer.
-
-`uint16`
-
-The union member for an unsigned 16-bit integer.
-
-`uint32`
-
-The union member for an unsigned 32-bit integer.
-
-`uint64`
-
-The union member for an unsigned 64-bit integer.
-
-`uint8`
-
-The union member for an unsigned 8-bit integer.
-
-`url`
-
-The union member for a URL value.
-
-`uuid128`
-
-The union member for a 128-bit universally unique identifier (UUID).
-
-`uuid16`
-
-The union member for a 16-bit UUID.
-
-`uuid32`
-
-The union member for a 32-bit UUID.
+A list of pointers to user-mode specific interfaces.
 
 ## Remarks
 Each 
@@ -195,11 +195,3 @@ The header specifies the type of data. Driver developers can access links to pee
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SDP_NODE_DATA union%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

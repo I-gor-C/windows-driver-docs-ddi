@@ -64,24 +64,15 @@ struct _BRB_SCO_TRANSFER {
 ## Members
 
 
+`Hdr`
+
+A 
+     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     about the current BRB.
+
 `BtAddress`
 
 The Bluetooth address of the remote device.
-
-`Buffer`
-
-A pointer to the input buffer. This value should be <b>NULL</b> when the 
-     <b>Buffer</b> member is not used.
-
-`BufferMDL`
-
-A pointer to the MDL input buffer. This value should be <b>NULL</b> when the 
-     <b>BufferMDL</b> member is not used.
-
-`BufferSize`
-
-The size, in bytes, of the input buffer described by the 
-     <b>Buffer</b> member of this structure.
 
 `ChannelHandle`
 
@@ -89,20 +80,6 @@ The SCO channel handle that was returned by Bluetooth driver stack in response t
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536626">BRB_SCO_OPEN_CHANNEL</a> or 
      <a href="https://social.msdn.microsoft.com/Forums/en-US/0a9a4323-d046-4d27-9d22-4974dbab30a4/windows-bluetooth-sco-brbscoopenchannelresponse?forum=wdk">
      BRB_SCO_OPEN_CHANNEL_RESPONSE</a> request.
-
-`DataTag`
-
-#### SCO write
-
-
-
-####
-
-`Hdr`
-
-A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
-     about the current BRB.
 
 `TransferFlags`
 
@@ -137,6 +114,29 @@ If this bit is set, the BRB writes isochronousdata to a remote device through th
 </td>
 </tr>
 </table>
+
+`BufferSize`
+
+The size, in bytes, of the input buffer described by the 
+     <b>Buffer</b> member of this structure.
+
+`Buffer`
+
+A pointer to the input buffer. This value should be <b>NULL</b> when the 
+     <b>Buffer</b> member is not used.
+
+`BufferMDL`
+
+A pointer to the MDL input buffer. This value should be <b>NULL</b> when the 
+     <b>BufferMDL</b> member is not used.
+
+`DataTag`
+
+#### SCO write
+
+
+
+####
 
 ## Remarks
 To read isochronous data from or write isochronous data to a SCO connection, profile drivers should 
@@ -178,11 +178,3 @@ If both
 
 
 <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_SCO_TRANSFER structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

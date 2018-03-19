@@ -64,14 +64,6 @@ typedef struct _BTHHFP_DESCRIPTOR2 {
 ## Members
 
 
-`ContainerId`
-
-The PnP container ID for the paired HFP device.
-
-`FriendlyName`
-
-An indirect string identifying the human readable friendly name of the paired HFP device.
-
 `InputPinCategory`
 
 KS pin category for the input function of the paired HFP device.
@@ -80,9 +72,9 @@ KS pin category for the input function of the paired HFP device.
 
 KS pin category for the output function of the paired HFP device.
 
-`SupportsNREC`
+`ContainerId`
 
-Indicates whether the paired HFP device supports noise reduction / echo cancellation (NREC).
+The PnP container ID for the paired HFP device.
 
 `SupportsVolume`
 
@@ -91,6 +83,14 @@ Indicates whether the paired HFP device supports remote volume control.
 `VolumePropertyValuesSize`
 
 If remote volume control is supported, this member contains the size of the data returned by the <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_volumepropertyvalues.md">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a> request.
+
+`FriendlyName`
+
+An indirect string identifying the human readable friendly name of the paired HFP device.
+
+`SupportsNREC`
+
+Indicates whether the paired HFP device supports noise reduction / echo cancellation (NREC).
 
 ## Remarks
 When the <i>SupportsNREC</i> parameter's value is TRUE, the audio driver should not support RAW mode pins. In this mode, the audio driver cannot support RAW mode pins because the remote Bluetooth device can enable its internal NREC processing at any time.
@@ -119,11 +119,3 @@ When <i>SupportsNREC</i> is set to FALSE, the audio driver should support RAW mo
 
 
 <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor2.md">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20BTHHFP_DESCRIPTOR2 structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

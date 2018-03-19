@@ -67,26 +67,24 @@ typedef struct _WWAN_PIN_LIST {
 ## Members
 
 
-`WwanPinDescCorporatePin`
+`WwanPinDescPin1`
 
-Description for corporate personalization PIN. This is a PIN that allows the device to be
-     personalized to a specific company. For more information about this PIN type, see section 22.022 of the
-     3GPP specification.
+Description for PIN1. For GSM-based devices, this is a Subscriber Identity Module (SIM) PIN. For
+     CDMA-based devices, power-on device lock is reported as PIN1.
 
-`WwanPinDescCustom`
+`WwanPinDescPin2`
 
-Description for custom PIN. This is a custom vendor-defined PIN type. It is not included in the
-     above list.
-
-`WwanPinDescDeviceFirstSimPin`
-
-Description for the device-to-very-first-SIM-card PIN. This is a PIN that locks the device to the
-     very first inserted SIM.
+Description for PIN2. This is a SIM PIN2 that protects certain SIM functionality.
 
 `WwanPinDescDeviceSimPin`
 
 Description for the device-to-SIM-card PIN. This is a PIN that locks the device to a specific
      SIM.
+
+`WwanPinDescDeviceFirstSimPin`
+
+Description for the device-to-very-first-SIM-card PIN. This is a PIN that locks the device to the
+     very first inserted SIM.
 
 `WwanPinDescNetworkPin`
 
@@ -100,14 +98,17 @@ Description for network subset personalization PIN. This is a PIN that allows th
      personalized to a subset of a network. For more information about this PIN type, see section 22.022 of
      the 3GPP specification.
 
-`WwanPinDescPin1`
+`WwanPinDescSvcProviderPin`
 
-Description for PIN1. For GSM-based devices, this is a Subscriber Identity Module (SIM) PIN. For
-     CDMA-based devices, power-on device lock is reported as PIN1.
+Description for Service Provider (SP) personalization PIN. This is a PIN that allows the device to
+     be personalized to a service provider. For more information about this PIN type, see section 22.022 of
+     the 3GPP specification.
 
-`WwanPinDescPin2`
+`WwanPinDescCorporatePin`
 
-Description for PIN2. This is a SIM PIN2 that protects certain SIM functionality.
+Description for corporate personalization PIN. This is a PIN that allows the device to be
+     personalized to a specific company. For more information about this PIN type, see section 22.022 of the
+     3GPP specification.
 
 `WwanPinDescSubsidyLock`
 
@@ -115,11 +116,10 @@ Description for subsidy unlock PIN. This is a PIN that allows the device to be r
      operate on a specific network. For more information about this PIN type, see section 22.022 of the 3GPP
      specification.
 
-`WwanPinDescSvcProviderPin`
+`WwanPinDescCustom`
 
-Description for Service Provider (SP) personalization PIN. This is a PIN that allows the device to
-     be personalized to a service provider. For more information about this PIN type, see section 22.022 of
-     the 3GPP specification.
+Description for custom PIN. This is a custom vendor-defined PIN type. It is not included in the
+     above list.
 
 
 ## Requirements
@@ -135,11 +135,3 @@ Description for Service Provider (SP) personalization PIN. This is a PIN that al
 
 
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_pin_list.md">NDIS_WWAN_PIN_LIST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_LIST structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

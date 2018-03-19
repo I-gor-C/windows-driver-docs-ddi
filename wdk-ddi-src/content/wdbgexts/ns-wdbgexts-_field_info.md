@@ -78,27 +78,39 @@ typedef struct _FIELD_INFO {
 ## Members
 
 
-`_BitField`
+`fName`
 
-Receives information about bit fields in a structure.
-      
-	 
+Specifies the name of the symbol's member to which this structure applies.  Submembers can be specified using the delimiters "<b>.</b>" and "<b>-&gt;</b>".  Unless DBG_DUMP_FIELD_FULL_NAME is set in <b>fOptions</b>, <b>fName</b> is considered to be the beginning of the member name.
 
+`printName`
 
+Specifies an alternative name to use when printing the name of the member.  If <b>printName</b> is <b>NULL</b>, the actual name of the member is used when printing the name of the member.
 
-#### Position
+`size`
 
-Receives the start position of the bit field.  This is the number of bits from to the beginning of the structure to the bit field.
+Receives the size in the target's memory, in bytes, of the member that is specified by <b>fName</b>.
 
+If the member is an array, <b>size</b> specifies the number of elements in the array.
 
+`fOptions`
 
-#### Size
-
-Receives the size, in bits, of the bit field.
+Specifies the flags that determine the behavior of the IG_DUMP_SYMBOL_INFO <b>Ioctl</b> operation.  For a description of these flags, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540429">DBG_DUMP_FIELD_XXX</a>.
 
 `address`
 
 Receives the address in the target's memory of the member that is specified by <b>fName</b>.  If no address is supplied for the symbol type in SYM_DUMP_PARAM.<b>addr</b>, <b>address</b> receives the offset of the member relative to the beginning of an instance of the type.  For more information about SYM_DUMP_PARAM, see <a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>.
+
+`TypeId`
+
+Receives the identifier for the type of the member that is specified by <b>fName</b>.
+
+`FieldOffset`
+
+Receives the offset of the member within the structure.
+
+`BufferSize`
+
+Specifies the size, in bytes, of the <b>pBuffer</b> buffer.
 
 `BitField`
 
@@ -118,59 +130,47 @@ Receives the start position of the bit field.  This is the number of bits from t
 
 Receives the size, in bits, of the bit field.
 
-`BufferSize`
+`_BitField`
 
-Specifies the size, in bytes, of the <b>pBuffer</b> buffer.
+Receives information about bit fields in a structure.
+      
+	 
 
-`fArray`
 
-Receives a Boolean value that indicates whether the member is an array.  <b>fArray</b> is <b>FALSE</b> if the field is not an array and <b>TRUE</b> if it is.
 
-`fConstant`
+#### Position
 
-Receives a Boolean value that indicates whether the member is a constant.  <b>fConstant</b> is <b>FALSE</b> if the member is not a constant and <b>TRUE</b> if it is.
+Receives the start position of the bit field.  This is the number of bits from to the beginning of the structure to the bit field.
 
-`FieldOffset`
 
-Receives the offset of the member within the structure.
 
-`fName`
+#### Size
 
-Specifies the name of the symbol's member to which this structure applies.  Submembers can be specified using the delimiters "<b>.</b>" and "<b>-&gt;</b>".  Unless DBG_DUMP_FIELD_FULL_NAME is set in <b>fOptions</b>, <b>fName</b> is considered to be the beginning of the member name.
-
-`fOptions`
-
-Specifies the flags that determine the behavior of the IG_DUMP_SYMBOL_INFO <b>Ioctl</b> operation.  For a description of these flags, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540429">DBG_DUMP_FIELD_XXX</a>.
+Receives the size, in bits, of the bit field.
 
 `fPointer`
 
 Receives a Boolean value that indicates whether the member is a pointer.  <b>fPointer</b> is <b>FALSE</b> if the member is not a pointer.  It is 1 if the member is a 32-bit pointer and 3 if the member is a 64-bit pointer.
 
-`fStatic`
+`fArray`
 
-
+Receives a Boolean value that indicates whether the member is an array.  <b>fArray</b> is <b>FALSE</b> if the field is not an array and <b>TRUE</b> if it is.
 
 `fStruct`
 
 Receives a Boolean value that indicates whether the member is a structure.  <b>fStruct</b> is <b>FALSE</b> if the member is not a structure and <b>TRUE</b> if it is.
 
-`printName`
+`fConstant`
 
-Specifies an alternative name to use when printing the name of the member.  If <b>printName</b> is <b>NULL</b>, the actual name of the member is used when printing the name of the member.
+Receives a Boolean value that indicates whether the member is a constant.  <b>fConstant</b> is <b>FALSE</b> if the member is not a constant and <b>TRUE</b> if it is.
+
+`fStatic`
+
+
 
 `Reserved`
 
 
-
-`size`
-
-Receives the size in the target's memory, in bytes, of the member that is specified by <b>fName</b>.
-
-If the member is an array, <b>size</b> specifies the number of elements in the array.
-
-`TypeId`
-
-Receives the identifier for the type of the member that is specified by <b>fName</b>.
 
 ## Remarks
 When calling the <a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>
@@ -196,11 +196,3 @@ When calling the <a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SY
 
 
 <a href="..\wdbgexts\nc-wdbgexts-psym_dump_field_callback.md">PSYM_DUMP_FIELD_CALLBACK</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20FIELD_INFO structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -65,13 +65,8 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT {
 <table>
             
                 <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_CHECKERBOARD</td>
-                    <td>Reserved for system use. Do not use in your driver.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_COLUMN_INTERLEAVED</td>
-                    <td>Reserved for system use. Do not use in your driver.</td>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO</td>
+                    <td>The overplay plane data is presented in mono (non-stereo) format.</td>
                 </tr>
             
                 <tr>
@@ -80,8 +75,13 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT {
                 </tr>
             
                 <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO</td>
-                    <td>The overplay plane data is presented in mono (non-stereo) format.</td>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_VERTICAL</td>
+                    <td>Reserved for system use. Do not use in your driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_SEPARATE</td>
+                    <td>Reserved for system use. Do not use in your driver.</td>
                 </tr>
             
                 <tr>
@@ -95,12 +95,12 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT {
                 </tr>
             
                 <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_SEPARATE</td>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_COLUMN_INTERLEAVED</td>
                     <td>Reserved for system use. Do not use in your driver.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_VERTICAL</td>
+                    <td>DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT_CHECKERBOARD</td>
                     <td>Reserved for system use. Do not use in your driver.</td>
                 </tr>
 </table>

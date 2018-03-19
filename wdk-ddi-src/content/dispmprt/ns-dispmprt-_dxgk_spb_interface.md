@@ -101,39 +101,25 @@ typedef struct _DXGK_SPB_INTERFACE {
 ## Members
 
 
-`CloseSpbResource`
+`Size`
 
-Closes a Simple Peripheral Bus (SPB) resource. All input parameters are supplied by the display miniport driver.
+The size, in bytes, of this structure.
 
-Closing an open object handle causes that handle to become invalid. The system also decrements the handle count for the object and checks whether the object can be deleted. The system does not actually delete the object until all of the object's handles are closed and no referenced pointers remain.
+`Version`
 
-The driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/hh406257">CloseSpbResource</a> to close every handle that it has opened with <a href="https://msdn.microsoft.com/library/windows/hardware/hh451581">OpenSpbResource</a> as soon as the handle is no longer required.
-
-Callers of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406257">CloseSpbResource</a> should not assume that this function automatically waits for all I/O to complete prior to returning.
-
-
-
-#### DeviceHandle
-
-A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure that was passed to the <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a> function.
-
-
-
-#### SpbResource
-
-A pointer to an SPB resource that the display miniport driver opened using the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451581">OpenSpbResource</a> function.
+The version number of the SPB interface. Version number constants are defined in Dispmprt.h (for example, DXGK_SPB_INTERFACE_VERSION_1).
 
 `Context`
 
 A pointer to a context that is provided by the display miniport driver.
 
-`InterfaceDereference`
-
-A pointer to an interface dereference function that is implemented by the display miniport driver.
-
 `InterfaceReference`
 
 A pointer to an interface reference function that is implemented by the display miniport driver.
+
+`InterfaceDereference`
+
+A pointer to an interface dereference function that is implemented by the display miniport driver.
 
 `OpenSpbResource`
 
@@ -180,6 +166,28 @@ Specifies the options to apply when opening the SPB resource. For more informati
 #### SpbResource
 
 A pointer to a buffer that is used to return the handle to the SPB resource.
+
+`CloseSpbResource`
+
+Closes a Simple Peripheral Bus (SPB) resource. All input parameters are supplied by the display miniport driver.
+
+Closing an open object handle causes that handle to become invalid. The system also decrements the handle count for the object and checks whether the object can be deleted. The system does not actually delete the object until all of the object's handles are closed and no referenced pointers remain.
+
+The driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/hh406257">CloseSpbResource</a> to close every handle that it has opened with <a href="https://msdn.microsoft.com/library/windows/hardware/hh451581">OpenSpbResource</a> as soon as the handle is no longer required.
+
+Callers of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406257">CloseSpbResource</a> should not assume that this function automatically waits for all I/O to complete prior to returning.
+
+
+
+#### DeviceHandle
+
+A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure that was passed to the <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a> function.
+
+
+
+#### SpbResource
+
+A pointer to an SPB resource that the display miniport driver opened using the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451581">OpenSpbResource</a> function.
 
 `ReadSpbResource`
 
@@ -241,80 +249,6 @@ This parameter can be <b>NULL</b>.
 #### IoStatusBlock
 
 A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested read operation. The  <b>Information</b> member of the <b>IO_STATUS_BLOCK</b> structure receives the number of bytes actually read from the SPB resource.
-
-`Size`
-
-The size, in bytes, of this structure.
-
-`SpbResourceIoControl`
-
-Performs an I/O control operation on an open Simple Peripheral Bus (SPB) resource. All input parameters are supplied by the display miniport driver.
-
-If the caller opened the file for asynchronous I/O (with neither <b>FILE_SYNCHRONOUS_XXX</b> create/open option set), the specified event, if any, will be set to the <b>Signaled</b> state when the device control operation completes. Otherwise, the file object specified by the <i>DeviceHandle</i> parameter will be set to the <b>Signaled</b> state.
-
-
-
-#### DeviceHandle
-
-A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure that was passed to the <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a> function.
-
-
-
-#### SpbResource
-
-A pointer to an SPB resource that the display miniport driver opened using the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451581">OpenSpbResource</a> function.
-
-
-
-#### IoControlCode
-
-A device I/O control code (IOCTL_XXX) that indicates which device I/O control operation is to be carried out on, usually by the underlying device driver. The value of this parameter determines the format and required length of the <i>InputBuffer</i> and <i>OutputBuffer</i> parameters, as well as which of the following parameter pairs are required.
-
-
-
-#### InBufferSize
-
-The size, in bytes, of the buffer pointed to by the <i>InputBuffer</i> parameter. This value is ignored if <i>InputBuffer</i> is <b>NULL</b>.
-
-
-
-
-
-#### InputBuffer
-
-A pointer to a caller-allocated input buffer that contains device-specific information to be given to the target device. If the <i>IoControlCode</i> parameter specifies an operation that does not require input data, this pointer can be <b>NULL</b>.
-
-
-
-#### OutBufferSize
-
-The size, in bytes, of the buffer pointed to by the <i>OutputBuffer</i> parameter. This value is ignored if <i>OutputBuffer</i> is <b>NULL</b>.
-
-
-
-
-
-#### OutputBuffer
-
-A pointer to a caller-allocated output buffer in which information is returned from the target device. If the <i>IoControlCode</i> parameter  specifies an operation that does not produce output data, this pointer can be <b>NULL</b>
-
-
-
-#### EventHandle
-
-An optional handle for a caller-created event. If this parameter is supplied, the caller will be put into a wait state until the requested operation is completed and the given event is set to the <b>Signaled</b> state.
-
-This parameter can be <b>NULL</b>.
-
-
-
-#### IoStatusBlock
-
-A pointer to a variable that receives the final completion status and information about the requested I/O control operation. For successful calls that return data, the number of bytes written to the buffer pointed to by the <i>OutputBuffer</i> parameter is returned in the <b>Information</b> member of the <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure.
-
-`Version`
-
-The version number of the SPB interface. Version number constants are defined in Dispmprt.h (for example, DXGK_SPB_INTERFACE_VERSION_1).
 
 `WriteSpbResource`
 
@@ -383,6 +317,72 @@ This parameter can be <b>NULL</b>.
 
 A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested write operation. The <b>Information</b> member of the  <b>IO_STATUS_BLOCK</b> structure receives the number of bytes actually written to the SPB resource.
 
+`SpbResourceIoControl`
+
+Performs an I/O control operation on an open Simple Peripheral Bus (SPB) resource. All input parameters are supplied by the display miniport driver.
+
+If the caller opened the file for asynchronous I/O (with neither <b>FILE_SYNCHRONOUS_XXX</b> create/open option set), the specified event, if any, will be set to the <b>Signaled</b> state when the device control operation completes. Otherwise, the file object specified by the <i>DeviceHandle</i> parameter will be set to the <b>Signaled</b> state.
+
+
+
+#### DeviceHandle
+
+A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure that was passed to the <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a> function.
+
+
+
+#### SpbResource
+
+A pointer to an SPB resource that the display miniport driver opened using the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451581">OpenSpbResource</a> function.
+
+
+
+#### IoControlCode
+
+A device I/O control code (IOCTL_XXX) that indicates which device I/O control operation is to be carried out on, usually by the underlying device driver. The value of this parameter determines the format and required length of the <i>InputBuffer</i> and <i>OutputBuffer</i> parameters, as well as which of the following parameter pairs are required.
+
+
+
+#### InBufferSize
+
+The size, in bytes, of the buffer pointed to by the <i>InputBuffer</i> parameter. This value is ignored if <i>InputBuffer</i> is <b>NULL</b>.
+
+
+
+
+
+#### InputBuffer
+
+A pointer to a caller-allocated input buffer that contains device-specific information to be given to the target device. If the <i>IoControlCode</i> parameter specifies an operation that does not require input data, this pointer can be <b>NULL</b>.
+
+
+
+#### OutBufferSize
+
+The size, in bytes, of the buffer pointed to by the <i>OutputBuffer</i> parameter. This value is ignored if <i>OutputBuffer</i> is <b>NULL</b>.
+
+
+
+
+
+#### OutputBuffer
+
+A pointer to a caller-allocated output buffer in which information is returned from the target device. If the <i>IoControlCode</i> parameter  specifies an operation that does not produce output data, this pointer can be <b>NULL</b>
+
+
+
+#### EventHandle
+
+An optional handle for a caller-created event. If this parameter is supplied, the caller will be put into a wait state until the requested operation is completed and the given event is set to the <b>Signaled</b> state.
+
+This parameter can be <b>NULL</b>.
+
+
+
+#### IoStatusBlock
+
+A pointer to a variable that receives the final completion status and information about the requested I/O control operation. For successful calls that return data, the number of bytes written to the buffer pointed to by the <i>OutputBuffer</i> parameter is returned in the <b>Information</b> member of the <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -409,11 +409,3 @@ A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BL
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406257">CloseSpbResource</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_SPB_INTERFACE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -62,8 +62,13 @@ typedef enum _DXGKMDT_OPM_INTERLEAVE_FORMAT {
 <table>
             
                 <tr>
-                    <td>DXGKMDT_OPM_INTERLEAVE_FORMAT_FORCE_ULONG</td>
-                    <td>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</td>
+                    <td>DXGKMDT_OPM_INTERLEAVE_FORMAT_OTHER</td>
+                    <td>Indicates that the video frame has a scan line ordering other than those given in the following constants of this enumeration.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_INTERLEAVE_FORMAT_PROGRESSIVE</td>
+                    <td>Indicates that each video frame has a scan line ordering that is progressive (that is, not interlaced).</td>
                 </tr>
             
                 <tr>
@@ -77,13 +82,8 @@ typedef enum _DXGKMDT_OPM_INTERLEAVE_FORMAT {
                 </tr>
             
                 <tr>
-                    <td>DXGKMDT_OPM_INTERLEAVE_FORMAT_OTHER</td>
-                    <td>Indicates that the video frame has a scan line ordering other than those given in the following constants of this enumeration.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKMDT_OPM_INTERLEAVE_FORMAT_PROGRESSIVE</td>
-                    <td>Indicates that each video frame has a scan line ordering that is progressive (that is, not interlaced).</td>
+                    <td>DXGKMDT_OPM_INTERLEAVE_FORMAT_FORCE_ULONG</td>
+                    <td>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</td>
                 </tr>
 </table>
 
@@ -97,11 +97,3 @@ typedef enum _DXGKMDT_OPM_INTERLEAVE_FORMAT {
 ## See Also
 
 <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_actual_output_format.md">DXGKMDT_OPM_ACTUAL_OUTPUT_FORMAT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_OPM_INTERLEAVE_FORMAT enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

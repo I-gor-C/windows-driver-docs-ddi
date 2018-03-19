@@ -67,6 +67,16 @@ typedef enum _DXVADDI_VIDEOTRANSFERFUNCTION {
 <table>
             
                 <tr>
+                    <td>DXVADDI_VideoTransFuncMask</td>
+                    <td>Specifies the video transfer function mask. The first 5 (0x001F) bits of a DWORD can be used to specify the video transfer function.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_VideoTransFunc_Unknown</td>
+                    <td>Specifies that the video transfer function is not specified. The default is 22_8bit_sRGB if required for a computation.</td>
+                </tr>
+            
+                <tr>
                     <td>DXVADDI_VideoTransFunc_10</td>
                     <td>Specifies linear RGB conversion (corresponds to gamma = 1.0).</td>
                 </tr>
@@ -89,22 +99,17 @@ The BT470-2 SysM primaries (that is, the <a href="..\d3dumddi\ne-d3dumddi-_dxvad
                 </tr>
             
                 <tr>
-                    <td>DXVADDI_VideoTransFunc_240M</td>
-                    <td>Specifies gamma 2.2 curve with a linear range in the low range. 
-
-The SMPTE240M and interim 274M primaries (that is, the DXVADDI_VIDEOPRIMARIES enumeration type) use this video transfer function.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_VideoTransFunc_28</td>
-                    <td>Specifies true 2.8 gamma--that is, L' = pow(L, 1/gamma) for L=0..1.</td>
-                </tr>
-            
-                <tr>
                     <td>DXVADDI_VideoTransFunc_709</td>
                     <td>Specifies gamma 2.2 curve with a linear range in the low range. 
 
 The BT709, SMPTE296M, SMPTE170M, BT470, and SMPTE274M primaries (that is, the DXVADDI_VIDEOPRIMARIES enumeration type) use this video transfer function.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_VideoTransFunc_240M</td>
+                    <td>Specifies gamma 2.2 curve with a linear range in the low range. 
+
+The SMPTE240M and interim 274M primaries (that is, the DXVADDI_VIDEOPRIMARIES enumeration type) use this video transfer function.</td>
                 </tr>
             
                 <tr>
@@ -113,13 +118,8 @@ The BT709, SMPTE296M, SMPTE170M, BT470, and SMPTE274M primaries (that is, the DX
                 </tr>
             
                 <tr>
-                    <td>DXVADDI_VideoTransFunc_Unknown</td>
-                    <td>Specifies that the video transfer function is not specified. The default is 22_8bit_sRGB if required for a computation.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_VideoTransFuncMask</td>
-                    <td>Specifies the video transfer function mask. The first 5 (0x001F) bits of a DWORD can be used to specify the video transfer function.</td>
+                    <td>DXVADDI_VideoTransFunc_28</td>
+                    <td>Specifies true 2.8 gamma--that is, L' = pow(L, 1/gamma) for L=0..1.</td>
                 </tr>
 </table>
 
@@ -157,11 +157,3 @@ The following constants can also be used for gamma function:
 
 
 <a href="..\d3dumddi\ne-d3dumddi-_dxvaddi_videoprimaries.md">DXVADDI_VIDEOPRIMARIES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_VIDEOTRANSFERFUNCTION enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

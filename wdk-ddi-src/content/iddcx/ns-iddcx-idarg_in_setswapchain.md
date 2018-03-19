@@ -58,13 +58,13 @@ typedef struct IDARG_IN_SETSWAPCHAIN {
 ## Members
 
 
-`hNextSurfaceAvailable`
-
-[in] Handle to auto reset event that is signaled when the new image to encode is ready.
-
 `hSwapChain`
 
 [in] Handle to indirect swapchain that will be used to pass the desktop image to the driver for processing, transmission and display.
+
+`hNextSurfaceAvailable`
+
+[in] Handle to auto reset event that is signaled when the new image to encode is ready.
 
 `RenderAdapterLuid`
 

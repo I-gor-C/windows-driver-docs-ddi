@@ -61,12 +61,12 @@ typedef enum _RILMESSAGEINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_MI_ALL</td>
+                    <td>RIL_PARAM_MI_INDEX</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_MI_INDEX</td>
+                    <td>RIL_PARAM_MI_STATUS</td>
                     <td></td>
                 </tr>
             
@@ -76,7 +76,7 @@ typedef enum _RILMESSAGEINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_MI_STATUS</td>
+                    <td>RIL_PARAM_MI_ALL</td>
                     <td></td>
                 </tr>
 </table>

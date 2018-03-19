@@ -66,14 +66,6 @@ typedef struct _NDIS_NIC_SWITCH_VF_PARAMETERS {
 ## Members
 
 
-`CurrentMacAddress`
-
-The current MAC address of the VF. This is the current MAC address for the VF network adapter that is exposed in the guest operating system.
-
-`Flags`
-
-A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.
-
 `Header`
 
 The type, revision, and size of the <b>NDIS_NIC_SWITCH_VF_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
@@ -90,27 +82,9 @@ Original version for NDIS 6.30 and later.
 
 Set the <b>Size</b> member to NDIS_SIZEOF_NIC_SWITCH_VF_PARAMETERS_REVISION_1.
 
-`MacAddressLength`
+`Flags`
 
-A USHORT value that specifies the length of the <b>PermanentMacAddress</b> and <b>CurrentMacAddress</b> members.
-
-`NicName`
-
-An NDIS_SWITCH_NIC_NAME value that specifies the name of the virtual machine (VM)  network adapter. This member contains the user-friendly description of the network adapter.
-
-
-
-The VM network adapter is a virtual device that is exposed in the guest operating system that runs in a Hyper-V child partition. The VM network adapter teams with the VF network adapter to provide the hardware-based VF data path over the SR-IOV interface. 
-
-For more information about the VF data path, see <a href="https://msdn.microsoft.com/0DC2327E-3A58-46BC-A3D6-3AFD24ABC901">SR-IOV VF Data Path</a>.
-
-`PermanentMacAddress`
-
-The permanent MAC address of the VF. This is the permanent MAC address for the VF network adapter that is exposed in the guest operating system.
-
-`RequestorId`
-
-An NDIS_VF_RID that specifies the PCI Express (PCIe) Requestor ID (RID) of the VF.
+A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.
 
 `SwitchId`
 
@@ -123,14 +97,6 @@ The switch identifier is an integer between zero and the number of switches that
 <div class="alert"><b>Note</b>  Starting with Windows Server 2012, the single root I/O virtualization (SR-IOV) interface only supports the default network adapter switch on the network adapter. The value of this member must be set to NDIS_DEFAULT_SWITCH_ID. </div>
 <div> </div>
 
-`VFId`
-
-An NDIS_SRIOV_FUNCTION_ID value that specifies the unique identifier of the VF on the network adapter.
-
-`VMFriendlyName`
-
-An NDIS_VM_FRIENDLYNAME value that specifies the external name of the Hyper-V child partition that is attached to the VF. This member contains the user-friendly description of the partition.
-
 `VMName`
 
 An NDIS_VM_NAME value that specifies the internal name of the Hyper-V child partition that is attached to the VF.
@@ -139,6 +105,40 @@ An NDIS_VM_NAME value that specifies the internal name of the Hyper-V child part
 
 <div class="alert"><b>Note</b>  The Hyper-V child partition is also known as a virtual machine (VM).</div>
 <div> </div>
+
+`VMFriendlyName`
+
+An NDIS_VM_FRIENDLYNAME value that specifies the external name of the Hyper-V child partition that is attached to the VF. This member contains the user-friendly description of the partition.
+
+`NicName`
+
+An NDIS_SWITCH_NIC_NAME value that specifies the name of the virtual machine (VM)  network adapter. This member contains the user-friendly description of the network adapter.
+
+
+
+The VM network adapter is a virtual device that is exposed in the guest operating system that runs in a Hyper-V child partition. The VM network adapter teams with the VF network adapter to provide the hardware-based VF data path over the SR-IOV interface. 
+
+For more information about the VF data path, see <a href="https://msdn.microsoft.com/0DC2327E-3A58-46BC-A3D6-3AFD24ABC901">SR-IOV VF Data Path</a>.
+
+`MacAddressLength`
+
+A USHORT value that specifies the length of the <b>PermanentMacAddress</b> and <b>CurrentMacAddress</b> members.
+
+`PermanentMacAddress`
+
+The permanent MAC address of the VF. This is the permanent MAC address for the VF network adapter that is exposed in the guest operating system.
+
+`CurrentMacAddress`
+
+The current MAC address of the VF. This is the current MAC address for the VF network adapter that is exposed in the guest operating system.
+
+`VFId`
+
+An NDIS_SRIOV_FUNCTION_ID value that specifies the unique identifier of the VF on the network adapter.
+
+`RequestorId`
+
+An NDIS_VF_RID that specifies the PCI Express (PCIe) Requestor ID (RID) of the VF.
 
 ## Remarks
 The  <b>NDIS_NIC_SWITCH_VF_PARAMETERS</b> structure is used in OID method requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh451824">OID_NIC_SWITCH_VF_PARAMETERS</a>.
@@ -166,11 +166,3 @@ For more information about the SR-IOV interface, see 	<a href="https://msdn.micr
 
 
 <b></b>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VF_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

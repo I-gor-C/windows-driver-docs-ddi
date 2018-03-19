@@ -65,15 +65,15 @@ typedef struct _RILMESSAGEIN_V1 {
 
 
 
-`dwAckID`
-
-
-
 `dwExecutor`
 
 
 
 `hUiccApp`
+
+
+
+`dwAckID`
 
 
 

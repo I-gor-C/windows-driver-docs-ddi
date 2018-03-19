@@ -61,7 +61,12 @@ typedef enum _RILEMERGENCYNUMBERPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_ENUM_ALL</td>
+                    <td>RIL_PARAM_ENUM_EXECUTOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_ENUM_UICC</td>
                     <td></td>
                 </tr>
             
@@ -71,17 +76,12 @@ typedef enum _RILEMERGENCYNUMBERPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_ENUM_EXECUTOR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_ENUM_NUMBER</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_ENUM_UICC</td>
+                    <td>RIL_PARAM_ENUM_ALL</td>
                     <td></td>
                 </tr>
 </table>

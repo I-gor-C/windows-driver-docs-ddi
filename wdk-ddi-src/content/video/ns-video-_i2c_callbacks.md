@@ -60,14 +60,6 @@ typedef struct _I2C_CALLBACKS {
 ## Members
 
 
-`ReadClockLine`
-
-A pointer to the <a href="..\video\nc-video-pvideo_read_clock_line.md">ReadClockLine</a> function implemented by the video miniport driver.
-
-`ReadDataLine`
-
-A pointer to the <a href="..\video\nc-video-pvideo_read_data_line.md">ReadDataLine</a> function implemented by the video miniport driver.
-
 `WriteClockLine`
 
 A pointer to the <a href="..\video\nc-video-pvideo_write_clock_line.md">WriteClockLine</a> function implemented by the video miniport driver.
@@ -75,6 +67,14 @@ A pointer to the <a href="..\video\nc-video-pvideo_write_clock_line.md">WriteClo
 `WriteDataLine`
 
 A pointer to the <a href="..\video\nc-video-pvideo_write_data_line.md">WriteDataLine</a> function implemented by the video miniport driver.
+
+`ReadClockLine`
+
+A pointer to the <a href="..\video\nc-video-pvideo_read_clock_line.md">ReadClockLine</a> function implemented by the video miniport driver.
+
+`ReadDataLine`
+
+A pointer to the <a href="..\video\nc-video-pvideo_read_data_line.md">ReadDataLine</a> function implemented by the video miniport driver.
 
 
 ## Requirements
@@ -97,11 +97,3 @@ A pointer to the <a href="..\video\nc-video-pvideo_write_data_line.md">WriteData
 
 
 <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20I2C_CALLBACKS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

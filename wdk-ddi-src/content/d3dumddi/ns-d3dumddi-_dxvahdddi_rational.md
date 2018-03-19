@@ -57,13 +57,13 @@ typedef struct _DXVAHDDDI_RATIONAL {
 ## Members
 
 
-`Denominator`
-
-[in] The denominator of the frequency fraction.
-
 `Numerator`
 
 [in] The numerator of the frequency fraction.
+
+`Denominator`
+
+[in] The denominator of the frequency fraction.
 
 ## Remarks
 An output rate of 0/0 is valid. The driver interprets 0/0 as 0/1. The driver interprets 0/any value as zero. 

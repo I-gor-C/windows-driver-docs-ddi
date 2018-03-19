@@ -65,22 +65,12 @@ typedef enum _RILLTEKIND {
 <table>
             
                 <tr>
+                    <td>RIL_LTEKIND_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_LTEKIND_FDD</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_LTEKIND_FDD_CA</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_LTEKIND_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_LTEKIND_RESERVED</td>
                     <td></td>
                 </tr>
             
@@ -90,17 +80,27 @@ typedef enum _RILLTEKIND {
                 </tr>
             
                 <tr>
-                    <td>RIL_LTEKIND_TDD_CA</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_LTEKIND_UNKNOWN</td>
+                    <td>RIL_LTEKIND_RESERVED</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_LTEKIND_UNKNOWN_CA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_LTEKIND_FDD_CA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_LTEKIND_TDD_CA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_LTEKIND_MAX</td>
                     <td></td>
                 </tr>
 </table>

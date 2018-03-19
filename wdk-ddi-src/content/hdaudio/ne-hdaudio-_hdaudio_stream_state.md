@@ -61,23 +61,23 @@ typedef enum _HDAUDIO_STREAM_STATE {
 <table>
             
                 <tr>
-                    <td>PauseState</td>
-                    <td>The pause state.</td>
-                </tr>
-            
-                <tr>
                     <td>ResetState</td>
                     <td>The reset state.</td>
                 </tr>
             
                 <tr>
-                    <td>RunState</td>
-                    <td>The run state.</td>
+                    <td>StopState</td>
+                    <td>The stop state.</td>
                 </tr>
             
                 <tr>
-                    <td>StopState</td>
-                    <td>The stop state.</td>
+                    <td>PauseState</td>
+                    <td>The pause state.</td>
+                </tr>
+            
+                <tr>
+                    <td>RunState</td>
+                    <td>The run state.</td>
                 </tr>
 </table>
 

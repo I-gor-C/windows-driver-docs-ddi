@@ -96,53 +96,23 @@ typedef enum D3D10_DDI_FILTER {
 <table>
             
                 <tr>
-                    <td>D3D10_DDI_FILTER_ANISOTROPIC</td>
-                    <td>The sampler uses anisotropic filtering.</td>
+                    <td>D3D10_DDI_FILTER_MIN_MAG_MIP_POINT</td>
+                    <td>The sampler uses point filtering for the min (minifying), mag (magnifying), and mip filters. For more information about these types of filters, see Remarks.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D10_DDI_FILTER_COMPARISON_ANISOTROPIC</td>
-                    <td>The sampler uses anisotropic and comparison filtering.</td>
+                    <td>D3D10_DDI_FILTER_MIN_MAG_POINT_MIP_LINEAR</td>
+                    <td>The sampler uses point filtering for the min and mag filters and uses linear filtering for the mip filter.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_LINEAR_MAG_MIP_POINT</td>
-                    <td>The sampler uses linear filtering for the min filter and uses point filtering for the mag and mip filters. The sampler also uses comparison filtering.</td>
+                    <td>D3D10_DDI_FILTER_MIN_POINT_MAG_LINEAR_MIP_POINT</td>
+                    <td>The sampler uses point filtering for the min and mip filters and uses linear filtering for the mag filter.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_LINEAR_MAG_POINT_MIP_LINEAR</td>
-                    <td>The sampler uses linear filtering for the min and mip filters and uses point filtering for the mag filter. The sampler also uses comparison filtering.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_MAG_LINEAR_MIP_POINT</td>
-                    <td>The sampler uses linear filtering for the min and mag filters and uses point filtering for the mip filter. The sampler also uses comparison filtering.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_MAG_MIP_LINEAR</td>
-                    <td>The sampler uses linear filtering for the min, mag, and mip filters. The sampler also uses comparison filtering.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_MAG_MIP_POINT</td>
-                    <td>The sampler uses point filtering for the min, mag, and mip filters. The sampler also uses comparison filtering.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_MAG_POINT_MIP_LINEAR</td>
-                    <td>The sampler uses point filtering for the min and mag filters and uses linear filtering for the mip filter. The sampler also uses comparison filtering.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_POINT_MAG_LINEAR_MIP_POINT</td>
-                    <td>The sampler uses point filtering for the min and mip filters and uses linear filtering for the mag filter. The sampler also uses comparison filtering.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_POINT_MAG_MIP_LINEAR</td>
-                    <td>The sampler uses point filtering for the min filter and uses linear filtering for the mag and mip filters. The sampler also uses comparison filtering.</td>
+                    <td>D3D10_DDI_FILTER_MIN_POINT_MAG_MIP_LINEAR</td>
+                    <td>The sampler uses point filtering for the min filter and uses linear filtering for the mag and mip filters.</td>
                 </tr>
             
                 <tr>
@@ -166,96 +136,79 @@ typedef enum D3D10_DDI_FILTER {
                 </tr>
             
                 <tr>
-                    <td>D3D10_DDI_FILTER_MIN_MAG_MIP_POINT</td>
-                    <td>The sampler uses point filtering for the min (minifying), mag (magnifying), and mip filters. For more information about these types of filters, see Remarks.</td>
+                    <td>D3D10_DDI_FILTER_ANISOTROPIC</td>
+                    <td>The sampler uses anisotropic filtering.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D10_DDI_FILTER_MIN_MAG_POINT_MIP_LINEAR</td>
-                    <td>The sampler uses point filtering for the min and mag filters and uses linear filtering for the mip filter.</td>
+                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_MAG_MIP_POINT</td>
+                    <td>The sampler uses point filtering for the min, mag, and mip filters. The sampler also uses comparison filtering.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D10_DDI_FILTER_MIN_POINT_MAG_LINEAR_MIP_POINT</td>
-                    <td>The sampler uses point filtering for the min and mip filters and uses linear filtering for the mag filter.</td>
+                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_MAG_POINT_MIP_LINEAR</td>
+                    <td>The sampler uses point filtering for the min and mag filters and uses linear filtering for the mip filter. The sampler also uses comparison filtering.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D10_DDI_FILTER_MIN_POINT_MAG_MIP_LINEAR</td>
-                    <td>The sampler uses point filtering for the min filter and uses linear filtering for the mag and mip filters.</td>
+                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_POINT_MAG_LINEAR_MIP_POINT</td>
+                    <td>The sampler uses point filtering for the min and mip filters and uses linear filtering for the mag filter. The sampler also uses comparison filtering.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D10_DDI_FILTER_TEXT_1BIT</td>
-                    <td>A special case of filtering mode that is intended only for text filtering and the DXGI_FORMAT_R1_UNORM texture format. For more information about text filtering, see the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_settextfiltersize.md">SetTextFilterSize</a> function.</td>
+                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_POINT_MAG_MIP_LINEAR</td>
+                    <td>The sampler uses point filtering for the min filter and uses linear filtering for the mag and mip filters. The sampler also uses comparison filtering.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_ANISOTROPIC</td>
-                    <td>The sampler uses anisotropic and comparison filtering.
+                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_LINEAR_MAG_MIP_POINT</td>
+                    <td>The sampler uses linear filtering for the min filter and uses point filtering for the mag and mip filters. The sampler also uses comparison filtering.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_LINEAR_MAG_POINT_MIP_LINEAR</td>
+                    <td>The sampler uses linear filtering for the min and mip filters and uses point filtering for the mag filter. The sampler also uses comparison filtering.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_MAG_LINEAR_MIP_POINT</td>
+                    <td>The sampler uses linear filtering for the min and mag filters and uses point filtering for the mip filter. The sampler also uses comparison filtering.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_FILTER_COMPARISON_MIN_MAG_MIP_LINEAR</td>
+                    <td>The sampler uses linear filtering for the min, mag, and mip filters. The sampler also uses comparison filtering.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_FILTER_COMPARISON_ANISOTROPIC</td>
+                    <td>The sampler uses anisotropic and comparison filtering.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DWDDM1_3DDI_FILTER_MINIMUM_MIN_MAG_MIP_POINT</td>
+                    <td>The sampler uses point filtering for the min (minifying), mag (magnifying), and mip filters. For more information about these types of filters, see Remarks.
 
 Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_LINEAR_MAG_MIP_POINT</td>
-                    <td>The sampler uses linear filtering for the min filter and uses point filtering for the mag and mip filters. The sampler also uses comparison filtering.
+                    <td>D3DWDDM1_3DDI_FILTER_MINIMUM_MIN_MAG_POINT_MIP_LINEAR</td>
+                    <td>The sampler uses point filtering for the min and mag filters and uses linear filtering for the mip filter.
 
 Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_LINEAR_MAG_POINT_MIP_LINEAR</td>
-                    <td>The sampler uses linear filtering for the min and mip filters and uses point filtering for the mag filter. The sampler also uses comparison filtering.
+                    <td>D3DWDDM1_3DDI_FILTER_MINIMUM_MIN_POINT_MAG_LINEAR_MIP_POINT</td>
+                    <td>The sampler uses point filtering for the min and mip filters and uses linear filtering for the mag filter.
 
 Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_MAG_LINEAR_MIP_POINT</td>
-                    <td>The sampler uses linear filtering for the min and mag filters and uses point filtering for the mip filter. The sampler also uses comparison filtering.
-
-Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_MAG_MIP_LINEAR</td>
-                    <td>The sampler uses linear filtering for the min, mag, and mip filters. The sampler also uses comparison filtering.
-
-Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_MAG_MIP_POINT</td>
-                    <td>The sampler uses point filtering for the min, mag, and mip filters. The sampler also uses comparison filtering.
-
-Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_MAG_POINT_MIP_LINEAR</td>
-                    <td>The sampler uses point filtering for the min and mag filters and uses linear filtering for the mip filter. The sampler also uses comparison filtering.
-
-Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_POINT_MAG_LINEAR_MIP_POINT</td>
-                    <td>The sampler uses point filtering for the min and mip filters and uses linear filtering for the mag filter. The sampler also uses comparison filtering.
-
-Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_POINT_MAG_MIP_LINEAR</td>
-                    <td>The sampler uses point filtering for the min filter and uses linear filtering for the mag and mip filters. The sampler also uses comparison filtering.
-
-Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DWDDM1_3DDI_FILTER_MINIMUM_ANISOTROPIC</td>
-                    <td>The sampler uses anisotropic filtering.
+                    <td>D3DWDDM1_3DDI_FILTER_MINIMUM_MIN_POINT_MAG_MIP_LINEAR</td>
+                    <td>The sampler uses point filtering for the min filter and uses linear filtering for the mag and mip filters.
 
 Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
                 </tr>
@@ -289,31 +242,78 @@ Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</t
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM1_3DDI_FILTER_MINIMUM_MIN_MAG_MIP_POINT</td>
-                    <td>The sampler uses point filtering for the min (minifying), mag (magnifying), and mip filters. For more information about these types of filters, see Remarks.
+                    <td>D3DWDDM1_3DDI_FILTER_MINIMUM_ANISOTROPIC</td>
+                    <td>The sampler uses anisotropic filtering.
 
 Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM1_3DDI_FILTER_MINIMUM_MIN_MAG_POINT_MIP_LINEAR</td>
-                    <td>The sampler uses point filtering for the min and mag filters and uses linear filtering for the mip filter.
+                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_MAG_MIP_POINT</td>
+                    <td>The sampler uses point filtering for the min, mag, and mip filters. The sampler also uses comparison filtering.
 
 Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM1_3DDI_FILTER_MINIMUM_MIN_POINT_MAG_LINEAR_MIP_POINT</td>
-                    <td>The sampler uses point filtering for the min and mip filters and uses linear filtering for the mag filter.
+                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_MAG_POINT_MIP_LINEAR</td>
+                    <td>The sampler uses point filtering for the min and mag filters and uses linear filtering for the mip filter. The sampler also uses comparison filtering.
 
 Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DWDDM1_3DDI_FILTER_MINIMUM_MIN_POINT_MAG_MIP_LINEAR</td>
-                    <td>The sampler uses point filtering for the min filter and uses linear filtering for the mag and mip filters.
+                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_POINT_MAG_LINEAR_MIP_POINT</td>
+                    <td>The sampler uses point filtering for the min and mip filters and uses linear filtering for the mag filter. The sampler also uses comparison filtering.
 
 Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_POINT_MAG_MIP_LINEAR</td>
+                    <td>The sampler uses point filtering for the min filter and uses linear filtering for the mag and mip filters. The sampler also uses comparison filtering.
+
+Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_LINEAR_MAG_MIP_POINT</td>
+                    <td>The sampler uses linear filtering for the min filter and uses point filtering for the mag and mip filters. The sampler also uses comparison filtering.
+
+Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_LINEAR_MAG_POINT_MIP_LINEAR</td>
+                    <td>The sampler uses linear filtering for the min and mip filters and uses point filtering for the mag filter. The sampler also uses comparison filtering.
+
+Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_MAG_LINEAR_MIP_POINT</td>
+                    <td>The sampler uses linear filtering for the min and mag filters and uses point filtering for the mip filter. The sampler also uses comparison filtering.
+
+Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_MIN_MAG_MIP_LINEAR</td>
+                    <td>The sampler uses linear filtering for the min, mag, and mip filters. The sampler also uses comparison filtering.
+
+Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DWDDM1_3DDI_FILTER_MAXIMUM_ANISOTROPIC</td>
+                    <td>The sampler uses anisotropic and comparison filtering.
+
+Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_FILTER_TEXT_1BIT</td>
+                    <td>A special case of filtering mode that is intended only for text filtering and the DXGI_FORMAT_R1_UNORM texture format. For more information about text filtering, see the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_settextfiltersize.md">SetTextFilterSize</a> function.</td>
                 </tr>
 </table>
 
@@ -344,11 +344,3 @@ Filtering can also be described by a comparison component. By default (no compar
 
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_ddi_sampler_desc.md">D3D10_DDI_SAMPLER_DESC</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10_DDI_FILTER enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -67,13 +67,13 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS {
 <table>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_22</td>
-                    <td>The video processor can reverse 2:2 pulldown.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_32</td>
+                    <td>The video processor can reverse 3:2 pulldown.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_222222222223</td>
-                    <td>The video processor can reverse 2:2:2:2:2:2:2:2:2:2:2:3 pulldown.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_22</td>
+                    <td>The video processor can reverse 2:2 pulldown.</td>
                 </tr>
             
                 <tr>
@@ -84,11 +84,6 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS {
                 <tr>
                     <td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_2332</td>
                     <td>The video processor can reverse 2:3:3:2 pulldown.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_32</td>
-                    <td>The video processor can reverse 3:2 pulldown.</td>
                 </tr>
             
                 <tr>
@@ -109,6 +104,11 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS {
                 <tr>
                     <td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_87</td>
                     <td>The video processor can reverse 8:7 pulldown.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS_222222222223</td>
+                    <td>The video processor can reverse 2:2:2:2:2:2:2:2:2:2:2:3 pulldown.</td>
                 </tr>
             
                 <tr>

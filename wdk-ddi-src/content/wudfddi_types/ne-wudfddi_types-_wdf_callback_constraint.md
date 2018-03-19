@@ -71,13 +71,13 @@ typedef enum _WDF_CALLBACK_CONSTRAINT {
                 </tr>
             
                 <tr>
-                    <td>WdfLevelMaximum</td>
-                    <td></td>
+                    <td>WdfLevelReserved</td>
+                    <td>Reserved.</td>
                 </tr>
             
                 <tr>
-                    <td>WdfLevelReserved</td>
-                    <td>Reserved.</td>
+                    <td>WdfLevelMaximum</td>
+                    <td></td>
                 </tr>
 </table>
 

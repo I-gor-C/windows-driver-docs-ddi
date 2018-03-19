@@ -58,13 +58,13 @@ typedef struct _WWAN_IPV6_ADDRESS {
 ## Members
 
 
-`IPV6Address`
-
-
-
 `OnLinkPrefixLength`
 
 The length of the prefix or network part of the IP address.
+
+`IPV6Address`
+
+
 
 
 ## Requirements

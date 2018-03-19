@@ -58,12 +58,12 @@ typedef enum _RILGEOLOCATIONREQUESTACCURACY {
 <table>
             
                 <tr>
-                    <td>RIL_LOCACCURACY_DEFAULT</td>
+                    <td>RIL_LOCACCURACY_HIGH</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_LOCACCURACY_HIGH</td>
+                    <td>RIL_LOCACCURACY_DEFAULT</td>
                     <td></td>
                 </tr>
 </table>

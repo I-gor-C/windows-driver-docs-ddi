@@ -65,29 +65,45 @@ typedef struct _FILTER_INITIALIZATION_DATA {
 ## Members
 
 
-`DumpData`
+`MajorVersion`
 
-The filter driver can pass a pointer to internal context data in this member. This pointer is passed back to the filter driver in a <a href="..\ntdddump\ns-ntdddump-_filter_extension.md">FILTER_EXTENSION</a> structure during each callback.
+Set to one of the following major version values:
 
-`DumpFinish`
 
-A pointer to the dump finish routine.  This routine is called when the crash dump is finished.
 
-`DumpRead`
+#### DUMP_FILTER_MAJOR_VERSION_1 (0x1)
 
-A pointer to the read routine. This routine is called after every crash dump read request. This member is available starting in Windows 8.
+
+
+#### DUMP_FILTER_MAJOR_VERSION (0x2)
+
+`MinorVersion`
+
+Set to <b>DUMP_FILTER_MINOR_VERSION</b>.
 
 `DumpStart`
 
 A pointer to the dump initialization routine. This routine is called when the crash dump starts.
 
+`DumpWrite`
+
+A pointer to the write routine. This routine is called before every crash dump write request.
+
+`DumpFinish`
+
+A pointer to the dump finish routine.  This routine is called when the crash dump is finished.
+
 `DumpUnload`
 
 A pointer to the dump unload routine. This routine is called before the driver is unloaded.
 
-`DumpWrite`
+`DumpData`
 
-A pointer to the write routine. This routine is called before every crash dump write request.
+The filter driver can pass a pointer to internal context data in this member. This pointer is passed back to the filter driver in a <a href="..\ntdddump\ns-ntdddump-_filter_extension.md">FILTER_EXTENSION</a> structure during each callback.
+
+`MaxPagesPerWrite`
+
+The maximum number of pages for each dump read or write request.
 
 `Flags`
 
@@ -120,25 +136,9 @@ Fail the filter initialization  immediately if the  dump filter driver's <b>Driv
 </tr>
 </table>
 
-`MajorVersion`
+`DumpRead`
 
-Set to one of the following major version values:
-
-
-
-#### DUMP_FILTER_MAJOR_VERSION_1 (0x1)
-
-
-
-#### DUMP_FILTER_MAJOR_VERSION (0x2)
-
-`MaxPagesPerWrite`
-
-The maximum number of pages for each dump read or write request.
-
-`MinorVersion`
-
-Set to <b>DUMP_FILTER_MINOR_VERSION</b>.
+A pointer to the read routine. This routine is called after every crash dump read request. This member is available starting in Windows 8.
 
 ## Remarks
 For a dump filter driver to support read filtering, the following settings are required:
@@ -179,11 +179,3 @@ If any of these members are not set, the dump filter driver will be marked as no
 
 
 <a href="..\ntdddump\nc-ntdddump-dump_unload.md">Dump_Unload</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FILTER_INITIALIZATION_DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

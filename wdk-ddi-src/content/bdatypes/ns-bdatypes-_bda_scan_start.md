@@ -58,7 +58,7 @@ typedef struct _BDA_SCAN_START {
 ## Members
 
 
-`HigerFrequency`
+`lResult`
 
 
 
@@ -66,7 +66,7 @@ typedef struct _BDA_SCAN_START {
 
 
 
-`lResult`
+`HigerFrequency`
 
 
 

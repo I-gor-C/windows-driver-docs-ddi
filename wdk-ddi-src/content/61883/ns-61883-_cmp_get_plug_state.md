@@ -61,31 +61,9 @@ typedef struct _CMP_GET_PLUG_STATE {
 ## Members
 
 
-`BC_Connections`
-
-On output, the number of broadcast connections associated with the plug.
-
-`DataRate`
-
-On output, the data rate of the plug. Can be one of the following: 
-
-CMP_SPEED_S100 
-
-CMP_SPEED_S200 
-
-CMP_SPEED_S400
-
 `hPlug`
 
 On input, the handle of the plug to retrieve state information.
-
-`Payload`
-
-On output, the payload size for the plug.
-
-`PP_Connections`
-
-On output, the number of point-to-point connections associated with the plug.
 
 `State`
 
@@ -98,6 +76,28 @@ CMP_PLUG_STATE_READY
 CMP_PLUG_STATE_SUSPENDED 
 
 CMP_PLUG_STATE_ACTIVE
+
+`DataRate`
+
+On output, the data rate of the plug. Can be one of the following: 
+
+CMP_SPEED_S100 
+
+CMP_SPEED_S200 
+
+CMP_SPEED_S400
+
+`Payload`
+
+On output, the payload size for the plug.
+
+`BC_Connections`
+
+On output, the number of broadcast connections associated with the plug.
+
+`PP_Connections`
+
+On output, the number of point-to-point connections associated with the plug.
 
 ## Remarks
 If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
@@ -112,11 +112,3 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20CMP_GET_PLUG_STATE structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

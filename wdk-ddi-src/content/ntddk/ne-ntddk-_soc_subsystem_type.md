@@ -72,8 +72,18 @@ typedef enum _SOC_SUBSYSTEM_TYPE {
 <table>
             
                 <tr>
+                    <td>SOC_SUBSYS_WIRELESS_MODEM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>SOC_SUBSYS_AUDIO_DSP</td>
                     <td>Audio digital signal processor (DSP)</td>
+                </tr>
+            
+                <tr>
+                    <td>SOC_SUBSYS_WIRELSS_CONNECTIVITY</td>
+                    <td>Wireless connectivity</td>
                 </tr>
             
                 <tr>
@@ -84,16 +94,6 @@ typedef enum _SOC_SUBSYSTEM_TYPE {
                 <tr>
                     <td>SOC_SUBSYS_VENDOR_DEFINED</td>
                     <td>Subsystem types in the range 0x10000 through 0x80000000 are reserved for independent hardware vendors.</td>
-                </tr>
-            
-                <tr>
-                    <td>SOC_SUBSYS_WIRELESS_MODEM</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>SOC_SUBSYS_WIRELSS_CONNECTIVITY</td>
-                    <td>Wireless connectivity</td>
                 </tr>
 </table>
 

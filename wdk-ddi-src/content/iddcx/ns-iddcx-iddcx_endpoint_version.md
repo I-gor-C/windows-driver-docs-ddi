@@ -60,9 +60,9 @@ typedef struct IDDCX_ENDPOINT_VERSION {
 ## Members
 
 
-`Build`
+`Size`
 
-The build number defined by the driver.
+Total size of the structure.
 
 `MajorVer`
 
@@ -72,9 +72,9 @@ The major version defined by the driver.
 
 The minor version defined by the driver.
 
-`Size`
+`Build`
 
-Total size of the structure.
+The build number defined by the driver.
 
 `SKU`
 

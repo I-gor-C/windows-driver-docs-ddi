@@ -60,8 +60,8 @@ typedef enum _IDDCX_MONITOR_DESCRIPTION_TYPE {
 <table>
             
                 <tr>
-                    <td>IDDCX_MONITOR_DESCRIPTION_TYPE_DISPLAYID_AND_EDID</td>
-                    <td></td>
+                    <td>IDDCX_MONITOR_DESCRIPTION_TYPE_UNINITIALIZED</td>
+                    <td>Indicates that an <b>IDDCX_MONITOR_DESCRIPTION_TYPE</b> variable has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum _IDDCX_MONITOR_DESCRIPTION_TYPE {
                 </tr>
             
                 <tr>
-                    <td>IDDCX_MONITOR_DESCRIPTION_TYPE_UNINITIALIZED</td>
-                    <td>Indicates that an <b>IDDCX_MONITOR_DESCRIPTION_TYPE</b> variable has not yet been assigned a meaningful value.</td>
+                    <td>IDDCX_MONITOR_DESCRIPTION_TYPE_DISPLAYID_AND_EDID</td>
+                    <td></td>
                 </tr>
             
                 <tr>

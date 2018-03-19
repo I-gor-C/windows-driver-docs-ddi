@@ -108,10 +108,6 @@ sizeof(NDIS_WWAN_MODEM_CONFIG_INFO)
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
-`ModemConfigInfo`
-
-A formatted <a href="..\wwan\ns-wwan-_wwan_modem_config_info.md">WWAN_MODEM_CONFIG_INFO</a> structure that represents the modem's configuration information.
-
 `uStatus`
 
 The status of system capability. The following table shows the possible values for
@@ -177,6 +173,10 @@ The operation failed because the device does not support this OID.
 </tr>
 </table>
 
+`ModemConfigInfo`
+
+A formatted <a href="..\wwan\ns-wwan-_wwan_modem_config_info.md">WWAN_MODEM_CONFIG_INFO</a> structure that represents the modem's configuration information.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -199,11 +199,3 @@ The operation failed because the device does not support this OID.
 
 
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-modem-config-info">NDIS_STATUS_WWAN_MODEM_CONFIG_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_MODEM_CONFIG_INFO structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

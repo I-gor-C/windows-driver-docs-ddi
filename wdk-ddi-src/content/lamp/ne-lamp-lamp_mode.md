@@ -59,13 +59,13 @@ typedef enum _LAMP_MODE {
 <table>
             
                 <tr>
-                    <td>LAMP_MODE_COLOR</td>
-                    <td>Optional. Color light.</td>
+                    <td>LAMP_MODE_WHITE</td>
+                    <td>Required. White light only.</td>
                 </tr>
             
                 <tr>
-                    <td>LAMP_MODE_WHITE</td>
-                    <td>Required. White light only.</td>
+                    <td>LAMP_MODE_COLOR</td>
+                    <td>Optional. Color light.</td>
                 </tr>
 </table>
 

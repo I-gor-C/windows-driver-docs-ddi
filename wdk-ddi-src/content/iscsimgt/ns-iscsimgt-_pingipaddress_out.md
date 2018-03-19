@@ -57,13 +57,13 @@ typedef struct _PingIPAddress_OUT {
 ## Members
 
 
-`ResponsesReceived`
-
-The number of responses that were received.
-
 `Status`
 
 A status of type ISDSC_ERROR.
+
+`ResponsesReceived`
+
+The number of responses that were received.
 
 ## Remarks
 We recommend that you implement this class.

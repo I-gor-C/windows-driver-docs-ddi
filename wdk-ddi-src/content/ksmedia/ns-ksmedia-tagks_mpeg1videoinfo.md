@@ -59,21 +59,21 @@ typedef struct tagKS_MPEG1VIDEOINFO {
 ## Members
 
 
-`bSequenceHeader`
+`hdr`
 
-The length of the <b>bSequenceHeader</b> member, in bytes.
-
-`cbSequenceHeader`
-
-The length of the <b>bSequenceHeader</b> member, in bytes.
+Specifies a <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a> structure that describes the details of the video stream.
 
 `dwStartTimeCode`
 
 A 25-bit "group-of-pictures" time code at the start of data.
 
-`hdr`
+`cbSequenceHeader`
 
-Specifies a <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a> structure that describes the details of the video stream.
+The length of the <b>bSequenceHeader</b> member, in bytes.
+
+`bSequenceHeader`
+
+The length of the <b>bSequenceHeader</b> member, in bytes.
 
 
 ## Requirements
@@ -84,11 +84,3 @@ Specifies a <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINF
 ## See Also
 
 <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_MPEG1VIDEOINFO structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

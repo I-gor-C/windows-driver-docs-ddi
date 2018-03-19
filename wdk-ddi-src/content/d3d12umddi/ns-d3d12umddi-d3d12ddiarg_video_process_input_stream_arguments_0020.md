@@ -69,25 +69,37 @@ typedef struct D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0020 {
 ## Members
 
 
-`AlphaBlending`
+`InputStream`
 
-The planar alpha for an input stream on the video processor.  For more information, see the  <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_alpha_blending_0020.md">D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING</a> structure.
+The set of references to be able to perform processing. If stereo format is <b>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_SEPARATE</b>, two sets of input streams must be supplied.  If stereo format is any other mode, the first set of reference must be supplied, and the second should be zero initialized.
 
-`ColorSpace`
+`Transform`
 
-The colorspace for the video processor input and reference surfaces as a <a href="https://msdn.microsoft.com/E25C933F-0DB3-4BC4-9755-9361B2B9B9CB">DXGI_COLOR_SPACE_TYPE</a> value.
+Flip, rotation, scale and destination translation for the video input.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_transform_0020.md">D3D12DDI_VIDEO_PROCESS_TRANSFORM</a> structure.
+
+`Flags`
+
+Options for the input stream.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_input_stream_flags_0020.md">D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS</a> enumeration.
+
+`RateInfo`
+
+Frame rate and input and output indexes for frame rate conversion and deinterlacing.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_input_stream_rate_info_0020.md">D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_RATE_INFO</a> structure.
+
+`FieldType`
+
+Frame format as progressive or interlaced for the input stream.
 
 `DeinterlaceMode`
 
 The deinterlace mode to use.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_deinterlace_flags_0020.md">D3D12DDI_VIDEO_PROCESS_DEINTERLACE_FLAGS</a> enumeration.
 
-`EnableAutoProcessing`
+`StereoFormat`
 
-Whether to enable automatic processing features on the video processor.
+Specifies whether the stream is stereo or not. If there is a value of <b>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_SEPARATE</b>, there are two sets of input textures and references. This is to support a stereo interlaced case.
 
-`FieldType`
+`ColorSpace`
 
-Frame format as progressive or interlaced for the input stream.
+The colorspace for the video processor input and reference surfaces as a <a href="https://msdn.microsoft.com/E25C933F-0DB3-4BC4-9755-9361B2B9B9CB">DXGI_COLOR_SPACE_TYPE</a> value.
 
 `FilterFlags`
 
@@ -97,13 +109,9 @@ The filters to enable, as a bitwise OR of one or more flags from the <a href="..
 
 The level to apply for each enabled filter.  If a filter is not enabled or the filter index is reserved, specify zero (0).
 
-`Flags`
+`AlphaBlending`
 
-Options for the input stream.  For more information, see the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_input_stream_flags_0020.md">D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS</a> enumeration.
-
-`InputStream`
-
-The set of references to be able to perform processing. If stereo format is <b>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_SEPARATE</b>, two sets of input streams must be supplied.  If stereo format is any other mode, the first set of reference must be supplied, and the second should be zero initialized.
+The planar alpha for an input stream on the video processor.  For more information, see the  <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_alpha_blending_0020.md">D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING</a> structure.
 
 `LumaKey`
 
@@ -113,17 +121,9 @@ The luma key for an input stream on the video processor.  For more information, 
 
 The palette to use for this stream. If the video processor supports the given palletized formats, it must apply alpha values from color palette entries.
 
-`RateInfo`
+`EnableAutoProcessing`
 
-Frame rate and input and output indexes for frame rate conversion and deinterlacing.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_input_stream_rate_info_0020.md">D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_RATE_INFO</a> structure.
-
-`StereoFormat`
-
-Specifies whether the stream is stereo or not. If there is a value of <b>D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_SEPARATE</b>, there are two sets of input textures and references. This is to support a stereo interlaced case.
-
-`Transform`
-
-Flip, rotation, scale and destination translation for the video input.  For more information, see the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_transform_0020.md">D3D12DDI_VIDEO_PROCESS_TRANSFORM</a> structure.
+Whether to enable automatic processing features on the video processor.
 
 
 ## Requirements
@@ -162,11 +162,3 @@ Flip, rotation, scale and destination translation for the video input.  For more
 
 
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_transform_0020.md">D3D12DDI_VIDEO_PROCESS_TRANSFORM</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0020 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

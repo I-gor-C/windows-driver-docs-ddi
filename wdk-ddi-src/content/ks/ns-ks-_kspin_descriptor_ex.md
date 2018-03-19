@@ -63,17 +63,17 @@ typedef struct _KSPIN_DESCRIPTOR_EX {
 ## Members
 
 
-`AllocatorFraming`
+`Dispatch`
 
-A pointer to a <a href="..\ks\ns-ks-ksallocator_framing_ex.md">KSALLOCATOR_FRAMING_EX</a> structure containing the allocator framing requirements for this pin type. Allocator framing specifies items such as memory alignment requirements, maximum frame size, and minimum frame size. This member can be <b>NULL</b>, which indicates that this pin does not support the allocator framing property.
+A pointer to the <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a> structure for this pin. This pointer is optional and should only be provided by clients that wish to receive notifications. Clients that need to perform pin-centric processing (filters concerned with the routing of data, in other words hardware drivers) must provide this dispatch table and a process dispatch. See <b>KSPIN_DISPATCH</b> for more information.
 
 `AutomationTable`
 
 A pointer to the <a href="..\ks\ns-ks-ksautomation_table_.md">KSAUTOMATION_TABLE</a> structure for this pin. The automation table contains the properties, methods, and events supported by the pin. This automation table is merged with the automation table provided by AVStream for all pins. If the client supplies any property, event, or method handlers that are already provided by AVStream, the client's implementation supersedes that of AVStream.
 
-`Dispatch`
+`PinDescriptor`
 
-A pointer to the <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a> structure for this pin. This pointer is optional and should only be provided by clients that wish to receive notifications. Clients that need to perform pin-centric processing (filters concerned with the routing of data, in other words hardware drivers) must provide this dispatch table and a process dispatch. See <b>KSPIN_DISPATCH</b> for more information.
+This member specifies a structure of type <a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>.
 
 `Flags`
 
@@ -209,21 +209,21 @@ This flag prevents user-mode access to this specific pin.
 
 Indicates that this pin exposes a clock that can be selected by the graph manager as a master clock. Also see <a href="https://msdn.microsoft.com/fc1d5bca-72e3-48e2-b46f-09a13bba83b4">AVStream Clocks</a>.
 
-`InstancesNecessary`
-
-Specifies a value of type ULONG that contains the minimum number of pins of a given pin type that are required to be in a state at or above the minimum processing level for proper functioning of the filter. By default the minimum processing level is KSSTATE_PAUSE, although the minidriver can modify the default behavior by setting the <b>Flags</b> member of this structure to either KSPIN_FLAG_PROCESS_IN_RUN_STATE_ONLY or KSPIN_FLAG_PROCESS_IF_ANY_IN_RUN_STATE. Any attempt to change the state of a filter that does not have this number of instances of this type of pin fails. See additional information in the Remarks section.
-
 `InstancesPossible`
 
 Specifies a value of type ULONG that contains a count of the maximum number of possible instances of this pin. Any attempt to instantiate more than this number of pins of the given type fails. Set to KSINSTANCE_INDETERMINATE to have no limit on number of pins instantiated.
 
+`InstancesNecessary`
+
+Specifies a value of type ULONG that contains the minimum number of pins of a given pin type that are required to be in a state at or above the minimum processing level for proper functioning of the filter. By default the minimum processing level is KSSTATE_PAUSE, although the minidriver can modify the default behavior by setting the <b>Flags</b> member of this structure to either KSPIN_FLAG_PROCESS_IN_RUN_STATE_ONLY or KSPIN_FLAG_PROCESS_IF_ANY_IN_RUN_STATE. Any attempt to change the state of a filter that does not have this number of instances of this type of pin fails. See additional information in the Remarks section.
+
+`AllocatorFraming`
+
+A pointer to a <a href="..\ks\ns-ks-ksallocator_framing_ex.md">KSALLOCATOR_FRAMING_EX</a> structure containing the allocator framing requirements for this pin type. Allocator framing specifies items such as memory alignment requirements, maximum frame size, and minimum frame size. This member can be <b>NULL</b>, which indicates that this pin does not support the allocator framing property.
+
 `IntersectHandler`
 
 A pointer to a driver-defined <a href="..\ks\nc-ks-pfnksintersecthandlerex.md">KStrIntersectHandlerEx</a> function to handle data-intersection. If this member is <b>NULL</b>, the pin handles data intersection queries for data ranges with the specifier KSDATAFORMAT_SPECIFIER_NONE. The intersection handler function receives a single data range from the query and a single data range from the pins list of data ranges. The type, subtype, and specifier GUIDs of these ranges are guaranteed to match, though some may be wildcards. The function either indicates the data ranges do not match, or it produces the best data format in the intersection of the two data ranges. See <a href="https://msdn.microsoft.com/44281574-8258-47a3-857d-fd44bb949f17">Data Range Intersections in AVStream</a> for more information.
-
-`PinDescriptor`
-
-This member specifies a structure of type <a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>.
 
 ## Remarks
 <div class="alert"><b>Note</b>    AMCap and Blink might not be able to find tuner and crossbar interfaces on your AVStream driver if the <b>InstancesNecessary</b> member of KSPIN_DESCRIPTOR_EX is set to zero for the analog video input pin. To fix this problem, set <b>InstancesNecessary</b> for this pin to one.</div>
@@ -256,11 +256,3 @@ Furthermore, if you specify KSPIN_FLAG_DO_NOT_INITIATE_PROCESSING and the pin us
 
 
 <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN_DESCRIPTOR_EX structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

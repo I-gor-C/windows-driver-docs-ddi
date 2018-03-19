@@ -65,32 +65,7 @@ typedef enum _RILUNSOLICITEDSSINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_UNSSS_ADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_UNSSS_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_UNSSS_CUGINDEX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_UNSSS_EXECUTOR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_UNSSS_HISTINFO</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_UNSSS_HISTLENGTH</td>
                     <td></td>
                 </tr>
             
@@ -105,7 +80,32 @@ typedef enum _RILUNSOLICITEDSSINFOPARAMMASK {
                 </tr>
             
                 <tr>
+                    <td>RIL_PARAM_UNSSS_ADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PARAM_UNSSS_SUBADDR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UNSSS_CUGINDEX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UNSSS_HISTLENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UNSSS_HISTINFO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UNSSS_ALL</td>
                     <td></td>
                 </tr>
 </table>

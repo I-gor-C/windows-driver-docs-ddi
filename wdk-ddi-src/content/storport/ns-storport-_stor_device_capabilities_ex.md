@@ -74,13 +74,13 @@ typedef struct _STOR_DEVICE_CAPABILITIES_EX {
 ## Members
 
 
-`Address`
+`Version`
 
-LUN address of the storage unit device.
+Specifies the version of the structure. Set to STOR_DEVICE_CAPABILITIES_EX_VERSION_1 by Storport.
 
-`DefaultWriteCacheEnabled`
+`Size`
 
-The storage device's write cache is enabled by default at initialization.
+Specifies the size of the structure. Set to <b>sizeof</b>(STOR_DEVICE_CAPABILITIES_EX) by Storport.
 
 `DeviceD1`
 
@@ -90,49 +90,53 @@ Specifies whether the device hardware supports the D1 power state. Miniport driv
 
 Specifies whether the device hardware supports the D2 power state. Miniport drivers set this bit to 0.
 
-`DockDevice`
+`LockSupported`
 
-Specifies whether the device is a docking peripheral.
+Specifies whether the device supports physical-device locking that prevents device ejection. This member pertains to ejecting a LUN or a unit device.
 
 `EjectSupported`
 
 Specifies whether the device supports software-controlled device ejection while the system is in the <b>PowerSystemWorking</b> state. This member pertains to ejecting a LUN or unit device.
 
-`LockSupported`
-
-Specifies whether the device supports physical-device locking that prevents device ejection. This member pertains to ejecting a LUN or a unit device.
-
-`NoDisplayInUI`
-
-Do not display the device in the user interface. If this bit is set, the device is never displayed in the user interface, even if the device is present but fails to start. Miniport drivers do not set this bit.
-
-`RawDeviceOK`
-
-Specifies whether the driver for the underlying bus can drive the device if there is no function driver (for example, SCSI devices in pass-through mode). This mode of operation is called raw mode.
-
 `Removable`
 
 
 
-`Reserved0`
+`DockDevice`
 
-Reserved bits.
+Specifies whether the device is a docking peripheral.
 
-`Reserved1`
+`UniqueID`
 
-Reserved bits.
+Specifies whether the device's instance ID is unique system-wide. This bit is clear if the instance ID is unique only within the scope of the bus.
 
 `SilentInstall`
 
 Specifies whether <b>Device Manager</b> should suppress all installation dialog boxes; except required dialog boxes such as "no compatible drivers found."
 
-`Size`
+`RawDeviceOK`
 
-Specifies the size of the structure. Set to <b>sizeof</b>(STOR_DEVICE_CAPABILITIES_EX) by Storport.
+Specifies whether the driver for the underlying bus can drive the device if there is no function driver (for example, SCSI devices in pass-through mode). This mode of operation is called raw mode.
 
 `SurpriseRemovalOK`
 
 Specifies whether the miniport driver for the device can handle the case where the device is removed before Storport can send SRB_FUNCTION_PNP with <b>StorRemoveDevice</b> as the <b>PnPAction</b> in the <a href="..\storport\ns-storport-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a> structure. If <b>SurpriseRemovalOK</b> is set to <b>TRUE</b>, the device can be safely removed from its immediate parent regardless of the state that its driver is in.
+
+`NoDisplayInUI`
+
+Do not display the device in the user interface. If this bit is set, the device is never displayed in the user interface, even if the device is present but fails to start. Miniport drivers do not set this bit.
+
+`DefaultWriteCacheEnabled`
+
+The storage device's write cache is enabled by default at initialization.
+
+`Reserved0`
+
+Reserved bits.
+
+`Address`
+
+LUN address of the storage unit device.
 
 `UINumber`
 
@@ -140,13 +144,9 @@ Specifies a number associated with the device that can be displayed in the user 
 
 This number might be an ID value chosen to make locating the physical device easier for the user. When the <b>UINumber</b> is unknown, the miniport driver can set this member to its default value of 0xFFFFFFFF.
 
-`UniqueID`
+`Reserved1`
 
-Specifies whether the device's instance ID is unique system-wide. This bit is clear if the instance ID is unique only within the scope of the bus.
-
-`Version`
-
-Specifies the version of the structure. Set to STOR_DEVICE_CAPABILITIES_EX_VERSION_1 by Storport.
+Reserved bits.
 
 ## Remarks
 When a miniport driver receives an SRB in its <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine where the SRB function is SRB_FUNCTION_PNP, the SRB is formatted as a <a href="..\storport\ns-storport-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a> structure. If the <b>PnPAction</b> member of the SRB is <b>StorQueryCapabilities</b>, the miniport can return a <b>STOR_DEVICE_CAPABILITIES_EX</b> structure in the <b>DataBuffer</b> member of the SRB.
@@ -174,11 +174,3 @@ The eject, removal, and install characteristics for the device are set in the <b
 
 
 <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_DEVICE_CAPABILITIES_EX structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -59,9 +59,9 @@ typedef struct _MSiSCSI_EventLog {
 ## Members
 
 
-`AdditionalData`
+`Type`
 
-
+This specifies the EVENTLOG_MESSAGE_QUALIFIERS type of event log message.
 
 `LogToEventlog`
 
@@ -71,9 +71,9 @@ typedef struct _MSiSCSI_EventLog {
 
 This specifies the size of the Additional Data field.
 
-`Type`
+`AdditionalData`
 
-This specifies the EVENTLOG_MESSAGE_QUALIFIERS type of event log message.
+
 
 ## Remarks
 We recommend that you implement this class.

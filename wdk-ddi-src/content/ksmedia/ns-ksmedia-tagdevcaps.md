@@ -78,22 +78,6 @@ typedef struct tagDEVCAPS {
 ## Members
 
 
-`AudioIn`
-
-Indicates the external device accepts audio as an input.
-
-`Calibrate`
-
-Indicates if the external device requires calibrating.
-
-`CanMonitorSrc`
-
-Specifies if the external device can monitor source.
-
-`CanPreview`
-
-Specifies if the external device can preview.
-
 `CanRecord`
 
 Specifies if the external device can record.
@@ -102,17 +86,21 @@ Specifies if the external device can record.
 
 For multitrack devices. Specifies if the external device can record. Switches currently recording tracks off and selected nonrecording track into record.
 
+`HasAudio`
+
+Specifies if the external device has audio capabilities.
+
+`HasVideo`
+
+Specifies if the external device has video capabilities.
+
+`UsesFiles`
+
+Specifies if the external device uses files.
+
 `CanSave`
 
 Specifies if the external device can save.
-
-`CanTest`
-
-Indicates the implementation of the external device allows testing of methods/parameters by setting the high bit of a parameter that makes sense. This is not implemented an always returns FALSE.
-
-`CTLRead`
-
-Specifies if the external device can read to a control track (nontimecode) target value.
 
 `DeviceType`
 
@@ -185,29 +173,61 @@ Unknown type
 </tr>
 </table>
 
-`HasAudio`
+`TCRead`
 
-Specifies if the external device has audio capabilities.
+Specifies if the external device can read timecodes.
 
-`HasVideo`
+`TCWrite`
 
-Specifies if the external device has video capabilities.
+Specifies if the external device can write timecodes.
+
+`CTLRead`
+
+Specifies if the external device can read to a control track (nontimecode) target value.
 
 `IndexRead`
 
 Specifies if the external device can read to an index (nontimecode) target value.
 
-`NormRate`
+`Preroll`
 
-Specifies the external device's normal frame rate.
+Specifies the external device's preroll time in the current time format.
 
 `Postroll`
 
 Specifies the external device's postroll time in the current time format.
 
-`Preroll`
+`SyncAcc`
 
-Specifies the external device's preroll time in the current time format.
+Indicates the external device's synchronization accuracy.
+
+`NormRate`
+
+Specifies the external device's normal frame rate.
+
+`CanPreview`
+
+Specifies if the external device can preview.
+
+`CanMonitorSrc`
+
+Specifies if the external device can monitor source.
+
+`CanTest`
+
+Indicates the implementation of the external device allows testing of methods/parameters by setting the high bit of a parameter that makes sense. This is not implemented an always returns FALSE.
+
+`VideoIn`
+
+Indicates the external device accepts video as an input.
+
+`AudioIn`
+
+Indicates the external device accepts audio as an input.
+
+`Calibrate`
+
+Indicates if the external device requires calibrating.
 
 `SeekType`
 
@@ -254,26 +274,6 @@ Indicates slow seeking (like a tape transport).
 
 Must be set to zero.
 
-`SyncAcc`
-
-Indicates the external device's synchronization accuracy.
-
-`TCRead`
-
-Specifies if the external device can read timecodes.
-
-`TCWrite`
-
-Specifies if the external device can write timecodes.
-
-`UsesFiles`
-
-Specifies if the external device uses files.
-
-`VideoIn`
-
-Indicates the external device accepts video as an input.
-
 ## Remarks
 Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
 
@@ -293,11 +293,3 @@ The <b>DeviceType</b> member can be used by an application to detect the device 
 
 
 <a href="..\ksmedia\ns-ksmedia-ksproperty_extdevice_s.md">KSPROPERTY_EXTDEVICE_S</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20DEVCAPS structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

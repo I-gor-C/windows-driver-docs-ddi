@@ -73,13 +73,33 @@ typedef enum D3D12DDI_TABLE_TYPE {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_TABLE_TYPE_0020_DEVICE_CORE_VIDEO</td>
-                    <td>Queue video.</td>
+                    <td>D3D12DDI_TABLE_TYPE_DEVICE_CORE</td>
+                    <td>Device core.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_TABLE_TYPE_COMMAND_LIST_3D</td>
+                    <td>List 3D.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_TABLE_TYPE_COMMAND_QUEUE_3D</td>
+                    <td>Queue 3D.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_TABLE_TYPE_DXGI</td>
+                    <td>DXGI.</td>
                 </tr>
             
                 <tr>
                     <td>D3D12DDI_TABLE_TYPE_0020_DEVICE_VIDEO</td>
                     <td>Device video.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_TABLE_TYPE_0020_DEVICE_CORE_VIDEO</td>
+                    <td>Queue video.</td>
                 </tr>
             
                 <tr>
@@ -98,18 +118,13 @@ typedef enum D3D12DDI_TABLE_TYPE {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_TABLE_TYPE_0022_COMMAND_LIST_VIDEO_DECODE</td>
-                    <td>List video decode.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_TABLE_TYPE_0022_COMMAND_LIST_VIDEO_PROCESS</td>
-                    <td>List video process.</td>
-                </tr>
-            
-                <tr>
                     <td>D3D12DDI_TABLE_TYPE_0022_COMMAND_QUEUE_VIDEO_DECODE</td>
                     <td>Queue video decode.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_TABLE_TYPE_0022_COMMAND_LIST_VIDEO_DECODE</td>
+                    <td>List video decode.</td>
                 </tr>
             
                 <tr>
@@ -118,8 +133,8 @@ typedef enum D3D12DDI_TABLE_TYPE {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_TABLE_TYPE_0030_CONTENT_PROTECTION_CALLBACKS</td>
-                    <td>Content protection callbacks.</td>
+                    <td>D3D12DDI_TABLE_TYPE_0022_COMMAND_LIST_VIDEO_PROCESS</td>
+                    <td>List video process.</td>
                 </tr>
             
                 <tr>
@@ -128,28 +143,13 @@ typedef enum D3D12DDI_TABLE_TYPE {
                 </tr>
             
                 <tr>
+                    <td>D3D12DDI_TABLE_TYPE_0030_CONTENT_PROTECTION_CALLBACKS</td>
+                    <td>Content protection callbacks.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D12DDI_TABLE_TYPE_0030_DEVICE_CONTENT_PROTECTION_STREAMING</td>
                     <td>Device content protection streaming.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_TABLE_TYPE_COMMAND_LIST_3D</td>
-                    <td>List 3D.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_TABLE_TYPE_COMMAND_QUEUE_3D</td>
-                    <td>Queue 3D.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_TABLE_TYPE_DEVICE_CORE</td>
-                    <td>Device core.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_TABLE_TYPE_DXGI</td>
-                    <td>DXGI.</td>
                 </tr>
 </table>
 

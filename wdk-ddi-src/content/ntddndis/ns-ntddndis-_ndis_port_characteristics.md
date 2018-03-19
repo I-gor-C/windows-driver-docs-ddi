@@ -67,11 +67,21 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
 ## Members
 
 
-`Direction`
+`Header`
 
-A 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a> NDIS network
-     interface direction type.
+The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <b>NDIS_PORT_CHARACTERISTICS</b> structure. Set the 
+     <b>Type</b> member of the structure that 
+     <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
+     <b>Revision</b> member to NDIS_PORT_CHARACTERISTICS_REVISION_1, and the 
+     <b>Size</b> member to NDIS_SIZEOF_PORT_CHARACTERISTICS_REVISION_1.
+
+`PortNumber`
+
+The number of the NDIS port that is associated with this <b>NDIS_PORT_CHARACTERISTICS</b> structure. The 
+     <b>PortNumber</b> value is an NDIS_PORT_NUMBER value, which has a ULONG data type and is valid from zero
+     through 0xffffff, where zero is reserved for the default port.
 
 `Flags`
 
@@ -85,160 +95,6 @@ If the NDIS_PORT_CHAR_USE_DEFAULT_AUTH_SETTINGS flag is set, NDIS ignores authen
      activates. If the miniport driver controls the default port, when the miniport driver activates the
      default port, the driver can set NDIS_PORT_CHAR_USE_DEFAULT_AUTH_SETTINGS to activate the default port
      with the default authentication state settings.
-
-`Header`
-
-The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
-     <b>NDIS_PORT_CHARACTERISTICS</b> structure. Set the 
-     <b>Type</b> member of the structure that 
-     <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
-     <b>Revision</b> member to NDIS_PORT_CHARACTERISTICS_REVISION_1, and the 
-     <b>Size</b> member to NDIS_SIZEOF_PORT_CHARACTERISTICS_REVISION_1.
-
-`MediaConnectState`
-
-The media connection state of the port. This state is the same information that the 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-media-connect-status-ex">
-     OID_GEN_MEDIA_CONNECT_STATUS_EX</a> OID returns.
-
-`PortNumber`
-
-The number of the NDIS port that is associated with this <b>NDIS_PORT_CHARACTERISTICS</b> structure. The 
-     <b>PortNumber</b> value is an NDIS_PORT_NUMBER value, which has a ULONG data type and is valid from zero
-     through 0xffffff, where zero is reserved for the default port.
-
-`RcvAuthorizationState`
-
-The authorization state of the port for receive operations. Ignore this member if the 
-     <b>RcvControlState</b> member is set to 
-     <b>NdisPortControlStateUncontrolled</b>.
-     
-
-<b>RcvAuthorizationState</b> must contain one of the following values:
-
-
-
-
-
-#### NdisPortAuthorizationUnknown
-
-The port's authorization state for receive operations is unknown.
-
-
-
-#### NdisPortAuthorized
-
-The port is authorized for receive operations.
-
-
-
-#### NdisPortUnauthorized
-
-The port is not authorized for receive operations.
-
-
-
-#### NdisPortReauthorizing
-
-The port is re-authorizing for receive operations.
-
-`RcvControlState`
-
-The control state of the port for receive operations. This member must contain one of the
-     following values:
-     
-
-
-
-
-
-#### NdisPortControlStateUnknown
-
-The port's control state for receive operations is unknown.
-
-
-
-#### NdisPortControlStateControlled
-
-The port is in a controlled state for receive operations (that is, the port requires
-       authorization), and the value in the 
-       <b>SendAuthorizationState</b> member determines the authentication state.
-
-
-
-#### NdisPortControlStateUncontrolled
-
-The port is in an uncontrolled state for receive operations. Therefore, authentication does not
-       apply to this port.
-
-`RcvLinkSpeed`
-
-The receive link speed of the port, in bits per second. A value of -1 in this member indicates
-     that the receive link speed is unknown.
-
-`SendAuthorizationState`
-
-The authorization state of the port for send operations. Ignore this member if the 
-     <b>SendControlState</b> member is set to 
-     <b>NdisPortControlStateUncontrolled</b>.
-     
-
-<b>SendAuthorizationState</b> must contain one of the following values:
-
-
-
-
-
-#### NdisPortAuthorizationUnknown
-
-The port's authorization state for send operations is unknown.
-
-
-
-#### NdisPortAuthorized
-
-The port is authorized for send operations.
-
-
-
-#### NdisPortUnauthorized
-
-The port is not authorized for send operations.
-
-
-
-#### NdisPortReauthorizing
-
-The port is re-authorizing for send operations.
-
-`SendControlState`
-
-The control state of the port for send operations. This member must contain one of the following
-     values:
-     
-
-
-
-
-
-#### NdisPortControlStateUnknown
-
-The port's control state for send operations is unknown.
-
-
-
-#### NdisPortControlStateControlled
-
-The port is in a controlled state for send operations. That is, the port requires
-       authorization.
-
-
-
-#### NdisPortControlStateUncontrolled
-
-The port is in an uncontrolled state for send operations. That is, the port does not require
-       authorization.
 
 `Type`
 
@@ -280,10 +136,154 @@ Reserved for system use.
 <div class="alert"><b>Note</b>  This value is supported only in NDIS 6.30 and later.</div>
 <div> </div>
 
+`MediaConnectState`
+
+The media connection state of the port. This state is the same information that the 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-media-connect-status-ex">
+     OID_GEN_MEDIA_CONNECT_STATUS_EX</a> OID returns.
+
 `XmitLinkSpeed`
 
 The transmit link speed of the port in bits per second. A value of -1 in this member indicates
      that the transmit link speed is unknown.
+
+`RcvLinkSpeed`
+
+The receive link speed of the port, in bits per second. A value of -1 in this member indicates
+     that the receive link speed is unknown.
+
+`Direction`
+
+A 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a> NDIS network
+     interface direction type.
+
+`SendControlState`
+
+The control state of the port for send operations. This member must contain one of the following
+     values:
+     
+
+
+
+
+
+#### NdisPortControlStateUnknown
+
+The port's control state for send operations is unknown.
+
+
+
+#### NdisPortControlStateControlled
+
+The port is in a controlled state for send operations. That is, the port requires
+       authorization.
+
+
+
+#### NdisPortControlStateUncontrolled
+
+The port is in an uncontrolled state for send operations. That is, the port does not require
+       authorization.
+
+`RcvControlState`
+
+The control state of the port for receive operations. This member must contain one of the
+     following values:
+     
+
+
+
+
+
+#### NdisPortControlStateUnknown
+
+The port's control state for receive operations is unknown.
+
+
+
+#### NdisPortControlStateControlled
+
+The port is in a controlled state for receive operations (that is, the port requires
+       authorization), and the value in the 
+       <b>SendAuthorizationState</b> member determines the authentication state.
+
+
+
+#### NdisPortControlStateUncontrolled
+
+The port is in an uncontrolled state for receive operations. Therefore, authentication does not
+       apply to this port.
+
+`SendAuthorizationState`
+
+The authorization state of the port for send operations. Ignore this member if the 
+     <b>SendControlState</b> member is set to 
+     <b>NdisPortControlStateUncontrolled</b>.
+     
+
+<b>SendAuthorizationState</b> must contain one of the following values:
+
+
+
+
+
+#### NdisPortAuthorizationUnknown
+
+The port's authorization state for send operations is unknown.
+
+
+
+#### NdisPortAuthorized
+
+The port is authorized for send operations.
+
+
+
+#### NdisPortUnauthorized
+
+The port is not authorized for send operations.
+
+
+
+#### NdisPortReauthorizing
+
+The port is re-authorizing for send operations.
+
+`RcvAuthorizationState`
+
+The authorization state of the port for receive operations. Ignore this member if the 
+     <b>RcvControlState</b> member is set to 
+     <b>NdisPortControlStateUncontrolled</b>.
+     
+
+<b>RcvAuthorizationState</b> must contain one of the following values:
+
+
+
+
+
+#### NdisPortAuthorizationUnknown
+
+The port's authorization state for receive operations is unknown.
+
+
+
+#### NdisPortAuthorized
+
+The port is authorized for receive operations.
+
+
+
+#### NdisPortUnauthorized
+
+The port is not authorized for receive operations.
+
+
+
+#### NdisPortReauthorizing
+
+The port is re-authorizing for receive operations.
 
 ## Remarks
 The <b>NDIS_PORT_CHARACTERISTICS</b> structure specifies the characteristics of an NDIS port. This structure
@@ -344,11 +344,3 @@ NDIS uses a linked list of ports in port activation Plug and Play (PnP) events. 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT_CHARACTERISTICS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -57,13 +57,13 @@ typedef struct _DXGK_MONITORLINKINFO {
 ## Members
 
 
-`Capabilities`
-
-Flags which describe the capabilities for driving the monitor.
-
 `UsageHints`
 
 Hints to the driver on the intended usage of the display device.
+
+`Capabilities`
+
+Flags which describe the capabilities for driving the monitor.
 
 
 ## Requirements

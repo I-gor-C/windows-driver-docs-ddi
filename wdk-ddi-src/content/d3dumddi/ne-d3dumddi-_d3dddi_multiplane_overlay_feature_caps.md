@@ -65,31 +65,6 @@ typedef enum _D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS {
 <table>
             
                 <tr>
-                    <td>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_BILINEAR_FILTER</td>
-                    <td>The overlay plane supports stretching and shrinking using bilinear filtering.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_DEINTERLACE</td>
-                    <td>Reserved for system use. The user-mode display driver should not use this value.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HIGH_FILTER</td>
-                    <td>The overlay plane supports stretching and shrinking using filtering that is better than bilinear filtering.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HORIZONTAL_FLIP</td>
-                    <td>The overlay plane can flip the data horizontally, making it appear as a right-to-left mirror image.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_RGB</td>
-                    <td>The overlay plane supports RGB format.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_ROTATION</td>
                     <td>The overlay plane can rotate the data 90, 180, and 270 degrees.</td>
                 </tr>
@@ -100,8 +75,33 @@ typedef enum _D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS {
                 </tr>
             
                 <tr>
+                    <td>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HORIZONTAL_FLIP</td>
+                    <td>The overlay plane can flip the data horizontally, making it appear as a right-to-left mirror image.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_DEINTERLACE</td>
+                    <td>Reserved for system use. The user-mode display driver should not use this value.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_RGB</td>
+                    <td>The overlay plane supports RGB format.</td>
+                </tr>
+            
+                <tr>
                     <td>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_YUV</td>
                     <td>The overlay plane supports YUV format.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_BILINEAR_FILTER</td>
+                    <td>The overlay plane supports stretching and shrinking using bilinear filtering.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_MULTIPLANE_OVERLAY_FEATURE_CAPS_HIGH_FILTER</td>
+                    <td>The overlay plane supports stretching and shrinking using filtering that is better than bilinear filtering.</td>
                 </tr>
 </table>
 

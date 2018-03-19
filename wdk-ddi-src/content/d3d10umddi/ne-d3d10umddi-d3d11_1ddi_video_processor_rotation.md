@@ -61,13 +61,8 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ROTATION {
 <table>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_180</td>
-                    <td>Indicates that rotation is 180 degrees clockwise—inverted landscape mode.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_270</td>
-                    <td>Indicates that rotation is 270 degrees clockwise—inverted portrait mode.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_IDENTITY</td>
+                    <td>Indicates that rotation is 0 degrees—landscape mode.</td>
                 </tr>
             
                 <tr>
@@ -76,8 +71,13 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ROTATION {
                 </tr>
             
                 <tr>
-                    <td>D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_IDENTITY</td>
-                    <td>Indicates that rotation is 0 degrees—landscape mode.</td>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_180</td>
+                    <td>Indicates that rotation is 180 degrees clockwise—inverted landscape mode.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_VIDEO_PROCESSOR_ROTATION_270</td>
+                    <td>Indicates that rotation is 270 degrees clockwise—inverted portrait mode.</td>
                 </tr>
 </table>
 

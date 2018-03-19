@@ -58,19 +58,6 @@ typedef struct _WWAN_SMS_STATUS {
 ## Members
 
 
-`MessageIndex`
-
-This is the index of the newly arrived message or the recently arrived message in case of a 
-     <i>query</i> response.
-     
-
-Unique index into the message store between 1 and 
-     <b>ulMaxMessageIndex</b> returned in NDIS_STATUS_WWAN_SMS_CONFIGURATION.
-
-If the 
-     <b>uFlag</b> is not set with WWAN_SMS_NEW_MESSAGE, this member must be initialized by the miniport driver
-     with WWAN_MESSAGE_INDEX_NONE.
-
 `uFlag`
 
 A bitmap of flags that represent the status of the message store on the MB device. The values for 
@@ -124,6 +111,19 @@ Miniport drivers should not set or clear any flag until a change of state occurs
 Miniport drivers must send an unsolicited event to the MB Service whenever a flag is set. Miniport
      drivers do not need to send an unsolicited event when a flag is cleared (reset).
 
+`MessageIndex`
+
+This is the index of the newly arrived message or the recently arrived message in case of a 
+     <i>query</i> response.
+     
+
+Unique index into the message store between 1 and 
+     <b>ulMaxMessageIndex</b> returned in NDIS_STATUS_WWAN_SMS_CONFIGURATION.
+
+If the 
+     <b>uFlag</b> is not set with WWAN_SMS_NEW_MESSAGE, this member must be initialized by the miniport driver
+     with WWAN_MESSAGE_INDEX_NONE.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -134,11 +134,3 @@ Miniport drivers must send an unsolicited event to the MB Service whenever a fla
 ## See Also
 
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_sms_status.md">NDIS_WWAN_SMS_STATUS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_STATUS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

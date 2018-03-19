@@ -60,6 +60,10 @@ typedef struct _DXGK_START_INFO {
 ## Members
 
 
+`RequiredDmaQueueEntry`
+
+The number of DMA buffers that the display miniport driver (or the display adapter) must be able to hold in a queue. The display miniport driver must preallocate all resources required to accommodate this number of DMA buffers.
+
 `AdapterGuid`
 
 A GUID that will serve as an identifier for the adapter being started.
@@ -69,10 +73,6 @@ A GUID that will serve as an identifier for the adapter being started.
 Available starting with Windows 8.
 
 A locally unique identifier (LUID) that will serve as an identifier for the adapter being started.
-
-`RequiredDmaQueueEntry`
-
-The number of DMA buffers that the display miniport driver (or the display adapter) must be able to hold in a queue. The display miniport driver must preallocate all resources required to accommodate this number of DMA buffers.
 
 ## Remarks
 The DirectX graphics kernel subsystem submits DMA buffers to the display miniport driver by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommand.md">DxgkDdiSubmitCommand</a>.

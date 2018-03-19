@@ -62,11 +62,11 @@ typedef struct _RILMANAGECALLSPARAMS_V3 {
 ## Members
 
 
-`dwCommand`
-
-
-
 `dwExecutor`
+
+
+
+`dwCommand`
 
 
 
@@ -78,11 +78,11 @@ typedef struct _RILMANAGECALLSPARAMS_V3 {
 
 
 
-`raAddress`
-
-
-
 `rcmOfferAnswer`
+
+
+
+`raAddress`
 
 
 

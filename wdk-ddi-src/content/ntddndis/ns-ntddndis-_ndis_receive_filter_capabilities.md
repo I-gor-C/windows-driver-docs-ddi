@@ -98,6 +98,42 @@ typedef struct _NDIS_RECEIVE_FILTER_CAPABILITIES {
 ## Members
 
 
+`Header`
+
+The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <b>NDIS_RECEIVE_FILTER_CAPABILITIES</b> structure. The driver sets the 
+     <b>Type</b> member of the structure that 
+     <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
+
+To indicate the version of the <b>NDIS_RECEIVE_FILTER_CAPABILITIES</b> structure, the driver sets the 
+     <b>Revision</b> member to one of the following values:
+
+
+
+
+
+#### NDIS_RECEIVE_FILTER_CAPABILITIES_REVISION_2
+
+Added  
+        various members for NDIS 6.30 and later.
+
+The driver sets the 
+        <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_CAPABILITIES_REVISION_2.
+
+
+
+#### NDIS_RECEIVE_FILTER_CAPABILITIES_REVISION_1
+
+Original version for NDIS 6.20.
+
+The driver sets the 
+        <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_CAPABILITIES_REVISION_1.
+
+`Flags`
+
+A bitwise OR of flags. This member is reserved for NDIS.
+
 `EnabledFilterTypes`
 
 A bitwise OR of flags that specify the types of receive filters that are enabled. The
@@ -137,287 +173,12 @@ Specifies that virtual machine (VM) queues are enabled.  VM queues are used when
 <div class="alert"><b>Note</b>  The miniport driver must not set this flag if the miniport driver is enabled to only use the SR-IOV interface. For more information on how these interfaces are enabled, see <a href="https://msdn.microsoft.com/EF556563-4097-4388-A563-29FC891AC626">Handling SR-IOV, VMQ, and RSS Standardized INF Keywords</a>.</div>
 <div> </div>
 
-`Flags`
-
-A bitwise OR of flags. This member is reserved for NDIS.
-
-`Header`
-
-The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
-     <b>NDIS_RECEIVE_FILTER_CAPABILITIES</b> structure. The driver sets the 
-     <b>Type</b> member of the structure that 
-     <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
-
-To indicate the version of the <b>NDIS_RECEIVE_FILTER_CAPABILITIES</b> structure, the driver sets the 
-     <b>Revision</b> member to one of the following values:
-
-
-
-
-
-#### NDIS_RECEIVE_FILTER_CAPABILITIES_REVISION_2
-
-Added  
-        various members for NDIS 6.30 and later.
-
-The driver sets the 
-        <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_CAPABILITIES_REVISION_2.
-
-
-
-#### NDIS_RECEIVE_FILTER_CAPABILITIES_REVISION_1
-
-Original version for NDIS 6.20.
-
-The driver sets the 
-        <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_CAPABILITIES_REVISION_1.
-
-`MaxFieldTestsPerPacketCoalescingFilter`
-
-The maximum number of tests on packet header fields that can be specified for a single packet coalescing filter. For more information about packet coalescing, see <a href="https://msdn.microsoft.com/500FBF0F-54D9-4675-8E2D-447387DA8798">NDIS Packet Coalescing</a>.
-
-<div class="alert"><b>Note</b>  Network adapters that support packet coalescing must support five or more packet header fields that can be specified for a single packet coalescing filter. If the adapter does not support packet coalescing, the miniport driver must set this value to zero.</div>
-<div> </div>
-
-`MaxLookaheadSplitSize`
-
-The maximum size, in bytes, that the network adapter supports for lookahead
-     packet buffers.
-
-<div class="alert"><b>Note</b>  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Miniport drivers that support this version of NDIS must set this member to zero.</div>
-<div> </div>
-
-`MaxMacHeaderFilters`
-
-The maximum number of MAC header filters that the miniport driver
-     supports.
-
-`MaxPacketCoalescingFilters`
-
-The maximum number of packet coalescing receive filters that are supported by the network adapter.
-
-<div class="alert"><b>Note</b>  Network adapters that support packet coalescing must support ten or more packet coalescing filters. If the adapter does not support packet coalescing, the miniport driver must set this value to zero.</div>
-<div> </div>
-
-`MaxQueueGroups`
-
-This member is reserved for NDIS.
-
-`MaxQueuesPerQueueGroup`
-
-This member is reserved for NDIS.
-
-`MinLookaheadSplitSize`
-
-The minimum size, in bytes, that the network adapter supports for lookahead
-     packet buffers.
-
-<div class="alert"><b>Note</b>  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Miniport drivers that support this version of NDIS must set this member to zero.</div>
-<div> </div>
-
-`NdisReserved`
-
-Reserved. Set to 0.
-
 `NumQueues`
 
 The number of VM queues that the network adapter supports.
 
 <div class="alert"><b>Note</b>  If the miniport driver is enabled to use the SR-IOV interface, it must set this member to zero. When use of the SR-IOV interface is enabled, NDIS uses virtual ports (VPorts) for receive and transmit queues instead of VM queues.
 </div>
-<div> </div>
-
-`SupportedARPHeaderFields`
-
-A bitwise OR of flags that specify the types of ARP header fields that a
-     miniport driver can inspect. The following flags are defined:
-     
-
-
-
-
-
-#### NDIS_RECEIVE_FILTER_ARP_HEADER_OPERATION_SUPPORTED
-
-The network adapter supports receive filtering on the ARP operation field.
-
-
-
-#### NDIS_RECEIVE_FILTER_ARP_HEADER_SPA_SUPPORTED
-
-The network adapter supports receive filtering on the ARP source protocol address (SPA) field.
-
-
-
-#### NDIS_RECEIVE_FILTER_ARP_HEADER_TPA_SUPPORTED
-
-The network adapter supports receive filtering on the ARP target protocol address (TPA) field.
-
-`SupportedFilterTests`
-
-A bitwise OR of flags that specify the test operations that a miniport
-     driver supports. The following flags are defined:
-     
-
-
-
-
-
-#### NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_EQUAL_SUPPORTED
-
-The network adapter supports testing the selected header field to determine whether it is equal to a
-       given value.
-
-<div class="alert"><b>Note</b>  If the miniport driver supports the VMQ or SR-IOV interfaces, it must set this flag.</div>
-<div> </div>
-
-
-#### NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_MASK_EQUAL_SUPPORTED
-
-The network adapter supports masking (that is, a bitwise AND) of the selected header field to
-       determine whether the result is equal to a specified value.
-
-
-
-#### NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_NOT_EQUAL_SUPPORTED
-
-The network adapter supports testing the selected header field to determine whether it is not equal to a
-       specified value.
-
-<div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later.</div>
-<div> </div>
-
-`SupportedHeaders`
-
-A bitwise OR of flags that specify the types of network packet headers that
-     a miniport driver can inspect. The following flags are defined:
-     
-
-
-
-
-
-#### NDIS_RECEIVE_FILTER_MAC_HEADER_SUPPORTED
-
-The network adapter can inspect the media access control (MAC) header of a network packet. The <b>SupportedMacHeaderFields</b> member defines the various fields from the MAC header that can be inspected.
-
-
-
-#### NDIS_RECEIVE_FILTER_ARP_HEADER_SUPPORTED
-
-The network adapter can inspect the Address Resolution Protocol (ARP) header of a network packet. The <b>SupportedArpHeaderFields</b> member defines the various fields from the ARP header that can be inspected.
-
-<div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later.</div>
-<div> </div>
-
-
-#### NDIS_RECEIVE_FILTER_IPV4_HEADER_SUPPORTED
-
-The network adapter can inspect the IP version 4 (IPv4) header of a network packet. The <b>SupportedIPv4HeaderFields</b> member defines the various fields from the IPv4 header that can be inspected.
-
-<div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later.</div>
-<div> </div>
-
-
-#### NDIS_RECEIVE_FILTER_IPV6_HEADER_SUPPORTED
-
-The network adapter can inspect the IP version 6 (IPv6) header of a network packet. The <b>SupportedIPv6HeaderFields</b> member defines the various fields from the IPv6 header that can be inspected.
-
-<div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later.</div>
-<div> </div>
-
-
-#### NDIS_RECEIVE_FILTER_UDP_HEADER_SUPPORTED
-
-The network adapter can inspect the User Datagram Protocol
-(UDP) header of a network packet. The <b>SupportedIPv6HeaderFields</b> member defines the various fields from the UDP header that can be inspected.
-
-<div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later.</div>
-<div> </div>
-
-`SupportedIPv4HeaderFields`
-
-A bitwise OR of flags that specify the types of IPv4 header fields that a
-     miniport driver can inspect. The following flags are defined:
-     
-
-
-
-
-
-#### NDIS_RECEIVE_FILTER_IPV4_HEADER_PROTOCOL_SUPPORTED
-
-The network adapter supports receive filtering on the IPv4 protocol field.
-
-`SupportedIPv6HeaderFields`
-
-A bitwise OR of flags that specify the types of IPv6 header fields that a
-     miniport driver can inspect. The following flags are defined:
-     
-
-
-
-
-
-#### NDIS_RECEIVE_FILTER_IPV6_HEADER_PROTOCOL_SUPPORTED
-
-The network adapter supports receive filtering on the IPv6 protocol field.
-
-`SupportedMacHeaderFields`
-
-A bitwise OR of flags that specify the types of MAC header fields that a
-     miniport driver can inspect. The following flags are defined:
-     
-
-
-
-
-
-#### NDIS_RECEIVE_FILTER_MAC_HEADER_DEST_ADDR_SUPPORTED
-
-The network adapter supports inspecting and filtering that are based on the destination MAC
-       address in the MAC header.
-
-<div class="alert"><b>Note</b>  Starting with NDIS 6.30, miniport drivers that support the VMQ or SR-IOV interface must set this flag.</div>
-<div> </div>
-
-
-#### NDIS_RECEIVE_FILTER_MAC_HEADER_SOURCE_ADDR_SUPPORTED
-
-The network adapter supports inspecting and filtering that are based on the source MAC address
-       in the MAC header.
-
-
-
-#### NDIS_RECEIVE_FILTER_MAC_HEADER_PROTOCOL_SUPPORTED
-
-The network adapter supports inspecting and filtering that are based on the EtherType identifier
-       in the MAC header. For example, the EtherType identifier for IPv4 packets is 0x0800.
-
-
-
-#### NDIS_RECEIVE_FILTER_MAC_HEADER_VLAN_ID_SUPPORTED
-
-The network adapter supports inspecting and filtering that are based on the VLAN identifier in
-       the MAC header.
-
-<div class="alert"><b>Note</b>  Starting with NDIS 6.30, this flag is optional. If the miniport driver does not set this flag, the network adapter should inspect and filter the specified MAC address fields. If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must   put the VLAN tag in an <a href="..\ndis\ns-ndis-_ndis_net_buffer_list_8021q_info.md">NDIS_NET_BUFFER_LIST_8021Q_INFO</a> structure that is associated with the packet's <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.</div>
-<div> </div>
-
-
-#### NDIS_RECEIVE_FILTER_MAC_HEADER_PRIORITY_SUPPORTED
-
-The network adapter supports inspecting and filtering that are based on the priority tag in the
-       MAC header.
-
-
-
-#### NDIS_RECEIVE_FILTER_MAC_HEADER_PACKET_TYPE_SUPPORTED
-
-The network adapter supports inspecting and filtering that are based on the packet type field of the IEEE 802.2 subnetwork access protocol (SNAP) header in an 802.3 MAC header.
-
-<div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later.</div>
 <div> </div>
 
 `SupportedQueueProperties`
@@ -520,6 +281,227 @@ The network adapter supports NDIS packet coalescing. Packet coalescing is only s
 <div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later.</div>
 <div> </div>
 
+`SupportedFilterTests`
+
+A bitwise OR of flags that specify the test operations that a miniport
+     driver supports. The following flags are defined:
+     
+
+
+
+
+
+#### NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_EQUAL_SUPPORTED
+
+The network adapter supports testing the selected header field to determine whether it is equal to a
+       given value.
+
+<div class="alert"><b>Note</b>  If the miniport driver supports the VMQ or SR-IOV interfaces, it must set this flag.</div>
+<div> </div>
+
+
+#### NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_MASK_EQUAL_SUPPORTED
+
+The network adapter supports masking (that is, a bitwise AND) of the selected header field to
+       determine whether the result is equal to a specified value.
+
+
+
+#### NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_NOT_EQUAL_SUPPORTED
+
+The network adapter supports testing the selected header field to determine whether it is not equal to a
+       specified value.
+
+<div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later.</div>
+<div> </div>
+
+`SupportedHeaders`
+
+A bitwise OR of flags that specify the types of network packet headers that
+     a miniport driver can inspect. The following flags are defined:
+     
+
+
+
+
+
+#### NDIS_RECEIVE_FILTER_MAC_HEADER_SUPPORTED
+
+The network adapter can inspect the media access control (MAC) header of a network packet. The <b>SupportedMacHeaderFields</b> member defines the various fields from the MAC header that can be inspected.
+
+
+
+#### NDIS_RECEIVE_FILTER_ARP_HEADER_SUPPORTED
+
+The network adapter can inspect the Address Resolution Protocol (ARP) header of a network packet. The <b>SupportedArpHeaderFields</b> member defines the various fields from the ARP header that can be inspected.
+
+<div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later.</div>
+<div> </div>
+
+
+#### NDIS_RECEIVE_FILTER_IPV4_HEADER_SUPPORTED
+
+The network adapter can inspect the IP version 4 (IPv4) header of a network packet. The <b>SupportedIPv4HeaderFields</b> member defines the various fields from the IPv4 header that can be inspected.
+
+<div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later.</div>
+<div> </div>
+
+
+#### NDIS_RECEIVE_FILTER_IPV6_HEADER_SUPPORTED
+
+The network adapter can inspect the IP version 6 (IPv6) header of a network packet. The <b>SupportedIPv6HeaderFields</b> member defines the various fields from the IPv6 header that can be inspected.
+
+<div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later.</div>
+<div> </div>
+
+
+#### NDIS_RECEIVE_FILTER_UDP_HEADER_SUPPORTED
+
+The network adapter can inspect the User Datagram Protocol
+(UDP) header of a network packet. The <b>SupportedIPv6HeaderFields</b> member defines the various fields from the UDP header that can be inspected.
+
+<div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later.</div>
+<div> </div>
+
+`SupportedMacHeaderFields`
+
+A bitwise OR of flags that specify the types of MAC header fields that a
+     miniport driver can inspect. The following flags are defined:
+     
+
+
+
+
+
+#### NDIS_RECEIVE_FILTER_MAC_HEADER_DEST_ADDR_SUPPORTED
+
+The network adapter supports inspecting and filtering that are based on the destination MAC
+       address in the MAC header.
+
+<div class="alert"><b>Note</b>  Starting with NDIS 6.30, miniport drivers that support the VMQ or SR-IOV interface must set this flag.</div>
+<div> </div>
+
+
+#### NDIS_RECEIVE_FILTER_MAC_HEADER_SOURCE_ADDR_SUPPORTED
+
+The network adapter supports inspecting and filtering that are based on the source MAC address
+       in the MAC header.
+
+
+
+#### NDIS_RECEIVE_FILTER_MAC_HEADER_PROTOCOL_SUPPORTED
+
+The network adapter supports inspecting and filtering that are based on the EtherType identifier
+       in the MAC header. For example, the EtherType identifier for IPv4 packets is 0x0800.
+
+
+
+#### NDIS_RECEIVE_FILTER_MAC_HEADER_VLAN_ID_SUPPORTED
+
+The network adapter supports inspecting and filtering that are based on the VLAN identifier in
+       the MAC header.
+
+<div class="alert"><b>Note</b>  Starting with NDIS 6.30, this flag is optional. If the miniport driver does not set this flag, the network adapter should inspect and filter the specified MAC address fields. If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must   put the VLAN tag in an <a href="..\ndis\ns-ndis-_ndis_net_buffer_list_8021q_info.md">NDIS_NET_BUFFER_LIST_8021Q_INFO</a> structure that is associated with the packet's <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.</div>
+<div> </div>
+
+
+#### NDIS_RECEIVE_FILTER_MAC_HEADER_PRIORITY_SUPPORTED
+
+The network adapter supports inspecting and filtering that are based on the priority tag in the
+       MAC header.
+
+
+
+#### NDIS_RECEIVE_FILTER_MAC_HEADER_PACKET_TYPE_SUPPORTED
+
+The network adapter supports inspecting and filtering that are based on the packet type field of the IEEE 802.2 subnetwork access protocol (SNAP) header in an 802.3 MAC header.
+
+<div class="alert"><b>Note</b>  This flag is supported in NDIS 6.30 and later.</div>
+<div> </div>
+
+`MaxMacHeaderFilters`
+
+The maximum number of MAC header filters that the miniport driver
+     supports.
+
+`MaxQueueGroups`
+
+This member is reserved for NDIS.
+
+`MaxQueuesPerQueueGroup`
+
+This member is reserved for NDIS.
+
+`MinLookaheadSplitSize`
+
+The minimum size, in bytes, that the network adapter supports for lookahead
+     packet buffers.
+
+<div class="alert"><b>Note</b>  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Miniport drivers that support this version of NDIS must set this member to zero.</div>
+<div> </div>
+
+`MaxLookaheadSplitSize`
+
+The maximum size, in bytes, that the network adapter supports for lookahead
+     packet buffers.
+
+<div class="alert"><b>Note</b>  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Miniport drivers that support this version of NDIS must set this member to zero.</div>
+<div> </div>
+
+`SupportedARPHeaderFields`
+
+A bitwise OR of flags that specify the types of ARP header fields that a
+     miniport driver can inspect. The following flags are defined:
+     
+
+
+
+
+
+#### NDIS_RECEIVE_FILTER_ARP_HEADER_OPERATION_SUPPORTED
+
+The network adapter supports receive filtering on the ARP operation field.
+
+
+
+#### NDIS_RECEIVE_FILTER_ARP_HEADER_SPA_SUPPORTED
+
+The network adapter supports receive filtering on the ARP source protocol address (SPA) field.
+
+
+
+#### NDIS_RECEIVE_FILTER_ARP_HEADER_TPA_SUPPORTED
+
+The network adapter supports receive filtering on the ARP target protocol address (TPA) field.
+
+`SupportedIPv4HeaderFields`
+
+A bitwise OR of flags that specify the types of IPv4 header fields that a
+     miniport driver can inspect. The following flags are defined:
+     
+
+
+
+
+
+#### NDIS_RECEIVE_FILTER_IPV4_HEADER_PROTOCOL_SUPPORTED
+
+The network adapter supports receive filtering on the IPv4 protocol field.
+
+`SupportedIPv6HeaderFields`
+
+A bitwise OR of flags that specify the types of IPv6 header fields that a
+     miniport driver can inspect. The following flags are defined:
+     
+
+
+
+
+
+#### NDIS_RECEIVE_FILTER_IPV6_HEADER_PROTOCOL_SUPPORTED
+
+The network adapter supports receive filtering on the IPv6 protocol field.
+
 `SupportedUdpHeaderFields`
 
 A bitwise OR of flags that specify the types of IPv6 header fields that a
@@ -536,6 +518,24 @@ The network adapter supports receive filtering on the UDP destination port field
 
 <div class="alert"><b>Note</b>  If the received UDP packet contains IPv4  options or IPv6 extension headers, the network adapter can automatically drop the  received packet and treat it as if it failed the UDP filter test.</div>
 <div> </div>
+
+`MaxFieldTestsPerPacketCoalescingFilter`
+
+The maximum number of tests on packet header fields that can be specified for a single packet coalescing filter. For more information about packet coalescing, see <a href="https://msdn.microsoft.com/500FBF0F-54D9-4675-8E2D-447387DA8798">NDIS Packet Coalescing</a>.
+
+<div class="alert"><b>Note</b>  Network adapters that support packet coalescing must support five or more packet header fields that can be specified for a single packet coalescing filter. If the adapter does not support packet coalescing, the miniport driver must set this value to zero.</div>
+<div> </div>
+
+`MaxPacketCoalescingFilters`
+
+The maximum number of packet coalescing receive filters that are supported by the network adapter.
+
+<div class="alert"><b>Note</b>  Network adapters that support packet coalescing must support ten or more packet coalescing filters. If the adapter does not support packet coalescing, the miniport driver must set this value to zero.</div>
+<div> </div>
+
+`NdisReserved`
+
+Reserved. Set to 0.
 
 ## Remarks
 The <b>NDIS_RECEIVE_FILTER_CAPABILITIES</b> structure is used in the 
@@ -586,11 +586,3 @@ Many of the members and flag settings of the <b>NDIS_RECEIVE_FILTER_CAPABILITIES
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info.md">NDIS_RECEIVE_QUEUE_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_CAPABILITIES structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

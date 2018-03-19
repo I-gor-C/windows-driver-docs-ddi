@@ -63,11 +63,6 @@ typedef enum _SECURE_ELEMENT_EVENT_TYPE {
 <table>
             
                 <tr>
-                    <td>ApplicationSelected</td>
-                    <td>This event is fired when the external reader has issued a “SELECT” command to select an application on the specified secure element. Additionally, the event notification includes the application ID (AID) of the selected application. Not all types of secure elements support the ability to raise this event.</td>
-                </tr>
-            
-                <tr>
                     <td>ExternalReaderArrival</td>
                     <td>This event is fired when an external reader has established a connection with the indicated secure element. No other parameters are given for this event.</td>
                 </tr>
@@ -78,6 +73,16 @@ typedef enum _SECURE_ELEMENT_EVENT_TYPE {
                 </tr>
             
                 <tr>
+                    <td>ApplicationSelected</td>
+                    <td>This event is fired when the external reader has issued a “SELECT” command to select an application on the specified secure element. Additionally, the event notification includes the application ID (AID) of the selected application. Not all types of secure elements support the ability to raise this event.</td>
+                </tr>
+            
+                <tr>
+                    <td>Transaction</td>
+                    <td>This event is fired when an application that is operating within the secure element notifies the controller that some form of action has occurred. This event sends a list of parameters that is coded in BER-TLV fields. This event is mapped to EVT_TRANSACTION.</td>
+                </tr>
+            
+                <tr>
                     <td>HceActivated</td>
                     <td>This event is fired when a listen mode interface is activated to the device host. This event sends the current connection ID, activated RF protocol, and technology.</td>
                 </tr>
@@ -85,11 +90,6 @@ typedef enum _SECURE_ELEMENT_EVENT_TYPE {
                 <tr>
                     <td>HceDeactivated</td>
                     <td>This event is fired when a current active HCE session is terminated. This event sends the currently terminated connection ID.</td>
-                </tr>
-            
-                <tr>
-                    <td>Transaction</td>
-                    <td>This event is fired when an application that is operating within the secure element notifies the controller that some form of action has occurred. This event sends a list of parameters that is coded in BER-TLV fields. This event is mapped to EVT_TRANSACTION.</td>
                 </tr>
 </table>
 

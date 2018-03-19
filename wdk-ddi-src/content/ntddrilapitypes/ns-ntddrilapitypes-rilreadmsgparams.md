@@ -57,11 +57,11 @@ typedef struct _RILREADMSGPARAMS {
 ## Members
 
 
-`dwIndex`
-
-
-
 `hUiccApp`
+
+
+
+`dwIndex`
 
 
 

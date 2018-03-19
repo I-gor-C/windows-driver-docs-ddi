@@ -65,58 +65,9 @@ typedef struct _FLT_FILE_NAME_INFORMATION {
 ## Members
 
 
-`Extension`
+`Size`
 
-UNICODE_STRING structure that contains the extension parsed from the <b>Name</b> string. If no extension is found, <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a> sets <b>Extension.Length</b> to zero.
-
-`FinalComponent`
-
-UNICODE_STRING structure that contains the final name component parsed from the <b>Name</b> string. If no final component name is found, or if <b>Format</b> is FLT_FILE_NAME_SHORT, <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a> sets <b>FinalComponent.Length</b> to zero.
-
-`Format`
-
-Format of the name information stored in the <b>Name</b> member. One of the following. (For an explanation of these formats, see the following Remarks section.) 
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-FLT_FILE_NAME_NORMALIZED
-
-</td>
-<td>
-The <b>Name</b> member contains the normalized name for the file. 
-
-</td>
-</tr>
-<tr>
-<td>
-FLT_FILE_NAME_OPENED
-
-</td>
-<td>
-The <b>Name</b> member contains the name that was used when the file was opened. This name string is not normalized. 
-
-</td>
-</tr>
-<tr>
-<td>
-FLT_FILE_NAME_SHORT
-
-</td>
-<td>
-The <b>Name</b> member contains the short (8.3) name for the file. The short name for a file does not include the volume name, directory path, or stream name. This name string is not normalized. 
-
-</td>
-</tr>
-</table>
-
-`Name`
-
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the file name string, formatted as specified by the <b>Format</b> member.
+Size, in bytes, of the FLT_FILE_NAME_INFORMATION structure.
 
 `NamesParsed`
 
@@ -169,25 +120,74 @@ FLTFL_FILE_NAME_PARSED_PARENT_DIR
 </tr>
 </table>
 
-`ParentDir`
+`Format`
 
-UNICODE_STRING structure that contains the parent directory name parsed from the <b>Name</b> string by <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>. If no parent directory name is found, or if <b>Format</b> is FLT_FILE_NAME_SHORT, <b>FltParseFileNameInformation</b> sets <b>ParentDir.Length</b> to zero.
+Format of the name information stored in the <b>Name</b> member. One of the following. (For an explanation of these formats, see the following Remarks section.) 
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+FLT_FILE_NAME_NORMALIZED
+
+</td>
+<td>
+The <b>Name</b> member contains the normalized name for the file. 
+
+</td>
+</tr>
+<tr>
+<td>
+FLT_FILE_NAME_OPENED
+
+</td>
+<td>
+The <b>Name</b> member contains the name that was used when the file was opened. This name string is not normalized. 
+
+</td>
+</tr>
+<tr>
+<td>
+FLT_FILE_NAME_SHORT
+
+</td>
+<td>
+The <b>Name</b> member contains the short (8.3) name for the file. The short name for a file does not include the volume name, directory path, or stream name. This name string is not normalized. 
+
+</td>
+</tr>
+</table>
+
+`Name`
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the file name string, formatted as specified by the <b>Format</b> member.
+
+`Volume`
+
+UNICODE_STRING structure that contains the volume name parsed from the <b>Name</b> string. If <b>Format</b> is FLT_FILE_NAME_SHORT, <b>Volume.Length</b> is zero.
 
 `Share`
 
 UNICODE_STRING structure that contains the network share name parsed from the <b>Name</b> string for a remote file. If <b>Format</b> is FLT_FILE_NAME_SHORT, <b>Share.Length</b> is zero.
 
-`Size`
+`Extension`
 
-Size, in bytes, of the FLT_FILE_NAME_INFORMATION structure.
+UNICODE_STRING structure that contains the extension parsed from the <b>Name</b> string. If no extension is found, <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a> sets <b>Extension.Length</b> to zero.
 
 `Stream`
 
 UNICODE_STRING structure that contains the stream name parsed from the <b>Name</b> string. If no stream name is found, or if <b>Format</b> is FLT_FILE_NAME_SHORT, <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a> sets <b>Stream.Length</b> to zero.
 
-`Volume`
+`FinalComponent`
 
-UNICODE_STRING structure that contains the volume name parsed from the <b>Name</b> string. If <b>Format</b> is FLT_FILE_NAME_SHORT, <b>Volume.Length</b> is zero.
+UNICODE_STRING structure that contains the final name component parsed from the <b>Name</b> string. If no final component name is found, or if <b>Format</b> is FLT_FILE_NAME_SHORT, <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a> sets <b>FinalComponent.Length</b> to zero.
+
+`ParentDir`
+
+UNICODE_STRING structure that contains the parent directory name parsed from the <b>Name</b> string by <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>. If no parent directory name is found, or if <b>Format</b> is FLT_FILE_NAME_SHORT, <b>FltParseFileNameInformation</b> sets <b>ParentDir.Length</b> to zero.
 
 ## Remarks
 The <b>Name</b> member contains one of the following: 
@@ -372,11 +372,3 @@ Minifilters are responsible for calling <a href="..\fltkernel\nf-fltkernel-fltre
 
 
 <a href="..\fltkernel\nf-fltkernel-fltreferencefilenameinformation.md">FltReferenceFileNameInformation</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_FILE_NAME_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

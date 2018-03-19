@@ -63,13 +63,8 @@ typedef enum _MsrTrackErrorType {
 <table>
             
                 <tr>
-                    <td>MsrTrackErrorType_EndSentinelError</td>
-                    <td>An end sentinel error.</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrTrackErrorType_LrcError</td>
-                    <td>A Longitudinal Redundancy Check (LRC) or checksum error.</td>
+                    <td>MsrTrackErrorType_Unknown</td>
+                    <td>An unspecified error.</td>
                 </tr>
             
                 <tr>
@@ -78,18 +73,23 @@ typedef enum _MsrTrackErrorType {
                 </tr>
             
                 <tr>
-                    <td>MsrTrackErrorType_ParityError</td>
-                    <td>A parity error.</td>
-                </tr>
-            
-                <tr>
                     <td>MsrTrackErrorType_StartSentinelError</td>
                     <td>A start sentinel error.</td>
                 </tr>
             
                 <tr>
-                    <td>MsrTrackErrorType_Unknown</td>
-                    <td>An unspecified error.</td>
+                    <td>MsrTrackErrorType_EndSentinelError</td>
+                    <td>An end sentinel error.</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrTrackErrorType_ParityError</td>
+                    <td>A parity error.</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrTrackErrorType_LrcError</td>
+                    <td>A Longitudinal Redundancy Check (LRC) or checksum error.</td>
                 </tr>
 </table>
 

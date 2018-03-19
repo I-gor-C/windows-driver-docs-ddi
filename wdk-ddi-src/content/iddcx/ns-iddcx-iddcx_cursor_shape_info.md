@@ -63,9 +63,21 @@ typedef struct IDDCX_CURSOR_SHAPE_INFO {
 ## Members
 
 
+`Size`
+
+Total size of the structure.
+
+`ShapeId`
+
+Unique id for the current cursor image. This is incremented each time a cursor image is set, even if that image has been set before. The id is used to check if the current cursor image the driver has cached has changed and cannot be used in any way to allow caching for animated cursor sequences.
+
 `CursorType`
 
 Indicates the type of cursor data written to the cursor shape buffer.
+
+`Width`
+
+Width in pixels of the cursor shape written to the shape buffer.
 
 `Height`
 
@@ -74,18 +86,6 @@ Height in pixels of the cursor shape written to the shape buffer.
 `Pitch`
 
 Pitch in bytes of the cursor shape written to the shape buffer.
-
-`ShapeId`
-
-Unique id for the current cursor image. This is incremented each time a cursor image is set, even if that image has been set before. The id is used to check if the current cursor image the driver has cached has changed and cannot be used in any way to allow caching for animated cursor sequences.
-
-`Size`
-
-Total size of the structure.
-
-`Width`
-
-Width in pixels of the cursor shape written to the shape buffer.
 
 `XHot`
 

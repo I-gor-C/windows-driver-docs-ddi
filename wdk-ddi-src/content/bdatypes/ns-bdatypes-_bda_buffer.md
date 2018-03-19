@@ -58,15 +58,15 @@ typedef struct _BDA_BUFFER {
 ## Members
 
 
-`argbBuffer`
-
-
-
 `lResult`
 
 
 
 `ulBufferSize`
+
+
+
+`argbBuffer`
 
 
 

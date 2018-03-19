@@ -71,17 +71,33 @@ typedef struct _WHEA_MEMORY_ERROR_SECTION {
 ## Members
 
 
-`Bank`
+`ValidBits`
 
-The bank number of the memory bank that contains the memory where the memory error occurred.
+A <a href="..\ntddk\ns-ntddk-_whea_memory_error_section_validbits.md">WHEA_MEMORY_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.
 
-This member contains valid data only if the <b>Validbits.Bank</b> bit is set.
+`ErrorStatus`
 
-`BitPosition`
+A <a href="..\ntddk\ns-ntddk-_whea_error_status.md">WHEA_ERROR_STATUS</a> structure that contains memory error status data.
 
-The bit position where the memory error occurred.
+This member contains valid data only if the <b>Validbits.ErrorStatus</b> bit is set.
 
-This member contains valid data only if the <b>Validbits.BitPosition</b> bit is set.
+`PhysicalAddress`
+
+The physical address where the memory error occurred.
+
+This member contains valid data only if the <b>Validbits.PhysicalAddress</b> bit is set.
+
+`PhysicalAddressMask`
+
+A bit mask that specifies which of the bits in the <b>PhysicalAddress</b> member contain valid address data.
+
+This member contains valid data only if the <b>Validbits.PhysicalAddressMask</b> bit is set.
+
+`Node`
+
+The identifier of the node that contains the memory where the memory error occurred in a system with multiple nodes.
+
+This member contains valid data only if the <b>Validbits.Node</b> bit is set.
 
 `Card`
 
@@ -89,11 +105,17 @@ The card number of the card that contains the memory where the memory error occu
 
 This member contains valid data only if the <b>Validbits.Card</b> bit is set.
 
-`Column`
+`Module`
 
-The column number of the location where the memory error occurred.
+The module number of the module that contains the memory where the memory error occurred.
 
-This member contains valid data only if the <b>Validbits.Column</b> bit is set.
+This member contains valid data only if the <b>Validbits.Module</b> bit is set.
+
+`Bank`
+
+The bank number of the memory bank that contains the memory where the memory error occurred.
+
+This member contains valid data only if the <b>Validbits.Bank</b> bit is set.
 
 `Device`
 
@@ -101,11 +123,41 @@ The device number of the memory device that contains the memory where the memory
 
 This member contains valid data only if the <b>Validbits.Device</b> bit is set.
 
-`ErrorStatus`
+`Row`
 
-A <a href="..\ntddk\ns-ntddk-_whea_error_status.md">WHEA_ERROR_STATUS</a> structure that contains memory error status data.
+The row number of the location where the memory error occurred.
 
-This member contains valid data only if the <b>Validbits.ErrorStatus</b> bit is set.
+This member contains valid data only if the <b>Validbits.Row</b> bit is set.
+
+`Column`
+
+The column number of the location where the memory error occurred.
+
+This member contains valid data only if the <b>Validbits.Column</b> bit is set.
+
+`BitPosition`
+
+The bit position where the memory error occurred.
+
+This member contains valid data only if the <b>Validbits.BitPosition</b> bit is set.
+
+`RequesterId`
+
+An identifier that uniquely identifies the requester associated with the error.
+
+This member contains valid data only if the <b>Validbits.RequesterId</b> bit is set.
+
+`ResponderId`
+
+An identifier that uniquely identifies the responder associated with the error.
+
+This member contains valid data only if the <b>Validbits.ResponderId</b> bit is set.
+
+`TargetId`
+
+The hardware address of the intended target of the transaction.
+
+This member contains valid data only if the <b>Validbits.TargetId</b> bit is set.
 
 `ErrorType`
 
@@ -193,58 +245,6 @@ A memory sparing error.
 
 This member contains valid data only if the <b>Validbits.ErrorType</b> bit is set.
 
-`Module`
-
-The module number of the module that contains the memory where the memory error occurred.
-
-This member contains valid data only if the <b>Validbits.Module</b> bit is set.
-
-`Node`
-
-The identifier of the node that contains the memory where the memory error occurred in a system with multiple nodes.
-
-This member contains valid data only if the <b>Validbits.Node</b> bit is set.
-
-`PhysicalAddress`
-
-The physical address where the memory error occurred.
-
-This member contains valid data only if the <b>Validbits.PhysicalAddress</b> bit is set.
-
-`PhysicalAddressMask`
-
-A bit mask that specifies which of the bits in the <b>PhysicalAddress</b> member contain valid address data.
-
-This member contains valid data only if the <b>Validbits.PhysicalAddressMask</b> bit is set.
-
-`RequesterId`
-
-An identifier that uniquely identifies the requester associated with the error.
-
-This member contains valid data only if the <b>Validbits.RequesterId</b> bit is set.
-
-`ResponderId`
-
-An identifier that uniquely identifies the responder associated with the error.
-
-This member contains valid data only if the <b>Validbits.ResponderId</b> bit is set.
-
-`Row`
-
-The row number of the location where the memory error occurred.
-
-This member contains valid data only if the <b>Validbits.Row</b> bit is set.
-
-`TargetId`
-
-The hardware address of the intended target of the transaction.
-
-This member contains valid data only if the <b>Validbits.TargetId</b> bit is set.
-
-`ValidBits`
-
-A <a href="..\ntddk\ns-ntddk-_whea_memory_error_section_validbits.md">WHEA_MEMORY_ERROR_SECTION_VALIDBITS</a> union that specifies which members of this structure contain valid data.
-
 ## Remarks
 The WHEA_MEMORY_ERROR_SECTION structure describes the error data that is contained in a platform memory error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains a platform memory error section only if the <b>SectionType </b>member of one of the <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe the error record sections for that error record contains MEMORY_ERROR_SECTION_GUID.
 
@@ -269,11 +269,3 @@ The WHEA_MEMORY_ERROR_SECTION structure describes the error data that is contain
 
 
 <a href="..\ntddk\ns-ntddk-_whea_error_status.md">WHEA_ERROR_STATUS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_MEMORY_ERROR_SECTION structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

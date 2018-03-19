@@ -63,12 +63,6 @@ typedef struct _DOT11_INCOMING_ASSOC_REQUEST_RECEIVED_PARAMETERS {
 ## Members
 
 
-`bReAssocReq`
-
-For nonzero values of 
-     <b>uStatus</b>, 
-     <b>bReAssocReq</b> is <b>TRUE</b> if the request from the peer station is a re-association request.
-
 `Header`
 
 The type, revision, and size of the DOT11_INCOMING_ASSOC_REQUEST_RECEIVED_PARAMETERS structure.
@@ -108,6 +102,12 @@ For more information about these members, see
 The media access control (MAC) address of the peer station that sent an association
      request.
 
+`bReAssocReq`
+
+For nonzero values of 
+     <b>uStatus</b>, 
+     <b>bReAssocReq</b> is <b>TRUE</b> if the request from the peer station is a re-association request.
+
 `uAssocReqOffset`
 
 For nonzero values of 
@@ -142,11 +142,3 @@ The Native 802.11 miniport driver includes a DOT11_INCOMING_ASSOC_REQUEST_RECEIV
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_INCOMING_ASSOC_REQUEST_RECEIVED_PARAMETERS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

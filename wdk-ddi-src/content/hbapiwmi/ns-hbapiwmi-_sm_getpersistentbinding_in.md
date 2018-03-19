@@ -58,13 +58,13 @@ typedef struct _SM_GetPersistentBinding_IN {
 ## Members
 
 
-`DomainPortWWN`
-
-A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.
-
 `HbaPortWWN`
 
 The worldwide name (WWN) of the local port whose events the WMI client will receive.
+
+`DomainPortWWN`
+
+A worldwide name (WWN) that specifies the SAS domain worldwide name of the local port.
 
 `InEntryCount`
 

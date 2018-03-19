@@ -61,8 +61,8 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>DockStateDocked</td>
-                    <td>Indicates that the portable computer is docked.</td>
+                    <td>DockStateUnsupported</td>
+                    <td>Indicates that the portable computer does not support docking.</td>
                 </tr>
             
                 <tr>
@@ -71,13 +71,13 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>DockStateUnknown</td>
-                    <td>Indicates that the docking state of the portable computer is not known.</td>
+                    <td>DockStateDocked</td>
+                    <td>Indicates that the portable computer is docked.</td>
                 </tr>
             
                 <tr>
-                    <td>DockStateUnsupported</td>
-                    <td>Indicates that the portable computer does not support docking.</td>
+                    <td>DockStateUnknown</td>
+                    <td>Indicates that the docking state of the portable computer is not known.</td>
                 </tr>
 </table>
 

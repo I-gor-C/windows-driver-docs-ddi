@@ -67,13 +67,13 @@ The HBA port worldwide name (WWN) to which pass-through commands will be sent.
 
 The maximum response buffer size.
 
-`ReqBuffer`
-
-
-
 `ReqBufferSize`
 
 The size, in bytes, of the buffer that will hold the results of the common transport command.
+
+`ReqBuffer`
+
+
 
 ## Remarks
 The WMI tool suite generates a declaration of the SM_SendCTPassThru_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.

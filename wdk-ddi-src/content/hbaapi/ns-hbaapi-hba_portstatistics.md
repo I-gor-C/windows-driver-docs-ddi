@@ -70,54 +70,6 @@ typedef struct HBA_PortStatistics {
 ## Members
 
 
-`DumpedFrames`
-
-Reports the number of frames that were lost due to a lack of host buffers available.
-
-`ErrorFrames`
-
-Reports the number of frames that have been received in error.
-
-`InvalidCRCCount`
-
-Reports the value of the invalid CRC count field of the link error status block for the specified port.
-
-`InvalidTxWordCount`
-
-Reports the value of the invalid transmission word field of the link error status block for the specified port.
-
-`LinkFailureCount`
-
-Reports the link failure count field of the error status block for the port.
-
-`LIPCount`
-
-Reports the number of LIP events that have occurred on a arbitrated loop.
-
-`LossOfSignalCount`
-
-Reports the value of the loss of signal count field of the link error status block for the specified port.
-
-`LossOfSyncCount`
-
-Reports the value of the loss of synchronization count field of the link error status block for the port.
-
-`NOSCount`
-
-Reports the number of NOS events that have occurred on the switched fabric.
-
-`PrimitiveSeqProtocolErrCount`
-
-Reports the value of the primitive sequence protocol error field of the link error status block for the port.
-
-`RxFrames`
-
-Reports the number of fibre channel frames received for all protocols and classes.
-
-`RxWords`
-
-Reports the number of fibre channel words received for all protocols and classes.
-
 `SecondsSinceLastReset`
 
 Reports the number of seconds since the statistics were last reset.
@@ -130,6 +82,54 @@ Reports the number of fibre channel frames transmitted for all protocols and cla
 
 Reports the number of fibre channel words transmitted for all protocols and classes.
 
+`RxFrames`
+
+Reports the number of fibre channel frames received for all protocols and classes.
+
+`RxWords`
+
+Reports the number of fibre channel words received for all protocols and classes.
+
+`LIPCount`
+
+Reports the number of LIP events that have occurred on a arbitrated loop.
+
+`NOSCount`
+
+Reports the number of NOS events that have occurred on the switched fabric.
+
+`ErrorFrames`
+
+Reports the number of frames that have been received in error.
+
+`DumpedFrames`
+
+Reports the number of frames that were lost due to a lack of host buffers available.
+
+`LinkFailureCount`
+
+Reports the link failure count field of the error status block for the port.
+
+`LossOfSyncCount`
+
+Reports the value of the loss of synchronization count field of the link error status block for the port.
+
+`LossOfSignalCount`
+
+Reports the value of the loss of signal count field of the link error status block for the specified port.
+
+`PrimitiveSeqProtocolErrCount`
+
+Reports the value of the primitive sequence protocol error field of the link error status block for the port.
+
+`InvalidTxWordCount`
+
+Reports the value of the invalid transmission word field of the link error status block for the specified port.
+
+`InvalidCRCCount`
+
+Reports the value of the invalid CRC count field of the link error status block for the specified port.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -139,11 +139,3 @@ Reports the number of fibre channel words transmitted for all protocols and clas
 ## See Also
 
 <a href="..\hbaapi\nf-hbaapi-hba_getportstatistics.md">HBA_GetPortStatistics</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_PortStatistics structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

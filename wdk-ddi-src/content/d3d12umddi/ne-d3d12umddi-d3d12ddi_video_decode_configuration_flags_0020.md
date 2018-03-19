@@ -62,13 +62,13 @@ typedef enum D3D12DDI_VIDEO_DECODE_CONFIGURATION_FLAGS_0020 {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_DECODE_CONFIGURATION_FLAG_0020_HEIGHT_ALIGNMENT_MULTIPLE_32_REQUIRED</td>
-                    <td>Indicates that the height of the output decoded surfaces must be a multiple of 32.</td>
+                    <td>D3D12DDI_VIDEO_DECODE_CONFIGURATION_FLAG_0020_NONE</td>
+                    <td>Indicates no configuration flags required.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_DECODE_CONFIGURATION_FLAG_0020_NONE</td>
-                    <td>Indicates no configuration flags required.</td>
+                    <td>D3D12DDI_VIDEO_DECODE_CONFIGURATION_FLAG_0020_HEIGHT_ALIGNMENT_MULTIPLE_32_REQUIRED</td>
+                    <td>Indicates that the height of the output decoded surfaces must be a multiple of 32.</td>
                 </tr>
             
                 <tr>

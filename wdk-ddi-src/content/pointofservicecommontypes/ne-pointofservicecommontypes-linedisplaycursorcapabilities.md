@@ -58,12 +58,7 @@ typedef enum _LineDisplayCursorCapabilities {
 <table>
             
                 <tr>
-                    <td>CursorBlink</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>CursorBlock</td>
+                    <td>CursorNone</td>
                     <td></td>
                 </tr>
             
@@ -73,17 +68,17 @@ typedef enum _LineDisplayCursorCapabilities {
                 </tr>
             
                 <tr>
+                    <td>CursorBlock</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>CursorHalfBlock</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>CursorNone</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>CursorOther</td>
+                    <td>CursorUnderline</td>
                     <td></td>
                 </tr>
             
@@ -93,7 +88,12 @@ typedef enum _LineDisplayCursorCapabilities {
                 </tr>
             
                 <tr>
-                    <td>CursorUnderline</td>
+                    <td>CursorOther</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>CursorBlink</td>
                     <td></td>
                 </tr>
 </table>

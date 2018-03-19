@@ -66,8 +66,18 @@ typedef enum _WDF_IO_TARGET_SENT_IO_ACTION {
 <table>
             
                 <tr>
+                    <td>WdfIoTargetSentIoUndefined</td>
+                    <td>Reservied for system use.</td>
+                </tr>
+            
+                <tr>
                     <td>WdfIoTargetCancelSentIo</td>
                     <td>Before the framework stops the I/O target, it will attempt to cancel I/O requests that are in the I/O target's queue. The framework cancels all of the target queue's I/O requests before <a href="https://msdn.microsoft.com/library/windows/hardware/ff559217">IWDFIoTargetStateManagement::Stop</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff560289">IWDFRemoteTarget::Stop</a> returns.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfIoTargetWaitForSentIoToComplete</td>
+                    <td>Before the framework stops the I/O target, it will wait for I/O requests that are in the I/O target's queue to be completed. The framework completes all of the target queue's I/O requests, and calls each request's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a> callback function, before <a href="https://msdn.microsoft.com/library/windows/hardware/ff559217">IWDFIoTargetStateManagement::Stop</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff560289">IWDFRemoteTarget::Stop</a> returns.</td>
                 </tr>
             
                 <tr>
@@ -78,16 +88,6 @@ typedef enum _WDF_IO_TARGET_SENT_IO_ACTION {
                 <tr>
                     <td>WdfIoTargetSentIoMaximum</td>
                     <td>Valid enumeration values were exceeded.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfIoTargetSentIoUndefined</td>
-                    <td>Reservied for system use.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfIoTargetWaitForSentIoToComplete</td>
-                    <td>Before the framework stops the I/O target, it will wait for I/O requests that are in the I/O target's queue to be completed. The framework completes all of the target queue's I/O requests, and calls each request's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a> callback function, before <a href="https://msdn.microsoft.com/library/windows/hardware/ff559217">IWDFIoTargetStateManagement::Stop</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff560289">IWDFRemoteTarget::Stop</a> returns.</td>
                 </tr>
 </table>
 
@@ -108,11 +108,3 @@ For the KMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfd
 ## See Also
 
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_target_sent_io_action.md">WDF_IO_TARGET_SENT_IO_ACTION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_TARGET_SENT_IO_ACTION enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

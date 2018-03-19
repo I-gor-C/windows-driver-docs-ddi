@@ -57,13 +57,13 @@ typedef struct {
 ## Members
 
 
-`EndOfFrameTimestamp`
-
-Contains end of frame timestamp information.
-
 `StartOfFrameTimestamp`
 
 Contains  start of frame timestamp information.
+
+`EndOfFrameTimestamp`
+
+Contains end of frame timestamp information.
 
 
 ## Requirements

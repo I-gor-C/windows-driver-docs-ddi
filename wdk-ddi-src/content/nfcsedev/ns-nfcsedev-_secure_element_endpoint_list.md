@@ -58,13 +58,13 @@ typedef struct _SECURE_ELEMENT_ENDPOINT_LIST {
 ## Members
 
 
-`EndpointList`
-
-
-
 `NumberOfEndpoints`
 
 The number of enumerated endpoints on the NFC controller.
+
+`EndpointList`
+
+
 
 
 ## Requirements

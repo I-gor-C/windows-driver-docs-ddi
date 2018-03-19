@@ -69,8 +69,38 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>COLOR_GRAY</td>
+                    <td>Specifies a 16-bit gray-scale pixel value. Correlates to the ICM GRAYCOLOR.</td>
+                </tr>
+            
+                <tr>
+                    <td>COLOR_RGB</td>
+                    <td>Specifies a 48-bit RGB pixel value. Correlates to the ICM RGBCOLOR structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>COLOR_XYZ</td>
+                    <td>Specifies a 48-bit CIEXYZ pixel value. Correlates to the ICM XYZCOLOR structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>COLOR_Yxy</td>
+                    <td>Specifies a 48-bit CIE Yxy pixel value. Correlates to the ICM YxyCOLOR structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>COLOR_Lab</td>
+                    <td>Specifies a 48-bit CIELAB pixel value. Correlates to the ICM LabCOLOR structure.</td>
+                </tr>
+            
+                <tr>
                     <td>COLOR_3_CHANNEL</td>
                     <td>Specifies a 48-bit generic three-channel pixel value. Correlates to the ICM GENERIC3CHANNEL structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>COLOR_CMYK</td>
+                    <td>Specifies a 48-bit CMYK pixel value. Correlates to the ICM CMYKCOLOR structure.</td>
                 </tr>
             
                 <tr>
@@ -94,38 +124,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>COLOR_CMYK</td>
-                    <td>Specifies a 48-bit CMYK pixel value. Correlates to the ICM CMYKCOLOR structure.</td>
-                </tr>
-            
-                <tr>
-                    <td>COLOR_GRAY</td>
-                    <td>Specifies a 16-bit gray-scale pixel value. Correlates to the ICM GRAYCOLOR.</td>
-                </tr>
-            
-                <tr>
-                    <td>COLOR_Lab</td>
-                    <td>Specifies a 48-bit CIELAB pixel value. Correlates to the ICM LabCOLOR structure.</td>
-                </tr>
-            
-                <tr>
                     <td>COLOR_NAMED</td>
                     <td>Specifies a 32-bit named color-indexed pixel value. Correlates to the ICM NAMEDCOLOR structure.</td>
-                </tr>
-            
-                <tr>
-                    <td>COLOR_RGB</td>
-                    <td>Specifies a 48-bit RGB pixel value. Correlates to the ICM RGBCOLOR structure.</td>
-                </tr>
-            
-                <tr>
-                    <td>COLOR_XYZ</td>
-                    <td>Specifies a 48-bit CIEXYZ pixel value. Correlates to the ICM XYZCOLOR structure.</td>
-                </tr>
-            
-                <tr>
-                    <td>COLOR_Yxy</td>
-                    <td>Specifies a 48-bit CIE Yxy pixel value. Correlates to the ICM YxyCOLOR structure.</td>
                 </tr>
 </table>
 

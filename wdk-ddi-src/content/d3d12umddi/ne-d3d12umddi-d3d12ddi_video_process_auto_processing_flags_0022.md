@@ -67,18 +67,8 @@ typedef enum D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022 {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_ANAMORPHIC_SCALING</td>
-                    <td>Anamorphic scaling support.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_COLOR_CORRECTION</td>
-                    <td>Color correction support.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_CUSTOM</td>
-                    <td>Additional processing not represented by these constants.</td>
+                    <td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_NONE</td>
+                    <td>No flags. The driver does not support any of the video processing capabilities.</td>
                 </tr>
             
                 <tr>
@@ -97,6 +87,11 @@ typedef enum D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022 {
                 </tr>
             
                 <tr>
+                    <td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_COLOR_CORRECTION</td>
+                    <td>Color correction support.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_FLESH_TONE_MAPPING</td>
                     <td>Flesh tone mapping support.</td>
                 </tr>
@@ -107,13 +102,18 @@ typedef enum D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022 {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_NONE</td>
-                    <td>No flags. The driver does not support any of the video processing capabilities.</td>
+                    <td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_SUPER_RESOLUTION</td>
+                    <td>Enhanced image resolution support.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_SUPER_RESOLUTION</td>
-                    <td>Enhanced image resolution support.</td>
+                    <td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_ANAMORPHIC_SCALING</td>
+                    <td>Anamorphic scaling support.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAG_0022_CUSTOM</td>
+                    <td>Additional processing not represented by these constants.</td>
                 </tr>
 </table>
 

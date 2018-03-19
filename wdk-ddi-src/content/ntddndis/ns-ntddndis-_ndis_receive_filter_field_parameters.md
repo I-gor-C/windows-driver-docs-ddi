@@ -100,57 +100,51 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 ## Members
 
 
-`_FIELD_VALUE`
+`Header`
 
+The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b> structure. The driver sets the 
+     <b>Type</b> member of the structure that 
+     <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
 
+To indicate the version of the <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b> structure, the driver sets the 
+     <b>Revision</b> member to one of the following values:
 
-`_HEADER_FIELD`
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_2"></a><a id="ndis_receive_filter_field_parameters_revision_2"></a><dl>
+<dt><b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_2</b></dt>
+<dt>2</dt>
+</dl>
+</td>
+<td width="60%">
+Added additional members to the <b>HeaderField</b> union for NDIS 6.30.
 
+The driver sets the 
+        <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_2</b>.
 
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_1"></a><a id="ndis_receive_filter_field_parameters_revision_1"></a><dl>
+<dt><b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_1</b></dt>
+<dt>1</dt>
+</dl>
+</td>
+<td width="60%">
+Original version for NDIS 6.20.
 
-`_RESULT_VALUE`
+The driver sets the 
+        <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_1</b>.
 
-
-
-`FieldValue`
-
-The value that the miniport adapter compares to the corresponding header field value in incoming packets. The location of the header field value is determined by the field type that is specified in the <b>HeaderField</b> member.
-
-For more information, see the Remarks section.
-
-This union contains the following members:
-
-
-
-#### FieldByteValue
-
-A <b>UCHAR</b> value to compare with a field in a network packet.
-
-<div class="alert"><b>Note</b>  If the <b>MacHeaderField</b> member specifies an <b>NdisMacHeaderFieldPacketType</b> enumeration value, this member contains an <a href="..\ntddndis\ne-ntddndis-_ndis_mac_packet_type.md">NDIS_MAC_PACKET_TYPE</a> enumeration value.</div>
-<div> </div>
-
-
-#### FieldShortValue
-
-A <b>USHORT</b> value to compare with a field in a network packet.
-
-
-
-#### FieldLongValue
-
-A <b>ULONG</b> value to compare with a field in a network packet.
-
-
-
-#### FieldLong64Value
-
-A <b>ULONG64</b> value to compare with a field in a network packet.
-
-
-
-#### FieldByteArrayValue
-
-A <b>UCHAR</b> array to compare with a field in a network packet.
+</td>
+</tr>
+</table>
 
 `Flags`
 
@@ -199,51 +193,9 @@ For more information about this flag, see the Remarks section.
 
 The type of header in the network data frame.
 
-`Header`
+`ReceiveFilterTest`
 
-The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
-     <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b> structure. The driver sets the 
-     <b>Type</b> member of the structure that 
-     <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
-
-To indicate the version of the <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b> structure, the driver sets the 
-     <b>Revision</b> member to one of the following values:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_2"></a><a id="ndis_receive_filter_field_parameters_revision_2"></a><dl>
-<dt><b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_2</b></dt>
-<dt>2</dt>
-</dl>
-</td>
-<td width="60%">
-Added additional members to the <b>HeaderField</b> union for NDIS 6.30.
-
-The driver sets the 
-        <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_2</b>.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_1"></a><a id="ndis_receive_filter_field_parameters_revision_1"></a><dl>
-<dt><b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_1</b></dt>
-<dt>1</dt>
-</dl>
-</td>
-<td width="60%">
-Original version for NDIS 6.20.
-
-The driver sets the 
-        <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_1</b>.
-
-</td>
-</tr>
-</table>
+The type of test to perform for the receive filter.
 
 `HeaderField`
 
@@ -289,9 +241,53 @@ An
 The type of field in a User Datagram Protocol
 (UDP) header.
 
-`ReceiveFilterTest`
+`_HEADER_FIELD`
 
-The type of test to perform for the receive filter.
+
+
+`FieldValue`
+
+The value that the miniport adapter compares to the corresponding header field value in incoming packets. The location of the header field value is determined by the field type that is specified in the <b>HeaderField</b> member.
+
+For more information, see the Remarks section.
+
+This union contains the following members:
+
+
+
+#### FieldByteValue
+
+A <b>UCHAR</b> value to compare with a field in a network packet.
+
+<div class="alert"><b>Note</b>  If the <b>MacHeaderField</b> member specifies an <b>NdisMacHeaderFieldPacketType</b> enumeration value, this member contains an <a href="..\ntddndis\ne-ntddndis-_ndis_mac_packet_type.md">NDIS_MAC_PACKET_TYPE</a> enumeration value.</div>
+<div> </div>
+
+
+#### FieldShortValue
+
+A <b>USHORT</b> value to compare with a field in a network packet.
+
+
+
+#### FieldLongValue
+
+A <b>ULONG</b> value to compare with a field in a network packet.
+
+
+
+#### FieldLong64Value
+
+A <b>ULONG64</b> value to compare with a field in a network packet.
+
+
+
+#### FieldByteArrayValue
+
+A <b>UCHAR</b> array to compare with a field in a network packet.
+
+`_FIELD_VALUE`
+
+
 
 `ResultValue`
 
@@ -332,6 +328,10 @@ A <b>ULONG64</b> value to compare with a test result.
 #### ResultByteArrayValue
 
 A <b>UCHAR</b> array to compare with a test result.
+
+`_RESULT_VALUE`
+
+
 
 ## Remarks
 The <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b> structure specifies the filter test criterion for one field
@@ -450,11 +450,3 @@ If a VLAN tag is present in the received packet, the network adapter must remove
 
 
 <a href="..\ntddndis\ne-ntddndis-_ndis_udp_header_field.md">NDIS_UDP_HEADER_FIELD</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

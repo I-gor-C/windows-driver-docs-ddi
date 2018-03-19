@@ -69,17 +69,33 @@ typedef struct _SCSI_PASS_THROUGH {
 ## Members
 
 
-`Cdb`
+`Length`
 
-Specifies the SCSI command descriptor block to be sent to the target device.
+Contains the value of <b>sizeof</b>(SCSI_PASS_THROUGH).
+
+`ScsiStatus`
+
+Reports the SCSI status that was returned by the HBA or the target device.
+
+`PathId`
+
+Indicates the SCSI port or bus for the request.
+
+`TargetId`
+
+Indicates the target controller or device on the bus.
+
+`Lun`
+
+Indicates the logical unit number of the device.
 
 `CdbLength`
 
 Indicates the size in bytes of the SCSI command descriptor block.
 
-`DataBufferOffset`
+`SenseInfoLength`
 
-Contains an offset from the beginning of this structure to the data buffer. The offset must respect the data alignment requirements of the device.
+Indicates the size in bytes of the request-sense buffer.
 
 `DataIn`
 
@@ -93,37 +109,21 @@ Contains an offset from the beginning of this structure to the data buffer. The 
 
 Indicates the size in bytes of the data buffer. Many devices transfer chunks of data of predefined length. The value in <b>DataTransferLength</b> must be an integral multiple of this predefined, minimum length that is specified by the device. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred.
 
-`Length`
+`TimeOutValue`
 
-Contains the value of <b>sizeof</b>(SCSI_PASS_THROUGH).
+Indicates the interval in seconds that the request can execute before the port driver considers it timed out.
 
-`Lun`
+`DataBufferOffset`
 
-Indicates the logical unit number of the device.
-
-`PathId`
-
-Indicates the SCSI port or bus for the request.
-
-`ScsiStatus`
-
-Reports the SCSI status that was returned by the HBA or the target device.
-
-`SenseInfoLength`
-
-Indicates the size in bytes of the request-sense buffer.
+Contains an offset from the beginning of this structure to the data buffer. The offset must respect the data alignment requirements of the device.
 
 `SenseInfoOffset`
 
 Offset from the beginning of this structure to the request-sense buffer.
 
-`TargetId`
+`Cdb`
 
-Indicates the target controller or device on the bus.
-
-`TimeOutValue`
-
-Indicates the interval in seconds that the request can execute before the port driver considers it timed out.
+Specifies the SCSI command descriptor block to be sent to the target device.
 
 ## Remarks
 The SCSI_PASS_THROUGH structure is used with <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through.md">IOCTL_SCSI_PASS_THROUGH</a>, which is a buffered device control request. To bypass buffering in system memory, callers should use <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct.md">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>. When handling an IOCTL_SCSI_PASS_THROUGH_DIRECT request, the system locks down the buffer in user memory and the device accesses this memory directly. 
@@ -150,11 +150,3 @@ The members of SCSI_PASS_THROUGH correspond roughly to the members of a <a href=
 
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct.md">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SCSI_PASS_THROUGH structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

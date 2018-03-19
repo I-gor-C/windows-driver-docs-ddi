@@ -61,17 +61,12 @@ typedef enum _RILRFSTATEPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_RFSTATE_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_RFSTATE_NONE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_RFSTATE_RFDATA</td>
+                    <td>RIL_PARAM_RFSTATE_RFSTATE</td>
                     <td></td>
                 </tr>
             
@@ -81,7 +76,12 @@ typedef enum _RILRFSTATEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_RFSTATE_RFSTATE</td>
+                    <td>RIL_PARAM_RFSTATE_RFDATA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_RFSTATE_ALL</td>
                     <td></td>
                 </tr>
 </table>

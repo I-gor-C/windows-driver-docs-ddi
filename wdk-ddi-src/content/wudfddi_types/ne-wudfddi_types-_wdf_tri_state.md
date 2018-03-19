@@ -64,17 +64,17 @@ typedef enum _WDF_TRI_STATE {
 <table>
             
                 <tr>
+                    <td>WdfUseDefault</td>
+                    <td>The meaning of this enumerator is specific to its use as a structure member or function parameter.</td>
+                </tr>
+            
+                <tr>
                     <td>WdfFalse</td>
                     <td>The meaning of this enumerator is specific to its use as a structure member or function parameter.</td>
                 </tr>
             
                 <tr>
                     <td>WdfTrue</td>
-                    <td>The meaning of this enumerator is specific to its use as a structure member or function parameter.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfUseDefault</td>
                     <td>The meaning of this enumerator is specific to its use as a structure member or function parameter.</td>
                 </tr>
 </table>

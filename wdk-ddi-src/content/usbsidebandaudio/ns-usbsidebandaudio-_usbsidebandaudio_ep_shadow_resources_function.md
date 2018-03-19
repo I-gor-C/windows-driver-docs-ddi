@@ -62,6 +62,14 @@ typedef struct _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION {
 ## Members
 
 
+`CbSize`
+
+
+
+`pUsbEndpointDescriptor`
+
+
+
 `bcdAudioSpec`
 
 
@@ -71,14 +79,6 @@ typedef struct _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION {
 
 
 `bSlotSize`
-
-
-
-`CbSize`
-
-
-
-`pUsbEndpointDescriptor`
 
 
 

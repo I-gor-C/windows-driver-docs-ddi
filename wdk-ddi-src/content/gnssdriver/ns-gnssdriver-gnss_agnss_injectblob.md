@@ -62,28 +62,6 @@ typedef struct {
 ## Members
 
 
-`AgnssFormat`
-
-Data format of the blob.
-
-The formats are defined as macros (GNSS_AGNSSFORMAT_*).
-
-`BlobData`
-
-
-
-`BlobOui`
-
-This field indicates the 3-byte OUI of silicon vendor or device maker.
-
-`BlobSize`
-
-Size of the blob data in bytes.
-
-`BlobVersion`
-
-Version of the blob from the same vendor.
-
 `Size`
 
 Structure size.
@@ -91,6 +69,28 @@ Structure size.
 `Version`
 
 Version number.
+
+`BlobOui`
+
+This field indicates the 3-byte OUI of silicon vendor or device maker.
+
+`BlobVersion`
+
+Version of the blob from the same vendor.
+
+`AgnssFormat`
+
+Data format of the blob.
+
+The formats are defined as macros (GNSS_AGNSSFORMAT_*).
+
+`BlobSize`
+
+Size of the blob data in bytes.
+
+`BlobData`
+
+
 
 
 ## Requirements

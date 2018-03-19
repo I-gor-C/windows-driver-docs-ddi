@@ -63,12 +63,6 @@ typedef struct _DOT11_INCOMING_ASSOC_DECISION {
 ## Members
 
 
-`bAccept`
-
-A Boolean value that indicates whether the miniport driver accepts the incoming association
-     request. If <b>TRUE</b>, the driver instructs the NIC to accept the association request. Otherwise, the NIC
-     should reject the request.
-
 `Header`
 
 The type, revision, and size of the DOT11_INCOMING_ASSOC_DECISION structure. This member is
@@ -126,11 +120,16 @@ For more information about these members, see
 The media access control (MAC) address of the peer station that the 802.11 station attempted to
      connect to.
 
-`uAssocResponseIEsLength`
+`bAccept`
 
-The length of the additional information elements (IEs), in bytes, which the NIC must add to the
-     probe response frame that it sends to the peer station that seeks association. The default value is
-     zero.
+A Boolean value that indicates whether the miniport driver accepts the incoming association
+     request. If <b>TRUE</b>, the driver instructs the NIC to accept the association request. Otherwise, the NIC
+     should reject the request.
+
+`usReasonCode`
+
+A USHORT value that represents a reason code to include in the NIC's association response if 
+     <b>bAccept</b> is <b>FALSE</b>.
 
 `uAssocResponseIEsOffset`
 
@@ -139,10 +138,11 @@ The offset of the additional information elements (IEs), in bytes, which the NIC
      to the start of the buffer that contains the DOT11_INCOMING_ASSOC_DECISION structure. The default value
      is zero.
 
-`usReasonCode`
+`uAssocResponseIEsLength`
 
-A USHORT value that represents a reason code to include in the NIC's association response if 
-     <b>bAccept</b> is <b>FALSE</b>.
+The length of the additional information elements (IEs), in bytes, which the NIC must add to the
+     probe response frame that it sends to the peer station that seeks association. The default value is
+     zero.
 
 ## Remarks
 This structure is used with 
@@ -163,11 +163,3 @@ This structure is used with
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_INCOMING_ASSOC_DECISION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

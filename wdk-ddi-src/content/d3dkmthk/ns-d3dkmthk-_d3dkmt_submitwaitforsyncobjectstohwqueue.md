@@ -59,10 +59,6 @@ typedef struct _D3DKMT_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE  {
 ## Members
 
 
-`FenceValueArray`
-
-Monitored fence values to be waited.
-
 `hHwQueue`
 
 Context queue to submit the command to.
@@ -74,6 +70,10 @@ Number of objects to wait on.
 `ObjectHandleArray`
 
 Handles to monitored fence synchronization objects to wait on.
+
+`FenceValueArray`
+
+Monitored fence values to be waited.
 
 
 ## Requirements

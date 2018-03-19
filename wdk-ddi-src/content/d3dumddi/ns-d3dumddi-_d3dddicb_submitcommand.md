@@ -78,29 +78,53 @@ typedef struct _D3DDDICB_SUBMITCOMMAND {
 ## Members
 
 
-`BegunAPISequenceNumberLow0Size`
+`Commands`
 
-Used by the driver to pass the context's API sequence number.
-
-`BegunAPISequenceNumberLow1Size`
-
-Used by the driver to pass the context's API sequence number.
-
-`BroadcastContext`
-
-Specifies the handle of the context to execute the specified commands.
-
-`BroadcastContextCount`
-
-Specifies the number of context these command should be submitted to. This count must be at least 1.
+GPU virtual address to the commands being submitted to the context for execution. This information is provided to the kernel mode driver during command submission and is also used for debugging purposes.
 
 `CommandLength`
 
 Specifies the length, in bytes, of the commands being submitted to the GPU. This information is provided to the kernel  mode driver during command submission and is also used for debugging purposes.
 
-`Commands`
+`Flags`
 
-GPU virtual address to the commands being submitted to the context for execution. This information is provided to the kernel mode driver during command submission and is also used for debugging purposes.
+An instance of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_submitcommandflags.md">D3DDDICB_SUBMITCOMMANDFLAGS</a> structure.
+
+`BroadcastContextCount`
+
+Specifies the number of context these command should be submitted to. This count must be at least 1.
+
+`BroadcastContext`
+
+Specifies the handle of the context to execute the specified commands.
+
+`pPrivateDriverData`
+
+Pointer to driver private data to be passed to the kernel mode driver as part of this submission.
+
+`PrivateDriverDataSize`
+
+Size of the private driver data information being passed. This size must be smaller than the size requested by the kernel mode driver for submission private driver data.
+
+`NumPrimaries`
+
+Specifies the number of primaries and swapchain back buffers being written to by the submitted commands. This is equal to the number of allocations in the <b>WrittenPrimaries</b> array.
+
+`WrittenPrimaries`
+
+Arrays of handle to the primaries and swapchain back buffers being written to by the submitted commands.
+
+`MarkerLogType`
+
+A <a href="..\d3dumddi\ne-d3dumddi-d3dddi_markerlogtype.md">D3DDDI_MARKERLOGTYPE</a> enumeration that indicates the type of marker in the Event Tracing for Windows (ETW) log that the user-mode display driver supports.
+
+`RenderCBSequence`
+
+A unique identifier for each <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function call. Starts at a value of 1 for contexts associated with single-threaded user-mode DDIs and ranges to a value of 0x80000001 for contexts associated with free-threaded user mode DDIs. The user-mode display driver must increment the value for each <i>pfnRenderCb</i> call it makes on any engine.
+
+`FirstAPISequenceNumberHigh`
+
+Used by the driver to pass the context's API sequence number.
 
 `CompletedAPISequenceNumberLow0Size`
 
@@ -110,41 +134,13 @@ Used by the driver to pass the context's API sequence number.
 
 Used by the driver to pass the context's API sequence number.
 
-`FirstAPISequenceNumberHigh`
+`BegunAPISequenceNumberLow0Size`
 
 Used by the driver to pass the context's API sequence number.
 
-`Flags`
+`BegunAPISequenceNumberLow1Size`
 
-An instance of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_submitcommandflags.md">D3DDDICB_SUBMITCOMMANDFLAGS</a> structure.
-
-`HistoryBufferArray`
-
-A pointer to the array of history buffers.
-
-`hSyncToken`
-
-
-
-`MarkerLogType`
-
-A <a href="..\d3dumddi\ne-d3dumddi-d3dddi_markerlogtype.md">D3DDDI_MARKERLOGTYPE</a> enumeration that indicates the type of marker in the Event Tracing for Windows (ETW) log that the user-mode display driver supports.
-
-`NumHistoryBuffers`
-
-The number of history buffers.
-
-`NumPrimaries`
-
-Specifies the number of primaries and swapchain back buffers being written to by the submitted commands. This is equal to the number of allocations in the <b>WrittenPrimaries</b> array.
-
-`pBegunAPISequenceNumberLow0`
-
-A pointer used by the driver to pass the context's API sequence number.
-
-`pBegunAPISequenceNumberLow1`
-
-A pointer used by the driver to pass the context's API sequence number.
+Used by the driver to pass the context's API sequence number.
 
 `pCompletedAPISequenceNumberLow0`
 
@@ -154,29 +150,33 @@ A pointer used by the driver to pass the context's API sequence number.
 
 A pointer used by the driver to pass the context's API sequence number.
 
-`pPrivateDriverData`
+`pBegunAPISequenceNumberLow0`
 
-Pointer to driver private data to be passed to the kernel mode driver as part of this submission.
+A pointer used by the driver to pass the context's API sequence number.
 
-`pReserved`
+`pBegunAPISequenceNumberLow1`
 
-
-
-`PrivateDriverDataSize`
-
-Size of the private driver data information being passed. This size must be smaller than the size requested by the kernel mode driver for submission private driver data.
-
-`RenderCBSequence`
-
-A unique identifier for each <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function call. Starts at a value of 1 for contexts associated with single-threaded user-mode DDIs and ranges to a value of 0x80000001 for contexts associated with free-threaded user mode DDIs. The user-mode display driver must increment the value for each <i>pfnRenderCb</i> call it makes on any engine.
+A pointer used by the driver to pass the context's API sequence number.
 
 `Reserved`
 
 This member is reserved and should be set to zero.
 
-`WrittenPrimaries`
+`NumHistoryBuffers`
 
-Arrays of handle to the primaries and swapchain back buffers being written to by the submitted commands.
+The number of history buffers.
+
+`HistoryBufferArray`
+
+A pointer to the array of history buffers.
+
+`hSyncToken`
+
+
+
+`pReserved`
+
+
 
 ## Remarks
 The <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_submitcommandcb.md">pfnSubmitCommandCb</a> code path no longer provides an allocation list for the user mode driver to provide a list of allocations that will be read and written to during this command. However, it is necessary to synchronize some writes that would not normally be known without the allocation list. For this, a new small allocation list specifically for surfaces which will be written to and used for displaying content. The <b>WrittenPrimaries</b> array should be used to provide such allocations.
@@ -204,11 +204,3 @@ If the driver receives a call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_crea
 
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDICB_SUBMITCOMMAND structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

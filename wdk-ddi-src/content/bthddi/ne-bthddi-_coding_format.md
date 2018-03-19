@@ -58,6 +58,11 @@ typedef enum _CODING_FORMAT {
 <table>
             
                 <tr>
+                    <td>ScoCodingFormatULaw</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>ScoCodingFormatALaw</td>
                     <td></td>
                 </tr>
@@ -68,22 +73,17 @@ typedef enum _CODING_FORMAT {
                 </tr>
             
                 <tr>
+                    <td>ScoCodingFormatTransparent</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>ScoCodingFormatLinearPCM</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>ScoCodingFormatMSBC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>ScoCodingFormatTransparent</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>ScoCodingFormatULaw</td>
                     <td></td>
                 </tr>
             

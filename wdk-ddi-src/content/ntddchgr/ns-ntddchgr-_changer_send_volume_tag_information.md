@@ -58,6 +58,10 @@ typedef struct _CHANGER_SEND_VOLUME_TAG_INFORMATION {
 ## Members
 
 
+`StartingElement`
+
+Describes the first element of the range to search for or to set in a structure of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>.
+
 `ActionCode`
 
 Indicates the operation to perform. The <b>Features0</b> member of <a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a> indicates whether the changer supports a particular category of operation:
@@ -80,10 +84,6 @@ Undefined operations clear previously defined volume tag information for a singl
 
 </li>
 </ul>
-
-`StartingElement`
-
-Describes the first element of the range to search for or to set in a structure of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>.
 
 `VolumeIDTemplate`
 
@@ -110,11 +110,3 @@ Specifies the template to be used by the device to search for volume IDs. For a 
 
 
 <a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CHANGER_SEND_VOLUME_TAG_INFORMATION structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -60,21 +60,21 @@ typedef struct _WWAN_PROVIDER2 {
 ## Members
 
 
-`ErrorRate`
-
-A coded value that represents a percentage range of error rates. Please refer to <a href="..\wwan\ns-wwan-_wwan_signal_state.md">WWAN_SIGNAL_STATE</a> on the format of this member.
-
 `Provider`
 
 A formatted WWAN_PROVIDER object that represents details about a network provider.
+
+`WwanCellularClass`
+
+The cellular class that the provider uses.
 
 `Rssi`
 
 A value that represents the strength of the wireless signal. Please refer to <a href="..\wwan\ns-wwan-_wwan_signal_state.md">WWAN_SIGNAL_STATE</a> on the format of this member.
 
-`WwanCellularClass`
+`ErrorRate`
 
-The cellular class that the provider uses.
+A coded value that represents a percentage range of error rates. Please refer to <a href="..\wwan\ns-wwan-_wwan_signal_state.md">WWAN_SIGNAL_STATE</a> on the format of this member.
 
 
 ## Requirements
@@ -94,11 +94,3 @@ The cellular class that the provider uses.
 
 
 <a href="..\wwan\ns-wwan-_wwan_provider.md">WWAN_PROVIDER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PROVIDER2 structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

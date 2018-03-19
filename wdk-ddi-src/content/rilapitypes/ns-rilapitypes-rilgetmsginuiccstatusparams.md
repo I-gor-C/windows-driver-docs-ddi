@@ -58,11 +58,11 @@ typedef struct _RILGETMSGINUICCSTATUSPARAMS {
 ## Members
 
 
-`dwIndex`
-
-
-
 `hUiccApp`
+
+
+
+`dwIndex`
 
 
 

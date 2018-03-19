@@ -62,33 +62,33 @@ typedef struct _MS_SMHBA_SAS_PHY {
 ## Members
 
 
-`domainPortWWN`
+`PhyIdentifier`
 
-The Port_Identifier that has the smallest value of any Port_Identifier of an expander SMP.
-
-`HardwareMaxLinkRate`
-
-The maximum physical link rate that is supported by the physical port.
-
-`HardwareMinLinkRate`
-
-The minimum physical link rate that is supported by the physical port.
+The port whose physical configuration and link information is being returned. It is unique within the context of the SAS device that contains the physical port.
 
 `NegotiatedLinkRate`
 
 The state or the transmission speed that is negotiated by the physical port for the physical link.
 
-`PhyIdentifier`
+`ProgrammedMinLinkRate`
 
-The port whose physical configuration and link information is being returned. It is unique within the context of the SAS device that contains the physical port.
+The minimum physical link rate that is set by the physical port control mechanism.
+
+`HardwareMinLinkRate`
+
+The minimum physical link rate that is supported by the physical port.
 
 `ProgrammedMaxLinkRate`
 
 The maximum physical link rate that is set by the physical port control mechanism.
 
-`ProgrammedMinLinkRate`
+`HardwareMaxLinkRate`
 
-The minimum physical link rate that is set by the physical port control mechanism.
+The maximum physical link rate that is supported by the physical port.
+
+`domainPortWWN`
+
+The Port_Identifier that has the smallest value of any Port_Identifier of an expander SMP.
 
 ## Remarks
 Link rates are defined in hpaapi.h as HBA_SASSPEED_1_5GBIT and HBA_SASSPEED_3GBIT.

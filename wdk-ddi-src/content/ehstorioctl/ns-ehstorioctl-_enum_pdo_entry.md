@@ -64,13 +64,21 @@ typedef struct _ENUM_PDO_ENTRY {
 ## Members
 
 
-`bImplementationMajor`
+`type`
 
+This member indicates the type of the PDO that is being identified, as defined by PDO_TYPE.
 
+`state`
 
-`bImplementationMinor`
+This member contains information about the current PnP state of the PDO, as defined by PDO_STATE.
 
+`capabilities`
 
+This member contains a bitmask with bits indicating information about the silo represented by the PDO in question, as defined by PDO_CAPS.
+
+`ulSTID`
+
+This member contains the silo type identifier, as defined and assigned by the IEEE 1667 working group.
 
 `bSpecificationMajor`
 
@@ -80,21 +88,13 @@ typedef struct _ENUM_PDO_ENTRY {
 
 
 
-`capabilities`
+`bImplementationMajor`
 
-This member contains a bitmask with bits indicating information about the silo represented by the PDO in question, as defined by PDO_CAPS.
 
-`state`
 
-This member contains information about the current PnP state of the PDO, as defined by PDO_STATE.
+`bImplementationMinor`
 
-`type`
 
-This member indicates the type of the PDO that is being identified, as defined by PDO_TYPE.
-
-`ulSTID`
-
-This member contains the silo type identifier, as defined and assigned by the IEEE 1667 working group.
 
 `wszDeviceInstancePath`
 
@@ -109,11 +109,3 @@ The string contained in this member is the device instance path in a form suitab
 ## See Also
 
 <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_device_enumerate_pdos.md">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ENUM_PDO_ENTRY structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

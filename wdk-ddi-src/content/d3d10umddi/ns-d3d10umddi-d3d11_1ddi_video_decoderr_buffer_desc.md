@@ -70,15 +70,19 @@ typedef struct D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC {
 ## Members
 
 
-`BufferIndex`
+`hResource`
 
-Reserved for system use.
+A handle to the resource that will receive the decrypted and decode frame buffers.
 
 `BufferType`
 
 The type of buffer, specified as a constant value of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_video_decoder_buffer_type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> enumeration.
 
 In D3d10umddi.h, <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_video_decoder_buffer_type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a> and <b>D3D11_1DDI_VIDEO_DECODER_BUFFER_TYPE</b> are defined as the same type.
+
+`BufferIndex`
+
+Reserved for system use.
 
 `DataOffset`
 
@@ -88,41 +92,19 @@ The offset of the relevant data from the beginning of the buffer, in bytes. This
 
 The offset of the relevant data from the beginning of the buffer, in bytes. This value must be zero.
 
-`EncryptedBlockInfo`
-
-A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_encrypted_block_info.md">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a> structure that specifies which bytes of the surface are encrypted.
-
 `FirstMBaddress`
 
 The macroblock address of the first macroblock in the buffer. The macroblock address is given in raster scan order.
-
-`Height`
-
-Reserved for system use. Set to zero.
-
-`hResource`
-
-A handle to the resource that will receive the decrypted and decode frame buffers.
-
-`IVSize`
-
-The size of the buffer specified in the <b>pIV</b> member. If <b>pIV</b> is <b>NULL</b>, set this member to zero.
 
 `NumMBsInBuffer`
 
 The number of macroblocks of data in the buffer. This count includes skipped macroblocks.
 
-`PartialEncryption`
+`Width`
 
-If <b>TRUE</b>, the video surfaces are partially encrypted.
+Reserved for system use. Set to zero.
 
-`pIV`
-
-A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_aes_ctr_iv.md">D3D11_1DDI_AES_CTR_IV</a> structure that contains an initialization vector (IV) for the frame buffer data that was encrypted by using the 128-bit Advanced Encryption Standard CTR mode (AES-CTR) block cipher encryption algorithm.
-
-If the decode buffer does not contain any encrypted data, set <b>pIV</b> to <b>NULL</b>.
-
-`ReservedBits`
+`Height`
 
 Reserved for system use. Set to zero.
 
@@ -130,9 +112,27 @@ Reserved for system use. Set to zero.
 
 Reserved for system use. Set to zero.
 
-`Width`
+`ReservedBits`
 
 Reserved for system use. Set to zero.
+
+`pIV`
+
+A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_aes_ctr_iv.md">D3D11_1DDI_AES_CTR_IV</a> structure that contains an initialization vector (IV) for the frame buffer data that was encrypted by using the 128-bit Advanced Encryption Standard CTR mode (AES-CTR) block cipher encryption algorithm.
+
+If the decode buffer does not contain any encrypted data, set <b>pIV</b> to <b>NULL</b>.
+
+`IVSize`
+
+The size of the buffer specified in the <b>pIV</b> member. If <b>pIV</b> is <b>NULL</b>, set this member to zero.
+
+`PartialEncryption`
+
+If <b>TRUE</b>, the video surfaces are partially encrypted.
+
+`EncryptedBlockInfo`
+
+A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_encrypted_block_info.md">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a> structure that specifies which bytes of the surface are encrypted.
 
 
 ## Requirements
@@ -152,11 +152,3 @@ Reserved for system use. Set to zero.
 
 
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_video_decoder_buffer_type.md">D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

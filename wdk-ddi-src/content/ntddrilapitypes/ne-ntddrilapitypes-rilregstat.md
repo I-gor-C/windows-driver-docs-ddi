@@ -65,12 +65,12 @@ enum RILREGSTAT  {
 <table>
             
                 <tr>
-                    <td>RIL_REGSTAT_ATTEMPTING</td>
+                    <td>RIL_REGSTAT_UNKNOWN</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_REGSTAT_DENIED</td>
+                    <td>RIL_REGSTAT_UNREGISTERED</td>
                     <td></td>
                 </tr>
             
@@ -80,7 +80,12 @@ enum RILREGSTAT  {
                 </tr>
             
                 <tr>
-                    <td>RIL_REGSTAT_MAX</td>
+                    <td>RIL_REGSTAT_ATTEMPTING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGSTAT_DENIED</td>
                     <td></td>
                 </tr>
             
@@ -95,12 +100,7 @@ enum RILREGSTAT  {
                 </tr>
             
                 <tr>
-                    <td>RIL_REGSTAT_UNKNOWN</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_REGSTAT_UNREGISTERED</td>
+                    <td>RIL_REGSTAT_MAX</td>
                     <td></td>
                 </tr>
 </table>
@@ -114,11 +114,3 @@ enum RILREGSTAT  {
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILREGSTAT enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

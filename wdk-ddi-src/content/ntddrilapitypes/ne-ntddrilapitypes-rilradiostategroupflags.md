@@ -58,12 +58,12 @@ typedef enum _RILRADIOSTATEGROUPFLAGS {
 <table>
             
                 <tr>
-                    <td>RIL_RADIOSTATE_GROUPFLAG_HASSUBGROUPS</td>
+                    <td>RIL_RADIOSTATE_GROUPFLAG_NONE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_RADIOSTATE_GROUPFLAG_NONE</td>
+                    <td>RIL_RADIOSTATE_GROUPFLAG_HASSUBGROUPS</td>
                     <td></td>
                 </tr>
 </table>

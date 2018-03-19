@@ -59,21 +59,21 @@ typedef struct _STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR {
 ## Members
 
 
-`AdapterMaxIoCount`
+`Version`
 
-The adapter max outstanding I/O count.
-
-`LunMaxIoCount`
-
-The logical unit number (LUN) max outstanding I/O count.
+The version of this structure. The Size serves as the version.
 
 `Size`
 
 The size of this structure.
 
-`Version`
+`LunMaxIoCount`
 
-The version of this structure. The Size serves as the version.
+The logical unit number (LUN) max outstanding I/O count.
+
+`AdapterMaxIoCount`
+
+The adapter max outstanding I/O count.
 
 
 ## Requirements

@@ -61,10 +61,6 @@ typedef struct _NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO {
 ## Members
 
 
-`DeviceId`
-
-A USHORT value that uniquely identifies the device type of the VF network adapter.
-
 `Header`
 
 The type, revision, and size of the <b>NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
@@ -81,10 +77,6 @@ Original version for NDIS 6.30 and later.
 
 Set the <b>Size</b> member to NDIS_SIZEOF_SRIOV_VENDOR_DEVICE_ID_INFO_REVISION_1.
 
-`VendorId`
-
-A USHORT value that uniquely identifies the vendor of the VF network adapter.
-
 `VFId`
 
 An NDIS_SRIOV_FUNCTION_ID value that specifies the unique identifier of the VF network adapter.
@@ -93,6 +85,14 @@ An NDIS_SRIOV_FUNCTION_ID value that specifies the unique identifier of the VF n
 
 </div>
 <div> </div>
+
+`VendorId`
+
+A USHORT value that uniquely identifies the vendor of the VF network adapter.
+
+`DeviceId`
+
+A USHORT value that uniquely identifies the device type of the VF network adapter.
 
 ## Remarks
 The <b>NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO</b> structure is used in the OID method requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451913">OID_SRIOV_VF_VENDOR_DEVICE_ID</a>.
@@ -118,11 +118,3 @@ The <b>NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO</b> structure is used in the OID meth
 
 
 <b></b>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -120,28 +120,28 @@ typedef enum _STORAGE_MEDIA_TYPE {
 <table>
             
                 <tr>
-                    <td>ABL_5_WO</td>
-                    <td>Indicates a ablative 5.25" write once optical disk.</td>
+                    <td>DDS_4mm</td>
+                    <td>Indicates a DAT DDS1 or DDS2 tape device (all vendors).</td>
                 </tr>
             
                 <tr>
-                    <td>ADR_1</td>
-                    <td>Indicates an on-stream ADR media type device.</td>
+                    <td>MiniQic</td>
+                    <td>Indicates a mini-QIC tape device.</td>
                 </tr>
             
                 <tr>
-                    <td>ADR_2</td>
-                    <td>Indicates an on-stream ADR media type device.</td>
+                    <td>Travan</td>
+                    <td>Indicates a Travan TR-1, 2 or 3 tape device.</td>
                 </tr>
             
                 <tr>
-                    <td>AIT_8mm</td>
-                    <td>Indicates an AIT2 or higher 8mm tape device.</td>
+                    <td>QIC</td>
+                    <td>Indicates a QIC tape device.</td>
                 </tr>
             
                 <tr>
-                    <td>AIT1_8mm</td>
-                    <td>Indicates an 8mm Sony AIT tape device.</td>
+                    <td>MP_8mm</td>
+                    <td>Indicates an 8mm Exabyte metal particle tape device.</td>
                 </tr>
             
                 <tr>
@@ -150,38 +150,8 @@ typedef enum _STORAGE_MEDIA_TYPE {
                 </tr>
             
                 <tr>
-                    <td>AVATAR_F2</td>
-                    <td>Indicates a 2.5" Floppy device.</td>
-                </tr>
-            
-                <tr>
-                    <td>CD_R</td>
-                    <td>Indicates a CD-recordable (write once) optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>CD_ROM</td>
-                    <td>Indicates a CD optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>CD_RW</td>
-                    <td>Indicates a CD-rewritable optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>CLEANER_CARTRIDGE</td>
-                    <td>Indicates a drive type that supports drive cleaners.</td>
-                </tr>
-            
-                <tr>
-                    <td>CYGNET_12_WO</td>
-                    <td>Indicates a Cygnet/ATG 12" write once optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>DDS_4mm</td>
-                    <td>Indicates a DAT DDS1 or DDS2 tape device (all vendors).</td>
+                    <td>AIT1_8mm</td>
+                    <td>Indicates an 8mm Sony AIT tape device.</td>
                 </tr>
             
                 <tr>
@@ -190,53 +160,8 @@ typedef enum _STORAGE_MEDIA_TYPE {
                 </tr>
             
                 <tr>
-                    <td>DMI</td>
-                    <td>Indicates a Exabyte DMI tape device and compatible devices.</td>
-                </tr>
-            
-                <tr>
-                    <td>DST_L</td>
-                    <td>Indicates a type DST Ampex large tape device.</td>
-                </tr>
-            
-                <tr>
-                    <td>DST_M</td>
-                    <td>Indicates a type DST Ampex medium tape device.</td>
-                </tr>
-            
-                <tr>
-                    <td>DST_S</td>
-                    <td>Indicates a type DST Ampex small tape device.</td>
-                </tr>
-            
-                <tr>
-                    <td>DV_6mm</td>
-                    <td>Indicates a 6mm digital video tape device.</td>
-                </tr>
-            
-                <tr>
-                    <td>DVD_R</td>
-                    <td>Indicates a DVD-recordable (write once) optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>DVD_RAM</td>
-                    <td>Indicates a DVD-RAM optical device.</td>
-                </tr>
-            
-                <tr>
-                    <td>DVD_ROM</td>
-                    <td>Indicates a DVD-ROM optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>DVD_RW</td>
-                    <td>Indicates a DVD-rewritable optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>HITACHI_12_WO</td>
-                    <td>Indicates a Hitachi 12" write once optical disk.</td>
+                    <td>NCTP</td>
+                    <td>Indicates a Philips NCTP tape device.</td>
                 </tr>
             
                 <tr>
@@ -260,123 +185,8 @@ typedef enum _STORAGE_MEDIA_TYPE {
                 </tr>
             
                 <tr>
-                    <td>IOMEGA_JAZ</td>
-                    <td>Indicates an Iomega Jaz magnetic disk device.</td>
-                </tr>
-            
-                <tr>
-                    <td>IOMEGA_ZIP</td>
-                    <td>Indicates Iomega zip magnetic disk device.</td>
-                </tr>
-            
-                <tr>
-                    <td>KODAK_14_WO</td>
-                    <td>Indicates a Kodak 14" write once optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>LTO_Accelis</td>
-                    <td>Indicates an IBM, HP, or Seagate LTO Accelis</td>
-                </tr>
-            
-                <tr>
-                    <td>LTO_Ultrium</td>
-                    <td>Indicates an IBM, HP, or Seagate LTO Ultrium device.</td>
-                </tr>
-            
-                <tr>
-                    <td>MiniQic</td>
-                    <td>Indicates a mini-QIC tape device.</td>
-                </tr>
-            
-                <tr>
-                    <td>MO_3_RW</td>
-                    <td>Indicates a 3.5" rewritable MO optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>MO_5_LIMDOW</td>
-                    <td>Indicates a MO 5.25" rewritable (LIMDOW) optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>MO_5_RW</td>
-                    <td>Indicates a MO 5.25" rewritable (not LIMDOW) optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>MO_5_WO</td>
-                    <td>Indicates a MO 5.25" write once optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>MO_NFR_525</td>
-                    <td>Indicates a near field recording (Terastor) optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>MP_8mm</td>
-                    <td>Indicates an 8mm Exabyte metal particle tape device.</td>
-                </tr>
-            
-                <tr>
-                    <td>MP2_8mm</td>
-                    <td>Indicates an 8mm Hitachi tape device.</td>
-                </tr>
-            
-                <tr>
-                    <td>NCTP</td>
-                    <td>Indicates a Philips NCTP tape device.</td>
-                </tr>
-            
-                <tr>
-                    <td>NIKON_12_RW</td>
-                    <td>Indicates a Nikon 12" rewritable optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>PC_5_RW</td>
-                    <td>Indicates a phase change 5.25" rewritable optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>PC_5_WO</td>
-                    <td>Indicates a phase change 5.25" write once optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>PD_5_RW</td>
-                    <td>Indicates a phase change dual rewritable optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>PHILIPS_12_WO</td>
-                    <td>Indicates a Philips/LMS 12" write once optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>PINNACLE_APEX_5_RW</td>
-                    <td>Indicates a pinnacle apex 4.6-GB rewritable optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>QIC</td>
-                    <td>Indicates a QIC tape device.</td>
-                </tr>
-            
-                <tr>
-                    <td>SAIT</td>
-                    <td>SAIT Tapes</td>
-                </tr>
-            
-                <tr>
-                    <td>SONY_12_WO</td>
-                    <td>Indicates a Sony 12" write once optical disk.</td>
-                </tr>
-            
-                <tr>
-                    <td>SONY_D2</td>
-                    <td>Indicates a Sony D2S or D2L tape device.</td>
+                    <td>STK_DATA_D3</td>
+                    <td>Indicates an STK data D3 tape device.</td>
                 </tr>
             
                 <tr>
@@ -385,18 +195,143 @@ typedef enum _STORAGE_MEDIA_TYPE {
                 </tr>
             
                 <tr>
-                    <td>STK_9940</td>
-                    <td>STK 9940</td>
+                    <td>DV_6mm</td>
+                    <td>Indicates a 6mm digital video tape device.</td>
                 </tr>
             
                 <tr>
-                    <td>STK_DATA_D3</td>
-                    <td>Indicates an STK data D3 tape device.</td>
+                    <td>DMI</td>
+                    <td>Indicates a Exabyte DMI tape device and compatible devices.</td>
                 </tr>
             
                 <tr>
-                    <td>STK_EAGLE</td>
-                    <td></td>
+                    <td>SONY_D2</td>
+                    <td>Indicates a Sony D2S or D2L tape device.</td>
+                </tr>
+            
+                <tr>
+                    <td>CLEANER_CARTRIDGE</td>
+                    <td>Indicates a drive type that supports drive cleaners.</td>
+                </tr>
+            
+                <tr>
+                    <td>CD_ROM</td>
+                    <td>Indicates a CD optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>CD_R</td>
+                    <td>Indicates a CD-recordable (write once) optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>CD_RW</td>
+                    <td>Indicates a CD-rewritable optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>DVD_ROM</td>
+                    <td>Indicates a DVD-ROM optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>DVD_R</td>
+                    <td>Indicates a DVD-recordable (write once) optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>DVD_RW</td>
+                    <td>Indicates a DVD-rewritable optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>MO_3_RW</td>
+                    <td>Indicates a 3.5" rewritable MO optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>MO_5_WO</td>
+                    <td>Indicates a MO 5.25" write once optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>MO_5_RW</td>
+                    <td>Indicates a MO 5.25" rewritable (not LIMDOW) optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>MO_5_LIMDOW</td>
+                    <td>Indicates a MO 5.25" rewritable (LIMDOW) optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>PC_5_WO</td>
+                    <td>Indicates a phase change 5.25" write once optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>PC_5_RW</td>
+                    <td>Indicates a phase change 5.25" rewritable optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>PD_5_RW</td>
+                    <td>Indicates a phase change dual rewritable optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>ABL_5_WO</td>
+                    <td>Indicates a ablative 5.25" write once optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>PINNACLE_APEX_5_RW</td>
+                    <td>Indicates a pinnacle apex 4.6-GB rewritable optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>SONY_12_WO</td>
+                    <td>Indicates a Sony 12" write once optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>PHILIPS_12_WO</td>
+                    <td>Indicates a Philips/LMS 12" write once optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>HITACHI_12_WO</td>
+                    <td>Indicates a Hitachi 12" write once optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>CYGNET_12_WO</td>
+                    <td>Indicates a Cygnet/ATG 12" write once optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>KODAK_14_WO</td>
+                    <td>Indicates a Kodak 14" write once optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>MO_NFR_525</td>
+                    <td>Indicates a near field recording (Terastor) optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>NIKON_12_RW</td>
+                    <td>Indicates a Nikon 12" rewritable optical disk.</td>
+                </tr>
+            
+                <tr>
+                    <td>IOMEGA_ZIP</td>
+                    <td>Indicates Iomega zip magnetic disk device.</td>
+                </tr>
+            
+                <tr>
+                    <td>IOMEGA_JAZ</td>
+                    <td>Indicates an Iomega Jaz magnetic disk device.</td>
                 </tr>
             
                 <tr>
@@ -415,13 +350,28 @@ typedef enum _STORAGE_MEDIA_TYPE {
                 </tr>
             
                 <tr>
-                    <td>Travan</td>
-                    <td>Indicates a Travan TR-1, 2 or 3 tape device.</td>
+                    <td>AVATAR_F2</td>
+                    <td>Indicates a 2.5" Floppy device.</td>
                 </tr>
             
                 <tr>
-                    <td>VXATape</td>
-                    <td>VXA (Ecrix 8mm) Tape</td>
+                    <td>MP2_8mm</td>
+                    <td>Indicates an 8mm Hitachi tape device.</td>
+                </tr>
+            
+                <tr>
+                    <td>DST_S</td>
+                    <td>Indicates a type DST Ampex small tape device.</td>
+                </tr>
+            
+                <tr>
+                    <td>DST_M</td>
+                    <td>Indicates a type DST Ampex medium tape device.</td>
+                </tr>
+            
+                <tr>
+                    <td>DST_L</td>
+                    <td>Indicates a type DST Ampex large tape device.</td>
                 </tr>
             
                 <tr>
@@ -432,6 +382,56 @@ typedef enum _STORAGE_MEDIA_TYPE {
                 <tr>
                     <td>VXATape_2</td>
                     <td>Indicates an 8mm Ecrix tape device.</td>
+                </tr>
+            
+                <tr>
+                    <td>STK_EAGLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>LTO_Ultrium</td>
+                    <td>Indicates an IBM, HP, or Seagate LTO Ultrium device.</td>
+                </tr>
+            
+                <tr>
+                    <td>LTO_Accelis</td>
+                    <td>Indicates an IBM, HP, or Seagate LTO Accelis</td>
+                </tr>
+            
+                <tr>
+                    <td>DVD_RAM</td>
+                    <td>Indicates a DVD-RAM optical device.</td>
+                </tr>
+            
+                <tr>
+                    <td>AIT_8mm</td>
+                    <td>Indicates an AIT2 or higher 8mm tape device.</td>
+                </tr>
+            
+                <tr>
+                    <td>ADR_1</td>
+                    <td>Indicates an on-stream ADR media type device.</td>
+                </tr>
+            
+                <tr>
+                    <td>ADR_2</td>
+                    <td>Indicates an on-stream ADR media type device.</td>
+                </tr>
+            
+                <tr>
+                    <td>STK_9940</td>
+                    <td>STK 9940</td>
+                </tr>
+            
+                <tr>
+                    <td>SAIT</td>
+                    <td>SAIT Tapes</td>
+                </tr>
+            
+                <tr>
+                    <td>VXATape</td>
+                    <td>VXA (Ecrix 8mm) Tape</td>
                 </tr>
 </table>
 
@@ -452,11 +452,3 @@ typedef enum _STORAGE_MEDIA_TYPE {
 
 
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_MEDIA_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

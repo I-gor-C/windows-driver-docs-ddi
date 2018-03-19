@@ -58,11 +58,11 @@ typedef struct _RILUICCFILEPATH {
 ## Members
 
 
-`dwFilePathLen`
-
-
-
 `hUiccApp`
+
+
+
+`dwFilePathLen`
 
 
 

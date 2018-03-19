@@ -57,13 +57,13 @@ typedef struct _D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_RATE_INFO_0032 {
 ## Members
 
 
-`InputFrameOrField`
-
-The input frame or field.
-
 `OutputIndex`
 
 The output index.
+
+`InputFrameOrField`
+
+The input frame or field.
 
 
 ## Requirements

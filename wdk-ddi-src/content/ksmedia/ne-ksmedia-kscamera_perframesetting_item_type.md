@@ -64,16 +64,6 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSCAMERA_PERFRAMESETTING_ITEM_CUSTOM</td>
-                    <td>This is a custom item type.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSCAMERA_PERFRAMESETTING_ITEM_EXPOSURE_COMPENSATION</td>
-                    <td>This is an exposure compensation type.</td>
-                </tr>
-            
-                <tr>
                     <td>KSCAMERA_PERFRAMESETTING_ITEM_EXPOSURE_TIME</td>
                     <td>This is an exposure item type.</td>
                 </tr>
@@ -84,8 +74,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSCAMERA_PERFRAMESETTING_ITEM_FOCUS</td>
-                    <td>This is a focus item type.</td>
+                    <td>KSCAMERA_PERFRAMESETTING_ITEM_EXPOSURE_COMPENSATION</td>
+                    <td>This is an exposure compensation type.</td>
                 </tr>
             
                 <tr>
@@ -94,8 +84,18 @@ typedef enum  {
                 </tr>
             
                 <tr>
+                    <td>KSCAMERA_PERFRAMESETTING_ITEM_FOCUS</td>
+                    <td>This is a focus item type.</td>
+                </tr>
+            
+                <tr>
                     <td>KSCAMERA_PERFRAMESETTING_ITEM_PHOTOCONFIRMATION</td>
                     <td>This is a photo confirmation item type.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSCAMERA_PERFRAMESETTING_ITEM_CUSTOM</td>
+                    <td>This is a custom item type.</td>
                 </tr>
 </table>
 

@@ -61,9 +61,9 @@ typedef struct _MPIO_ADAPTER_INFORMATION {
 ## Members
 
 
-`AdapterName`
+`PathId`
 
-A string field that returns the friendly name of the host bus adapter through which this path is exposed.
+An unsigned 64-bitfield that represents an identifier that is assigned to a particular path. This field will match the PathIdentifier field in the instance(s) of the PDO_INFORMATION class that represent device(s) exposed via this path.
 
 `BusNumber`
 
@@ -81,9 +81,9 @@ An unsigned 8-bitfield that corresponds to the function number that is assigned 
 
 Should be zero.
 
-`PathId`
+`AdapterName`
 
-An unsigned 64-bitfield that represents an identifier that is assigned to a particular path. This field will match the PathIdentifier field in the instance(s) of the PDO_INFORMATION class that represent device(s) exposed via this path.
+A string field that returns the friendly name of the host bus adapter through which this path is exposed.
 
 
 ## Requirements

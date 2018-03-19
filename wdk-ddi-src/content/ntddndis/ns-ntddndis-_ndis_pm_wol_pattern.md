@@ -88,20 +88,6 @@ typedef struct _NDIS_PM_WOL_PATTERN {
 ## Members
 
 
-`_WOL_PATTERN`
-
-
-
-`Flags`
-
-A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.
-
-`FriendlyName`
-
-An 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_pm_counted_string.md">NDIS_PM_COUNTED_STRING</a> structure
-     that contains the user-readable description of the WOL packet.
-
 `Header`
 
 The type, revision, and size of the <b>NDIS_PM_WOL_PATTERN</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
@@ -126,21 +112,9 @@ Original version for NDIS 6.20.
 
 Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_WOL_PATTERN_REVISION_1.
 
-`NextWoLPatternOffset`
+`Flags`
 
-A ULONG value that contains an offset, in bytes. The 
-     <b>NextWoLPatternOffset</b> member of each NDIS_PM_WOL_PATTERN structure in a list is set to the offset
-     (from the beginning of the OID request 
-     <b>InformationBuffer</b>) of the next NDIS_PM_WOL_PATTERN structure in the list. If 
-     <b>NextWoLPatternOffset</b> is zero, the current structure is the last structure in the list.
-
-`PatternId`
-
-A ULONG value that contains an NDIS-provided value that identifies the WOL pattern. Before NDIS
-     sends the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569764">OID_PM_ADD_WOL_PATTERN</a> OID request down
-     to the underlying NDIS drivers or completes the request to the overlying driver, NDIS sets 
-     <b>PatternId</b> to a value that is unique among the WOL patterns on a network adapter.
+A ULONG value that contains a bitwise OR of flags. This member is reserved for NDIS.
 
 `Priority`
 
@@ -177,9 +151,35 @@ An
      <a href="..\ntddndis\ne-ntddndis-_ndis_pm_wol_packet.md">NDIS_PM_WOL_PACKET</a> enumeration value that
      specifies the type of the WOL packet.
 
+`FriendlyName`
+
+An 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_pm_counted_string.md">NDIS_PM_COUNTED_STRING</a> structure
+     that contains the user-readable description of the WOL packet.
+
+`PatternId`
+
+A ULONG value that contains an NDIS-provided value that identifies the WOL pattern. Before NDIS
+     sends the 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569764">OID_PM_ADD_WOL_PATTERN</a> OID request down
+     to the underlying NDIS drivers or completes the request to the overlying driver, NDIS sets 
+     <b>PatternId</b> to a value that is unique among the WOL patterns on a network adapter.
+
+`NextWoLPatternOffset`
+
+A ULONG value that contains an offset, in bytes. The 
+     <b>NextWoLPatternOffset</b> member of each NDIS_PM_WOL_PATTERN structure in a list is set to the offset
+     (from the beginning of the OID request 
+     <b>InformationBuffer</b>) of the next NDIS_PM_WOL_PATTERN structure in the list. If 
+     <b>NextWoLPatternOffset</b> is zero, the current structure is the last structure in the list.
+
 `WoLPattern`
 
 A union that contains the following member structures.
+
+`_WOL_PATTERN`
+
+
 
 ## Remarks
 The NDIS_PM_WOL_PATTERN structure is used in the 
@@ -239,11 +239,3 @@ The upper layer driver sets the NDIS_PM_WOL_IPV4_DEST_ADDR_WILDCARD_ENABLED and
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_pm_counted_string.md">NDIS_PM_COUNTED_STRING</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_WOL_PATTERN structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

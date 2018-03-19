@@ -59,13 +59,13 @@ typedef struct IDARG_IN_OPM_GET_CERTIFICATE {
 ## Members
 
 
-`CertificateBufferSizeInBytes`
-
-[in] Size of the buffer provided for the driver to copy the certificate to.
-
 `CertificateType`
 
 [in] Type of certificate the information request is for.
+
+`CertificateBufferSizeInBytes`
+
+[in] Size of the buffer provided for the driver to copy the certificate to.
 
 `pCertificate`
 

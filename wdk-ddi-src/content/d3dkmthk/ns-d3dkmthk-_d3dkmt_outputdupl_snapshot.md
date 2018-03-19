@@ -61,29 +61,29 @@ typedef struct _D3DKMT_OUTPUTDUPL_SNAPSHOT {
 ## Members
 
 
-`NumOutputDuplContexts`
+`Size`
 
-[out] The number of contexts in which output duplication is occurring.
-
-`NumVidPnSources`
-
-[out] The number of video present network (VidPN) sources.
-
-`OutputDuplDebugInfos`
-
-Reserved for system use. Set to zero.
-
-`SessionActiveConnectionsCount`
-
-[out] The total number of active contexts in this session. The value may be more than the number of active contexts in the 2-D array, which are per adapter.
+[in/out] The size, in bytes, of the entire structure.
 
 `SessionProcessCount`
 
 [out] The number of processes in this session that are currently duplicating output. The value of <b>NumOutputDuplContexts</b> specifies the maximum possible number of processes.
 
-`Size`
+`SessionActiveConnectionsCount`
 
-[in/out] The size, in bytes, of the entire structure.
+[out] The total number of active contexts in this session. The value may be more than the number of active contexts in the 2-D array, which are per adapter.
+
+`NumVidPnSources`
+
+[out] The number of video present network (VidPN) sources.
+
+`NumOutputDuplContexts`
+
+[out] The number of contexts in which output duplication is occurring.
+
+`OutputDuplDebugInfos`
+
+Reserved for system use. Set to zero.
 
 
 ## Requirements

@@ -57,13 +57,13 @@ typedef struct {
 ## Members
 
 
-`Interval`
-
-Specifies a recurrence interval, also 64-bit.
-
 `TimeBase`
 
 Specifies a 64-bit time base.
+
+`Interval`
+
+Specifies a recurrence interval, also 64-bit.
 
 
 ## Requirements
@@ -78,11 +78,3 @@ Specifies a 64-bit time base.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561805">KSEVENT_CLOCK_INTERVAL_MARK</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSINTERVAL structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

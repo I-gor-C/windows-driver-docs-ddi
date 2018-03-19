@@ -69,32 +69,13 @@ typedef enum FWPS_FIELDS_INBOUND_IPPACKET_V4_ {
 <table>
             
                 <tr>
-                    <td>FWPS_FIELD_INBOUND_IPPACKET_V4_COMPARTMENT_ID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_INBOUND_IPPACKET_V4_FLAGS</td>
-                    <td>A bitwise OR of a combination of filtering condition flags. For information about the possible
-     flags, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff549942">Filtering Condition Flags</a>.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_INBOUND_IPPACKET_V4_INTERFACE_INDEX</td>
-                    <td>The index of the network interface, as enumerated by the network stack.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_INBOUND_IPPACKET_V4_INTERFACE_TYPE</td>
-                    <td>The type of the local network interface, as defined by the Internet Assigned Numbers Authority
-     (IANA). For more information, see 
-     <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a>.</td>
-                </tr>
-            
-                <tr>
                     <td>FWPS_FIELD_INBOUND_IPPACKET_V4_IP_LOCAL_ADDRESS</td>
                     <td>The local IP address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_INBOUND_IPPACKET_V4_IP_REMOTE_ADDRESS</td>
+                    <td>The remote IP address.</td>
                 </tr>
             
                 <tr>
@@ -110,19 +91,27 @@ typedef enum FWPS_FIELDS_INBOUND_IPPACKET_V4_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_INBOUND_IPPACKET_V4_IP_REMOTE_ADDRESS</td>
-                    <td>The remote IP address.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_INBOUND_IPPACKET_V4_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
+                    <td>FWPS_FIELD_INBOUND_IPPACKET_V4_INTERFACE_INDEX</td>
+                    <td>The index of the network interface, as enumerated by the network stack.</td>
                 </tr>
             
                 <tr>
                     <td>FWPS_FIELD_INBOUND_IPPACKET_V4_SUB_INTERFACE_INDEX</td>
                     <td>The index of the logical network interface, as enumerated by the network stack.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_INBOUND_IPPACKET_V4_FLAGS</td>
+                    <td>A bitwise OR of a combination of filtering condition flags. For information about the possible
+     flags, see 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff549942">Filtering Condition Flags</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_INBOUND_IPPACKET_V4_INTERFACE_TYPE</td>
+                    <td>The type of the local network interface, as defined by the Internet Assigned Numbers Authority
+     (IANA). For more information, see 
+     <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a>.</td>
                 </tr>
             
                 <tr>
@@ -132,6 +121,17 @@ typedef enum FWPS_FIELDS_INBOUND_IPPACKET_V4_ {
      by IANA. For more information, see 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a> and the
      Windows SDK.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_INBOUND_IPPACKET_V4_COMPARTMENT_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_INBOUND_IPPACKET_V4_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 
@@ -149,11 +149,3 @@ typedef enum FWPS_FIELDS_INBOUND_IPPACKET_V4_ {
 
 
 <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_FIELDS_INBOUND_IPPACKET_V4 enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

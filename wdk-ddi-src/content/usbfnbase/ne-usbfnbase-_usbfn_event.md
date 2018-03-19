@@ -71,20 +71,18 @@ typedef enum _USBFN_EVENT {
 <table>
             
                 <tr>
+                    <td>UsbfnEventMinimum</td>
+                    <td>The minimum value in this enumeration.</td>
+                </tr>
+            
+                <tr>
                     <td>UsbfnEventAttach</td>
                     <td>VBUS is powered. No action is required.</td>
                 </tr>
             
                 <tr>
-                    <td>UsbfnEventBusTearDown</td>
-                    <td>Deprecated.</td>
-                </tr>
-            
-                <tr>
-                    <td>UsbfnEventConfigured</td>
-                    <td>USBFN has received a SET_CONFIGURATION setup packet. Transfer
-    requests from class drivers are now permitted.
-    The <b>ConfigurationValue</b> of the notification is set to <b>wValue.W</b>.</td>
+                    <td>UsbfnEventReset</td>
+                    <td>USBFN has completed a USB Reset. If previously configured, class drivers should reset their state. Transfer requests will be cancelled.</td>
                 </tr>
             
                 <tr>
@@ -96,35 +94,15 @@ typedef enum _USBFN_EVENT {
                 </tr>
             
                 <tr>
-                    <td>UsbfnEventMaximum</td>
-                    <td>The minimum value in this enumeration.</td>
-                </tr>
-            
-                <tr>
-                    <td>UsbfnEventMinimum</td>
-                    <td>The minimum value in this enumeration.</td>
-                </tr>
-            
-                <tr>
-                    <td>UsbfnEventPortType</td>
-                    <td>Deprecated.</td>
-                </tr>
-            
-                <tr>
-                    <td>UsbfnEventReset</td>
-                    <td>USBFN has completed a USB Reset. If previously configured, class drivers should reset their state. Transfer requests will be cancelled.</td>
+                    <td>UsbfnEventSuspend</td>
+                    <td>There have been no SOF packets on the bus for 3ms.
+    If a class driver wants to issue a remote wake up,
+     the driver must use <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_signal_remote_wakeup.md">IOCTL_INTERNAL_USBFN_SIGNAL_REMOTE_WAKEUP</a> or <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_transfer_in.md">IOCTL_INTERNAL_USBFN_TRANSFER_IN</a>.</td>
                 </tr>
             
                 <tr>
                     <td>UsbfnEventResume</td>
                     <td>USBFN has resumed from suspend to the previous state.</td>
-                </tr>
-            
-                <tr>
-                    <td>UsbfnEventSetInterface</td>
-                    <td>USBFN has received a SET_INTERFACE setup packet.  On receiving this
-    notification the class driver should query for the new endpoint set
-    for the interface.</td>
                 </tr>
             
                 <tr>
@@ -146,10 +124,10 @@ typedef enum _USBFN_EVENT {
                 </tr>
             
                 <tr>
-                    <td>UsbfnEventSuspend</td>
-                    <td>There have been no SOF packets on the bus for 3ms.
-    If a class driver wants to issue a remote wake up,
-     the driver must use <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_signal_remote_wakeup.md">IOCTL_INTERNAL_USBFN_SIGNAL_REMOTE_WAKEUP</a> or <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_transfer_in.md">IOCTL_INTERNAL_USBFN_TRANSFER_IN</a>.</td>
+                    <td>UsbfnEventConfigured</td>
+                    <td>USBFN has received a SET_CONFIGURATION setup packet. Transfer
+    requests from class drivers are now permitted.
+    The <b>ConfigurationValue</b> of the notification is set to <b>wValue.W</b>.</td>
                 </tr>
             
                 <tr>
@@ -157,6 +135,28 @@ typedef enum _USBFN_EVENT {
                     <td>USBFN has received a SET_CONFIGURATION setup packet with
     <b>wValue.W</b> set to 0. If previously configured, class drivers should
     reset their state. Transfer requests will be cancelled.</td>
+                </tr>
+            
+                <tr>
+                    <td>UsbfnEventPortType</td>
+                    <td>Deprecated.</td>
+                </tr>
+            
+                <tr>
+                    <td>UsbfnEventBusTearDown</td>
+                    <td>Deprecated.</td>
+                </tr>
+            
+                <tr>
+                    <td>UsbfnEventSetInterface</td>
+                    <td>USBFN has received a SET_INTERFACE setup packet.  On receiving this
+    notification the class driver should query for the new endpoint set
+    for the interface.</td>
+                </tr>
+            
+                <tr>
+                    <td>UsbfnEventMaximum</td>
+                    <td>The minimum value in this enumeration.</td>
                 </tr>
 </table>
 

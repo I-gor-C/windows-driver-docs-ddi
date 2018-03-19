@@ -72,80 +72,25 @@ typedef struct _CM_EISA_FUNCTION_INFORMATION {
 
 The EISA compressed identification of the device at this slot. The value is identical to the <b>CompressedId</b> member of the <a href="..\wdm\ns-wdm-_cm_eisa_slot_information.md">CM_EISA_SLOT_INFORMATION</a> structure.
 
-`EisaDma`
+`IdSlotFlags1`
 
-Describes the EISA DMA configuration information, defined as follows:
+The EISA slot identification flags.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _EISA_DMA_CONFIGURATION {
-    DMA_CONFIGURATION_BYTE0 ConfigurationByte0;
-    DMA_CONFIGURATION_BYTE1 ConfigurationByte1;
-} EISA_DMA_CONFIGURATION, *PEISA_DMA_CONFIGURATION;</pre>
-</td>
-</tr>
-</table></span></div>
+`IdSlotFlags2`
 
-`EisaIrq`
+The EISA slot identification flags.
 
-Describes the EISA interrupt configuration information, defined as follows:
+`MinorRevision`
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _EISA_IRQ_CONFIGURATION {
-    EISA_IRQ_DESCRIPTOR ConfigurationByte;
-    UCHAR Reserved;
-} EISA_IRQ_CONFIGURATION, *PEISA_IRQ_CONFIGURATION;</pre>
-</td>
-</tr>
-</table></span></div>
+Information supplied by the manufacturer.
 
-`EisaMemory`
+`MajorRevision`
 
-Describes the EISA device memory configuration information, defined as follows:
+Information supplied by the manufacturer.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _EISA_MEMORY_CONFIGURATION {
-    EISA_MEMORY_TYPE ConfigurationByte;
-    UCHAR DataSize;
-    USHORT AddressLowWord;
-    UCHAR AddressHighByte;
-    USHORT MemorySize;
-} EISA_MEMORY_CONFIGURATION, *PEISA_MEMORY_CONFIGURATION;</pre>
-</td>
-</tr>
-</table></span></div>
+`Selections`
 
-`EisaPort`
-
-Describes the EISA device port configuration information, defined as follows:
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef struct _EISA_PORT_CONFIGURATION {
-    EISA_PORT_DESCRIPTOR Configuration;
-    USHORT PortAddress;
-} EISA_PORT_CONFIGURATION, *PEISA_PORT_CONFIGURATION;</pre>
-</td>
-</tr>
-</table></span></div>
+The EISA selections for the device.
 
 `FunctionFlags`
 
@@ -181,33 +126,88 @@ EISA_HAS_MEMORY_ENTRY
 
 EISA_HAS_TYPE_ENTRY
 
-`IdSlotFlags1`
+`TypeString`
 
-The EISA slot identification flags.
+Specifies the type of device.
 
-`IdSlotFlags2`
+`EisaMemory`
 
-The EISA slot identification flags.
+Describes the EISA device memory configuration information, defined as follows:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef struct _EISA_MEMORY_CONFIGURATION {
+    EISA_MEMORY_TYPE ConfigurationByte;
+    UCHAR DataSize;
+    USHORT AddressLowWord;
+    UCHAR AddressHighByte;
+    USHORT MemorySize;
+} EISA_MEMORY_CONFIGURATION, *PEISA_MEMORY_CONFIGURATION;</pre>
+</td>
+</tr>
+</table></span></div>
+
+`EisaIrq`
+
+Describes the EISA interrupt configuration information, defined as follows:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef struct _EISA_IRQ_CONFIGURATION {
+    EISA_IRQ_DESCRIPTOR ConfigurationByte;
+    UCHAR Reserved;
+} EISA_IRQ_CONFIGURATION, *PEISA_IRQ_CONFIGURATION;</pre>
+</td>
+</tr>
+</table></span></div>
+
+`EisaDma`
+
+Describes the EISA DMA configuration information, defined as follows:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef struct _EISA_DMA_CONFIGURATION {
+    DMA_CONFIGURATION_BYTE0 ConfigurationByte0;
+    DMA_CONFIGURATION_BYTE1 ConfigurationByte1;
+} EISA_DMA_CONFIGURATION, *PEISA_DMA_CONFIGURATION;</pre>
+</td>
+</tr>
+</table></span></div>
+
+`EisaPort`
+
+Describes the EISA device port configuration information, defined as follows:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef struct _EISA_PORT_CONFIGURATION {
+    EISA_PORT_DESCRIPTOR Configuration;
+    USHORT PortAddress;
+} EISA_PORT_CONFIGURATION, *PEISA_PORT_CONFIGURATION;</pre>
+</td>
+</tr>
+</table></span></div>
 
 `InitializationData`
 
 Vendor-supplied, device-specific initialization data, if any.
-
-`MajorRevision`
-
-Information supplied by the manufacturer.
-
-`MinorRevision`
-
-Information supplied by the manufacturer.
-
-`Selections`
-
-The EISA selections for the device.
-
-`TypeString`
-
-Specifies the type of device.
 
 ## Remarks
 The information returned by <b>HalGetBusData</b> or <b>HalGetBusDataByOffset</b> in <b>CM_EISA_FUNCTION_INFORMATION</b> and/or in the <a href="..\wdm\ns-wdm-_cm_eisa_slot_information.md">CM_EISA_SLOT_INFORMATION</a> header immediately preceding it is read-only.
@@ -228,11 +228,3 @@ The information returned by <b>HalGetBusData</b> or <b>HalGetBusDataByOffset</b>
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_EISA_FUNCTION_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

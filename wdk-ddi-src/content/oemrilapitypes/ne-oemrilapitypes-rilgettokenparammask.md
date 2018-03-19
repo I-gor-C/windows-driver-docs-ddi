@@ -61,7 +61,7 @@ typedef enum _RILDEVSPECIFICPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_GETTOKEN_ALL</td>
+                    <td>RIL_PARAM_GETTOKEN_TIMEOUT</td>
                     <td></td>
                 </tr>
             
@@ -76,7 +76,7 @@ typedef enum _RILDEVSPECIFICPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_GETTOKEN_TIMEOUT</td>
+                    <td>RIL_PARAM_GETTOKEN_ALL</td>
                     <td></td>
                 </tr>
 </table>

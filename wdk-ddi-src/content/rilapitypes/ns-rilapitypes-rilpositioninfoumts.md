@@ -69,27 +69,7 @@ typedef struct _RILPOSITIONINFOUMTS {
 ## Members
 
 
-`dwCellID`
-
-
-
-`dwECNO`
-
-
-
-`dwFrequencyInfoDL`
-
-
-
-`dwFrequencyInfoNT`
-
-
-
-`dwFrequencyInfoUL`
-
-
-
-`dwLocationAreaCode`
+`dwParams`
 
 
 
@@ -101,11 +81,27 @@ typedef struct _RILPOSITIONINFOUMTS {
 
 
 
-`dwParams`
+`dwLocationAreaCode`
 
 
 
-`dwPathLoss`
+`dwCellID`
+
+
+
+`dwFrequencyInfoUL`
+
+
+
+`dwFrequencyInfoDL`
+
+
+
+`dwFrequencyInfoNT`
+
+
+
+`dwUARFCN`
 
 
 
@@ -117,7 +113,11 @@ typedef struct _RILPOSITIONINFOUMTS {
 
 
 
-`dwUARFCN`
+`dwECNO`
+
+
+
+`dwPathLoss`
 
 
 

@@ -67,13 +67,18 @@ typedef enum _IO_SESSION_STATE {
 <table>
             
                 <tr>
-                    <td>IoSessionStateConnected</td>
-                    <td>The session is connected but the user has not yet logged on.</td>
+                    <td>IoSessionStateCreated</td>
+                    <td>The session has been created.</td>
                 </tr>
             
                 <tr>
-                    <td>IoSessionStateCreated</td>
-                    <td>The session has been created.</td>
+                    <td>IoSessionStateInitialized</td>
+                    <td>The session has been initialized but has not yet been created.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoSessionStateConnected</td>
+                    <td>The session is connected but the user has not yet logged on.</td>
                 </tr>
             
                 <tr>
@@ -87,8 +92,8 @@ typedef enum _IO_SESSION_STATE {
                 </tr>
             
                 <tr>
-                    <td>IoSessionStateInitialized</td>
-                    <td>The session has been initialized but has not yet been created.</td>
+                    <td>IoSessionStateLoggedOn</td>
+                    <td>The user is logged on to the session.</td>
                 </tr>
             
                 <tr>
@@ -97,18 +102,13 @@ typedef enum _IO_SESSION_STATE {
                 </tr>
             
                 <tr>
-                    <td>IoSessionStateLoggedOn</td>
-                    <td>The user is logged on to the session.</td>
+                    <td>IoSessionStateTerminated</td>
+                    <td>The session has been terminated.</td>
                 </tr>
             
                 <tr>
                     <td>IoSessionStateMax</td>
                     <td>Specifies the maximum value in this enumeration type.</td>
-                </tr>
-            
-                <tr>
-                    <td>IoSessionStateTerminated</td>
-                    <td>The session has been terminated.</td>
                 </tr>
 </table>
 
@@ -154,11 +154,3 @@ In the preceding table, the <i>from</i> and <i>to</i> states are represented by 
 
 
 <a href="..\wdm\ne-wdm-_io_session_event.md">IO_SESSION_EVENT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_SESSION_STATE enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

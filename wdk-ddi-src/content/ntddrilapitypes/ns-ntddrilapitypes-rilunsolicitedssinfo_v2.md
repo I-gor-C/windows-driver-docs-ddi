@@ -69,15 +69,11 @@ typedef struct _RILUNSOLICITEDSSINFO_V2 {
 
 
 
-`dwCUGIndex`
+`dwParams`
 
 
 
 `dwExecutor`
-
-
-
-`dwHistorynfoLength`
 
 
 
@@ -89,15 +85,19 @@ typedef struct _RILUNSOLICITEDSSINFO_V2 {
 
 
 
-`dwParams`
-
-
-
 `raAddress`
 
 
 
 `rsaSubAddress`
+
+
+
+`dwCUGIndex`
+
+
+
+`dwHistorynfoLength`
 
 
 

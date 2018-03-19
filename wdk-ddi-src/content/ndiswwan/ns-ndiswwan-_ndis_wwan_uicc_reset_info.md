@@ -108,10 +108,6 @@ sizeof(NDIS_WWAN_UICC_RESET_INFO)
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
-`UiccResetInfo`
-
-A formatted <a href="..\wwan\ns-wwan-_wwan_uicc_reset_info.md">WWAN_UICC_RESET_INFO</a> structure that represents the passthrough status of the miniport adapter.
-
 `uStatus`
 
 The status of system capability. The following table shows the possible values for
@@ -165,6 +161,10 @@ The operation failed because the device does not support this OID.
 </tr>
 </table>
 
+`UiccResetInfo`
+
+A formatted <a href="..\wwan\ns-wwan-_wwan_uicc_reset_info.md">WWAN_UICC_RESET_INFO</a> structure that represents the passthrough status of the miniport adapter.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -187,11 +187,3 @@ The operation failed because the device does not support this OID.
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_UICC_RESET_INFO structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

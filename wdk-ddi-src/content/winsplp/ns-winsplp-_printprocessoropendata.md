@@ -63,29 +63,29 @@ typedef struct _PRINTPROCESSOROPENDATA {
 ## Members
 
 
-`JobId`
+`pDevMode`
 
-Spooler-supplied value identifying the print job.
+Spooler-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure.
 
 `pDatatype`
 
 Spooler-supplied pointer to a string representing the print job's data type.
 
-`pDevMode`
+`pParameters`
 
-Spooler-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure.
+Spooler-supplied pointer to a parameter string, as specified in a JOB_INFO_2 structure supplied to a call to the <b>SetJob</b> function, described in the Microsoft Windows SDK documentation.
 
 `pDocumentName`
 
 Spooler-supplied pointer to a string representing the name of the input document associated with the print job.
 
+`JobId`
+
+Spooler-supplied value identifying the print job.
+
 `pOutputFile`
 
 Spooler-supplied pointer to a string representing the name of the output spool file.
-
-`pParameters`
-
-Spooler-supplied pointer to a parameter string, as specified in a JOB_INFO_2 structure supplied to a call to the <b>SetJob</b> function, described in the Microsoft Windows SDK documentation.
 
 `pPrinterName`
 
@@ -104,11 +104,3 @@ Spooler-supplied pointer to a string representing the name of the printer to be 
 
 
 <a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20PRINTPROCESSOROPENDATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

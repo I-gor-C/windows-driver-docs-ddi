@@ -60,6 +60,10 @@ typedef struct _D3DHAL_DP2ISSUEQUERY {
 ## Members
 
 
+`dwQueryID`
+
+Identifies the query for which the driver asynchronously provides information.
+
 `dwFlags`
 
 Specifies the state of the query. This member can contain one or more of the following flags: 
@@ -104,10 +108,6 @@ Transitions the state to subsignaled. Results of the query are not available unt
 
 The driver can ignore query requests with <b>dwFlags</b> set to 0.
 
-`dwQueryID`
-
-Identifies the query for which the driver asynchronously provides information.
-
 ## Remarks
 The runtime uses D3DHAL_DP2ISSUEQUERY to identify each query that the driver must process. The driver's <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> callback must process <b>wPrimitiveCount</b> D3DHAL_DP2ISSUEQUERY structures from the command buffer. The value of <b>wPrimitiveCount</b> is specified in the D3DHAL_DP2COMMAND structure. The driver parses these structures and retrieves information associated with the queries that they represent.
 
@@ -135,11 +135,3 @@ D3DDP2OP_ISSUEQUERY
 
 
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2ISSUEQUERY structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

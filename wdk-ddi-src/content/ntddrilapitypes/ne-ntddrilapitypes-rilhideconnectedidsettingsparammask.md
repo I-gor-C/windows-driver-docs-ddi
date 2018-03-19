@@ -60,12 +60,12 @@ typedef enum _RILHIDECONNECTEDIDSETTINGSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_HCIDS_ALL</td>
+                    <td>RIL_PARAM_HCIDS_EXECUTOR</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_HCIDS_EXECUTOR</td>
+                    <td>RIL_PARAM_HCIDS_STATUS</td>
                     <td></td>
                 </tr>
             
@@ -75,7 +75,7 @@ typedef enum _RILHIDECONNECTEDIDSETTINGSPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_HCIDS_STATUS</td>
+                    <td>RIL_PARAM_HCIDS_ALL</td>
                     <td></td>
                 </tr>
 </table>

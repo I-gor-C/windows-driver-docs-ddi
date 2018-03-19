@@ -57,11 +57,11 @@ typedef struct {
 ## Members
 
 
-`Buffer`
+`Event`
 
 This member is used internally by the operating system.
 
-`Event`
+`Buffer`
 
 This member is used internally by the operating system.
 

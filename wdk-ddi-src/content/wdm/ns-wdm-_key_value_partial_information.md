@@ -60,14 +60,6 @@ typedef struct _KEY_VALUE_PARTIAL_INFORMATION {
 ## Members
 
 
-`Data`
-
-A value entry of the key.
-
-`DataLength`
-
-The size in bytes of the <b>Data</b> member.
-
 `TitleIndex`
 
 Device and intermediate drivers should ignore this member.
@@ -75,6 +67,14 @@ Device and intermediate drivers should ignore this member.
 `Type`
 
 Specifies the system-defined type for the registry value in the <b>Data</b> member. For a summary of these types, see <a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>.
+
+`DataLength`
+
+The size in bytes of the <b>Data</b> member.
+
+`Data`
+
+A value entry of the key.
 
 
 ## Requirements
@@ -101,11 +101,3 @@ Specifies the system-defined type for the registry value in the <b>Data</b> memb
 
 
 <a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KEY_VALUE_PARTIAL_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

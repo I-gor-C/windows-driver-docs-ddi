@@ -61,6 +61,11 @@ typedef enum _IDDCX_FRAME_STATUS {
 <table>
             
                 <tr>
+                    <td>IDDCX_FRAME_STATUS_UNINITIALIZED</td>
+                    <td>Indicates that an <b>IDDCX_FRAME_STATUS</b> variable has not yet been assigned a meaningful value.</td>
+                </tr>
+            
+                <tr>
                     <td>IDDCX_FRAME_STATUS_COMPLETED</td>
                     <td>Indicates that the frame was processed completely and sent to the device</td>
                 </tr>
@@ -73,11 +78,6 @@ typedef enum _IDDCX_FRAME_STATUS {
                 <tr>
                     <td>IDDCX_FRAME_STATUS_ERROR</td>
                     <td>Indicates that the driver stopped processing this frame because the driver hit an internal error</td>
-                </tr>
-            
-                <tr>
-                    <td>IDDCX_FRAME_STATUS_UNINITIALIZED</td>
-                    <td>Indicates that an <b>IDDCX_FRAME_STATUS</b> variable has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>

@@ -60,6 +60,11 @@ typedef enum D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020 {
 <table>
             
                 <tr>
+                    <td>D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAG_0020_NONE</td>
+                    <td>No flags specified.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAG_0020_FRAME_DISCONTINUITY</td>
                     <td>The application must set this flag when not processing frames in order, such as seeking between frames.  This should be a hint that cached filter processing from previous calls to process frames is invalid.</td>
                 </tr>
@@ -67,11 +72,6 @@ typedef enum D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAGS_0020 {
                 <tr>
                     <td>D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAG_0020_FRAME_REPEAT</td>
                     <td>The application must set this flag when it applies video process operations to the same set of inputs.  For example, paused video where the window is being resized causing a scale.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_FLAG_0020_NONE</td>
-                    <td>No flags specified.</td>
                 </tr>
 </table>
 

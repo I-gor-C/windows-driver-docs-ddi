@@ -67,7 +67,12 @@ typedef enum _RILINFOCLASS {
 <table>
             
                 <tr>
-                    <td>RIL_INFOCLASS_ALL</td>
+                    <td>RIL_INFOCLASS_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_INFOCLASS_VOICE</td>
                     <td></td>
                 </tr>
             
@@ -77,7 +82,12 @@ typedef enum _RILINFOCLASS {
                 </tr>
             
                 <tr>
-                    <td>RIL_INFOCLASS_DATACIRCUITASYNC</td>
+                    <td>RIL_INFOCLASS_FAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_INFOCLASS_SMS</td>
                     <td></td>
                 </tr>
             
@@ -87,12 +97,7 @@ typedef enum _RILINFOCLASS {
                 </tr>
             
                 <tr>
-                    <td>RIL_INFOCLASS_FAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_INFOCLASS_NONE</td>
+                    <td>RIL_INFOCLASS_DATACIRCUITASYNC</td>
                     <td></td>
                 </tr>
             
@@ -107,12 +112,7 @@ typedef enum _RILINFOCLASS {
                 </tr>
             
                 <tr>
-                    <td>RIL_INFOCLASS_SMS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_INFOCLASS_VOICE</td>
+                    <td>RIL_INFOCLASS_ALL</td>
                     <td></td>
                 </tr>
 </table>

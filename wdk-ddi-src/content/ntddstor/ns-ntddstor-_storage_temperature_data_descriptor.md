@@ -63,9 +63,21 @@ typedef struct _STORAGE_TEMPERATURE_DATA_DESCRIPTOR {
 ## Members
 
 
+`Version`
+
+Contains the size of this structure, in bytes. The value of this member will change as members are added to the structure.
+
+`Size`
+
+Specifies the total size of the data returned, in bytes. This may include data that follows this structure.
+
 `CriticalTemperature`
 
 Indicates the minimum temperature in degrees Celsius that may prevent normal operation. Exceeding this temperature may result in possible data loss, automatic device shutdown, extreme performance throttling, or permanent damage.
+
+`WarningTemperature`
+
+Indicates the maximum temperature in degrees Celsius at which the device is capable of operating continuously without degrading operation or reliability.
 
 `InfoCount`
 
@@ -79,21 +91,9 @@ Reserved for future use.
 
 Reserved for future use.
 
-`Size`
-
-Specifies the total size of the data returned, in bytes. This may include data that follows this structure.
-
 `TemperatureInfo`
 
 
-
-`Version`
-
-Contains the size of this structure, in bytes. The value of this member will change as members are added to the structure.
-
-`WarningTemperature`
-
-Indicates the maximum temperature in degrees Celsius at which the device is capable of operating continuously without degrading operation or reliability.
 
 
 ## Requirements
@@ -117,11 +117,3 @@ Indicates the maximum temperature in degrees Celsius at which the device is capa
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_TEMPERATURE_DATA_DESCRIPTOR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,13 +63,13 @@ typedef enum _KTMOBJECT_TYPE {
 <table>
             
                 <tr>
-                    <td>KTMOBJECT_ENLISTMENT</td>
-                    <td>KTM enlistment objects.</td>
+                    <td>KTMOBJECT_TRANSACTION</td>
+                    <td>KTM transaction objects.</td>
                 </tr>
             
                 <tr>
-                    <td>KTMOBJECT_INVALID</td>
-                    <td>Invalid object type.</td>
+                    <td>KTMOBJECT_TRANSACTION_MANAGER</td>
+                    <td>KTM transaction manager objects.</td>
                 </tr>
             
                 <tr>
@@ -78,13 +78,13 @@ typedef enum _KTMOBJECT_TYPE {
                 </tr>
             
                 <tr>
-                    <td>KTMOBJECT_TRANSACTION</td>
-                    <td>KTM transaction objects.</td>
+                    <td>KTMOBJECT_ENLISTMENT</td>
+                    <td>KTM enlistment objects.</td>
                 </tr>
             
                 <tr>
-                    <td>KTMOBJECT_TRANSACTION_MANAGER</td>
-                    <td>KTM transaction manager objects.</td>
+                    <td>KTMOBJECT_INVALID</td>
+                    <td>Invalid object type.</td>
                 </tr>
 </table>
 
@@ -103,11 +103,3 @@ For more information about KTM objects, see <a href="https://msdn.microsoft.com/
 ## See Also
 
 <a href="..\wdm\nf-wdm-zwenumeratetransactionobject.md">ZwEnumerateTransactionObject</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KTMOBJECT_TYPE enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

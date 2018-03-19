@@ -64,22 +64,12 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KS_SEEKING_AbsolutePositioning</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KS_SEEKING_IncrementalPositioning</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>KS_SEEKING_NoPositioning</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>KS_SEEKING_PositioningBitsMask</td>
+                    <td>KS_SEEKING_AbsolutePositioning</td>
                     <td></td>
                 </tr>
             
@@ -89,12 +79,22 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KS_SEEKING_ReturnTime</td>
+                    <td>KS_SEEKING_IncrementalPositioning</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_SEEKING_PositioningBitsMask</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>KS_SEEKING_SeekToKeyFrame</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_SEEKING_ReturnTime</td>
                     <td></td>
                 </tr>
 </table>
@@ -115,11 +115,3 @@ The minidriver sets these flag values in a <a href="..\ks\ns-ks-ksproperty_posit
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565185">KSPROPERTY_MEDIASEEKING_POSITIONS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_SEEKING_FLAGS enumeration%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

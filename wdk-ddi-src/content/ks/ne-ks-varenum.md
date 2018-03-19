@@ -105,92 +105,12 @@ enum VARENUM {
 <table>
             
                 <tr>
-                    <td>VT_ARRAY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_BLOB</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_BLOB_OBJECT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_BOOL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_BSTR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_BYREF</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_CARRAY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_CF</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_CLSID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_CY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_DATE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_DECIMAL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_DISPATCH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>VT_EMPTY</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>VT_ERROR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_FILETIME</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_HRESULT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_I1</td>
+                    <td>VT_NULL</td>
                     <td></td>
                 </tr>
             
@@ -205,46 +125,6 @@ enum VARENUM {
                 </tr>
             
                 <tr>
-                    <td>VT_I8</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_ILLEGAL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_ILLEGALMASKED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_INT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_LPSTR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_LPWSTR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_NULL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>VT_PTR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>VT_R4</td>
                     <td></td>
                 </tr>
@@ -255,37 +135,52 @@ enum VARENUM {
                 </tr>
             
                 <tr>
-                    <td>VT_RESERVED</td>
+                    <td>VT_CY</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>VT_SAFEARRAY</td>
+                    <td>VT_DATE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>VT_STORAGE</td>
+                    <td>VT_BSTR</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>VT_STORED_OBJECT</td>
+                    <td>VT_DISPATCH</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>VT_STREAM</td>
+                    <td>VT_ERROR</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>VT_STREAMED_OBJECT</td>
+                    <td>VT_BOOL</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>VT_TYPEMASK</td>
+                    <td>VT_VARIANT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_DECIMAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_I1</td>
                     <td></td>
                 </tr>
             
@@ -305,7 +200,17 @@ enum VARENUM {
                 </tr>
             
                 <tr>
+                    <td>VT_I8</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>VT_UI8</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_INT</td>
                     <td></td>
                 </tr>
             
@@ -315,7 +220,27 @@ enum VARENUM {
                 </tr>
             
                 <tr>
-                    <td>VT_UNKNOWN</td>
+                    <td>VT_VOID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_HRESULT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_PTR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_SAFEARRAY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_CARRAY</td>
                     <td></td>
                 </tr>
             
@@ -325,7 +250,57 @@ enum VARENUM {
                 </tr>
             
                 <tr>
-                    <td>VT_VARIANT</td>
+                    <td>VT_LPSTR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_LPWSTR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_FILETIME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_BLOB</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_STREAM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_STORAGE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_STREAMED_OBJECT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_STORED_OBJECT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_BLOB_OBJECT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_CF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_CLSID</td>
                     <td></td>
                 </tr>
             
@@ -335,7 +310,32 @@ enum VARENUM {
                 </tr>
             
                 <tr>
-                    <td>VT_VOID</td>
+                    <td>VT_ARRAY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_BYREF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_RESERVED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_ILLEGAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_ILLEGALMASKED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>VT_TYPEMASK</td>
                     <td></td>
                 </tr>
 </table>

@@ -197,372 +197,7 @@ typedef enum _RILERRORCODES {
 <table>
             
                 <tr>
-                    <td>RIL_E_CALLISACTIVE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_CANCELLED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_CANTREPLACEMSG</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_CMDCANTBEACTIONED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_CMDERROR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_CMDUNSUPPORTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_CONGESTION</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_DCSERROR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_DCSUNSUPPORTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_DESTINATIONBARRED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_DESTINATIONOUTOFSVC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_DIALSTRINGTOOLONG</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_DMCOMMITFAILED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_DMGETCONFIGFAILED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_DMSERVICENOTREADY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_DRIVERINITFAILED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_ECTCALLBARRED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_ECTCALLINCONF</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_ECTCALLNOTONHOLD</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_ECTINCOMPATIBLE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_ECTNORESOURCE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_ECTNOTALLOWED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_ECTNOTSUBSCRIBED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_ECTNOTSUPPORTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_ECTSYSTEMERROR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_ECTUNAVAILABLE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_ECTUNKNOWN</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_EMERGENCYONLY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_EXECUTORNOTREADY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_FDNRESTRICT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_GPRSSERVICENOTALLOWED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_ICOMPATIBLEMSG</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_ILLEGALME</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_ILLEGALMS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_IMSCALLISACTIVE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_IMSNOHANDOVERTARGETFOUND</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_IMSTEMPFAILURE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INCOMPATIBLEPROXYDRIVER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INCORRECTPASSWORD</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INFOELEMENTUNSUPPORTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDASYNCCOMMANDRESPONSE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDCONTEXTACTIVATIONSTRING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDCONTEXTSTATE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDDIALSTRING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDDRIVERVERSION</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDINDEX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDMANDATORYINFO</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDMOBILECLASS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDMSG</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDMSGPARAM</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDMSGREFERENCE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDREMOTEURI</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDSCADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDTEXTSTRING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDUICCKEYREF</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_INVALIDUICCPATH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_LINKRESERVED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_LOCATIONAREANOTALLOWED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_MAXCONTEXTS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_MEMORYFAILURE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_MEMORYFULL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_MESSAGINGERROR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_MSGBARREDBYOPERATOR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_MSGBODYHEADERERROR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_MSGCALLBARRED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_MSGCLASSUNSUPPORTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_MSGSVCRESERVED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_MSGTYPEUNSUPPORTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_MSGXFERREJECTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_NETWKOUTOFORDER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_NETWKTEMPFAILURE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_NETWORKERROR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_NETWORKTIMEOUT</td>
+                    <td>RIL_E_PHONEFAILURE</td>
                     <td></td>
                 </tr>
             
@@ -572,42 +207,7 @@ typedef enum _RILERRORCODES {
                 </tr>
             
                 <tr>
-                    <td>RIL_E_NONETWORKSVC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_NONOTIFYCALLBACK</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_NORESPONSETODIAL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_NOSCSUBSCRIPTION</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_NOTFOUND</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_NOTREADY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_NOUICCMSGSTORAGE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_OPFMTUNAVAILABLE</td>
+                    <td>RIL_E_LINKRESERVED</td>
                     <td></td>
                 </tr>
             
@@ -622,47 +222,97 @@ typedef enum _RILERRORCODES {
                 </tr>
             
                 <tr>
-                    <td>RIL_E_OTHEREXECUTORBUSY</td>
+                    <td>RIL_E_UICCNOTINSERTED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_E_PASSWORDMISMATCH</td>
+                    <td>RIL_E_UICCFAILURE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_E_PDPAUTHENTICATIONFAILURE</td>
+                    <td>RIL_E_UICCBUSY</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_E_PERSOCHECKFAILED</td>
+                    <td>RIL_E_UICCWRONG</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_E_PERSOPUKBLOCKED</td>
+                    <td>RIL_E_INCORRECTPASSWORD</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_E_PERSOPUKREQUIRED</td>
+                    <td>RIL_E_MEMORYFULL</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_E_PHONEFAILURE</td>
+                    <td>RIL_E_INVALIDINDEX</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_E_PLMNNOTALLOWED</td>
+                    <td>RIL_E_NOTFOUND</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_E_PROTOCOLERROR</td>
+                    <td>RIL_E_MEMORYFAILURE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_TEXTSTRINGTOOLONG</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INVALIDTEXTSTRING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_DIALSTRINGTOOLONG</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INVALIDDIALSTRING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_NONETWORKSVC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_NETWORKTIMEOUT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_EMERGENCYONLY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_TELEMATICIWUNSUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_SMTYPE0UNSUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_CANTREPLACEMSG</td>
                     <td></td>
                 </tr>
             
@@ -672,7 +322,272 @@ typedef enum _RILERRORCODES {
                 </tr>
             
                 <tr>
+                    <td>RIL_E_DCSUNSUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_MSGCLASSUNSUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_DCSERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_CMDCANTBEACTIONED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_CMDUNSUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_CMDERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_MSGBODYHEADERERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_SCBUSY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_NOSCSUBSCRIPTION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_SCSYSTEMFAILURE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INVALIDADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_DESTINATIONBARRED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_REJECTEDDUPLICATE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_VPFUNSUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_VPUNSUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_UICCMSGSTORAGEFULL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_NOUICCMSGSTORAGE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_UICCTOOLKITBUSY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_UICCDOWNLOADERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_MSGSVCRESERVED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INVALIDMSGPARAM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INVALIDSCADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_UNASSIGNEDNUMBER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_MSGBARREDBYOPERATOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_MSGCALLBARRED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_MSGXFERREJECTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_DESTINATIONOUTOFSVC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_UNIDENTIFIEDSUBCRIBER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_SVCUNSUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_UNKNOWNSUBSCRIBER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_NETWKOUTOFORDER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_NETWKTEMPFAILURE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_CONGESTION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_RESOURCESUNAVAILABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_SVCNOTSUBSCRIBED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_SVCNOTIMPLEMENTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INVALIDMSGREFERENCE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INVALIDMSG</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INVALIDMANDATORYINFO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_MSGTYPEUNSUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_ICOMPATIBLEMSG</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INFOELEMENTUNSUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_PROTOCOLERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_NETWORKERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_MESSAGINGERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_NOTREADY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_TIMEDOUT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_CANCELLED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_NONOTIFYCALLBACK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_OPFMTUNAVAILABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_NORESPONSETODIAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_SECURITYFAILURE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_E_RADIOFAILEDINIT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_DRIVERINITFAILED</td>
                     <td></td>
                 </tr>
             
@@ -687,22 +602,27 @@ typedef enum _RILERRORCODES {
                 </tr>
             
                 <tr>
-                    <td>RIL_E_RADIOREBOOTED</td>
+                    <td>RIL_E_ILLEGALMS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_E_REJECTEDDUPLICATE</td>
+                    <td>RIL_E_ILLEGALME</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_E_REQUESTEDSERVICEOPTIONNOTSUBSCRIBED</td>
+                    <td>RIL_E_GPRSSERVICENOTALLOWED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_E_RESOURCESUNAVAILABLE</td>
+                    <td>RIL_E_PLMNNOTALLOWED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_LOCATIONAREANOTALLOWED</td>
                     <td></td>
                 </tr>
             
@@ -712,22 +632,12 @@ typedef enum _RILERRORCODES {
                 </tr>
             
                 <tr>
-                    <td>RIL_E_SCBUSY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_SCSYSTEMFAILURE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_SECURITYFAILURE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_E_SERVICEOPTIONNOTSUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_REQUESTEDSERVICEOPTIONNOTSUBSCRIBED</td>
                     <td></td>
                 </tr>
             
@@ -737,132 +647,12 @@ typedef enum _RILERRORCODES {
                 </tr>
             
                 <tr>
-                    <td>RIL_E_SMTYPE0UNSUPPORTED</td>
+                    <td>RIL_E_PDPAUTHENTICATIONFAILURE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_E_SVCNOTIMPLEMENTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_SVCNOTSUBSCRIBED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_SVCUNSUPPORTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_SYNCHRONOUS_DATA_UNAVAILABLE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_TELEMATICIWUNSUPPORTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_TEXTSTRINGTOOLONG</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_TIMEDOUT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCADMRESTRICTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCAPPINACCESSIBLE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCBUSY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCDOWNLOADERROR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCFAILURE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCINACTIVE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCMSGSTORAGEFULL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCNOTINSERTED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCNOTREADY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCPINREQUIRED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCPOWEROFF</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCPUKBLOCKED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCPUKREQUIRED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCTOOLKITBUSY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UICCWRONG</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UNASSIGNEDNUMBER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UNIDENTIFIEDSUBCRIBER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_E_UNKNOWNSUBSCRIBER</td>
+                    <td>RIL_E_INVALIDMOBILECLASS</td>
                     <td></td>
                 </tr>
             
@@ -872,7 +662,42 @@ typedef enum _RILERRORCODES {
                 </tr>
             
                 <tr>
-                    <td>RIL_E_USIMCALLBLOCKED</td>
+                    <td>RIL_E_RADIOREBOOTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INVALIDCONTEXTSTATE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_MAXCONTEXTS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_SYNCHRONOUS_DATA_UNAVAILABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_FDNRESTRICT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INVALIDASYNCCOMMANDRESPONSE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INCOMPATIBLEPROXYDRIVER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INVALIDDRIVERVERSION</td>
                     <td></td>
                 </tr>
             
@@ -882,17 +707,192 @@ typedef enum _RILERRORCODES {
                 </tr>
             
                 <tr>
+                    <td>RIL_E_PASSWORDMISMATCH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INVALIDCONTEXTACTIVATIONSTRING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_UICCAPPINACCESSIBLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_UICCPINREQUIRED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_UICCPUKREQUIRED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_UICCPUKBLOCKED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_EXECUTORNOTREADY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INVALIDUICCKEYREF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_UICCINACTIVE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_PERSOPUKREQUIRED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_PERSOPUKBLOCKED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_PERSOCHECKFAILED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_INVALIDUICCPATH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_IMSTEMPFAILURE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_UICCNOTREADY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_UICCPOWEROFF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_CALLISACTIVE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_USIMCALLBLOCKED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_UICCADMRESTRICTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_DMSERVICENOTREADY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_DMGETCONFIGFAILED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_DMCOMMITFAILED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_OTHEREXECUTORBUSY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_IMSNOHANDOVERTARGETFOUND</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_E_VCCHANDOVERINPROGRESS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_E_VPFUNSUPPORTED</td>
+                    <td>RIL_E_INVALIDREMOTEURI</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_E_VPUNSUPPORTED</td>
+                    <td>RIL_E_ECTNOTALLOWED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_ECTCALLINCONF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_ECTCALLNOTONHOLD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_ECTNOTSUBSCRIBED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_ECTUNAVAILABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_ECTINCOMPATIBLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_ECTNOTSUPPORTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_ECTSYSTEMERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_ECTNORESOURCE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_ECTCALLBARRED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_ECTUNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_E_IMSCALLISACTIVE</td>
                     <td></td>
                 </tr>
 </table>

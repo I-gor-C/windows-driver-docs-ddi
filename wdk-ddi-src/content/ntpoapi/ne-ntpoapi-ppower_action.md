@@ -67,16 +67,6 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>PowerActionDisplayOff</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>PowerActionHibernate</td>
-                    <td>The computer is entering its <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">hibernation (S4) state</a>.</td>
-                </tr>
-            
-                <tr>
                     <td>PowerActionNone</td>
                     <td>No power action is taking place.</td>
                 </tr>
@@ -87,13 +77,18 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>PowerActionShutdown</td>
-                    <td>The computer is entering its <a href="https://msdn.microsoft.com/c08d688d-c31a-4d57-a343-406edfa35e8f">shutdown (S5) state</a>. After all devices have entered their <a href="https://msdn.microsoft.com/f594a63f-10ce-439d-abe3-d342555d98f0">off (D3) state</a>, the computer remains powered on until an administrator presses the power button.</td>
+                    <td>PowerActionSleep</td>
+                    <td>The computer is entering a <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">system sleeping (S1, S2, or S3) state</a>.</td>
                 </tr>
             
                 <tr>
-                    <td>PowerActionShutdownOff</td>
-                    <td>The computer is entering its shutdown (S5) state. After all devices have entered their off (D3) state, the computer automatically powers off.</td>
+                    <td>PowerActionHibernate</td>
+                    <td>The computer is entering its <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">hibernation (S4) state</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerActionShutdown</td>
+                    <td>The computer is entering its <a href="https://msdn.microsoft.com/c08d688d-c31a-4d57-a343-406edfa35e8f">shutdown (S5) state</a>. After all devices have entered their <a href="https://msdn.microsoft.com/f594a63f-10ce-439d-abe3-d342555d98f0">off (D3) state</a>, the computer remains powered on until an administrator presses the power button.</td>
                 </tr>
             
                 <tr>
@@ -102,13 +97,18 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>PowerActionSleep</td>
-                    <td>The computer is entering a <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">system sleeping (S1, S2, or S3) state</a>.</td>
+                    <td>PowerActionShutdownOff</td>
+                    <td>The computer is entering its shutdown (S5) state. After all devices have entered their off (D3) state, the computer automatically powers off.</td>
                 </tr>
             
                 <tr>
                     <td>PowerActionWarmEject</td>
                     <td>The computer is being ejected from an ACPI-compatible dock device. Typically, the computer's power state does not change.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerActionDisplayOff</td>
+                    <td></td>
                 </tr>
 </table>
 
@@ -125,11 +125,3 @@ The <b>POWER_ACTION</b> enumeration is used as the return value for <a href="htt
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556936">IWDFDevice2::GetSystemPowerAction</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20POWER_ACTION enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

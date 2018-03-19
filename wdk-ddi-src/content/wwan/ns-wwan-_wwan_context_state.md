@@ -62,24 +62,6 @@ typedef struct _WWAN_CONTEXT_STATE {
 ## Members
 
 
-`ActivationState`
-
-The current activation state of the device.
-
-`ConnectionId`
-
-The MB Service specifies a value for this member at the time of the connect request by using
-     OID_WWAN_CONNECT. Miniport drivers must copy this value and use it when they notify the MB Service on
-     subsequent connection state changes.
-
-`ConnectionMedia`
-
-
-
-`IPType`
-
-A value from the WWAN_IP_TYPE enumeration that specifies the type of IP.
-
 `uNwError`
 
 A network-specific error. The following table shows the connection failure values as documented in
@@ -174,9 +156,27 @@ No APN or unknown APN is provided in the activation request.
 </tr>
 </table>
 
+`ConnectionId`
+
+The MB Service specifies a value for this member at the time of the connect request by using
+     OID_WWAN_CONNECT. Miniport drivers must copy this value and use it when they notify the MB Service on
+     subsequent connection state changes.
+
+`ActivationState`
+
+The current activation state of the device.
+
 `VoiceCallState`
 
 The current voice call state of the device.
+
+`IPType`
+
+A value from the WWAN_IP_TYPE enumeration that specifies the type of IP.
+
+`ConnectionMedia`
+
+
 
 ## Remarks
 <i>Set</i> OID requests as well as unsolicited status events use the 
@@ -232,11 +232,3 @@ In case of response to the NDIS_WWAN_SET_CONTEXT_STATE, use this member to provi
 
 
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_context_state.md">NDIS_WWAN_CONTEXT_STATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_CONTEXT_STATE structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

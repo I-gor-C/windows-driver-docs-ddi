@@ -69,9 +69,27 @@ typedef struct _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT {
 
 The path is capable of displaying content with no rotation.
 
+`Rotate90`
+
+The path is capable of displaying content that is rotated 90 degrees.
+
+`Rotate180`
+
+The path is capable of displaying content that is rotated 180 degrees.
+
+`Rotate270`
+
+The path is capable of displaying content that is rotated 270 degrees.
+
 `Offset0`
 
 The path adds no rotational offset. For more info, see <a href="https://msdn.microsoft.com/0c9bdd42-aeaf-4cc8-a979-9ed8eeda3811">Clone-mode requirements starting with Windows 8.1 Update</a>.
+
+Supported starting with Windows 8.1 Update.
+
+`Offset90`
+
+The path adds a rotational offset of 90 degrees. For more info, see <a href="https://msdn.microsoft.com/0c9bdd42-aeaf-4cc8-a979-9ed8eeda3811">Clone-mode requirements starting with Windows 8.1 Update</a>.
 
 Supported starting with Windows 8.1 Update.
 
@@ -86,24 +104,6 @@ Supported starting with Windows 8.1 Update.
 The path adds a rotational offset of 270 degrees. For more info, see <a href="https://msdn.microsoft.com/0c9bdd42-aeaf-4cc8-a979-9ed8eeda3811">Clone-mode requirements starting with Windows 8.1 Update</a>.
 
 Supported starting with Windows 8.1 Update.
-
-`Offset90`
-
-The path adds a rotational offset of 90 degrees. For more info, see <a href="https://msdn.microsoft.com/0c9bdd42-aeaf-4cc8-a979-9ed8eeda3811">Clone-mode requirements starting with Windows 8.1 Update</a>.
-
-Supported starting with Windows 8.1 Update.
-
-`Rotate180`
-
-The path is capable of displaying content that is rotated 180 degrees.
-
-`Rotate270`
-
-The path is capable of displaying content that is rotated 270 degrees.
-
-`Rotate90`
-
-The path is capable of displaying content that is rotated 90 degrees.
 
 ## Remarks
 The <b>RotationSupport</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_transformation.md">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a <b>D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</b> structure.

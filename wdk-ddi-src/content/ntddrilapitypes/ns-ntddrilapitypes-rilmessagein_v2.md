@@ -65,15 +65,7 @@ typedef struct _RILMESSAGEIN_V2 {
 
 
 
-`dwAckID`
-
-
-
 `dwExecutor`
-
-
-
-`dwFlags`
 
 
 
@@ -81,7 +73,15 @@ typedef struct _RILMESSAGEIN_V2 {
 
 
 
+`dwAckID`
+
+
+
 `rm`
+
+
+
+`dwFlags`
 
 
 

@@ -65,19 +65,19 @@ typedef struct _RILIMSI {
 
 
 
-`dwMcc`
-
-
-
-`dwMnc`
-
-
-
 `dwParams`
 
 
 
 `wszImsi`
+
+
+
+`dwMcc`
+
+
+
+`dwMnc`
 
 
 

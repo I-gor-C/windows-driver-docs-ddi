@@ -93,6 +93,14 @@ typedef struct _SCARD_CARD_CAPABILITIES {
 ## Members
 
 
+`InversConvention`
+
+Contains a flag to indicate that the current smart card uses the inverse convention.
+
+`etu`
+
+Contains the elementary time unit (ETU). The ETU indicates the space of transmission time occupied by a single bit of data.
+
 `ATR`
 
 A structure with the following members:
@@ -108,34 +116,6 @@ A pointer to the buffer that receives the answer-to-reset (ATR) information that
 #### Length
 
 Contains the length, in bytes, of the ATR.
-
-`BitRateAdjustment`
-
-Contains the bit rate adjustment table. Using the bit rate adjustment factor, D1, as an index into this array yields the maximum bit rate that is allowed. t rate. For more information about the bit rate adjustment factor, see the <i>ISO 7816-3 specification</i>.  (This resource may not be available in some languages 
-
-and countries.)
-
-`ClockRateConversion`
-
-Contains the clock conversion rate table. Using the clock rate conversion factor, F1, as an index in this array yields the maximum frequency that is allowed. For more information about clock conversion rate, see the <i>ISO 7816-3 specification</i>. (This resource may not be available in some languages 
-
-and countries.)
-
-`Dl`
-
-Contains the bit rate adjustment. When the smart card is reset, the smart card driver library uses this value to calculate a new data bit rate.
-
-`etu`
-
-Contains the elementary time unit (ETU). The ETU indicates the space of transmission time occupied by a single bit of data.
-
-`Fl`
-
-Contains the clock rate conversion. This factor is used as an index into a table of maximum operating frequencies. When the smart card is reset, the smart card driver library uses this value to calculate a new clock frequency.
-
-`GT`
-
-Contains the guard time, in units of microseconds (including the extra guard time), which is the minimum delay between two consecutive characters.
 
 `HistoricalChars`
 
@@ -157,21 +137,41 @@ and countries.)
 
 Indicates the length, in bytes, of the historical character information.
 
+`ClockRateConversion`
+
+Contains the clock conversion rate table. Using the clock rate conversion factor, F1, as an index in this array yields the maximum frequency that is allowed. For more information about clock conversion rate, see the <i>ISO 7816-3 specification</i>. (This resource may not be available in some languages 
+
+and countries.)
+
+`BitRateAdjustment`
+
+Contains the bit rate adjustment table. Using the bit rate adjustment factor, D1, as an index into this array yields the maximum bit rate that is allowed. t rate. For more information about the bit rate adjustment factor, see the <i>ISO 7816-3 specification</i>.  (This resource may not be available in some languages 
+
+and countries.)
+
+`Fl`
+
+Contains the clock rate conversion. This factor is used as an index into a table of maximum operating frequencies. When the smart card is reset, the smart card driver library uses this value to calculate a new clock frequency.
+
+`Dl`
+
+Contains the bit rate adjustment. When the smart card is reset, the smart card driver library uses this value to calculate a new data bit rate.
+
 `II`
 
 Contains the maximum programming current.
 
-`InversConvention`
+`P`
 
-Contains a flag to indicate that the current smart card uses the inverse convention.
+Contains the programming voltage in units of 0.1 volts.
 
 `N`
 
 Contains the extra guard time in units of the ETU. The ETU indicates the space of transmission time occupied by a single bit of data. The guard time is the minimum space of transmission time that separates two consecutive characters.
 
-`P`
+`GT`
 
-Contains the programming voltage in units of 0.1 volts.
+Contains the guard time, in units of microseconds (including the extra guard time), which is the minimum delay between two consecutive characters.
 
 `Protocol`
 
@@ -190,14 +190,6 @@ Contains a bitmask of the supported protocols.
 #### Selected
 
 Contains the protocol that is selected.
-
-`PtsData`
-
-Contains a PTS_DATA structure that holds all the information that is required to perform a protocol type selection (PTS) request for the inserted smart card.art card.
-
-`Reserved`
-
-Reserved.
 
 `T0`
 
@@ -264,6 +256,14 @@ Contains the block-waiting time, in microseconds, for the T=1 protocol. This is 
 #### BGT
 
 Contains the block-guarding time, in microseconds, for the T=1 protocol. This is the minimum delay between the end of a block and the start of the next block that is sent in the opposite direction.
+
+`PtsData`
+
+Contains a PTS_DATA structure that holds all the information that is required to perform a protocol type selection (PTS) request for the inserted smart card.art card.
+
+`Reserved`
+
+Reserved.
 
 ## Remarks
 The SCARD_CARD_CAPABILITIES structure describes the capabilities of the inserted smart card. If the reader driver uses the smart card driver library, <b>ATR</b> is the only member that the reader driver should populate. The driver library will automatically update all other fields when it receives an <a href="..\winsmcrd\ni-winsmcrd-ioctl_smartcard_set_protocol.md">IOCTL_SMARTCARD_SET_PROTOCOL</a> request.

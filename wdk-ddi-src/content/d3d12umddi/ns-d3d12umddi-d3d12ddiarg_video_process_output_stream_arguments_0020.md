@@ -63,6 +63,10 @@ typedef struct D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020 {
 ## Members
 
 
+`OutputStream`
+
+The output surfaces for the video process command.  If stereo output is enabled, index 0 contains the left output while index  1 contains the right input.  If stereo output is not enabled, only index 0 is used to specify the output. Index 1 should be a null pointer.
+
 `AlphaFillMode`
 
 The alpha fill mode for data that the video processor writes to the render target.  For more information, see <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_alpha_fill_mode_0020.md">D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE</a> enumeration.
@@ -103,21 +107,17 @@ The background color, which the video processor uses to fill areas of the target
 </tr>
 </table>
 
-`ColorSpace`
+`FrameRate`
 
-The colorspace for the video processor output surface as a <a href="https://msdn.microsoft.com/E25C933F-0DB3-4BC4-9755-9361B2B9B9CB">DXGI_COLOR_SPACE_TYPE</a> value.
+The frame rate of the output video stream, specified as a <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a> structure.
 
 `EnableStereo`
 
 If true, stereo output is enabled. If false, the video processor produces mono video frames.
 
-`FrameRate`
+`ColorSpace`
 
-The frame rate of the output video stream, specified as a <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a> structure.
-
-`OutputStream`
-
-The output surfaces for the video process command.  If stereo output is enabled, index 0 contains the left output while index  1 contains the right input.  If stereo output is not enabled, only index 0 is used to specify the output. Index 1 should be a null pointer.
+The colorspace for the video processor output surface as a <a href="https://msdn.microsoft.com/E25C933F-0DB3-4BC4-9755-9361B2B9B9CB">DXGI_COLOR_SPACE_TYPE</a> value.
 
 `TargetRectangle`
 
@@ -140,11 +140,3 @@ The target rectangle, which is the area within the destination surface where the
 
 
 <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020 structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

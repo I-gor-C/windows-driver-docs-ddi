@@ -65,10 +65,6 @@ typedef struct _KSAUDIO_PACKETSIZE_CONSTRAINTS {
 
 The absolute minimum processing period supported by the driver expressed in hundred-nanosecond (HNS) units. This value can be 0 if the driver has no specific minimum processing period.
 
-`NumProcessingModeConstraints`
-
-The number of additional constraints for specific processing modes. This value can be 0.
-
 `PacketSizeFileAlignment`
 
 The byte size alignment requirement. Use one of these defined file alignment values:
@@ -133,13 +129,17 @@ The byte size alignment requirement. Use one of these defined file alignment val
 
 #### FILE_512_BYTE_ALIGNMENT
 
-`ProcessingModeConstraints`
-
-An array of 0 or more processing mode constraints.
-
 `Reserved`
 
 Unused.
+
+`NumProcessingModeConstraints`
+
+The number of additional constraints for specific processing modes. This value can be 0.
+
+`ProcessingModeConstraints`
+
+An array of 0 or more processing mode constraints.
 
 ## Remarks
 The driver sets this variable length data structure as the value of the DEVPKEY_KsAudio_PacketSize_Constraints property on the PnP interface of the KS filter that has the streaming pins with the constraints. 
@@ -160,11 +160,3 @@ For WaveRT drivers, this data structure describes the constraints for a WaveRT p
 
 
 <a href="..\portcls\nf-portcls-pcregistersubdevice.md">PcRegisterSubdevice</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSAUDIO_PACKETSIZE_CONSTRAINTS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -65,12 +65,12 @@ typedef enum _RILUICCFILELOCKSTATUSPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_UFLS_ALL</td>
+                    <td>RIL_PARAM_UFLS_PINREFERENCE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_UFLS_PINREFERENCE</td>
+                    <td>RIL_PARAM_UFLS_ALL</td>
                     <td></td>
                 </tr>
 </table>

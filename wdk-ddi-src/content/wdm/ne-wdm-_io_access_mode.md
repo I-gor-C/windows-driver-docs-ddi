@@ -60,13 +60,13 @@ typedef enum _IO_ACCESS_MODE {
 <table>
             
                 <tr>
-                    <td>RandomAccess</td>
-                    <td>Indicates that the input/output might not be in a predictable order.</td>
+                    <td>SequentialAccess</td>
+                    <td>Indicates that the input/output will be sent down in a sequential order.</td>
                 </tr>
             
                 <tr>
-                    <td>SequentialAccess</td>
-                    <td>Indicates that the input/output will be sent down in a sequential order.</td>
+                    <td>RandomAccess</td>
+                    <td>Indicates that the input/output might not be in a predictable order.</td>
                 </tr>
 </table>
 

@@ -57,27 +57,6 @@ typedef struct _FILE_PIPE_INFORMATION {
 ## Members
 
 
-`CompletionMode`
-
-One of the following values.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>FILE_PIPE_QUEUE_OPERATION
-(0x00000000)</td>
-<td>Blocking mode</td>
-</tr>
-<tr>
-<td>FILE_PIPE_COMPLETE_OPERATION
-(0x00000001)</td>
-<td>Non-blocking mode </td>
-</tr>
-</table>
-
 `ReadMode`
 
 One of the following values.
@@ -96,6 +75,27 @@ One of the following values.
 <td>FILE_PIPE_MESSAGE_MODE
 (0x00000001)</td>
 <td>Data is read from the pipe as a stream of messages.</td>
+</tr>
+</table>
+
+`CompletionMode`
+
+One of the following values.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>FILE_PIPE_QUEUE_OPERATION
+(0x00000000)</td>
+<td>Blocking mode</td>
+</tr>
+<tr>
+<td>FILE_PIPE_COMPLETE_OPERATION
+(0x00000001)</td>
+<td>Non-blocking mode </td>
 </tr>
 </table>
 

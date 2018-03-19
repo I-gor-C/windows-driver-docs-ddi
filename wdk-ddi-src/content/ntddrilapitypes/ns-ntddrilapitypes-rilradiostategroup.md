@@ -59,15 +59,15 @@ typedef struct _RILRADIOSTATEGROUP {
 ## Members
 
 
-`dwGroupFlags`
-
-
-
 `dwGroupId`
 
 
 
 `dwGroupType`
+
+
+
+`dwGroupFlags`
 
 
 

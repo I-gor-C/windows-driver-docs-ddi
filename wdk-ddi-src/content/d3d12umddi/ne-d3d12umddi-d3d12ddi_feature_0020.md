@@ -58,13 +58,13 @@ typedef enum _D3D12DDI_FEATURE_0020 {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_FEATURE_0020_PASS_EXPERIMENT</td>
-                    <td></td>
+                    <td>D3D12DDI_FEATURE_0020_VIDEO</td>
+                    <td>A feature.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_FEATURE_0020_VIDEO</td>
-                    <td>A feature.</td>
+                    <td>D3D12DDI_FEATURE_0020_PASS_EXPERIMENT</td>
+                    <td></td>
                 </tr>
             
                 <tr>

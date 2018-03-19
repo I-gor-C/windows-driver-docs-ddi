@@ -63,13 +63,13 @@ typedef struct _DOT11_WFD_DEVICE_TYPE {
 
 The identifier of the main type category.
 
-`OUI`
-
-
-
 `SubCategoryID`
 
 The identifier of the type subcategory.
+
+`OUI`
+
+
 
 ## Remarks
 The <b>DOT11_WFD_DEVICE_TYPE</b> data is provided in host byte-ordering. The miniport may need to convert the data to an ordering appropriate for inclusion in Peer-to-Peer Information Elements.

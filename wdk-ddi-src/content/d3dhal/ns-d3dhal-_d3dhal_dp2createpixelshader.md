@@ -60,13 +60,13 @@ typedef struct _D3DHAL_DP2CREATEPIXELSHADER {
 ## Members
 
 
-`dwCodeSize`
-
-Specifies the size, in bytes, of the shader code following this data structure in the DP2 stream.
-
 `dwHandle`
 
 Specifies the handle to the pixel shader that is assigned by the runtime. This value is guaranteed to be subzero.
+
+`dwCodeSize`
+
+Specifies the size, in bytes, of the shader code following this data structure in the DP2 stream.
 
 ## Remarks
 The runtime generates a handle for this shader before calling the driver. The shader code itself follows the D3DHAL_DP2CREATEPIXELSHADER in the DP2 stream. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff552855">Direct3D Driver Shader Codes</a> for information about the format of an individual shader code and the tokens that comprise each shader code. 
@@ -91,11 +91,3 @@ D3DDP2OP_CREATEPIXELSHADER
 
 
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2pixelshader.md">D3DHAL_DP2PIXELSHADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2CREATEPIXELSHADER structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

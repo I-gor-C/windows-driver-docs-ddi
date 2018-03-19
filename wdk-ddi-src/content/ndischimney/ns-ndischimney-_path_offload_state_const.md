@@ -60,12 +60,6 @@ typedef struct _PATH_OFFLOAD_STATE_CONST {
 ## Members
 
 
-`DestinationAddress`
-
-A pointer to the destination IP address of a TCP connection. If the TCP connection is over IPv4,
-     the address is a 4-byte IPv4 address. If the TCP connection is over IPv6, the address is a 16-byte IPv6
-     address. The destination address bytes are always in network byte order.
-
 `Header`
 
 An 
@@ -81,6 +75,12 @@ An
 A pointer to the source IP address of a TCP connection. If the TCP connection is over IPv4, the
      address is a 4-byte IPv4 address. If the TCP connection is over IPv6, the address is a 16-byte IPv6
      address. The source address bytes are always in network byte order.
+
+`DestinationAddress`
+
+A pointer to the destination IP address of a TCP connection. If the TCP connection is over IPv4,
+     the address is a 4-byte IPv4 address. If the TCP connection is over IPv6, the address is a 16-byte IPv6
+     address. The destination address bytes are always in network byte order.
 
 ## Remarks
 The value of each path constant variable does not change during the life of a TCP connection. Neither
@@ -121,11 +121,3 @@ When passed to an offload target, a PATH_OFFLOAD_STATE_CONST structure is associ
 
 
 <a href="..\ndischimney\ns-ndischimney-_path_offload_state_cached.md">PATH_OFFLOAD_STATE_CACHED</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PATH_OFFLOAD_STATE_CONST structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,25 +63,13 @@ typedef struct {
 ## Members
 
 
-`OutBuffer`
-
-
-
-`OutBufLen`
-
-The length of the buffer for returning any additional information about the self-test.
-
-`PinFailedBitMask`
-
-The bit mask for adapter pins that failed the test.
-
-`Result`
-
-The final result of the self-test.
-
 `Size`
 
 Structure size.
+
+`Version`
+
+Version number.
 
 `TestResultStatus`
 
@@ -98,13 +86,25 @@ Failed (indicating the problem detected or indicating that the is test not imple
 </li>
 </ul>
 
+`Result`
+
+The final result of the self-test.
+
+`PinFailedBitMask`
+
+The bit mask for adapter pins that failed the test.
+
 `Unused`
 
 
 
-`Version`
+`OutBufLen`
 
-Version number.
+The length of the buffer for returning any additional information about the self-test.
+
+`OutBuffer`
+
+
 
 
 ## Requirements

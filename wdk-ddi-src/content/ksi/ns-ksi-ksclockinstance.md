@@ -58,11 +58,11 @@ typedef struct {
 ## Members
 
 
-`DefaultClock`
-
-
-
 `Header`
+
+
+
+`DefaultClock`
 
 
 

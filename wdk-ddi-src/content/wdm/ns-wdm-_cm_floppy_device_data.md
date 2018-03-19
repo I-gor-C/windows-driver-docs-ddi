@@ -74,57 +74,37 @@ typedef struct _CM_FLOPPY_DEVICE_DATA {
 ## Members
 
 
-`DataTransferLength`
+`Version`
 
-The data transfer length, in bytes, not including the synchronization field.
+The version number of this structure.
 
-`DataTransferRate`
+`Revision`
 
-The value written to the Datarate register before accessing the media.
+The revision of this structure.
 
-`FormatFillCharacter`
+`Size`
 
-The format fill character.
-
-`FormatGapLength`
-
-The format gap length, in bytes.
-
-`HeadLoadTime`
-
-The head load time in milliseconds.
-
-`HeadSettleTime`
-
-The head settle time in milliseconds.
+The floppy disk density size.
 
 `MaxDensity`
 
 The maximum density.
 
-`MaximumTrackValue`
-
-The maximum track number on the media. Track numbers are zero-based values.
-
-`MotorOffTime`
-
-The motor off time in seconds.
-
-`MotorSettleTime`
-
-The motor settle time in milliseconds.
-
 `MountDensity`
 
 The mount density.
 
-`ReadWriteGapLength`
+`StepRateHeadUnloadTime`
 
-The read/write gap length, in bytes.
+The step rate head unload time in milliseconds.
 
-`Revision`
+`HeadLoadTime`
 
-The revision of this structure.
+The head load time in milliseconds.
+
+`MotorOffTime`
+
+The motor off time in seconds.
 
 `SectorLengthCode`
 
@@ -134,17 +114,37 @@ Indicates the sector size as an exponent in the formula ((2**<i>code</i>) * 128)
 
 The number of sectors per track.
 
-`Size`
+`ReadWriteGapLength`
 
-The floppy disk density size.
+The read/write gap length, in bytes.
 
-`StepRateHeadUnloadTime`
+`DataTransferLength`
 
-The step rate head unload time in milliseconds.
+The data transfer length, in bytes, not including the synchronization field.
 
-`Version`
+`FormatGapLength`
 
-The version number of this structure.
+The format gap length, in bytes.
+
+`FormatFillCharacter`
+
+The format fill character.
+
+`HeadSettleTime`
+
+The head settle time in milliseconds.
+
+`MotorSettleTime`
+
+The motor settle time in milliseconds.
+
+`MaximumTrackValue`
+
+The maximum track number on the media. Track numbers are zero-based values.
+
+`DataTransferRate`
+
+The value written to the Datarate register before accessing the media.
 
 
 ## Requirements
@@ -163,11 +163,3 @@ The version number of this structure.
 
 
 <a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_FLOPPY_DEVICE_DATA structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

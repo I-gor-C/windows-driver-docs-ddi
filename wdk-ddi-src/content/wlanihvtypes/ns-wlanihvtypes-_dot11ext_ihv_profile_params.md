@@ -60,6 +60,14 @@ typedef struct _DOT11EXT_IHV_PROFILE_PARAMS {
 ## Members
 
 
+`pSsidList`
+
+A pointer to the list of service set identifiers (SSIDs) of the basic service set (BSS) network.
+     The 
+     <b>pSsidList</b> member is formatted as a pointer to a 
+     <a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_ssid_list.md">
+     DOT11EXT_IHV_SSID_LIST</a> structure.
+
 `BssType`
 
 The type of the BSS network. The 
@@ -72,14 +80,6 @@ A pointer to a
      <a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11_mssecurity_settings.md">
      DOT11_MSSECURITY_SETTINGS</a> structure that defines Microsoft security settings in the Microsoft
      802.1X implementation.
-
-`pSsidList`
-
-A pointer to the list of service set identifiers (SSIDs) of the basic service set (BSS) network.
-     The 
-     <b>pSsidList</b> member is formatted as a pointer to a 
-     <a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_ssid_list.md">
-     DOT11EXT_IHV_SSID_LIST</a> structure.
 
 ## Remarks
 The operating system passes a pointer to a DOT11EXT_IHV_PROFILE_PARAMS structure as a parameter to any
@@ -142,11 +142,3 @@ Although the IHV handler function cannot access the entire network profile, the 
 
 <a href="https://msdn.microsoft.com/de353aec-4339-496d-9aff-033b73f5d78e">
    IDot11ExtUIProperty::Dot11ExtUIPropertyGetDisplayInfo</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_IHV_PROFILE_PARAMS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

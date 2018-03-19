@@ -65,12 +65,8 @@ typedef enum _WDF_SYNCHRONIZATION_SCOPE {
 <table>
             
                 <tr>
-                    <td>WdfSynchronizationScopeDevice</td>
-                    <td>The framework synchronizes execution of the event callback functions of all queue and file objects that are underneath a device object in the driver's object hierarchy. 
-
-Additionally, if the driver sets the <b>AutomaticSerialization</b> member to <b>TRUE</b> in the configuration structure for an interrupt, DPC, work-item, or timer object that is underneath the same device object, the framework also synchronizes that object's callback functions. 
-
-The framework obtains the device object's synchronization lock before calling a callback function. Therefore, these callback functions run one at a time. However, if the driver creates multiple objects of the same type, but under different device objects, their event callback functions might run concurrently on a multiprocessor system.</td>
+                    <td>WdfSynchronizationScopeInvalid</td>
+                    <td>Reserved for system use.</td>
                 </tr>
             
                 <tr>
@@ -79,13 +75,12 @@ The framework obtains the device object's synchronization lock before calling a 
                 </tr>
             
                 <tr>
-                    <td>WdfSynchronizationScopeInvalid</td>
-                    <td>Reserved for system use.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfSynchronizationScopeNone</td>
-                    <td>The framework does not synchronize the object's event callback functions, so the callback functions might run concurrently on a multiprocessor system.</td>
+                    <td>WdfSynchronizationScopeDevice</td>
+                    <td>The framework synchronizes execution of the event callback functions of all queue and file objects that are underneath a device object in the driver's object hierarchy. 
+
+Additionally, if the driver sets the <b>AutomaticSerialization</b> member to <b>TRUE</b> in the configuration structure for an interrupt, DPC, work-item, or timer object that is underneath the same device object, the framework also synchronizes that object's callback functions. 
+
+The framework obtains the device object's synchronization lock before calling a callback function. Therefore, these callback functions run one at a time. However, if the driver creates multiple objects of the same type, but under different device objects, their event callback functions might run concurrently on a multiprocessor system.</td>
                 </tr>
             
                 <tr>
@@ -99,6 +94,11 @@ The framework obtains the queue object's synchronization lock before calling any
 If the driver creates multiple queue objects, their event callback functions might run concurrently on a multiprocessor system.
 
 For framework versions 1.9 and later, a driver should set <b>WdfSynchronizationScopeQueue</b> for individual queue objects. To use this scope with earlier versions of the framework, the driver must set <b>WdfSynchronizationScopeQueue</b> for the parent device object and <b>WdfSynchronizationScopeInheritFromParent</b> for the queue object.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfSynchronizationScopeNone</td>
+                    <td>The framework does not synchronize the object's event callback functions, so the callback functions might run concurrently on a multiprocessor system.</td>
                 </tr>
 </table>
 
@@ -136,11 +136,3 @@ For more information about synchronization of a driver's event callback function
 ## See Also
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_SYNCHRONIZATION_SCOPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

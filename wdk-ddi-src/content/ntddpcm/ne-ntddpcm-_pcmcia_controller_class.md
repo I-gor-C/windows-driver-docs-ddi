@@ -73,28 +73,8 @@ typedef enum _PCMCIA_CONTROLLER_CLASS {
 <table>
             
                 <tr>
-                    <td>PcmciaCardBusCompatible</td>
-                    <td>Indicates a cardbus-compatible controller.</td>
-                </tr>
-            
-                <tr>
-                    <td>PcmciaCirrusLogic</td>
-                    <td>Indicates a CirrusLogic cardbus controller.</td>
-                </tr>
-            
-                <tr>
-                    <td>PcmciaDatabook</td>
-                    <td>Indicates a controller from the Databook TCIC family of controllers.</td>
-                </tr>
-            
-                <tr>
-                    <td>PcmciaDatabookCB</td>
-                    <td>Indicates a Databook cardbus controller.</td>
-                </tr>
-            
-                <tr>
-                    <td>PcmciaElcController</td>
-                    <td>Indicates an ELC controller.</td>
+                    <td>PcmciaInvalidControllerClass</td>
+                    <td>Indicates that the controller class is invalid.</td>
                 </tr>
             
                 <tr>
@@ -103,28 +83,18 @@ typedef enum _PCMCIA_CONTROLLER_CLASS {
                 </tr>
             
                 <tr>
-                    <td>PcmciaInvalidControllerClass</td>
-                    <td>Indicates that the controller class is invalid.</td>
+                    <td>PcmciaCardBusCompatible</td>
+                    <td>Indicates a cardbus-compatible controller.</td>
                 </tr>
             
                 <tr>
-                    <td>PcmciaNEC</td>
-                    <td>Indicates a Yenta-compliant NEC cardbus controller.</td>
+                    <td>PcmciaElcController</td>
+                    <td>Indicates an ELC controller.</td>
                 </tr>
             
                 <tr>
-                    <td>PcmciaNEC_98</td>
-                    <td>Indicates a NEC cardbus controller.</td>
-                </tr>
-            
-                <tr>
-                    <td>PcmciaO2Micro</td>
-                    <td>Indicates an O2Micro cardbus controller.</td>
-                </tr>
-            
-                <tr>
-                    <td>PcmciaOpti</td>
-                    <td>Indicates an OPTI cardbus controller.</td>
+                    <td>PcmciaDatabook</td>
+                    <td>Indicates a controller from the Databook TCIC family of controllers.</td>
                 </tr>
             
                 <tr>
@@ -133,8 +103,8 @@ typedef enum _PCMCIA_CONTROLLER_CLASS {
                 </tr>
             
                 <tr>
-                    <td>PcmciaRicoh</td>
-                    <td>Indicates a Ricoh cardbus controller.</td>
+                    <td>PcmciaCirrusLogic</td>
+                    <td>Indicates a CirrusLogic cardbus controller.</td>
                 </tr>
             
                 <tr>
@@ -148,8 +118,38 @@ typedef enum _PCMCIA_CONTROLLER_CLASS {
                 </tr>
             
                 <tr>
+                    <td>PcmciaRicoh</td>
+                    <td>Indicates a Ricoh cardbus controller.</td>
+                </tr>
+            
+                <tr>
+                    <td>PcmciaDatabookCB</td>
+                    <td>Indicates a Databook cardbus controller.</td>
+                </tr>
+            
+                <tr>
+                    <td>PcmciaOpti</td>
+                    <td>Indicates an OPTI cardbus controller.</td>
+                </tr>
+            
+                <tr>
                     <td>PcmciaTrid</td>
                     <td>Indicates a TRID controller.</td>
+                </tr>
+            
+                <tr>
+                    <td>PcmciaO2Micro</td>
+                    <td>Indicates an O2Micro cardbus controller.</td>
+                </tr>
+            
+                <tr>
+                    <td>PcmciaNEC</td>
+                    <td>Indicates a Yenta-compliant NEC cardbus controller.</td>
+                </tr>
+            
+                <tr>
+                    <td>PcmciaNEC_98</td>
+                    <td>Indicates a NEC cardbus controller.</td>
                 </tr>
 </table>
 
@@ -162,11 +162,3 @@ typedef enum _PCMCIA_CONTROLLER_CLASS {
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537612">PCMCIA_SOCKET_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCMCIA\buses]:%20PCMCIA_CONTROLLER_CLASS enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

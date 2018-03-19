@@ -58,17 +58,17 @@ typedef struct _AddTarget_IN {
 ## Members
 
 
-`AllTargets`
+`HbaPortWWN`
 
-Indicates the scope of the target events to report. If this member is zero, the WMI client will receive events associated with the port that is indicated by <i>DiscoveredPortWWN</i>. If this member is nonzero, the WMI client will all events associated with all currently discovered targets as well as targets that are discovered in the future.
+Contains the worldwide name of the local port whose events the WMI client will receive.
 
 `DiscoveredPortWWN`
 
 Contains a worldwide name that specifies the discovered target whose events the WMI client will receive.
 
-`HbaPortWWN`
+`AllTargets`
 
-Contains the worldwide name of the local port whose events the WMI client will receive.
+Indicates the scope of the target events to report. If this member is zero, the WMI client will receive events associated with the port that is indicated by <i>DiscoveredPortWWN</i>. If this member is nonzero, the WMI client will all events associated with all currently discovered targets as well as targets that are discovered in the future.
 
 
 ## Requirements
@@ -79,11 +79,3 @@ Contains the worldwide name of the local port whose events the WMI client will r
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550136">AddTarget</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AddTarget_IN structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -65,13 +65,13 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KwSelection</td>
-                    <td>Indicates the "select" keyword was used.</td>
+                    <td>KwVoiceAssistant</td>
+                    <td>Indicates that the "hey Cortana" keyword was used.</td>
                 </tr>
             
                 <tr>
-                    <td>KwVoiceAssistant</td>
-                    <td>Indicates that the "hey Cortana" keyword was used.</td>
+                    <td>KwSelection</td>
+                    <td>Indicates the "select" keyword was used.</td>
                 </tr>
 </table>
 

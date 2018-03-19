@@ -63,6 +63,16 @@ typedef struct _NDIS_OPEN_PARAMETERS {
 ## Members
 
 
+`Header`
+
+The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     NDIS_OPEN_PARAMETERS structure. Set the 
+     <b>Type</b> member of the structure that 
+     <b>Header</b> specifies to NDIS_OBJECT_TYPE_OPEN_PARAMETERS, the 
+     <b>Revision</b> member to NDIS_OPEN_PARAMETERS_REVISION_1, and the 
+     <b>Size</b> member to the NDIS_SIZEOF_OPEN_PARAMETERS_REVISION_1.
+
 `AdapterName`
 
 A Unicode string that contains the name of the miniport adapter that NDIS passed to 
@@ -70,6 +80,23 @@ A Unicode string that contains the name of the miniport adapter that NDIS passed
      <b>AdapterName</b> member of the 
      <i>BindParameters</i> parameter. This name can identify a physical adapter (that is, a NIC) or a virtual
      adapter that is associated with an intermediate driver.
+
+`MediumArray`
+
+A pointer to an array of 
+     <b>NdisMedium<i>Xxx</i></b> values that lists the types of media the caller can support. This list is a subset of the 
+     <a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a> types.
+
+`MediumArraySize`
+
+The number of elements in the 
+     <b>MediumArray</b> member.
+
+`SelectedMediumIndex`
+
+A pointer to an driver-provided UINT variable that contains an index into the 
+     <b>MediumArray</b> array. NDIS writes this index which identifies the media type that the underlying
+     driver uses.
 
 `FrameTypeArray`
 
@@ -102,33 +129,6 @@ The number of elements in the
      <b>FrameTypeArray</b> member. This number must be equal to or less than
      NDIS_MAX_FRAME_TYPES_PER_OPEN.
 
-`Header`
-
-The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
-     NDIS_OPEN_PARAMETERS structure. Set the 
-     <b>Type</b> member of the structure that 
-     <b>Header</b> specifies to NDIS_OBJECT_TYPE_OPEN_PARAMETERS, the 
-     <b>Revision</b> member to NDIS_OPEN_PARAMETERS_REVISION_1, and the 
-     <b>Size</b> member to the NDIS_SIZEOF_OPEN_PARAMETERS_REVISION_1.
-
-`MediumArray`
-
-A pointer to an array of 
-     <b>NdisMedium<i>Xxx</i></b> values that lists the types of media the caller can support. This list is a subset of the 
-     <a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a> types.
-
-`MediumArraySize`
-
-The number of elements in the 
-     <b>MediumArray</b> member.
-
-`SelectedMediumIndex`
-
-A pointer to an driver-provided UINT variable that contains an index into the 
-     <b>MediumArray</b> array. NDIS writes this index which identifies the media type that the underlying
-     driver uses.
-
 ## Remarks
 A protocol driver passes an NDIS_OPEN_PARAMETERS structure when it calls the 
     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function to open a
@@ -155,11 +155,3 @@ A protocol driver passes an NDIS_OPEN_PARAMETERS structure when it calls the
 
 
 <a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OPEN_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

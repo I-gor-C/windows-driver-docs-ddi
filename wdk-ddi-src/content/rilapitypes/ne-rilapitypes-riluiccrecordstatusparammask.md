@@ -62,12 +62,7 @@ typedef enum _RILUICCRECORDSTATUSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_URS_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_URS_FILELOCKSTATUS</td>
+                    <td>RIL_PARAM_URS_RECORDTYPE</td>
                     <td></td>
                 </tr>
             
@@ -77,12 +72,17 @@ typedef enum _RILUICCRECORDSTATUSPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_URS_RECORDTYPE</td>
+                    <td>RIL_PARAM_URS_SIZE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_URS_SIZE</td>
+                    <td>RIL_PARAM_URS_FILELOCKSTATUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_URS_ALL</td>
                     <td></td>
                 </tr>
 </table>

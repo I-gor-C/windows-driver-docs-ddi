@@ -60,6 +60,10 @@ typedef struct _VP_DEVICE_DESCRIPTION {
 ## Members
 
 
+`ScatterGather`
+
+If <b>TRUE</b>, indicates that the device supports scatter/gather DMA. If <b>FALSE</b>, the device does not support scatter/gather DMA.
+
 `Dma32BitAddresses`
 
 If <b>TRUE</b>, specifies that 32-bit addresses are being used for DMA operations.
@@ -71,10 +75,6 @@ If <b>TRUE</b>, specifies that 64-bit addresses are being used for DMA operation
 `MaximumLength`
 
 Specifies the maximum number of bytes the device can handle in each DMA operation.
-
-`ScatterGather`
-
-If <b>TRUE</b>, indicates that the device supports scatter/gather DMA. If <b>FALSE</b>, the device does not support scatter/gather DMA.
 
 ## Remarks
 This structure is available in Windows XP and later.

@@ -65,13 +65,8 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
 <table>
             
                 <tr>
-                    <td>WdfIoQueueDispatchManual</td>
-                    <td>The framework places requests into the queue but does not deliver them to the driver. The driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a> method to retrieve a request from the queue.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfIoQueueDispatchMaximum</td>
-                    <td>Valid enumeration values were exceeded.</td>
+                    <td>WdfIoQueueDispatchSequential</td>
+                    <td>The I/O queue's requests are presented to the driver's I/O queue callback functions one at a time. The framework delivers the next request after the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a> method to complete the current request.</td>
                 </tr>
             
                 <tr>
@@ -80,8 +75,13 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WdfIoQueueDispatchSequential</td>
-                    <td>The I/O queue's requests are presented to the driver's I/O queue callback functions one at a time. The framework delivers the next request after the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a> method to complete the current request.</td>
+                    <td>WdfIoQueueDispatchManual</td>
+                    <td>The framework places requests into the queue but does not deliver them to the driver. The driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a> method to retrieve a request from the queue.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfIoQueueDispatchMaximum</td>
+                    <td>Valid enumeration values were exceeded.</td>
                 </tr>
 </table>
 
@@ -98,11 +98,3 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_DISPATCH_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

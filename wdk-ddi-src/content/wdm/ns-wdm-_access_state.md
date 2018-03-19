@@ -77,17 +77,13 @@ typedef struct _ACCESS_STATE {
 ## Members
 
 
-`AuditPrivileges`
+`OperationID`
 
-A Boolean value that specifies whether a privilege usage should be audited. This member is currently unused by drivers.
+The identifier of the operation that this access relates to. This member is replaced by TransactionId in the <b>AuxData</b> member and is currently unused by drivers.
 
-`AuxData`
+`SecurityEvaluated`
 
-A pointer to a memory block that contains auxiliary data for the access.
-
-`Flags`
-
-A 32-bit value that contains bit-field flags for the access. A driver can check for the traverse access flag (TOKEN_HAS_TRAVERSE_PRIVILEGE). For more information about how to check for traverse access, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/checking-for-traverse-privilege-on-irp-mj-create">Check for Traverse Privilege on IRP_MJ_CREATE</a>. A driver can also check for the TOKEN_IS_RESTRICTED flag. These flags are defined in Ntifs.h.
+A Boolean value that specifies whether security was evaluated as part of the access check. This member is currently unused by drivers.
 
 `GenerateAudit`
 
@@ -97,25 +93,37 @@ A Boolean value that specifies whether the access should generate an audit. This
 
 A Boolean value that specifies whether an audit should be generated when the handle being created is closed. This member is currently unused by drivers.
 
-`ObjectName`
+`PrivilegesAllocated`
 
-A <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the object name string for the access. This member is used for auditing.
+A Boolean value that specifies whether privileges were allocated as part of the access check. This member is currently unused by drivers.
 
-`ObjectTypeName`
+`Flags`
 
-A <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the object type name string for the access. This member is used for auditing.
+A 32-bit value that contains bit-field flags for the access. A driver can check for the traverse access flag (TOKEN_HAS_TRAVERSE_PRIVILEGE). For more information about how to check for traverse access, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/checking-for-traverse-privilege-on-irp-mj-create">Check for Traverse Privilege on IRP_MJ_CREATE</a>. A driver can also check for the TOKEN_IS_RESTRICTED flag. These flags are defined in Ntifs.h.
 
-`OperationID`
+`RemainingDesiredAccess`
 
-The identifier of the operation that this access relates to. This member is replaced by TransactionId in the <b>AuxData</b> member and is currently unused by drivers.
+An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> type that describes the access rights that have not yet been granted to the caller. A driver uses this member to determine if the Windows security system can grant access. If access can be granted, the driver updates the <b>PreviouslyGrantedAccess</b> and <b>RemainingDesiredAccess</b> members accordingly.
+
+`PreviouslyGrantedAccess`
+
+An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> type that specifies the information about access that has already been granted to the caller of one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563711">Security Reference Monitor Routines</a>. The Windows security system grants certain rights based on the privileges of the caller, such as traverse right (the ability to traverse through a directory as part of opening a subdirectory or file).
 
 `OriginalDesiredAccess`
 
 An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> type that contains the original access rights that were requested by the caller.
 
-`PreviouslyGrantedAccess`
+`SubjectSecurityContext`
 
-An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> type that specifies the information about access that has already been granted to the caller of one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563711">Security Reference Monitor Routines</a>. The Windows security system grants certain rights based on the privileges of the caller, such as traverse right (the ability to traverse through a directory as part of opening a subdirectory or file).
+A <a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a> structure that contains information about the subject security context that is used to validate and audit access.
+
+`SecurityDescriptor`
+
+A pointer to a <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> structure that contains security information for the object that this access relates to.
+
+`AuxData`
+
+A pointer to a memory block that contains auxiliary data for the access.
 
 `Privileges`
 
@@ -133,25 +141,17 @@ An <a href="..\wdm\ns-wdm-_privilege_set.md">INITIAL_PRIVILEGE_SET</a> structure
 
 A <a href="..\wdm\ns-wdm-_privilege_set.md">PRIVILEGE_SET</a> structure that specifies a set of privileges for the access.
 
-`PrivilegesAllocated`
+`AuditPrivileges`
 
-A Boolean value that specifies whether privileges were allocated as part of the access check. This member is currently unused by drivers.
+A Boolean value that specifies whether a privilege usage should be audited. This member is currently unused by drivers.
 
-`RemainingDesiredAccess`
+`ObjectName`
 
-An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> type that describes the access rights that have not yet been granted to the caller. A driver uses this member to determine if the Windows security system can grant access. If access can be granted, the driver updates the <b>PreviouslyGrantedAccess</b> and <b>RemainingDesiredAccess</b> members accordingly.
+A <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the object name string for the access. This member is used for auditing.
 
-`SecurityDescriptor`
+`ObjectTypeName`
 
-A pointer to a <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> structure that contains security information for the object that this access relates to.
-
-`SecurityEvaluated`
-
-A Boolean value that specifies whether security was evaluated as part of the access check. This member is currently unused by drivers.
-
-`SubjectSecurityContext`
-
-A <a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a> structure that contains information about the subject security context that is used to validate and audit access.
+A <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the object type name string for the access. This member is used for auditing.
 
 
 ## Requirements
@@ -210,11 +210,3 @@ A <a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT<
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ACCESS_STATE structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

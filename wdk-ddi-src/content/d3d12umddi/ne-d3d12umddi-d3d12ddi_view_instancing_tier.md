@@ -61,6 +61,11 @@ typedef enum _D3D12DDI_VIEW_INSTANCING_TIER {
 <table>
             
                 <tr>
+                    <td>D3D12DDI_VIEW_INSTANCING_TIER_NOT_SUPPORTED</td>
+                    <td>The view instancing tier is not supported.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D12DDI_VIEW_INSTANCING_TIER_1</td>
                     <td>The view instancing tier is 1.</td>
                 </tr>
@@ -73,11 +78,6 @@ typedef enum _D3D12DDI_VIEW_INSTANCING_TIER {
                 <tr>
                     <td>D3D12DDI_VIEW_INSTANCING_TIER_3</td>
                     <td>The view instancing teir is 3.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_VIEW_INSTANCING_TIER_NOT_SUPPORTED</td>
-                    <td>The view instancing tier is not supported.</td>
                 </tr>
 </table>
 

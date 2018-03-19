@@ -68,6 +68,10 @@ typedef struct _D3DKMT_WAITFORVERTICALBLANKEVENT2 {
 
 [in] A handle to the display device. This member is optionally specified. However, if the OpenGL ICD specifies the display device, the kernel is given more optimization opportunities with regard to power usage.
 
+`VidPnSourceId`
+
+[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for the VidPN source.
+
 `NumObjects`
 
 The number of wait objects to wait on, which equals the size of the array specified by the <b>ObjectHandleArray</b> member.
@@ -75,10 +79,6 @@ The number of wait objects to wait on, which equals the size of the array specif
 `ObjectHandleArray`
 
 [in] A handle to an array of wait objects to wait on.
-
-`VidPnSourceId`
-
-[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology for the VidPN source.
 
 
 ## Requirements

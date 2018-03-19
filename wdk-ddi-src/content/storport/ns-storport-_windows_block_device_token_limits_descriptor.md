@@ -64,25 +64,29 @@ typedef struct _WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR {
 ## Members
 
 
-`DefaultInactivityTimer`
+`DescriptorType`
 
-The default value that is used by the copy provider when the <b>InactivityTimeout</b> of the <a href="..\storport\ns-storport-populate_token_header.md">POPULATE_TOKEN_HEADER</a> structure is set to 0.
+The descriptor type identifying this structure. The descriptor type is defined in <i>storport.h</i> as <b>BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR_TYPE_WINDOWS</b>.
 
 `DescriptorLength`
 
 The length of this structure starting with the <b>VendorSpecific</b> member.
 
-`DescriptorType`
+`VendorSpecific`
 
-The descriptor type identifying this structure. The descriptor type is defined in <i>storport.h</i> as <b>BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR_TYPE_WINDOWS</b>.
+Vendor specific bytes included in the descriptor. Windows applications must treat this member as reserved and ignore the reported value.
+
+`MaximumRangeDescriptors`
+
+The maximum number of range descriptors that may be included along with the <a href="..\storport\ns-storport-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\storport\ns-storport-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures.
 
 `MaximumInactivityTimer`
 
 The maximum available to specify as the timeout value in the <b>InactivityTimeout</b> member of the <a href="..\storport\ns-storport-populate_token_header.md">POPULATE_TOKEN_HEADER</a> structure.
 
-`MaximumRangeDescriptors`
+`DefaultInactivityTimer`
 
-The maximum number of range descriptors that may be included along with the <a href="..\storport\ns-storport-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\storport\ns-storport-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures.
+The default value that is used by the copy provider when the <b>InactivityTimeout</b> of the <a href="..\storport\ns-storport-populate_token_header.md">POPULATE_TOKEN_HEADER</a> structure is set to 0.
 
 `MaximumTokenTransferSize`
 
@@ -91,10 +95,6 @@ The maximum number of logical blocks that can be specified as a total of the blo
 `OptimalTransferCount`
 
 The optimal number of logical blocks, as a maximum, to specify as a total of the block range descriptors in the <a href="..\storport\ns-storport-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\storport\ns-storport-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures. Offload data transfer performance may degrade if the transfer count is larger than this value.
-
-`VendorSpecific`
-
-Vendor specific bytes included in the descriptor. Windows applications must treat this member as reserved and ignore the reported value.
 
 ## Remarks
 All multibyte values are in big endian format. Prior to evaluation, these values must be converted to match the endian format of the current platform.
@@ -116,11 +116,3 @@ All multibyte values are in big endian format. Prior to evaluation, these values
 
 
 <a href="..\storport\ns-storport-populate_token_header.md">POPULATE_TOKEN_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

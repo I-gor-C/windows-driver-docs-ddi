@@ -61,18 +61,13 @@ typedef enum _DXGK_EVENT_TYPE {
 <table>
             
                 <tr>
+                    <td>DxgkUndefinedEvent</td>
+                    <td>Indicates that a variable of type DXGK_EVENT_TYPE has not yet been assigned a meaningful value.</td>
+                </tr>
+            
+                <tr>
                     <td>DxgkAcpiEvent</td>
                     <td>Indicates that the event is an ACPI event.</td>
-                </tr>
-            
-                <tr>
-                    <td>DxgkChainedAcpiEvent</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DxgkDockingEvent</td>
-                    <td>Indicates that the event is a docking event.</td>
                 </tr>
             
                 <tr>
@@ -81,8 +76,13 @@ typedef enum _DXGK_EVENT_TYPE {
                 </tr>
             
                 <tr>
-                    <td>DxgkUndefinedEvent</td>
-                    <td>Indicates that a variable of type DXGK_EVENT_TYPE has not yet been assigned a meaningful value.</td>
+                    <td>DxgkDockingEvent</td>
+                    <td>Indicates that the event is a docking event.</td>
+                </tr>
+            
+                <tr>
+                    <td>DxgkChainedAcpiEvent</td>
+                    <td></td>
                 </tr>
 </table>
 
@@ -96,11 +96,3 @@ typedef enum _DXGK_EVENT_TYPE {
 ## See Also
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_notify_acpi_event.md">DxgkDdiNotifyAcpiEvent</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_EVENT_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -57,11 +57,11 @@ typedef struct _RILCLOSEUICCLOGICALCHANNELGROUPPARAMS {
 ## Members
 
 
-`dwChannelGroup`
-
-
-
 `dwSlotIndex`
+
+
+
+`dwChannelGroup`
 
 
 

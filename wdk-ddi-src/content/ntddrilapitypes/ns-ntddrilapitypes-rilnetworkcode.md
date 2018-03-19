@@ -67,6 +67,10 @@ struct RILNETWORKCODE {
 
 The size of the structure in bytes.
 
+`dwParams`
+
+A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rilnetworkcodeparammask.md">RILNETWORKCODEPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
+
 `dwExecutor`
 
 This field is unused.
@@ -79,21 +83,17 @@ Mobile Country Code, if applicable. For RIL_SYSTEMTYPE_1XRTT and RIL_SYSTEMTYPE_
 
 Mobile Network Code. For RIL_SYSTEMTYPE_1XRTT and RIL_SYSTEMTYPE_EVDO it is network-dependent whether this value is available; further, the MCC provided by some 3GPP2 networks may not be accurate.
 
+`dwSID`
+
+System ID, if applicable. This is available only for RIL_SYSTEMTYPE_1XRTT.
+
 `dwNID`
 
 Network ID, if applicable. This is available only for RIL_SYSTEMTYPE_1XRTT.
 
-`dwParams`
-
-A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-rilnetworkcodeparammask.md">RILNETWORKCODEPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
-
 `dwRI`
 
 Roaming indicator, if applicable. This is available only for RIL_SYSTEMTYPE_1XRTT and RIL_SYSTEMTYPE_EVDO.
-
-`dwSID`
-
-System ID, if applicable. This is available only for RIL_SYSTEMTYPE_1XRTT.
 
 
 ## Requirements
@@ -104,11 +104,3 @@ System ID, if applicable. This is available only for RIL_SYSTEMTYPE_1XRTT.
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILNETWORKCODE structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

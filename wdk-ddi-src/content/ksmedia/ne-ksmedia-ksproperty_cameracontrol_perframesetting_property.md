@@ -65,13 +65,13 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR</td>
-                    <td>This is used to clear the per-frame settings previously configured.</td>
+                    <td>KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET</td>
+                    <td>This is used to configure the per-frame settings.</td>
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET</td>
-                    <td>This is used to configure the per-frame settings.</td>
+                    <td>KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR</td>
+                    <td>This is used to clear the per-frame settings previously configured.</td>
                 </tr>
 </table>
 

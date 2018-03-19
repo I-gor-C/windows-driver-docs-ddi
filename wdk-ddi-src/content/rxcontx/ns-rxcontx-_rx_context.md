@@ -210,61 +210,27 @@ typedef struct _RX_CONTEXT {
 ## Members
 
 
-`AcquireReleaseFcbTrackerX`
+`NodeTypeCode`
 
+The unique node type used for an RX_CONTEXT structure. All of the major structure types (RX_CONTEXT, SRV_CALL, NET_ROOT, V_NET_ROOT, SRV_OPEN, FCB, and FOBX, for example) used by RDBSS have a unique two-byte node type code defined in the <i>nodetype.h</i> include file which can be used for debugging. RDBSS sets this member to RDBSS_NTC_RX_CONTEXT when an RX_CONTEXT is initialized in the <a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a> routine. If a network mini-redirector driver initializes an RX_CONTEXT structure using some other method, this member must be set.
 
+RDBSS defines this member as part of a standard header for all structures used by RDBSS.
 
-`AlsoCanonicalNameBuffer`
+`NodeByteSize`
 
+The size, in bytes, of this structure. RDBSS sets this member to sizeof( RX_CONTEXT) when an RX_CONTEXT is initialized in the <b>RxInitializeContext</b> routine. If a network mini-redirector driver initializes an RX_CONTEXT structure using some other method, this member must be set.
 
+RDBSS defines this member as part of a standard header for all structures used by RDBSS.
 
-`BlockedOperations`
+`ReferenceCount`
 
-A pointer to the list head of blocked operations that are to be released on completion. This member is reserved for internal use.
+The reference count for this structure after it is allocated. RDBSS sets this member to 1 when an RX_CONTEXT is allocated and initialized in the <b>RxInitializeContext</b> routine. If a network mini-redirector driver initializes an RX_CONTEXT structure using some other method, this member must be set.
 
-`BlockedOpsMutex`
-
-A pointer to a mutex that controls serialization of the blocked operations. This member is reserved for internal use.
+RDBSS defines this member as part of a standard header for all structures used by RDBSS.
 
 `ContextListEntry`
 
 The list entry to connect this RX_CONTEXT to the list of active RX_CONTEXTS.
-
-`CurrentIrp`
-
-A pointer to the originating IRP. This member should not be used by a network mini-redirector driver.
-
-`CurrentIrpSp`
-
-A pointer to the IRP stack location.
-
-`FcbPagingIoResourceAcquired`
-
-If set to <b>TRUE</b>, this member specifies that the FCB paging I/O resource has been acquired for this operation. The FCB paging I/O resource is one of the locking mechanisms associated with a paging I/O operation on an FCB.
-
-`FcbResourceAcquired`
-
-If set to <b>TRUE</b>, this member specifies that the FCB resource has been acquired for this operation. The FCB resource is one of the locking mechanisms associated with an operation on an FCB.
-
-`Flags`
-
-A bitmask of flags for this RX_CONTEXT structure.
-
-`FobxSerialNumber`
-
-The serial number for the associated FOBX structure. Every structure initialized by RDBSS has a serial number assigned when the structure is first initialized. This member can be used by network mini-redirectors to see if multiple calls are part of the same larger operation and are therefore more cacheable.
-
-`LastExecutionThread`
-
-A pointer to the last thread in which some processing associated with the RX_CONTEXT was done if the thread was posted to the file system process.
-
-`LockManagerContext`
-
-A pointer to the lock manager context. This member is reserved for internal use.
-
-`LoudCompletionString`
-
-An unused member of the RX_CONTEXT structure.
 
 `MajorFunction`
 
@@ -274,43 +240,29 @@ The major function for the IRP encapsulated by this RX_CONTEXT.
 
 The minor function for the IRP encapsulated by this RX_CONTEXT.
 
-`MRxCancelRoutine`
-
-A pointer to the cancellation routine that can be set by a network mini-redirector driver.
-
-`MustSucceedDescriptorNumber`
-
-A member initially set to zero in the <a href="..\rxcontx\nf-rxcontx-rxcreaterxcontext.md">RxCreateRxContext</a> routine. This member is not otherwise used by RDBSS, but it may be used by network mini-redirectors.
-
-`NodeByteSize`
-
-The size, in bytes, of this structure. RDBSS sets this member to sizeof( RX_CONTEXT) when an RX_CONTEXT is initialized in the <b>RxInitializeContext</b> routine. If a network mini-redirector driver initializes an RX_CONTEXT structure using some other method, this member must be set.
-
-RDBSS defines this member as part of a standard header for all structures used by RDBSS.
-
-`NodeTypeCode`
-
-The unique node type used for an RX_CONTEXT structure. All of the major structure types (RX_CONTEXT, SRV_CALL, NET_ROOT, V_NET_ROOT, SRV_OPEN, FCB, and FOBX, for example) used by RDBSS have a unique two-byte node type code defined in the <i>nodetype.h</i> include file which can be used for debugging. RDBSS sets this member to RDBSS_NTC_RX_CONTEXT when an RX_CONTEXT is initialized in the <a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a> routine. If a network mini-redirector driver initializes an RX_CONTEXT structure using some other method, this member must be set.
-
-RDBSS defines this member as part of a standard header for all structures used by RDBSS.
-
-`NonPagedFcb`
-
-A pointer to the associated non-paged file control block (FCB) for this IRP.
-
-`OriginalThread`
-
-A pointer to the original thread in which the request was initiated.
-
-`OverflowListEntry`
-
-A pointer to the list head of operations that are to be released on completion. This member is reserved for internal use.
-
 `PendingReturned`
 
 If set to <b>TRUE</b>, this specifies that RDBSS or a driver has marked the IRP pending. Each <a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a> routine should check the value of this flag. If the flag is <b>TRUE</b>, and if the <b>IoCompletion</b> routine will not return STATUS_MORE_PROCESSING_REQUIRED, the routine should call <a href="..\wdm\nf-wdm-iomarkirppending.md">IoMarkIrpPending</a> to propagate the pending status to drivers above it in the device stack. This member is similar to the same field in the IRP. 
 
 RDBSS always sets this member to <b>TRUE</b> before calling the network mini-redirector driver.
+
+`PostRequest`
+
+If set to <b>TRUE</b>, this indicates if the associated request is to be posted to a RDBSS worker thread. A network mini-redirector can set this member to <b>TRUE</b> to indicate that it wants to post this request to the file system process (FSP).
+
+`RealDevice`
+
+A pointer to the device object for the target network mini-redirector driver. RDBSS sets this member to the device object for the network mini-redirector driver when an RX_CONTEXT is allocated in the <a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a> routine. This member is copied from the <b>FileObject-&gt;DeviceObject</b> member from the IRP stack. The device object for the network mini-redirector is also stored in the <b>RxDeviceObject</b> structure member.
+
+The <b>RealDevice</b>  member is not currently used by RDBSS, but can be used by network mini-redirectors.
+
+`CurrentIrp`
+
+A pointer to the originating IRP. This member should not be used by a network mini-redirector driver.
+
+`CurrentIrpSp`
+
+A pointer to the IRP stack location.
 
 `pFcb`
 
@@ -320,41 +272,33 @@ A pointer to the associated file control block (FCB) for this IRP.
 
 A pointer to the associated file object extension (FOBX) for this IRP.
 
-`PostRequest`
-
-If set to <b>TRUE</b>, this indicates if the associated request is to be posted to a RDBSS worker thread. A network mini-redirector can set this member to <b>TRUE</b> to indicate that it wants to post this request to the file system process (FSP).
-
 `pRelevantSrvOpen`
 
 A pointer to the associated server open(SRV_OPEN) for this IRP.
 
-`RdbssDbgExtension`
+`NonPagedFcb`
 
-A pointer to the context given to RDBSS for debugging information. This member is reserved for internal use.
-
-`RealDevice`
-
-A pointer to the device object for the target network mini-redirector driver. RDBSS sets this member to the device object for the network mini-redirector driver when an RX_CONTEXT is allocated in the <a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a> routine. This member is copied from the <b>FileObject-&gt;DeviceObject</b> member from the IRP stack. The device object for the network mini-redirector is also stored in the <b>RxDeviceObject</b> structure member.
-
-The <b>RealDevice</b>  member is not currently used by RDBSS, but can be used by network mini-redirectors.
-
-`ReferenceCount`
-
-The reference count for this structure after it is allocated. RDBSS sets this member to 1 when an RX_CONTEXT is allocated and initialized in the <b>RxInitializeContext</b> routine. If a network mini-redirector driver initializes an RX_CONTEXT structure using some other method, this member must be set.
-
-RDBSS defines this member as part of a standard header for all structures used by RDBSS.
-
-`ResumeRoutine`
-
-This member is reserved for internal use.
-
-`RxContextSerializationQLinks`
-
-A pointer to the list entry used to serialize pipe operations on a per-file-object basis. This member is reserved for internal use.
+A pointer to the associated non-paged file control block (FCB) for this IRP.
 
 `RxDeviceObject`
 
 A pointer to the RDBSS_DEVICE_OBJECT for the target network mini-redirector driver which is required for worker queue algorithms. RDBSS sets this member to the RDBSS_DEVICE_OBJECT for the network mini-redirector when an RX_CONTEXT is initialized in the <b>RxInitializeContext</b> routine. The <b>RxDeviceObject</b> structure includes a <b>DeviceObject</b> member that contains the device object for the network mini-redirector driver which is the same as the <b>RealDevice</b> member of the RX_CONTEXT.
+
+`OriginalThread`
+
+A pointer to the original thread in which the request was initiated.
+
+`LastExecutionThread`
+
+A pointer to the last thread in which some processing associated with the RX_CONTEXT was done if the thread was posted to the file system process.
+
+`LockManagerContext`
+
+A pointer to the lock manager context. This member is reserved for internal use.
+
+`RdbssDbgExtension`
+
+A pointer to the context given to RDBSS for debugging information. This member is reserved for internal use.
 
 `ScavengerEntry`
 
@@ -364,15 +308,71 @@ A pointer to the list of items to be scavenged. This member is reserved for inte
 
 The serial number for this RX_CONTEXT structure. Every structure initialized by RDBSS has a serial number assigned when the structure is first initialized. This serial number is a number that is incremented by one before the value is set. RDBSS sets this member when an RX_CONTEXT is initialized in the <b>RxInitializeContext</b> routine. RDBSS
 
-`ShadowCritOwner`
+`FobxSerialNumber`
 
+The serial number for the associated FOBX structure. Every structure initialized by RDBSS has a serial number assigned when the structure is first initialized. This member can be used by network mini-redirectors to see if multiple calls are part of the same larger operation and are therefore more cacheable.
 
+`Flags`
+
+A bitmask of flags for this RX_CONTEXT structure.
+
+`FcbResourceAcquired`
+
+If set to <b>TRUE</b>, this member specifies that the FCB resource has been acquired for this operation. The FCB resource is one of the locking mechanisms associated with an operation on an FCB.
+
+`FcbPagingIoResourceAcquired`
+
+If set to <b>TRUE</b>, this member specifies that the FCB paging I/O resource has been acquired for this operation. The FCB paging I/O resource is one of the locking mechanisms associated with a paging I/O operation on an FCB.
+
+`MustSucceedDescriptorNumber`
+
+A member initially set to zero in the <a href="..\rxcontx\nf-rxcontx-rxcreaterxcontext.md">RxCreateRxContext</a> routine. This member is not otherwise used by RDBSS, but it may be used by network mini-redirectors.
+
+`WriteOnlyOpenRetryContext`
+
+A pointer that can be used to store some state for the network mini-redirector. This member is not used by RDBSS, but it can be used by a network mini-redirector driver to indicate that a file is cached on a write-only handle.
+
+`MRxCancelRoutine`
+
+A pointer to the cancellation routine that can be set by a network mini-redirector driver.
+
+`ResumeRoutine`
+
+This member is reserved for internal use.
+
+`WorkQueueItem`
+
+A pointer to a work queue item that can be used by a network mini-redirector driver while processing the RX_CONTEXT.
+
+`OverflowListEntry`
+
+A pointer to the list head of operations that are to be released on completion. This member is reserved for internal use.
 
 `SyncEvent`
 
 A pointer to a kernel EVENT that can be used by a network mini-redirector driver to wait while processing the RX_CONTEXT.
 
-`TrackerHistory`
+`BlockedOperations`
+
+A pointer to the list head of blocked operations that are to be released on completion. This member is reserved for internal use.
+
+`BlockedOpsMutex`
+
+A pointer to a mutex that controls serialization of the blocked operations. This member is reserved for internal use.
+
+`RxContextSerializationQLinks`
+
+A pointer to the list entry used to serialize pipe operations on a per-file-object basis. This member is reserved for internal use.
+
+`AlsoCanonicalNameBuffer`
+
+
+
+`LoudCompletionString`
+
+An unused member of the RX_CONTEXT structure.
+
+`AcquireReleaseFcbTrackerX`
 
 
 
@@ -380,13 +380,13 @@ A pointer to a kernel EVENT that can be used by a network mini-redirector driver
 
 
 
-`WorkQueueItem`
+`TrackerHistory`
 
-A pointer to a work queue item that can be used by a network mini-redirector driver while processing the RX_CONTEXT.
 
-`WriteOnlyOpenRetryContext`
 
-A pointer that can be used to store some state for the network mini-redirector. This member is not used by RDBSS, but it can be used by a network mini-redirector driver to indicate that a file is cached on a write-only handle.
+`ShadowCritOwner`
+
+
 
 ## Remarks
 The RX_CONTEXT structure is one of the fundamental data structures used by RDBSS and network mini-redirectors to manage an I/O request packet (IRP). The RX_CONTEXT data structure encapsulates an IRP for use by RDBSS, network mini-redirectors, and the file system. An RX_CONTEXT structure includes a pointer to a single IRP and all of the context required to process the IRP. 
@@ -515,11 +515,3 @@ RDBSS provides a number of routines that are used to manipulate an RX_CONTEXT an
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RX_CONTEXT structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

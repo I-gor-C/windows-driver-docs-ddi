@@ -68,45 +68,17 @@ typedef struct _WIAS_DOWN_SAMPLE_INFO {
 ## Members
 
 
-`pDestBuffer`
+`ulOriginalWidth`
 
-Points to the destination buffer.
-
-`pSrcBuffer`
-
-Points to the source buffer.
-
-`ulActualSize`
-
-Specifies the number of bytes placed in the destination buffer.
-
-`ulBitsPerPixel`
-
-Specifies the number of bits per pixel of the input data.
-
-`ulDestBufSize`
-
-Specifies the size, in bytes, of the destination buffer.
-
-`ulDownSampledHeight`
-
-Specifies the width, in pixels, of the output data.
-
-`ulDownSampledWidth`
-
-Specifies the width, in pixels, of the output data.
+Specifies the width, in pixels, of the input data.
 
 `ulOriginalHeight`
 
 Specifies the height, in pixels, of the input data.
 
-`ulOriginalWidth`
+`ulBitsPerPixel`
 
-Specifies the width, in pixels, of the input data.
-
-`ulSrcBufSize`
-
-Specifies the size, in bytes, of the source buffer.
+Specifies the number of bits per pixel of the input data.
 
 `ulXRes`
 
@@ -115,6 +87,34 @@ Specifies the horizontal resolution of the input data.
 `ulYRes`
 
 Specifies the vertical resolution of the input data.
+
+`ulDownSampledWidth`
+
+Specifies the width, in pixels, of the output data.
+
+`ulDownSampledHeight`
+
+Specifies the width, in pixels, of the output data.
+
+`ulActualSize`
+
+Specifies the number of bytes placed in the destination buffer.
+
+`ulDestBufSize`
+
+Specifies the size, in bytes, of the destination buffer.
+
+`ulSrcBufSize`
+
+Specifies the size, in bytes, of the source buffer.
+
+`pSrcBuffer`
+
+Points to the source buffer.
+
+`pDestBuffer`
+
+Points to the destination buffer.
 
 
 ## Requirements
@@ -126,11 +126,3 @@ Specifies the vertical resolution of the input data.
 ## See Also
 
 <a href="..\wiamdef\nf-wiamdef-wiasdownsamplebuffer.md">wiasDownSampleBuffer</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIAS_DOWN_SAMPLE_INFO structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

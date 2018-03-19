@@ -108,13 +108,6 @@ sizeof(NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS)
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
-`PreferredListHeader`
-
-A formatted WWAN_LIST_HEADER object that represents a list of preferred multi-carrier providers, including the number of providers in the list.
-
-These point to the list of the WWAN_PROVIDER2 by using the WWAN_LIST_HEADER structure. <b>WwanDataClass</b> flags describe the preference of the specific data access technology and can be set to any combination within its own cellular class.
-Response to  <a href="https://msdn.microsoft.com/library/windows/hardware/ff569830">OID_WWAN_PREFERRED_PROVIDERS</a><i>set </i> requests must contain zero elements in the <b>PreferredListHeader</b>.
-
 `uStatus`
 
 Miniport drivers must set this member to WWAN_STATUS_SUCCESS for unsolicited events. WWAN_STATUS_SUCCESS is also specified for successful execution of OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS <i>set</i> requests.  The following table shows other possible error status codes (other members need not be updated by miniport driver):
@@ -155,6 +148,13 @@ A <i>set</i> request is not supported
 
 <table></table>
 
+`PreferredListHeader`
+
+A formatted WWAN_LIST_HEADER object that represents a list of preferred multi-carrier providers, including the number of providers in the list.
+
+These point to the list of the WWAN_PROVIDER2 by using the WWAN_LIST_HEADER structure. <b>WwanDataClass</b> flags describe the preference of the specific data access technology and can be set to any combination within its own cellular class.
+Response to  <a href="https://msdn.microsoft.com/library/windows/hardware/ff569830">OID_WWAN_PREFERRED_PROVIDERS</a><i>set </i> requests must contain zero elements in the <b>PreferredListHeader</b>.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -169,11 +169,3 @@ A <i>set</i> request is not supported
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569830">OID_WWAN_PREFERRED_PROVIDERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

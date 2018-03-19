@@ -66,17 +66,17 @@ typedef enum _RILSUBSCRIBERINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_SI_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_SI_DESCRIPTION</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_PARAM_SI_SERVICE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SI_ALL</td>
                     <td></td>
                 </tr>
 </table>

@@ -60,13 +60,8 @@ typedef enum _NDIS_PROCESSOR_VENDOR {
 <table>
             
                 <tr>
-                    <td>NdisProcessorVendorAuthenticAMD</td>
-                    <td>The processor vendor is AMD.</td>
-                </tr>
-            
-                <tr>
-                    <td>NdisProcessorVendorGenuineIntel</td>
-                    <td></td>
+                    <td>NdisProcessorVendorUnknown</td>
+                    <td>The processor vendor is unknown.</td>
                 </tr>
             
                 <tr>
@@ -75,8 +70,13 @@ typedef enum _NDIS_PROCESSOR_VENDOR {
                 </tr>
             
                 <tr>
-                    <td>NdisProcessorVendorUnknown</td>
-                    <td>The processor vendor is unknown.</td>
+                    <td>NdisProcessorVendorGenuineIntel</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>NdisProcessorVendorAuthenticAMD</td>
+                    <td>The processor vendor is AMD.</td>
                 </tr>
 </table>
 
@@ -95,11 +95,3 @@ The NDIS_PROCESSOR_VENDOR enumeration is used in the
 ## See Also
 
 <a href="..\ndis\ns-ndis-_ndis_system_processor_info.md">NDIS_SYSTEM_PROCESSOR_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROCESSOR_VENDOR enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

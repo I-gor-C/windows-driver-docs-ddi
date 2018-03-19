@@ -67,13 +67,49 @@ typedef struct _AVC_STREAM_REQUEST_BLOCK {
 ## Members
 
 
-`_tagCommandData`
+`SizeOfThisBlock`
 
+Specifies the size of the request block in bytes. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init_avcstrm_header.md">INIT_AVCSTRM_HEADER</a> macro.
 
+`Version`
+
+Specifies the version of <i>avcstrm.sys</i> device driver interface (DDI) to service a request. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init_avcstrm_header.md">INIT_AVCSTRM_HEADER</a> macro.
+
+`Function`
+
+Indicates the request (function code) <i>avcstrm.sys</i> services. This must be a value from the <a href="..\avcstrm\ne-avcstrm-_avcstrm_function.md">AVCSTRM_FUNCTION</a> enumeration. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init_avcstrm_header.md">INIT_AVCSTRM_HEADER</a> macro.
+
+`Flags`
+
+Special flags to indicate special service or deviation from standard service. This is currently not used.
+
+`Status`
+
+Final status of this request.
 
 `AVCStreamContext`
 
 This is context (handle) of a stream. Set this to <b>NULL</b> for the <b>AVCSTRM_OPEN</b> function code. For other function codes, this must be set to a valid value retrieved from an earlier call to AVCSTRM_OPEN.
+
+`Context1`
+
+The context pointers of the client.
+
+`Context2`
+
+The context pointers of the client.
+
+`Context3`
+
+The context pointers of the client.
+
+`Context4`
+
+The context pointers of the client.
+
+`Reserved`
+
+Reserved. Do not use.
 
 `CommandData`
 
@@ -116,45 +152,9 @@ Specifies a description of a buffer used to read or write data from/to a specifi
 </tr>
 </table>
 
-`Context1`
+`_tagCommandData`
 
-The context pointers of the client.
 
-`Context2`
-
-The context pointers of the client.
-
-`Context3`
-
-The context pointers of the client.
-
-`Context4`
-
-The context pointers of the client.
-
-`Flags`
-
-Special flags to indicate special service or deviation from standard service. This is currently not used.
-
-`Function`
-
-Indicates the request (function code) <i>avcstrm.sys</i> services. This must be a value from the <a href="..\avcstrm\ne-avcstrm-_avcstrm_function.md">AVCSTRM_FUNCTION</a> enumeration. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init_avcstrm_header.md">INIT_AVCSTRM_HEADER</a> macro.
-
-`Reserved`
-
-Reserved. Do not use.
-
-`SizeOfThisBlock`
-
-Specifies the size of the request block in bytes. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init_avcstrm_header.md">INIT_AVCSTRM_HEADER</a> macro.
-
-`Status`
-
-Final status of this request.
-
-`Version`
-
-Specifies the version of <i>avcstrm.sys</i> device driver interface (DDI) to service a request. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init_avcstrm_header.md">INIT_AVCSTRM_HEADER</a> macro.
 
 ## Remarks
 The AVC_STREAM_REQUEST_BLOCK is the primary structure used by a subunit driver to interface with <i>avcstrm.sys</i>.
@@ -219,11 +219,3 @@ To use this structure, set the IRP's <b>Irp-&gt;Parameters-&gt;Others.Argument1<
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554135">AVCSTRM_WRITE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVC_STREAM_REQUEST_BLOCK structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

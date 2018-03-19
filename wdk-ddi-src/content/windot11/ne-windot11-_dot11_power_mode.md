@@ -62,6 +62,11 @@ typedef enum _DOT11_POWER_MODE {
 <table>
             
                 <tr>
+                    <td>dot11_power_mode_unknown</td>
+                    <td>Specifies an undefined or uninitialized power mode.</td>
+                </tr>
+            
+                <tr>
                     <td>dot11_power_mode_active</td>
                     <td>Specifies an active power mode in which the PHY is always turned on.</td>
                 </tr>
@@ -69,11 +74,6 @@ typedef enum _DOT11_POWER_MODE {
                 <tr>
                     <td>dot11_power_mode_powersave</td>
                     <td>Specifies a power-save mode in which the PHY is periodically turned off.</td>
-                </tr>
-            
-                <tr>
-                    <td>dot11_power_mode_unknown</td>
-                    <td>Specifies an undefined or uninitialized power mode.</td>
                 </tr>
 </table>
 
@@ -92,11 +92,3 @@ An 802.11 station advertises its power management mode through the Power Managem
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569359">OID_DOT11_ENUM_ASSOCIATION_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_POWER_MODE enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

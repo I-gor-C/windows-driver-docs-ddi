@@ -59,7 +59,7 @@ typedef enum _RILACCESSTECHNOLOGYPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_ACCTECH_ALL</td>
+                    <td>RIL_PARAM_ACCTECH_SYSTEMTYPE</td>
                     <td></td>
                 </tr>
             
@@ -69,7 +69,7 @@ typedef enum _RILACCESSTECHNOLOGYPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_ACCTECH_SYSTEMTYPE</td>
+                    <td>RIL_PARAM_ACCTECH_ALL</td>
                     <td></td>
                 </tr>
 </table>

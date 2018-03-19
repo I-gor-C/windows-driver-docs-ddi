@@ -65,33 +65,17 @@ typedef struct _PosDeviceInformation {
 ## Members
 
 
+`UnifiedPOSVersion`
+
+Indicates the version of the UPOS specification supported.
+
 `DeviceCategory`
 
 Indicates the device category (for example, POSPrinter or CashDrawer).
 
-`FirmwareRevision`
-
-Indicates the device firmware revision.
-
-`InstallationDate`
-
-Indicates the device installation date.
-
-`Interface`
-
-Indicates the device hardware interface (for example, serial or USB).
-
-`ManufactureDate`
-
-Indicates the date the device was manufactured.
-
 `ManufacturerName`
 
 Indicates the name of the device manufacturer.
-
-`MechanicalRevision`
-
-Indicates the device hardware revision.
 
 `ModelName`
 
@@ -101,9 +85,25 @@ Indicates the model name of the device.
 
 Indicates the serial number of the device.
 
-`UnifiedPOSVersion`
+`ManufactureDate`
 
-Indicates the version of the UPOS specification supported.
+Indicates the date the device was manufactured.
+
+`MechanicalRevision`
+
+Indicates the device hardware revision.
+
+`FirmwareRevision`
+
+Indicates the device firmware revision.
+
+`Interface`
+
+Indicates the device hardware interface (for example, serial or USB).
+
+`InstallationDate`
+
+Indicates the device installation date.
 
 ## Remarks
 These strings must be NULL terminated, and the maximum length of the strings is <code>STATISTICS_STRING_SIZE - 1</code>.

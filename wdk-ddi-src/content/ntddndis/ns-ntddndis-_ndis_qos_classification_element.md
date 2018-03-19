@@ -79,29 +79,21 @@ typedef struct _NDIS_QOS_CLASSIFICATION_ELEMENT {
 ## Members
 
 
-`ActionField`
+`Header`
 
-A <b>USHORT</b> value that contains an action value whose type is specified by the  <b>ActionSelector</b> member.  
+The type, revision, and size of the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-For more information, see <a href="https://docs.microsoft.com/">Guidelines for Setting the ActionSelector and ActionField Members</a>.
+The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_QOS_CLASSIFICATION_ELEMENT. To specify the version of the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
-`ActionSelector`
 
-A <b>USHORT</b> value that specifies the type of action data that is contained in the <b>ActionField</b> member.  Starting with NDIS 6.30, the action data type specifies an 802.1p priority level whose value is specified by the <b>ConditionField</b> member.
 
-For more information, see <a href="https://docs.microsoft.com/">Guidelines for Setting the ActionSelector and ActionField Members</a>.
 
-`ConditionField`
 
-A <b>USHORT</b> value that contains the data pattern whose type is specified by the  <b>ConditionSelector</b> member. 
+#### NDIS_QOS_CLASSIFICATION_ELEMENT_REVISION_1
 
-For more information, see <a href="https://docs.microsoft.com/">Guidelines for Setting the ConditionSelector and ConditionField Members</a>.
+Original version for NDIS 6.30.
 
-`ConditionSelector`
-
-A <b>USHORT</b> value that specifies the type of the data pattern that is contained in the <b>ConditionField</b> member. For example, the data pattern type could specify a destination UDP port whose value is specified by the <b>ConditionField</b> member.
-
-For more information, see <a href="https://docs.microsoft.com/">Guidelines for Setting the ConditionSelector and ConditionField Members</a>.
+Set the <b>Size</b> member to NDIS_SIZEOF_QOS_CLASSIFICATION_ELEMENT_REVISION_1.
 
 `Flags`
 
@@ -119,21 +111,29 @@ If this flag is set, the miniport driver accepts the traffic classification para
 </div>
 <div> </div>
 
-`Header`
+`ConditionSelector`
 
-The type, revision, and size of the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+A <b>USHORT</b> value that specifies the type of the data pattern that is contained in the <b>ConditionField</b> member. For example, the data pattern type could specify a destination UDP port whose value is specified by the <b>ConditionField</b> member.
 
-The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_QOS_CLASSIFICATION_ELEMENT. To specify the version of the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
+For more information, see <a href="https://docs.microsoft.com/">Guidelines for Setting the ConditionSelector and ConditionField Members</a>.
 
+`ConditionField`
 
+A <b>USHORT</b> value that contains the data pattern whose type is specified by the  <b>ConditionSelector</b> member. 
 
+For more information, see <a href="https://docs.microsoft.com/">Guidelines for Setting the ConditionSelector and ConditionField Members</a>.
 
+`ActionSelector`
 
-#### NDIS_QOS_CLASSIFICATION_ELEMENT_REVISION_1
+A <b>USHORT</b> value that specifies the type of action data that is contained in the <b>ActionField</b> member.  Starting with NDIS 6.30, the action data type specifies an 802.1p priority level whose value is specified by the <b>ConditionField</b> member.
 
-Original version for NDIS 6.30.
+For more information, see <a href="https://docs.microsoft.com/">Guidelines for Setting the ActionSelector and ActionField Members</a>.
 
-Set the <b>Size</b> member to NDIS_SIZEOF_QOS_CLASSIFICATION_ELEMENT_REVISION_1.
+`ActionField`
+
+A <b>USHORT</b> value that contains an action value whose type is specified by the  <b>ActionSelector</b> member.  
+
+For more information, see <a href="https://docs.microsoft.com/">Guidelines for Setting the ActionSelector and ActionField Members</a>.
 
 ## Remarks
 A traffic classification specifies a <i>condition</i> and an <i>action</i> that the network adapter applies to egress packet data. When the adapter inspects the egress packet data and finds a matching classification condition, it applies the corresponding action to the egress packet.
@@ -299,11 +299,3 @@ For more information on NDIS QoS traffic classes, see <a href="https://msdn.micr
 
 
 <b></b>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_QOS_CLASSIFICATION_ELEMENT structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

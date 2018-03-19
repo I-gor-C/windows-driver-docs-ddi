@@ -60,13 +60,17 @@ typedef struct _D3DKMT_UNORDEREDPRESENTSWAPCHAIN {
 ## Members
 
 
+`hNtSwapChain`
+
+NT handle for the swapchain in this process.
+
 `bProducer`
 
 Indicates if producer or consumer.
 
-`hNtSwapChain`
+`PresentBufferIdx`
 
-NT handle for the swapchain in this process.
+Index of the buffer to present.
 
 `MetaDataSize`
 
@@ -75,10 +79,6 @@ Size of the metadata.
 `pMetaData`
 
 A pointer to the metadata for the frame.
-
-`PresentBufferIdx`
-
-Index of the buffer to present.
 
 
 ## Requirements

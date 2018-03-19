@@ -61,6 +61,11 @@ typedef enum _TRISTATE {
 <table>
             
                 <tr>
+                    <td>TriStateUnknown</td>
+                    <td>State is unknown.</td>
+                </tr>
+            
+                <tr>
                     <td>TriStateFalse</td>
                     <td>State is a false boolean value.</td>
                 </tr>
@@ -68,11 +73,6 @@ typedef enum _TRISTATE {
                 <tr>
                     <td>TriStateTrue</td>
                     <td>State is a true boolean value.</td>
-                </tr>
-            
-                <tr>
-                    <td>TriStateUnknown</td>
-                    <td>State is unknown.</td>
                 </tr>
 </table>
 

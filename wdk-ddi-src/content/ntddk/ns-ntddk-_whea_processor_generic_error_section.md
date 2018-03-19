@@ -72,32 +72,89 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 ## Members
 
 
-`CPUBrandString`
+`ValidBits`
 
-The CPU brand string.
+A 
+      <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section_validbits.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</a> 
+      union that specifies which members of this structure contain valid data.
 
-<ul>
-<li>For x86 and x64 processors, this member contains the result of executing the CPUID instruction with EAX 
-        set to 0x80000002 on input, followed by executing the CPUID instruction with EAX set to 0x80000003 on input. 
-        For more information about the CPUID instruction, see the 
-        <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.</li>
-<li>For Itanium processors, this member contains the result of executing the 
-        <b>PAL_BRAND_INFO</b> procedure.</li>
-</ul>
-This member contains valid data only if the <b>CpuBrandString</b> bit of the 
+`ProcessorType`
+
+The processor architecture of the processor.
+
+This member contains valid data only if the 
+       <b>ProcessorType</b> bit of the <b>ValidBits</b> member is set.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="GENPROC_PROCTYPE_XPF"></a><a id="genproc_proctype_xpf"></a><dl>
+<dt><b>GENPROC_PROCTYPE_XPF</b></dt>
+</dl>
+</td>
+<td width="60%">
+x86/x64 processor family
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="GENPROC_PROCTYPE_IPF"></a><a id="genproc_proctype_ipf"></a><dl>
+<dt><b>GENPROC_PROCTYPE_IPF</b></dt>
+</dl>
+</td>
+<td width="60%">
+Intel Itanium processor family
+
+</td>
+</tr>
+</table>
+
+`InstructionSet`
+
+The instruction set that was executing when the error occurred.
+
+This member contains valid data only if the <b>InstructionSet</b> bit of the 
        <b>ValidBits</b> member is set.
 
-`CPUVersion`
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="GENPROC_PROCISA_X86"></a><a id="genproc_procisa_x86"></a><dl>
+<dt><b>GENPROC_PROCISA_X86</b></dt>
+</dl>
+</td>
+<td width="60%">
+x86
 
-The CPU version, which includes the family, model, and stepping information.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="GENPROC_PROCISA_IPF"></a><a id="genproc_procisa_ipf"></a><dl>
+<dt><b>GENPROC_PROCISA_IPF</b></dt>
+</dl>
+</td>
+<td width="60%">
+Itanium
 
-<ul>
-<li>For x86 and x64 processors, this member contains a 
-        <a href="..\ntddk\ns-ntddk-_whea_processor_family_info.md">WHEA_PROCESSOR_FAMILY_INFO</a> union.</li>
-<li>For Itanium processors, this member contains the data provided in CPUID Register 3.</li>
-</ul>
-This member contains valid data only if the <b>CPUVersion</b> bit of the 
-       <b>ValidBits</b> member is set.
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="GENPROC_PROCISA_X64"></a><a id="genproc_procisa_x64"></a><dl>
+<dt><b>GENPROC_PROCISA_X64</b></dt>
+</dl>
+</td>
+<td width="60%">
+x64
+
+</td>
+</tr>
+</table>
 
 `ErrorType`
 
@@ -163,6 +220,60 @@ Microarchitecture error
 </tr>
 </table>
 
+`Operation`
+
+The type of operation that was executing when the error occurred.
+
+This member contains valid data only if the <b>Operation</b> bit of the 
+       <b>ValidBits</b> member is set.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td width="40%"><a id="GENPROC_OP_GENERIC"></a><a id="genproc_op_generic"></a><dl>
+<dt><b>GENPROC_OP_GENERIC</b></dt>
+</dl>
+</td>
+<td width="60%">
+Unknown or generic operation
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="GENPROC_OP_DATAREAD"></a><a id="genproc_op_dataread"></a><dl>
+<dt><b>GENPROC_OP_DATAREAD</b></dt>
+</dl>
+</td>
+<td width="60%">
+Data read
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="GENPROC_OP_DATAWRITE"></a><a id="genproc_op_datawrite"></a><dl>
+<dt><b>GENPROC_OP_DATAWRITE</b></dt>
+</dl>
+</td>
+<td width="60%">
+Data write
+
+</td>
+</tr>
+<tr>
+<td width="40%"><a id="GENPROC_OP_INSTRUCTIONEXE"></a><a id="genproc_op_instructionexe"></a><dl>
+<dt><b>GENPROC_OP_INSTRUCTIONEXE</b></dt>
+</dl>
+</td>
+<td width="60%">
+Instruction execution
+
+</td>
+</tr>
+</table>
+
 `Flags`
 
 A bit-wise OR'ed combination of flags that provides additional information about the error.
@@ -219,57 +330,6 @@ The error was corrected by the hardware or the firmware.
 </tr>
 </table>
 
-`InstructionPointer`
-
-The instruction pointer at the time that the error occurred.
-
-This member contains valid data only if the <b>InstructionPointer</b> bit of the 
-       <b>ValidBits</b> member is set.
-
-`InstructionSet`
-
-The instruction set that was executing when the error occurred.
-
-This member contains valid data only if the <b>InstructionSet</b> bit of the 
-       <b>ValidBits</b> member is set.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="GENPROC_PROCISA_X86"></a><a id="genproc_procisa_x86"></a><dl>
-<dt><b>GENPROC_PROCISA_X86</b></dt>
-</dl>
-</td>
-<td width="60%">
-x86
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="GENPROC_PROCISA_IPF"></a><a id="genproc_procisa_ipf"></a><dl>
-<dt><b>GENPROC_PROCISA_IPF</b></dt>
-</dl>
-</td>
-<td width="60%">
-Itanium
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="GENPROC_PROCISA_X64"></a><a id="genproc_procisa_x64"></a><dl>
-<dt><b>GENPROC_PROCISA_X64</b></dt>
-</dl>
-</td>
-<td width="60%">
-x64
-
-</td>
-</tr>
-</table>
-
 `Level`
 
 The level of the structure where the error occurred, with zero being the lowest level of cache.
@@ -277,59 +337,36 @@ The level of the structure where the error occurred, with zero being the lowest 
 This member contains valid data only if the <b>Level</b> bit of the 
        <b>ValidBits</b> member is set.
 
-`Operation`
+`Reserved`
 
-The type of operation that was executing when the error occurred.
+Reserved for system use.
 
-This member contains valid data only if the <b>Operation</b> bit of the 
+`CPUVersion`
+
+The CPU version, which includes the family, model, and stepping information.
+
+<ul>
+<li>For x86 and x64 processors, this member contains a 
+        <a href="..\ntddk\ns-ntddk-_whea_processor_family_info.md">WHEA_PROCESSOR_FAMILY_INFO</a> union.</li>
+<li>For Itanium processors, this member contains the data provided in CPUID Register 3.</li>
+</ul>
+This member contains valid data only if the <b>CPUVersion</b> bit of the 
        <b>ValidBits</b> member is set.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="GENPROC_OP_GENERIC"></a><a id="genproc_op_generic"></a><dl>
-<dt><b>GENPROC_OP_GENERIC</b></dt>
-</dl>
-</td>
-<td width="60%">
-Unknown or generic operation
+`CPUBrandString`
 
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="GENPROC_OP_DATAREAD"></a><a id="genproc_op_dataread"></a><dl>
-<dt><b>GENPROC_OP_DATAREAD</b></dt>
-</dl>
-</td>
-<td width="60%">
-Data read
+The CPU brand string.
 
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="GENPROC_OP_DATAWRITE"></a><a id="genproc_op_datawrite"></a><dl>
-<dt><b>GENPROC_OP_DATAWRITE</b></dt>
-</dl>
-</td>
-<td width="60%">
-Data write
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="GENPROC_OP_INSTRUCTIONEXE"></a><a id="genproc_op_instructionexe"></a><dl>
-<dt><b>GENPROC_OP_INSTRUCTIONEXE</b></dt>
-</dl>
-</td>
-<td width="60%">
-Instruction execution
-
-</td>
-</tr>
-</table>
+<ul>
+<li>For x86 and x64 processors, this member contains the result of executing the CPUID instruction with EAX 
+        set to 0x80000002 on input, followed by executing the CPUID instruction with EAX set to 0x80000003 on input. 
+        For more information about the CPUID instruction, see the 
+        <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.</li>
+<li>For Itanium processors, this member contains the result of executing the 
+        <b>PAL_BRAND_INFO</b> procedure.</li>
+</ul>
+This member contains valid data only if the <b>CpuBrandString</b> bit of the 
+       <b>ValidBits</b> member is set.
 
 `ProcessorId`
 
@@ -343,39 +380,12 @@ An identifier that uniquely identifies the logical processor in the system.
 This member contains valid data only if the <b>ProcessorId</b> bit of the 
        <b>ValidBits</b> member is set.
 
-`ProcessorType`
+`TargetAddress`
 
-The processor architecture of the processor.
+The target address associated with the error.
 
-This member contains valid data only if the 
-       <b>ProcessorType</b> bit of the <b>ValidBits</b> member is set.
-
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="GENPROC_PROCTYPE_XPF"></a><a id="genproc_proctype_xpf"></a><dl>
-<dt><b>GENPROC_PROCTYPE_XPF</b></dt>
-</dl>
-</td>
-<td width="60%">
-x86/x64 processor family
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="GENPROC_PROCTYPE_IPF"></a><a id="genproc_proctype_ipf"></a><dl>
-<dt><b>GENPROC_PROCTYPE_IPF</b></dt>
-</dl>
-</td>
-<td width="60%">
-Intel Itanium processor family
-
-</td>
-</tr>
-</table>
+This member contains valid data only if the <b>TargetAddress</b> bit of the 
+       <b>ValidBits</b> member is set.
 
 `RequesterId`
 
@@ -384,10 +394,6 @@ An identifier that uniquely identifies the requester associated with the error.
 This member contains valid data only if the <b>RequesterId</b> bit of the 
        <b>ValidBits</b> member is set.
 
-`Reserved`
-
-Reserved for system use.
-
 `ResponderId`
 
 An identifier that uniquely identifies the responder associated with the error.
@@ -395,18 +401,12 @@ An identifier that uniquely identifies the responder associated with the error.
 This member contains valid data only if the <b>ResponderId</b> bit of the 
        <b>ValidBits</b> member is set.
 
-`TargetAddress`
+`InstructionPointer`
 
-The target address associated with the error.
+The instruction pointer at the time that the error occurred.
 
-This member contains valid data only if the <b>TargetAddress</b> bit of the 
+This member contains valid data only if the <b>InstructionPointer</b> bit of the 
        <b>ValidBits</b> member is set.
-
-`ValidBits`
-
-A 
-      <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section_validbits.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</a> 
-      union that specifies which members of this structure contain valid data.
 
 ## Remarks
 The 
@@ -439,11 +439,3 @@ The
 
 
 <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section_validbits.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -81,13 +81,8 @@ typedef enum D3D10_DDI_RESOURCE_BIND_FLAG {
 <table>
             
                 <tr>
-                    <td>D3D10_DDI_BIND_CONSTANT_BUFFER</td>
-                    <td>The resource can be bound as a constant buffer.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_BIND_DEPTH_STENCIL</td>
-                    <td>The resource can be bound as a depth-stencil buffer.</td>
+                    <td>D3D10_DDI_BIND_VERTEX_BUFFER</td>
+                    <td>The resource can be bound as a vertex buffer in a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_ia_setvertexbuffers.md">IaSetVertexBuffers</a> function.</td>
                 </tr>
             
                 <tr>
@@ -96,23 +91,8 @@ typedef enum D3D10_DDI_RESOURCE_BIND_FLAG {
                 </tr>
             
                 <tr>
-                    <td>D3D10_DDI_BIND_MASK</td>
-                    <td>A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the Direct3D version 10 values from this enumeration.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_BIND_PIPELINE_MASK</td>
-                    <td>A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the first seven values from this enumeration.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_BIND_PRESENT</td>
-                    <td>The resource can be used in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a> function (that is, the resource can be used as a back buffer).</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D10_DDI_BIND_RENDER_TARGET</td>
-                    <td>The resource can be bound as a render target.</td>
+                    <td>D3D10_DDI_BIND_CONSTANT_BUFFER</td>
+                    <td>The resource can be bound as a constant buffer.</td>
                 </tr>
             
                 <tr>
@@ -126,8 +106,63 @@ typedef enum D3D10_DDI_RESOURCE_BIND_FLAG {
                 </tr>
             
                 <tr>
-                    <td>D3D10_DDI_BIND_VERTEX_BUFFER</td>
-                    <td>The resource can be bound as a vertex buffer in a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_ia_setvertexbuffers.md">IaSetVertexBuffers</a> function.</td>
+                    <td>D3D10_DDI_BIND_RENDER_TARGET</td>
+                    <td>The resource can be bound as a render target.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_BIND_DEPTH_STENCIL</td>
+                    <td>The resource can be bound as a depth-stencil buffer.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_BIND_PIPELINE_MASK</td>
+                    <td>A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the first seven values from this enumeration.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_BIND_PRESENT</td>
+                    <td>The resource can be used in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a> function (that is, the resource can be used as a back buffer).</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D10_DDI_BIND_MASK</td>
+                    <td>A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the Direct3D version 10 values from this enumeration.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_DDI_BIND_UNORDERED_ACCESS</td>
+                    <td>The resource can be bound as an unordered-access buffer.
+
+Supported starting with Windows 8.
+
+The resource can be bound as an unordered-access buffer.
+
+Supported starting with Windows 7.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_DDI_BIND_DECODER</td>
+                    <td>The resource is a two-dimensional (2-D) texture that is filled by the video decoder engine.
+
+This value cannot be used simultaneously with the <b>D3D10_DDI_BIND_RENDER_TARGET</b> enumeration value.
+
+Supported starting with Windows 8.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_DDI_BIND_VIDEO_ENCODER</td>
+                    <td>The resource is used as an input for a hardware-encode Media Foundation Transform (MFT).
+
+This value cannot be used simultaneously with these values from this enumeration:<ul>
+<li><b>D3D11_DDI_BIND_CONSTANT_BUFFER</b></li>
+<li><b>D3D11_DDI_BIND_DEPTH_STENCIL</b></li>
+<li><b>D3D11_DDI_BIND_INDEX_BUFFER</b></li>
+<li><b>D3D11_DDI_BIND_VERTEX_BUFFER</b></li>
+</ul>
+
+
+Supported starting with Windows 8.</td>
                 </tr>
             
                 <tr>
@@ -150,26 +185,6 @@ Supported starting with Windows 8.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_DDI_BIND_DECODER</td>
-                    <td>The resource is a two-dimensional (2-D) texture that is filled by the video decoder engine.
-
-This value cannot be used simultaneously with the <b>D3D10_DDI_BIND_RENDER_TARGET</b> enumeration value.
-
-Supported starting with Windows 8.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D11_DDI_BIND_MASK</td>
-                    <td>A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the Direct3D version 11 and version 10 values from this enumeration.
-
-Supported starting with Windows 8.
-
-A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the Direct3D version 11 and version 10 values from this enumeration.
-
-Supported starting with Windows 7.</td>
-                </tr>
-            
-                <tr>
                     <td>D3D11_DDI_BIND_PIPELINE_MASK</td>
                     <td>A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the first nine values from this enumeration.
 
@@ -181,29 +196,14 @@ Supported starting with Windows 7.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D11_DDI_BIND_UNORDERED_ACCESS</td>
-                    <td>The resource can be bound as an unordered-access buffer.
+                    <td>D3D11_DDI_BIND_MASK</td>
+                    <td>A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the Direct3D version 11 and version 10 values from this enumeration.
 
 Supported starting with Windows 8.
 
-The resource can be bound as an unordered-access buffer.
+A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combination of the Direct3D version 11 and version 10 values from this enumeration.
 
 Supported starting with Windows 7.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D11_DDI_BIND_VIDEO_ENCODER</td>
-                    <td>The resource is used as an input for a hardware-encode Media Foundation Transform (MFT).
-
-This value cannot be used simultaneously with these values from this enumeration:<ul>
-<li><b>D3D11_DDI_BIND_CONSTANT_BUFFER</b></li>
-<li><b>D3D11_DDI_BIND_DEPTH_STENCIL</b></li>
-<li><b>D3D11_DDI_BIND_INDEX_BUFFER</b></li>
-<li><b>D3D11_DDI_BIND_VERTEX_BUFFER</b></li>
-</ul>
-
-
-Supported starting with Windows 8.</td>
                 </tr>
 </table>
 
@@ -241,11 +241,3 @@ Supported starting with Windows 8.</td>
 
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_ia_setvertexbuffers.md">IaSetVertexBuffers</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10_DDI_RESOURCE_BIND_FLAG enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

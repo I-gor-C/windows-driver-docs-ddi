@@ -62,12 +62,7 @@ typedef enum _RILMSGCLASS {
 <table>
             
                 <tr>
-                    <td>RIL_MSGCLASS_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGCLASS_BROADCAST</td>
+                    <td>RIL_MSGCLASS_NONE</td>
                     <td></td>
                 </tr>
             
@@ -77,12 +72,17 @@ typedef enum _RILMSGCLASS {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGCLASS_NONE</td>
+                    <td>RIL_MSGCLASS_OUTGOING</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGCLASS_OUTGOING</td>
+                    <td>RIL_MSGCLASS_BROADCAST</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGCLASS_ALL</td>
                     <td></td>
                 </tr>
 </table>

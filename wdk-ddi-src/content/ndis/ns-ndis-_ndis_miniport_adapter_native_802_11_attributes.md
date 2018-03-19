@@ -71,24 +71,6 @@ typedef struct {
 ## Members
 
 
-`ExtAPAttributes`
-
-A pointer to a 
-      <a href="..\windot11\ns-windot11-_dot11_extap_attributes.md">DOT11_EXTAP_ATTRIBUTES</a> structure
-      that specifies the attributes of the miniport driver and 802.11 station when it operates in Extensible
-      Access Point (ExtAP) mode.
-
-This member is available beginning with Windows 7.
-
-`ExtSTAAttributes`
-
-A pointer to a 
-     <a href="..\windot11\ns-windot11-dot11_extsta_attributes.md">DOT11_EXTSTA_ATTRIBUTES</a> structure
-     that specifies the attributes of the miniport driver and 802.11 station when operating in Extensible
-     Station (ExtSTA) mode. For more information about this operation mode, see 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/extensible-station-operation-mode">Extensible Station Operation
-     Mode</a>.
-
 `Header`
 
 The type, revision, and size of the NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure. This
@@ -130,31 +112,6 @@ For later versions of the Windows operating systems, this member must be set to
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
-`MultiDomainCapabilityImplemented`
-
-A Boolean value that, if <b>TRUE</b>, specifies that the 802.11 station can operate in multiple
-     regulatory domains. For more information about 802.11 regulatory domains, refer to the IEEE 802.11d-2001
-     standard.
-
-`NumOfRXBuffers`
-
-The maximum number of MSDU packets that the 802.11 station can buffer in its receive queue. The
-     miniport driver must support a minimum receive queue depth of 64.
-
-`NumOfTXBuffers`
-
-The maximum number of media access control (MAC) service data unit (MSDU) packets that the 802.11
-     station can hold in its transmit queue. The miniport driver must support a minimum transmit queue depth
-     of 64.
-     
-
-The value of this member must not include the number of transmit buffers that the 802.11 station uses
-     to send packets on its own, such as Beacon packets or 802.11 control packets.
-
-`NumSupportedPhys`
-
-The number of PHYs on the 802.11 station.
-
 `OpModeCapability`
 
 A bitmask of the miniport driver's supported operation modes. This bitmask is defined through the
@@ -189,6 +146,31 @@ For more information about operation modes, see
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-operation-modes">Native 802.11 Operation
      Modes</a>.
 
+`NumOfTXBuffers`
+
+The maximum number of media access control (MAC) service data unit (MSDU) packets that the 802.11
+     station can hold in its transmit queue. The miniport driver must support a minimum transmit queue depth
+     of 64.
+     
+
+The value of this member must not include the number of transmit buffers that the 802.11 station uses
+     to send packets on its own, such as Beacon packets or 802.11 control packets.
+
+`NumOfRXBuffers`
+
+The maximum number of MSDU packets that the 802.11 station can buffer in its receive queue. The
+     miniport driver must support a minimum receive queue depth of 64.
+
+`MultiDomainCapabilityImplemented`
+
+A Boolean value that, if <b>TRUE</b>, specifies that the 802.11 station can operate in multiple
+     regulatory domains. For more information about 802.11 regulatory domains, refer to the IEEE 802.11d-2001
+     standard.
+
+`NumSupportedPhys`
+
+The number of PHYs on the 802.11 station.
+
 `SupportedPhyAttributes`
 
 A pointer to an array of 
@@ -199,12 +181,30 @@ A pointer to an array of
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-phy-types">
      OID_DOT11_SUPPORTED_PHY_TYPES</a>.
 
+`ExtSTAAttributes`
+
+A pointer to a 
+     <a href="..\windot11\ns-windot11-dot11_extsta_attributes.md">DOT11_EXTSTA_ATTRIBUTES</a> structure
+     that specifies the attributes of the miniport driver and 802.11 station when operating in Extensible
+     Station (ExtSTA) mode. For more information about this operation mode, see 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/extensible-station-operation-mode">Extensible Station Operation
+     Mode</a>.
+
 `VWiFiAttributes`
 
 A pointer to a 
       <a href="..\windot11\ns-windot11-dot11_vwifi_attributes.md">DOT11_VWIFI_ATTRIBUTES</a> structure
       that specifies the attributes of the miniport driver and 802.11 station when it operates in Virtual
       WiFi mode.
+
+This member is available beginning with Windows 7.
+
+`ExtAPAttributes`
+
+A pointer to a 
+      <a href="..\windot11\ns-windot11-_dot11_extap_attributes.md">DOT11_EXTAP_ATTRIBUTES</a> structure
+      that specifies the attributes of the miniport driver and 802.11 station when it operates in Extensible
+      Access Point (ExtAP) mode.
 
 This member is available beginning with Windows 7.
 
@@ -309,11 +309,3 @@ For more information about the initialization requirements for a Native 802.11 m
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

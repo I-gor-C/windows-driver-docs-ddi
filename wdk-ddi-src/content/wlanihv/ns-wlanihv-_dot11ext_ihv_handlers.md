@@ -76,29 +76,6 @@ typedef struct _DOT11EXT_IHV_HANDLERS {
 ## Members
 
 
-`Dot11ExtIhvAdapterReset`
-
-A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11extihv_adapter_reset.md">
-     Dot11ExtIhvAdapterReset</a> function.
-
-`Dot11ExtIhvControl`
-
-A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11extihv_control.md">Dot11ExtIhvControl</a> function.
-
-`Dot11ExtIhvCreateDiscoveryProfiles`
-
-A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11extihv_create_discovery_profiles.md">
-     Dot11ExtIhvCreateDiscoveryProfiles</a> function.
-
-`Dot11ExtIhvDeinitAdapter`
-
-A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11extihv_deinit_adapter.md">
-     Dot11ExtIhvDeinitAdapter</a> function.
-
 `Dot11ExtIhvDeinitService`
 
 A pointer to the 
@@ -111,29 +88,11 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">
      Dot11ExtIhvInitAdapter</a> function.
 
-`Dot11ExtIhvIsUIRequestPending`
+`Dot11ExtIhvDeinitAdapter`
 
 A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11extihv_is_ui_request_pending.md">
-     Dot11ExtIhvIsUIRequestPending</a> function.
-
-`Dot11ExtIhvOnexIndicateResult`
-
-A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11extihv_onex_indicate_result.md">
-     Dot11ExtIhvOneXIndicateResult</a> function.
-
-`Dot11ExtIhvPerformCapabilityMatch`
-
-A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_capability_match.md">
-     Dot11ExtIhvPerformCapabilityMatch</a> function.
-
-`Dot11ExtIhvPerformPostAssociate`
-
-A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_post_associate.md">
-     Dot11ExtIhvPerformPostAssociate</a> function.
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_deinit_adapter.md">
+     Dot11ExtIhvDeinitAdapter</a> function.
 
 `Dot11ExtIhvPerformPreAssociate`
 
@@ -141,23 +100,47 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
      Dot11ExtIhvPerformPreAssociate</a> function.
 
+`Dot11ExtIhvAdapterReset`
+
+A pointer to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_adapter_reset.md">
+     Dot11ExtIhvAdapterReset</a> function.
+
+`Dot11ExtIhvPerformPostAssociate`
+
+A pointer to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_post_associate.md">
+     Dot11ExtIhvPerformPostAssociate</a> function.
+
+`Dot11ExtIhvStopPostAssociate`
+
+A pointer to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_stop_post_associate.md">
+     Dot11ExtIhvStopPostAssociate</a> function.
+
+`Dot11ExtIhvValidateProfile`
+
+A pointer to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_validate_profile.md">
+     Dot11ExtIhvValidateProfile</a> function.
+
+`Dot11ExtIhvPerformCapabilityMatch`
+
+A pointer to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_capability_match.md">
+     Dot11ExtIhvPerformCapabilityMatch</a> function.
+
+`Dot11ExtIhvCreateDiscoveryProfiles`
+
+A pointer to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_create_discovery_profiles.md">
+     Dot11ExtIhvCreateDiscoveryProfiles</a> function.
+
 `Dot11ExtIhvProcessSessionChange`
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_process_session_change.md">
      Dot11ExtIhvProcessSessionChange</a> function.
-
-`Dot11ExtIhvProcessUIResponse`
-
-A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11extihv_process_ui_response.md">
-     Dot11ExtIhvProcessUIResponse</a> function.
-
-`Dot11ExtIhvQueryUIRequest`
-
-A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11extihv_query_ui_request.md">
-     Dot11ExtIhvQueryUIRequest</a> function.
 
 `Dot11ExtIhvReceiveIndication`
 
@@ -177,17 +160,34 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_send_packet_completion.md">
      Dot11ExtIhvSendPacketCompletion</a> function.
 
-`Dot11ExtIhvStopPostAssociate`
+`Dot11ExtIhvIsUIRequestPending`
 
 A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11extihv_stop_post_associate.md">
-     Dot11ExtIhvStopPostAssociate</a> function.
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_is_ui_request_pending.md">
+     Dot11ExtIhvIsUIRequestPending</a> function.
 
-`Dot11ExtIhvValidateProfile`
+`Dot11ExtIhvProcessUIResponse`
 
 A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11extihv_validate_profile.md">
-     Dot11ExtIhvValidateProfile</a> function.
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_process_ui_response.md">
+     Dot11ExtIhvProcessUIResponse</a> function.
+
+`Dot11ExtIhvQueryUIRequest`
+
+A pointer to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_query_ui_request.md">
+     Dot11ExtIhvQueryUIRequest</a> function.
+
+`Dot11ExtIhvOnexIndicateResult`
+
+A pointer to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_onex_indicate_result.md">
+     Dot11ExtIhvOneXIndicateResult</a> function.
+
+`Dot11ExtIhvControl`
+
+A pointer to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_control.md">Dot11ExtIhvControl</a> function.
 
 ## Remarks
 The IHV handler functions are a set of callback functions supported by the IHV Extensions DLL. When
@@ -317,11 +317,3 @@ All of the function pointers are required and must not be set to <b>NULL</b>.
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_send_packet_completion.md">
    Dot11ExtIhvSendPacketCompletion</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_IHV_HANDLERS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

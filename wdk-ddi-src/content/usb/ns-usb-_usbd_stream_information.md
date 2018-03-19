@@ -60,14 +60,6 @@ typedef struct _USBD_STREAM_INFORMATION {
 ## Members
 
 
-`MaximumTransferSize`
-
-Maximum transfer size (in bytes) that a client driver can send in a single URB for an I/O transfer to the stream.
-
-`PipeFlags`
-
-Reserved. Do not use.
-
 `PipeHandle`
 
 An opaque handle to  the stream.
@@ -75,6 +67,14 @@ An opaque handle to  the stream.
 `StreamID`
 
 Stream identifier. The open-static streams request obtains stream identifiers that are assigned by the USB driver stack.
+
+`MaximumTransferSize`
+
+Maximum transfer size (in bytes) that a client driver can send in a single URB for an I/O transfer to the stream.
+
+`PipeFlags`
+
+Reserved. Do not use.
 
 ## Remarks
 A client driver allocates an array of  <b>USBD_STREAM_INFORMATION</b> structures and sends it in an open-streams request (URB_FUNCTION_OPEN_STATIC_STREAMS).  Upon completion, the USB driver stack retrieves stream information and populates each <b>USBD_STREAM_INFORMATION</b> structure with stream information.  The stream identifiers returned by the request are sequential and start at 1.
@@ -104,11 +104,3 @@ A client driver allocates an array of  <b>USBD_STREAM_INFORMATION</b> structures
 
 
 <a href="..\usb\ns-usb-_urb_open_static_streams.md">_URB_OPEN_STATIC_STREAMS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBD_STREAM_INFORMATION structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

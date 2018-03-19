@@ -67,18 +67,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KS_CAPTURE_ALLOC_SECURE_BUFFER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>KS_CAPTURE_ALLOC_SYSTEM</td>
                     <td>Not currently supported.</td>
-                </tr>
-            
-                <tr>
-                    <td>KS_CAPTURE_ALLOC_SYSTEM_AGP</td>
-                    <td>Identifies a surface in system memory that is tagged as AGP accessible.</td>
                 </tr>
             
                 <tr>
@@ -87,8 +77,18 @@ typedef enum  {
                 </tr>
             
                 <tr>
+                    <td>KS_CAPTURE_ALLOC_SYSTEM_AGP</td>
+                    <td>Identifies a surface in system memory that is tagged as AGP accessible.</td>
+                </tr>
+            
+                <tr>
                     <td>KS_CAPTURE_ALLOC_VRAM_MAPPED</td>
                     <td>Not currently supported.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_CAPTURE_ALLOC_SECURE_BUFFER</td>
+                    <td></td>
                 </tr>
 </table>
 
@@ -105,11 +105,3 @@ typedef enum  {
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565130">KSPROPERTY_CURRENT_CAPTURE_SURFACE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20CAPTURE_MEMORY_ALLOCATION_FLAGS enumeration%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -59,14 +59,6 @@ typedef struct {
 ## Members
 
 
-`BlobFormat`
-
-If the RequestType is GNSS_AGNSS_BlobInjection, this contains the required  blob format.
-
-`RequestType`
-
-Specifies the type of the request (for example, time injection, blob injection).
-
 `Size`
 
 Structure size.
@@ -74,6 +66,14 @@ Structure size.
 `Version`
 
 Version number.
+
+`RequestType`
+
+Specifies the type of the request (for example, time injection, blob injection).
+
+`BlobFormat`
+
+If the RequestType is GNSS_AGNSS_BlobInjection, this contains the required  blob format.
 
 
 ## Requirements

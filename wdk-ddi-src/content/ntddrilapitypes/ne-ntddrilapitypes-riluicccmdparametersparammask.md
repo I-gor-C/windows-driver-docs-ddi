@@ -61,11 +61,6 @@ typedef enum _RILUICCCMDPARAMETERSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_SCP_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_SCP_FILEPATH</td>
                     <td></td>
                 </tr>
@@ -82,6 +77,11 @@ typedef enum _RILUICCCMDPARAMETERSPARAMMASK {
             
                 <tr>
                     <td>RIL_PARAM_SCP_PARAM3</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SCP_ALL</td>
                     <td></td>
                 </tr>
 </table>

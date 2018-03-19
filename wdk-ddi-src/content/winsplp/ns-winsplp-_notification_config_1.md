@@ -68,11 +68,11 @@ typedef struct _NOTIFICATION_CONFIG_1 {
 
 
 
-`pContext`
-
-
-
 `pfnNotifyCallback`
+
+
+
+`pContext`
 
 
 

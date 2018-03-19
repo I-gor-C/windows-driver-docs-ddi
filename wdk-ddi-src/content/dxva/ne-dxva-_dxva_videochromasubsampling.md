@@ -68,48 +68,8 @@ typedef enum _DXVA_VideoChromaSubsampling {
 <table>
             
                 <tr>
-                    <td>DXVA_VideoChromaSubsampling_Cosited</td>
-                    <td>A bitwise OR of the DXVA_VideoChromaSubsampling_Horizontally_Cosited, and DXVA_VideoChromaSubsampling_Vertically_Cosited, and DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes values that are used with 4:4:4, 4:2:2, and 4:1:1 data.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoChromaSubsampling_DV_PAL</td>
-                    <td>A bitwise OR of the DXVA_VideoChromaSubsampling_Horizontally_Cosited and DXVA_VideoChromaSubsampling_Vertically_Cosited values that are used with 4:2:0 data.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoChromaSubsampling_Horizontally_Cosited</td>
-                    <td>Specifies that chroma samples are aligned on multiples of the luma samples horizontally.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoChromaSubsampling_MPEG1</td>
-                    <td>The DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes value that is used with 4:2:0 data.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoChromaSubsampling_MPEG2</td>
-                    <td>A bitwise OR of the DXVA_VideoChromaSubsampling_Horizontally_Cosited and DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes values that are used with 4:2:0 data.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoChromaSubsampling_ProgressiveChroma</td>
-                    <td>Specifies that the video chroma subsampling is progressive chroma.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoChromaSubsampling_Unknown</td>
-                    <td>Specifies that the video chroma subsampling is not specified.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</td>
-                    <td>Specifies that the Pb and Pr (or Cb and Cr) planes have the same phase alignment. This enumerator can only be set to 0 in the <b>VideoChromaSubsampling</b> member of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> structure if the data is vertically cosited.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_VideoChromaSubsampling_Vertically_Cosited</td>
-                    <td>Specifies that chroma samples are aligned on multiples of the luma samples vertically.</td>
+                    <td>DXVA_VideoChromaSubsamplingShift</td>
+                    <td>Specifies to shift bits by 8 positions (DXVA_ExtColorData_ShiftBase + 0, or 8 + 0).</td>
                 </tr>
             
                 <tr>
@@ -118,8 +78,48 @@ typedef enum _DXVA_VideoChromaSubsampling {
                 </tr>
             
                 <tr>
-                    <td>DXVA_VideoChromaSubsamplingShift</td>
-                    <td>Specifies to shift bits by 8 positions (DXVA_ExtColorData_ShiftBase + 0, or 8 + 0).</td>
+                    <td>DXVA_VideoChromaSubsampling_Unknown</td>
+                    <td>Specifies that the video chroma subsampling is not specified.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoChromaSubsampling_ProgressiveChroma</td>
+                    <td>Specifies that the video chroma subsampling is progressive chroma.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoChromaSubsampling_Horizontally_Cosited</td>
+                    <td>Specifies that chroma samples are aligned on multiples of the luma samples horizontally.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoChromaSubsampling_Vertically_Cosited</td>
+                    <td>Specifies that chroma samples are aligned on multiples of the luma samples vertically.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</td>
+                    <td>Specifies that the Pb and Pr (or Cb and Cr) planes have the same phase alignment. This enumerator can only be set to 0 in the <b>VideoChromaSubsampling</b> member of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> structure if the data is vertically cosited.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoChromaSubsampling_MPEG2</td>
+                    <td>A bitwise OR of the DXVA_VideoChromaSubsampling_Horizontally_Cosited and DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes values that are used with 4:2:0 data.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoChromaSubsampling_MPEG1</td>
+                    <td>The DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes value that is used with 4:2:0 data.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoChromaSubsampling_DV_PAL</td>
+                    <td>A bitwise OR of the DXVA_VideoChromaSubsampling_Horizontally_Cosited and DXVA_VideoChromaSubsampling_Vertically_Cosited values that are used with 4:2:0 data.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoChromaSubsampling_Cosited</td>
+                    <td>A bitwise OR of the DXVA_VideoChromaSubsampling_Horizontally_Cosited, and DXVA_VideoChromaSubsampling_Vertically_Cosited, and DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes values that are used with 4:4:4, 4:2:2, and 4:1:1 data.</td>
                 </tr>
 </table>
 
@@ -138,11 +138,3 @@ Cosite variations indicate that the chroma samples are aligned with the luma sam
 ## See Also
 
 <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_VideoChromaSubsampling enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

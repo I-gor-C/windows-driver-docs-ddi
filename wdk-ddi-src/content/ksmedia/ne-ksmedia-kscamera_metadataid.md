@@ -61,6 +61,26 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>MetadataId_Standard_Start</td>
+                    <td>This represent the standard start metadata ID.</td>
+                </tr>
+            
+                <tr>
+                    <td>MetadataId_PhotoConfirmation</td>
+                    <td>This represents the photo confirmation metadata ID</td>
+                </tr>
+            
+                <tr>
+                    <td>MetadataId_UsbVideoHeader</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>MetadataId_CaptureStats</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>MetadataId_CameraExtrinsics</td>
                     <td></td>
                 </tr>
@@ -71,23 +91,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>MetadataId_CaptureStats</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>MetadataId_Custom_Start</td>
-                    <td>This represents the lowest acceptable custom metadata ID.</td>
-                </tr>
-            
-                <tr>
                     <td>MetadataId_FrameIllumination</td>
                     <td></td>
-                </tr>
-            
-                <tr>
-                    <td>MetadataId_PhotoConfirmation</td>
-                    <td>This represents the photo confirmation metadata ID</td>
                 </tr>
             
                 <tr>
@@ -96,13 +101,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>MetadataId_Standard_Start</td>
-                    <td>This represent the standard start metadata ID.</td>
-                </tr>
-            
-                <tr>
-                    <td>MetadataId_UsbVideoHeader</td>
-                    <td></td>
+                    <td>MetadataId_Custom_Start</td>
+                    <td>This represents the lowest acceptable custom metadata ID.</td>
                 </tr>
 </table>
 

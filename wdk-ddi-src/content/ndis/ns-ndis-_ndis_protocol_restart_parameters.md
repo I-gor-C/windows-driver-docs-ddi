@@ -66,6 +66,37 @@ typedef struct _NDIS_PROTOCOL_RESTART_PARAMETERS {
 ## Members
 
 
+`Header`
+
+The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     NDIS_PROTOCOL_RESTART_PARAMETERS structure. NDIS sets the 
+     <b>Type</b> member of the structure that 
+     <b>Header</b> specifies to NDIS_OBJECT_TYPE_PROTOCOL_RESTART_PARAMETERS, the 
+     <b>Revision</b> member to NDIS_PROTOCOL_RESTART_PARAMETERS_REVISION_1, and the 
+     <b>Size</b> member to NDIS_SIZEOF_PROTOCOL_RESTART_PARAMETERS_REVISION_1.
+
+`FilterModuleNameBuffer`
+
+A list of the names of the underlying filter modules. For each name, the buffer contains a USHORT
+     value followed by a wide character string. Use the first USHORT value in the buffer to determine the
+     length of the first string. Use the length of the first string to determine the start of the next
+     string. Continue in this manner until the number of bytes that are retrieved from the buffer equals the
+     number of bytes that are specified in the 
+     <b>FilterModuleNameBufferLength</b> member.
+
+`FilterModuleNameBufferLength`
+
+The length, in bytes, of the buffer in the 
+     <b>FilterModuleNameBuffer</b> member.
+
+`RestartAttributes`
+
+A pointer to the first entry in a list of 
+     <a href="..\ndis\ns-ndis-_ndis_restart_attributes.md">NDIS_RESTART_ATTRIBUTES</a> structures.
+     Use the 
+     <b>Next</b> member of the NDIS_RESTART_ATTRIBUTES structure to get the next structure in the list.
+
 `BoundIfIndex`
 
 The NDIS network interface index of the highest-level interface that is stacked on the miniport
@@ -83,40 +114,9 @@ The NDIS
      adapter, this member is the NET_LUID value of the highest-level virtual miniport or filter
      module.
 
-`FilterModuleNameBuffer`
-
-A list of the names of the underlying filter modules. For each name, the buffer contains a USHORT
-     value followed by a wide character string. Use the first USHORT value in the buffer to determine the
-     length of the first string. Use the length of the first string to determine the start of the next
-     string. Continue in this manner until the number of bytes that are retrieved from the buffer equals the
-     number of bytes that are specified in the 
-     <b>FilterModuleNameBufferLength</b> member.
-
-`FilterModuleNameBufferLength`
-
-The length, in bytes, of the buffer in the 
-     <b>FilterModuleNameBuffer</b> member.
-
 `Flags`
 
 Reserved for future use.
-
-`Header`
-
-The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
-     NDIS_PROTOCOL_RESTART_PARAMETERS structure. NDIS sets the 
-     <b>Type</b> member of the structure that 
-     <b>Header</b> specifies to NDIS_OBJECT_TYPE_PROTOCOL_RESTART_PARAMETERS, the 
-     <b>Revision</b> member to NDIS_PROTOCOL_RESTART_PARAMETERS_REVISION_1, and the 
-     <b>Size</b> member to NDIS_SIZEOF_PROTOCOL_RESTART_PARAMETERS_REVISION_1.
-
-`RestartAttributes`
-
-A pointer to the first entry in a list of 
-     <a href="..\ndis\ns-ndis-_ndis_restart_attributes.md">NDIS_RESTART_ATTRIBUTES</a> structures.
-     Use the 
-     <b>Next</b> member of the NDIS_RESTART_ATTRIBUTES structure to get the next structure in the list.
 
 ## Remarks
 NDIS passes an NDIS_PROTOCOL_RESTART_PARAMETERS structure to a protocol driver when it calls the 
@@ -147,11 +147,3 @@ Each name that is specified in the buffer in the
 
 
 <a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROTOCOL_RESTART_PARAMETERS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

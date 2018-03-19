@@ -62,35 +62,6 @@ typedef enum _WDI_P2P_LISTEN_STATE {
 <table>
             
                 <tr>
-                    <td>WDI_P2P_LISTEN_STATE_AUTOMATIC_AVAILABILITY</td>
-                    <td>When this listen state is set:
-
-<ul>
-<li>The port must schedule time to explicitly listen on a social channel for incoming Wi-Fi Direct action frames.</li>
-<li>The port shall respond to probe requests with a "DIRECT-" SSID as a Wi-Fi Direct Adapter when parked on the configured social channel.</li>
-</ul>
-<div class="alert"><b>Note</b>  The optimized duty cycle for automatic availability listen state is outside the scope of this specification. The most aggressive power saving schedule that may be implemented by the port is being available for a contiguous 500ms out of every 5 seconds.</div>
-<div> </div></td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_P2P_LISTEN_STATE_DUMMY_MAX_VALUE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_P2P_LISTEN_STATE_HIGH_AVAILABILITY</td>
-                    <td>When this listen state is set:
-
-<ul>
-<li>The port must schedule time to explicitly listen on a social channel for incoming Wi-Fi Direct action frames.</li>
-<li>The port shall respond to probe requests with a "DIRECT-" SSID as a Wi-Fi Direct Adapter when parked on the configured social channel.</li>
-</ul>
-<div class="alert"><b>Note</b>  The duty cycle for this listen state is 300ms availability every 400ms on the configured social channel.</div>
-<div> </div></td>
-                </tr>
-            
-                <tr>
                     <td>WDI_P2P_LISTEN_STATE_OFF</td>
                     <td>When this listen state is set:
 
@@ -108,6 +79,35 @@ typedef enum _WDI_P2P_LISTEN_STATE {
 <li>The port must enter into listen state periodically as specified by the ListenDuration parameters.</li>
 <li>The port shall respond to probe requests with a "DIRECT-" SSID as a Wi-Fi Direct Adapter when parked on the specified channel.</li>
 </ul></td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_P2P_LISTEN_STATE_AUTOMATIC_AVAILABILITY</td>
+                    <td>When this listen state is set:
+
+<ul>
+<li>The port must schedule time to explicitly listen on a social channel for incoming Wi-Fi Direct action frames.</li>
+<li>The port shall respond to probe requests with a "DIRECT-" SSID as a Wi-Fi Direct Adapter when parked on the configured social channel.</li>
+</ul>
+<div class="alert"><b>Note</b>  The optimized duty cycle for automatic availability listen state is outside the scope of this specification. The most aggressive power saving schedule that may be implemented by the port is being available for a contiguous 500ms out of every 5 seconds.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_P2P_LISTEN_STATE_HIGH_AVAILABILITY</td>
+                    <td>When this listen state is set:
+
+<ul>
+<li>The port must schedule time to explicitly listen on a social channel for incoming Wi-Fi Direct action frames.</li>
+<li>The port shall respond to probe requests with a "DIRECT-" SSID as a Wi-Fi Direct Adapter when parked on the configured social channel.</li>
+</ul>
+<div class="alert"><b>Note</b>  The duty cycle for this listen state is 300ms availability every 400ms on the configured social channel.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>WDI_P2P_LISTEN_STATE_DUMMY_MAX_VALUE</td>
+                    <td></td>
                 </tr>
 </table>
 

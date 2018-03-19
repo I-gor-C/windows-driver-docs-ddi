@@ -74,18 +74,13 @@ typedef enum _PrintJobStatus {
 <table>
             
                 <tr>
-                    <td>PrintJobStatus_BlockedDeviceQueue</td>
-                    <td>The driver cannot print the job.</td>
+                    <td>PrintJobStatus_Paused</td>
+                    <td>The job is paused.</td>
                 </tr>
             
                 <tr>
-                    <td>PrintJobStatus_Complete</td>
-                    <td>The job data transfer to the printer is complete. Note that  the printing of the job may not yet be complete.</td>
-                </tr>
-            
-                <tr>
-                    <td>PrintJobStatus_Deleted</td>
-                    <td>The job has been deleted.</td>
+                    <td>PrintJobStatus_Error</td>
+                    <td>There is an error associated with the job.</td>
                 </tr>
             
                 <tr>
@@ -94,8 +89,13 @@ typedef enum _PrintJobStatus {
                 </tr>
             
                 <tr>
-                    <td>PrintJobStatus_Error</td>
-                    <td>There is an error associated with the job.</td>
+                    <td>PrintJobStatus_Spooling</td>
+                    <td>The job is spooling.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_Printing</td>
+                    <td>The job is printing.</td>
                 </tr>
             
                 <tr>
@@ -109,18 +109,23 @@ typedef enum _PrintJobStatus {
                 </tr>
             
                 <tr>
-                    <td>PrintJobStatus_Paused</td>
-                    <td>The job is paused.</td>
-                </tr>
-            
-                <tr>
                     <td>PrintJobStatus_Printed</td>
                     <td>The job printing is completed.</td>
                 </tr>
             
                 <tr>
-                    <td>PrintJobStatus_Printing</td>
-                    <td>The job is printing.</td>
+                    <td>PrintJobStatus_Deleted</td>
+                    <td>The job has been deleted.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_BlockedDeviceQueue</td>
+                    <td>The driver cannot print the job.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_UserIntervention</td>
+                    <td>The printer has an error that requires intervention from the user.</td>
                 </tr>
             
                 <tr>
@@ -129,18 +134,13 @@ typedef enum _PrintJobStatus {
                 </tr>
             
                 <tr>
+                    <td>PrintJobStatus_Complete</td>
+                    <td>The job data transfer to the printer is complete. Note that  the printing of the job may not yet be complete.</td>
+                </tr>
+            
+                <tr>
                     <td>PrintJobStatus_Retained</td>
                     <td>The job has been retained in the print queue and cannot be deleted.</td>
-                </tr>
-            
-                <tr>
-                    <td>PrintJobStatus_Spooling</td>
-                    <td>The job is spooling.</td>
-                </tr>
-            
-                <tr>
-                    <td>PrintJobStatus_UserIntervention</td>
-                    <td>The printer has an error that requires intervention from the user.</td>
                 </tr>
 </table>
 
@@ -163,11 +163,3 @@ It is possible for a job to have multiple  flag values specified simultaneously.
 
 
 <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd145019(v=vs.85).aspx">JOB_INFO_1</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20PrintJobStatus enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,11 +63,9 @@ typedef struct _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 {
 ## Members
 
 
-`Duration`
+`VidPnSourceId`
 
-The length of time, in units of 100 nanoseconds, between when the current present operation flips to the screen and the next vertical blanking interrupt occurs.
-
-If zero, the refresh rate should be the default rate based on the current mode.
+An integer that identifies a video present source on the display adapter.
 
 `InputFlags`
 
@@ -77,13 +75,13 @@ A DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS structure that identifies the type of d
 
 A DXGK_SETVIPNSOURCEADDRESS_OUTPUT_FLAGS structure that returns information from the driver.
 
-`pHDRMetaData`
-
-Pointer to a DXGK_HDR_METADATA structure indicating any metadata information that might be available. A NULL value indicates that no new metadata is available.
-
 `PlaneCount`
 
 The number of overlay planes in the ppPlanes list.
+
+`ppPlanes`
+
+An array of pointers to a DXGK_MULTIPLANE_OVERLAY_PLANE3 structures that specify the overlay planes to display.
 
 `pPostComposition`
 
@@ -91,13 +89,15 @@ Pointer to a DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION structure containing virtu
 
 If NULL, no post composition transforms should be applied.
 
-`ppPlanes`
+`Duration`
 
-An array of pointers to a DXGK_MULTIPLANE_OVERLAY_PLANE3 structures that specify the overlay planes to display.
+The length of time, in units of 100 nanoseconds, between when the current present operation flips to the screen and the next vertical blanking interrupt occurs.
 
-`VidPnSourceId`
+If zero, the refresh rate should be the default rate based on the current mode.
 
-An integer that identifies a video present source on the display adapter.
+`pHDRMetaData`
+
+Pointer to a DXGK_HDR_METADATA structure indicating any metadata information that might be available. A NULL value indicates that no new metadata is available.
 
 
 ## Requirements

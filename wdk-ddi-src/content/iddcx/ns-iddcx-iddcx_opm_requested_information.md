@@ -57,13 +57,13 @@ typedef struct IDDCX_OPM_REQUESTED_INFORMATION {
 ## Members
 
 
-`RequestedInformation`
-
-The information that was requested.
-
 `Size`
 
 Total size of the structure.
+
+`RequestedInformation`
+
+The information that was requested.
 
 
 ## Requirements

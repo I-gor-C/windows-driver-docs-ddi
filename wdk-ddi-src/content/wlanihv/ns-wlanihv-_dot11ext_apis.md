@@ -90,23 +90,29 @@ A pointer to the
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_free_buffer.md">Dot11ExtFreeBuffer</a> function.
 
+`Dot11ExtSetProfileCustomUserData`
+
+A pointer to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_profile_custom_user_data.md">
+     Dot11ExtSetProfileCustomUserData</a> function.
+
 `Dot11ExtGetProfileCustomUserData`
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_get_profile_custom_user_data.md">
      Dot11ExtGetProfileCustomUserData</a> function.
 
-`Dot11ExtNicSpecificExtension`
+`Dot11ExtSetCurrentProfile`
 
 A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11ext_nic_specific_extension.md">
-     Dot11ExtNicSpecificExtension</a> function.
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_current_profile.md">
+     Dot11ExtSetCurrentProfile</a> function.
 
-`Dot11ExtPostAssociateCompletion`
+`Dot11ExtSendUIRequest`
 
 A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11ext_post_associate_completion.md">
-     Dot11ExtPostAssociateCompletion</a> function.
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_send_ui_request.md">
+     Dot11ExtSendUIRequest</a> function.
 
 `Dot11ExtPreAssociateCompletion`
 
@@ -114,9 +120,11 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_pre_associate_completion.md">
      Dot11ExtPreAssociateCompletion</a> function.
 
-`Dot11ExtProcessSecurityPacket`
+`Dot11ExtPostAssociateCompletion`
 
-
+A pointer to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_post_associate_completion.md">
+     Dot11ExtPostAssociateCompletion</a> function.
 
 `Dot11ExtSendNotification`
 
@@ -129,11 +137,11 @@ A pointer to the
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_send_packet.md">Dot11ExtSendPacket</a> function.
 
-`Dot11ExtSendUIRequest`
+`Dot11ExtSetEtherTypeHandling`
 
 A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11ext_send_ui_request.md">
-     Dot11ExtSendUIRequest</a> function.
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_ethertype_handling.md">
+     Dot11ExtSetEtherTypeHandling</a> function.
 
 `Dot11ExtSetAuthAlgorithm`
 
@@ -141,41 +149,11 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_set_auth_algorithm.md">
      Dot11ExtSetAuthAlgorithm</a> function.
 
-`Dot11ExtSetCurrentProfile`
+`Dot11ExtSetUnicastCipherAlgorithm`
 
 A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_current_profile.md">
-     Dot11ExtSetCurrentProfile</a> function.
-
-`Dot11ExtSetDefaultKey`
-
-A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_default_key.md">
-     Dot11ExtSetDefaultKey</a> function.
-
-`Dot11ExtSetDefaultKeyId`
-
-A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_default_key_id.md">
-     Dot11ExtSetDefaultKeyId</a> function.
-
-`Dot11ExtSetEtherTypeHandling`
-
-A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_ethertype_handling.md">
-     Dot11ExtSetEtherTypeHandling</a> function.
-
-`Dot11ExtSetExcludeUnencrypted`
-
-A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_exclude_unencrypted.md">
-     Dot11ExtSetExcludeUnencrypted</a> function.
-
-`Dot11ExtSetKeyMappingKey`
-
-A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_key_mapping_key.md">
-     Dot11ExtSetKeyMappingKey</a> function.
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_unicast_cipher_algorithm.md">
+     Dot11ExtSetUnicastCipherAlgorithm</a> function.
 
 `Dot11ExtSetMulticastCipherAlgorithm`
 
@@ -183,17 +161,35 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_set_multicast_cipher_algorithm.md">
      Dot11ExtSetMulticastCipherAlgorithm</a> function.
 
-`Dot11ExtSetProfileCustomUserData`
+`Dot11ExtSetDefaultKey`
 
 A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_profile_custom_user_data.md">
-     Dot11ExtSetProfileCustomUserData</a> function.
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_default_key.md">
+     Dot11ExtSetDefaultKey</a> function.
 
-`Dot11ExtSetUnicastCipherAlgorithm`
+`Dot11ExtSetKeyMappingKey`
 
 A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_unicast_cipher_algorithm.md">
-     Dot11ExtSetUnicastCipherAlgorithm</a> function.
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_key_mapping_key.md">
+     Dot11ExtSetKeyMappingKey</a> function.
+
+`Dot11ExtSetDefaultKeyId`
+
+A pointer to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_default_key_id.md">
+     Dot11ExtSetDefaultKeyId</a> function.
+
+`Dot11ExtNicSpecificExtension`
+
+A pointer to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_nic_specific_extension.md">
+     Dot11ExtNicSpecificExtension</a> function.
+
+`Dot11ExtSetExcludeUnencrypted`
+
+A pointer to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_set_exclude_unencrypted.md">
+     Dot11ExtSetExcludeUnencrypted</a> function.
 
 `Dot11ExtStartOneX`
 
@@ -204,6 +200,10 @@ A pointer to the
 
 A pointer to the 
      <a href="..\wlanihv\nc-wlanihv-dot11ext_onex_stop.md">Dot11ExtStopOneX</a> function.
+
+`Dot11ExtProcessSecurityPacket`
+
+
 
 ## Remarks
 The IHV Extensibility functions are not statically or dynamically linked to the IHV Extensions DLL.
@@ -327,11 +327,3 @@ All of the function pointers are required and will not be set to <b>NULL</b>.
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_send_notification.md">Dot11ExtSendNotification</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_APIS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

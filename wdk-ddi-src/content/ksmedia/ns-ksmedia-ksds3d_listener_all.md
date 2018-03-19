@@ -62,13 +62,13 @@ typedef struct {
 ## Members
 
 
-`DistanceFactor`
+`Position`
 
-Specifies the distance factor for the 3D listener.
+Specifies the position vector of the 3D listener. This member is a structure of type <a href="..\ksmedia\ns-ksmedia-_ds3dvector.md">DS3DVECTOR</a>.
 
-`DopplerFactor`
+`Velocity`
 
-Specifies the Doppler factor for the 3D listener.
+Specifies the velocity vector of the 3D listener. This member is a structure of type DS3DVECTOR.
 
 `OrientFront`
 
@@ -78,17 +78,17 @@ Specifies the front orientation vector of the 3D listener. This member is a stru
 
 Specifies the top orientation vector of the 3D listener. This member is a structure of type DS3DVECTOR.
 
-`Position`
+`DistanceFactor`
 
-Specifies the position vector of the 3D listener. This member is a structure of type <a href="..\ksmedia\ns-ksmedia-_ds3dvector.md">DS3DVECTOR</a>.
+Specifies the distance factor for the 3D listener.
 
 `RolloffFactor`
 
 Specifies the rolloff factor for the 3D listener.
 
-`Velocity`
+`DopplerFactor`
 
-Specifies the velocity vector of the 3D listener. This member is a structure of type DS3DVECTOR.
+Specifies the Doppler factor for the 3D listener.
 
 ## Remarks
 This structure is similar to the DS3DBUFFER structure that is described in the Microsoft Windows SDK documentation. The Windows SDK documentation also discusses the distance, rolloff, and Doppler factors for DirectSound 3D listeners.
@@ -107,11 +107,3 @@ DirectSound uses this property to implement the <b>IDirectSound3DListener::GetAl
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537334">KSPROPERTY_DIRECTSOUND3DLISTENER_ALL</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20KSDS3D_LISTENER_ALL structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

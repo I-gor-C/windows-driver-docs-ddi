@@ -59,6 +59,14 @@ typedef struct _SCATTER_GATHER_LIST {
 ## Members
 
 
+`NumberOfElements`
+
+Specifies the number of elements in the <b>Elements</b> array.
+
+`Reserved`
+
+Reserved for future use.
+
 `Elements`
 
 Specifies an array of scatter/gather elements that comprise a scatter/gather list. Each array element is a structure of type <b>SCATTER_GATHER_ELEMENT</b>, which is defined as follows:
@@ -69,14 +77,6 @@ Specifies an array of scatter/gather elements that comprise a scatter/gather lis
   ULONG_PTR  Reserved;
 } SCATTER_GATHER_ELEMENT, *PSCATTER_GATHER_ELEMENT;</code></pre>
 The <b>SCATTER_GATHER_ELEMENT</b> structure specifies the length, in bytes, of a physically contiguous scatter/gather region and the starting physical address of this region.
-
-`NumberOfElements`
-
-Specifies the number of elements in the <b>Elements</b> array.
-
-`Reserved`
-
-Reserved for future use.
 
 ## Remarks
 For a driver that performs scatter/gather DMA, the <a href="..\wdm\nc-wdm-pget_scatter_gather_list.md">GetScatterGatherList</a> or <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list.md">BuildScatterGatherList</a> routine creates a scatter/gather list and passes this list to the driver's <a href="..\wdm\nc-wdm-driver_list_control.md">AdapterListControl</a> routine. This scatter/gather list consists of a <b>SCATTER_GATHER_LIST</b> structure that is immediately followed in memory by a <b>SCATTER_GATHER_ELEMENT</b> array. The number of elements in this array is specified by the <b>NumberOfElements</b> member of the <b>SCATTER_GATHER_LIST</b> structure.
@@ -99,11 +99,3 @@ For more information about scatter/gather lists, see <a href="https://msdn.micro
 
 
 <a href="..\wdm\nc-wdm-driver_list_control.md">AdapterListControl</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SCATTER_GATHER_LIST structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

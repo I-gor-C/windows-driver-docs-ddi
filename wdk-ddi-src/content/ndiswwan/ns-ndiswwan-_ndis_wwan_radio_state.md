@@ -109,12 +109,6 @@ sizeof(NDIS_WWAN_RADIO_STATE)
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
-`RadioState`
-
-A formatted 
-     <a href="..\wwan\ns-wwan-_wwan_radio_state.md">WWAN_RADIO_STATE</a> object that represents
-     the hardware-based and software-based radio power states of the device.
-
 `uStatus`
 
 The status of the radio state operation. The following table shows the possible values for this
@@ -170,6 +164,12 @@ The operation failed because the device is in the process of initializing. Retry
 </tr>
 </table>
 
+`RadioState`
+
+A formatted 
+     <a href="..\wwan\ns-wwan-_wwan_radio_state.md">WWAN_RADIO_STATE</a> object that represents
+     the hardware-based and software-based radio power states of the device.
+
 ## Remarks
 The miniport driver must set the 
     <b>uStatus</b> member to WWAN_STATUS_SUCCESS for unsolicited events (NDIS_STATUS_INDICATION::RequestId =
@@ -192,11 +192,3 @@ Miniport drivers can set the
 
 
 <a href="..\wwan\ns-wwan-_wwan_radio_state.md">WWAN_RADIO_STATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_RADIO_STATE structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

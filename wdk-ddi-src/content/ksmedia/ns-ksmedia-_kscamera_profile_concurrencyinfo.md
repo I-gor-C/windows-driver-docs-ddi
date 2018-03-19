@@ -59,14 +59,6 @@ typedef struct _KSCAMERA_PROFILE_CONCURRENCYINFO {
 ## Members
 
 
-`ProfileCount`
-
-Number of profile IDs contained in the <b>Profiles</b> array.  Must be greater than 0.
-
-`Profiles`
-
-This is an array of <b>KSCAMERA_PROFILE_INFO</b> structures that can be simultaneously used on the other camera device specified by the <b>ReferenceGuid</b>. This field must not be <b>NULL</b>.
-
 `ReferenceGuid`
 
 Must be set to the <b>ReferenceGuid</b> of the <b>KSFILTER_DESCRIPTOR</b> which corresponds to the other device with which this profile is concurrent.
@@ -74,6 +66,14 @@ Must be set to the <b>ReferenceGuid</b> of the <b>KSFILTER_DESCRIPTOR</b> which 
 `Reserved`
 
 Unused.  Must be 0.
+
+`ProfileCount`
+
+Number of profile IDs contained in the <b>Profiles</b> array.  Must be greater than 0.
+
+`Profiles`
+
+This is an array of <b>KSCAMERA_PROFILE_INFO</b> structures that can be simultaneously used on the other camera device specified by the <b>ReferenceGuid</b>. This field must not be <b>NULL</b>.
 
 ## Remarks
 Currently, an application has no knowledge as to whether it can attempt to stream from more than one camera until the attempt succeeds or fails.  In the case of web blogging scenario, this means the application will have to attempt to activate both streams before it paints the UI with a picture in picture video element.

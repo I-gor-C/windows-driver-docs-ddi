@@ -65,19 +65,7 @@ typedef struct _RILPOSITIONINFOGSM {
 ## Members
 
 
-`dwARFCN`
-
-
-
-`dwBaseStationID`
-
-
-
-`dwCellID`
-
-
-
-`dwLocationAreaCode`
+`dwParams`
 
 
 
@@ -89,15 +77,27 @@ typedef struct _RILPOSITIONINFOGSM {
 
 
 
-`dwParams`
+`dwLocationAreaCode`
 
 
 
-`dwRxLevel`
+`dwCellID`
 
 
 
 `dwTimingAdvance`
+
+
+
+`dwARFCN`
+
+
+
+`dwBaseStationID`
+
+
+
+`dwRxLevel`
 
 
 

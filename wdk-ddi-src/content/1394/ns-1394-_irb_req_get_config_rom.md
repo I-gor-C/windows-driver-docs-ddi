@@ -61,29 +61,29 @@ typedef struct _IRB_REQ_GET_CONFIG_ROM {
 ## Members
 
 
-`ConfigRom`
-
-Receives a pointer to a <b>ConfigRom</b> object.
-
 `GenerationCount`
 
 Receives the generation of the bus for which the contents of this configuration ROM was retrieved.
 
-`ModelLeafIndex`
+`ConfigRom`
 
-Receives the index to the node's model textual leaf in the configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
-
-`UnitDependentDirectoryIndex`
-
-Receives the index to the node's unit dependent directory in its configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
+Receives a pointer to a <b>ConfigRom</b> object.
 
 `UnitDirectoryIndex`
 
 Receives the index to the node's unit directory in its configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
 
+`UnitDependentDirectoryIndex`
+
+Receives the index to the node's unit dependent directory in its configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
+
 `VendorLeafIndex`
 
 Receives the index to the node's vendor textual leaf in the configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
+
+`ModelLeafIndex`
+
+Receives the index to the node's model textual leaf in the configuration ROM. This is an index to the <b>Entries</b> array in the <b>u.GetConfigRom.ConfigRom</b> structure.
 
 
 ## Requirements

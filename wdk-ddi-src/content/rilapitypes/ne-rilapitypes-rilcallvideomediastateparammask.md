@@ -61,12 +61,7 @@ typedef enum _RILCALLVIDEOMEDIASTATEPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_CALLVIDEO_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CALLVIDEO_CONTEXTID</td>
+                    <td>RIL_PARAM_CALLVIDEO_PEERCAPABILITIES</td>
                     <td></td>
                 </tr>
             
@@ -76,7 +71,12 @@ typedef enum _RILCALLVIDEOMEDIASTATEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CALLVIDEO_PEERCAPABILITIES</td>
+                    <td>RIL_PARAM_CALLVIDEO_CONTEXTID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CALLVIDEO_ALL</td>
                     <td></td>
                 </tr>
 </table>

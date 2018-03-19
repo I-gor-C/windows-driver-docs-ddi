@@ -67,7 +67,7 @@ typedef struct _ZONE_DESCRIPTIOR {
 ## Members
 
 
-`Non_Seq`
+`ZoneType`
 
 N/A
 
@@ -75,27 +75,23 @@ N/A
 
 N/A
 
-`Reserved2`
-
-N/A
-
-`Reserved3`
-
-N/A
-
-`Reserved4`
-
-N/A
-
 `Reset`
 
 N/A
 
-`WritePointerLBA`
+`Non_Seq`
+
+N/A
+
+`Reserved2`
 
 N/A
 
 `ZoneCondition`
+
+N/A
+
+`Reserved3`
 
 N/A
 
@@ -107,7 +103,11 @@ N/A
 
 N/A
 
-`ZoneType`
+`WritePointerLBA`
+
+N/A
+
+`Reserved4`
 
 N/A
 

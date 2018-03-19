@@ -57,13 +57,13 @@ typedef struct _D3D12DDI_VIDEO_SCALE_SUPPORT_0032 {
 ## Members
 
 
-`Flags`
-
-Flags.
-
 `OutputSizeRange`
 
 Output size range.
+
+`Flags`
+
+Flags.
 
 
 ## Requirements

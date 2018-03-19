@@ -61,6 +61,10 @@ typedef struct _D3DDDICB_CREATEHWCONTEXT {
 ## Members
 
 
+`NodeOrdinal`
+
+Specifies the node ordinal this context is targeted to.
+
 `EngineAffinity`
 
 Specifies the engine affinity within the node.
@@ -69,21 +73,17 @@ Specifies the engine affinity within the node.
 
 Hardware context creation flags.
 
-`hHwContext`
+`PrivateDriverDataSize`
 
-Handle to the created context.
-
-`NodeOrdinal`
-
-Specifies the node ordinal this context is targeted to.
+Size of private driver data.
 
 `pPrivateDriverData`
 
 Pointer to private driver data.
 
-`PrivateDriverDataSize`
+`hHwContext`
 
-Size of private driver data.
+Handle to the created context.
 
 
 ## Requirements

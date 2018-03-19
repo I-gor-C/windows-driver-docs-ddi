@@ -68,30 +68,6 @@ typedef struct {
 ## Members
 
 
-`EmergencyLocation`
-
-Indicates an emergency request, so an existing NI dialog will be dismissed and the new request will be processed immediately.
-
-`NotificationType`
-
-A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_notification_type.md">GNSS_NI_NOTIFICATION_TYPE</a> enumeration value that specifies the notification type.
-
-`RequestId`
-
-The ID that uniquely identifies the NI request. It is used later by the NI response to identify the request to respond to.
-
-`RequestPlaneType`
-
-A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_plane_type.md">GNSS_NI_PLANE_TYPE</a> enumeration value that specifies the plane type.
-
-`RequestType`
-
-A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_request_type.md">GNSS_NI_REQUEST_TYPE</a> enumeration value that specifies the request type.
-
-`ResponseTimeInSec`
-
-The required response time, in seconds.
-
 `Size`
 
 Structure size.
@@ -99,6 +75,30 @@ Structure size.
 `Version`
 
 Version number.
+
+`RequestId`
+
+The ID that uniquely identifies the NI request. It is used later by the NI response to identify the request to respond to.
+
+`RequestType`
+
+A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_request_type.md">GNSS_NI_REQUEST_TYPE</a> enumeration value that specifies the request type.
+
+`NotificationType`
+
+A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_notification_type.md">GNSS_NI_NOTIFICATION_TYPE</a> enumeration value that specifies the notification type.
+
+`RequestPlaneType`
+
+A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_plane_type.md">GNSS_NI_PLANE_TYPE</a> enumeration value that specifies the plane type.
+
+`ResponseTimeInSec`
+
+The required response time, in seconds.
+
+`EmergencyLocation`
+
+Indicates an emergency request, so an existing NI dialog will be dismissed and the new request will be processed immediately.
 
 
 ## Requirements

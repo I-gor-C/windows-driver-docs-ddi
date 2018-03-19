@@ -64,18 +64,6 @@ typedef struct _BTH_SDP_ATTRIBUTE_SEARCH_REQUEST {
 
 
 
-`range`
-
-A variable-length array of structures of type 
-     <a href="http://go.microsoft.com/fwlink/p/?linkid=50714">SdpAttributeRange</a> that contains the
-     range of SDP attributes for which to search. The range array must be in ascending numeric order.
-
-`recordHandle`
-
-The record handle that is returned by the remote SDP server from a previous call to the 
-     <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_service_search.md">
-     IOCTL_BTH_SDP_SERVICE_SEARCH</a> IOCTL.
-
 `searchFlags`
 
 #### 
@@ -83,6 +71,18 @@ The record handle that is returned by the remote SDP server from a previous call
 
 
 #####
+
+`recordHandle`
+
+The record handle that is returned by the remote SDP server from a previous call to the 
+     <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_service_search.md">
+     IOCTL_BTH_SDP_SERVICE_SEARCH</a> IOCTL.
+
+`range`
+
+A variable-length array of structures of type 
+     <a href="http://go.microsoft.com/fwlink/p/?linkid=50714">SdpAttributeRange</a> that contains the
+     range of SDP attributes for which to search. The range array must be in ascending numeric order.
 
 ## Remarks
 This structure is passed as the input buffer to the 
@@ -116,11 +116,3 @@ The Bluetooth driver stack determines the number of array items in the
 
 
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_SDP_ATTRIBUTE_SEARCH_REQUEST structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

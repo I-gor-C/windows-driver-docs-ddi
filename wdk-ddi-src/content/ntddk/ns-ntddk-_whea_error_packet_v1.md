@@ -80,13 +80,33 @@ typedef struct _WHEA_ERROR_PACKET_V1 {
 ## Members
 
 
+`Signature`
+
+The signature of the hardware error packet. This member contains the value WHEA_ERROR_PACKET_V1_SIGNATURE.
+
+`Flags`
+
+A <a href="..\ntddk\ns-ntddk-_whea_error_packet_flags.md">WHEA_ERROR_PACKET_FLAGS</a> union that describes the error condition.
+
+`Size`
+
+The size, in bytes, of the hardware error packet, including the raw data.
+
+`RawDataLength`
+
+The length, in bytes, of the data that is contained in the <b>RawData</b> member.
+
+`Reserved1`
+
+Reserved for system use.
+
 `Context`
 
 Reserved for system use.
 
-`Cpu`
+`ErrorType`
 
-Reserved for system use.
+A <a href="..\ntddk\ne-ntddk-_whea_error_type.md">WHEA_ERROR_TYPE</a>-typed value that indicates the type of hardware component that reported the hardware error.
 
 `ErrorSeverity`
 
@@ -100,45 +120,17 @@ The identifier of the error source that reported the hardware error.
 
 A <a href="..\ntddk\ne-ntddk-_whea_error_source_type.md">WHEA_ERROR_SOURCE_TYPE</a>-typed value that indicates the type of error source that reported the hardware error.
 
-`ErrorType`
-
-A <a href="..\ntddk\ne-ntddk-_whea_error_type.md">WHEA_ERROR_TYPE</a>-typed value that indicates the type of hardware component that reported the hardware error.
-
-`Flags`
-
-A <a href="..\ntddk\ns-ntddk-_whea_error_packet_flags.md">WHEA_ERROR_PACKET_FLAGS</a> union that describes the error condition.
-
-`RawData`
-
-A variable-sized data buffer that contains the raw hardware error information from the error source's status registers. The format of the hardware error data is specified by the <b>RawDataFormat</b> member.
-
-`RawDataFormat`
-
-A <a href="..\ntddk\ne-ntddk-_whea_raw_data_format.md">WHEA_RAW_DATA_FORMAT</a>-typed value that indicates the format of the hardware error information that is contained in the <b>RawData</b> data buffer.
-
-`RawDataLength`
-
-The length, in bytes, of the data that is contained in the <b>RawData</b> member.
-
-`RawDataOffset`
-
-An offset, in bytes, from the beginning of the <b>RawData</b> data buffer where a PSHED plug-in can add supplementary platform-specific error information to the hardware error packet. The amount of supplementary information that can be added to the hardware error packet is limited by the total size of the packet as specified in the <b>Size</b> member.
-
-`Reserved1`
-
-Reserved for system use.
-
 `Reserved2`
 
 Reserved for system use.
 
-`Signature`
+`Version`
 
-The signature of the hardware error packet. This member contains the value WHEA_ERROR_PACKET_V1_SIGNATURE.
+The version of the WHEA_ERROR_PACKET_V1 structure. This member contains the value WHEA_ERROR_PKT_V1VERSION.
 
-`Size`
+`Cpu`
 
-The size, in bytes, of the hardware error packet, including the raw data.
+Reserved for system use.
 
 `u`
 
@@ -180,9 +172,17 @@ A <a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section.md">WHEA_PCIXBUS_ERROR_
 
 A <a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure that describes PCI or PCI-X device error data. This member is used only when the <b>ErrorType</b> member is set to <b>WheaErrTypePCIXDevice</b>.
 
-`Version`
+`RawDataFormat`
 
-The version of the WHEA_ERROR_PACKET_V1 structure. This member contains the value WHEA_ERROR_PKT_V1VERSION.
+A <a href="..\ntddk\ne-ntddk-_whea_raw_data_format.md">WHEA_RAW_DATA_FORMAT</a>-typed value that indicates the format of the hardware error information that is contained in the <b>RawData</b> data buffer.
+
+`RawDataOffset`
+
+An offset, in bytes, from the beginning of the <b>RawData</b> data buffer where a PSHED plug-in can add supplementary platform-specific error information to the hardware error packet. The amount of supplementary information that can be added to the hardware error packet is limited by the total size of the packet as specified in the <b>Size</b> member.
+
+`RawData`
+
+A variable-sized data buffer that contains the raw hardware error information from the error source's status registers. The format of the hardware error data is specified by the <b>RawDataFormat</b> member.
 
 ## Remarks
 The WHEA_ERROR_PACKET_V1 structure is used to report a hardware error in Windows Server 2008 and Windows Vista SP1.
@@ -264,11 +264,3 @@ The WHEA_ERROR_PACKET_V1 structure describes the error data that is contained in
 
 
 <a href="..\ntddk\ns-ntddk-_whea_error_packet_v2.md">WHEA_ERROR_PACKET_V2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_ERROR_PACKET_V1 structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

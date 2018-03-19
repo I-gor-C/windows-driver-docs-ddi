@@ -62,9 +62,15 @@ typedef struct _NDIS_RSS_SET_INDIRECTION_ENTRY {
 ## Members
 
 
-`EntryStatus`
+`SwitchId`
 
-An NDIS_STATUS code indicating the status of the move operation for this entry. Because <b>NDIS_RSS_SET_INDIRECTION_ENTRY</b> is used in the context of a Synchronous OID call, the miniport driver cannot return <b>NDIS_STATUS_PENDING</b> for this member.
+An NDIS_NIC_SWITCH_ID value that represents the NIC switch where the VPort resides. 
+
+The switch identifier is an integer between zero and the number of switches that the network adapter supports. An NDIS_DEFAULT_SWITCH_ID value indicates the default network adapter switch.
+
+`VPortId`
+
+An NDIS_NIC_SWITCH_VPORT_ID value that represents the VPort identifier.
 
 `Flags`
 
@@ -103,19 +109,13 @@ Indicates that the <b>NDIS_RSS_SET_INDIRECTION_ENTRY</b> is referring to the def
 
 A <b>USHORT</b> value that indicates the indirection table entry being moved.
 
-`SwitchId`
-
-An NDIS_NIC_SWITCH_ID value that represents the NIC switch where the VPort resides. 
-
-The switch identifier is an integer between zero and the number of switches that the network adapter supports. An NDIS_DEFAULT_SWITCH_ID value indicates the default network adapter switch.
-
 `TargetProcessorNumber`
 
 The target processor number.
 
-`VPortId`
+`EntryStatus`
 
-An NDIS_NIC_SWITCH_VPORT_ID value that represents the VPort identifier.
+An NDIS_STATUS code indicating the status of the move operation for this entry. Because <b>NDIS_RSS_SET_INDIRECTION_ENTRY</b> is used in the context of a Synchronous OID call, the miniport driver cannot return <b>NDIS_STATUS_PENDING</b> for this member.
 
 
 ## Requirements
@@ -139,11 +139,3 @@ An NDIS_NIC_SWITCH_VPORT_ID value that represents the VPort identifier.
 
 
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-">Receive Side Scaling Version 2 (RSSv2)</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_SET_INDIRECTION_ENTRY structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

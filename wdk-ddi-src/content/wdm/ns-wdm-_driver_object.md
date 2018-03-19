@@ -66,23 +66,23 @@ typedef struct _DRIVER_OBJECT {
 ## Members
 
 
+`Type`
+
+
+
+`Size`
+
+
+
 `DeviceObject`
 
 Pointer to the device objects created by the driver. This member is automatically updated when the driver calls <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> successfully. A driver can use this member and the <b>NextDevice</b> member of <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> to step through a list of all the device objects that the driver created.
 
-`DriverExtension`
-
-Pointer to the driver extension. The only accessible member of the driver extension is <b>DriverExtension-&gt;AddDevice</b>, into which a driver's <b>DriverEntry</b> routine stores the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine.
-
-`DriverInit`
-
-The entry point for the <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine, which is set up by the I/O manager.
-
-`DriverName`
+`Flags`
 
 
 
-`DriverSection`
+`DriverStart`
 
 
 
@@ -90,9 +90,29 @@ The entry point for the <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">Dri
 
 
 
-`DriverStart`
+`DriverSection`
 
 
+
+`DriverExtension`
+
+Pointer to the driver extension. The only accessible member of the driver extension is <b>DriverExtension-&gt;AddDevice</b>, into which a driver's <b>DriverEntry</b> routine stores the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine.
+
+`DriverName`
+
+
+
+`HardwareDatabase`
+
+Pointer to the <b>\Registry\Machine\Hardware</b> path to the hardware configuration information in the registry.
+
+`FastIoDispatch`
+
+Pointer to a structure defining the driver's fast I/O entry points. This member is used only by FSDs and network transport drivers.
+
+`DriverInit`
+
+The entry point for the <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine, which is set up by the I/O manager.
 
 `DriverStartIo`
 
@@ -101,18 +121,6 @@ The entry point for the driver's <a href="https://msdn.microsoft.com/library/win
 `DriverUnload`
 
 The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine, if any, which is set by the <b>DriverEntry</b> routine when the driver initializes. If a driver has no <i>Unload</i> routine, this member is <b>NULL</b>.
-
-`FastIoDispatch`
-
-Pointer to a structure defining the driver's fast I/O entry points. This member is used only by FSDs and network transport drivers.
-
-`Flags`
-
-
-
-`HardwareDatabase`
-
-Pointer to the <b>\Registry\Machine\Hardware</b> path to the hardware configuration information in the registry.
 
 `MajorFunction`
 
@@ -154,14 +162,6 @@ NTSTATUS
 </table></span></div>
 The DRIVER_DISPATCH function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the DRIVER_DISPATCH function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="http://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
-`Size`
-
-
-
-`Type`
-
-
-
 ## Remarks
 Each kernel-mode driver's initialization routine should be named <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> so the system will load the driver automatically. If this routine's name is something else, the driver writer must define the name of the initialization routine for the linker; otherwise, the system loader or I/O manager cannot find the driver's transfer address. The names of other standard driver routines can be chosen at the discretion of the driver writer.
 
@@ -199,11 +199,3 @@ Undocumented members within a driver object should be considered inaccessible. D
 
 
 <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DRIVER_OBJECT structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

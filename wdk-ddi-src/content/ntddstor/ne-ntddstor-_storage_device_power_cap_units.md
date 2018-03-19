@@ -59,13 +59,13 @@ typedef enum _STORAGE_DEVICE_POWER_CAP_UNITS {
 <table>
             
                 <tr>
-                    <td>StorageDevicePowerCapUnitsMilliwatts</td>
-                    <td>Units in milliwatts.</td>
+                    <td>StorageDevicePowerCapUnitsPercent</td>
+                    <td>Units in percent.</td>
                 </tr>
             
                 <tr>
-                    <td>StorageDevicePowerCapUnitsPercent</td>
-                    <td>Units in percent.</td>
+                    <td>StorageDevicePowerCapUnitsMilliwatts</td>
+                    <td>Units in milliwatts.</td>
                 </tr>
 </table>
 

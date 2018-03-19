@@ -64,43 +64,43 @@ typedef struct _DXGK_COLORIMETRY {
 ## Members
 
 
-`BluePoint`
+`RedPoint`
 
-Override for chromaticity coordinates of the blue color primary in the CIE xy color space. Each dimension is encoded as a 10-bit binary fraction stored in the least significant bits. Zero indicates no override.
-
-`FormatBitDepths`
-
-Overrides the supported bits per color channel in each of the five color encodings specified for wire-formats.  At least one bit must be set, excluding the Preference field which is reserved and must be zero.
+Override for chromaticity coordinates of the red color primary in the CIE xy color space. Each dimension is encoded as a 10-bit binary fraction stored in the least significant bits. Zero indicates no override.
 
 `GreenPoint`
 
 Override for chromaticity coordinates of the green color primary in the CIE xy color space. Each dimension is encoded as a 10-bit binary fraction stored in the least significant bits. Zero indicates no override.
 
-`MaxFullFrameLuminance`
+`BluePoint`
 
-Override for the max full frame luminance value supported by the display measured in one ten thousandth of a nit.  This luminance level must be supported across every pixel in the frame simultaneously in order to provide an estimate of the average luminance value which can be supported by the display across a frame.
-Only valid if MaxLuminance is non-zero.  Zero is not a valid override.
+Override for chromaticity coordinates of the blue color primary in the CIE xy color space. Each dimension is encoded as a 10-bit binary fraction stored in the least significant bits. Zero indicates no override.
+
+`WhitePoint`
+
+Override for chromaticity coordinates of the white point in the CIE xy color space. Each dimension is encoded as a 10-bit binary fraction stored in the least significant bits. Zero indicates no override.
+
+`MinLuminance`
+
+Override for the minimum luminance value supported by the display measured in one ten thousandth of a nit.  Only valid if MaxLuminance is non-zero.  Zero is a valid override value.
 
 `MaxLuminance`
 
 Override for the maximum luminance value supported by the display measured in one ten thousandth of a nit.  This luminance level is expected to be supported for only a relatively small area in any given frame.  
 Zero indicates no override of MaxLuminance, MaxFullFrameLuminance and MinLuminance.
 
-`MinLuminance`
+`MaxFullFrameLuminance`
 
-Override for the minimum luminance value supported by the display measured in one ten thousandth of a nit.  Only valid if MaxLuminance is non-zero.  Zero is a valid override value.
+Override for the max full frame luminance value supported by the display measured in one ten thousandth of a nit.  This luminance level must be supported across every pixel in the frame simultaneously in order to provide an estimate of the average luminance value which can be supported by the display across a frame.
+Only valid if MaxLuminance is non-zero.  Zero is not a valid override.
 
-`RedPoint`
+`FormatBitDepths`
 
-Override for chromaticity coordinates of the red color primary in the CIE xy color space. Each dimension is encoded as a 10-bit binary fraction stored in the least significant bits. Zero indicates no override.
+Overrides the supported bits per color channel in each of the five color encodings specified for wire-formats.  At least one bit must be set, excluding the Preference field which is reserved and must be zero.
 
 `StandardColorimetryFlags`
 
 Indicates support for specific colorimetry and EOTF capabilities using bit-fields.
-
-`WhitePoint`
-
-Override for chromaticity coordinates of the white point in the CIE xy color space. Each dimension is encoded as a 10-bit binary fraction stored in the least significant bits. Zero indicates no override.
 
 ## Remarks
 This struct is used both for querying overrides from the driver, and for the OS reporting the final set of values it has selected.  Overrides are supported for integrated displays using this structure which is embedded within the DXGK_QUERYINTEGRATEDDISPLAYOUT struct and for external displays where this stuct is used as the output buffer is for an adapter query type DXGKQAITYPE_QUERYCOLORIMETRYOVERRIDES.  The selected and adjusted overrides are reported back to the driver using DxgkDdiSetTargetAdjustedColorimetry.

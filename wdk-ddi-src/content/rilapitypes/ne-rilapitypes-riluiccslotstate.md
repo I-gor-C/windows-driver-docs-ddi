@@ -64,12 +64,27 @@ typedef enum _RILUICCSLOTSTATE {
 <table>
             
                 <tr>
-                    <td>RIL_UICCSLOT_ACTIVE</td>
+                    <td>RIL_UICCSLOT_OFF_EMPTY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCSLOT_OFF</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_UICCSLOT_EMPTY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCSLOT_NOT_READY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCSLOT_ACTIVE</td>
                     <td></td>
                 </tr>
             
@@ -80,21 +95,6 @@ typedef enum _RILUICCSLOTSTATE {
             
                 <tr>
                     <td>RIL_UICCSLOT_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCSLOT_NOT_READY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCSLOT_OFF</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCSLOT_OFF_EMPTY</td>
                     <td></td>
                 </tr>
 </table>

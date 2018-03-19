@@ -60,13 +60,13 @@ typedef enum _WDI_ENCAPSULATION_TYPE {
 <table>
             
                 <tr>
-                    <td>WDI_ENCAPSULATION_802_1H</td>
-                    <td>The encapsulation that is defined in the IEEE 802.1h-1997 standard.</td>
+                    <td>WDI_ENCAPSULATION_RFC_1042</td>
+                    <td>The encapsulation that is defined in IETF RFC 1042.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_ENCAPSULATION_RFC_1042</td>
-                    <td>The encapsulation that is defined in IETF RFC 1042.</td>
+                    <td>WDI_ENCAPSULATION_802_1H</td>
+                    <td>The encapsulation that is defined in the IEEE 802.1h-1997 standard.</td>
                 </tr>
 </table>
 

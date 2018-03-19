@@ -67,12 +67,7 @@ typedef enum _RILMSGDCSTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_DCSTYPE_LANGUAGE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DCSTYPE_MAX</td>
+                    <td>RIL_DCSTYPE_MSGWAIT</td>
                     <td></td>
                 </tr>
             
@@ -82,7 +77,12 @@ typedef enum _RILMSGDCSTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_DCSTYPE_MSGWAIT</td>
+                    <td>RIL_DCSTYPE_LANGUAGE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DCSTYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

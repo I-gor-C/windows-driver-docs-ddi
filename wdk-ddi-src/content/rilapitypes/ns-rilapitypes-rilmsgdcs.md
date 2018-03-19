@@ -68,11 +68,23 @@ typedef struct _RILMSGDCS {
 
 
 
-`dwAlphabet`
+`dwParams`
+
+
+
+`dwType`
 
 
 
 `dwFlags`
+
+
+
+`dwMsgClass`
+
+
+
+`dwAlphabet`
 
 
 
@@ -81,18 +93,6 @@ typedef struct _RILMSGDCS {
 
 
 `dwLanguage`
-
-
-
-`dwMsgClass`
-
-
-
-`dwParams`
-
-
-
-`dwType`
 
 
 

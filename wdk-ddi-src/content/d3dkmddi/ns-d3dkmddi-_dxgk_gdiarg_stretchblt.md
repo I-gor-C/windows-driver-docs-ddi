@@ -70,34 +70,6 @@ typedef struct _DXGK_GDIARG_STRETCHBLT {
 ## Members
 
 
-`DstAllocationIndex`
-
-[in] An index of the element in the allocation list that specifies the allocation that is referenced by the <b>DstRect</b> destination rectangle.
-
-`DstRect`
-
-[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. 
-
-The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the destination surface, but sub-rectangles cannot. Additionally, all sub-rectangles are guaranteed to fit inside the destination surface. Sub-rectangles can be constrained further by a bounding rectangle that is smaller than the destination rectangle. 
-
-For more information, see the Remarks section.
-
-`NumSubRects`
-
-The number of sub-rectangles in the destination surface space that is bounded by the <b>DstRect</b> destination rectangle.
-
-`pSubRects`
-
-[in] A pointer to the sub-rectangles in the destination surface space that is bounded by the <b>DstRect</b> destination rectangle.
-
-`SrcAllocationIndex`
-
-[in] An index of the element in the allocation list that specifies the allocation that is referenced by the SrcRect source rectangle.
-
-`SrcPitch`
-
-[in] The pitch of the source surface, in bytes.
-
 `SrcRect`
 
 [in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the rectangular area to be copied. This rectangle is specified in the coordinate system of the source surface and is defined by two points: upper left and lower right. The two points that define the rectangle are always well ordered. 
@@ -107,6 +79,34 @@ The source rectangle will never exceed the bounds of the source surface, so it w
 This rectangle is mapped to the destination rectangle defined by <b>DstRect</b>. 
 
 For more information, see the Remarks section.
+
+`DstRect`
+
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. 
+
+The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the destination surface, but sub-rectangles cannot. Additionally, all sub-rectangles are guaranteed to fit inside the destination surface. Sub-rectangles can be constrained further by a bounding rectangle that is smaller than the destination rectangle. 
+
+For more information, see the Remarks section.
+
+`DstAllocationIndex`
+
+[in] An index of the element in the allocation list that specifies the allocation that is referenced by the <b>DstRect</b> destination rectangle.
+
+`SrcAllocationIndex`
+
+[in] An index of the element in the allocation list that specifies the allocation that is referenced by the SrcRect source rectangle.
+
+`NumSubRects`
+
+The number of sub-rectangles in the destination surface space that is bounded by the <b>DstRect</b> destination rectangle.
+
+`pSubRects`
+
+[in] A pointer to the sub-rectangles in the destination surface space that is bounded by the <b>DstRect</b> destination rectangle.
+
+`SrcPitch`
+
+[in] The pitch of the source surface, in bytes.
 
 ## Remarks
 The x and y stretch ratios are computed respectively as the ratios of the x and y sizes of the <b>DstRect</b> and <b>SrcRect</b> members.
@@ -152,11 +152,3 @@ int Ys = truncate((Yd â€“ DstRect.top + 0.5) * Hs/Hd + SrcRect.top)</code><
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_GDIARG_STRETCHBLT structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

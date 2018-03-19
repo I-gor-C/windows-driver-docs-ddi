@@ -62,7 +62,7 @@ typedef enum _RILSERVICESETTINGSSTATUS {
 <table>
             
                 <tr>
-                    <td>RIL_SVCSTAT_DEFAULT</td>
+                    <td>RIL_SVCSTAT_UNKNOWN</td>
                     <td></td>
                 </tr>
             
@@ -77,12 +77,12 @@ typedef enum _RILSERVICESETTINGSSTATUS {
                 </tr>
             
                 <tr>
-                    <td>RIL_SVCSTAT_MAX</td>
+                    <td>RIL_SVCSTAT_DEFAULT</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_SVCSTAT_UNKNOWN</td>
+                    <td>RIL_SVCSTAT_MAX</td>
                     <td></td>
                 </tr>
 </table>

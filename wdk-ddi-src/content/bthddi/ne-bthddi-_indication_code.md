@@ -76,32 +76,30 @@ typedef enum _INDICATION_CODE {
                 </tr>
             
                 <tr>
-                    <td>IndicationFreeExtraOptions</td>
-                    <td>Reserved for future use. Do not use.</td>
+                    <td>IndicationReleaseReference</td>
+                    <td>Indicates to a profile driver to release a reference to its device object and that it will no
+     longer be called.</td>
                 </tr>
             
                 <tr>
-                    <td>IndicationPairDevice</td>
-                    <td>Indicates to a registered driver that the local radio has bonded to a specific remote
-     radio.</td>
-                </tr>
-            
-                <tr>
-                    <td>IndicationRecvPacket</td>
-                    <td>Indicates to a registered profile driver that a packet has been received on the specified PSM. The
-     profile driver can use this event to determine when it is necessary to issue a read
-     BRB_L2CA_ACL_TRANSFTER BRB. Profile drivers that need to read from the remote device can also ignore
-     this notification and keep a read BRB pending at all times. When this indication code is passed, the
-     profile driver should use the parameters that are passed to it in the 
-     <b>RecvPacket</b> member of the 
+                    <td>IndicationRemoteConnect</td>
+                    <td>Indicates to a server profile driver that a remote device is connecting to the PSM that the
+     profile driver registered earlier. Profile drivers accept or reject this request by 
+     <a href="https://msdn.microsoft.com/53a692e7-9c71-4dca-9331-32ac97b94179">building and sending</a> a 
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536616">
+     BRB_L2CA_OPEN_CHANNEL_RESPONSE</a> request. When this indication code is passed, the profile driver
+     should use the parameters that are passed to it in the 
+     <b>Connect</b> member of the 
      <a href="..\bthddi\ns-bthddi-_indication_parameters.md">
      INDICATION_PARAMETERS</a> structure.</td>
                 </tr>
             
                 <tr>
-                    <td>IndicationReleaseReference</td>
-                    <td>Indicates to a profile driver to release a reference to its device object and that it will no
-     longer be called.</td>
+                    <td>IndicationRemoteDisconnect</td>
+                    <td>Indicates to a registered profile driver that a remote device disconnecting from the local radio.
+     When this indication code is passed, the profile driver should use the parameters that are passed to it
+     in the 
+     <b>Disconnect</b> member of the INDICATION_PARAMETERS structure.</td>
                 </tr>
             
                 <tr>
@@ -121,16 +119,38 @@ typedef enum _INDICATION_CODE {
                 </tr>
             
                 <tr>
-                    <td>IndicationRemoteConnect</td>
-                    <td>Indicates to a server profile driver that a remote device is connecting to the PSM that the
-     profile driver registered earlier. Profile drivers accept or reject this request by 
-     <a href="https://msdn.microsoft.com/53a692e7-9c71-4dca-9331-32ac97b94179">building and sending</a> a 
-     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536616">
-     BRB_L2CA_OPEN_CHANNEL_RESPONSE</a> request. When this indication code is passed, the profile driver
-     should use the parameters that are passed to it in the 
-     <b>Connect</b> member of the 
+                    <td>IndicationFreeExtraOptions</td>
+                    <td>Reserved for future use. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>IndicationRecvPacket</td>
+                    <td>Indicates to a registered profile driver that a packet has been received on the specified PSM. The
+     profile driver can use this event to determine when it is necessary to issue a read
+     BRB_L2CA_ACL_TRANSFTER BRB. Profile drivers that need to read from the remote device can also ignore
+     this notification and keep a read BRB pending at all times. When this indication code is passed, the
+     profile driver should use the parameters that are passed to it in the 
+     <b>RecvPacket</b> member of the 
      <a href="..\bthddi\ns-bthddi-_indication_parameters.md">
      INDICATION_PARAMETERS</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>IndicationPairDevice</td>
+                    <td>Indicates to a registered driver that the local radio has bonded to a specific remote
+     radio.</td>
+                </tr>
+            
+                <tr>
+                    <td>IndicationUnpairDevice</td>
+                    <td>Indicates to a registered driver that the local radio is no longer bonded to a specific remote
+     radio.</td>
+                </tr>
+            
+                <tr>
+                    <td>IndicationUnpersonalizeDevice</td>
+                    <td>Indicates to a registered driver that the specified remote radio has been removed from the list of
+     personal devices.</td>
                 </tr>
             
                 <tr>
@@ -144,26 +164,6 @@ typedef enum _INDICATION_CODE {
      <b>Connect</b> member of the 
      <a href="..\bthddi\ns-bthddi-_indication_parameters.md">
      INDICATION_PARAMETERS</a> structure. This value is present in Windows 8 and later versions of Windows.</td>
-                </tr>
-            
-                <tr>
-                    <td>IndicationRemoteDisconnect</td>
-                    <td>Indicates to a registered profile driver that a remote device disconnecting from the local radio.
-     When this indication code is passed, the profile driver should use the parameters that are passed to it
-     in the 
-     <b>Disconnect</b> member of the INDICATION_PARAMETERS structure.</td>
-                </tr>
-            
-                <tr>
-                    <td>IndicationUnpairDevice</td>
-                    <td>Indicates to a registered driver that the local radio is no longer bonded to a specific remote
-     radio.</td>
-                </tr>
-            
-                <tr>
-                    <td>IndicationUnpersonalizeDevice</td>
-                    <td>Indicates to a registered driver that the specified remote radio has been removed from the list of
-     personal devices.</td>
                 </tr>
 </table>
 
@@ -194,11 +194,3 @@ A value from this enumeration is passed to a profile driver's
 
 
 <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20INDICATION_CODE enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

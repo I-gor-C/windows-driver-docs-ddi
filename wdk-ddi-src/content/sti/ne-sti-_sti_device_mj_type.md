@@ -69,13 +69,13 @@ typedef enum _STI_DEVICE_MJ_TYPE {
                 </tr>
             
                 <tr>
-                    <td>StiDeviceTypeDigitalCamera</td>
-                    <td>Digital camera.</td>
+                    <td>StiDeviceTypeScanner</td>
+                    <td>Scanner.</td>
                 </tr>
             
                 <tr>
-                    <td>StiDeviceTypeScanner</td>
-                    <td>Scanner.</td>
+                    <td>StiDeviceTypeDigitalCamera</td>
+                    <td>Digital camera.</td>
                 </tr>
             
                 <tr>

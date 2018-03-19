@@ -71,13 +71,13 @@ typedef enum _STREAMING_CONTROL_REQUEST_TYPE {
                 </tr>
             
                 <tr>
-                    <td>CdromStreamingEnableForReadWrite</td>
-                    <td>Streaming read and streaming write requests will be enabled for the requested file handle.</td>
+                    <td>CdromStreamingEnableForWriteOnly</td>
+                    <td>Streaming read requests will be disabled, and streaming write requests will be enabled, for the requested file handle.</td>
                 </tr>
             
                 <tr>
-                    <td>CdromStreamingEnableForWriteOnly</td>
-                    <td>Streaming read requests will be disabled, and streaming write requests will be enabled, for the requested file handle.</td>
+                    <td>CdromStreamingEnableForReadWrite</td>
+                    <td>Streaming read and streaming write requests will be enabled for the requested file handle.</td>
                 </tr>
 </table>
 
@@ -94,11 +94,3 @@ typedef enum _STREAMING_CONTROL_REQUEST_TYPE {
 
 
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_enable_streaming.md">IOCTL_CDROM_ENABLE_STREAMING</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STREAMING_CONTROL_REQUEST_TYPE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

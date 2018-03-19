@@ -59,8 +59,13 @@ typedef enum _DXGKVGPU_ESCAPE_TYPE {
 <table>
             
                 <tr>
-                    <td>DXGKVGPU_ESCAPE_TYPE_GET_VGPU_TYPE</td>
-                    <td>Indicates the VGPU type of the escape.</td>
+                    <td>DXGKVGPU_ESCAPE_TYPE_READ_PCI_CONFIG</td>
+                    <td>Indicates the PCI config of the escape type.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKVGPU_ESCAPE_TYPE_WRITE_PCI_CONFIG</td>
+                    <td></td>
                 </tr>
             
                 <tr>
@@ -69,22 +74,17 @@ typedef enum _DXGKVGPU_ESCAPE_TYPE {
                 </tr>
             
                 <tr>
-                    <td>DXGKVGPU_ESCAPE_TYPE_POWERTRANSITIONCOMPLETE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DXGKVGPU_ESCAPE_TYPE_READ_PCI_CONFIG</td>
-                    <td>Indicates the PCI config of the escape type.</td>
-                </tr>
-            
-                <tr>
                     <td>DXGKVGPU_ESCAPE_TYPE_RELEASE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>DXGKVGPU_ESCAPE_TYPE_WRITE_PCI_CONFIG</td>
+                    <td>DXGKVGPU_ESCAPE_TYPE_GET_VGPU_TYPE</td>
+                    <td>Indicates the VGPU type of the escape.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKVGPU_ESCAPE_TYPE_POWERTRANSITIONCOMPLETE</td>
                     <td></td>
                 </tr>
 </table>

@@ -80,11 +80,189 @@ typedef struct _OPTITEM {
 
 Size, in bytes, of the OPTITEM structure.
 
+`Level`
+
+Specifies the level of this option in the treeview. For more information, see the following Remarks section.
+
 `DlgPageIdx`
 
 Identifies the dialog to which the option belongs. Specifies an array index into the DLGPAGE array pointed to by the <b>pDlgPage</b> member of the <a href="..\compstui\ns-compstui-_compropsheetui.md">COMPROPSHEETUI</a> structure.
 
 If <b>pDlgPage</b> points to a CPSUI-supplied, predefined DLGPAGE structure, CPSUI supplies this index.
+
+`Flags`
+
+Optional bit flags that modify the option's characteristics. The OPTIF_CHANGEONCE flag is set by CPSUI; all other flags are set by the caller. Any combination of the following flags can be set.
+
+
+
+
+
+#### OPTIF_CALLBACK
+
+When a user modifies the option, CPSUI should call the <a href="..\compstui\nc-compstui-_cpsuicallback.md">_CPSUICALLBACK</a>-typed callback function specified in the <a href="..\compstui\ns-compstui-_compropsheetui.md">COMPROPSHEETUI</a> structure.
+
+
+
+
+
+#### OPTIF_CHANGED
+
+The <b>_CPSUICALLBACK</b>-typed callback function should set this flag if it modified the option, so that CPSUI will redisplay it.
+
+
+
+
+
+#### OPTIF_CHANGEONCE
+
+CPSUI sets this bit if a user modified the option.
+
+
+
+
+
+#### OPTIF_COLLAPSE
+
+Collapse this option and its children so that it is not expanded in the treeview.
+
+
+
+
+
+#### OPTIF_DISABLED
+
+Disables the option so that it is not user-modifiable.
+
+
+
+
+
+#### OPTIF_ECB_CHECKED
+
+The associated extended check box is in the checked state.
+
+
+
+
+
+#### OPTIF_EXT_IS_EXTPUSH
+
+If set, the <b>pExtPush</b> member is valid (unless <b>NULL</b>).
+
+If not set, the <b>pExtChkBox</b> member is valid (unless <b>NULL</b>).
+
+
+
+
+
+#### OPTIF_EXT_DISABLED
+
+The extended check box or extended push button is not selectable.
+
+
+
+
+
+#### OPTIF_EXT_HIDE
+
+CPSUI will not display the extended check box or extended push button.
+
+
+
+
+
+#### OPTIF_HAS_POIEXT
+
+If set, the <b>pOIExt</b> member is valid.
+
+
+
+
+
+#### OPTIF_HIDE
+
+CPSUI will not display this option in the treeview. CPSUI examines this flag only when initially creating the treeview, so changing the flag from its initial value has no effect.
+
+
+
+
+
+#### OPTIF_INITIAL_TVITEM
+
+If set, CPSUI sets the initial window focus to this option when it displays the treeview. CPSUI expands tree nodes and scrolls the option into view as necessary. If the option is hidden, or if this flag is not set for any OPTITEM structure, CPSUI chooses the initial focus.
+
+
+
+
+
+#### OPTIF_NO_GROUPBOX_NAME
+
+If not set, and <b>pOptype</b> is not zero, CPSUI uses the <b>pName</b> string as the groupbox title.
+
+If set, CPSUI provides a groupbox title.
+
+
+
+
+
+#### OPTIF_OVERLAY_NO_ICON
+
+If set CPSUI overlays its IDI_CPSUI_NO icon onto the icon associated with the option. (See the <b>Sel/pSel</b> member.)
+
+
+
+
+
+#### OPTIF_OVERLAY_STOP_ICON
+
+If set, CPSUI overlays its IDI_CPSUI_STOP icon onto the icon associated with the option. (See the <b>Sel/pSel</b> member.)
+
+
+
+
+
+#### OPTIF_OVERLAY_WARNING_ICON
+
+If set, CPSUI overlays its IDI_CPSUI_WARNING icon onto the icon associated with the option. (See the <b>Sel/pSel</b> member.)
+
+
+
+
+
+#### OPTIF_SEL_AS_HICON
+
+If set, the <b>Sel</b> member contains an icon handle.
+
+If not set, the <b>Sel</b> member contains an icon resource identifier.
+
+This flag can only be used when <b>pOptType</b> contains <b>NULL</b>.
+
+`UserData`
+
+Optional 32-bit value that can be set and used by the caller.
+
+(Printer interface DLLs for <a href="https://msdn.microsoft.com/0a51fa2b-3d09-4a5f-9fff-40604877a414">Unidrv</a> and <a href="https://msdn.microsoft.com/139a10e9-203b-499b-9291-8537eae9189c">Pscript</a> use this member to supply a pointer to a <a href="..\printoem\ns-printoem-_userdata.md">USERDATA</a> structure. <a href="https://msdn.microsoft.com/22ac2af6-37d8-4913-95af-9c3dc8576d40">User interface plug-ins</a> can reference this structure.)
+
+`pName`
+
+String identifier representing a localized, displayable option name. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier, with HIWORD set to zero. (Also see the description of <b>DMPubID</b>, below.)
+
+`DUMMYUNIONNAME`
+
+
+
+`DUMMYUNIONNAME2`
+
+
+
+`pOptType`
+
+Pointer to an <a href="..\compstui\ns-compstui-_opttype.md">OPTTYPE</a> structure that describes the option's display type. If <b>NULL</b>, the option has no parameters and is used as a parent to options with a higher <b>Level</b> value. The child options must immediately follow the parent in the OPTITEM array. (See the following Remarks section.)
+
+`HelpIndex`
+
+Help file index, which identifies help text to be associated with the option. If zero, help file text does not exist for this option. Note that the <b>pOIExt</b> member of this structure must be set with the address of an <a href="..\compstui\ns-compstui-_oiext.md">OIEXT</a> structure in order for help text functionality to exist.
 
 `DMPubID`
 
@@ -368,197 +546,19 @@ CPSUI does not maintain a DEVMODE structure. The application is responsible for 
 
 For additional information about using the <b>DMPubID</b> member, see the following Remarks section.
 
-`DUMMYUNIONNAME`
-
-
-
-`DUMMYUNIONNAME2`
-
-
-
-`dwReserved`
-
-Reserved, must be initialized to zero.
-
-`Flags`
-
-Optional bit flags that modify the option's characteristics. The OPTIF_CHANGEONCE flag is set by CPSUI; all other flags are set by the caller. Any combination of the following flags can be set.
-
-
-
-
-
-#### OPTIF_CALLBACK
-
-When a user modifies the option, CPSUI should call the <a href="..\compstui\nc-compstui-_cpsuicallback.md">_CPSUICALLBACK</a>-typed callback function specified in the <a href="..\compstui\ns-compstui-_compropsheetui.md">COMPROPSHEETUI</a> structure.
-
-
-
-
-
-#### OPTIF_CHANGED
-
-The <b>_CPSUICALLBACK</b>-typed callback function should set this flag if it modified the option, so that CPSUI will redisplay it.
-
-
-
-
-
-#### OPTIF_CHANGEONCE
-
-CPSUI sets this bit if a user modified the option.
-
-
-
-
-
-#### OPTIF_COLLAPSE
-
-Collapse this option and its children so that it is not expanded in the treeview.
-
-
-
-
-
-#### OPTIF_DISABLED
-
-Disables the option so that it is not user-modifiable.
-
-
-
-
-
-#### OPTIF_ECB_CHECKED
-
-The associated extended check box is in the checked state.
-
-
-
-
-
-#### OPTIF_EXT_IS_EXTPUSH
-
-If set, the <b>pExtPush</b> member is valid (unless <b>NULL</b>).
-
-If not set, the <b>pExtChkBox</b> member is valid (unless <b>NULL</b>).
-
-
-
-
-
-#### OPTIF_EXT_DISABLED
-
-The extended check box or extended push button is not selectable.
-
-
-
-
-
-#### OPTIF_EXT_HIDE
-
-CPSUI will not display the extended check box or extended push button.
-
-
-
-
-
-#### OPTIF_HAS_POIEXT
-
-If set, the <b>pOIExt</b> member is valid.
-
-
-
-
-
-#### OPTIF_HIDE
-
-CPSUI will not display this option in the treeview. CPSUI examines this flag only when initially creating the treeview, so changing the flag from its initial value has no effect.
-
-
-
-
-
-#### OPTIF_INITIAL_TVITEM
-
-If set, CPSUI sets the initial window focus to this option when it displays the treeview. CPSUI expands tree nodes and scrolls the option into view as necessary. If the option is hidden, or if this flag is not set for any OPTITEM structure, CPSUI chooses the initial focus.
-
-
-
-
-
-#### OPTIF_NO_GROUPBOX_NAME
-
-If not set, and <b>pOptype</b> is not zero, CPSUI uses the <b>pName</b> string as the groupbox title.
-
-If set, CPSUI provides a groupbox title.
-
-
-
-
-
-#### OPTIF_OVERLAY_NO_ICON
-
-If set CPSUI overlays its IDI_CPSUI_NO icon onto the icon associated with the option. (See the <b>Sel/pSel</b> member.)
-
-
-
-
-
-#### OPTIF_OVERLAY_STOP_ICON
-
-If set, CPSUI overlays its IDI_CPSUI_STOP icon onto the icon associated with the option. (See the <b>Sel/pSel</b> member.)
-
-
-
-
-
-#### OPTIF_OVERLAY_WARNING_ICON
-
-If set, CPSUI overlays its IDI_CPSUI_WARNING icon onto the icon associated with the option. (See the <b>Sel/pSel</b> member.)
-
-
-
-
-
-#### OPTIF_SEL_AS_HICON
-
-If set, the <b>Sel</b> member contains an icon handle.
-
-If not set, the <b>Sel</b> member contains an icon resource identifier.
-
-This flag can only be used when <b>pOptType</b> contains <b>NULL</b>.
-
-`HelpIndex`
-
-Help file index, which identifies help text to be associated with the option. If zero, help file text does not exist for this option. Note that the <b>pOIExt</b> member of this structure must be set with the address of an <a href="..\compstui\ns-compstui-_oiext.md">OIEXT</a> structure in order for help text functionality to exist.
-
-`Level`
-
-Specifies the level of this option in the treeview. For more information, see the following Remarks section.
-
-`pName`
-
-String identifier representing a localized, displayable option name. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier, with HIWORD set to zero. (Also see the description of <b>DMPubID</b>, below.)
-
-`pOIExt`
-
-Pointer to an optional <a href="..\compstui\ns-compstui-_oiext.md">OIEXT</a> structure. The caller is responsible for allocating storage for this structure.
-
-`pOptType`
-
-Pointer to an <a href="..\compstui\ns-compstui-_opttype.md">OPTTYPE</a> structure that describes the option's display type. If <b>NULL</b>, the option has no parameters and is used as a parent to options with a higher <b>Level</b> value. The child options must immediately follow the parent in the OPTITEM array. (See the following Remarks section.)
-
-`UserData`
-
-Optional 32-bit value that can be set and used by the caller.
-
-(Printer interface DLLs for <a href="https://msdn.microsoft.com/0a51fa2b-3d09-4a5f-9fff-40604877a414">Unidrv</a> and <a href="https://msdn.microsoft.com/139a10e9-203b-499b-9291-8537eae9189c">Pscript</a> use this member to supply a pointer to a <a href="..\printoem\ns-printoem-_userdata.md">USERDATA</a> structure. <a href="https://msdn.microsoft.com/22ac2af6-37d8-4913-95af-9c3dc8576d40">User interface plug-ins</a> can reference this structure.)
-
 `UserItemID`
 
 Optional application-supplied value that can be used for option identification purposes. Not referenced by CPSUI.
 
 `wReserved`
+
+Reserved, must be initialized to zero.
+
+`pOIExt`
+
+Pointer to an optional <a href="..\compstui\ns-compstui-_oiext.md">OIEXT</a> structure. The caller is responsible for allocating storage for this structure.
+
+`dwReserved`
 
 Reserved, must be initialized to zero.
 

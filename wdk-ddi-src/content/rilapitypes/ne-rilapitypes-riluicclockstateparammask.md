@@ -62,7 +62,7 @@ typedef enum _RILUICCLOCKSTATEPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_UICCLOCKSTATE_ALL</td>
+                    <td>RIL_PARAM_UICCLOCKSTATE_UICCLOCK</td>
                     <td></td>
                 </tr>
             
@@ -72,7 +72,7 @@ typedef enum _RILUICCLOCKSTATEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_UICCLOCKSTATE_UICCLOCK</td>
+                    <td>RIL_PARAM_UICCLOCKSTATE_VERIFYATTEMPTSLEFT</td>
                     <td></td>
                 </tr>
             
@@ -82,7 +82,7 @@ typedef enum _RILUICCLOCKSTATEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_UICCLOCKSTATE_VERIFYATTEMPTSLEFT</td>
+                    <td>RIL_PARAM_UICCLOCKSTATE_ALL</td>
                     <td></td>
                 </tr>
 </table>

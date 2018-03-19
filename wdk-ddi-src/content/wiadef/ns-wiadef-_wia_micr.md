@@ -62,13 +62,17 @@ typedef struct _WIA_MICR {
 ## Members
 
 
-`Count`
+`Tag`
 
-Specifies the number of <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> elements in the <b>Micr</b> sequence.
+Must be the literal 'WMIC', 4 single byte ASCII characters.
 
-`Micr`
+`Version`
 
-Placeholder for a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> structures.
+Must be the value 0x00010000 (Version 1.0).
+
+`Size`
+
+The complete size of this <b>WIA_MICR</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> list.
 
 `Placeholder`
 
@@ -78,17 +82,13 @@ Placeholder for unrecognized characters.
 
 
 
-`Size`
+`Count`
 
-The complete size of this <b>WIA_MICR</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> list.
+Specifies the number of <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> elements in the <b>Micr</b> sequence.
 
-`Tag`
+`Micr`
 
-Must be the literal 'WMIC', 4 single byte ASCII characters.
-
-`Version`
-
-Must be the value 0x00010000 (Version 1.0).
+Placeholder for a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> structures.
 
 ## Remarks
 The header must be followed by a sequence of MICR information structures, one for each decoded MICR code, in the order the MICR codes were found and decoded.

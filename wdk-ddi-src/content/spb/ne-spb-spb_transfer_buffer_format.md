@@ -69,13 +69,18 @@ typedef enum  {
                 </tr>
             
                 <tr>
+                    <td>SpbTransferBufferFormatSimple</td>
+                    <td>The transfer buffer is described by a simple user-mode or kernel-mode pointer and a length.</td>
+                </tr>
+            
+                <tr>
                     <td>SpbTransferBufferFormatList</td>
                     <td>The transfer buffer is described by a pointer to a list of buffers and a count of the number of buffers in the list.</td>
                 </tr>
             
                 <tr>
-                    <td>SpbTransferBufferFormatMax</td>
-                    <td>Reserved for use by the operating system.</td>
+                    <td>SpbTransferBufferFormatSimpleNonPaged</td>
+                    <td>The transfer buffer is described by a simple user-mode or kernel-mode pointer and a length. The buffer resides in nonpaged memory. This format value is valid only if the client that originates the I/O request is a kernel-mode driver.</td>
                 </tr>
             
                 <tr>
@@ -84,13 +89,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>SpbTransferBufferFormatSimple</td>
-                    <td>The transfer buffer is described by a simple user-mode or kernel-mode pointer and a length.</td>
-                </tr>
-            
-                <tr>
-                    <td>SpbTransferBufferFormatSimpleNonPaged</td>
-                    <td>The transfer buffer is described by a simple user-mode or kernel-mode pointer and a length. The buffer resides in nonpaged memory. This format value is valid only if the client that originates the I/O request is a kernel-mode driver.</td>
+                    <td>SpbTransferBufferFormatMax</td>
+                    <td>Reserved for use by the operating system.</td>
                 </tr>
 </table>
 
@@ -107,11 +107,3 @@ The <b>Format</b> member of the <a href="https://msdn.microsoft.com/library/wind
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406215">SPB_TRANSFER_BUFFER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_BUFFER_FORMAT enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

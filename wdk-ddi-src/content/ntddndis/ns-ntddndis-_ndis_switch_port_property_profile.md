@@ -71,18 +71,6 @@ typedef struct _NDIS_SWITCH_PORT_PROPERTY_PROFILE {
 ## Members
 
 
-`CdnLabel`
-
-An  NDIS_SWITCH_PORT_PROPERTY_PROFILE_CDN_LABEL value that specifies the PCI Express (PCIe) CDN label for the location of the physical network adapter. A CDN label provides consistent device locations across similar hardware locations.
-
-`CdnLabelId`
-
-A UINT32 value that specifies a unique identifier for the data that is contained in the <b>CdnLabel</b> member.
-
-`Flags`
-
-A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.
-
 `Header`
 
 The type, revision, and size of the <b>NDIS_SWITCH_PORT_PROPERTY_PROFILE</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
@@ -98,6 +86,30 @@ The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT.
 Original version for NDIS 6.30 and later.
 
 Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_SWITCH_PROPERTY_PROFILE_REVISION_1.
+
+`Flags`
+
+A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserved for NDIS.
+
+`ProfileName`
+
+An NDIS_SWITCH_PORT_PROPERTY_PROFILE_NAME value that specifies the user-friendly name of the profile property.
+
+`ProfileId`
+
+A GUID value that uniquely identifies the profile property.
+
+`VendorName`
+
+An NDIS_VENDOR_NAME value that specifies the user-friendly name of the vendor that defined the port profile.
+
+`VendorId`
+
+A GUID value that identifies the vendor that defined the port profile.
+
+`ProfileData`
+
+
 
 `NetCfgInstanceId`
 
@@ -142,25 +154,13 @@ A value that specifies the device number for the physical network adapter on the
 
 A value that specifies the function number of a logical device on the physical network adapter.
 
-`ProfileData`
+`CdnLabelId`
 
+A UINT32 value that specifies a unique identifier for the data that is contained in the <b>CdnLabel</b> member.
 
+`CdnLabel`
 
-`ProfileId`
-
-A GUID value that uniquely identifies the profile property.
-
-`ProfileName`
-
-An NDIS_SWITCH_PORT_PROPERTY_PROFILE_NAME value that specifies the user-friendly name of the profile property.
-
-`VendorId`
-
-A GUID value that identifies the vendor that defined the port profile.
-
-`VendorName`
-
-An NDIS_VENDOR_NAME value that specifies the user-friendly name of the vendor that defined the port profile.
+An  NDIS_SWITCH_PORT_PROPERTY_PROFILE_CDN_LABEL value that specifies the PCI Express (PCIe) CDN label for the location of the physical network adapter. A CDN label provides consistent device locations across similar hardware locations.
 
 ## Remarks
 The <b>NDIS_SWITCH_PORT_PROPERTY_PROFILE</b> structure is used by the extension to reference a policy property within a private policy store instead of the Hyper-V policy store. This allows the independent software vendor (ISV) to populate and manage this private policy store through private channels and interfaces.  Vendors can distinguish their profiles from other vendors' profiles using the <i>VendorName</i> and <i>VendorId</i> fields. 
@@ -227,11 +227,3 @@ The <b>PciLocation</b> and <b>CdnLabel</b> members are only relevant if the prop
 
 
 <b></b>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_PROPERTY_PROFILE structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

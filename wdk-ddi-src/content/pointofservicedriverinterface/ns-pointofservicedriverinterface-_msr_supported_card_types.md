@@ -57,13 +57,13 @@ typedef struct _MSR_SUPPORTED_CARD_TYPES {
 ## Members
 
 
-`CardTypes`
-
-Magnetic stripe cards supported by the reader. The first <b>Count</b> members are valid.
-
 `Count`
 
 Count of supported magnetic stripe cards defined in <b>CardTypes[MSR_CARD_TYPE_MAX_COUNT]</b>.
+
+`CardTypes`
+
+Magnetic stripe cards supported by the reader. The first <b>Count</b> members are valid.
 
 
 ## Requirements

@@ -64,13 +64,8 @@ typedef enum _MsrStatusUpdateType {
 <table>
             
                 <tr>
-                    <td>MsrStatusUpdateType_Authenticated</td>
-                    <td>The device is authenticated. This is valid if the device supports authentication.</td>
-                </tr>
-            
-                <tr>
-                    <td>MsrStatusUpdateType_Extended</td>
-                    <td>Vendor-specific status information. Reported in IMagneticStripeReaderStatusUpdatedEventArgs.ExtendedStatus.</td>
+                    <td>MsrStatusUpdateType_Online</td>
+                    <td>The device is powered on. This is valid if <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedpospowerreportingtype.md">UnifiedPosPowerReportingType</a> is <b>Standard</b> or <b>Advanced</b>.</td>
                 </tr>
             
                 <tr>
@@ -89,13 +84,18 @@ typedef enum _MsrStatusUpdateType {
                 </tr>
             
                 <tr>
-                    <td>MsrStatusUpdateType_Online</td>
-                    <td>The device is powered on. This is valid if <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedpospowerreportingtype.md">UnifiedPosPowerReportingType</a> is <b>Standard</b> or <b>Advanced</b>.</td>
+                    <td>MsrStatusUpdateType_Unauthenticated</td>
+                    <td>The device is not authenticated. This is valid if the device supports authentication.</td>
                 </tr>
             
                 <tr>
-                    <td>MsrStatusUpdateType_Unauthenticated</td>
-                    <td>The device is not authenticated. This is valid if the device supports authentication.</td>
+                    <td>MsrStatusUpdateType_Authenticated</td>
+                    <td>The device is authenticated. This is valid if the device supports authentication.</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrStatusUpdateType_Extended</td>
+                    <td>Vendor-specific status information. Reported in IMagneticStripeReaderStatusUpdatedEventArgs.ExtendedStatus.</td>
                 </tr>
 </table>
 

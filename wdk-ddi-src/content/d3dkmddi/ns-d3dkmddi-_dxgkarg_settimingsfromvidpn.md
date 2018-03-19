@@ -64,21 +64,21 @@ typedef struct _DXGKARG_SETTIMINGSFROMVIDPN {
 
 Handle to a functional VidPn which describes the display configuration the OS is attempting to apply.
 
-`PathCount`
+`SetFlags`
 
-Number of pointers in the array pointed to by pSetTimingPathInfo.
+A DXGK_SET_TIMING_FLAGS structure that requests specific actions from the driver on the SetTimingsFromVidPn call.
 
 `pResultsFlags`
 
 Pointer to a DXGK_SET_TIMING_RESULTS structure that the driver should use to report overall results from the SetTimingsFromVidPn call.
 
+`PathCount`
+
+Number of pointers in the array pointed to by pSetTimingPathInfo.
+
 `pSetTimingPathInfo`
 
 An array of pointers to DXGK_SET_TIMING_PATH_INFO structures that specify per path details of the timings to be set. It also allows feedback from the driver on additional work the OS needs to do either before the timings changes can be made, or after changes are complete.
-
-`SetFlags`
-
-A DXGK_SET_TIMING_FLAGS structure that requests specific actions from the driver on the SetTimingsFromVidPn call.
 
 
 ## Requirements

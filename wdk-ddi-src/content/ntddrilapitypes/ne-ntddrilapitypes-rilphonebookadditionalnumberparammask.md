@@ -64,12 +64,12 @@ typedef enum _RILPHONEBOOKADDITIONALNUMBERPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_PBAN_ALL</td>
+                    <td>RIL_PARAM_PBAN_NUMID</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_PBAN_NUMID</td>
+                    <td>RIL_PARAM_PBAN_ALL</td>
                     <td></td>
                 </tr>
 </table>

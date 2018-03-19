@@ -66,15 +66,7 @@ typedef struct _RILUMTSMRL {
 ## Members
 
 
-`dwCellID`
-
-
-
-`dwECNO`
-
-
-
-`dwLocationAreaCode`
+`dwParams`
 
 
 
@@ -86,11 +78,15 @@ typedef struct _RILUMTSMRL {
 
 
 
-`dwParams`
+`dwLocationAreaCode`
 
 
 
-`dwPathLoss`
+`dwCellID`
+
+
+
+`dwUARFCN`
 
 
 
@@ -102,7 +98,11 @@ typedef struct _RILUMTSMRL {
 
 
 
-`dwUARFCN`
+`dwECNO`
+
+
+
+`dwPathLoss`
 
 
 

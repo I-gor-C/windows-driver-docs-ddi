@@ -68,8 +68,48 @@ typedef enum _D3DKMDT_MODE_PRUNING_REASON {
 <table>
             
                 <tr>
+                    <td>D3DKMDT_MPR_UNINITIALIZED</td>
+                    <td>A variable of type D3DKMDT_MODE_PRUNING_REASON has not yet been assigned a meaningful value.</td>
+                </tr>
+            
+                <tr>
                     <td>D3DKMDT_MPR_ALLCAPS</td>
                     <td>The monitor does not support the display mode because none of the available monitor capabilites imply support of the display mode.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MPR_DESCRIPTOR_MONITOR_SOURCE_MODE</td>
+                    <td>The monitor supports the display mode because of the monitor source mode in the monitor descriptor.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MPR_DESCRIPTOR_MONITOR_FREQUENCY_RANGE</td>
+                    <td>The monitor does not support the display mode because of the monitor frequency range in the monitor descriptor.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_SOURCE_MODE</td>
+                    <td>The monitor supports the display mode because of the monitor source mode in the monitor descriptor override.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_FREQUENCY_RANGE</td>
+                    <td>The monitor does not support the display mode because of the monitor frequency range in the monitor descriptor override.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MPR_DEFAULT_PROFILE_MONITOR_SOURCE_MODE</td>
+                    <td>The monitor supports the display mode because of the monitor source mode in the default monitor profile.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MPR_DRIVER_RECOMMENDED_MONITOR_SOURCE_MODE</td>
+                    <td>The monitor supports the display mode because of the monitor source mode that the display miniport driver recommends.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MPR_MONITOR_FREQUENCY_RANGE_OVERRIDE</td>
+                    <td>The monitor supports the display mode because of the monitor frequency range override.</td>
                 </tr>
             
                 <tr>
@@ -80,48 +120,8 @@ The display mode is pruned (that is, the monitor does not support the display mo
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_MPR_DEFAULT_PROFILE_MONITOR_SOURCE_MODE</td>
-                    <td>The monitor supports the display mode because of the monitor source mode in the default monitor profile.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_MPR_DESCRIPTOR_MONITOR_FREQUENCY_RANGE</td>
-                    <td>The monitor does not support the display mode because of the monitor frequency range in the monitor descriptor.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_MPR_DESCRIPTOR_MONITOR_SOURCE_MODE</td>
-                    <td>The monitor supports the display mode because of the monitor source mode in the monitor descriptor.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_FREQUENCY_RANGE</td>
-                    <td>The monitor does not support the display mode because of the monitor frequency range in the monitor descriptor override.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_MPR_DESCRIPTOR_OVERRIDE_MONITOR_SOURCE_MODE</td>
-                    <td>The monitor supports the display mode because of the monitor source mode in the monitor descriptor override.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_MPR_DRIVER_RECOMMENDED_MONITOR_SOURCE_MODE</td>
-                    <td>The monitor supports the display mode because of the monitor source mode that the display miniport driver recommends.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DKMDT_MPR_MAXVALID</td>
                     <td>Valid enumeration values were exceeded.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_MPR_MONITOR_FREQUENCY_RANGE_OVERRIDE</td>
-                    <td>The monitor supports the display mode because of the monitor frequency range override.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_MPR_UNINITIALIZED</td>
-                    <td>A variable of type D3DKMDT_MODE_PRUNING_REASON has not yet been assigned a meaningful value.</td>
                 </tr>
 </table>
 
@@ -179,11 +179,3 @@ D3DKMDT_MPR_ALLCAPS
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmdt_displaymode_flags.md">D3DKMDT_DISPLAYMODE_FLAGS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_MODE_PRUNING_REASON enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

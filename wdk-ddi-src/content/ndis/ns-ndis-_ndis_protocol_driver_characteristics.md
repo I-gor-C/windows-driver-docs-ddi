@@ -77,29 +77,6 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
 ## Members
 
 
-`BindAdapterHandlerEx`
-
-The entry point for the 
-     <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">
-     ProtocolBindAdapterEx</a> function.
-
-`CloseAdapterCompleteHandlerEx`
-
-The entry point for the 
-     <a href="..\ndis\nc-ndis-protocol_close_adapter_complete_ex.md">
-     ProtocolCloseAdapterCompleteEx</a> function.
-
-`DirectOidRequestCompleteHandler`
-
-The entry point of the caller's 
-      <a href="..\ndis\nc-ndis-protocol_direct_oid_request_complete.md">
-      ProtocolDirectOidRequestComplete</a> function. This is an optional function. Set this entry point to
-      <b>NULL</b> if the protocol driver does not support the direct OID request interface.
-
-`Flags`
-
-Reserved for NDIS. Protocol drivers should set this member to zero.
-
 `Header`
 
 The 
@@ -135,20 +112,10 @@ Set the
         <b>Size</b> member to
         NDIS_SIZEOF_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_1.
 
-`MajorDriverVersion`
-
-Reserved for the major version number of the protocol driver. Protocol drivers can specify any
-     value that they require.
-
 `MajorNdisVersion`
 
 The major version of the NDIS library the protocol driver is using. The current value is
      0x06.
-
-`MinorDriverVersion`
-
-Reserved for the minor version number of the protocol driver. Protocol drivers can specify any
-     value that they require.
 
 `MinorNdisVersion`
 
@@ -260,14 +227,63 @@ NDIS 6.80
 </tr>
 </table>
 
+`MajorDriverVersion`
+
+Reserved for the major version number of the protocol driver. Protocol drivers can specify any
+     value that they require.
+
+`MinorDriverVersion`
+
+Reserved for the minor version number of the protocol driver. Protocol drivers can specify any
+     value that they require.
+
+`Flags`
+
+Reserved for NDIS. Protocol drivers should set this member to zero.
+
 `Name`
 
 A Unicode string that is the service name of the protocol driver.
+
+`SetOptionsHandler`
+
+The entry point for the 
+     <a href="..\ndis\nc-ndis-set_options.md">ProtocolSetOptions</a> function.
+
+`BindAdapterHandlerEx`
+
+The entry point for the 
+     <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">
+     ProtocolBindAdapterEx</a> function.
+
+`UnbindAdapterHandlerEx`
+
+The entry point for the 
+     <a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">
+     ProtocolUnbindAdapterEx</a> function.
+
+`OpenAdapterCompleteHandlerEx`
+
+The entry point for the 
+     <a href="..\ndis\nc-ndis-protocol_open_adapter_complete_ex.md">
+     ProtocolOpenAdapterCompleteEx</a> function.
+
+`CloseAdapterCompleteHandlerEx`
+
+The entry point for the 
+     <a href="..\ndis\nc-ndis-protocol_close_adapter_complete_ex.md">
+     ProtocolCloseAdapterCompleteEx</a> function.
 
 `NetPnPEventHandler`
 
 The entry point of the caller's 
      <a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a> function.
+
+`UninstallHandler`
+
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_uninstall.md">ProtocolUninstall</a> function, if any,
+     or <b>NULL</b>.
 
 `OidRequestCompleteHandler`
 
@@ -275,11 +291,11 @@ The entry point of the caller's
      <a href="..\ndis\nc-ndis-protocol_oid_request_complete.md">
      ProtocolOidRequestComplete</a> function.
 
-`OpenAdapterCompleteHandlerEx`
+`StatusHandlerEx`
 
-The entry point for the 
-     <a href="..\ndis\nc-ndis-protocol_open_adapter_complete_ex.md">
-     ProtocolOpenAdapterCompleteEx</a> function.
+The entry point of the caller's 
+     <a href="..\ndis\nc-ndis-protocol_status_ex.md">ProtocolStatusEx</a> function, if any, or
+     <b>NULL</b>.
 
 `ReceiveNetBufferListsHandler`
 
@@ -293,28 +309,12 @@ The entry point for the
      <a href="..\ndis\nc-ndis-protocol_send_net_buffer_lists_complete.md">
      ProtocolSendNetBufferListsComplete</a> function.
 
-`SetOptionsHandler`
-
-The entry point for the 
-     <a href="..\ndis\nc-ndis-set_options.md">ProtocolSetOptions</a> function.
-
-`StatusHandlerEx`
+`DirectOidRequestCompleteHandler`
 
 The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_status_ex.md">ProtocolStatusEx</a> function, if any, or
-     <b>NULL</b>.
-
-`UnbindAdapterHandlerEx`
-
-The entry point for the 
-     <a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">
-     ProtocolUnbindAdapterEx</a> function.
-
-`UninstallHandler`
-
-The entry point of the caller's 
-     <a href="..\ndis\nc-ndis-protocol_uninstall.md">ProtocolUninstall</a> function, if any,
-     or <b>NULL</b>.
+      <a href="..\ndis\nc-ndis-protocol_direct_oid_request_complete.md">
+      ProtocolDirectOidRequestComplete</a> function. This is an optional function. Set this entry point to
+      <b>NULL</b> if the protocol driver does not support the direct OID request interface.
 
 ## Remarks
 A protocol driver calls the 
@@ -387,11 +387,3 @@ A protocol driver calls the
 
 
 <a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROTOCOL_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

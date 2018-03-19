@@ -70,17 +70,13 @@ The function number. This number identifies the operation to perform. Currently 
 
 A pointer to a buffer that contains input data for the driver.
 
-`pPrivateOutputData`
-
-A pointer to a buffer that the driver can use to write output data.
-
-`pResourceList`
-
-A pointer to an array of resource handles. Use this member to pass Direct3D resources to the driver.
-
 `PrivateInputDataSize`
 
 The size of the buffer pointed to by <b>pPrivateInputData</b>, in bytes.
+
+`pPrivateOutputData`
+
+A pointer to a buffer that the driver can use to write output data.
 
 `PrivateOutputDataSize`
 
@@ -89,6 +85,10 @@ The size of the buffer pointed to by <b>pPrivateOutputData</b>, in bytes.
 `ResourceCount`
 
 The number of elements in the <b>pResourceList</b> array. If <b>pResourceList</b> is <b>NULL</b>, set <b>ResourceCount</b> to zero.
+
+`pResourceList`
+
+A pointer to an array of resource handles. Use this member to pass Direct3D resources to the driver.
 
 ## Remarks
 The exact meaning of each structure member depends on the value of <b>Function</b>.
@@ -102,11 +102,3 @@ The exact meaning of each structure member depends on the value of <b>Function</
 ## See Also
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videodecoderextension.md">VideoDecoderExtension</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11_1DDIARG_VIDEODECODEREXTENSION structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -60,8 +60,8 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KsInvokeOnCancel</td>
-                    <td>Invokes the completion routine on cancellation.</td>
+                    <td>KsInvokeOnSuccess</td>
+                    <td>Invokes the completion routine on success.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KsInvokeOnSuccess</td>
-                    <td>Invokes the completion routine on success.</td>
+                    <td>KsInvokeOnCancel</td>
+                    <td>Invokes the completion routine on cancellation.</td>
                 </tr>
 </table>
 

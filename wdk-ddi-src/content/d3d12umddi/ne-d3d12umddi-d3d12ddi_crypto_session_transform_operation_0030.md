@@ -63,23 +63,18 @@ typedef enum _D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030 {
 <table>
             
                 <tr>
+                    <td>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_NONE</td>
+                    <td>The crypto session transform operation type is not available.</td>
+                </tr>
+            
+                <tr>
                     <td>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT</td>
                     <td>The crypto session transform operation is decrypt.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT_HEADER</td>
-                    <td>The crypto session transform operation is decrypt header.</td>
-                </tr>
-            
-                <tr>
                     <td>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT_WITH_HEADER</td>
                     <td>The crypto session transform operation is decrypt with header.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_NONE</td>
-                    <td>The crypto session transform operation type is not available.</td>
                 </tr>
             
                 <tr>
@@ -90,6 +85,11 @@ typedef enum _D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030 {
                 <tr>
                     <td>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_TRANSCRYPT_WITH_HEADER</td>
                     <td>The crypto session transform operation is transcrypt with header.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_CRYPTO_SESSION_TRANSFORM_OPERATION_0030_DECRYPT_HEADER</td>
+                    <td>The crypto session transform operation is decrypt header.</td>
                 </tr>
 </table>
 

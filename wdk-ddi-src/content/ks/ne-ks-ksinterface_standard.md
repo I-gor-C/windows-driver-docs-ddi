@@ -60,8 +60,8 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSINTERFACE_STANDARD_CONTROL</td>
-                    <td>Reserved for system use.</td>
+                    <td>KSINTERFACE_STANDARD_STREAMING</td>
+                    <td></td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSINTERFACE_STANDARD_STREAMING</td>
-                    <td></td>
+                    <td>KSINTERFACE_STANDARD_CONTROL</td>
+                    <td>Reserved for system use.</td>
                 </tr>
 </table>
 

@@ -58,12 +58,12 @@ typedef enum _LineDisplayMarqueeFormatType {
 <table>
             
                 <tr>
-                    <td>MarqueeFormatPlace</td>
+                    <td>MarqueeFormatWalk</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>MarqueeFormatWalk</td>
+                    <td>MarqueeFormatPlace</td>
                     <td></td>
                 </tr>
 </table>

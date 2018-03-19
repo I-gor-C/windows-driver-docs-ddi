@@ -57,13 +57,13 @@ typedef struct _LineDisplayGlyphDefinitionData {
 ## Members
 
 
-`dataLength`
-
-dataLength
-
 `glyphCode`
 
 glyphCode
+
+`dataLength`
+
+dataLength
 
 
 ## Requirements

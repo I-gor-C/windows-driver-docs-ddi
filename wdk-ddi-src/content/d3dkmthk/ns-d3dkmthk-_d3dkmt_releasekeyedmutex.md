@@ -58,10 +58,6 @@ typedef struct _D3DKMT_RELEASEKEYEDMUTEX {
 ## Members
 
 
-`FenceValue`
-
-[in] A 64-bit value that specifies the current fence value of the GPU synchronization object.
-
 `hKeyedMutex`
 
 [in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the keyed mutex object to release.
@@ -69,6 +65,10 @@ typedef struct _D3DKMT_RELEASEKEYEDMUTEX {
 `Key`
 
 [in] A 64-bit value that specifies the key value to release the mutex to.
+
+`FenceValue`
+
+[in] A 64-bit value that specifies the current fence value of the GPU synchronization object.
 
 
 ## Requirements
@@ -80,11 +80,3 @@ typedef struct _D3DKMT_RELEASEKEYEDMUTEX {
 ## See Also
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreleasekeyedmutex.md">D3DKMTReleaseKeyedMutex</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_RELEASEKEYEDMUTEX structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

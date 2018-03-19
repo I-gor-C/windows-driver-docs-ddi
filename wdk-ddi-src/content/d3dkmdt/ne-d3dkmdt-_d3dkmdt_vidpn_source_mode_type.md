@@ -62,8 +62,18 @@ typedef enum _D3DKMDT_VIDPN_SOURCE_MODE_TYPE {
 <table>
             
                 <tr>
+                    <td>D3DKMDT_RMT_UNINITIALIZED</td>
+                    <td>Indicates that a variable of type D3DKMDT_VIDPN_SOURCE_MODE_TYPE has not yet been assigned a meaningful value.</td>
+                </tr>
+            
+                <tr>
                     <td>D3DKMDT_RMT_GRAPHICS</td>
                     <td>Indicates that the VidPN source mode is a graphics mode.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_RMT_TEXT</td>
+                    <td>Indicates that the VidPN source mode is a text mode.</td>
                 </tr>
             
                 <tr>
@@ -80,16 +90,6 @@ Indicates that the VidPN source mode is stereo, and the allocation can only be s
 Indicates that the VidPN source mode is stereo, and the allocation can only be scanned by the display miniport driver as both left and right channels, or as only the left channel, or as only  the right channel.
 
 If mono content needs to be displayed in a stereo mode, the operating system can better manage resources if <b>D3DKMDT_RMT_GRAPHICS_STEREO_ADVANCED_SCAN</b> is set instead of <b>D3DKMDT_RMT_GRAPHICS_STEREO</b>.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_RMT_TEXT</td>
-                    <td>Indicates that the VidPN source mode is a text mode.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_RMT_UNINITIALIZED</td>
-                    <td>Indicates that a variable of type D3DKMDT_VIDPN_SOURCE_MODE_TYPE has not yet been assigned a meaningful value.</td>
                 </tr>
 </table>
 

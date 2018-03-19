@@ -69,7 +69,7 @@ typedef enum _RILPERSOFEATURE {
 <table>
             
                 <tr>
-                    <td>RIL_PERSOFEATURE_3GPP_CORP</td>
+                    <td>RIL_PERSOFEATURE_NONE</td>
                     <td></td>
                 </tr>
             
@@ -89,17 +89,12 @@ typedef enum _RILPERSOFEATURE {
                 </tr>
             
                 <tr>
+                    <td>RIL_PERSOFEATURE_3GPP_CORP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PERSOFEATURE_3GPP_USIM</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PERSOFEATURE_3GPP2_CORP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PERSOFEATURE_3GPP2_HRPD</td>
                     <td></td>
                 </tr>
             
@@ -114,7 +109,17 @@ typedef enum _RILPERSOFEATURE {
                 </tr>
             
                 <tr>
+                    <td>RIL_PERSOFEATURE_3GPP2_HRPD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PERSOFEATURE_3GPP2_SP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PERSOFEATURE_3GPP2_CORP</td>
                     <td></td>
                 </tr>
             
@@ -125,11 +130,6 @@ typedef enum _RILPERSOFEATURE {
             
                 <tr>
                     <td>RIL_PERSOFEATURE_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PERSOFEATURE_NONE</td>
                     <td></td>
                 </tr>
 </table>

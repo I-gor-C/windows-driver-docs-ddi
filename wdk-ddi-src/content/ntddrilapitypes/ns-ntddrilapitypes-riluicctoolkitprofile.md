@@ -58,15 +58,15 @@ typedef struct _RILUICCTOOLKITPROFILE {
 ## Members
 
 
-`bProfile`
-
-
-
 `cbSize`
 
 
 
 `dwProfileSize`
+
+
+
+`bProfile`
 
 
 

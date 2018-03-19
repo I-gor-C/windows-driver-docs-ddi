@@ -66,10 +66,6 @@ typedef struct _NDIS_NDK_CAPABILITIES {
 ## Members
 
 
-`Flags`
-
-
-
 `Header`
 
 The <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_NDK_CAPABILITIES</b> structure. Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:
@@ -80,35 +76,39 @@ The <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER<
 <li>Set the <b>Size</b> member to <b>NDIS_SIZEOF_NDK_CAPABILITIES_REVISION_1</b>.</li>
 </ul>
 
+`Flags`
+
+
+
+`MaxQpCount`
+
+The maximum number of queue pairs (QPs) that can be supported by the adapter.
+
 `MaxCqCount`
 
 The maximum number of completion queues (CQs) that can be supported by the adapter.
+
+`MaxMrCount`
+
+The maximum number of memory regions (MRs) that can be supported by the adapter.
+
+`MaxPdCount`
+
+The maximum number of protection domains (PDs) that can be supported by the adapter
 
 `MaxInboundReadLimit`
 
 The maximum number of incoming outstanding read requests that can be supported by the adapter. 
      If this member is zero, there is no adapter limit. In this case, there is still a limit for each queue pair. The limit for each queue pair is specified in the <b>MaxInboundReadLimit</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a> structure.
 
-`MaxMrCount`
-
-The maximum number of memory regions (MRs) that can be supported by the adapter.
-
-`MaxMwCount`
-
-The maximum number of memory windows (MWs) that are supported by the adapter.
-
 `MaxOutboundReadLimit`
 
 The maximum number of outgoing outstanding read requests that can be supported by the adapter. 
     If this member is zero, there is no adapter-wide limit.  In this case, there is still a limit for each queue pair. The limit for each queue pair is specified in the <b>MaxOutboundReadLimit</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a> structure.
 
-`MaxPdCount`
+`MaxMwCount`
 
-The maximum number of protection domains (PDs) that can be supported by the adapter
-
-`MaxQpCount`
-
-The maximum number of queue pairs (QPs) that can be supported by the adapter.
+The maximum number of memory windows (MWs) that are supported by the adapter.
 
 `MaxSrqCount`
 
@@ -157,11 +157,3 @@ The <b>NDIS_NDK_CAPABILITIES</b> structure is used in the <a href="..\ndis\ns-nd
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NDK_CAPABILITIES structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

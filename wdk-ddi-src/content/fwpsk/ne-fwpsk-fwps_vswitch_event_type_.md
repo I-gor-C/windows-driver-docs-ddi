@@ -70,58 +70,8 @@ typedef enum FWPS_VSWITCH_EVENT_TYPE_ {
 <table>
             
                 <tr>
-                    <td>FWPS_VSWITCH_EVENT_INTERFACE_CONNECT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_VSWITCH_EVENT_INTERFACE_CREATE</td>
-                    <td>Indicates that the virtual switch interface was created.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_VSWITCH_EVENT_INTERFACE_DELETE</td>
-                    <td>Indicates that the virtual switch interface was deleted.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_VSWITCH_EVENT_INTERFACE_DISCONNECT</td>
-                    <td>Indicates that the virtual switch interface was disconnected.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_VSWITCH_EVENT_POLICY_ADD</td>
-                    <td>Indicates the addition of a policy for a virtual switch port.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_VSWITCH_EVENT_POLICY_DELETE</td>
-                    <td>Indicates the deletion of a policy for a virtual switch port.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_VSWITCH_EVENT_POLICY_UPDATE</td>
-                    <td>Indicates a policy update to a virtual switch port.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_VSWITCH_EVENT_PORT_CREATE</td>
-                    <td>Indicates that the virtual switch port was created.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_VSWITCH_EVENT_PORT_DELETE</td>
-                    <td>Indicates that the virtual switch port was deleted.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_VSWITCH_EVENT_RUNTIME_STATE_RESTORE</td>
-                    <td>Indicates a virtual switch run-time state restore event.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_VSWITCH_EVENT_RUNTIME_STATE_SAVE</td>
-                    <td>Indicates a virtual switch run-time state save event.</td>
+                    <td>FWPS_VSWITCH_EVENT_VSWITCH_NONE</td>
+                    <td>Indicates no specific virtual switch event.</td>
                 </tr>
             
                 <tr>
@@ -135,8 +85,58 @@ typedef enum FWPS_VSWITCH_EVENT_TYPE_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_VSWITCH_EVENT_VSWITCH_NONE</td>
-                    <td>Indicates no specific virtual switch event.</td>
+                    <td>FWPS_VSWITCH_EVENT_PORT_CREATE</td>
+                    <td>Indicates that the virtual switch port was created.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_VSWITCH_EVENT_PORT_DELETE</td>
+                    <td>Indicates that the virtual switch port was deleted.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_VSWITCH_EVENT_INTERFACE_CREATE</td>
+                    <td>Indicates that the virtual switch interface was created.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_VSWITCH_EVENT_INTERFACE_DELETE</td>
+                    <td>Indicates that the virtual switch interface was deleted.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_VSWITCH_EVENT_INTERFACE_CONNECT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_VSWITCH_EVENT_INTERFACE_DISCONNECT</td>
+                    <td>Indicates that the virtual switch interface was disconnected.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_VSWITCH_EVENT_POLICY_ADD</td>
+                    <td>Indicates the addition of a policy for a virtual switch port.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_VSWITCH_EVENT_POLICY_UPDATE</td>
+                    <td>Indicates a policy update to a virtual switch port.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_VSWITCH_EVENT_POLICY_DELETE</td>
+                    <td>Indicates the deletion of a policy for a virtual switch port.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_VSWITCH_EVENT_RUNTIME_STATE_SAVE</td>
+                    <td>Indicates a virtual switch run-time state save event.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_VSWITCH_EVENT_RUNTIME_STATE_RESTORE</td>
+                    <td>Indicates a virtual switch run-time state restore event.</td>
                 </tr>
 </table>
 
@@ -154,11 +154,3 @@ The
 ## See Also
 
 <a href="..\fwpsk\ns-fwpsk-fwps_vswitch_event_dispatch_table0_.md">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_VSWITCH_EVENT_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

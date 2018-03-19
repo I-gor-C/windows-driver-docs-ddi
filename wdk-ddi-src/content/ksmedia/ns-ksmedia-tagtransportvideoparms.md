@@ -57,13 +57,13 @@ typedef struct tagTRANSPORTVIDEOPARMS {
 ## Members
 
 
-`Input`
-
-Specifies the video input to use. For example, specify zero to use the first (zeroth) video input.
-
 `OutputMode`
 
 Specifies the video output mode. For example ED_PLAYBACK.
+
+`Input`
+
+Specifies the video input to use. For example, specify zero to use the first (zeroth) video input.
 
 ## Remarks
 Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.

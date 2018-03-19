@@ -64,10 +64,6 @@ typedef struct _OIEXT {
 
 Size, in bytes, of the OIEXT structure.
 
-`dwReserved`
-
-Reserved, must be initialized to zero.
-
 `Flags`
 
 Can contain the following bit flag:
@@ -100,6 +96,10 @@ Instance handle to a DLL containing string and icon resources belonging to the <
 `pHelpFile`
 
 Pointer to a NULL-terminated string representing a path to a help file containing help information for the option. This can be a 32-bit pointer to a NULL-terminated string, or it can be a 16-bit string resource identifier with HIWORD set to zero. If <b>NULL</b>, CPSUI uses the help file identified by the <b>pHelpFile</b> member of a <a href="..\compstui\ns-compstui-_compropsheetui.md">COMPROPSHEETUI</a> structure.
+
+`dwReserved`
+
+Reserved, must be initialized to zero.
 
 
 ## Requirements

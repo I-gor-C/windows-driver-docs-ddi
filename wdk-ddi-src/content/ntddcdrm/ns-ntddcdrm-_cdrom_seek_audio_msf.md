@@ -58,10 +58,6 @@ typedef struct _CDROM_SEEK_AUDIO_MSF {
 ## Members
 
 
-`F`
-
-Contains an integer between 0 and 74 that indicates the frame to seek to.
-
 `M`
 
 Contains an integer between 0 and 74 that indicates the minute to seek to.
@@ -69,6 +65,10 @@ Contains an integer between 0 and 74 that indicates the minute to seek to.
 `S`
 
 Contains an integer between 0 and 59 that indicates the second to seek to.
+
+`F`
+
+Contains an integer between 0 and 74 that indicates the frame to seek to.
 
 
 ## Requirements
@@ -79,11 +79,3 @@ Contains an integer between 0 and 59 that indicates the second to seek to.
 ## See Also
 
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_seek_audio_msf.md">IOCTL_CDROM_SEEK_AUDIO_MSF</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CDROM_SEEK_AUDIO_MSF structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

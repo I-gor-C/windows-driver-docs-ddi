@@ -67,17 +67,17 @@ typedef struct _NETWORK_OPEN_ECP_CONTEXT_V0 {
 ## Members
 
 
-`DUMMYSTRUCTNAME`
+`Size`
 
-A structure that contains restrictions to apply for opening the file and to apply to the file after it is opened.
+The size, in bytes, of this structure.
 
 `Reserved`
 
 Reserved. Must be set to zero.
 
-`Size`
+`DUMMYSTRUCTNAME`
 
-The size, in bytes, of this structure.
+A structure that contains restrictions to apply for opening the file and to apply to the file after it is opened.
 
 ## Remarks
 For information about how to use ECPs to associate extra information with a file when the file is created, see <a href="https://msdn.microsoft.com/e32aeec6-1a0a-4d21-8358-89d9fc0a15eb">Using Extra Create Parameters with an IRP_MJ_CREATE Operation</a>. 
@@ -105,11 +105,3 @@ In most cases, drivers that run on Windows Vista and later versions of Windows u
 
 
 <a href="..\ntifs\ne-ntifs-network_open_integrity_qualifier.md">NETWORK_OPEN_INTEGRITY_QUALIFIER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20NETWORK_OPEN_ECP_CONTEXT_V0 structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

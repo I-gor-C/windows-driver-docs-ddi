@@ -63,14 +63,6 @@ typedef struct _D3DKMT_SUBMITCOMMANDTOHWQUEUE {
 ## Members
 
 
-`CommandBuffer`
-
-GPU VA of the command buffer to be executed on the GPU.
-
-`CommandLength`
-
-Length in bytes of the command buffer.
-
 `hHwQueue`
 
 Context queue to submit the command to.
@@ -79,17 +71,25 @@ Context queue to submit the command to.
 
 Hardware queue progress fence value that will be signaled once the command is finished.
 
-`NumPrimaries`
+`CommandBuffer`
 
-The number of primaries written by this command buffer.
+GPU VA of the command buffer to be executed on the GPU.
+
+`CommandLength`
+
+Length in bytes of the command buffer.
+
+`PrivateDriverDataSize`
+
+Size of private driver data in bytes.
 
 `pPrivateDriverData`
 
 Pointer to the private driver data.
 
-`PrivateDriverDataSize`
+`NumPrimaries`
 
-Size of private driver data in bytes.
+The number of primaries written by this command buffer.
 
 `WrittenPrimaries`
 

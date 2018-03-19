@@ -59,36 +59,13 @@ typedef struct {
 ## Members
 
 
-`Capabilities`
+`Property`
 
-Specifies the capabilities of a property. This member has meaning only for Get requests. The minidriver should return the capabilities of the VideoProcAmp with respect to the property specified in <b>Property</b>. This member should be set to one of the following values:
+Specifies an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-KSPROPERTY_VIDEOPROCAMP_FLAGS_MANUAL
+`Value`
 
-</td>
-<td>
-The device supports manual setting of the specified property.
-
-</td>
-</tr>
-<tr>
-<td>
-KSPROPERTY_VIDEOPROCAMP_FLAGS_AUTO
-
-</td>
-<td>
-The device supports automatic setting of the specified property.
-
-</td>
-</tr>
-</table>
+Specifies the value of a request. For Set requests, the minidriver should set the property specified in <b>Property</b> to this value. For Get requests, the minidriver should return the value of the property specified in <b>Property</b>.
 
 `Flags`
 
@@ -121,13 +98,36 @@ Indicates that the property is to be adjusted automatically.
 </tr>
 </table>
 
-`Property`
+`Capabilities`
 
-Specifies an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies the capabilities of a property. This member has meaning only for Get requests. The minidriver should return the capabilities of the VideoProcAmp with respect to the property specified in <b>Property</b>. This member should be set to one of the following values:
 
-`Value`
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+KSPROPERTY_VIDEOPROCAMP_FLAGS_MANUAL
 
-Specifies the value of a request. For Set requests, the minidriver should set the property specified in <b>Property</b> to this value. For Get requests, the minidriver should return the value of the property specified in <b>Property</b>.
+</td>
+<td>
+The device supports manual setting of the specified property.
+
+</td>
+</tr>
+<tr>
+<td>
+KSPROPERTY_VIDEOPROCAMP_FLAGS_AUTO
+
+</td>
+<td>
+The device supports automatic setting of the specified property.
+
+</td>
+</tr>
+</table>
 
 
 ## Requirements
@@ -178,11 +178,3 @@ Specifies the value of a request. For Set requests, the minidriver should set th
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566093">KSPROPERTY_VIDEOPROCAMP_SHARPNESS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_VIDEOPROCAMP_S structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

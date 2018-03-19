@@ -61,18 +61,6 @@ typedef struct _D3DDDICB_SUBMITCOMMANDTOHWQUEUE {
 ## Members
 
 
-`CommandLength`
-
-
-
-`Commands`
-
-
-
-`Flags`
-
-
-
 `hHwQueue`
 
 
@@ -81,7 +69,19 @@ typedef struct _D3DDDICB_SUBMITCOMMANDTOHWQUEUE {
 
 
 
-`NumPrimaries`
+`Commands`
+
+
+
+`CommandLength`
+
+
+
+`Flags`
+
+
+
+`PrivateDriverDataSize`
 
 
 
@@ -89,7 +89,7 @@ typedef struct _D3DDDICB_SUBMITCOMMANDTOHWQUEUE {
 
 
 
-`PrivateDriverDataSize`
+`NumPrimaries`
 
 
 

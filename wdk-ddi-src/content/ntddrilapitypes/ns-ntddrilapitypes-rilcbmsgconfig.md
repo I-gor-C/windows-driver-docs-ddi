@@ -65,11 +65,7 @@ typedef struct _RILCBMSGCONFIG {
 
 
 
-`CDMAConfigInfo`
-
-
-
-`dwCDMAConfigInfoSize`
+`dwParams`
 
 
 
@@ -77,11 +73,15 @@ typedef struct _RILCBMSGCONFIG {
 
 
 
-`dwParams`
-
-
-
 `GWLConfigInfo`
+
+
+
+`dwCDMAConfigInfoSize`
+
+
+
+`CDMAConfigInfo`
 
 
 

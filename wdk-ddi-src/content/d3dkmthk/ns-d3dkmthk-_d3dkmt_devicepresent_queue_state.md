@@ -57,13 +57,13 @@ typedef struct _D3DKMT_DEVICEPRESENT_QUEUE_STATE {
 ## Members
 
 
-`bQueuedPresentLimitReached`
-
-Indicates whether the queued present limit has been reached.
-
 `VidPnSourceId`
 
 Indicates the present source id.
+
+`bQueuedPresentLimitReached`
+
+Indicates whether the queued present limit has been reached.
 
 
 ## Requirements

@@ -66,17 +66,25 @@ typedef struct _WDBGEXTS_THREAD_OS_INFO {
 ## Members
 
 
-`Affinity`
+`ThreadId`
 
-Receives the thread affinity mask for the thread in a symmetric multiprocessor (SMP) computer.  See the Platform SDK for more information about the thread affinity mask.  If the affinity mask is not known, <b>Affinity</b> is set to zero.
-
-`CreateTime`
-
-Receives the creation time of the thread.
+Specifies the operating system thread ID (within the current process) for the thread whose information is being requested.
 
 `ExitStatus`
 
 Receives the exit code of the thread.  If the thread is still running or the exit code is not known, <b>ExitStatus</b> will be set to STILL_ACTIVE.
+
+`PriorityClass`
+
+Receives the priority class of the thread.  The priority classes are defined by the constants <i>XXX</i>_PRIORITY_CLASS in WinBase.h.  See the Platform SDK for more information about thread priority classes.  If the priority class is not know, <b>PriorityClass</b> will be set to zero.
+
+`Priority`
+
+Receives the priority of the thread relative to the priority class.  Some thread priorities are defined by the constants THREAD_PRIORITY_<i>XXX</i> in WinBase.h.  See the Platform SDK for more information about thread priorities.  If the priority is not known, <b>Priority</b> will be set to THREAD_PRIORITY_NORMAL.
+
+`CreateTime`
+
+Receives the creation time of the thread.
 
 `ExitTime`
 
@@ -86,25 +94,17 @@ Receives the exit time of the thread.  If the thread has not exited, <b>ExitTime
 
 Receives the amount of time that the thread has executed in kernel mode.
 
-`Priority`
+`UserTime`
 
-Receives the priority of the thread relative to the priority class.  Some thread priorities are defined by the constants THREAD_PRIORITY_<i>XXX</i> in WinBase.h.  See the Platform SDK for more information about thread priorities.  If the priority is not known, <b>Priority</b> will be set to THREAD_PRIORITY_NORMAL.
-
-`PriorityClass`
-
-Receives the priority class of the thread.  The priority classes are defined by the constants <i>XXX</i>_PRIORITY_CLASS in WinBase.h.  See the Platform SDK for more information about thread priority classes.  If the priority class is not know, <b>PriorityClass</b> will be set to zero.
+Receives the amount of time that the thread has executed in user-mode.
 
 `StartOffset`
 
 Receives the starting address of the thread.  If the starting address is not known, <b>StartOffset</b> will be set to zero.
 
-`ThreadId`
+`Affinity`
 
-Specifies the operating system thread ID (within the current process) for the thread whose information is being requested.
-
-`UserTime`
-
-Receives the amount of time that the thread has executed in user-mode.
+Receives the thread affinity mask for the thread in a symmetric multiprocessor (SMP) computer.  See the Platform SDK for more information about the thread affinity mask.  If the affinity mask is not known, <b>Affinity</b> is set to zero.
 
 ## Remarks
 The parameters for the IG_GET_THREAD_OS_INFO <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation are the members of the WDBGEXTS_THREAD_OS_INFO structure.
@@ -117,11 +117,3 @@ The parameters for the IG_GET_THREAD_OS_INFO <a href="..\wdbgexts\nc-wdbgexts-pw
 ## See Also
 
 <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20WDBGEXTS_THREAD_OS_INFO structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -74,6 +74,30 @@ typedef struct _NET_BUFFER {
 The number of bytes to skip over from the beginning of the data buffer when computing a checksum.
      This member is used by the TCP/IP protocol.
 
+`Reserved`
+
+Reserved for future use.
+
+`NdisPoolHandle`
+
+A pool handle that identifies the NET_BUFFER pool from which the NET_BUFFER structure was
+     allocated.
+
+`NdisReserved`
+
+Reserved for NDIS.
+
+`ProtocolReserved`
+
+Reserved for use by protocol drivers. Protocol drivers and NDIS intermediate drivers can use this
+     area for their own purposes. Intermediate drivers can use this member only if it is not already in
+     use.
+
+`MiniportReserved`
+
+Reserved for use by miniport drivers. Miniport drivers and NDIS intermediate drivers can use this
+     area for their own purposes.
+
 `DataPhysicalAddress`
 
 <div class="alert"><b>Note</b>  The name of this member is 
@@ -94,30 +118,6 @@ The physical address of the data portion of a frame. This member should be to ze
       with a split frame. In this case, 
       <b>DataPhysicalAddress</b> contains the physical address of the header MDL.</div>
 <div> </div>
-
-`MiniportReserved`
-
-Reserved for use by miniport drivers. Miniport drivers and NDIS intermediate drivers can use this
-     area for their own purposes.
-
-`NdisPoolHandle`
-
-A pool handle that identifies the NET_BUFFER pool from which the NET_BUFFER structure was
-     allocated.
-
-`NdisReserved`
-
-Reserved for NDIS.
-
-`ProtocolReserved`
-
-Reserved for use by protocol drivers. Protocol drivers and NDIS intermediate drivers can use this
-     area for their own purposes. Intermediate drivers can use this member only if it is not already in
-     use.
-
-`Reserved`
-
-Reserved for future use.
 
 ## Remarks
 NDIS drivers can call the following functions to allocate and initialize a NET_BUFFER structure:
@@ -314,11 +314,3 @@ For more information on how to use net buffers, see
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568415">NET_BUFFER_MINIPORT_RESERVED</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

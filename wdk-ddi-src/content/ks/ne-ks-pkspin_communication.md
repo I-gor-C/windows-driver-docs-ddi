@@ -62,16 +62,6 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSPIN_COMMUNICATION_BOTH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSPIN_COMMUNICATION_BRIDGE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>KSPIN_COMMUNICATION_NONE</td>
                     <td></td>
                 </tr>
@@ -83,6 +73,16 @@ typedef enum  {
             
                 <tr>
                     <td>KSPIN_COMMUNICATION_SOURCE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KSPIN_COMMUNICATION_BOTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KSPIN_COMMUNICATION_BRIDGE</td>
                     <td></td>
                 </tr>
 </table>

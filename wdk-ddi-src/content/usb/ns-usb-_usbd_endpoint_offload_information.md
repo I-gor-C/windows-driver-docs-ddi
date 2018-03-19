@@ -76,11 +76,67 @@ typedef struct _USBD_ENDPOINT_OFFLOAD_INFORMATION {
 ## Members
 
 
+`Size`
+
+The size of this structure.
+
 `EndpointAddress`
 
 Specifies the USB-defined endpoint address.
 
-`EventRingInitialCycleBit`
+`ResourceId`
+
+The resource identifier.
+
+`Mode`
+
+A <a href="..\usb\ne-usb-_usbd_endpoint_offload_mode.md">USBD_ENDPOINT_OFFLOAD_MODE</a>-type value that indicates whether endpoint offloading is handled in software or the USB device or host controller.
+
+`RootHubPortNumber`
+
+The port number of the root hub.
+
+`RouteString`
+
+The route string.
+
+`Speed`
+
+The route string.
+
+`UsbDeviceAddress`
+
+The USB device address.
+
+`SlotId`
+
+The slot identifier.
+
+`MultiTT`
+
+Transaction Translator (TT) hub.
+
+`Reserved0`
+
+Reserved.
+
+`TransferSegmentLA`
+
+
+
+`TransferSegmentVA`
+
+
+
+`TransferRingSize`
+
+
+
+`TransferRingInitialCycleBit`
+
+
+
+`MessageNumber`
 
 
 
@@ -96,65 +152,9 @@ Specifies the USB-defined endpoint address.
 
 
 
-`MessageNumber`
+`EventRingInitialCycleBit`
 
 
-
-`Mode`
-
-A <a href="..\usb\ne-usb-_usbd_endpoint_offload_mode.md">USBD_ENDPOINT_OFFLOAD_MODE</a>-type value that indicates whether endpoint offloading is handled in software or the USB device or host controller.
-
-`MultiTT`
-
-Transaction Translator (TT) hub.
-
-`Reserved0`
-
-Reserved.
-
-`ResourceId`
-
-The resource identifier.
-
-`RootHubPortNumber`
-
-The port number of the root hub.
-
-`RouteString`
-
-The route string.
-
-`Size`
-
-The size of this structure.
-
-`SlotId`
-
-The slot identifier.
-
-`Speed`
-
-The route string.
-
-`TransferRingInitialCycleBit`
-
-
-
-`TransferRingSize`
-
-
-
-`TransferSegmentLA`
-
-
-
-`TransferSegmentVA`
-
-
-
-`UsbDeviceAddress`
-
-The USB device address.
 
 
 ## Requirements

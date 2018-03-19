@@ -71,6 +71,10 @@ typedef struct _MCD_INIT_DATA {
 ## Members
 
 
+`InitDataSize`
+
+Size of this structure in bytes.
+
 `ChangerAdditionalExtensionSize`
 
 Pointer to changer miniclass driver routine that returns the number of bytes the changer miniclass driver requires to store device-specific information in the device extension. This routine has the following prototype:
@@ -85,6 +89,25 @@ Pointer to changer miniclass driver routine that returns the number of bytes the
 ULONG
 (*CHANGER_EXTENSION_SIZE)(
   IN VOID
+  );</pre>
+</td>
+</tr>
+</table></span></div>
+
+`ChangerInitialize`
+
+Pointer to changer miniclass driver routine that does miniclass driver-specific initialization and readies the changer to receive other requests. This routine has the following prototype:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef 
+NTSTATUS
+(*CHANGER_INITIALIZE)(
+  IN PDEVICE_OBJECT  DeviceObject
   );</pre>
 </td>
 </tr>
@@ -112,29 +135,9 @@ VOID
 </tr>
 </table></span></div>
 
-`ChangerExchangeMedium`
+`ChangerPerformDiagnostics`
 
-Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_exchange_medium.md">IOCTL_CHANGER_EXCHANGE_MEDIUM</a>. This routine has the following prototype:
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef
-NTSTATUS
-(*CHANGER_COMMAND_ROUTINE)(
-  IN PDEVICE_OBJECT  DeviceObject,
-  IN PIRP  Irp
-  );</pre>
-</td>
-</tr>
-</table></span></div>
-
-`ChangerGetElementStatus`
-
-Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_get_element_status.md">IOCTL_CHANGER_GET_ELEMENT_STATUS</a>. This routine has the following prototype:
+Pointer to changer miniclass driver routine that performs diagnostic tests on the device. This routine has the following prototype:
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -142,11 +145,11 @@ Pointer to a changer miniclass driver routine that handles the device-specific a
 </tr>
 <tr>
 <td>
-<pre>typedef
+<pre>typedef 
 NTSTATUS
-(*CHANGER_COMMAND_ROUTINE)(
+(*CHANGER_PERFORM_DIAGNOSTICS)(
   IN PDEVICE_OBJECT  DeviceObject,
-  IN PIRP  Irp
+  OUT PWMI_CHANGER_PROBLEM_DEVICE_ERROR  changerDeviceError
   );</pre>
 </td>
 </tr>
@@ -155,26 +158,6 @@ NTSTATUS
 `ChangerGetParameters`
 
 Pointer to changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_get_parameters.md">IOCTL_CHANGER_GET_PARAMETERS</a>. This routine has the following prototype:
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef
-NTSTATUS
-(*CHANGER_COMMAND_ROUTINE)(
-  IN PDEVICE_OBJECT  DeviceObject,
-  IN PIRP  Irp
-  );</pre>
-</td>
-</tr>
-</table></span></div>
-
-`ChangerGetProductData`
-
-Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_get_product_data.md">IOCTL_CHANGER_GET_PRODUCT_DATA</a>. This routine has the following prototype:
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -212,108 +195,9 @@ NTSTATUS
 </tr>
 </table></span></div>
 
-`ChangerInitialize`
+`ChangerGetProductData`
 
-Pointer to changer miniclass driver routine that does miniclass driver-specific initialization and readies the changer to receive other requests. This routine has the following prototype:
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef 
-NTSTATUS
-(*CHANGER_INITIALIZE)(
-  IN PDEVICE_OBJECT  DeviceObject
-  );</pre>
-</td>
-</tr>
-</table></span></div>
-
-`ChangerInitializeElementStatus`
-
-Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_initialize_element_status.md">IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS</a>. This routine has the following prototype:
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef
-NTSTATUS
-(*CHANGER_COMMAND_ROUTINE)(
-  IN PDEVICE_OBJECT  DeviceObject,
-  IN PIRP  Irp
-  );</pre>
-</td>
-</tr>
-</table></span></div>
-
-`ChangerMoveMedium`
-
-Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_move_medium.md">IOCTL_CHANGER_MOVE_MEDIUM</a>. This routine has the following prototype:
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef
-NTSTATUS
-(*CHANGER_COMMAND_ROUTINE)(
-  IN PDEVICE_OBJECT  DeviceObject,
-  IN PIRP  Irp
-  );</pre>
-</td>
-</tr>
-</table></span></div>
-
-`ChangerPerformDiagnostics`
-
-Pointer to changer miniclass driver routine that performs diagnostic tests on the device. This routine has the following prototype:
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef 
-NTSTATUS
-(*CHANGER_PERFORM_DIAGNOSTICS)(
-  IN PDEVICE_OBJECT  DeviceObject,
-  OUT PWMI_CHANGER_PROBLEM_DEVICE_ERROR  changerDeviceError
-  );</pre>
-</td>
-</tr>
-</table></span></div>
-
-`ChangerQueryVolumeTags`
-
-Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code of <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_query_volume_tags.md">IOCTL_CHANGER_QUERY_VOLUME_TAGS</a>. This routine has the following prototype:
-
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>typedef
-NTSTATUS
-(*CHANGER_COMMAND_ROUTINE)(
-  IN PDEVICE_OBJECT  DeviceObject,
-  IN PIRP  Irp
-  );</pre>
-</td>
-</tr>
-</table></span></div>
-
-`ChangerReinitializeUnit`
-
-Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_reinitialize_transport.md">IOCTL_CHANGER_REINITIALIZE_TRANSPORT</a>. This routine has the following prototype:
+Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_get_product_data.md">IOCTL_CHANGER_GET_PRODUCT_DATA</a>. This routine has the following prototype:
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -351,6 +235,46 @@ NTSTATUS
 </tr>
 </table></span></div>
 
+`ChangerGetElementStatus`
+
+Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_get_element_status.md">IOCTL_CHANGER_GET_ELEMENT_STATUS</a>. This routine has the following prototype:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef
+NTSTATUS
+(*CHANGER_COMMAND_ROUTINE)(
+  IN PDEVICE_OBJECT  DeviceObject,
+  IN PIRP  Irp
+  );</pre>
+</td>
+</tr>
+</table></span></div>
+
+`ChangerInitializeElementStatus`
+
+Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_initialize_element_status.md">IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS</a>. This routine has the following prototype:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef
+NTSTATUS
+(*CHANGER_COMMAND_ROUTINE)(
+  IN PDEVICE_OBJECT  DeviceObject,
+  IN PIRP  Irp
+  );</pre>
+</td>
+</tr>
+</table></span></div>
+
 `ChangerSetPosition`
 
 Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_set_position.md">IOCTL_CHANGER_SET_POSITION</a>. This routine has the following prototype:
@@ -371,9 +295,85 @@ NTSTATUS
 </tr>
 </table></span></div>
 
-`InitDataSize`
+`ChangerExchangeMedium`
 
-Size of this structure in bytes.
+Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_exchange_medium.md">IOCTL_CHANGER_EXCHANGE_MEDIUM</a>. This routine has the following prototype:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef
+NTSTATUS
+(*CHANGER_COMMAND_ROUTINE)(
+  IN PDEVICE_OBJECT  DeviceObject,
+  IN PIRP  Irp
+  );</pre>
+</td>
+</tr>
+</table></span></div>
+
+`ChangerMoveMedium`
+
+Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_move_medium.md">IOCTL_CHANGER_MOVE_MEDIUM</a>. This routine has the following prototype:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef
+NTSTATUS
+(*CHANGER_COMMAND_ROUTINE)(
+  IN PDEVICE_OBJECT  DeviceObject,
+  IN PIRP  Irp
+  );</pre>
+</td>
+</tr>
+</table></span></div>
+
+`ChangerReinitializeUnit`
+
+Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_reinitialize_transport.md">IOCTL_CHANGER_REINITIALIZE_TRANSPORT</a>. This routine has the following prototype:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef
+NTSTATUS
+(*CHANGER_COMMAND_ROUTINE)(
+  IN PDEVICE_OBJECT  DeviceObject,
+  IN PIRP  Irp
+  );</pre>
+</td>
+</tr>
+</table></span></div>
+
+`ChangerQueryVolumeTags`
+
+Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code of <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_query_volume_tags.md">IOCTL_CHANGER_QUERY_VOLUME_TAGS</a>. This routine has the following prototype:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef
+NTSTATUS
+(*CHANGER_COMMAND_ROUTINE)(
+  IN PDEVICE_OBJECT  DeviceObject,
+  IN PIRP  Irp
+  );</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Remarks
 This structure is used by the changer driver in Windows XP and later operating systems only.
@@ -478,11 +478,3 @@ This structure is used by the changer driver in Windows XP and later operating s
 
 
 <a href="..\mcd\nf-mcd-changeradditionalextensionsize.md">ChangerAdditionalExtensionSize</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MCD_INIT_DATA structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

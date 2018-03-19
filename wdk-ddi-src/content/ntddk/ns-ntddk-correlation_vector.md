@@ -58,10 +58,6 @@ typedef struct _CORRELATION_VECTOR {
 ## Members
 
 
-`Vector`
-
-An array CHARs that represents the correlation vector.
-
 `Version`
 
 The version of the correlation vector. Possible values are: 
@@ -71,6 +67,10 @@ The version of the correlation vector. Possible values are:
 <li>RTL_CORRELATION_VECTOR_VERSION_2</li>
 <li>RTL_CORRELATION_VECTOR_VERSION_CURRENT</li>
 </ul>
+
+`Vector`
+
+An array CHARs that represents the correlation vector.
 
 
 ## Requirements

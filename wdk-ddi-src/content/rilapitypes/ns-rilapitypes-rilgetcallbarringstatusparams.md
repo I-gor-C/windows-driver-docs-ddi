@@ -64,15 +64,15 @@ typedef struct _RILGETCALLBARRINGSTATUSPARAMS {
 
 
 
-`dwInfoClasses`
-
-
-
 `dwType`
 
 
 
 `fAllClasses`
+
+
+
+`dwInfoClasses`
 
 
 

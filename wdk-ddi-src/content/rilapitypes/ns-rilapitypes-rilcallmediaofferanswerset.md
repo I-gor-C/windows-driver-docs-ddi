@@ -64,11 +64,11 @@ typedef struct _RILCALLMEDIAOFFERANSWERSET {
 
 
 
-`dwNumberOfItems`
-
-
-
 `dwType`
+
+
+
+`dwNumberOfItems`
 
 
 

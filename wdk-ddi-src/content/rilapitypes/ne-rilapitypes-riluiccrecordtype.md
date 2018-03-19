@@ -65,32 +65,7 @@ typedef enum _RILUICCRECORDTYPE {
 <table>
             
                 <tr>
-                    <td>RIL_UICCRECORDTYPE_BERTLV</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCRECORDTYPE_CYCLIC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCRECORDTYPE_DEDICATED</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCRECORDTYPE_LINEAR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCRECORDTYPE_MASTER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_UICCRECORDTYPE_MAX</td>
+                    <td>RIL_UICCRECORDTYPE_UNKNOWN</td>
                     <td></td>
                 </tr>
             
@@ -100,7 +75,32 @@ typedef enum _RILUICCRECORDTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_UICCRECORDTYPE_UNKNOWN</td>
+                    <td>RIL_UICCRECORDTYPE_CYCLIC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCRECORDTYPE_LINEAR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCRECORDTYPE_BERTLV</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCRECORDTYPE_MASTER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCRECORDTYPE_DEDICATED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCRECORDTYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

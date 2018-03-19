@@ -68,6 +68,10 @@ Corresponds to the Device/Head register defined in the <i>AT Attachment (ATA)</i
 
 Indicates the maximum number of cylinders on the disk.
 
+`SectorsPerTrack`
+
+Indicates the number of sectors per track.
+
 `MaxHeads`
 
 Indicates the maximum number of disk heads.
@@ -75,10 +79,6 @@ Indicates the maximum number of disk heads.
 `NumberDrives`
 
 Indicates the number of drives.
-
-`SectorsPerTrack`
-
-Indicates the number of sectors per track.
 
 
 ## Requirements
@@ -93,11 +93,3 @@ Indicates the number of sectors per track.
 
 
 <a href="..\ntdddisk\ns-ntdddisk-_disk_detection_info.md">DISK_DETECTION_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DISK_INT13_INFO structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -60,6 +60,16 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>SDRF_GET_PROPERTY</td>
+                    <td>Indicates a get property request. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537927">SDBUS_PROPERTY</a> enumeration lists the properties that an SD driver can get or set.</td>
+                </tr>
+            
+                <tr>
+                    <td>SDRF_SET_PROPERTY</td>
+                    <td>Indicates a set property request. The SDBUS_PROPERTY enumeration lists the properties that an SD driver can get or set.</td>
+                </tr>
+            
+                <tr>
                     <td>SDRF_DEVICE_COMMAND</td>
                     <td>Indicates a device-specific command.</td>
                 </tr>
@@ -70,23 +80,13 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>SDRF_GET_PROPERTY</td>
-                    <td>Indicates a get property request. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537927">SDBUS_PROPERTY</a> enumeration lists the properties that an SD driver can get or set.</td>
-                </tr>
-            
-                <tr>
-                    <td>SDRF_MMC_HPI</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>SDRF_MMC_SOFT_RESET</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>SDRF_SET_PROPERTY</td>
-                    <td>Indicates a set property request. The SDBUS_PROPERTY enumeration lists the properties that an SD driver can get or set.</td>
+                    <td>SDRF_MMC_HPI</td>
+                    <td></td>
                 </tr>
 </table>
 
@@ -106,11 +106,3 @@ The caller of the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 
 
 <a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SD_REQUEST_FUNCTION enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

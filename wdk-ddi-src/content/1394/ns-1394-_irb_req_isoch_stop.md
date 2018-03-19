@@ -57,13 +57,13 @@ typedef struct _IRB_REQ_ISOCH_STOP {
 ## Members
 
 
-`fulFlags`
-
-Reserved. Device drivers should set this member to zero.
-
 `hResource`
 
 Specifies the resource handle for the channel on which to stop isochronous operations.
+
+`fulFlags`
+
+Reserved. Device drivers should set this member to zero.
 
 
 ## Requirements

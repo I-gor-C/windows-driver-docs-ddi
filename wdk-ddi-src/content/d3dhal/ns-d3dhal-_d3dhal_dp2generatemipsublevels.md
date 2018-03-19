@@ -60,13 +60,13 @@ typedef struct _D3DHAL_DP2GENERATEMIPSUBLEVELS {
 ## Members
 
 
-`Filter`
-
-Specifies the filter type used in the generation.
-
 `hSurface`
 
 Specifies the surface handle used in the generation.
+
+`Filter`
+
+Specifies the filter type used in the generation.
 
 ## Remarks
 To generate the sublevels of a MIP-map texture, the driver receives a D3DDP2OP_GENERATEMIPSUBLEVELS command along with a D3DHAL_DP2GENERATEMIPSUBLEVELS structure. For more information about automatically generating the sublevels of MIP-map textures, see <a href="https://msdn.microsoft.com/fbfb0d1b-468d-4e7f-865e-bdc7d19f5516">Generating Sublevels of MIP Map Textures</a>.
@@ -79,11 +79,3 @@ To generate the sublevels of a MIP-map texture, the driver receives a D3DDP2OP_G
 ## See Also
 
 D3DDP2OP_GENERATEMIPSUBLEVELS
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2GENERATEMIPSUBLEVELS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

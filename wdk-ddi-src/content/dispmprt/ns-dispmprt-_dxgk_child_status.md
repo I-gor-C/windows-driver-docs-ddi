@@ -71,13 +71,13 @@ typedef struct _DXGK_CHILD_STATUS {
 ## Members
 
 
-`ChildUid`
-
-An integer, created previously by the display miniport driver, that identifies the child device for which status is being requested.
-
 `Type`
 
 A member of the <a href="..\dispmprt\ne-dispmprt-_dxgk_child_status_type.md">DXGK_CHILD_STATUS_TYPE</a> enumeration that indicates the type of status being requested.
+
+`ChildUid`
+
+An integer, created previously by the display miniport driver, that identifies the child device for which status is being requested.
 
 
 ## Requirements
@@ -105,11 +105,3 @@ A member of the <a href="..\dispmprt\ne-dispmprt-_dxgk_child_status_type.md">DXG
 
 
 <a href="..\dispmprt\ne-dispmprt-_dxgk_child_status_type.md">DXGK_CHILD_STATUS_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_CHILD_STATUS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

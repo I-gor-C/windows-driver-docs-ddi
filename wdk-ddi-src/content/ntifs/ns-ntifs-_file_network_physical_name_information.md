@@ -57,13 +57,13 @@ typedef struct _FILE_NETWORK_PHYSICAL_NAME_INFORMATION {
 ## Members
 
 
-`FileName`
-
-The full UNC path of the network file share of the target.
-
 `FileNameLength`
 
 The length, in bytes, of the physical name in <b>FileName</b>.
+
+`FileName`
+
+The full UNC path of the network file share of the target.
 
 ## Remarks
 The <b>FILE_NETWORK_PHYSICAL_NAME_INFORMATION</b> structure is used to retrieve the network physical name information for a file. This operation can be performed in either of the following ways: 
@@ -184,11 +184,3 @@ The following is an example of querying the network physical name  information o
 
 
 <a href="..\wdm\ne-wdm-_file_information_class.md">FILE_INFORMATION_CLASS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_NETWORK_PHYSICAL_NAME_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

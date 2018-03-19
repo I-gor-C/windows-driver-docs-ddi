@@ -69,13 +69,17 @@ typedef struct _NOTIFICATION_INFO {
 ## Members
 
 
-`Context`
+`Mdl`
 
-Pointer to specific context data for this allocated address range. The driver supplies this data through the <b>u.AllocateAddressRange.Context</b> member of the IRB for the original REQUEST_ALLOCATE_ADDRESS_RANGE request.
+If non-<b>NULL</b>, <b>Mdl</b> specifies the <a href="https://msdn.microsoft.com/a1ec4764-4e11-4fb2-b439-ad6b721eb504">memory descriptor list (MDL)</a>  for the allocated address range.
 
-`Fifo`
+`ulOffset`
 
-Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536904">ADDRESS_FIFO</a> structure that contains the FIFO element just completed. Only used if the driver submitted an ADDRESS_FIFO list in the original REQUEST_ALLOCATE_ADDRESS_RANGE request.
+Specifies the byte offset with the MDL that corresponds to the address that received a request packet. Only used when <b>Mdl</b> is non-<b>NULL</b>.
+
+`nLength`
+
+Specifies the number of bytes affected by the request packet. Only used when <b>Mdl</b> is non-<b>NULL</b>.
 
 `fulNotificationOptions`
 
@@ -88,25 +92,17 @@ Specifies which type of event triggered the bus driver to call the notification 
 </ul>
 This member is only used when <b>Mdl</b> is non-<b>NULL</b>.
 
-`Mdl`
+`Context`
 
-If non-<b>NULL</b>, <b>Mdl</b> specifies the <a href="https://msdn.microsoft.com/a1ec4764-4e11-4fb2-b439-ad6b721eb504">memory descriptor list (MDL)</a>  for the allocated address range.
+Pointer to specific context data for this allocated address range. The driver supplies this data through the <b>u.AllocateAddressRange.Context</b> member of the IRB for the original REQUEST_ALLOCATE_ADDRESS_RANGE request.
 
-`nLength`
+`Fifo`
 
-Specifies the number of bytes affected by the request packet. Only used when <b>Mdl</b> is non-<b>NULL</b>.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536904">ADDRESS_FIFO</a> structure that contains the FIFO element just completed. Only used if the driver submitted an ADDRESS_FIFO list in the original REQUEST_ALLOCATE_ADDRESS_RANGE request.
 
 `RequestPacket`
 
 If non-<b>NULL</b>, <b>RequestPacket</b> points to the original request packet. The bus driver only supplies this if the device driver did not supply an MDL or an ADDRESS_FIFO list in the original REQUEST_ALLOCATE_ADDRESS_RANGE request.
-
-`ResponseEvent`
-
-If non-<b>NULL</b>, <b>ResponseEvent</b> points to a memory location that the driver fills in with the kernel event the bus driver should use to signal that it has completed sending the response packet. The bus driver only supplies this if the device driver did not supply an MDL or an ADDRESS_FIFO list in the original REQUEST_ALLOCATE_ADDRESS_RANGE request.
-
-`ResponseLength`
-
-If non-<b>NULL</b>, <b>ResponseLength</b> points to a memory location that the driver fills in with the length of its response packet. The bus driver only supplies this if the device driver did not supply an MDL or an ADDRESS_FIFO list in the original REQUEST_ALLOCATE_ADDRESS_RANGE request.
 
 `ResponseMdl`
 
@@ -116,9 +112,13 @@ If non-<b>NULL</b>, <b>ResponseMdl</b> points to an uninitialized MDL. The drive
 
 If non-<b>NULL</b>, <b>ResponsePacket</b> points to a memory location that the driver fills in with a pointer to the data (quadlet or block) to be returned in the response packet. The bus driver only supplies this if the device driver did not supply an MDL or an ADDRESS_FIFO list in the original REQUEST_ALLOCATE_ADDRESS_RANGE request.
 
-`ulOffset`
+`ResponseLength`
 
-Specifies the byte offset with the MDL that corresponds to the address that received a request packet. Only used when <b>Mdl</b> is non-<b>NULL</b>.
+If non-<b>NULL</b>, <b>ResponseLength</b> points to a memory location that the driver fills in with the length of its response packet. The bus driver only supplies this if the device driver did not supply an MDL or an ADDRESS_FIFO list in the original REQUEST_ALLOCATE_ADDRESS_RANGE request.
+
+`ResponseEvent`
+
+If non-<b>NULL</b>, <b>ResponseEvent</b> points to a memory location that the driver fills in with the kernel event the bus driver should use to signal that it has completed sending the response packet. The bus driver only supplies this if the device driver did not supply an MDL or an ADDRESS_FIFO list in the original REQUEST_ALLOCATE_ADDRESS_RANGE request.
 
 ## Remarks
 When a driver allocates an address range on the computer's IEEE 1394 address space, it may require that the bus driver notify it for some or all request packets sent to the allocated addresses. As part of the original allocate request, the driver may either require that the bus driver forward each packet for handling, or it may require that the bus driver handle the packet and notify the device driver when it has finished. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537632">REQUEST_ALLOCATE_ADDRESS_RANGE</a>. 
@@ -137,11 +137,3 @@ If the device driver is using a linked list of ADDRESS_FIFO's as the backing sto
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537632">REQUEST_ALLOCATE_ADDRESS_RANGE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20NOTIFICATION_INFO structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

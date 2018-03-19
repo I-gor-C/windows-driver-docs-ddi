@@ -60,13 +60,13 @@ typedef enum tagPrintSchemaSelectionType {
 <table>
             
                 <tr>
-                    <td>PrintSchemaSelectionType_PickMany</td>
-                    <td>Select many.</td>
+                    <td>PrintSchemaSelectionType_PickOne</td>
+                    <td>Select one.</td>
                 </tr>
             
                 <tr>
-                    <td>PrintSchemaSelectionType_PickOne</td>
-                    <td>Select one.</td>
+                    <td>PrintSchemaSelectionType_PickMany</td>
+                    <td>Select many.</td>
                 </tr>
 </table>
 

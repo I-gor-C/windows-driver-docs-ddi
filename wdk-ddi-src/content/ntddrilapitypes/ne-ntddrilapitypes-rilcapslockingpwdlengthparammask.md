@@ -59,17 +59,17 @@ typedef enum _RILCAPSLOCKINGPWDLENGTHPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_CLPL_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_CLPL_FACILITY</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_PARAM_CLPL_PASSWORDLENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CLPL_ALL</td>
                     <td></td>
                 </tr>
 </table>

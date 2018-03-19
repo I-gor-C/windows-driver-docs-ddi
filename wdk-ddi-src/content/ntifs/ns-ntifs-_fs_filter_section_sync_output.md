@@ -59,21 +59,21 @@ typedef struct _FS_FILTER_SECTION_SYNC_OUTPUT  {
 ## Members
 
 
-`DesiredReadAlignment`
+`StructureSize`
 
-Specifies the optimal size for efficient reads.  Faults from the section will attempt, but not guarantee, to read in multiples of this size.  This value should be a multiple of PAGE_SIZE.
-
-`Flags`
-
-Reserved for future use.  Should be zero.
+The size of the structure.
 
 `SizeReturned`
 
 The size of the structure which has been successfully populated with information on completion.
 
-`StructureSize`
+`Flags`
 
-The size of the structure.
+Reserved for future use.  Should be zero.
+
+`DesiredReadAlignment`
+
+Specifies the optimal size for efficient reads.  Faults from the section will attempt, but not guarantee, to read in multiples of this size.  This value should be a multiple of PAGE_SIZE.
 
 
 ## Requirements

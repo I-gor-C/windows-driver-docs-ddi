@@ -70,18 +70,37 @@ typedef struct _IP_OFFLOAD_STATS {
 ## Members
 
 
+`InReceives`
+
+The total number of input IP datagrams that have been received from the interface on offloaded TCP
+     connections, including IP datagrams received in error. See 
+     "ipInReceives" in RFC 2011.
+
+`InOctets`
+
+The total number of octets (bytes) in input IP datagrams that have been received from the
+     interface on offloaded TCP connections. Octets from datagrams counted in 
+     <b>InReceives</b> must be counted here. 
+     <b>InOctets</b> must include the number of bytes in the IP header and payload.
+
 `InDelivers`
 
 The number of input IP datagrams that were successfully delivered to offloaded TCP connections.
      See 
      "ipInDelivers" in RFC 2011.
 
-`InDiscards`
+`OutRequests`
 
-The number of input IP datagrams received on offloaded TCP connections that contained nothing to
-     prevent their further processing but that were discarded for run-time reasons, such as a lack of
-     available memory or other resources. See 
-     "ipInDiscards" in RFC 2011.
+The number of IP datagrams that the offload target supplied to its IP layer in requests for
+     transmission on offloaded TCP connections. See 
+     "ipOutRequests" in RFC 2011.
+
+`OutOctets`
+
+The total number of octets (bytes) in IP datagrams that the offload target supplied to its IP
+     layer in requests for transmission on offloaded TCP connections. Octets from datagrams counted in 
+     <b>OutRequests</b> must be counted here. 
+     <b>OutOctets</b> must include the number of bytes in the IP header and payload.
 
 `InHeaderErrors`
 
@@ -92,19 +111,6 @@ The number of input IP datagrams received on offloaded TCP connections that were
      errors resulting from invalid destination addresses. See 
      "ipInHdrErrors" in RFC 2011.
 
-`InOctets`
-
-The total number of octets (bytes) in input IP datagrams that have been received from the
-     interface on offloaded TCP connections. Octets from datagrams counted in 
-     <b>InReceives</b> must be counted here. 
-     <b>InOctets</b> must include the number of bytes in the IP header and payload.
-
-`InReceives`
-
-The total number of input IP datagrams that have been received from the interface on offloaded TCP
-     connections, including IP datagrams received in error. See 
-     "ipInReceives" in RFC 2011.
-
 `InTruncatedPackets`
 
 The number of input IP datagrams discarded because the datagram frame didn't carry enough data. 
@@ -112,6 +118,13 @@ The number of input IP datagrams discarded because the datagram frame didn't car
      otherwise shorter than required. Frames that are too short to contain a valid header should be counted
      as 
      <b>InHeaderErrors</b> .
+
+`InDiscards`
+
+The number of input IP datagrams received on offloaded TCP connections that contained nothing to
+     prevent their further processing but that were discarded for run-time reasons, such as a lack of
+     available memory or other resources. See 
+     "ipInDiscards" in RFC 2011.
 
 `OutDiscards`
 
@@ -126,19 +139,6 @@ The number of output IP datagrams that the offload target supplied to its IP lay
      discarded because no route (such as an offloaded path state object) could be found to transmit them to
      their destination. See 
      "ipOutNoRoutes" in RFC 2011.
-
-`OutOctets`
-
-The total number of octets (bytes) in IP datagrams that the offload target supplied to its IP
-     layer in requests for transmission on offloaded TCP connections. Octets from datagrams counted in 
-     <b>OutRequests</b> must be counted here. 
-     <b>OutOctets</b> must include the number of bytes in the IP header and payload.
-
-`OutRequests`
-
-The number of IP datagrams that the offload target supplied to its IP layer in requests for
-     transmission on offloaded TCP connections. See 
-     "ipOutRequests" in RFC 2011.
 
 ## Remarks
 The statistics in the IP_OFFLOAD_STATS structure pertain only to IP datagrams that the offload target
@@ -204,11 +204,3 @@ All of the counters that supply the values for the IP_OFFLOAD_STATS structure wr
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558995">NDIS_TASK_OFFLOAD</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20IP_OFFLOAD_STATS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

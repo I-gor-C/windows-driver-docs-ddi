@@ -76,32 +76,46 @@ The members of the
      WSK_PROVIDER_BASIC_DISPATCH</a> structure are included as members of the WSK_PROVIDER_STREAM_DISPATCH
      structure.
 
-`WskAccept`
-
-A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a> function for the socket.
-
 `WskBind`
 
 A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_bind.md">WskBind</a> function for the socket.
+
+`WskAccept`
+
+A pointer to the WSK subsystem's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a> function for the socket.
 
 `WskConnect`
 
 A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_connect.md">WskConnect</a> function for the socket.
 
-`WskConnectEx`
+`WskListen`
 
 A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_connect_ex.md">WskConnectEx</a> function for the
-     socket.
+     <a href="..\wsk\nc-wsk-pfn_wsk_listen.md">WskListen</a> function for the socket.
+
+`WskSend`
+
+A pointer to the WSK subsystem's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_send.md">WskSend</a> function for the socket.
+
+`WskReceive`
+
+A pointer to the WSK subsystem's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_receive.md">WskReceive</a> function for the socket.
 
 `WskDisconnect`
 
 A pointer to the WSK subsystem's 
      <a href="..\wsk\nc-wsk-pfn_wsk_disconnect.md">WskDisconnect</a> function for the
      socket.
+
+`WskRelease`
+
+A pointer to the WSK subsystem's 
+     <a href="..\wsk\nc-wsk-pfn_wsk_release_data_indication_list.md">WskRelease</a> function for the socket.
 
 `WskGetLocalAddress`
 
@@ -115,25 +129,11 @@ A pointer to the WSK subsystem's
      <a href="..\wsk\nc-wsk-pfn_wsk_get_remote_address.md">WskGetRemoteAddress</a> function for the
      socket.
 
-`WskListen`
+`WskConnectEx`
 
 A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_listen.md">WskListen</a> function for the socket.
-
-`WskReceive`
-
-A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_receive.md">WskReceive</a> function for the socket.
-
-`WskRelease`
-
-A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_release_data_indication_list.md">WskRelease</a> function for the socket.
-
-`WskSend`
-
-A pointer to the WSK subsystem's 
-     <a href="..\wsk\nc-wsk-pfn_wsk_send.md">WskSend</a> function for the socket.
+     <a href="..\wsk\nc-wsk-pfn_wsk_connect_ex.md">WskConnectEx</a> function for the
+     socket.
 
 ## Remarks
 The member list of the WSK_PROVIDER_STREAM_DISPATCH structure includes an unnamed 
@@ -174,11 +174,3 @@ A WSK application receives a pointer to a WSK_PROVIDER_STREAM_DISPATCH structure
 
 
 <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_STREAM_DISPATCH structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

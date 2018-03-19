@@ -61,13 +61,8 @@ typedef enum _DXVAHDDDI_ROTATION {
 <table>
             
                 <tr>
-                    <td>DXVAHDDDI_ROTATION_180</td>
-                    <td>Indicates that rotation is 180 degrees clockwise—inverted landscape mode.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVAHDDDI_ROTATION_270</td>
-                    <td>Indicates that rotation is 270 degrees clockwise—inverted portrait mode.</td>
+                    <td>DXVAHDDDI_ROTATION_IDENTITY</td>
+                    <td>Indicates that rotation is 0 degrees—landscape mode.</td>
                 </tr>
             
                 <tr>
@@ -76,8 +71,13 @@ typedef enum _DXVAHDDDI_ROTATION {
                 </tr>
             
                 <tr>
-                    <td>DXVAHDDDI_ROTATION_IDENTITY</td>
-                    <td>Indicates that rotation is 0 degrees—landscape mode.</td>
+                    <td>DXVAHDDDI_ROTATION_180</td>
+                    <td>Indicates that rotation is 180 degrees clockwise—inverted landscape mode.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVAHDDDI_ROTATION_270</td>
+                    <td>Indicates that rotation is 270 degrees clockwise—inverted portrait mode.</td>
                 </tr>
 </table>
 

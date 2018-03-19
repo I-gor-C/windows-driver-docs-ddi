@@ -62,6 +62,26 @@ typedef struct _UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS {
 ## Members
 
 
+`Size`
+
+The size of this structure.
+
+`EvtUsbDeviceLinkPowerEntry`
+
+A pointer to an <a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_entry.md">EVT_UDECX_USB_DEVICE_D0_ENTRY</a> callback function implemented by a UDE client driver.
+
+`EvtUsbDeviceLinkPowerExit`
+
+A pointer to an <a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_exit.md">EVT_UDECX_USB_DEVICE_D0_EXIT</a> callback function implemented by a UDE client driver.
+
+`EvtUsbDeviceSetFunctionSuspendAndWake`
+
+
+
+`EvtUsbDeviceReset`
+
+
+
 `EvtUsbDeviceDefaultEndpointAdd`
 
 A pointer to an <a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_default_endpoint_add.md">EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD</a> callback function implemented by a UDE client driver.
@@ -74,26 +94,6 @@ A pointer to an E<a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_devi
 
 A pointer to an <a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_endpoints_configure.md">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a> callback function implemented by a UDE client driver.
 
-`EvtUsbDeviceLinkPowerEntry`
-
-A pointer to an <a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_entry.md">EVT_UDECX_USB_DEVICE_D0_ENTRY</a> callback function implemented by a UDE client driver.
-
-`EvtUsbDeviceLinkPowerExit`
-
-A pointer to an <a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_exit.md">EVT_UDECX_USB_DEVICE_D0_EXIT</a> callback function implemented by a UDE client driver.
-
-`EvtUsbDeviceReset`
-
-
-
-`EvtUsbDeviceSetFunctionSuspendAndWake`
-
-
-
-`Size`
-
-The size of this structure.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,11 +103,3 @@ The size of this structure.
 ## See Also
 
 <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitsetstatechangecallbacks.md">UdecxUsbDeviceInitSetStateChangeCallbacks</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -64,27 +64,23 @@ typedef struct _CDROM_WRITE_SPEED_DESCRIPTOR {
 ## Members
 
 
-`EndLba`
+`MixedReadWrite`
 
-The End Logical Block Address (EndLBA) field indicates the capacity of the medium if a medium is mounted. It corresponds to the EndLBA field of the Write Speed Descriptor.
+The MixedReadWrite (MRW) field corresponds to the MRW bit of the Write Speed Descriptor in the MultiMedia Command Set - 6 (MMC-6)
+specification. This field indicates that it is suitable for a mixture of streaming read and write requests (overwrite mode). The <a href="..\ntddcdrm\ne-ntddcdrm-_streaming_control_request_type.md">STREAMING_CONTROL_REQUEST_TYPE</a>   enumeration specifies the type of request.
 
 `Exact`
 
 The Exact field indicates whether the logical unit can perform the recording operation specified by CDM_WRITE_SPEED_DESCRIPTOR
 on the whole medium mounted. This field corresponds to the Exact bit of the Write Speed Descriptor.
 
-`MixedReadWrite`
-
-The MixedReadWrite (MRW) field corresponds to the MRW bit of the Write Speed Descriptor in the MultiMedia Command Set - 6 (MMC-6)
-specification. This field indicates that it is suitable for a mixture of streaming read and write requests (overwrite mode). The <a href="..\ntddcdrm\ne-ntddcdrm-_streaming_control_request_type.md">STREAMING_CONTROL_REQUEST_TYPE</a>   enumeration specifies the type of request.
-
-`ReadSpeed`
-
-The ReadSpeed field indicates the lowest read performance data of all blocks (in kilobytes per second).
-
 `Reserved1`
 
 Reserved fields.
+
+`WriteRotationControl`
+
+The WriteRotationControl (WRC) field specifies the type of the rotation control for the medium.
 
 `Reserved2`
 
@@ -94,9 +90,13 @@ Reserved fields.
 
 Reserved fields.
 
-`WriteRotationControl`
+`EndLba`
 
-The WriteRotationControl (WRC) field specifies the type of the rotation control for the medium.
+The End Logical Block Address (EndLBA) field indicates the capacity of the medium if a medium is mounted. It corresponds to the EndLBA field of the Write Speed Descriptor.
+
+`ReadSpeed`
+
+The ReadSpeed field indicates the lowest read performance data of all blocks (in kilobytes per second).
 
 `WriteSpeed`
 
@@ -118,11 +118,3 @@ specification for the Write Speed Descriptor.
 
 
 <a href="..\ntddcdrm\ne-ntddcdrm-_streaming_control_request_type.md">STREAMING_CONTROL_REQUEST_TYPE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CDROM_WRITE_SPEED_DESCRIPTOR structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

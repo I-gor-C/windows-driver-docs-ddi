@@ -92,14 +92,14 @@ typedef struct _INDICATION_PARAMETERS_ENHANCED {
 ## Members
 
 
-`BtAddress`
-
-The Bluetooth address of the remote device.
-
 `ConnectionHandle`
 
 The L2CAP connection handle to the remote device. This handle is only valid for notifications that
      arrive over an established L2CAP connection.
+
+`BtAddress`
+
+The Bluetooth address of the remote device.
 
 `Parameters`
 

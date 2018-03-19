@@ -60,42 +60,17 @@ typedef struct _KSDEVICE_DESCRIPTOR {
 ## Members
 
 
-`Alignment`
-
-
-
 `Dispatch`
 
 A pointer to the client dispatch table for this device. This dispatch table contains client dispatch functions for PNP messages such as <b>Add</b>, <b>Start</b>, <b>Stop</b>, <b>Remove</b>. Clients are not required to supply a dispatch table unless they want to receive callbacks for the PNP messages described in the dispatch table. Any member of the dispatch table can be <b>NULL</b> to indicate that the client does not want to receive notification for that particular message. For more information, see <a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>.
-
-`FilterDescriptors`
-
-A pointer to an array of filter descriptors that describe filters that can be created by this device. This member may be <b>NULL</b> if <b>FilterDescriptorsCount</b> is zero. For more information, see <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>.
 
 `FilterDescriptorsCount`
 
 This member contains the number of filter descriptors for this device that will be provided in the <b>FilterDescriptors</b> member. Zero is a legal value for this member; clients can create filter factories dynamically with the <a href="..\ks\nf-ks-kscreatefilterfactory.md">KsCreateFilterFactory</a> function instead of statically describing them in the device descriptor.
 
-`Flags`
+`FilterDescriptors`
 
-A value of type ULONG. There is only one flag currently defined.
-
-<table>
-<tr>
-<th>Flag</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>
-KSDEVICE_FLAG_ENABLE_REMOTE_WAKEUP
-
-</td>
-<td>
-Indicates that the device supports remote wakeup.
-
-</td>
-</tr>
-</table>
+A pointer to an array of filter descriptors that describe filters that can be created by this device. This member may be <b>NULL</b> if <b>FilterDescriptorsCount</b> is zero. For more information, see <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>.
 
 `Version`
 
@@ -127,6 +102,31 @@ Indicates support of the <b>Flags</b> member of KSDEVICE_DESCRIPTOR.
 </td>
 </tr>
 </table>
+
+`Flags`
+
+A value of type ULONG. There is only one flag currently defined.
+
+<table>
+<tr>
+<th>Flag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+KSDEVICE_FLAG_ENABLE_REMOTE_WAKEUP
+
+</td>
+<td>
+Indicates that the device supports remote wakeup.
+
+</td>
+</tr>
+</table>
+
+`Alignment`
+
+
 
 ## Remarks
 Most often, this structure is used in conjunction with <a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a> in the client's <b>DriverEntry</b> function to initialize the device. This structure is also used to manually initialize or create devices with the <a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a> and <a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a> functions.
@@ -160,11 +160,3 @@ Similarly, using an earlier version descriptor on later versions of AVStream cau
 
 
 <a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSDEVICE_DESCRIPTOR structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -60,6 +60,11 @@ typedef enum _WDI_P2P_GO_INTERNAL_RESET_POLICY {
 <table>
             
                 <tr>
+                    <td>WDI_P2P_GO_INTERNAL_RESET_POLICY_USE_LAST_CHANNEL</td>
+                    <td>If an internal-to-firmware Group Owner reset is performed, post-reset Group Owner must operate on the same operating channel as before the internal reset operation.</td>
+                </tr>
+            
+                <tr>
                     <td>WDI_P2P_GO_INTERNAL_RESET_POLICY_ALLOW_CHANNEL_OPTIMIZATION</td>
                     <td>If an internal-to-firmware Group Owner reset is performed, firmware may freely decide its new operating channel. For example, firmware may choose to minimize channel switching by adopting station port channel. If there is no optimization to be done, fall back to selecting previous operating channel.</td>
                 </tr>
@@ -67,11 +72,6 @@ typedef enum _WDI_P2P_GO_INTERNAL_RESET_POLICY {
                 <tr>
                     <td>WDI_P2P_GO_INTERNAL_RESET_POLICY_MAX</td>
                     <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WDI_P2P_GO_INTERNAL_RESET_POLICY_USE_LAST_CHANNEL</td>
-                    <td>If an internal-to-firmware Group Owner reset is performed, post-reset Group Owner must operate on the same operating channel as before the internal reset operation.</td>
                 </tr>
 </table>
 

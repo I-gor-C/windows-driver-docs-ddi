@@ -69,10 +69,6 @@ typedef struct _PMI_REPORTED_CAPABILITIES {
 ## Members
 
 
-`Accuracy`
-
-A value, in units of thousandths of a percent, that specifies the reported accuracy of the power meter. For example, a value of 1,000 corresponds to a one percent accuracy rating.
-
 `Flags`
 
 A bitmask that specifies the supported capabilities of the power meter. The following flags define the range of values for this member:
@@ -103,22 +99,6 @@ This bit is set if the power meter supports power budgeting.
 
 This bit is set if the power meter reports data only when the power supply is discharging. This is typically the case on mobile battery systems or some uninterruptible power supplies (UPSs).
 
-`Hysteresis`
-
-A value, in units of milliseconds, that specifies the hysteresis value. This value indicates the margin that is built around the threshold and budget events. This value prevents the trigger of unnecessary events when the reading fluctuates very close to one of the thresholds.
-
-`MaxBudget`
-
-A value, in units of watts, that specifies the maximum supported power budget.
-
-`MaximumAverageInterval`
-
-A value, in units of milliseconds, that specifies the maximum averaging interval.
-
-`MeasurementType`
-
-A <a href="..\pmi\ne-pmi-pmi_measurement_type.md">PMI_MEASUREMENT_TYPE</a> enumeration value that specifies the measurement type, such as whether input or output power is measured.
-
 `MeasurementUnit`
 
 A <a href="..\pmi\ne-pmi-pmi_measurement_unit.md">PMI_MEASUREMENT_UNIT</a> enumeration value that specifies the measurement unit. 
@@ -126,33 +106,53 @@ A <a href="..\pmi\ne-pmi-pmi_measurement_unit.md">PMI_MEASUREMENT_UNIT</a> enume
 <div class="alert"><b>Note</b>  Beginning with Windows 7, Windows Server 2008 R2, only measurement units of milliwatts (mW) are supported.</div>
 <div> </div>
 
-`MinBudget`
+`MeasurementType`
 
-A value, in units of watts, that specifies the minimum supported power budget.
+A <a href="..\pmi\ne-pmi-pmi_measurement_type.md">PMI_MEASUREMENT_TYPE</a> enumeration value that specifies the measurement type, such as whether input or output power is measured.
 
-`MinimumAverageInterval`
+`Accuracy`
 
-A value, in units of milliseconds, that specifies the minimum averaging interval.
-
-`ModelNumber`
-
-A null-terminated, Unicode string that contains the model number of the power meter.
-
-`OEMInformation`
-
-A null-terminated, Unicode string that contains descriptive information about the power meter. This information is specific to the implementation by the original OEM.
+A value, in units of thousandths of a percent, that specifies the reported accuracy of the power meter. For example, a value of 1,000 corresponds to a one percent accuracy rating.
 
 `SamplingPeriod`
 
 A value, in units of milliseconds, that specifies the current averaging period.
 
-`SerialNumber`
+`MinimumAverageInterval`
 
-A null-terminated, Unicode string that contains the serial number of the power meter.
+A value, in units of milliseconds, that specifies the minimum averaging interval.
+
+`MaximumAverageInterval`
+
+A value, in units of milliseconds, that specifies the maximum averaging interval.
+
+`Hysteresis`
+
+A value, in units of milliseconds, that specifies the hysteresis value. This value indicates the margin that is built around the threshold and budget events. This value prevents the trigger of unnecessary events when the reading fluctuates very close to one of the thresholds.
 
 `Writeable`
 
 A Boolean value that indicates whether the budgeting information is read/write (TRUE) or read-only (FALSE).
+
+`MinBudget`
+
+A value, in units of watts, that specifies the minimum supported power budget.
+
+`MaxBudget`
+
+A value, in units of watts, that specifies the maximum supported power budget.
+
+`ModelNumber`
+
+A null-terminated, Unicode string that contains the model number of the power meter.
+
+`SerialNumber`
+
+A null-terminated, Unicode string that contains the serial number of the power meter.
+
+`OEMInformation`
+
+A null-terminated, Unicode string that contains descriptive information about the power meter. This information is specific to the implementation by the original OEM.
 
 ## Remarks
 The PMI_REPORTED_CAPABILITIES structure contains the following information about a power meter:
@@ -192,11 +192,3 @@ If the query request completes successfully, the request returns a <a href="..\p
 
 
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [powermeter\powermeter]:%20PMI_REPORTED_CAPABILITIES structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

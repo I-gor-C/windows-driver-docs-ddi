@@ -70,6 +70,16 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
 ## Members
 
 
+`Header`
+
+An 
+     <a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a> structure. NDIS
+     sets the 
+     <b>Length</b> member of 
+     <b>Header</b> to the size, in bytes, of the TCP_OFFLOAD_STATE_CACHED structure. The 
+     <b>RecognizedOptions</b> member of 
+     <b>Header</b> is reserved.
+
 `Flags`
 
 A bitmask that can be set to zero or any of the following flags, combined with bitwise OR: 
@@ -116,59 +126,9 @@ The host stack sets this flag to indicate that the default receive window size (
        offload target's currrent receive window size (RcvWnd in the TCP_OFFLOAD_STATE_DELEGATED structure),
        the offload target must advertise a new receive window size to the peer.
 
-`FlowLabel`
-
-This member marks host-labeled packets for special handling by intervening routers--for example,
-     nondefault QoS or "real-time" service (see RFC 2460). This variable is set through a socket option and
-     can vary during the lifetime of the TCP connection. This variable is only meaningful if the TCP
-     connection is over IPv6.
-
-`Header`
-
-An 
-     <a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a> structure. NDIS
-     sets the 
-     <b>Length</b> member of 
-     <b>Header</b> to the size, in bytes, of the TCP_OFFLOAD_STATE_CACHED structure. The 
-     <b>RecognizedOptions</b> member of 
-     <b>Header</b> is reserved.
-
 `InitialRcvWnd`
 
 The default receive window (from socket option SO_RCVBUF).
-
-`KaInterval`
-
-This member specifies, in clock ticks, the timeout after which to retransmit a keepalive frame if
-     no response is received to a keepalive probe (see RFC 1122).
-
-`KaProbeCount`
-
-The number of keepalive probes that the offload target should send to determine whether a TCP
-     connection is intact (see RFC 1122).
-
-`KaTimeout`
-
-This member specifies, in clock ticks, the timeout interval for inactivity before sending a
-     keepalive probe (see RFC 1122).
-
-`MaxRT`
-
-This member specifies, in clock ticks, the maximum time that the offload target should spend
-     retransmitting a segment. If the value of 
-     <b>MaxRT</b> is non-zero, 
-     <b>MaxRT</b> overrides 
-     <b>TcpMaximumRetransmissions</b> in the 
-     <a href="https://msdn.microsoft.com/d8c9fdf9-47aa-4492-b20a-4a53de191d97">
-     NDIS_TASK_TCP_CONNECTION_OFFLOAD</a> structure. The default value for is 
-     <b>MaxRT</b> is zero, which means that 
-     <b>TcpMaximumRetransmissions</b> sets the maximum number of times that the offload target should
-     retransmit a segment on a TCP connection. If the value of 
-     <b>MaxRT</b> is FFFFFFFF (or -1), there is no limit on the maximum number of retransmissions. When 
-     <b>MaxRT</b> is nonzero, the offload target should reset the 
-     <b>TotalRT</b> variable in the TCP delegated state for the connection. 
-     <b>TotalRT</b> indicates the total time, in clock ticks, that the offload target has spent retransmitting
-     the current TCP segment.
 
 `RcvIndicationSize`
 
@@ -189,6 +149,56 @@ When <b>NULL</b>,
      <b>RcvIndicationSize</b> and indicate as much data as possible in calls to the 
      <i>NdisTcpOffloadReceiveHandler</i> function.
 
+`KaProbeCount`
+
+The number of keepalive probes that the offload target should send to determine whether a TCP
+     connection is intact (see RFC 1122).
+
+`KaTimeout`
+
+This member specifies, in clock ticks, the timeout interval for inactivity before sending a
+     keepalive probe (see RFC 1122).
+
+`KaInterval`
+
+This member specifies, in clock ticks, the timeout after which to retransmit a keepalive frame if
+     no response is received to a keepalive probe (see RFC 1122).
+
+`MaxRT`
+
+This member specifies, in clock ticks, the maximum time that the offload target should spend
+     retransmitting a segment. If the value of 
+     <b>MaxRT</b> is non-zero, 
+     <b>MaxRT</b> overrides 
+     <b>TcpMaximumRetransmissions</b> in the 
+     <a href="https://msdn.microsoft.com/d8c9fdf9-47aa-4492-b20a-4a53de191d97">
+     NDIS_TASK_TCP_CONNECTION_OFFLOAD</a> structure. The default value for is 
+     <b>MaxRT</b> is zero, which means that 
+     <b>TcpMaximumRetransmissions</b> sets the maximum number of times that the offload target should
+     retransmit a segment on a TCP connection. If the value of 
+     <b>MaxRT</b> is FFFFFFFF (or -1), there is no limit on the maximum number of retransmissions. When 
+     <b>MaxRT</b> is nonzero, the offload target should reset the 
+     <b>TotalRT</b> variable in the TCP delegated state for the connection. 
+     <b>TotalRT</b> indicates the total time, in clock ticks, that the offload target has spent retransmitting
+     the current TCP segment.
+
+`FlowLabel`
+
+This member marks host-labeled packets for special handling by intervening routers--for example,
+     nondefault QoS or "real-time" service (see RFC 2460). This variable is set through a socket option and
+     can vary during the lifetime of the TCP connection. This variable is only meaningful if the TCP
+     connection is over IPv6.
+
+`TtlOrHopLimit`
+
+If the TCP connection is over IPv4, then this member specifies the time to live (see RFC 791).
+     This variable is set through a socket option and can vary during the lifetime of the TCP connection. 
+     
+
+If the TCP connection is over IPv6, then this member specifies the number of routers that the packet
+     can pass through (see RFC 2460). This variable is set through a socket option and can vary during the
+     lifetime of the TCP connection.
+
 `TosOrTrafficClass`
 
 If the TCP connection is over IPv4, then this member specifies the type of service for routing a
@@ -200,16 +210,6 @@ If the TCP connection is over IPv6, then this member prioritizes values for pack
      traffic types, indicating how willing the sender is to have the packets discarded (see RFC 2460). This
      variable is set through a socket option and can vary during the lifetime of the TCP
      connection.
-
-`TtlOrHopLimit`
-
-If the TCP connection is over IPv4, then this member specifies the time to live (see RFC 791).
-     This variable is set through a socket option and can vary during the lifetime of the TCP connection. 
-     
-
-If the TCP connection is over IPv6, then this member specifies the number of routers that the packet
-     can pass through (see RFC 2460). This variable is set through a socket option and can vary during the
-     lifetime of the TCP connection.
 
 `UserPriority`
 
@@ -284,11 +284,3 @@ When passed to an offload target, a TCP_OFFLOAD_STATE_CACHED structure is associ
 
 
 <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATE_CACHED structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

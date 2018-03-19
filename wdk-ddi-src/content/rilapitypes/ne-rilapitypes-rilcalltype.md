@@ -67,6 +67,16 @@ typedef enum _RILCALLTYPE {
 <table>
             
                 <tr>
+                    <td>RIL_CALLTYPE_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLTYPE_VOICE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_CALLTYPE_DATA</td>
                     <td></td>
                 </tr>
@@ -77,27 +87,12 @@ typedef enum _RILCALLTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLTYPE_IMS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLTYPE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_CALLTYPE_PTT</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLTYPE_SUPSVC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CALLTYPE_UNKNOWN</td>
+                    <td>RIL_CALLTYPE_VT</td>
                     <td></td>
                 </tr>
             
@@ -107,12 +102,17 @@ typedef enum _RILCALLTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLTYPE_VOICE</td>
+                    <td>RIL_CALLTYPE_SUPSVC</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CALLTYPE_VT</td>
+                    <td>RIL_CALLTYPE_IMS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLTYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

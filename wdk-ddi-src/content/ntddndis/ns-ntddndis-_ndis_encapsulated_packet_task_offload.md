@@ -61,9 +61,25 @@ typedef struct _NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD {
 ## Members
 
 
+`TransmitChecksumOffloadSupported`
+
+Task offload settings for transmit checksum.
+
+`ReceiveChecksumOffloadSupported`
+
+Task offload settings for receive checksum.
+
 `LsoV2Supported`
 
 Task offload settings for large send offload version 2 (LSOv2).
+
+`RssSupported`
+
+Task offload settings for receive side scaling (RSS).
+
+`VmqSupported`
+
+Task offload settings for virtual machine queue (VMQ).
 
 `MaxHeaderSizeSupported`
 
@@ -71,22 +87,6 @@ This member should be set to the maximum header size from the beginning of the p
 
 <div class="alert"><b>Note</b>  256 bytes is a good default value that should cover all possible cases.</div>
 <div> </div>
-
-`ReceiveChecksumOffloadSupported`
-
-Task offload settings for receive checksum.
-
-`RssSupported`
-
-Task offload settings for receive side scaling (RSS).
-
-`TransmitChecksumOffloadSupported`
-
-Task offload settings for transmit checksum.
-
-`VmqSupported`
-
-Task offload settings for virtual machine queue (VMQ).
 
 ## Remarks
 In the initial capability advertisement and in <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567424">NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567425">NDIS_STATUS_TASK_OFFLOAD_HARDWARE_CAPABILITIES</a> status indications, the <b>TransmitChecksumOffloadSupported</b>, <b>ReceiveChecksumOffloadSupported</b>, <b>LsoV2Supported</b>, <b>RssSupported</b>, and <b>VmqSupported</b> members can be set to a bitwise OR of the following flags:
@@ -176,11 +176,3 @@ It is possible for a protocol driver to offload "mixed mode" packets which means
 
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/jj991956">Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

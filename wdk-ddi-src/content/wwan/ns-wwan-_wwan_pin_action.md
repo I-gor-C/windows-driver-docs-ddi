@@ -61,6 +61,20 @@ typedef struct _WWAN_PIN_ACTION {
 ## Members
 
 
+`PinType`
+
+The type of the PIN on which to perform the action.
+
+`PinOperation`
+
+The action to perform with the PIN.
+
+`Pin`
+
+A NULL-terminated string that represents the PIN value to perform the action with, or the PIN
+     value required to enable/disable PIN settings. This member is a numeric value and applies for all values of 
+     <b>PinOperation</b> .
+
 `NewPin`
 
 A NULL-terminated string that represents the new PIN value to set when 
@@ -69,20 +83,6 @@ A NULL-terminated string that represents the new PIN value to set when
      <b>WwanPinOperationEnter</b>, for 
      <b>PinType</b><b>WwanPinTypePuk1</b> or 
      <b>WwanPinTypePuk2</b>. This member is a numeric value.
-
-`Pin`
-
-A NULL-terminated string that represents the PIN value to perform the action with, or the PIN
-     value required to enable/disable PIN settings. This member is a numeric value and applies for all values of 
-     <b>PinOperation</b> .
-
-`PinOperation`
-
-The action to perform with the PIN.
-
-`PinType`
-
-The type of the PIN on which to perform the action.
 
 ## Remarks
 When 
@@ -114,11 +114,3 @@ When
 
 
 <a href="..\wwan\ne-wwan-_wwan_pin_operation.md">WWAN_PIN_OPERATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_ACTION structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

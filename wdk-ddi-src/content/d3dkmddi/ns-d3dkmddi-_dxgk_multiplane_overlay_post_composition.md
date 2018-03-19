@@ -59,21 +59,21 @@ typedef struct _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION {
 ## Members
 
 
-`DstRect`
-
-Contains the destination rect of the virtual mode.
-
 `Flags`
 
 A DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS structure indicating additional transform information.
 
-`Rotation`
-
-Indicates additional rotation that should occur on the final image.
-
 `SrcRect`
 
 Contains the source rect of the virtual mode.
+
+`DstRect`
+
+Contains the destination rect of the virtual mode.
+
+`Rotation`
+
+Indicates additional rotation that should occur on the final image.
 
 ## Remarks
 The source mode contains the virtual mode size and the destination rectangle indicates how the virtual mode maps to the physical mode.

@@ -61,13 +61,13 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>DmaBuffer</td>
-                    <td>Indicates the physical address of the DMA buffer.</td>
+                    <td>PerRequestExtension</td>
+                    <td>Indicates the physical address of the SRB extension.</td>
                 </tr>
             
                 <tr>
-                    <td>PerRequestExtension</td>
-                    <td>Indicates the physical address of the SRB extension.</td>
+                    <td>DmaBuffer</td>
+                    <td>Indicates the physical address of the DMA buffer.</td>
                 </tr>
             
                 <tr>

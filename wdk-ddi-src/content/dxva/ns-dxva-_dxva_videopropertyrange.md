@@ -59,17 +59,17 @@ typedef struct _DXVA_VideoPropertyRange {
 ## Members
 
 
-`DefaultValue`
+`MinValue`
 
-Specifies the default value for a given property.
+Specifies the minimum value allowed for a given property.
 
 `MaxValue`
 
 Specifies the maximum value allowed for a given property.
 
-`MinValue`
+`DefaultValue`
 
-Specifies the minimum value allowed for a given property.
+Specifies the default value for a given property.
 
 `StepSize`
 
@@ -85,11 +85,3 @@ Specifies the step size increment for a given property.
 ## See Also
 
 <a href="..\dxva\ns-dxva-_dxva_videodesc.md">DXVA_VideoDesc</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_VideoPropertyRange structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

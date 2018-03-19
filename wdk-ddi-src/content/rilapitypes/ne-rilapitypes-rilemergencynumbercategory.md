@@ -65,7 +65,7 @@ typedef enum _RILEMERGENCYNUMBERCATEGORY {
 <table>
             
                 <tr>
-                    <td>RIL_ENUM_ALL</td>
+                    <td>RIL_ENUM_POLICE</td>
                     <td></td>
                 </tr>
             
@@ -75,17 +75,7 @@ typedef enum _RILEMERGENCYNUMBERCATEGORY {
                 </tr>
             
                 <tr>
-                    <td>RIL_ENUM_AUTO_ECALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_ENUM_FIRE_BRIGADE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_ENUM_MANUAL_ECALL</td>
                     <td></td>
                 </tr>
             
@@ -100,7 +90,17 @@ typedef enum _RILEMERGENCYNUMBERCATEGORY {
                 </tr>
             
                 <tr>
-                    <td>RIL_ENUM_POLICE</td>
+                    <td>RIL_ENUM_MANUAL_ECALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ENUM_AUTO_ECALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ENUM_ALL</td>
                     <td></td>
                 </tr>
 </table>

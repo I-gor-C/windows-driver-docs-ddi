@@ -65,13 +65,13 @@ typedef struct _VPCI_WRITE_BLOCK_INPUT {
 
 A <b>ULONG</b> value that specifies the VF configuration block to be read.  This value is defined by the driver for the PCIe physical function (PF) of the device.
 
-`Data`
-
-A variable-size array that contains the data to be written to the configuration block that is specified by the <b>BlockId</b> member.
-
 `DataLength`
 
 The size, in bytes, of the data to be written from the <b>Data</b> member.
+
+`Data`
+
+A variable-size array that contains the data to be written to the configuration block that is specified by the <b>BlockId</b> member.
 
 ## Remarks
 A VF configuration block is used for backchannel communication between the drivers of the PCIe PF and a VF on a device that supports the SR-IOV interface. Data from a VF configuration block can be exchanged between the following drivers:
@@ -105,11 +105,3 @@ This operating system runs within the Hyper-V parent partition.
 
 
 <b></b>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20VPCI_WRITE_BLOCK_INPUT structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

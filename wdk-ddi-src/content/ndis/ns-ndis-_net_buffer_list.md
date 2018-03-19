@@ -70,11 +70,6 @@ typedef struct _NET_BUFFER_LIST {
 ## Members
 
 
-`ChildRefCount`
-
-If this NET_BUFFER_LIST structure has clones (is a parent), this member specifies the number of
-     outstanding clones. Otherwise, this member is zero.
-
 `Context`
 
 A pointer to a 
@@ -104,44 +99,73 @@ Use the following functions and macros to access data in the NET_BUFFER_LIST_CON
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568390">
          NET_BUFFER_LIST_CONTEXT_DATA_SIZE</a>
 
-`Flags`
+`ParentNetBufferList`
 
-Attributes of the NET_BUFFER_LIST structure. The following definitions specify a bit mask for a set
-      of flags:
+If this NET_BUFFER_LIST structure is a clone of another NET_BUFFER_LIST structure, this member
+     specifies a pointer to the parent NET_BUFFER_LIST structure. Otherwise, this parameter is <b>NULL</b>. A driver
+     uses the 
+     <a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">
+     NdisAllocateCloneNetBufferList</a> function to create a clone.
 
+`NdisPoolHandle`
 
+A pool handle that identifies the NET_BUFFER_LIST pool from which the NET_BUFFER_LIST structure
+     was allocated.
 
+`NdisReserved`
 
+Reserved for use by NDIS.
 
-#### NBL_FLAGS_PROTOCOL_RESERVED
+`ProtocolReserved`
 
-This set is reserved for protocol drivers.
-
-<div class="alert"><b>Note</b>  Starting with NDIS 6.30, two additional bits are available for protocol use: 0x00000003.  A NDIS 6.30 protocol may use these bits if and only if <a href="..\ndis\nf-ndis-ndisgetversion.md">NdisGetVersion</a> returns a value greater than or equal to <b>NDIS_RUNTIME_VERSION_630</b>.  Protocols must not use these bits on earlier versions of NDIS, because prior to 6.30, NDIS uses them internally.</div>
-<div> </div>
-
-
-#### NBL_FLAGS_MINIPORT_RESERVED
-
-This set is reserved for miniport drivers.
-
-
-
-#### NBL_FLAGS_SCRATCH
-
-The current owner of the NET_BUFFER_LIST structure, either NDIS or an NDIS driver, can use this
-        set. When the current owner relinquishes ownership, NDIS or another driver can overwrite these
-        flags.
-
-
-
-#### NBL_FLAGS_NDIS_RESERVED
-
-This set is reserved for NDIS.
+Reserved for use by protocol drivers.
 
 `MiniportReserved`
 
 Reserved for use by miniport drivers.
+
+`Scratch`
+
+Data that is defined by the current owner of the NET_BUFFER_LIST structure. The current owner,
+     either NDIS or an NDIS driver, can use this member for their own purposes. When the NET_BUFFER_LIST
+     structure is initially allocated, this member is <b>NULL</b>. After the current owner relinquishes ownership,
+     NDIS or another driver can overwrite this member.
+
+`SourceHandle`
+
+A handle that NDIS provided to the driver in a binding or attaching operation by using one of the
+     following driver-supplied routines:
+     
+
+
+
+
+
+#### Miniport Driver
+
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+
+
+
+#### Protocol Driver
+
+
+<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
+
+
+
+
+#### Filter Driver
+
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+
+NDIS uses 
+     <b>SourceHandle</b> to return the NET_BUFFER_LIST structure to the driver that sent the NET_BUFFER_LIST
+     structure.
 
 `NblFlags`
 
@@ -246,14 +270,45 @@ All of the Ethernet frames in this NET_BUFFER_LIST structure are split at the be
        NDIS_NBL_FLAGS_IS_TCP flag or the NDIS_NBL_FLAGS_IS_UDP flag, but the provider must not set the
        NDIS_NBL_FLAGS_SPLIT_AT_UPPER_LAYER_PROTOCOL_HEADER flag.
 
-`NdisPoolHandle`
+`ChildRefCount`
 
-A pool handle that identifies the NET_BUFFER_LIST pool from which the NET_BUFFER_LIST structure
-     was allocated.
+If this NET_BUFFER_LIST structure has clones (is a parent), this member specifies the number of
+     outstanding clones. Otherwise, this member is zero.
 
-`NdisReserved`
+`Flags`
 
-Reserved for use by NDIS.
+Attributes of the NET_BUFFER_LIST structure. The following definitions specify a bit mask for a set
+      of flags:
+
+
+
+
+
+#### NBL_FLAGS_PROTOCOL_RESERVED
+
+This set is reserved for protocol drivers.
+
+<div class="alert"><b>Note</b>  Starting with NDIS 6.30, two additional bits are available for protocol use: 0x00000003.  A NDIS 6.30 protocol may use these bits if and only if <a href="..\ndis\nf-ndis-ndisgetversion.md">NdisGetVersion</a> returns a value greater than or equal to <b>NDIS_RUNTIME_VERSION_630</b>.  Protocols must not use these bits on earlier versions of NDIS, because prior to 6.30, NDIS uses them internally.</div>
+<div> </div>
+
+
+#### NBL_FLAGS_MINIPORT_RESERVED
+
+This set is reserved for miniport drivers.
+
+
+
+#### NBL_FLAGS_SCRATCH
+
+The current owner of the NET_BUFFER_LIST structure, either NDIS or an NDIS driver, can use this
+        set. When the current owner relinquishes ownership, NDIS or another driver can overwrite these
+        flags.
+
+
+
+#### NBL_FLAGS_NDIS_RESERVED
+
+This set is reserved for NDIS.
 
 `NetBufferListInfo`
 
@@ -266,61 +321,6 @@ Use the
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a> macro to set and
      get values in the 
      <b>NetBufferListInfo</b> array.
-
-`ParentNetBufferList`
-
-If this NET_BUFFER_LIST structure is a clone of another NET_BUFFER_LIST structure, this member
-     specifies a pointer to the parent NET_BUFFER_LIST structure. Otherwise, this parameter is <b>NULL</b>. A driver
-     uses the 
-     <a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">
-     NdisAllocateCloneNetBufferList</a> function to create a clone.
-
-`ProtocolReserved`
-
-Reserved for use by protocol drivers.
-
-`Scratch`
-
-Data that is defined by the current owner of the NET_BUFFER_LIST structure. The current owner,
-     either NDIS or an NDIS driver, can use this member for their own purposes. When the NET_BUFFER_LIST
-     structure is initially allocated, this member is <b>NULL</b>. After the current owner relinquishes ownership,
-     NDIS or another driver can overwrite this member.
-
-`SourceHandle`
-
-A handle that NDIS provided to the driver in a binding or attaching operation by using one of the
-     following driver-supplied routines:
-     
-
-
-
-
-
-#### Miniport Driver
-
-
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
-
-
-
-#### Protocol Driver
-
-
-<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
-
-
-
-
-#### Filter Driver
-
-
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-
-
-NDIS uses 
-     <b>SourceHandle</b> to return the NET_BUFFER_LIST structure to the driver that sent the NET_BUFFER_LIST
-     structure.
 
 ## Remarks
 NDIS drivers can call any of the following functions to allocate and initialize a NET_BUFFER_LIST
@@ -566,11 +566,3 @@ For more information on how to use net buffers, see
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564626">NdisTestNblFlags</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_LIST structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

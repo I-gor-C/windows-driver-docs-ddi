@@ -59,17 +59,17 @@ typedef enum _RILUICCSLOTINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_SLOTINFO_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_SLOTINFO_NUMSLOTS</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_PARAM_SLOTINFO_SLOTSTATE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SLOTINFO_ALL</td>
                     <td></td>
                 </tr>
 </table>

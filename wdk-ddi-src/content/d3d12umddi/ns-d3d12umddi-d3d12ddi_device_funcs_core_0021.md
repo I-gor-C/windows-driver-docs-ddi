@@ -58,94 +58,6 @@ typedef struct D3D12DDI_DEVICE_FUNCS_CORE_0021 {
 ## Members
 
 
-`pfnAddPipelineStateToLibrary`
-
-
-
-`pfnCalcPrivateBlendStateSize`
-
-
-
-`pfnCalcPrivateCommandAllocatorSize`
-
-
-
-`pfnCalcPrivateCommandListSize`
-
-
-
-`pfnCalcPrivateCommandQueueSize`
-
-
-
-`pfnCalcPrivateCommandSignatureSize`
-
-
-
-`pfnCalcPrivateDepthStencilStateSize`
-
-
-
-`pfnCalcPrivateDescriptorHeapSize`
-
-
-
-`pfnCalcPrivateElementLayoutSize`
-
-
-
-`pfnCalcPrivateFenceSize`
-
-
-
-`pfnCalcPrivateGeometryShaderWithStreamOutput`
-
-
-
-`pfnCalcPrivateHeapAndResourceSizes`
-
-
-
-`pfnCalcPrivateOpenedHeapAndResourceSizes`
-
-
-
-`pfnCalcPrivatePipelineLibrarySize`
-
-
-
-`pfnCalcPrivatePipelineStateSize`
-
-A callback function that calculates the size of a private pipeline state.
-
-`pfnCalcPrivateQueryHeapSize`
-
-
-
-`pfnCalcPrivateRasterizerStateSize`
-
-
-
-`pfnCalcPrivateRootSignatureSize`
-
-
-
-`pfnCalcPrivateShaderSize`
-
-
-
-`pfnCalcPrivateTessellationShaderSize`
-
-
-
-`pfnCalcSerializedLibrarySize`
-
-
-
-`pfnCheckExistingResourceAllocationInfo`
-
-
-
 `pfnCheckFormatSupport`
 
 
@@ -154,19 +66,259 @@ A callback function that calculates the size of a private pipeline state.
 
 
 
-`pfnCheckResourceAllocationHandle`
+`pfnGetMipPacking`
 
 
 
-`pfnCheckResourceAllocationInfo`
+`pfnCalcPrivateElementLayoutSize`
 
 
 
-`pfnCheckResourceVirtualAddress`
+`pfnCreateElementLayout`
 
 
 
-`pfnCheckSubresourceInfo`
+`pfnDestroyElementLayout`
+
+
+
+`pfnCalcPrivateBlendStateSize`
+
+
+
+`pfnCreateBlendState`
+
+
+
+`pfnDestroyBlendState`
+
+
+
+`pfnCalcPrivateDepthStencilStateSize`
+
+
+
+`pfnCreateDepthStencilState`
+
+
+
+`pfnDestroyDepthStencilState`
+
+
+
+`pfnCalcPrivateRasterizerStateSize`
+
+
+
+`pfnCreateRasterizerState`
+
+
+
+`pfnDestroyRasterizerState`
+
+
+
+`pfnCalcPrivateShaderSize`
+
+
+
+`pfnCreateVertexShader`
+
+
+
+`pfnCreatePixelShader`
+
+
+
+`pfnCreateGeometryShader`
+
+
+
+`pfnCreateComputeShader`
+
+
+
+`pfnCalcPrivateGeometryShaderWithStreamOutput`
+
+
+
+`pfnCreateGeometryShaderWithStreamOutput`
+
+
+
+`pfnCalcPrivateTessellationShaderSize`
+
+
+
+`pfnCreateHullShader`
+
+
+
+`pfnCreateDomainShader`
+
+
+
+`pfnDestroyShader`
+
+
+
+`pfnCalcPrivateCommandQueueSize`
+
+
+
+`pfnCreateCommandQueue`
+
+
+
+`pfnDestroyCommandQueue`
+
+
+
+`pfnCalcPrivateCommandAllocatorSize`
+
+
+
+`pfnCreateCommandAllocator`
+
+
+
+`pfnDestroyCommandAllocator`
+
+
+
+`pfnResetCommandAllocator`
+
+
+
+`pfnCalcPrivatePipelineStateSize`
+
+A callback function that calculates the size of a private pipeline state.
+
+`pfnCreatePipelineState`
+
+A callback function that creates a pipeline state.
+
+`pfnDestroyPipelineState`
+
+A callback function that destroys  a pipeline state.
+
+`pfnCalcPrivateCommandListSize`
+
+
+
+`pfnCreateCommandList`
+
+
+
+`pfnDestroyCommandList`
+
+
+
+`pfnCalcPrivateFenceSize`
+
+
+
+`pfnCreateFence`
+
+
+
+`pfnDestroyFence`
+
+
+
+`pfnCalcPrivateDescriptorHeapSize`
+
+
+
+`pfnCreateDescriptorHeap`
+
+
+
+`pfnDestroyDescriptorHeap`
+
+
+
+`pfnGetDescriptorSizeInBytes`
+
+
+
+`pfnGetCPUDescriptorHandleForHeapStart`
+
+
+
+`pfnGetGPUDescriptorHandleForHeapStart`
+
+
+
+`pfnCreateShaderResourceView`
+
+
+
+`pfnCreateConstantBufferView`
+
+
+
+`pfnCreateSampler`
+
+
+
+`pfnCreateUnorderedAccessView`
+
+
+
+`pfnCreateRenderTargetView`
+
+
+
+`pfnCreateDepthStencilView`
+
+
+
+`pfnCalcPrivateRootSignatureSize`
+
+
+
+`pfnCreateRootSignature`
+
+
+
+`pfnDestroyRootSignature`
+
+
+
+`pfnMapHeap`
+
+
+
+`pfnUnmapHeap`
+
+
+
+`pfnCalcPrivateHeapAndResourceSizes`
+
+
+
+`pfnCreateHeapAndResource`
+
+
+
+`pfnDestroyHeapAndResource`
+
+
+
+`pfnMakeResident`
+
+
+
+`pfnEvict`
+
+
+
+`pfnCalcPrivateOpenedHeapAndResourceSizes`
+
+
+
+`pfnOpenHeapAndResource`
 
 
 
@@ -178,83 +330,7 @@ A callback function that calculates the size of a private pipeline state.
 
 
 
-`pfnCreateBlendState`
-
-
-
-`pfnCreateCommandAllocator`
-
-
-
-`pfnCreateCommandList`
-
-
-
-`pfnCreateCommandQueue`
-
-
-
-`pfnCreateCommandSignature`
-
-
-
-`pfnCreateComputeShader`
-
-
-
-`pfnCreateConstantBufferView`
-
-
-
-`pfnCreateDepthStencilState`
-
-
-
-`pfnCreateDepthStencilView`
-
-
-
-`pfnCreateDescriptorHeap`
-
-
-
-`pfnCreateDomainShader`
-
-
-
-`pfnCreateElementLayout`
-
-
-
-`pfnCreateFence`
-
-
-
-`pfnCreateGeometryShader`
-
-
-
-`pfnCreateGeometryShaderWithStreamOutput`
-
-
-
-`pfnCreateHeapAndResource`
-
-
-
-`pfnCreateHullShader`
-
-
-
-`pfnCreatePipelineLibrary`
-
-
-
-`pfnCreatePipelineState`
-
-A callback function that creates a pipeline state.
-
-`pfnCreatePixelShader`
+`pfnCalcPrivateQueryHeapSize`
 
 
 
@@ -262,47 +338,15 @@ A callback function that creates a pipeline state.
 
 
 
-`pfnCreateRasterizerState`
+`pfnDestroyQueryHeap`
 
 
 
-`pfnCreateRenderTargetView`
+`pfnCalcPrivateCommandSignatureSize`
 
 
 
-`pfnCreateRootSignature`
-
-
-
-`pfnCreateSampler`
-
-
-
-`pfnCreateShaderResourceView`
-
-
-
-`pfnCreateUnorderedAccessView`
-
-
-
-`pfnCreateVertexShader`
-
-
-
-`pfnDestroyBlendState`
-
-
-
-`pfnDestroyCommandAllocator`
-
-
-
-`pfnDestroyCommandList`
-
-
-
-`pfnDestroyCommandQueue`
+`pfnCreateCommandSignature`
 
 
 
@@ -310,87 +354,19 @@ A callback function that creates a pipeline state.
 
 
 
-`pfnDestroyDepthStencilState`
+`pfnCheckResourceVirtualAddress`
 
 
 
-`pfnDestroyDescriptorHeap`
+`pfnCheckResourceAllocationInfo`
 
 
 
-`pfnDestroyElementLayout`
+`pfnCheckSubresourceInfo`
 
 
 
-`pfnDestroyFence`
-
-
-
-`pfnDestroyHeapAndResource`
-
-
-
-`pfnDestroyPipelineLibrary`
-
-
-
-`pfnDestroyPipelineState`
-
-A callback function that destroys  a pipeline state.
-
-`pfnDestroyQueryHeap`
-
-
-
-`pfnDestroyRasterizerState`
-
-
-
-`pfnDestroyRootSignature`
-
-
-
-`pfnDestroyShader`
-
-
-
-`pfnEvict`
-
-
-
-`pfnGetCPUDescriptorHandleForHeapStart`
-
-
-
-`pfnGetDebugAllocationInfo`
-
-
-
-`pfnGetDescriptorSizeInBytes`
-
-
-
-`pfnGetGPUDescriptorHandleForHeapStart`
-
-
-
-`pfnGetImplicitPhysicalAdapterMask`
-
-
-
-`pfnGetMipPacking`
-
-
-
-`pfnGetPresentPrivateDriverDataSize`
-
-
-
-`pfnMakeResident`
-
-
-
-`pfnMapHeap`
+`pfnCheckExistingResourceAllocationInfo`
 
 
 
@@ -398,7 +374,15 @@ A callback function that destroys  a pipeline state.
 
 
 
-`pfnOpenHeapAndResource`
+`pfnReclaimResources`
+
+
+
+`pfnGetImplicitPhysicalAdapterMask`
+
+
+
+`pfnGetPresentPrivateDriverDataSize`
 
 
 
@@ -406,15 +390,31 @@ A callback function that destroys  a pipeline state.
 
 
 
-`pfnReclaimResources`
-
-
-
-`pfnResetCommandAllocator`
-
-
-
 `pfnRetrieveShaderComment`
+
+
+
+`pfnCheckResourceAllocationHandle`
+
+
+
+`pfnCalcPrivatePipelineLibrarySize`
+
+
+
+`pfnCreatePipelineLibrary`
+
+
+
+`pfnDestroyPipelineLibrary`
+
+
+
+`pfnAddPipelineStateToLibrary`
+
+
+
+`pfnCalcSerializedLibrarySize`
 
 
 
@@ -422,7 +422,7 @@ A callback function that destroys  a pipeline state.
 
 
 
-`pfnUnmapHeap`
+`pfnGetDebugAllocationInfo`
 
 
 

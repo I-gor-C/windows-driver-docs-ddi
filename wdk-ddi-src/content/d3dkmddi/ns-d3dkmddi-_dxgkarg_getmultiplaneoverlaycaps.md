@@ -62,6 +62,10 @@ typedef struct _DXGKARG_GETMULTIPLANEOVERLAYCAPS {
 ## Members
 
 
+`VidPnSourceId`
+
+[in] Indicates the VidPn source for which we are querying multiplane overlay capabilities.
+
 `MaxPlanes`
 
 
@@ -69,14 +73,6 @@ typedef struct _DXGKARG_GETMULTIPLANEOVERLAYCAPS {
 `MaxRGBPlanes`
 
 [out] Indicates the total number of RGB planes, including the DWM’s primary, that can be supported simultaneously.
-
-`MaxShrinkFactor`
-
-[out] Indicates the maximum shrink factor that can be applied to a plane.
-
-`MaxStretchFactor`
-
-[out] Indicates the maximum stretch factor that can be applied to a plane.
 
 `MaxYUVPlanes`
 
@@ -86,9 +82,13 @@ typedef struct _DXGKARG_GETMULTIPLANEOVERLAYCAPS {
 
 [out] A DXGK_MULTIPLANEOVERLAYCAPS structure indicating the plane capabilities.
 
-`VidPnSourceId`
+`MaxStretchFactor`
 
-[in] Indicates the VidPn source for which we are querying multiplane overlay capabilities.
+[out] Indicates the maximum stretch factor that can be applied to a plane.
+
+`MaxShrinkFactor`
+
+[out] Indicates the maximum shrink factor that can be applied to a plane.
 
 
 ## Requirements

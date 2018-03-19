@@ -66,18 +66,13 @@ typedef enum _SYSTEM_POWER_STATE {
 <table>
             
                 <tr>
-                    <td>PowerSystemHibernate</td>
-                    <td>Indicates the lowest-powered sleeping state, which corresponds to system power state S4.</td>
+                    <td>PowerSystemUnspecified</td>
+                    <td>Indicates an unspecified system power state.</td>
                 </tr>
             
                 <tr>
-                    <td>PowerSystemMaximum</td>
-                    <td>The number of system power state values for this enumeration type that represents actual power states. This value is the number of elements in the <b>DeviceState</b> member of the <a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a> structure for a device. The other system power state values are less than this value.</td>
-                </tr>
-            
-                <tr>
-                    <td>PowerSystemShutdown</td>
-                    <td>Indicates the system is turned off, which corresponds to <a href="https://msdn.microsoft.com/library/windows/hardware/ff564572">system shutdown state S5</a>.</td>
+                    <td>PowerSystemWorking</td>
+                    <td>Indicates maximum system power, which corresponds to <a href="https://msdn.microsoft.com/library/windows/hardware/ff564591">system working state S0</a>.</td>
                 </tr>
             
                 <tr>
@@ -96,13 +91,18 @@ typedef enum _SYSTEM_POWER_STATE {
                 </tr>
             
                 <tr>
-                    <td>PowerSystemUnspecified</td>
-                    <td>Indicates an unspecified system power state.</td>
+                    <td>PowerSystemHibernate</td>
+                    <td>Indicates the lowest-powered sleeping state, which corresponds to system power state S4.</td>
                 </tr>
             
                 <tr>
-                    <td>PowerSystemWorking</td>
-                    <td>Indicates maximum system power, which corresponds to <a href="https://msdn.microsoft.com/library/windows/hardware/ff564591">system working state S0</a>.</td>
+                    <td>PowerSystemShutdown</td>
+                    <td>Indicates the system is turned off, which corresponds to <a href="https://msdn.microsoft.com/library/windows/hardware/ff564572">system shutdown state S5</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerSystemMaximum</td>
+                    <td>The number of system power state values for this enumeration type that represents actual power states. This value is the number of elements in the <b>DeviceState</b> member of the <a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a> structure for a device. The other system power state values are less than this value.</td>
                 </tr>
 </table>
 
@@ -122,11 +122,3 @@ For more information about power management in general, see <a href="https://msd
 ## See Also
 
 <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SYSTEM_POWER_STATE enumeration%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

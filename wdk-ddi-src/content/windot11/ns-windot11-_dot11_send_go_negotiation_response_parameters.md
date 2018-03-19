@@ -70,26 +70,6 @@ typedef struct _DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS {
 ## Members
 
 
-`bUseGroupID`
-
-If TRUE, the value in <b>GroupID</b> should be included in the GO negotiation response.
-
-`DialogToken`
-
-The dialog token received from the GO negotiation request packet. This dialog token must be included in  the GO negotiation response  packet.
-
-`GroupCapability`
-
-The capability values that are included in the Group Capability bitmask of the P2P Capability Information Element (IE) in  the GO negotiation response.
-
-`GroupID`
-
-The group identifier to include in the Group ID attribute of the GO negotiation response.
-
-`GroupOwnerIntent`
-
-The value for GO intent. This should be included in the Group Owner Intent attribute of the GO negotiation request.
-
 `Header`
 
 The type, revision, and size of the <b>DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following.
@@ -113,37 +93,57 @@ The type, revision, and size of the <b>DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAME
 </tr>
 </table>
 
-`IntendedInterfaceAddress`
-
-The P2P interface address that is intended for the P2P group.
-
-`MinimumConfigTimeout`
-
-The configuration time-out required by the system  to change its mode of operation to a P2P Group Owner or a P2P Client. The miniport driver can set this with a larger value if necessary.
-
 `PeerDeviceAddress`
 
 The Peer-to-Peer (P2P) address of the Wi-Fi Direct (WFD) device that originated the GO negotiation request.
+
+`DialogToken`
+
+The dialog token received from the GO negotiation request packet. This dialog token must be included in  the GO negotiation response  packet.
 
 `RequestContext`
 
 
 
+`uSendTimeout`
+
+The maximum time, in milliseconds, allowed to send the GO negotiation response. If the time-out expires before the miniport has successfully transmitted the GO negotiation response, it should indicate the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439776">NDIS_STATUS_DOT11_WFD_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE</a> with a failure status.
+
 `Status`
 
 The status information to include in the GO  negotiation response.
 
-`uIEsLength`
+`GroupOwnerIntent`
 
-The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
+The value for GO intent. This should be included in the Group Owner Intent attribute of the GO negotiation request.
+
+`MinimumConfigTimeout`
+
+The configuration time-out required by the system  to change its mode of operation to a P2P Group Owner or a P2P Client. The miniport driver can set this with a larger value if necessary.
+
+`IntendedInterfaceAddress`
+
+The P2P interface address that is intended for the P2P group.
+
+`GroupCapability`
+
+The capability values that are included in the Group Capability bitmask of the P2P Capability Information Element (IE) in  the GO negotiation response.
+
+`GroupID`
+
+The group identifier to include in the Group ID attribute of the GO negotiation response.
+
+`bUseGroupID`
+
+If TRUE, the value in <b>GroupID</b> should be included in the GO negotiation response.
 
 `uIEsOffset`
 
 The offset, in bytes,  of the array of additional IEs that the Wi-Fi Direct (WFD) port must add to the GO negotiation response packet. This offset is from the start of the buffer that contains this structure.
 
-`uSendTimeout`
+`uIEsLength`
 
-The maximum time, in milliseconds, allowed to send the GO negotiation response. If the time-out expires before the miniport has successfully transmitted the GO negotiation response, it should indicate the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439776">NDIS_STATUS_DOT11_WFD_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE</a> with a failure status.
+The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
 
 
 ## Requirements
@@ -159,11 +159,3 @@ The maximum time, in milliseconds, allowed to send the GO negotiation response. 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451807">OID_DOT11_WFD_SEND_INVITATION_RESPONSE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

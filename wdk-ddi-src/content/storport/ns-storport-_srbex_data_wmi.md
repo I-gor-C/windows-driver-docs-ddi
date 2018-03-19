@@ -64,13 +64,21 @@ typedef struct _SRBEX_DATA_WMI {
 ## Members
 
 
-`DataPath`
+`Type`
 
-Specifies the WMI data path for this request.
+Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeWmi</b>.
 
 `Length`
 
 Length of the data in this structure starting with the <b>WMISubFunction</b> member. Set to SRBEX_DATA_WMI_LENGTH.
+
+`WMISubFunction`
+
+Indicates the WMI action to be performed. The subfunction value corresponds to the WMI minor IRP number that identifies the WMI operation.
+
+`WMIFlags`
+
+Indicates that the WMI request is for the adapter if SRB_WMI_FLAGS_ADAPTER_REQUEST is set and that storage device address is reserved. Otherwise, <i>WMIFlags</i> will be <b>NULL</b>, indicating that the request is for the storage device specified by an address at <b>AddressOffset</b> in the <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a> structure.
 
 `Reserved`
 
@@ -80,17 +88,9 @@ This member is reserved. Contains zeros.
 
 This member is reserved. Set to 0.
 
-`Type`
+`DataPath`
 
-Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeWmi</b>.
-
-`WMIFlags`
-
-Indicates that the WMI request is for the adapter if SRB_WMI_FLAGS_ADAPTER_REQUEST is set and that storage device address is reserved. Otherwise, <i>WMIFlags</i> will be <b>NULL</b>, indicating that the request is for the storage device specified by an address at <b>AddressOffset</b> in the <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a> structure.
-
-`WMISubFunction`
-
-Indicates the WMI action to be performed. The subfunction value corresponds to the WMI minor IRP number that identifies the WMI operation.
+Specifies the WMI data path for this request.
 
 
 ## Requirements
@@ -102,11 +102,3 @@ Indicates the WMI action to be performed. The subfunction value corresponds to t
 ## See Also
 
 <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SRBEX_DATA_WMI structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

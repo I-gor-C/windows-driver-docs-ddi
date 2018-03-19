@@ -74,7 +74,32 @@ typedef enum _RILOSGEOLOCATIONINFOPARAMMASK {
 <table>
             
                 <tr>
+                    <td>RIL_PARAM_OSGEOLOCATIONINFO_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_OSGEOLOCATIONINFO_SIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_OSGEOLOCATIONINFO_LATLONG</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_OSGEOLOCATIONINFO_ALTITUDE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PARAM_OSGEOLOCATIONINFO_ACCURACY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_OSGEOLOCATIONINFO_MASK</td>
                     <td></td>
                 </tr>
             
@@ -89,62 +114,7 @@ typedef enum _RILOSGEOLOCATIONINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_OSGEOLOCATIONINFO_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_OSGEOLOCATIONINFO_ALTITUDE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_OSGEOLOCATIONINFO_CITY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_OSGEOLOCATIONINFO_COUNTRY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_OSGEOLOCATIONINFO_COUNTRYCODE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_OSGEOLOCATIONINFO_FORMATTEDADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_OSGEOLOCATIONINFO_LATLONG</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_OSGEOLOCATIONINFO_MASK</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_OSGEOLOCATIONINFO_NONE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_OSGEOLOCATIONINFO_POSTALCODE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_OSGEOLOCATIONINFO_REGIONCODE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_OSGEOLOCATIONINFO_SIZE</td>
                     <td></td>
                 </tr>
             
@@ -154,7 +124,37 @@ typedef enum _RILOSGEOLOCATIONINFOPARAMMASK {
                 </tr>
             
                 <tr>
+                    <td>RIL_PARAM_OSGEOLOCATIONINFO_COUNTRY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_OSGEOLOCATIONINFO_POSTALCODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_OSGEOLOCATIONINFO_COUNTRYCODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_OSGEOLOCATIONINFO_REGIONCODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_OSGEOLOCATIONINFO_FORMATTEDADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PARAM_OSGEOLOCATIONINFO_TIMESTAMP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_OSGEOLOCATIONINFO_ALL</td>
                     <td></td>
                 </tr>
 </table>

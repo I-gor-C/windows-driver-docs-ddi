@@ -66,6 +66,42 @@ typedef struct _D3D12DDI_CRYPTO_SESSION_TRANSFORM_INPUT_ARGUMENTS_0030 {
 ## Members
 
 
+`hDrvCryptoSessionPolicy`
+
+Crypto session policy.
+
+`hDrvBuffer`
+
+Resource.
+
+`Size`
+
+Size.
+
+`Offset`
+
+Offset.
+
+`pIV`
+
+Initialization vector.
+
+`IVSize`
+
+Initialization vector size.
+
+`pSubSampleMappingBlock`
+
+Sub sample mapping block.
+
+`SubSampleMappingCount`
+
+Sub sample mapping count.
+
+`pContext`
+
+Context.
+
 `ContextSize`
 
 Context size.
@@ -73,42 +109,6 @@ Context size.
 `EncryptedHeader`
 
 Encrypted header.
-
-`hDrvBuffer`
-
-Resource.
-
-`hDrvCryptoSessionPolicy`
-
-Crypto session policy.
-
-`IVSize`
-
-Initialization vector size.
-
-`Offset`
-
-Offset.
-
-`pContext`
-
-Context.
-
-`pIV`
-
-Initialization vector.
-
-`pSubSampleMappingBlock`
-
-Sub sample mapping block.
-
-`Size`
-
-Size.
-
-`SubSampleMappingCount`
-
-Sub sample mapping count.
 
 
 ## Requirements

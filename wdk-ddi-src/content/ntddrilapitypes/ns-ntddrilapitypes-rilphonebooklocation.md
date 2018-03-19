@@ -63,7 +63,7 @@ typedef struct _RILPHONEBOOKLOCATION {
 
 
 
-`dwIndex`
+`hUiccApp`
 
 
 
@@ -71,7 +71,7 @@ typedef struct _RILPHONEBOOKLOCATION {
 
 
 
-`hUiccApp`
+`dwIndex`
 
 
 

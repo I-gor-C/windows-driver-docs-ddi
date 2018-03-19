@@ -58,15 +58,15 @@ typedef struct _DISPLAY_BRIGHTNESS {
 ## Members
 
 
+`ucDisplayPolicy`
+
+Reserved for system use.
+
 `ucACBrightness`
 
 Reserved for system use.
 
 `ucDCBrightness`
-
-Reserved for system use.
-
-`ucDisplayPolicy`
 
 Reserved for system use.
 

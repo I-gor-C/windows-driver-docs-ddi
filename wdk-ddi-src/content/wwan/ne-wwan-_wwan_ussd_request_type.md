@@ -61,8 +61,8 @@ typedef enum _WWAN_USSD_REQUEST_TYPE {
 <table>
             
                 <tr>
-                    <td>WwanUssdRequestCancel</td>
-                    <td>Indicates a request to terminate the existing USSD session.</td>
+                    <td>WwanUssdRequestInitiate</td>
+                    <td>Indicates a request to create a new USSD session and to transmit the accompanying USSD string.</td>
                 </tr>
             
                 <tr>
@@ -71,8 +71,8 @@ typedef enum _WWAN_USSD_REQUEST_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WwanUssdRequestInitiate</td>
-                    <td>Indicates a request to create a new USSD session and to transmit the accompanying USSD string.</td>
+                    <td>WwanUssdRequestCancel</td>
+                    <td>Indicates a request to terminate the existing USSD session.</td>
                 </tr>
 </table>
 

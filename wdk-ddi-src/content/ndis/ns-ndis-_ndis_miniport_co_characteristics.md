@@ -64,11 +64,20 @@ typedef struct _NDIS_MINIPORT_CO_CHARACTERISTICS {
 ## Members
 
 
-`CoActivateVcHandler`
+`Header`
 
-The entry point of the driver's 
-     <a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">
-     MiniportCoActivateVc</a> function.
+The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     miniport driver CoNDIS characteristics structure (NDIS_MINIPORT_CO_CHARACTERISTICS). The driver sets the
+     
+     <b>Type</b> member of the structure that 
+     <b>Header</b> specifies to NDIS_OBJECT_TYPE_CO_MINIPORT_CHARACTERISTICS, the 
+     <b>Revision</b> member to NDIS_MINIPORT_CO_CHARACTERISTICS_REVISION_1, and the 
+     <b>Size</b> member to NDIS_SIZEOF_MINIPORT_CO_CHARACTERISTICS_REVISION_1.
+
+`Flags`
+
+Reserved for NDIS.
 
 `CoCreateVcHandler`
 
@@ -82,12 +91,6 @@ The entry point of the driver's
      <a href="..\ndis\ns-ndis-_ndis_co_call_manager_optional_handlers.md">
      NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS</a>.
 
-`CoDeactivateVcHandler`
-
-The entry point of the driver's 
-     <a href="..\ndis\nc-ndis-miniport_co_deactivate_vc.md">
-     MiniportCoDeactivateVc</a> function.
-
 `CoDeleteVcHandler`
 
 The entry point of the driver's 
@@ -100,11 +103,17 @@ The entry point of the driver's
      <a href="..\ndis\ns-ndis-_ndis_co_call_manager_optional_handlers.md">
      NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS</a>.
 
-`CoOidRequestHandler`
+`CoActivateVcHandler`
 
 The entry point of the driver's 
-     <a href="..\ndis\nc-ndis-miniport_co_oid_request.md">
-     MiniportCoOidRequest</a> function.
+     <a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">
+     MiniportCoActivateVc</a> function.
+
+`CoDeactivateVcHandler`
+
+The entry point of the driver's 
+     <a href="..\ndis\nc-ndis-miniport_co_deactivate_vc.md">
+     MiniportCoDeactivateVc</a> function.
 
 `CoSendNetBufferListsHandler`
 
@@ -112,20 +121,11 @@ The entry point of the driver's
      <a href="..\ndis\nc-ndis-miniport_co_send_net_buffer_lists.md">
      MiniportCoSendNetBufferLists</a> function.
 
-`Flags`
+`CoOidRequestHandler`
 
-Reserved for NDIS.
-
-`Header`
-
-The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
-     miniport driver CoNDIS characteristics structure (NDIS_MINIPORT_CO_CHARACTERISTICS). The driver sets the
-     
-     <b>Type</b> member of the structure that 
-     <b>Header</b> specifies to NDIS_OBJECT_TYPE_CO_MINIPORT_CHARACTERISTICS, the 
-     <b>Revision</b> member to NDIS_MINIPORT_CO_CHARACTERISTICS_REVISION_1, and the 
-     <b>Size</b> member to NDIS_SIZEOF_MINIPORT_CO_CHARACTERISTICS_REVISION_1.
+The entry point of the driver's 
+     <a href="..\ndis\nc-ndis-miniport_co_oid_request.md">
+     MiniportCoOidRequest</a> function.
 
 ## Remarks
 To specify entry points for CoNDIS, a miniport driver initializes an NDIS_MINIPORT_CO_CHARACTERISTICS
@@ -192,11 +192,3 @@ The miniport driver calls
 
 
 <a href="..\ndis\nc-ndis-miniport_co_deactivate_vc.md">MiniportCoDeactivateVc</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_CO_CHARACTERISTICS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

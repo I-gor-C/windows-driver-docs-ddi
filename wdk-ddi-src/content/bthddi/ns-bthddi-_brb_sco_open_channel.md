@@ -73,155 +73,23 @@ struct _BRB_SCO_OPEN_CHANNEL {
 ## Members
 
 
-`BtAddress`
-
-The Bluetooth address of the remote device to open a SCO channel to.
-
-`Callback`
-
-The 
-     <a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a> implemented by
-     the profile driver, that the Bluetooth driver stack should call to notify the profile driver about any
-     changes to the SCO connection.
-
-`CallbackContext`
-
-The context to pass to the callback function specified in the 
-     <b>Callback</b> member. The profile driver defines this value.
-
-`CallbackFlags`
-
-A flag that specifies when the function assigned to the 
-     <b>Callback</b> member should be sent to the client. Currently, there is only one valid flag:
-     
-
-<table>
-<tr>
-<td>
-<b>Flag</b>
-
-</td>
-<td>
-<b>Description</b>
-
-</td>
-</tr>
-<tr>
-<td>
-SCO_CALLBACK_DISCONNECT
-
-</td>
-<td>
-The profile driver should be notified when the remote device is disconnected.
-
-</td>
-</tr>
-</table>
-
-`ChannelFlags`
-
-Flags that specify the requirements for the channel to be opened. Valid flag values are listed in
-     the following table:
-     
-
-<table>
-<tr>
-<td>
-<b>Flag</b>
-
-</td>
-<td>
-<b>Description</b>
-
-</td>
-</tr>
-<tr>
-<td>
-SCO_CF_LINK_AUTHENTICATED
-
-</td>
-<td>
-The link must be authenticated.
-
-</td>
-</tr>
-<tr>
-<td>
-SCO_CF_LINK_ENCRYPTED
-
-</td>
-<td>
-The link must be encrypted. Setting this flag also sets the SCO_CF_LINK_AUTHENTICATED flag.
-
-</td>
-</tr>
-<tr>
-<td>
-SCO_CF_LINK_SUPPRESS_PIN
-
-</td>
-<td>
-The profile driver indicates its preference that users not be prompted for a PIN.
-
-</td>
-</tr>
-</table>
-
-`ChannelHandle`
-
-A handle to identify the SCO channel, if the open channel request completes successfully.
-
-`ContentFormat`
-
-The audio voice settings for the channel. Use the following definitions to encode this member:
-     
-
-
-<dl>
-<dt>SCO_VS_AIR_CODING_DATA
-     </dt>
-<dt>SCO_VS_AIR_CODING_FORMAT_ALAW
-     </dt>
-<dt>SCO_VS_AIR_CODING_FORMAT_CVSD
-     </dt>
-<dt>SCO_VS_AIR_CODING_FORMAT_MASK
-     </dt>
-<dt>SCO_VS_AIR_CODING_FORMAT_MULAW
-     </dt>
-<dt>SCO_VS_IN_CODING_ALAW 
-     </dt>
-<dt>SCO_VS_IN_CODING_LINEAR
-     </dt>
-<dt>SCO_VS_IN_CODING_MASK
-     </dt>
-<dt>SCO_VS_IN_CODING_MULAW
-     </dt>
-<dt>SCO_VS_IN_DATA_FORMAT_1C
-     </dt>
-<dt>SCO_VS_IN_DATA_FORMAT_2C
-     </dt>
-<dt>SCO_VS_IN_DATA_FORMAT_MASK
-     </dt>
-<dt>SCO_VS_IN_DATA_FORMAT_SM
-     </dt>
-<dt>SCO_VS_IN_DATA_FORMAT_US
-     </dt>
-<dt>SCO_VS_IN_SAMPLE_SIZE_8BIT
-     </dt>
-<dt>SCO_VS_IN_SAMPLE_SIZE_16BIT
-     </dt>
-<dt>SCO_VS_IN_SAMPLE_SIZE_MASK
-     </dt>
-<dt>SCO_VS_PCM_BIT_POS_MASK
-     </dt>
-<dt>SCO_VS_SETTING_DEFAULT</dt>
-</dl>
-
 `Hdr`
 
 A 
      <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
      about the current BRB.
+
+`BtAddress`
+
+The Bluetooth address of the remote device to open a SCO channel to.
+
+`TransmitBandwidth`
+
+The transmission bandwidth, in bytes per second, to be assigned to the SCO channel.
+
+`ReceiveBandwidth`
+
+The reception bandwidth, in bytes per second, to be assigned to the SCO channel.
 
 `MaxLatency`
 
@@ -306,9 +174,152 @@ A flag or combination of flags that indicate the type of data packets that the S
 
 #### SCO_EV5
 
-`ReceiveBandwidth`
+`ContentFormat`
 
-The reception bandwidth, in bytes per second, to be assigned to the SCO channel.
+The audio voice settings for the channel. Use the following definitions to encode this member:
+     
+
+
+<dl>
+<dt>SCO_VS_AIR_CODING_DATA
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_ALAW
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_CVSD
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_MASK
+     </dt>
+<dt>SCO_VS_AIR_CODING_FORMAT_MULAW
+     </dt>
+<dt>SCO_VS_IN_CODING_ALAW 
+     </dt>
+<dt>SCO_VS_IN_CODING_LINEAR
+     </dt>
+<dt>SCO_VS_IN_CODING_MASK
+     </dt>
+<dt>SCO_VS_IN_CODING_MULAW
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_1C
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_2C
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_MASK
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_SM
+     </dt>
+<dt>SCO_VS_IN_DATA_FORMAT_US
+     </dt>
+<dt>SCO_VS_IN_SAMPLE_SIZE_8BIT
+     </dt>
+<dt>SCO_VS_IN_SAMPLE_SIZE_16BIT
+     </dt>
+<dt>SCO_VS_IN_SAMPLE_SIZE_MASK
+     </dt>
+<dt>SCO_VS_PCM_BIT_POS_MASK
+     </dt>
+<dt>SCO_VS_SETTING_DEFAULT</dt>
+</dl>
+
+`Reserved`
+
+Reserved for future use. Do not use.
+
+`RetransmissionEffort`
+
+A 
+     <a href="..\bthddi\ne-bthddi-_sco_retransmission_effort.md">
+     SCO_RETRANSMISSION_EFFORT</a> enumeration value that determines the retransmission policies for the
+     channel.
+
+`ChannelFlags`
+
+Flags that specify the requirements for the channel to be opened. Valid flag values are listed in
+     the following table:
+     
+
+<table>
+<tr>
+<td>
+<b>Flag</b>
+
+</td>
+<td>
+<b>Description</b>
+
+</td>
+</tr>
+<tr>
+<td>
+SCO_CF_LINK_AUTHENTICATED
+
+</td>
+<td>
+The link must be authenticated.
+
+</td>
+</tr>
+<tr>
+<td>
+SCO_CF_LINK_ENCRYPTED
+
+</td>
+<td>
+The link must be encrypted. Setting this flag also sets the SCO_CF_LINK_AUTHENTICATED flag.
+
+</td>
+</tr>
+<tr>
+<td>
+SCO_CF_LINK_SUPPRESS_PIN
+
+</td>
+<td>
+The profile driver indicates its preference that users not be prompted for a PIN.
+
+</td>
+</tr>
+</table>
+
+`CallbackFlags`
+
+A flag that specifies when the function assigned to the 
+     <b>Callback</b> member should be sent to the client. Currently, there is only one valid flag:
+     
+
+<table>
+<tr>
+<td>
+<b>Flag</b>
+
+</td>
+<td>
+<b>Description</b>
+
+</td>
+</tr>
+<tr>
+<td>
+SCO_CALLBACK_DISCONNECT
+
+</td>
+<td>
+The profile driver should be notified when the remote device is disconnected.
+
+</td>
+</tr>
+</table>
+
+`Callback`
+
+The 
+     <a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a> implemented by
+     the profile driver, that the Bluetooth driver stack should call to notify the profile driver about any
+     changes to the SCO connection.
+
+`CallbackContext`
+
+The context to pass to the callback function specified in the 
+     <b>Callback</b> member. The profile driver defines this value.
 
 `ReferenceObject`
 
@@ -317,9 +328,9 @@ A pointer to an object to pass to
      <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> for which to
      maintain a reference count of.
 
-`Reserved`
+`ChannelHandle`
 
-Reserved for future use. Do not use.
+A handle to identify the SCO channel, if the open channel request completes successfully.
 
 `Response`
 
@@ -376,17 +387,6 @@ The local server rejects the SCO connection request because it does not accept c
 </td>
 </tr>
 </table>
-
-`RetransmissionEffort`
-
-A 
-     <a href="..\bthddi\ne-bthddi-_sco_retransmission_effort.md">
-     SCO_RETRANSMISSION_EFFORT</a> enumeration value that determines the retransmission policies for the
-     channel.
-
-`TransmitBandwidth`
-
-The transmission bandwidth, in bytes per second, to be assigned to the SCO channel.
 
 ## Remarks
 To open a SCO channel, profile drivers should 
@@ -445,11 +445,3 @@ The profile driver specifies whether the connection should be accepted by storin
 
 
 <a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_SCO_OPEN_CHANNEL structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -59,10 +59,6 @@ typedef struct _DOT11_KEY_ALGO_BIP {
 ## Members
 
 
-`ucBIPKey`
-
-
-
 `ucIPN`
 
 
@@ -70,6 +66,10 @@ typedef struct _DOT11_KEY_ALGO_BIP {
 `ulBIPKeyLength`
 
 The length, in bytes, of the BIP key material in <b>ucBIPKey</b> array.
+
+`ucBIPKey`
+
+
 
 
 ## Requirements

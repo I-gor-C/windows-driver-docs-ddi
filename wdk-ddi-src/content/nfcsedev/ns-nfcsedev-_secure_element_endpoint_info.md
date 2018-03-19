@@ -57,13 +57,13 @@ typedef struct _SECURE_ELEMENT_ENDPOINT_INFO {
 ## Members
 
 
-`eSecureElementType`
-
-Type of secure element endpoint (NFCEE).
-
 `guidSecureElementId`
 
 This is a unique identifier for the secure element.
+
+`eSecureElementType`
+
+Type of secure element endpoint (NFCEE).
 
 
 ## Requirements

@@ -60,6 +60,11 @@ typedef enum _eChannelTargetType {
 <table>
             
                 <tr>
+                    <td>eVolumeAttribute</td>
+                    <td>Indicates a volume level control node.</td>
+                </tr>
+            
+                <tr>
                     <td>eMuteAttribute</td>
                     <td>Indicates a Mute node.</td>
                 </tr>
@@ -67,11 +72,6 @@ typedef enum _eChannelTargetType {
                 <tr>
                     <td>ePeakMeterAttribute</td>
                     <td>Indicates a PeakMeter node.</td>
-                </tr>
-            
-                <tr>
-                    <td>eVolumeAttribute</td>
-                    <td>Indicates a volume level control node.</td>
                 </tr>
 </table>
 

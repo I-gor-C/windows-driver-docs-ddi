@@ -60,8 +60,8 @@ typedef enum _PDO_STATE {
 <table>
             
                 <tr>
-                    <td>PDO_STATE_NOT_STARTED</td>
-                    <td>This value indicates that the PDO is not started.</td>
+                    <td>PDO_STATE_UNDEFINED</td>
+                    <td>This value indicates that the PDO state is undefined.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum _PDO_STATE {
                 </tr>
             
                 <tr>
-                    <td>PDO_STATE_UNDEFINED</td>
-                    <td>This value indicates that the PDO state is undefined.</td>
+                    <td>PDO_STATE_NOT_STARTED</td>
+                    <td>This value indicates that the PDO is not started.</td>
                 </tr>
 </table>
 

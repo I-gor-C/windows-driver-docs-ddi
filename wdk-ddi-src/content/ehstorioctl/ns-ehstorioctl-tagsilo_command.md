@@ -59,19 +59,19 @@ typedef struct tagSILO_COMMAND {
 ## Members
 
 
-`cbCommandBuffer`
+`SiloIndex`
 
-This member contains the size of the 1667 command buffer.
+
 
 `Command`
 
 This member contains the 1667 command value.
 
+`cbCommandBuffer`
+
+This member contains the size of the 1667 command buffer.
+
 `rgbCommandBuffer`
-
-
-
-`SiloIndex`
 
 
 

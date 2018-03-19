@@ -58,10 +58,6 @@ typedef struct IDARG_IN_UPDATEMODES {
 ## Members
 
 
-`pTargetModes`
-
-[in] Pointer to the buffer that the driver should copy the target modes it supports for this monitor into.
-
 `Reason`
 
 Indicates the reason why the driver is updating the modes.
@@ -69,6 +65,10 @@ Indicates the reason why the driver is updating the modes.
 `TargetModeCount`
 
 [in] Number of target modes in the <b>pTargetModes</b> buffer.  This cannot be zero.
+
+`pTargetModes`
+
+[in] Pointer to the buffer that the driver should copy the target modes it supports for this monitor into.
 
 
 ## Requirements

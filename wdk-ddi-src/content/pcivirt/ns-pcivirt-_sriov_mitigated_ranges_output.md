@@ -63,6 +63,10 @@ typedef struct _SRIOV_MITIGATED_RANGES_OUTPUT {
 
 The base address of the allocated region of pages.
 
+`PageCount`
+
+Total number of pages.
+
 `InterceptReads`
 
 A boolean that indicates the reads intercept bit.
@@ -70,10 +74,6 @@ A boolean that indicates the reads intercept bit.
 `InterceptWrites`
 
 A boolean that indicates the write intercept bit.
-
-`PageCount`
-
-Total number of pages.
 
 
 ## Requirements

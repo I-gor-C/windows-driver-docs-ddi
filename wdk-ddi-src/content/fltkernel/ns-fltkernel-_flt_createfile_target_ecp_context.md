@@ -59,6 +59,14 @@ typedef struct _FLT_CREATEFILE_TARGET_ECP_CONTEXT {
 ## Members
 
 
+`Instance`
+
+The filter instance attached to the adjusted target.
+
+`Volume`
+
+The adjusted target volume.
+
 `FileNameInformation`
 
 The file information for the adjusted target.
@@ -83,14 +91,6 @@ Request that the <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCrea
 </td>
 </tr>
 </table>
-
-`Instance`
-
-The filter instance attached to the adjusted target.
-
-`Volume`
-
-The adjusted target volume.
 
 ## Remarks
 When a caller of <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a> wishes to  enable reparsing for a volume target, a <b>FLT_CREATEFILE_TARGET_ECP_CONTEXT</b> can be included as an ECP to the ECP list in the <i>DriverContext</i> parameter.  If this ECP is present, <b>FltCreateFileEx2</b> will adjust the target device for the create operation and attempt for find a filtered instance  of a volume appropriate for the given file information. If filter manager does not find a corresponding instance for the caller on the target volume, it will set the <b>Volume</b> and  <b>FileNameInformation</b> members of <b>FLT_CREATEFILE_TARGET_ECP_CONTEXT</b> for the new target. The caller can then use this information to decide how best to proceed.
@@ -459,11 +459,3 @@ CrossVolumeCreateExit:
 
 
 <a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_CREATEFILE_TARGET_ECP_CONTEXT structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -65,17 +65,7 @@ typedef enum _RILCALLDISCONNECTDETAILSDISCONNECTGROUP {
 <table>
             
                 <tr>
-                    <td>RIL_CD_3GPP_NETWORK_CAUSE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CD_3GPP_REJECT_CAUSE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_CD_3GPP2_VENDOR_CAUSE</td>
+                    <td>RIL_CD_UNKNOWN_CAUSE</td>
                     <td></td>
                 </tr>
             
@@ -85,12 +75,12 @@ typedef enum _RILCALLDISCONNECTDETAILSDISCONNECTGROUP {
                 </tr>
             
                 <tr>
-                    <td>RIL_CD_CAUSE_MAX</td>
+                    <td>RIL_CD_3GPP_NETWORK_CAUSE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_CD_IMS_SIP_CAUSE</td>
+                    <td>RIL_CD_3GPP2_VENDOR_CAUSE</td>
                     <td></td>
                 </tr>
             
@@ -100,7 +90,17 @@ typedef enum _RILCALLDISCONNECTDETAILSDISCONNECTGROUP {
                 </tr>
             
                 <tr>
-                    <td>RIL_CD_UNKNOWN_CAUSE</td>
+                    <td>RIL_CD_3GPP_REJECT_CAUSE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CD_IMS_SIP_CAUSE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CD_CAUSE_MAX</td>
                     <td></td>
                 </tr>
 </table>

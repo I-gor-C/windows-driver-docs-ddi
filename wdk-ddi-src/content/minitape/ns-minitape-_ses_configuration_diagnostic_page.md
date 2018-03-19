@@ -62,26 +62,26 @@ typedef struct _SES_CONFIGURATION_DIAGNOSTIC_PAGE {
 ## Members
 
 
-`Descriptors`
+`PageCode`
 
-Specifies the enclosure descriptors for the primary and secondary enclosures. The primary enclosure is the first index.
-
-`GenerationCode`
-
-Specifies the value of the generation code.
+Specifies the diagnostic page being sent or requested based on the value. For a Microcode Control diagnostic page, the value should be 0x01.
 
 `NumberOfSecondarySubEnclosures`
 
 Specifies the number of separate subenclosures included in
 the enclosure descriptor list, not including the primary subenclosure. If this is set to zero, only the primary subenclosure exists.
 
-`PageCode`
-
-Specifies the diagnostic page being sent or requested based on the value. For a Microcode Control diagnostic page, the value should be 0x01.
-
 `PageLength`
 
 Specifies the length of the diagnostic page, in bytes.
+
+`GenerationCode`
+
+Specifies the value of the generation code.
+
+`Descriptors`
+
+Specifies the enclosure descriptors for the primary and secondary enclosures. The primary enclosure is the first index.
 
 
 ## Requirements

@@ -98,73 +98,58 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>BM_10b_G3CH</td>
-                    <td>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.</td>
+                    <td>BM_x555RGB</td>
+                    <td>16 bits per pixel. RGB color space. 5 bits per channel. The most significant bit is ignored.</td>
                 </tr>
             
                 <tr>
-                    <td>BM_10b_Lab</td>
-                    <td>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.</td>
+                    <td>BM_x555XYZ</td>
+                    <td>16 bits per pixel. Yxy color space. 5 bits per channel. The most significant bit is ignored.</td>
                 </tr>
             
                 <tr>
-                    <td>BM_10b_RGB</td>
-                    <td>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.</td>
+                    <td>BM_x555Yxy</td>
+                    <td>16 bits per pixel. Yxy color space. 5 bits per channel. The most significant bit is ignored.</td>
                 </tr>
             
                 <tr>
-                    <td>BM_10b_XYZ</td>
-                    <td>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.</td>
+                    <td>BM_x555Lab</td>
+                    <td>BM_x555G3CH</td>
                 </tr>
             
                 <tr>
-                    <td>BM_10b_Yxy</td>
-                    <td>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.</td>
+                    <td>BM_x555G3CH</td>
+                    <td>16 bits per pixel. G3CH color space. 5 bits per channel. The most significant bit is ignored.</td>
                 </tr>
             
                 <tr>
-                    <td>BM_16b_G3CH</td>
-                    <td>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</td>
+                    <td>BM_RGBTRIPLETS</td>
+                    <td>24 bits per pixel maximum. For three channel colors, such as red, green, and blue, the total size is 24 bits per pixel. For single channel colors, such as gray, the total size is 8 bits per pixel.</td>
                 </tr>
             
                 <tr>
-                    <td>BM_16b_GRAY</td>
-                    <td>64 bits per pixel. 16 bits are used for the gray-scale value. All other bits are ignored.</td>
+                    <td>BM_BGRTRIPLETS</td>
+                    <td>24 bits per pixel maximum. For three channel colors, such as red, green, and blue, the total size is 24 bits per pixel. For single channel colors, such as gray, the total size is 8 bits per pixel.</td>
                 </tr>
             
                 <tr>
-                    <td>BM_16b_Lab</td>
-                    <td>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</td>
+                    <td>BM_XYZTRIPLETS</td>
+                    <td>24 bits per pixel maximum. For three channel colors, such as red, green, and blue, the total size is 24 bits per pixel. For single channel colors, such as gray, the total size is 8 bits per pixel.</td>
                 </tr>
             
                 <tr>
-                    <td>BM_16b_RGB</td>
-                    <td>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</td>
+                    <td>BM_YxyTRIPLETS</td>
+                    <td>24 bits per pixel maximum. For three channel, Y, x, and y values, the total size is 24 bits per pixel. For single channel gray scale, the total size is 8 bits per pixel.</td>
                 </tr>
             
                 <tr>
-                    <td>BM_16b_XYZ</td>
-                    <td>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</td>
+                    <td>BM_LabTRIPLETS</td>
+                    <td>24 bits per pixel maximum. For three channel, L, a, and b values, the total size is 24 bits per pixel. For single channel gray scale, the total size is 8 bits per pixel.</td>
                 </tr>
             
                 <tr>
-                    <td>BM_16b_Yxy</td>
-                    <td>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_32b_scARGB</td>
-                    <td>128 bits per pixel. 32 bits are used for each color channel, as defined by the IEEE 32-bit floating point standard.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_32b_scRGB</td>
-                    <td>96 bits per pixel. 32 bits are used for each color channel, as defined by the IEEE 32-bit floating point standard.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_565RGB</td>
-                    <td>16 bits per pixel. 5 bits are used for red, 6 for green, and 5 for blue.</td>
+                    <td>BM_G3CHTRIPLETS</td>
+                    <td>24 bits per pixel maximum. For three channel values, the total size is 24 bits per pixel. For single channel gray scale, the total size is 8 bits per pixel.</td>
                 </tr>
             
                 <tr>
@@ -188,23 +173,23 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>BM_BGRTRIPLETS</td>
-                    <td>24 bits per pixel maximum. For three channel colors, such as red, green, and blue, the total size is 24 bits per pixel. For single channel colors, such as gray, the total size is 8 bits per pixel.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_CMYKQUADS</td>
-                    <td>32 bits per pixel. 8 bits are used for each color channel.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_G3CHTRIPLETS</td>
-                    <td>24 bits per pixel maximum. For three channel values, the total size is 24 bits per pixel. For single channel gray scale, the total size is 8 bits per pixel.</td>
-                </tr>
-            
-                <tr>
                     <td>BM_GRAY</td>
                     <td>32 bits per pixel. Only the 8 bit gray-scale value is used.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_xRGBQUADS</td>
+                    <td>32 bits per pixel. 8 bits are used for each color channel. The most significant byte is ignored.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_xBGRQUADS</td>
+                    <td>32 bits per pixel. 8 bits are used for each color channel. The most significant byte is ignored.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_xG3CHQUADS</td>
+                    <td>32 bits per pixel. 8 bits are used for each color channel. The most significant byte is ignored.</td>
                 </tr>
             
                 <tr>
@@ -213,13 +198,93 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>BM_LabTRIPLETS</td>
-                    <td>24 bits per pixel maximum. For three channel, L, a, and b values, the total size is 24 bits per pixel. For single channel gray scale, the total size is 8 bits per pixel.</td>
+                    <td>BM_CMYKQUADS</td>
+                    <td>32 bits per pixel. 8 bits are used for each color channel.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_10b_RGB</td>
+                    <td>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_10b_XYZ</td>
+                    <td>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_10b_Yxy</td>
+                    <td>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_10b_Lab</td>
+                    <td>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_10b_G3CH</td>
+                    <td>32 bits per pixel. 10 bits are used for each color channel. The 2 most significant bits are ignored.</td>
                 </tr>
             
                 <tr>
                     <td>BM_NAMED_INDEX</td>
                     <td>32 bits per pixel. Named color indices. Index numbering begins at one.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_16b_RGB</td>
+                    <td>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_16b_XYZ</td>
+                    <td>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_16b_Yxy</td>
+                    <td>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_16b_Lab</td>
+                    <td>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_16b_G3CH</td>
+                    <td>64 bits per pixel. 16 bits are used for the gray-scale value. Each of the three color channels uses 16 bits.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_16b_GRAY</td>
+                    <td>64 bits per pixel. 16 bits are used for the gray-scale value. All other bits are ignored.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_565RGB</td>
+                    <td>16 bits per pixel. 5 bits are used for red, 6 for green, and 5 for blue.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_32b_scRGB</td>
+                    <td>96 bits per pixel. 32 bits are used for each color channel, as defined by the IEEE 32-bit floating point standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_32b_scARGB</td>
+                    <td>128 bits per pixel. 32 bits are used for each color channel, as defined by the IEEE 32-bit floating point standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_S2DOT13FIXED_scRGB</td>
+                    <td>48 bits per pixel. Color data is stored as one 16-bit word per channel, with a fixed range of -4 to +4, inclusive. A signed format is used, with 1 bit for the sign, 2 bits for the integer portion, and 13 bits for the fractional portion.</td>
+                </tr>
+            
+                <tr>
+                    <td>BM_S2DOT13FIXED_scARGB</td>
+                    <td>64 bits per pixel. Color data is stored as one 16-bit word per channel, with a fixed range of -4 to +4, inclusive. A signed format is used, with 1 bit for the sign, 2 bits for the integer portion, and 13 bits for the fractional portion.</td>
                 </tr>
             
                 <tr>
@@ -235,71 +300,6 @@ typedef enum  {
                 <tr>
                     <td>BM_R16G16B16A16_FLOAT</td>
                     <td>#endif // NTDDI_VERSION &gt;= NTDDI_WIN7</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_RGBTRIPLETS</td>
-                    <td>24 bits per pixel maximum. For three channel colors, such as red, green, and blue, the total size is 24 bits per pixel. For single channel colors, such as gray, the total size is 8 bits per pixel.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_S2DOT13FIXED_scARGB</td>
-                    <td>64 bits per pixel. Color data is stored as one 16-bit word per channel, with a fixed range of -4 to +4, inclusive. A signed format is used, with 1 bit for the sign, 2 bits for the integer portion, and 13 bits for the fractional portion.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_S2DOT13FIXED_scRGB</td>
-                    <td>48 bits per pixel. Color data is stored as one 16-bit word per channel, with a fixed range of -4 to +4, inclusive. A signed format is used, with 1 bit for the sign, 2 bits for the integer portion, and 13 bits for the fractional portion.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_x555G3CH</td>
-                    <td>16 bits per pixel. G3CH color space. 5 bits per channel. The most significant bit is ignored.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_x555Lab</td>
-                    <td>BM_x555G3CH</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_x555RGB</td>
-                    <td>16 bits per pixel. RGB color space. 5 bits per channel. The most significant bit is ignored.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_x555XYZ</td>
-                    <td>16 bits per pixel. Yxy color space. 5 bits per channel. The most significant bit is ignored.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_x555Yxy</td>
-                    <td>16 bits per pixel. Yxy color space. 5 bits per channel. The most significant bit is ignored.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_xBGRQUADS</td>
-                    <td>32 bits per pixel. 8 bits are used for each color channel. The most significant byte is ignored.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_xG3CHQUADS</td>
-                    <td>32 bits per pixel. 8 bits are used for each color channel. The most significant byte is ignored.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_xRGBQUADS</td>
-                    <td>32 bits per pixel. 8 bits are used for each color channel. The most significant byte is ignored.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_XYZTRIPLETS</td>
-                    <td>24 bits per pixel maximum. For three channel colors, such as red, green, and blue, the total size is 24 bits per pixel. For single channel colors, such as gray, the total size is 8 bits per pixel.</td>
-                </tr>
-            
-                <tr>
-                    <td>BM_YxyTRIPLETS</td>
-                    <td>24 bits per pixel maximum. For three channel, Y, x, and y values, the total size is 24 bits per pixel. For single channel gray scale, the total size is 8 bits per pixel.</td>
                 </tr>
 </table>
 

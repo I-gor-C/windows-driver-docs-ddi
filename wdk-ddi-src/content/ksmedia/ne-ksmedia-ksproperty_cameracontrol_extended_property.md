@@ -92,113 +92,8 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_ADVANCEDPHOTO</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917934">KSPROPERTY_CAMERACONTROL_EXTENDED_ADVANCEDPHOTO</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_CAMERAANGLEOFFSET</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567571">KSPROPERTY_CAMERACONTROL_EXTENDED_CAMERAANGLEOFFSET</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_END</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_END2</td>
-                    <td>This represents the end of the control enumerations.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_EVCOMPENSATION</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567572">KSPROPERTY_CAMERACONTROL_EXTENDED_EVCOMPENSATION</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567573">KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_FACEAUTH_MODE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_FACEDETECTION</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917937">KSPROPERTY_CAMERACONTROL_EXTENDED_FACEDETECTION</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567574">KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917938">KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567576">KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSPRIORITY</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917942">KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSPRIORITY</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSSTATE</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917944">KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSSTATE</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_HISTOGRAM</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917945">KSPROPERTY_CAMERACONTROL_EXTENDED_HISTOGRAM</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_ISO</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567577">KSPROPERTY_CAMERACONTROL_EXTENDED_ISO</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_ISO_ADVANCED</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917947">KSPROPERTY_CAMERACONTROL_EXTENDED_ISO_ADVANCED</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_MAXVIDFPS_PHOTORES</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567578">KSPROPERTY_CAMERACONTROL_EXTENDED_MAXVIDFPS_PHOTORES</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_MCC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917952">KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_OIS</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917954">KSPROPERTY_CAMERACONTROL_EXTENDED_OIS</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567579">KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOCONFIRMATION</td>
-                    <td>This enumerates the <a href="https://msdn.microsoft.com/library/windows/hardware/dn917957">KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOCONFIRMATION</a> control.</td>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE</td>
+                    <td>This enumerates  the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917959">KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE</a> control.</td>
                 </tr>
             
                 <tr>
@@ -212,8 +107,18 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE</td>
-                    <td>This enumerates  the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917959">KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE</a> control.</td>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTRIGGERTIME</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567584">KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTRIGGERTIME</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_WARMSTART</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567587">KSPROPERTY_CAMERACONTROL_EXTENDED_WARMSTART</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_MAXVIDFPS_PHOTORES</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567578">KSPROPERTY_CAMERACONTROL_EXTENDED_MAXVIDFPS_PHOTORES</a> control.</td>
                 </tr>
             
                 <tr>
@@ -222,13 +127,73 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTRIGGERTIME</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567584">KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTRIGGERTIME</a> control.</td>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567585">KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE</a> control.</td>
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917960">KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE</a> control.</td>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_TORCHMODE</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567586">KSPROPERTY_CAMERACONTROL_EXTENDED_TORCHMODE</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917938">KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567579">KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567588">KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567573">KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567576">KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_ISO</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567577">KSPROPERTY_CAMERACONTROL_EXTENDED_ISO</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567574">KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_EVCOMPENSATION</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567572">KSPROPERTY_CAMERACONTROL_EXTENDED_EVCOMPENSATION</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_CAMERAANGLEOFFSET</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567571">KSPROPERTY_CAMERACONTROL_EXTENDED_CAMERAANGLEOFFSET</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917952">KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSPRIORITY</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917942">KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSPRIORITY</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSSTATE</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917944">KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSSTATE</a> control.</td>
                 </tr>
             
                 <tr>
@@ -242,28 +207,23 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567585">KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE</a> control.</td>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOCONFIRMATION</td>
+                    <td>This enumerates the <a href="https://msdn.microsoft.com/library/windows/hardware/dn917957">KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOCONFIRMATION</a> control.</td>
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_SECURE_MODE</td>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn936756">KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_MCC</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_TORCHMODE</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567586">KSPROPERTY_CAMERACONTROL_EXTENDED_TORCHMODE</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_VFR</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917971">KSPROPERTY_CAMERACONTROL_EXTENDED_VFR</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOHDR</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn936752">KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOHDR</a> control.</td>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_ISO_ADVANCED</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917947">KSPROPERTY_CAMERACONTROL_EXTENDED_ISO_ADVANCED</a> control.</td>
                 </tr>
             
                 <tr>
@@ -272,23 +232,63 @@ typedef enum  {
                 </tr>
             
                 <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_VFR</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917971">KSPROPERTY_CAMERACONTROL_EXTENDED_VFR</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_FACEDETECTION</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917937">KSPROPERTY_CAMERACONTROL_EXTENDED_FACEDETECTION</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOHDR</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn936752">KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOHDR</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_HISTOGRAM</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917945">KSPROPERTY_CAMERACONTROL_EXTENDED_HISTOGRAM</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_OIS</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917954">KSPROPERTY_CAMERACONTROL_EXTENDED_OIS</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_ADVANCEDPHOTO</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917934">KSPROPERTY_CAMERACONTROL_EXTENDED_ADVANCEDPHOTO</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE</td>
+                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn917960">KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE</a> control.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_FACEAUTH_MODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_SECURE_MODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOTEMPORALDENOISING</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_WARMSTART</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567587">KSPROPERTY_CAMERACONTROL_EXTENDED_WARMSTART</a> control.</td>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_END</td>
+                    <td></td>
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn567588">KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE</a> control.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM</td>
-                    <td>This enumerates the        <a href="https://msdn.microsoft.com/library/windows/hardware/dn936756">KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM</a> control.</td>
+                    <td>KSPROPERTY_CAMERACONTROL_EXTENDED_END2</td>
+                    <td>This represents the end of the control enumerations.</td>
                 </tr>
 </table>
 

@@ -87,98 +87,8 @@ typedef enum _FLT_FILESYSTEM_TYPE {
 <table>
             
                 <tr>
-                    <td>FLT_FSTYPE_BSUDF</td>
-                    <td>The BsUDF CD-ROM driver. File system namespace: \FileSystem\BsUDF.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_CDFS</td>
-                    <td>Microsoft CDFS file system. File system namespace: \FileSystem\Cdfs.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_CSVFS</td>
-                    <td>Microsoft cluster shared volume file system. File system namespace: \FileSystem\csvfs.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_EXFAT</td>
-                    <td>Microsoft EXFat file system. File system namespace: \FileSystem\exfat.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_FAT</td>
-                    <td>Microsoft FAT file system. File system namespace: \FileSystem\Fastfat.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_FS_REC</td>
-                    <td>Microsoft file system recognizer. File system namespace: \FileSystem\Fs_rec.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_GPFS</td>
-                    <td>IBM General Parallel File System. File system namespace: \FileSystem\gpfs.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_INCD</td>
-                    <td>Nero InCD file system. File system namespace: \FileSystem\InCDfs.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_INCD_FAT</td>
-                    <td>Nero InCD FAT file system. File system namespace: \FileSystem\InCDFat.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_LANMAN</td>
-                    <td>Microsoft LanMan Redirector. File system namespace: \FileSystem\MRxSmb.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_MS_NETWARE</td>
-                    <td>Microsoft NetWare redirector. File system namespace: \FileSystem\nwrdr.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_MSFS</td>
-                    <td>Microsoft mailslot file system. File system namespace: \FileSystem\msfs.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_MUP</td>
-                    <td>Microsoft MUP redirector. File system namespace: \FileSystem\Mup.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_NETWARE</td>
-                    <td>Novell NetWare redirector.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_NFS</td>
-                    <td>Microsoft NFS file system. File system namespace: \FileSystem\NfsRdr.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_NPFS</td>
-                    <td>Microsoft named pipe file system. File system namespace: \FileSystem\npfs.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_NTFS</td>
-                    <td>Microsoft NTFS file system. File system namespace:  \FileSystem\Ntfs.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_OPENAFS</td>
-                    <td>OpenAFS file system. File system namespace: \FileSystem\AFSRedirector.</td>
-                </tr>
-            
-                <tr>
-                    <td>FLT_FSTYPE_PSFS</td>
-                    <td>PolyServ file system. File system namespace: \FileSystem\psfs.</td>
+                    <td>FLT_FSTYPE_UNKNOWN</td>
+                    <td>Unknown file system type.</td>
                 </tr>
             
                 <tr>
@@ -187,13 +97,68 @@ typedef enum _FLT_FILESYSTEM_TYPE {
                 </tr>
             
                 <tr>
+                    <td>FLT_FSTYPE_NTFS</td>
+                    <td>Microsoft NTFS file system. File system namespace:  \FileSystem\Ntfs.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_FAT</td>
+                    <td>Microsoft FAT file system. File system namespace: \FileSystem\Fastfat.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_CDFS</td>
+                    <td>Microsoft CDFS file system. File system namespace: \FileSystem\Cdfs.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_UDFS</td>
+                    <td>Microsoft UDFS file system. File system namespace: \FileSystem\Udfs.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_LANMAN</td>
+                    <td>Microsoft LanMan Redirector. File system namespace: \FileSystem\MRxSmb.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_WEBDAV</td>
+                    <td>Microsoft WebDav redirector. File system namespace: \FileSystem\MRxDav.</td>
+                </tr>
+            
+                <tr>
                     <td>FLT_FSTYPE_RDPDR</td>
                     <td>Microsoft Terminal Server redirector. File system namespace: \Driver\rdpdr.</td>
                 </tr>
             
                 <tr>
-                    <td>FLT_FSTYPE_REFS</td>
-                    <td>Microsoft ReFS file system. File system namespace: \FileSystem\refs.</td>
+                    <td>FLT_FSTYPE_NFS</td>
+                    <td>Microsoft NFS file system. File system namespace: \FileSystem\NfsRdr.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_MS_NETWARE</td>
+                    <td>Microsoft NetWare redirector. File system namespace: \FileSystem\nwrdr.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_NETWARE</td>
+                    <td>Novell NetWare redirector.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_BSUDF</td>
+                    <td>The BsUDF CD-ROM driver. File system namespace: \FileSystem\BsUDF.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_MUP</td>
+                    <td>Microsoft MUP redirector. File system namespace: \FileSystem\Mup.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_RSFX</td>
+                    <td>Microsoft WinFS redirector. File system namespace: \FileSystem\RsFxDrv.</td>
                 </tr>
             
                 <tr>
@@ -212,28 +177,63 @@ typedef enum _FLT_FILESYSTEM_TYPE {
                 </tr>
             
                 <tr>
-                    <td>FLT_FSTYPE_RSFX</td>
-                    <td>Microsoft WinFS redirector. File system namespace: \FileSystem\RsFxDrv.</td>
-                </tr>
-            
-                <tr>
                     <td>FLT_FSTYPE_TACIT</td>
                     <td>Tacit file system. Namespace: \Device\TCFSPSE.</td>
                 </tr>
             
                 <tr>
-                    <td>FLT_FSTYPE_UDFS</td>
-                    <td>Microsoft UDFS file system. File system namespace: \FileSystem\Udfs.</td>
+                    <td>FLT_FSTYPE_FS_REC</td>
+                    <td>Microsoft file system recognizer. File system namespace: \FileSystem\Fs_rec.</td>
                 </tr>
             
                 <tr>
-                    <td>FLT_FSTYPE_UNKNOWN</td>
-                    <td>Unknown file system type.</td>
+                    <td>FLT_FSTYPE_INCD</td>
+                    <td>Nero InCD file system. File system namespace: \FileSystem\InCDfs.</td>
                 </tr>
             
                 <tr>
-                    <td>FLT_FSTYPE_WEBDAV</td>
-                    <td>Microsoft WebDav redirector. File system namespace: \FileSystem\MRxDav.</td>
+                    <td>FLT_FSTYPE_INCD_FAT</td>
+                    <td>Nero InCD FAT file system. File system namespace: \FileSystem\InCDFat.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_EXFAT</td>
+                    <td>Microsoft EXFat file system. File system namespace: \FileSystem\exfat.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_PSFS</td>
+                    <td>PolyServ file system. File system namespace: \FileSystem\psfs.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_GPFS</td>
+                    <td>IBM General Parallel File System. File system namespace: \FileSystem\gpfs.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_NPFS</td>
+                    <td>Microsoft named pipe file system. File system namespace: \FileSystem\npfs.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_MSFS</td>
+                    <td>Microsoft mailslot file system. File system namespace: \FileSystem\msfs.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_CSVFS</td>
+                    <td>Microsoft cluster shared volume file system. File system namespace: \FileSystem\csvfs.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_REFS</td>
+                    <td>Microsoft ReFS file system. File system namespace: \FileSystem\refs.</td>
+                </tr>
+            
+                <tr>
+                    <td>FLT_FSTYPE_OPENAFS</td>
+                    <td>OpenAFS file system. File system namespace: \FileSystem\AFSRedirector.</td>
                 </tr>
 </table>
 
@@ -262,11 +262,3 @@ New file systems that are not part of the <b>FLT_FILESYSTEM_TYPE</b> enumeration
 
 
 <a href="..\fltuserstructures\ns-fltuserstructures-_instance_aggregate_standard_information.md">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_FILESYSTEM_TYPE enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

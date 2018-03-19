@@ -57,13 +57,13 @@ typedef struct _DXVA_Frequency {
 ## Members
 
 
-`Denominator`
-
-Specifies the denominator of the frequency fraction.
-
 `Numerator`
 
 Specifies the numerator of the frequency fraction.
+
+`Denominator`
+
+Specifies the denominator of the frequency fraction.
 
 
 ## Requirements

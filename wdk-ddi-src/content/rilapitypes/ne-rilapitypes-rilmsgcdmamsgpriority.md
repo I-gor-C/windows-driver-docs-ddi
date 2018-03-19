@@ -62,7 +62,7 @@ typedef enum _RILMSGCDMAMSGPRIORITY {
 <table>
             
                 <tr>
-                    <td>RIL_MSGPRIORITY_EMERGENCY</td>
+                    <td>RIL_MSGPRIORITY_NORMAL</td>
                     <td></td>
                 </tr>
             
@@ -72,17 +72,17 @@ typedef enum _RILMSGCDMAMSGPRIORITY {
                 </tr>
             
                 <tr>
-                    <td>RIL_MSGPRIORITY_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_MSGPRIORITY_NORMAL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_MSGPRIORITY_URGENT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGPRIORITY_EMERGENCY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGPRIORITY_MAX</td>
                     <td></td>
                 </tr>
 </table>

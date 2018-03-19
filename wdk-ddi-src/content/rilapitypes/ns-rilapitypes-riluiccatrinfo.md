@@ -58,11 +58,11 @@ typedef struct _RILUICCATRINFO {
 ## Members
 
 
-`bATR`
-
-
-
 `dwATRlength`
+
+
+
+`bATR`
 
 
 

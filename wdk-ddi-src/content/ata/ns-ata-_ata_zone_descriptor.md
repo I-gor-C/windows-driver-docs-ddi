@@ -69,7 +69,7 @@ typedef struct _ATA_ZONE_DESCRIPTOR {
 ## Members
 
 
-`NonSeq`
+`ZoneType`
 
 
 
@@ -77,7 +77,19 @@ typedef struct _ATA_ZONE_DESCRIPTOR {
 
 
 
+`Reset`
+
+
+
+`NonSeq`
+
+
+
 `Reserved1`
+
+
+
+`ZoneCondition`
 
 
 
@@ -85,11 +97,23 @@ typedef struct _ATA_ZONE_DESCRIPTOR {
 
 N/A
 
+`ZoneLength`
+
+
+
 `Reserved3`
 
 
 
+`ZoneStartLBA`
+
+
+
 `Reserved4`
+
+
+
+`WritePointerLBA`
 
 
 
@@ -100,30 +124,6 @@ N/A
 `Reserved6`
 
 N/A
-
-`Reset`
-
-
-
-`WritePointerLBA`
-
-
-
-`ZoneCondition`
-
-
-
-`ZoneLength`
-
-
-
-`ZoneStartLBA`
-
-
-
-`ZoneType`
-
-
 
 
 ## Requirements

@@ -61,13 +61,13 @@ typedef enum _DXGK_PROTECTED_SESSION_STATUS {
 <table>
             
                 <tr>
-                    <td>DXGK_PROTECTED_SESSION_STATUS_INVALID</td>
-                    <td>Indicates that the status is invalid.</td>
+                    <td>DXGK_PROTECTED_SESSION_STATUS_OK</td>
+                    <td>Indicates that the status is okay.</td>
                 </tr>
             
                 <tr>
-                    <td>DXGK_PROTECTED_SESSION_STATUS_OK</td>
-                    <td>Indicates that the status is okay.</td>
+                    <td>DXGK_PROTECTED_SESSION_STATUS_INVALID</td>
+                    <td>Indicates that the status is invalid.</td>
                 </tr>
 </table>
 

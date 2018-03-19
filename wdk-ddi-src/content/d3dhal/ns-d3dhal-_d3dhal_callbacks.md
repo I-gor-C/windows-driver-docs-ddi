@@ -90,6 +90,10 @@ typedef struct _D3DHAL_CALLBACKS {
 ## Members
 
 
+`dwSize`
+
+Specifies the size in bytes of this D3DHAL_CALLBACKS structure.
+
 `ContextCreate`
 
 Points to the driver-supplied <a href="..\d3dhal\nc-d3dhal-lpd3dhal_contextcreatecb.md">D3dContextCreate</a> callback. A driver must implement the callback that this member points to.
@@ -102,57 +106,9 @@ Points to the driver-supplied <a href="..\d3dhal\nc-d3dhal-lpd3dhal_contextdestr
 
 Must be set to <b>NULL</b> in a Windows 2000 and later driver.
 
-`dwReserved`
+`SceneCapture`
 
-Specifies reserved fields and must be set to zero.
-
-`dwReserved0`
-
-Must be zero.
-
-`dwReserved1`
-
-Must be zero.
-
-`dwReserved2`
-
-Must be zero.
-
-`dwReserved3`
-
-Must be zero.
-
-`dwReserved4`
-
-Must be zero.
-
-`dwReserved5`
-
-Must be zero.
-
-`dwReserved6`
-
-Must be zero.
-
-`dwReserved7`
-
-Must be zero.
-
-`dwReserved8`
-
-Must be zero
-
-`dwReserved9`
-
-Must be zero.
-
-`dwSize`
-
-Specifies the size in bytes of this D3DHAL_CALLBACKS structure.
-
-`GetState`
-
-Points to the driver-supplied D3DHAL_GETSTATEDATA callback. A driver must implement the callback that this member points to.
+Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dSceneCapture</b> callback. For DirectX 7.0 and later, this callback was replaced by the handling of the D3DRENDERSTATE_SCENECAPTURE render state in the <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> function.
 
 `lpReserved10`
 
@@ -161,6 +117,34 @@ Must be zero.
 `lpReserved11`
 
 Must be zero.
+
+`RenderState`
+
+Points to the driver-supplied D3DHAL_RENDERSTATEDATA callback. A driver must implement the callback that this member points to.
+
+`RenderPrimitive`
+
+Points to the driver-supplied D3DHAL_RENDERPRIMITIVEDATA callback. A driver must implement the callback that this member points to.
+
+`dwReserved`
+
+Specifies reserved fields and must be set to zero.
+
+`TextureCreate`
+
+Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dTextureCreate</b> callback, or <b>NULL</b>.
+
+`TextureDestroy`
+
+Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dTextureDestroy</b> callback, or <b>NULL</b>.
+
+`TextureSwap`
+
+Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dTextureSwap</b> callback, or <b>NULL</b>.
+
+`TextureGetSurf`
+
+Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dTextureGetSurf</b> callback, or <b>NULL</b>.
 
 `lpReserved12`
 
@@ -202,33 +186,49 @@ Must be zero.
 
 Must be zero.
 
-`RenderPrimitive`
+`GetState`
 
-Points to the driver-supplied D3DHAL_RENDERPRIMITIVEDATA callback. A driver must implement the callback that this member points to.
+Points to the driver-supplied D3DHAL_GETSTATEDATA callback. A driver must implement the callback that this member points to.
 
-`RenderState`
+`dwReserved0`
 
-Points to the driver-supplied D3DHAL_RENDERSTATEDATA callback. A driver must implement the callback that this member points to.
+Must be zero.
 
-`SceneCapture`
+`dwReserved1`
 
-Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dSceneCapture</b> callback. For DirectX 7.0 and later, this callback was replaced by the handling of the D3DRENDERSTATE_SCENECAPTURE render state in the <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> function.
+Must be zero.
 
-`TextureCreate`
+`dwReserved2`
 
-Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dTextureCreate</b> callback, or <b>NULL</b>.
+Must be zero.
 
-`TextureDestroy`
+`dwReserved3`
 
-Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dTextureDestroy</b> callback, or <b>NULL</b>.
+Must be zero.
 
-`TextureGetSurf`
+`dwReserved4`
 
-Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dTextureGetSurf</b> callback, or <b>NULL</b>.
+Must be zero.
 
-`TextureSwap`
+`dwReserved5`
 
-Must be set to <b>NULL</b> in a Windows 2000 and later driver. For DirectX 6.0, this was a pointer to the driver-supplied <b>D3dTextureSwap</b> callback, or <b>NULL</b>.
+Must be zero.
+
+`dwReserved6`
+
+Must be zero.
+
+`dwReserved7`
+
+Must be zero.
+
+`dwReserved8`
+
+Must be zero
+
+`dwReserved9`
+
+Must be zero.
 
 ## Remarks
 The driver allocates this structure and sets appropriate values in all members. The driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a> function returns a pointer to this structure in the <b>lpD3DHALCallbacks</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a> structure.
@@ -263,11 +263,3 @@ Texture management is now handled though opcodes that are managed in the driver'
 
 
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_CALLBACKS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

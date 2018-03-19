@@ -62,6 +62,14 @@ typedef struct _STORAGE_TEMPERATURE_THRESHOLD {
 ## Members
 
 
+`Version`
+
+The version of the structure.
+
+`Size`
+
+The size of this structure. This should be set to sizeof(<b>STORAGE_TEMPERATURE_THRESHOLD</b>).
+
 `Flags`
 
 Flags set for this request. The following are valid flags.
@@ -81,6 +89,10 @@ Flags set for this request. The following are valid flags.
 
 Identifies the instance of temperature information. Starts from 0. Index 0 may indicate a composite value.
 
+`Threshold`
+
+A signed value that indicates the temperature of the threshold, in degrees Celsius.
+
 `OverThreshold`
 
 Indicates if the <i>Threshold</i> specifies the over or under temperature threshold. If <b>true</b>, set the <b>OverThreshold</b> temperature value of the device; otherwise, set the <b>UnderThreshold</b> temperature value.
@@ -88,18 +100,6 @@ Indicates if the <i>Threshold</i> specifies the over or under temperature thresh
 `Reserved`
 
 Reserved for future use.
-
-`Size`
-
-The size of this structure. This should be set to sizeof(<b>STORAGE_TEMPERATURE_THRESHOLD</b>).
-
-`Threshold`
-
-A signed value that indicates the temperature of the threshold, in degrees Celsius.
-
-`Version`
-
-The version of the structure.
 
 
 ## Requirements
@@ -123,11 +123,3 @@ The version of the structure.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_TEMPERATURE_THRESHOLD structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

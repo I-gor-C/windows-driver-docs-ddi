@@ -70,11 +70,31 @@ typedef struct _DXGKARG_CANCELCOMMAND {
 ## Members
 
 
-`AllocationListSize`
+`hContext`
 
-[in] The number of elements in the array that <b>pAllocationList</b> specifies.
+[in] If the driver is multiple-engine aware (that is, the driver supports context creation), a handle to the device context that the cancel request originated from. 
 
-Note that <b>AllocationListSize</b> represents the total size of the allocation list; however, the portion of the allocation list that is associated with the current cancellation request might be smaller.
+For some paging operations, <b>hContext</b> is <b>NULL</b> (for example, paging operations that evict the content of the entire frame buffer during power management). Paging operations are indicated by the <b>Paging</b> bit-field flag in the <b>Flags</b> member.
+
+`pDmaBuffer`
+
+[out] A pointer to the start of the DMA buffer, which is aligned on 4 KB.
+
+`DmaBufferSize`
+
+[in] The size, in bytes, of the DMA buffer that <b>pDmaBuffer</b> points to.
+
+`DmaBufferSubmissionStartOffset`
+
+[in] The offset, in bytes, from the beginning of the DMA buffer that <b>pDmaBuffer</b> specifies to the start of the portion of the DMA buffer that requires canceling. The offset that is received at patch time matches the offset that is received at submission time.
+
+`DmaBufferSubmissionEndOffset`
+
+[in] The offset, in bytes, from the beginning of the DMA buffer that <b>pDmaBuffer</b> specifies to the end of the portion of the DMA buffer that requires canceling.
+
+`pDmaBufferPrivateData`
+
+[in] A pointer to the driver-resident private data that is associated with the DMA buffer that <b>pDmaBuffer</b> points to.
 
 `DmaBufferPrivateDataSize`
 
@@ -82,43 +102,29 @@ Note that <b>AllocationListSize</b> represents the total size of the allocation 
 
 Note that <b>DmaBufferPrivateDataSize</b> represents the entire length of the private driver data buffer; however, the portion that is associated with the current cancellation request might be smaller.
 
-`DmaBufferPrivateDataSubmissionEndOffset`
-
-[in] The offset, in bytes, from the beginning of the DMA buffer private data that <b>pDmaBufferPrivateData</b> specifies to the end of the portion of the private data that is associated with the current cancellation request.
-
 `DmaBufferPrivateDataSubmissionStartOffset`
 
 [in] The offset, in bytes, from the beginning of the DMA buffer private data that <b>pDmaBufferPrivateData</b> specifies to the start of the portion of the private data that is associated with the current cancellation request.
 
-`DmaBufferSize`
+`DmaBufferPrivateDataSubmissionEndOffset`
 
-[in] The size, in bytes, of the DMA buffer that <b>pDmaBuffer</b> points to.
-
-`DmaBufferSubmissionEndOffset`
-
-[in] The offset, in bytes, from the beginning of the DMA buffer that <b>pDmaBuffer</b> specifies to the end of the portion of the DMA buffer that requires canceling.
-
-`DmaBufferSubmissionStartOffset`
-
-[in] The offset, in bytes, from the beginning of the DMA buffer that <b>pDmaBuffer</b> specifies to the start of the portion of the DMA buffer that requires canceling. The offset that is received at patch time matches the offset that is received at submission time.
-
-`DmaBufferUmdPrivateDataSize`
-
-
-
-`DmaBufferVirtualAddress`
-
-
-
-`hContext`
-
-[in] If the driver is multiple-engine aware (that is, the driver supports context creation), a handle to the device context that the cancel request originated from. 
-
-For some paging operations, <b>hContext</b> is <b>NULL</b> (for example, paging operations that evict the content of the entire frame buffer during power management). Paging operations are indicated by the <b>Paging</b> bit-field flag in the <b>Flags</b> member.
+[in] The offset, in bytes, from the beginning of the DMA buffer private data that <b>pDmaBufferPrivateData</b> specifies to the end of the portion of the private data that is associated with the current cancellation request.
 
 `pAllocationList`
 
 [in] A pointer to an array of <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that is associated with the DMA buffer that <b>pDmaBuffer</b> points to.
+
+`AllocationListSize`
+
+[in] The number of elements in the array that <b>pAllocationList</b> specifies.
+
+Note that <b>AllocationListSize</b> represents the total size of the allocation list; however, the portion of the allocation list that is associated with the current cancellation request might be smaller.
+
+`pPatchLocationList`
+
+[in] A pointer to an array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures for the list of patch locations that is associated with the DMA buffer that <b>pDmaBuffer</b> points to.
+
+Note that the array can begin with an element that is before the range that is used to patch the DMA buffer.
 
 `PatchLocationListSize`
 
@@ -126,27 +132,21 @@ For some paging operations, <b>hContext</b> is <b>NULL</b> (for example, paging 
 
 Note that <b>PatchLocationListSize</b> represents the total size of the patch-location list; however, the range that the driver must process is typically smaller.
 
-`PatchLocationListSubmissionLength`
-
-[in] The number of elements in the patch-location list that <b>pPatchLocationList</b> specifies that must be processed.
-
 `PatchLocationListSubmissionStart`
 
 [in] The index of the first element in the patch-location list that <b>pPatchLocationList</b> specifies that must be processed.
 
-`pDmaBuffer`
+`PatchLocationListSubmissionLength`
 
-[out] A pointer to the start of the DMA buffer, which is aligned on 4 KB.
+[in] The number of elements in the patch-location list that <b>pPatchLocationList</b> specifies that must be processed.
 
-`pDmaBufferPrivateData`
+`DmaBufferVirtualAddress`
 
-[in] A pointer to the driver-resident private data that is associated with the DMA buffer that <b>pDmaBuffer</b> points to.
 
-`pPatchLocationList`
 
-[in] A pointer to an array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures for the list of patch locations that is associated with the DMA buffer that <b>pDmaBuffer</b> points to.
+`DmaBufferUmdPrivateDataSize`
 
-Note that the array can begin with an element that is before the range that is used to patch the DMA buffer.
+
 
 
 ## Requirements
@@ -170,11 +170,3 @@ Note that the array can begin with an element that is before the range that is u
 
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_cancelcommand.md">DxgkDdiCancelCommand</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_CANCELCOMMAND structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

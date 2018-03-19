@@ -58,13 +58,13 @@ typedef struct _IDE_LBA_RANGE {
 ## Members
 
 
-`SectorCount`
-
-Contains the sector count of the LBA range.
-
 `StartSector`
 
 Contains the starting sector of the LBA range.
+
+`SectorCount`
+
+Contains the sector count of the LBA range.
 
 
 ## Requirements

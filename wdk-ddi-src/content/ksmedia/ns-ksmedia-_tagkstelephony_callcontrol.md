@@ -57,13 +57,13 @@ typedef struct _tagKSTELEPHONY_CALLCONTROL {
 ## Members
 
 
-`CallControlOp`
-
-Specifies the call control operation (enable or disable).
-
 `CallType`
 
 Specifies the type of phone call (circuit-switched, LTE packet-switched, or WLAN packet-switched).
+
+`CallControlOp`
+
+Specifies the call control operation (enable or disable).
 
 
 ## Requirements

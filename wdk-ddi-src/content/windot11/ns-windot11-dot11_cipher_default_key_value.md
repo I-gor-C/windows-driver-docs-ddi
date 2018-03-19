@@ -67,6 +67,55 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
 ## Members
 
 
+`Header`
+
+The type, revision, and size of the DOT11_CIPHER_DEFAULT_KEY_VALUE structure. This member is
+     formatted as an 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+     
+
+The miniport driver must set the members of 
+     <i>Header</i> to the following values:
+
+
+
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
+
+
+
+#### Revision
+
+This member must be set to DOT11_CIPHER_DEFAULT_KEY_VALUE_REVISION_1.
+
+
+
+#### Size
+
+This member must be set to 
+       <code>sizeof(DOT11_CIPHER_DEFAULT_KEY_VALUE)</code>.
+
+For more information about these members, see 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+
+`uKeyIndex`
+
+The index of the key in the 802.11 station's default key array. 
+     
+
+For standard 802.11 cipher algorithms, 
+     <b>uKeyIndex</b> must be from 0 through 3. For a cipher algorithm developed by an IHV, 
+     <b>uKeyIndex</b> can be any value within the range defined by the IHV.
+
+For BIP <b>uKeyIndex</b> must be 4 or 5.
+
+The IEEE 802.11-2012 standard defines default key index values from 1 through 4. The value 
+     <i>x</i> specified by this member maps to the 802.11 default key index 
+     (<i>x</i> + 1).
+
 `AlgorithmId`
 
 The value of the cipher algorithm that uses this key. For more information about values for cipher
@@ -78,6 +127,49 @@ For BIP, this should be set to DOT11_CIPHER_ALGO_BIP to pre-set the initial IGTK
 
 The miniport driver must ignore this member if 
      <b>bDelete</b> is <b>TRUE</b>.
+
+`MacAddr`
+
+The media access control (MAC) address, which identifies the default key table to add or remove
+     the key.
+     
+
+If the 
+     <b>dot11DesiredBSSType</b> management information base (MIB) object is set to 
+     <b>dot11_BSS_type_infrastructure</b>, the 802.11 station adds or removes the key from the default key
+     table regardless of the value of the 
+     <b>MacAddr</b> member. If the key is dynamically obtained from the access point (AP) the station is
+     associated with, the 
+     <b>MacAddr</b> member will contain the AP's MAC address. Otherwise, 
+     <b>MacAddr</b> will have a value of 0x000000000000.
+
+If the 
+     <b>dot11DesiredBSSType</b> management information base (MIB) object is set to 
+     <b>dot11_BSS_type_independent</b>, the 802.11 station must add or remove the key in the following
+     way:
+
+<ul>
+<li>
+If the value of this member is 0x000000000000, the 802.11 station adds or removes the key from the
+       default key table. When the NIC is in the Extensible Access Point (ExtAP) OP mode, this value is
+       zero.
+
+</li>
+<li>
+If the value of this member is a valid unicast MAC address, the 802.11 station adds or removes the
+       key from the per-station default key table for the peer station in an independent BSS (IBSS) network
+       with a MAC address equal to the value of 
+       <b>MacAddr</b> .
+
+If a per-station default key table does not exist for the value of 
+       <b>MacAddr</b>, the 802.11 station must use any unused per-station default key table.
+
+</li>
+</ul>
+For more information about the 
+     <b>dot11DesiredBSSType</b> MIB object, see 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-desired-bss-type">
+     OID_DOT11_DESIRED_BSS_TYPE</a>.
 
 `bDelete`
 
@@ -127,98 +219,6 @@ Implicitly deleted through a method request of
 
 </li>
 </ul>
-
-`Header`
-
-The type, revision, and size of the DOT11_CIPHER_DEFAULT_KEY_VALUE structure. This member is
-     formatted as an 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
-     
-
-The miniport driver must set the members of 
-     <i>Header</i> to the following values:
-
-
-
-
-
-#### Type
-
-This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
-
-
-
-#### Revision
-
-This member must be set to DOT11_CIPHER_DEFAULT_KEY_VALUE_REVISION_1.
-
-
-
-#### Size
-
-This member must be set to 
-       <code>sizeof(DOT11_CIPHER_DEFAULT_KEY_VALUE)</code>.
-
-For more information about these members, see 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
-
-`MacAddr`
-
-The media access control (MAC) address, which identifies the default key table to add or remove
-     the key.
-     
-
-If the 
-     <b>dot11DesiredBSSType</b> management information base (MIB) object is set to 
-     <b>dot11_BSS_type_infrastructure</b>, the 802.11 station adds or removes the key from the default key
-     table regardless of the value of the 
-     <b>MacAddr</b> member. If the key is dynamically obtained from the access point (AP) the station is
-     associated with, the 
-     <b>MacAddr</b> member will contain the AP's MAC address. Otherwise, 
-     <b>MacAddr</b> will have a value of 0x000000000000.
-
-If the 
-     <b>dot11DesiredBSSType</b> management information base (MIB) object is set to 
-     <b>dot11_BSS_type_independent</b>, the 802.11 station must add or remove the key in the following
-     way:
-
-<ul>
-<li>
-If the value of this member is 0x000000000000, the 802.11 station adds or removes the key from the
-       default key table. When the NIC is in the Extensible Access Point (ExtAP) OP mode, this value is
-       zero.
-
-</li>
-<li>
-If the value of this member is a valid unicast MAC address, the 802.11 station adds or removes the
-       key from the per-station default key table for the peer station in an independent BSS (IBSS) network
-       with a MAC address equal to the value of 
-       <b>MacAddr</b> .
-
-If a per-station default key table does not exist for the value of 
-       <b>MacAddr</b>, the 802.11 station must use any unused per-station default key table.
-
-</li>
-</ul>
-For more information about the 
-     <b>dot11DesiredBSSType</b> MIB object, see 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-desired-bss-type">
-     OID_DOT11_DESIRED_BSS_TYPE</a>.
-
-`uKeyIndex`
-
-The index of the key in the 802.11 station's default key array. 
-     
-
-For standard 802.11 cipher algorithms, 
-     <b>uKeyIndex</b> must be from 0 through 3. For a cipher algorithm developed by an IHV, 
-     <b>uKeyIndex</b> can be any value within the range defined by the IHV.
-
-For BIP <b>uKeyIndex</b> must be 4 or 5.
-
-The IEEE 802.11-2012 standard defines default key index values from 1 through 4. The value 
-     <i>x</i> specified by this member maps to the 802.11 default key index 
-     (<i>x</i> + 1).
 
 `usKeyLength`
 
@@ -277,11 +277,3 @@ If the
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_DEFAULT_KEY_VALUE structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

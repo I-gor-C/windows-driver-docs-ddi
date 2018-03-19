@@ -61,11 +61,11 @@ typedef struct _RILMANAGECALLSPARAMS_V2 {
 ## Members
 
 
-`dwCommand`
-
-
-
 `dwExecutor`
+
+
+
+`dwCommand`
 
 
 

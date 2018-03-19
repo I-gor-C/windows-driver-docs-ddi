@@ -62,23 +62,23 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>SpbTransferDirectionFromDevice</td>
-                    <td>The data transfer direction is from the device to system memory (read from device).</td>
-                </tr>
-            
-                <tr>
-                    <td>SpbTransferDirectionMax</td>
-                    <td>Reserved for use by the operating system.</td>
-                </tr>
-            
-                <tr>
                     <td>SpbTransferDirectionNone</td>
                     <td>The data transfer direction is undefined.</td>
                 </tr>
             
                 <tr>
+                    <td>SpbTransferDirectionFromDevice</td>
+                    <td>The data transfer direction is from the device to system memory (read from device).</td>
+                </tr>
+            
+                <tr>
                     <td>SpbTransferDirectionToDevice</td>
                     <td>The data transfer direction is from system memory to the device (write to device).</td>
+                </tr>
+            
+                <tr>
+                    <td>SpbTransferDirectionMax</td>
+                    <td>Reserved for use by the operating system.</td>
                 </tr>
 </table>
 
@@ -133,11 +133,3 @@ A lock (<a href="https://msdn.microsoft.com/library/windows/hardware/hh450858">I
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SPB\buses]:%20SPB_TRANSFER_DIRECTION enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

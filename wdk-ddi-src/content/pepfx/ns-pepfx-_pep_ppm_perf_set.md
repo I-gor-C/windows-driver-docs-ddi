@@ -60,25 +60,25 @@ typedef struct _PEP_PPM_PERF_SET {
 ## Members
 
 
-`DesiredPerformance`
+`MinimumPerformance`
 
-[in] The new desired performance level in platform-specific units. This member is set to a value in the range <b>MinimumPerformance</b> to <b>MaximumPerformance</b>.
+[in] The new minimum performance level in platform-specific units. This member indicates the absolute minimum performance level that the processor can run at.
 
 `MaximumPerformance`
 
 [in] The new maximum performance level in platform-specific units. This member indicates the absolute maximum performance level that the processor can run at.
 
-`MinimumPerformance`
+`DesiredPerformance`
 
-[in] The new minimum performance level in platform-specific units. This member indicates the absolute minimum performance level that the processor can run at.
-
-`PerformanceTolerance`
-
-[in] The new performance tolerance in platform-specific units. This member contains the minimum performance level that the platform can deliver and still meet the operating system's performance requirements.
+[in] The new desired performance level in platform-specific units. This member is set to a value in the range <b>MinimumPerformance</b> to <b>MaximumPerformance</b>.
 
 `TimeWindow`
 
 [in] The width, in milliseconds, of the new time window over which the platform must provide the required average performance. If this time window is nonzero, the instantaneous performance provided by the platform does not need to match the desired performance level, and only needs to fall within the constraints specified by the minimum and maximum performance level.
+
+`PerformanceTolerance`
+
+[in] The new performance tolerance in platform-specific units. This member contains the minimum performance level that the platform can deliver and still meet the operating system's performance requirements.
 
 ## Remarks
 This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186816">PEP_NOTIFY_PPM_PERF_SET</a> notification. All five members of this structure contain input values that PoFx supplies when this notification is sent to the PEP.
@@ -98,11 +98,3 @@ Processor performance levels are specified in platform-specific units. For examp
 
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186816">PEP_NOTIFY_PPM_PERF_SET</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_PERF_SET structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

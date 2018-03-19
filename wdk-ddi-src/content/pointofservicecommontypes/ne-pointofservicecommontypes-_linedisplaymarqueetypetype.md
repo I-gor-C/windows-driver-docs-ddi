@@ -58,12 +58,17 @@ typedef enum _LineDisplayMarqueeTypeType {
 <table>
             
                 <tr>
-                    <td>MarqueeTypeDown</td>
+                    <td>MarqueeTypeNone</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>MarqueeTypeInit</td>
+                    <td>MarqueeTypeUp</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>MarqueeTypeDown</td>
                     <td></td>
                 </tr>
             
@@ -73,17 +78,12 @@ typedef enum _LineDisplayMarqueeTypeType {
                 </tr>
             
                 <tr>
-                    <td>MarqueeTypeNone</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>MarqueeTypeRight</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>MarqueeTypeUp</td>
+                    <td>MarqueeTypeInit</td>
                     <td></td>
                 </tr>
 </table>

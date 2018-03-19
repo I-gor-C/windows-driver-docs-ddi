@@ -64,13 +64,9 @@ typedef struct {
 ## Members
 
 
-`Event`
+`Size`
 
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561744">KSEVENT</a> structure that contains the event to be used.
-
-`EventData`
-
-A <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that specifies the header for the event-specific data. The header itself is not actually used except as a starting point to access the event-specific data, and must be initialized to zero.
+Specifies the inclusive size of the structure, including any event specific data appended to the <b>EventData</b> member.
 
 `Flags`
 
@@ -80,9 +76,13 @@ Specifies what type of object is specified in the <b>ObjectHandle</b> and <b>Obj
 
 Reserved and set to zero.
 
-`Size`
+`Event`
 
-Specifies the inclusive size of the structure, including any event specific data appended to the <b>EventData</b> member.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561744">KSEVENT</a> structure that contains the event to be used.
+
+`EventData`
+
+A <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that specifies the header for the event-specific data. The header itself is not actually used except as a starting point to access the event-specific data, and must be initialized to zero.
 
 
 ## Requirements

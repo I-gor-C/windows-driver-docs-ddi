@@ -66,6 +66,11 @@ typedef enum _DEVICE_POWER_STATE {
 <table>
             
                 <tr>
+                    <td>PowerDeviceUnspecified</td>
+                    <td>The device power state is unspecified.</td>
+                </tr>
+            
+                <tr>
                     <td>PowerDeviceD0</td>
                     <td>The device's working (D0) state. This is the device's highest power state.</td>
                 </tr>
@@ -89,11 +94,6 @@ typedef enum _DEVICE_POWER_STATE {
                     <td>PowerDeviceMaximum</td>
                     <td>For system use only.</td>
                 </tr>
-            
-                <tr>
-                    <td>PowerDeviceUnspecified</td>
-                    <td>The device power state is unspecified.</td>
-                </tr>
 </table>
 
 ## Remarks
@@ -113,11 +113,3 @@ The <b>DEVICE_POWER_STATE</b> enumeration is used as input to <a href="https://m
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20DEVICE_POWER_STATE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

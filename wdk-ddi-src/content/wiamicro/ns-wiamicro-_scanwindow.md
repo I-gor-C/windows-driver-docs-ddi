@@ -60,21 +60,21 @@ typedef struct _SCANWINDOW {
 ## Members
 
 
-`xExtent`
-
-Specifies the width of the scan window in pixels.
-
 `xPos`
 
 Specifies the horizontal position of the left edge of the scan window in pixels.
 
-`yExtent`
-
-Specifies the height of the scan window in pixels.
-
 `yPos`
 
 Specifies the vertical position of the top edge of the scan window in pixels.
+
+`xExtent`
+
+Specifies the width of the scan window in pixels.
+
+`yExtent`
+
+Specifies the height of the scan window in pixels.
 
 
 ## Requirements

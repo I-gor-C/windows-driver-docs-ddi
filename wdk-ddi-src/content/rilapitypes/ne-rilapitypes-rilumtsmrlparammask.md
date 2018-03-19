@@ -67,26 +67,6 @@ typedef enum _RILUMTSMRLPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_UMTSMRL_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_UMTSMRL_CELLID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_UMTSMRL_ECNO</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_UMTSMRL_LAC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_UMTSMRL_MCC</td>
                     <td></td>
                 </tr>
@@ -97,7 +77,17 @@ typedef enum _RILUMTSMRLPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_UMTSMRL_PATHLOSS</td>
+                    <td>RIL_PARAM_UMTSMRL_LAC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UMTSMRL_CELLID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UMTSMRL_UARFCN</td>
                     <td></td>
                 </tr>
             
@@ -112,7 +102,17 @@ typedef enum _RILUMTSMRLPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_UMTSMRL_UARFCN</td>
+                    <td>RIL_PARAM_UMTSMRL_ECNO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UMTSMRL_PATHLOSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UMTSMRL_ALL</td>
                     <td></td>
                 </tr>
 </table>

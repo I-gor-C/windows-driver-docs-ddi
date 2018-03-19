@@ -75,18 +75,13 @@ typedef enum FWPS_FIELDS_EGRESS_VSWITCH_ETHERNET_ {
 <table>
             
                 <tr>
-                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_COMPARTMENT_ID</td>
-                    <td></td>
+                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_MAC_SOURCE_ADDRESS</td>
+                    <td>The virtual switch egress MAC source address field.</td>
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_ETHER_TYPE</td>
-                    <td>The virtual switch egress Ethernet EtherType field.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_L2_FLAGS</td>
-                    <td></td>
+                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_MAC_SOURCE_ADDRESS_TYPE</td>
+                    <td>The virtual switch egress MAC source address type field.</td>
                 </tr>
             
                 <tr>
@@ -100,18 +95,8 @@ typedef enum FWPS_FIELDS_EGRESS_VSWITCH_ETHERNET_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_MAC_SOURCE_ADDRESS</td>
-                    <td>The virtual switch egress MAC source address field.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_MAC_SOURCE_ADDRESS_TYPE</td>
-                    <td>The virtual switch egress MAC source address type field.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.</td>
+                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_ETHER_TYPE</td>
+                    <td>The virtual switch egress Ethernet EtherType field.</td>
                 </tr>
             
                 <tr>
@@ -120,18 +105,8 @@ typedef enum FWPS_FIELDS_EGRESS_VSWITCH_ETHERNET_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_VSWITCH_DESTINATION_INTERFACE_ID</td>
-                    <td>The virtual switch egress Ethernet virtual switch destination  interface identifier  field.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_VSWITCH_DESTINATION_INTERFACE_TYPE</td>
-                    <td>The virtual switch egress Ethernet virtual switch destination interface type  field.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_VSWITCH_DESTINATION_VM_ID</td>
-                    <td>The virtual switch egress Ethernet virtual switch destination virtual machine (VM) identifier  field.</td>
+                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_VSWITCH_TENANT_NETWORK_ID</td>
+                    <td>The virtual switch egress  tenant network identifier field.</td>
                 </tr>
             
                 <tr>
@@ -160,8 +135,33 @@ typedef enum FWPS_FIELDS_EGRESS_VSWITCH_ETHERNET_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_VSWITCH_TENANT_NETWORK_ID</td>
-                    <td>The virtual switch egress  tenant network identifier field.</td>
+                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_VSWITCH_DESTINATION_INTERFACE_ID</td>
+                    <td>The virtual switch egress Ethernet virtual switch destination  interface identifier  field.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_VSWITCH_DESTINATION_INTERFACE_TYPE</td>
+                    <td>The virtual switch egress Ethernet virtual switch destination interface type  field.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_VSWITCH_DESTINATION_VM_ID</td>
+                    <td>The virtual switch egress Ethernet virtual switch destination virtual machine (VM) identifier  field.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_L2_FLAGS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_COMPARTMENT_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_EGRESS_VSWITCH_ETHERNET_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.</td>
                 </tr>
 </table>
 

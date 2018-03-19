@@ -61,15 +61,11 @@ typedef struct _L2CAP_EXTENDED_FLOW_SPEC {
 ## Members
 
 
-`AccessLatency`
-
-Reserved. Do not use.
-
-`FlushTimeout`
-
-Reserved. Do not use.
-
 `Identifier`
+
+Reserved. Do not use.
+
+`ServiceType`
 
 Reserved. Do not use.
 
@@ -81,7 +77,11 @@ Reserved. Do not use.
 
 Reserved. Do not use.
 
-`ServiceType`
+`AccessLatency`
+
+Reserved. Do not use.
+
+`FlushTimeout`
 
 Reserved. Do not use.
 

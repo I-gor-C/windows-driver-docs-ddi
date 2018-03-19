@@ -66,10 +66,6 @@ typedef struct _OPTPARAM {
 
 Size, in bytes, of the OPTPARAM structure.
 
-`dwReserved`
-
-Reserved, must be initialized to zero.
-
 `Flags`
 
 Optional bit flags that modify the parameter's characteristics. The following flags can be set in any combination:
@@ -164,6 +160,14 @@ If not set, <b>lParam</b> contains a template resource identifier.
 
 (Used only if <b>Style</b> is PUSHBUTTON_TYPE_DLGPROC.)
 
+`Style`
+
+Push button style, used only for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562844">TVOT_PUSHBUTTON</a> option type.
+
+`pData`
+
+Pointer to the parameter's value. Use of this member is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
+
 `IconID`
 
 Usually identifies the icon to be associated with the option parameter, but is sometimes used for other purposes. Use of this member is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
@@ -172,13 +176,9 @@ Usually identifies the icon to be associated with the option parameter, but is s
 
 Use of this member is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
 
-`pData`
+`dwReserved`
 
-Pointer to the parameter's value. Use of this member is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
-
-`Style`
-
-Push button style, used only for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562844">TVOT_PUSHBUTTON</a> option type.
+Reserved, must be initialized to zero.
 
 ## Remarks
 If the OPTPF_HIDE flag is set in all the OPTPARAM structures associated with an option, CPSUI hides the entire option.

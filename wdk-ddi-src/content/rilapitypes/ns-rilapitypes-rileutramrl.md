@@ -65,11 +65,7 @@ typedef struct _RILEUTRAMRL {
 ## Members
 
 
-`dwCellID`
-
-
-
-`dwEARFCN`
+`dwParams`
 
 
 
@@ -81,11 +77,19 @@ typedef struct _RILEUTRAMRL {
 
 
 
-`dwParams`
+`dwCellID`
+
+
+
+`dwEARFCN`
 
 
 
 `dwPhysCellID`
+
+
+
+`dwTAC`
 
 
 
@@ -94,10 +98,6 @@ typedef struct _RILEUTRAMRL {
 
 
 `dwRSRQ`
-
-
-
-`dwTAC`
 
 
 

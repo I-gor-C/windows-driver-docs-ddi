@@ -64,13 +64,13 @@ typedef struct D3DWDDM2_2DDI_SWIZZLE_PATTERN_DESC {
 ## Members
 
 
-`Flags`
-
-Flags. For more information, see the <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm2_0ddi_swizzle_pattern_flags.md">D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS</a> enumeration.
-
 `InterleavePatternSourceBits`
 
 The interleave pattern source bits.
+
+`InterleavePatternXORSourceBits`
+
+The interleave pattern XOR source bits.
 
 `InterleavePatternXOR2SourceBits`
 
@@ -84,9 +84,9 @@ The interleave pattern third XOR source bits.
 
 The interleave pattern fourth XOR source bits.
 
-`InterleavePatternXORSourceBits`
+`PostambleXORSourceBits`
 
-The interleave pattern XOR source bits.
+Postamble XOR source bits.
 
 `PostambleXOR2SourceBits`
 
@@ -96,9 +96,9 @@ Postamble second XOR source bits.
 
 A postamble XOR immediate value.
 
-`PostambleXORSourceBits`
+`Flags`
 
-Postamble XOR source bits.
+Flags. For more information, see the <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm2_0ddi_swizzle_pattern_flags.md">D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS</a> enumeration.
 
 
 ## Requirements
@@ -109,11 +109,3 @@ Postamble XOR source bits.
 ## See Also
 
 <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm2_0ddi_swizzle_pattern_flags.md">D3DWDDM2_0DDI_SWIZZLE_PATTERN_FLAGS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DWDDM2_2DDI_SWIZZLE_PATTERN_DESC structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

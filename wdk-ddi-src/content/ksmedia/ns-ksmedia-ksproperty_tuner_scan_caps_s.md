@@ -60,9 +60,17 @@ typedef struct {
 ## Members
 
 
+`Property`
+
+Specifies an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+
 `fSupportsHardwareAssistedScanning`
 
 A Boolean value that indicates whether the driver or firmware for a tuner supports hardware-assisted scanning operations. <b>TRUE</b> indicates that the driver or firmware for a tuner supports hardware-assisted scanning operations. <b>FALSE</b> indicates that the driver or firmware does not support hardware-assisted scanning operations.
+
+`SupportedBroadcastStandards`
+
+The number of broadcast video standard types that the tuning device can support. A hybrid tuner can support multiple types.
 
 `GUIDBucket`
 
@@ -73,14 +81,6 @@ Based on the supported number in <b>SupportedBroadcastStandards</b> that is retu
 `lengthofBucket`
 
 The number of GUIDs in the <b>GUIDBucket</b> array.
-
-`Property`
-
-Specifies an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
-
-`SupportedBroadcastStandards`
-
-The number of broadcast video standard types that the tuning device can support. A hybrid tuner can support multiple types.
 
 
 ## Requirements
@@ -104,11 +104,3 @@ The number of broadcast video standard types that the tuning device can support.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565881">KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_TUNER_SCAN_CAPS_S structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -67,14 +67,6 @@ typedef struct _RILCALLFORWARDINGSETTINGS {
 
 
 
-`dwDelayTime`
-
-
-
-`dwInfoClasses`
-
-
-
 `dwParams`
 
 
@@ -83,11 +75,19 @@ typedef struct _RILCALLFORWARDINGSETTINGS {
 
 
 
+`dwInfoClasses`
+
+
+
 `raAddress`
 
 
 
 `rsaSubAddress`
+
+
+
+`dwDelayTime`
 
 
 

@@ -133,49 +133,102 @@ The scanner supports an ADF with duplex capability.
 </tr>
 </table>
 
-`AutoBack`
+`TPA`
 
-Specifies whether AutoBack is on or off. The value can be:
+Indicates whether the scanner supports TPA (TransParency Adapter). The value can be:
 
-0 - off
+0 - not supported
 
-1 - on
+1 - supported
 
-`BedHeight`
+`Endorser`
 
-Specifies the bed height of the scanner in thousandths of an inch.
+Indicates whether the scanner has endorser capabilities. The value can be:
+
+0 - not supported
+
+1 - supported
+
+`OpticalXResolution`
+
+Specifies the horizontal dpi setting of the scanner optics.
+
+`OpticalYResolution`
+
+Specifies the vertical dpi setting of the scanner optics.
 
 `BedWidth`
 
 Specifies the bed width of the scanner in thousandths of an inch.
 
-`bNeedDataAlignment`
+`BedHeight`
 
-Specifies whether data alignment is needed for the scanner. The value can be:
+Specifies the bed height of the scanner in thousandths of an inch.
 
-0 - false
+`IntensityRange`
 
-1 - true
-
-`ColorDitherPattern`
-
-Reserved. Set to zero.
-
-`Compression`
-
-Specifies whether compression is on or off for the scanner. The value can be:
-
-0 - off
-
-1 - on
-
-`Contrast`
-
-Specifies the current contrast setting of the scanner.
+Specifies the intensity/brightness range values of the scanner.
 
 `ContrastRange`
 
 Specifies the contrast range values of the scanner.
+
+`SupportedCompressionType`
+
+Specifies a mask value of supported compression types. A value of zero indicates that no compression types are supported.
+
+`SupportedDataTypes`
+
+Specifies a mask value of supported data types. A value of zero indicates that no data types are supported. This member can be the bitwise OR of the following.
+
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+SUPPORT_BW
+
+</td>
+<td>
+The image is 1 bit-per-pixel black and white.
+
+</td>
+</tr>
+<tr>
+<td>
+SUPPORT_COLOR
+
+</td>
+<td>
+The image is 24 bits-per-pixel color.
+
+</td>
+</tr>
+<tr>
+<td>
+SUPPORT_GRAYSCALE
+
+</td>
+<td>
+The image is 8 bits-per-pixel grayscale.
+
+</td>
+</tr>
+</table>
+
+`WidthPixels`
+
+Specifies the width of the current image in pixels.
+
+`WidthBytes`
+
+Specifies the width of the current image in bytes.
+
+`Lines`
+
+Specifies the height of the current image in pixels.
 
 `DataType`
 
@@ -248,53 +301,33 @@ The driver supports 1 bit-per-pixel black and white.
 </tr>
 </table>
 
-`DelayBetweenRead`
+`PixelBits`
 
-Specifies the time delay in milliseconds between <a href="..\wiamicro\nf-wiamicro-scan.md">Scan</a> function calls that the scanner can support.
-
-`DeviceIOHandles`
-
-Specifies an array of device I/O handles needed for device communication.
-
-`DitherPattern`
-
-Specifies the dither pattern of the scanner.
-
-`Endorser`
-
-Indicates whether the scanner has endorser capabilities. The value can be:
-
-0 - not supported
-
-1 - supported
+Specifies the current bit depth setting of the current image.
 
 `Intensity`
 
 Specifies the current intensity/brightness setting of the scanner.
 
-`IntensityRange`
+`Contrast`
 
-Specifies the intensity/brightness range values of the scanner.
+Specifies the current contrast setting of the scanner.
 
-`Lines`
+`Xresolution`
 
-Specifies the height of the current image in pixels.
+Specifies the horizontal dpi setting of the scanner optics.
 
-`lReserved`
+`Yresolution`
 
-Specifies an array of reserved bits.
+Specifies the vertical dpi setting of the scanner optics.
 
-`MaxBufferSize`
+`Window`
 
-Specifies the maximum buffer size in the scanner.
+Specifies the current scanner window settings.
 
-`Mirror`
+`DitherPattern`
 
-Specifies whether mirror is on or off. The value can be:
-
-0 - off
-
-1 - on
+Specifies the dither pattern of the scanner.
 
 `Negative`
 
@@ -304,21 +337,37 @@ Specifies whether negative is on or off. The value can be:
 
 1 - on
 
-`OpticalXResolution`
+`Mirror`
 
-Specifies the horizontal dpi setting of the scanner optics.
+Specifies whether mirror is on or off. The value can be:
 
-`OpticalYResolution`
+0 - off
 
-Specifies the vertical dpi setting of the scanner optics.
+1 - on
 
-`PixelBits`
+`AutoBack`
 
-Specifies the current bit depth setting of the current image.
+Specifies whether AutoBack is on or off. The value can be:
 
-`pMicroDriverContext`
+0 - off
 
-Points to the microdriver's context. <i>This member is defined only for Microsoft Windows XP and later</i>. The microdriver allocates the buffer pointed to by this member. The buffer should be allocated in CMD_INITIALIZE, and freed in CMD_UNINITIALIZE. (See <a href="https://msdn.microsoft.com/library/windows/hardware/ff547067">Required Commands</a>.) The WIA Flatbed driver knows nothing of this pointer, and hence will not alter the memory pointed to by this member.
+1 - on
+
+`ColorDitherPattern`
+
+Reserved. Set to zero.
+
+`ToneMap`
+
+Reserved. Set to zero.
+
+`Compression`
+
+Specifies whether compression is on or off for the scanner. The value can be:
+
+0 - off
+
+1 - on
 
 `RawDataFormat`
 
@@ -336,82 +385,33 @@ Specifies the pixel order for the scanner. The value can be:
 
 1 - BGR
 
-`SupportedCompressionType`
+`bNeedDataAlignment`
 
-Specifies a mask value of supported compression types. A value of zero indicates that no compression types are supported.
+Specifies whether data alignment is needed for the scanner. The value can be:
 
-`SupportedDataTypes`
+0 - false
 
-Specifies a mask value of supported data types. A value of zero indicates that no data types are supported. This member can be the bitwise OR of the following.
+1 - true
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-SUPPORT_BW
+`DelayBetweenRead`
 
-</td>
-<td>
-The image is 1 bit-per-pixel black and white.
+Specifies the time delay in milliseconds between <a href="..\wiamicro\nf-wiamicro-scan.md">Scan</a> function calls that the scanner can support.
 
-</td>
-</tr>
-<tr>
-<td>
-SUPPORT_COLOR
+`MaxBufferSize`
 
-</td>
-<td>
-The image is 24 bits-per-pixel color.
+Specifies the maximum buffer size in the scanner.
 
-</td>
-</tr>
-<tr>
-<td>
-SUPPORT_GRAYSCALE
+`DeviceIOHandles`
 
-</td>
-<td>
-The image is 8 bits-per-pixel grayscale.
+Specifies an array of device I/O handles needed for device communication.
 
-</td>
-</tr>
-</table>
+`lReserved`
 
-`ToneMap`
+Specifies an array of reserved bits.
 
-Reserved. Set to zero.
+`pMicroDriverContext`
 
-`TPA`
-
-Indicates whether the scanner supports TPA (TransParency Adapter). The value can be:
-
-0 - not supported
-
-1 - supported
-
-`WidthBytes`
-
-Specifies the width of the current image in bytes.
-
-`WidthPixels`
-
-Specifies the width of the current image in pixels.
-
-`Window`
-
-Specifies the current scanner window settings.
-
-`Xresolution`
-
-Specifies the horizontal dpi setting of the scanner optics.
-
-`Yresolution`
-
-Specifies the vertical dpi setting of the scanner optics.
+Points to the microdriver's context. <i>This member is defined only for Microsoft Windows XP and later</i>. The microdriver allocates the buffer pointed to by this member. The buffer should be allocated in CMD_INITIALIZE, and freed in CMD_UNINITIALIZE. (See <a href="https://msdn.microsoft.com/library/windows/hardware/ff547067">Required Commands</a>.) The WIA Flatbed driver knows nothing of this pointer, and hence will not alter the memory pointed to by this member.
 
 ## Remarks
 This structure is used as a parameter in the microdriver's <a href="..\wiamicro\nf-wiamicro-setpixelwindow.md">SetPixelWindow</a>, and <a href="..\wiamicro\nf-wiamicro-scan.md">Scan</a> functions.
@@ -429,11 +429,3 @@ This structure is used as a parameter in the microdriver's <a href="..\wiamicro\
 
 
 <a href="..\wiamicro\nf-wiamicro-scan.md">Scan</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20SCANINFO structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

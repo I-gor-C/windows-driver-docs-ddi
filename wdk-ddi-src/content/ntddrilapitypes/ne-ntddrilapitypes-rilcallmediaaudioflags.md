@@ -59,17 +59,17 @@ typedef enum _RILCALLMEDIAAUDIOFLAGS {
 <table>
             
                 <tr>
-                    <td>RIL_CALLMEDIAAUDIOFLAG_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_CALLMEDIAAUDIOFLAG_NONE</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_CALLMEDIAAUDIOFLAG_TEMPORARILY_UNAVAILABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLMEDIAAUDIOFLAG_ALL</td>
                     <td></td>
                 </tr>
 </table>

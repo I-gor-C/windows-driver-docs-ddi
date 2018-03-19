@@ -61,6 +61,11 @@ typedef enum _RILSMSFORMAT {
 <table>
             
                 <tr>
+                    <td>RIL_SMSFORMAT_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_SMSFORMAT_3GPP</td>
                     <td></td>
                 </tr>
@@ -72,11 +77,6 @@ typedef enum _RILSMSFORMAT {
             
                 <tr>
                     <td>RIL_SMSFORMAT_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_SMSFORMAT_NONE</td>
                     <td></td>
                 </tr>
 </table>

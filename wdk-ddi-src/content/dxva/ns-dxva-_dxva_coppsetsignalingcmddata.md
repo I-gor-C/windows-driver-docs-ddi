@@ -144,14 +144,6 @@ COPP_ProtectionStandard_ARIBTRB15_1125i (0x00004000)
 
 Specifies the COPP_ImageAspectRatio_EN300294_Mask (0x00000007) constant that indicates that only the first 3 bits in the following <b>AspectRatioData1</b> member are valid.
 
-`AspectRatioChangeMask2`
-
-Specifies a value that indicates the valid bitfields in the following <b>AspectRatioData2</b> member.
-
-`AspectRatioChangeMask3`
-
-Specifies a value that indicates the valid bitfields in the following <b>AspectRatioData3</b> member.
-
 `AspectRatioData1`
 
 Specifies one of the following values from the <b>COPP_ImageAspectRatio_EN300294</b> enumeration type to indicate an ETSI EN 300 294 value.
@@ -191,9 +183,17 @@ COPP_AspectRatio_EN300294_FullFormat16by9Anamorphic (7)
 </li>
 </ul>
 
+`AspectRatioChangeMask2`
+
+Specifies a value that indicates the valid bitfields in the following <b>AspectRatioData2</b> member.
+
 `AspectRatioData2`
 
 Specifies 32-bit data for additional aspect ratio-related data to be set for specific protection standards. This data can be used to express End and Q0 values for EIA-608-B, or active format description for CEA-805-A Type B packets.
+
+`AspectRatioChangeMask3`
+
+Specifies a value that indicates the valid bitfields in the following <b>AspectRatioData3</b> member.
 
 `AspectRatioData3`
 
@@ -225,11 +225,3 @@ Reserved. Should be set to zero.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539642">COPPCommand</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_COPPSetSignalingCmdData structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

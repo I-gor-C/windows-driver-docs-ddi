@@ -73,11 +73,11 @@ typedef struct _RILMESSAGE {
 
 
 
-`dwFlags`
-
-
-
 `dwParams`
+
+
+
+`raSvcCtrAddress`
 
 
 
@@ -85,11 +85,11 @@ typedef struct _RILMESSAGE {
 
 
 
+`dwFlags`
+
+
+
 `msgUnion`
-
-
-
-`raSvcCtrAddress`
 
 
 

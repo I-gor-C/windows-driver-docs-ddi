@@ -63,23 +63,8 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>MIRACAST_STATUS_COMPANION_DRIVER_DISCONNECT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>MIRACAST_STATUS_CRITICAL_ERROR</td>
                     <td>An unspecified error occurred, and the Miracast connected session cannot continue.</td>
-                </tr>
-            
-                <tr>
-                    <td>MIRACAST_STATUS_FORCE_UINT32</td>
-                    <td>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</td>
-                </tr>
-            
-                <tr>
-                    <td>MIRACAST_STATUS_INSUFFICIENT_BANDWIDTH</td>
-                    <td>The bandwidth of the wireless connection has changed such that the current mode cannot be sustained.</td>
                 </tr>
             
                 <tr>
@@ -93,8 +78,23 @@ typedef enum  {
                 </tr>
             
                 <tr>
+                    <td>MIRACAST_STATUS_INSUFFICIENT_BANDWIDTH</td>
+                    <td>The bandwidth of the wireless connection has changed such that the current mode cannot be sustained.</td>
+                </tr>
+            
+                <tr>
                     <td>MIRACAST_STATUS_SINK_FAILED_STANDARD_MODE_CHANGE</td>
                     <td>The Miracast sink failed to set a standard Video Electronics Standards Association (VESA) setting, Consumer Electronics Association (CEA) standard setting, or a hand-held mode change.</td>
+                </tr>
+            
+                <tr>
+                    <td>MIRACAST_STATUS_COMPANION_DRIVER_DISCONNECT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>MIRACAST_STATUS_FORCE_UINT32</td>
+                    <td>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</td>
                 </tr>
 </table>
 

@@ -67,13 +67,13 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
 <table>
             
                 <tr>
-                    <td>IDDCX_TRANSMISSION_TYPE_OTHER</td>
-                    <td>Video data is being transmitted over a link type that is not covered by the above defines</td>
+                    <td>IDDCX_TRANSMISSION_TYPE_UNINITIALIZED</td>
+                    <td>Indicates that an <b>IDDCX_TRANSMISSION_TYPE</b> variable has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>
-                    <td>IDDCX_TRANSMISSION_TYPE_UNINITIALIZED</td>
-                    <td>Indicates that an <b>IDDCX_TRANSMISSION_TYPE</b> variable has not yet been assigned a meaningful value.</td>
+                    <td>IDDCX_TRANSMISSION_TYPE_WIRED_USB</td>
+                    <td>Video data is being transmitted over wired USB</td>
                 </tr>
             
                 <tr>
@@ -87,13 +87,18 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                 </tr>
             
                 <tr>
-                    <td>IDDCX_TRANSMISSION_TYPE_WIRED_USB</td>
-                    <td>Video data is being transmitted over wired USB</td>
+                    <td>IDDCX_TRANSMISSION_TYPE_WIRELESS_MAUSB</td>
+                    <td>Video data is being transmitted over wireless MA-USB</td>
                 </tr>
             
                 <tr>
-                    <td>IDDCX_TRANSMISSION_TYPE_WIRELESS_MAUSB</td>
-                    <td>Video data is being transmitted over wireless MA-USB</td>
+                    <td>IDDCX_TRANSMISSION_TYPE_WIRELESS_USB_OTHER</td>
+                    <td>Video data is being transmitted over wireless network not using MA-USB but the device is enumerated on the USB bus</td>
+                </tr>
+            
+                <tr>
+                    <td>IDDCX_TRANSMISSION_TYPE_WIRELESS_WIFI_OTHER</td>
+                    <td>Video data is being transmitted over a WiFi wireless network</td>
                 </tr>
             
                 <tr>
@@ -107,13 +112,8 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
                 </tr>
             
                 <tr>
-                    <td>IDDCX_TRANSMISSION_TYPE_WIRELESS_USB_OTHER</td>
-                    <td>Video data is being transmitted over wireless network not using MA-USB but the device is enumerated on the USB bus</td>
-                </tr>
-            
-                <tr>
-                    <td>IDDCX_TRANSMISSION_TYPE_WIRELESS_WIFI_OTHER</td>
-                    <td>Video data is being transmitted over a WiFi wireless network</td>
+                    <td>IDDCX_TRANSMISSION_TYPE_OTHER</td>
+                    <td>Video data is being transmitted over a link type that is not covered by the above defines</td>
                 </tr>
             
                 <tr>

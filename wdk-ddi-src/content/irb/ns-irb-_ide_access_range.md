@@ -61,13 +61,9 @@ typedef struct _IDE_ACCESS_RANGE {
 ## Members
 
 
-`Bar`
+`RangeStart`
 
-The number of the PCI Base Address Range that this resource was found in.
-
-`InMemory`
-
-Flag that indicates if this is a memory mapped resource. If cleared, this is an I/O port resource.
+Contains the logical starting address of the address range.
 
 `PhysicalRangeStart`
 
@@ -77,9 +73,13 @@ Contains the physical starting address of the address range.
 
 Contains the size, in bytes, of the range.
 
-`RangeStart`
+`InMemory`
 
-Contains the logical starting address of the address range.
+Flag that indicates if this is a memory mapped resource. If cleared, this is an I/O port resource.
+
+`Bar`
+
+The number of the PCI Base Address Range that this resource was found in.
 
 
 ## Requirements

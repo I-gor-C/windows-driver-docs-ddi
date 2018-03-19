@@ -61,12 +61,7 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSPIN_MDL_CACHING_NOTIFY_ADDSAMPLE</td>
-                    <td>This value is used internally by the operating system.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPIN_MDL_CACHING_NOTIFY_CLEANALL_NOWAIT</td>
+                    <td>KSPIN_MDL_CACHING_NOTIFY_CLEANUP</td>
                     <td>This value is used internally by the operating system.</td>
                 </tr>
             
@@ -76,7 +71,12 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSPIN_MDL_CACHING_NOTIFY_CLEANUP</td>
+                    <td>KSPIN_MDL_CACHING_NOTIFY_CLEANALL_NOWAIT</td>
+                    <td>This value is used internally by the operating system.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPIN_MDL_CACHING_NOTIFY_ADDSAMPLE</td>
                     <td>This value is used internally by the operating system.</td>
                 </tr>
 </table>

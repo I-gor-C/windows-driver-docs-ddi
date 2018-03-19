@@ -57,13 +57,13 @@ typedef struct _KSPROCESSPIN_INDEXENTRY {
 ## Members
 
 
-`Count`
-
-This member specifies the number of process pins in <i>Pins</i> that are currently instantiated.
-
 `Pins`
 
 A pointer to an array of <a href="..\ks\ns-ks-_ksprocesspin.md">KSPROCESSPIN</a> structures. The array contains a listing of the instances of the given pin.
+
+`Count`
+
+This member specifies the number of process pins in <i>Pins</i> that are currently instantiated.
 
 ## Remarks
 This pointer table is indexed in order of the pins described in the pin descriptor table for the corresponding filter. The first pin described in the descriptor table has the first entry in the index table passed to the processing dispatch. See the processing dispatch in <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>.
@@ -79,11 +79,3 @@ For more information, see <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687
 ## See Also
 
 <a href="..\ks\ns-ks-_ksprocesspin.md">KSPROCESSPIN</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROCESSPIN_INDEXENTRY structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

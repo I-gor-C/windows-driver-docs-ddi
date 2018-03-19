@@ -65,7 +65,22 @@ typedef enum _RILGSMMNMRPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_GSMNMR_ALL</td>
+                    <td>RIL_PARAM_GSMNMR_MCC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_GSMNMR_MNC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_GSMNMR_LAC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_GSMNMR_CELLID</td>
                     <td></td>
                 </tr>
             
@@ -80,27 +95,12 @@ typedef enum _RILGSMMNMRPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_GSMNMR_CELLID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_GSMNMR_LAC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_GSMNMR_MCC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_GSMNMR_MNC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_GSMNMR_RXLEVEL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_GSMNMR_ALL</td>
                     <td></td>
                 </tr>
 </table>

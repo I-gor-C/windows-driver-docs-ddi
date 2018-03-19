@@ -61,21 +61,21 @@ typedef struct _D3DKMT_REMOVESURFACEFROMSWAPCHAIN {
 ## Members
 
 
+`hNtSwapChain`
+
+The NT handle for the swapchain in this process.
+
 `bProducer`
 
 Indicates if the handle is a producer or consumer.
-
-`BufferIdx`
-
-The buffer index of the surface to remove.
 
 `hNtSurfaceHandle`
 
 The NT handle of the surface to remove.
 
-`hNtSwapChain`
+`BufferIdx`
 
-The NT handle for the swapchain in this process.
+The buffer index of the surface to remove.
 
 
 ## Requirements

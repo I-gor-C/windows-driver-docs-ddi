@@ -66,6 +66,11 @@ typedef enum _DXVA_DeinterlaceTech {
 <table>
             
                 <tr>
+                    <td>DXVA_DeinterlaceTech_Unknown</td>
+                    <td>Indicates that the algorithm is unknown or proprietary to the hardware manufacturer.</td>
+                </tr>
+            
+                <tr>
                     <td>DXVA_DeinterlaceTech_BOBLineReplicate</td>
                     <td>Indicates that the algorithm creates the missing lines by repeating the line either above or below it. This method looks jagged and is not recommended.</td>
                 </tr>
@@ -81,6 +86,11 @@ typedef enum _DXVA_DeinterlaceTech {
                 </tr>
             
                 <tr>
+                    <td>DXVA_DeinterlaceTech_MedianFiltering</td>
+                    <td>Specifies that the pixels in the missing line are recreated by a median filtering operation.</td>
+                </tr>
+            
+                <tr>
                     <td>DXVA_DeinterlaceTech_EdgeFiltering</td>
                     <td>Specifies that pixels in the missing line are recreated by an edge filter. In this process, spatial directional filters are applied to determine the orientation of edges in the picture content, and missing pixels are created by filtering along (rather than across) the detected edges.</td>
                 </tr>
@@ -91,23 +101,13 @@ typedef enum _DXVA_DeinterlaceTech {
                 </tr>
             
                 <tr>
-                    <td>DXVA_DeinterlaceTech_MedianFiltering</td>
-                    <td>Specifies that the pixels in the missing line are recreated by a median filtering operation.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVA_DeinterlaceTech_MotionVectorSteered</td>
-                    <td>Identifies objects within a sequence of video fields. The missing pixels are recreated after first aligning the movement axis of the individual objects in the scene to make them parallel with the time axis.</td>
-                </tr>
-            
-                <tr>
                     <td>DXVA_DeinterlaceTech_PixelAdaptive</td>
                     <td>Specifies that pixels in the missing line are recreated by switching on a pixel-by-pixel basis between either spatial or temporal interpolation, depending on the amount of motion.</td>
                 </tr>
             
                 <tr>
-                    <td>DXVA_DeinterlaceTech_Unknown</td>
-                    <td>Indicates that the algorithm is unknown or proprietary to the hardware manufacturer.</td>
+                    <td>DXVA_DeinterlaceTech_MotionVectorSteered</td>
+                    <td>Identifies objects within a sequence of video fields. The missing pixels are recreated after first aligning the movement axis of the individual objects in the scene to make them parallel with the time axis.</td>
                 </tr>
 </table>
 
@@ -120,11 +120,3 @@ typedef enum _DXVA_DeinterlaceTech {
 ## See Also
 
 <a href="..\dxva\ns-dxva-_dxva_deinterlacecaps.md">DXVA_DeinterlaceCaps</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_DeinterlaceTech enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

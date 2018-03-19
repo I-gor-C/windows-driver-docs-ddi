@@ -60,10 +60,6 @@ typedef struct _NDIS_PD_QUEUE_DISPATCH {
 ## Members
 
 
-`Flags`
-
-This member is reserved and must be set to 0.
-
 `Header`
 
 The <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_QUEUE_DISPATCH</b> structure. Set the members of this structure as follows:
@@ -74,21 +70,25 @@ The <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER<
 <li><b>Size</b> = <b>NDIS_SIZEOF_PD_QUEUE_DISPATCH_REVISION_1</b></li>
 </ul>
 
-`PDFlushQueue`
+`Flags`
 
-A pointer to the provider's <a href="https://msdn.microsoft.com/885EC5F7-1C7E-473F-BA2A-B4DDD54A59D2">PDFlushQueue</a> routine.
+This member is reserved and must be set to 0.
 
 `PDPostAndDrainBufferList`
 
 A pointer to the provider's <a href="https://msdn.microsoft.com/5EAAEEEC-740E-4F65-B13E-E174A0DF4546">PDPostAndDrainBufferList</a> routine.
 
-`PDPostAndDrainBufferListEx`
-
-
-
 `PDQueryQueueDepth`
 
 A pointer to the provider's <a href="https://msdn.microsoft.com/0061E269-4A19-4D65-B988-29DB582BA960">PDQueryQueueDepth</a> routine.
+
+`PDFlushQueue`
+
+A pointer to the provider's <a href="https://msdn.microsoft.com/885EC5F7-1C7E-473F-BA2A-B4DDD54A59D2">PDFlushQueue</a> routine.
+
+`PDPostAndDrainBufferListEx`
+
+
 
 
 ## Requirements

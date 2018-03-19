@@ -60,17 +60,17 @@ typedef struct _SECURE_ELEMENT_EVENT_INFO {
 ## Members
 
 
-`cbEventData`
+`guidSecureElementId`
 
-This is the amount of bytes for the pbEventData array.
+This is a unique identifier for the secure element.
 
 `eEventType`
 
 This is an event type. For more information about the types, see the <a href="..\nfcsedev\ne-nfcsedev-_secure_element_event_type.md">SECURE_ELEMENT_EVENT_TYPE</a> enumeration topic.
 
-`guidSecureElementId`
+`cbEventData`
 
-This is a unique identifier for the secure element.
+This is the amount of bytes for the pbEventData array.
 
 `pbEventData`
 

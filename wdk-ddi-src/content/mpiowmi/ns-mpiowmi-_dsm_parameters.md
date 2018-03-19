@@ -59,21 +59,21 @@ typedef struct _DSM_PARAMETERS {
 ## Members
 
 
-`DsmContext`
-
-An unsigned 64-bitfield that represents a unique identifier as used by MPIO to address a particular DSM.
-
-`DsmCounters`
-
-A field that contains an instance of the DSM_COUNTERS structure with timer counters information that is specific to the particular DSM.
-
 `DsmName`
 
 A string field of maximum length 63 characters that returns the friendly name of the DSM.
 
+`DsmContext`
+
+An unsigned 64-bitfield that represents a unique identifier as used by MPIO to address a particular DSM.
+
 `DsmVersion`
 
 A field that contains an instance of the DSM_VERSION structure with version information for the DSM.
+
+`DsmCounters`
+
+A field that contains an instance of the DSM_COUNTERS structure with timer counters information that is specific to the particular DSM.
 
 
 ## Requirements

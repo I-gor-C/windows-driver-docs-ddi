@@ -62,13 +62,13 @@ typedef struct _PCW_REGISTRATION_INFORMATION {
 ## Members
 
 
-`Callback`
+`Version`
 
-A pointer to the optional <a href="..\wdm\nc-wdm-pcw_callback.md">PcwCallback</a> function that notifies the provider about events related to this counter set.
+The numeric value that specifies the version of Performance Counters for Windows (PCW) that the provider supports.
 
-`CallbackContext`
+`Name`
 
-A pointer to the callback context.
+A pointer to the string that contains the name of the counter set to register.
 
 `CounterCount`
 
@@ -78,13 +78,13 @@ The number of counters that are exposed by this registration.
 
 A pointer to the array that describes the counters.
 
-`Name`
+`Callback`
 
-A pointer to the string that contains the name of the counter set to register.
+A pointer to the optional <a href="..\wdm\nc-wdm-pcw_callback.md">PcwCallback</a> function that notifies the provider about events related to this counter set.
 
-`Version`
+`CallbackContext`
 
-The numeric value that specifies the version of Performance Counters for Windows (PCW) that the provider supports.
+A pointer to the callback context.
 
 ## Remarks
 The <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a> function takes, as a parameter, a pointer to this structure to serve as the registration handle.
@@ -106,11 +106,3 @@ The <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a> function takes, as a 
 
 
 <a href="..\wdm\nc-wdm-pcw_callback.md">PcwCallback</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20PCW_REGISTRATION_INFORMATION structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

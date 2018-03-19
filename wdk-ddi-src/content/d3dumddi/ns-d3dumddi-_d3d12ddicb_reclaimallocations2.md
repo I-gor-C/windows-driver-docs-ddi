@@ -60,22 +60,22 @@ typedef struct _D3D12DDICB_RECLAIMALLOCATIONS2 {
 ## Members
 
 
+`NumAllocations`
+
+[in]  The number of items in <b>pDiscarded</b> and whichever of <b>pResources</b> or <b>HandleList</b> is non-NULL.
+
 `HandleList`
 
 [in]  An array of allocation handles. If non-NULL, <b>pResources</b> must be NULL.
 
-`NumAllocations`
+`pDiscarded`
 
-[in]  The number of items in <b>pDiscarded</b> and whichever of <b>pResources</b> or <b>HandleList</b> is non-NULL.
+[out] Optional array of boolean values specifying whether each resource or allocation was discarded.
 
 `PagingFenceValue`
 
 [out] The paging fence to synchronize against before submitting work to the GPU which
                                                                            references any of the resources or allocations in the provided arrays
-
-`pDiscarded`
-
-[out] Optional array of boolean values specifying whether each resource or allocation was discarded.
 
 
 ## Requirements

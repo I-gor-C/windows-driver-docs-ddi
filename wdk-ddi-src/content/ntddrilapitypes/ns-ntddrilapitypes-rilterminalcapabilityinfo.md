@@ -57,11 +57,11 @@ typedef struct _RILTERMINALCAPABILITYINFO {
 ## Members
 
 
-`bData`
-
-
-
 `dwSize`
+
+
+
+`bData`
 
 
 

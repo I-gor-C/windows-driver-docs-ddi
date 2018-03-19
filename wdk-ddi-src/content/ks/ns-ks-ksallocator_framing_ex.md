@@ -64,21 +64,21 @@ typedef struct {
 
 Specifies the number of framing items that are present in the <b>FramingItem</b> array.
 
-`FramingItem`
+`PinFlags`
 
-An array of <a href="..\ks\ns-ks-ks_framing_item.md">KS_FRAMING_ITEM</a> structures specifying the actual framing items.
+Reserved, set to zero.
 
 `OutputCompression`
 
 Points to a structure of type <a href="..\ks\ns-ks-ks_compression.md">KS_COMPRESSION</a> that defines the frame ratio for transforms that change the size of a frame.
 
-`PinFlags`
-
-Reserved, set to zero.
-
 `PinWeight`
 
 This pin framing's weight graph-wide. Reserved, set to zero.
+
+`FramingItem`
+
+An array of <a href="..\ks\ns-ks-ks_framing_item.md">KS_FRAMING_ITEM</a> structures specifying the actual framing items.
 
 ## Remarks
 A minidriver can also use DECLARE_SIMPLE_FRAMING_EX to declare an extended framing structure in line with the original structure. This macro is defined in <i>Ks.h</i> as follows:
@@ -119,11 +119,3 @@ DECLARE_SIMPLE_FRAMING_EX declares a KSALLOCATOR_FRAMING_EX structure called <b>
 
 
 <a href="..\ks\ns-ks-ks_framing_item.md">KS_FRAMING_ITEM</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSALLOCATOR_FRAMING_EX structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

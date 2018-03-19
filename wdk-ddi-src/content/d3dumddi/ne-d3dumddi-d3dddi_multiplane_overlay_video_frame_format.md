@@ -65,12 +65,12 @@ typedef enum D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT {
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST</td>
+                    <td>D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST</td>
                     <td>Reserved for system use. Do not use in your driver.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST</td>
+                    <td>D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST</td>
                     <td>Reserved for system use. Do not use in your driver.</td>
                 </tr>
 </table>

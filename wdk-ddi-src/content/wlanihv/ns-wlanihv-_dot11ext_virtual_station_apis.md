@@ -61,11 +61,11 @@ typedef struct _DOT11EXT_VIRTUAL_STATION_APIS {
 ## Members
 
 
-`Dot11ExtQueryVirtualStationProperties`
+`Dot11ExtRequestVirtualStation`
 
 A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11ext_query_virtual_station_properties.md">
-     Dot11ExtQueryVirtualStationProperties</a> function.
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_request_virtual_station.md">
+     Dot11ExtRequestVirtualStation</a> function.
 
 `Dot11ExtReleaseVirtualStation`
 
@@ -73,11 +73,11 @@ A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_release_virtual_station.md">
      Dot11ExtReleaseVirtualStation</a> function.
 
-`Dot11ExtRequestVirtualStation`
+`Dot11ExtQueryVirtualStationProperties`
 
 A pointer to the 
-     <a href="..\wlanihv\nc-wlanihv-dot11ext_request_virtual_station.md">
-     Dot11ExtRequestVirtualStation</a> function.
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_query_virtual_station_properties.md">
+     Dot11ExtQueryVirtualStationProperties</a> function.
 
 `Dot11ExtSetVirtualStationAPProperties`
 
@@ -131,11 +131,3 @@ All of the function pointers are required and must not be set to <b>NULL</b>.
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_query_virtual_station_properties.md">
    Dot11ExtQueryVirtualStationProperties</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_VIRTUAL_STATION_APIS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

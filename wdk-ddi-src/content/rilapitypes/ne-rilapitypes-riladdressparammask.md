@@ -62,17 +62,12 @@ typedef enum _RILADDRESSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_A_ADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_A_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_A_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_A_TYPE</td>
                     <td></td>
                 </tr>
             
@@ -82,7 +77,12 @@ typedef enum _RILADDRESSPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_A_TYPE</td>
+                    <td>RIL_PARAM_A_ADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_A_ALL</td>
                     <td></td>
                 </tr>
 </table>

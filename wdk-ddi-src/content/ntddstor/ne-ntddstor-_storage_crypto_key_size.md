@@ -62,6 +62,11 @@ typedef enum _STORAGE_CRYPTO_KEY_SIZE {
 <table>
             
                 <tr>
+                    <td>StorageCryptoKeySizeUnknown</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
                     <td>StorageCryptoKeySize128Bits</td>
                     <td>Reserved for system use.</td>
                 </tr>
@@ -78,11 +83,6 @@ typedef enum _STORAGE_CRYPTO_KEY_SIZE {
             
                 <tr>
                     <td>StorageCryptoKeySize512Bits</td>
-                    <td>Reserved for system use.</td>
-                </tr>
-            
-                <tr>
-                    <td>StorageCryptoKeySizeUnknown</td>
                     <td>Reserved for system use.</td>
                 </tr>
 </table>

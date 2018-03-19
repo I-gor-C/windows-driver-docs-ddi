@@ -62,13 +62,13 @@ typedef struct D3D12DDIARG_RESOURCE_BARRIER_0022 {
 ## Members
 
 
-`Flags`
-
-A barrier flag as a <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_resource_barrier_flags.md">D3D12DDI_RESOURCE_BARRIER_FLAGS</a> value.
-
 `Type`
 
 The type of resource barrier as a <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_resource_barrier_type.md">D3D12DDI_RESOURCE_BARRIER_TYPE</a> value.
+
+`Flags`
+
+A barrier flag as a <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_resource_barrier_flags.md">D3D12DDI_RESOURCE_BARRIER_FLAGS</a> value.
 
 
 ## Requirements

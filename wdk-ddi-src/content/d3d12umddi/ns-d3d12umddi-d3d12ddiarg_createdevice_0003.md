@@ -65,14 +65,6 @@ typedef struct _D3D12DDIARG_CREATEDEVICE_0003 {
 ## Members
 
 
-`Flags`
-
-Flag values that identify how to create the display device.
-
-`hDrvDevice`
-
-A handle to the display device (graphics context) that the Direct3D runtime uses in subsequent driver calls to identify the display device.
-
 `hRTDevice`
 
 [in] A handle to the display device (graphics context) that specifies the handle that the driver should use when it calls back into the Direct3D runtime.
@@ -81,13 +73,21 @@ A handle to the display device (graphics context) that the Direct3D runtime uses
 
 [in] The Direct3D interface version.
 
+`Version`
+
+[in] A UINT value that the driver can use to identify when the Direct3D runtime was built.
+
 `pKTCallbacks`
 
 A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a> structure that contains a table of Direct3D runtime callback functions that the driver can use to access kernel services.
 
-`Version`
+`hDrvDevice`
 
-[in] A UINT value that the driver can use to identify when the Direct3D runtime was built.
+A handle to the display device (graphics context) that the Direct3D runtime uses in subsequent driver calls to identify the display device.
+
+`Flags`
+
+Flag values that identify how to create the display device.
 
 
 ## Requirements

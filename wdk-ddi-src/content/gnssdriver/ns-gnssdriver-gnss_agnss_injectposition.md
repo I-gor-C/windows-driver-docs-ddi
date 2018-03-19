@@ -60,9 +60,13 @@ typedef struct {
 ## Members
 
 
-`AccuracyData`
+`Size`
 
-Position accuracy.
+Structure size.
+
+`Version`
+
+Version number.
 
 `Age`
 
@@ -72,13 +76,9 @@ Indicates how long the position has been aged in seconds.
 
 Position data.
 
-`Size`
+`AccuracyData`
 
-Structure size.
-
-`Version`
-
-Version number.
+Position accuracy.
 
 
 ## Requirements

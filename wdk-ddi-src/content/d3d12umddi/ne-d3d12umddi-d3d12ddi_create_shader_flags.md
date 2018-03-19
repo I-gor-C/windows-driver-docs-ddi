@@ -60,8 +60,8 @@ typedef enum D3D12DDI_CREATE_SHADER_FLAGS {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_CREATE_SHADER_FLAG_DISABLE_OPTIMIZATION_0024</td>
-                    <td></td>
+                    <td>D3D12DDI_CREATE_SHADER_FLAG_NONE</td>
+                    <td>No flag value for shader creation.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum D3D12DDI_CREATE_SHADER_FLAGS {
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_CREATE_SHADER_FLAG_NONE</td>
-                    <td>No flag value for shader creation.</td>
+                    <td>D3D12DDI_CREATE_SHADER_FLAG_DISABLE_OPTIMIZATION_0024</td>
+                    <td></td>
                 </tr>
 </table>
 

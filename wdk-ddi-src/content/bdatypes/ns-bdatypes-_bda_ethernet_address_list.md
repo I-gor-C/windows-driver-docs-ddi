@@ -57,11 +57,11 @@ typedef struct _BDA_ETHERNET_ADDRESS_LIST {
 ## Members
 
 
-`rgAddressl`
-
-
-
 `ulcAddresses`
+
+
+
+`rgAddressl`
 
 
 

@@ -65,45 +65,45 @@ typedef struct _DXGKARG_RENDERGDI {
 ## Members
 
 
-`AllocationListSize`
+`pCommand`
 
-The available number of elements in the array that <b>pAllocationList</b> specifies, which represents the number of allocation specifications to send through DMA to the graphics hardware.
+A pointer to the start of the command buffer.
 
 `CommandLength`
 
 The size, in bytes, of the command buffer that <b>pCommand</b> points to.
 
+`pDmaBuffer`
+
+A pointer to the start of the DMA buffer, which is aligned on 4 KB.
+
 `DmaBufferGpuVirtualAddress`
 
 A <b>D3DGPU_VIRTUAL_ADDRESS</b> data type that indicates the virtual address where the DMA buffer was paged in. If the physical address is zero, the DMA buffer is not correctly paged in.
-
-`DmaBufferPrivateDataSize`
-
-The number of bytes that remain in the private data structure that <b>pDmaBufferPrivateData</b> points to for the current operation.
 
 `DmaSize`
 
 The size, in bytes, of the DMA buffer that <b>pDmaBuffer</b> points to.
 
-`MultipassOffset`
+`pDmaBufferPrivateData`
 
-A value that specifies the progress of the rendering operation.
+A pointer to a driver-resident private data structure that is used for generating the DMA buffer that <b>pDmaBuffer</b> points to.
+
+`DmaBufferPrivateDataSize`
+
+The number of bytes that remain in the private data structure that <b>pDmaBufferPrivateData</b> points to for the current operation.
 
 `pAllocationList`
 
 An array of <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a> structures for the list of allocations that the DMA buffer references. Each allocation that is referenced should appear once for optimal performance.
 
-`pCommand`
+`AllocationListSize`
 
-A pointer to the start of the command buffer.
+The available number of elements in the array that <b>pAllocationList</b> specifies, which represents the number of allocation specifications to send through DMA to the graphics hardware.
 
-`pDmaBuffer`
+`MultipassOffset`
 
-A pointer to the start of the DMA buffer, which is aligned on 4 KB.
-
-`pDmaBufferPrivateData`
-
-A pointer to a driver-resident private data structure that is used for generating the DMA buffer that <b>pDmaBuffer</b> points to.
+A value that specifies the progress of the rendering operation.
 
 
 ## Requirements

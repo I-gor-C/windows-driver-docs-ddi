@@ -69,42 +69,7 @@ typedef enum _RILRADIOCONFIGURATIONRADIOTYPE {
 <table>
             
                 <tr>
-                    <td>RIL_RADIOTYPE_1XCSFB</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_RADIOTYPE_DUALACTIVE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_RADIOTYPE_DUALSTANDBY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_RADIOTYPE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_RADIOTYPE_MULTIMODE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_RADIOTYPE_NONE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_RADIOTYPE_SGLTE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_RADIOTYPE_SGLTE_DUALACTIVE</td>
                     <td></td>
                 </tr>
             
@@ -114,7 +79,12 @@ typedef enum _RILRADIOCONFIGURATIONRADIOTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_RADIOTYPE_SRLTE</td>
+                    <td>RIL_RADIOTYPE_MULTIMODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_RADIOTYPE_1XCSFB</td>
                     <td></td>
                 </tr>
             
@@ -124,7 +94,37 @@ typedef enum _RILRADIOCONFIGURATIONRADIOTYPE {
                 </tr>
             
                 <tr>
+                    <td>RIL_RADIOTYPE_DUALSTANDBY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_RADIOTYPE_DUALACTIVE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_RADIOTYPE_SGLTE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_RADIOTYPE_SVLTE_DUALACTIVE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_RADIOTYPE_SGLTE_DUALACTIVE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_RADIOTYPE_SRLTE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_RADIOTYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

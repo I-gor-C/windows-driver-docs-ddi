@@ -59,21 +59,21 @@ typedef struct _ACPI_GET_DEVICE_SPECIFIC_DATA {
 ## Members
 
 
-`PropertyName`
+`Signature`
 
-Specifies the property name. If not specified, the <b>PropertyNameLength</b> and the <b>PropertyName</b> are returned. If a <b>PropertyName</b> is specified, only the value of that <b>PropertyName</b> is returned.
-
-`PropertyNameLength`
-
-The length of the property name.
+A unique identifier for the IOCTL.
 
 `Section`
 
 A GUID specified by the caller.
 
-`Signature`
+`PropertyNameLength`
 
-A unique identifier for the IOCTL.
+The length of the property name.
+
+`PropertyName`
+
+Specifies the property name. If not specified, the <b>PropertyNameLength</b> and the <b>PropertyName</b> are returned. If a <b>PropertyName</b> is specified, only the value of that <b>PropertyName</b> is returned.
 
 
 ## Requirements

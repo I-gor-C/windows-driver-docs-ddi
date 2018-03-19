@@ -60,10 +60,6 @@ typedef struct D3D12DDI_VIDEO_DECODE_CONVERSION_ARGUMENTS_0021 {
 ## Members
 
 
-`DecodeColorSpace`
-
-The source decoded color space before conversion.
-
 `Enable`
 
 Indicates whether decode conversion should be used.
@@ -72,13 +68,17 @@ Indicates whether decode conversion should be used.
 
 If down sampling is enabled, the output at decode resolution, color space, and format may be required for future decode submissions.  If it is not needed, specify null.
 
+`ReferenceSubresource`
+
+The subresource index to use of the <i>hDrvReferenceTexture2D</i> argument.
+
 `OutputColorSpace`
 
 The target color space of the output.
 
-`ReferenceSubresource`
+`DecodeColorSpace`
 
-The subresource index to use of the <i>hDrvReferenceTexture2D</i> argument.
+The source decoded color space before conversion.
 
 ## Remarks
 Scaling is specified by the difference in reference texture size versus the output texture size.

@@ -104,13 +104,13 @@ Is symbol.
 </tr>
 </table>
 
-`MatchCount`
-
-Count value of matches.
-
 `ReplaceIndex`
 
 The index of the replace location.
+
+`MatchCount`
+
+Count value of matches.
 
 `Reserved1`
 

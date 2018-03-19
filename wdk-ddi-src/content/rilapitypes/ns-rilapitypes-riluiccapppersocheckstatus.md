@@ -69,7 +69,7 @@ typedef struct _RILUICCAPPPERSOCHECKSTATUS {
 
 
 
-`dwPersoCheckState`
+`hUiccApp`
 
 
 
@@ -77,7 +77,7 @@ typedef struct _RILUICCAPPPERSOCHECKSTATUS {
 
 
 
-`hUiccApp`
+`dwPersoCheckState`
 
 
 

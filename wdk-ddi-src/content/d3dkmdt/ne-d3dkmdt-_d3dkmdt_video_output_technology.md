@@ -82,38 +82,13 @@ typedef enum _D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY {
 <table>
             
                 <tr>
-                    <td>D3DKMDT_VOT_BNC</td>
-                    <td>Indicates that the video output device connects to an external display device through a BNC connector.</td>
+                    <td>D3DKMDT_VOT_UNINITIALIZED</td>
+                    <td>Indicates that a variable of type D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_VOT_COMPONENT_VIDEO</td>
-                    <td>Indicates that the video output device connects to an external display device through component video connectors.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VOT_COMPOSITE_VIDEO</td>
-                    <td>Indicates that the video output device connects to an external display device through composite video connectors.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VOT_D_JPN</td>
-                    <td>Indicates that the video output device connects to an external display device through a D-Jpn connector.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VOT_DISPLAYPORT_EMBEDDED</td>
-                    <td>Indicates that the connector type is an embedded display port.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VOT_DISPLAYPORT_EXTERNAL</td>
-                    <td>Indicates that the connector type is an external display port.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VOT_DVI</td>
-                    <td>Indicates that the video output device connects to an external display device through a Digital Video Interface (DVI) connector.</td>
+                    <td>D3DKMDT_VOT_OTHER</td>
+                    <td>Indicates that the video output device connects to an external display device through a connector that is not one of the types that is indicated by the following values in this enumeration.</td>
                 </tr>
             
                 <tr>
@@ -122,8 +97,75 @@ typedef enum _D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY {
                 </tr>
             
                 <tr>
+                    <td>D3DKMDT_VOT_SVIDEO</td>
+                    <td>Indicates that the video output device connects to an external display device through an S-video connector.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VOT_COMPOSITE_VIDEO</td>
+                    <td>Indicates that the video output device connects to an external display device through composite video connectors.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VOT_COMPONENT_VIDEO</td>
+                    <td>Indicates that the video output device connects to an external display device through component video connectors.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VOT_DVI</td>
+                    <td>Indicates that the video output device connects to an external display device through a Digital Video Interface (DVI) connector.</td>
+                </tr>
+            
+                <tr>
                     <td>D3DKMDT_VOT_HDMI</td>
                     <td>Indicates that the video output device connects to an external display device through an High-Definition Multimedia Interface (HDMI) connector.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VOT_LVDS</td>
+                    <td>Indicates that the video output device connects to an external display device through an Low Voltage Differential Swing (LVDS) or Mobile Industry Processor Interface (MIPI) Digital Serial Interface (DSI) connector.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VOT_D_JPN</td>
+                    <td>Indicates that the video output device connects to an external display device through a D-Jpn connector.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VOT_SDI</td>
+                    <td>Indicates that the video output device connects to an external display device through an SDI connector.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VOT_DISPLAYPORT_EXTERNAL</td>
+                    <td>Indicates that the connector type is an external display port.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VOT_DISPLAYPORT_EMBEDDED</td>
+                    <td>Indicates that the connector type is an embedded display port.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VOT_UDI_EXTERNAL</td>
+                    <td>Indicates that the connector type is an external Unified Display Interface (UDI).</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VOT_UDI_EMBEDDED</td>
+                    <td>Indicates that the connector type is an embedded UDI.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VOT_SDTVDONGLE</td>
+                    <td>Indicates that the video output device connects to an external display device through a dongle cable that supports SDTV.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_VOT_MIRACAST</td>
+                    <td>Indicates that the video output device connects to an external display device wirelessly through a Miracast connected session. For more info, see <a href="https://msdn.microsoft.com/1645E14A-EC4A-4EB8-9AFA-6DF0466D2B1A">Wireless displays (Miracast)</a>.
+
+Supported starting with Windows 8.1.</td>
                 </tr>
             
                 <tr>
@@ -139,48 +181,6 @@ This constant value is not a bit-field value. Instead, it's a standalone video o
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_VOT_LVDS</td>
-                    <td>Indicates that the video output device connects to an external display device through an Low Voltage Differential Swing (LVDS) or Mobile Industry Processor Interface (MIPI) Digital Serial Interface (DSI) connector.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VOT_MIRACAST</td>
-                    <td>Indicates that the video output device connects to an external display device wirelessly through a Miracast connected session. For more info, see <a href="https://msdn.microsoft.com/1645E14A-EC4A-4EB8-9AFA-6DF0466D2B1A">Wireless displays (Miracast)</a>.
-
-Supported starting with Windows 8.1.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VOT_OTHER</td>
-                    <td>Indicates that the video output device connects to an external display device through a connector that is not one of the types that is indicated by the following values in this enumeration.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VOT_RCA_3COMPONENT</td>
-                    <td>Indicates that the video output device connects to an external display device through a set of three RCA connectors.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VOT_RF</td>
-                    <td>Indicates that the video output device connects to an external display device through an RF connector.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VOT_SDI</td>
-                    <td>Indicates that the video output device connects to an external display device through an SDI connector.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VOT_SDTVDONGLE</td>
-                    <td>Indicates that the video output device connects to an external display device through a dongle cable that supports SDTV.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3DKMDT_VOT_SVIDEO</td>
-                    <td>Indicates that the video output device connects to an external display device through an S-video connector.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DKMDT_VOT_SVIDEO_4PIN</td>
                     <td>Indicates that the video output device connects to an external display device through a 4-pin S-video connector.</td>
                 </tr>
@@ -191,18 +191,18 @@ Supported starting with Windows 8.1.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_VOT_UDI_EMBEDDED</td>
-                    <td>Indicates that the connector type is an embedded UDI.</td>
+                    <td>D3DKMDT_VOT_RF</td>
+                    <td>Indicates that the video output device connects to an external display device through an RF connector.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_VOT_UDI_EXTERNAL</td>
-                    <td>Indicates that the connector type is an external Unified Display Interface (UDI).</td>
+                    <td>D3DKMDT_VOT_RCA_3COMPONENT</td>
+                    <td>Indicates that the video output device connects to an external display device through a set of three RCA connectors.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DKMDT_VOT_UNINITIALIZED</td>
-                    <td>Indicates that a variable of type D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY has not yet been assigned a meaningful value.</td>
+                    <td>D3DKMDT_VOT_BNC</td>
+                    <td>Indicates that the video output device connects to an external display device through a BNC connector.</td>
                 </tr>
 </table>
 
@@ -223,11 +223,3 @@ The <b>ChildCapabilities</b> member of a <a href="..\dispmprt\ns-dispmprt-_dxgk_
 
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

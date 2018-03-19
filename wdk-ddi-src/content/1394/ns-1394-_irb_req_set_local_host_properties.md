@@ -57,37 +57,6 @@ typedef struct _IRB_REQ_SET_LOCAL_HOST_PROPERTIES {
 ## Members
 
 
-`Information`
-
-Points to an information block to be filled in. The information returned depends on the value in <b>u.SetLocalHostProperties.nLevel</b>. Each block has its own particular structure.
-
-<table>
-<tr>
-<th>Flag</th>
-<th>Structure</th>
-</tr>
-<tr>
-<td>
-SET_LOCAL_HOST_PROPERTIES_GAP_COUNT 
-
-</td>
-<td>
-SET_LOCAL_HOST_PROPS2
-
-</td>
-</tr>
-<tr>
-<td>
-SET_LOCAL_HOST_PROPERTIES_MODIFY_CROM
-
-</td>
-<td>
-SET_LOCAL_HOST_PROPS3
-
-</td>
-</tr>
-</table>
-
 `nLevel`
 
 Specifies what level of information is desired from this call. The following flags are provided.  
@@ -114,6 +83,37 @@ SET_LOCAL_HOST_PROPERTIES_MODIFY_CROM
 </td>
 <td>
 Used to add or remove unit directories. This request cannot be used to modify instance directories or root keys in the configuration ROM. 
+
+</td>
+</tr>
+</table>
+
+`Information`
+
+Points to an information block to be filled in. The information returned depends on the value in <b>u.SetLocalHostProperties.nLevel</b>. Each block has its own particular structure.
+
+<table>
+<tr>
+<th>Flag</th>
+<th>Structure</th>
+</tr>
+<tr>
+<td>
+SET_LOCAL_HOST_PROPERTIES_GAP_COUNT 
+
+</td>
+<td>
+SET_LOCAL_HOST_PROPS2
+
+</td>
+</tr>
+<tr>
+<td>
+SET_LOCAL_HOST_PROPERTIES_MODIFY_CROM
+
+</td>
+<td>
+SET_LOCAL_HOST_PROPS3
 
 </td>
 </tr>

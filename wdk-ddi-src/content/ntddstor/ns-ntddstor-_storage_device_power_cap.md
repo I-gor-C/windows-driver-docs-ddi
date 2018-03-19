@@ -59,9 +59,9 @@ typedef struct _STORAGE_DEVICE_POWER_CAP {
 ## Members
 
 
-`MaxPower`
+`Version`
 
-Contains the value of the actual maximum power consumption level of the device. This may be equal to, less than, or greater than the desired threshold, depending on what the device supports.
+The version of this structure. This should be set to STORAGE_DEVICE_POWER_CAP_VERSION_V1.
 
 `Size`
 
@@ -71,9 +71,9 @@ The size of this structure.
 
 The units of the MaxPower value.
 
-`Version`
+`MaxPower`
 
-The version of this structure. This should be set to STORAGE_DEVICE_POWER_CAP_VERSION_V1.
+Contains the value of the actual maximum power consumption level of the device. This may be equal to, less than, or greater than the desired threshold, depending on what the device supports.
 
 
 ## Requirements

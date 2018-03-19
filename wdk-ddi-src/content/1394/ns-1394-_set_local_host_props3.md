@@ -94,13 +94,13 @@ Indicates that the data contained in the SET_LOCAL_HOST_PROPS3 structure is to b
 
 Contains a handle that is returned after one or more unit directories have been created. Drivers must store this value and pass it to the bus driver when removing these unit directories. If the SLHP_FLAG_ADD_CROM_DATA flag is set, then this is an output parameter. If the SLHP_FLAG_REMOVE_CROM_DATA flag is set, then this is an input parameter.
 
-`Mdl`
-
-Pointer to the data buffer containing the unit directory information.
-
 `nLength`
 
 Contains length of the data buffer pointed to by <b>Mdl</b>.
+
+`Mdl`
+
+Pointer to the data buffer containing the unit directory information.
 
 ## Remarks
 The SET_LOCAL_HOST_PROPS3 structure is sent to the bus driver in the <b>u.SetLocalHostProperties.Information</b> member of an IRB during a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537663">REQUEST_SET_LOCAL_HOST_PROPERTIES</a> request, with <b>u.SetLocalHostProperties.nLevel=</b> SET_LOCAL_HOST_PROPERTIES_MODIFY_CROM. 
@@ -119,11 +119,3 @@ The first element of the buffer pointed to by <b>Mdl</b> must be a unit director
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537204">IEEE1394_API_REQUEST</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20SET_LOCAL_HOST_PROPS3 structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

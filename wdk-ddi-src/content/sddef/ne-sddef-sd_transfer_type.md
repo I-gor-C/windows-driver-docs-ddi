@@ -63,8 +63,18 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>SDTT_UNSPECIFIED</td>
+                    <td>Unspecified.</td>
+                </tr>
+            
+                <tr>
                     <td>SDTT_CMD_ONLY</td>
                     <td>Indicates that the request involves a transfer of command information or small amounts of data over the CMD line only. It does not involve a data transfer over the DAT lines. This transfer type includes operations such as card selection, the transfer of descriptors during initialization of a card, or the retrieval of a byte of information from a card register.</td>
+                </tr>
+            
+                <tr>
+                    <td>SDTT_SINGLE_BLOCK</td>
+                    <td>Indicates that the request reads or writes a single block. The I/O block size register specifies the size, in bytes, of a block.</td>
                 </tr>
             
                 <tr>
@@ -75,16 +85,6 @@ typedef enum  {
                 <tr>
                     <td>SDTT_MULTI_BLOCK_NO_CMD12</td>
                     <td>Indicates that the request reads or writes multiple blocks of data. The transfer terminates automatically and does not require termination by a CMD12 command. For a description of the CMD12 command, see the <i>MultiMedia Card</i> specification.</td>
-                </tr>
-            
-                <tr>
-                    <td>SDTT_SINGLE_BLOCK</td>
-                    <td>Indicates that the request reads or writes a single block. The I/O block size register specifies the size, in bytes, of a block.</td>
-                </tr>
-            
-                <tr>
-                    <td>SDTT_UNSPECIFIED</td>
-                    <td>Unspecified.</td>
                 </tr>
 </table>
 
@@ -97,11 +97,3 @@ typedef enum  {
 ## See Also
 
 <a href="https://msdn.microsoft.com/7c49c394-d0b3-4594-a623-0a13825bdcec">SDCMD_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [SD\buses]:%20SD_TRANSFER_TYPE enumeration%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

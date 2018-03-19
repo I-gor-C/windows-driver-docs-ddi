@@ -58,17 +58,17 @@ typedef struct _CHANNEL_CONFIG_RESULTS {
 ## Members
 
 
-`ExtraOptionsBufferSize`
-
-The size, in bytes, required in the buffer to retrieve the current extra options for the specified
-     direction.
-
 `Params`
 
 A 
      <a href="..\bthddi\ns-bthddi-_channel_config_parameters.md">
      CHANNEL_CONFIG_PARAMETERS</a> structure that contains the parameters for the specified direction of
      the channel.
+
+`ExtraOptionsBufferSize`
+
+The size, in bytes, required in the buffer to retrieve the current extra options for the specified
+     direction.
 
 ## Remarks
 The CHANNEL_CONFIG_RESULTS structure is passed in the 
@@ -89,11 +89,3 @@ The CHANNEL_CONFIG_RESULTS structure is passed in the
 
 
 <a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20CHANNEL_CONFIG_RESULTS structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

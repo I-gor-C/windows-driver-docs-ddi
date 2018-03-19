@@ -59,17 +59,17 @@ typedef enum _RILSUBADDRESSTYPE {
 <table>
             
                 <tr>
-                    <td>RIL_SUBADDRTYPE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_SUBADDRTYPE_NSAP</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_SUBADDRTYPE_USER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SUBADDRTYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

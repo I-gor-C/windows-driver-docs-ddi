@@ -62,23 +62,23 @@ typedef enum _RAW_PIPE_TYPE {
 <table>
             
                 <tr>
-                    <td>USBSCAN_PIPE_BULK</td>
-                    <td>Identifies a bulk IN or bulk OUT pipe.</td>
-                </tr>
-            
-                <tr>
                     <td>USBSCAN_PIPE_CONTROL</td>
                     <td>Identifies the control pipe.</td>
                 </tr>
             
                 <tr>
-                    <td>USBSCAN_PIPE_INTERRUPT</td>
-                    <td>Identifies an interrupt pipe.</td>
+                    <td>USBSCAN_PIPE_ISOCHRONOUS</td>
+                    <td>Identifies an isochronous pipe.</td>
                 </tr>
             
                 <tr>
-                    <td>USBSCAN_PIPE_ISOCHRONOUS</td>
-                    <td>Identifies an isochronous pipe.</td>
+                    <td>USBSCAN_PIPE_BULK</td>
+                    <td>Identifies a bulk IN or bulk OUT pipe.</td>
+                </tr>
+            
+                <tr>
+                    <td>USBSCAN_PIPE_INTERRUPT</td>
+                    <td>Identifies an interrupt pipe.</td>
                 </tr>
 </table>
 

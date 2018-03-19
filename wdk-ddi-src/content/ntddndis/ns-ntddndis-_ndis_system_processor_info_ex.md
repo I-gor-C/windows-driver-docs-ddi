@@ -66,10 +66,6 @@ typedef struct _NDIS_SYSTEM_PROCESSOR_INFO_EX {
 ## Members
 
 
-`Flags`
-
-Reserved. NDIS sets this member to zero.
-
 `Header`
 
 The 
@@ -80,16 +76,20 @@ The
      <b>Revision</b> member to NDIS_SYSTEM_PROCESSOR_INFO_EX_REVISION_1, and the 
      <b>Size</b> member to NDIS_SIZEOF_SYSTEM_PROCESSOR_INFO_EX_REVISION_1.
 
-`MaxHyperThreadingProcsPerCore`
+`Flags`
 
-The maximum number of logical processors that are in each hyper-threaded core processor. For
-     example, set this member to two if each hyper-threaded core processor supports two logical
-     processors.
+Reserved. NDIS sets this member to zero.
 
-`NumberOfProcessors`
+`ProcessorVendor`
 
-The number of elements in the array of NDIS_PROCESSOR_INFO_EX structures that follows this
-     structure.
+The processor vendor specified as one of the values from the 
+     <a href="..\ntddndis\ne-ntddndis-_ndis_processor_vendor.md">
+     NDIS_PROCESSOR_VENDOR</a> enumeration.
+
+`NumSockets`
+
+The total number of processor physical packages (that is, sockets on the local computer
+     motherboard) that are in the local computer.
 
 `NumCores`
 
@@ -101,15 +101,11 @@ The total number of core processors that are in the local computer. For example,
 The number of core processors that are in each physical package. For example, set this member to
      two for a dual core physical package.
 
-`NumSockets`
+`MaxHyperThreadingProcsPerCore`
 
-The total number of processor physical packages (that is, sockets on the local computer
-     motherboard) that are in the local computer.
-
-`ProcessorInfoEntrySize`
-
-The size, in bytes, of elements in the array of NDIS_PROCESSOR_INFO_EX structures that follows
-     this structure.
+The maximum number of logical processors that are in each hyper-threaded core processor. For
+     example, set this member to two if each hyper-threaded core processor supports two logical
+     processors.
 
 `ProcessorInfoOffset`
 
@@ -121,11 +117,15 @@ The offset, in bytes, from the start of the structure to an array of
      <b>ProcessorInfoEntrySize</b> member contains the size of the NDIS_PROCESSOR_INFO_EX structures in the
      array.
 
-`ProcessorVendor`
+`NumberOfProcessors`
 
-The processor vendor specified as one of the values from the 
-     <a href="..\ntddndis\ne-ntddndis-_ndis_processor_vendor.md">
-     NDIS_PROCESSOR_VENDOR</a> enumeration.
+The number of elements in the array of NDIS_PROCESSOR_INFO_EX structures that follows this
+     structure.
+
+`ProcessorInfoEntrySize`
+
+The size, in bytes, of elements in the array of NDIS_PROCESSOR_INFO_EX structures that follows
+     this structure.
 
 ## Remarks
 NDIS network drivers use the NDIS_SYSTEM_PROCESSOR_INFO_EX structure in calls to the 
@@ -160,11 +160,3 @@ NDIS network drivers use the NDIS_SYSTEM_PROCESSOR_INFO_EX structure in calls to
 
 
 <a href="..\ntddndis\ne-ntddndis-_ndis_processor_vendor.md">NDIS_PROCESSOR_VENDOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SYSTEM_PROCESSOR_INFO_EX structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -58,13 +58,13 @@ typedef struct D3D12DDI_VIDEO_DECODE_CONFIGURATION_0020 {
 ## Members
 
 
-`BitstreamEncryption`
-
-The GUID identifying the encryption, e.g., D3D12DDI_DECODER_ENCRYPTION_HW_CENC.
-
 `DecodeProfile`
 
 The profile for the decoder we want, e.g., HEVC_10BIT, HEVC_8BIT, H264_MAIN.
+
+`BitstreamEncryption`
+
+The GUID identifying the encryption, e.g., D3D12DDI_DECODER_ENCRYPTION_HW_CENC.
 
 `InterlaceType`
 

@@ -74,7 +74,42 @@ typedef enum _RILSUPSVCINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_SSI_ALL</td>
+                    <td>RIL_PARAM_SSI_EXECUTOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SSI_FROM_NETWORK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SSI_FAILURE_REASON</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SSI_SUPSVC_ACTION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SSI_SUPSVC_TYPE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SSI_CALL_FORWARDING_REASON</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SSI_CALL_BARRING_TYPE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_SSI_INFOCLASSES</td>
                     <td></td>
                 </tr>
             
@@ -89,12 +124,7 @@ typedef enum _RILSUPSVCINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_SSI_CALL_BARRING_TYPE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_SSI_CALL_FORWARDING_REASON</td>
+                    <td>RIL_PARAM_SSI_NEW_CALL_BARRING_PASSWORD</td>
                     <td></td>
                 </tr>
             
@@ -109,27 +139,7 @@ typedef enum _RILSUPSVCINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_SSI_CONNECTED_ID_SETTINGS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_SSI_DIALED_ID_SETTINGS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_SSI_EXECUTOR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_SSI_FAILURE_REASON</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_SSI_FROM_NETWORK</td>
                     <td></td>
                 </tr>
             
@@ -139,12 +149,7 @@ typedef enum _RILSUPSVCINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_SSI_INFOCLASSES</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_SSI_NEW_CALL_BARRING_PASSWORD</td>
+                    <td>RIL_PARAM_SSI_CONNECTED_ID_SETTINGS</td>
                     <td></td>
                 </tr>
             
@@ -154,12 +159,7 @@ typedef enum _RILSUPSVCINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_SSI_SUPSVC_ACTION</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_SSI_SUPSVC_TYPE</td>
+                    <td>RIL_PARAM_SSI_ALL</td>
                     <td></td>
                 </tr>
 </table>

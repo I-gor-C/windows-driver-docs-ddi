@@ -67,18 +67,6 @@ typedef struct _TCP_OFFLOAD_STATS {
 ## Members
 
 
-`CurrentlyEstablished`
-
-The number of TCP connections for which the current state is either ESTABLISHED or CLOSE-WAIT. See
-     
-     <i>tcpCurrEstab</i> in RFC 1156.
-
-`InErrors`
-
-The number of packets received on offloaded TCP connections that contained one or more
-     TCP-specific errors that prevented the offload target from delivering the packets. See 
-     <i>ifInErrors</i> in RFC 1156.
-
 `InSegments`
 
 The total number of segments received on offloaded TCP connections, including those received in
@@ -86,16 +74,17 @@ The total number of segments received on offloaded TCP connections, including th
      <b>InErrors</b> ). This count includes segments received on currently established connections. See 
      <i>tcpInSegs</i> in RFC 1156.
 
-`OutResets`
-
-The number of segments transmitted on offloaded TCP connections with the RST bit set in the TCP
-     header.
-
 `OutSegments`
 
 The total number of segments sent on offloaded TCP connections, including those on current
      connections but excluding those containing only retransmitted octets. See 
      <i>tcpOutSegs</i> in RFC 1156.
+
+`CurrentlyEstablished`
+
+The number of TCP connections for which the current state is either ESTABLISHED or CLOSE-WAIT. See
+     
+     <i>tcpCurrEstab</i> in RFC 1156.
 
 `ResetEstablished`
 
@@ -107,6 +96,17 @@ The number of times that offloaded TCP connections have made a direct transition
 The total number of segments retransmitted on offloaded TCP connections--that is, the number of
      TCP segments transmitted that contain one or more previously transmitted octets. See 
      <i>tcpRetransSegs</i> in RFC 1156.
+
+`InErrors`
+
+The number of packets received on offloaded TCP connections that contained one or more
+     TCP-specific errors that prevented the offload target from delivering the packets. See 
+     <i>ifInErrors</i> in RFC 1156.
+
+`OutResets`
+
+The number of segments transmitted on offloaded TCP connections with the RST bit set in the TCP
+     header.
 
 ## Remarks
 The statistics in the TCP_OFFLOAD_STATS structure pertain only to offloaded TCP connections. The
@@ -169,11 +169,3 @@ All of the counters that supply the values for the TCP_OFFLOAD_STATS structure w
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569800">OID_TCP4_OFFLOAD_STATS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATS structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

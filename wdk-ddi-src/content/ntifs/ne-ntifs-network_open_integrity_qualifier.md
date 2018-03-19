@@ -67,16 +67,6 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>NetworkOpenIntegrityEncrypted</td>
-                    <td>Indicates that the file is encrypted end-to-end.</td>
-                </tr>
-            
-                <tr>
-                    <td>NetworkOpenIntegrityMaximum</td>
-                    <td>Indicates that the file has the best integrity that is available.</td>
-                </tr>
-            
-                <tr>
                     <td>NetworkOpenIntegrityNone</td>
                     <td>Indicates that the file is not signed or encrypted.</td>
                 </tr>
@@ -84,6 +74,16 @@ typedef enum  {
                 <tr>
                     <td>NetworkOpenIntegritySigned</td>
                     <td>Indicates that the file is signed end-to-end.</td>
+                </tr>
+            
+                <tr>
+                    <td>NetworkOpenIntegrityEncrypted</td>
+                    <td>Indicates that the file is encrypted end-to-end.</td>
+                </tr>
+            
+                <tr>
+                    <td>NetworkOpenIntegrityMaximum</td>
+                    <td>Indicates that the file has the best integrity that is available.</td>
                 </tr>
 </table>
 

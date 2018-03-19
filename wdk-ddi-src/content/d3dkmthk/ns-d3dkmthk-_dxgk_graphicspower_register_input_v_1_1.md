@@ -60,25 +60,25 @@ typedef struct _DXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1 {
 ## Members
 
 
-`FStateNotificationCb`
+`Version`
 
-Issues a state notification.
-
-`PowerNotificationCb`
-
-Issues a power notification.
+The current version being used.
 
 `PrivateHandle`
 
 A private handle to the device.
 
+`PowerNotificationCb`
+
+Issues a power notification.
+
 `RemovalNotificationCb`
 
 Issues a removal notification.
 
-`Version`
+`FStateNotificationCb`
 
-The current version being used.
+Issues a state notification.
 
 
 ## Requirements

@@ -59,16 +59,16 @@ typedef struct _WWAN_LIST_HEADER {
 ## Members
 
 
-`ElementCount`
-
-The number of elements in the list. The MB Service uses this information to allocate and
-     reallocate memory for the list.
-
 `ElementType`
 
 A value from the 
      <a href="..\wwan\ne-wwan-_wwan_struct_type.md">WWAN_STRUCT_TYPE</a> enumeration that represents
      the type of objects in the list.
+
+`ElementCount`
+
+The number of elements in the list. The MB Service uses this information to allocate and
+     reallocate memory for the list.
 
 ## Remarks
 You can assume that the list of elements is stored in memory immediately following the data structure
@@ -105,11 +105,3 @@ You can assume that the list of elements is stored in memory immediately followi
 
 
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_visible_providers.md">NDIS_WWAN_VISIBLE_PROVIDERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_LIST_HEADER structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

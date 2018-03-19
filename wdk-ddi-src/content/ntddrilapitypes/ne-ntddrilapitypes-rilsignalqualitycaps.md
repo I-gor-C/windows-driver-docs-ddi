@@ -59,17 +59,17 @@ typedef enum _RILSIGNALQUALITYCAPS {
 <table>
             
                 <tr>
-                    <td>RIL_CAPS_SIGNALQUALITY_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_CAPS_SIGNALQUALITY_NOTIFICATION</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_CAPS_SIGNALQUALITY_POLLING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CAPS_SIGNALQUALITY_MAX</td>
                     <td></td>
                 </tr>
 </table>

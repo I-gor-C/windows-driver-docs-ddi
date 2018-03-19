@@ -68,15 +68,27 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>DxgkServicesBDD</td>
-                    <td>Reserved for system use. Do not use in your driver.
+                    <td>DxgkServicesDebugReport</td>
+                    <td>Indicates the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551798">Debug Report interface</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>DxgkServicesTimedOperation</td>
+                    <td>Indicates the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation interface</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>DxgkServicesSPB</td>
+                    <td>Indicates the <a href="https://msdn.microsoft.com/D525A961-339D-414B-B40F-14AD9AEA51C5">Simple  Peripheral Bus (SPB) Interface</a>.
 
 Supported starting with Windows 8.</td>
                 </tr>
             
                 <tr>
-                    <td>DxgkServicesDebugReport</td>
-                    <td>Indicates the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551798">Debug Report interface</a>.</td>
+                    <td>DxgkServicesBDD</td>
+                    <td>Reserved for system use. Do not use in your driver.
+
+Supported starting with Windows 8.</td>
                 </tr>
             
                 <tr>
@@ -89,18 +101,6 @@ Supported starting with Windows 8.</td>
                 <tr>
                     <td>DxgkServicesIDD</td>
                     <td></td>
-                </tr>
-            
-                <tr>
-                    <td>DxgkServicesSPB</td>
-                    <td>Indicates the <a href="https://msdn.microsoft.com/D525A961-339D-414B-B40F-14AD9AEA51C5">Simple  Peripheral Bus (SPB) Interface</a>.
-
-Supported starting with Windows 8.</td>
-                </tr>
-            
-                <tr>
-                    <td>DxgkServicesTimedOperation</td>
-                    <td>Indicates the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation interface</a>.</td>
                 </tr>
 </table>
 

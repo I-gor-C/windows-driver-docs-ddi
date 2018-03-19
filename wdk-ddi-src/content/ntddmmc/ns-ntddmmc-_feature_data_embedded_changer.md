@@ -68,21 +68,21 @@ typedef struct _FEATURE_DATA_EMBEDDED_CHANGER {
 
 Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
-`HighestSlotNumber`
-
-Indicates the number of slots minus 1.
-
-`Reserved`
-
-Reserved.
-
 `Reserved1`
 
 Reserved.
 
+`SupportsDiscPresent`
+
+Indicates, when set to 1, that the device can report the contents of the slots after a reset or magazine change. When set to zero, this bit indicates that the device can report the contents of the slots after reset or magazine change.
+
 `Reserved2`
 
 Reserved.
+
+`SideChangeCapable`
+
+Indicates, when set to 1, that the device is capable of selecting both sides of the media. When set to zero, this bit indicates that the device is not capable of selecting both sides of the media.
 
 `Reserved3`
 
@@ -92,13 +92,13 @@ Reserved.
 
 Reserved.
 
-`SideChangeCapable`
+`HighestSlotNumber`
 
-Indicates, when set to 1, that the device is capable of selecting both sides of the media. When set to zero, this bit indicates that the device is not capable of selecting both sides of the media.
+Indicates the number of slots minus 1.
 
-`SupportsDiscPresent`
+`Reserved`
 
-Indicates, when set to 1, that the device can report the contents of the slots after a reset or magazine change. When set to zero, this bit indicates that the device can report the contents of the slots after reset or magazine change.
+Reserved.
 
 ## Remarks
 This structure holds data for the feature named "Embedded Changer" by the <i>SCSI Multimedia - 4 (MMC-4) </i>specification. Devices that support this feature can move media back and forth between a media storage area and the mechanism that actually accesses the media.
@@ -115,11 +115,3 @@ This structure holds data for the feature named "Embedded Changer" by the <i>SCS
 
 
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_DATA_EMBEDDED_CHANGER structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

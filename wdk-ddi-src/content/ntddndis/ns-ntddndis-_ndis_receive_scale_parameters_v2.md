@@ -62,6 +62,18 @@ typedef struct _NDIS_RECEIVE_SCALE_PARAMETERS_V2 {
 ## Members
 
 
+`Header`
+
+The 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <b>NDIS_RECEIVE_SCALE_PARAMETERS_V2</b> structure. Set the 
+     <b>Type</b> member of the structure that 
+     <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_DEFAULT</b>. 
+
+For NDIS  6.80 and later drivers, set the 
+     <b>Revision</b> member to <b>NDIS_RECEIVE_SCALE_PARAMETERS_V2_REVISION_1</b> and the 
+     <b>Size</b> member to <b>sizeof(NDIS_RECEIVE_SCALE_PARAMETERS_V2)</b>.
+
 `Flags`
 
 A <b>ULONG</b> value that indicates which parameters are being changed. The driver can use these flags to quickly determine which parameters have changed and update
@@ -152,37 +164,25 @@ Miniport drivers can use the
 
 This parameter can be changed at the same time that RSS is enabled, or afterward.
 
-`HashSecretKeyOffset`
-
-
-
 `HashSecretKeySize`
 
 The size of the secret key array of the hash function, in bytes. The size of the array is 40 bytes for NdisHashFunctionToeplitz.
 
 This parameter can be changed at the same time that RSS is enabled, or afterward.
 
-`Header`
+`HashSecretKeyOffset`
 
-The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
-     <b>NDIS_RECEIVE_SCALE_PARAMETERS_V2</b> structure. Set the 
-     <b>Type</b> member of the structure that 
-     <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_DEFAULT</b>. 
 
-For NDIS  6.80 and later drivers, set the 
-     <b>Revision</b> member to <b>NDIS_RECEIVE_SCALE_PARAMETERS_V2_REVISION_1</b> and the 
-     <b>Size</b> member to <b>sizeof(NDIS_RECEIVE_SCALE_PARAMETERS_V2)</b>.
+
+`NumberOfQueues`
+
+The maximum number of queues for VPort running in RSSv2 mode, or the miniport adapter running in Native RSS mode. This parameter is an alias for the NUM_QUEUE_PAIRS variable of the <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_parameters.md">NDIS_NIC_SWITCH_VPORT_PARAMETERS</a> structure, which can also be queried or set through the <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-vport-parameters">OID_NIC_SWITCH_VPORT_PARAMETERS</a> OID. It can be changed when RSS is enabled or disabled.
 
 `NumberOfIndirectionTableEntries`
 
 The number of indirection table entries (ITEs) for the VPort running in RSSv2 mode, or the miniport adapter running in Native RSS mode. This value is a power of two and cannot exceed the corresponding adapter's capabilities. It can be changed at the same time that RSS is enabled, or afterward.
 
 New values for this parameter will also be a power of two and cannot exceed adapter capabilities. When this number is increased, the miniport driver should clone the original indirection table into the new ITEs as many times as needed. When this number is decreased, the upper layer will guarantee that the portion of the indirection table which is being removed contains exact replicas of the remaining portion.
-
-`NumberOfQueues`
-
-The maximum number of queues for VPort running in RSSv2 mode, or the miniport adapter running in Native RSS mode. This parameter is an alias for the NUM_QUEUE_PAIRS variable of the <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_parameters.md">NDIS_NIC_SWITCH_VPORT_PARAMETERS</a> structure, which can also be queried or set through the <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-vport-parameters">OID_NIC_SWITCH_VPORT_PARAMETERS</a> OID. It can be changed when RSS is enabled or disabled.
 
 
 ## Requirements
@@ -222,11 +222,3 @@ The maximum number of queues for VPort running in RSSv2 mode, or the miniport ad
 
 
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-receive-scale-parameters-v2">OID_GEN_RECEIVE_SCALE_PARAMETERS_V2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_SCALE_PARAMETERS_V2 structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

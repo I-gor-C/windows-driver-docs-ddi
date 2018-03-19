@@ -62,12 +62,7 @@ typedef enum _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE {
 <table>
             
                 <tr>
-                    <td>MpStorageDiagnosticTargetTypeHbaFirmware</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>MpStorageDiagnosticTargetTypeMax</td>
+                    <td>MpStorageDiagnosticTargetTypeUndefined</td>
                     <td></td>
                 </tr>
             
@@ -77,7 +72,12 @@ typedef enum _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE {
                 </tr>
             
                 <tr>
-                    <td>MpStorageDiagnosticTargetTypeUndefined</td>
+                    <td>MpStorageDiagnosticTargetTypeHbaFirmware</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>MpStorageDiagnosticTargetTypeMax</td>
                     <td></td>
                 </tr>
 </table>

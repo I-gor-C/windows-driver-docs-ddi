@@ -90,70 +90,25 @@ typedef struct _UFS_GEOMETRY_DESCRIPTOR {
 ## Members
 
 
-`bAllocationUnitSize`
+`bLength`
 
-Specifies the allocation unit size in number of segments.
-
-`bDataOrdering`
-
-Specifies if a device supports out-of-order data transfer. Contains one of the following values:
-
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>Out-of-order data transfer is not supported.</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Out-of-order data transfer is supported.</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
+Specifies the length of the descriptor.
 
 `bDescriptorIDN`
 
 Specifies the type of the descriptor. This descriptor will have a value of<b> UFS_DESC_GEOMETRY_IDN</b>.
 
-`bDynamicCapacityResourcePolicy`
+`bMediaTechnology`
 
-Specifies a device's spare blocks
-resource management policy. Contains one of the following values:
+Reserved for future use.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>Spare blocks resource management policy is
-per logical unit.</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Spare blocks resource management policy is
-per memory type.</td>
-</tr>
-</table>
+`Reserved1`
 
-`bLength`
+Reserved for future use.
 
-Specifies the length of the descriptor.
+`qTotalRawDeviceCapacity`
 
-`bMaxContexIDNumber`
-
-Specifies the max number of contexts supported by a device. This number must be greater than 5.
-
-`bMaxInBufferSize`
-
-Specifies the max size of the data-in buffer in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
+Specifies the total raw device capacity. Expressed in units of 512 bytes.
 
 `bMaxNumberLU`
 
@@ -178,13 +133,13 @@ Specifies the maximum number of logical unit(s) supported by the UFS (Universal 
 </tr>
 </table>
 
-`bMaxOutBufferSize`
+`dSegmentSize`
 
-Specifies the max size of the data-out buffer in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
+Specifies the segment size of the device in units of 512 bytes.
 
-`bMediaTechnology`
+`bAllocationUnitSize`
 
-Reserved for future use.
+Specifies the allocation unit size in number of segments.
 
 `bMinAddrBlockSize`
 
@@ -198,10 +153,77 @@ Specifies the optimal read block size in units of 512 bytes.
 
 Specifies the optimal write block size in units of 512 bytes. <b>bOptimalWriteBlockSize</b> is equal to or greater than <b>bMinAddrBlockSize</b>.
 
+`bMaxInBufferSize`
+
+Specifies the max size of the data-in buffer in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
+
+`bMaxOutBufferSize`
+
+Specifies the max size of the data-out buffer in units of 512 bytes. The minium size is 4 KB or a value of 0x08.
+
 `bRPMB_ReadWriteSize`
 
 Specifies the maximum number of Replay Protected Memory Block (RPMB) frames allowed in Security Protocol In and Security
 Protocol Out. Each frame is 256-bytes.
+
+`bDynamicCapacityResourcePolicy`
+
+Specifies a device's spare blocks
+resource management policy. Contains one of the following values:
+
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>Spare blocks resource management policy is
+per logical unit.</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>Spare blocks resource management policy is
+per memory type.</td>
+</tr>
+</table>
+
+`bDataOrdering`
+
+Specifies if a device supports out-of-order data transfer. Contains one of the following values:
+
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0x00</td>
+<td>Out-of-order data transfer is not supported.</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>Out-of-order data transfer is supported.</td>
+</tr>
+<tr>
+<td>All other values</td>
+<td>Reserved for future use.</td>
+</tr>
+</table>
+
+`bMaxContexIDNumber`
+
+Specifies the max number of contexts supported by a device. This number must be greater than 5.
+
+`bSysDataTagUnitSize`
+
+Specifies the system data tag
+unit size.
+
+`bSysDataTagResSize`
+
+Specifies the maximum size in bytes allocated by
+the device to handle system data.
 
 `bSupportedSecRTypes`
 
@@ -238,84 +260,6 @@ mechanism.</td>
 <td>Reserved for future use.</td>
 </tr>
 </table>
-
-`bSysDataTagResSize`
-
-Specifies the maximum size in bytes allocated by
-the device to handle system data.
-
-`bSysDataTagUnitSize`
-
-Specifies the system data tag
-unit size.
-
-`dEnhanced1MaxNAllocU`
-
-specifies the max number of Allocation Units for the enhanced
-memory type 1.
-
-`dEnhanced2MaxNAllocU`
-
-specifies the max number of Allocation Units for the enhanced
-memory type 2.
-
-`dEnhanced3MaxNAllocU`
-
-specifies the max number of Allocation Units for the enhanced
-memory type 3.
-
-`dEnhanced4MaxNAllocU`
-
-specifies the max number of Allocation Units for the enhanced
-memory type 4.
-
-`dNonPersistMaxNAllocU`
-
-Species the maximum number of Allocation Units for a non-persistent memory type.
-
-`dOptimalLogicalBlockSize`
-
-Specifies the optimal logical block size.
-
-`dSegmentSize`
-
-Specifies the segment size of the device in units of 512 bytes.
-
-`dSystemCodeMaxNAllocU`
-
-Specifies the maximum number of allocation units for the System Code for a device.
-
-`qTotalRawDeviceCapacity`
-
-Specifies the total raw device capacity. Expressed in units of 512 bytes.
-
-`Reserved1`
-
-Reserved for future use.
-
-`wEnhanced1CapAdjFac`
-
-specifies the Capacity Adjustment Factor for the enhanced
-memory type 1.
-
-`wEnhanced2CapAdjFac`
-
-specifies the Capacity Adjustment Factor for the enhanced
-memory type 2.
-
-`wEnhanced3CapAdjFac`
-
-specifies the Capacity Adjustment Factor for the enhanced
-memory type 3.
-
-`wEnhanced4CapAdjFac`
-
-specifies the Capacity Adjustment Factor for the enhanced
-memory type 4.
-
-`wNonPersistCapAdjFac`
-
-Specifies the capacity adjustment factor for the non-persistent memory type.
 
 `wSupportedMemoryTypes`
 
@@ -364,10 +308,66 @@ Specifies the supported memory types in a bitmap.
 </tr>
 </table>
 
+`dSystemCodeMaxNAllocU`
+
+Specifies the maximum number of allocation units for the System Code for a device.
+
 `wSystemCodeCapAdjFac`
 
 Species the Capacity Adjustment Factor for the System Code
 memory type.
+
+`dNonPersistMaxNAllocU`
+
+Species the maximum number of Allocation Units for a non-persistent memory type.
+
+`wNonPersistCapAdjFac`
+
+Specifies the capacity adjustment factor for the non-persistent memory type.
+
+`dEnhanced1MaxNAllocU`
+
+specifies the max number of Allocation Units for the enhanced
+memory type 1.
+
+`wEnhanced1CapAdjFac`
+
+specifies the Capacity Adjustment Factor for the enhanced
+memory type 1.
+
+`dEnhanced2MaxNAllocU`
+
+specifies the max number of Allocation Units for the enhanced
+memory type 2.
+
+`wEnhanced2CapAdjFac`
+
+specifies the Capacity Adjustment Factor for the enhanced
+memory type 2.
+
+`dEnhanced3MaxNAllocU`
+
+specifies the max number of Allocation Units for the enhanced
+memory type 3.
+
+`wEnhanced3CapAdjFac`
+
+specifies the Capacity Adjustment Factor for the enhanced
+memory type 3.
+
+`dEnhanced4MaxNAllocU`
+
+specifies the max number of Allocation Units for the enhanced
+memory type 4.
+
+`wEnhanced4CapAdjFac`
+
+specifies the Capacity Adjustment Factor for the enhanced
+memory type 4.
+
+`dOptimalLogicalBlockSize`
+
+Specifies the optimal logical block size.
 
 ## Remarks
 If the size of the data transferred exceeds the number of frames <b>bRPMB_ReadWriteSize</b>, it will be done in multiple Security commands.

@@ -64,23 +64,18 @@ typedef enum _WWAN_USSD_EVENT_TYPE {
 <table>
             
                 <tr>
-                    <td>WwanUssdEventActionRequired</td>
-                    <td>Indicates the USSD session is still open and further information is needed, such as additional USSD strings.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanUssdEventNetworkTimeOut</td>
-                    <td>Indicates that the USSD session was closed due to a session time-out either locally or by the network. The miniport driver or MB device is responsible for timing out an inactive USSD session after an implementation-specific time-out.</td>
-                </tr>
-            
-                <tr>
                     <td>WwanUssdEventNoActionRequired</td>
                     <td>Indicates no further action is required or information needed.</td>
                 </tr>
             
                 <tr>
-                    <td>WwanUssdEventOperationNotSupported</td>
-                    <td>Indicates that the previous request is not supported by the miniport driver or MB device.</td>
+                    <td>WwanUssdEventActionRequired</td>
+                    <td>Indicates the USSD session is still open and further information is needed, such as additional USSD strings.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanUssdEventTerminated</td>
+                    <td>Indicates the USSD session has been terminated.</td>
                 </tr>
             
                 <tr>
@@ -89,8 +84,13 @@ typedef enum _WWAN_USSD_EVENT_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WwanUssdEventTerminated</td>
-                    <td>Indicates the USSD session has been terminated.</td>
+                    <td>WwanUssdEventOperationNotSupported</td>
+                    <td>Indicates that the previous request is not supported by the miniport driver or MB device.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanUssdEventNetworkTimeOut</td>
+                    <td>Indicates that the USSD session was closed due to a session time-out either locally or by the network. The miniport driver or MB device is responsible for timing out an inactive USSD session after an implementation-specific time-out.</td>
                 </tr>
 </table>
 
@@ -111,11 +111,3 @@ The value of the <a href="..\wwan\ns-wwan-_wwan_ussd_event.md">WWAN_USSD_EVENT</
 ## See Also
 
 <a href="..\wwan\ns-wwan-_wwan_ussd_event.md">WWAN_USSD_EVENT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_USSD_EVENT_TYPE enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

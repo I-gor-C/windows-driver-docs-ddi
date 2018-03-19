@@ -60,7 +60,11 @@ typedef struct _RILSENDDTMFPARAMS {
 ## Members
 
 
-`dwDigitOffTimeMs`
+`dwExecutor`
+
+
+
+`szDTMF`
 
 
 
@@ -68,11 +72,7 @@ typedef struct _RILSENDDTMFPARAMS {
 
 
 
-`dwExecutor`
-
-
-
-`szDTMF`
+`dwDigitOffTimeMs`
 
 
 

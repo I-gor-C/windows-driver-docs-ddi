@@ -64,18 +64,13 @@ typedef enum _USBFN_DIRECTION {
 <table>
             
                 <tr>
-                    <td>UsbfnDirectionIn</td>
-                    <td>The transfer is to the host from an endpoint.</td>
-                </tr>
-            
-                <tr>
-                    <td>UsbfnDirectionMaximum</td>
-                    <td>The maximum value in this enumeration.</td>
-                </tr>
-            
-                <tr>
                     <td>UsbfnDirectionMinimum</td>
                     <td>The minimum value in this enumeration.</td>
+                </tr>
+            
+                <tr>
+                    <td>UsbfnDirectionIn</td>
+                    <td>The transfer is to the host from an endpoint.</td>
                 </tr>
             
                 <tr>
@@ -84,13 +79,18 @@ typedef enum _USBFN_DIRECTION {
                 </tr>
             
                 <tr>
+                    <td>UsbfnDirectionTx</td>
+                    <td>The bus transfer to the host from the device.</td>
+                </tr>
+            
+                <tr>
                     <td>UsbfnDirectionRx</td>
                     <td>The bus transfer is from the host to the device.</td>
                 </tr>
             
                 <tr>
-                    <td>UsbfnDirectionTx</td>
-                    <td>The bus transfer to the host from the device.</td>
+                    <td>UsbfnDirectionMaximum</td>
+                    <td>The maximum value in this enumeration.</td>
                 </tr>
 </table>
 

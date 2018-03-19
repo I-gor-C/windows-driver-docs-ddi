@@ -59,6 +59,14 @@ typedef struct _BAND_TABLE {
 ## Members
 
 
+`StructSize`
+
+The size of this structure in bytes. Set to <b>sizeof</b>(BAND_TABLE).
+
+`BandTableOffset`
+
+The offset, in bytes, to the start of an array of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table_entry.md">BAND_TABLE_ENTRY</a> structures.
+
 `BandTableEntryCount`
 
 The number of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table_entry.md">BAND_TABLE_ENTRY</a> returned in the array at <b>BandTableOffset</b>.
@@ -66,14 +74,6 @@ The number of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table_entry.md"
 `BandTableEntrySize`
 
 The size of each entry, in bytes, in the array at <b>BandTableOffset</b>. Instead of using the value of <b>sizeof</b>(BAND_TABLE_ENTRY), callers must use <b>BandTableEntrySize</b> when advancing to the next element in the band table array.
-
-`BandTableOffset`
-
-The offset, in bytes, to the start of an array of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table_entry.md">BAND_TABLE_ENTRY</a> structures.
-
-`StructSize`
-
-The size of this structure in bytes. Set to <b>sizeof</b>(BAND_TABLE).
 
 
 ## Requirements
@@ -93,11 +93,3 @@ The size of this structure in bytes. Set to <b>sizeof</b>(BAND_TABLE).
 
 
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table_entry.md">BAND_TABLE_ENTRY</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20BAND_TABLE structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

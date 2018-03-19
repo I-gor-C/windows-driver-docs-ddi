@@ -60,13 +60,13 @@ typedef enum _WDI_EXEMPTION_ACTION_TYPE {
 <table>
             
                 <tr>
-                    <td>WDI_EXEMPT_ALWAYS</td>
-                    <td>On send, packets are exempt from cipher operations and are transmitted unencrypted. On receive, the received packet is discarded if the Protected Frame subfield of the Frame Control field in the 802.11 MAC header is set to 1.</td>
+                    <td>WDI_EXEMPT_NO_EXEMPTION</td>
+                    <td>Packets are not exempt from any cipher operations performed by the port.</td>
                 </tr>
             
                 <tr>
-                    <td>WDI_EXEMPT_NO_EXEMPTION</td>
-                    <td>Packets are not exempt from any cipher operations performed by the port.</td>
+                    <td>WDI_EXEMPT_ALWAYS</td>
+                    <td>On send, packets are exempt from cipher operations and are transmitted unencrypted. On receive, the received packet is discarded if the Protected Frame subfield of the Frame Control field in the 802.11 MAC header is set to 1.</td>
                 </tr>
             
                 <tr>

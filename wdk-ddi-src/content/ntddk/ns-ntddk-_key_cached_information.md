@@ -67,33 +67,33 @@ typedef struct _KEY_CACHED_INFORMATION {
 
 The last time the key or any of its values changed. This time value is expressed in absolute system time format. Absolute system time is the number of 100-nanosecond intervals since the start of the year 1601 in the Gregorian calendar.
 
-`MaxNameLen`
+`TitleIndex`
 
-The maximum number of bytes for a subkey name.
-
-`MaxValueDataLen`
-
-The maximum length, in bytes, of a value entry data field.
-
-`MaxValueNameLen`
-
-The maximum length, in bytes, of any value entry name.
-
-`NameLength`
-
-The size, in bytes, of the key name.
+Device and intermediate drivers should ignore this member.
 
 `SubKeys`
 
 The number of subkeys for a key.
 
-`TitleIndex`
+`MaxNameLen`
 
-Device and intermediate drivers should ignore this member.
+The maximum number of bytes for a subkey name.
 
 `Values`
 
 The number of value entries.
+
+`MaxValueNameLen`
+
+The maximum length, in bytes, of any value entry name.
+
+`MaxValueDataLen`
+
+The maximum length, in bytes, of a value entry data field.
+
+`NameLength`
+
+The size, in bytes, of the key name.
 
 
 ## Requirements
@@ -133,11 +133,3 @@ The number of value entries.
 
 
 <a href="..\ntddk\ns-ntddk-_key_name_information.md">KEY_NAME_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KEY_CACHED_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

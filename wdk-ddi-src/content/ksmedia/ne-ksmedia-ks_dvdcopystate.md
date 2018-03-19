@@ -62,6 +62,16 @@ typedef enum  {
 <table>
             
                 <tr>
+                    <td>KS_DVDCOPYSTATE_INITIALIZE</td>
+                    <td>Indicates that the full copyright protection sequence is starting.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_DVDCOPYSTATE_INITIALIZE_TITLE</td>
+                    <td>Indicates that a title key copyright protection sequence is starting.</td>
+                </tr>
+            
+                <tr>
                     <td>KS_DVDCOPYSTATE_AUTHENTICATION_NOT_REQUIRED</td>
                     <td>Indicates that no authentication is required.</td>
                 </tr>
@@ -74,16 +84,6 @@ typedef enum  {
                 <tr>
                     <td>KS_DVDCOPYSTATE_DONE</td>
                     <td>Indicates that the copyright protection sequence is complete.</td>
-                </tr>
-            
-                <tr>
-                    <td>KS_DVDCOPYSTATE_INITIALIZE</td>
-                    <td>Indicates that the full copyright protection sequence is starting.</td>
-                </tr>
-            
-                <tr>
-                    <td>KS_DVDCOPYSTATE_INITIALIZE_TITLE</td>
-                    <td>Indicates that a title key copyright protection sequence is starting.</td>
                 </tr>
 </table>
 
@@ -100,11 +100,3 @@ typedef enum  {
 
 
 <a href="..\ksmedia\ns-ksmedia-_ks_dvdcopy_set_copy_state.md">KS_DVDCOPY_SET_COPY_STATE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_DVDCOPYSTATE enumeration%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

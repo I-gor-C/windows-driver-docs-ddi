@@ -66,27 +66,7 @@ typedef enum _RILDEVICEINFORMATION {
 <table>
             
                 <tr>
-                    <td>RIL_DEVICEINFO_ARG_LARGEST</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DEVICEINFO_ARG_SMALLEST</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_DEVICEINFO_MANUFACTURER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DEVICEINFO_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DEVICEINFO_MIN</td>
                     <td></td>
                 </tr>
             
@@ -101,12 +81,32 @@ typedef enum _RILDEVICEINFORMATION {
                 </tr>
             
                 <tr>
+                    <td>RIL_DEVICEINFO_SERIALNUMBER_GW</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_DEVICEINFO_SERIALNUMBER_CDMA</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_DEVICEINFO_SERIALNUMBER_GW</td>
+                    <td>RIL_DEVICEINFO_ARG_SMALLEST</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DEVICEINFO_ARG_LARGEST</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DEVICEINFO_MIN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DEVICEINFO_MAX</td>
                     <td></td>
                 </tr>
 </table>

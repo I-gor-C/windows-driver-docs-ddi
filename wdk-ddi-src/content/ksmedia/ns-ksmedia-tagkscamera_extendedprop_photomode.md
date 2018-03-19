@@ -59,21 +59,21 @@ typedef struct _KSCAMERA_EXTENDEDPROP_PHOTOMODE {
 ## Members
 
 
-`MaxHistoryFrames`
-
-Maximum number of history frames supported by the driver.
-
 `RequestedHistoryFrames`
 
 The number of history frames to reserve by the driver. The value of <b>RequestedHistoryFrames</b> &lt;= <b>MaxHistoryFrames</b>.
 
-`Reserved`
+`MaxHistoryFrames`
 
-Reserved. Set to 0.
+Maximum number of history frames supported by the driver.
 
 `SubMode`
 
 Not used. Set to 0.
+
+`Reserved`
+
+Reserved. Set to 0.
 
 
 ## Requirements
@@ -85,11 +85,3 @@ Not used. Set to 0.
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn917959">KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSCAMERA_EXTENDEDPROP_PHOTOMODE structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

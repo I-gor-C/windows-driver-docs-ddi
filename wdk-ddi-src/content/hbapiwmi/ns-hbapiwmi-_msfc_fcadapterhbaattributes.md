@@ -71,33 +71,33 @@ typedef struct _MSFC_FCAdapterHBAAttributes {
 ## Members
 
 
-`DriverName`
+`UniqueAdapterId`
 
-Contains an ASCII string that is 256 bytes or fewer in length and that indicates the file name for the driver binary file.
-
-`DriverVersion`
-
-Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific version of the HBA miniport driver.
-
-`FirmwareVersion`
-
-Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.
-
-`HardwareVersion`
-
-Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific hardware revision level of the HBA.
+Indicates the unique adapter ID.
 
 `HBAStatus`
 
 Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
+`NodeWWN`
+
+Contains the 64 bit world-wide name that indicates the node name of the HBA. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
+
+`VendorSpecificID`
+
+Indicates a vendor-specific ID.
+
+`NumberOfPorts`
+
+Indicates the number of ports on the HBA.
+
 `Manufacturer`
 
 Contains an ASCII string that is 64 bytes or fewer in length and that identifies the name of the manufacturer of the HBA.
 
-`MfgDomain`
+`SerialNumber`
 
-Contains the name of the HBA manufacturer.
+Contains an ASCII string that is 64 bytes or fewer in length and that identifies the serial number of the HBA.
 
 `Model`
 
@@ -111,29 +111,29 @@ Contains an ASCII string that is 256 bytes or fewer in length and that indicates
 
 Contains an ASCII string that is 256 bytes or fewer in length and that indicates the symbolic name for the fibre channel node.
 
-`NodeWWN`
+`HardwareVersion`
 
-Contains the 64 bit world-wide name that indicates the node name of the HBA. For a discussion of worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
+Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific hardware revision level of the HBA.
 
-`NumberOfPorts`
+`DriverVersion`
 
-Indicates the number of ports on the HBA.
+Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific version of the HBA miniport driver.
 
 `OptionROMVersion`
 
 Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific option ROM or BIOS version of the HBA.
 
-`SerialNumber`
+`FirmwareVersion`
 
-Contains an ASCII string that is 64 bytes or fewer in length and that identifies the serial number of the HBA.
+Contains an ASCII string that is 256 bytes or fewer in length and that indicates the vendor-specific firmware version of the HBA.
 
-`UniqueAdapterId`
+`DriverName`
 
-Indicates the unique adapter ID.
+Contains an ASCII string that is 256 bytes or fewer in length and that indicates the file name for the driver binary file.
 
-`VendorSpecificID`
+`MfgDomain`
 
-Indicates a vendor-specific ID.
+Contains the name of the HBA manufacturer.
 
 
 ## Requirements
@@ -148,11 +148,3 @@ Indicates a vendor-specific ID.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562497">MSFC_FCAdapterHBAAttributes WMI Class</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSFC_FCAdapterHBAAttributes structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

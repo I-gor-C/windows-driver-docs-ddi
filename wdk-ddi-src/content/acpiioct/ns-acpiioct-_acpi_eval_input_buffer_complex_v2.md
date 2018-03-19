@@ -63,25 +63,25 @@ typedef struct _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2 {
 ## Members
 
 
-`Argument`
+`Signature`
 
-
-
-`ArgumentCount`
-
-Defines the <b>ULONG</b> member <b>ArgumentCount</b>.
+Defines the <b>ULONG</b> member <b>Signature</b>.
 
 `DUMMYUNIONNAME`
 
 Defines the method name member of <b>DUMMYUNIONNAME</b>.
 
-`Signature`
-
-Defines the <b>ULONG</b> member <b>Signature</b>.
-
 `Size`
 
 Defines the <b>ULONG</b> member <b>Size</b>.
+
+`ArgumentCount`
+
+Defines the <b>ULONG</b> member <b>ArgumentCount</b>.
+
+`Argument`
+
+
 
 
 ## Requirements

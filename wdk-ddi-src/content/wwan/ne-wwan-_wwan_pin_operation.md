@@ -64,13 +64,8 @@ typedef enum _WWAN_PIN_OPERATION {
 <table>
             
                 <tr>
-                    <td>WwanPinOperationChange</td>
-                    <td>Change the specified PIN.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanPinOperationDisable</td>
-                    <td>Disable the specified PIN.</td>
+                    <td>WwanPinOperationEnter</td>
+                    <td>Enter the specified PIN into the device.</td>
                 </tr>
             
                 <tr>
@@ -79,8 +74,13 @@ typedef enum _WWAN_PIN_OPERATION {
                 </tr>
             
                 <tr>
-                    <td>WwanPinOperationEnter</td>
-                    <td>Enter the specified PIN into the device.</td>
+                    <td>WwanPinOperationDisable</td>
+                    <td>Disable the specified PIN.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanPinOperationChange</td>
+                    <td>Change the specified PIN.</td>
                 </tr>
             
                 <tr>
@@ -105,11 +105,3 @@ If a PIN disable operation for a given PIN type is tried when that PIN type is l
 ## See Also
 
 <a href="..\wwan\ns-wwan-_wwan_pin_action.md">WWAN_PIN_ACTION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_OPERATION enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

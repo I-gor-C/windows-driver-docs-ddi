@@ -67,33 +67,8 @@ typedef enum _DXVADDI_VIDEOCHROMASUBSAMPLING {
 <table>
             
                 <tr>
-                    <td>DXVADDI_VideoChromaSubsampling_Cosited</td>
-                    <td>A bitwise OR of the <b>DXVADDI_VideoChromaSubsampling_Horizontally_Cosited</b>, and <b>DXVADDI_VideoChromaSubsampling_Vertically_Cosited</b>, and <b>DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</b> values that are used with 4:4:4, 4:2:2, and 4:1:1 data.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_VideoChromaSubsampling_DV_PAL</td>
-                    <td>A bitwise OR of the <b>DXVADDI_VideoChromaSubsampling_Horizontally_Cosited</b> and <b>DXVADDI_VideoChromaSubsampling_Vertically_Cosited</b> values that are used with 4:2:0 data.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_VideoChromaSubsampling_Horizontally_Cosited</td>
-                    <td>Chroma samples are aligned on multiples of the luma samples horizontally.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_VideoChromaSubsampling_MPEG1</td>
-                    <td>The <b>DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</b> value that is used with 4:2:0 data.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_VideoChromaSubsampling_MPEG2</td>
-                    <td>A bitwise OR of the <b>DXVADDI_VideoChromaSubsampling_Horizontally_Cosited</b> and <b>DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</b> values that are used with 4:2:0 data.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVADDI_VideoChromaSubsampling_ProgressiveChroma</td>
-                    <td>The video chroma subsampling is progressive.</td>
+                    <td>DXVADDI_VideoChromaSubsamplingMask</td>
+                    <td>The video chroma subsampling mask. The first four (0x0F) bits of a DWORD can be used to specify video chroma subsampling.</td>
                 </tr>
             
                 <tr>
@@ -102,8 +77,13 @@ typedef enum _DXVADDI_VIDEOCHROMASUBSAMPLING {
                 </tr>
             
                 <tr>
-                    <td>DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</td>
-                    <td>The Pb and Pr (or Cb and Cr) planes have the same phase alignment. This value can be set only to 0 in the <b>VideoChromaSubsampling</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure if the data is vertically cosited.</td>
+                    <td>DXVADDI_VideoChromaSubsampling_ProgressiveChroma</td>
+                    <td>The video chroma subsampling is progressive.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_VideoChromaSubsampling_Horizontally_Cosited</td>
+                    <td>Chroma samples are aligned on multiples of the luma samples horizontally.</td>
                 </tr>
             
                 <tr>
@@ -112,8 +92,28 @@ typedef enum _DXVADDI_VIDEOCHROMASUBSAMPLING {
                 </tr>
             
                 <tr>
-                    <td>DXVADDI_VideoChromaSubsamplingMask</td>
-                    <td>The video chroma subsampling mask. The first four (0x0F) bits of a DWORD can be used to specify video chroma subsampling.</td>
+                    <td>DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</td>
+                    <td>The Pb and Pr (or Cb and Cr) planes have the same phase alignment. This value can be set only to 0 in the <b>VideoChromaSubsampling</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure if the data is vertically cosited.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_VideoChromaSubsampling_MPEG2</td>
+                    <td>A bitwise OR of the <b>DXVADDI_VideoChromaSubsampling_Horizontally_Cosited</b> and <b>DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</b> values that are used with 4:2:0 data.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_VideoChromaSubsampling_MPEG1</td>
+                    <td>The <b>DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</b> value that is used with 4:2:0 data.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_VideoChromaSubsampling_DV_PAL</td>
+                    <td>A bitwise OR of the <b>DXVADDI_VideoChromaSubsampling_Horizontally_Cosited</b> and <b>DXVADDI_VideoChromaSubsampling_Vertically_Cosited</b> values that are used with 4:2:0 data.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_VideoChromaSubsampling_Cosited</td>
+                    <td>A bitwise OR of the <b>DXVADDI_VideoChromaSubsampling_Horizontally_Cosited</b>, and <b>DXVADDI_VideoChromaSubsampling_Vertically_Cosited</b>, and <b>DXVADDI_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</b> values that are used with 4:4:4, 4:2:2, and 4:1:1 data.</td>
                 </tr>
 </table>
 
@@ -132,11 +132,3 @@ Cosite variations indicate that the chroma samples are aligned with the luma sam
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_VIDEOCHROMASUBSAMPLING enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

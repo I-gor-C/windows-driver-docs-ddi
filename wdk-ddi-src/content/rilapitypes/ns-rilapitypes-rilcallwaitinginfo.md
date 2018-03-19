@@ -65,7 +65,7 @@ typedef struct _RILCALLWAITINGINFO {
 
 
 
-`dwCallType`
+`dwParams`
 
 
 
@@ -73,7 +73,7 @@ typedef struct _RILCALLWAITINGINFO {
 
 
 
-`dwParams`
+`dwCallType`
 
 
 

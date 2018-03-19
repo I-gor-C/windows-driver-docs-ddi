@@ -66,15 +66,13 @@ typedef struct {
 ## Members
 
 
-`InjectionDataSize`
+`Size`
 
-Size of the injection data.
+Structure size.
 
-`InjectionStatus`
+`Version`
 
-Indicates whether any error was encountered in gathering the needed injection data. 
-
-The driver must ignore the injection if this field does not indicate success.
+Version number.
 
 `InjectionType`
 
@@ -82,17 +80,19 @@ Indicates the specific type of AGNSS injection.
 
 Depending on the type, the driver must access the specific data element of the structure. For example, if the type is GNSS_AGNSS_PositionInjection, use the Position element.
 
-`Size`
+`InjectionStatus`
 
-Structure size.
+Indicates whether any error was encountered in gathering the needed injection data. 
+
+The driver must ignore the injection if this field does not indicate success.
+
+`InjectionDataSize`
+
+Size of the injection data.
 
 `Unused`
 
 
-
-`Version`
-
-Version number.
 
 
 ## Requirements

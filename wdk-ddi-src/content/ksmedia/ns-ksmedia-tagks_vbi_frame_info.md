@@ -62,9 +62,9 @@ typedef struct tagKS_VBI_FRAME_INFO {
 ## Members
 
 
-`DropCount`
+`ExtendedHeaderSize`
 
-Specifies the number of pictures that were not captured. When capturing video, the minidriver sets this member. This counter should be incremented whenever a frame should have been captured but was not; this condition usually arises when no buffers were available during capture. Initialize or update this value on transition into KSSTATE_ACQUIRE.
+Specifies the size of this structure.
 
 `dwFrameFlags`
 
@@ -147,17 +147,17 @@ Indicates that the <b>VBIInfoHeader</b> member structure contains valid data
 </tr>
 </table>
 
-`dwSamplingFrequency`
-
-Specifies the sampling frequency in hertz (Hz).
-
-`ExtendedHeaderSize`
-
-Specifies the size of this structure.
-
 `PictureNumber`
 
 Specifies a count representing the current picture number. Initialize or update this value on transition into KSSTATE_ACQUIRE.
+
+`DropCount`
+
+Specifies the number of pictures that were not captured. When capturing video, the minidriver sets this member. This counter should be incremented whenever a frame should have been captured but was not; this condition usually arises when no buffers were available during capture. Initialize or update this value on transition into KSSTATE_ACQUIRE.
+
+`dwSamplingFrequency`
+
+Specifies the sampling frequency in hertz (Hz).
 
 `TvTunerChangeInfo`
 
@@ -202,11 +202,3 @@ The <b>dwSamplingFrequency</b> member is not used by Microsoft VBI codecs, but m
 
 
 <a href="..\ksmedia\ns-ksmedia-tagks_tvtuner_change_info.md">KS_TVTUNER_CHANGE_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VBI_FRAME_INFO structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

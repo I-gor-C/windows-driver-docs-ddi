@@ -61,10 +61,6 @@ typedef struct _WDI_MESSAGE_HEADER {
 ## Members
 
 
-`IhvSpecificId`
-
-Specifies an IHV-specific ID for this message. This can be used by IHVs for debugging purpose.
-
 `PortId`
 
 Specifies the identifier for the Port object that this command is targeted for. For commands on the Adapter object, this is 0xFFFF.
@@ -80,6 +76,10 @@ Specifies the operation completion status for output messages. For input message
 `TransactionId`
 
 Specifies the transaction ID. This value is used to match host-sent messages with function responses.  This value must be unique among all outstanding transactions.  For notifications, the TransactionId must be set to 0 by the function.
+
+`IhvSpecificId`
+
+Specifies an IHV-specific ID for this message. This can be used by IHVs for debugging purpose.
 
 
 ## Requirements

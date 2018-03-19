@@ -69,25 +69,29 @@ typedef struct _WHEA_AER_BRIDGE_DESCRIPTOR {
 ## Members
 
 
-`AdvancedCapsAndControl`
+`Type`
 
-The contents of the bridge's Advanced Error Capabilities and Control register.
+The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_AERBRIDGE.
+
+`Enabled`
+
+A Boolean value that indicates if the error source is enabled.
+
+`Reserved`
+
+Reserved for system use.
 
 `BusNumber`
 
 The bridge's primary bus number.
 
-`CorrectableErrorMask`
+`Slot`
 
-The contents of the bridge's Correctable Error Mask register.
+A <a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the bridge is located in the system.
 
 `DeviceControl`
 
 The contents of the bridge's Device Control register.
-
-`Enabled`
-
-A Boolean value that indicates if the error source is enabled.
 
 `Flags`
 
@@ -171,13 +175,21 @@ Reserved for system use.
 
 A USHORT representation of the contents of the AER_ROOTPORT_DESCRIPTOR_FLAGS union.
 
-`Reserved`
+`UncorrectableErrorMask`
 
-Reserved for system use.
+The contents of the bridge's Uncorrectable Error Mask register.
 
-`SecondaryCapsAndControl`
+`UncorrectableErrorSeverity`
 
-The contents of the bridge's Secondary Error Capabilities and Control register.
+The contents of the bridge's Uncorrectable Error Severity register.
+
+`CorrectableErrorMask`
+
+The contents of the bridge's Correctable Error Mask register.
+
+`AdvancedCapsAndControl`
+
+The contents of the bridge's Advanced Error Capabilities and Control register.
 
 `SecondaryUncorrectableErrorMask`
 
@@ -187,21 +199,9 @@ The contents of the bridge's Secondary Uncorrectable Error Mask register.
 
 The contents of the bridge's Secondary Uncorrectable Error Severity register.
 
-`Slot`
+`SecondaryCapsAndControl`
 
-A <a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the bridge is located in the system.
-
-`Type`
-
-The type of error source descriptor. This member is always set to WHEA_ERROR_SOURCE_DESCRIPTOR_TYPE_AERBRIDGE.
-
-`UncorrectableErrorMask`
-
-The contents of the bridge's Uncorrectable Error Mask register.
-
-`UncorrectableErrorSeverity`
-
-The contents of the bridge's Uncorrectable Error Severity register.
+The contents of the bridge's Secondary Error Capabilities and Control register.
 
 ## Remarks
 A WHEA_AER_BRIDGE_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
@@ -219,11 +219,3 @@ A WHEA_AER_BRIDGE_DESCRIPTOR structure is contained within the <a href="..\ntddk
 
 
 <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_AER_BRIDGE_DESCRIPTOR structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

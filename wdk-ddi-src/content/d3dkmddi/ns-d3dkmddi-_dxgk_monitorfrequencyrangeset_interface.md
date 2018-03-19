@@ -59,6 +59,10 @@ typedef struct _DXGK_MONITORFREQUENCYRANGESET_INTERFACE {
 ## Members
 
 
+`pfnGetNumFrequencyRanges`
+
+A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_getnumfrequencyranges.md">pfnGetNumFrequencyRanges</a> function.
+
 `pfnAcquireFirstFrequencyRangeInfo`
 
 A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_acquirefirstfrequencyrangeinfo.md">pfnAcquireFirstFrequencyRangeInfo</a> function.
@@ -66,10 +70,6 @@ A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyranges
 `pfnAcquireNextFrequencyRangeInfo`
 
 A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_acquirenextfrequencyrangeinfo.md">pfnAcquireNextFrequencyRangeInfo</a> function.
-
-`pfnGetNumFrequencyRanges`
-
-A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyrangeset_getnumfrequencyranges.md">pfnGetNumFrequencyRanges</a> function.
 
 `pfnReleaseFrequencyRangeInfo`
 

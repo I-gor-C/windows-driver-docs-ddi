@@ -74,31 +74,7 @@ typedef struct _RILPHONEBOOKENTRY {
 
 
 
-`dwAdditionalNumCount`
-
-
-
-`dwAdditionalNumOffset`
-
-
-
-`dwAdditionalNumSize`
-
-
-
-`dwEmailCount`
-
-
-
-`dwEmailOffset`
-
-
-
-`dwEmailSize`
-
-
-
-`dwGroupIdCount`
+`dwParams`
 
 
 
@@ -106,15 +82,11 @@ typedef struct _RILPHONEBOOKENTRY {
 
 
 
-`dwParams`
-
-
-
 `raAddress`
 
 
 
-`rgdwGroupId`
+`wszText`
 
 
 
@@ -122,7 +94,35 @@ typedef struct _RILPHONEBOOKENTRY {
 
 
 
-`wszText`
+`dwGroupIdCount`
+
+
+
+`rgdwGroupId`
+
+
+
+`dwAdditionalNumCount`
+
+
+
+`dwAdditionalNumSize`
+
+
+
+`dwAdditionalNumOffset`
+
+
+
+`dwEmailCount`
+
+
+
+`dwEmailSize`
+
+
+
+`dwEmailOffset`
 
 
 

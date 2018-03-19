@@ -72,13 +72,13 @@ A <a href="..\ucxroothub\ns-ucxroothub-_roothub_30port_info.md">ROOTHUB_30PORT_I
 
 Maximum number of speeds.
 
-`Speeds`
-
-A pointer to a <b>USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED</b> structure that describes the USB 3.1capability's sublink speed attributes. For structure declaration, see Usbspec.h
-
 `SpeedsCount`
 
 The count of bus speeds supported.
+
+`Speeds`
+
+A pointer to a <b>USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED</b> structure that describes the USB 3.1capability's sublink speed attributes. For structure declaration, see Usbspec.h
 
 
 ## Requirements

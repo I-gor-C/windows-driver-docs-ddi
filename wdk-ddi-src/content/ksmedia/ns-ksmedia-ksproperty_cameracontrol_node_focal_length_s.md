@@ -59,21 +59,21 @@ typedef struct {
 ## Members
 
 
-`lObjectiveFocalLengthMax`
+`NodeProperty`
 
-Specifies a value of type LONG containing the maximum focal length of the lens closest to the camera subject.
-
-`lObjectiveFocalLengthMin`
-
-Specifies a value of type LONG containing the minimum focal length of the lens closest to the camera subject.
+Specifies both the target node and the property to <i>get</i>. This member is an initialized structure of type <a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>.
 
 `lOcularFocalLength`
 
 Specifies a value of type LONG containing the focal length of the lens closest to the camera user.
 
-`NodeProperty`
+`lObjectiveFocalLengthMin`
 
-Specifies both the target node and the property to <i>get</i>. This member is an initialized structure of type <a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>.
+Specifies a value of type LONG containing the minimum focal length of the lens closest to the camera subject.
+
+`lObjectiveFocalLengthMax`
+
+Specifies a value of type LONG containing the maximum focal length of the lens closest to the camera subject.
 
 ## Remarks
 If the camera has only one lens, these values can be used to represent zoom ratios. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff564406">KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH</a>.
@@ -98,11 +98,3 @@ If the camera has only one lens, these values can be used to represent zoom rati
 
 
 <a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_focal_length_s.md">KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

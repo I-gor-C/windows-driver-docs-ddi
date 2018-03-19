@@ -63,17 +63,17 @@ typedef struct {
 
 Structure size.
 
-`TimeUncertainty`
+`Version`
 
-Uncertainty in milliseconds.
+Version number.
 
 `UtcTime`
 
 UTC time.
 
-`Version`
+`TimeUncertainty`
 
-Version number.
+Uncertainty in milliseconds.
 
 
 ## Requirements

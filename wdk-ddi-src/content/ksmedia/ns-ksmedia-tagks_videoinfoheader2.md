@@ -70,25 +70,25 @@ typedef struct tagKS_VIDEOINFOHEADER2 {
 ## Members
 
 
-`AvgTimePerFrame`
+`rcSource`
 
-Specifies the average time per frame, in 100-nanosecond units.
+Specifies a clipping rectangle that selects the portion of the active video signal to use.
 
-`bmiHeader`
+`rcTarget`
 
-Indicates a <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information for the video image bitmap.
-
-`dwBitErrorRate`
-
-Specifies a value that indicates the video stream's data error rate, in bit errors per second.
+Specifies a rectangle that indicates what part of the target buffer to use.
 
 `dwBitRate`
 
 Specifies a value that indicates the video stream's appropriate data rate, in bits per second.
 
-`dwCopyProtectFlags`
+`dwBitErrorRate`
 
-Specifies a KSCOPYPROTECTRestrictDuplication value (0x00000001) to indicate if duplication of a stream should be restricted. If undefined, specify zero or the connection will be rejected.
+Specifies a value that indicates the video stream's data error rate, in bit errors per second.
+
+`AvgTimePerFrame`
+
+Specifies the average time per frame, in 100-nanosecond units.
 
 `dwInterlaceFlags`
 
@@ -231,6 +231,10 @@ Invalid for video capture.
 </tr>
 </table>
 
+`dwCopyProtectFlags`
+
+Specifies a KSCOPYPROTECTRestrictDuplication value (0x00000001) to indicate if duplication of a stream should be restricted. If undefined, specify zero or the connection will be rejected.
+
 `dwPictAspectRatioX`
 
 Specifies the <i>x</i> dimension of the picture-aspect ratio (for example, 16 for a 16 × 9 display). The value is expressed in inches-by-inches, not pixels-by-pixels.
@@ -243,13 +247,9 @@ Specifies the <i>y</i> dimension of the picture aspect ratio (for example, 9 for
 
 Reserved for system use. Must be set to zero or the connection will be rejected.
 
-`rcSource`
+`bmiHeader`
 
-Specifies a clipping rectangle that selects the portion of the active video signal to use.
-
-`rcTarget`
-
-Specifies a rectangle that indicates what part of the target buffer to use.
+Indicates a <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information for the video image bitmap.
 
 ## Remarks
 To describe a video stream without bob or weave settings, use <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a>.
@@ -282,11 +282,3 @@ If the AMCONTROL_COLORINFO_PRESENT flag is set in the <b>dwControlFlags</b> memb
 
 
 <a href="..\ksmedia\ns-ksmedia-tagks_datarange_video2.md">KS_DATARANGE_VIDEO2</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VIDEOINFOHEADER2 structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

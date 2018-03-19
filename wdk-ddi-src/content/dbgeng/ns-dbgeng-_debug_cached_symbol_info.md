@@ -60,6 +60,10 @@ typedef struct _DEBUG_CACHED_SYMBOL_INFO {
 ## Members
 
 
+`ModBase`
+
+A module base.
+
 `Arg1`
 
 An argument value.
@@ -68,17 +72,13 @@ An argument value.
 
 An argument value.
 
-`Arg3`
-
-An argument value.
-
 `Id`
 
 An ID.
 
-`ModBase`
+`Arg3`
 
-A module base.
+An argument value.
 
 
 ## Requirements

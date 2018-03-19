@@ -61,23 +61,23 @@ typedef enum _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION_TYPE {
 <table>
             
                 <tr>
-                    <td>D3DDDI_UPDATEGPUVIRTUALADDRESS_COPY</td>
-                    <td>The <i>copy</i> operation copies all mappings from source GPU virtual address range to the destination range. The source and destination ranges are allowed to intersect. Both ranges must belong to a reserved (zero) virtual address range.</td>
-                </tr>
-            
-                <tr>
                     <td>D3DDDI_UPDATEGPUVIRTUALADDRESS_MAP</td>
                     <td>Maps the given virtual address range to the given allocation range. The allocation does not have to be resident at the time of submission or at the time of mapping. The read-write protection is set to the pages. <b>DriverProtection</b> for the pages is set to zero.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_UPDATEGPUVIRTUALADDRESS_MAP_PROTECT</td>
-                    <td>Maps the given virtual address range to the given allocation range. The allocation does not have to be resident at the time of submission or at the time of mapping. The page protection is specified in the operation.</td>
+                    <td>D3DDDI_UPDATEGPUVIRTUALADDRESS_UNMAP</td>
+                    <td>Puts the specified virtual address range to the <i>zero</i> state or to the <i>invalid</i> state.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_UPDATEGPUVIRTUALADDRESS_UNMAP</td>
-                    <td>Puts the specified virtual address range to the <i>zero</i> state or to the <i>invalid</i> state.</td>
+                    <td>D3DDDI_UPDATEGPUVIRTUALADDRESS_COPY</td>
+                    <td>The <i>copy</i> operation copies all mappings from source GPU virtual address range to the destination range. The source and destination ranges are allowed to intersect. Both ranges must belong to a reserved (zero) virtual address range.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_UPDATEGPUVIRTUALADDRESS_MAP_PROTECT</td>
+                    <td>Maps the given virtual address range to the given allocation range. The allocation does not have to be resident at the time of submission or at the time of mapping. The page protection is specified in the operation.</td>
                 </tr>
 </table>
 

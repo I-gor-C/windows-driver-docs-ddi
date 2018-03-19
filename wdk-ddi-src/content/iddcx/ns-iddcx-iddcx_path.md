@@ -59,17 +59,17 @@ typedef struct IDDCX_PATH {
 ## Members
 
 
-`Flags`
+`Size`
 
-Contains flags for this path, like the path's active state and whether it changed.
+Total size of the structure.
 
 `MonitorObject`
 
 The handle the driver provides to identify the monitor this path is targeted at.
 
-`Size`
+`Flags`
 
-Total size of the structure.
+Contains flags for this path, like the path's active state and whether it changed.
 
 `TargetVideoSignalInfo`
 

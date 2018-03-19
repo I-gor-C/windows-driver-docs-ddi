@@ -62,37 +62,40 @@ typedef struct _STI_DEVICE_STATUS {
 ## Members
 
 
-`dwEventHandlingState`
+`dwSize`
 
-Contains bit flags indicating event status. The following flags are defined in <i>Sti.h</i>.
+Caller-supplied size, in bytes, of the STI_DEVICE_STATUS structure.
 
+`StatusMask`
 
+One or more caller-supplied bit flags, indicating the type of status information being requested. The following flags are defined:
 
+<table>
+<tr>
+<th>Flag</th>
+<th>Definition</th>
+</tr>
+<tr>
+<td>
+STI_DEVSTATUS_EVENTS_STATE
 
+</td>
+<td>
+The driver should fill in the <b>dwEventHandlingState</b> member.
 
-#### STI_EVENTHANDLING_ENABLED
+</td>
+</tr>
+<tr>
+<td>
+STI_DEVSTATUS_ONLINE_STATE 
 
-<i>Not used</i>.
+</td>
+<td>
+The driver should fill in the <b>dwOnlineState</b> member.
 
-
-
-
-
-#### STI_EVENTHANDLING_PENDING
-
-A device event has occurred.
-
-
-
-
-
-#### STI_EVENTHANDLING_POLLING
-
-<i>Not used</i>.
-
-`dwHardwareStatusCode`
-
-Optional device-specific, vendor-defined value.
+</td>
+</tr>
+</table>
 
 `dwOnlineState`
 
@@ -212,44 +215,41 @@ The device requires user intervention.
 
 The device is warming up.
 
+`dwHardwareStatusCode`
+
+Optional device-specific, vendor-defined value.
+
+`dwEventHandlingState`
+
+Contains bit flags indicating event status. The following flags are defined in <i>Sti.h</i>.
+
+
+
+
+
+#### STI_EVENTHANDLING_ENABLED
+
+<i>Not used</i>.
+
+
+
+
+
+#### STI_EVENTHANDLING_PENDING
+
+A device event has occurred.
+
+
+
+
+
+#### STI_EVENTHANDLING_POLLING
+
+<i>Not used</i>.
+
 `dwPollingInterval`
 
 Time value, in milliseconds, indicating how often the device should be polled, if polling is required.
-
-`dwSize`
-
-Caller-supplied size, in bytes, of the STI_DEVICE_STATUS structure.
-
-`StatusMask`
-
-One or more caller-supplied bit flags, indicating the type of status information being requested. The following flags are defined:
-
-<table>
-<tr>
-<th>Flag</th>
-<th>Definition</th>
-</tr>
-<tr>
-<td>
-STI_DEVSTATUS_EVENTS_STATE
-
-</td>
-<td>
-The driver should fill in the <b>dwEventHandlingState</b> member.
-
-</td>
-</tr>
-<tr>
-<td>
-STI_DEVSTATUS_ONLINE_STATE 
-
-</td>
-<td>
-The driver should fill in the <b>dwOnlineState</b> member.
-
-</td>
-</tr>
-</table>
 
 
 ## Requirements

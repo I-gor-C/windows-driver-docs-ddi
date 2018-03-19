@@ -60,8 +60,8 @@ typedef enum _IDDCX_MONITOR_MODE_ORIGIN {
 <table>
             
                 <tr>
-                    <td>IDDCX_MONITOR_MODE_ORIGIN_DRIVER</td>
-                    <td>Indicates that the driver did not add this mode as a direct resolution of processing the modes/ supported by the monitor but because of separate additional knowledge it has about the monitor</td>
+                    <td>IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED</td>
+                    <td>Indicates that an <b>IDDCX_MONITOR_MODE_ORIGIN</b> variable has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum _IDDCX_MONITOR_MODE_ORIGIN {
                 </tr>
             
                 <tr>
-                    <td>IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED</td>
-                    <td>Indicates that an <b>IDDCX_MONITOR_MODE_ORIGIN</b> variable has not yet been assigned a meaningful value.</td>
+                    <td>IDDCX_MONITOR_MODE_ORIGIN_DRIVER</td>
+                    <td>Indicates that the driver did not add this mode as a direct resolution of processing the modes/ supported by the monitor but because of separate additional knowledge it has about the monitor</td>
                 </tr>
             
                 <tr>

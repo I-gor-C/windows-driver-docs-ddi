@@ -65,21 +65,17 @@ typedef struct _TOKEN_GROUPS_AND_PRIVILEGES {
 ## Members
 
 
-`AuthenticationId`
+`SidCount`
 
-The locally unique identifier (LUID) of the authenticator of the token.
+Specifies the number of SIDs in the access token.
 
-`PrivilegeCount`
+`SidLength`
 
-Specifies the number of privileges included in the access token.
+Specifies the length, in bytes, required to hold all of the user SIDs and the account SID for the group.
 
-`PrivilegeLength`
+`Sids`
 
-Specifies the length, in bytes, needed to hold all of the privileges.
-
-`Privileges`
-
-A pointer to <a href="..\wdm\ns-wdm-_luid_and_attributes.md">LUID_AND_ATTRIBUTES</a> structures that contain a set of privileges.
+A pointer to SID_AND_ATTRIBUTES structures that contain a set of SIDs and corresponding attributes.
 
 `RestrictedSidCount`
 
@@ -93,17 +89,21 @@ Specifies the length, in bytes, required to hold all of the restricted SIDs.
 
 A pointer to <a href="..\ntifs\ns-ntifs-_sid_and_attributes.md">SID_AND_ATTRIBUTES</a> structures that contain a set of restricted SIDs and corresponding attributes.
 
-`SidCount`
+`PrivilegeCount`
 
-Specifies the number of SIDs in the access token.
+Specifies the number of privileges included in the access token.
 
-`SidLength`
+`PrivilegeLength`
 
-Specifies the length, in bytes, required to hold all of the user SIDs and the account SID for the group.
+Specifies the length, in bytes, needed to hold all of the privileges.
 
-`Sids`
+`Privileges`
 
-A pointer to SID_AND_ATTRIBUTES structures that contain a set of SIDs and corresponding attributes.
+A pointer to <a href="..\wdm\ns-wdm-_luid_and_attributes.md">LUID_AND_ATTRIBUTES</a> structures that contain a set of privileges.
+
+`AuthenticationId`
+
+The locally unique identifier (LUID) of the authenticator of the token.
 
 
 ## Requirements
@@ -186,11 +186,3 @@ A pointer to SID_AND_ATTRIBUTES structures that contain a set of SIDs and corres
 
 
 <a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TOKEN_GROUPS_AND_PRIVILEGES structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

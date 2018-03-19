@@ -58,15 +58,15 @@ typedef struct _KSCAMERA_EXTENDEDPROP_PROFILE {
 ## Members
 
 
-`Index`
-
-An index value associated with the identified profile.
-
 `ProfileId`
 
 A GUID representing the selected profile.  If this is KSCAMERAPROFILE_Legacy, no profile was selected, the camera driver must expose the Reduced Set Media Type.
 
 If this field is GUID_NULL, no profile was selected, but the application is profile aware so the camera driver must expose the full range of media types.
+
+`Index`
+
+An index value associated with the identified profile.
 
 `Reserved`
 

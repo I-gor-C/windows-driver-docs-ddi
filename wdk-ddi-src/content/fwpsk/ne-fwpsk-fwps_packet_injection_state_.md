@@ -63,10 +63,10 @@ typedef enum FWPS_PACKET_INJECTION_STATE_ {
 <table>
             
                 <tr>
-                    <td>FWPS_PACKET_INJECTED_BY_OTHER</td>
-                    <td>The packet was injected using an injection handle other than one passed by a call
-     to one of the 
-     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">packet injection functions</a>.</td>
+                    <td>FWPS_PACKET_NOT_INJECTED</td>
+                    <td>The packet was not injected by any of the 
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">packet injection functions</a>. A
+     packet that originated from the TCP/IP stack will be at this state.</td>
                 </tr>
             
                 <tr>
@@ -76,16 +76,10 @@ typedef enum FWPS_PACKET_INJECTION_STATE_ {
                 </tr>
             
                 <tr>
-                    <td>FWPS_PACKET_INJECTION_STATE_MAX</td>
-                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
-     header files and binaries.</td>
-                </tr>
-            
-                <tr>
-                    <td>FWPS_PACKET_NOT_INJECTED</td>
-                    <td>The packet was not injected by any of the 
-     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">packet injection functions</a>. A
-     packet that originated from the TCP/IP stack will be at this state.</td>
+                    <td>FWPS_PACKET_INJECTED_BY_OTHER</td>
+                    <td>The packet was injected using an injection handle other than one passed by a call
+     to one of the 
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">packet injection functions</a>.</td>
                 </tr>
             
                 <tr>
@@ -95,6 +89,12 @@ typedef enum FWPS_PACKET_INJECTION_STATE_ {
      <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">packet injection functions</a>, but
      the packet was later cloned and reinjected by an additional call to a packet injection function,
      possibly using a different injection handle.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_PACKET_INJECTION_STATE_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+     header files and binaries.</td>
                 </tr>
 </table>
 

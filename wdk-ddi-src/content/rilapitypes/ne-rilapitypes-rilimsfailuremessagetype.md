@@ -61,22 +61,22 @@ typedef enum _RILIMSFAILUREMESSAGETYPE {
 <table>
             
                 <tr>
-                    <td>RIL_IMSFAILUREMESSAGETYPE_INCALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_IMSFAILUREMESSAGETYPE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_IMSFAILUREMESSAGETYPE_REGISTER</td>
                     <td></td>
                 </tr>
             
                 <tr>
                     <td>RIL_IMSFAILUREMESSAGETYPE_SUBSCRIBE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMSFAILUREMESSAGETYPE_INCALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMSFAILUREMESSAGETYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

@@ -59,13 +59,13 @@ typedef enum _D3DDDI_MULTIPLANE_OVERLAY_FLAGS {
 <table>
             
                 <tr>
-                    <td>D3DDDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP</td>
-                    <td>The overlay plane should flip the data horizontally, making it appear as a right-to-left mirror image.</td>
+                    <td>D3DDDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP</td>
+                    <td>The overlay plane should flip the data vertically, making it appear upside-down.</td>
                 </tr>
             
                 <tr>
-                    <td>D3DDDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP</td>
-                    <td>The overlay plane should flip the data vertically, making it appear upside-down.</td>
+                    <td>D3DDDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP</td>
+                    <td>The overlay plane should flip the data horizontally, making it appear as a right-to-left mirror image.</td>
                 </tr>
 </table>
 

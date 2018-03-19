@@ -69,32 +69,7 @@ typedef enum _RIL3GPP2TONE {
 <table>
             
                 <tr>
-                    <td>RIL_3GPP2TONE_ABRVINTERCEPT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPP2TONE_ABRVREORDER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPP2TONE_ANSWER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPP2TONE_BUSY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPP2TONE_CALLWAITING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPP2TONE_CONFIRM</td>
+                    <td>RIL_3GPP2TONE_TONEOFF</td>
                     <td></td>
                 </tr>
             
@@ -104,17 +79,17 @@ typedef enum _RIL3GPP2TONE {
                 </tr>
             
                 <tr>
+                    <td>RIL_3GPP2TONE_RINGBACK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_3GPP2TONE_INTERCEPT</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_3GPP2TONE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_3GPP2TONE_PIP</td>
+                    <td>RIL_3GPP2TONE_ABRVINTERCEPT</td>
                     <td></td>
                 </tr>
             
@@ -124,12 +99,37 @@ typedef enum _RIL3GPP2TONE {
                 </tr>
             
                 <tr>
-                    <td>RIL_3GPP2TONE_RINGBACK</td>
+                    <td>RIL_3GPP2TONE_ABRVREORDER</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_3GPP2TONE_TONEOFF</td>
+                    <td>RIL_3GPP2TONE_BUSY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPP2TONE_CONFIRM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPP2TONE_ANSWER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPP2TONE_CALLWAITING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPP2TONE_PIP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_3GPP2TONE_MAX</td>
                     <td></td>
                 </tr>
 </table>

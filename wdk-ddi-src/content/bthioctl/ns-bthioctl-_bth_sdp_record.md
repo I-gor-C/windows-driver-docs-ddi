@@ -61,81 +61,6 @@ typedef struct _BTH_SDP_RECORD {
 ## Members
 
 
-`fCodService`
-
-######  Possible values include:
-
-
-
-#### COD_SERVICE_AUDIO
-
-
-
-#### COD_SERVICE_CAPTURING
-
-
-
-#### COD_SERVICE_INFORMATION
-
-
-
-#### COD_SERVICE_LIMITED
-
-
-
-#### COD_SERVICE_NETWORKING
-
-
-
-#### COD_SERVICE_OBJECT_XFER
-
-
-
-#### COD_SERVICE_POSITIONING
-
-
-
-#### COD_SERVICE_RENDERING
-
-
-
-#### COD_SERVICE_TELEPHONY
-
-`fOptions`
-
-A combination of flags that specifies the publication options for the SDP record. Valid flag
-     values are listed in the following table.
-     
-
-<table>
-<tr>
-<th>Flag</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>
-SERVICE_OPTION_DO_NOT_PUBLISH
-
-</td>
-<td>
-The record should be entered into the local SDP server, but should not be published to remote
-        systems.
-
-</td>
-</tr>
-<tr>
-<td>
-SERVICE_OPTION_NO_PUBLIC_BROWSE
-
-</td>
-<td>
-The record should be obtainable if specifically requested, but it should not be browseable using
-        SDP browse groups.
-
-</td>
-</tr>
-</table>
-
 `fSecurity`
 
 A combination of flags that specifies the security attributes of the SDP record. Valid flag values
@@ -199,14 +124,89 @@ No security is required to access this record.
 </tr>
 </table>
 
-`record`
+`fOptions`
 
-The SDP record in its raw stream format. The first byte is defined in this structure, with the
-      entire record following it.
+A combination of flags that specifies the publication options for the SDP record. Valid flag
+     values are listed in the following table.
+     
+
+<table>
+<tr>
+<th>Flag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+SERVICE_OPTION_DO_NOT_PUBLISH
+
+</td>
+<td>
+The record should be entered into the local SDP server, but should not be published to remote
+        systems.
+
+</td>
+</tr>
+<tr>
+<td>
+SERVICE_OPTION_NO_PUBLIC_BROWSE
+
+</td>
+<td>
+The record should be obtainable if specifically requested, but it should not be browseable using
+        SDP browse groups.
+
+</td>
+</tr>
+</table>
+
+`fCodService`
+
+######  Possible values include:
+
+
+
+#### COD_SERVICE_AUDIO
+
+
+
+#### COD_SERVICE_CAPTURING
+
+
+
+#### COD_SERVICE_INFORMATION
+
+
+
+#### COD_SERVICE_LIMITED
+
+
+
+#### COD_SERVICE_NETWORKING
+
+
+
+#### COD_SERVICE_OBJECT_XFER
+
+
+
+#### COD_SERVICE_POSITIONING
+
+
+
+#### COD_SERVICE_RENDERING
+
+
+
+#### COD_SERVICE_TELEPHONY
 
 `recordLength`
 
 The size, in bytes, of the record.
+
+`record`
+
+The SDP record in its raw stream format. The first byte is defined in this structure, with the
+      entire record following it.
 
 ## Remarks
 This structure is passed as the input buffer and output buffer of 
@@ -223,11 +223,3 @@ This structure is passed as the input buffer and output buffer of
 
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record_with_info.md">
    IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_SDP_RECORD structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

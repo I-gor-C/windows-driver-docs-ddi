@@ -61,10 +61,6 @@ typedef struct _KEY_VIRTUALIZATION_INFORMATION {
 ## Members
 
 
-`Reserved`
-
-This value is reserved for system use.
-
 `VirtualizationCandidate`
 
 Specifies whether the key is part of the virtualization namespace scope.
@@ -73,17 +69,21 @@ Specifies whether the key is part of the virtualization namespace scope.
 
 Specifies whether virtualization is enabled on this key. This value can be set to 1 only if <b>VirtualizationCandidate</b> is 1.
 
-`VirtualSource`
+`VirtualTarget`
 
-Specifies whether the key has ever been virtualized. This value can be set to 1 only if <b>VirtualizationCandidate</b> is 1.
+Specifies whether the key is a virtual key. This value can be set to 1 only if <b>VirtualizationCandidate</b> and <b>VirtualizationEnabled</b> are both 0. This value is valid only on the virtual store key handles.
 
 `VirtualStore`
 
 Specified whether the key is a part of the virtual store path.
 
-`VirtualTarget`
+`VirtualSource`
 
-Specifies whether the key is a virtual key. This value can be set to 1 only if <b>VirtualizationCandidate</b> and <b>VirtualizationEnabled</b> are both 0. This value is valid only on the virtual store key handles.
+Specifies whether the key has ever been virtualized. This value can be set to 1 only if <b>VirtualizationCandidate</b> is 1.
+
+`Reserved`
+
+This value is reserved for system use.
 
 
 ## Requirements
@@ -123,11 +123,3 @@ Specifies whether the key is a virtual key. This value can be set to 1 only if <
 
 
 <a href="..\ntddk\ns-ntddk-_key_name_information.md">KEY_NAME_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KEY_VIRTUALIZATION_INFORMATION structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

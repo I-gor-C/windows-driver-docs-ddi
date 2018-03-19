@@ -61,12 +61,7 @@ typedef enum _RILALPHAIDENTIFIDERTYPE {
 <table>
             
                 <tr>
-                    <td>RIL_ALPHAIDENTIFIERTYPE_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_ALPHAIDENTIFIERTYPE_NOTPRESENT</td>
+                    <td>RIL_ALPHAIDENTIFIERTYPE_UNKNOWN</td>
                     <td></td>
                 </tr>
             
@@ -76,7 +71,12 @@ typedef enum _RILALPHAIDENTIFIDERTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_ALPHAIDENTIFIERTYPE_UNKNOWN</td>
+                    <td>RIL_ALPHAIDENTIFIERTYPE_NOTPRESENT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ALPHAIDENTIFIERTYPE_MAX</td>
                     <td></td>
                 </tr>
 </table>

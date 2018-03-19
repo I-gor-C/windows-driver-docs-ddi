@@ -61,22 +61,6 @@ typedef struct _DOT11_WFD_GROUP_JOIN_PARAMETERS {
 ## Members
 
 
-`bInGroupFormation`
-
-If set to TRUE, special handling of <a href="https://msdn.microsoft.com/67B02FD9-1CB2-424D-989C-11A307070B93">OID_DOT11_WFD_CONNECT_TO_GROUP_REQUEST</a> is required. The miniport must not attempt to connect until it receives a probe response or beacon from the GO with the Group Formation field set to 1. Otherwise, no connect delay is necessary.
-
-`bWaitForWPSReady`
-
-If set to TRUE, special handling of <a href="https://msdn.microsoft.com/67B02FD9-1CB2-424D-989C-11A307070B93">OID_DOT11_WFD_CONNECT_TO_GROUP_REQUEST</a> is required. The miniport must not attempt to connect until it receives a probe response or beacon from the GO with the Selected Registrar WPS attribute set to TRUE and the Group Formation field set to the  value indicated by <b>bInGroupFormation</b>. Otherwise, the Selected Registrar attribute should be ignored.
-
-`GOConfigTime`
-
-The configuration time allowed for the GO to start. This time-out is received by the Client in a GO Negotiation or Invitation exchange.
-
-`GOOperatingChannel`
-
-This channel on which the Group Owner (GO) may operate the group. This channel information was received by the Client in a GO Negotiation or Invitation exchange. The miniport must also be able to handle the group operating on a channel different than specified. The miniport must ensure regulatory compliance when joining the group.
-
 `Header`
 
 The type, revision, and size of the <b>DOT11_WFD_GROUP_JOIN_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following.
@@ -100,6 +84,22 @@ The type, revision, and size of the <b>DOT11_WFD_GROUP_JOIN_PARAMETERS</b> struc
 </tr>
 </table>
 
+`GOOperatingChannel`
+
+This channel on which the Group Owner (GO) may operate the group. This channel information was received by the Client in a GO Negotiation or Invitation exchange. The miniport must also be able to handle the group operating on a channel different than specified. The miniport must ensure regulatory compliance when joining the group.
+
+`GOConfigTime`
+
+The configuration time allowed for the GO to start. This time-out is received by the Client in a GO Negotiation or Invitation exchange.
+
+`bInGroupFormation`
+
+If set to TRUE, special handling of <a href="https://msdn.microsoft.com/67B02FD9-1CB2-424D-989C-11A307070B93">OID_DOT11_WFD_CONNECT_TO_GROUP_REQUEST</a> is required. The miniport must not attempt to connect until it receives a probe response or beacon from the GO with the Group Formation field set to 1. Otherwise, no connect delay is necessary.
+
+`bWaitForWPSReady`
+
+If set to TRUE, special handling of <a href="https://msdn.microsoft.com/67B02FD9-1CB2-424D-989C-11A307070B93">OID_DOT11_WFD_CONNECT_TO_GROUP_REQUEST</a> is required. The miniport must not attempt to connect until it receives a probe response or beacon from the GO with the Selected Registrar WPS attribute set to TRUE and the Group Formation field set to the  value indicated by <b>bInGroupFormation</b>. Otherwise, the Selected Registrar attribute should be ignored.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -110,11 +110,3 @@ The type, revision, and size of the <b>DOT11_WFD_GROUP_JOIN_PARAMETERS</b> struc
 ## See Also
 
 <a href="https://msdn.microsoft.com/8BA9DC85-41DA-4021-BFBC-2C64A38146E9">OID_DOT11_WFD_GROUP_JOIN_PARAMETERS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_WFD_GROUP_JOIN_PARAMETERS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

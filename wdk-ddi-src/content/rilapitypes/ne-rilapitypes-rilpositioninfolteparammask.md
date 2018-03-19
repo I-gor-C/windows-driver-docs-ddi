@@ -67,7 +67,12 @@ typedef enum _RILPOSITIONINFOLTEPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_POSITION_LTE_ALL</td>
+                    <td>RIL_PARAM_POSITION_LTE_MCC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_LTE_MNC</td>
                     <td></td>
                 </tr>
             
@@ -82,17 +87,12 @@ typedef enum _RILPOSITIONINFOLTEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_POSITION_LTE_MCC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_POSITION_LTE_MNC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_POSITION_LTE_PHYSCELLID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_LTE_TAC</td>
                     <td></td>
                 </tr>
             
@@ -112,7 +112,7 @@ typedef enum _RILPOSITIONINFOLTEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_POSITION_LTE_TAC</td>
+                    <td>RIL_PARAM_POSITION_LTE_ALL</td>
                     <td></td>
                 </tr>
 </table>

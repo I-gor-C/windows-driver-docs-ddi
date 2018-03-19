@@ -70,28 +70,10 @@ typedef enum _DXGK_GLITCH_CAUSE {
                 </tr>
             
                 <tr>
-                    <td>DXGK_GLITCH_CAUSE_ENCODER_RECONFIG</td>
-                    <td>Indicates that changing the configuration of the encoder for a target caused a glitch.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_GLITCH_CAUSE_MEMORY_TIMING</td>
-                    <td>Indicates that changing graphics memory timings caused a glitch.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_GLITCH_CAUSE_METADATA_CHANGE</td>
-                    <td>Indicates that changing the frame metadata caused a glitch.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_GLITCH_CAUSE_MODIFIED_WIRE_USAGE</td>
-                    <td>Indicates that modifying the format of pixel data in the transport stream caused a glitch.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXGK_GLITCH_CAUSE_NONE</td>
-                    <td>Indicates that there was no glitch.</td>
+                    <td>DXGK_GLITCH_CAUSE_TIMING_CHANGE</td>
+                    <td>Indicates that the timing requested necessitated a glitch.  This cause should only be used if the OS requested a change which would always result in a glitch rather than something which could have been avoided under other circumstances.  
+
+For example, this should not be used if the driver switches to a different display pipe to support an additional path, but it should be used if the OS requests a different timing to the previous one.</td>
                 </tr>
             
                 <tr>
@@ -100,10 +82,28 @@ typedef enum _DXGK_GLITCH_CAUSE {
                 </tr>
             
                 <tr>
-                    <td>DXGK_GLITCH_CAUSE_TIMING_CHANGE</td>
-                    <td>Indicates that the timing requested necessitated a glitch.  This cause should only be used if the OS requested a change which would always result in a glitch rather than something which could have been avoided under other circumstances.  
-
-For example, this should not be used if the driver switches to a different display pipe to support an additional path, but it should be used if the OS requests a different timing to the previous one.</td>
+                    <td>DXGK_GLITCH_CAUSE_MEMORY_TIMING</td>
+                    <td>Indicates that changing graphics memory timings caused a glitch.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_GLITCH_CAUSE_ENCODER_RECONFIG</td>
+                    <td>Indicates that changing the configuration of the encoder for a target caused a glitch.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_GLITCH_CAUSE_MODIFIED_WIRE_USAGE</td>
+                    <td>Indicates that modifying the format of pixel data in the transport stream caused a glitch.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_GLITCH_CAUSE_METADATA_CHANGE</td>
+                    <td>Indicates that changing the frame metadata caused a glitch.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_GLITCH_CAUSE_NONE</td>
+                    <td>Indicates that there was no glitch.</td>
                 </tr>
             
                 <tr>

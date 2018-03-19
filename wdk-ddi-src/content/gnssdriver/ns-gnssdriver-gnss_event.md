@@ -72,11 +72,13 @@ typedef struct {
 ## Members
 
 
-`EventDataSize`
+`Size`
 
-The size of the event data union contained in this event.
+Structure size.
 
-The GNSS driver must fill in appropriate size to avoid excessive data-copy between the layers. The GNSS adapter will access only the initial bytes of the event data, as specified by this element.
+`Version`
+
+Version number.
 
 `EventType`
 
@@ -84,17 +86,15 @@ Event type.
 
 Depending on the event type, a specific data element of the union will be filled.
 
-`Size`
+`EventDataSize`
 
-Structure size.
+The size of the event data union contained in this event.
+
+The GNSS driver must fill in appropriate size to avoid excessive data-copy between the layers. The GNSS adapter will access only the initial bytes of the event data, as specified by this element.
 
 `Unused`
 
 
-
-`Version`
-
-Version number.
 
 ## Remarks
 The GNSS driver sends solicited and unsolicited notifications to the GNSS adapter. This is done through a common event protocol between the driver and the GNSS adapter. The adapter registers for one or more types of events and this ensures that one or more I/O requests are always pending for the driver to send the notification up to the adapter. The driver completes the I/O request on the pending IRP and this causes the notification to flow up to the adapter. The adapter creates one or more I/O requests to listen for further notifications.

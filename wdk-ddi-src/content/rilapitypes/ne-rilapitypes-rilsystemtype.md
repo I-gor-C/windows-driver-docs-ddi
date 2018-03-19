@@ -70,22 +70,12 @@ typedef enum _RILSYSTEMTYPE {
 <table>
             
                 <tr>
+                    <td>RIL_SYSTEMTYPE_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_SYSTEMTYPE_1XRTT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_SYSTEMTYPE_3GPP</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_SYSTEMTYPE_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_SYSTEMTYPE_CDMA</td>
                     <td></td>
                 </tr>
             
@@ -100,17 +90,7 @@ typedef enum _RILSYSTEMTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_SYSTEMTYPE_GSMTDS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_SYSTEMTYPE_GSMUMTS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_SYSTEMTYPE_GSMUMTSTDS</td>
+                    <td>RIL_SYSTEMTYPE_UMTS</td>
                     <td></td>
                 </tr>
             
@@ -120,17 +100,37 @@ typedef enum _RILSYSTEMTYPE {
                 </tr>
             
                 <tr>
-                    <td>RIL_SYSTEMTYPE_NONE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_SYSTEMTYPE_TDSCDMA</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_SYSTEMTYPE_UMTS</td>
+                    <td>RIL_SYSTEMTYPE_CDMA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_GSMUMTS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_GSMTDS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_GSMUMTSTDS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_3GPP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_ALL</td>
                     <td></td>
                 </tr>
 </table>

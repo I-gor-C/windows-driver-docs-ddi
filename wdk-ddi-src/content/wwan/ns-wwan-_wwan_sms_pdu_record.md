@@ -73,6 +73,17 @@ An index into the virtual message store that is maintained by the miniport drive
 The status of the record that represents whether the SMS message is new (unread), old (read), a
      draft, or sent.
 
+`Size`
+
+The size, in bytes, of the record.
+     
+
+For GSM-based devices, this represents the size of the message before conversion to a hexadecimal
+     string.
+
+For CDMA-based devices, this represents the number of bytes in the 
+     <b>PduData</b> .
+
 `PduData`
 
 For GSM-based devices, a NULL-terminated string that contains the content of the record coded in a
@@ -87,17 +98,6 @@ For CDMA-based devices that support reading SMS messages in binary format (as re
      Teleservice (WMT) format. Miniport drivers should typecast this information to BYTE[] for CDMA-based
      devices. It is not coded in hexadecimal string format. The message is not NULL-terminated.
 
-`Size`
-
-The size, in bytes, of the record.
-     
-
-For GSM-based devices, this represents the size of the message before conversion to a hexadecimal
-     string.
-
-For CDMA-based devices, this represents the number of bytes in the 
-     <b>PduData</b> .
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -108,11 +108,3 @@ For CDMA-based devices, this represents the number of bytes in the
 ## See Also
 
 <a href="..\wwan\ne-wwan-_wwan_msg_status.md">WWAN_MSG_STATUS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_PDU_RECORD structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

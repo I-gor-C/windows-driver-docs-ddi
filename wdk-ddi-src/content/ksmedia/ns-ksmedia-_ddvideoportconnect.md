@@ -60,6 +60,95 @@ typedef struct _DDVIDEOPORTCONNECT {
 ## Members
 
 
+`dwSize`
+
+Specifies the size in bytes of the DDVIDEOPORTCONNECT structure.
+
+`dwPortWidth`
+
+Specifies the width of the hardware video port. This value represents the number of physical pins on the hardware video port. This member must always be filled in, even when the <b>guidTypeID</b> assumes a certain size.
+
+`guidTypeID`
+
+Specifies a GUID that describes the synchronization characteristics of the hardware video port. The following port types are predefined:
+
+<table>
+<tr>
+<th>Port Type</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+DDVPTYPE_E_HREFH_VREFH
+
+</td>
+<td>
+External syncs where HREF is active high and VREF is active high.
+
+</td>
+</tr>
+<tr>
+<td>
+DDVPTYPE_E_HREFH_VREFL
+
+</td>
+<td>
+External syncs where HREF is active high and VREF is active low.
+
+</td>
+</tr>
+<tr>
+<td>
+DDVPTYPE_E_HREFL_VREFH
+
+</td>
+<td>
+External syncs where HREF is active low and VREF is active high.
+
+</td>
+</tr>
+<tr>
+<td>
+DDVPTYPE_E_HREFL_VREFL
+
+</td>
+<td>
+External syncs where HREF is active low and VREF is active low.
+
+</td>
+</tr>
+<tr>
+<td>
+DDVPTYPE_BROOKTREE
+
+</td>
+<td>
+Sync information is embedded in the data stream using the Brooktree definition.
+
+</td>
+</tr>
+<tr>
+<td>
+DDVPTYPE_CCIR656
+
+</td>
+<td>
+Sync information is embedded in the data stream according to the CCIR656 specification.
+
+</td>
+</tr>
+<tr>
+<td>
+DDVPTYPE_PHILIPS
+
+</td>
+<td>
+Sync information is embedded in the data stream using the Philips definition.
+
+</td>
+</tr>
+</table>
+
 `dwFlags`
 
 Specifies a set of flags that identify the capabilities of the hardware video port connection. This member can be a bitwise OR of any of the following flags:
@@ -151,98 +240,9 @@ When set by the driver, this flag indicates that the hardware video port is capa
 </tr>
 </table>
 
-`dwPortWidth`
-
-Specifies the width of the hardware video port. This value represents the number of physical pins on the hardware video port. This member must always be filled in, even when the <b>guidTypeID</b> assumes a certain size.
-
 `dwReserved1`
 
 Reserved for system use and should be set to zero.
-
-`dwSize`
-
-Specifies the size in bytes of the DDVIDEOPORTCONNECT structure.
-
-`guidTypeID`
-
-Specifies a GUID that describes the synchronization characteristics of the hardware video port. The following port types are predefined:
-
-<table>
-<tr>
-<th>Port Type</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>
-DDVPTYPE_E_HREFH_VREFH
-
-</td>
-<td>
-External syncs where HREF is active high and VREF is active high.
-
-</td>
-</tr>
-<tr>
-<td>
-DDVPTYPE_E_HREFH_VREFL
-
-</td>
-<td>
-External syncs where HREF is active high and VREF is active low.
-
-</td>
-</tr>
-<tr>
-<td>
-DDVPTYPE_E_HREFL_VREFH
-
-</td>
-<td>
-External syncs where HREF is active low and VREF is active high.
-
-</td>
-</tr>
-<tr>
-<td>
-DDVPTYPE_E_HREFL_VREFL
-
-</td>
-<td>
-External syncs where HREF is active low and VREF is active low.
-
-</td>
-</tr>
-<tr>
-<td>
-DDVPTYPE_BROOKTREE
-
-</td>
-<td>
-Sync information is embedded in the data stream using the Brooktree definition.
-
-</td>
-</tr>
-<tr>
-<td>
-DDVPTYPE_CCIR656
-
-</td>
-<td>
-Sync information is embedded in the data stream according to the CCIR656 specification.
-
-</td>
-</tr>
-<tr>
-<td>
-DDVPTYPE_PHILIPS
-
-</td>
-<td>
-Sync information is embedded in the data stream using the Philips definition.
-
-</td>
-</tr>
-</table>
 
 ## Remarks
 The driver's <a href="https://msdn.microsoft.com/b6be5f94-6d4d-4f7a-a8d9-15bfc7a15d3b">DdVideoPortGetConnectInfo</a> callback routine initializes a DDVIDEOPORTCONNECT structure for every connection that the hardware video port supports. The client can change the <b>dwFlags</b> member of one of the driver's DDVIDEOPORTCONNECT structures before calling the driver's <a href="https://msdn.microsoft.com/742c7af2-0611-4cca-b18c-e14b18068d7e">DdVideoPortCanCreate</a> callback.
@@ -259,11 +259,3 @@ The driver's <a href="https://msdn.microsoft.com/b6be5f94-6d4d-4f7a-a8d9-15bfc7a
 
 
 <a href="https://msdn.microsoft.com/b6be5f94-6d4d-4f7a-a8d9-15bfc7a15d3b">DdVideoPortGetConnectInfo</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DDVIDEOPORTCONNECT structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

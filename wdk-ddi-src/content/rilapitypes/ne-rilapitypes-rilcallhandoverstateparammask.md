@@ -62,17 +62,7 @@ typedef enum _RILCALLHANDOVERSTATEPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_HANDOVER_3GPPCAUSE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_HANDOVER_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_HANDOVER_NEW_TYPE</td>
+                    <td>RIL_PARAM_HANDOVER_PHASE</td>
                     <td></td>
                 </tr>
             
@@ -82,7 +72,17 @@ typedef enum _RILCALLHANDOVERSTATEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_HANDOVER_PHASE</td>
+                    <td>RIL_PARAM_HANDOVER_NEW_TYPE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_HANDOVER_3GPPCAUSE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_HANDOVER_ALL</td>
                     <td></td>
                 </tr>
 </table>

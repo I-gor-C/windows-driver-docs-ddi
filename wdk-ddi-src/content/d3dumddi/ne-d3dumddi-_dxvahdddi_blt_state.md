@@ -63,8 +63,8 @@ typedef enum _DXVAHDDDI_BLT_STATE {
 <table>
             
                 <tr>
-                    <td>DXVAHDDDI_BLT_STATE_ALPHA_FILL</td>
-                    <td>The bitblt state data specifies the alpha-fill mode of the output in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_alpha_fill_data.md">DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA</a> structure.</td>
+                    <td>DXVAHDDDI_BLT_STATE_TARGET_RECT</td>
+                    <td>The bitblt state data specifies the target rectangle of the output in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_target_rect_data.md">DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA</a> structure.</td>
                 </tr>
             
                 <tr>
@@ -73,23 +73,23 @@ typedef enum _DXVAHDDDI_BLT_STATE {
                 </tr>
             
                 <tr>
-                    <td>DXVAHDDDI_BLT_STATE_CONSTRICTION</td>
-                    <td>The bitblt state data specifies the down sampling of the output in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_constriction_data.md">DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA</a> structure.</td>
-                </tr>
-            
-                <tr>
                     <td>DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE</td>
                     <td>The bitblt state data specifies the color space of the output in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_output_color_space_data.md">DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA</a> structure.</td>
                 </tr>
             
                 <tr>
-                    <td>DXVAHDDDI_BLT_STATE_PRIVATE</td>
-                    <td>The bitblt state data specifies the private parameters in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_private_data.md">DXVAHDDDI_BLT_STATE_PRIVATE_DATA</a> structure.</td>
+                    <td>DXVAHDDDI_BLT_STATE_ALPHA_FILL</td>
+                    <td>The bitblt state data specifies the alpha-fill mode of the output in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_alpha_fill_data.md">DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA</a> structure.</td>
                 </tr>
             
                 <tr>
-                    <td>DXVAHDDDI_BLT_STATE_TARGET_RECT</td>
-                    <td>The bitblt state data specifies the target rectangle of the output in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_target_rect_data.md">DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA</a> structure.</td>
+                    <td>DXVAHDDDI_BLT_STATE_CONSTRICTION</td>
+                    <td>The bitblt state data specifies the down sampling of the output in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_constriction_data.md">DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVAHDDDI_BLT_STATE_PRIVATE</td>
+                    <td>The bitblt state data specifies the private parameters in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_private_data.md">DXVAHDDDI_BLT_STATE_PRIVATE_DATA</a> structure.</td>
                 </tr>
 </table>
 
@@ -134,11 +134,3 @@ A DXVAHDDDI_BLT_STATE-typed value, which is specified in the <b>State</b> member
 
 
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_alpha_fill_data.md">DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_BLT_STATE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

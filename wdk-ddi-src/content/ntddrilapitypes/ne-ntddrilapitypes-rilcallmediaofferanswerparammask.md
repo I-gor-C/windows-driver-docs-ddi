@@ -62,12 +62,7 @@ typedef enum _RILCALLMEDIAOFFERANSWERPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_CMOA_ACTION</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_CMOA_ALL</td>
+                    <td>RIL_PARAM_CMOA_ID</td>
                     <td></td>
                 </tr>
             
@@ -77,7 +72,12 @@ typedef enum _RILCALLMEDIAOFFERANSWERPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CMOA_ID</td>
+                    <td>RIL_PARAM_CMOA_ACTION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CMOA_OLD_STATE</td>
                     <td></td>
                 </tr>
             
@@ -87,7 +87,7 @@ typedef enum _RILCALLMEDIAOFFERANSWERPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_CMOA_OLD_STATE</td>
+                    <td>RIL_PARAM_CMOA_ALL</td>
                     <td></td>
                 </tr>
 </table>

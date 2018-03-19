@@ -66,6 +66,16 @@ typedef struct _TCP_OFFLOAD_STATE_CONST {
 ## Members
 
 
+`Header`
+
+An 
+     <a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a> structure. NDIS
+     sets the 
+     <b>Length</b> member of 
+     <b>Header</b> to the size, in bytes, of the TCP_OFFLOAD_STATE_CONST structure. The 
+     <b>RecognizedOptions</b> member of 
+     <b>Header</b> is reserved.
+
 `Flags`
 
 A bitmask that can be set to zero or any of the following flags, combined with bitwise OR:
@@ -100,25 +110,17 @@ The host stack sets this flag to cause the offload target to use scale factors (
        window scale factors, see RFCs 2883 and 3517.) The host stack clears this flag to disable this
        option.
 
-`HashValue`
+`RemotePort`
 
-A 32-bit hash value that the offload target uses for 
-     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/receive-side-scaling-on-an-offloaded-tcp-connection">receive side
-     scaling (RSS)</a> processing on the TCP connection if the offload target supports RSS.
-
-`Header`
-
-An 
-     <a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a> structure. NDIS
-     sets the 
-     <b>Length</b> member of 
-     <b>Header</b> to the size, in bytes, of the TCP_OFFLOAD_STATE_CONST structure. The 
-     <b>RecognizedOptions</b> member of 
-     <b>Header</b> is reserved.
+The destination port number (see RFC 793).
 
 `LocalPort`
 
 The source port number (see RFC 793).
+
+`SndWindScale`
+
+The send window scale factor (see RFC 1323).
 
 `RcvWindScale`
 
@@ -129,13 +131,11 @@ The receive window scale factor (see RFC 1323).
 The initial maximum segment size (MSS) advertised by the remote endpoint during TCP connection
      setup. (For more information about MSS, see RFC 2581.)
 
-`RemotePort`
+`HashValue`
 
-The destination port number (see RFC 793).
-
-`SndWindScale`
-
-The send window scale factor (see RFC 1323).
+A 32-bit hash value that the offload target uses for 
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/receive-side-scaling-on-an-offloaded-tcp-connection">receive side
+     scaling (RSS)</a> processing on the TCP connection if the offload target supports RSS.
 
 ## Remarks
 The value of each TCP constant variable does not change during the life of a TCP connection. Neither
@@ -176,11 +176,3 @@ When passed to an offload target, a TCP_OFFLOAD_STATE_CONST structure is associa
 
 
 <a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_cached.md">TCP_OFFLOAD_STATE_CACHED</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TCP_OFFLOAD_STATE_CONST structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

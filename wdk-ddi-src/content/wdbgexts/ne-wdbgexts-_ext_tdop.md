@@ -84,13 +84,58 @@ typedef enum _EXT_TDOP {
                 </tr>
             
                 <tr>
-                    <td>EXT_TDOP_COUNT</td>
-                    <td>Does not specify an operation. Instead, it represents the number of suboperations defined in the EXT_TDOP enumeration.</td>
+                    <td>EXT_TDOP_RELEASE</td>
+                    <td>Releases a typed data description.</td>
+                </tr>
+            
+                <tr>
+                    <td>EXT_TDOP_SET_FROM_EXPR</td>
+                    <td>Returns the value of an expression.</td>
+                </tr>
+            
+                <tr>
+                    <td>EXT_TDOP_SET_FROM_U64_EXPR</td>
+                    <td>Returns the value of an expression. An optional address can be provided as a parameter to the expression.</td>
+                </tr>
+            
+                <tr>
+                    <td>EXT_TDOP_GET_FIELD</td>
+                    <td>Returns a member of a structure.</td>
                 </tr>
             
                 <tr>
                     <td>EXT_TDOP_EVALUATE</td>
                     <td>Returns the value of an expression. An optional value can be provided as a parameter to the expression.</td>
+                </tr>
+            
+                <tr>
+                    <td>EXT_TDOP_GET_TYPE_NAME</td>
+                    <td>Returns the type name for typed data.</td>
+                </tr>
+            
+                <tr>
+                    <td>EXT_TDOP_OUTPUT_TYPE_NAME</td>
+                    <td>Prints the type name for typed data.</td>
+                </tr>
+            
+                <tr>
+                    <td>EXT_TDOP_OUTPUT_SIMPLE_VALUE</td>
+                    <td>Prints the value of typed data.</td>
+                </tr>
+            
+                <tr>
+                    <td>EXT_TDOP_OUTPUT_FULL_VALUE</td>
+                    <td>Prints the type and value for typed data.</td>
+                </tr>
+            
+                <tr>
+                    <td>EXT_TDOP_HAS_FIELD</td>
+                    <td>Determines whether a structure contains a specified member.</td>
+                </tr>
+            
+                <tr>
+                    <td>EXT_TDOP_GET_FIELD_OFFSET</td>
+                    <td>Returns the offset of a member within a structure.</td>
                 </tr>
             
                 <tr>
@@ -104,43 +149,8 @@ typedef enum _EXT_TDOP {
                 </tr>
             
                 <tr>
-                    <td>EXT_TDOP_GET_FIELD</td>
-                    <td>Returns a member of a structure.</td>
-                </tr>
-            
-                <tr>
-                    <td>EXT_TDOP_GET_FIELD_OFFSET</td>
-                    <td>Returns the offset of a member within a structure.</td>
-                </tr>
-            
-                <tr>
-                    <td>EXT_TDOP_GET_POINTER_TO</td>
-                    <td>Returns a new typed data description that represents a pointer to specified typed data.</td>
-                </tr>
-            
-                <tr>
-                    <td>EXT_TDOP_GET_TYPE_NAME</td>
-                    <td>Returns the type name for typed data.</td>
-                </tr>
-            
-                <tr>
                     <td>EXT_TDOP_GET_TYPE_SIZE</td>
                     <td>Returns the size of the specified typed data.</td>
-                </tr>
-            
-                <tr>
-                    <td>EXT_TDOP_HAS_FIELD</td>
-                    <td>Determines whether a structure contains a specified member.</td>
-                </tr>
-            
-                <tr>
-                    <td>EXT_TDOP_OUTPUT_FULL_VALUE</td>
-                    <td>Prints the type and value for typed data.</td>
-                </tr>
-            
-                <tr>
-                    <td>EXT_TDOP_OUTPUT_SIMPLE_VALUE</td>
-                    <td>Prints the value of typed data.</td>
                 </tr>
             
                 <tr>
@@ -149,18 +159,8 @@ typedef enum _EXT_TDOP {
                 </tr>
             
                 <tr>
-                    <td>EXT_TDOP_OUTPUT_TYPE_NAME</td>
-                    <td>Prints the type name for typed data.</td>
-                </tr>
-            
-                <tr>
-                    <td>EXT_TDOP_RELEASE</td>
-                    <td>Releases a typed data description.</td>
-                </tr>
-            
-                <tr>
-                    <td>EXT_TDOP_SET_FROM_EXPR</td>
-                    <td>Returns the value of an expression.</td>
+                    <td>EXT_TDOP_GET_POINTER_TO</td>
+                    <td>Returns a new typed data description that represents a pointer to specified typed data.</td>
                 </tr>
             
                 <tr>
@@ -169,13 +169,13 @@ typedef enum _EXT_TDOP {
                 </tr>
             
                 <tr>
-                    <td>EXT_TDOP_SET_FROM_U64_EXPR</td>
-                    <td>Returns the value of an expression. An optional address can be provided as a parameter to the expression.</td>
+                    <td>EXT_TDOP_SET_PTR_FROM_TYPE_ID_AND_U64</td>
+                    <td>Creates a typed data description representing a pointer to a specified memory location with specified type.</td>
                 </tr>
             
                 <tr>
-                    <td>EXT_TDOP_SET_PTR_FROM_TYPE_ID_AND_U64</td>
-                    <td>Creates a typed data description representing a pointer to a specified memory location with specified type.</td>
+                    <td>EXT_TDOP_COUNT</td>
+                    <td>Does not specify an operation. Instead, it represents the number of suboperations defined in the EXT_TDOP enumeration.</td>
                 </tr>
 </table>
 
@@ -196,11 +196,3 @@ typedef enum _EXT_TDOP {
 
 
 <a href="..\wdbgexts\ns-wdbgexts-_ext_typed_data.md">EXT_TYPED_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20EXT_TDOP enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

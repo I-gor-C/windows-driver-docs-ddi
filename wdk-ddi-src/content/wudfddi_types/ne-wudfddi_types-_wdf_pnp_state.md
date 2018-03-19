@@ -68,33 +68,18 @@ typedef enum _WDF_PNP_STATE {
 <table>
             
                 <tr>
-                    <td>WdfPnpStateDisabled</td>
-                    <td>The device is disabled.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfPnpStateDontDisplayInUI</td>
-                    <td>The device is hidden (not displayed) in Device Manager.</td>
-                </tr>
-            
-                <tr>
-                    <td>WdfPnpStateFailed</td>
-                    <td>The device is present but has failed.</td>
-                </tr>
-            
-                <tr>
                     <td>WdfPnpStateInvalid</td>
                     <td>The PnP state for the device is invalid.</td>
                 </tr>
             
                 <tr>
-                    <td>WdfPnpStateMaximum</td>
-                    <td>Valid enumeration values were exceeded.</td>
+                    <td>WdfPnpStateDisabled</td>
+                    <td>The device is disabled.</td>
                 </tr>
             
                 <tr>
-                    <td>WdfPnpStateNotDisableable</td>
-                    <td>The device cannot be disabled.</td>
+                    <td>WdfPnpStateFailed</td>
+                    <td>The device is present but has failed.</td>
                 </tr>
             
                 <tr>
@@ -105,6 +90,21 @@ typedef enum _WDF_PNP_STATE {
                 <tr>
                     <td>WdfPnpStateResourcesChanged</td>
                     <td>The device's resource requirements have changed.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfPnpStateDontDisplayInUI</td>
+                    <td>The device is hidden (not displayed) in Device Manager.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfPnpStateNotDisableable</td>
+                    <td>The device cannot be disabled.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfPnpStateMaximum</td>
+                    <td>Valid enumeration values were exceeded.</td>
                 </tr>
 </table>
 
@@ -124,11 +124,3 @@ A UMDF driver supplies one of the values of <b>WDF_PNP_STATE</b> to the <a href=
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558834">IWDFDevice::GetPnpState</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PNP_STATE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

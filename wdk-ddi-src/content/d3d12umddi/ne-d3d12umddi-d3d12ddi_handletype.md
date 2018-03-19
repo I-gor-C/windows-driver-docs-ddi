@@ -77,13 +77,53 @@ typedef enum D3D12DDI_HANDLETYPE {
 <table>
             
                 <tr>
-                    <td>D3D12DDI_HT_0010_PIPELINE_LIBRARY</td>
-                    <td>A pipeline library handle type.</td>
+                    <td>D3D12DDI_HT_COMMAND_QUEUE</td>
+                    <td>A command queue handle type.</td>
                 </tr>
             
                 <tr>
-                    <td>D3D12DDI_HT_0012_RESOURCE</td>
-                    <td>A resource handle type.</td>
+                    <td>D3D12DDI_HT_COMMAND_ALLOCATOR</td>
+                    <td>A command allocator handle type.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_HT_PIPELINE_STATE</td>
+                    <td>A pipeline state handle type.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_HT_COMMAND_LIST</td>
+                    <td>A command list handle type.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_HT_FENCE</td>
+                    <td>A fence handle type.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_HT_DESCRIPTOR_HEAP</td>
+                    <td>A descriptor heap handle type.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_HT_HEAP</td>
+                    <td>A heap handle type.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_HT_QUERY_HEAP</td>
+                    <td>A query heap handle type.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_HT_COMMAND_SIGNATURE</td>
+                    <td>A command signature handle type.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_HT_0010_PIPELINE_LIBRARY</td>
+                    <td>A pipeline library handle type.</td>
                 </tr>
             
                 <tr>
@@ -94,6 +134,16 @@ typedef enum D3D12DDI_HANDLETYPE {
                 <tr>
                     <td>D3D12DDI_HT_0020_VIDEO_PROCESSOR</td>
                     <td>A video processor handle type.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_HT_0012_RESOURCE</td>
+                    <td>A resource handle type.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_HT_PASS</td>
+                    <td>A pass handle type.</td>
                 </tr>
             
                 <tr>
@@ -114,56 +164,6 @@ typedef enum D3D12DDI_HANDLETYPE {
                 <tr>
                     <td>D3D12DDI_HT_0032_VIDEO_DECODER_HEAP</td>
                     <td>A video decoder heap handle type.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_HT_COMMAND_ALLOCATOR</td>
-                    <td>A command allocator handle type.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_HT_COMMAND_LIST</td>
-                    <td>A command list handle type.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_HT_COMMAND_QUEUE</td>
-                    <td>A command queue handle type.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_HT_COMMAND_SIGNATURE</td>
-                    <td>A command signature handle type.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_HT_DESCRIPTOR_HEAP</td>
-                    <td>A descriptor heap handle type.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_HT_FENCE</td>
-                    <td>A fence handle type.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_HT_HEAP</td>
-                    <td>A heap handle type.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_HT_PASS</td>
-                    <td>A pass handle type.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_HT_PIPELINE_STATE</td>
-                    <td>A pipeline state handle type.</td>
-                </tr>
-            
-                <tr>
-                    <td>D3D12DDI_HT_QUERY_HEAP</td>
-                    <td>A query heap handle type.</td>
                 </tr>
 </table>
 

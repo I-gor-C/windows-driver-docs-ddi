@@ -63,16 +63,6 @@ typedef enum _RILIMSNWENABLEDFLAGS {
 <table>
             
                 <tr>
-                    <td>RIL_IMS_NW_ENABLED_FLAG_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_IMS_NW_ENABLED_FLAG_EAB</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_IMS_NW_ENABLED_FLAG_NONE</td>
                     <td></td>
                 </tr>
@@ -83,12 +73,22 @@ typedef enum _RILIMSNWENABLEDFLAGS {
                 </tr>
             
                 <tr>
+                    <td>RIL_IMS_NW_ENABLED_FLAG_VOICE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_IMS_NW_ENABLED_FLAG_VIDEO</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_IMS_NW_ENABLED_FLAG_VOICE</td>
+                    <td>RIL_IMS_NW_ENABLED_FLAG_EAB</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMS_NW_ENABLED_FLAG_ALL</td>
                     <td></td>
                 </tr>
 </table>

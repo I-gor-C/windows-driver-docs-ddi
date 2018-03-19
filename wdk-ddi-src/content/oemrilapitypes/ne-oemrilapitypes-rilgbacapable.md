@@ -61,7 +61,7 @@ typedef enum _RILGBACAPABLE {
 <table>
             
                 <tr>
-                    <td>RIL_GBA_ME_SUPPORTED</td>
+                    <td>RIL_GBA_UNKNOWN</td>
                     <td></td>
                 </tr>
             
@@ -71,12 +71,12 @@ typedef enum _RILGBACAPABLE {
                 </tr>
             
                 <tr>
-                    <td>RIL_GBA_U_SUPPORTED</td>
+                    <td>RIL_GBA_ME_SUPPORTED</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_GBA_UNKNOWN</td>
+                    <td>RIL_GBA_U_SUPPORTED</td>
                     <td></td>
                 </tr>
 </table>

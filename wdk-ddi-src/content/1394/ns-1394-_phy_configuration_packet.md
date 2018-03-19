@@ -63,25 +63,25 @@ typedef struct _PHY_CONFIGURATION_PACKET {
 ## Members
 
 
-`PCP_Force_Root`
+`PCP_Phys_ID`
 
-If set, the caller becomes the root node. This member contains bit 7 of byte 1 of the packet.
-
-`PCP_Gap_Count`
-
-If the <b>PCP_Set_Gap_Count</b> bit is set, the PHY register gap_count field is set to this value. This member contains bits 0-5 of byte 1 of the packet.
-
-`PCP_Inverse`
-
-Specifies the logical inverse of the first quadlet of the packet.
+Specifies the node address of the root. This member contains bits 0-5 of byte 0 of the packet.
 
 `PCP_Packet_ID`
 
 This member must be PHY_PACKET_ID_CONFIGURATION to indicate it is a PHY configuration packet. This member contains bits 6-7 of byte 0 of the packet.
 
-`PCP_Phys_ID`
+`PCP_Gap_Count`
 
-Specifies the node address of the root. This member contains bits 0-5 of byte 0 of the packet.
+If the <b>PCP_Set_Gap_Count</b> bit is set, the PHY register gap_count field is set to this value. This member contains bits 0-5 of byte 1 of the packet.
+
+`PCP_Set_Gap_Count`
+
+If this bit is set, the PHY register gap_count field is set to <b>PCP_Gap_Count</b>. This member contains bit 6 of byte 1 of the packet.
+
+`PCP_Force_Root`
+
+If set, the caller becomes the root node. This member contains bit 7 of byte 1 of the packet.
 
 `PCP_Reserved1`
 
@@ -91,9 +91,9 @@ Reserved. This member contains bits 0-7 of byte 2 of the packet.
 
 Reserved. This member contains bits 0-7 of byte 3 of the packet.
 
-`PCP_Set_Gap_Count`
+`PCP_Inverse`
 
-If this bit is set, the PHY register gap_count field is set to <b>PCP_Gap_Count</b>. This member contains bit 6 of byte 1 of the packet.
+Specifies the logical inverse of the first quadlet of the packet.
 
 ## Remarks
 For an explanation of the function of the PHY configuration packet, see the IEEE 1394 specification.
@@ -106,11 +106,3 @@ For an explanation of the function of the PHY configuration packet, see the IEEE
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537661">REQUEST_SEND_PHY_CONFIG_PACKET</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20PHY_CONFIGURATION_PACKET structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

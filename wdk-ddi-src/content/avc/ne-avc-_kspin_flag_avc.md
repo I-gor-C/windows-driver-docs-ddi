@@ -62,18 +62,8 @@ typedef enum _KSPIN_FLAG_AVC {
 <table>
             
                 <tr>
-                    <td>KSPIN_FLAG_AVC_CONNECTED</td>
-                    <td>Part of the AV/C Connect Status bitmask. Represents a connection that is currently active, but not necessarily permanent.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPIN_FLAG_AVC_FIXEDPCR</td>
-                    <td>Represents a permanent connection between a subunit plug and a unit (serial bus) plug. Specifying this flag implies KSPIN_FLAG_AVC_PERMANENT, although that bit is not set if this one is set.</td>
-                </tr>
-            
-                <tr>
-                    <td>KSPIN_FLAG_AVC_PCRONLY</td>
-                    <td>No subunit plug control. Only unit input and output plugs are available, and this AVCPRECONNECTINFO structure represents one of them.</td>
+                    <td>KSPIN_FLAG_AVCMASK</td>
+                    <td>The mask to isolate the AV/C defined bit flags</td>
                 </tr>
             
                 <tr>
@@ -82,8 +72,18 @@ typedef enum _KSPIN_FLAG_AVC {
                 </tr>
             
                 <tr>
-                    <td>KSPIN_FLAG_AVCMASK</td>
-                    <td>The mask to isolate the AV/C defined bit flags</td>
+                    <td>KSPIN_FLAG_AVC_CONNECTED</td>
+                    <td>Part of the AV/C Connect Status bitmask. Represents a connection that is currently active, but not necessarily permanent.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPIN_FLAG_AVC_PCRONLY</td>
+                    <td>No subunit plug control. Only unit input and output plugs are available, and this AVCPRECONNECTINFO structure represents one of them.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPIN_FLAG_AVC_FIXEDPCR</td>
+                    <td>Represents a permanent connection between a subunit plug and a unit (serial bus) plug. Specifying this flag implies KSPIN_FLAG_AVC_PERMANENT, although that bit is not set if this one is set.</td>
                 </tr>
 </table>
 
@@ -103,11 +103,3 @@ These bit flags are used by the intersect handler to determine plug compatibilit
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554154">AVC_FUNCTION_GET_CONNECTINFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN_FLAG_AVC enumeration%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

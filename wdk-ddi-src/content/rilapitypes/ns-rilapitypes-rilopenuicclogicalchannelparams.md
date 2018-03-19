@@ -61,11 +61,7 @@ typedef struct _RILOPENUICCLOGICALCHANNELPARAMS {
 ## Members
 
 
-`bAppId`
-
-
-
-`dwAppIdLength`
+`dwSlotIndex`
 
 
 
@@ -73,11 +69,15 @@ typedef struct _RILOPENUICCLOGICALCHANNELPARAMS {
 
 
 
+`dwAppIdLength`
+
+
+
+`bAppId`
+
+
+
 `dwSelectP2Arg`
-
-
-
-`dwSlotIndex`
 
 
 

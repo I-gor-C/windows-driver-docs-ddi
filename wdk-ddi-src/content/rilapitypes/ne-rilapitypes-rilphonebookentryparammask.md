@@ -70,17 +70,7 @@ typedef enum _RILPHONEBOOKENTRYPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_PBE_ADDITIONALNUMCOUNT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBE_ADDITIONALNUMOFFSET</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBE_ADDITIONALNUMSIZE</td>
+                    <td>RIL_PARAM_PBE_INDEX</td>
                     <td></td>
                 </tr>
             
@@ -90,37 +80,7 @@ typedef enum _RILPHONEBOOKENTRYPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_PBE_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBE_EMAILCOUNT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBE_EMAILOFFSET</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBE_EMAILSIZE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBE_GROUPID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBE_GROUPIDCOUNT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_PBE_INDEX</td>
+                    <td>RIL_PARAM_PBE_TEXT</td>
                     <td></td>
                 </tr>
             
@@ -130,7 +90,47 @@ typedef enum _RILPHONEBOOKENTRYPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_PBE_TEXT</td>
+                    <td>RIL_PARAM_PBE_GROUPIDCOUNT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBE_GROUPID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBE_ADDITIONALNUMCOUNT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBE_ADDITIONALNUMSIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBE_ADDITIONALNUMOFFSET</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBE_EMAILCOUNT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBE_EMAILSIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBE_EMAILOFFSET</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBE_ALL</td>
                     <td></td>
                 </tr>
 </table>

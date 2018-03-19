@@ -67,13 +67,17 @@ typedef struct _DXVADDI_DECODEBUFFERDESC {
 ## Members
 
 
-`BufferIndex`
+`hBuffer`
 
-[in] Reserved. Do not use this member. For more information, see the Remarks section.
+[in] A handle to the buffer.
 
 `CompressedBufferType`
 
 [in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the buffer.
+
+`BufferIndex`
+
+[in] Reserved. Do not use this member. For more information, see the Remarks section.
 
 `DataOffset`
 
@@ -139,14 +143,6 @@ The <b>FirstMBaddress</b> member must be zero if the data buffer is one of the f
 
 If the data buffer is a residual difference block data buffer, <b>FirstMBaddress</b> must have the same value as for the corresponding macroblock control command buffer.
 
-`hBuffer`
-
-[in] A handle to the buffer.
-
-`Height`
-
-[in] Reserved. Do not use this member. For more information, see the Remarks section.
-
 `NumMBsInBuffer`
 
 [in] The number of macroblocks of data in the buffer, including skipped macroblocks. This member must be zero if the data buffer is one of the following types: picture decoding parameters, inverse-quantization matrix, AYUV, IA44/AI44, DPXD, Highlight, or DCCMD.
@@ -200,21 +196,25 @@ The same value as for the corresponding slice-control command buffer.
 </tr>
 </table>
 
-`pCipherCounter`
+`Width`
 
-[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_hw_iv.md">DXVADDI_PVP_HW_IV</a> structure that contains a 128-bit protected video path (PVP) value.
+[in] Reserved. Do not use this member. For more information, see the Remarks section.
 
-`ReservedBits`
+`Height`
 
-[in] Reserved bits that are used for packing and alignment. This member must be zero.
+[in] Reserved. Do not use this member. For more information, see the Remarks section.
 
 `Stride`
 
 [in] Reserved. Do not use this member. For more information, see the Remarks section.
 
-`Width`
+`ReservedBits`
 
-[in] Reserved. Do not use this member. For more information, see the Remarks section.
+[in] Reserved bits that are used for packing and alignment. This member must be zero.
+
+`pCipherCounter`
+
+[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_hw_iv.md">DXVADDI_PVP_HW_IV</a> structure that contains a 128-bit protected video path (PVP) value.
 
 ## Remarks
 An array of DXVADDI_DECODEBUFFERDESC structures is referred to as a <i>buffer description list</i>. When a set of buffers is sent from the host decoder to the hardware accelerator, a buffer description list is sent to describe the buffers. The buffer description list contains one DXVADDI_DECODEBUFFERDESC structure for each buffer in this set. The buffer description list starts with a DXVADDI_DECODEBUFFERDESC structure for the first buffer of the first type, followed by a DXVADDI_DECODEBUFFERDESC structure for the next buffer of the same type, and so on. The buffer description list then continues with a DXVADDI_DECODEBUFFERDESC structure for the first buffer of the next type, and so on. This entire list is contained in a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decodeexecute.md">D3DDDIARG_DECODEEXECUTE</a> structure.
@@ -242,11 +242,3 @@ Because Microsoft DirectX Video Acceleration (VA) version 2.0 uses Microsoft Dir
 
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decodeexecute.md">D3DDDIARG_DECODEEXECUTE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_DECODEBUFFERDESC structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -63,7 +63,7 @@ typedef struct _RILGBATOKEN {
 ## Members
 
 
-`bData`
+`cbSize`
 
 
 
@@ -71,19 +71,11 @@ typedef struct _RILGBATOKEN {
 
 
 
-`cbNAFKeyLifetimeSize`
-
-
-
-`cbNAFKeySize`
-
-
-
-`cbSize`
-
-
-
 `dwBTIDOffset`
+
+
+
+`cbNAFKeyLifetimeSize`
 
 
 
@@ -91,7 +83,15 @@ typedef struct _RILGBATOKEN {
 
 
 
+`cbNAFKeySize`
+
+
+
 `dwNAFKeyOffset`
+
+
+
+`bData`
 
 
 

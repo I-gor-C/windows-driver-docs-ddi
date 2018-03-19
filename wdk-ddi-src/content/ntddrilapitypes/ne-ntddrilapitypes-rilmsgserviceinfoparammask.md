@@ -60,12 +60,12 @@ typedef enum _RILMSGSERVICEINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_MSI_ALL</td>
+                    <td>RIL_PARAM_MSI_MSGSUPPORT</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_MSI_MSGSUPPORT</td>
+                    <td>RIL_PARAM_MSI_STOREUSED</td>
                     <td></td>
                 </tr>
             
@@ -75,7 +75,7 @@ typedef enum _RILMSGSERVICEINFOPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_MSI_STOREUSED</td>
+                    <td>RIL_PARAM_MSI_ALL</td>
                     <td></td>
                 </tr>
 </table>

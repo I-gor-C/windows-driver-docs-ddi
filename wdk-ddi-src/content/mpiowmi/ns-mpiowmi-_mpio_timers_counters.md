@@ -60,13 +60,13 @@ typedef struct _MPIO_TIMERS_COUNTERS {
 ## Members
 
 
-`PathVerificationPeriod`
-
-An unsigned 32-bitfield that is used to indicate the periodicity (in seconds) with which MPIO has been requested to perform path verification. This field is valid if <i>PathVerifyEnabled</i> is <b>TRUE</b>.
-
 `PathVerifyEnabled`
 
 An unsigned 32-bitfield that is used as a flag. This field indicates whether path verification must be performed by MPIO on all paths periodically.
+
+`PathVerificationPeriod`
+
+An unsigned 32-bitfield that is used to indicate the periodicity (in seconds) with which MPIO has been requested to perform path verification. This field is valid if <i>PathVerifyEnabled</i> is <b>TRUE</b>.
 
 `PDORemovePeriod`
 

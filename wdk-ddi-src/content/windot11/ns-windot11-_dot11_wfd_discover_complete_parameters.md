@@ -89,14 +89,6 @@ Specifies the type, revision and size of the <b>DOT11_WFD_DISCOVER_COMPLETE_PARA
 
 The appropriate status code for the device discovery operation. If this value is not <b>NDIS_STATUS_SUCCESS</b>, the rest of the members in this structure must be set to 0.
 
-`uListLength`
-
-The length, in bytes of the device list at <b>uListOffset</b>.
-
-`uListOffset`
-
-The offset in the <b>StatusBuffer</b> of <a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a> where the list of <a href="..\windot11\ns-windot11-_dot11_wfd_device_entry.md">DOT11_WFD_DEVICE_ENTRY</a> elements begins.
-
 `uNumOfEntries`
 
 The total number of discovered devices in the list at <b>uListOffset</b>. The number of entries cannot exceed <b>DOT11_WFD_DISCOVER_COMPLETE_MAX_LIST_SIZE</b>.
@@ -104,6 +96,14 @@ The total number of discovered devices in the list at <b>uListOffset</b>. The nu
 `uTotalNumOfEntries`
 
 The total number of discovered devices in actually discovered  by the driver. The number of entries cannot exceed <b>DOT11_WFD_DISCOVER_COMPLETE_MAX_LIST_SIZE</b>.
+
+`uListOffset`
+
+The offset in the <b>StatusBuffer</b> of <a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a> where the list of <a href="..\windot11\ns-windot11-_dot11_wfd_device_entry.md">DOT11_WFD_DEVICE_ENTRY</a> elements begins.
+
+`uListLength`
+
+The length, in bytes of the device list at <b>uListOffset</b>.
 
 
 ## Requirements
@@ -115,11 +115,3 @@ The total number of discovered devices in actually discovered  by the driver. Th
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451704">NDIS_STATUS_DOT11_WFD_DISCOVER_COMPLETE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20 DOT11_WFD_DISCOVER_COMPLETE_PARAMETERS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

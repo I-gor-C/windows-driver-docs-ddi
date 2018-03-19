@@ -57,13 +57,13 @@ typedef struct _NDIS_PD_FILTER_COUNTER {
 ## Members
 
 
-`BytesMatched`
-
-The amount of bytes that match.
-
 `PacketsMatched`
 
 The amount of packets that match.
+
+`BytesMatched`
+
+The amount of bytes that match.
 
 
 ## Requirements

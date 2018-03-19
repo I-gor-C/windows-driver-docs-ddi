@@ -65,11 +65,13 @@ typedef struct _SRBEX_DATA_IO_INFO {
 ## Members
 
 
-`CachePriority`
+`Type`
 
-Priority level for a hybrid cache read or write.
+Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeIoInfo</b>.
 
-This member is valid starting with Windows 8.1 Update.
+`Length`
+
+Length of the data in this structure, in bytes, starting with the <b>Flags</b> member. Set to SRBEX_DATA_IO_INFO_LENGTH.
 
 `Flags`
 
@@ -156,17 +158,23 @@ This flag is available starting with Windows 8.1 Update.
 </tr>
 </table>
 
-`IsWriteRequest`
-
-TRUE if the I/O operation in the SRB is a write request. Otherwise, FALSE; the I/O operation is a read request.
-
 `Key`
 
 A tag value to identify a block of data transferred.
 
-`Length`
+`RWLength`
 
-Length of the data in this structure, in bytes, starting with the <b>Flags</b> member. Set to SRBEX_DATA_IO_INFO_LENGTH.
+The length, in bytes of the data to transfer.
+
+`IsWriteRequest`
+
+TRUE if the I/O operation in the SRB is a write request. Otherwise, FALSE; the I/O operation is a read request.
+
+`CachePriority`
+
+Priority level for a hybrid cache read or write.
+
+This member is valid starting with Windows 8.1 Update.
 
 `Reserved`
 
@@ -178,14 +186,6 @@ This member is reserved. Set to 0.
 
 This member is present starting with Windows 8.1 Update.
 
-`RWLength`
-
-The length, in bytes of the data to transfer.
-
-`Type`
-
-Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeIoInfo</b>.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -196,11 +196,3 @@ Data type indicator for the bidirectional extended SRB data structure. Set to <b
 ## See Also
 
 <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SRBEX_DATA_IO_INFO structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

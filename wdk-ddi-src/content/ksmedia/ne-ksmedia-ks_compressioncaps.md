@@ -62,8 +62,8 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KS_CompressionCaps_CanBFrame</td>
-                    <td>The video compressor supports a user-specified P frame interval. The frames that occur between the key frames and P frames are bidirectional (B) frames.</td>
+                    <td>KS_CompressionCaps_CanQuality</td>
+                    <td>The video compressor supports quality settings.</td>
                 </tr>
             
                 <tr>
@@ -77,8 +77,8 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KS_CompressionCaps_CanQuality</td>
-                    <td>The video compressor supports quality settings.</td>
+                    <td>KS_CompressionCaps_CanBFrame</td>
+                    <td>The video compressor supports a user-specified P frame interval. The frames that occur between the key frames and P frames are bidirectional (B) frames.</td>
                 </tr>
             
                 <tr>
@@ -100,11 +100,3 @@ typedef enum  {
 
 
 <a href="..\ksmedia\ns-ksmedia-ksproperty_videocompression_getinfo_s.md">KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_CompressionCaps enumeration%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -60,19 +60,19 @@ typedef struct _D3DKMT_RECLAIMALLOCATIONS {
 ## Members
 
 
+`hDevice`
+
+[in] A D3DKMT_HANDLE data type that represents a handle to the device that created the allocations.
+
+`pResources`
+
+[in] An array of <b>D3DKMT_HANDLE</b> data types that represent Direct3D runtime resource handles.
+
 `HandleList`
 
 [in] An array of <b>D3DKMT_HANDLE</b> data types that represent kernel-mode handles to the allocations that are to be reclaimed.
 
 If <b>HandleList</b> is not <b>NULL</b>, the <b>pResources</b> member must be <b>NULL</b>.
-
-`hDevice`
-
-[in] A D3DKMT_HANDLE data type that represents a handle to the device that created the allocations.
-
-`NumAllocations`
-
-[in] The number of items in the <b>pResources</b>, <b>HandleList</b>, or  <b>pDiscarded</b> members, whichever is not <b>NULL</b>.
 
 `pDiscarded`
 
@@ -84,9 +84,9 @@ The DirectX graphics kernel subsystem sets each Boolean value to <b>TRUE</b> if 
 
 The value of <b>pDiscarded</b> can be <b>NULL</b>. If the driver sets it to <b>NULL</b>, the content of the resource or allocation can be assumed to be lost. If the driver does not need the content of the resource or allocation, setting <b>pDiscarded</b> to <b>NULL</b> might improve performance.
 
-`pResources`
+`NumAllocations`
 
-[in] An array of <b>D3DKMT_HANDLE</b> data types that represent Direct3D runtime resource handles.
+[in] The number of items in the <b>pResources</b>, <b>HandleList</b>, or  <b>pDiscarded</b> members, whichever is not <b>NULL</b>.
 
 
 ## Requirements
@@ -98,11 +98,3 @@ The value of <b>pDiscarded</b> can be <b>NULL</b>. If the driver sets it to <b>N
 ## See Also
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreclaimallocations.md">D3DKMTReclaimAllocations</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_RECLAIMALLOCATIONS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -73,21 +73,9 @@ typedef struct _UFX_DEVICE_CALLBACKS {
 ## Members
 
 
-`EvtDeviceAddressed`
+`Size`
 
-A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_addressed.md">EVT_UFX_DEVICE_ADDRESSED</a> callback routine.
-
-`EvtDeviceControllerReset`
-
-A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_controller_reset.md">EVT_UFX_DEVICE_CONTROLLER_RESET</a> callback routine.
-
-`EvtDeviceDefaultEndpointAdd`
-
-A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_default_endpoint_add.md">EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD</a> callback routine.
-
-`EvtDeviceEndpointAdd`
-
-A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_endpoint_add.md">EVT_UFX_DEVICE_ENDPOINT_ADD</a> callback routine.
+The size of the <b>UFX_DEVICE_CALLBACKS</b> structure.
 
 `EvtDeviceHostConnect`
 
@@ -97,6 +85,22 @@ A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_de
 
 A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_host_disconnect.md">EVT_UFX_DEVICE_HOST_DISCONNECT</a> callback routine.
 
+`EvtDeviceAddressed`
+
+A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_addressed.md">EVT_UFX_DEVICE_ADDRESSED</a> callback routine.
+
+`EvtDeviceEndpointAdd`
+
+A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_endpoint_add.md">EVT_UFX_DEVICE_ENDPOINT_ADD</a> callback routine.
+
+`EvtDeviceDefaultEndpointAdd`
+
+A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_default_endpoint_add.md">EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD</a> callback routine.
+
+`EvtDeviceUsbStateChange`
+
+A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_usb_state_change.md">EVT_UFX_DEVICE_USB_STATE_CHANGE</a> callback routine.
+
 `EvtDevicePortChange`
 
 A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_port_change.md">EVT_UFX_DEVICE_PORT_CHANGE</a> callback routine.
@@ -105,41 +109,37 @@ A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_de
 
 A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_port_detect.md">EVT_UFX_DEVICE_PORT_DETECT</a> callback routine.
 
-`EvtDeviceProprietaryChargerDetect`
-
-A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_detect.md">EVT_UFX_DEVICE_DETECT_PROPRIETARY_CHARGER</a> callback routine.
-
-`EvtDeviceProprietaryChargerReset`
-
-A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_reset.md">EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET</a> callback routine.
-
-`EvtDeviceProprietaryChargerSetProperty`
-
-A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_set_property.md">EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY</a> callback routine.
-
 `EvtDeviceRemoteWakeupSignal`
 
 A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_remote_wakeup_signal.md">EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL</a> callback routine.
 
-`EvtDeviceSuperSpeedPowerFeature`
+`EvtDeviceControllerReset`
 
-A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_super_speed_power_feature.md">EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE</a> callback routine.
-
-`EvtDeviceTestHook`
-
-Reserved.  Should be set to NULL.
+A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_controller_reset.md">EVT_UFX_DEVICE_CONTROLLER_RESET</a> callback routine.
 
 `EvtDeviceTestModeSet`
 
 A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_test_mode_set.md">EVT_UFX_DEVICE_TEST_MODE_SET</a> callback routine.
 
-`EvtDeviceUsbStateChange`
+`EvtDeviceTestHook`
 
-A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_usb_state_change.md">EVT_UFX_DEVICE_USB_STATE_CHANGE</a> callback routine.
+Reserved.  Should be set to NULL.
 
-`Size`
+`EvtDeviceSuperSpeedPowerFeature`
 
-The size of the <b>UFX_DEVICE_CALLBACKS</b> structure.
+A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_super_speed_power_feature.md">EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE</a> callback routine.
+
+`EvtDeviceProprietaryChargerDetect`
+
+A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_detect.md">EVT_UFX_DEVICE_DETECT_PROPRIETARY_CHARGER</a> callback routine.
+
+`EvtDeviceProprietaryChargerSetProperty`
+
+A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_set_property.md">EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY</a> callback routine.
+
+`EvtDeviceProprietaryChargerReset`
+
+A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_reset.md">EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET</a> callback routine.
 
 ## Remarks
 The client driver shall use the <a href="..\ufxclient\nf-ufxclient-ufx_device_callbacks_init.md">UFX_DEVICE_CALLBACKS_INIT</a> macro to initialize the <b>UFX_DEVICE_CALLBACKS</b> structure, and then shall set fields of structure to the appropriate event callback routines prior to calling the <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a> export function.

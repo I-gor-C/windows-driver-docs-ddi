@@ -66,37 +66,37 @@ typedef struct _WDF_POWER_POLICY_EVENT_CALLBACKS {
 ## Members
 
 
+`Size`
+
+The size, in bytes, of this structure.
+
 `EvtDeviceArmWakeFromS0`
 
 A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_s0.md">EvtDeviceArmWakeFromS0</a> event callback function, or <b>NULL</b>.
-
-`EvtDeviceArmWakeFromSx`
-
-A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_sx.md">EvtDeviceArmWakeFromSx</a> event callback function, or <b>NULL</b>.
-
-`EvtDeviceArmWakeFromSxWithReason`
-
-A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_sx_with_reason.md">EvtDeviceArmWakeFromSxWithReason</a> event callback function, or <b>NULL</b>.
 
 `EvtDeviceDisarmWakeFromS0`
 
 A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0.md">EvtDeviceDisarmWakeFromS0</a> event callback function, or <b>NULL</b>.
 
-`EvtDeviceDisarmWakeFromSx`
-
-A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx.md">EvtDeviceDisarmWakeFromSx</a> event callback function, or <b>NULL</b>.
-
 `EvtDeviceWakeFromS0Triggered`
 
 A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_wake_from_s0_triggered.md">EvtDeviceWakeFromS0Triggered</a> event callback function, or <b>NULL</b>.
+
+`EvtDeviceArmWakeFromSx`
+
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_sx.md">EvtDeviceArmWakeFromSx</a> event callback function, or <b>NULL</b>.
+
+`EvtDeviceDisarmWakeFromSx`
+
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx.md">EvtDeviceDisarmWakeFromSx</a> event callback function, or <b>NULL</b>.
 
 `EvtDeviceWakeFromSxTriggered`
 
 A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_wake_from_sx_triggered.md">EvtDeviceWakeFromSxTriggered</a> event callback function, or <b>NULL</b>.
 
-`Size`
+`EvtDeviceArmWakeFromSxWithReason`
 
-The size, in bytes, of this structure.
+A pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_sx_with_reason.md">EvtDeviceArmWakeFromSxWithReason</a> event callback function, or <b>NULL</b>.
 
 ## Remarks
 The <b>WDF_POWER_POLICY_EVENT_CALLBACKS</b> structure is used as input to the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpowerpolicyeventcallbacks.md">WdfDeviceInitSetPowerPolicyEventCallbacks</a> method.
@@ -113,11 +113,3 @@ Your driver should initialize its <b>WDF_POWER_POLICY_EVENT_CALLBACKS</b> struct
 ## See Also
 
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_pnppower_event_callbacks.md">WDF_PNPPOWER_EVENT_CALLBACKS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_POWER_POLICY_EVENT_CALLBACKS structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

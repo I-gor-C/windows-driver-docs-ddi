@@ -57,13 +57,13 @@ typedef struct D3D11_1DDI_AES_CTR_IV {
 ## Members
 
 
-`Count`
-
-The block count, in big-endian format.
-
 `IV`
 
 The IV, in big-endian format.
+
+`Count`
+
+The block count, in big-endian format.
 
 
 ## Requirements

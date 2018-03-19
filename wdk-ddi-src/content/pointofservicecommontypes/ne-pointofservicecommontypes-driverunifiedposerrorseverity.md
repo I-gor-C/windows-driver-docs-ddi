@@ -63,13 +63,13 @@ typedef enum _DriverUnifiedPosErrorSeverity {
 <table>
             
                 <tr>
-                    <td>AssistanceRequired</td>
-                    <td>Intervention is needed to respond to the error.</td>
+                    <td>UnknownErrorSeverity</td>
+                    <td>The severity of the error is not known.</td>
                 </tr>
             
                 <tr>
-                    <td>Fatal</td>
-                    <td>The error requires that the device be rebooted.</td>
+                    <td>Warning</td>
+                    <td>The error or warning is informational.</td>
                 </tr>
             
                 <tr>
@@ -78,18 +78,18 @@ typedef enum _DriverUnifiedPosErrorSeverity {
                 </tr>
             
                 <tr>
-                    <td>UnknownErrorSeverity</td>
-                    <td>The severity of the error is not known.</td>
-                </tr>
-            
-                <tr>
                     <td>Unrecoverable</td>
                     <td>The device is still working, but it must close the application to recover from the error.</td>
                 </tr>
             
                 <tr>
-                    <td>Warning</td>
-                    <td>The error or warning is informational.</td>
+                    <td>AssistanceRequired</td>
+                    <td>Intervention is needed to respond to the error.</td>
+                </tr>
+            
+                <tr>
+                    <td>Fatal</td>
+                    <td>The error requires that the device be rebooted.</td>
                 </tr>
 </table>
 

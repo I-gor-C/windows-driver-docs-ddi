@@ -63,15 +63,15 @@ typedef struct _RILGEOLOCATIONREQUESTINFO {
 
 
 
-`dwAltitude`
-
-
-
 `dwLatitude`
 
 
 
 `dwLongitude`
+
+
+
+`dwAltitude`
 
 
 

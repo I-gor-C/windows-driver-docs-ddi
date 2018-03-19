@@ -68,57 +68,57 @@ typedef struct _D3D12DDI_D3D12_OPTIONS_DATA_0033 {
 ## Members
 
 
-`BarycentricsSupported`
+`ResourceBindingTier`
 
-Barycentrics supported.
+Resource binding tier.
 
 `ConservativeRasterizationTier`
 
 Conservative rasterization tier.
 
-`CopyQueueTimestampQueriesSupported`
+`TiledResourcesTier`
 
-Copy queue timestamp queries supported.
+Tiled resource tier.
 
 `CrossNodeSharingTier`
 
 Cross node sharing tier.
 
-`DepthBoundsTestSupported`
+`VPAndRTArrayIndexFromAnyShaderFeedingRasterizerSupportedWithoutGSEmulation`
 
-Depth bounds test supported.
+VP and RT array index from any shader feeding rasterizer supported without GS emulation.
 
 `OutputMergerLogicOp`
 
 Output merger logic option.
 
-`ProgrammableSamplePositionsTier`
-
-Programmable sample positions tier.
-
-`ResourceBindingTier`
-
-Resource binding tier.
-
 `ResourceHeapTier`
 
 Resource heap tier.
 
-`TiledResourcesTier`
+`DepthBoundsTestSupported`
 
-Tiled resource tier.
+Depth bounds test supported.
+
+`ProgrammableSamplePositionsTier`
+
+Programmable sample positions tier.
+
+`CopyQueueTimestampQueriesSupported`
+
+Copy queue timestamp queries supported.
+
+`WriteBufferImmediateQueueFlags`
+
+Write buffer immediate queue flags.
 
 `ViewInstancingTier`
 
 View instancing tier.
 
-`VPAndRTArrayIndexFromAnyShaderFeedingRasterizerSupportedWithoutGSEmulation`
+`BarycentricsSupported`
 
-VP and RT array index from any shader feeding rasterizer supported without GS emulation.
-
-`WriteBufferImmediateQueueFlags`
-
-Write buffer immediate queue flags.
+Barycentrics supported.
 
 
 ## Requirements

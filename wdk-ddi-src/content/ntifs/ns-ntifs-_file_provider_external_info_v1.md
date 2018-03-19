@@ -58,6 +58,10 @@ typedef struct _FILE_PROVIDER_EXTERNAL_INFO_V1 {
 ## Members
 
 
+`Version`
+
+The version of the provider to use. Specify FILE_PROVIDER_CURRENT_VERSION.
+
 `Algorithm`
 
 Specifies the compression algorithm that is used to compress this file. Currently defined algorithms are: 
@@ -73,10 +77,6 @@ Specifies the compression algorithm that is used to compress this file. Currentl
 
 Specifies flags for the operation. Reserved for future use, should be 0.
 
-`Version`
-
-The version of the provider to use. Specify FILE_PROVIDER_CURRENT_VERSION.
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,11 +87,3 @@ The version of the provider to use. Specify FILE_PROVIDER_CURRENT_VERSION.
 ## See Also
 
 <a href="..\ntifs\ns-ntifs-_file_provider_external_info_v0.md">FILE_PROVIDER_EXTERNAL_INFO_V0</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_PROVIDER_EXTERNAL_INFO_V1 structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

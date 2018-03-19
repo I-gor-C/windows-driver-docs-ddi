@@ -64,21 +64,29 @@ typedef struct _IO_INTERRUPT_MESSAGE_INFO_ENTRY {
 ## Members
 
 
-`InterruptObject`
-
-Pointer to the interrupt object that represents the interrupt.
-
-`Irql`
-
-Specifies the device IRQL (DIRQL) for the interrupt.
-
 `MessageAddress`
 
 Specifies the physical address that triggers the interrupt message.
 
+`TargetProcessorSet`
+
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a> value that determines the set of processors that can receive the interrupt.
+
+`InterruptObject`
+
+Pointer to the interrupt object that represents the interrupt.
+
 `MessageData`
 
 Specifies the value to be written to the address specified by <b>MessageAddress</b> to trigger the interrupt.
+
+`Vector`
+
+Specifies the interrupt vector for the interrupt.
+
+`Irql`
+
+Specifies the device IRQL (DIRQL) for the interrupt.
 
 `Mode`
 
@@ -87,14 +95,6 @@ Specifies a <a href="..\wudfwdm\ne-wudfwdm-_kinterrupt_mode.md">KINTERRUPT_MODE<
 `Polarity`
 
 Specifies a <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a> value that determines whether the interrupt is active-high or active-low.
-
-`TargetProcessorSet`
-
-Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a> value that determines the set of processors that can receive the interrupt.
-
-`Vector`
-
-Specifies the interrupt vector for the interrupt.
 
 
 ## Requirements
@@ -105,11 +105,3 @@ Specifies the interrupt vector for the interrupt.
 ## See Also
 
 <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_INTERRUPT_MESSAGE_INFO_ENTRY structure%20 RELEASE:%20(3/1/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

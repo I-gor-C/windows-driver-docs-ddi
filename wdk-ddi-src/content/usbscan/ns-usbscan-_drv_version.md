@@ -59,10 +59,6 @@ typedef struct _DRV_VERSION {
 ## Members
 
 
-`internal`
-
-Internal, vendor-specific version number.
-
 `major`
 
 Major version number.
@@ -70,6 +66,10 @@ Major version number.
 `minor`
 
 Minor version number.
+
+`internal`
+
+Internal, vendor-specific version number.
 
 
 ## Requirements

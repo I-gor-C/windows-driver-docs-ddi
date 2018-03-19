@@ -114,7 +114,82 @@ typedef enum _WDF_FILE_INFORMATION_CLASS {
 <table>
             
                 <tr>
+                    <td>WdfFileInformationDirectory</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationFullDirectory</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationBothDirectory</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationBasic</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationStandard</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationInternal</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationEa</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>WdfFileInformationAccess</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationName</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationRename</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationLink</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationNames</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationDisposition</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationPosition</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationFullEa</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationMode</td>
                     <td></td>
                 </tr>
             
@@ -134,172 +209,17 @@ typedef enum _WDF_FILE_INFORMATION_CLASS {
                 </tr>
             
                 <tr>
-                    <td>WdfFileInformationAlternateName</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationAttributeCache</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationAttributeTag</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationBasic</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationBothDirectory</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationCompletion</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationCompression</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationDirectory</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationDisposition</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationEa</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>WdfFileInformationEndOfFile</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfFileInformationFullDirectory</td>
+                    <td>WdfFileInformationAlternateName</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfFileInformationFullEa</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationHardLink</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationIdBothDirectory</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationIdFullDirectory</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationIdGlobalTxDirectory</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationInternal</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationIoCompletionNotification</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationIoPriorityHint</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationIoStatusBlockRange</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationIsRemoteDevice</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationLink</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationMailslotQuery</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationMailslotSet</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationMaximum</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationMode</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationMoveCluster</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationName</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationNames</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationNetworkOpen</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationNetworkPhysicalName</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationNormalizedName</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfFileInformationObjectId</td>
+                    <td>WdfFileInformationStream</td>
                     <td></td>
                 </tr>
             
@@ -319,12 +239,32 @@ typedef enum _WDF_FILE_INFORMATION_CLASS {
                 </tr>
             
                 <tr>
-                    <td>WdfFileInformationPosition</td>
+                    <td>WdfFileInformationMailslotQuery</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfFileInformationProcessIdsUsingFile</td>
+                    <td>WdfFileInformationMailslotSet</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationCompression</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationObjectId</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationCompletion</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationMoveCluster</td>
                     <td></td>
                 </tr>
             
@@ -334,12 +274,57 @@ typedef enum _WDF_FILE_INFORMATION_CLASS {
                 </tr>
             
                 <tr>
-                    <td>WdfFileInformationRename</td>
+                    <td>WdfFileInformationReparsePoint</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfFileInformationReparsePoint</td>
+                    <td>WdfFileInformationNetworkOpen</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationAttributeTag</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationTracking</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationIdBothDirectory</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationIdFullDirectory</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationValidDataLength</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationShortName</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationIoCompletionNotification</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationIoStatusBlockRange</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationIoPriorityHint</td>
                     <td></td>
                 </tr>
             
@@ -354,27 +339,42 @@ typedef enum _WDF_FILE_INFORMATION_CLASS {
                 </tr>
             
                 <tr>
-                    <td>WdfFileInformationShortName</td>
+                    <td>WdfFileInformationHardLink</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfFileInformationStandard</td>
+                    <td>WdfFileInformationProcessIdsUsingFile</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfFileInformationStream</td>
+                    <td>WdfFileInformationNormalizedName</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfFileInformationTracking</td>
+                    <td>WdfFileInformationNetworkPhysicalName</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>WdfFileInformationValidDataLength</td>
+                    <td>WdfFileInformationIdGlobalTxDirectory</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationIsRemoteDevice</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationAttributeCache</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfFileInformationMaximum</td>
                     <td></td>
                 </tr>
 </table>
@@ -400,11 +400,3 @@ For more information about the enumeration value and associated structures, see 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559009">IWDFIoRequest2::GetSetInformationParameters</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_FILE_INFORMATION_CLASS enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -60,25 +60,25 @@ typedef struct _D3D11_1DDIARG_CREATEVIDEODECODEROUTPUTVIEW {
 ## Members
 
 
-`ArraySize`
+`hDrvResource`
 
-The number of array slices for the texture.
+A handle to the video decoder output resource.
 
 `DecodeProfile`
 
 The decode profile to be used in conjunction with the encryption.
 
+`MipSlice`
+
+The identifier of the MIP-map slice.
+
 `FirstArraySlice`
 
 The identifier of the first array slice.
 
-`hDrvResource`
+`ArraySize`
 
-A handle to the video decoder output resource.
-
-`MipSlice`
-
-The identifier of the MIP-map slice.
+The number of array slices for the texture.
 
 
 ## Requirements

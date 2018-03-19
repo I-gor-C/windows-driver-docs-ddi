@@ -73,22 +73,6 @@ typedef struct _WDI_TXRX_CAPABILITIES {
 
 Interconnect type of the target.
 
-`ReceiveCapabilities`
-
-Receive capabilities.
-
-
-
-#### RxTxForwarding
-
-Reserved.
-
-
-
-#### MaxThroughput
-
-Specifies the maximum throughput of the device in units of 0.5 Mbps.
-
 `TransmitCapabilities`
 
 Transmit capabilities.
@@ -136,6 +120,22 @@ When dequeuing frames, the TxMgr treats frames smaller than <b>MinEffectiveSize<
 This value is equal to the granularity of memory allocation per frame.  For the purposes of dequeuing, the TxMgr treats a frame as having an effective size equal to the frame size plus the least amount of padding such that the effective size is an integer multiple of the <b>FrameSizeGranularity</b>.
 
 This value must be set to a power of two.
+
+`ReceiveCapabilities`
+
+Receive capabilities.
+
+
+
+#### RxTxForwarding
+
+Reserved.
+
+
+
+#### MaxThroughput
+
+Specifies the maximum throughput of the device in units of 0.5 Mbps.
 
 
 ## Requirements

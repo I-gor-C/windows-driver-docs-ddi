@@ -62,14 +62,14 @@ typedef struct _DOT11_PORT_STATE {
 ## Members
 
 
-`bPortAuthorized`
+`PeerMacAddress`
 
-A Boolean value that defines whether the port is authorized to access the BSS network. A value of
-     <b>TRUE</b> specifies that the port has been authorized for network access.
-     
+The media access control (MAC) address of the AP or peer station with which the security session
+     has been initiated.
 
-For more information about authorized port access, refer to Clause 6.3 of the IEEE 802.1X-1999
-     standard.
+`uSessionId`
+
+The security session identifier (ID) assigned by the operating system.
 
 `bPortControlled`
 
@@ -80,14 +80,14 @@ A Boolean value that defines whether the port is controlled for access to the BS
 For more information about controlled and uncontrolled port access, refer to Clause 6.3 of the IEEE
      802.1X-1999 standard.
 
-`PeerMacAddress`
+`bPortAuthorized`
 
-The media access control (MAC) address of the AP or peer station with which the security session
-     has been initiated.
+A Boolean value that defines whether the port is authorized to access the BSS network. A value of
+     <b>TRUE</b> specifies that the port has been authorized for network access.
+     
 
-`uSessionId`
-
-The security session identifier (ID) assigned by the operating system.
+For more information about authorized port access, refer to Clause 6.3 of the IEEE 802.1X-1999
+     standard.
 
 ## Remarks
 The operating system passes in the current port state of the security session through the 
@@ -112,11 +112,3 @@ The operating system passes in the current port state of the security session th
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_post_associate.md">
    Dot11ExtIhvPerformPostAssociate</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PORT_STATE structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

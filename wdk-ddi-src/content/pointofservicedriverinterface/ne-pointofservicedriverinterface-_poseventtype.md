@@ -72,8 +72,8 @@ typedef enum _PosEventType {
 <table>
             
                 <tr>
-                    <td>_Max</td>
-                    <td>Represents the _Max event.</td>
+                    <td>InvalidEvent</td>
+                    <td>The event code is not valid.</td>
                 </tr>
             
                 <tr>
@@ -82,8 +82,23 @@ typedef enum _PosEventType {
                 </tr>
             
                 <tr>
-                    <td>AlarmTimeoutExpired</td>
-                    <td>Represents the AlarmTimeoutExpired event.</td>
+                    <td>ReleaseDeviceRequested</td>
+                    <td>Represents the <a href="https://msdn.microsoft.com/library/windows/hardware/dn790033">ReleaseDeviceRequested</a> event.</td>
+                </tr>
+            
+                <tr>
+                    <td>StatusUpdated</td>
+                    <td>Represents the <a href="https://msdn.microsoft.com/library/windows/hardware/dn790040">StatusUpdated</a> event.</td>
+                </tr>
+            
+                <tr>
+                    <td>BarcodeScannerTriggerPressed</td>
+                    <td>Represents the <a href="https://msdn.microsoft.com/library/windows/hardware/dn757468">BarcodeScannerTriggerPressed</a> event.</td>
+                </tr>
+            
+                <tr>
+                    <td>BarcodeScannerTriggerReleased</td>
+                    <td>Represents the <a href="https://msdn.microsoft.com/library/windows/hardware/dn757469">BarcodeScannerTriggerReleased</a> event.</td>
                 </tr>
             
                 <tr>
@@ -102,31 +117,6 @@ typedef enum _PosEventType {
                 </tr>
             
                 <tr>
-                    <td>BarcodeScannerTriggerPressed</td>
-                    <td>Represents the <a href="https://msdn.microsoft.com/library/windows/hardware/dn757468">BarcodeScannerTriggerPressed</a> event.</td>
-                </tr>
-            
-                <tr>
-                    <td>BarcodeScannerTriggerReleased</td>
-                    <td>Represents the <a href="https://msdn.microsoft.com/library/windows/hardware/dn757469">BarcodeScannerTriggerReleased</a> event.</td>
-                </tr>
-            
-                <tr>
-                    <td>DrawerClosed</td>
-                    <td>Represents the DrawerClosed event.</td>
-                </tr>
-            
-                <tr>
-                    <td>DrawerOpened</td>
-                    <td>Represents the DrawerOpened event.</td>
-                </tr>
-            
-                <tr>
-                    <td>InvalidEvent</td>
-                    <td>The event code is not valid.</td>
-                </tr>
-            
-                <tr>
                     <td>MagneticStripeReaderDataReceived</td>
                     <td>Represents the <a href="https://msdn.microsoft.com/library/windows/hardware/dn772149">MagneticStripeReaderDataReceived</a> event.</td>
                 </tr>
@@ -142,13 +132,23 @@ typedef enum _PosEventType {
                 </tr>
             
                 <tr>
-                    <td>ReleaseDeviceRequested</td>
-                    <td>Represents the <a href="https://msdn.microsoft.com/library/windows/hardware/dn790033">ReleaseDeviceRequested</a> event.</td>
+                    <td>AlarmTimeoutExpired</td>
+                    <td>Represents the AlarmTimeoutExpired event.</td>
                 </tr>
             
                 <tr>
-                    <td>StatusUpdated</td>
-                    <td>Represents the <a href="https://msdn.microsoft.com/library/windows/hardware/dn790040">StatusUpdated</a> event.</td>
+                    <td>DrawerClosed</td>
+                    <td>Represents the DrawerClosed event.</td>
+                </tr>
+            
+                <tr>
+                    <td>DrawerOpened</td>
+                    <td>Represents the DrawerOpened event.</td>
+                </tr>
+            
+                <tr>
+                    <td>_Max</td>
+                    <td>Represents the _Max event.</td>
                 </tr>
 </table>
 

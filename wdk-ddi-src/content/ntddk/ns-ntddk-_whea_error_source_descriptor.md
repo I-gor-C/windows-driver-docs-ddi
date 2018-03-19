@@ -77,9 +77,41 @@ typedef struct _WHEA_ERROR_SOURCE_DESCRIPTOR {
 ## Members
 
 
+`Length`
+
+The size, in bytes, of the WHEA_ERROR_SOURCE_DESCRIPTOR structure.
+
+`Version`
+
+The version number of the WHEA_ERROR_SOURCE_DESCRIPTOR structure. This member contains the value WHEA_ERROR_SOURCE_DESCRIPTOR_VERSION_10.
+
+`Type`
+
+A <a href="..\ntddk\ne-ntddk-_whea_error_source_type.md">WHEA_ERROR_SOURCE_TYPE</a>-typed value that specifies the type of the error source.
+
+`State`
+
+A <a href="..\ntddk\ne-ntddk-_whea_error_source_state.md">WHEA_ERROR_SOURCE_STATE</a>-typed value that specifies the state of the error source.
+
+`MaxRawDataLength`
+
+The maximum number of bytes of raw data included in a hardware error packet that is reported by this error source. This number must be large enough to include any additional platform-specific error information that is added to the hardware error packet by the PSHED or by a PSHED plug-in.
+
+`NumRecordsToPreallocate`
+
+The number of error records that should be pre-allocated for hardware errors that are reported by this error source.
+
+`MaxSectionsPerRecord`
+
+The maximum number of error record sections that are required in an error record to describe a hardware error that is reported by this error source. This number must be large enough to include any additional error record sections that are added to the error record by the PSHED or by a PSHED plug-in during the processing of the error.
+
 `ErrorSourceId`
 
 The identifier of the error source. This identifier is unique only on the system where the error source exists.
+
+`PlatformErrorSourceId`
+
+The identifier of the error source as enumerated by the hardware platform. This identifier is unique only on the system where the error source exists.
 
 `Flags`
 
@@ -168,38 +200,6 @@ A <a href="..\ntddk\ns-ntddk-_whea_aer_bridge_descriptor.md">WHEA_AER_BRIDGE_DES
 #### GenErrDescriptor
 
 A <a href="..\ntddk\ns-ntddk-_whea_generic_error_descriptor.md">WHEA_GENERIC_ERROR_DESCRIPTOR</a> structure that describes a generic error source.
-
-`Length`
-
-The size, in bytes, of the WHEA_ERROR_SOURCE_DESCRIPTOR structure.
-
-`MaxRawDataLength`
-
-The maximum number of bytes of raw data included in a hardware error packet that is reported by this error source. This number must be large enough to include any additional platform-specific error information that is added to the hardware error packet by the PSHED or by a PSHED plug-in.
-
-`MaxSectionsPerRecord`
-
-The maximum number of error record sections that are required in an error record to describe a hardware error that is reported by this error source. This number must be large enough to include any additional error record sections that are added to the error record by the PSHED or by a PSHED plug-in during the processing of the error.
-
-`NumRecordsToPreallocate`
-
-The number of error records that should be pre-allocated for hardware errors that are reported by this error source.
-
-`PlatformErrorSourceId`
-
-The identifier of the error source as enumerated by the hardware platform. This identifier is unique only on the system where the error source exists.
-
-`State`
-
-A <a href="..\ntddk\ne-ntddk-_whea_error_source_state.md">WHEA_ERROR_SOURCE_STATE</a>-typed value that specifies the state of the error source.
-
-`Type`
-
-A <a href="..\ntddk\ne-ntddk-_whea_error_source_type.md">WHEA_ERROR_SOURCE_TYPE</a>-typed value that specifies the type of the error source.
-
-`Version`
-
-The version number of the WHEA_ERROR_SOURCE_DESCRIPTOR structure. This member contains the value WHEA_ERROR_SOURCE_DESCRIPTOR_VERSION_10.
 
 ## Remarks
 The WHEA_ERROR_SOURCE_DESCRIPTOR structure describes an error source. The WHEA_ERROR_SOURCE_DESCRIPTOR structure is also used to configure an error source.
@@ -299,11 +299,3 @@ A user-mode WHEA management application can control the error sources in the sys
 
 
 <a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_ERROR_SOURCE_DESCRIPTOR structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

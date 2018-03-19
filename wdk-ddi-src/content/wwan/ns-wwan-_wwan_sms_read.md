@@ -58,6 +58,15 @@ typedef struct _WWAN_SMS_READ {
 ## Members
 
 
+`SmsFormat`
+
+The format in which the miniport driver should return messages for 
+     <i>query</i> requests. The MB Service specifies this value.
+     
+
+<b>WwanSmsFormatCdma</b> applies only to CDMA-based devices. CDMA-based devices support only the 
+     <b>WwanSmsFormatCdma</b> format.
+
 `ReadFilter`
 
 Represents the filter upon which the miniport driver should retrieve the messages. For example,
@@ -67,15 +76,6 @@ Represents the filter upon which the miniport driver should retrieve the message
      <b>old</b>, 
      <b>draft</b>, or 
      <b>sent</b> flags.
-
-`SmsFormat`
-
-The format in which the miniport driver should return messages for 
-     <i>query</i> requests. The MB Service specifies this value.
-     
-
-<b>WwanSmsFormatCdma</b> applies only to CDMA-based devices. CDMA-based devices support only the 
-     <b>WwanSmsFormatCdma</b> format.
 
 
 ## Requirements
@@ -95,11 +95,3 @@ The format in which the miniport driver should return messages for
 
 
 <a href="..\wwan\ns-wwan-_wwan_sms_filter.md">WWAN_SMS_FILTER</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_READ structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

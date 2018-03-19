@@ -79,6 +79,69 @@ A structure that describes the
      structure, see 
      <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>.
 
+`SdpValidateStream`
+
+A pointer to the 
+     <a href="..\bthsdpddi\nc-bthsdpddi-pvalidatestream.md">SdpValidateStream</a> function.
+
+`SdpConvertStreamToTree`
+
+A pointer to the 
+     <a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">
+     SdpConvertStreamToTree</a> function.
+
+`SdpConvertTreeToStream`
+
+A pointer to the 
+     <a href="..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md">
+     SdpConvertTreeToStream</a> function.
+
+`SdpFreeTree`
+
+A pointer to the 
+     <a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a> function.
+
+`SdpByteSwapUuid128`
+
+A pointer to the 
+     <a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuuid128.md">SdpByteSwapUuid128</a> function.
+
+`SdpByteSwapUint128`
+
+A pointer to the 
+     <a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuint128.md">SdpByteSwapUint128</a> function.
+
+`SdpByteSwapUint64`
+
+A pointer to the 
+     <a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuint64.md">SdpByteSwapUint64</a> function.
+
+`SdpRetrieveUuid128`
+
+A pointer to the 
+     <a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuuid128.md">SdpRetrieveUuid128</a> function.
+
+`SdpRetrieveUint128`
+
+A pointer to the 
+     <a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md">SdpRetrieveUint128</a> function.
+
+`SdpRetrieveUint64`
+
+A pointer to the 
+     <a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md">SdpRetrieveUint64</a> function.
+
+`SdpFindAttributeInTree`
+
+A pointer to the 
+     <a href="..\sdplib\nf-sdplib-sdpfindattributeintree.md">
+     SdpFindAttributeInTree</a> function.
+
+`SdpGetNextElement`
+
+A pointer to the 
+     <a href="..\bthsdpddi\nc-bthsdpddi-pgetnextelement.md">SdpGetNextElement</a> function.
+
 `Reserved1`
 
 Reserved for future use. Do not use.
@@ -94,69 +157,6 @@ Reserved for future use. Do not use.
 `Reserved4`
 
 Reserved for future use. Do not use.
-
-`SdpByteSwapUint128`
-
-A pointer to the 
-     <a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuint128.md">SdpByteSwapUint128</a> function.
-
-`SdpByteSwapUint64`
-
-A pointer to the 
-     <a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuint64.md">SdpByteSwapUint64</a> function.
-
-`SdpByteSwapUuid128`
-
-A pointer to the 
-     <a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuuid128.md">SdpByteSwapUuid128</a> function.
-
-`SdpConvertStreamToTree`
-
-A pointer to the 
-     <a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">
-     SdpConvertStreamToTree</a> function.
-
-`SdpConvertTreeToStream`
-
-A pointer to the 
-     <a href="..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md">
-     SdpConvertTreeToStream</a> function.
-
-`SdpFindAttributeInTree`
-
-A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpfindattributeintree.md">
-     SdpFindAttributeInTree</a> function.
-
-`SdpFreeTree`
-
-A pointer to the 
-     <a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a> function.
-
-`SdpGetNextElement`
-
-A pointer to the 
-     <a href="..\bthsdpddi\nc-bthsdpddi-pgetnextelement.md">SdpGetNextElement</a> function.
-
-`SdpRetrieveUint128`
-
-A pointer to the 
-     <a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md">SdpRetrieveUint128</a> function.
-
-`SdpRetrieveUint64`
-
-A pointer to the 
-     <a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md">SdpRetrieveUint64</a> function.
-
-`SdpRetrieveUuid128`
-
-A pointer to the 
-     <a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuuid128.md">SdpRetrieveUuid128</a> function.
-
-`SdpValidateStream`
-
-A pointer to the 
-     <a href="..\bthsdpddi\nc-bthsdpddi-pvalidatestream.md">SdpValidateStream</a> function.
 
 ## Remarks
 Profile drivers should specify the 
@@ -223,11 +223,3 @@ All the members of this structure, other than the
 
 
 <a href="..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md">SdpConvertTreeToStream</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTHDDI_SDP_PARSE_INTERFACE structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

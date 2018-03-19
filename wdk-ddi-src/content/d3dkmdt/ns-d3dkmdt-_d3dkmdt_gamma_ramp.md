@@ -63,6 +63,14 @@ typedef struct _D3DKMDT_GAMMA_RAMP {
 ## Members
 
 
+`Type`
+
+A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_gammaramp_type.md">D3DDDI_GAMMARAMP_TYPE</a> enumerator that specifies the format of the lookup table.
+
+`DataSize`
+
+The size, in bytes, of the lookup table pointed to by <i>Data</i>.
+
 `Data`
 
 [in] A union that contains one of the following ways to access the lookup table data depending on the value in the Type member:
@@ -90,14 +98,6 @@ Pointer to a D3DDDI_3x4_COLORSPACE_TRANSFORM which describes the 3 by 4 matrix c
 #### pRaw
 
 This member provides an alternative way to access the lookup table data. For example, for copying the lookup table, VOID* might be more convenient than D3DDDI_GAMMA_RAMP_RGB256x3x16.
-
-`DataSize`
-
-The size, in bytes, of the lookup table pointed to by <i>Data</i>.
-
-`Type`
-
-A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_gammaramp_type.md">D3DDDI_GAMMARAMP_TYPE</a> enumerator that specifies the format of the lookup table.
 
 ## Remarks
 The <b>GammaRamp</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a D3DKMDT_GAMMA_RAMP structure.

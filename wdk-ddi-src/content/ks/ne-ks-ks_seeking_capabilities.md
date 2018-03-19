@@ -64,27 +64,12 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KS_SEEKING_CanGetCurrentPos</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KS_SEEKING_CanGetDuration</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KS_SEEKING_CanGetStopPos</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KS_SEEKING_CanPlayBackwards</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>KS_SEEKING_CanSeekAbsolute</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_SEEKING_CanSeekForwards</td>
                     <td></td>
                 </tr>
             
@@ -94,7 +79,22 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KS_SEEKING_CanSeekForwards</td>
+                    <td>KS_SEEKING_CanGetCurrentPos</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_SEEKING_CanGetStopPos</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_SEEKING_CanGetDuration</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_SEEKING_CanPlayBackwards</td>
                     <td></td>
                 </tr>
 </table>

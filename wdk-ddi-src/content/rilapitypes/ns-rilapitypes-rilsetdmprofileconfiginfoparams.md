@@ -59,11 +59,11 @@ typedef struct _RILSETDMPROFILECONFIGINFOPARAMS {
 ## Members
 
 
-`dwConfigItem`
-
-
-
 `dwExecutor`
+
+
+
+`dwConfigItem`
 
 
 

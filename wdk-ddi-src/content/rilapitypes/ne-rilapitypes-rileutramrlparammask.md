@@ -66,7 +66,12 @@ typedef enum _RILEUTRAMRLPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_EUTRAMRL_ALL</td>
+                    <td>RIL_PARAM_EUTRAMRL_MCC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_EUTRAMRL_MNC</td>
                     <td></td>
                 </tr>
             
@@ -81,17 +86,12 @@ typedef enum _RILEUTRAMRLPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_EUTRAMRL_MCC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_EUTRAMRL_MNC</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_EUTRAMRL_PHYSCELLID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_EUTRAMRL_TAC</td>
                     <td></td>
                 </tr>
             
@@ -106,7 +106,7 @@ typedef enum _RILEUTRAMRLPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_EUTRAMRL_TAC</td>
+                    <td>RIL_PARAM_EUTRAMRL_ALL</td>
                     <td></td>
                 </tr>
 </table>

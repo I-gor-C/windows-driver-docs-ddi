@@ -66,7 +66,12 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME</td>
+                    <td>KSPROPERTY_CLOCK_TIME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CLOCK_PHYSICALTIME</td>
                     <td></td>
                 </tr>
             
@@ -76,12 +81,7 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_CLOCK_FUNCTIONTABLE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>KSPROPERTY_CLOCK_PHYSICALTIME</td>
+                    <td>KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME</td>
                     <td></td>
                 </tr>
             
@@ -96,7 +96,7 @@ typedef enum  {
                 </tr>
             
                 <tr>
-                    <td>KSPROPERTY_CLOCK_TIME</td>
+                    <td>KSPROPERTY_CLOCK_FUNCTIONTABLE</td>
                     <td></td>
                 </tr>
 </table>

@@ -61,10 +61,6 @@ typedef struct _NEIGHBOR_OFFLOAD_STATE_CACHED {
 ## Members
 
 
-`DlDestinationAddress`
-
-Specifies the media access control (MAC) address of the next hop (neighbor).
-
 `Header`
 
 An 
@@ -74,6 +70,10 @@ An
      <b>Header</b> to the size, in bytes, of the NEIGHBOR_OFFLOAD_STATE_CACHED structure. The 
      <b>RecognizedOptions</b> member of 
      <b>Header</b> is reserved.
+
+`DlDestinationAddress`
+
+Specifies the media access control (MAC) address of the next hop (neighbor).
 
 `HostReachabilityDelta`
 
@@ -131,11 +131,3 @@ When passed to an offload target, a NEIGHBOR_OFFLOAD_STATE_CACHED structure is a
 
 
 <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NEIGHBOR_OFFLOAD_STATE_CACHED structure%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

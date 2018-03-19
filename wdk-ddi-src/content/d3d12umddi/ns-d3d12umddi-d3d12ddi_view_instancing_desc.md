@@ -58,17 +58,17 @@ typedef struct _D3D12DDI_VIEW_INSTANCING_DESC {
 ## Members
 
 
-`Flags`
+`ViewInstanceCount`
 
-Flags.
+View instance count.
 
 `pViewInstanceLocations`
 
 View instance locations.
 
-`ViewInstanceCount`
+`Flags`
 
-View instance count.
+Flags.
 
 
 ## Requirements

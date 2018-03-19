@@ -60,15 +60,7 @@ typedef struct _RILUICCTOOLKITCMD {
 ## Members
 
 
-`bDetails`
-
-
-
 `cbSize`
-
-
-
-`dwDetailsSize`
 
 
 
@@ -77,6 +69,14 @@ typedef struct _RILUICCTOOLKITCMD {
 
 
 `fTerminalResponseNeeded`
+
+
+
+`dwDetailsSize`
+
+
+
+`bDetails`
 
 
 

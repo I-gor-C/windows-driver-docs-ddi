@@ -65,15 +65,15 @@ typedef struct _RILADDRESS {
 
 
 
-`dwNumPlan`
-
-
-
 `dwParams`
 
 
 
 `dwType`
+
+
+
+`dwNumPlan`
 
 
 

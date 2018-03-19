@@ -60,7 +60,7 @@ typedef enum _RILUICCSERVICESERVICE {
 <table>
             
                 <tr>
-                    <td>RIL_UICCOPERATION_SERVICE_ACL</td>
+                    <td>RIL_UICCOPERATION_SERVICE_FDN</td>
                     <td></td>
                 </tr>
             
@@ -70,7 +70,7 @@ typedef enum _RILUICCSERVICESERVICE {
                 </tr>
             
                 <tr>
-                    <td>RIL_UICCOPERATION_SERVICE_FDN</td>
+                    <td>RIL_UICCOPERATION_SERVICE_ACL</td>
                     <td></td>
                 </tr>
             

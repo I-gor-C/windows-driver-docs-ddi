@@ -63,16 +63,6 @@ typedef enum _RILLOCATIONINFOPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_LU_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_LU_CELLID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_LU_EXECUTOR</td>
                     <td></td>
                 </tr>
@@ -89,6 +79,16 @@ typedef enum _RILLOCATIONINFOPARAMMASK {
             
                 <tr>
                     <td>RIL_PARAM_LU_TAC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_LU_CELLID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_LU_ALL</td>
                     <td></td>
                 </tr>
 </table>

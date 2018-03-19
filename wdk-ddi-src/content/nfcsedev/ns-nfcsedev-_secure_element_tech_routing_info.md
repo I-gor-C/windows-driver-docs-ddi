@@ -57,13 +57,13 @@ typedef struct _SECURE_ELEMENT_TECH_ROUTING_INFO {
 ## Members
 
 
-`eRfTechType`
-
-NFC Forum RF technology type.
-
 `guidSecureElementId`
 
 Secure element unique identifier returned by enumeration DDI.
+
+`eRfTechType`
+
+NFC Forum RF technology type.
 
 
 ## Requirements

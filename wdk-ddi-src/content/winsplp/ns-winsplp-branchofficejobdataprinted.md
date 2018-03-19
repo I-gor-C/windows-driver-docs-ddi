@@ -64,33 +64,33 @@ typedef struct {
 ## Members
 
 
+`Status`
+
+Specifies the current status, or the failure code for a JOB_ERROR event.
+
 `pDocumentName`
 
 Specifies the name of the printed document.
-
-`pMachineName`
-
-Specifies the name of the client machine printing the job
-
-`pPortName`
-
-Specifies the name of the port the job printed on.
-
-`pPrinterName`
-
-Specifies the name of the print connection.
 
 `pUserName`
 
 Specifies the user who submitted the job.
 
+`pMachineName`
+
+Specifies the name of the client machine printing the job
+
+`pPrinterName`
+
+Specifies the name of the print connection.
+
+`pPortName`
+
+Specifies the name of the port the job printed on.
+
 `Size`
 
 Specifies the 64-bit size of the job.
-
-`Status`
-
-Specifies the current status, or the failure code for a JOB_ERROR event.
 
 `TotalPages`
 

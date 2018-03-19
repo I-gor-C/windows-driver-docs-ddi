@@ -61,13 +61,9 @@ typedef struct _USB_DEVICE_CHARACTERISTICS {
 ## Members
 
 
-`MaximumCompletionPathDelayInMilliSeconds`
+`Version`
 
-Contains the maximum delay in milliseconds the host controller completes any request for the device to the time the request is completed and sent back to the client driver.  For a MA-USB controller this includes any delay associated with the network medium.
-
-`MaximumSendPathDelayInMilliSeconds`
-
-Contains the maximum delay in milliseconds for any request that is submitted by the client driver and is received by the USB driver stack to the time it is programmed in the host controller, including the maximum delay associated with the network medium if it is a MA-USB host controller.
+The version should be set to USB_DEVICE_CHARACTERISTICS_VERSION_1.
 
 `Reserved`
 
@@ -82,9 +78,13 @@ If the USB_DEVICE_CHARACTERISTICS_MAXIMUM_PATH_DELAYS_AVAILABLE
 
 flag is set, <b>MaximumSendPathDelayInMilliSeconds</b> and <b>MaximumCompletionPathDelayInMilliSeconds</b> contain valid information. Otherwise they are not available and must not be used by the client driver.
 
-`Version`
+`MaximumSendPathDelayInMilliSeconds`
 
-The version should be set to USB_DEVICE_CHARACTERISTICS_VERSION_1.
+Contains the maximum delay in milliseconds for any request that is submitted by the client driver and is received by the USB driver stack to the time it is programmed in the host controller, including the maximum delay associated with the network medium if it is a MA-USB host controller.
+
+`MaximumCompletionPathDelayInMilliSeconds`
+
+Contains the maximum delay in milliseconds the host controller completes any request for the device to the time the request is completed and sent back to the client driver.  For a MA-USB controller this includes any delay associated with the network medium.
 
 
 ## Requirements
@@ -95,11 +95,3 @@ The version should be set to USB_DEVICE_CHARACTERISTICS_VERSION_1.
 ## See Also
 
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_device_characteristics.md">IOCTL_USB_GET_DEVICE_CHARACTERISTICS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_DEVICE_CHARACTERISTICS structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

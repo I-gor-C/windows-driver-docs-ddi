@@ -65,13 +65,13 @@ typedef enum PcStreamResourceType {
                 </tr>
             
                 <tr>
-                    <td>ePcStreamResourceSet</td>
-                    <td>The resource is a link to another device-stack’s resources.</td>
+                    <td>ePcStreamResourceThread</td>
+                    <td>The resource is a PETHREAD.</td>
                 </tr>
             
                 <tr>
-                    <td>ePcStreamResourceThread</td>
-                    <td>The resource is a PETHREAD.</td>
+                    <td>ePcStreamResourceSet</td>
+                    <td>The resource is a link to another device-stack’s resources.</td>
                 </tr>
 </table>
 

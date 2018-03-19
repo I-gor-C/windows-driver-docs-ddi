@@ -64,8 +64,8 @@ typedef enum _WDF_EXECUTION_LEVEL {
 <table>
             
                 <tr>
-                    <td>WdfExecutionLevelDispatch</td>
-                    <td>The framework calls the object's callback functions at IRQL &lt;= DISPATCH_LEVEL. Not available in UMDF.</td>
+                    <td>WdfExecutionLevelInvalid</td>
+                    <td>Reserved for system use.</td>
                 </tr>
             
                 <tr>
@@ -74,13 +74,13 @@ typedef enum _WDF_EXECUTION_LEVEL {
                 </tr>
             
                 <tr>
-                    <td>WdfExecutionLevelInvalid</td>
-                    <td>Reserved for system use.</td>
+                    <td>WdfExecutionLevelPassive</td>
+                    <td>The framework always calls the object's callback functions at IRQL = PASSIVE_LEVEL.</td>
                 </tr>
             
                 <tr>
-                    <td>WdfExecutionLevelPassive</td>
-                    <td>The framework always calls the object's callback functions at IRQL = PASSIVE_LEVEL.</td>
+                    <td>WdfExecutionLevelDispatch</td>
+                    <td>The framework calls the object's callback functions at IRQL &lt;= DISPATCH_LEVEL. Not available in UMDF.</td>
                 </tr>
 </table>
 
@@ -134,11 +134,3 @@ For more information about execution levels for event callback functions, see <a
 ## See Also
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_EXECUTION_LEVEL enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

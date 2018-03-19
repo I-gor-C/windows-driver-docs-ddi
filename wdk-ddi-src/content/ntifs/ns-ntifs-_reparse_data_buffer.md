@@ -78,21 +78,21 @@ typedef struct _REPARSE_DATA_BUFFER {
 ## Members
 
 
-`DUMMYUNIONNAME`
+`ReparseTag`
 
-
+Reparse point tag. Must be a Microsoft reparse point tag. (See the following <b>Remarks</b> section.)
 
 `ReparseDataLength`
 
 Size, in bytes, of the reparse data in the <b>DataBuffer</b> member.
 
-`ReparseTag`
-
-Reparse point tag. Must be a Microsoft reparse point tag. (See the following <b>Remarks</b> section.)
-
 `Reserved`
 
 Length, in bytes, of the unparsed portion of the file name pointed to by the <b>FileName</b> member of the associated file object. For more information about the <b>FileName</b> member, see <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>. This member is only valid for create operations when the I/O fails with STATUS_REPARSE. For all other purposes, such as setting or querying a reparse point for the reparse data, this member is treated as reserved.
+
+`DUMMYUNIONNAME`
+
+
 
 ## Remarks
 The REPARSE_DATA_BUFFER structure is used by Microsoft file systems, filters, and minifilter drivers, as well as the I/O manager, to store data for a reparse point. 
@@ -161,11 +161,3 @@ For more information about absolute and relative symbolic links, see Creating Sy
 
 
 <a href="..\ntifs\ns-ntifs-_file_reparse_point_information.md">FILE_REPARSE_POINT_INFORMATION</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20REPARSE_DATA_BUFFER structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

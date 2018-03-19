@@ -66,11 +66,6 @@ typedef enum _WDF_USB_REQUEST_TYPE {
 <table>
             
                 <tr>
-                    <td>WdfUsbRequestTypeDeviceControlTransfer</td>
-                    <td>The request object is sent when the application calls the Win32 <b>DeviceIoControl</b> function on the file object that is associated with the target device.</td>
-                </tr>
-            
-                <tr>
                     <td>WdfUsbRequestTypeInvalid</td>
                     <td>The type of the request object is invalid.</td>
                 </tr>
@@ -81,13 +76,18 @@ typedef enum _WDF_USB_REQUEST_TYPE {
                 </tr>
             
                 <tr>
-                    <td>WdfUsbRequestTypePipeRead</td>
-                    <td>The request object is sent when the application calls the Win32 <b>ReadFile</b> or <b>ReadFileEx</b> function on the file object that is associated with the target device.</td>
+                    <td>WdfUsbRequestTypeDeviceControlTransfer</td>
+                    <td>The request object is sent when the application calls the Win32 <b>DeviceIoControl</b> function on the file object that is associated with the target device.</td>
                 </tr>
             
                 <tr>
                     <td>WdfUsbRequestTypePipeWrite</td>
                     <td>The request object is sent when the application calls the Win32 <b>WriteFile</b> or <b>WriteFileEx</b> function on the file object that is associated with the target device.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfUsbRequestTypePipeRead</td>
+                    <td>The request object is sent when the application calls the Win32 <b>ReadFile</b> or <b>ReadFileEx</b> function on the file object that is associated with the target device.</td>
                 </tr>
 </table>
 

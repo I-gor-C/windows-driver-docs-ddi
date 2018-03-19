@@ -69,128 +69,6 @@ typedef enum  {
 <table>
             
                 <tr>
-                    <td>GNSS_ClearAgnssData</td>
-                    <td>This command clears the AGNSS assistance data from the GNSS engine. This is used mainly for testing purpose to ensure that the driver requests for assistance data when a fix is requested. The associated command data contains the specific <a href="..\gnssdriver\ne-gnssdriver-gnss_agnss_request_type.md">GNSS_AGNSS_REQUEST_TYPE</a> enumeration to indicate the specific data element to be cleared:
-
-<ul>
-<li>
-If <b>GNSS_AGNSS_TimeInjection</b> is specified, the time reference will be deleted in the GNSS engine. This may cause the GNSS engine to request again time injection.
-
-</li>
-<li>
-If <b>GNSS_AGNSS_PositionInjection</b> is specified, the coarse position reference will be deleted in the GNSS engine. This may cause the GNSS engine to request again coarse position injection.
-
-</li>
-<li>
-If <b>GNSS_AGNSS_BlobInjection</b> is specified, both ephemeris acquired from the satellites and any assistance blob injected will be deleted in the GNSS engine. This may cause the GNSS engine to request again an assistance blob.
-
-</li>
-</ul>
-It is highly recommended that this command is supported for test purposes even if the assistance data is not obtained from the OS location platform.</td>
-                </tr>
-            
-                <tr>
-                    <td>GNSS_CustomCommand</td>
-                    <td>Range for custom IHV-specific GNSS commands:  0x0100 – 0x01FF</td>
-                </tr>
-            
-                <tr>
-                    <td>GNSS_ForceOperationMode</td>
-                    <td>This command causes the GNSS driver to use the specified operation mode. The parameter is a <b>DWORD</b> with the following values:
-
-<pre class="syntax" xml:space="preserve"><code>#define GNSS_OPERMODE_ANY          0x00
-#define GNSS_OPERMODE_MSA          0x01
-#define GNSS_OPERMODE_MSB          0x02
-#define GNSS_OPERMODE_MSS          0x04
-#define GNSS_OPERMODE_CELLID       0x08
-#define GNSS_OPERMODE_AFLT         0x10
-#define GNSS_OPERMODE_OTDOA        0x20
-</code></pre>
-0x40-0xFF: Reserved
-
-This command is used for two purposes:
-
-<ul>
-<li>
-To configure the mode of operation in the case of SUPL configuration. It is expected that mobile operators will only configure the device to work in Microsoft-based mode by which the SUPL service is used to obtain assistance data (<b>GNSS_OPERMODE_MSB</b>), or in standalone mode (<b>GNSS_OPERMODE_MSS</b>) in which the GNSS device can work really standalone or use assistance obtained from sources other than the SUPL service. The standalone mode is actually equivalent to the default mode (<b>GNSS_OPERMODE_ANY</b>).
-
-</li>
-<li>
-To configure different modes of operation for test purposes. This would mostly be used by mobile operators or OEMs for validation purposes.
-
-</li>
-</ul>
-<div class="alert"><b>Note</b>  Setting the SUPL <b>GNSS_ForceOperationMode</b> to <b>GNSS_OPERMODE_MSS</b> is an indication to the GNSS system to not do any kind of interaction with the SUPL server for AGNSS data.</div>
-<div> </div></td>
-                </tr>
-            
-                <tr>
-                    <td>GNSS_ForceSatelliteSystem</td>
-                    <td>This command causes the GNSS driver to use the specified satellite system(s) for getting fixes. The parameter is a <b>DWORD</b> with the following values:
-
-<pre class="syntax" xml:space="preserve"><code>#define GNSS_SATELLITE_ANY          0x00
-#define GNSS_SATELLITE_GPS          0x01
-#define GNSS_SATELLITE_GLONASS      0x02
-#define GNSS_SATELLITE_BEIDOU       0x04
-#define GNSS_SATELLITE_GALILEO      0x08
-</code></pre>
-0x03-0xFF: Reserved 
-
-This is expected to be used only for test purposes. Some mobile operators do require validations using a single satellite system.</td>
-                </tr>
-            
-                <tr>
-                    <td>GNSS_ResetEngine</td>
-                    <td>This command clears up the state of the GNSS engine. After this command is issued the engine will be ready for a cold start fix:
-
-<ul>
-<li>
-All assistance data will be deleted.
-
-</li>
-<li>
-The almanac will persist.
-
-</li>
-<li>
-The GNSS engine configuration parameters will persist.
-
-</li>
-</ul>
-This command should only be called when there is no active fix session. This command is typically used for recursively testing the GNSS time to first fix on cold start.</td>
-                </tr>
-            
-                <tr>
-                    <td>GNSS_ResetGeofencesTracking</td>
-                    <td>This command resets the geofence tracking operation. The GNSS driver must delete all geofences from the GNSS engine, stop geofence tracking and stop monitoring for signal conditions. The geofence tracking operation will begin as usual only when the HLOS creates one or more new geofences.</td>
-                </tr>
-            
-                <tr>
-                    <td>GNSS_SetLocationNIRequestAllowed</td>
-                    <td>Informs the driver if it is allowed to entertain network initiated location requests coming from the mobile network. The command only needs to be supported if required by the mobile operator. As of Windows 10, Microsoft is not aware of any mobile operator requiring this any longer, but this remains to avoid  any blocking issues during commercialization. If the command is not implemented, the GNSS driver should simply keep its default behavior.
-
-The associated command data is a <b>BOOL</b>.
-
-<ul>
-<li>
-<b>GNSS_SetLocationNIRequestAllowed</b> set to TRUE=1-&gt; Allow
-
-</li>
-<li>
-<b>GNSS_SetLocationNIRequestAllowed</b> set to FALSE=0-&gt; NotAllow
-
-</li>
-</ul>
-Unless this command is explicitly issued by the GNSS adapter, the driver must assume that the NI requests are enabled on the system.
-
-The GNSS adapter maintains a system-wide state indicating whether NI requests are allowed. This state is determined by the location master switch (the setting that the user can toggle to turn location on or off) and a setting configured by the mobile operator to indicate if NI requests depend on the location master switch or not.
-
-The GNSS adapter will evaluate the value of these two settings and will indicate to the GNSS driver if NI requests are allowed or not.
-
-The location requests for emergency services or for CALEA (for example, the case of privacy override being set) must be served regardless of the value of this setting.</td>
-                </tr>
-            
-                <tr>
                     <td>GNSS_SetLocationServiceEnabled</td>
                     <td>Informs the driver whether location is enabled on the device. This command is issued each time the location service is enabled/disabled on the device. The associated command data is a <b>BOOL</b>.
 
@@ -236,22 +114,115 @@ Unless this command is issued by the GNSS adapter, the driver must assume that t
                 </tr>
             
                 <tr>
-                    <td>GNSS_SetNiTimeoutInterval</td>
-                    <td>This command sets how much time the device must wait for input from a user before it responds to the NI request executing the default action. The time interval is specified in seconds and the default value is 35 seconds. This timeout is 5 seconds larger than the timeout used by the operating system to wait for response from the user, and it is simply a failsafe in case of the operating system not responding. This command is applicable only to network initiated requests in which the verification from the user is requested. Mobile operators may use the configuration service provider to override the default value from the operating system. In such case the default values specified above should be replaced by the values provided by the mobile operator.</td>
+                    <td>GNSS_SetLocationNIRequestAllowed</td>
+                    <td>Informs the driver if it is allowed to entertain network initiated location requests coming from the mobile network. The command only needs to be supported if required by the mobile operator. As of Windows 10, Microsoft is not aware of any mobile operator requiring this any longer, but this remains to avoid  any blocking issues during commercialization. If the command is not implemented, the GNSS driver should simply keep its default behavior.
+
+The associated command data is a <b>BOOL</b>.
+
+<ul>
+<li>
+<b>GNSS_SetLocationNIRequestAllowed</b> set to TRUE=1-&gt; Allow
+
+</li>
+<li>
+<b>GNSS_SetLocationNIRequestAllowed</b> set to FALSE=0-&gt; NotAllow
+
+</li>
+</ul>
+Unless this command is explicitly issued by the GNSS adapter, the driver must assume that the NI requests are enabled on the system.
+
+The GNSS adapter maintains a system-wide state indicating whether NI requests are allowed. This state is determined by the location master switch (the setting that the user can toggle to turn location on or off) and a setting configured by the mobile operator to indicate if NI requests depend on the location master switch or not.
+
+The GNSS adapter will evaluate the value of these two settings and will indicate to the GNSS driver if NI requests are allowed or not.
+
+The location requests for emergency services or for CALEA (for example, the case of privacy override being set) must be served regardless of the value of this setting.</td>
                 </tr>
             
                 <tr>
-                    <td>GNSS_SetNMEALogging</td>
-                    <td>This command sets the status for NMEA logging.
+                    <td>GNSS_ForceSatelliteSystem</td>
+                    <td>This command causes the GNSS driver to use the specified satellite system(s) for getting fixes. The parameter is a <b>DWORD</b> with the following values:
 
-This command causes the GNSS driver to start/stop providing the data fix information via NMEA strings. The GNSS driver must continue providing fixes in the <a href="..\gnssdriver\ns-gnssdriver-gnss_fixdata.md">GNSS_FIXDATA</a> structure. The parameter is a <b>DWORD</b> with the following values:
-
-<pre class="syntax" xml:space="preserve"><code>#define GNSS_NMEALOGGING_NONE         0x00
-#define GNSS_NMEALOGGING_ALL          0xFF
+<pre class="syntax" xml:space="preserve"><code>#define GNSS_SATELLITE_ANY          0x00
+#define GNSS_SATELLITE_GPS          0x01
+#define GNSS_SATELLITE_GLONASS      0x02
+#define GNSS_SATELLITE_BEIDOU       0x04
+#define GNSS_SATELLITE_GALILEO      0x08
 </code></pre>
-The default value for this command is no NMEA logging. This command should not persist across system restart.
+0x03-0xFF: Reserved 
 
-This command has been introduced to support OEM testing. This command is not used by the location framework or by Microsoft test tools.</td>
+This is expected to be used only for test purposes. Some mobile operators do require validations using a single satellite system.</td>
+                </tr>
+            
+                <tr>
+                    <td>GNSS_ForceOperationMode</td>
+                    <td>This command causes the GNSS driver to use the specified operation mode. The parameter is a <b>DWORD</b> with the following values:
+
+<pre class="syntax" xml:space="preserve"><code>#define GNSS_OPERMODE_ANY          0x00
+#define GNSS_OPERMODE_MSA          0x01
+#define GNSS_OPERMODE_MSB          0x02
+#define GNSS_OPERMODE_MSS          0x04
+#define GNSS_OPERMODE_CELLID       0x08
+#define GNSS_OPERMODE_AFLT         0x10
+#define GNSS_OPERMODE_OTDOA        0x20
+</code></pre>
+0x40-0xFF: Reserved
+
+This command is used for two purposes:
+
+<ul>
+<li>
+To configure the mode of operation in the case of SUPL configuration. It is expected that mobile operators will only configure the device to work in Microsoft-based mode by which the SUPL service is used to obtain assistance data (<b>GNSS_OPERMODE_MSB</b>), or in standalone mode (<b>GNSS_OPERMODE_MSS</b>) in which the GNSS device can work really standalone or use assistance obtained from sources other than the SUPL service. The standalone mode is actually equivalent to the default mode (<b>GNSS_OPERMODE_ANY</b>).
+
+</li>
+<li>
+To configure different modes of operation for test purposes. This would mostly be used by mobile operators or OEMs for validation purposes.
+
+</li>
+</ul>
+<div class="alert"><b>Note</b>  Setting the SUPL <b>GNSS_ForceOperationMode</b> to <b>GNSS_OPERMODE_MSS</b> is an indication to the GNSS system to not do any kind of interaction with the SUPL server for AGNSS data.</div>
+<div> </div></td>
+                </tr>
+            
+                <tr>
+                    <td>GNSS_ResetEngine</td>
+                    <td>This command clears up the state of the GNSS engine. After this command is issued the engine will be ready for a cold start fix:
+
+<ul>
+<li>
+All assistance data will be deleted.
+
+</li>
+<li>
+The almanac will persist.
+
+</li>
+<li>
+The GNSS engine configuration parameters will persist.
+
+</li>
+</ul>
+This command should only be called when there is no active fix session. This command is typically used for recursively testing the GNSS time to first fix on cold start.</td>
+                </tr>
+            
+                <tr>
+                    <td>GNSS_ClearAgnssData</td>
+                    <td>This command clears the AGNSS assistance data from the GNSS engine. This is used mainly for testing purpose to ensure that the driver requests for assistance data when a fix is requested. The associated command data contains the specific <a href="..\gnssdriver\ne-gnssdriver-gnss_agnss_request_type.md">GNSS_AGNSS_REQUEST_TYPE</a> enumeration to indicate the specific data element to be cleared:
+
+<ul>
+<li>
+If <b>GNSS_AGNSS_TimeInjection</b> is specified, the time reference will be deleted in the GNSS engine. This may cause the GNSS engine to request again time injection.
+
+</li>
+<li>
+If <b>GNSS_AGNSS_PositionInjection</b> is specified, the coarse position reference will be deleted in the GNSS engine. This may cause the GNSS engine to request again coarse position injection.
+
+</li>
+<li>
+If <b>GNSS_AGNSS_BlobInjection</b> is specified, both ephemeris acquired from the satellites and any assistance blob injected will be deleted in the GNSS engine. This may cause the GNSS engine to request again an assistance blob.
+
+</li>
+</ul>
+It is highly recommended that this command is supported for test purposes even if the assistance data is not obtained from the OS location platform.</td>
                 </tr>
             
                 <tr>
@@ -271,10 +242,39 @@ For SET initiated SUPL sessions, the initial SUPL message from the SET carries t
                 </tr>
             
                 <tr>
+                    <td>GNSS_SetNMEALogging</td>
+                    <td>This command sets the status for NMEA logging.
+
+This command causes the GNSS driver to start/stop providing the data fix information via NMEA strings. The GNSS driver must continue providing fixes in the <a href="..\gnssdriver\ns-gnssdriver-gnss_fixdata.md">GNSS_FIXDATA</a> structure. The parameter is a <b>DWORD</b> with the following values:
+
+<pre class="syntax" xml:space="preserve"><code>#define GNSS_NMEALOGGING_NONE         0x00
+#define GNSS_NMEALOGGING_ALL          0xFF
+</code></pre>
+The default value for this command is no NMEA logging. This command should not persist across system restart.
+
+This command has been introduced to support OEM testing. This command is not used by the location framework or by Microsoft test tools.</td>
+                </tr>
+            
+                <tr>
                     <td>GNSS_SetUplServerAccessInterval</td>
                     <td>This command sets the minimum time in between requests to the server for assisted position to prevent service overload. The time interval is specified in seconds.
 
 Mobile operators may use the configuration service provider to tune this setting, if they require it.  If this parameter is not supported, if can be ignored, but the SUPL configuration commands must not fail.</td>
+                </tr>
+            
+                <tr>
+                    <td>GNSS_SetNiTimeoutInterval</td>
+                    <td>This command sets how much time the device must wait for input from a user before it responds to the NI request executing the default action. The time interval is specified in seconds and the default value is 35 seconds. This timeout is 5 seconds larger than the timeout used by the operating system to wait for response from the user, and it is simply a failsafe in case of the operating system not responding. This command is applicable only to network initiated requests in which the verification from the user is requested. Mobile operators may use the configuration service provider to override the default value from the operating system. In such case the default values specified above should be replaced by the values provided by the mobile operator.</td>
+                </tr>
+            
+                <tr>
+                    <td>GNSS_ResetGeofencesTracking</td>
+                    <td>This command resets the geofence tracking operation. The GNSS driver must delete all geofences from the GNSS engine, stop geofence tracking and stop monitoring for signal conditions. The geofence tracking operation will begin as usual only when the HLOS creates one or more new geofences.</td>
+                </tr>
+            
+                <tr>
+                    <td>GNSS_CustomCommand</td>
+                    <td>Range for custom IHV-specific GNSS commands:  0x0100 – 0x01FF</td>
                 </tr>
 </table>
 

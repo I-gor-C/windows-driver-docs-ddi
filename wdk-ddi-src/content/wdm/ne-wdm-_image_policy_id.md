@@ -70,7 +70,17 @@ typedef enum _IMAGE_POLICY_ID {
 <table>
             
                 <tr>
-                    <td>ImagePolicyIdCapability</td>
+                    <td>ImagePolicyIdNone</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>ImagePolicyIdEtw</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>ImagePolicyIdDebug</td>
                     <td>Reserved.</td>
                 </tr>
             
@@ -90,31 +100,6 @@ typedef enum _IMAGE_POLICY_ID {
                 </tr>
             
                 <tr>
-                    <td>ImagePolicyIdDebug</td>
-                    <td>Reserved.</td>
-                </tr>
-            
-                <tr>
-                    <td>ImagePolicyIdDeviceId</td>
-                    <td>Reserved.</td>
-                </tr>
-            
-                <tr>
-                    <td>ImagePolicyIdEtw</td>
-                    <td>Reserved.</td>
-                </tr>
-            
-                <tr>
-                    <td>ImagePolicyIdMaximum</td>
-                    <td>Reserved.</td>
-                </tr>
-            
-                <tr>
-                    <td>ImagePolicyIdNone</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>ImagePolicyIdParentSd</td>
                     <td>Reserved.</td>
                 </tr>
@@ -125,12 +110,27 @@ typedef enum _IMAGE_POLICY_ID {
                 </tr>
             
                 <tr>
+                    <td>ImagePolicyIdSvn</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>ImagePolicyIdDeviceId</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>ImagePolicyIdCapability</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
                     <td>ImagePolicyIdScenarioId</td>
                     <td>Reserved.</td>
                 </tr>
             
                 <tr>
-                    <td>ImagePolicyIdSvn</td>
+                    <td>ImagePolicyIdMaximum</td>
                     <td>Reserved.</td>
                 </tr>
 </table>

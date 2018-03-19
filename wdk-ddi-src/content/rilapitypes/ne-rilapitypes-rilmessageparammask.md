@@ -119,62 +119,52 @@ typedef enum _RILMESSAGEPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_M_ALERTONMSGDELIVERY</td>
+                    <td>RIL_PARAM_M_SVCCTRADDRESS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_ALL_BC_GENERAL</td>
+                    <td>RIL_PARAM_M_TYPE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_ALL_IN_DELIVER</td>
+                    <td>RIL_PARAM_M_FLAGS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_ALL_IN_IS637DELIVER</td>
+                    <td>RIL_PARAM_M_ORIGADDRESS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_ALL_IN_IS637STATUS</td>
+                    <td>RIL_PARAM_M_TGTRECIPADDRESS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_ALL_IN_STATUS</td>
+                    <td>RIL_PARAM_M_DESTADDRESS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_ALL_OUT_IS637STATUS</td>
+                    <td>RIL_PARAM_M_SCRECEIVETIME</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_ALL_OUT_IS637SUBMIT</td>
+                    <td>RIL_PARAM_M_TGTSCRECEIVETIME</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_ALL_OUT_SUBMIT</td>
+                    <td>RIL_PARAM_M_TGTDISCHARGETIME</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_BEARERREPLYACK</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_CALLBACKNUM</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_CAUSECODE</td>
+                    <td>RIL_PARAM_M_PROTOCOLID</td>
                     <td></td>
                 </tr>
             
@@ -184,22 +174,97 @@ typedef enum _RILMESSAGEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_DEFERREDDELTIMEABS</td>
+                    <td>RIL_PARAM_M_TGTDLVSTATUS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_DEFERREDDELTIMEREL</td>
+                    <td>RIL_PARAM_M_VPFORMAT</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_DELIVERYACK</td>
+                    <td>RIL_PARAM_M_VP</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_DESTADDRESS</td>
+                    <td>RIL_PARAM_M_GEOSCOPE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_MSGCODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_UPDATENUMBER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_TOTALPAGES</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_PAGENUMBER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_HDRLENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_SERIALNUMBER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_MSGLENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_HDR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_MSG</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_WARNINGTYPE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_EUSERALERT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_POPUP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_MSGID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_ORIGSUBADDRESS</td>
                     <td></td>
                 </tr>
             
@@ -214,102 +279,7 @@ typedef enum _RILMESSAGEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_DISPLAYMODE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_ENCODING</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_EUSERALERT</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_FLAGS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_GEOSCOPE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_HDR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_HDRLENGTH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_HDRLENGTHCDMA</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_ID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_LANG</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_MSG</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_MSGCODE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_MSGID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_MSGLENGTH</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_MSGSTATUSTYPE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_NUMMSGS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_ORIGADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_ORIGSUBADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_PAGENUMBER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_POPUP</td>
+                    <td>RIL_PARAM_M_PRIVACY</td>
                     <td></td>
                 </tr>
             
@@ -319,87 +289,12 @@ typedef enum _RILMESSAGEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_PRIVACY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_PROTOCOLID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_REPLYSEQNUMBER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_SCRECEIVETIME</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_SERIALNUMBER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_SERVICEID</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_SVCCTRADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_M_TELESERVICE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_TGTDISCHARGETIME</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_TGTDLVSTATUS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_TGTRECIPADDRESS</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_TGTSCRECEIVETIME</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_TOTALPAGES</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_TYPE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_UPDATENUMBER</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_USERACK</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_M_USERRESPONSECODE</td>
+                    <td>RIL_PARAM_M_LANG</td>
                     <td></td>
                 </tr>
             
@@ -414,17 +309,122 @@ typedef enum _RILMESSAGEPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_VP</td>
+                    <td>RIL_PARAM_M_DEFERREDDELTIMEABS</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_VPFORMAT</td>
+                    <td>RIL_PARAM_M_DEFERREDDELTIMEREL</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_M_WARNINGTYPE</td>
+                    <td>RIL_PARAM_M_ENCODING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_USERRESPONSECODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_DISPLAYMODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_CALLBACKNUM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_NUMMSGS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_CAUSECODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_REPLYSEQNUMBER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_SERVICEID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_USERACK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_DELIVERYACK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_ALERTONMSGDELIVERY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_HDRLENGTHCDMA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_MSGSTATUSTYPE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_BEARERREPLYACK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_ALL_IN_DELIVER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_ALL_IN_STATUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_ALL_OUT_SUBMIT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_ALL_BC_GENERAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_ALL_IN_IS637DELIVER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_ALL_OUT_IS637SUBMIT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_ALL_IN_IS637STATUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_M_ALL_OUT_IS637STATUS</td>
                     <td></td>
                 </tr>
 </table>

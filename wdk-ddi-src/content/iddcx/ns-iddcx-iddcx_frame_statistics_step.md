@@ -59,14 +59,6 @@ typedef struct IDDCX_FRAME_STATISTICS_STE {
 ## Members
 
 
-`Data`
-
-When driver defined processing part is used, then the driver can store additional data here
-
-`QpcTime`
-
-Provides the system QPC time of the step
-
 `Size`
 
 Total size of the structure
@@ -74,6 +66,14 @@ Total size of the structure
 `Type`
 
 The type of frame processing step
+
+`QpcTime`
+
+Provides the system QPC time of the step
+
+`Data`
+
+When driver defined processing part is used, then the driver can store additional data here
 
 
 ## Requirements

@@ -62,13 +62,25 @@ typedef struct _WDI_TX_COMPLETE_DATA {
 ## Members
 
 
-`MpduPN`
+`SeqCtl`
 
-The MPDU PN.
+The value of the sequence control field from the frame transmission.
 
 `PnLength`
 
 The MPDU PN length for the transmitted frame.
+
+`RetryCount`
+
+The number of attempts to transmit the frame.
+
+`wPad`
+
+This member is reserved.
+
+`MpduPN`
+
+The MPDU PN.
 
 `ReplayIHVReserved0`
 
@@ -77,18 +89,6 @@ Reserved for IHV use.
 `ReplayIHVReserved1`
 
 Reserved for IHV use.
-
-`RetryCount`
-
-The number of attempts to transmit the frame.
-
-`SeqCtl`
-
-The value of the sequence control field from the frame transmission.
-
-`wPad`
-
-This member is reserved.
 
 
 ## Requirements

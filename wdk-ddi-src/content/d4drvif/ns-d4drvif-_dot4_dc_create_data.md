@@ -62,21 +62,17 @@ typedef struct _DOT4_DC_CREATE_DATA {
 ## Members
 
 
-`bHsid`
-
-Specifies the host socket ID returned.
-
 `bPsid`
 
 Specifies this or the service name sent.
 
-`bType`
-
-Specifies the type, stream or packet, of channels on the socket.
-
 `pServiceName`
 
 Describes the <b>CHAR</b>  member <b>pServiceName</b>.
+
+`bType`
+
+Specifies the type, stream or packet, of channels on the socket.
 
 `ulBufferSize`
 
@@ -89,6 +85,10 @@ Describes the <b>USHORT</b> member <b>usMaxHtoPPacketSize</b>.
 `usMaxPtoHPacketSize`
 
 Describes the <b>USHORT</b> member <b>usMaxPtoHPacketSize</b>.
+
+`bHsid`
+
+Specifies the host socket ID returned.
 
 
 ## Requirements

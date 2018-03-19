@@ -68,21 +68,21 @@ typedef struct _DXGKARG_VALIDATEUPDATEALLOCPROPERTY {
 ## Members
 
 
-`Flags`
-
-[in] The flags that will be used to update the allocation.
-
 `hAllocation`
 
 [in] A Handle to the allocation that will be updated.
+
+`SupportedSegmentSet`
+
+[in] An index for the new supported segment set. If the current supported segment set is the same, then this will be ignored.
 
 `PreferredSegment`
 
 [in] An index for the new preferred segment set. If the current preferred segment set is the same, then this will be ignored.
 
-`SupportedSegmentSet`
+`Flags`
 
-[in] An index for the new supported segment set. If the current supported segment set is the same, then this will be ignored.
+[in] The flags that will be used to update the allocation.
 
 
 ## Requirements

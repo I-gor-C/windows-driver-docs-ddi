@@ -70,8 +70,8 @@ typedef enum _WWAN_SMS_CDMA_ENCODING {
 <table>
             
                 <tr>
-                    <td>WwanSmsCdmaEncoding7BitAscii</td>
-                    <td>The message uses 7-bit ASCII encoding. The encoded message is represented in bytes per character.</td>
+                    <td>WwanSmsCdmaEncodingOctet</td>
+                    <td>The message uses octet encoding.</td>
                 </tr>
             
                 <tr>
@@ -80,8 +80,8 @@ typedef enum _WWAN_SMS_CDMA_ENCODING {
                 </tr>
             
                 <tr>
-                    <td>WwanSmsCdmaEncodingGsm7Bit</td>
-                    <td>The message uses 7-bit GSM encoding.</td>
+                    <td>WwanSmsCdmaEncoding7BitAscii</td>
+                    <td>The message uses 7-bit ASCII encoding. The encoded message is represented in bytes per character.</td>
                 </tr>
             
                 <tr>
@@ -90,28 +90,8 @@ typedef enum _WWAN_SMS_CDMA_ENCODING {
                 </tr>
             
                 <tr>
-                    <td>WwanSmsCdmaEncodingKorean</td>
-                    <td>The message uses Korean encoding.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanSmsCdmaEncodingLatin</td>
-                    <td>The message uses Latin encoding.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanSmsCdmaEncodingLatinHebrew</td>
-                    <td>The message uses Latin Hebrew encoding.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanSmsCdmaEncodingMax</td>
-                    <td>The total number of supported SMS CDMA encoding formats.</td>
-                </tr>
-            
-                <tr>
-                    <td>WwanSmsCdmaEncodingOctet</td>
-                    <td>The message uses octet encoding.</td>
+                    <td>WwanSmsCdmaEncodingUnicode</td>
+                    <td>The message uses Unicode encoding.</td>
                 </tr>
             
                 <tr>
@@ -120,8 +100,28 @@ typedef enum _WWAN_SMS_CDMA_ENCODING {
                 </tr>
             
                 <tr>
-                    <td>WwanSmsCdmaEncodingUnicode</td>
-                    <td>The message uses Unicode encoding.</td>
+                    <td>WwanSmsCdmaEncodingKorean</td>
+                    <td>The message uses Korean encoding.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanSmsCdmaEncodingLatinHebrew</td>
+                    <td>The message uses Latin Hebrew encoding.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanSmsCdmaEncodingLatin</td>
+                    <td>The message uses Latin encoding.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanSmsCdmaEncodingGsm7Bit</td>
+                    <td>The message uses 7-bit GSM encoding.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanSmsCdmaEncodingMax</td>
+                    <td>The total number of supported SMS CDMA encoding formats.</td>
                 </tr>
 </table>
 
@@ -139,11 +139,3 @@ typedef enum _WWAN_SMS_CDMA_ENCODING {
 
 
 <a href="..\wwan\ns-wwan-_wwan_sms_cdma_record.md">WWAN_SMS_CDMA_RECORD</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_CDMA_ENCODING enumeration%20 RELEASE:%20(2/27/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

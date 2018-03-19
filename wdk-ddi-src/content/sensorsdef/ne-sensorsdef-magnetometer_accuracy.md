@@ -62,16 +62,6 @@ typedef enum _MAGNETOMETER_ACCURACY {
 <table>
             
                 <tr>
-                    <td>MagnetometerAccuracy_Approximate</td>
-                    <td>Indicates that the magnetometer readings are approximate values.</td>
-                </tr>
-            
-                <tr>
-                    <td>MagnetometerAccuracy_High</td>
-                    <td>Indicates that the magnetometer accuracy is set to high.</td>
-                </tr>
-            
-                <tr>
                     <td>MagnetometerAccuracy_Unknown</td>
                     <td>Indicates that the magnetometer's accuracy cannot be determined.</td>
                 </tr>
@@ -79,6 +69,16 @@ typedef enum _MAGNETOMETER_ACCURACY {
                 <tr>
                     <td>MagnetometerAccuracy_Unreliable</td>
                     <td>Indicates that the magnetometer readings are unreliable. The application can choose to prompt the user to calibrate the compass, to improve accuracy.</td>
+                </tr>
+            
+                <tr>
+                    <td>MagnetometerAccuracy_Approximate</td>
+                    <td>Indicates that the magnetometer readings are approximate values.</td>
+                </tr>
+            
+                <tr>
+                    <td>MagnetometerAccuracy_High</td>
+                    <td>Indicates that the magnetometer accuracy is set to high.</td>
                 </tr>
 </table>
 

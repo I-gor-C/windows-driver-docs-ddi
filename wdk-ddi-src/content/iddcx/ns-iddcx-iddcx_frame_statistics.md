@@ -70,13 +70,29 @@ typedef struct IDDCX_FRAME_STATISTICS {
 ## Members
 
 
+`Size`
+
+Total size of the structure
+
+`PresentationFrameNumber`
+
+The frame number provided in the ReleaseAndAcquireBuffer call
+
+`FrameStatus`
+
+Indicates the overall status of processing this frame
+
+`ReEncodeNumber`
+
+Zero based number to indicate the number of times the same frame has been encoded and sent. Re-encodes can be the result of the OS providing the same frame and frame number to the driver to encode or the driver having to re-encode outside of the normal OS presentation to satisfy the protocol.
+
+`FrameSliceTotal`
+
+Indicates the number of slices the driver processes the frame in. If slices are not used, then this should be set to the value one
+
 `CurrentSlice`
 
 Indicates the zero based slice number being reported. If slicing is not supported, then the driver should always set this to the value zero
-
-`Flags`
-
-Frame statistic flags
 
 `FrameAcquireQpcTime`
 
@@ -86,37 +102,9 @@ System Qpc time the driver acquired the buffer from the OS
 
 The size of the frame step array pointed to by pFrameParts
 
-`FrameSizeInBytes`
-
-Total size of the data send to device for this frame, this includes all the slices
-
-`FrameSliceTotal`
-
-Indicates the number of slices the driver processes the frame in. If slices are not used, then this should be set to the value one
-
-`FrameStatus`
-
-Indicates the overall status of processing this frame
-
 `pFrameProcessingStep`
 
 Array of frame processing steps the driver performed
-
-`PresentationFrameNumber`
-
-The frame number provided in the ReleaseAndAcquireBuffer call
-
-`ProcessedPixelCount`
-
-The total number of pixels processed in this frame
-
-`ReEncodeNumber`
-
-Zero based number to indicate the number of times the same frame has been encoded and sent. Re-encodes can be the result of the OS providing the same frame and frame number to the driver to encode or the driver having to re-encode outside of the normal OS presentation to satisfy the protocol.
-
-`SendCompleteQpcTime`
-
-Marks the time when the send was reported as complete by the OS. This is an optional time stamp that can be used if the driver uses asynchronous transmit API and a completion routine. In the event the driver does not have an asynchronous completion routine, this value should be set to zero
 
 `SendStartQpcTime`
 
@@ -132,9 +120,21 @@ Marks the time when the driver started transmission for this slice to the device
 <div class="alert"><b>Note</b>  This marks the time the driver started calling the transmit API's, not when the data actually starts being transmitted</div>
 <div> </div>
 
-`Size`
+`SendCompleteQpcTime`
 
-Total size of the structure
+Marks the time when the send was reported as complete by the OS. This is an optional time stamp that can be used if the driver uses asynchronous transmit API and a completion routine. In the event the driver does not have an asynchronous completion routine, this value should be set to zero
+
+`Flags`
+
+Frame statistic flags
+
+`ProcessedPixelCount`
+
+The total number of pixels processed in this frame
+
+`FrameSizeInBytes`
+
+Total size of the data send to device for this frame, this includes all the slices
 
 
 ## Requirements

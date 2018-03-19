@@ -62,6 +62,10 @@ typedef struct _ISCSI_RedirectPortalInfo {
 ## Members
 
 
+`UniqueConnectionId`
+
+The connection identifier (ID) that the operating system and application software use to uniquely identify the connection. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the UniqueConnectionId parameter. This value is not to be confused with the connection ID (CID).
+
 `OriginalIPAddr`
 
 This is the original IP address given during login from which redirection is to be set, and the IP address is provided via the ISCSI_IP_Address structure.
@@ -69,10 +73,6 @@ This is the original IP address given during login from which redirection is to 
 `OriginalPort`
 
 This is the original portals socket number given during login.
-
-`Redirected`
-
-This indicates whether the login is redirected. If this value is <b>TRUE</b>, RedirectedIPAddr and RedirectedPort are valid.
 
 `RedirectedIPAddr`
 
@@ -82,13 +82,13 @@ This is the IP address to which traffic needs to be redirected. The IP address i
 
 This is the socket number for the redirected target portal.
 
+`Redirected`
+
+This indicates whether the login is redirected. If this value is <b>TRUE</b>, RedirectedIPAddr and RedirectedPort are valid.
+
 `TemporaryRedirect`
 
 This value is <b>true</b> if redirection is temporary.
-
-`UniqueConnectionId`
-
-The connection identifier (ID) that the operating system and application software use to uniquely identify the connection. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the UniqueConnectionId parameter. This value is not to be confused with the connection ID (CID).
 
 
 ## Requirements
@@ -103,11 +103,3 @@ The connection identifier (ID) that the operating system and application softwar
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_RedirectPortalInfo structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

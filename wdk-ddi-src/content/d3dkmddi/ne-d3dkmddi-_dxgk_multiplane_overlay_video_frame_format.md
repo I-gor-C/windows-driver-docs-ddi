@@ -60,8 +60,8 @@ typedef enum _DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT {
 <table>
             
                 <tr>
-                    <td>DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST</td>
-                    <td>Reserved for system use. Do not use in your driver.</td>
+                    <td>DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE</td>
+                    <td>Progressive scan format.</td>
                 </tr>
             
                 <tr>
@@ -70,8 +70,8 @@ typedef enum _DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT {
                 </tr>
             
                 <tr>
-                    <td>DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE</td>
-                    <td>Progressive scan format.</td>
+                    <td>DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST</td>
+                    <td>Reserved for system use. Do not use in your driver.</td>
                 </tr>
 </table>
 

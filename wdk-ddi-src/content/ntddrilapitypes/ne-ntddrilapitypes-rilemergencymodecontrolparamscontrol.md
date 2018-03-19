@@ -60,22 +60,22 @@ typedef enum _RILEMERGENCYMODECONTROLPARAMSCONTROL {
 <table>
             
                 <tr>
-                    <td>RIL_EMC_ALL_MODEMS_ARE_IN_NORMAL_MODE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_EMC_EXIT_CDMA_ECBM</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_EMC_MAX</td>
+                    <td>RIL_EMC_OTHER_MODEM_IN_EMERGECY_MODE</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_EMC_OTHER_MODEM_IN_EMERGECY_MODE</td>
+                    <td>RIL_EMC_ALL_MODEMS_ARE_IN_NORMAL_MODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_EMC_MAX</td>
                     <td></td>
                 </tr>
 </table>

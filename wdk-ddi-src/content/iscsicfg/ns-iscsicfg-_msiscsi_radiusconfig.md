@@ -61,13 +61,21 @@ typedef struct _MSiSCSI_RADIUSConfig {
 ## Members
 
 
-`BackupRADIUSServer`
+`UseRADIUSForCHAP`
 
-A ISCSI_IP_Address structure that specifies a fixed addresses for a backup RADIUS server.
+A Boolean value that indicates whether the initiator should use RADIUS for authentication during the challenge handshake of the challenge handshake authentication protocol (CHAP). If this member is <b>TRUE</b>, the initiator should use RADIUS for authentication during the challenge handshake of CHAP. If this member is <b>FALSE</b>, the initiator is not required to use RADIUS.
+
+`SharedSecretSizeInBytes`
+
+The size, in bytes, of shared secret for use with RADIUS servers.
 
 `RADIUSServer`
 
 A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that specifies a fixed address for the RADIUS server. The ISCSI_IP_Address structure defines the IP address in a way that is independent of the version of the IP protocol in use.
+
+`BackupRADIUSServer`
+
+A ISCSI_IP_Address structure that specifies a fixed addresses for a backup RADIUS server.
 
 `Reserved`
 
@@ -76,14 +84,6 @@ Reserved for Microsoft use only. Set this member to zero.
 `SharedSecret`
 
 A variable-length array that contains a shared secret. The initiator uses this shared secret to authenticate primary and backup RADIUS servers.
-
-`SharedSecretSizeInBytes`
-
-The size, in bytes, of shared secret for use with RADIUS servers.
-
-`UseRADIUSForCHAP`
-
-A Boolean value that indicates whether the initiator should use RADIUS for authentication during the challenge handshake of the challenge handshake authentication protocol (CHAP). If this member is <b>TRUE</b>, the initiator should use RADIUS for authentication during the challenge handshake of CHAP. If this member is <b>FALSE</b>, the initiator is not required to use RADIUS.
 
 ## Remarks
 Initiators use RADIUS servers to perform authentication during the challenge handshake of CHAP.
@@ -108,11 +108,3 @@ Initiators should register each instance of the MSiSCSI_RADIUSConfig class using
 
 
 <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_RADIUSConfig structure%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

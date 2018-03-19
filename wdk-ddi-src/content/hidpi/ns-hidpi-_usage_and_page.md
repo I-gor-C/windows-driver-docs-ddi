@@ -57,13 +57,13 @@ typedef struct _USAGE_AND_PAGE {
 ## Members
 
 
-`Usage`
-
-Specifies a usage ID within the usage page specified by <b>UsagePage</b>.
-
 `UsagePage`
 
 Specifies a usage page.
+
+`Usage`
+
+Specifies a usage ID within the usage page specified by <b>UsagePage</b>.
 
 ## Remarks
 The<b> HidP_IsSameUsageAndPage</b> macro determines if two <a href="https://msdn.microsoft.com/84fed314-3554-4291-b51c-734d874a4bab">extended usages</a>, represented by <b>USAGE_AND_PAGE</b> structures, are equal.
@@ -114,11 +114,3 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539712">HidP_GetButtonsEx</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20USAGE_AND_PAGE structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

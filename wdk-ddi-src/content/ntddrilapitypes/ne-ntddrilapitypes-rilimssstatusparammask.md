@@ -63,16 +63,6 @@ typedef enum _RILIMSSSTATUSPARAMMASK {
 <table>
             
                 <tr>
-                    <td>RIL_PARAM_IMSSTATUS_ALL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_PARAM_IMSSTATUS_AVAILABLESERVICES</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
                     <td>RIL_PARAM_IMSSTATUS_EXECUTOR</td>
                     <td></td>
                 </tr>
@@ -83,7 +73,7 @@ typedef enum _RILIMSSSTATUSPARAMMASK {
                 </tr>
             
                 <tr>
-                    <td>RIL_PARAM_IMSSTATUS_SERVINGDOMAIN</td>
+                    <td>RIL_PARAM_IMSSTATUS_AVAILABLESERVICES</td>
                     <td></td>
                 </tr>
             
@@ -93,7 +83,17 @@ typedef enum _RILIMSSSTATUSPARAMMASK {
                 </tr>
             
                 <tr>
+                    <td>RIL_PARAM_IMSSTATUS_SERVINGDOMAIN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_PARAM_IMSSTATUS_SYSTEMTYPE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_IMSSTATUS_ALL</td>
                     <td></td>
                 </tr>
 </table>

@@ -68,7 +68,22 @@ typedef enum _RILCALLINFODISCONNECTREASON {
 <table>
             
                 <tr>
+                    <td>RIL_DISCREASON_NULL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>RIL_DISCREASON_BUSY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DISCREASON_NETWORKERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DISCREASON_RADIOFADE</td>
                     <td></td>
                 </tr>
             
@@ -78,12 +93,22 @@ typedef enum _RILCALLINFODISCONNECTREASON {
                 </tr>
             
                 <tr>
-                    <td>RIL_DISCREASON_EMERGENCYFAILOVER</td>
+                    <td>RIL_DISCREASON_EMERGENCYONLY</td>
                     <td></td>
                 </tr>
             
                 <tr>
-                    <td>RIL_DISCREASON_EMERGENCYONLY</td>
+                    <td>RIL_DISCREASON_NOSERVICE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DISCREASON_OTHEREXECUTORBUSY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DISCREASON_EMERGENCYFAILOVER</td>
                     <td></td>
                 </tr>
             
@@ -94,31 +119,6 @@ typedef enum _RILCALLINFODISCONNECTREASON {
             
                 <tr>
                     <td>RIL_DISCREASON_MAX</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DISCREASON_NETWORKERROR</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DISCREASON_NOSERVICE</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DISCREASON_NULL</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DISCREASON_OTHEREXECUTORBUSY</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>RIL_DISCREASON_RADIOFADE</td>
                     <td></td>
                 </tr>
 </table>

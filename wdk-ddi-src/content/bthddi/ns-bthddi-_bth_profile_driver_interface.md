@@ -62,6 +62,13 @@ typedef struct _BTH_PROFILE_DRIVER_INTERFACE {
 ## Members
 
 
+`Interface`
+
+A structure that describes the 
+     <b>BTH_PROFILE_DRIVER_INTERFACE</b> interface for use by profile drivers. For more information about this
+     structure, see 
+     <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>.
+
 `BthAllocateBrb`
 
 Pointer to the 
@@ -81,13 +88,6 @@ Pointer to the
 
 Pointer to the 
      <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> function.
-
-`Interface`
-
-A structure that describes the 
-     <b>BTH_PROFILE_DRIVER_INTERFACE</b> interface for use by profile drivers. For more information about this
-     structure, see 
-     <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>.
 
 `IsBluetoothVersionAvailable`
 
@@ -132,11 +132,3 @@ All the members of this structure, other than the
 
 
 <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTH_PROFILE_DRIVER_INTERFACE structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

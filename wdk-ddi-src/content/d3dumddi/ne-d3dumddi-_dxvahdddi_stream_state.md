@@ -75,13 +75,23 @@ typedef enum _DXVAHDDDI_STREAM_STATE {
 <table>
             
                 <tr>
-                    <td>DXVAHDDDI_STREAM_STATE_ALPHA</td>
-                    <td>The stream-state data specifies the alpha blend level per-plane in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_alpha_data.md">DXVAHDDDI_STREAM_STATE_ALPHA_DATA</a> structure.</td>
+                    <td>DXVAHDDDI_STREAM_STATE_FRAME_FORMAT</td>
+                    <td>The stream-state data specifies the frame format of the input in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_frame_format_data.md">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a> structure.</td>
                 </tr>
             
                 <tr>
-                    <td>DXVAHDDDI_STREAM_STATE_ASPECT_RATIO</td>
-                    <td>The stream-state data specifies the aspect ratio of the input in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_aspect_ratio_data.md">DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA</a> structure.</td>
+                    <td>DXVAHDDDI_STREAM_STATE_INPUT_COLOR_SPACE</td>
+                    <td>The stream-state data specifies the color space of the input in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_input_color_space_data.md">DXVAHDDDI_STREAM_STATE_INPUT_COLOR_SPACE_DATA</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVAHDDDI_STREAM_STATE_OUTPUT_RATE</td>
+                    <td>The stream-state data specifies the output rate of the input in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_output_rate_data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVAHDDDI_STREAM_STATE_SOURCE_RECT</td>
+                    <td>The stream-state data specifies the source rectangle of the input in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_source_rect_data.md">DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA</a> structure.</td>
                 </tr>
             
                 <tr>
@@ -90,8 +100,30 @@ typedef enum _DXVAHDDDI_STREAM_STATE {
                 </tr>
             
                 <tr>
-                    <td>DXVAHDDDI_STREAM_STATE_FILTER_ANAMORPHIC_SCALING</td>
-                    <td>The stream-state data specifies the anamorphic scaling level in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_filter_data.md">DXVAHDDDI_STREAM_STATE_FILTER_DATA</a> structure.</td>
+                    <td>DXVAHDDDI_STREAM_STATE_ALPHA</td>
+                    <td>The stream-state data specifies the alpha blend level per-plane in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_alpha_data.md">DXVAHDDDI_STREAM_STATE_ALPHA_DATA</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVAHDDDI_STREAM_STATE_PALETTE</td>
+                    <td>The stream-state data specifies the palette entries of the input in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_palette_data.md">DXVAHDDDI_STREAM_STATE_PALETTE_DATA</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVAHDDDI_STREAM_STATE_LUMA_KEY</td>
+                    <td>The stream-state data specifies the luma key of the input in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_luma_key_data.md">DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVAHDDDI_STREAM_STATE_ASPECT_RATIO</td>
+                    <td>The stream-state data specifies the aspect ratio of the input in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_aspect_ratio_data.md">DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVAHDDDI_STREAM_STATE_ROTATION</td>
+                    <td>The stream-state data specifies the  clockwise rotation of the display output surface in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_rotation_data.md">DXVAHDDDI_STREAM_STATE_ROTATION_DATA</a> structure.
+
+Supported starting with Windows 8.</td>
                 </tr>
             
                 <tr>
@@ -105,18 +137,8 @@ typedef enum _DXVAHDDDI_STREAM_STATE {
                 </tr>
             
                 <tr>
-                    <td>DXVAHDDDI_STREAM_STATE_FILTER_EDGE_ENHANCEMENT</td>
-                    <td>The stream-state data specifies the edge enhancement filter level in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_filter_data.md">DXVAHDDDI_STREAM_STATE_FILTER_DATA</a> structure.</td>
-                </tr>
-            
-                <tr>
                     <td>DXVAHDDDI_STREAM_STATE_FILTER_HUE</td>
                     <td>The stream-state data specifies the hue ProcAmp level in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_filter_data.md">DXVAHDDDI_STREAM_STATE_FILTER_DATA</a> structure.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVAHDDDI_STREAM_STATE_FILTER_NOISE_REDUCTION</td>
-                    <td>The stream-state data specifies the noise reduction filter level in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_filter_data.md">DXVAHDDDI_STREAM_STATE_FILTER_DATA</a> structure.</td>
                 </tr>
             
                 <tr>
@@ -125,45 +147,23 @@ typedef enum _DXVAHDDDI_STREAM_STATE {
                 </tr>
             
                 <tr>
-                    <td>DXVAHDDDI_STREAM_STATE_FRAME_FORMAT</td>
-                    <td>The stream-state data specifies the frame format of the input in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_frame_format_data.md">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a> structure.</td>
+                    <td>DXVAHDDDI_STREAM_STATE_FILTER_NOISE_REDUCTION</td>
+                    <td>The stream-state data specifies the noise reduction filter level in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_filter_data.md">DXVAHDDDI_STREAM_STATE_FILTER_DATA</a> structure.</td>
                 </tr>
             
                 <tr>
-                    <td>DXVAHDDDI_STREAM_STATE_INPUT_COLOR_SPACE</td>
-                    <td>The stream-state data specifies the color space of the input in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_input_color_space_data.md">DXVAHDDDI_STREAM_STATE_INPUT_COLOR_SPACE_DATA</a> structure.</td>
+                    <td>DXVAHDDDI_STREAM_STATE_FILTER_EDGE_ENHANCEMENT</td>
+                    <td>The stream-state data specifies the edge enhancement filter level in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_filter_data.md">DXVAHDDDI_STREAM_STATE_FILTER_DATA</a> structure.</td>
                 </tr>
             
                 <tr>
-                    <td>DXVAHDDDI_STREAM_STATE_LUMA_KEY</td>
-                    <td>The stream-state data specifies the luma key of the input in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_luma_key_data.md">DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA</a> structure.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVAHDDDI_STREAM_STATE_OUTPUT_RATE</td>
-                    <td>The stream-state data specifies the output rate of the input in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_output_rate_data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a> structure.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVAHDDDI_STREAM_STATE_PALETTE</td>
-                    <td>The stream-state data specifies the palette entries of the input in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_palette_data.md">DXVAHDDDI_STREAM_STATE_PALETTE_DATA</a> structure.</td>
+                    <td>DXVAHDDDI_STREAM_STATE_FILTER_ANAMORPHIC_SCALING</td>
+                    <td>The stream-state data specifies the anamorphic scaling level in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_filter_data.md">DXVAHDDDI_STREAM_STATE_FILTER_DATA</a> structure.</td>
                 </tr>
             
                 <tr>
                     <td>DXVAHDDDI_STREAM_STATE_PRIVATE</td>
                     <td>The stream-state data specifies private parameters in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_private_data.md">DXVAHDDDI_STREAM_STATE_PRIVATE_DATA</a> structure.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVAHDDDI_STREAM_STATE_ROTATION</td>
-                    <td>The stream-state data specifies the  clockwise rotation of the display output surface in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_rotation_data.md">DXVAHDDDI_STREAM_STATE_ROTATION_DATA</a> structure.
-
-Supported starting with Windows 8.</td>
-                </tr>
-            
-                <tr>
-                    <td>DXVAHDDDI_STREAM_STATE_SOURCE_RECT</td>
-                    <td>The stream-state data specifies the source rectangle of the input in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_source_rect_data.md">DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA</a> structure.</td>
                 </tr>
 </table>
 
@@ -232,11 +232,3 @@ A DXVAHDDDI_STREAM_STATE-typed value is specified in the <b>State</b> member of 
 
 
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_aspect_ratio_data.md">DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_STREAM_STATE enumeration%20 RELEASE:%20(2/26/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

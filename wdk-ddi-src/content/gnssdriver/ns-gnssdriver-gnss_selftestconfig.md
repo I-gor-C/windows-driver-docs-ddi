@@ -61,17 +61,13 @@ typedef struct {
 ## Members
 
 
-`InBuffer`
-
-
-
-`InBufLen`
-
-The length of the buffer for passing in any additional information about the self-test.
-
 `Size`
 
 Structure size.
+
+`Version`
+
+Version number.
 
 `TestType`
 
@@ -81,9 +77,13 @@ The type of self-test requested.
 
 
 
-`Version`
+`InBufLen`
 
-Version number.
+The length of the buffer for passing in any additional information about the self-test.
+
+`InBuffer`
+
+
 
 
 ## Requirements
