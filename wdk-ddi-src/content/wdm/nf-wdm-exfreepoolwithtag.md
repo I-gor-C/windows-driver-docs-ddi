@@ -65,7 +65,11 @@ Specifies the beginning address of a block of pool memory allocated by either <a
 
 `Tag`
 
-Specifies the tag value passed to <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a> or <a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a> when the block of memory was originally allocated.
+Specifies the tag value passed to <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a> or <a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a> when the block of memory was originally allocated. 
+
+**NOTE**
+
+Tag must be a value from 0x20 (space) to 0x126 (tilde).
 
 
 ## Return Value
