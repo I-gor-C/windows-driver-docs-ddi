@@ -106,7 +106,17 @@ The type ID of the type relative to the module specified by <b>m_TypeModBase</b>
 
 ## Syntax
 
-
+```
+throw() ExtRemoteTypedList(
+  ULONG64  Head,
+  PCSTR    Type,
+  PCSTR    LinkField,
+  ULONG64  TypeModBase,
+  ULONG    TypeId,
+  PULONG64 CacheCookie,
+  bool     Double
+);
+```
 
 ## Parameters
 

@@ -54,7 +54,7 @@ EVT_IDD_CX_ADAPTER_INIT_FINISHED EvtIddCxAdapterInitFinished;
 
 _IRQL_requires_same_ NTSTATUS EvtIddCxAdapterInitFinished(
   IDDCX_ADAPTER AdapterObject,
-  const IDARG_IN_ADAPTER_INIT_FINISHED * pInArgs
+  const IDARG_IN_ADAPTER_INIT_FINISHED *pInArgs
 )
 {...}
 ```

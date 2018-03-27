@@ -54,8 +54,8 @@ This routine starts a DMA data-transfer or a data transfer operation.
 DRIVER_CONTROL DriverControl;
 
 _IRQL_requires_same_ IO_ALLOCATION_ACTION DriverControl(
-  _DEVICE_OBJECT * DeviceObject,
-  _IRP * Irp,
+  _DEVICE_OBJECT *DeviceObject,
+  _IRP *Irp,
   PVOID MapRegisterBase,
   PVOID Context
 )

@@ -59,7 +59,7 @@ NTSTATUS EvtWdfTaskQueueTaskExecuteSync(
   PVOID OutputBuffer,
   size_t InputBufferLength,
   size_t OutputBufferLength,
-  size_t * BytesWritten,
+  size_t *BytesWritten,
   ULONG TaskOperationCode
 )
 {...}

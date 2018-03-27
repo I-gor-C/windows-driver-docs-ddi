@@ -1,8 +1,0 @@
-# [Universal Serial Bus (USB)](../_usbref/index.md)
-## [Ufxproprietarycharger.h](index.md)
-### [UFX_PROPRIETARY_CHARGER_ABORT_OPERATION function](../ufxproprietarycharger/nc-ufxproprietarycharger-ufx_proprietary_charger_abort_operation.md)
-### [UFX_PROPRIETARY_CHARGER_DETECT function](../ufxproprietarycharger/nc-ufxproprietarycharger-ufx_proprietary_charger_detect.md)
-### [UFX_PROPRIETARY_CHARGER_RESET_OPERATION function](../ufxproprietarycharger/nc-ufxproprietarycharger-ufx_proprietary_charger_reset_operation.md)
-### [UFX_PROPRIETARY_CHARGER_SET_PROPERTY function](../ufxproprietarycharger/nc-ufxproprietarycharger-ufx_proprietary_charger_set_property.md)
-### [_UFX_INTERFACE_PROPRIETARY_CHARGER structure](../ufxproprietarycharger/ns-ufxproprietarycharger-_ufx_interface_proprietary_charger.md)
-### [_UFX_PROPRIETARY_CHARGER structure](../ufxproprietarycharger/ns-ufxproprietarycharger-_ufx_proprietary_charger.md)

@@ -54,8 +54,8 @@ The <i>AdapterListControl</i> routine starts a direct memory access (DMA) scatte
 DRIVER_LIST_CONTROL DriverListControl;
 
 _IRQL_requires_same_ VOID DriverListControl(
-  _DEVICE_OBJECT * DeviceObject,
-  _IRP * Irp,
+  _DEVICE_OBJECT *DeviceObject,
+  _IRP *Irp,
   PSCATTER_GATHER_LIST ScatterGather,
   PVOID Context
 )

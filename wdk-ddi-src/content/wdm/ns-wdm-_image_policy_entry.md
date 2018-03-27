@@ -48,7 +48,26 @@ req.product: Windows 10 or later.
 This structure is not supported.
 
 ## Syntax
-
+```
+typedef struct _IMAGE_POLICY_ENTRY {
+  IMAGE_POLICY_ENTRY_TYPE Type;
+  IMAGE_POLICY_ID         PolicyId;
+  union {
+    PCSTR      AnsiStringValue;
+    BOOLEAN    BoolValue;
+    INT16      Int16Value;
+    INT32      Int32Value;
+    INT64      Int64Value;
+    INT8       Int8Value;
+    const VOID *None;
+    UINT16     UInt16Value;
+    UINT32     UInt32Value;
+    UINT64     UInt64Value;
+    UINT8      UInt8Value;
+    PCWSTR     UnicodeStringValue;
+  } u;
+} IMAGE_POLICY_ENTRY;
+```
 
 ## Members
 

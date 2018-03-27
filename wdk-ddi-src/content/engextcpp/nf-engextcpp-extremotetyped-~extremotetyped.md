@@ -259,7 +259,11 @@ Indicates whether or not the destructor for this instance of <b>ExtRemoteTyped</
 
 ## Syntax
 
+```
+void ~ExtRemoteTyped(
 
+);
+```
 
 ## Parameters
 

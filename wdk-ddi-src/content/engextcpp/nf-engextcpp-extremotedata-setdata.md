@@ -258,7 +258,13 @@ The DEBUG_PHYSICAL_<i>XXX</i> flags used for accessing physical memory on the ta
 
 ## Syntax
 
-
+```
+void  throw() SetData(
+  ULONG64 Data,
+  ULONG   Request,
+  bool    NoWrite
+);
+```
 
 ## Parameters
 

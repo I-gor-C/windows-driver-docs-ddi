@@ -55,7 +55,7 @@ EVT_SENSOR_DRIVER_GET_DATA_FIELD_PROPERTIES EvtSensorDriverGetDataFieldPropertie
 
 _IRQL_requires_same_ NTSTATUS EvtSensorDriverGetDataFieldProperties(
   SENSOROBJECT Sensor,
-  const PROPERTYKEY * pDataField,
+  const PROPERTYKEY *pDataField,
   PSENSOR_COLLECTION_LIST pProperties,
   PULONG pSize
 )

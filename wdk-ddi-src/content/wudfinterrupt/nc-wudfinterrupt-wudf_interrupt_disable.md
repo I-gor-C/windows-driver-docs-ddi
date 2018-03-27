@@ -56,8 +56,8 @@ A driver's <i>OnInterruptDisable</i> event callback function disables a specifie
 WUDF_INTERRUPT_DISABLE WudfInterruptDisable;
 
 HRESULT WudfInterruptDisable(
-  IWDFInterrupt * Interrupt,
-  IWDFDevice * AssociatedDevice
+  IWDFInterrupt *Interrupt,
+  IWDFDevice *AssociatedDevice
 )
 {...}
 ```

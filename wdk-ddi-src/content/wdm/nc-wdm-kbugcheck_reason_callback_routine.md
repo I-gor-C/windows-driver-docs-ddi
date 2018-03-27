@@ -61,7 +61,7 @@ KBUGCHECK_REASON_CALLBACK_ROUTINE KbugcheckReasonCallbackRoutine;
 
 _IRQL_requires_same_ VOID KbugcheckReasonCallbackRoutine(
   KBUGCHECK_CALLBACK_REASON Reason,
-  _KBUGCHECK_REASON_CALLBACK_RECORD * Record,
+  _KBUGCHECK_REASON_CALLBACK_RECORD *Record,
   PVOID ReasonSpecificData,
   ULONG ReasonSpecificDataLength
 )

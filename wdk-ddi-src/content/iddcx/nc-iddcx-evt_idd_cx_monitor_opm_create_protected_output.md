@@ -55,7 +55,7 @@ EVT_IDD_CX_MONITOR_OPM_CREATE_PROTECTED_OUTPUT EvtIddCxMonitorOpmCreateProtected
 _IRQL_requires_same_ NTSTATUS EvtIddCxMonitorOpmCreateProtectedOutput(
   IDDCX_MONITOR MonitorObject,
   IDDCX_OPMCTX OpmCxtObject,
-  const IDARG_IN_OPM_CREATE_PROTECTED_OUTPUT * pInArgs
+  const IDARG_IN_OPM_CREATE_PROTECTED_OUTPUT *pInArgs
 )
 {...}
 ```

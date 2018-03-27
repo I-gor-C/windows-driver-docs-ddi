@@ -54,7 +54,7 @@ EVT_IDD_CX_MONITOR_I2C_RECEIVE EvtIddCxMonitorI2cReceive;
 
 _IRQL_requires_same_ NTSTATUS EvtIddCxMonitorI2cReceive(
   IDDCX_MONITOR MonitorObject,
-  const IDARG_IN_I2C_RECEIVE * pInArgs
+  const IDARG_IN_I2C_RECEIVE *pInArgs
 )
 {...}
 ```

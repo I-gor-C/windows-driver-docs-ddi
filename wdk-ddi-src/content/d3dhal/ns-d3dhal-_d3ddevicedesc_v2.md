@@ -77,7 +77,31 @@ The D3DDEVICEDESC_V2 structure contains fields that are already reported in the
 } D3DDEVICEDESC_V2, *LPD3DDEVICEDESC_V2;</code></pre>
 
 ## Syntax
-
+```
+typedef struct _D3DDeviceDesc_V2 {
+  DWORD            dwSize;
+  DWORD            dwFlags;
+  D3DCOLORMODEL    dcmColorModel;
+  DWORD            dwDevCaps;
+  D3DTRANSFORMCAPS dtcTransformCaps;
+  BOOL             bClipping;
+  D3DLIGHTINGCAPS  dlcLightingCaps;
+  D3DPRIMCAPS      dpcLineCaps;
+  D3DPRIMCAPS      dpcTriCaps;
+  DWORD            dwDeviceRenderBitDepth;
+  DWORD            dwDeviceZBufferBitDepth;
+  DWORD            dwMaxBufferSize;
+  DWORD            dwMaxVertexCount;
+  DWORD            dwMinTextureWidth;
+  DWORD            dwMinTextureHeight;
+  DWORD            dwMaxTextureWidth;
+  DWORD            dwMaxTextureHeight;
+  DWORD            dwMinStippleWidth;
+  DWORD            dwMaxStippleWidth;
+  DWORD            dwMinStippleHeight;
+  DWORD            dwMaxStippleHeight;
+} *LPD3DDEVICEDESC_V2, D3DDEVICEDESC_V2;
+```
 
 ## Members
 

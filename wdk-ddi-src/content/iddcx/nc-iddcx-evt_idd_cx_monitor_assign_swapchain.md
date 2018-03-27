@@ -54,7 +54,7 @@ EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN EvtIddCxMonitorAssignSwapchain;
 
 _IRQL_requires_same_ NTSTATUS EvtIddCxMonitorAssignSwapchain(
   IDDCX_MONITOR MonitorObject,
-  const IDARG_IN_SETSWAPCHAIN * pInArgs
+  const IDARG_IN_SETSWAPCHAIN *pInArgs
 )
 {...}
 ```

@@ -54,7 +54,7 @@ An <i>InterruptMessageService</i> routine services a message-signaled interrupt.
 KMESSAGE_SERVICE_ROUTINE KmessageServiceRoutine;
 
 _IRQL_requires_same_ BOOLEAN KmessageServiceRoutine(
-  _KINTERRUPT * Interrupt,
+  _KINTERRUPT *Interrupt,
   PVOID ServiceContext,
   ULONG MessageID
 )

@@ -47,7 +47,14 @@ req.typenames: POWERSOURCESTATUS, *PPOWERSOURCESTATUS
 This struct is for internal use only.
 
 ## Syntax
-
+```
+typedef struct _POWERSOURCESTATUS {
+  POWERSOURCEID PowerSourceId;
+  ULONG         MaxChargeCurrent;
+  ULONG         PowerSourceInformation;
+  BOOLEAN       PowerSourceStatus;
+} POWERSOURCESTATUS, *PPOWERSOURCESTATUS;
+```
 
 ## Members
 

@@ -47,7 +47,19 @@ req.typenames: FLT_CALLBACK_DATA_QUEUE, *PFLT_CALLBACK_DATA_QUEUE, FLT_CALLBACK_
 FLT_CALLBACK_DATA_QUEUE is an opaque structure that is used to specify the callback routines for a minifilter's callback data queue. Do not set the members of this structure directly. Use <a href="..\fltkernel\nf-fltkernel-fltcbdqinitialize.md">FltCbdqInitialize</a> to initialize this structure.
 
 ## Syntax
-
+```
+typedef struct _FLT_CALLBACK_DATA_QUEUE {
+  IO_CSQ                                        Csq;
+  FLT_CALLBACK_DATA_QUEUE_FLAGS                 Flags;
+  PFLT_INSTANCE                                 Instance;
+  PFLT_CALLBACK_DATA_QUEUE_INSERT_IO            InsertIo;
+  PFLT_CALLBACK_DATA_QUEUE_REMOVE_IO            RemoveIo;
+  PFLT_CALLBACK_DATA_QUEUE_PEEK_NEXT_IO         PeekNextIo;
+  PFLT_CALLBACK_DATA_QUEUE_ACQUIRE              Acquire;
+  PFLT_CALLBACK_DATA_QUEUE_RELEASE              Release;
+  PFLT_CALLBACK_DATA_QUEUE_COMPLETE_CANCELED_IO CompleteCanceledIo;
+} FLT_CALLBACK_DATA_QUEUE, *PFLT_CALLBACK_DATA_QUEUE;
+```
 
 ## Members
 

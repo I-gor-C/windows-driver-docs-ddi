@@ -47,7 +47,15 @@ req.typenames: CHARGINGSTATUSCOMPLETE, *PCHARGINGSTATUSCOMPLETE
 This structure is for internal use only.
 
 ## Syntax
-
+```
+typedef struct _CHARGINGSTATUSCOMPLETE {
+  POWERSOURCESTATUS UsbFnStatus;
+  POWERSOURCESTATUS UsbTypeCStatus;
+  POWERSOURCESTATUS KDStatus;
+  POWERSOURCESTATUS WirelessStatus;
+  ULONG             ForceDisableChargingRefCount;
+} *PCHARGINGSTATUSCOMPLETE, CHARGINGSTATUSCOMPLETE;
+```
 
 ## Members
 

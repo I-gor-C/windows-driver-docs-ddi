@@ -47,7 +47,14 @@ req.typenames: HBA_FCPID, *PHBA_FCPID
 The HBA_FcpId structure is identical to the <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpid.md">HBAFCPID</a> structure.
 
 ## Syntax
-
+```
+typedef struct HBA_FcpId {
+  HBA_UINT32 FcId;
+  HBA_WWN    NodeWWN;
+  HBA_WWN    PortWWN;
+  HBA_UINT64 FcpLun;
+} *PHBA_FCPID, HBA_FCPID;
+```
 
 ## Members
 

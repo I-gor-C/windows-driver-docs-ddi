@@ -55,7 +55,7 @@ GET_DMA_ADAPTER GetDmaAdapter;
 
 _DMA_ADAPTER * GetDmaAdapter(
   PVOID Context,
-  _DEVICE_DESCRIPTION * DeviceDescriptor,
+  _DEVICE_DESCRIPTION *DeviceDescriptor,
   PULONG NumberOfMapRegisters
 )
 {...}

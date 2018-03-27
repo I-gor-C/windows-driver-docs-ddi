@@ -1,8 +1,0 @@
-# [Universal Serial Bus (USB)](../_usbref/index.md)
-## [Usbfnattach.h](index.md)
-### [USBFN_GET_ATTACH_ACTION function](../usbfnattach/nc-usbfnattach-usbfn_get_attach_action.md)
-### [USBFN_GET_ATTACH_ACTION_ABORT function](../usbfnattach/nc-usbfnattach-usbfn_get_attach_action_abort.md)
-### [USBFN_SET_DEVICE_STATE function](../usbfnattach/nc-usbfnattach-usbfn_set_device_state.md)
-### [_USBFN_ATTACH_ACTION Enumeration](../usbfnattach/ne-usbfnattach-_usbfn_attach_action.md)
-### [_USBFN_INTERFACE_ATTACH structure](../usbfnattach/ns-usbfnattach-_usbfn_interface_attach.md)
-### [_USBFN_ON_ATTACH structure](../usbfnattach/ns-usbfnattach-_usbfn_on_attach.md)

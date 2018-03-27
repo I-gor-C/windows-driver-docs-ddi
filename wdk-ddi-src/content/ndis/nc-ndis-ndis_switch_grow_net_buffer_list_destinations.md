@@ -56,7 +56,7 @@ NDIS_STATUS NdisSwitchGrowNetBufferListDestinations(
   NDIS_SWITCH_CONTEXT NdisSwitchContext,
   PNET_BUFFER_LIST NetBufferList,
   UINT32 NumberOfNewDestinations,
-  PNDIS_SWITCH_FORWARDING_DESTINATION_ARRAY * Destinations
+  PNDIS_SWITCH_FORWARDING_DESTINATION_ARRAY *Destinations
 )
 {...}
 ```

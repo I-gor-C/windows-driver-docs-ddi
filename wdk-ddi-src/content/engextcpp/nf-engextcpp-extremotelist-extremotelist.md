@@ -164,7 +164,13 @@ The number of steps taken in the current list iteration.  For doubly-linked list
 
 ## Syntax
 
-
+```
+void ExtRemoteList(
+  ULONG64 Head,
+  ULONG   LinkOffset,
+  bool    Double
+);
+```
 
 ## Parameters
 

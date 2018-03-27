@@ -48,7 +48,13 @@ req.product: Windows 10 or later.
 The <b>PRIVILEGE_SET</b> structure specifies a set of security privileges. For more information, see the reference page for <b>PRIVILEGE_SET</b> in the Microsoft Windows SDK documentation.
 
 ## Syntax
-
+```
+typedef struct _PRIVILEGE_SET {
+  ULONG               PrivilegeCount;
+  ULONG               Control;
+  LUID_AND_ATTRIBUTES Privilege[ANYSIZE_ARRAY];
+} *PPRIVILEGE_SET, PRIVILEGE_SET;
+```
 
 ## Members
 

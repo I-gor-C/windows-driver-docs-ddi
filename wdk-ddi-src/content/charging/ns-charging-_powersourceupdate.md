@@ -47,7 +47,14 @@ req.typenames: POWERSOURCEUPDATE, *PPOWERSOURCEUPDATE
 This structure is for internal use only.
 
 ## Syntax
-
+```
+typedef struct _POWERSOURCEUPDATE {
+  POWERSOURCEID PowerSourceId;
+  ULONG         MaxChargeCurrent;
+  BOOLEAN       PowerSourceAvailableStatus;
+  PVOID         PowerSourceInformation;
+} *PPOWERSOURCEUPDATE, POWERSOURCEUPDATE;
+```
 
 ## Members
 

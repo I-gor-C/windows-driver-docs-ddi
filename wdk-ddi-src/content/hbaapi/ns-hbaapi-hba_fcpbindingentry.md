@@ -47,7 +47,14 @@ req.typenames: HBA_FCPBINDINGENTRY, *PHBA_FCPBINDINGENTRY
 The HBA_FCPBindingEntry structure is equivalent to <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry.md">HBAFCPBindingEntry</a>. The WMI tool suite generates the HBAFCPBindingEntry when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556037">HBAFCPBindingEntry WMI Class</a>.  HBA_FCPBindingEntry is used with the fibre channel HBA API library and is declared in <i>hbaapi.h</i>.
 
 ## Syntax
-
+```
+typedef struct HBA_FCPBindingEntry {
+  HBA_FCPBINDINGTYPE type;
+  HBA_SCSIID         ScsiId;
+  HBA_FCPID          FcpId;
+  HBA_UINT32         FcId;
+} *PHBA_FCPBINDINGENTRY, HBA_FCPBINDINGENTRY;
+```
 
 ## Members
 

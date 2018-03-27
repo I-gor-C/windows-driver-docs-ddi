@@ -57,7 +57,7 @@ NDIS_PD_QUERY_COUNTER NdisPdQueryCounter;
 
 VOID() NdisPdQueryCounter(
   NDIS_PD_COUNTER_HANDLE CounterHandle,
-  NDIS_PD_COUNTER_VALUE * CounterValue
+  NDIS_PD_COUNTER_VALUE *CounterValue
 )
 {...}
 ```

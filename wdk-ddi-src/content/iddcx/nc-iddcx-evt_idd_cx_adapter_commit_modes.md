@@ -54,7 +54,7 @@ EVT_IDD_CX_ADAPTER_COMMIT_MODES EvtIddCxAdapterCommitModes;
 
 _IRQL_requires_same_ NTSTATUS EvtIddCxAdapterCommitModes(
   IDDCX_ADAPTER AdapterObject,
-  const IDARG_IN_COMMITMODES * pInArgs
+  const IDARG_IN_COMMITMODES *pInArgs
 )
 {...}
 ```

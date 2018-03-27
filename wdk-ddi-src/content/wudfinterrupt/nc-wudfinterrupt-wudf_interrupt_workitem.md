@@ -57,8 +57,8 @@ req.product: Windows 10 or later.
 WUDF_INTERRUPT_WORKITEM WudfInterruptWorkitem;
 
 void WudfInterruptWorkitem(
-  IWDFInterrupt * Interrupt,
-  IWDFObject * AssociatedObject
+  IWDFInterrupt *Interrupt,
+  IWDFObject *AssociatedObject
 )
 {...}
 ```

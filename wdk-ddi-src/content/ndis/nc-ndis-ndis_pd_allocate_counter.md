@@ -71,8 +71,8 @@ NDIS_PD_ALLOCATE_COUNTER NdisPdAllocateCounter;
 
 NTSTATUS() NdisPdAllocateCounter(
   NDIS_PD_PROVIDER_HANDLE ProviderHandle,
-  CONST NDIS_PD_COUNTER_PARAMETERS * CounterParameters,
-  NDIS_PD_COUNTER_HANDLE * CounterHandle
+  CONST NDIS_PD_COUNTER_PARAMETERS *CounterParameters,
+  NDIS_PD_COUNTER_HANDLE *CounterHandle
 )
 {...}
 ```

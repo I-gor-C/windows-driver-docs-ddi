@@ -47,7 +47,12 @@ req.typenames: POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 This structure is for internal use only.
 
 ## Syntax
-
+```
+typedef struct _POWERSOURCEUPDATEEX {
+  POWERSOURCEUPDATE Source;
+  GUID              ChargerId;
+} POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX;
+```
 
 ## Members
 

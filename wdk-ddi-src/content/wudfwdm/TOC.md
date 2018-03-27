@@ -1,6 +1,0 @@
-# [Windows kernel](../_kernel/index.md)
-## [Wudfwdm.h](index.md)
-### [ARGUMENT_PRESENT function](../wudfwdm/nf-wudfwdm-argument_present.md)
-### [InitializeObjectAttributes function](../wudfwdm/nf-wudfwdm-initializeobjectattributes.md)
-### [_OBJECT_ATTRIBUTES structure](../wudfwdm/ns-wudfwdm-_object_attributes.md)
-### [_UNICODE_STRING structure](../wudfwdm/ns-wudfwdm-_unicode_string.md)

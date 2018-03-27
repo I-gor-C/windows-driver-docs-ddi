@@ -54,7 +54,7 @@ EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE EvtIddCxMonitorOpmGetCertificate;
 
 _IRQL_requires_same_ NTSTATUS EvtIddCxMonitorOpmGetCertificate(
   IDDCX_ADAPTER AdapterObject,
-  const IDARG_IN_OPM_GET_CERTIFICATE * pInArgs
+  const IDARG_IN_OPM_GET_CERTIFICATE *pInArgs
 )
 {...}
 ```

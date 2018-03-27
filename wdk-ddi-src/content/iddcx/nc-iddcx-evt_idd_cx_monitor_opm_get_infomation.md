@@ -54,8 +54,8 @@ EVT_IDD_CX_MONITOR_OPM_GET_INFOMATION EvtIddCxMonitorOpmGetInfomation;
 
 _IRQL_requires_same_ NTSTATUS EvtIddCxMonitorOpmGetInfomation(
   IDDCX_OPMCTX OpmCxtObject,
-  const IDARG_IN_OPM_GET_INFOMATION * pInArgs,
-  IDARG_OUT_OPM_GET_INFOMATION * pOutArgs
+  const IDARG_IN_OPM_GET_INFOMATION *pInArgs,
+  IDARG_OUT_OPM_GET_INFOMATION *pOutArgs
 )
 {...}
 ```

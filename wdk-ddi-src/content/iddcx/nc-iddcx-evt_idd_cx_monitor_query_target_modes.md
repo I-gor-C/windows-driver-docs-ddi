@@ -54,8 +54,8 @@ EVT_IDD_CX_MONITOR_QUERY_TARGET_MODES EvtIddCxMonitorQueryTargetModes;
 
 _IRQL_requires_same_ NTSTATUS EvtIddCxMonitorQueryTargetModes(
   IDDCX_MONITOR MonitorObject,
-  const IDARG_IN_QUERYTARGETMODES * pInArgs,
-  IDARG_OUT_QUERYTARGETMODES * pOutArgs
+  const IDARG_IN_QUERYTARGETMODES *pInArgs,
+  IDARG_OUT_QUERYTARGETMODES *pOutArgs
 )
 {...}
 ```

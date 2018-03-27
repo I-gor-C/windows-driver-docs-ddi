@@ -48,7 +48,12 @@ req.product: Windows 10 or later.
 The <b>RESOURCEMANAGER_COMPLETION_INFORMATION</b> structure is not used.
 
 ## Syntax
-
+```
+typedef struct _RESOURCEMANAGER_COMPLETION_INFORMATION {
+  HANDLE    IoCompletionPortHandle;
+  ULONG_PTR CompletionKey;
+} RESOURCEMANAGER_COMPLETION_INFORMATION, *PRESOURCEMANAGER_COMPLETION_INFORMATION;
+```
 
 ## Members
 

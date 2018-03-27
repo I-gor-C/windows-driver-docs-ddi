@@ -54,7 +54,7 @@ EVT_IDD_CX_MONITOR_OPM_CONFIGURE_PROTECTED_OUTPUT EvtIddCxMonitorOpmConfigurePro
 
 _IRQL_requires_same_ NTSTATUS EvtIddCxMonitorOpmConfigureProtectedOutput(
   IDDCX_OPMCTX OpmCxtObject,
-  const IDARG_IN_OPM_CONFIGURE_PROTECTED_OUTPUT * pInArgs
+  const IDARG_IN_OPM_CONFIGURE_PROTECTED_OUTPUT *pInArgs
 )
 {...}
 ```

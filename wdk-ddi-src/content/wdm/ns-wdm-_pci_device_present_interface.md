@@ -48,7 +48,17 @@ req.product: Windows 10 or later.
 The <b>PCI_DEVICE_PRESENT_INTERFACE</b> structure is reserved for system use.
 
 ## Syntax
-
+```
+typedef struct _PCI_DEVICE_PRESENT_INTERFACE {
+  USHORT                    Size;
+  USHORT                    Version;
+  PVOID                     Context;
+  PINTERFACE_REFERENCE      InterfaceReference;
+  PINTERFACE_DEREFERENCE    InterfaceDereference;
+  PPCI_IS_DEVICE_PRESENT    IsDevicePresent;
+  PPCI_IS_DEVICE_PRESENT_EX IsDevicePresentEx;
+} *PPCI_DEVICE_PRESENT_INTERFACE, PCI_DEVICE_PRESENT_INTERFACE;
+```
 
 ## Members
 

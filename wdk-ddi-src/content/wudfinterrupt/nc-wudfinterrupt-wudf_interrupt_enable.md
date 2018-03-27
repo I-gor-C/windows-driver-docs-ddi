@@ -56,8 +56,8 @@ A driver's <i>OnInterruptEnable</i> event callback function enables a specified 
 WUDF_INTERRUPT_ENABLE WudfInterruptEnable;
 
 HRESULT WudfInterruptEnable(
-  IWDFInterrupt * Interrupt,
-  IWDFDevice * AssociatedDevice
+  IWDFInterrupt *Interrupt,
+  IWDFDevice *AssociatedDevice
 )
 {...}
 ```

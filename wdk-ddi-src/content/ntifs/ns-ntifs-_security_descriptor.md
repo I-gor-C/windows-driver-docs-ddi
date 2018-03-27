@@ -47,7 +47,17 @@ req.typenames: SECURITY_DESCRIPTOR, *PISECURITY_DESCRIPTOR
 The <b>SECURITY_DESCRIPTOR</b> structure specifies the security information that is associated with an object. For more information, see the reference page for <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> in the Installable File System documentation.
 
 ## Syntax
-
+```
+typedef struct _SECURITY_DESCRIPTOR {
+  UCHAR                       Revision;
+  UCHAR                       Sbz1;
+  SECURITY_DESCRIPTOR_CONTROL Control;
+  PSID                        Owner;
+  PSID                        Group;
+  PACL                        Sacl;
+  PACL                        Dacl;
+} SECURITY_DESCRIPTOR, *PISECURITY_DESCRIPTOR;
+```
 
 ## Members
 

@@ -54,7 +54,7 @@ EVT_IDD_CX_MONITOR_I2C_TRANSMIT EvtIddCxMonitorI2cTransmit;
 
 _IRQL_requires_same_ NTSTATUS EvtIddCxMonitorI2cTransmit(
   IDDCX_MONITOR MonitorObject,
-  const IDARG_IN_I2C_TRANSMIT * pInArgs
+  const IDARG_IN_I2C_TRANSMIT *pInArgs
 )
 {...}
 ```

@@ -48,7 +48,12 @@ req.product: Windows 10 or later.
 This material is not yet available. This placeholder topic is provided as an example of documentation that may be included in a later release.
 
 ## Syntax
-
+```
+typedef struct _SDEV_IDENTIFIER_INTERFACE {
+  INTERFACE            InterfaceHeader;
+  PGET_SDEV_IDENTIFIER GetIdentifier;
+} SDEV_IDENTIFIER_INTERFACE, *PSDEV_IDENTIFIER_INTERFACE;
+```
 
 ## Members
 

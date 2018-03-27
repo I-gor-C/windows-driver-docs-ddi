@@ -54,7 +54,7 @@ SRIOV_WRITE_CONFIG SriovWriteConfig;
 
 NTSTATUS SriovWriteConfig(
   PVOID Context,
-  const VOID * Data,
+  const VOID *Data,
   USHORT VfIndex,
   ULONG Offset,
   ULONG Length

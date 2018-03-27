@@ -56,7 +56,7 @@ A driver's <i>OnInterruptIsr</i> event callback function services a hardware int
 WUDF_INTERRUPT_ISR WudfInterruptIsr;
 
 void WudfInterruptIsr(
-  IWDFInterrupt * Interrupt,
+  IWDFInterrupt *Interrupt,
   ULONG MessageID,
   ULONG Reserved
 )

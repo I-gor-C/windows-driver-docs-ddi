@@ -54,7 +54,7 @@ EVT_IDD_CX_MONITOR_OPM_GET_RANDOM_NUMBER EvtIddCxMonitorOpmGetRandomNumber;
 
 _IRQL_requires_same_ NTSTATUS EvtIddCxMonitorOpmGetRandomNumber(
   IDDCX_OPMCTX OpmCxtObject,
-  IDARG_OUT_OPM_GET_RANDOM_NUMBER * pOutArgs
+  IDARG_OUT_OPM_GET_RANDOM_NUMBER *pOutArgs
 )
 {...}
 ```

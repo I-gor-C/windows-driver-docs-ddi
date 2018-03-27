@@ -54,7 +54,7 @@ The <i>InterruptService</i> routine (ISR) quickly services a device interrupt an
 KSERVICE_ROUTINE KserviceRoutine;
 
 _IRQL_requires_same_ BOOLEAN KserviceRoutine(
-  _KINTERRUPT * Interrupt,
+  _KINTERRUPT *Interrupt,
   PVOID ServiceContext
 )
 {...}

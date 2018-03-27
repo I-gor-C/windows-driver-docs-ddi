@@ -58,9 +58,9 @@ NTSTATUS DxgkddiSystemDisplayEnable(
   PVOID MiniportDeviceContext,
   D3DDDI_VIDEO_PRESENT_TARGET_ID TargetId,
   PDXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS Flags,
-  UINT * Width,
-  UINT * Height,
-  D3DDDIFORMAT * ColorFormat
+  UINT *Width,
+  UINT *Height,
+  D3DDDIFORMAT *ColorFormat
 )
 {...}
 ```

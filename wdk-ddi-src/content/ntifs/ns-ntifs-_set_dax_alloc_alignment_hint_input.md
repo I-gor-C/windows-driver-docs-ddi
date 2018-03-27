@@ -47,7 +47,13 @@ req.typenames: SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT, *PSET_DAX_ALLOC_ALIGNMENT_HIN
 This material is not yet available. This placeholder topic is provided as an example of documentation that may be included in a later release.
 
 ## Syntax
-
+```
+typedef struct _SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT {
+  ULONG     Flags;
+  ULONG     AlignmentShift;
+  ULONGLONG FileOffsetToAlign;
+} SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT, *PSET_DAX_ALLOC_ALIGNMENT_HINT_INPUT;
+```
 
 ## Members
 

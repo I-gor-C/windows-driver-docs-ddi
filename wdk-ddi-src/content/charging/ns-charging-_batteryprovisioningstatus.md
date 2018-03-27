@@ -47,7 +47,11 @@ req.typenames: BATTERYPROVISIONINGSTATUS, *PBATTERYPROVISIONINGSTATUS
 This structure is for internal use only.
 
 ## Syntax
-
+```
+typedef struct _BATTERYPROVISIONINGSTATUS {
+  BOOLEAN IsDeviceProvisionedForBatteryBlank;
+} *PBATTERYPROVISIONINGSTATUS, BATTERYPROVISIONINGSTATUS;
+```
 
 ## Members
 

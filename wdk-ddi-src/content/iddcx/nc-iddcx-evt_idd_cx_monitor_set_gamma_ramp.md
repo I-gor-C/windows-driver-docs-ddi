@@ -54,7 +54,7 @@ EVT_IDD_CX_MONITOR_SET_GAMMA_RAMP EvtIddCxMonitorSetGammaRamp;
 
 _IRQL_requires_same_ NTSTATUS EvtIddCxMonitorSetGammaRamp(
   IDDCX_MONITOR MonitorObject,
-  const IDARG_IN_SET_GAMMARAMP * pInArgs
+  const IDARG_IN_SET_GAMMARAMP *pInArgs
 )
 {...}
 ```

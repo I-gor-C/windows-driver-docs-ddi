@@ -56,7 +56,7 @@ The PacketDirect (PD) platform calls a PD-capable miniport driver's
 NDIS_PD_FREE_QUEUE NdisPdFreeQueue;
 
 VOID() NdisPdFreeQueue(
-  __drv_freesMem(Mem)NDIS_PD_QUEUE * NdisPDQueue
+  __drv_freesMem(Mem)NDIS_PD_QUEUE *NdisPDQueue
 )
 {...}
 ```

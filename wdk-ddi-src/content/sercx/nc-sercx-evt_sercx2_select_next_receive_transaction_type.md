@@ -58,7 +58,7 @@ SERCX2_TRANSACTION_TYPE EvtSercx2SelectNextReceiveTransactionType(
   PMDL Mdl,
   ULONG Offset,
   ULONG RemainingLength,
-  SERCX2CUSTOMRECEIVE * CustomReceive,
+  SERCX2CUSTOMRECEIVE *CustomReceive,
   PULONG NextTransactionLength
 )
 {...}

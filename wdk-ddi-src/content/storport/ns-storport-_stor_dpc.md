@@ -48,7 +48,12 @@ req.product: Windows 10 or later.
 The STOR_DPC structure is an opaque structure that represents a DPC object. Do not set the members of this structure directly.
 
 ## Syntax
-
+```
+typedef struct _STOR_DPC {
+  DPC_BUFFER Dpc;
+  ULONG_PTR  Lock;
+} STOR_DPC, *PSTOR_DPC;
+```
 
 ## Members
 

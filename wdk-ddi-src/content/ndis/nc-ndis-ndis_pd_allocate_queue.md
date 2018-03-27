@@ -57,8 +57,8 @@ NDIS_PD_ALLOCATE_QUEUE NdisPdAllocateQueue;
 
 NTSTATUS() NdisPdAllocateQueue(
   NDIS_PD_PROVIDER_HANDLE ProviderHandle,
-  CONST NDIS_PD_QUEUE_PARAMETERS * QueueParameters,
-  NDIS_PD_QUEUE ** NdisPDQueue
+  CONST NDIS_PD_QUEUE_PARAMETERS *QueueParameters,
+  NDIS_PD_QUEUE **NdisPDQueue
 )
 {...}
 ```

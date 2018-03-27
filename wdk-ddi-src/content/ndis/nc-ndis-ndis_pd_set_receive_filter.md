@@ -57,8 +57,8 @@ NDIS_PD_SET_RECEIVE_FILTER NdisPdSetReceiveFilter;
 
 NTSTATUS() NdisPdSetReceiveFilter(
   NDIS_PD_PROVIDER_HANDLE ProviderHandle,
-  CONST NDIS_PD_FILTER_PARAMETERS * FilterParameters,
-  NDIS_PD_FILTER_HANDLE * FilterHandle
+  CONST NDIS_PD_FILTER_PARAMETERS *FilterParameters,
+  NDIS_PD_FILTER_HANDLE *FilterHandle
 )
 {...}
 ```

@@ -55,7 +55,7 @@ RTL_RUN_ONCE_INIT_FN RtlRunOnceInitFn;
 _IRQL_requires_same_ ULONG RtlRunOnceInitFn(
   PRTL_RUN_ONCE RunOnce,
   PVOID Context,
-  PVOID * Parameter
+  PVOID *Parameter
 )
 {...}
 ```
